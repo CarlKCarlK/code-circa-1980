@@ -65,3 +65,6 @@ Use `npm run typecheck`; `npm test` also runs ROM/Z80 comparison fixtures.
 Use `npm run build:fall` to reproduce the derived executable; never describe that
 modern build as recovered historical machine code. Record provenance for any
 new external dependency before enabling a historical version in the player.
+
+Write the collection’s personal history in first person ("I wrote"), not as a
+third-person biography. Preserve historical source credits and copyright notices.
