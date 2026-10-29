@@ -53,6 +53,18 @@
       "controls": "modes",
       "note": "Same builder, but impacts call an external machine-code routine.",
       "unavailableReason": "Requires an external FALL machine-code routine. This release preserves the BASIC but does not reconstruct or load that dependency."
+    },
+    {
+      "id": "v05",
+      "label": "FALL BASIC 2",
+      "capture": "tape18a",
+      "save": 24,
+      "raw": "versions/v05/24-FALL-GRAPHICS-BASIC-V2.BAS",
+      "listing": "versions/v05/24-FALL-GRAPHICS-BASIC-V2.ASC",
+      "playable": false,
+      "controls": "modes",
+      "note": "Machine-code variant with a changed background; follows FALL BASIC 1 within tape18a.",
+      "unavailableReason": "Requires an external FALL machine-code routine. This release preserves the BASIC but does not reconstruct or load that dependency."
     }
   ]
 }
