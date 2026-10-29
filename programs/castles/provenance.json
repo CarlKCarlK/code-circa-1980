@@ -856,6 +856,461 @@
         }
       ],
       "version": "v02"
+    },
+    {
+      "capture": "tape23b",
+      "recovery_evidence": "tapes/recovered/tape23b/inventory.json",
+      "recovery_item": {
+        "order": 11,
+        "detected_group": 11,
+        "title": "ARTILLERY DRAFT03",
+        "title_note": "Descriptive filenames and save/template/fragment sequence labels inferred from content and capture order; source titles preserved in listings.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 767.0218333333333,
+        "source_end_s": 808.9094166666666,
+        "selected_source": {
+          "variant": "left-hp1200",
+          "index": 11,
+          "start": 767.0218333333333,
+          "end": 808.9093958333333,
+          "file": "left-hp1200/T11-32240c1f82ed.BAS",
+          "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 51,
+            "last": 2010,
+            "normal": true,
+            "parsed": 2507,
+            "bytes": 2507,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/11-ARTILLERY-DRAFT03.BAS",
+        "listing": "best/11-ARTILLERY-DRAFT03.ASC",
+        "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+        "bytes": 2507,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 51,
+          "last": 2010,
+          "normal": true,
+          "parsed": 2507,
+          "bytes": 2507,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "left-hp1200",
+            "index": 11,
+            "start": 767.0218333333333,
+            "end": 808.9093958333333,
+            "file": "left-hp1200/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "original",
+            "index": 11,
+            "start": 767.118375,
+            "end": 808.90925,
+            "file": "original/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 11,
+            "start": 767.1185416666667,
+            "end": 808.9094166666666,
+            "file": "left-hp800/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 11,
+            "start": 767.1204791666667,
+            "end": 808.909375,
+            "file": "right-boosted/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 11,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 766.7218333333333,
+            "crop_end": 809.3094166666667,
+            "start": 767.0178333333333,
+            "end": 808.9093958333333,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 11,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 766.7218333333333,
+            "crop_end": 809.3094166666667,
+            "start": 767.1166458333332,
+            "end": 808.9094166666666,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 11,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 766.7218333333333,
+            "crop_end": 809.3094166666667,
+            "start": 767.116625,
+            "end": 808.909375,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "imported_files": [
+        {
+          "path": "versions/v03/11-ARTILLERY-DRAFT03.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/11-ARTILLERY-DRAFT03.BAS",
+          "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+          "bytes": 2507
+        },
+        {
+          "path": "versions/v03/11-ARTILLERY-DRAFT03.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/11-ARTILLERY-DRAFT03.ASC",
+          "sha256": "e60c2108734afe5248e55fcd4a6f530d3d4f6fdddc450605189865cf0dc89f2b",
+          "bytes": 3157
+        }
+      ],
+      "version": "v03"
     }
   ]
 }

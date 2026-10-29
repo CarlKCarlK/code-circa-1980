@@ -29,6 +29,18 @@
       "controls": "early",
       "note": "Revised impacts and falling blocks.",
       "unavailableReason": null
+    },
+    {
+      "id": "v03",
+      "label": "Artillery draft 3",
+      "capture": "tape23b",
+      "save": 11,
+      "raw": "versions/v03/11-ARTILLERY-DRAFT03.BAS",
+      "listing": "versions/v03/11-ARTILLERY-DRAFT03.ASC",
+      "playable": true,
+      "controls": "modes",
+      "note": "Persistent draw/erase modes, Q to bombard, refined falling routine.",
+      "unavailableReason": null
     }
   ]
 }
