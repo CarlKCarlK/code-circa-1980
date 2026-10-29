@@ -71,6 +71,20 @@ export class Castles {
     let code = this.screen[address]; if (code < 128) code = 128;
     this.screen[address] = set ? code | bit : code & ~bit;
   }
+  /** Shared keyboard/pointer legality checks; no relaxed support or erase rules. */
+  editStatus(x: number, y: number, tool: 'draw' | 'erase'): 'changed' | 'unchanged' | 'unsupported' | 'protected' | 'outside' | 'unavailable' {
+    if (this.phase !== 'building') return 'unavailable';
+    if (!Number.isInteger(x) || !Number.isInteger(y) || x < 1 || x > 126 || y < 2 || y > 46) return 'outside';
+    if (tool === 'draw' && ![-1,0,1].some(d=>this.point(x+d,y+1))) return 'unsupported';
+    if (tool === 'erase' && [-1,0,1].some(d=>this.point(x+d,y-1))) return 'protected';
+    return this.point(x,y) === (tool === 'draw') ? 'unchanged' : 'changed';
+  }
+  editAt(x: number, y: number, tool: 'draw' | 'erase'): ReturnType<Castles['editStatus']> {
+    const result = this.editStatus(x,y,tool);
+    if (result !== 'outside' && result !== 'unavailable') this.cursor = {x,y};
+    if (result === 'changed') this.plot(x,y,tool === 'draw');
+    return result;
+  }
   /** One builder iteration (BASIC 510–650), independent of display frame rate. */
   buildStep(): void {
     if (this.phase !== 'building') return;
@@ -92,12 +106,9 @@ export class Castles {
     const target = this.cursor;
     if (this.mode === 'move' && !this.short) return;
     if (this.short) this.mode = 'draw';
-    if (this.mode === 'draw') {
-      if ([-1, 0, 1].some(d => this.point(target.x + d, target.y + 1))) this.plot(target.x, target.y, true);
-      else this.dx = this.dy = 0;
-    } else if (this.mode === 'erase') {
-      if ([-1, 0, 1].some(d => this.point(target.x + d, target.y - 1))) this.dx = this.dy = 0;
-      else this.plot(target.x, target.y, false);
+    if (this.mode === 'draw' || this.mode === 'erase') {
+      const result = this.editAt(target.x,target.y,this.mode);
+      if (result === 'unsupported' || result === 'protected') this.dx = this.dy = 0;
     }
     if (this.short) { this.short = false; this.mode = 'move'; }
   }

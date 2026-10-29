@@ -3,3 +3,5 @@
 .implementations{margin:24px 0;gap:8px}.implementations a{padding:8px 14px;border:1px solid #ccd3c3;text-decoration:none}.implementations [aria-current]{background:#324d3e;color:#fff}
 
 .program-history{max-width:820px;margin:32px 0}.program-history h2{font-size:25px}.program-history p{color:#626b58}
+
+.drawing-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:14px 0 5px}.drawing-tools label{font-size:13px;display:flex;gap:8px;align-items:center}.drawing-tools [role=group]{display:flex;gap:6px}.drawing-tools [aria-pressed=true]{background:#324d3e;color:#fff}.drawing-tools button:disabled{opacity:.5;cursor:default}.drawing-feedback{font-size:12px;color:#626b58;min-height:2.5em;margin:7px 0 10px}.drawing-tools input{accent-color:#324d3e}

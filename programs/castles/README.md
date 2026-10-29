@@ -21,7 +21,18 @@ website with `npm run dev` from the repository root, choose Castles, and select
 Choose **TypeScript** to play the native browser implementation of v05. The
 self-contained v03 remains available among the recovered versions.
 
-## Playing v03, v05, or TypeScript
+## Mouse controls in TypeScript
+
+Click and drag to build with the original support rules. Use **Erase** and drag
+from the top down, or **right-drag** to erase temporarily. **Move** repositions the
+cursor without editing. The pointer can move freely, but floating starts are
+rejected and blocks with a block directly or diagonally above cannot be erased.
+
+Touch and pen use the same tools. Turn off **Mouse controls** for keyboard-only
+play. The original emulator remains unchanged, and the calibrated TypeScript
+keyboard baseline is preserved at tag `castles-typescript-v02`.
+
+## Playing with the original keyboard controls
 
 1. Click the emulator screen.
 2. Tap **8** to enable drawing.
@@ -86,8 +97,8 @@ not a recovered historical executable. v04 remains source only.
 projectile, debris, and FALL v6 rules; `player.ts` provides Canvas and input.
 The emulator is kept alongside it for comparison. See
 [typescript/PARITY.md](typescript/PARITY.md) for comparison evidence and limits.
-This is the initial behavior baseline for review, before gameplay or control
-improvements. It is not a claim of cycle-exact or exhaustive equivalence.
+The current player adds pointer editing to the preserved keyboard baseline.
+Comparison evidence does not imply cycle-exact or exhaustive equivalence.
 
 ## Verification
 

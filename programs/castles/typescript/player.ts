@@ -1,4 +1,6 @@
 import {Castles} from './engine.ts';
+import {screenCell,paintStroke} from './pointer.ts';
+import type {Cell,Tool} from './pointer.ts';
 /** Browser adapter only; all rules live in engine.ts. */
 export async function createPlayer(host: HTMLElement, _url: string, status: HTMLElement, title: string) {
   const game = new Castles();
@@ -8,8 +10,75 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   host.tabIndex = 0; host.setAttribute('role', 'group'); host.setAttribute('aria-label', `${title} TypeScript player. Focus here to use the game keys.`);
   const ctx = canvas.getContext('2d')!;
   let paused = false, disposed = false, previous = 0, elapsed = 0, handle = 0;
-  const release = () => game.release();
-  const press = (key: string, down: boolean) => { if (!paused && !disposed) game.key(key, down); };
+  const tools = document.createElement('div'); tools.className = 'drawing-tools';
+  tools.innerHTML = '<label><input type="checkbox" checked> Mouse controls</label><div role="group" aria-label="Mouse tool"><button type="button" data-tool="draw" aria-pressed="true">Draw</button><button type="button" data-tool="erase" aria-pressed="false">Erase</button><button type="button" data-tool="move" aria-pressed="false">Move</button></div>';
+  const feedback = document.createElement('p'); feedback.className = 'drawing-feedback'; feedback.setAttribute('role','status'); feedback.setAttribute('aria-live','polite');
+  host.before(tools,feedback);
+  const enabled = tools.querySelector('input')!;
+  const toolButtons = [...tools.querySelectorAll<HTMLButtonElement>('button')];
+  let tool:Tool='draw', pointerActive=false, launchPending=false, hover:Cell|null=null;
+  let stroke:{id:number; tool:Tool; last:Cell|null}|null=null;
+  let lastUi='';
+  const hint = (message:string) => {if(feedback.textContent!==message)feedback.textContent=message;};
+  const defaultHint = () => !enabled.checked ? 'Mouse controls off. Use the original keyboard controls.' : tool==='erase' ? 'Drag to erase exposed blocks, starting at the top. Choose Draw to build again.' : tool==='move' ? 'Move: position the cursor without changing blocks.' : 'Drag to draw. Right-drag erases temporarily. Blocks need support; erase from the top down.';
+  function stopStroke() {
+    const id=stroke?.id; stroke=null;
+    if(id!==undefined&&canvas.hasPointerCapture(id))canvas.releasePointerCapture(id);
+  }
+  function syncTools() {
+    const available=game.phase==='building'&&!paused&&!launchPending;
+    const state=`${available}/${enabled.checked}/${tool}/${game.phase}/${launchPending}`;
+    if(state===lastUi)return;lastUi=state;
+    enabled.disabled=!available;
+    for(const button of toolButtons){button.disabled=!available||!enabled.checked;button.setAttribute('aria-pressed',String(button.dataset.tool===tool));}
+    canvas.style.touchAction=available&&enabled.checked?'none':'auto';
+    canvas.style.cursor=available&&enabled.checked?'crosshair':'default';
+    if(!available){stopStroke();hover=null;hint(paused?'Resume to draw or erase.':launchPending?'Starting bombardment…':'Restart to build again.');}
+    else hint(defaultHint());
+  }
+  function activatePointer() {
+    if(!pointerActive){game.release();game.mode='move';pointerActive=true;}
+  }
+  function pointerAt(event:PointerEvent):Cell|null {return screenCell(event.clientX,event.clientY,canvas.getBoundingClientRect());}
+  function applyPointer(cell:Cell) {
+    if(!stroke)return;
+    const blocked=paintStroke(game,stroke.last??cell,cell,stroke.tool);stroke.last=cell;
+    hint(blocked==='unsupported'?'Needs support below or diagonally below.':blocked==='protected'?'Erase from the top: a block directly or diagonally above prevents removal.':stroke.tool==='move'?'Move: cursor only.':stroke.tool==='erase'?'Erasing: remove exposed blocks from the top down.':defaultHint());
+  }
+  canvas.onpointerdown=event=>{
+    host.focus({preventScroll:true});
+    if(!event.isPrimary||!enabled.checked||paused||launchPending||game.phase!=='building'||![0,2].includes(event.button))return;
+    event.preventDefault();stopStroke();activatePointer();hover=pointerAt(event);
+    stroke={id:event.pointerId,tool:event.button===2?'erase':tool,last:null};
+    canvas.setPointerCapture(event.pointerId);if(hover)applyPointer(hover);
+  };
+  canvas.onpointermove=event=>{
+    if(!event.isPrimary||!enabled.checked||paused||launchPending||game.phase!=='building')return;
+    if(stroke&&!(event.buttons&3))stopStroke();
+    activatePointer();hover=pointerAt(event);
+    if(hover){game.cursor={...hover};if(stroke?.id===event.pointerId)applyPointer(hover);else hint(defaultHint());}
+    else if(stroke)stroke.last=null;
+  };
+  canvas.onpointerup=event=>{if(stroke?.id===event.pointerId){const cell=pointerAt(event);if(cell)applyPointer(cell);stopStroke();}};
+  canvas.onpointercancel=()=>{stopStroke();hover=null;};
+  canvas.onlostpointercapture=event=>{if(stroke?.id===event.pointerId)stopStroke();};
+  canvas.onpointerleave=()=>{hover=null;if(stroke)stroke.last=null;};
+  canvas.oncontextmenu=event=>{if(enabled.checked&&!paused&&game.phase==='building')event.preventDefault();};
+  for(const button of toolButtons)button.onclick=()=>{
+    release();tool=button.dataset.tool as Tool;pointerActive=true;game.mode='move';syncTools();host.focus({preventScroll:true});
+  };
+  enabled.onchange=()=>{release();pointerActive=false;game.mode='move';syncTools();};
+  function release() {stopStroke();hover=null;pointerActive=false;launchPending=false;game.release();}
+  const press = (key: string, down: boolean) => {
+    if(paused||disposed)return;
+    if(down){
+      stopStroke();hover=null;
+      if(pointerActive){game.release();game.mode=tool;pointerActive=false;}
+      const selected=({'7':'move','8':'draw','9':'erase'} as Record<string,Tool>)[key];if(selected){tool=selected;syncTools();}
+    }
+    game.key(key,down);
+    if(down&&key.toLowerCase()==='q'&&game.phase==='building'){launchPending=true;syncTools();}
+  };
   const keydown = (event: KeyboardEvent) => {
     if (document.activeElement !== host || event.ctrlKey || event.metaKey || event.altKey) return;
     if (/^[0-9a-z]$/i.test(event.key) || event.key === 'Shift') {event.preventDefault(); press(event.key, true);}
@@ -21,10 +90,17 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
       if (code >= 128 && code < 192) for (let bit = 0; bit < 6; bit++) if (code & (1 << bit))
         ctx.fillRect(10 + (position % 64) * 8 + (bit % 2) * 4, 10 + Math.floor(position / 64) * 24 + Math.floor(bit / 2) * 8, 4, 8);
     });
-    if (game.phase === 'building' && Math.floor(time / 300) % 2 === 0) {
+    if(game.phase==='building'&&pointerActive&&hover&&enabled.checked&&!paused){
+      const activeTool=stroke?.tool??tool;const result=activeTool==='move'?'unchanged':game.editStatus(hover.x,hover.y,activeTool);
+      ctx.strokeStyle=result==='unsupported'||result==='protected'?'#f29d8b':activeTool==='erase'?'#f2d490':'#c1eca8';
+      ctx.lineWidth=1;ctx.strokeRect(10+hover.x*4+.5,10+hover.y*8+.5,3,7);
+    } else if (game.phase === 'building' && Math.floor(time / 300) % 2 === 0) {
       const {x,y} = game.cursor; ctx.fillStyle = game.point(x,y) ? '#334843' : '#e6e7fc'; ctx.fillRect(10+x*4, 10+y*8, 4, 8);
     }
-    const description = game.phase === 'building' ? `Building · ${game.mode}` : `Bombardment · shot ${game.shots} · power ${Math.round(game.power*10)} · angle ${String.fromCharCode(65+Math.round(game.angle*26))}`;
+    const buildMode=pointerActive&&enabled.checked ? stroke?.tool??tool : game.mode;
+    const description = game.phase === 'building' ? `Building · ${buildMode}` : `Bombardment · shot ${game.shots} · power ${Math.round(game.power*10)} · angle ${String.fromCharCode(65+Math.round(game.angle*26))}`;
+    if(game.phase!=='building')launchPending=false;
+    syncTools();
     status.textContent = paused ? 'Paused' : game.phase === 'error' ? `Stopped: ${game.error}. Restart to begin again.` : `TypeScript · ${description}`;
   }
   function frame(time: number) {
@@ -46,10 +122,12 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   draw(0); handle = requestAnimationFrame(frame);
   return {
     press, release, togglePause, get paused() {return paused;},
-    restart() {game.reset(); paused=false; elapsed=previous=0; draw(performance.now());},
+    restart() {release();game.reset();tool='draw';paused=false;elapsed=previous=0;draw(performance.now());},
     snapshot() {return [...game.screen];},
-    diagnostics() {return {ticks:game.ticks, paused, held:[...game.held], phase:game.phase, mode:game.mode, shots:game.shots, activity:game.activity, stepMs:game.stepMs, error:game.error};},
+    diagnostics() {return {ticks:game.ticks, paused, held:[...game.held], phase:game.phase, mode:game.mode, pointerTool:tool, mouseControls:enabled.checked, dragging:!!stroke, cursor:{...game.cursor}, shots:game.shots, activity:game.activity, stepMs:game.stepMs, error:game.error};},
     dispose() {disposed=true; release(); cancelAnimationFrame(handle);
+      tools.remove();feedback.remove();
+      canvas.onpointerdown=canvas.onpointermove=canvas.onpointerup=canvas.onpointercancel=canvas.onlostpointercapture=canvas.onpointerleave=null;canvas.oncontextmenu=null;
       document.removeEventListener('keydown',keydown); document.removeEventListener('keyup',keyup);
       host.removeEventListener('blur',release); window.removeEventListener('blur',release); document.removeEventListener('visibilitychange',visibility);}
   };

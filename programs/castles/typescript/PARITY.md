@@ -1,7 +1,8 @@
 # TypeScript baseline: Castles v05 + FALL v6
 
-Implemented October 29, 2026. This is a first playable behavior baseline for
-review; later improvements are deliberately deferred. The recovered BASIC,
+Implemented October 29, 2026. The calibrated keyboard baseline is preserved by
+tag `castles-typescript-v02`. The current implementation adds optional mouse,
+touch, and pen editing while retaining the original game rules. The recovered BASIC,
 assembly sources, and canonical historical source history are unchanged.
 
 ## Kept from the reference
@@ -65,3 +66,23 @@ add fixture setup/sentinels. They are test programs, not edited historical saves
 
 Run `npm test`, `npm run typecheck`, `npm run build`, and `npm run test:browser`.
 Use the Original/TypeScript selectors on the instructions page for manual review.
+
+## Pointer controls added after the baseline
+
+The TypeScript player supports free pointer positioning and click/drag drawing.
+Draw, Erase, and Move tools are visible; right-drag temporarily erases without
+changing the selected tool. Turn off Mouse controls for keyboard-only play.
+The original emulator and recovered sources are unchanged.
+
+Mouse strokes visit every crossed cell in order, so rapid motion leaves no
+sampling gaps. Drawing still requires lower/direct-diagonal support; erasing is
+blocked by a block directly or diagonally above. Keyboard and pointer input use
+the same engine legality checks. There is no automatic support creation or
+relaxed erase rule. Borders and ground remain outside the editable area.
+
+The browser adapter maps CSS-scaled canvas coordinates through CRT padding and
+non-square block dimensions. Pointer capture ends on release/cancel, pause,
+blur, restart, navigation, keyboard input, or bombardment. A pending Q command
+locks pointer input so mouse movement cannot cancel it. Tests cover supported
+strokes, protected/top-down erasing, right-drag, free movement, keyboard-only
+fallback, cancellation, pause/bombardment lockout, and emulated touch taps.

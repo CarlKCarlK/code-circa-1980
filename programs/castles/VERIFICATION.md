@@ -64,3 +64,11 @@ Five settling fixtures match executed Z80 cycle totals to floating-point
 tolerance; eight scattered-block fixtures match within 0.1 percent. A browser
 check measures actual flight advance over 600ms. Archive/gameplay comparisons,
 all six browser tests, typechecking, and production build pass.
+
+## Pointer editing
+
+Added mouse/pen/touch pointer input to the TypeScript player, preserving shared
+support/erase predicates and the calibrated keyboard path. Five pointer model
+tests and three browser scenarios cover interpolation, legality, right-drag,
+mode switches, cancellation, pause/bombardment locks, and scaled touch taps.
+The previous ROM/Z80/timing comparisons and original emulator tests still apply.
