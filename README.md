@@ -52,3 +52,5 @@ Code authored by Carl Kadie is available under either [MIT](LICENSE-MIT) or
 [Apache-2.0](LICENSE-APACHE), at your option (`MIT OR Apache-2.0`). Preserve historical
 copyright notices. Third-party dependencies retain their own terms; see
 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
+Future ideas are tracked in [TODO.md](TODO.md).

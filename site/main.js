@@ -5,6 +5,7 @@ const app = document.querySelector('#app');
 let player = null, navigation = 0;
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const route = (program, version, play=false) => `#/program/${program.id}/${version.id}${play ? '/play' : ''}`;
+const defaultEdition = program => program.defaultImplementation==='typescript' && program.modern ? program.modern : program.versions.find(v=>v.id===program.defaultVersion);
 const crumbs = program => `<nav aria-label="Breadcrumb"><a href="#/">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
 function versionList(program, selected) {
  return `<details class="versions"><summary>${program.versions.length} recovered versions · development order is inferred</summary><p>${escape(program.versionOrder)}</p><ol>${program.versions.map(v=>`<li><a href="${route(program,v)}" ${selected.id===v.id?'aria-current="page"':''}>${escape(v.id.toUpperCase())} · ${escape(v.label)}</a><span class="small">${escape(v.capture)} / save ${v.save}${v.playable?'':' · source only'}</span><p>${escape(v.note)}</p></li>`).join('')}</ol></details>`;
@@ -15,11 +16,11 @@ async function render() {
   const parts=location.hash.slice(1).split('/').filter(Boolean);
   if (!parts.length) {
     document.title = 'Code Circa 1980';
-    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from my tapes, one program at a time.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<a class="program-card" href="${route(p,p.versions.find(v=>v.id===p.defaultVersion))}"><div class="card-art" aria-hidden="true"><span class="castle-art">▟▙ ▟▙ ▟▙<br>██▄██▄██<br>████████<br>███  ███</span></div><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)} / Original BASIC</span><h2>${escape(p.title)} <span>↗</span></h2><p>${escape(p.description)}</p><span class="card-link">Instructions & play →</span></div></a>`).join('')}</section><p class="collection-note">A small collection, with room to grow. Games, tools, mathematics, and experiments.</p>`;
+    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from my tapes, one program at a time.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<a class="program-card" href="${route(p,defaultEdition(p))}"><div class="card-art" aria-hidden="true"><span class="castle-art">▟▙ ▟▙ ▟▙<br>██▄██▄██<br>████████<br>███  ███</span></div><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)} / Original BASIC</span><h2>${escape(p.title)} <span>↗</span></h2><p>${escape(p.description)}</p><span class="card-link">Instructions & play →</span></div></a>`).join('')}</section><p class="collection-note">A small collection, with room to grow. Games, tools, mathematics, and experiments.</p>`;
     return;
   }
   const program=programs.find(p=>parts[0]==='program' && p.id===parts[1]);
-  const version=parts[2]==='typescript' ? program?.modern : program?.versions.find(v=>v.id===(parts[2]||program.defaultVersion));
+  const version=!parts[2] && program ? defaultEdition(program) : parts[2]==='typescript' ? program?.modern : program?.versions.find(v=>v.id===parts[2]);
   if(!program || !version){app.innerHTML='<h1>Program not found</h1><p><a href="#/">Back to the collection</a></p>';return;}
   document.title=`${program.title} · Code Circa 1980`;
   const playing=parts[3]==='play' && version.playable;

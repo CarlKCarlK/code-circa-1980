@@ -86,3 +86,28 @@ blur, restart, navigation, keyboard input, or bombardment. A pending Q command
 locks pointer input so mouse movement cannot cancel it. Tests cover supported
 strokes, protected/top-down erasing, right-drag, free movement, keyboard-only
 fallback, cancellation, pause/bombardment lockout, and emulated touch taps.
+
+### Floating controls and optional direction assist
+
+The TypeScript player now keeps its controls in a movable, resizable overlay.
+Collapse and opacity controls, plus remembered layout, are presentation changes.
+Grid assist steadies vertical/horizontal strokes and logical one-column-per-row
+diagonals; Free restores unsnapped mouse strokes. Keyboard controls and the
+original emulator remain available. Support and erase rules are unchanged.
+Cannon sliders queue power and angle for the next shot, preserving calibrated
+flight and settling timing. No historical source was edited.
+
+Grid assist waits for three cells of movement before choosing its first direction,
+favors diagonal intent at the 2:1 boundary, and tolerates more sideways jitter
+before turning. The Diagonal option locks a stroke to its initial rising/falling
+one-column-per-row diagonal, avoiding extra blocks from incidental axis changes.
+
+The modern controls allow Return to building during bombardment, then Start
+bombardment again without restarting the field. The current action is canceled,
+an active projectile is removed, and cannon positions/settings are retained.
+This is a deliberate interface extension; the original emulator and historical
+falling/support rules are unchanged.
+
+Keep the original FALL behavior by user preference: stationary blocks need one
+of three supports; moving blocks continue down or diagonally until all three
+lower positions are occupied or they reach the ground.

@@ -66,7 +66,9 @@ test('touch taps draw and erase correctly on a narrow scaled canvas',async({brow
   await page.goto(`${test.info().project.use.baseURL}/?test#/program/castles/typescript/play`);
   await expect(page.locator('#status')).toContainText('TypeScript · Building');
   for(const y of [46,45]){const p=await at(page,64,y);await page.touchscreen.tap(p.x,p.y);expect(await point(page,64,y)).toBe(true);}
+  await page.getByRole('button',{name:'Expand controls',exact:true}).click();
   await page.getByRole('button',{name:'Erase',exact:true}).click();
+  await page.getByRole('button',{name:'Collapse controls',exact:true}).click();
   const p=await at(page,64,45);await page.touchscreen.tap(p.x,p.y);expect(await point(page,64,45)).toBe(false);
   expect(await point(page,64,46)).toBe(true);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

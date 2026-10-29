@@ -72,3 +72,28 @@ support/erase predicates and the calibrated keyboard path. Five pointer model
 tests and three browser scenarios cover interpolation, legality, right-drag,
 mode switches, cancellation, pause/bombardment locks, and scaled touch taps.
 The previous ROM/Z80/timing comparisons and original emulator tests still apply.
+
+### Floating controls (2026-10-29)
+
+`npm test`: 32 passing checks, including logical-grid direction assist and
+between-shot cannon settings. `npm run build`: typecheck and production build pass.
+The nine existing Chromium browser checks pass, including actual emulator startup,
+TypeScript input, and emulated touch. An additional floating-panel browser check
+passes: drag, resize, opacity, layout persistence, collapse/expand, no painting
+through panel gestures, cannon sliders, pause, and restart. Physical touch devices
+and exhaustive gameplay equivalence have not been tested.
+
+### TypeScript default and cleaner diagonals (2026-10-29)
+
+The collection and unversioned Castles route now default to TypeScript; explicit
+historical version links retain emulator playback. All 34 unit/comparison checks
+and the production build pass. Browser regression checks confirm the default
+route, original selection, and thin supported diagonal strokes in both Grid
+assist and Diagonal mode, including an initially uneven mouse movement.
+
+### Return to building (2026-10-29)
+
+All 36 unit/comparison checks pass, including mode changes preserving construction,
+cannon settings and positions, stopping an active flight, and restarting shooting.
+Typecheck and production build pass. The panel browser check exercises shooting,
+returning to building, shooting again, pause and restart.

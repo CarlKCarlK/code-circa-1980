@@ -21,7 +21,8 @@ test('collection leads to instructions; versions and downloads remain available'
  await page.goto('/');
  await page.getByRole('link',{name:/Instructions & play/}).click();
  await expect(page.getByRole('heading',{name:'Castles',exact:true})).toBeVisible();
- await expect(page.getByRole('heading',{name:'Your first minute'})).toBeVisible();
+ await expect(page).toHaveURL(/castles\/typescript$/);
+ await expect(page.getByRole('heading',{name:'Your first minute with the keyboard'})).toBeVisible();
  await expect(page.locator('canvas')).toHaveCount(0);
  await page.locator('.source-details summary').click();
  for(const name of ['Download BASIC listing','Download original payload','Recovery provenance']){
@@ -114,7 +115,8 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?test#/program/castles/v05');
  await page.getByRole('link',{name:'TypeScript',exact:true}).click();
- await expect(page.getByRole('heading',{name:'Your first minute'})).toBeVisible();
+ await expect(page).toHaveURL(/castles\/typescript$/);
+ await expect(page.getByRole('heading',{name:'Your first minute with the keyboard'})).toBeVisible();
  await expect(page.locator('canvas')).toHaveCount(0);
  await page.getByRole('link',{name:'Play Castles'}).click();
  await expect(page.locator('#status')).toContainText('TypeScript · Building');

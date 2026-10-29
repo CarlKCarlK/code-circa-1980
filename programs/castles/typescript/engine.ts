@@ -32,11 +32,14 @@ export class Castles {
   shots = 0;
   ticks = 0;
   error = '';
+  private hasBombarded = false;
   private previousMask = -1;
   private dx = 0;
   private dy = 0;
   private short = false;
   private queued: string[] = [];
+  private pendingPower:number|undefined;
+  private pendingAngle:number|undefined;
   private action: Generator<number> | undefined;
   private previousPoint = { x: 0, y: 0 };
   readonly random: Random;
@@ -48,6 +51,7 @@ export class Castles {
     for (let x = 0; x < 128; x++) this.plot(x, 47, true);
     this.phase = 'building'; this.mode = 'move'; this.activity = 'building'; this.stepMs = 150; this.fallCycles = 0; this.cursor = { x: 64, y: 46 };
     this.power = this.angle = this.shots = this.ticks = 0; this.error = '';
+    this.pendingPower=this.pendingAngle=undefined;this.hasBombarded=false;
     this.previousMask = -1; this.dx = this.dy = 0; this.short = false;
     this.action = undefined; this.previousPoint = { x: 0, y: 0 }; this.release();
   }
@@ -56,6 +60,13 @@ export class Castles {
     if (down) { if (!this.held.has(key)) this.queued.push(key); this.held.add(key); }
     else this.held.delete(key);
   }
+  /** Modern UI settings take effect between shots, like keyboard aiming. */
+  setCannonSetting(kind:'power'|'angle',value:number):void {
+    if(this.phase!=='bombarding'||!Number.isFinite(value))return;
+    const index=Math.round(Math.max(0,Math.min(kind==='power'?9:25,value)));
+    if(kind==='power')this.pendingPower=index/10;else this.pendingAngle=index/26;
+  }
+  cannonSettings(){return {power:Math.round((this.pendingPower??this.power)*10),angle:Math.round((this.pendingAngle??this.angle)*26)};}
   release(): void { this.held.clear(); this.queued.length = 0; this.dx = this.dy = 0; this.previousMask = -1; }
   /** BASIC graphics operations truncate positive fractional coordinates. */
   point(x: number, y: number): boolean {
@@ -112,10 +123,21 @@ export class Castles {
     }
     if (this.short) { this.short = false; this.mode = 'move'; }
   }
+  /** Modern control: stop the current action and return to editing the same field. */
+  beginBuilding():void {
+    if(this.phase!=='bombarding')return;
+    if(this.activity==='flight')this.plot(this.previousPoint.x,this.previousPoint.y,false);
+    this.action=undefined;this.previousPoint={x:0,y:0};this.fallCycles=0;
+    this.release();this.short=false;this.mode='move';this.phase='building';this.activity='building';this.stepMs=150;
+  }
   beginBombardment(): void {
+    if(this.phase!=='building')return;
     this.phase = 'bombarding'; this.queued.length = 0;
-    this.cannons = [20 + this.random(15), 127 - (this.random(15) + 20)];
-    for (const x of this.cannons) this.plot(x, 47, false);
+    if(!this.hasBombarded){
+      this.cannons = [20 + this.random(15), 127 - (this.random(15) + 20)];
+      for (const x of this.cannons) this.plot(x, 47, false);
+      this.hasBombarded=true;
+    }
     this.action = this.bombardment();
   }
   step(): void {
@@ -195,6 +217,8 @@ export class Castles {
       const input = this.queued.shift() ?? [...this.held].find(k => /^[a-z0-9]$/.test(k));
       if (input && /^[0-9]$/.test(input)) this.power = Number(input) / 10;
       else if (input && /^[a-z]$/.test(input)) this.angle = (input.charCodeAt(0) - 97) / 26;
+      if(this.pendingPower!==undefined){this.power=this.pendingPower;this.pendingPower=undefined;}
+      if(this.pendingAngle!==undefined){this.angle=this.pendingAngle;this.pendingAngle=undefined;}
       const speed = this.random(0) / 10 + this.power + 0.5;
       const angle = (this.random(0) / 26 + this.angle) * 3.14159 / 2;
       const vx = speed * Math.cos(angle) * (cannon === 0 ? 1 : -1), vy = speed * Math.sin(angle);

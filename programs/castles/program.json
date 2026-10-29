@@ -4,6 +4,7 @@
   "description": "Build towers and bridges. Then put them to the test against cannon fire.",
   "kind": "Game",
   "defaultVersion": "v05",
+  "defaultImplementation": "typescript",
   "versionOrder": "Inferred development sequence, not established dates. The three tape23b drafts precede the two tape18a machine-code variants based on source changes. Within each capture, use save order.",
   "versions": [
     {
