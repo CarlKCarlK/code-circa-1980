@@ -1,27 +1,27 @@
 {
   "title": "Castles",
-  "version": "v03",
-  "label": "Artillery draft 3",
-  "capture": "tape23b",
-  "save": 11,
+  "version": "v04",
+  "label": "FALL BASIC 1",
+  "capture": "tape18a",
+  "save": 14,
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. The three tape23b drafts precede the two tape18a machine-code variants based on source changes. Within each capture, use save order.",
-  "playable_without_external_dependencies": true,
-  "dependency_note": null,
+  "playable_without_external_dependencies": false,
+  "dependency_note": "Requires an external FALL machine-code routine. This release preserves the BASIC but does not reconstruct or load that dependency.",
   "files": [
     {
       "canonical_path": "CASTLES.ASC",
-      "snapshot_path": "versions/v03/11-ARTILLERY-DRAFT03.ASC",
-      "archive_path": "tapes/recovered/tape23b/best/11-ARTILLERY-DRAFT03.ASC",
-      "sha256": "e60c2108734afe5248e55fcd4a6f530d3d4f6fdddc450605189865cf0dc89f2b",
-      "bytes": 3157
+      "snapshot_path": "versions/v04/14-FALL-GRAPHICS-BASIC-V1.ASC",
+      "archive_path": "tapes/recovered/tape18a/best/14-FALL-GRAPHICS-BASIC-V1.ASC",
+      "sha256": "44b37f9c2623a56e6b1726ba7be1bf70d09b1836464f8b57c618b8ef04547694",
+      "bytes": 3301
     },
     {
       "canonical_path": "CASTLES.BAS",
-      "snapshot_path": "versions/v03/11-ARTILLERY-DRAFT03.BAS",
-      "archive_path": "tapes/recovered/tape23b/best/11-ARTILLERY-DRAFT03.BAS",
-      "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
-      "bytes": 2507
+      "snapshot_path": "versions/v04/14-FALL-GRAPHICS-BASIC-V1.BAS",
+      "archive_path": "tapes/recovered/tape18a/best/14-FALL-GRAPHICS-BASIC-V1.BAS",
+      "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+      "bytes": 2637
     }
   ]
 }
