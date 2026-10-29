@@ -55,3 +55,12 @@ v05 is now executed with a documented modern build of recovered FALL assembly v6
 The earlier statement that v05 was not executed describes the initial import only.
 See [TypeScript parity notes](typescript/PARITY.md) for the newer execution and
 comparison tests. v04 remains unexecuted. Original recovery evidence is unchanged.
+
+## Timing calibration after play feedback
+
+The TypeScript player now separates BASIC projectile/setup/impact delays from
+the much faster Z80 settling work. See [timing measurements](typescript/TIMING.md).
+Five settling fixtures match executed Z80 cycle totals to floating-point
+tolerance; eight scattered-block fixtures match within 0.1 percent. A browser
+check measures actual flight advance over 600ms. Archive/gameplay comparisons,
+all six browser tests, typechecking, and production build pass.

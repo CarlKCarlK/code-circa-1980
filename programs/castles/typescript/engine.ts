@@ -1,3 +1,5 @@
+import timing from './timing-calibration.json' with {type:'json'};
+const milliseconds = (cycles: number) => cycles * 1000 / timing.clockHz;
 /** Castles v05 rules, translated from recovered BASIC and FALL assembly v6.
  * Historical inputs stay separate. No emulator or DOM is needed by this model.
  */
@@ -20,6 +22,9 @@ export class Castles {
   readonly held = new Set<string>();
   phase: 'building' | 'bombarding' | 'error' = 'building';
   mode: Mode = 'move';
+  activity: 'building' | 'aiming' | 'flight' | 'impact' | 'settling' | 'between-shots' = 'building';
+  stepMs = 150;
+  private fallCycles = 0;
   cursor = { x: 64, y: 46 };
   cannons = [0, 0];
   power = 0;
@@ -32,7 +37,7 @@ export class Castles {
   private dy = 0;
   private short = false;
   private queued: string[] = [];
-  private action: Generator<void> | undefined;
+  private action: Generator<number> | undefined;
   private previousPoint = { x: 0, y: 0 };
   readonly random: Random;
   constructor(random: Random = upper => upper ? 1 + Math.floor(Math.random() * upper) : Math.random()) {
@@ -41,7 +46,7 @@ export class Castles {
   reset(): void {
     this.screen.fill(32); this.screen.fill(128, 0, 960); // v05 line 15
     for (let x = 0; x < 128; x++) this.plot(x, 47, true);
-    this.phase = 'building'; this.mode = 'move'; this.cursor = { x: 64, y: 46 };
+    this.phase = 'building'; this.mode = 'move'; this.activity = 'building'; this.stepMs = 150; this.fallCycles = 0; this.cursor = { x: 64, y: 46 };
     this.power = this.angle = this.shots = this.ticks = 0; this.error = '';
     this.previousMask = -1; this.dx = this.dy = 0; this.short = false;
     this.action = undefined; this.previousPoint = { x: 0, y: 0 }; this.release();
@@ -104,12 +109,20 @@ export class Castles {
   }
   step(): void {
     this.ticks++;
-    try { if (this.phase === 'building') this.buildStep(); else if (this.phase === 'bombarding') this.action?.next(); }
+    try {
+      if (this.phase === 'building') { this.stepMs = 150; this.buildStep(); }
+      else if (this.phase === 'bombarding') {
+        const delay = this.action?.next().value;
+        this.stepMs = typeof delay === 'number' && delay > 0 ? delay : 150;
+      }
+    }
     catch (error) { this.phase = 'error'; this.error = error instanceof Error ? error.message : String(error); }
   }
   /** Direct VRAM access used by FALL v6, including its 8-bit X arithmetic. */
   private assemblyBit(x: number, y: number, operation: 'test' | 'set' | 'reset'): boolean {
     x &= 255; y &= 255;
+    this.fallCycles += timing.fall.testBaseCycles + timing.fall.testRowIncrementCycles * Math.floor(y / 3)
+      + (x & 1) * timing.fall.oddXAdjustmentCycles + (operation === 'test' ? 0 : timing.fall.writeExtraCycles);
     const address = Math.floor(y / 3) * 64 + (x >> 1), bit = 1 << ((y % 3) * 2 + (x & 1));
     // Reads beyond VRAM are treated as zero here. The Z80 can instead see BASIC
     // workspace RAM there: this is a documented edge-case parity limitation.
@@ -118,42 +131,55 @@ export class Castles {
     if (operation === 'set') after |= bit; else if (operation === 'reset') after &= ~bit;
     this.screen[address] = after; return (before & bit) !== 0;
   }
-  private *fallBlock(x: number, y: number): Generator<void> {
-    if (!this.assemblyBit(x, y, 'test')) return;
+  private takeFallTime(): number { const cycles = this.fallCycles; this.fallCycles = 0; return milliseconds(cycles); }
+  private *fallBlock(x: number, y: number): Generator<number> {
+    const present = this.assemblyBit(x, y, 'test');
+    this.fallCycles += present ? timing.fall.occupiedEntryControlCycles : timing.fall.emptyEntryControlCycles;
+    if (!present) { yield this.takeFallTime(); return; }
     let falling = false;
     while (y !== 46) {
       const below = this.assemblyBit(x, y + 1, 'test');
       const right = this.assemblyBit(x + 1, y + 1, 'test');
       const left = this.assemblyBit(x - 1, y + 1, 'test');
+      const mask = (below ? 0 : 1) | (left ? 0 : 2) | (right ? 0 : 4);
+      this.fallCycles += timing.fall.loopControlCycles[falling ? 1 : 0][mask];
       // At rest: any of the three supports holds a block. Once moving, it
       // continues through an available center/left/right route (CHK/FIRM).
-      if ((!falling && (below || right || left)) || (falling && below && right && left)) return;
+      if ((!falling && (below || right || left)) || (falling && below && right && left)) { yield this.takeFallTime(); return; }
       falling = true; this.assemblyBit(x, y, 'reset'); y++;
-      if (!below) { /* straight down */ } else if (!left) { x--; if (x < 0) return; }
-      else { x++; if (x === 128) return; }
-      this.assemblyBit(x, y, 'set'); yield;
+      if (!below) { /* straight down */ } else if (!left) { x--; if (x < 0) { yield this.takeFallTime(); return; } }
+      else { x++; if (x === 128) { yield this.takeFallTime(); return; } }
+      this.assemblyBit(x, y, 'set'); yield this.takeFallTime();
     }
+    this.fallCycles += timing.fall.groundReturnCycles; yield this.takeFallTime();
   }
-  *settle(row: number): Generator<void> {
-    for (let y = row; y >= 0; y--) for (let x = 127; x >= 0; x--) yield* this.fallBlock(x, y);
+  *settle(row: number): Generator<number> {
+    this.activity = 'settling'; this.fallCycles = timing.fall.routineStartCycles;
+    yield this.takeFallTime();
+    for (let y = row; y >= 0; y--) {
+      for (let x = 127; x >= 0; x--) {this.fallCycles += timing.fall.outerCellCycles; yield* this.fallBlock(x, y);}
+      yield milliseconds(timing.fall.outerRowCycles);
+    }
+    yield milliseconds(timing.fall.routineReturnCycles);
   }
-  *impact(x: number, y: number): Generator<void> {
+  *impact(x: number, y: number): Generator<number> {
+    this.activity = 'impact';
     this.plot(x, y, false); this.plot(this.previousPoint.x, this.previousPoint.y, false);
     for (let i = 0; i < 9; i++) {
       const x4 = this.random(3) - 2 + x, y4 = this.random(3) - 2 + y;
       const x5 = this.random(3) - 2 + x, y5 = this.random(3) - 2 + y;
       const first = this.point(x4, y4), second = this.point(x5, y5);
-      if (first === second) continue;
+      if (first === second) {yield milliseconds(timing.basic.impactAttemptCycles); continue;}
       const from = first ? { x: x4, y: y4 } : { x: x5, y: y5 };
       const to = first ? { x: x5, y: y5 } : { x: x4, y: y4 };
       this.plot(from.x, from.y, false); this.plot(to.x, to.y, true);
       // BASIC 980/990: half the scattered destination blocks are removed.
       if (this.random(2) !== 1) this.plot(to.x, to.y, false);
-      yield;
+      yield milliseconds(timing.basic.impactAttemptCycles);
     }
     if (y < 46) yield* this.settle(Math.floor(y + 1));
   }
-  private *bombardment(): Generator<void> {
+  private *bombardment(): Generator<number> {
     for (;;) for (let cannon = 0; cannon < 2; cannon++) {
       const input = this.queued.shift() ?? [...this.held].find(k => /^[a-z0-9]$/.test(k));
       if (input && /^[0-9]$/.test(input)) this.power = Number(input) / 10;
@@ -161,14 +187,15 @@ export class Castles {
       const speed = this.random(0) / 10 + this.power + 0.5;
       const angle = (this.random(0) / 26 + this.angle) * 3.14159 / 2;
       const vx = speed * Math.cos(angle) * (cannon === 0 ? 1 : -1), vy = speed * Math.sin(angle);
-      this.shots++;
+      this.shots++; this.activity = 'aiming'; yield milliseconds(timing.basic.shotSetupCycles);
+      this.activity = 'flight';
       for (let distance = Math.sign(vx); ; distance += Math.sign(vx)) {
         const height = projectileHeight(vx, vy, distance);
         const x = this.cannons[cannon] + distance, y = Math.fround(46 - height);
-        if (x < 0 || y < 0 || x > 127 || y > 46) break;
+        if (x < 0 || y < 0 || x > 127 || y > 46) { this.activity = 'between-shots'; yield milliseconds(timing.basic.shotExitCycles); break; }
         if (this.point(x, y)) { yield* this.impact(x, y); break; }
         this.plot(this.previousPoint.x, this.previousPoint.y, false);
-        this.plot(x, y, true); this.previousPoint = { x, y }; yield;
+        this.plot(x, y, true); this.previousPoint = { x, y }; yield milliseconds(timing.basic.flightCycles);
       }
       // The original leaves the last plotted point when a shot exits the field.
     }

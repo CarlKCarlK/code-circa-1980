@@ -125,6 +125,12 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  await hold(page,'q',300);await hold(page,'5',800);await hold(page,'m',1800);
  await expect(page.locator('#status')).toContainText('Bombardment');
  await expect.poll(()=>page.evaluate(()=>window.__circaPlayer.diagnostics().shots),{timeout:8000}).toBeGreaterThan(1);
+ await expect.poll(()=>page.evaluate(()=>window.__circaPlayer.diagnostics().activity)).toBe('flight');
+ const beforeFlight=await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks);
+ await page.waitForTimeout(600);
+ const steps=await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks)-beforeFlight;
+ expect(steps).toBeGreaterThanOrEqual(3);expect(steps).toBeLessThanOrEqual(8); // ~117ms/step, not 20ms.
+
  await expect(page.locator('#status')).not.toContainText('Stopped');
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  const tick=await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks);await page.waitForTimeout(180);

@@ -15,7 +15,7 @@ export const screenText=m=>Array.from(screenBytes(m),c=>c>=32&&c<128?String.from
 const dependency=new URL('../../programs/castles/dependencies/fall-v6/',import.meta.url);
 export const fallBinary=new Uint8Array(fs.readFileSync(new URL('derived.bin',dependency)));
 export const fallInfo=JSON.parse(fs.readFileSync(new URL('derived.json',dependency)));
-export function runFall(screen,row,entry='PRCES'){
+export function measureFall(screen,row,entry='PRCES'){
  const m=machine();m.writeMemoryBlock(0x3c00,screen);m.writeMemoryBlock(fallInfo.origin,fallBinary);
  m.writeMemory(fallInfo.parameter_address,row);
  m.z80.regs.de=row*256; // Only used when calling FALL directly.
@@ -23,5 +23,6 @@ export function runFall(screen,row,entry='PRCES'){
  m.jumpTo(fallInfo.symbols[entry]);
  while(m.z80.regs.pc!==0x6000&&m.tStateCount<100000000)m.step();
  if(m.z80.regs.pc!==0x6000)throw Error('FALL did not return');
- return screenBytes(m);
+ return {screen:screenBytes(m),cycles:m.tStateCount,clockHz:m.clockHz};
 }
+export function runFall(screen,row,entry='PRCES'){return measureFall(screen,row,entry).screen;}

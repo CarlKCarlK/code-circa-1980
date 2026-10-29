@@ -44,9 +44,13 @@ add fixture setup/sentinels. They are test programs, not edited historical saves
 - Random draws follow the same ranges and uses, but the default generator is the
   browser's RNG, not the BASIC ROM generator. Individual games won't repeat the
   same cannon positions or debris patterns. Tests can inject a seeded generator.
-- Construction and animation use fixed simulation intervals, rather than timing
-  each BASIC/Z80 instruction. Pacing is approximate. Cursor blink is a display
-  overlay and does not affect construction, collisions, or settling.
+- Cannon flight/setup/exit and impact delays are calibrated against the running
+  v05 BASIC at Model III clock speed. FALL work uses row-, support-, and
+  operation-dependent cycle budgets checked against the executed Z80 routine.
+  BASIC timings use measured medians, not instruction-perfect replay of every
+  expression. Construction retains the port's existing 150ms adapter interval. Browser
+  frame scheduling also limits visible precision. See TIMING.md. Cursor blink is
+  a display overlay and does not affect construction, collisions, or settling.
 - Projectile arithmetic uses JavaScript single-precision rounding for the sampled
   formula. Trigonometry and every random shot have not been proven bit-identical
   to the ROM's math routines.

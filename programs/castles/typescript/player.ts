@@ -31,8 +31,8 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     if (disposed) return;
     if (!paused) {
       if (previous) elapsed += Math.min(time-previous, 250);
-      let interval = game.phase === 'building' ? 150 : 20;
-      while (elapsed >= interval) {game.step(); elapsed -= interval; interval = game.phase === 'building' ? 150 : 20;}
+      let interval = game.stepMs;
+      while (elapsed >= interval) {elapsed -= interval; game.step(); interval = game.stepMs;}
     }
     previous = time; draw(time); handle = requestAnimationFrame(frame);
   }
@@ -48,7 +48,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     press, release, togglePause, get paused() {return paused;},
     restart() {game.reset(); paused=false; elapsed=previous=0; draw(performance.now());},
     snapshot() {return [...game.screen];},
-    diagnostics() {return {ticks:game.ticks, paused, held:[...game.held], phase:game.phase, mode:game.mode, shots:game.shots, error:game.error};},
+    diagnostics() {return {ticks:game.ticks, paused, held:[...game.held], phase:game.phase, mode:game.mode, shots:game.shots, activity:game.activity, stepMs:game.stepMs, error:game.error};},
     dispose() {disposed=true; release(); cancelAnimationFrame(handle);
       document.removeEventListener('keydown',keydown); document.removeEventListener('keyup',keyup);
       host.removeEventListener('blur',release); window.removeEventListener('blur',release); document.removeEventListener('visibilitychange',visibility);}

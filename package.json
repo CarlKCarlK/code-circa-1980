@@ -8,10 +8,11 @@
     "dev": "vite --host 127.0.0.1",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test tests/archive.test.mjs tests/castles-parity.test.mjs",
+    "test": "node --test tests/archive.test.mjs tests/castles-parity.test.mjs tests/castles-timing.test.mjs",
     "test:browser": "playwright test",
     "build:fall": "node scripts/build-fall.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "calibrate:castles": "node scripts/calibrate-castles.mjs"
   },
   "dependencies": {
     "trs80-base": "2.3.1",
