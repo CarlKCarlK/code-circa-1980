@@ -17,6 +17,18 @@
       "controls": "early",
       "note": "Initial build mode and compact impact routine.",
       "unavailableReason": null
+    },
+    {
+      "id": "v02",
+      "label": "Artillery draft 2",
+      "capture": "tape23b",
+      "save": 10,
+      "raw": "versions/v02/10-ARTILLERY-DRAFT02.BAS",
+      "listing": "versions/v02/10-ARTILLERY-DRAFT02.ASC",
+      "playable": true,
+      "controls": "early",
+      "note": "Revised impacts and falling blocks.",
+      "unavailableReason": null
     }
   ]
 }

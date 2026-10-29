@@ -432,6 +432,430 @@
         }
       ],
       "version": "v01"
+    },
+    {
+      "capture": "tape23b",
+      "recovery_evidence": "tapes/recovered/tape23b/inventory.json",
+      "recovery_item": {
+        "order": 10,
+        "detected_group": 10,
+        "title": "ARTILLERY DRAFT02",
+        "title_note": "Descriptive filenames and save/template/fragment sequence labels inferred from content and capture order; source titles preserved in listings.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 722.3057708333333,
+        "source_end_s": 754.4079791666667,
+        "selected_source": {
+          "variant": "left-hp1200",
+          "index": 10,
+          "start": 722.3059375,
+          "end": 754.4079375,
+          "file": "left-hp1200/T10-85a54506bfd0.BAS",
+          "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 38,
+            "last": 1040,
+            "normal": true,
+            "parsed": 1858,
+            "bytes": 1858,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/10-ARTILLERY-DRAFT02.BAS",
+        "listing": "best/10-ARTILLERY-DRAFT02.ASC",
+        "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+        "bytes": 1858,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 38,
+          "last": 1040,
+          "normal": true,
+          "parsed": 1858,
+          "bytes": 1858,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "left-hp1200",
+            "index": 10,
+            "start": 722.3059375,
+            "end": 754.4079375,
+            "file": "left-hp1200/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 10,
+            "start": 722.3059375,
+            "end": 754.4079166666667,
+            "file": "right-boosted/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 10,
+            "start": 722.3059583333334,
+            "end": 754.4079791666667,
+            "file": "left-hp800/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 10,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 722.0057708333334,
+            "crop_end": 754.8079791666667,
+            "start": 722.3001875,
+            "end": 754.4079375,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 10,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 722.0057708333334,
+            "crop_end": 754.8079791666667,
+            "start": 722.3001875,
+            "end": 754.4079791666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 10,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 722.0057708333334,
+            "crop_end": 754.8079791666667,
+            "start": 722.3995208333333,
+            "end": 754.4079166666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "imported_files": [
+        {
+          "path": "versions/v02/10-ARTILLERY-DRAFT02.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/10-ARTILLERY-DRAFT02.BAS",
+          "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+          "bytes": 1858
+        },
+        {
+          "path": "versions/v02/10-ARTILLERY-DRAFT02.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/10-ARTILLERY-DRAFT02.ASC",
+          "sha256": "56a173b7a45f8c0da10fdecb59a62f736a44c3ab9f80e6d9cefcd6d5d995f295",
+          "bytes": 2393
+        }
+      ],
+      "version": "v02"
     }
   ]
 }
