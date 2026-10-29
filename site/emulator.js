@@ -5,12 +5,18 @@ import {decodeBasicProgram} from 'trs80-base';
 // Executes recovered tokenized BASIC through the Z80 and original BASIC ROM.
 // The library relocates the in-memory line pointers on load. The source file
 // and every archived byte remain unchanged.
-export async function createPlayer(host, url, status, title) {
+export async function createPlayer(host, url, status, title, dependency) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Could not load original program (${response.status}).`);
   const bytes = new Uint8Array(await response.arrayBuffer());
   const program = decodeBasicProgram(bytes);
   if (!program || program.error) throw new Error(program?.error || 'Invalid BASIC payload.');
+  let machineBytes;
+  if (dependency) {
+    const response=await fetch(dependency.url);
+    if (!response.ok) throw Error('Could not load FALL dependency');
+    machineBytes=new Uint8Array(await response.arrayBuffer());
+  }
   const config = Config.makeDefault().withModelType(ModelType.MODEL3).withBasicLevel(BasicLevel.LEVEL2);
   const screen = new CanvasScreen(1);
   const keyboard = new Keyboard();
@@ -48,7 +54,9 @@ export async function createPlayer(host, url, status, title) {
   document.addEventListener('visibilitychange', visibility);
   function restart() {
     release(); machine.stop(); paused = false;
-    machine.runBasicProgram(program); machine.start();
+    machine.runBasicProgram(program);
+    if (machineBytes) machine.eventScheduler.add(undefined, machine.tStateCount+machine.clockHz*0.31, () => machine.writeMemoryBlock(dependency.address,machineBytes));
+    machine.start();
     status.textContent = 'Running original BASIC · click the screen to use the keys';
   }
   function togglePause() {

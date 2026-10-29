@@ -1,0 +1,176 @@
+/** Castles v05 rules, translated from recovered BASIC and FALL assembly v6.
+ * Historical inputs stay separate. No emulator or DOM is needed by this model.
+ */
+export type Random = (upper: number) => number;
+export type Mode = 'move' | 'draw' | 'erase';
+export function seededRandom(seed = 1): Random {
+  let state = seed >>> 0;
+  return upper => { state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+    const value = state / 0x100000000; return upper ? 1 + Math.floor(value * upper) : value; };
+}
+// Level II single precision rounds intermediate arithmetic, not just final pixels.
+export function projectileHeight(vx: number, vy: number, distance: number): number {
+  const f = Math.fround; vx=f(vx); vy=f(vy);
+  const rise=f(f(vy*distance)/vx);
+  let drop=f(.5*f(.01)); drop=f(drop*distance); drop=f(drop*distance); drop=f(drop/vx); drop=f(drop/vx);
+  return f(rise-drop);
+}
+export class Castles {
+  readonly screen = new Uint8Array(1024);
+  readonly held = new Set<string>();
+  phase: 'building' | 'bombarding' | 'error' = 'building';
+  mode: Mode = 'move';
+  cursor = { x: 64, y: 46 };
+  cannons = [0, 0];
+  power = 0;
+  angle = 0;
+  shots = 0;
+  ticks = 0;
+  error = '';
+  private previousMask = -1;
+  private dx = 0;
+  private dy = 0;
+  private short = false;
+  private queued: string[] = [];
+  private action: Generator<void> | undefined;
+  private previousPoint = { x: 0, y: 0 };
+  readonly random: Random;
+  constructor(random: Random = upper => upper ? 1 + Math.floor(Math.random() * upper) : Math.random()) {
+    this.random = random; this.reset();
+  }
+  reset(): void {
+    this.screen.fill(32); this.screen.fill(128, 0, 960); // v05 line 15
+    for (let x = 0; x < 128; x++) this.plot(x, 47, true);
+    this.phase = 'building'; this.mode = 'move'; this.cursor = { x: 64, y: 46 };
+    this.power = this.angle = this.shots = this.ticks = 0; this.error = '';
+    this.previousMask = -1; this.dx = this.dy = 0; this.short = false;
+    this.action = undefined; this.previousPoint = { x: 0, y: 0 }; this.release();
+  }
+  key(key: string, down: boolean): void {
+    key = key.toLowerCase();
+    if (down) { if (!this.held.has(key)) this.queued.push(key); this.held.add(key); }
+    else this.held.delete(key);
+  }
+  release(): void { this.held.clear(); this.queued.length = 0; this.dx = this.dy = 0; this.previousMask = -1; }
+  /** BASIC graphics operations truncate positive fractional coordinates. */
+  point(x: number, y: number): boolean {
+    if (x < 0 || y < 0 || x >= 128 || y >= 48) throw Error('BASIC graphics coordinate out of range');
+    x = Math.floor(x); y = Math.floor(y);
+    const code = this.screen[Math.floor(y / 3) * 64 + Math.floor(x / 2)];
+    return code >= 128 && (code & (1 << ((y % 3) * 2 + x % 2))) !== 0;
+  }
+  plot(x: number, y: number, set: boolean): void {
+    if (x < 0 || y < 0 || x >= 128 || y >= 48) throw Error('BASIC graphics coordinate out of range');
+    x = Math.floor(x); y = Math.floor(y);
+    const address = Math.floor(y / 3) * 64 + Math.floor(x / 2), bit = 1 << ((y % 3) * 2 + x % 2);
+    let code = this.screen[address]; if (code < 128) code = 128;
+    this.screen[address] = set ? code | bit : code & ~bit;
+  }
+  /** One builder iteration (BASIC 510–650), independent of display frame rate. */
+  buildStep(): void {
+    if (this.phase !== 'building') return;
+    if (this.queued.shift() === 'q') { this.beginBombardment(); return; }
+    let mask = 0;
+    for (let i = 0; i <= 9; i++) if (this.held.has(String(i))) mask |= 1 << i;
+    if (this.held.has('shift')) mask |= 1024;
+    if (mask !== this.previousMask) {
+      this.previousMask = mask; this.dx = this.dy = 0;
+      const increment = this.held.has('shift') ? 5 : 1;
+      if (mask & 2) this.dy = -increment; else if (mask & 4) this.dy = increment;
+      if (mask & 128) this.mode = 'move'; else if (mask & 256) this.mode = 'draw'; else if (mask & 512) this.mode = 'erase';
+      if (mask & 8) this.dx = -increment; else if (mask & 16) this.dx = increment;
+      if (mask & 1) { this.short = true; this.mode = 'move'; }
+    }
+    const { x, y } = this.cursor;
+    if (x + this.dx >= 1 && x + this.dx <= 126 && y + this.dy >= 2 && y + this.dy <= 46)
+      this.cursor = { x: x + this.dx, y: y + this.dy };
+    const target = this.cursor;
+    if (this.mode === 'move' && !this.short) return;
+    if (this.short) this.mode = 'draw';
+    if (this.mode === 'draw') {
+      if ([-1, 0, 1].some(d => this.point(target.x + d, target.y + 1))) this.plot(target.x, target.y, true);
+      else this.dx = this.dy = 0;
+    } else if (this.mode === 'erase') {
+      if ([-1, 0, 1].some(d => this.point(target.x + d, target.y - 1))) this.dx = this.dy = 0;
+      else this.plot(target.x, target.y, false);
+    }
+    if (this.short) { this.short = false; this.mode = 'move'; }
+  }
+  beginBombardment(): void {
+    this.phase = 'bombarding'; this.queued.length = 0;
+    this.cannons = [20 + this.random(15), 127 - (this.random(15) + 20)];
+    for (const x of this.cannons) this.plot(x, 47, false);
+    this.action = this.bombardment();
+  }
+  step(): void {
+    this.ticks++;
+    try { if (this.phase === 'building') this.buildStep(); else if (this.phase === 'bombarding') this.action?.next(); }
+    catch (error) { this.phase = 'error'; this.error = error instanceof Error ? error.message : String(error); }
+  }
+  /** Direct VRAM access used by FALL v6, including its 8-bit X arithmetic. */
+  private assemblyBit(x: number, y: number, operation: 'test' | 'set' | 'reset'): boolean {
+    x &= 255; y &= 255;
+    const address = Math.floor(y / 3) * 64 + (x >> 1), bit = 1 << ((y % 3) * 2 + (x & 1));
+    // Reads beyond VRAM are treated as zero here. The Z80 can instead see BASIC
+    // workspace RAM there: this is a documented edge-case parity limitation.
+    if (address >= this.screen.length) return false;
+    const before = this.screen[address]; let after = before | 128;
+    if (operation === 'set') after |= bit; else if (operation === 'reset') after &= ~bit;
+    this.screen[address] = after; return (before & bit) !== 0;
+  }
+  private *fallBlock(x: number, y: number): Generator<void> {
+    if (!this.assemblyBit(x, y, 'test')) return;
+    let falling = false;
+    while (y !== 46) {
+      const below = this.assemblyBit(x, y + 1, 'test');
+      const right = this.assemblyBit(x + 1, y + 1, 'test');
+      const left = this.assemblyBit(x - 1, y + 1, 'test');
+      // At rest: any of the three supports holds a block. Once moving, it
+      // continues through an available center/left/right route (CHK/FIRM).
+      if ((!falling && (below || right || left)) || (falling && below && right && left)) return;
+      falling = true; this.assemblyBit(x, y, 'reset'); y++;
+      if (!below) { /* straight down */ } else if (!left) { x--; if (x < 0) return; }
+      else { x++; if (x === 128) return; }
+      this.assemblyBit(x, y, 'set'); yield;
+    }
+  }
+  *settle(row: number): Generator<void> {
+    for (let y = row; y >= 0; y--) for (let x = 127; x >= 0; x--) yield* this.fallBlock(x, y);
+  }
+  *impact(x: number, y: number): Generator<void> {
+    this.plot(x, y, false); this.plot(this.previousPoint.x, this.previousPoint.y, false);
+    for (let i = 0; i < 9; i++) {
+      const x4 = this.random(3) - 2 + x, y4 = this.random(3) - 2 + y;
+      const x5 = this.random(3) - 2 + x, y5 = this.random(3) - 2 + y;
+      const first = this.point(x4, y4), second = this.point(x5, y5);
+      if (first === second) continue;
+      const from = first ? { x: x4, y: y4 } : { x: x5, y: y5 };
+      const to = first ? { x: x5, y: y5 } : { x: x4, y: y4 };
+      this.plot(from.x, from.y, false); this.plot(to.x, to.y, true);
+      // BASIC 980/990: half the scattered destination blocks are removed.
+      if (this.random(2) !== 1) this.plot(to.x, to.y, false);
+      yield;
+    }
+    if (y < 46) yield* this.settle(Math.floor(y + 1));
+  }
+  private *bombardment(): Generator<void> {
+    for (;;) for (let cannon = 0; cannon < 2; cannon++) {
+      const input = this.queued.shift() ?? [...this.held].find(k => /^[a-z0-9]$/.test(k));
+      if (input && /^[0-9]$/.test(input)) this.power = Number(input) / 10;
+      else if (input && /^[a-z]$/.test(input)) this.angle = (input.charCodeAt(0) - 97) / 26;
+      const speed = this.random(0) / 10 + this.power + 0.5;
+      const angle = (this.random(0) / 26 + this.angle) * 3.14159 / 2;
+      const vx = speed * Math.cos(angle) * (cannon === 0 ? 1 : -1), vy = speed * Math.sin(angle);
+      this.shots++;
+      for (let distance = Math.sign(vx); ; distance += Math.sign(vx)) {
+        const height = projectileHeight(vx, vy, distance);
+        const x = this.cannons[cannon] + distance, y = Math.fround(46 - height);
+        if (x < 0 || y < 0 || x > 127 || y > 46) break;
+        if (this.point(x, y)) { yield* this.impact(x, y); break; }
+        this.plot(this.previousPoint.x, this.previousPoint.y, false);
+        this.plot(x, y, true); this.previousPoint = { x, y }; yield;
+      }
+      // The original leaves the last plotted point when a shot exits the field.
+    }
+  }
+}

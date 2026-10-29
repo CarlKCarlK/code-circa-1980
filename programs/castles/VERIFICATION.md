@@ -48,3 +48,10 @@ full executable path. Browser tests use production preview on localhost:5181.
 `?test` exposes read-only screen/clock inspection for the tests; it does not patch
 or replace the historical program. Recovery `execution_tested: false` fields in
 provenance describe the original recovery pass, not this later browser verification.
+
+## Later v05 / TypeScript verification
+
+v05 is now executed with a documented modern build of recovered FALL assembly v6.
+The earlier statement that v05 was not executed describes the initial import only.
+See [TypeScript parity notes](typescript/PARITY.md) for the newer execution and
+comparison tests. v04 remains unexecuted. Original recovery evidence is unchanged.

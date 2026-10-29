@@ -53,3 +53,15 @@ tags (for example, `castles-v01`) to make each canonical revision easy to compar
 Append this history when earlier commits are already published; do not rewrite
 user history. Use actual import dates, preserve all historical bytes, and explain
 when the latest historical source differs from the website's playable default.
+
+## Native TypeScript implementations
+
+Behavior first, improvements later. Castles now uses v05 plus FALL assembly v6
+as its native TypeScript reference; v03 remains the self-contained earlier
+comparison. Keep `programs/castles/typescript/` separate from all recovered files.
+The modern implementation is a first review baseline, with differences documented
+in its PARITY.md. Do not silently claim cycle-exact or exhaustive equivalence.
+Use `npm run typecheck`; `npm test` also runs ROM/Z80 comparison fixtures.
+Use `npm run build:fall` to reproduce the derived executable; never describe that
+modern build as recovered historical machine code. Record provenance for any
+new external dependency before enabling a historical version in the player.

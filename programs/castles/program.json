@@ -3,7 +3,7 @@
   "title": "Castles",
   "description": "Build towers and bridges. Then put them to the test against cannon fire.",
   "kind": "Game",
-  "defaultVersion": "v03",
+  "defaultVersion": "v05",
   "versionOrder": "Inferred development sequence, not established dates. The three tape23b drafts precede the two tape18a machine-code variants based on source changes. Within each capture, use save order.",
   "versions": [
     {
@@ -61,10 +61,15 @@
       "save": 24,
       "raw": "versions/v05/24-FALL-GRAPHICS-BASIC-V2.BAS",
       "listing": "versions/v05/24-FALL-GRAPHICS-BASIC-V2.ASC",
-      "playable": false,
+      "playable": true,
       "controls": "modes",
-      "note": "Machine-code variant with a changed background; follows FALL BASIC 1 within tape18a.",
-      "unavailableReason": "Requires an external FALL machine-code routine. This release preserves the BASIC but does not reconstruct or load that dependency."
+      "note": "Latest recovered BASIC with FALL assembly v6. Machine code is a documented modern assembly of unchanged recovered source.",
+      "unavailableReason": null,
+      "machineCode": {
+        "file": "dependencies/fall-v6/derived.bin",
+        "address": 32512,
+        "parameter": 32725
+      }
     }
   ]
 }

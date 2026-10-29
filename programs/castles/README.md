@@ -6,9 +6,11 @@ The older Artillery/FALL filenames are recovery catalog labels.
 
 The collection opens the instructions before offering the emulator. Start the
 website with `npm run dev` from the repository root, choose Castles, and select
-**Play Castles**. The default is v03, the last recovered self-contained BASIC draft.
+**Play Castles**. The default original is v05, with its FALL assembly routine loaded automatically.
+Choose **TypeScript** to play the native browser implementation of v05. The
+self-contained v03 remains available among the recovered versions.
 
-## Starting with v03
+## Playing v03, v05, or TypeScript
 
 1. Click the emulator screen.
 2. Tap **8** to enable drawing.
@@ -52,8 +54,8 @@ We preserve both useful views:
 Tags `castles-v01` through `castles-v05` identify the canonical history commits.
 For example, `git diff castles-v01 castles-v03 -- programs/castles/original/CASTLES.ASC`
 compares the early builder with the persistent-mode version. The current canonical
-source is v05, the latest inferred historical version; the playable website still
-defaults to self-contained v03.
+source is v05, the latest inferred historical version; the website now defaults to v05 with its derived FALL dependency loaded.
+Self-contained v03 remains available for comparison.
 
 Every recovered listing and tokenized BASIC payload remains unchanged.
 [provenance.json](provenance.json) contains source paths, hashes, capture times,
@@ -61,10 +63,20 @@ structural validation, and matching-channel evidence from the recovery archive.
 The emulator's loader relocates in-memory BASIC pointers for execution. It does
 not modify the recovered files.
 
-v04 and v05 have complete BASIC payloads but require an external FALL machine-code
-routine via POKE/USR. Their source is available for study and download. Related
-assembly saves and a damaged SYSTEM header remain in the `trs80` archive; this
-website does not assemble, reconstruct, or load that dependency.
+v04 and v05 require external FALL machine code via POKE/USR. v05 now loads a
+214-byte executable assembled from recovered FALL assembly v6. The unchanged
+editor payload/listing and a reproducible build manifest are in
+[dependencies/fall-v6](dependencies/fall-v6/README.md). This is a modern build,
+not a recovered historical executable. v04 remains source only.
+
+## First TypeScript implementation
+
+[typescript/engine.ts](typescript/engine.ts) contains the v05 construction,
+projectile, debris, and FALL v6 rules; `player.ts` provides Canvas and input.
+The emulator is kept alongside it for comparison. See
+[typescript/PARITY.md](typescript/PARITY.md) for comparison evidence and limits.
+This is the initial behavior baseline for review, before gameplay or control
+improvements. It is not a claim of cycle-exact or exhaustive equivalence.
 
 ## Verification
 

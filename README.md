@@ -23,9 +23,10 @@ recovery archive together. Node.js 22.12+ (or 24+) is required.
 ## First program
 
 [Castles](programs/castles/README.md) has five recovered versions, each in its
-own Git commit in a documented, inferred development order. Three self-contained
-BASIC versions are playable; two later variants require external machine code
-and are available as source. The default player runs v03 unchanged.
+own Git commit in a documented, inferred development order. Four recovered BASIC versions are playable: v01–v03 are self-contained, and v05
+loads a modern assembly of its recovered FALL v6 source. v04 remains source only.
+The default original is now v05. Choose **TypeScript** on the instructions page
+for the first native browser port, based on v05 and its assembly routine.
 
 ## Organization
 
