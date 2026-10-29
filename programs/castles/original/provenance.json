@@ -1,9 +1,9 @@
 {
   "title": "Castles",
-  "version": "v01",
-  "label": "Artillery draft 1",
+  "version": "v02",
+  "label": "Artillery draft 2",
   "capture": "tape23b",
-  "save": 9,
+  "save": 10,
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. The three tape23b drafts precede the two tape18a machine-code variants based on source changes. Within each capture, use save order.",
   "playable_without_external_dependencies": true,
@@ -11,17 +11,17 @@
   "files": [
     {
       "canonical_path": "CASTLES.ASC",
-      "snapshot_path": "versions/v01/09-ARTILLERY-DRAFT01.ASC",
-      "archive_path": "tapes/recovered/tape23b/best/09-ARTILLERY-DRAFT01.ASC",
-      "sha256": "d1c130ae3efbfe61883ec398518e29dcbadc89e72dfe212c1bd41d6cd3a62077",
-      "bytes": 2089
+      "snapshot_path": "versions/v02/10-ARTILLERY-DRAFT02.ASC",
+      "archive_path": "tapes/recovered/tape23b/best/10-ARTILLERY-DRAFT02.ASC",
+      "sha256": "56a173b7a45f8c0da10fdecb59a62f736a44c3ab9f80e6d9cefcd6d5d995f295",
+      "bytes": 2393
     },
     {
       "canonical_path": "CASTLES.BAS",
-      "snapshot_path": "versions/v01/09-ARTILLERY-DRAFT01.BAS",
-      "archive_path": "tapes/recovered/tape23b/best/09-ARTILLERY-DRAFT01.BAS",
-      "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
-      "bytes": 1634
+      "snapshot_path": "versions/v02/10-ARTILLERY-DRAFT02.BAS",
+      "archive_path": "tapes/recovered/tape23b/best/10-ARTILLERY-DRAFT02.BAS",
+      "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+      "bytes": 1858
     }
   ]
 }
