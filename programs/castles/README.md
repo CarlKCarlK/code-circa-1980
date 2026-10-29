@@ -4,6 +4,17 @@ Build towers and bridges from supported blocks, then let two cannons bombard the
 **Castles** is the official name, confirmed by Carl Kadie on October 29, 2026.
 The older Artillery/FALL filenames are recovery catalog labels.
 
+Probably written around **1982**. The opposite side of the tape containing the
+later Castles versions holds Ricky Rat, with a source comment dated **6 August
+1982**. This is contextual evidence, not a direct date for Castles. Earlier drafts
+also share tape23b with Chemistry Balancer II, copyright 1981.
+
+Castles began in TRS-80 BASIC. Later versions added a **Z80 assembly routine for
+falling blocks after cannon impacts**, likely to speed up the simulation. Our
+current reference is **v05 BASIC plus FALL assembly v6**; both now run together in
+the emulator, and the TypeScript port follows their rules. v03 remains available
+as the earlier, entirely BASIC version.
+
 The collection opens the instructions before offering the emulator. Start the
 website with `npm run dev` from the repository root, choose Castles, and select
 **Play Castles**. The default original is v05, with its FALL assembly routine loaded automatically.
