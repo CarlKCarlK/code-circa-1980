@@ -41,3 +41,15 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
 
 `npm ci`, `npm run dev`, `npm test`, `npm run build`, `npm run test:browser`.
 For a nonstandard local browser installation, set PLAYWRIGHT_CHROMIUM_EXECUTABLE.
+
+## Preserve both views of historical versions
+
+Keep every recovered version together in `programs/<slug>/versions/` for website
+selection and downloads. Also maintain stable canonical paths under
+`programs/<slug>/original/` for the listing, raw payload, and provenance. Advance
+those same files in one commit per version, in documented inferred development
+order, verifying each committed blob against its snapshot hash. Add program-specific
+tags (for example, `castles-v01`) to make each canonical revision easy to compare.
+Append this history when earlier commits are already published; do not rewrite
+user history. Use actual import dates, preserve all historical bytes, and explain
+when the latest historical source differs from the website's playable default.

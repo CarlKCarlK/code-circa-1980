@@ -41,7 +41,21 @@ save order is evidence; the cross-tape ordering is a best guess based on source
 changes. No original writing dates have been invented. Each version was imported
 in its own Git commit, using the actual import date.
 
-`versions/` retains every recovered listing and tokenized BASIC payload unchanged.
+We preserve both useful views:
+
+- `versions/` retains all five recovered listings and payloads side by side for
+  downloads, study, and website version selection.
+- [original/CASTLES.ASC](original/CASTLES.ASC) and `original/CASTLES.BAS` evolve
+  through five consecutive commits, so GitHub shows readable source diffs.
+  `original/provenance.json` records the source of each revision.
+
+Tags `castles-v01` through `castles-v05` identify the canonical history commits.
+For example, `git diff castles-v01 castles-v03 -- programs/castles/original/CASTLES.ASC`
+compares the early builder with the persistent-mode version. The current canonical
+source is v05, the latest inferred historical version; the playable website still
+defaults to self-contained v03.
+
+Every recovered listing and tokenized BASIC payload remains unchanged.
 [provenance.json](provenance.json) contains source paths, hashes, capture times,
 structural validation, and matching-channel evidence from the recovery archive.
 The emulator's loader relocates in-memory BASIC pointers for execution. It does
