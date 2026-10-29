@@ -41,6 +41,18 @@
       "controls": "modes",
       "note": "Persistent draw/erase modes, Q to bombard, refined falling routine.",
       "unavailableReason": null
+    },
+    {
+      "id": "v04",
+      "label": "FALL BASIC 1",
+      "capture": "tape18a",
+      "save": 14,
+      "raw": "versions/v04/14-FALL-GRAPHICS-BASIC-V1.BAS",
+      "listing": "versions/v04/14-FALL-GRAPHICS-BASIC-V1.ASC",
+      "playable": false,
+      "controls": "modes",
+      "note": "Same builder, but impacts call an external machine-code routine.",
+      "unavailableReason": "Requires an external FALL machine-code routine. This release preserves the BASIC but does not reconstruct or load that dependency."
     }
   ]
 }

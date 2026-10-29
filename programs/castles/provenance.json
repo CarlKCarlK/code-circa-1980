@@ -1311,6 +1311,423 @@
         }
       ],
       "version": "v03"
+    },
+    {
+      "capture": "tape18a",
+      "recovery_evidence": "tapes/recovered/tape18a/inventory.json",
+      "recovery_item": {
+        "order": 14,
+        "title": "FALL GRAPHICS BASIC V1",
+        "title_note": "Descriptive filenames and version labels inferred from content and capture order; source bytes preserved.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "assembled": false,
+        "source_start_s": 489.89941666666664,
+        "source_end_s": 533.9223541666667,
+        "selected_source": {
+          "variant": "original",
+          "index": 14,
+          "start": 489.89941666666664,
+          "end": 533.9223541666667,
+          "file": "original/T14-2a76c61d2b89.BAS",
+          "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+          "assessment": {
+            "type": "BASIC",
+            "good": true,
+            "lines": 55,
+            "last": 2010,
+            "normal": true,
+            "parsed": 2637,
+            "bytes": 2637,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/14-FALL-GRAPHICS-BASIC-V1.BAS",
+        "listing": "best/14-FALL-GRAPHICS-BASIC-V1.ASC",
+        "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+        "bytes": 2637,
+        "validation": {
+          "type": "BASIC",
+          "good": true,
+          "lines": 55,
+          "last": 2010,
+          "normal": true,
+          "parsed": 2637,
+          "bytes": 2637,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "original",
+            "index": 14,
+            "start": 489.89941666666664,
+            "end": 533.9223541666667,
+            "file": "original/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 14,
+            "start": 489.8995625,
+            "end": 533.9225,
+            "file": "left-hp1200/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 14,
+            "start": 489.9012916666667,
+            "end": 533.9225416666667,
+            "file": "left-hp800/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 14,
+            "start": 489.91083333333336,
+            "end": 533.9224791666667,
+            "file": "right-boosted/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 14,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 489.59939583333335,
+            "crop_end": 534.3223541666666,
+            "start": 489.8938541666667,
+            "end": 533.9225,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 14,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 489.59939583333335,
+            "crop_end": 534.3223541666666,
+            "start": 489.89366666666666,
+            "end": 533.9225416666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 14,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 489.59939583333335,
+            "crop_end": 534.3223541666666,
+            "start": 489.8936458333333,
+            "end": 533.9224791666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": [],
+        "validation_summary": "Complete BASIC: increasing lines, consistent pointer base 17125, normal end marker at exact EOF; exact left/right bytes"
+      },
+      "imported_files": [
+        {
+          "path": "versions/v04/14-FALL-GRAPHICS-BASIC-V1.BAS",
+          "archive_path": "tapes/recovered/tape18a/best/14-FALL-GRAPHICS-BASIC-V1.BAS",
+          "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+          "bytes": 2637
+        },
+        {
+          "path": "versions/v04/14-FALL-GRAPHICS-BASIC-V1.ASC",
+          "archive_path": "tapes/recovered/tape18a/best/14-FALL-GRAPHICS-BASIC-V1.ASC",
+          "sha256": "44b37f9c2623a56e6b1726ba7be1bf70d09b1836464f8b57c618b8ef04547694",
+          "bytes": 3301
+        }
+      ],
+      "version": "v04"
     }
   ]
 }
