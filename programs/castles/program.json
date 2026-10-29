@@ -1,0 +1,22 @@
+{
+  "id": "castles",
+  "title": "Castles",
+  "description": "Build towers and bridges. Then put them to the test against cannon fire.",
+  "kind": "Game",
+  "defaultVersion": "v03",
+  "versionOrder": "Inferred development sequence, not established dates. The three tape23b drafts precede the two tape18a machine-code variants based on source changes. Within each capture, use save order.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Artillery draft 1",
+      "capture": "tape23b",
+      "save": 9,
+      "raw": "versions/v01/09-ARTILLERY-DRAFT01.BAS",
+      "listing": "versions/v01/09-ARTILLERY-DRAFT01.ASC",
+      "playable": true,
+      "controls": "early",
+      "note": "Initial build mode and compact impact routine.",
+      "unavailableReason": null
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "official_title": "Castles",
+  "title_authority": "User confirmation, 2026-10-29",
+  "import_date": "2026-10-29",
+  "order_inferred": true,
+  "saves": [
+    {
+      "capture": "tape23b",
+      "recovery_evidence": "tapes/recovered/tape23b/inventory.json",
+      "recovery_item": {
+        "order": 9,
+        "detected_group": 9,
+        "title": "ARTILLERY DRAFT01",
+        "title_note": "Descriptive filenames and save/template/fragment sequence labels inferred from content and capture order; source titles preserved in listings.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 681.817,
+        "source_end_s": 709.8952916666667,
+        "selected_source": {
+          "variant": "right-boosted",
+          "index": 9,
+          "start": 681.8190416666666,
+          "end": 709.89525,
+          "file": "right-boosted/T09-5f13140e57ba.BAS",
+          "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 37,
+            "last": 1040,
+            "normal": true,
+            "parsed": 1634,
+            "bytes": 1634,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/09-ARTILLERY-DRAFT01.BAS",
+        "listing": "best/09-ARTILLERY-DRAFT01.ASC",
+        "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+        "bytes": 1634,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 37,
+          "last": 1040,
+          "normal": true,
+          "parsed": 1634,
+          "bytes": 1634,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "right-boosted",
+            "index": 9,
+            "start": 681.8190416666666,
+            "end": 709.89525,
+            "file": "right-boosted/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 9,
+            "start": 681.8190625,
+            "end": 709.8952708333334,
+            "file": "left-hp1200/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 9,
+            "start": 681.8190625,
+            "end": 709.8952916666667,
+            "file": "left-hp800/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 9,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 681.517,
+            "crop_end": 710.2952916666667,
+            "start": 681.8133125,
+            "end": 709.8952708333334,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 9,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 681.517,
+            "crop_end": 710.2952916666667,
+            "start": 681.8133125,
+            "end": 709.8952916666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 9,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 681.517,
+            "crop_end": 710.2952916666667,
+            "start": 681.8132916666667,
+            "end": 709.89525,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "imported_files": [
+        {
+          "path": "versions/v01/09-ARTILLERY-DRAFT01.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/09-ARTILLERY-DRAFT01.BAS",
+          "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+          "bytes": 1634
+        },
+        {
+          "path": "versions/v01/09-ARTILLERY-DRAFT01.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/09-ARTILLERY-DRAFT01.ASC",
+          "sha256": "d1c130ae3efbfe61883ec398518e29dcbadc89e72dfe212c1bd41d6cd3a62077",
+          "bytes": 2089
+        }
+      ],
+      "version": "v01"
+    }
+  ]
+}
