@@ -20,6 +20,13 @@ then launch the original program in the embedded TRS-80 emulator.
 Open `code-circa-1980.code-workspace` to work with this collection and the `trs80`
 recovery archive together. Node.js 22.12+ (or 24+) is required.
 
+## First program
+
+[Castles](programs/castles/README.md) has five recovered versions, each in its
+own Git commit in a documented, inferred development order. Three self-contained
+BASIC versions are playable; two later variants require external machine code
+and are available as source. The default player runs v03 unchanged.
+
 ## Organization
 
 - `programs/<slug>/`: instructions, metadata, provenance, and recovered versions.

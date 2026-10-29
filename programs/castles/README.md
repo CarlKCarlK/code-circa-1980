@@ -1,0 +1,59 @@
+# Castles
+
+Build towers and bridges from supported blocks, then let two cannons bombard them.
+**Castles** is the official name, confirmed by Carl Kadie on October 29, 2026.
+The older Artillery/FALL filenames are recovery catalog labels.
+
+The collection opens the instructions before offering the emulator. Start the
+website with `npm run dev` from the repository root, choose Castles, and select
+**Play Castles**. The default is v03, the last recovered self-contained BASIC draft.
+
+## Starting with v03
+
+1. Click the emulator screen.
+2. Tap **8** to enable drawing.
+3. Hold **1** briefly to build a tower. **2** moves down, **3** left, **4** right.
+4. Tap **7** to move without drawing, **8** to draw again, or **9** to erase.
+5. Press **Q** to begin bombardment.
+6. During bombardment, hold **5** until a shot changes, then **M** for an angle near
+   45 degrees. **0–9** controls power and **A–Z** controls angle, sampled between shots.
+
+Use the top number row. Drawing modes remain selected after a key is released.
+Blocks need support below or diagonally below. The printed period “stars” are
+not support or obstacles. Pause freezes the machine; Restart begins a new build.
+On-screen buttons provide the same original key inputs.
+
+v01 and v02 use different construction controls: tap Enter to place a block,
+then make a small movement with 1–4 and tap Enter again; Space starts bombardment. Their instruction pages reflect this.
+
+## Versions in source control
+
+| Order | Version | Capture / save | Development evidence |
+| --- | --- | --- | --- |
+| 1 | v01 · Artillery draft 1 | tape23b / 9 | Early builder, simpler impact routine |
+| 2 | v02 · Artillery draft 2 | tape23b / 10 | Revised impact and falling-block routines |
+| 3 | v03 · Artillery draft 3 | tape23b / 11 | Persistent draw/erase modes and Q; refined falling routine |
+| 4 | v04 · FALL BASIC 1 | tape18a / 14 | Same builder; adds calls to machine-code falling routine |
+| 5 | v05 · FALL BASIC 2 | tape18a / 24 | Related machine-code variant; changed background |
+
+**This is an inferred development sequence, not a dated history.** Within-tape
+save order is evidence; the cross-tape ordering is a best guess based on source
+changes. No original writing dates have been invented. Each version was imported
+in its own Git commit, using the actual import date.
+
+`versions/` retains every recovered listing and tokenized BASIC payload unchanged.
+[provenance.json](provenance.json) contains source paths, hashes, capture times,
+structural validation, and matching-channel evidence from the recovery archive.
+The emulator's loader relocates in-memory BASIC pointers for execution. It does
+not modify the recovered files.
+
+v04 and v05 have complete BASIC payloads but require an external FALL machine-code
+routine via POKE/USR. Their source is available for study and download. Related
+assembly saves and a damaged SYSTEM header remain in the `trs80` archive; this
+website does not assemble, reconstruct, or load that dependency.
+
+## Verification
+
+See [VERIFICATION.md](VERIFICATION.md). Recovery validation and website execution
+testing are separate. Original recovery records are retained unchanged even where
+the website now has newer execution evidence.

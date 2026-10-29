@@ -18,7 +18,8 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
    order. State uncertainty; do not infer chronology from tape numbers alone.
    Commit each recovered version separately in that order, without invented
    historical dates or rewriting user history. Use the configured Git identity.
-4. Register the program in `site/catalog.js`. Keep common navigation and emulator
+4. Register the program in `site/catalog.js` and put its presentation functions
+   in `site/programs/<slug>.js`. Keep common navigation and emulator
    code shared; keep version-specific controls and dependencies in program metadata.
 5. Show instructions before launching. Include purpose, a concrete first sequence,
    keyboard focus, modes, restart, and version differences. Default to a complete,
