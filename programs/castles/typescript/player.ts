@@ -12,7 +12,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const ctx = canvas.getContext('2d')!;
   let paused = false, disposed = false, previous = 0, elapsed = 0, handle = 0;
   const tools = document.createElement('div'); tools.className = 'drawing-tools';
-  tools.innerHTML = '<label><input type="checkbox" checked> Mouse controls</label><div role="group" aria-label="Mouse tool"><button type="button" data-tool="draw" aria-pressed="true">Draw</button><button type="button" data-tool="erase" aria-pressed="false">Erase</button><button type="button" data-tool="move" aria-pressed="false">Move</button></div>';
+  tools.innerHTML = '<label><input type="checkbox" checked> Mouse controls</label><div role="group" aria-label="Mouse tool"><button type="button" data-tool="draw" aria-pressed="true">Draw</button><button type="button" data-tool="erase" aria-pressed="false">Erase</button></div>';
   const feedback = document.createElement('p'); feedback.className = 'drawing-feedback'; feedback.setAttribute('role','status'); feedback.setAttribute('aria-live','polite');
   const directionLabel=document.createElement('label');directionLabel.innerHTML='Direction <select aria-label="Drawing direction"><option value="grid">Grid assist</option><option value="diagonal">Diagonal</option><option value="free">Free</option></select>';
   const direction=directionLabel.querySelector('select')!;
@@ -100,7 +100,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     if(down){
       stopStroke();hover=null;
       if(pointerActive){game.release();game.mode=tool;pointerActive=false;}
-      const selected=({'7':'move','8':'draw','9':'erase'} as Record<string,Tool>)[key];if(selected){tool=selected;syncTools();}
+      const selected=({'8':'draw','9':'erase'} as Record<string,Tool>)[key];if(selected){tool=selected;syncTools();}
     }
     game.key(key,down);
     if(down&&key.toLowerCase()==='q'&&game.phase==='building'){launchPending=true;syncTools();}

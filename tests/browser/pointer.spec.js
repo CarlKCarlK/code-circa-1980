@@ -34,9 +34,12 @@ test('mouse hover is free, strokes remain supported, and right-drag erases only 
  await page.screenshot({path:'test-results/castles-mouse-tools.png',fullPage:true});expect(errors).toEqual([]);
 });
 
-test('move/keyboard-only modes, cancelled strokes, pause and bombardment do not paint unexpectedly',async({page})=>{
- await boot(page);await page.getByRole('button',{name:'Move',exact:true}).click();
- await drag(page,[30,46],[30,25]);expect(await point(page,30,46)).toBe(false);
+test('hover, keyboard-only modes, cancelled strokes, pause and bombardment do not paint unexpectedly',async({page})=>{
+ await boot(page);await expect(page.getByRole('button',{name:'Move',exact:true})).toHaveCount(0);
+ const hover=await at(page,30,25);await page.mouse.move(hover.x,hover.y);expect(await point(page,30,25)).toBe(false);
+ await page.locator('#display').focus();await page.keyboard.press('7',{delay:180});
+ expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().mode)).toBe('move');
+ await expect(page.getByRole('button',{name:'Draw',exact:true})).toHaveAttribute('aria-pressed','true');
  await page.getByRole('button',{name:'Draw',exact:true}).click();
  const start=await at(page,80,46),end=await at(page,80,25);await page.mouse.move(start.x,start.y);await page.mouse.down();
  await page.locator('#display canvas').dispatchEvent('pointercancel',{pointerId:1});

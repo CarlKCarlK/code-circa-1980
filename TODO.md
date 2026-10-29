@@ -12,3 +12,5 @@ These are ideas to revisit; they are not part of the current controls work.
 - [ ] Save and load game state using files on local disk.
 - [ ] Offer a choice of prebuilt castles and other structures to start from.
 - [ ] Make cannon controls friendlier and easier to understand.
+- [ ] Move the actual Play button higher on the instructions page so it is easier to find.
+- [ ] Swap the implementation tabs: show TypeScript first, then Original · emulator.
