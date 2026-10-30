@@ -162,3 +162,11 @@ The production build, unit suite, and all 21 browser checks passed.
 The draggable title now has a dotted grip. Chromium checks confirm it can be used
 to move the controls. Both the TypeScript game and the v05 emulator also started
 from a locally served GitHub Pages-style subpath with no failed asset requests.
+
+Web experience versioning (2026-10-30): Castles web v1 is a frozen production
+build with its source commit and asset hashes recorded. The build, unit suite,
+and all 23 browser checks pass, covering active-source controls, the frozen v1
+player, the gallery, and legacy links that resolve to the newest web release.
+In an isolated checkout, a temporary v2 became the default while v1 remained
+playable and unchanged. The preservation gate rejected deliberate alteration of
+v1 even when its file hashes were updated. Only v1 is registered for publication.

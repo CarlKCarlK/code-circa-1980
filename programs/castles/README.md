@@ -21,6 +21,13 @@ website with `npm run dev` from the repository root, choose Castles, and select
 Choose **TypeScript** to play the native browser implementation of v05. The
 self-contained v03 remains available among the recovered versions.
 
+The current browser experience is **web v1**, available permanently at
+[Castles web v1](https://carlkcarlk.github.io/code-circa-1980/experiences/castles/v1/).
+The [web version gallery](https://carlkcarlk.github.io/code-circa-1980/#/program/castles/web-versions)
+retains every release; ordinary Castles links open the latest one. Web releases
+are separate from the five recovered BASIC versions. See
+[the web release workflow](../../WEB-VERSIONS.md) before publishing future changes.
+
 ## Mouse controls in TypeScript
 
 Click and drag to build with the original support rules. Use **Erase** and drag
