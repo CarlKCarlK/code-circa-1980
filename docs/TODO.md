@@ -16,7 +16,8 @@ Web v2 implements the P0/P1 entry, first-play, and continuity work in
 - [x] Add a prebuilt pattern picker, starting with a train trestle bridge and an empty field.
 - [x] Ask for a filename when saving bricks.
 - [x] Preview picture imports against the full 128 × 48 game field, with live R, G, and B controls. Press OK to place the converted bricks and apply gravity; Cancel leaves the field unchanged.
-- [x] Add a castle starting scene: the arch and tower is now the default (pictures from Downloads not used).
+- [x] Make the arch and tower the default starting scene.
+- [ ] Add the two castle pictures in Downloads as starting choices (which pictures is unconfirmed).
 - [x] Make cannon controls friendlier and easier to understand.
 - [x] Move the actual Play button higher on the instructions page so it is easier to find.
 - [x] Swap the implementation tabs: show TypeScript first, then Original · emulator.
