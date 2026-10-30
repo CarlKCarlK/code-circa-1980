@@ -15,7 +15,7 @@ I probably wrote Castles around 1982, first in BASIC and later with a little Z80
 assembly. The date is an estimate from a dated program on the other side of the
 tape, not a date found in Castles itself. The original bytes are preserved.
 
-## About the author
+## About this project
 
 I had seen early personal computers, such as the Altair, in San Francisco, but nothing like them was available in my hometown of Peoria, Illinois. In the summer of 1978, between my sophomore and junior years of high school, the TRS-80 Model I arrived at our local Radio Shack. I ordered one and waited several weeks for delivery.
 
