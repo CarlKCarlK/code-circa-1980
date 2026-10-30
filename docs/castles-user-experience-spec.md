@@ -3,6 +3,9 @@
 Proposed specification, October 30, 2026. This is an audit and design proposal;
 it does not authorize or implement a new game experience.
 
+> **Superseded (2026-10-30):** the compact start page proposed below was removed.
+> Every link now opens the player directly; see "No intermediate pages" in AGENTS.md.
+
 ## Outcome
 
 A visitor should find the README easily, understand what Castles is, reach the

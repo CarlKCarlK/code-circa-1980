@@ -17,15 +17,13 @@ async function boot(page,version='v03'){
  await page.locator('#display').focus();
 }
 
-test('collection leads to instructions; versions and downloads remain available',async({page})=>{
+test('collection and program links open the player; versions and downloads remain available',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1');
  await expect(page.getByRole('link',{name:'Play Castles →'})).toHaveAttribute('href',/castles\/typescript\/play\/castle$/);
  await page.goto('/?development=1#/program/castles/typescript');
- await expect(page.getByRole('heading',{name:'Castles',exact:true})).toBeVisible();
- await expect(page).toHaveURL(/castles\/typescript$/);
- await expect(page.locator('.quick-start')).toContainText('Start with an arch and a tower');
- await expect(page.locator('canvas')).toHaveCount(0);
+ await expect(page).toHaveURL(/castles\/typescript\/play\/castle$/);
+ await expect(page.locator('#display canvas')).toHaveCount(1);
  await page.locator('.source-details > summary').click();
  for(const name of ['Download BASIC listing','Download original payload','Recovery provenance']){
   const href=await page.getByRole('link',{name,exact:true}).getAttribute('href');
@@ -118,10 +116,8 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1&test#/program/castles/v05');
  await page.getByRole('link',{name:'TypeScript version',exact:true}).click();
- await expect(page).toHaveURL(/castles\/typescript$/);
- await expect(page.locator('.quick-start')).toContainText('Start with an arch and a tower');
- await expect(page.locator('canvas')).toHaveCount(0);
- await page.getByRole('link',{name:'Build from scratch',exact:true}).click();
+ await expect(page).toHaveURL(/castles\/typescript\/play/);
+ await page.goto('/?development=1&test#/program/castles/typescript/play/blank');
  await expect(page.locator('#status')).toContainText('Building');
  await page.locator('#display').focus();
  await hold(page,'8',180);await hold(page,'1',1600);
