@@ -14,13 +14,6 @@ I probably wrote Castles around 1982, first in BASIC and later with a little Z80
 assembly. The date is an estimate from a dated program on the other side of the
 tape, not a date found in Castles itself. The original bytes are preserved.
 
-[Castles history & source](programs/castles/README.md) ·
-[Previous web releases](https://carlkcarlk.github.io/code-circa-1980/#/program/castles/web-versions) ·
-[Development & verification](docs/development.md) · [Future work](docs/TODO.md)
-
-Web releases preserve each browser experience. They are separate from recovered
-BASIC versions; see [the release workflow](docs/WEB-VERSIONS.md).
-
 ## License
 
 My code is available under either [MIT](LICENSE-MIT) or

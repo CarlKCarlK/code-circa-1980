@@ -1,7 +1,7 @@
 import {brickPngPolarity,filterPicture,hasBrickPixelAspect,pictureGeometry,placePicture} from './bricks.ts';
 
 /** Preview a picture without changing the game. Returns the chosen brick map. */
-export async function previewPicture(file:File,host:HTMLElement,field:HTMLCanvasElement,signal:AbortSignal):Promise<Uint8Array|null> {
+export async function previewPicture(file:File,host:HTMLElement,field:HTMLCanvasElement,signal:AbortSignal,background:string):Promise<Uint8Array|null> {
   const bitmap=await createImageBitmap(file);
   try {
     const bytes=new Uint8Array(await file.arrayBuffer());
@@ -36,7 +36,7 @@ export async function previewPicture(file:File,host:HTMLElement,field:HTMLCanvas
     }
     function render() {
       const {pixels,width,height}=sampleImage();mask=placePicture(filterPicture(pixels,width,height,weights,polarity!=='black'),geometry);
-      ctx.fillStyle='#334843';ctx.fillRect(0,0,532,404);ctx.fillStyle='#e6e7fc';
+      ctx.fillStyle=background;ctx.fillRect(0,0,532,404);ctx.fillStyle='#e6e7fc';
       for(let y=0;y<47;y++)for(let x=0;x<128;x++)if(mask[y*128+x])ctx.fillRect(10+x*4,10+y*8,4,8);
       ctx.fillRect(10,10+47*8,512,8);
     }

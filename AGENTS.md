@@ -40,6 +40,12 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
 ## Commands
 
 From `app/`: `npm ci`, `npm run dev`, `npm test`, `npm run build`, `npm run test:browser`.
+
+Move fast: this is a personal project. After each change run `npm test` and
+`npm run build` (seconds) before committing. Start `npm run test:browser`
+(Playwright, minutes) in the background and keep working; report and fix any
+failures when it finishes. Wait for browser tests only before publishing a
+web release.
 For a nonstandard local browser installation, set PLAYWRIGHT_CHROMIUM_EXECUTABLE.
 
 ## Preserve both views of historical versions

@@ -8,7 +8,7 @@ import type {Cell,Tool} from './pointer.ts';
 /** Browser adapter only; all rules live in engine.ts. */
 export async function createPlayer(host: HTMLElement, _url: string, status: HTMLElement, title: string) {
   const game = new Castles();
-  let background='#334843';
+  const background='#121a2e';
   const canvas = document.createElement('canvas'); canvas.width = 532; canvas.height = 404;
   canvas.setAttribute('aria-label', `${title} TypeScript playing field`);
   const wrapper = document.createElement('div'); wrapper.append(canvas); host.replaceChildren(wrapper);
@@ -56,8 +56,6 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const picker=document.createElement('input');picker.type='file';picker.accept='image/*';picker.hidden=true;picker.setAttribute('aria-label','Brick image file');
   const fileStatus=document.createElement('p');fileStatus.setAttribute('role','status');fileStatus.className='small';
   files.append(save,load,picker,fileStatus);advanced.append(files);
-  const appearance=document.createElement('label');appearance.innerHTML='Field background <select aria-label="Field background"><option value="#334843">Green</option><option value="#171c22">Dark</option><option value="#233650">Blue</option></select>';advanced.append(appearance);
-  appearance.querySelector('select')!.onchange=event=>{background=(event.target as HTMLSelectElement).value;};
   save.onclick=async()=>{
     release();
     const requested=prompt('Save brick layout as PNG (not a running game). Filename:', 'castles-bricks');
@@ -76,7 +74,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     release();previewing=true;previous=elapsed=0;
     const controller=new AbortController();importAbort=controller;
     try{
-      const mask=await previewPicture(file,host,canvas,controller.signal);if(disposed)return;
+      const mask=await previewPicture(file,host,canvas,controller.signal,background);if(disposed)return;
       if(!mask){fileStatus.textContent='Picture import canceled.';return;}
       release();placeBricks(game,mask);importFall=game.settle(46);game.activity='settling';fallWait=0;
       tool='draw';paused=false;elapsed=previous=0;host.dispatchEvent(new CustomEvent('playerpause',{detail:false}));
