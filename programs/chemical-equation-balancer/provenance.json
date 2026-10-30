@@ -821,6 +821,343 @@
           "sha256": "3b2a975706d904eb99fe72df0a14ba70db98a02c1b57ad541a5a4c716f9ba34b"
         }
       ]
+    },
+    {
+      "version": "v04",
+      "family": "Chemical Equation Balancer (1979)",
+      "label": "Retry draft (cleaned)",
+      "capture": "tape27b",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape27b/best/07-EQUATION-BALANCER-REV3-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape27b/best/07-EQUATION-BALANCER-REV3-SAVE01.ASC",
+      "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65",
+      "bytes": 2318,
+      "listing_sha256": "5bfb927c542e93bfad6cc068c4796b16addc93695c1161744af7c886f42203d6",
+      "listing_lines": 79,
+      "recovery_evidence": "tapes/recovered/tape27b/inventory.json",
+      "inventory_row": {
+        "summary": "EQUATION BALANCER REV3 SAVE01",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 7,
+        "type": "BASIC",
+        "title": "EQUATION BALANCER REV3 SAVE01",
+        "title_note": "Descriptive title and revision/save labels inferred from listings and capture order.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 704.442375,
+        "source_end_s": 741.9958125,
+        "selected_source": {
+          "variant": "left-hp1200",
+          "index": 17,
+          "start": 704.4425,
+          "end": 741.9957916666667,
+          "file": "left-hp1200/T17-411b46e85ba3.BAS",
+          "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 79,
+            "last": 20000,
+            "normal": true,
+            "parsed": 2318,
+            "bytes": 2318,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/07-EQUATION-BALANCER-REV3-SAVE01.BAS",
+        "listing": "best/07-EQUATION-BALANCER-REV3-SAVE01.ASC",
+        "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65",
+        "bytes": 2318,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 79,
+          "last": 20000,
+          "normal": true,
+          "parsed": 2318,
+          "bytes": 2318,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "left-hp1200",
+            "index": 17,
+            "start": 704.4425,
+            "end": 741.9957916666667,
+            "file": "left-hp1200/T17-411b46e85ba3.BAS",
+            "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 79,
+              "last": 20000,
+              "normal": true,
+              "parsed": 2318,
+              "bytes": 2318,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 17,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T17-411b46e85ba3.BAS",
+            "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 79,
+              "last": 20000,
+              "normal": true,
+              "parsed": 2318,
+              "bytes": 2318,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 704.142375,
+            "crop_end": 742.3958125,
+            "start": 704.4387708333334,
+            "end": 741.9957916666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 17,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T17-411b46e85ba3.BAS",
+            "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 79,
+              "last": 20000,
+              "normal": true,
+              "parsed": 2318,
+              "bytes": 2318,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 704.142375,
+            "crop_end": 742.3958125,
+            "start": 704.4367291666667,
+            "end": 741.9958125,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 17,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T17-411b46e85ba3.BAS",
+            "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 79,
+              "last": 20000,
+              "normal": true,
+              "parsed": 2318,
+              "bytes": 2318,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 704.142375,
+            "crop_end": 742.3958125,
+            "start": 704.4367083333334,
+            "end": 741.9957708333334,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "alternate_structurally_valid_candidates": [],
+        "selection_note": "Unique structurally valid exact left/right payload."
+      },
+      "other_saves": [
+        {
+          "capture": "tape27b",
+          "save": 8,
+          "relation": "identical",
+          "archive_listing": "tapes/recovered/tape27b/best/08-EQUATION-BALANCER-REV3-SAVE02.ASC",
+          "inventory_row": {
+            "summary": "EQUATION BALANCER REV3 SAVE02",
+            "status": "validated payload; runtime untested",
+            "validation": "Ordered lines; consistent pointer base 17125; exact end marker/EOF; byte-identical left/right payload; offset 580 conflict resolved by measured data pulse; see report",
+            "recovery%": "100"
+          },
+          "archive_raw": "tapes/recovered/tape27b/best/08-EQUATION-BALANCER-REV3-SAVE02.BAS",
+          "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65"
+        }
+      ],
+      "snapshot_raw": "versions/v04/07-EQUATION-BALANCER-REV3-SAVE01.BAS",
+      "snapshot_listing": "versions/v04/07-EQUATION-BALANCER-REV3-SAVE01.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v04/07-EQUATION-BALANCER-REV3-SAVE01.BAS",
+          "bytes": 2318,
+          "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65"
+        },
+        {
+          "path": "versions/v04/07-EQUATION-BALANCER-REV3-SAVE01.ASC",
+          "bytes": 2950,
+          "sha256": "5bfb927c542e93bfad6cc068c4796b16addc93695c1161744af7c886f42203d6"
+        }
+      ]
     }
   ]
 }
