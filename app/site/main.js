@@ -13,22 +13,15 @@ const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<'
 const route = (program, version, play=false) => `#/program/${program.id}/${version.id}${play ? '/play' : ''}`;
 const defaultEdition = program => program.defaultImplementation==='typescript' && program.modern ? program.modern : program.versions.find(v=>v.id===program.defaultVersion);
 const crumbs = program => `<nav aria-label="Breadcrumb"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
-const galleryUrl=program=>`${collectionUrl.href}#/program/${program.id}/web-versions`;
 const experienceUrl=(program,version)=>new URL(`experiences/${program.id}/${version.id}/`,collectionUrl).href;
-// Open straight into the game with the default castle scene. Frozen v1-v5 understand only the
-// older '/bridge' suffix (v1 ignores it); switch these links to '/castle' after the next release.
-const playUrl=program=>`${route(program,defaultEdition(program),true)}/bridge`;
+// Open straight into the game with the default castle scene.
+const playUrl=program=>`${route(program,defaultEdition(program),true)}/castle`;
 function versionPicker(program,current){
  const versions=[...program.webVersions].reverse();
- return `<label class="version-picker">Versions <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}#/program/${program.id}/typescript/play/bridge" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
+ return `<label class="version-picker">Versions <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}#/program/${program.id}/typescript/play/castle" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
 }
 function webVersionNavigation(program){
- return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span>${program.webVersions.length?versionPicker(program,webVersion):''}${webVersion?`<a href="${collectionUrl.href}#/program/${program.id}">Latest version</a>`:''}</nav>`;
-}
-// Kept for the "All web versions" link built into frozen releases v1-v3.
-function webVersionGallery(program){
- const versions=[...program.webVersions].reverse();
- return `${crumbs(program)}<section class="intro"><p class="eyebrow">Web experiences</p><h1>${escape(program.title)} versions</h1><p class="lede">Choose a version of the browser experience. Each release keeps its own controls, presentation, and playable code. Recovered BASIC versions remain available inside each release.</p></section><section class="web-version-gallery" aria-label="Web versions">${versions.map((v,i)=>`<article><p class="eyebrow">${escape(v.id)}${i===0?' · Latest':''}</p><h2>${escape(v.label)}</h2><p class="small">Released ${escape(v.released)}</p><a class="primary" href="${experienceUrl(program,v)}">Open ${escape(v.id)}</a></article>`).join('')}</section>`;
+ return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span>${program.webVersions.length>1?versionPicker(program,webVersion):''}${webVersion?`<a href="${collectionUrl.href}#/program/${program.id}">Latest version</a>`:''}</nav>`;
 }
 function versionList(program, selected) {
  return `<details class="versions"><summary>${program.versions.length} recovered versions · development order is inferred</summary><p>${escape(program.versionOrder)}</p><ol>${program.versions.map(v=>`<li><a href="${route(program,v)}" ${selected.id===v.id?'aria-current="page"':''}>${escape(v.id.toUpperCase())} · ${escape(v.label)}</a><span class="small">${escape(v.capture)} / save ${v.save}${v.playable?'':' · source only'}</span><p>${escape(v.note)}</p></li>`).join('')}</ol></details>`;
@@ -46,11 +39,10 @@ async function render() {
   if(webProgram&&!parts.length)parts.push('program',webProgram);
   if (!parts.length) {
     document.title = 'Code Circa 1980';
-    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<article class="program-card"><a class="card-art" href="${playUrl(p)}" tabindex="-1" aria-hidden="true"><img class="collection-art" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="" width="532" height="236"></a><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)}</span><h2><a href="${playUrl(p)}">${escape(p.title)}</a></h2><p>${escape(p.description)}</p><div class="card-footer"><a class="card-link" href="${playUrl(p)}">Play ${escape(p.title)} →</a>${p.webVersions.length?versionPicker(p):''}</div></div></article>`).join('')}</section>`;
+    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<article class="program-card"><a class="card-art" href="${playUrl(p)}" tabindex="-1" aria-hidden="true"><img class="collection-art" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="" width="532" height="236"></a><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)}</span><h2><a href="${playUrl(p)}">${escape(p.title)}</a></h2><p>${escape(p.description)}</p><div class="card-footer"><a class="card-link" href="${playUrl(p)}">Play ${escape(p.title)} →</a>${p.webVersions.length>1?versionPicker(p):''}</div></div></article>`).join('')}</section>`;
     return;
   }
   const program=programs.find(p=>parts[0]==='program' && p.id===parts[1]);
-  if(program&&parts[2]==='web-versions'){document.title=`${program.title} versions · Code Circa 1980`;app.innerHTML=webVersionGallery(program);return;}
   if(program&&((!webProgram&&!development)||(webProgram&&webProgram!==program.id))){
     const latest=program.webVersions.at(-1);
     if(!latest){app.innerHTML=`${crumbs(program)}<h1>No web releases yet</h1>`;return;}
