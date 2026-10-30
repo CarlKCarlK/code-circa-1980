@@ -1,10 +1,37 @@
 import {test,expect} from '@playwright/test';
+test('controls can move outside the field and return there after fullscreen',async({page})=>{
+ await page.setViewportSize({width:1280,height:1200});
+ await page.goto('/?test#/program/castles/typescript/play');
+ const panel=page.locator('.floating-palette'),host=page.locator('#display');await expect(panel).toBeVisible();
+ await page.evaluate(()=>window.scrollTo(0,0));
+ const hostBox=await host.boundingBox(),initialPanel=await panel.boundingBox(),grip=await page.getByRole('button',{name:'Move controls',exact:true}).boundingBox();
+ await page.mouse.move(grip.x+20,grip.y+15);await page.mouse.down();
+ await page.mouse.move(grip.x+20,hostBox.y-initialPanel.height-10+15,{steps:10});await page.mouse.up();
+ let panelBox=await panel.boundingBox();expect(panelBox.y+panelBox.height).toBeLessThan(hostBox.y);
+ const normal=await panel.evaluate(el=>({x:parseFloat(el.style.left),y:parseFloat(el.style.top)}));
+ await page.reload();await expect(panel).toBeVisible();
+ expect(await panel.evaluate(el=>({x:parseFloat(el.style.left),y:parseFloat(el.style.top)}))).toEqual(normal);
+ await page.getByRole('button',{name:'Full screen',exact:true}).click();
+ await expect.poll(()=>page.evaluate(()=>document.fullscreenElement?.id)).toBe('display');
+ await page.getByRole('button',{name:'Move controls',exact:true}).evaluate(el=>{
+  for(let i=0;i<160;i++)for(const key of ['ArrowLeft','ArrowUp'])el.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true}));
+ });
+ panelBox=await panel.boundingBox();const fullscreenBox=await host.boundingBox();
+ expect(panelBox.x).toBeGreaterThanOrEqual(fullscreenBox.x);expect(panelBox.y).toBeGreaterThanOrEqual(fullscreenBox.y);
+ expect(panelBox.x+panelBox.width).toBeLessThanOrEqual(fullscreenBox.x+fullscreenBox.width);
+ expect(panelBox.y+panelBox.height).toBeLessThanOrEqual(fullscreenBox.y+fullscreenBox.height);
+ await page.evaluate(()=>document.exitFullscreen());
+ await expect.poll(()=>page.evaluate(()=>document.fullscreenElement)).toBe(null);
+ await expect.poll(()=>panel.evaluate(el=>({x:parseFloat(el.style.left),y:parseFloat(el.style.top)}))).toEqual(normal);
+});
 test('floating controls move, resize, persist, and never paint through the panel',async({page})=>{
  await page.goto('/?test#/program/castles/typescript/play');
  const panel=page.locator('.floating-palette');await expect(panel).toBeVisible();
+ await expect(page.getByRole('button',{name:'Move controls',exact:true})).toHaveCSS('cursor','grab');
+ expect(await page.getByRole('button',{name:'Move controls',exact:true}).evaluate(el=>getComputedStyle(el,'::before').backgroundImage)).toContain('radial-gradient');
  const before=await page.evaluate(()=>window.__circaPlayer.snapshot());
  const initial=await panel.boundingBox(),grip=await page.getByRole('button',{name:'Move controls',exact:true}).boundingBox();
- await page.mouse.move(grip.x+20,grip.y+15);await page.mouse.down();await page.mouse.move(grip.x+100,grip.y+55);await page.mouse.up();
+ await page.mouse.move(grip.x+10,grip.y+15);await page.mouse.down();await page.mouse.move(grip.x+90,grip.y+55);await page.mouse.up();
  const moved=await panel.boundingBox();expect(moved.x).toBeCloseTo(initial.x+80,0);expect(moved.y).toBeCloseTo(initial.y+40,0);
  const corner=await page.getByRole('button',{name:'Resize controls',exact:true}).boundingBox();
  await page.mouse.move(corner.x+corner.width/2,corner.y+corner.height/2);await page.mouse.down();await page.mouse.move(corner.x+corner.width/2+40,corner.y+corner.height/2+20);await page.mouse.up();

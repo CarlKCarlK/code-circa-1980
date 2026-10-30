@@ -153,3 +153,12 @@ and compatibility with earlier black-brick saves. They also confirm ordinary
 images keep white as bricks regardless of which shade is more common, the loaded
 image appears before falling, intermediate falling positions are visible, and
 Pause freezes the fall. The unit suite and all 20 browser checks passed.
+
+Floating controls (2026-10-30): Chromium checks drag the panel completely outside
+the game field, reload its position, constrain it within full screen even after
+further movement, and restore the normal-view position when leaving full screen.
+The production build, unit suite, and all 21 browser checks passed.
+
+The draggable title now has a dotted grip. Chromium checks confirm it can be used
+to move the controls. Both the TypeScript game and the v05 emulator also started
+from a locally served GitHub Pages-style subpath with no failed asset requests.

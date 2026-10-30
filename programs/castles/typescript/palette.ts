@@ -1,5 +1,5 @@
 type Layout={x:number;y:number;width:number;height:number;collapsed:boolean;opacity:number};
-/** A bounded, persistent overlay. Pointer gestures never reach the playfield. */
+/** A persistent overlay. Pointer gestures never reach the playfield. */
 export function createPalette(host:HTMLElement,body:HTMLElement,title:string,onInteract:()=>void){
   const storageKey='cc80.castles.palette.v1';
   const panel=document.createElement('aside');panel.className='floating-palette';panel.setAttribute('aria-label',`${title} controls`);
@@ -14,15 +14,27 @@ export function createPalette(host:HTMLElement,body:HTMLElement,title:string,onI
   let state:Layout={x:12,y:12,width:250,height:380,collapsed:host.clientWidth<500,opacity:88};
   try{const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(saved&&['x','y','width','height','opacity'].every(k=>Number.isFinite(saved[k]))&&typeof saved.collapsed==='boolean')state=saved;}catch{}
   let gesture:{id:number;kind:'move'|'resize';x:number;y:number;layout:Layout;handle:HTMLElement}|null=null;
-  const save=()=>{try{localStorage.setItem(storageKey,JSON.stringify(state));}catch{}};
+  let wasFullscreen=document.fullscreenElement===host;
+  let normalPosition:{x:number;y:number}|null=null;
+  const save=()=>{try{localStorage.setItem(storageKey,JSON.stringify(normalPosition?{...state,...normalPosition}:state));}catch{}};
   function layout(){
-    const maxW=Math.max(100,host.clientWidth-16),maxH=Math.max(44,host.clientHeight-16);
+    const fullscreen=document.fullscreenElement===host;
+    if(fullscreen&&!wasFullscreen)normalPosition={x:state.x,y:state.y};
+    else if(!fullscreen&&wasFullscreen&&normalPosition){state.x=normalPosition.x;state.y=normalPosition.y;normalPosition=null;}
+    wasFullscreen=fullscreen;
+    const maxW=Math.max(100,(fullscreen?host.clientWidth:document.documentElement.clientWidth)-16);
+    const maxH=Math.max(44,(fullscreen?host.clientHeight:window.innerHeight)-16);
     state.width=Math.max(Math.min(210,maxW),Math.min(state.width,maxW));
     state.height=Math.max(Math.min(180,maxH),Math.min(state.height,maxH));
     state.opacity=Math.max(55,Math.min(100,state.opacity));
     const height=state.collapsed?42:state.height;
-    state.x=Math.max(8,Math.min(state.x,host.clientWidth-state.width-8));
-    state.y=Math.max(8,Math.min(state.y,host.clientHeight-height-8));
+    const rect=host.getBoundingClientRect();
+    const originX=rect.left+host.clientLeft,originY=rect.top+window.scrollY+host.clientTop;
+    const minX=fullscreen?8:8-originX,minY=fullscreen?8:8-originY;
+    const maxX=fullscreen?host.clientWidth-state.width-8:document.documentElement.clientWidth-state.width-8-originX;
+    const maxY=fullscreen?host.clientHeight-height-8:Math.max(document.documentElement.scrollHeight,window.innerHeight)-height-8-originY;
+    state.x=Math.max(minX,Math.min(state.x,maxX));
+    state.y=Math.max(minY,Math.min(state.y,maxY));
     Object.assign(panel.style,{left:`${state.x}px`,top:`${state.y}px`,width:`${state.width}px`,height:`${height}px`});
     panel.style.setProperty('--palette-opacity',String(state.opacity/100));
     panel.classList.toggle('is-collapsed',state.collapsed);content.hidden=state.collapsed;resize.hidden=state.collapsed;
@@ -55,6 +67,8 @@ export function createPalette(host:HTMLElement,body:HTMLElement,title:string,onI
   collapse.onclick=()=>{onInteract();state.collapsed=!state.collapsed;layout();save();};
   opacity.oninput=()=>{state.opacity=Number(opacity.value);layout();save();};
   const observer=new ResizeObserver(()=>{layout();});observer.observe(host);layout();
+  const fullscreenChange=()=>layout();
+  document.addEventListener('fullscreenchange',fullscreenChange);window.addEventListener('resize',layout);
   const blur=()=>end();window.addEventListener('blur',blur);
-  return {element:panel,dispose(){end();observer.disconnect();window.removeEventListener('blur',blur);panel.remove();}};
+  return {element:panel,dispose(){end();observer.disconnect();document.removeEventListener('fullscreenchange',fullscreenChange);window.removeEventListener('resize',layout);window.removeEventListener('blur',blur);panel.remove();}};
 }
