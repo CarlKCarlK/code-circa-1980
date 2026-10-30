@@ -47,12 +47,9 @@ test('hover, keyboard-only modes, cancelled strokes, pause and bombardment do no
  await page.mouse.move(end.x,end.y);await page.mouse.up();
  expect(await point(page,80,46)).toBe(true);expect(await point(page,80,45)).toBe(false);
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().dragging)).toBe(false);
- await page.locator('.advanced-tools summary').click();await page.getByLabel('Mouse drawing', {exact:true}).uncheck();
- await drag(page,[90,46],[90,25]);expect(await point(page,90,46)).toBe(false);
  await page.getByRole('button',{name:'Clear field',exact:true}).click();
  await page.locator('#display').focus();await page.keyboard.press('8',{delay:180});await page.keyboard.down('1');await page.waitForTimeout(700);await page.keyboard.up('1');
  expect(await point(page,64,45)).toBe(true);
- await page.getByLabel('Mouse drawing', {exact:true}).check();
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  await drag(page,[90,46],[90,25]);expect(await point(page,90,46)).toBe(false);
  await page.getByRole('button',{name:'Clear field',exact:true}).click();

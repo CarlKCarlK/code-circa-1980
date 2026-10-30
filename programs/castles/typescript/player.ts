@@ -20,7 +20,6 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const dock=document.getElementById('control-dock')!;host.append(dock);
   const tools = document.createElement('div'); tools.className = 'drawing-tools';
   tools.innerHTML = '<div role="group" aria-label="Mouse tool"><button type="button" data-tool="draw" aria-pressed="true">Draw</button><button type="button" data-tool="erase" aria-pressed="false">Erase</button></div>';
-  const mouseLabel=document.createElement('label');mouseLabel.innerHTML='<input type="checkbox" checked> Mouse drawing';
   const feedback = document.createElement('p'); feedback.className = 'drawing-feedback'; feedback.setAttribute('role','status'); feedback.setAttribute('aria-live','polite');
   const directionLabel=document.createElement('label');directionLabel.innerHTML='Direction <select aria-label="Drawing direction"><option value="grid">Grid assist</option><option value="diagonal">Diagonal</option><option value="free">Free</option></select>';
   const direction=directionLabel.querySelector('select')!;
@@ -35,7 +34,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const usePattern=document.createElement('button');usePattern.type='button';usePattern.textContent='Load';
   scene.append(patternLabel,usePattern);building.append(scene);
   const advanced=document.createElement('details');advanced.className='advanced-tools';advanced.innerHTML='<summary>More options</summary>';
-  const assist=document.createElement('div');assist.append(directionLabel,guideHint,mouseLabel);advanced.append(assist);tools.append(advanced);
+  const assist=document.createElement('div');assist.append(directionLabel,guideHint);advanced.append(assist);tools.append(advanced);
   usePattern.onclick=()=>{
     const pattern=patterns.find(p=>p.id===patternSelect.value)!;
     release();if(hasWork()&&!confirm('Replace this construction with the selected pattern?'))return;
@@ -44,7 +43,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   };
   const cannons=document.createElement('div');cannons.hidden=true;
   cannons.className='cannon-panel';
-  cannons.innerHTML='<h3>Cannons firing</h3><p>Two cannons take turns automatically. Raise the power and arc to reach your structure.</p><label class="cannon-setting"><span>Power</span><input aria-label="Cannon power" type="range" min="0" max="9" value="0"><output>0</output></label><label class="cannon-setting"><span>Arc</span><input aria-label="Cannon angle" type="range" min="0" max="25" value="0"><output>0°</output></label><p class="cannon-feedback small" role="status"></p>';
+  cannons.innerHTML='<h3>Cannons firing</h3><p>Two cannons take turns automatically. Adjust power and arc to change where shots land.</p><label class="cannon-setting"><span>Power</span><input aria-label="Cannon power" type="range" min="0" max="9" value="0"><output>0</output></label><label class="cannon-setting"><span>Arc</span><input aria-label="Cannon angle" type="range" min="0" max="25" value="0"><output>0°</output></label><p class="cannon-feedback small" role="status"></p>';
   const backToBuild=document.createElement('button');backToBuild.type='button';backToBuild.textContent='Return to building';
   cannons.append(backToBuild);tools.append(cannons);
   backToBuild.onclick=()=>{release();keyboardActive=false;game.beginBuilding();elapsed=previous=0;draw(performance.now());};
@@ -82,35 +81,37 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     finally{if(importAbort===controller)importAbort=null;previewing=false;previous=elapsed=0;picker.value='';}
   };
   const palette=createPalette(host,tools,title,()=>{stopStroke();hover=null;game.release();});
-  launch.onclick=()=>{press('q',true);press('q',false);};
+  // New players start from the original instructions' 5 + M aim (power 5, about 42°), which reaches
+  // typical constructions; the BASIC starts at 0/0, so keyboard Q keeps the original behavior.
+  let startingAim=false;
+  launch.onclick=()=>{const {power,angle}=game.cannonSettings();startingAim=power===0&&angle===0;press('q',true);press('q',false);};
   for(const input of cannons.querySelectorAll('input'))input.oninput=()=>{
     const key=input.getAttribute('aria-label')==='Cannon power'?input.value:String.fromCharCode(97+Number(input.value));
     game.setCannonSetting(input.getAttribute('aria-label')==='Cannon power'?'power':'angle',Number(input.value));input.nextElementSibling!.textContent=input.getAttribute('aria-label')==='Cannon power'?key:`${Math.round(Number(input.value)*90/26)}°`;
   };
-  const enabled = mouseLabel.querySelector<HTMLInputElement>('input')!;
   const toolButtons = [...tools.querySelectorAll<HTMLButtonElement>('button[data-tool]')];
   let tool:Tool='draw', pointerActive=false, keyboardActive=false, launchPending=false, hover:Cell|null=null;
   let stroke:{id:number; tool:Tool; last:Cell|null;guide:StrokeGuide|null}|null=null;
   let lastUi='';
   const hint = (message:string) => {if(feedback.textContent!==message)feedback.textContent=message;};
-  const defaultHint = () => !enabled.checked ? 'Mouse drawing is off. Use the keyboard controls below.' : tool==='erase' ? 'Drag down from the top to remove blocks. Choose Draw to build again.' : tool==='move' ? 'Move: position the cursor without changing blocks.' : 'Drag up from the ground to build. Each block needs one below it or diagonally below.';
+  const defaultHint = () => tool==='erase' ? 'Drag down from the top to remove blocks. Choose Draw to build again.' : tool==='move' ? 'Move: position the cursor without changing blocks.' : 'Drag up from the ground to build. Each block needs one below it or diagonally below.';
   function stopStroke() {
     const id=stroke?.id; stroke=null;
     if(id!==undefined&&canvas.hasPointerCapture(id))canvas.releasePointerCapture(id);
   }
   function syncTools() {
     const available=game.phase==='building'&&!paused&&!launchPending&&!importFall;
-    const state=`${available}/${enabled.checked}/${tool}/${game.phase}/${launchPending}/${paused}/${!!importFall}`;
+    const state=`${available}/${tool}/${game.phase}/${launchPending}/${paused}/${!!importFall}`;
     if(state===lastUi)return;lastUi=state;
     save.disabled=game.phase!=='building'||!!importFall;load.disabled=!!importFall;
     patternSelect.disabled=usePattern.disabled=!available;
     backToBuild.disabled=paused;
-    enabled.disabled=!available;direction.disabled=!available;launch.disabled=!available;
+    direction.disabled=!available;launch.disabled=!available;
     building.hidden=advanced.hidden=game.phase!=='building';cannons.hidden=game.phase!=='bombarding';
     for(const input of cannons.querySelectorAll('input'))input.disabled=paused;
-    for(const button of toolButtons){button.disabled=!available||!enabled.checked;button.setAttribute('aria-pressed',String(button.dataset.tool===tool));}
-    canvas.style.touchAction=available&&enabled.checked?'none':'auto';
-    canvas.style.cursor=available&&enabled.checked?'crosshair':'default';
+    for(const button of toolButtons){button.disabled=!available;button.setAttribute('aria-pressed',String(button.dataset.tool===tool));}
+    canvas.style.touchAction=available?'none':'auto';
+    canvas.style.cursor=available?'crosshair':'default';
     if(!available){stopStroke();hover=null;hint(paused?'Resume to continue.':importFall?'Loose bricks are falling.':launchPending?'Firing…':'Choose Return to building to edit the structure again.');}
     else hint(defaultHint());
   }
@@ -130,13 +131,13 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   }
   canvas.onpointerdown=event=>{
     host.focus({preventScroll:true});
-    if(!event.isPrimary||!enabled.checked||enabled.disabled||paused||launchPending||game.phase!=='building'||![0,2].includes(event.button))return;
+    if(!event.isPrimary||!!importFall||paused||launchPending||game.phase!=='building'||![0,2].includes(event.button))return;
     event.preventDefault();stopStroke();activatePointer();hover=pointerAt(event);
     stroke={id:event.pointerId,tool:event.button===2?'erase':tool,last:null,guide:null};
     canvas.setPointerCapture(event.pointerId);if(hover)applyPointer(hover);
   };
   canvas.onpointermove=event=>{
-    if(!event.isPrimary||!enabled.checked||enabled.disabled||paused||launchPending||game.phase!=='building')return;
+    if(!event.isPrimary||!!importFall||paused||launchPending||game.phase!=='building')return;
     if(stroke&&!(event.buttons&3))stopStroke();
     activatePointer();hover=pointerAt(event);
     if(hover){game.cursor={...hover};if(stroke?.id===event.pointerId)applyPointer(hover);else hint(defaultHint());}
@@ -146,11 +147,10 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   canvas.onpointercancel=()=>{stopStroke();hover=null;};
   canvas.onlostpointercapture=event=>{if(stroke?.id===event.pointerId)stopStroke();};
   canvas.onpointerleave=()=>{hover=null;if(stroke){stroke.last=null;stroke.guide=null;}};
-  canvas.oncontextmenu=event=>{if(enabled.checked&&!paused&&game.phase==='building')event.preventDefault();};
+  canvas.oncontextmenu=event=>{if(!paused&&game.phase==='building')event.preventDefault();};
   for(const button of toolButtons)button.onclick=()=>{
     release();keyboardActive=false;tool=button.dataset.tool as Tool;pointerActive=true;game.mode='move';syncTools();host.focus({preventScroll:true});
   };
-  enabled.onchange=()=>{release();pointerActive=false;game.mode='move';syncTools();};
   function release() {stopStroke();hover=null;pointerActive=false;launchPending=false;game.release();}
   const press = (key: string, down: boolean) => {
     if(paused||disposed||importFall)return;
@@ -173,16 +173,19 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
       if (code >= 128 && code < 192) for (let bit = 0; bit < 6; bit++) if (code & (1 << bit))
         ctx.fillRect(10 + (position % 64) * 8 + (bit % 2) * 4, 10 + Math.floor(position / 64) * 24 + Math.floor(bit / 2) * 8, 4, 8);
     });
-    if(game.phase==='building'&&pointerActive&&hover&&enabled.checked&&!paused){
+    // Mark each cannon (a gap in the ground) in the margin below the field.
+    if(game.cannons[0]){ctx.fillStyle='#f2b36b';for(const x of game.cannons){const cx=10+x*4+2;ctx.beginPath();ctx.moveTo(cx-5,403);ctx.lineTo(cx+5,403);ctx.lineTo(cx,396);ctx.fill();}}
+    if(game.phase==='building'&&pointerActive&&hover&&!paused){
       const activeTool=stroke?.tool??tool;const result=activeTool==='move'?'unchanged':game.editStatus(hover.x,hover.y,activeTool);
       ctx.strokeStyle=result==='unsupported'||result==='protected'?'#f29d8b':activeTool==='erase'?'#f2d490':'#c1eca8';
       ctx.lineWidth=1;ctx.strokeRect(10+hover.x*4+.5,10+hover.y*8+.5,3,7);
-    } else if (game.phase === 'building' && !importFall && (keyboardActive||!enabled.checked) && Math.floor(time / 300) % 2 === 0) {
+    } else if (game.phase === 'building' && !importFall && keyboardActive && Math.floor(time / 300) % 2 === 0) {
       const {x,y} = game.cursor; ctx.fillStyle = game.point(x,y) ? background : '#e6e7fc'; ctx.fillRect(10+x*4, 10+y*8, 4, 8);
     }
-    const buildMode=enabled.checked&&!keyboardActive ? (stroke?.tool??tool)==='erase'?'erasing':'drawing' : `keyboard ${game.mode}`;
+    const buildMode=!keyboardActive ? (stroke?.tool??tool)==='erase'?'erasing':'drawing' : `keyboard ${game.mode}`;
     const description = importFall ? 'Loose bricks falling' : game.phase === 'building' ? `Building · ${buildMode}` : `Firing · shot ${game.shots}`;
     if(game.phase!=='building')launchPending=false;
+    if(startingAim&&game.phase==='bombarding'){game.setCannonSetting('power',5);game.setCannonSetting('angle',12);startingAim=false;}
     syncTools();
     const settings=game.cannonSettings();
     for(const input of cannons.querySelectorAll('input')){
@@ -228,7 +231,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     press, release, togglePause, get paused() {return paused;},
     restart() {release();importFall=null;game.reset();tool='draw';keyboardActive=false;paused=false;elapsed=previous=0;fileStatus.textContent='';draw(performance.now());},
     snapshot() {return [...game.screen];},
-    diagnostics() {return {ticks:game.ticks, paused, held:[...game.held], phase:game.phase, mode:game.mode, pointerTool:tool, mouseControls:enabled.checked,direction:direction.value, dragging:!!stroke, cursor:{...game.cursor}, shots:game.shots,cannonSettings:game.cannonSettings(), activity:game.activity, stepMs:game.stepMs, error:game.error};},
+    diagnostics() {return {ticks:game.ticks, paused, held:[...game.held], phase:game.phase, mode:game.mode, pointerTool:tool,direction:direction.value, dragging:!!stroke, cursor:{...game.cursor}, shots:game.shots,cannonSettings:game.cannonSettings(), activity:game.activity, stepMs:game.stepMs, error:game.error};},
     dispose() {disposed=true; importAbort?.abort();release(); cancelAnimationFrame(handle);
       palette.dispose();
       canvas.onpointerdown=canvas.onpointermove=canvas.onpointerup=canvas.onpointercancel=canvas.onlostpointercapture=canvas.onpointerleave=null;canvas.oncontextmenu=null;
