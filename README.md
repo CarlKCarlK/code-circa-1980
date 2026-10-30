@@ -2,7 +2,7 @@
 
 I wrote these programs in the early days of personal computing; now they run again in your browser.
 
-[![A train on a bridge built in Castles](app/assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)
+[![An arch and a tower in Castles, partly knocked down by cannon fire](app/assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)
 
 **[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)** — no installation required.
 

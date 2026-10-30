@@ -41,7 +41,47 @@ export function trestleBridge():Uint8Array {
   }
   return mask;
 }
+/** Draws rows of '#' bricks with the bottom row resting on row 46. */
+function drawRows(mask:Uint8Array,left:number,rows:string[]){
+  const top=47-rows.length;
+  rows.forEach((row,y)=>[...row].forEach((ch,x)=>{if(ch==='#')mask[(top+y)*128+left+x]=1;}));
+}
+/** Carl's arch on the left and a symmetric goblet tower mirroring it on the right. */
+export function archAndTower():Uint8Array {
+  const mask=new Uint8Array(128*48);
+  drawRows(mask,6,[
+    '.........#.........',
+    '........#.#........',
+    '.......#...#.......',
+    '......#.....#......',
+    '######.......######',
+    '#####....#....#####',
+    '####....#.#....####',
+    '###...##...##...###',
+    '##....#.....#....##',
+    '#.....#.....#.....#',
+    '#.....#.....#.....#',
+    '#.....#.....#.....#',
+  ]);
+  drawRows(mask,106,[
+    '#.#.......#.#',
+    '###.......###',
+    '.#.........#.',
+    '.#.........#.',
+    '.#.#.#.#.#.#.',
+    '.###########.',
+    '.###########.',
+    '.###########.',
+    '..#########..',
+    '...#######...',
+    '....#####....',
+    '.....###.....',
+    ...Array(11).fill('......#......'),
+  ]);
+  return mask;
+}
 export const patterns=[
+  {id:'arch-tower',label:'Arch and tower',create:archAndTower},
   {id:'trestle',label:'Train trestle bridge',create:trestleBridge},
   {id:'blank',label:'Empty field',create:()=>new Uint8Array(128*48)}
 ];

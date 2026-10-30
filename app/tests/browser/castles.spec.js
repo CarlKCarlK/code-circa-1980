@@ -24,7 +24,7 @@ test('collection leads to instructions; versions and downloads remain available'
  await page.goto('/?development=1#/program/castles/typescript');
  await expect(page.getByRole('heading',{name:'Castles',exact:true})).toBeVisible();
  await expect(page).toHaveURL(/castles\/typescript$/);
- await expect(page.locator('.quick-start')).toContainText('Start with a bridge');
+ await expect(page.locator('.quick-start')).toContainText('Start with an arch and a tower');
  await expect(page.locator('canvas')).toHaveCount(0);
  await page.locator('.source-details > summary').click();
  for(const name of ['Download BASIC listing','Download original payload','Recovery provenance']){
@@ -119,7 +119,7 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  await page.goto('/?development=1&test#/program/castles/v05');
  await page.getByRole('link',{name:'Browser version',exact:true}).click();
  await expect(page).toHaveURL(/castles\/typescript$/);
- await expect(page.locator('.quick-start')).toContainText('Start with a bridge');
+ await expect(page.locator('.quick-start')).toContainText('Start with an arch and a tower');
  await expect(page.locator('canvas')).toHaveCount(0);
  await page.getByRole('link',{name:'Build from scratch',exact:true}).click();
  await expect(page.locator('#status')).toContainText('TypeScript · Building');
