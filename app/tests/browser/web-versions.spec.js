@@ -14,8 +14,8 @@ test('latest program links open the newest frozen experience and its version gal
  await page.getByRole('link',{name:'Play Castles'}).click();
  await expect(page.locator('#status')).toContainText('TypeScript · Building');
  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
- if(!await page.getByRole('link',{name:'All web versions',exact:true}).isVisible())await page.locator('.source-details > summary').click();
- await page.getByRole('link',{name:'All web versions',exact:true}).click();
+ // Frozen v1-v3 link to this legacy gallery; later releases use the version dropdown.
+ await page.goto('/#/program/castles/web-versions');
  await expect(page.getByRole('heading',{name:'Castles versions',exact:true})).toBeVisible();
  await expect(page.getByRole('region',{name:'Web versions'})).toContainText(`${latest} · Latest`);
  await page.getByRole('link',{name:'Open v1',exact:true}).click();
@@ -25,6 +25,15 @@ test('latest program links open the newest frozen experience and its version gal
  await page.getByRole('link',{name:'Latest version',exact:true}).click();
  await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/#/program/castles$`));
  expect(errors).toEqual([]);
+});
+
+test('home page version dropdown opens the chosen frozen release',async({page})=>{
+ await page.goto('/');
+ const picker=page.getByLabel('Castles version');
+ await expect(picker).toHaveValue(new RegExp(`/experiences/castles/${latest}/$`));
+ await expect(picker.locator('option')).toHaveCount(releases.length);
+ await picker.selectOption({label:`v1 · ${releases[0].label}`});
+ await expect(page).toHaveURL(/\/experiences\/castles\/v1\/$/);
 });
 
 test('previously shared play links resolve to the latest frozen release',async({page})=>{
