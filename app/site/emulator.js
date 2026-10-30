@@ -48,11 +48,18 @@ export async function createPlayer(host, url, status, title, dependency) {
       event.preventDefault(); press(event.key, true);
     }
   };
+  // Typed and pasted text goes through the ROM's keyboard routine, as if keyed in.
+  const type = text => { if (!paused && !disposed) keyboard.simulateKeyboardText(text.replace(/\r\n?/g, '\n')); };
+  const paste = event => {
+    if (document.activeElement !== host) return;
+    event.preventDefault(); type(event.clipboardData.getData('text'));
+  };
   const keyup = event => { if (held.has(event.key.toLowerCase()) || held.has(event.key)) { event.preventDefault(); press(event.key, false); } };
   const visibility = () => { if (document.hidden && !paused) togglePause(); };
   const onBlur = () => release();
   document.addEventListener('keydown', keydown);
   document.addEventListener('keyup', keyup);
+  document.addEventListener('paste', paste);
   host.addEventListener('blur', onBlur);
   window.addEventListener('blur', onBlur);
   document.addEventListener('visibilitychange', visibility);
@@ -71,7 +78,7 @@ export async function createPlayer(host, url, status, title, dependency) {
   }
   restart();
   return {
-    press, release, restart, togglePause,
+    press, release, restart, togglePause, type,
     hasWork(){return Array.from({length:1024},(_,i)=>machine.readMemory(0x3c00+i)).some((code,i)=>code>=128&&code<192&&(code&(i<960?63:15))!==0);},
     get paused() {return paused;},
     // Memory inspection supports reproducible browser smoke tests. It does not
@@ -80,7 +87,7 @@ export async function createPlayer(host, url, status, title, dependency) {
     diagnostics() {return {tStates:machine.tStateCount, paused, held:[...held]};},
     dispose() {
       disposed = true; release(); machine.stop();
-      document.removeEventListener('keydown', keydown); document.removeEventListener('keyup', keyup);
+      document.removeEventListener('keydown', keydown); document.removeEventListener('keyup', keyup); document.removeEventListener('paste', paste);
       host.removeEventListener('blur', onBlur); window.removeEventListener('blur', onBlur);
       document.removeEventListener('visibilitychange', visibility);
     }

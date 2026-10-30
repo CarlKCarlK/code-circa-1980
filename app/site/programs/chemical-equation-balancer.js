@@ -1,4 +1,5 @@
 // Chemical Equation Balancer instructions and controls; shared navigation remains generic.
+import {problems, problemPanel} from '../../../programs/chemical-equation-balancer/problems.js';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const key = text => `<kbd>${escape(text)}</kbd>`;
 const code = text => `<code>${escape(text)}</code>`;
@@ -14,11 +15,11 @@ export const restartLabel = modern => modern ? 'Clear' : 'Restart';
 
 export const quickStart = version => isModern(version)
   ? ['Press Balance, choose a problem in the side panel, or type your own equation.', `Write elements with periods: ${code('C3.H8 + O2 = C.O2 + H2.O')}.`, 'Open “The linear equations” to see the algebra behind the answer.']
-  : ['Click the screen so it gets your keys.', `Type ${code('C3.H8 + O2 = C.O2 + H2.O')} and press Enter.`,
+  : ['Click the screen so it gets your keys.', `Type or paste ${code('C3.H8 + O2 = C.O2 + H2.O')}, or pick a problem from the side panel, then press Enter.`,
      isII(version) ? 'Wait for the answer (up to a few minutes), then type Y and Enter for another.' : 'Read the answer; the program asks for the next equation.'];
 export const launchHint = version => isModern(version)
   ? 'Press Balance to solve the starting equation, or pick a problem from the side panel.'
-  : 'Click the screen after launch, then type an equation and press Enter.';
+  : 'Click the screen after launch. Type, paste, or pick a problem from the side panel, then press Enter.';
 
 export function instructions(version) {
   const history = `<section class="program-history"><h2>1979 and 1981. It was linear algebra all along.</h2><p>I wrote two generations of this program in TRS-80 BASIC. The 1979 Chemical Equation Balancer writes one equation per element and solves them with floating-point elimination, then rescales until the coefficients are whole numbers. Chemistry Balancer II (1981) is a rewrite: it does exact arithmetic with fractions and reports when an equation has only a negative solution or more than one independent answer.</p><p>I worked the method out on my own, and I resented it a bit when I later realized that what I had figured out was “just” solving a system of linear equations. Each element gives one equation, each compound one unknown, and a balanced equation is a positive solution in the null space of that matrix.</p><p>Radio Shack sold Chemistry Balancer II in its catalog.</p><p class="small">Dates come from the copyright remarks in the source.</p></section>`;
@@ -34,3 +35,18 @@ export function instructions(version) {
 export const onScreenKeys = version => isModern(version) ? []
   : [{label:'Answer', keys:[['Enter','Enter'], ...(isII(version) ? [['y','Yes'], ['n','No']] : [])]}];
 export const quickHelp = () => 'Click the screen first so it gets your keys, then type the equation on your keyboard.';
+
+// The Level II BASIC player gets the same problems; a click types the equation
+// at the INPUT prompt, and Enter submits it, as on the original keyboard.
+export function decoratePlayer(instance, {dock, version, modern, status}) {
+  if (modern) return;
+  // Charges (@) and spaces arrived with Chemistry Balancer II.
+  const groups = isII(version) ? problems : problems.filter(p => !p.group.startsWith('Ions'))
+    .map(p => ({...p, items: p.items.map(([label, eq]) => [label, eq.replaceAll(' ', '')])}));
+  const host = document.querySelector('#display');
+  dock.append(problemPanel(text => {
+    instance.type(text);
+    host.focus({preventScroll:true});
+    status.textContent = 'Typed at the prompt · press Enter to balance';
+  }, {groups, note: isII(version) ? 'A problem types the equation at the prompt; press Enter. After an answer, type Y and Enter first. You can also paste.' : 'A problem types the equation at the prompt; press Enter. You can also paste.'}));
+}
