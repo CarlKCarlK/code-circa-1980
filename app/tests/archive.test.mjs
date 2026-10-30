@@ -37,11 +37,14 @@ for(const name of fs.readdirSync(root)){
       bases.add(pointer-end-1);offset=end+1;
     }
     assert.equal(offset+2,bytes.length);assert.equal(bases.size,1);
-    assert.equal(lines,save.recovery_item.validation.lines);
-    assert.equal(last,save.recovery_item.validation.last);
+    // Recovery inventories record structure either under validation or on the item itself.
+    const structure=typeof save.recovery_item.validation==='object'?save.recovery_item.validation:save.recovery_item;
+    assert.equal(lines,structure.lines);
+    assert.equal(last,structure.last??structure.last_line);
     assert.equal(createHash('sha256').update(bytes).digest('hex'),save.recovery_item.sha256);
     const listing=fs.readFileSync(new URL(version.listing,folder),'utf8');
-    assert.equal(listing.trimEnd().split('\n').length,lines);
+    // Count numbered lines: a string literal may contain embedded line breaks.
+    assert.equal(listing.trimEnd().split('\n').filter(l=>/^\d+ /.test(l)).length,lines);
     assert.equal(decodeBasicProgram(bytes).asAscii().replaceAll('\r\n','\n').trimEnd(),listing.replaceAll('\r\n','\n').trimEnd());
     if(!version.playable)assert.ok(version.unavailableReason);
   });
