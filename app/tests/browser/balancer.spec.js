@@ -11,7 +11,7 @@ test('collection and program links open the Rust player directly, with About ope
  const card=page.locator('.program-card',{hasText:'Chemical Equation Balancer'});
  await expect(card).toContainText('02 / Science');
  await expect(card.getByRole('link',{name:'Run Chemical Equation Balancer →'})).toHaveAttribute('href',/#\/program\/bal\/rust\/play$/);
- for(const link of ['#/program/bal','#/program/bal/rust','#/program/bal/v06']){
+ for(const link of ['#/program/bal','#/program/bal/rust','#/program/bal/basic']){
   await page.goto(`/?development=1${link}`);
   await expect(page).toHaveURL(new RegExp(`${link.replace(/\//g,'\\/')}${link.endsWith('bal')?'\\/rust':''}\\/play$`));
   await expect(page.locator('#display')).toBeVisible();
@@ -50,33 +50,34 @@ test('Rust version balances problems from the side panel and typed equations',as
  await expect(page.locator('.balancer-result')).toBeEmpty();
  await expect(page.getByRole('link',{name:'Rust/JS version',exact:true})).toHaveAttribute('aria-current','page');
  await page.getByRole('link',{name:'Level II BASIC version',exact:true}).click();
- await expect(page).toHaveURL(/bal\/v20\/play$/);
+ await expect(page).toHaveURL(/#\/program\/bal\/basic\/play$/);
  expect(errors).toEqual([]);
 });
 
-test('original 1979 v06 balances a typed equation in the emulator',async({page})=>{
- await page.goto('/?development=1&test#/program/bal/v06/play');
- await expect(page.locator('#status')).toContainText('Running original BASIC');
- await expect.poll(()=>screenText(page),{timeout:15000}).toContain('WHAT IS THE EQUATION');
- await page.locator('#display').click();
- await page.keyboard.type('FE+O2=FE2.O3');await page.keyboard.press('Enter');
- await expect.poll(()=>screenText(page),{timeout:30000}).toContain('4 (FE)+ 3 (O2) -^ 2 (FE2.O3)');
+test('older BASIC versions are source only, linking to the playable v20',async({page})=>{
+ await page.goto('/?development=1#/program/bal/v06');
+ await expect(page).toHaveURL(/#\/program\/bal\/v06$/);
+ await expect(page.locator('.source-only')).toContainText('Source only');
+ await expect(page.getByRole('link',{name:'Download BASIC listing'})).toBeVisible();
+ await expect(page.getByRole('link',{name:'Run the playable version →'})).toHaveAttribute('href','#/program/bal/basic/play');
+ await expect(page.locator('#display')).toHaveCount(0);
 });
 
 test('Level II BASIC player takes side-panel problems and pasted text',async({page})=>{
- await page.goto('/?development=1&test#/program/bal/v06/play');
- await expect(page.locator('#status')).toContainText('Running original BASIC');
- await expect.poll(()=>screenText(page),{timeout:15000}).toContain('WHAT IS THE EQUATION');
- await expect(page.locator('.balancer-problems summary',{hasText:'Ions'})).toHaveCount(0);
- await page.getByRole('button',{name:'Rust'}).click();
- await expect.poll(()=>screenText(page),{timeout:10000}).toContain('? FE+O2=FE2.O3');
- await expect(page.locator('#display')).toBeFocused();
- await page.keyboard.press('Enter');
- await expect.poll(()=>screenText(page),{timeout:30000}).toContain('4 (FE)+ 3 (O2) -^ 2 (FE2.O3)');
- await page.goto('/?development=1&test#/program/bal/v20/play');
+ test.setTimeout(150000); // v20 takes 23+ s of emulated time to balance water.
+ await page.goto('/?development=1&test#/program/bal/basic/play');
  await expect(page.locator('#status')).toContainText('Running original BASIC');
  await expect.poll(()=>screenText(page),{timeout:15000}).toContain('RAW EQUATION?');
  await page.locator('#display').click();
  await page.evaluate(()=>{const data=new DataTransfer();data.setData('text/plain','H2 + O2 = H2.O');document.dispatchEvent(new ClipboardEvent('paste',{clipboardData:data,bubbles:true}));});
  await expect.poll(()=>screenText(page),{timeout:10000}).toContain('? H2 + O2 = H2.O');
+ await page.keyboard.press('Enter');
+ // v20 keeps the typed spacing, so compare without spaces.
+ await expect.poll(async()=>(await screenText(page)).replace(/ /g,''),{timeout:70000}).toContain('2(H2)+(O2)-^2(H2.O)');
+ await page.reload();
+ await expect(page.locator('#status')).toContainText('Running original BASIC');
+ await expect.poll(()=>screenText(page),{timeout:15000}).toContain('RAW EQUATION?');
+ await page.getByRole('button',{name:'Rust',exact:true}).click();
+ await expect.poll(()=>screenText(page),{timeout:10000}).toContain('? FE + O2 = FE2.O3');
+ await expect(page.locator('#display')).toBeFocused();
 });

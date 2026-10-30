@@ -11,7 +11,8 @@ if(webProgram)document.querySelector('.brand').href=collectionUrl.href;
 let player = null, navigation = 0, activeRoute = null;
 const sessions = new Map();
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const route = (program, version, play=false) => `#/program/${program.id}/${version.id}${play ? '/play' : ''}`;
+// A version may route by a fixed slug (bal's playable BASIC is /basic) instead of its ID.
+const route = (program, version, play=false) => `#/program/${program.id}/${version.slug??version.id}${play ? '/play' : ''}`;
 const defaultEdition = program => program.defaultImplementation && program.modern ? program.modern : program.versions.find(v=>v.id===program.defaultVersion);
 const actionVerb = program => program.actionVerb ?? 'Play';
 const crumbs = program => `<nav aria-label="Breadcrumb"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
@@ -52,7 +53,7 @@ async function render() {
     if(!latest){app.innerHTML=`${crumbs(program)}<h1>No web releases yet</h1>`;return;}
     const url=new URL(experienceUrl(program,latest));url.search=location.search;url.hash=location.hash;location.replace(url);return;
   }
-  const version=!parts[2] && program ? defaultEdition(program) : parts[2]===program?.modern?.id ? program.modern : program?.versions.find(v=>v.id===parts[2]);
+  const version=!parts[2] && program ? defaultEdition(program) : parts[2]===program?.modern?.id ? program.modern : program?.versions.find(v=>(v.slug??v.id)===parts[2]||v.id===parts[2]);
   if(!program || !version){app.innerHTML='<h1>Program not found</h1><p><a href="#/">Back to the collection</a></p>';return;}
   document.title=`${program.title} · Code Circa 1980`;
   const playing=parts[3]==='play' && version.playable;
@@ -73,7 +74,7 @@ async function render() {
     exposePlayer(player);app.querySelector('#display').focus({preventScroll:true});window.scrollTo(0,0);return;
   }
   const sourceDetails=`<details class="source-details" ${program.aboutOpen?'open':''}><summary>About, history & source</summary>${program.instructions(version)}<section class="source-section"><h3>Source</h3><p>${escape(version.note)} Original bytes and historical quirks are preserved.</p><p><a href="${assetUrl(program,version.listing)}" download>Download BASIC listing</a> · <a href="${assetUrl(program,version.raw)}" download>Download original payload</a> · <a href="${provenanceUrl(program)}" download>Recovery provenance</a></p>${versionList(program,version)}${webVersionNavigation(program)}</section></details>`;
-  const unavailable=`<p>This version is preserved for study.</p><p>${escape(version.unavailableReason??'')}</p><a href="${route(program,reference,true)}">Play the playable version →</a>`;
+  const unavailable=`<p>This version is preserved for study.</p><p>${escape(version.unavailableReason??'')}</p><a href="${route(program,reference,true)}">${actionVerb(program)} the playable version →</a>`;
   app.innerHTML=playing?`<section class="player-section"><header class="player-header"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><h1>${escape(program.title)}</h1>${implementationTabs}</header><div class="player-workspace"><div id="display" class="screen" tabindex="0" aria-label="Loading player"></div><aside id="control-dock" aria-label="Game controls"><div class="essential-controls"><button id="help">Help</button><button id="pause">Pause</button><button id="restart">${escape(program.restartLabel?.(modern)??'Restart')}</button><button id="fullscreen">Full screen</button></div><p id="status" role="status">Loading ${modern?'the browser version':'the original program'}…</p></aside></div><details class="keyboard-help" ${modern?'':'open'} ${program.onScreenKeys(version).length?'':'hidden'}><summary>Original keyboard controls</summary><div class="quick-controls" aria-label="On-screen game keys">${program.onScreenKeys(version).map(group=>`<div class="key-group${group.pad?' key-pad':''}"><span class="key-group-label">${escape(group.label)}</span><div>${[...group.keys,...(group.extra??[])].map(([k,action])=>`<button class="game-key" data-key="${k}" aria-label="Game key ${k===' '?'Space':escape(k)}"><kbd>${k===' '?'Space':escape(k.toUpperCase())}</kbd><span>${escape(action)}</span></button>`).join('')}</div></div>`).join('')}</div><p>${escape(program.quickHelp(version))}</p></details>${sourceDetails}</section>`:`${crumbs(program)}<section class="source-only"><h1>${escape(program.title)} · ${escape(version.id.toUpperCase())}</h1>${implementationTabs}${unavailable}</section>${sourceDetails}`;
   window.scrollTo(0,0);
   if (!playing) return;
