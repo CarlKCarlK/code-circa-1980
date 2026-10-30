@@ -1,4 +1,5 @@
 import {test,expect} from '@playwright/test';
+test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
 
 const pixels=async page=>page.evaluate(()=>{
  const screen=window.__circaPlayer.snapshot();const points=[];
@@ -22,9 +23,9 @@ test('collection leads to instructions; versions and downloads remain available'
  await page.getByRole('link',{name:/Instructions & play/}).click();
  await expect(page.getByRole('heading',{name:'Castles',exact:true})).toBeVisible();
  await expect(page).toHaveURL(/castles\/typescript$/);
- await expect(page.getByRole('heading',{name:'Your first minute with the keyboard'})).toBeVisible();
+ await expect(page.locator('.quick-start')).toContainText('Start with a bridge');
  await expect(page.locator('canvas')).toHaveCount(0);
- await page.locator('.source-details summary').click();
+ await page.locator('.source-details > summary').click();
  for(const name of ['Download BASIC listing','Download original payload','Recovery provenance']){
   const href=await page.getByRole('link',{name,exact:true}).getAttribute('href');
   const response=await page.request.get(href);expect(response.ok()).toBeTruthy();
@@ -54,7 +55,7 @@ test('original v03 builds a tower, fires, pauses, releases keys and restarts',as
  await page.waitForTimeout(200);
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().tStates)).toBe(paused.tStates);
  await expect(page.getByRole('button',{name:'Resume',exact:true})).toBeVisible();
- await page.getByRole('button',{name:'Restart',exact:true}).click();
+ await page.getByRole('button',{name:'New construction',exact:true}).click();
  await expect.poll(async()=> (await pixels(page)).filter(p=>p[1]===47).length).toBe(128);
  await expect.poll(async()=> (await pixels(page)).filter(([x,y])=>y<46).length).toBeLessThan(2);
  expect(before.length).toBeGreaterThan(130);
@@ -63,7 +64,7 @@ test('original v03 builds a tower, fires, pauses, releases keys and restarts',as
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().held)).toEqual([]);
  await page.keyboard.up('1');
  // Navigation outside the focused display must not be captured by the emulator.
- await page.getByRole('link',{name:'← Instructions',exact:true}).click();
+ await page.getByRole('link',{name:'Collection',exact:true}).click();
  await expect(page.locator('canvas')).toHaveCount(0);
  expect(await page.evaluate(()=>window.__circaPlayer)).toBeUndefined();
  expect(errors).toEqual([]);
@@ -115,11 +116,11 @@ test('v05 original runs with the assembled FALL dependency',async({page})=>{
 test('TypeScript follows the instructions, builds, bombards, pauses and restarts',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1&test#/program/castles/v05');
- await page.getByRole('link',{name:'TypeScript',exact:true}).click();
+ await page.getByRole('link',{name:'Browser version',exact:true}).click();
  await expect(page).toHaveURL(/castles\/typescript$/);
- await expect(page.getByRole('heading',{name:'Your first minute with the keyboard'})).toBeVisible();
+ await expect(page.locator('.quick-start')).toContainText('Start with a bridge');
  await expect(page.locator('canvas')).toHaveCount(0);
- await page.getByRole('link',{name:'Play Castles'}).click();
+ await page.getByRole('link',{name:'Build from scratch',exact:true}).click();
  await expect(page.locator('#status')).toContainText('TypeScript · Building');
  await page.locator('#display').focus();
  await hold(page,'8',180);await hold(page,'1',1600);
@@ -138,13 +139,13 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  const tick=await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks);await page.waitForTimeout(180);
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks)).toBe(tick);
- await page.getByRole('button',{name:'Restart',exact:true}).click();
+ await page.getByRole('button',{name:'New construction',exact:true}).click();
  await expect(page.locator('#status')).toContainText('Building');
  expect((await pixels(page)).filter(([x,y])=>y<46)).toHaveLength(0);
  await page.keyboard.down('1');await page.getByRole('button',{name:'Pause',exact:true}).focus();
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().held)).toEqual([]);await page.keyboard.up('1');
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
- await page.getByRole('link',{name:'← Instructions',exact:true}).click();
+ await page.getByRole('link',{name:'Collection',exact:true}).click();
  await expect(page.locator('canvas')).toHaveCount(0);expect(errors).toEqual([]);
 });

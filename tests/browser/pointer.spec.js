@@ -1,4 +1,5 @@
 import {test,expect} from '@playwright/test';
+test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
 async function boot(page){
  await page.goto('/?development=1&test#/program/castles/typescript/play');
  await expect(page.locator('#status')).toContainText('TypeScript · Building');
@@ -48,13 +49,13 @@ test('hover, keyboard-only modes, cancelled strokes, pause and bombardment do no
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().dragging)).toBe(false);
  await page.getByLabel('Mouse controls', {exact:true}).uncheck();
  await drag(page,[90,46],[90,25]);expect(await point(page,90,46)).toBe(false);
- await page.getByRole('button',{name:'Restart',exact:true}).click();
+ await page.getByRole('button',{name:'New construction',exact:true}).click();
  await page.locator('#display').focus();await page.keyboard.press('8',{delay:180});await page.keyboard.down('1');await page.waitForTimeout(700);await page.keyboard.up('1');
  expect(await point(page,64,45)).toBe(true);
  await page.getByLabel('Mouse controls', {exact:true}).check();
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  await drag(page,[90,46],[90,25]);expect(await point(page,90,46)).toBe(false);
- await page.getByRole('button',{name:'Restart',exact:true}).click();
+ await page.getByRole('button',{name:'New construction',exact:true}).click();
  await page.locator('#display').focus();await page.keyboard.press('q',{delay:40});
  await expect(page.getByRole('button',{name:'Draw',exact:true})).toBeDisabled();
  const before=await page.evaluate(()=>window.__circaPlayer.diagnostics().cursor);
@@ -69,9 +70,7 @@ test('touch taps draw and erase correctly on a narrow scaled canvas',async({brow
   await page.goto(`${test.info().project.use.baseURL}/?development=1&test#/program/castles/typescript/play`);
   await expect(page.locator('#status')).toContainText('TypeScript · Building');
   for(const y of [46,45]){const p=await at(page,64,y);await page.touchscreen.tap(p.x,p.y);expect(await point(page,64,y)).toBe(true);}
-  await page.getByRole('button',{name:'Expand controls',exact:true}).click();
   await page.getByRole('button',{name:'Erase',exact:true}).click();
-  await page.getByRole('button',{name:'Collapse controls',exact:true}).click();
   const p=await at(page,64,45);await page.touchscreen.tap(p.x,p.y);expect(await point(page,64,45)).toBe(false);
   expect(await point(page,64,46)).toBe(true);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

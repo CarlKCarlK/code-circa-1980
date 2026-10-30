@@ -2,7 +2,7 @@ type Layout={x:number;y:number;width:number;height:number;collapsed:boolean;opac
 /** A persistent overlay. Pointer gestures never reach the playfield. */
 export function createPalette(host:HTMLElement,body:HTMLElement,title:string,onInteract:()=>void){
   const storageKey='cc80.castles.palette.v1';
-  const panel=document.createElement('aside');panel.className='floating-palette';panel.setAttribute('aria-label',`${title} controls`);
+  const panel=document.createElement('aside');panel.className='docked-palette';panel.setAttribute('aria-label',`${title} controls`);
   panel.innerHTML='<header class="palette-title"><button type="button" class="palette-grip" aria-label="Move controls" title="Drag to move; arrow keys move the panel"></button><button type="button" class="palette-collapse" aria-label="Collapse controls" aria-expanded="true">−</button></header><div class="palette-body"></div><button type="button" class="palette-resize" aria-label="Resize controls" title="Drag to resize; arrow keys resize the panel">↘</button>';
   const grip=panel.querySelector<HTMLButtonElement>('.palette-grip')!;grip.textContent=`${title} controls`;
   const collapse=panel.querySelector<HTMLButtonElement>('.palette-collapse')!,resize=panel.querySelector<HTMLButtonElement>('.palette-resize')!;
@@ -10,7 +10,16 @@ export function createPalette(host:HTMLElement,body:HTMLElement,title:string,onI
   const opacityLabel=document.createElement('label');opacityLabel.className='palette-opacity';
   opacityLabel.innerHTML='Panel opacity <input type="range" aria-label="Panel opacity" min="55" max="100" value="88"><output>88%</output>';
   content.append(opacityLabel);const opacity=opacityLabel.querySelector('input')!,opacityOutput=opacityLabel.querySelector('output')!;
-  host.append(panel);
+  const dock=host.querySelector('#control-dock')!;dock.append(panel);
+  const arrangement=document.createElement('div');arrangement.className='palette-arrangement';
+  arrangement.innerHTML='<label><input type="checkbox" aria-label="Float controls"> Float controls</label> <button type="button">Reset layout</button>';
+  (body.querySelector('.advanced-tools')||content).append(arrangement);const floating=arrangement.querySelector('input')!;
+  function arrangementChanged(){
+    panel.className=floating.checked?'floating-palette':'docked-palette';
+    (floating.checked?host:dock).append(panel);layout();
+  }
+  floating.onchange=arrangementChanged;
+  arrangement.querySelector('button')!.onclick=()=>{state={x:12,y:12,width:270,height:420,collapsed:false,opacity:88};floating.checked=false;arrangementChanged();save();};
   let state:Layout={x:12,y:12,width:250,height:380,collapsed:host.clientWidth<500,opacity:88};
   try{const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(saved&&['x','y','width','height','opacity'].every(k=>Number.isFinite(saved[k]))&&typeof saved.collapsed==='boolean')state=saved;}catch{}
   let gesture:{id:number;kind:'move'|'resize';x:number;y:number;layout:Layout;handle:HTMLElement}|null=null;
@@ -18,6 +27,12 @@ export function createPalette(host:HTMLElement,body:HTMLElement,title:string,onI
   let normalPosition:{x:number;y:number}|null=null;
   const save=()=>{try{localStorage.setItem(storageKey,JSON.stringify(normalPosition?{...state,...normalPosition}:state));}catch{}};
   function layout(){
+    if(!floating.checked){
+      panel.removeAttribute('style');content.hidden=false;resize.hidden=true;
+      panel.querySelector<HTMLElement>('.palette-title')!.hidden=true;
+      opacityLabel.hidden=true;return;
+    }
+    panel.querySelector<HTMLElement>('.palette-title')!.hidden=false;opacityLabel.hidden=false;
     const fullscreen=document.fullscreenElement===host;
     if(fullscreen&&!wasFullscreen)normalPosition={x:state.x,y:state.y};
     else if(!fullscreen&&wasFullscreen&&normalPosition){state.x=normalPosition.x;state.y=normalPosition.y;normalPosition=null;}

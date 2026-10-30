@@ -72,7 +72,7 @@ third-person biography. Preserve historical source credits and copyright notices
 ## Preserve web experiences
 
 Every program starts with web v1, separately from recovered historical versions.
-Follow [WEB-VERSIONS.md](WEB-VERSIONS.md). Published builds under
+Follow [WEB-VERSIONS.md](docs/WEB-VERSIONS.md). Published builds under
 `public/experiences/<program>/vN/` are immutable. Public program links default to
 the latest entry in `programs/<program>/web-versions.json`; the gallery and permanent
 version URLs retain every earlier experience. Preserve its entire player, styling,
@@ -84,3 +84,15 @@ to freeze the next sequential version, verify it, and commit its snapshot/catalo
 Use tags such as `castles-web-v1`, distinct from historical tags such as `castles-v01`.
 Never fix a published snapshot in place or rebuild old releases using newer code.
 CI verifies their hashes and rejects modifications to previously published versions.
+
+## Castles web v2 UX
+
+Keep the short start page before play. Browser play starts with a bridge; Build
+from scratch opens an empty field. Controls dock beside the field on desktop
+and below it on phones; floating controls are optional. Help pauses and restores
+the same scene and prior pause state. Browser and Original keep separate paused
+in-memory sessions until reload; do not imply scene transfer or persistence to
+disk. Confirm clearing/replacement only when work exists. PNG saves preserve
+brick layouts, not running sessions. Keep phase actions and pause outside
+advanced controls. See [the UX specification](docs/castles-user-experience-spec.md)
+and [development checks](docs/development.md).

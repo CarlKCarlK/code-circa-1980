@@ -22,6 +22,7 @@ export async function createPlayer(host, url, status, title, dependency) {
   const keyboard = new Keyboard();
   const machine = new Trs80(config, screen, keyboard, new CassettePlayer(), new SilentSoundPlayer());
   host.replaceChildren(screen.getNode());
+  host.append(document.getElementById('control-dock'));
   host.tabIndex = 0;
   host.setAttribute('role', 'group');
   host.setAttribute('aria-label', `${title} emulator. Focus here to use the game keys.`);
@@ -68,6 +69,7 @@ export async function createPlayer(host, url, status, title, dependency) {
   restart();
   return {
     press, release, restart, togglePause,
+    hasWork(){return Array.from({length:1024},(_,i)=>machine.readMemory(0x3c00+i)).some((code,i)=>code>=128&&code<192&&(code&(i<960?63:15))!==0);},
     get paused() {return paused;},
     // Memory inspection supports reproducible browser smoke tests. It does not
     // modify the running program or expose a different gameplay implementation.

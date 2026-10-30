@@ -170,3 +170,36 @@ player, the gallery, and legacy links that resolve to the newest web release.
 In an isolated checkout, a temporary v2 became the default while v1 remained
 playable and unchanged. The preservation gate rejected deliberate alteration of
 v1 even when its file hashes were updated. Only v1 is registered for publication.
+
+## Web v2 UX verification — 2026-10-30
+
+The editable experience implements the entry, first-play and continuity stages
+of [the UX specification](../../docs/castles-user-experience-spec.md). The BASIC
+archives and TypeScript rule engine remain unchanged.
+
+- `npm test`: all seven archive/rules/timing/input/brick/pattern/release suites pass.
+- `npm run build`: typecheck and production build pass.
+- Chromium browser checks exercise short instructions, bridge/blank starts,
+  actual original v01/v02/v03/v05 startup and keyboard input, supported pointer
+  and emulated touch editing, automatic bombardment and settings, pause/restart,
+  PNG round trips, preview/Cancel, named downloads and safe replacement.
+- Tests compare exact screen bytes across Help, implementation switching and
+  Back; inactive sessions pause, and Help restores prior pause state and focus.
+- At 1280 × 960 and 390 × 844, Play fits on the start page. Arrival shows the
+  whole field and Start bombardment without scrolling or an overlay. Desktop
+  pause and phase actions need no internal scrolling. Screenshots inspected.
+- Full-screen Help, pause and exit work in Browser and Original. Optional floating
+  controls still move, resize, adjust opacity and restore their normal position.
+- `npm run test:dev-route` confirms ordinary Vite navigation reaches editable
+  instructions and a running player without `?development=1`. Production routes
+  and previous web releases are checked separately by the browser suite.
+
+For an already running preview, reproduce with
+`PLAYWRIGHT_BASE_URL=http://127.0.0.1:PORT npm run test:browser`. This avoids the
+automatic server availability probe when the local environment blocks it.
+
+Limits: Chromium desktop and emulated phone/touch only; no physical-device,
+Safari/Firefox, screen-reader or newcomer usability study. Sessions survive
+in-page navigation, not reload. No exhaustive historical runtime parity claim.
+Optional sound, supplied biography, social preview work and additional castle
+pictures remain later tasks in the TODO. Publication is separate.

@@ -306,13 +306,13 @@ not evidence that the live website has the same redirect loop.
 ## Implementation references
 
 - [README](../README.md) and [Castles README](../programs/castles/README.md)
-- [Current TODO](../TODO.md)
+- [Current TODO](TODO.md)
 - [Navigation and page layout](../site/main.js)
 - [Instructions and historical controls](../site/programs/castles.js)
 - [Player controls and lifecycle](../programs/castles/typescript/player.ts)
 - [Floating palette](../programs/castles/typescript/palette.ts)
 - [Game rules](../programs/castles/typescript/engine.ts)
 - [Styles](../site/style.css), [HTML metadata](../index.html)
-- [Web-release preservation workflow](../WEB-VERSIONS.md)
+- [Web-release preservation workflow](WEB-VERSIONS.md)
 - [Live collection](https://carlkcarlk.github.io/code-circa-1980/)
 - [GitHub entry](https://github.com/CarlKCarlK/code-circa-1980)

@@ -1,15 +1,16 @@
 import {test,expect} from '@playwright/test';
+test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
 test('controls can move outside the field and return there after fullscreen',async({page})=>{
  await page.setViewportSize({width:1280,height:1200});
- await page.goto('/?development=1&test#/program/castles/typescript/play');
+ await page.goto('/?development=1&test#/program/castles/typescript/play');await floatControls(page);
  const panel=page.locator('.floating-palette'),host=page.locator('#display');await expect(panel).toBeVisible();
  await page.evaluate(()=>window.scrollTo(0,0));
  const hostBox=await host.boundingBox(),initialPanel=await panel.boundingBox(),grip=await page.getByRole('button',{name:'Move controls',exact:true}).boundingBox();
  await page.mouse.move(grip.x+20,grip.y+15);await page.mouse.down();
- await page.mouse.move(grip.x+20,hostBox.y-initialPanel.height-10+15,{steps:10});await page.mouse.up();
- let panelBox=await panel.boundingBox();expect(panelBox.y+panelBox.height).toBeLessThan(hostBox.y);
+ await page.mouse.move(grip.x+20,8+15,{steps:10});await page.mouse.up();
+ let panelBox=await panel.boundingBox();expect(panelBox.y).toBeLessThan(hostBox.y);
  const normal=await panel.evaluate(el=>({x:parseFloat(el.style.left),y:parseFloat(el.style.top)}));
- await page.reload();await expect(panel).toBeVisible();
+ await page.reload();await floatControls(page);await expect(panel).toBeVisible();
  expect(await panel.evaluate(el=>({x:parseFloat(el.style.left),y:parseFloat(el.style.top)}))).toEqual(normal);
  await page.getByRole('button',{name:'Full screen',exact:true}).click();
  await expect.poll(()=>page.evaluate(()=>document.fullscreenElement?.id)).toBe('display');
@@ -25,7 +26,7 @@ test('controls can move outside the field and return there after fullscreen',asy
  await expect.poll(()=>panel.evaluate(el=>({x:parseFloat(el.style.left),y:parseFloat(el.style.top)}))).toEqual(normal);
 });
 test('floating controls move, resize, persist, and never paint through the panel',async({page})=>{
- await page.goto('/?development=1&test#/program/castles/typescript/play');
+ await page.goto('/?development=1&test#/program/castles/typescript/play');await floatControls(page);
  const panel=page.locator('.floating-palette');await expect(panel).toBeVisible();
  await expect(page.getByRole('button',{name:'Move controls',exact:true})).toHaveCSS('cursor','grab');
  expect(await page.getByRole('button',{name:'Move controls',exact:true}).evaluate(el=>getComputedStyle(el,'::before').backgroundImage)).toContain('radial-gradient');
@@ -40,7 +41,7 @@ test('floating controls move, resize, persist, and never paint through the panel
  await page.getByLabel('Panel opacity').evaluate(el=>{el.value='65';el.dispatchEvent(new Event('input',{bubbles:true}));});
  expect(await panel.evaluate(el=>el.style.getPropertyValue('--palette-opacity'))).toBe('0.65');
  expect(await page.evaluate(()=>window.__circaPlayer.snapshot())).toEqual(before);
- await page.reload();await expect(panel).toBeVisible();expect((await panel.boundingBox()).width).toBeCloseTo(resized.width,0);
+ await page.reload();await floatControls(page);await expect(panel).toBeVisible();expect((await panel.boundingBox()).width).toBeCloseTo(resized.width,0);
  await page.getByRole('button',{name:'Collapse controls',exact:true}).click();expect((await panel.boundingBox()).height).toBe(42);
  await page.getByRole('button',{name:'Expand controls',exact:true}).click();
  await page.getByRole('button',{name:'Start bombardment',exact:true}).click();
@@ -53,6 +54,8 @@ test('floating controls move, resize, persist, and never paint through the panel
  await page.getByRole('button',{name:'Start bombardment',exact:true}).click();
  await expect(page.getByRole('button',{name:'Return to building',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
- await page.getByRole('button',{name:'Restart',exact:true}).click();await expect(page.getByRole('button',{name:'Draw',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'New construction',exact:true}).click();await expect(page.getByRole('button',{name:'Draw',exact:true})).toBeVisible();
  await page.screenshot({path:'test-results/castles-floating-controls.png',fullPage:true});
 });
+
+async function floatControls(page){await page.locator('.advanced-tools summary').click();await page.getByLabel('Float controls',{exact:true}).check();}

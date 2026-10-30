@@ -14,7 +14,8 @@
     "test:browser": "playwright test",
     "build:fall": "node scripts/build-fall.mjs",
     "typecheck": "tsc --noEmit",
-    "calibrate:castles": "node scripts/calibrate-castles.mjs"
+    "calibrate:castles": "node scripts/calibrate-castles.mjs",
+    "test:dev-route": "node scripts/check-dev-route.mjs"
   },
   "dependencies": {
     "trs80-base": "2.3.1",

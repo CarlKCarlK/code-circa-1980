@@ -1,66 +1,29 @@
 # Code Circa 1980
 
-**Original programs. New possibilities.**
+I wrote these programs in the early days of personal computing; now they run again in your browser.
 
-**[Visit the website and play Castles](https://carlkcarlk.github.io/code-circa-1980/)**
+[![A train on a bridge built in Castles](assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)
 
-My programs from the late 1970s and early 1980s, recovered from cassette recordings
-and preserved in their original form. Selected programs will be reimagined for
-modern browsers. Games, utilities, mathematics, graphics, and experiments belong
-here; the collection grows one program at a time.
+**[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)** — no installation required.
 
-## Run locally
+Build towers and bridges from supported blocks, then let two cannons test them.
+The browser version has mouse and touch controls; the recovered TRS-80 original
+is available alongside it.
 
-```sh
-npm ci
-npm run dev
-```
+I probably wrote Castles around 1982, first in BASIC and later with a little Z80
+assembly. The date is an estimate from a dated program on the other side of the
+tape, not a date found in Castles itself. The original bytes are preserved.
 
-Open the local URL printed by Vite. Choose **Castles**, read its instructions,
-then launch the original program in the embedded TRS-80 emulator.
-Add `?development=1` to work on the editable browser experience; ordinary links
-open the latest frozen web release.
+[Castles history & source](programs/castles/README.md) ·
+[Previous web releases](https://carlkcarlk.github.io/code-circa-1980/#/program/castles/web-versions) ·
+[Development & verification](docs/development.md) · [Future work](docs/TODO.md)
 
-Open `code-circa-1980.code-workspace` to work with this collection and the `trs80`
-recovery archive together. Node.js 22.12+ (or 24+) is required.
-
-## First program
-
-[Castles](programs/castles/README.md) has five recovered versions, each in its
-own Git commit in a documented, inferred development order. Four recovered BASIC versions are playable: v01–v03 are self-contained, and v05
-loads a modern assembly of its recovered FALL v6 source. v04 remains source only.
-The default original is now v05. Choose **TypeScript** on the instructions page
-for the first native browser port, based on v05 and its assembly routine.
-
-Every program's browser experience starts at **web v1**. The newest release is
-the default; older releases stay playable in the
-[web version gallery](https://carlkcarlk.github.io/code-circa-1980/#/program/castles/web-versions).
-These releases are separate from the recovered BASIC versions. See
-[WEB-VERSIONS.md](WEB-VERSIONS.md) for development and release commands.
-
-## Organization
-
-- `programs/<slug>/`: instructions, metadata, provenance, and recovered versions.
-- `site/`: shared collection, instructions, player, and emulator integration.
-- `tests/`: archive integrity and browser playback checks.
-
-See [the program workflow](programs/README.md). Historical source stays unchanged;
-translations and modern versions must be separate.
-
-## Verify
-
-```sh
-npm test
-npm run build
-npx playwright install chromium  # once per machine
-npm run test:browser
-```
+Web releases preserve each browser experience. They are separate from recovered
+BASIC versions; see [the release workflow](docs/WEB-VERSIONS.md).
 
 ## License
 
-Code authored by Carl Kadie is available under either [MIT](LICENSE-MIT) or
+My code is available under either [MIT](LICENSE-MIT) or
 [Apache-2.0](LICENSE-APACHE), at your option (`MIT OR Apache-2.0`). Preserve historical
 copyright notices. Third-party dependencies retain their own terms; see
 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
-
-Future ideas are tracked in [TODO.md](TODO.md).

@@ -5,9 +5,10 @@ const app = document.querySelector('#app');
 const webProgram=import.meta.env.VITE_WEB_PROGRAM;
 const webVersion=import.meta.env.VITE_WEB_VERSION;
 const collectionUrl=new URL(webProgram?'../../../':'./',location.href);
-const development=new URLSearchParams(location.search).has('development');
+const development=import.meta.env.DEV || new URLSearchParams(location.search).has('development');
 if(webProgram)document.querySelector('.brand').href=collectionUrl.href;
-let player = null, navigation = 0;
+let player = null, navigation = 0, activeRoute = null;
+const sessions = new Map();
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const route = (program, version, play=false) => `#/program/${program.id}/${version.id}${play ? '/play' : ''}`;
 const defaultEdition = program => program.defaultImplementation==='typescript' && program.modern ? program.modern : program.versions.find(v=>v.id===program.defaultVersion);
@@ -26,12 +27,18 @@ function versionList(program, selected) {
 }
 async function render() {
   const thisNavigation = ++navigation;
-  player?.dispose(); player = null; delete window.__circaPlayer;
+  if(player && activeRoute){
+    const running=!player.paused;
+    if(running)player.togglePause();
+    const content=document.createDocumentFragment();content.append(...app.childNodes);
+    sessions.set(activeRoute,{player,content,running});
+  }
+  player=null;activeRoute=null;delete window.__circaPlayer;
   const parts=location.hash.slice(1).split('/').filter(Boolean);
   if(webProgram&&!parts.length)parts.push('program',webProgram);
   if (!parts.length) {
     document.title = 'Code Circa 1980';
-    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<a class="program-card" href="${route(p,defaultEdition(p))}"><div class="card-art" aria-hidden="true"><span class="castle-art">▟▙ ▟▙ ▟▙<br>██▄██▄██<br>████████<br>███  ███</span></div><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)} / Original BASIC</span><h2>${escape(p.title)} <span>↗</span></h2><p>${escape(p.description)}</p><span class="card-link">Instructions & play →</span></div></a>`).join('')}</section><p class="collection-note">A small collection, with room to grow. Games, tools, mathematics, and experiments.</p>`;
+    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<a class="program-card" href="${route(p,defaultEdition(p))}"><div class="card-art" aria-hidden="true"><img class="collection-art" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="" width="532" height="180"></div><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)} / Original BASIC</span><h2>${escape(p.title)} <span>↗</span></h2><p>${escape(p.description)}</p><span class="card-link">Instructions & play →</span></div></a>`).join('')}</section>`;
     const links=document.createElement('div');links.className='collection-version-links';
     for(const program of programs){const link=document.createElement('a');link.href=galleryUrl(program);link.textContent=`${program.title} · all web versions`;links.append(link);}
     app.querySelector('.collection').after(links);
@@ -50,9 +57,21 @@ async function render() {
   const playing=parts[3]==='play' && version.playable;
   const modern=version.implementation==='typescript';
   const reference=program.versions.find(v=>v.id===program.defaultVersion);
-  const implementationTabs=program.modern?`<nav class="implementations" aria-label="Implementation"><a href="${route(program,reference)}" ${!modern?'aria-current="page"':''}>Original · emulator</a><a href="${route(program,program.modern)}" ${modern?'aria-current="page"':''}>TypeScript</a></nav>`:'';
-  app.innerHTML=`${crumbs(program)}${implementationTabs}<section class="program-heading"><div><p class="eyebrow">${modern?'TypeScript version':'Original program'} / ${escape(version.id.toUpperCase())} · ${escape(version.capture)}</p><h1>${escape(program.title)}</h1><p class="lede">${escape(program.description)}</p></div><span class="edition">${escape(version.label)}</span></section>${playing ? `<section class="player-section"><div class="player-toolbar"><a href="${route(program,version)}">← Instructions</a><div><button id="pause">Pause</button><button id="restart">Restart</button><button id="fullscreen">Full screen</button></div></div><div id="display" class="screen" tabindex="0" aria-label="Loading emulator"></div><p id="status" role="status">Loading ${modern?'the TypeScript version':'the original program'}…</p><div class="quick-controls" aria-label="On-screen game keys">${program.onScreenKeys(version).map(k=>`<button class="game-key" data-key="${k}" aria-label="Game key ${k===' '?'Space':escape(k)}">${k===' '?'Space':escape(k.toUpperCase())}</button>`).join('')}</div><p class="small">Click the screen for keyboard controls. ${escape(program.quickHelp(version))} Restart begins a new construction.</p></section>` : `${program.instructions(version)}<div class="launch-panel">${version.playable ? `<div><strong>Ready to build?</strong><p>${modern?'The TypeScript version follows the v05 construction and cannon rules. The original remains available for comparison.':'The recovered BASIC runs inside a TRS-80 emulator. FALL machine code is loaded automatically for v05.'}</p></div><a class="primary" href="${route(program,version,true)}">Play ${escape(program.title)} <span>→</span></a>` : `<div><strong>This version is preserved for study.</strong><p>${escape(version.unavailableReason)}</p></div><a class="primary" href="${route(program,program.versions.find(v=>v.id===program.defaultVersion))}">Use the playable version →</a>`}</div>`}<details class="source-details"><summary>Reference source & provenance</summary><p>${escape(version.note)} Original bytes and historical quirks are preserved.</p><p><a href="${assetUrl(program,version.listing)}" download>Download BASIC listing</a> · <a href="${assetUrl(program,version.raw)}" download>Download original payload</a> · <a href="${provenanceUrl(program)}" download>Recovery provenance</a></p></details>${versionList(program,version)}`;
-  app.querySelector('.program-heading').insertAdjacentHTML('beforebegin',webVersionNavigation(program));
+  const implementationTabs=program.modern?`<nav class="implementations" aria-label="Implementation"><a href="${route(program,program.modern,playing)}" ${modern?'aria-current="page"':''}>Browser version</a><a href="${route(program,reference,playing)}" ${!modern?'aria-current="page"':''}>Original TRS-80</a></nav>`:'';
+  const sessionKey=`${program.id}/${version.id}`;
+  const cached=playing&&sessions.get(sessionKey);
+  if(cached){
+    sessions.delete(sessionKey);app.replaceChildren(cached.content);player=cached.player;activeRoute=sessionKey;
+    if(cached.running&&player.paused)player.togglePause();
+    if(modern&&parts[4]==='blank'){
+      player.release();
+      if(!player.hasWork()||confirm('Clear this construction and start an empty field?'))player.restart();
+    }
+    exposePlayer(player);app.querySelector('#display').focus({preventScroll:true});window.scrollTo(0,0);return;
+  }
+  const sourceDetails=`<details class="source-details"><summary>About, history & source</summary><p>${escape(version.note)} Original bytes and historical quirks are preserved.</p><p><a href="${assetUrl(program,version.listing)}" download>Download BASIC listing</a> · <a href="${assetUrl(program,version.raw)}" download>Download original payload</a> · <a href="${provenanceUrl(program)}" download>Recovery provenance</a></p>${program.instructions(version)}${versionList(program,version)}${webVersionNavigation(program)}</details>`;
+  const launch=version.playable?`<div class="launch-panel"><div><a class="primary" href="${route(program,version,true)}${modern?'/bridge':''}">Play ${escape(program.title)} <span>→</span></a>${modern?`<a class="blank-start" href="${route(program,version,true)}/blank">Build from scratch</a>`:''}<p>${modern?(sessions.has(sessionKey)?'Play resumes your construction. Build from scratch starts an empty field after confirmation.':'Play starts with a bridge in Building mode. Build from scratch opens an empty field.'):'Click the screen after launch to use the original keyboard controls.'}</p></div></div>`:`<p>This version is preserved for study.</p><p>${escape(version.unavailableReason)}</p><a href="${route(program,reference)}">Use the playable version →</a>`;
+  app.innerHTML=playing?`<section class="player-section"><header class="player-header"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><h1>${escape(program.title)}</h1>${implementationTabs}</header><div class="player-workspace"><div id="display" class="screen" tabindex="0" aria-label="Loading player"></div><aside id="control-dock" aria-label="Game controls"><div class="essential-controls"><button id="help">Help</button><button id="pause">Pause</button><button id="restart">New construction</button><button id="fullscreen">Full screen</button></div><p id="status" role="status">Loading ${modern?'the browser version':'the original program'}…</p></aside></div><p class="small">Browser and Original keep separate sessions until this page is reloaded. Switching pauses the other session; scenes do not transfer.</p><details class="keyboard-help" ${modern?'':'open'}><summary>Original keyboard controls</summary><div class="quick-controls" aria-label="On-screen game keys">${program.onScreenKeys(version).map(k=>`<button class="game-key" data-key="${k}" aria-label="Game key ${k===' '?'Space':escape(k)}">${k===' '?'Space':escape(k.toUpperCase())}</button>`).join('')}</div><p>${escape(program.quickHelp(version))}</p></details>${sourceDetails}</section>`:`${crumbs(program)}<section class="start-page"><h1>${escape(program.title)}</h1><p>Build towers and bridges, then let two cannons test your construction.</p>${implementationTabs}<p class="small">${modern?'Mouse and touch controls.':'The recovered program running in a TRS-80 emulator.'}</p><img class="game-preview" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="A train on a trestle bridge built from Castles blocks" width="532" height="180"><ol class="quick-start">${modern?'<li>Start with a bridge, or build from the ground up.</li><li>Drag to draw. Blocks need support below or diagonally below.</li><li>Start bombardment, adjust the cannons, then return to building.</li>':version.controls==='early'?'<li>Click the screen. Tap Enter to place a block.</li><li>Move with 1–4, then tap Enter again.</li><li>Space starts bombardment; hold 5, then M for stronger arcs.</li>':'<li>Click the screen, then tap 8 to draw.</li><li>Hold 1 briefly to build up; 2 down, 3 left, 4 right.</li><li>Q starts bombardment; hold 5, then M for stronger arcs.</li>'}</ol>${launch}</section>${sourceDetails}`;
   window.scrollTo(0,0);
   if (!playing) return;
   const host=document.querySelector('#display'), status=document.querySelector('#status');
@@ -61,14 +80,29 @@ async function render() {
     if(thisNavigation!==navigation)return;
     const instance=await createPlayer(host,assetUrl(program,version.raw),status,program.title,version.machineCode?{...version.machineCode,url:assetUrl(program,version.machineCode.file)}:undefined);
     if(thisNavigation!==navigation){instance.dispose();return;}
-    player=instance;
+    player=instance;activeRoute=sessionKey;
+    host.querySelector('#control-dock').append(app.querySelector('.keyboard-help'));
+    if(modern&&parts[4]==='bridge')instance.loadStartingPattern('trestle');
     // Read-only test interface, enabled only for a test URL.
-    if(new URLSearchParams(location.search).has('test'))window.__circaPlayer={snapshot:()=>instance.snapshot(),diagnostics:()=>instance.diagnostics()};
+    exposePlayer(instance);
     const pause=document.querySelector('#pause');
     const syncPause=()=>{pause.textContent=instance.paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(instance.paused));};
     host.addEventListener('playerpause',syncPause);
     pause.onclick=()=>{instance.togglePause();syncPause();};
-    document.querySelector('#restart').onclick=()=>{instance.restart();syncPause();host.focus({preventScroll:true});};
+    document.querySelector('#restart').onclick=()=>{
+      instance.release();
+      if(instance.hasWork()&&!confirm('Clear this construction and start an empty field?'))return;
+      instance.restart();syncPause();host.focus({preventScroll:true});
+    };
+    const help=document.createElement('dialog');help.className='player-help';help.setAttribute('aria-label','Castles help');
+    help.innerHTML=`<h2>Castles help</h2><p>${modern?'Drag upward from the ground to build. Erase from the top down. Two cannons alternate automatically; power and angle are shared and apply between shots. Return to building edits the surviving blocks.':'Click the screen for keyboard controls. Pause stops the emulator; New construction clears the scene.'}</p><button type="button">Close help</button>${program.instructions(version)}`;
+    host.append(help);let resumeAfterHelp=false,helpFocus=null;
+    document.querySelector('#help').onclick=()=>{helpFocus=document.activeElement;resumeAfterHelp=!instance.paused;if(resumeAfterHelp)instance.togglePause();instance.release();help.showModal();};
+    help.querySelector('button').onclick=()=>help.close();
+    help.onclose=()=>{if(resumeAfterHelp&&instance.paused)instance.togglePause();helpFocus?.focus({preventScroll:true});};
+
+    const fullscreen=document.querySelector('#fullscreen');
+    host.addEventListener('fullscreenchange',()=>{fullscreen.textContent=document.fullscreenElement===host?'Exit full screen':'Full screen';});
     document.querySelector('#fullscreen').onclick=async()=>{
       try {if(document.fullscreenElement)await document.exitFullscreen();else await host.requestFullscreen();host.focus();}
       catch {status.textContent='Full screen is unavailable in this browser. You can still play here.';}
@@ -83,6 +117,9 @@ async function render() {
     }
     host.focus({preventScroll:true});
   }catch(error){if(thisNavigation===navigation)status.textContent=`Unable to start: ${error.message}. Return to instructions and try launching again.`;}
+}
+function exposePlayer(instance){
+  if(new URLSearchParams(location.search).has('test'))window.__circaPlayer={snapshot:()=>instance.snapshot(),diagnostics:()=>instance.diagnostics()};
 }
 window.addEventListener('hashchange',render);
 render();

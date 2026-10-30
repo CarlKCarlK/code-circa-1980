@@ -1,7 +1,8 @@
 import fs from 'node:fs/promises';
 import {test,expect} from '@playwright/test';
+test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
 import {withBrickAspect,withSquareBrickMetadata} from '../../programs/castles/typescript/bricks.ts';
-async function boot(page){await page.goto('/?development=1&test#/program/castles/typescript/play');await expect(page.getByRole('button',{name:'Save bricks',exact:true})).toBeEnabled();}
+async function boot(page){await page.goto('/?development=1&test#/program/castles/typescript/play');await page.locator('.advanced-tools summary').click();await expect(page.getByRole('button',{name:'Save bricks',exact:true})).toBeEnabled();}
 const point=(page,x,y)=>page.evaluate(([x,y])=>{
  const c=window.__circaPlayer.snapshot()[Math.floor(y/3)*64+Math.floor(x/2)];return c>=128&&c<192&&!!(c&(1<<((y%3)*2+x%2)));
 },[x,y]);
@@ -31,7 +32,7 @@ test('bricks save as square-pixel PNG and reload without game state',async({page
   return {mismatched,brick:rgba[(60*128+64)*4],empty:rgba[(60*128+20)*4],ground:rgba[(95*128+64)*4]};
  },bytes.toString('base64'));
  expect(pixels).toEqual({mismatched:0,brick:255,empty:0,ground:0});
- await page.getByRole('button',{name:'Restart',exact:true}).click();expect(await point(page,64,30)).toBe(false);
+ await page.getByRole('button',{name:'New construction',exact:true}).click();expect(await point(page,64,30)).toBe(false);
  await page.getByLabel('Brick image file').setInputFiles(path);
  await page.getByRole('dialog',{name:'Load picture'}).getByRole('button',{name:'OK'}).click();
  await expect(page.getByText('Loaded bricks; unsupported blocks have settled.',{exact:true})).toBeVisible();

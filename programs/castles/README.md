@@ -15,29 +15,33 @@ current reference is **v05 BASIC plus FALL assembly v6**; both now run together 
 the emulator, and the TypeScript port follows their rules. v03 remains available
 as the earlier, entirely BASIC version.
 
-The collection opens the instructions before offering the emulator. Start the
-website with `npm run dev` from the repository root, choose Castles, and select
-**Play Castles**. The default original is v05, with its FALL assembly routine loaded automatically.
-Choose **TypeScript** to play the native browser implementation of v05. The
-self-contained v03 remains available among the recovered versions.
+**[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)** — no installation required.
 
-The current browser experience is **web v1**, available permanently at
-[Castles web v1](https://carlkcarlk.github.io/code-circa-1980/experiences/castles/v1/).
-The [web version gallery](https://carlkcarlk.github.io/code-circa-1980/#/program/castles/web-versions)
-retains every release; ordinary Castles links open the latest one. Web releases
-are separate from the five recovered BASIC versions. See
-[the web release workflow](../../WEB-VERSIONS.md) before publishing future changes.
+The short start page offers a bridge or an empty field. The default Browser
+version uses TypeScript with mouse/touch controls; Original TRS-80 runs the
+recovered BASIC in an emulator. In the player, switch between separate sessions;
+the inactive one pauses. Scenes do not transfer, and sessions last until reload.
+Help pauses play and preserves the current construction.
 
-## Mouse controls in TypeScript
+Web v2 improves onboarding and controls. [Web v1](https://carlkcarlk.github.io/code-circa-1980/experiences/castles/v1/)
+remains unchanged in the [web version gallery](https://carlkcarlk.github.io/code-circa-1980/#/program/castles/web-versions).
+These releases are separate from the recovered BASIC versions.
+See [development](../../docs/development.md) and [web releases](../../docs/WEB-VERSIONS.md).
 
-Click and drag to build with the original support rules. Use **Erase** and drag
-from the top down, or **right-drag** to erase temporarily. **Move** repositions the
-cursor without editing. The pointer can move freely, but floating starts are
-rejected and blocks with a block directly or diagonally above cannot be erased.
+## Browser controls
 
-Touch and pen use the same tools. Turn off **Mouse controls** for keyboard-only
-play. The original emulator remains unchanged, and the calibrated TypeScript
-keyboard baseline is preserved at tag `castles-typescript-v02`.
+Drag from the ground upward to build. Blocks need support below or diagonally
+below. Use Erase from the top down, or right-drag to erase temporarily. Move the
+pointer without pressing a button to position the cursor without editing.
+Start bombardment fires alternating automatic shots. Shared power and nominal
+arc settings apply between shots, with the original small random variation.
+Return to building edits the surviving construction.
+
+Patterns, files, drawing assist and field colors are in the secondary controls.
+Save bricks asks for a PNG filename and saves the layout, not a running session.
+Load picture previews PNG/JPEG conversion with RGB controls and Cancel. New
+construction and pattern replacement ask before clearing existing blocks.
+Controls dock beside the field (below on phones); floating layout is optional.
 
 ## Playing with the original keyboard controls
 
@@ -51,7 +55,7 @@ keyboard baseline is preserved at tag `castles-typescript-v02`.
 
 Use the top number row. Drawing modes remain selected after a key is released.
 Blocks need support below or diagonally below. The printed period “stars” are
-not support or obstacles. Pause freezes the machine; Restart begins a new build.
+not support or obstacles. Pause freezes the machine; New construction begins a new build.
 On-screen buttons provide the same original key inputs.
 
 v01 and v02 use different construction controls: tap Enter to place a block,
