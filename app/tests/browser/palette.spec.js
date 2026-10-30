@@ -54,7 +54,7 @@ test('floating controls move, resize, persist, and never paint through the panel
  await page.getByRole('button',{name:'Fire cannons',exact:true}).click();
  await expect(page.getByRole('button',{name:'Return to building',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
- await page.getByRole('button',{name:'Clear field',exact:true}).click();await expect(page.getByRole('button',{name:'Draw',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Erase all',exact:true}).click();await expect(page.getByRole('button',{name:'Draw',exact:true})).toBeVisible();
  await page.screenshot({path:'test-results/castles-floating-controls.png',fullPage:true});
 });
 

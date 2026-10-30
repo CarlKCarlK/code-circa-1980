@@ -52,7 +52,7 @@ test('help and switching preserve exact construction and pause state',async({pag
 test('cancelling clears and saves preserves layout; named PNG downloads',async({page})=>{
  await page.goto(start);await page.getByRole('link',{name:'Play Castles'}).click();
  await expect(page.locator('#status')).toContainText('Building');const before=await snapshot(page);
- page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Clear field',exact:true}).click();expect(await snapshot(page)).toEqual(before);
+ page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Erase all',exact:true}).click();expect(await snapshot(page)).toEqual(before);
  await page.locator('.advanced-tools summary').click();
  await page.getByLabel('Starting scene').selectOption('blank');
  page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Load',exact:true}).click();expect(await snapshot(page)).toEqual(before);

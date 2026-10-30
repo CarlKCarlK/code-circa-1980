@@ -196,7 +196,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     const cannonMessage=pending?'Applies to the next shot.':'';
     const cannonFeedback=cannons.querySelector('.cannon-feedback')!;
     if(cannonFeedback.textContent!==cannonMessage)cannonFeedback.textContent=cannonMessage;
-    const statusMessage = paused ? 'Paused' : game.phase === 'error' ? `Stopped: ${game.error}. Clear the field to begin again.` : description;
+    const statusMessage = paused ? 'Paused' : game.phase === 'error' ? `Stopped: ${game.error}. Choose Erase all to begin again.` : description;
     if(status.textContent!==statusMessage)status.textContent=statusMessage;
   }
   function frame(time: number) {
