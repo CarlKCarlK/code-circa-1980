@@ -1,0 +1,2080 @@
+{
+  "official_title": "Castles",
+  "title_authority": "User confirmation, 2026-10-29",
+  "import_date": "2026-10-29",
+  "order_inferred": true,
+  "saves": [
+    {
+      "capture": "tape23b",
+      "recovery_evidence": "tapes/recovered/tape23b/inventory.json",
+      "recovery_item": {
+        "order": 9,
+        "detected_group": 9,
+        "title": "ARTILLERY DRAFT01",
+        "title_note": "Descriptive filenames and save/template/fragment sequence labels inferred from content and capture order; source titles preserved in listings.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 681.817,
+        "source_end_s": 709.8952916666667,
+        "selected_source": {
+          "variant": "right-boosted",
+          "index": 9,
+          "start": 681.8190416666666,
+          "end": 709.89525,
+          "file": "right-boosted/T09-5f13140e57ba.BAS",
+          "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 37,
+            "last": 1040,
+            "normal": true,
+            "parsed": 1634,
+            "bytes": 1634,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/09-ARTILLERY-DRAFT01.BAS",
+        "listing": "best/09-ARTILLERY-DRAFT01.ASC",
+        "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+        "bytes": 1634,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 37,
+          "last": 1040,
+          "normal": true,
+          "parsed": 1634,
+          "bytes": 1634,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "right-boosted",
+            "index": 9,
+            "start": 681.8190416666666,
+            "end": 709.89525,
+            "file": "right-boosted/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 9,
+            "start": 681.8190625,
+            "end": 709.8952708333334,
+            "file": "left-hp1200/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 9,
+            "start": 681.8190625,
+            "end": 709.8952916666667,
+            "file": "left-hp800/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 9,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 681.517,
+            "crop_end": 710.2952916666667,
+            "start": 681.8133125,
+            "end": 709.8952708333334,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 9,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 681.517,
+            "crop_end": 710.2952916666667,
+            "start": 681.8133125,
+            "end": 709.8952916666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 9,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T09-5f13140e57ba.BAS",
+            "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 37,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1634,
+              "bytes": 1634,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 681.517,
+            "crop_end": 710.2952916666667,
+            "start": 681.8132916666667,
+            "end": 709.89525,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "imported_files": [
+        {
+          "path": "versions/v01/09-ARTILLERY-DRAFT01.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/09-ARTILLERY-DRAFT01.BAS",
+          "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334",
+          "bytes": 1634
+        },
+        {
+          "path": "versions/v01/09-ARTILLERY-DRAFT01.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/09-ARTILLERY-DRAFT01.ASC",
+          "sha256": "d1c130ae3efbfe61883ec398518e29dcbadc89e72dfe212c1bd41d6cd3a62077",
+          "bytes": 2089
+        }
+      ],
+      "version": "v01"
+    },
+    {
+      "capture": "tape23b",
+      "recovery_evidence": "tapes/recovered/tape23b/inventory.json",
+      "recovery_item": {
+        "order": 10,
+        "detected_group": 10,
+        "title": "ARTILLERY DRAFT02",
+        "title_note": "Descriptive filenames and save/template/fragment sequence labels inferred from content and capture order; source titles preserved in listings.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 722.3057708333333,
+        "source_end_s": 754.4079791666667,
+        "selected_source": {
+          "variant": "left-hp1200",
+          "index": 10,
+          "start": 722.3059375,
+          "end": 754.4079375,
+          "file": "left-hp1200/T10-85a54506bfd0.BAS",
+          "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 38,
+            "last": 1040,
+            "normal": true,
+            "parsed": 1858,
+            "bytes": 1858,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/10-ARTILLERY-DRAFT02.BAS",
+        "listing": "best/10-ARTILLERY-DRAFT02.ASC",
+        "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+        "bytes": 1858,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 38,
+          "last": 1040,
+          "normal": true,
+          "parsed": 1858,
+          "bytes": 1858,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "left-hp1200",
+            "index": 10,
+            "start": 722.3059375,
+            "end": 754.4079375,
+            "file": "left-hp1200/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 10,
+            "start": 722.3059375,
+            "end": 754.4079166666667,
+            "file": "right-boosted/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 10,
+            "start": 722.3059583333334,
+            "end": 754.4079791666667,
+            "file": "left-hp800/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 10,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 722.0057708333334,
+            "crop_end": 754.8079791666667,
+            "start": 722.3001875,
+            "end": 754.4079375,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 10,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 722.0057708333334,
+            "crop_end": 754.8079791666667,
+            "start": 722.3001875,
+            "end": 754.4079791666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 10,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T10-85a54506bfd0.BAS",
+            "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 38,
+              "last": 1040,
+              "normal": true,
+              "parsed": 1858,
+              "bytes": 1858,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 722.0057708333334,
+            "crop_end": 754.8079791666667,
+            "start": 722.3995208333333,
+            "end": 754.4079166666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "imported_files": [
+        {
+          "path": "versions/v02/10-ARTILLERY-DRAFT02.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/10-ARTILLERY-DRAFT02.BAS",
+          "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0",
+          "bytes": 1858
+        },
+        {
+          "path": "versions/v02/10-ARTILLERY-DRAFT02.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/10-ARTILLERY-DRAFT02.ASC",
+          "sha256": "56a173b7a45f8c0da10fdecb59a62f736a44c3ab9f80e6d9cefcd6d5d995f295",
+          "bytes": 2393
+        }
+      ],
+      "version": "v02"
+    },
+    {
+      "capture": "tape23b",
+      "recovery_evidence": "tapes/recovered/tape23b/inventory.json",
+      "recovery_item": {
+        "order": 11,
+        "detected_group": 11,
+        "title": "ARTILLERY DRAFT03",
+        "title_note": "Descriptive filenames and save/template/fragment sequence labels inferred from content and capture order; source titles preserved in listings.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 767.0218333333333,
+        "source_end_s": 808.9094166666666,
+        "selected_source": {
+          "variant": "left-hp1200",
+          "index": 11,
+          "start": 767.0218333333333,
+          "end": 808.9093958333333,
+          "file": "left-hp1200/T11-32240c1f82ed.BAS",
+          "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 51,
+            "last": 2010,
+            "normal": true,
+            "parsed": 2507,
+            "bytes": 2507,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/11-ARTILLERY-DRAFT03.BAS",
+        "listing": "best/11-ARTILLERY-DRAFT03.ASC",
+        "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+        "bytes": 2507,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 51,
+          "last": 2010,
+          "normal": true,
+          "parsed": 2507,
+          "bytes": 2507,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "left-hp1200",
+            "index": 11,
+            "start": 767.0218333333333,
+            "end": 808.9093958333333,
+            "file": "left-hp1200/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "original",
+            "index": 11,
+            "start": 767.118375,
+            "end": 808.90925,
+            "file": "original/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 11,
+            "start": 767.1185416666667,
+            "end": 808.9094166666666,
+            "file": "left-hp800/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 11,
+            "start": 767.1204791666667,
+            "end": 808.909375,
+            "file": "right-boosted/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 11,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 766.7218333333333,
+            "crop_end": 809.3094166666667,
+            "start": 767.0178333333333,
+            "end": 808.9093958333333,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 11,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 766.7218333333333,
+            "crop_end": 809.3094166666667,
+            "start": 767.1166458333332,
+            "end": 808.9094166666666,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 11,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T11-32240c1f82ed.BAS",
+            "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 51,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2507,
+              "bytes": 2507,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 766.7218333333333,
+            "crop_end": 809.3094166666667,
+            "start": 767.116625,
+            "end": 808.909375,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "imported_files": [
+        {
+          "path": "versions/v03/11-ARTILLERY-DRAFT03.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/11-ARTILLERY-DRAFT03.BAS",
+          "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c",
+          "bytes": 2507
+        },
+        {
+          "path": "versions/v03/11-ARTILLERY-DRAFT03.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/11-ARTILLERY-DRAFT03.ASC",
+          "sha256": "e60c2108734afe5248e55fcd4a6f530d3d4f6fdddc450605189865cf0dc89f2b",
+          "bytes": 3157
+        }
+      ],
+      "version": "v03"
+    },
+    {
+      "capture": "tape18a",
+      "recovery_evidence": "tapes/recovered/tape18a/inventory.json",
+      "recovery_item": {
+        "order": 14,
+        "title": "FALL GRAPHICS BASIC V1",
+        "title_note": "Descriptive filenames and version labels inferred from content and capture order; source bytes preserved.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "assembled": false,
+        "source_start_s": 489.89941666666664,
+        "source_end_s": 533.9223541666667,
+        "selected_source": {
+          "variant": "original",
+          "index": 14,
+          "start": 489.89941666666664,
+          "end": 533.9223541666667,
+          "file": "original/T14-2a76c61d2b89.BAS",
+          "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+          "assessment": {
+            "type": "BASIC",
+            "good": true,
+            "lines": 55,
+            "last": 2010,
+            "normal": true,
+            "parsed": 2637,
+            "bytes": 2637,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/14-FALL-GRAPHICS-BASIC-V1.BAS",
+        "listing": "best/14-FALL-GRAPHICS-BASIC-V1.ASC",
+        "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+        "bytes": 2637,
+        "validation": {
+          "type": "BASIC",
+          "good": true,
+          "lines": 55,
+          "last": 2010,
+          "normal": true,
+          "parsed": 2637,
+          "bytes": 2637,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "original",
+            "index": 14,
+            "start": 489.89941666666664,
+            "end": 533.9223541666667,
+            "file": "original/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 14,
+            "start": 489.8995625,
+            "end": 533.9225,
+            "file": "left-hp1200/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 14,
+            "start": 489.9012916666667,
+            "end": 533.9225416666667,
+            "file": "left-hp800/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 14,
+            "start": 489.91083333333336,
+            "end": 533.9224791666667,
+            "file": "right-boosted/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 14,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 489.59939583333335,
+            "crop_end": 534.3223541666666,
+            "start": 489.8938541666667,
+            "end": 533.9225,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 14,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 489.59939583333335,
+            "crop_end": 534.3223541666666,
+            "start": 489.89366666666666,
+            "end": 533.9225416666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 14,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T14-2a76c61d2b89.BAS",
+            "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2637,
+              "bytes": 2637,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 489.59939583333335,
+            "crop_end": 534.3223541666666,
+            "start": 489.8936458333333,
+            "end": 533.9224791666667,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": [],
+        "validation_summary": "Complete BASIC: increasing lines, consistent pointer base 17125, normal end marker at exact EOF; exact left/right bytes"
+      },
+      "imported_files": [
+        {
+          "path": "versions/v04/14-FALL-GRAPHICS-BASIC-V1.BAS",
+          "archive_path": "tapes/recovered/tape18a/best/14-FALL-GRAPHICS-BASIC-V1.BAS",
+          "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d",
+          "bytes": 2637
+        },
+        {
+          "path": "versions/v04/14-FALL-GRAPHICS-BASIC-V1.ASC",
+          "archive_path": "tapes/recovered/tape18a/best/14-FALL-GRAPHICS-BASIC-V1.ASC",
+          "sha256": "44b37f9c2623a56e6b1726ba7be1bf70d09b1836464f8b57c618b8ef04547694",
+          "bytes": 3301
+        }
+      ],
+      "version": "v04"
+    },
+    {
+      "capture": "tape18a",
+      "recovery_evidence": "tapes/recovered/tape18a/inventory.json",
+      "recovery_item": {
+        "order": 24,
+        "title": "FALL GRAPHICS BASIC V2",
+        "title_note": "Descriptive filenames and version labels inferred from content and capture order; source bytes preserved.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "assembled": false,
+        "source_start_s": 1099.4663125,
+        "source_end_s": 1143.0397916666666,
+        "selected_source": {
+          "variant": "left-hp800",
+          "index": 24,
+          "start": 1099.4662916666666,
+          "end": 1143.0399375,
+          "file": "left-hp800/T24-e1c9b6ed02fb.BAS",
+          "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd",
+          "assessment": {
+            "type": "BASIC",
+            "good": true,
+            "lines": 55,
+            "last": 2010,
+            "normal": true,
+            "parsed": 2631,
+            "bytes": 2631,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/24-FALL-GRAPHICS-BASIC-V2.BAS",
+        "listing": "best/24-FALL-GRAPHICS-BASIC-V2.ASC",
+        "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd",
+        "bytes": 2631,
+        "validation": {
+          "type": "BASIC",
+          "good": true,
+          "lines": 55,
+          "last": 2010,
+          "normal": true,
+          "parsed": 2631,
+          "bytes": 2631,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "left-hp800",
+            "index": 24,
+            "start": 1099.4662916666666,
+            "end": 1143.0399375,
+            "file": "left-hp800/T24-e1c9b6ed02fb.BAS",
+            "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2631,
+              "bytes": 2631,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 24,
+            "start": 1099.4662708333333,
+            "end": 1143.0399166666666,
+            "file": "right-boosted/T24-e1c9b6ed02fb.BAS",
+            "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2631,
+              "bytes": 2631,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 24,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T24-e1c9b6ed02fb.BAS",
+            "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2631,
+              "bytes": 2631,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 1099.1663125,
+            "crop_end": 1143.4397916666667,
+            "start": 1099.4624375,
+            "end": 1143.0399375,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 24,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T24-e1c9b6ed02fb.BAS",
+            "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2631,
+              "bytes": 2631,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 1099.1663125,
+            "crop_end": 1143.4397916666667,
+            "start": 1099.4624583333334,
+            "end": 1143.0399375,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 24,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T24-e1c9b6ed02fb.BAS",
+            "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "lines": 55,
+              "last": 2010,
+              "normal": true,
+              "parsed": 2631,
+              "bytes": 2631,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 1099.1663125,
+            "crop_end": 1143.4397916666667,
+            "start": 1099.4624375,
+            "end": 1143.0399166666666,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": [],
+        "validation_summary": "Complete BASIC: increasing lines, consistent pointer base 17125, normal end marker at exact EOF; exact left/right bytes"
+      },
+      "imported_files": [
+        {
+          "path": "versions/v05/24-FALL-GRAPHICS-BASIC-V2.BAS",
+          "archive_path": "tapes/recovered/tape18a/best/24-FALL-GRAPHICS-BASIC-V2.BAS",
+          "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd",
+          "bytes": 2631
+        },
+        {
+          "path": "versions/v05/24-FALL-GRAPHICS-BASIC-V2.ASC",
+          "archive_path": "tapes/recovered/tape18a/best/24-FALL-GRAPHICS-BASIC-V2.ASC",
+          "sha256": "8a67855ac5ef08c8b49832d854a08474cf127762737c2b906b4d1c2b2250df83",
+          "bytes": 3299
+        }
+      ],
+      "version": "v05"
+    }
+  ]
+}
