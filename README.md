@@ -7,6 +7,7 @@ I wrote these programs in the early days of personal computing; now they run aga
 **[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)** — no installation required.
 
 Build towers and bridges from supported blocks, then let two cannons test them.
+It is a software toy with no score; see if you can work out the rules of its physics.
 The browser version has mouse and touch controls; the recovered TRS-80 original
 is available alongside it.
 
