@@ -2,7 +2,7 @@
 
 I wrote these programs in the early days of personal computing; now they run again in your browser.
 
-[![A train on a bridge built in Castles](assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)
+[![A train on a bridge built in Castles](app/assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)
 
 **[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)** — no installation required.
 
@@ -26,4 +26,4 @@ BASIC versions; see [the release workflow](docs/WEB-VERSIONS.md).
 My code is available under either [MIT](LICENSE-MIT) or
 [Apache-2.0](LICENSE-APACHE), at your option (`MIT OR Apache-2.0`). Preserve historical
 copyright notices. Third-party dependencies retain their own terms; see
-[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+[THIRD-PARTY-NOTICES.md](docs/THIRD-PARTY-NOTICES.md).

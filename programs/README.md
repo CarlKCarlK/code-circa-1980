@@ -2,9 +2,9 @@
 
 Create `programs/<slug>/` with `program.json`, `README.md` (instructions),
 `provenance.json`, and `versions/<sequence>/` containing untouched recovered
-payloads and listings. Register its metadata and presentation functions in `site/catalog.js`.
+payloads and listings. Register its metadata and presentation functions in `app/site/catalog.js`.
 Keep program-specific instructions, on-screen keys, and quick help in
-`site/programs/<slug>.js` (use Castles as the first example). The shared
+`app/site/programs/<slug>.js` (use Castles as the first example). The shared
 site provides collection → instructions → emulator navigation.
 
 Explain inferred version order; import each version in a separate local Git

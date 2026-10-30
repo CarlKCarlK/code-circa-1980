@@ -1,17 +1,17 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {Castles,seededRandom,projectileHeight} from '../programs/castles/typescript/engine.ts';
+import {Castles,seededRandom,projectileHeight} from '../../programs/castles/typescript/engine.ts';
 import {runBasic,runFall,screenBytes,fallInfo,fallBinary,machine} from './helpers/reference.mjs';
 import {decodeBasicProgram} from 'trs80-base';
-const listing=fs.readFileSync(new URL('../programs/castles/versions/v05/24-FALL-GRAPHICS-BASIC-V2.ASC',import.meta.url),'utf8');
+const listing=fs.readFileSync(new URL('../../programs/castles/versions/v05/24-FALL-GRAPHICS-BASIC-V2.ASC',import.meta.url),'utf8');
 const finish=generator=>{let count=0;for(const _ of generator){if(++count>100000)throw Error('Simulation failed to finish');}};
 
 test('assembled dependency matches both BASIC interface addresses',()=>{
  assert.equal(fallBinary.length,214);assert.equal(fallInfo.origin,32512);assert.equal(fallInfo.parameter_address,32725);
 });
 test('v05 original boots with the derived routine, preserving the same initial field',()=>{
- const m=machine();const raw=fs.readFileSync(new URL('../programs/castles/versions/v05/24-FALL-GRAPHICS-BASIC-V2.BAS',import.meta.url));
+ const m=machine();const raw=fs.readFileSync(new URL('../../programs/castles/versions/v05/24-FALL-GRAPHICS-BASIC-V2.BAS',import.meta.url));
  m.runBasicProgram(decodeBasicProgram(raw));
  m.eventScheduler.add(undefined,m.clockHz*.31,()=>m.writeMemoryBlock(fallInfo.origin,fallBinary));
  while(m.tStateCount<m.clockHz*8)m.step();

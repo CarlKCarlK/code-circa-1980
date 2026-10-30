@@ -1,8 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {trestleBridge} from '../programs/castles/typescript/patterns.ts';
-import {Castles} from '../programs/castles/typescript/engine.ts';
-import {loadBricks,brickMask} from '../programs/castles/typescript/bricks.ts';
+import {trestleBridge} from '../../programs/castles/typescript/patterns.ts';
+import {Castles} from '../../programs/castles/typescript/engine.ts';
+import {loadBricks,brickMask} from '../../programs/castles/typescript/bricks.ts';
 import {runFall} from './helpers/reference.mjs';
 test('train trestle has a full mid-height deck and the minimum three ground feet',()=>{
  const mask=trestleBridge();

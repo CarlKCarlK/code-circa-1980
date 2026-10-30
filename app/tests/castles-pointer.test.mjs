@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {Castles} from '../programs/castles/typescript/engine.ts';
-import {StrokeGuide,screenCell,paintStroke,strokeCells} from '../programs/castles/typescript/pointer.ts';
+import {Castles} from '../../programs/castles/typescript/engine.ts';
+import {StrokeGuide,screenCell,paintStroke,strokeCells} from '../../programs/castles/typescript/pointer.ts';
 
 test('pointer coordinates respect scaled non-square graphics, CRT padding, and build boundaries',()=>{
  const rect={left:100,top:200,width:1064,height:808};

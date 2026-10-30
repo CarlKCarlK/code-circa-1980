@@ -1,7 +1,7 @@
 // Measure emulated CPU cycles, not host-machine execution speed.
 import fs from 'node:fs';
 import {machine,fallBinary,fallInfo} from '../tests/helpers/reference.mjs';
-import {Castles} from '../programs/castles/typescript/engine.ts';
+import {Castles} from '../../programs/castles/typescript/engine.ts';
 import {decodeBasicProgram} from 'trs80-base';
 const clockHz=machine().clockHz;
 function routine(entry,x,y,blocks=[],moving=false){
@@ -34,7 +34,7 @@ for(let moving=0;moving<2;moving++)for(let mask=0;mask<8;mask++){
 }
 // Run the complete, unchanged v05 BASIC plus the derived routine. The current
 // BASIC line number at 0x40A2 lets us timestamp existing statement boundaries.
-const m=machine();m.runBasicProgram(decodeBasicProgram(fs.readFileSync(new URL('../programs/castles/versions/v05/24-FALL-GRAPHICS-BASIC-V2.BAS',import.meta.url))));
+const m=machine();m.runBasicProgram(decodeBasicProgram(fs.readFileSync(new URL('../../programs/castles/versions/v05/24-FALL-GRAPHICS-BASIC-V2.BAS',import.meta.url))));
 m.eventScheduler.add(undefined,m.clockHz*.31,()=>m.writeMemoryBlock(fallInfo.origin,fallBinary));
 while(m.tStateCount<m.clockHz*8)m.step();
 m.keyboard.keyEvent('q',true);
@@ -58,5 +58,5 @@ const profile={reference:'Castles v05 + derived FALL assembly v6',model:'TRS-80 
  fall:{testBaseCycles:testBase,testRowIncrementCycles:rowIncrement,oddXAdjustmentCycles:oddAdjustment,writeExtraCycles:writeExtra,emptyEntryControlCycles:49,occupiedEntryControlCycles:74,groundReturnCycles:41,outerCellCycles:31,outerRowCycles:21,routineStartCycles:24,routineReturnCycles:10,loopControlCycles:loopControl},
  samples:{flightSteps:flight.length,shotSetups:setup.length,shotExits:exit.length,completeImpacts:impacts.length,
  flightMs:flight.map(n=>Number((n/clockHz*1000).toFixed(3))),setupMs:setup.map(n=>Number((n/clockHz*1000).toFixed(3))),impactMs:impacts.map(n=>Number((n/clockHz*1000).toFixed(3)))}};
-fs.writeFileSync(new URL('../programs/castles/typescript/timing-calibration.json',import.meta.url),JSON.stringify(profile,null,2)+'\n');
+fs.writeFileSync(new URL('../../programs/castles/typescript/timing-calibration.json',import.meta.url),JSON.stringify(profile,null,2)+'\n');
 console.log(JSON.stringify({clockHz,basicMs:Object.fromEntries(Object.entries(profile.basic).map(([k,v])=>[k.replace('Cycles',''),v/clockHz*1000])),fall:profile.fall,sampleCounts:[flight.length,setup.length,impacts.length]},null,2));

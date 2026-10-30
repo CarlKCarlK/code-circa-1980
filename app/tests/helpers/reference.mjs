@@ -12,7 +12,7 @@ export function runBasic(text,seconds=8,dependency=false){
 }
 export const screenBytes=m=>Uint8Array.from({length:1024},(_,i)=>m.readMemory(0x3c00+i));
 export const screenText=m=>Array.from(screenBytes(m),c=>c>=32&&c<128?String.fromCharCode(c):'#').join('');
-const dependency=new URL('../../programs/castles/dependencies/fall-v6/',import.meta.url);
+const dependency=new URL('../../../programs/castles/dependencies/fall-v6/',import.meta.url);
 export const fallBinary=new Uint8Array(fs.readFileSync(new URL('derived.bin',dependency)));
 export const fallInfo=JSON.parse(fs.readFileSync(new URL('derived.json',dependency)));
 export function measureFall(screen,row,entry='PRCES'){

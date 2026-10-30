@@ -4,7 +4,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 
-export const projectRoot=fileURLToPath(new URL('../',import.meta.url));
+export const projectRoot=fileURLToPath(new URL('../../',import.meta.url));
 export async function snapshotFiles(folder,prefix='') {
   const files=[];
   for(const entry of await fs.readdir(folder,{withFileTypes:true})) {
@@ -57,6 +57,6 @@ export async function verifyWebVersions({root=projectRoot,against,allowUnrelease
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
   const args=process.argv.slice(2);
-  if(args.length&&!(args.length===2&&args[0]==='--against'))throw Error('Usage: node scripts/web-versions.mjs [--against COMMIT]');
+  if(args.length&&!(args.length===2&&args[0]==='--against'))throw Error('Usage: node app/scripts/web-versions.mjs [--against COMMIT]');
   console.log(`Verified ${await verifyWebVersions({against:args[1]})} immutable web releases.`);
 }

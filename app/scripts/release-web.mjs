@@ -10,7 +10,7 @@ if(!program||!/^[-a-z0-9]+$/.test(program)||args.length&&!(args.length===2&&args
 const programPath=path.join(projectRoot,'programs',program);
 const metadata=JSON.parse(await fs.readFile(path.join(programPath,'program.json'),'utf8'));
 if(metadata.id!==program)throw Error('Program ID does not match its folder.');
-const dirty=execFileSync('git',['status','--porcelain','--','site','scripts','programs','public','index.html','package.json','package-lock.json','vite.config.js'],{cwd:projectRoot,encoding:'utf8'}).trim();
+const dirty=execFileSync('git',['status','--porcelain','--','app','config','programs','public','index.html','package.json','package-lock.json'],{cwd:projectRoot,encoding:'utf8'}).trim();
 if(dirty)throw Error(`Commit the source before freezing a web release:\n${dirty}`);
 await verifyWebVersions({allowUnreleased:true});
 const catalogPath=path.join(programPath,'web-versions.json');
@@ -22,7 +22,7 @@ try {await fs.access(destination);throw Error(`Refusing to overwrite ${destinati
 const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:projectRoot,encoding:'utf8'}).trim();
 const temporary=await fs.mkdtemp(path.join(os.tmpdir(),'circa-web-release-'));
 try {
-  await build({root:projectRoot,configFile:path.join(projectRoot,'vite.config.js'),publicDir:false,
+  await build({root:projectRoot,configFile:path.join(projectRoot,'config/vite.config.js'),publicDir:false,
     define:{'import.meta.env.VITE_WEB_PROGRAM':JSON.stringify(program),'import.meta.env.VITE_WEB_VERSION':JSON.stringify(version)},
     build:{outDir:temporary,emptyOutDir:true}});
   await fs.copyFile(path.join(projectRoot,'public','licenses.txt'),path.join(temporary,'licenses.txt'));

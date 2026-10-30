@@ -18,8 +18,8 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
    order. State uncertainty; do not infer chronology from tape numbers alone.
    Commit each recovered version separately in that order, without invented
    historical dates or rewriting user history. Use the configured Git identity.
-4. Register the program in `site/catalog.js` and put its presentation functions
-   in `site/programs/<slug>.js`. Keep common navigation and emulator
+4. Register the program in `app/site/catalog.js` and put its presentation functions
+   in `app/site/programs/<slug>.js`. Keep common navigation and emulator
    code shared; keep version-specific controls and dependencies in program metadata.
 5. Show instructions before launching. Include purpose, a concrete first sequence,
    keyboard focus, modes, restart, and version differences. Default to a complete,
@@ -96,3 +96,13 @@ disk. Confirm clearing/replacement only when work exists. PNG saves preserve
 brick layouts, not running sessions. Keep phase actions and pause outside
 advanced controls. See [the UX specification](docs/castles-user-experience-spec.md)
 and [development checks](docs/development.md).
+
+## Repository layout and publishing
+
+Website code, scripts, tests and artwork live under `app/`. Configuration lives
+in `config/`, and the shared VS Code workspace is in `tools/`. Keep the root
+listing short; put supporting documentation in `docs/`. Run the usual npm
+commands from the root; they explicitly select the relocated configuration.
+Preserve `programs/` historical paths and all frozen `public/experiences/` bytes.
+The user has authorized pushing verified changes and deploying GitHub Pages;
+complete deployment and check the live result before reporting it ready.

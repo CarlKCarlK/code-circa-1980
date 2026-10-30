@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {Asm} from 'z80-asm';
-const folder=new URL('../programs/castles/dependencies/fall-v6/',import.meta.url);
+const folder=new URL('../../programs/castles/dependencies/fall-v6/',import.meta.url);
 const source=fs.readFileSync(new URL('23-FALL-ASSEMBLY-V6.TXT',folder));
 // EDTASM's decimal line numbers are editor metadata, not assembly instructions.
 // Remove only the five-digit prefix and its following space, preserving tabs.

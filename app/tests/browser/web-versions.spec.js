@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 import fs from 'node:fs';
-const releases=JSON.parse(fs.readFileSync(new URL('../../programs/castles/web-versions.json',import.meta.url),'utf8')).versions;
+const releases=JSON.parse(fs.readFileSync(new URL('../../../programs/castles/web-versions.json',import.meta.url),'utf8')).versions;
 const latest=releases.at(-1).id;
 
 test('latest program links open the newest frozen experience and its version gallery',async({page})=>{

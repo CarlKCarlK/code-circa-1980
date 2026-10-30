@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import {test,expect} from '@playwright/test';
 test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
-import {withBrickAspect,withSquareBrickMetadata} from '../../programs/castles/typescript/bricks.ts';
+import {withBrickAspect,withSquareBrickMetadata} from '../../../programs/castles/typescript/bricks.ts';
 async function boot(page){await page.goto('/?development=1&test#/program/castles/typescript/play');await page.locator('.advanced-tools summary').click();await expect(page.getByRole('button',{name:'Save bricks',exact:true})).toBeEnabled();}
 const point=(page,x,y)=>page.evaluate(([x,y])=>{
  const c=window.__circaPlayer.snapshot()[Math.floor(y/3)*64+Math.floor(x/2)];return c>=128&&c<192&&!!(c&(1<<((y%3)*2+x%2)));

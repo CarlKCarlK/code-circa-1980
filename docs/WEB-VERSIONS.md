@@ -16,7 +16,7 @@ All web versions, and Latest version links lead back to the current collection.
 - `public/experiences/<program>/vN/` contains an immutable, self-contained production build.
 - `programs/<program>/web-versions.json` lists releases in order, starting at v1,
   with a release date, source commit, and every file's size and SHA-256 hash.
-- `site/` and `programs/<program>/typescript/` remain the editable source.
+- `app/site/` and `programs/<program>/typescript/` remain the editable source.
 
 The built snapshot keeps its own JavaScript, CSS, original payloads, and license
 notices. Rebuilding the current site copies earlier snapshots rather than

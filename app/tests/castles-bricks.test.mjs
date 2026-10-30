@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {Castles} from '../programs/castles/typescript/engine.ts';
-import {brickMask,pixelsToBricks,loadBricks,withBrickAspect,isBrickPng} from '../programs/castles/typescript/bricks.ts';
+import {Castles} from '../../programs/castles/typescript/engine.ts';
+import {brickMask,pixelsToBricks,loadBricks,withBrickAspect,isBrickPng} from '../../programs/castles/typescript/bricks.ts';
 test('brick files contain only blocks, excluding the ground and cannon settings',()=>{
  const game=new Castles();game.plot(64,46,true);game.power=.7;game.angle=.5;
  const mask=brickMask(game);assert.equal(mask.length,6144);assert.equal(mask.reduce((n,x)=>n+x,0),1);

@@ -30,3 +30,5 @@ Web v2 implements the P0/P1 entry, first-play, and continuity work in
 - [x] Help pauses without losing work; Browser/Original sessions are retained in memory.
 - [x] Confirm replacement of existing blocks; docked phone controls leave the field clear.
 - [ ] Newcomer walkthrough, physical touch, and Firefox/Safari validation.
+
+- [x] Shorten the repository root: group website code/tooling under app, relocate configs and workspace, and update commands and links.

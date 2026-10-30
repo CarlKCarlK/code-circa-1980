@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {Castles,seededRandom} from '../programs/castles/typescript/engine.ts';
-import calibration from '../programs/castles/typescript/timing-calibration.json' with {type:'json'};
+import {Castles,seededRandom} from '../../programs/castles/typescript/engine.ts';
+import calibration from '../../programs/castles/typescript/timing-calibration.json' with {type:'json'};
 import {measureFall} from './helpers/reference.mjs';
 
 test('settling simulation budgets match actual Z80 cycles across supported and falling fixtures',()=>{

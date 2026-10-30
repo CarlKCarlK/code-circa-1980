@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {decodeBasicProgram} from 'trs80-base';
 
-const root=new URL('../programs/',import.meta.url);
+const root=new URL('../../programs/',import.meta.url);
 for(const name of fs.readdirSync(root)){
  const folder=new URL(name+'/',root);
  if(!fs.existsSync(new URL('program.json',folder)))continue;
