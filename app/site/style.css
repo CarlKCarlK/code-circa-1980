@@ -49,3 +49,4 @@
 .key-pad .game-key{justify-content:center;padding:4px;flex-direction:column;gap:0;min-height:44px}
 .key-pad .game-key span{font-size:13px;line-height:1}
 .key-pad .game-key:nth-child(1){grid-column:2}.key-pad .game-key:nth-child(2){grid-column:1}.key-pad .game-key:nth-child(5){grid-column:1/-1;flex-direction:row;gap:6px}
+.essential-controls:has(#sound){grid-template-columns:repeat(6,1fr)}.essential-controls:has(#sound)>*{grid-column:span 2}.essential-controls:has(#sound)>:is(#restart,#fullscreen){grid-column:span 3;order:1}
