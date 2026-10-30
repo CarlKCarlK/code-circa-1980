@@ -3,6 +3,7 @@
   "title": "Castles",
   "description": "Build towers and bridges, then test them against cannon fire. It is a software toy with no score. Can you work out the rules of its physics?",
   "kind": "Game",
+  "language": "Level II BASIC",
   "defaultVersion": "v05",
   "defaultImplementation": "typescript",
   "versionOrder": "Inferred development sequence, not established dates. The three tape23b drafts precede the two tape18a machine-code variants based on source changes. Within each capture, use save order.",

@@ -54,7 +54,7 @@ async function render() {
   const playing=parts[3]==='play' && version.playable;
   const modern=version.implementation==='typescript';
   const reference=program.versions.find(v=>v.id===program.defaultVersion);
-  const implementationTabs=program.modern?`<nav class="implementations" aria-label="Implementation"><a href="${route(program,program.modern,playing)}" ${modern?'aria-current="page"':''}>Browser version</a><a href="${route(program,reference,playing)}" ${!modern?'aria-current="page"':''}>Original</a></nav>`:'';
+  const implementationTabs=program.modern?`<nav class="implementations" aria-label="Implementation"><a href="${route(program,program.modern,playing)}" ${modern?'aria-current="page"':''}>TypeScript version</a><a href="${route(program,reference,playing)}" ${!modern?'aria-current="page"':''}>${escape(program.language??'Original')} version</a></nav>`:'';
   const sessionKey=`${program.id}/${version.id}`;
   const cached=playing&&sessions.get(sessionKey);
   if(cached){
