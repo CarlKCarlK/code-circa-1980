@@ -6729,6 +6729,447 @@
           "sha256": "a4f2eb46f92ce025123ebe3f91915c4562eb3defa51a08ffe52067cb00c3e6d0"
         }
       ]
+    },
+    {
+      "version": "v20",
+      "family": "Chemistry Balancer II (1981)",
+      "label": "Latest Balancer II",
+      "capture": "tape23b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape23b/best/01-CHEMISTRY-BALANCER-II-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape23b/best/01-CHEMISTRY-BALANCER-II-SAVE01.ASC",
+      "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+      "bytes": 9965,
+      "listing_sha256": "933ff5d7913a676a3361fa466d3bf1682c03f4224d3a2d43c1dc96a61a841889",
+      "listing_lines": 225,
+      "recovery_evidence": "tapes/recovered/tape23b/inventory.json",
+      "inventory_row": {
+        "summary": "CHEMISTRY BALANCER II SAVE01",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 1,
+        "detected_group": 1,
+        "title": "CHEMISTRY BALANCER II SAVE01",
+        "title_note": "Descriptive filenames and save/template/fragment sequence labels inferred from content and capture order; source titles preserved in listings.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 25.2035,
+        "source_end_s": 181.606,
+        "selected_source": {
+          "variant": "original",
+          "index": 1,
+          "start": 25.2035,
+          "end": 181.60583333333332,
+          "file": "original/T01-070b1cba202f.BAS",
+          "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 225,
+            "last": 11030,
+            "normal": true,
+            "parsed": 9965,
+            "bytes": 9965,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/01-CHEMISTRY-BALANCER-II-SAVE01.BAS",
+        "listing": "best/01-CHEMISTRY-BALANCER-II-SAVE01.ASC",
+        "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+        "bytes": 9965,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 225,
+          "last": 11030,
+          "normal": true,
+          "parsed": 9965,
+          "bytes": 9965,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "original",
+            "index": 1,
+            "start": 25.2035,
+            "end": 181.60583333333332,
+            "file": "original/T01-070b1cba202f.BAS",
+            "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 225,
+              "last": 11030,
+              "normal": true,
+              "parsed": 9965,
+              "bytes": 9965,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 1,
+            "start": 25.20360416666667,
+            "end": 181.60595833333332,
+            "file": "right-boosted/T01-070b1cba202f.BAS",
+            "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 225,
+              "last": 11030,
+              "normal": true,
+              "parsed": 9965,
+              "bytes": 9965,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 1,
+            "start": 25.203625,
+            "end": 181.60597916666666,
+            "file": "left-hp1200/T01-070b1cba202f.BAS",
+            "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 225,
+              "last": 11030,
+              "normal": true,
+              "parsed": 9965,
+              "bytes": 9965,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 1,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T01-070b1cba202f.BAS",
+            "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 225,
+              "last": 11030,
+              "normal": true,
+              "parsed": 9965,
+              "bytes": 9965,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 24.903479166666667,
+            "crop_end": 182.006,
+            "start": 25.1978125,
+            "end": 181.60597916666666,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 1,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T01-070b1cba202f.BAS",
+            "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 225,
+              "last": 11030,
+              "normal": true,
+              "parsed": 9965,
+              "bytes": 9965,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 24.903479166666667,
+            "crop_end": 182.006,
+            "start": 25.1978125,
+            "end": 181.606,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 1,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T01-070b1cba202f.BAS",
+            "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 225,
+              "last": 11030,
+              "normal": true,
+              "parsed": 9965,
+              "bytes": 9965,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 24.903479166666667,
+            "crop_end": 182.006,
+            "start": 25.197791666666667,
+            "end": 181.60595833333335,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "other_saves": [
+        {
+          "capture": "tape23b",
+          "save": 2,
+          "relation": "identical",
+          "archive_listing": "tapes/recovered/tape23b/best/02-CHEMISTRY-BALANCER-II-SAVE02.ASC",
+          "inventory_row": {
+            "summary": "CHEMISTRY BALANCER II SAVE02",
+            "status": "validated payload; runtime untested",
+            "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+            "recovery%": "100"
+          },
+          "archive_raw": "tapes/recovered/tape23b/best/02-CHEMISTRY-BALANCER-II-SAVE02.BAS",
+          "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba"
+        }
+      ],
+      "snapshot_raw": "versions/v20/01-CHEMISTRY-BALANCER-II-SAVE01.BAS",
+      "snapshot_listing": "versions/v20/01-CHEMISTRY-BALANCER-II-SAVE01.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v20/01-CHEMISTRY-BALANCER-II-SAVE01.BAS",
+          "bytes": 9965,
+          "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba"
+        },
+        {
+          "path": "versions/v20/01-CHEMISTRY-BALANCER-II-SAVE01.ASC",
+          "bytes": 12307,
+          "sha256": "933ff5d7913a676a3361fa466d3bf1682c03f4224d3a2d43c1dc96a61a841889"
+        }
+      ]
     }
   ]
 }
