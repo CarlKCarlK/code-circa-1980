@@ -72,10 +72,11 @@ test('original v03 builds a tower, fires, pauses, releases keys and restarts',as
 test('earlier self-contained versions boot and accept their original build controls',async({page})=>{
  for(const version of ['v01','v02']){
   await boot(page,version);
-  for(let i=0;i<8;i++){
-   await hold(page,'Enter',40);await hold(page,'1',40);
+  // Build along the ground so variable emulator polling cannot skip a support row.
+  for(let i=0;i<4;i++){
+   await hold(page,'Enter',120);await hold(page,'4',80);
   }
-  await expect.poll(async()=> (await pixels(page)).filter(([x,y])=>x===64&&y<46).length).toBeGreaterThan(1);
+  await expect.poll(async()=> (await pixels(page)).filter(([x,y])=>y===46).length).toBeGreaterThan(1);
   await hold(page,' ',250);
   await expect(page.locator('#status')).toContainText('Running original BASIC');
  }

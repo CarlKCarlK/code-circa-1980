@@ -33,6 +33,7 @@ test('floating controls move, resize, persist, and never paint through the panel
  const initial=await panel.boundingBox(),grip=await page.getByRole('button',{name:'Move controls',exact:true}).boundingBox();
  await page.mouse.move(grip.x+10,grip.y+15);await page.mouse.down();await page.mouse.move(grip.x+90,grip.y+55);await page.mouse.up();
  const moved=await panel.boundingBox();expect(moved.x).toBeCloseTo(initial.x+80,0);expect(moved.y).toBeCloseTo(initial.y+40,0);
+ await page.getByRole('button',{name:'Resize controls',exact:true}).scrollIntoViewIfNeeded();
  const corner=await page.getByRole('button',{name:'Resize controls',exact:true}).boundingBox();
  await page.mouse.move(corner.x+corner.width/2,corner.y+corner.height/2);await page.mouse.down();await page.mouse.move(corner.x+corner.width/2+40,corner.y+corner.height/2+20);await page.mouse.up();
  const resized=await panel.boundingBox();expect(resized.width).toBeCloseTo(moved.width+40,0);

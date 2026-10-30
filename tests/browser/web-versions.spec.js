@@ -10,7 +10,7 @@ test('latest program links open the newest frozen experience and its version gal
  await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript$`));
  await expect(page.getByRole('navigation',{name:'Web experience'})).toContainText(`Web experience ${latest}`);
  await expect(page.locator('canvas')).toHaveCount(0);
- await page.getByRole('link',{name:'Play Castles',exact:true}).click();
+ await page.getByRole('link',{name:'Play Castles'}).click();
  await expect(page.locator('#status')).toContainText('TypeScript · Building');
  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
  await page.getByRole('link',{name:'All web versions',exact:true}).click();
