@@ -8,14 +8,16 @@
     "dev": "vite --config config/vite.config.js --host 127.0.0.1",
     "build": "npm run typecheck && vite build --config config/vite.config.js",
     "preview": "vite --config config/vite.config.js preview --host 127.0.0.1",
-    "test": "node --test tests/archive.test.mjs tests/castles-parity.test.mjs tests/castles-timing.test.mjs tests/castles-pointer.test.mjs tests/castles-bricks.test.mjs tests/castles-patterns.test.mjs tests/web-versions.test.mjs",
+    "test": "node --test tests/archive.test.mjs tests/castles-parity.test.mjs tests/castles-timing.test.mjs tests/castles-pointer.test.mjs tests/castles-bricks.test.mjs tests/castles-patterns.test.mjs tests/balancer-engine.test.mjs tests/web-versions.test.mjs",
     "release:web": "node scripts/release-web.mjs",
     "verify:web-versions": "node scripts/web-versions.mjs",
     "test:browser": "playwright test --config config/playwright.config.js",
     "build:fall": "node scripts/build-fall.mjs",
     "typecheck": "tsc --noEmit --project config/tsconfig.json",
     "calibrate:castles": "node scripts/calibrate-castles.mjs",
-    "test:dev-route": "node scripts/check-dev-route.mjs"
+    "test:dev-route": "node scripts/check-dev-route.mjs",
+    "build:balancer": "node scripts/build-balancer.mjs",
+    "record:balancer": "node scripts/record-balancer-parity.mjs"
   },
   "dependencies": {
     "trs80-base": "2.3.1",
