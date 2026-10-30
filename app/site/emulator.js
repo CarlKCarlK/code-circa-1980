@@ -2,6 +2,9 @@ import {Config, ModelType, BasicLevel, Keyboard, Trs80, CassettePlayer, SilentSo
 import {CanvasScreen} from 'trs80-emulator-web';
 import {decodeBasicProgram} from 'trs80-base';
 
+// Match the TypeScript field (player.ts) instead of the library's gray-green AUTHENTIC_BACKGROUND.
+class CobaltScreen extends CanvasScreen { getBackgroundColor() { return '#1e4b8f'; } }
+
 // Executes recovered tokenized BASIC through the Z80 and original BASIC ROM.
 // The library relocates the in-memory line pointers on load. The source file
 // and every archived byte remain unchanged.
@@ -18,7 +21,7 @@ export async function createPlayer(host, url, status, title, dependency) {
     machineBytes=new Uint8Array(await response.arrayBuffer());
   }
   const config = Config.makeDefault().withModelType(ModelType.MODEL3).withBasicLevel(BasicLevel.LEVEL2);
-  const screen = new CanvasScreen(1);
+  const screen = new CobaltScreen(1);
   const keyboard = new Keyboard();
   const machine = new Trs80(config, screen, keyboard, new CassettePlayer(), new SilentSoundPlayer());
   host.replaceChildren(screen.getNode());
