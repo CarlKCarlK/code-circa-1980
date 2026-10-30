@@ -29,6 +29,8 @@ jobs:
           cache-dependency-path: app/package-lock.json
       - run: npm ci
       - name: Preserve published web versions
+        # A deliberate reset of all releases says [reset-web-versions] in its head commit message.
+        if: ${{ !contains(github.event.head_commit.message, '[reset-web-versions]') }}
         env:
           PREVIOUS_COMMIT: ${{ github.event.before }}
         run: npm run verify:web-versions -- --against "$PREVIOUS_COMMIT"

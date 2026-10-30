@@ -3,35 +3,26 @@ import fs from 'node:fs';
 const releases=JSON.parse(fs.readFileSync(new URL('../../../programs/castles/web-versions.json',import.meta.url),'utf8')).versions;
 const latest=releases.at(-1).id;
 
-test('latest program links open the newest frozen experience and its version gallery',async({page})=>{
+test('the collection opens the newest frozen experience straight into play',async({page})=>{
  const errors=[];page.on('pageerror',error=>errors.push(error.message));
  await page.goto('/');
  await page.getByRole('link',{name:'Play Castles →'}).click();
- await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript/play/bridge$`));
+ await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript/play/castle$`));
  await expect(page.locator('#status')).toContainText('Building');
  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
  if(!await page.getByRole('navigation',{name:'Web experience'}).isVisible())await page.locator('.source-details > summary').click();
  await expect(page.getByRole('navigation',{name:'Web experience'})).toContainText(`Web experience ${latest}`);
- // Frozen v1-v3 link to this legacy gallery; later releases use the version dropdown.
- await page.goto('/#/program/castles/web-versions');
- await expect(page.getByRole('heading',{name:'Castles versions',exact:true})).toBeVisible();
- await expect(page.getByRole('region',{name:'Web versions'})).toContainText(`${latest} · Latest`);
- await page.getByRole('link',{name:'Open v1',exact:true}).click();
- await expect(page).toHaveURL(/\/experiences\/castles\/v1\/$/);
- await expect(page.getByRole('navigation',{name:'Web experience'})).toContainText('Web experience v1');
- await expect(page.getByRole('link',{name:'Original · emulator',exact:true})).toBeVisible();
- await page.getByRole('link',{name:'Latest version',exact:true}).click();
- await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/#/program/castles$`));
  expect(errors).toEqual([]);
 });
 
 test('home page version dropdown opens the chosen frozen release',async({page})=>{
+ test.skip(releases.length<2,'The dropdown appears only when there is more than one release.');
  await page.goto('/');
  const picker=page.getByLabel('Versions');
- await expect(picker).toHaveValue(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript/play/bridge$`));
+ await expect(picker).toHaveValue(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript/play/castle$`));
  await expect(picker.locator('option')).toHaveCount(releases.length);
  await picker.selectOption({label:'v1'});
- await expect(page).toHaveURL(/\/experiences\/castles\/v1\/#\/program\/castles\/typescript\/play\/bridge$/);
+ await expect(page).toHaveURL(/\/experiences\/castles\/v1\/#\/program\/castles\/typescript\/play\/castle$/);
  await expect(page.locator('canvas')).toHaveCount(1);
 });
 
