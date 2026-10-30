@@ -10,7 +10,7 @@ const pixels=async page=>page.evaluate(()=>{
 });
 const hold=async(page,key,ms)=>{await page.keyboard.down(key);await page.waitForTimeout(ms);await page.keyboard.up(key);await page.waitForTimeout(120);};
 async function boot(page,version='v03'){
- await page.goto(`/?test#/program/castles/${version}/play`);
+ await page.goto(`/?development=1&test#/program/castles/${version}/play`);
  await expect(page.locator('#status')).toContainText('Running original BASIC');
  await expect.poll(async()=> (await pixels(page)).filter(p=>p[1]===47).length,{timeout:10000}).toBe(version==='v03'?128:126);
  await page.locator('#display').focus();
@@ -18,7 +18,7 @@ async function boot(page,version='v03'){
 
 test('collection leads to instructions; versions and downloads remain available',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/');
+ await page.goto('/?development=1');
  await page.getByRole('link',{name:/Instructions & play/}).click();
  await expect(page.getByRole('heading',{name:'Castles',exact:true})).toBeVisible();
  await expect(page).toHaveURL(/castles\/typescript$/);
@@ -83,7 +83,7 @@ test('earlier self-contained versions boot and accept their original build contr
 
 test('phone layout has no horizontal overflow and on-screen keys draw',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- await page.goto('/#/program/castles/v03');
+ await page.goto('/?development=1#/program/castles/v03');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.screenshot({path:'test-results/castles-instructions-mobile.png',fullPage:true});
  await boot(page);
@@ -99,7 +99,7 @@ test('phone layout has no horizontal overflow and on-screen keys draw',async({pa
 
 test('v05 original runs with the assembled FALL dependency',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/?test#/program/castles/v05/play');
+ await page.goto('/?development=1&test#/program/castles/v05/play');
  await expect(page.locator('#status')).toContainText('Running original BASIC');
  await expect.poll(async()=> (await pixels(page)).filter(p=>p[1]===47).length,{timeout:15000}).toBe(128);
  await page.locator('#display').focus();
@@ -113,7 +113,7 @@ test('v05 original runs with the assembled FALL dependency',async({page})=>{
 
 test('TypeScript follows the instructions, builds, bombards, pauses and restarts',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/?test#/program/castles/v05');
+ await page.goto('/?development=1&test#/program/castles/v05');
  await page.getByRole('link',{name:'TypeScript',exact:true}).click();
  await expect(page).toHaveURL(/castles\/typescript$/);
  await expect(page.getByRole('heading',{name:'Your first minute with the keyboard'})).toBeVisible();

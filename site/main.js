@@ -2,11 +2,25 @@ import './style.css';
 import {programs, assetUrl, provenanceUrl} from './catalog.js';
 
 const app = document.querySelector('#app');
+const webProgram=import.meta.env.VITE_WEB_PROGRAM;
+const webVersion=import.meta.env.VITE_WEB_VERSION;
+const collectionUrl=new URL(webProgram?'../../../':'./',location.href);
+const development=new URLSearchParams(location.search).has('development');
+if(webProgram)document.querySelector('.brand').href=collectionUrl.href;
 let player = null, navigation = 0;
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const route = (program, version, play=false) => `#/program/${program.id}/${version.id}${play ? '/play' : ''}`;
 const defaultEdition = program => program.defaultImplementation==='typescript' && program.modern ? program.modern : program.versions.find(v=>v.id===program.defaultVersion);
-const crumbs = program => `<nav aria-label="Breadcrumb"><a href="#/">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
+const crumbs = program => `<nav aria-label="Breadcrumb"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
+const galleryUrl=program=>`${collectionUrl.href}#/program/${program.id}/web-versions`;
+const experienceUrl=(program,version)=>new URL(`experiences/${program.id}/${version.id}/`,collectionUrl).href;
+function webVersionNavigation(program){
+ return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span><a href="${galleryUrl(program)}">All web versions</a>${webVersion?`<a href="${collectionUrl.href}#/program/${program.id}">Latest version</a>`:''}</nav>`;
+}
+function webVersionGallery(program){
+ const versions=[...program.webVersions].reverse();
+ return `${crumbs(program)}<section class="intro"><p class="eyebrow">Web experiences</p><h1>${escape(program.title)} versions</h1><p class="lede">Choose a version of the browser experience. Each release keeps its own controls, presentation, and playable code. Recovered BASIC versions remain available inside each release.</p></section><section class="web-version-gallery" aria-label="Web versions">${versions.map((v,i)=>`<article><p class="eyebrow">${escape(v.id)}${i===0?' · Latest':''}</p><h2>${escape(v.label)}</h2><p class="small">Released ${escape(v.released)}</p><a class="primary" href="${experienceUrl(program,v)}">Open ${escape(v.id)}</a></article>`).join('')}</section>`;
+}
 function versionList(program, selected) {
  return `<details class="versions"><summary>${program.versions.length} recovered versions · development order is inferred</summary><p>${escape(program.versionOrder)}</p><ol>${program.versions.map(v=>`<li><a href="${route(program,v)}" ${selected.id===v.id?'aria-current="page"':''}>${escape(v.id.toUpperCase())} · ${escape(v.label)}</a><span class="small">${escape(v.capture)} / save ${v.save}${v.playable?'':' · source only'}</span><p>${escape(v.note)}</p></li>`).join('')}</ol></details>`;
 }
@@ -14,12 +28,22 @@ async function render() {
   const thisNavigation = ++navigation;
   player?.dispose(); player = null; delete window.__circaPlayer;
   const parts=location.hash.slice(1).split('/').filter(Boolean);
+  if(webProgram&&!parts.length)parts.push('program',webProgram);
   if (!parts.length) {
     document.title = 'Code Circa 1980';
     app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<a class="program-card" href="${route(p,defaultEdition(p))}"><div class="card-art" aria-hidden="true"><span class="castle-art">▟▙ ▟▙ ▟▙<br>██▄██▄██<br>████████<br>███  ███</span></div><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)} / Original BASIC</span><h2>${escape(p.title)} <span>↗</span></h2><p>${escape(p.description)}</p><span class="card-link">Instructions & play →</span></div></a>`).join('')}</section><p class="collection-note">A small collection, with room to grow. Games, tools, mathematics, and experiments.</p>`;
+    const links=document.createElement('div');links.className='collection-version-links';
+    for(const program of programs){const link=document.createElement('a');link.href=galleryUrl(program);link.textContent=`${program.title} · all web versions`;links.append(link);}
+    app.querySelector('.collection').after(links);
     return;
   }
   const program=programs.find(p=>parts[0]==='program' && p.id===parts[1]);
+  if(program&&parts[2]==='web-versions'){document.title=`${program.title} versions · Code Circa 1980`;app.innerHTML=webVersionGallery(program);return;}
+  if(program&&((!webProgram&&!development)||(webProgram&&webProgram!==program.id))){
+    const latest=program.webVersions.at(-1);
+    if(!latest){app.innerHTML=`${crumbs(program)}<h1>No web releases yet</h1>`;return;}
+    const url=new URL(experienceUrl(program,latest));url.search=location.search;url.hash=location.hash;location.replace(url);return;
+  }
   const version=!parts[2] && program ? defaultEdition(program) : parts[2]==='typescript' ? program?.modern : program?.versions.find(v=>v.id===parts[2]);
   if(!program || !version){app.innerHTML='<h1>Program not found</h1><p><a href="#/">Back to the collection</a></p>';return;}
   document.title=`${program.title} · Code Circa 1980`;
@@ -28,6 +52,7 @@ async function render() {
   const reference=program.versions.find(v=>v.id===program.defaultVersion);
   const implementationTabs=program.modern?`<nav class="implementations" aria-label="Implementation"><a href="${route(program,reference)}" ${!modern?'aria-current="page"':''}>Original · emulator</a><a href="${route(program,program.modern)}" ${modern?'aria-current="page"':''}>TypeScript</a></nav>`:'';
   app.innerHTML=`${crumbs(program)}${implementationTabs}<section class="program-heading"><div><p class="eyebrow">${modern?'TypeScript version':'Original program'} / ${escape(version.id.toUpperCase())} · ${escape(version.capture)}</p><h1>${escape(program.title)}</h1><p class="lede">${escape(program.description)}</p></div><span class="edition">${escape(version.label)}</span></section>${playing ? `<section class="player-section"><div class="player-toolbar"><a href="${route(program,version)}">← Instructions</a><div><button id="pause">Pause</button><button id="restart">Restart</button><button id="fullscreen">Full screen</button></div></div><div id="display" class="screen" tabindex="0" aria-label="Loading emulator"></div><p id="status" role="status">Loading ${modern?'the TypeScript version':'the original program'}…</p><div class="quick-controls" aria-label="On-screen game keys">${program.onScreenKeys(version).map(k=>`<button class="game-key" data-key="${k}" aria-label="Game key ${k===' '?'Space':escape(k)}">${k===' '?'Space':escape(k.toUpperCase())}</button>`).join('')}</div><p class="small">Click the screen for keyboard controls. ${escape(program.quickHelp(version))} Restart begins a new construction.</p></section>` : `${program.instructions(version)}<div class="launch-panel">${version.playable ? `<div><strong>Ready to build?</strong><p>${modern?'The TypeScript version follows the v05 construction and cannon rules. The original remains available for comparison.':'The recovered BASIC runs inside a TRS-80 emulator. FALL machine code is loaded automatically for v05.'}</p></div><a class="primary" href="${route(program,version,true)}">Play ${escape(program.title)} <span>→</span></a>` : `<div><strong>This version is preserved for study.</strong><p>${escape(version.unavailableReason)}</p></div><a class="primary" href="${route(program,program.versions.find(v=>v.id===program.defaultVersion))}">Use the playable version →</a>`}</div>`}<details class="source-details"><summary>Reference source & provenance</summary><p>${escape(version.note)} Original bytes and historical quirks are preserved.</p><p><a href="${assetUrl(program,version.listing)}" download>Download BASIC listing</a> · <a href="${assetUrl(program,version.raw)}" download>Download original payload</a> · <a href="${provenanceUrl(program)}" download>Recovery provenance</a></p></details>${versionList(program,version)}`;
+  app.querySelector('.program-heading').insertAdjacentHTML('beforebegin',webVersionNavigation(program));
   window.scrollTo(0,0);
   if (!playing) return;
   const host=document.querySelector('#display'), status=document.querySelector('#status');

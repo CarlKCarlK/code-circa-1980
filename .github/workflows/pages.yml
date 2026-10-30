@@ -17,11 +17,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
       - run: npm ci
+      - name: Preserve published web versions
+        env:
+          PREVIOUS_COMMIT: ${{ github.event.before }}
+        run: npm run verify:web-versions -- --against "$PREVIOUS_COMMIT"
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium

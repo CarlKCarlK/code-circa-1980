@@ -68,3 +68,19 @@ new external dependency before enabling a historical version in the player.
 
 Write the collection’s personal history in first person ("I wrote"), not as a
 third-person biography. Preserve historical source credits and copyright notices.
+
+## Preserve web experiences
+
+Every program starts with web v1, separately from recovered historical versions.
+Follow [WEB-VERSIONS.md](WEB-VERSIONS.md). Published builds under
+`public/experiences/<program>/vN/` are immutable. Public program links default to
+the latest entry in `programs/<program>/web-versions.json`; the gallery and permanent
+version URLs retain every earlier experience. Preserve its entire player, styling,
+instructions, original payloads, and license notices.
+
+Develop and test editable source using `?development=1`. Before publishing changes
+to a program's experience, commit its source, run `npm run release:web -- <program>`
+to freeze the next sequential version, verify it, and commit its snapshot/catalog.
+Use tags such as `castles-web-v1`, distinct from historical tags such as `castles-v01`.
+Never fix a published snapshot in place or rebuild old releases using newer code.
+CI verifies their hashes and rejects modifications to previously published versions.

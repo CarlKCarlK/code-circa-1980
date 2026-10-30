@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 async function boot(page){
- await page.goto('/?test#/program/castles/typescript/play');
+ await page.goto('/?development=1&test#/program/castles/typescript/play');
  await expect(page.locator('#status')).toContainText('TypeScript · Building');
 }
 async function at(page,x,y){
@@ -66,7 +66,7 @@ test('hover, keyboard-only modes, cancelled strokes, pause and bombardment do no
 test('touch taps draw and erase correctly on a narrow scaled canvas',async({browser})=>{
  const context=await browser.newContext({hasTouch:true,viewport:{width:390,height:844}});const page=await context.newPage();
  try{
-  await page.goto(`${test.info().project.use.baseURL}/?test#/program/castles/typescript/play`);
+  await page.goto(`${test.info().project.use.baseURL}/?development=1&test#/program/castles/typescript/play`);
   await expect(page.locator('#status')).toContainText('TypeScript · Building');
   for(const y of [46,45]){const p=await at(page,64,y);await page.touchscreen.tap(p.x,p.y);expect(await point(page,64,y)).toBe(true);}
   await page.getByRole('button',{name:'Expand controls',exact:true}).click();

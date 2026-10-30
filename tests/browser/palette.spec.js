@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 test('controls can move outside the field and return there after fullscreen',async({page})=>{
  await page.setViewportSize({width:1280,height:1200});
- await page.goto('/?test#/program/castles/typescript/play');
+ await page.goto('/?development=1&test#/program/castles/typescript/play');
  const panel=page.locator('.floating-palette'),host=page.locator('#display');await expect(panel).toBeVisible();
  await page.evaluate(()=>window.scrollTo(0,0));
  const hostBox=await host.boundingBox(),initialPanel=await panel.boundingBox(),grip=await page.getByRole('button',{name:'Move controls',exact:true}).boundingBox();
@@ -25,7 +25,7 @@ test('controls can move outside the field and return there after fullscreen',asy
  await expect.poll(()=>panel.evaluate(el=>({x:parseFloat(el.style.left),y:parseFloat(el.style.top)}))).toEqual(normal);
 });
 test('floating controls move, resize, persist, and never paint through the panel',async({page})=>{
- await page.goto('/?test#/program/castles/typescript/play');
+ await page.goto('/?development=1&test#/program/castles/typescript/play');
  const panel=page.locator('.floating-palette');await expect(panel).toBeVisible();
  await expect(page.getByRole('button',{name:'Move controls',exact:true})).toHaveCSS('cursor','grab');
  expect(await page.getByRole('button',{name:'Move controls',exact:true}).evaluate(el=>getComputedStyle(el,'::before').backgroundImage)).toContain('radial-gradient');

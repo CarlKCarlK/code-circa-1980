@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 test('train trestle loads a supported full-width bridge with three feet and can be cleared',async({page})=>{
- await page.goto('/?test#/program/castles/typescript/play');
+ await page.goto('/?development=1&test#/program/castles/typescript/play');
  await page.getByLabel('Prebuilt pattern').selectOption('trestle');await page.getByRole('button',{name:'Load pattern',exact:true}).click();
  await expect(page.locator('.drawing-feedback')).toContainText('Train trestle bridge loaded');
  const rows=await page.evaluate(()=>{

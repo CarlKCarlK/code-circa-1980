@@ -18,6 +18,8 @@ npm run dev
 
 Open the local URL printed by Vite. Choose **Castles**, read its instructions,
 then launch the original program in the embedded TRS-80 emulator.
+Add `?development=1` to work on the editable browser experience; ordinary links
+open the latest frozen web release.
 
 Open `code-circa-1980.code-workspace` to work with this collection and the `trs80`
 recovery archive together. Node.js 22.12+ (or 24+) is required.
@@ -29,6 +31,12 @@ own Git commit in a documented, inferred development order. Four recovered BASIC
 loads a modern assembly of its recovered FALL v6 source. v04 remains source only.
 The default original is now v05. Choose **TypeScript** on the instructions page
 for the first native browser port, based on v05 and its assembly routine.
+
+Every program's browser experience starts at **web v1**. The newest release is
+the default; older releases stay playable in the
+[web version gallery](https://carlkcarlk.github.io/code-circa-1980/#/program/castles/web-versions).
+These releases are separate from the recovered BASIC versions. See
+[WEB-VERSIONS.md](WEB-VERSIONS.md) for development and release commands.
 
 ## Organization
 
