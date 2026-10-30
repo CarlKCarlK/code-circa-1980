@@ -12,10 +12,14 @@ export function instructions(version) {
   return `${history}<div class="instruction-grid"><section><h2>Build something worth defending.</h2><ol class="play-steps"><li><strong>Build.</strong> Drag up from the ground. Each block needs a block below it or diagonally below.</li><li><strong>Fire.</strong> Press Fire cannons. Two cannons take turns; raise Power and Arc to reach your structure.</li><li><strong>Rebuild.</strong> Press Return to building, repair what survived, and fire again.</li></ol></section><section><h3>Tips</h3><ul class="tips"><li>To remove blocks, choose Erase or drag with the right mouse button. Work from the top down.</li><li><strong>Start from</strong> loads the arch and tower, the train trestle bridge, or an empty field.</li><li><strong>More options</strong> straightens strokes, saves your blocks as a PNG, or turns a picture into blocks.</li><li>Touch and pen work like the mouse. Help pauses the game.</li></ul></section></div><details class="keyboard-details"><summary>Play with the original keyboard controls</summary><div class="instruction-grid"><section>${firstMinute}</section>${controlsCard}</div></details>`;
 }
 
+// Grouped by purpose: [key, action label]. Arrow groups render as a direction pad.
 export const onScreenKeys = version => version.controls === 'early'
-  ? ['1','2','3','4','Enter',' ','5','m'] : ['1','2','3','4','7','8','9','0','Shift','q','5','m'];
+  ? [{label:'Move',pad:true,keys:[['1','↑'],['3','←'],['2','↓'],['4','→']]},
+     {label:'Build',keys:[['Enter','Place block'],[' ','Fire']]},
+     {label:'Cannons',keys:[['5','Power 5'],['m','Arc 42°']]}]
+  : [{label:'Move',pad:true,keys:[['1','↑'],['3','←'],['2','↓'],['4','→']],extra:[['Shift','Big steps']]},
+     {label:'Mode',keys:[['7','Move'],['8','Draw'],['9','Erase'],['0','One block']]},
+     {label:'Cannons',keys:[['q','Fire'],['5','Power 5'],['m','Arc 42°']]}];
 export const quickHelp = version => version.implementation==='typescript'
   ? 'The original keys also work: 8 draws, 7 moves, 9 erases, Q fires. Turn off Mouse drawing under More options for keyboard-only play.'
-  : version.controls === 'early'
-  ? 'Tap Enter to place a block; Space starts bombardment. 5 + M gives stronger arcs.'
-  : '8 draws · 7 moves · 9 erases · Q starts bombardment. 5 + M gives stronger arcs.';
+  : 'Click the game screen first so it gets your keys. Hold each key briefly: the original program checks the keyboard as it runs, and reads Power and Arc between shots.';
