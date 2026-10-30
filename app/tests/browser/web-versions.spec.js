@@ -8,7 +8,7 @@ test('latest program links open the newest frozen experience and its version gal
  await page.goto('/');
  await page.getByRole('link',{name:'Play Castles →'}).click();
  await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript/play/bridge$`));
- await expect(page.locator('#status')).toContainText('TypeScript · Building');
+ await expect(page.locator('#status')).toContainText('Building');
  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
  if(!await page.getByRole('navigation',{name:'Web experience'}).isVisible())await page.locator('.source-details > summary').click();
  await expect(page.getByRole('navigation',{name:'Web experience'})).toContainText(`Web experience ${latest}`);
@@ -38,6 +38,6 @@ test('home page version dropdown opens the chosen frozen release',async({page})=
 test('previously shared play links resolve to the latest frozen release',async({page})=>{
  await page.goto('/?test#/program/castles/typescript/play');
  await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/[?]test#/program/castles/typescript/play$`));
- await expect(page.locator('#status')).toContainText('TypeScript · Building');
+ await expect(page.locator('#status')).toContainText('Building');
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().phase)).toBe('building');
 });

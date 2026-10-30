@@ -71,7 +71,7 @@ Use the Original/TypeScript selectors on the instructions page for manual review
 
 The TypeScript player supports free pointer positioning and click/drag drawing.
 Draw, Erase, and Move tools are visible; right-drag temporarily erases without
-changing the selected tool. Turn off Mouse controls for keyboard-only play.
+changing the selected tool. Turn off Mouse drawing (under More options) for keyboard-only play.
 The original emulator and recovered sources are unchanged.
 
 Mouse strokes visit every crossed cell in order, so rapid motion leaves no

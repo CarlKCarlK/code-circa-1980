@@ -56,7 +56,7 @@ test('original v03 builds a tower, fires, pauses, releases keys and restarts',as
  await page.waitForTimeout(200);
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().tStates)).toBe(paused.tStates);
  await expect(page.getByRole('button',{name:'Resume',exact:true})).toBeVisible();
- await page.getByRole('button',{name:'New construction',exact:true}).click();
+ await page.getByRole('button',{name:'Restart',exact:true}).click();
  await expect.poll(async()=> (await pixels(page)).filter(p=>p[1]===47).length).toBe(128);
  await expect.poll(async()=> (await pixels(page)).filter(([x,y])=>y<46).length).toBeLessThan(2);
  expect(before.length).toBeGreaterThan(130);
@@ -122,13 +122,13 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  await expect(page.locator('.quick-start')).toContainText('Start with an arch and a tower');
  await expect(page.locator('canvas')).toHaveCount(0);
  await page.getByRole('link',{name:'Build from scratch',exact:true}).click();
- await expect(page.locator('#status')).toContainText('TypeScript · Building');
+ await expect(page.locator('#status')).toContainText('Building');
  await page.locator('#display').focus();
  await hold(page,'8',180);await hold(page,'1',1600);
  expect((await pixels(page)).filter(([x,y])=>x===64&&y<46).length).toBeGreaterThan(3);
  await page.screenshot({path:'test-results/castles-typescript-built.png',fullPage:true});
  await hold(page,'q',300);await hold(page,'5',800);await hold(page,'m',1800);
- await expect(page.locator('#status')).toContainText('Bombardment');
+ await expect(page.locator('#status')).toContainText('Firing');
  await expect.poll(()=>page.evaluate(()=>window.__circaPlayer.diagnostics().shots),{timeout:8000}).toBeGreaterThan(1);
  await expect.poll(()=>page.evaluate(()=>window.__circaPlayer.diagnostics().activity)).toBe('flight');
  const beforeFlight=await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks);
@@ -140,7 +140,7 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  const tick=await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks);await page.waitForTimeout(180);
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks)).toBe(tick);
- await page.getByRole('button',{name:'New construction',exact:true}).click();
+ await page.getByRole('button',{name:'Clear field',exact:true}).click();
  await expect(page.locator('#status')).toContainText('Building');
  expect((await pixels(page)).filter(([x,y])=>y<46)).toHaveLength(0);
  await page.keyboard.down('1');await page.getByRole('button',{name:'Pause',exact:true}).focus();

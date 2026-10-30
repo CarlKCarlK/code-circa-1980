@@ -44,17 +44,17 @@ test('floating controls move, resize, persist, and never paint through the panel
  await page.reload();await floatControls(page);await expect(panel).toBeVisible();expect((await panel.boundingBox()).width).toBeCloseTo(resized.width,0);
  await page.getByRole('button',{name:'Collapse controls',exact:true}).click();expect((await panel.boundingBox()).height).toBe(42);
  await page.getByRole('button',{name:'Expand controls',exact:true}).click();
- await page.getByRole('button',{name:'Start bombardment',exact:true}).click();
+ await page.getByRole('button',{name:'Fire cannons',exact:true}).click();
  await expect(page.getByLabel('Cannon power')).toBeVisible();
  await page.getByLabel('Cannon power').evaluate(el=>{el.value='5';el.dispatchEvent(new Event('input',{bubbles:true}));});await page.getByLabel('Cannon angle').evaluate(el=>{el.value='12';el.dispatchEvent(new Event('input',{bubbles:true}));});
  await expect.poll(()=>page.evaluate(()=>window.__circaPlayer.diagnostics().cannonSettings)).toEqual({power:5,angle:12});
  await page.getByRole('button',{name:'Return to building',exact:true}).click();
  await expect(page.getByRole('button',{name:'Draw',exact:true})).toBeEnabled();
  await expect(page.locator('#status')).toContainText('Building');
- await page.getByRole('button',{name:'Start bombardment',exact:true}).click();
+ await page.getByRole('button',{name:'Fire cannons',exact:true}).click();
  await expect(page.getByRole('button',{name:'Return to building',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
- await page.getByRole('button',{name:'New construction',exact:true}).click();await expect(page.getByRole('button',{name:'Draw',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Clear field',exact:true}).click();await expect(page.getByRole('button',{name:'Draw',exact:true})).toBeVisible();
  await page.screenshot({path:'test-results/castles-floating-controls.png',fullPage:true});
 });
 
