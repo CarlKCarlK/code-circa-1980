@@ -147,8 +147,9 @@ Pause/Resume without page or internal-panel scrolling. At 390 × 844, show the
 whole field and the primary phase action on arrival. Retain the logical 128 × 48
 geometry and pixel aspect ratio; scale presentation to fit.
 
-Dock controls beside the field on wide screens and below it on phones. Keep
-floating controls as an optional advanced arrangement, with Reset layout.
+Dock controls beside the field on wide screens and below it on phones. The
+floating-controls option was removed: a 4:3 field on 16:9 screens leaves room
+beside it.
 The default must leave the drawing area unobscured. In full screen, keep Help,
 phase action, Pause/Resume, and Exit full screen reachable for both implementations.
 Primary touch actions should have at least 44 × 44 CSS-pixel targets.
