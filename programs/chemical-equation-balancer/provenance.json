@@ -1158,6 +1158,88 @@
           "sha256": "5bfb927c542e93bfad6cc068c4796b16addc93695c1161744af7c886f42203d6"
         }
       ]
+    },
+    {
+      "version": "v05",
+      "family": "Chemical Equation Balancer (1979)",
+      "label": "Parentheses",
+      "capture": "tape14a",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape14a/best/10-CHEMICAL-EQUATION-BALANCER-V2.BAS",
+      "archive_listing": "tapes/recovered/tape14a/best/10-CHEMICAL-EQUATION-BALANCER-V2.ASC",
+      "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561",
+      "bytes": 2552,
+      "listing_sha256": "8f9bef63f9c3e1ba9d3d5dc108a9a7f7dc7f66a8b275685891f0143a72eb6b87",
+      "listing_lines": 81,
+      "recovery_evidence": "tapes/recovered/tape14a/inventory.json",
+      "inventory_row": {
+        "summary": "CHEMICAL EQUATION BALANCER V2; 81 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 10,
+        "title": "CHEMICAL-EQUATION-BALANCER-V2",
+        "source": "tapes/recovered/tape14a/timing-refinement/T10-left-hp1200-04d8adec6a03.BAS",
+        "binary": "tapes/recovered/tape14a/best/10-CHEMICAL-EQUATION-BALANCER-V2.BAS",
+        "bytes": 2552,
+        "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561",
+        "recovery_complete": true,
+        "source_start_s": 584.1125625,
+        "source_end_s": 625.3693958333333,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape14a/timing-refinement/T10-left-hp1200-04d8adec6a03.BAS",
+          "tapes/recovered/tape14a/timing-refinement/T10-right-boosted-04d8adec6a03.BAS"
+        ],
+        "assessment": {
+          "good": true,
+          "lines": 81,
+          "last": 6130,
+          "bases": [
+            17125
+          ],
+          "normal": true,
+          "parsed": 2552,
+          "bytes": 2552,
+          "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561"
+        },
+        "listing": "tapes/recovered/tape14a/best/10-CHEMICAL-EQUATION-BALANCER-V2.ASC",
+        "lines": 81,
+        "last_line": 6130
+      },
+      "other_saves": [
+        {
+          "capture": "tape22a",
+          "save": 8,
+          "relation": "identical",
+          "archive_listing": "tapes/recovered/tape22a/best/08-CHEMICAL-EQUATION-BALANCER-SAVE02.ASC",
+          "inventory_row": {
+            "summary": "CHEMICAL EQUATION BALANCER SAVE02",
+            "status": "validated payload; runtime untested",
+            "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+            "recovery%": "100"
+          },
+          "archive_raw": "tapes/recovered/tape22a/best/08-CHEMICAL-EQUATION-BALANCER-SAVE02.BAS",
+          "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561"
+        }
+      ],
+      "snapshot_raw": "versions/v05/10-CHEMICAL-EQUATION-BALANCER-V2.BAS",
+      "snapshot_listing": "versions/v05/10-CHEMICAL-EQUATION-BALANCER-V2.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v05/10-CHEMICAL-EQUATION-BALANCER-V2.BAS",
+          "bytes": 2552,
+          "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561"
+        },
+        {
+          "path": "versions/v05/10-CHEMICAL-EQUATION-BALANCER-V2.ASC",
+          "bytes": 3246,
+          "sha256": "8f9bef63f9c3e1ba9d3d5dc108a9a7f7dc7f66a8b275685891f0143a72eb6b87"
+        }
+      ]
     }
   ]
 }
