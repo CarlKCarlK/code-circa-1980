@@ -1,5 +1,5 @@
 {
-  "id": "chemical-equation-balancer",
+  "id": "bal",
   "title": "Chemical Equation Balancer",
   "description": "Type an unbalanced chemical equation; the program finds whole-number coefficients that conserve every element.",
   "kind": "Science",

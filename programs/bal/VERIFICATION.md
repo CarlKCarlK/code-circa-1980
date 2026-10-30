@@ -62,4 +62,4 @@ v20 solves (they take minutes of real time).
 
 From `app/`: `npm test`, `npm run test:browser`, `npm run build:balancer`
 (needs Rust and wasm-pack), `npm run record:balancer` (re-records fixtures),
-and in `programs/chemical-equation-balancer/rust/`: `cargo test`.
+and in `programs/bal/rust/`: `cargo test`.

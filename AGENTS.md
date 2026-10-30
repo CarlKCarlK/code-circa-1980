@@ -72,8 +72,10 @@ Use `npm run build:fall` to reproduce the derived executable; never describe tha
 modern build as recovered historical machine code. Record provenance for any
 new external dependency before enabling a historical version in the player.
 
-Chemical Equation Balancer uses a Rust port of Chemistry Balancer II v20 in
-`programs/chemical-equation-balancer/rust/`, compiled to WebAssembly. After
+Chemical Equation Balancer's official short name is **bal**: use it for its folder
+(`programs/bal/`), URLs (`#/program/bal`), program ID, and tags (`bal-v01`,
+`bal-web-v1`). Chemical Equation Balancer uses a Rust port of Chemistry Balancer II v20 in
+`programs/bal/rust/`, compiled to WebAssembly. After
 changing Rust sources run `cargo test` there and `npm run build:balancer`, and
 commit the regenerated `rust/pkg/`; `npm test` rejects a stale build. Differences
 are in its PARITY.md. Its browser version is the site default; v20 is Original.
