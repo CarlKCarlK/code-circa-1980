@@ -1,26 +1,26 @@
 {
   "title": "Chemical Equation Balancer",
-  "version": "v18",
+  "version": "v19",
   "family": "Chemistry Balancer II (1981)",
-  "label": "Elimination rework (debugging)",
+  "label": "Elimination rework",
   "capture": "tape15b",
-  "save": 8,
+  "save": 10,
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
   "files": [
     {
       "canonical_path": "BALANCER.ASC",
-      "snapshot_path": "versions/v18/08-CHEMISTRY-BALANCER-II-SAVE-3.ASC",
-      "archive_path": "tapes/recovered/tape15b/best/08-CHEMISTRY-BALANCER-II-SAVE-3.ASC",
-      "sha256": "b7e05326eb33c71bf949f68a4d900e6a9fc30520a027bf11b54842e352e5bc50",
-      "bytes": 13615
+      "snapshot_path": "versions/v19/10-CHEMISTRY-BALANCER-II-SAVE-5.ASC",
+      "archive_path": "tapes/recovered/tape15b/best/10-CHEMISTRY-BALANCER-II-SAVE-5.ASC",
+      "sha256": "a4f2eb46f92ce025123ebe3f91915c4562eb3defa51a08ffe52067cb00c3e6d0",
+      "bytes": 12295
     },
     {
       "canonical_path": "BALANCER.BAS",
-      "snapshot_path": "versions/v18/08-CHEMISTRY-BALANCER-II-SAVE-3.BAS",
-      "archive_path": "tapes/recovered/tape15b/best/08-CHEMISTRY-BALANCER-II-SAVE-3.BAS",
-      "sha256": "ffc80376f5ad73e8bdaa3ccfb0145a1bb530b93de3e1aa0e4588f6bde4ab8b33",
-      "bytes": 11187
+      "snapshot_path": "versions/v19/10-CHEMISTRY-BALANCER-II-SAVE-5.BAS",
+      "archive_path": "tapes/recovered/tape15b/best/10-CHEMISTRY-BALANCER-II-SAVE-5.BAS",
+      "sha256": "a05fc9094fb67882d6c087b9872328e87bff8946f76c19a3b9e4bb2144b65c87",
+      "bytes": 9956
     }
   ]
 }
