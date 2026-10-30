@@ -13,6 +13,11 @@ All web versions, and Latest version links lead back to the current collection.
 
 ## Stored releases
 
+Releases were restarted on 2026-10-30: earlier snapshots v1–v5 were removed
+(they remain in Git history) and the then-current experience became v1. To
+deliberately reset again, put `[reset-web-versions]` in the pushed head commit's
+message; the deploy then skips the release-preservation check for that push only.
+
 - `public/experiences/<program>/vN/` contains an immutable, self-contained production build.
 - `programs/<program>/web-versions.json` lists releases in order, starting at v1,
   with a release date, source commit, and every file's size and SHA-256 hash.
