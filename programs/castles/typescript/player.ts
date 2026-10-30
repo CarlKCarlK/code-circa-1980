@@ -29,17 +29,21 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const scene=document.createElement('div');scene.className='scene-picker';
   const patternLabel=document.createElement('label');patternLabel.textContent='Start from ';
   const patternSelect=document.createElement('select');patternSelect.setAttribute('aria-label','Starting scene');
+  // Works as a menu: choosing an item acts at once, then the menu returns to its prompt.
+  patternSelect.innerHTML='<option value="">Choose a scene…</option>';
   for(const pattern of patterns){const option=document.createElement('option');option.value=pattern.id;option.textContent=pattern.label;patternSelect.append(option);}
+  patternSelect.append(new Option('Load any image…','image'));
   patternLabel.append(patternSelect);
-  const usePattern=document.createElement('button');usePattern.type='button';usePattern.textContent='Load';
-  scene.append(patternLabel,usePattern);building.append(scene);
+  scene.append(patternLabel);building.append(scene);
   const advanced=document.createElement('details');advanced.className='advanced-tools';advanced.innerHTML='<summary>More options</summary>';
   const assist=document.createElement('div');assist.append(directionLabel,guideHint);advanced.append(assist);tools.append(advanced);
-  usePattern.onclick=()=>{
-    const pattern=patterns.find(p=>p.id===patternSelect.value)!;
-    release();if(hasWork()&&!confirm('Replace this construction with the selected pattern?'))return;
+  patternSelect.onchange=()=>{
+    const choice=patternSelect.value;patternSelect.value='';release();
+    if(choice==='image'){picker.click();return;}
+    const pattern=patterns.find(p=>p.id===choice);if(!pattern)return;
+    if(hasWork()&&!confirm('Replace your construction with this scene?'))return;
     loadBricks(game,pattern.create());tool='draw';elapsed=previous=0;draw(performance.now());
-    hint(`${pattern.label} loaded. Ready to build or shoot.`);
+    hint(`${pattern.label} loaded. Ready to build or fire.`);
   };
   const cannons=document.createElement('div');cannons.hidden=true;
   cannons.className='cannon-panel';
@@ -49,35 +53,33 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   backToBuild.onclick=()=>{release();keyboardActive=false;game.beginBuilding();elapsed=previous=0;draw(performance.now());};
 
   const files=document.createElement('div');files.className='palette-session';
-  const save=document.createElement('button');save.type='button';save.textContent='Save bricks';
-  const load=document.createElement('button');load.type='button';load.textContent='Load picture';
-  const picker=document.createElement('input');picker.type='file';picker.accept='image/*';picker.hidden=true;picker.setAttribute('aria-label','Brick image file');
+  const save=document.createElement('button');save.type='button';save.textContent='Save as image';
+  const picker=document.createElement('input');picker.type='file';picker.accept='image/*';picker.hidden=true;picker.setAttribute('aria-label','Image file');
   const fileStatus=document.createElement('p');fileStatus.setAttribute('role','status');fileStatus.className='small';
-  files.append(save,load,picker,fileStatus);advanced.append(files);
+  files.append(save,picker,fileStatus);advanced.append(files);
   save.onclick=async()=>{
     release();
-    const requested=prompt('Save brick layout as PNG (not a running game). Filename:', 'castles-bricks');
+    const requested=prompt('Save your blocks as a PNG image. File name:', 'castles-blocks');
     if(requested===null)return;
-    const filename=(requested.trim().replace(/[\\/:*?"<>|\x00-\x1f]/g,'-').replace(/\.png$/i,'')||'castles-bricks')+'.png';
-    fileStatus.textContent='Saving bricks…';
+    const filename=(requested.trim().replace(/[\\/:*?"<>|\x00-\x1f]/g,'-').replace(/\.png$/i,'')||'castles-blocks')+'.png';
+    fileStatus.textContent='Saving image…';
     try{
       const blob=await saveBrickPng(game);if(disposed)return;
       const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;a.click();
-      setTimeout(()=>URL.revokeObjectURL(url),1000);fileStatus.textContent='Saved bricks as PNG.';
-    }catch(error){fileStatus.textContent=error instanceof Error?error.message:'Could not save bricks.';}
+      setTimeout(()=>URL.revokeObjectURL(url),1000);fileStatus.textContent='Saved as a PNG image.';
+    }catch(error){fileStatus.textContent=error instanceof Error?error.message:'Could not save the image.';}
   };
-  load.onclick=()=>{release();picker.click();};
   picker.onchange=async()=>{
-    const file=picker.files?.[0];if(!file)return;fileStatus.textContent='Loading picture…';
+    const file=picker.files?.[0];if(!file)return;fileStatus.textContent='Loading image…';
     release();previewing=true;previous=elapsed=0;
     const controller=new AbortController();importAbort=controller;
     try{
       const mask=await previewPicture(file,host,canvas,controller.signal,background);if(disposed)return;
-      if(!mask){fileStatus.textContent='Picture import canceled.';return;}
+      if(!mask){fileStatus.textContent='Image loading canceled.';return;}
       release();placeBricks(game,mask);importFall=game.settle(46);game.activity='settling';fallWait=0;
       tool='draw';paused=false;elapsed=previous=0;host.dispatchEvent(new CustomEvent('playerpause',{detail:false}));
-      fileStatus.textContent='Picture loaded; loose bricks are falling.';draw(performance.now());
-    }catch{fileStatus.textContent='Could not load this picture. Choose a supported image file.';}
+      fileStatus.textContent='Image loaded; loose blocks are falling.';draw(performance.now());
+    }catch{fileStatus.textContent='Could not load this image. Choose a PNG, JPEG, or other image file.';}
     finally{if(importAbort===controller)importAbort=null;previewing=false;previous=elapsed=0;picker.value='';}
   };
   const palette=createPalette(host,tools,title,()=>{stopStroke();hover=null;game.release();});
@@ -103,8 +105,8 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     const available=game.phase==='building'&&!paused&&!launchPending&&!importFall;
     const state=`${available}/${tool}/${game.phase}/${launchPending}/${paused}/${!!importFall}`;
     if(state===lastUi)return;lastUi=state;
-    save.disabled=game.phase!=='building'||!!importFall;load.disabled=!!importFall;
-    patternSelect.disabled=usePattern.disabled=!available;
+    save.disabled=game.phase!=='building'||!!importFall;
+    patternSelect.disabled=!available;
     backToBuild.disabled=paused;
     direction.disabled=!available;launch.disabled=!available;
     building.hidden=advanced.hidden=game.phase!=='building';cannons.hidden=game.phase!=='bombarding';
@@ -112,7 +114,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     for(const button of toolButtons){button.disabled=!available;button.setAttribute('aria-pressed',String(button.dataset.tool===tool));}
     canvas.style.touchAction=available?'none':'auto';
     canvas.style.cursor=available?'crosshair':'default';
-    if(!available){stopStroke();hover=null;hint(paused?'Resume to continue.':importFall?'Loose bricks are falling.':launchPending?'Firing…':'Choose Return to building to edit the structure again.');}
+    if(!available){stopStroke();hover=null;hint(paused?'Resume to continue.':importFall?'Loose blocks are falling.':launchPending?'Firing…':'Choose Return to building to edit the structure again.');}
     else hint(defaultHint());
   }
   function activatePointer() {
@@ -183,7 +185,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
       const {x,y} = game.cursor; ctx.fillStyle = game.point(x,y) ? background : '#e6e7fc'; ctx.fillRect(10+x*4, 10+y*8, 4, 8);
     }
     const buildMode=!keyboardActive ? (stroke?.tool??tool)==='erase'?'erasing':'drawing' : `keyboard ${game.mode}`;
-    const description = importFall ? 'Loose bricks falling' : game.phase === 'building' ? `Building · ${buildMode}` : `Firing · shot ${game.shots}`;
+    const description = importFall ? 'Loose blocks falling' : game.phase === 'building' ? `Building · ${buildMode}` : `Firing · shot ${game.shots}`;
     if(game.phase!=='building')launchPending=false;
     if(startingAim&&game.phase==='bombarding'){game.setCannonSetting('power',5);game.setCannonSetting('angle',12);startingAim=false;}
     syncTools();
@@ -206,7 +208,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
       if(importFall){
         while(importFall&&elapsed>=fallWait){
           elapsed-=fallWait;const result=importFall.next();
-          if(result.done){importFall=null;game.activity='building';game.stepMs=150;elapsed=0;fileStatus.textContent='Loaded bricks; unsupported blocks have settled.';}
+          if(result.done){importFall=null;game.activity='building';game.stepMs=150;elapsed=0;fileStatus.textContent='Image loaded; unsupported blocks have settled.';}
           else fallWait=Math.max(.001,result.value);
         }
       }else{

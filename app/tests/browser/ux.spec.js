@@ -54,11 +54,11 @@ test('cancelling clears and saves preserves layout; named PNG downloads',async({
  await expect(page.locator('#status')).toContainText('Building');const before=await snapshot(page);
  page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Erase all',exact:true}).click();expect(await snapshot(page)).toEqual(before);
  await page.locator('.advanced-tools summary').click();
- await page.getByLabel('Starting scene').selectOption('blank');
- page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Load',exact:true}).click();expect(await snapshot(page)).toEqual(before);
- page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Save bricks',exact:true}).click();expect(await snapshot(page)).toEqual(before);
- page.once('dialog',dialog=>dialog.accept('my bridge.png'));const download=page.waitForEvent('download');await page.getByRole('button',{name:'Save bricks',exact:true}).click();expect((await download).suggestedFilename()).toBe('my bridge.png');expect(await snapshot(page)).toEqual(before);
- page.once('dialog',dialog=>dialog.accept());await page.getByRole('button',{name:'Load',exact:true}).click();
+ page.once('dialog',dialog=>dialog.dismiss());await page.getByLabel('Starting scene').selectOption('blank');expect(await snapshot(page)).toEqual(before);
+ await expect(page.getByLabel('Starting scene')).toHaveValue('');
+ page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Save as image',exact:true}).click();expect(await snapshot(page)).toEqual(before);
+ page.once('dialog',dialog=>dialog.accept('my bridge.png'));const download=page.waitForEvent('download');await page.getByRole('button',{name:'Save as image',exact:true}).click();expect((await download).suggestedFilename()).toBe('my bridge.png');expect(await snapshot(page)).toEqual(before);
+ page.once('dialog',dialog=>dialog.accept());await page.getByLabel('Starting scene').selectOption('blank');
  const after=await snapshot(page);expect(after).not.toEqual(before);
  await page.getByRole('link',{name:'Collection',exact:true}).click();await page.goBack();
  await expect(page.locator('#status')).toContainText('Building');expect(await snapshot(page)).toEqual(after);

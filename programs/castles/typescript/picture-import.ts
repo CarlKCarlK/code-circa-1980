@@ -11,11 +11,11 @@ export async function previewPicture(file:File,host:HTMLElement,field:HTMLCanvas
     const dialog=document.createElement('dialog');dialog.className='picture-import';
     dialog.setAttribute('aria-labelledby','picture-import-title');
     dialog.style.setProperty('--field-width',`${field.getBoundingClientRect().width}px`);
-    dialog.innerHTML=`<h2 id="picture-import-title">Load picture</h2>
-      <p>Preview the picture in the game field. Adjust its colors before loading.</p>
-      <canvas width="532" height="404" aria-label="Picture preview in game field"></canvas>
+    dialog.innerHTML=`<h2 id="picture-import-title">Load any image</h2>
+      <p>This is how the image will look as blocks. Adjust the colors, then choose OK.</p>
+      <canvas width="532" height="404" aria-label="Image preview in game field"></canvas>
       <div class="picture-channels"></div>
-      <p class="small">Negative values subtract that color. Unsupported bricks fall after loading.</p>
+      <p class="small">Negative values subtract that color. Unsupported blocks fall after loading.</p>
       <div class="picture-actions"><button type="button" data-action="cancel">Cancel</button><button type="button" data-action="ok">OK</button></div>`;
     const channels=dialog.querySelector('.picture-channels')!;
     const weights=[0.21,0.72,0.07];

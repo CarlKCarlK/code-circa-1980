@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import {test,expect} from '@playwright/test';
 test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
 import {withBrickAspect,withSquareBrickMetadata} from '../../../programs/castles/typescript/bricks.ts';
-async function boot(page){await page.goto('/?development=1&test#/program/castles/typescript/play');await page.locator('.advanced-tools summary').click();await expect(page.getByRole('button',{name:'Save bricks',exact:true})).toBeEnabled();}
+async function boot(page){await page.goto('/?development=1&test#/program/castles/typescript/play');await page.locator('.advanced-tools summary').click();await expect(page.getByRole('button',{name:'Save as image',exact:true})).toBeEnabled();}
 const point=(page,x,y)=>page.evaluate(([x,y])=>{
  const c=window.__circaPlayer.snapshot()[Math.floor(y/3)*64+Math.floor(x/2)];return c>=128&&c<192&&!!(c&(1<<((y%3)*2+x%2)));
 },[x,y]);
@@ -18,7 +18,7 @@ test('bricks save as square-pixel PNG and reload without game state',async({page
  await at(64,46);await page.mouse.down();await at(64,30);await page.mouse.up();
  expect(await point(page,64,30)).toBe(true);
  const original=await fieldMask(page);
- const download=page.waitForEvent('download');await page.getByRole('button',{name:'Save bricks',exact:true}).click();
+ const download=page.waitForEvent('download');await page.getByRole('button',{name:'Save as image',exact:true}).click();
  const file=await download,path=await file.path(),bytes=await fs.readFile(path);
  expect(bytes.readUInt32BE(16)).toBe(128);expect(bytes.readUInt32BE(20)).toBe(96);
  let physical;
@@ -33,9 +33,9 @@ test('bricks save as square-pixel PNG and reload without game state',async({page
  },bytes.toString('base64'));
  expect(pixels).toEqual({mismatched:0,brick:255,empty:0,ground:0});
  await page.getByRole('button',{name:'Erase all',exact:true}).click();expect(await point(page,64,30)).toBe(false);
- await page.getByLabel('Brick image file').setInputFiles(path);
- await page.getByRole('dialog',{name:'Load picture'}).getByRole('button',{name:'OK'}).click();
- await expect(page.getByText('Loaded bricks; unsupported blocks have settled.',{exact:true})).toBeVisible();
+ await page.getByLabel('Image file').setInputFiles(path);
+ await page.getByRole('dialog',{name:'Load any image'}).getByRole('button',{name:'OK'}).click();
+ await expect(page.getByText('Image loaded; unsupported blocks have settled.',{exact:true})).toBeVisible();
  for(let y=30;y<=46;y++)expect(await point(page,64,y)).toBe(true);
  expect(await fieldMask(page)).toEqual(original);
  expect((await page.evaluate(()=>window.__circaPlayer.diagnostics())).shots).toBe(0);
@@ -50,8 +50,8 @@ test('old rectangular-pixel saves and dense square-pixel saves keep black bricks
  const legacy=Buffer.from(withBrickAspect(Buffer.from(await makeImage(48),'base64')));
  const square=Buffer.from(withSquareBrickMetadata(Buffer.from(await makeImage(96),'base64'),1));
  for(const bytes of [legacy,square]){
-  await page.getByLabel('Brick image file').setInputFiles({name:'dense.png',mimeType:'image/png',buffer:bytes});
-  const dialog=page.getByRole('dialog',{name:'Load picture'});await expect(dialog).toBeVisible();
+  await page.getByLabel('Image file').setInputFiles({name:'dense.png',mimeType:'image/png',buffer:bytes});
+  const dialog=page.getByRole('dialog',{name:'Load any image'});await expect(dialog).toBeVisible();
   const shade=await dialog.locator('canvas').evaluate(c=>{
    const ctx=c.getContext('2d');return [ctx.getImageData(11,11,1,1).data[0],ctx.getImageData(10+30*4+1,10+20*8+1,1,1).data[0]];
   });
@@ -66,13 +66,13 @@ test('JPEG and ordinary PNG imports scale and sample the whole picture, then set
    ctx.fillStyle=darkBackground?'black':'white';ctx.fillRect(0,0,256,94);ctx.fillStyle=darkBackground?'white':'black';ctx.fillRect(160,20,4,2);ctx.fillRect(240,40,4,2);
    return c.toDataURL(type,1).split(',')[1];
   },{type,darkBackground});
-  await page.getByLabel('Brick image file').setInputFiles({name:type==='image/png'?'picture.png':'picture.jpg',mimeType:type,buffer:Buffer.from(data,'base64')});
-  await page.getByRole('dialog',{name:'Load picture'}).getByRole('button',{name:'OK'}).click();
-  await expect(page.getByText('Loaded bricks; unsupported blocks have settled.',{exact:true})).toBeVisible();
+  await page.getByLabel('Image file').setInputFiles({name:type==='image/png'?'picture.png':'picture.jpg',mimeType:type,buffer:Buffer.from(data,'base64')});
+  await page.getByRole('dialog',{name:'Load any image'}).getByRole('button',{name:'OK'}).click();
+  await expect(page.getByText('Image loaded; unsupported blocks have settled.',{exact:true})).toBeVisible();
   expect(await point(page,80,10)).toBe(false);expect(await point(page,80,46)).toBe(true);expect(await point(page,120,46)).toBe(true);
  }
- await page.getByLabel('Brick image file').setInputFiles({name:'broken.png',mimeType:'image/png',buffer:Buffer.from('invalid')});
- await expect(page.getByText(/Could not load this picture/)).toBeVisible();expect(await point(page,80,46)).toBe(true);
+ await page.getByLabel('Image file').setInputFiles({name:'broken.png',mimeType:'image/png',buffer:Buffer.from('invalid')});
+ await expect(page.getByText(/Could not load this image/)).toBeVisible();expect(await point(page,80,46)).toBe(true);
 });
 test('white stays bricks even when it is the background',async({page})=>{
  await boot(page);
@@ -81,8 +81,8 @@ test('white stays bricks even when it is the background',async({page})=>{
   ctx.fillStyle='white';ctx.fillRect(0,0,40,40);ctx.fillStyle='black';ctx.fillRect(10,10,20,20);
   return c.toDataURL().split(',')[1];
  });
- await page.getByLabel('Brick image file').setInputFiles({name:'white-background.png',mimeType:'image/png',buffer:Buffer.from(data,'base64')});
- const dialog=page.getByRole('dialog',{name:'Load picture'});
+ await page.getByLabel('Image file').setInputFiles({name:'white-background.png',mimeType:'image/png',buffer:Buffer.from(data,'base64')});
+ const dialog=page.getByRole('dialog',{name:'Load any image'});
  const shades=await dialog.locator('canvas').evaluate(c=>{
   const ctx=c.getContext('2d');return [ctx.getImageData(10+44*4+1,10+13*8+1,1,1).data[0],ctx.getImageData(10+54*4+1,10+18*8+1,1,1).data[0]];
  });
@@ -95,10 +95,10 @@ test('import displays the original picture before visibly falling and can pause'
   ctx.fillStyle='black';ctx.fillRect(0,0,128,94);ctx.fillStyle='white';ctx.fillRect(80,20,1,2);
   return c.toDataURL().split(',')[1];
  });
- await page.getByLabel('Brick image file').setInputFiles({name:'fall.png',mimeType:'image/png',buffer:Buffer.from(data,'base64')});
- await page.getByRole('dialog',{name:'Load picture'}).getByRole('button',{name:'OK'}).click();
+ await page.getByLabel('Image file').setInputFiles({name:'fall.png',mimeType:'image/png',buffer:Buffer.from(data,'base64')});
+ await page.getByRole('dialog',{name:'Load any image'}).getByRole('button',{name:'OK'}).click();
  expect(await point(page,80,10)).toBe(true);expect(await point(page,80,46)).toBe(false);
- await expect(page.getByText('Picture loaded; loose bricks are falling.')).toBeVisible();
+ await expect(page.getByText('Image loaded; loose blocks are falling.')).toBeVisible();
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  const paused=await fieldMask(page);await page.waitForTimeout(300);expect(await fieldMask(page)).toEqual(paused);
  await page.getByRole('button',{name:'Resume',exact:true}).click();
@@ -110,7 +110,7 @@ test('import displays the original picture before visibly falling and can pause'
   }requestAnimationFrame(frame);
  }));
  expect(seen.some(y=>y>10&&y<46)).toBe(true);expect(await point(page,80,46)).toBe(true);
- await expect(page.getByText('Loaded bricks; unsupported blocks have settled.',{exact:true})).toBeVisible();
+ await expect(page.getByText('Image loaded; unsupported blocks have settled.',{exact:true})).toBeVisible();
 });
 test('picture preview responds to signed color controls and changes the field only on OK',async({page})=>{
  await boot(page);
@@ -122,8 +122,8 @@ test('picture preview responds to signed color controls and changes the field on
   ctx.fillStyle='red';ctx.fillRect(0,0,1,1);ctx.fillStyle='lime';ctx.fillRect(1,0,1,1);
   return c.toDataURL('image/png').split(',')[1];
  });
- const upload=()=>page.getByLabel('Brick image file').setInputFiles({name:'colors.png',mimeType:'image/png',buffer:Buffer.from(data,'base64')});
- await upload();const dialog=page.getByRole('dialog',{name:'Load picture'});await expect(dialog).toBeVisible();
+ const upload=()=>page.getByLabel('Image file').setInputFiles({name:'colors.png',mimeType:'image/png',buffer:Buffer.from(data,'base64')});
+ await upload();const dialog=page.getByRole('dialog',{name:'Load any image'});await expect(dialog).toBeVisible();
  expect(await dialog.getByRole('slider').count()).toBe(3);
  const previewBox=await dialog.locator('canvas').boundingBox();expect(Math.abs(previewBox.width-fieldBox.width)).toBeLessThan(5);
  const previewPixel=()=>dialog.locator('canvas').evaluate(c=>[...c.getContext('2d').getImageData(10+63*4+1,10+23*8+1,1,1).data]);
@@ -135,7 +135,7 @@ test('picture preview responds to signed color controls and changes the field on
  await upload();await expect(dialog).toBeVisible();
  await dialog.getByLabel('Green cutoff').fill('0');await dialog.getByLabel('Blue cutoff').fill('0');await dialog.getByLabel('Red cutoff').fill('1');
  await dialog.getByRole('button',{name:'OK'}).click();
- await expect(page.getByText('Loaded bricks; unsupported blocks have settled.',{exact:true})).toBeVisible();
+ await expect(page.getByText('Image loaded; unsupported blocks have settled.',{exact:true})).toBeVisible();
  expect(await point(page,63,46)).toBe(true);
 });
 test('picture preview centers and corrects square pixels while honoring twice-tall PNG pixels',async({page})=>{
@@ -146,8 +146,8 @@ test('picture preview centers and corrects square pixels while honoring twice-ta
   return c.toDataURL('image/png').split(',')[1];
  });
  for(const [bytes,expectedHeight] of [[Buffer.from(data,'base64'),10],[Buffer.from(withBrickAspect(Buffer.from(data,'base64'))),20]]){
-  await page.getByLabel('Brick image file').setInputFiles({name:'shape.png',mimeType:'image/png',buffer:bytes});
-  const dialog=page.getByRole('dialog',{name:'Load picture'});await expect(dialog).toBeVisible();
+  await page.getByLabel('Image file').setInputFiles({name:'shape.png',mimeType:'image/png',buffer:bytes});
+  const dialog=page.getByRole('dialog',{name:'Load any image'});await expect(dialog).toBeVisible();
   const bounds=await dialog.locator('canvas').evaluate(c=>{
    const ctx=c.getContext('2d');let minX=128,maxX=-1,minY=47,maxY=-1;
    for(let y=0;y<47;y++)for(let x=0;x<128;x++){
