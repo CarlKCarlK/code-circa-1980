@@ -140,7 +140,7 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  const tick=await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks);await page.waitForTimeout(180);
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().ticks)).toBe(tick);
- await page.getByRole('button',{name:'Clear field',exact:true}).click();
+ await page.getByRole('button',{name:'Erase all',exact:true}).click();
  await expect(page.locator('#status')).toContainText('Building');
  expect((await pixels(page)).filter(([x,y])=>y<46)).toHaveLength(0);
  await page.keyboard.down('1');await page.getByRole('button',{name:'Pause',exact:true}).focus();

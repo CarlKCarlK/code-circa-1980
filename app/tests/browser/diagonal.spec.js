@@ -9,7 +9,7 @@ test('bare Castles route selects TypeScript while the original remains selectabl
 test('grid assist and diagonal lock draw thin supported diagonal strokes',async({page})=>{
  for(const direction of ['grid','diagonal']){
   await page.goto('/?development=1&test#/program/castles/typescript/play');if(!await page.locator('.advanced-tools').evaluate(el=>el.open))await page.locator('.advanced-tools summary').click();
-  await page.getByRole('button',{name:'Clear field',exact:true}).click();
+  await page.getByRole('button',{name:'Erase all',exact:true}).click();
   await page.getByLabel('Drawing direction').selectOption(direction);
   const canvas=page.locator('#display canvas');await canvas.scrollIntoViewIfNeeded();const r=await canvas.boundingBox();
   const at=async(x,y)=>page.mouse.move(r.x+(10+(x+.5)*4)*r.width/532,r.y+(10+(y+.5)*8)*r.height/404);
