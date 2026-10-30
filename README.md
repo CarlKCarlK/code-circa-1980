@@ -14,6 +14,14 @@ I probably wrote Castles around 1982, first in BASIC and later with a little Z80
 assembly. The date is an estimate from a dated program on the other side of the
 tape, not a date found in Castles itself. The original bytes are preserved.
 
+## Policy on AI-assisted development and contributions
+
+The use of AI tools is permitted for development and contributions to this repository. AI may be used as a productivity aid for drafting, exploration, and refactoring.
+
+All code and documentation contributed to this repository must be reviewed, edited, and validated by a human contributor. AI tools are not a substitute for design judgment, testing, or responsibility for correctness.
+
+[AGENTS.md](AGENTS.md) contains the general instructions and constraints given to AI tools used during development of this repository.
+
 ## License
 
 My code is available under either [MIT](LICENSE-MIT) or
