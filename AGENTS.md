@@ -37,6 +37,9 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
    remaining limits. Keep publication and future modern rewrites out of scope
    unless requested. Never spawn subagents unless the user explicitly asks.
 
+Do not add AI co-author trailers (such as `Co-Authored-By: Claude …`) or other
+AI attribution lines to commit messages or pull request descriptions.
+
 ## Commands
 
 From `app/`: `npm ci`, `npm run dev`, `npm test`, `npm run build`, `npm run test:browser`.
