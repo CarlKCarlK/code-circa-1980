@@ -239,7 +239,7 @@ as part of this audit.
 | Castle logo from game artwork | P2: actual game imagery across entry points. |
 | First-person biography | P2: await supplied biographical facts; do not invent them. |
 | Ask filename on Save bricks | P1: named PNG layout saving with Cancel. |
-| Background color choice | P2: advanced appearance; readable defaults and controls must remain legible. |
+| Background color choice | Decided: no choice. One fixed midnight-blue field (`#121a2e`) behind the cool-white pixels; the user setting was removed. |
 | Two castle pictures in Downloads | P2: inspect the intended images and permission/provenance when implementing; not needed for the first-play fix. |
 | Shared-screen play effort | Separate exploration after solo onboarding; define local/shared versus online before estimating. |
 | Optional sound | P2: off by default, explicit sound toggle; separate design/implementation task. |
@@ -269,7 +269,7 @@ keyboard/focus/accessibility checks; production and local route verification.
    Cancel on replacement/name prompts changes nothing. Switching behavior is
    explicit and tested. PNG save/load reproduces a supported test layout.
 4. **Identity and optional features.** Artwork, supplied biography, share previews,
-   appearance, additional patterns, and sound follow the core flow.
+   additional patterns, and sound follow the core flow.
 
 Use task-based browser tests rather than visibility assertions alone: start from
 the README destination, launch both start choices, create a supported tower,
