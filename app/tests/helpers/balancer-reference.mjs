@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {Trs80,Trs80Screen,Config,Keyboard,CassettePlayer,SilentSoundPlayer} from 'trs80-emulator';
 import {decodeBasicProgram} from 'trs80-base';
 class Screen extends Trs80Screen {setConfig(){} writeChar(){}}
-export const programFolder=new URL('../../../programs/chemical-equation-balancer/',import.meta.url);
+export const programFolder=new URL('../../../programs/bal/',import.meta.url);
 export function screenLines(m){
   return Array.from({length:16},(_,r)=>String.fromCharCode(...Array.from({length:64},(_,c)=>{const b=m.readMemory(0x3c00+r*64+c);return b<32?b+64:b>=128?32:b;})).trimEnd());
 }

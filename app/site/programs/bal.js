@@ -1,5 +1,5 @@
 // Chemical Equation Balancer instructions and controls; shared navigation remains generic.
-import {problems, problemPanel} from '../../../programs/chemical-equation-balancer/problems.js';
+import {problems, problemPanel} from '../../../programs/bal/problems.js';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const key = text => `<kbd>${escape(text)}</kbd>`;
 const code = text => `<code>${escape(text)}</code>`;

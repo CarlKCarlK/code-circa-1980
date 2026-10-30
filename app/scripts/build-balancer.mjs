@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-const crate=new URL('../../programs/chemical-equation-balancer/rust/',import.meta.url);
+const crate=new URL('../../programs/bal/rust/',import.meta.url);
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 export const sourceFiles=()=>['Cargo.toml','Cargo.lock',...fs.readdirSync(new URL('src/',crate)).sort().map(f=>`src/${f}`)];
 export const sourceHashes=()=>Object.fromEntries(sourceFiles().map(f=>[f,sha(fs.readFileSync(new URL(f,crate)))]));
