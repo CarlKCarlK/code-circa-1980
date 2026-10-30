@@ -62,7 +62,7 @@ test('cancelling clears and saves preserves layout; named PNG downloads',async({
  await expect(page.locator('#status')).toContainText('Building');expect(await snapshot(page)).toEqual(after);
 });
 test('full screen retains Help, phase action, pause and exit in both implementations',async({page})=>{
- for(const edition of ['typescript','v05']){
+ for(const edition of ['typescript','basic']){
   await page.goto(`/?development=1&test#/program/castles/${edition}/play`);
   await expect(page.locator('#status')).toContainText(edition==='typescript'?'Building':'Running original BASIC');
   await page.getByRole('button',{name:'Full screen',exact:true}).click();

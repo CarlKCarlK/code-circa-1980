@@ -63,8 +63,9 @@ when the latest historical source differs from the website's playable default.
 ## Native TypeScript implementations
 
 Behavior first, improvements later. Castles now uses v05 plus FALL assembly v6
-as its native TypeScript reference; v03 remains the self-contained earlier
-comparison. Keep `programs/castles/typescript/` separate from all recovered files.
+as its native TypeScript reference. Each program's site runs only its best BASIC
+version, at `#/program/<id>/basic` (Castles v05, bal v20); other recovered
+versions are source only (listing, payload, provenance). Keep `programs/castles/typescript/` separate from all recovered files.
 The modern implementation is a first review baseline, with differences documented
 in its PARITY.md. Do not silently claim cycle-exact or exhaustive equivalence.
 Use `npm run typecheck`; `npm test` also runs ROM/Z80 comparison fixtures.
