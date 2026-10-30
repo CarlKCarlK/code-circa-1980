@@ -55,3 +55,4 @@
 .balancer-problems{margin-top:10px}.balancer-problems h3{margin:6px 0}.balancer-problems details{margin:6px 0}.balancer-problems summary{font-weight:600;font-size:13px;cursor:pointer}.balancer-problems details>div{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.balancer-problems button{flex:1 1 45%;min-height:38px;font-size:13px}
 @media(max-width:700px){.balancer{padding:12px;min-height:0}.balancer .balanced{font-size:21px}}
 .about-author{max-width:700px;margin-top:64px;padding-top:36px;border-top:1px solid #cad0d9}.about-author p{font-size:15px;color:#4d525a;line-height:1.75}
+.intro-links{font-size:14px;margin-top:18px}.intro-links a{color:#1e4b8f}.about-author{scroll-margin-top:24px}

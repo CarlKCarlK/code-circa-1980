@@ -23,21 +23,9 @@ export const onScreenKeys = version => version.controls === 'early'
 export const quickHelp = version => version.implementation==='typescript'
   ? 'Click the game field so it gets your keys. Keys and mouse work together.'
   : 'Click the game screen first so it gets your keys. Hold each key briefly: the original program checks the keyboard as it runs, and reads Power and Arc between shots.';
-// Start page and collection card.
-export const tagline = 'Build towers and bridges, then let two cannons test your construction.';
+// Collection card.
 export const art = {src:new URL('../../assets/castles-game.svg',import.meta.url).href, alt:'An arch and a tower built from Castles blocks, partly knocked down by cannon fire'};
 // Open straight into the game with the default castle scene.
 export const playSuffix = '/castle';
-export const quickStart = version => version.implementation==='typescript'
-  ? ['Start with an arch and a tower, or build from the ground up.','Drag to draw. Blocks need support below or diagonally below.','Start bombardment, adjust the cannons, then return to building.']
-  : version.controls==='early'
-  ? ['Click the screen. Tap Enter to place a block.','Move with 1–4, then tap Enter again.','Space starts bombardment; hold 5, then M for stronger arcs.']
-  : ['Click the screen, then tap 8 to draw.','Hold 1 briefly to build up; 2 down, 3 left, 4 right.','Q starts bombardment; hold 5, then M for stronger arcs.'];
-export const launchHint = (version, resuming) => version.implementation!=='typescript'
-  ? 'Click the screen after launch to use the original keyboard controls.'
-  : resuming ? 'Play resumes your construction. Build from scratch starts an empty field after confirmation.'
-  : 'Play starts with an arch and a tower in Building mode. Build from scratch opens an empty field.';
-export const blankStart = 'Build from scratch';
-export const modernSummary = 'Mouse and touch controls.';
 export const restartLabel = modern => modern ? 'Erase all' : 'Restart';
 export const restartConfirm = modern => modern ? 'Erase all blocks? Your construction will be lost.' : 'Restart the original program? Your construction will be lost.';
