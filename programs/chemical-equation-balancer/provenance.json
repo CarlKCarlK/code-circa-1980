@@ -87,6 +87,373 @@
           "sha256": "6778b3b33bc99f866744bcc6a3929c56ae0ec8b89451d1c35831b23a8c7e2b52"
         }
       ]
+    },
+    {
+      "version": "v02",
+      "family": "Chemical Equation Balancer (1979)",
+      "label": "Retry draft (test equation)",
+      "capture": "tape27b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape27b/best/03-EQUATION-BALANCER-REV1-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape27b/best/03-EQUATION-BALANCER-REV1-SAVE01.ASC",
+      "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e",
+      "bytes": 2267,
+      "listing_sha256": "8c99667dcf63535eb8656c7dbdb2406c3313b54eb856e55b52f33b7ff5a646fa",
+      "listing_lines": 79,
+      "recovery_evidence": "tapes/recovered/tape27b/inventory.json",
+      "inventory_row": {
+        "summary": "EQUATION BALANCER REV1 SAVE01",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 3,
+        "type": "BASIC",
+        "title": "EQUATION BALANCER REV1 SAVE01",
+        "title_note": "Descriptive title and revision/save labels inferred from listings and capture order.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 496.57620833333334,
+        "source_end_s": 533.6450208333333,
+        "selected_source": {
+          "variant": "left-hp1200",
+          "index": 13,
+          "start": 496.57620833333334,
+          "end": 533.645,
+          "file": "left-hp1200/T13-c10727e78dc5.BAS",
+          "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 79,
+            "last": 20000,
+            "normal": true,
+            "parsed": 2267,
+            "bytes": 2267,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/03-EQUATION-BALANCER-REV1-SAVE01.BAS",
+        "listing": "best/03-EQUATION-BALANCER-REV1-SAVE01.ASC",
+        "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e",
+        "bytes": 2267,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 79,
+          "last": 20000,
+          "normal": true,
+          "parsed": 2267,
+          "bytes": 2267,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "left-hp1200",
+            "index": 13,
+            "start": 496.57620833333334,
+            "end": 533.645,
+            "file": "left-hp1200/T13-c10727e78dc5.BAS",
+            "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 79,
+              "last": 20000,
+              "normal": true,
+              "parsed": 2267,
+              "bytes": 2267,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 13,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T13-c10727e78dc5.BAS",
+            "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 79,
+              "last": 20000,
+              "normal": true,
+              "parsed": 2267,
+              "bytes": 2267,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 496.27620833333333,
+            "crop_end": 534.0450208333333,
+            "start": 496.5723958333333,
+            "end": 533.645,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 13,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T13-c10727e78dc5.BAS",
+            "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 79,
+              "last": 20000,
+              "normal": true,
+              "parsed": 2267,
+              "bytes": 2267,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 496.27620833333333,
+            "crop_end": 534.0450208333333,
+            "start": 496.6713541666667,
+            "end": 533.6450208333333,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 13,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T13-c10727e78dc5.BAS",
+            "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e",
+            "assessment": {
+              "type": "BASIC",
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 79,
+              "last": 20000,
+              "normal": true,
+              "parsed": 2267,
+              "bytes": 2267,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 496.27620833333333,
+            "crop_end": 534.0450208333333,
+            "start": 496.67133333333334,
+            "end": 533.6449791666666,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "alternate_structurally_valid_candidates": [],
+        "selection_note": "Unique structurally valid exact left/right payload."
+      },
+      "other_saves": [
+        {
+          "capture": "tape27b",
+          "save": 4,
+          "relation": "identical",
+          "archive_listing": "tapes/recovered/tape27b/best/04-EQUATION-BALANCER-REV1-SAVE02.ASC",
+          "inventory_row": {
+            "summary": "EQUATION BALANCER REV1 SAVE02",
+            "status": "validated payload; runtime untested",
+            "validation": "Ordered lines; consistent pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+            "recovery%": "100"
+          },
+          "archive_raw": "tapes/recovered/tape27b/best/04-EQUATION-BALANCER-REV1-SAVE02.BAS",
+          "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e"
+        }
+      ],
+      "snapshot_raw": "versions/v02/03-EQUATION-BALANCER-REV1-SAVE01.BAS",
+      "snapshot_listing": "versions/v02/03-EQUATION-BALANCER-REV1-SAVE01.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v02/03-EQUATION-BALANCER-REV1-SAVE01.BAS",
+          "bytes": 2267,
+          "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e"
+        },
+        {
+          "path": "versions/v02/03-EQUATION-BALANCER-REV1-SAVE01.ASC",
+          "bytes": 2870,
+          "sha256": "8c99667dcf63535eb8656c7dbdb2406c3313b54eb856e55b52f33b7ff5a646fa"
+        }
+      ]
     }
   ]
 }
