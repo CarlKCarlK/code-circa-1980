@@ -4,7 +4,7 @@ test('bare Castles route selects TypeScript while the original remains selectabl
  await page.goto('/?development=1#/program/castles');
  await expect(page.getByRole('link',{name:'TypeScript version',exact:true})).toHaveAttribute('aria-current','page');
  await page.getByRole('link',{name:'Level II BASIC version',exact:true}).click();
- await expect(page).toHaveURL(/castles\/v05$/);
+ await expect(page).toHaveURL(/castles\/v05\/play$/);
 });
 test('grid assist and diagonal lock draw thin supported diagonal strokes',async({page})=>{
  for(const direction of ['grid','diagonal']){

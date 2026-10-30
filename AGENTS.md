@@ -91,11 +91,20 @@ Use tags such as `castles-web-v1`, distinct from historical tags such as `castle
 Never fix a published snapshot in place or rebuild old releases using newer code.
 CI verifies their hashes and rejects modifications to previously published versions.
 
-## Castles web v2 UX
+## No intermediate pages
 
-Keep the short start page before play. Browser play starts with a bridge; Build
-from scratch opens an empty field. Controls dock beside the field on desktop
-and below it on phones; floating controls are optional. Help pauses and restores
+Never put a start, instructions, or launch page between a visitor and a program.
+Every link to a playable program or version (collection cards, bare program
+routes such as `#/program/<id>`, version links, web releases) opens its player
+directly. Instructions live in the player's Help dialog and the "About, history &
+source" section below the field. Only a version that cannot run gets a
+non-player page, explaining why and linking to a playable one.
+
+## Castles web UX
+
+Browser play starts with the arch and tower; the Start from picker offers other
+scenes and an empty field (`/play/blank` opens one directly). Controls always dock
+beside the field on desktop and below it on phones. Help pauses and restores
 the same scene and prior pause state. Browser and Original keep separate paused
 in-memory sessions until reload; do not imply scene transfer or persistence to
 disk. Confirm clearing/replacement only when work exists. PNG saves preserve
