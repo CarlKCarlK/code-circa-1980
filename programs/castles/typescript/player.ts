@@ -49,7 +49,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   };
   const cannons=document.createElement('div');cannons.hidden=true;
   cannons.className='cannon-panel';
-  cannons.innerHTML='<h3>Cannons firing</h3><p>Two cannons take turns automatically. Adjust power and arc to change where shots land.</p><label class="cannon-setting"><span>Power</span><input aria-label="Cannon power" type="range" min="0" max="9" value="0"><output>0</output></label><label class="cannon-setting"><span>Arc</span><input aria-label="Cannon angle" type="range" min="0" max="25" value="0"><output>0°</output></label><p class="cannon-feedback small" role="status"></p>';
+  cannons.innerHTML='<h3>Cannons firing</h3><p>Two cannons take turns automatically. Raise power and arc to reach your structures.</p><label class="cannon-setting"><span>Power</span><input aria-label="Cannon power" type="range" min="0" max="9" value="0"><output>0</output></label><label class="cannon-setting"><span>Arc</span><input aria-label="Cannon angle" type="range" min="0" max="25" value="0"><output>0°</output></label><p class="cannon-feedback small" role="status"></p>';
   const backToBuild=document.createElement('button');backToBuild.type='button';backToBuild.textContent='Return to building';
   cannons.append(backToBuild);tools.append(cannons);
   backToBuild.onclick=()=>{release();keyboardActive=false;game.beginBuilding();elapsed=previous=0;draw(performance.now());};
@@ -85,8 +85,8 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     finally{if(importAbort===controller)importAbort=null;previewing=false;previous=elapsed=0;picker.value='';}
   };
   const palette=createPalette(host,tools,title,()=>{stopStroke();hover=null;game.release();});
-  // New players start from the original instructions' 5 + M aim (power 5, about 42°), which reaches
-  // typical constructions; the BASIC starts at 0/0, so keyboard Q keeps the original behavior.
+  // New players start with weak but visible shots (power 1, arc 3°) so they reach for the sliders;
+  // at the BASIC's 0/0 nothing seems to happen. Keyboard Q keeps the original behavior.
   let startingAim=false;
   launch.onclick=()=>{const {power,angle}=game.cannonSettings();startingAim=power===0&&angle===0;press('q',true);press('q',false);};
   for(const input of cannons.querySelectorAll('input'))input.oninput=()=>{
@@ -189,7 +189,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     const buildMode=!keyboardActive ? (stroke?.tool??tool)==='erase'?'erasing':'drawing' : `keyboard ${game.mode}`;
     const description = importFall ? 'Loose blocks falling' : game.phase === 'building' ? `Building · ${buildMode}` : `Firing · shot ${game.shots}`;
     if(game.phase!=='building')launchPending=false;
-    if(startingAim&&game.phase==='bombarding'){game.setCannonSetting('power',5);game.setCannonSetting('angle',12);startingAim=false;}
+    if(startingAim&&game.phase==='bombarding'){game.setCannonSetting('power',1);game.setCannonSetting('angle',1);startingAim=false;}
     syncTools();
     const settings=game.cannonSettings();
     for(const input of cannons.querySelectorAll('input')){
