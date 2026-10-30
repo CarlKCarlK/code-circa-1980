@@ -22,7 +22,7 @@ Web v2 implements the P0/P1 entry, first-play, and continuity work in
 - [x] Move the actual Play button higher on the instructions page so it is easier to find.
 - [x] Swap the implementation tabs: show TypeScript first, then Original · emulator.
 - [x] The castle control panel items are illogical.
-- [ ] optional sound
+- [x] Sound: synthesized fire, hit, and falling-block effects with a Sound on/off button (browser version only; the original was silent).
 - [x] kill "A small collection, with room to grow. Games, tools, mathematics, and experiments."
 - [x] be sure the README has an image.
 - [x] create an AI policy statement in the README.
