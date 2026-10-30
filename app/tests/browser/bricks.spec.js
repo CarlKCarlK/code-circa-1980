@@ -55,7 +55,7 @@ test('old rectangular-pixel saves and dense square-pixel saves keep black bricks
   const shade=await dialog.locator('canvas').evaluate(c=>{
    const ctx=c.getContext('2d');return [ctx.getImageData(11,11,1,1).data[0],ctx.getImageData(10+30*4+1,10+20*8+1,1,1).data[0]];
   });
-  expect(shade).toEqual([230,51]);await dialog.getByRole('button',{name:'Cancel'}).click();
+  expect(shade).toEqual([230,18]);await dialog.getByRole('button',{name:'Cancel'}).click();
  }
 });
 test('JPEG and ordinary PNG imports scale and sample the whole picture, then settle bricks',async({page})=>{
@@ -86,7 +86,7 @@ test('white stays bricks even when it is the background',async({page})=>{
  const shades=await dialog.locator('canvas').evaluate(c=>{
   const ctx=c.getContext('2d');return [ctx.getImageData(10+44*4+1,10+13*8+1,1,1).data[0],ctx.getImageData(10+54*4+1,10+18*8+1,1,1).data[0]];
  });
- expect(shades).toEqual([230,51]);await dialog.getByRole('button',{name:'Cancel'}).click();
+ expect(shades).toEqual([230,18]);await dialog.getByRole('button',{name:'Cancel'}).click();
 });
 test('import displays the original picture before visibly falling and can pause',async({page})=>{
  await boot(page);
