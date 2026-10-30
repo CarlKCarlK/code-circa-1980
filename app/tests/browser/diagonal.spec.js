@@ -2,8 +2,8 @@ import {test,expect} from '@playwright/test';
 test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
 test('bare Castles route selects TypeScript while the original remains selectable',async({page})=>{
  await page.goto('/?development=1#/program/castles');
- await expect(page.getByRole('link',{name:'Browser version',exact:true})).toHaveAttribute('aria-current','page');
- await page.getByRole('link',{name:'Original',exact:true}).click();
+ await expect(page.getByRole('link',{name:'TypeScript version',exact:true})).toHaveAttribute('aria-current','page');
+ await page.getByRole('link',{name:'Level II BASIC version',exact:true}).click();
  await expect(page).toHaveURL(/castles\/v05$/);
 });
 test('grid assist and diagonal lock draw thin supported diagonal strokes',async({page})=>{
