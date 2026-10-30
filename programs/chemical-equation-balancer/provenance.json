@@ -4798,6 +4798,90 @@
           "sha256": "7aa4604922017fea2a11c7249e6ab4629ce83e1ef6e5395e76878c77882f9633"
         }
       ]
+    },
+    {
+      "version": "v14",
+      "family": "Chemistry Balancer II (1981)",
+      "label": "Equation echo",
+      "capture": "tape15b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape15b/best/06-CHEMISTRY-BALANCER-II-SAVE-1.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/06-CHEMISTRY-BALANCER-II-SAVE-1.ASC",
+      "sha256": "b33263f16114534c38b17b1c69e57cb7c1b17e2651ed6533fca4848719a0a462",
+      "bytes": 10528,
+      "listing_sha256": "494b52931ad63f45c142a400db3f568d1dc5649282e4102e79ef610c1f7b1d87",
+      "listing_lines": 242,
+      "recovery_evidence": "tapes/recovered/tape15b/inventory.json",
+      "inventory_row": {
+        "summary": "CHEMISTRY BALANCER II SAVE 1; 242 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 6,
+        "title": "CHEMISTRY-BALANCER-II-SAVE-1",
+        "title_note": "Descriptive interpretation; save numbering is capture order, not source version",
+        "binary": "tapes/recovered/tape15b/best/06-CHEMISTRY-BALANCER-II-SAVE-1.BAS",
+        "listing": "tapes/recovered/tape15b/best/06-CHEMISTRY-BALANCER-II-SAVE-1.ASC",
+        "selected_source": "tapes/recovered/tape15b/timing-refinement/T6-left-hp1200-b33263f16114.BAS",
+        "matching_sources": [
+          "tapes/recovered/tape15b/timing-refinement/T6-left-hp1200-b33263f16114.BAS",
+          "tapes/recovered/tape15b/timing-refinement/T6-right-boosted-b33263f16114.BAS"
+        ],
+        "source_start_s": 270.1599166666667,
+        "source_end_s": 432.4736041666667,
+        "sha256": "b33263f16114534c38b17b1c69e57cb7c1b17e2651ed6533fca4848719a0a462",
+        "bytes": 10528,
+        "lines": 242,
+        "last_line": 9999,
+        "pointer_bases": [
+          17125
+        ],
+        "end_marker": true,
+        "parsed_bytes": 10528,
+        "recovery_complete": true,
+        "execution_tested": false,
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match"
+      },
+      "other_saves": [
+        {
+          "capture": "tape15b",
+          "save": 7,
+          "relation": "same program; only the one-byte cassette name differs (f vs g)",
+          "archive_listing": "tapes/recovered/tape15b/best/07-CHEMISTRY-BALANCER-II-SAVE-2.ASC",
+          "inventory_row": {
+            "summary": "CHEMISTRY BALANCER II SAVE 2; 242 lines",
+            "status": "validated payload; runtime untested",
+            "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+            "recovery%": "100"
+          },
+          "archive_raw": "tapes/recovered/tape15b/best/07-CHEMISTRY-BALANCER-II-SAVE-2.BAS",
+          "sha256": "88061e7022a54e0f114956a4083289f5727d90121390190bd3415f61dd2c0494"
+        }
+      ],
+      "snapshot_raw": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.BAS",
+      "snapshot_listing": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.ASC",
+      "snapshot_extra_raw": [
+        "versions/v14/07-CHEMISTRY-BALANCER-II-SAVE-2.BAS"
+      ],
+      "imported_files": [
+        {
+          "path": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.BAS",
+          "bytes": 10528,
+          "sha256": "b33263f16114534c38b17b1c69e57cb7c1b17e2651ed6533fca4848719a0a462"
+        },
+        {
+          "path": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.ASC",
+          "bytes": 13030,
+          "sha256": "494b52931ad63f45c142a400db3f568d1dc5649282e4102e79ef610c1f7b1d87"
+        },
+        {
+          "path": "versions/v14/07-CHEMISTRY-BALANCER-II-SAVE-2.BAS",
+          "bytes": 10528,
+          "sha256": "88061e7022a54e0f114956a4083289f5727d90121390190bd3415f61dd2c0494"
+        }
+      ]
     }
   ]
 }

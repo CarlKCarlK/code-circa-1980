@@ -1,26 +1,26 @@
 {
   "title": "Chemical Equation Balancer",
-  "version": "v13",
+  "version": "v14",
   "family": "Chemistry Balancer II (1981)",
-  "label": "Acid/base modes",
-  "capture": "tape17b",
-  "save": 3,
+  "label": "Equation echo",
+  "capture": "tape15b",
+  "save": 6,
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
   "files": [
     {
       "canonical_path": "BALANCER.ASC",
-      "snapshot_path": "versions/v13/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03.ASC",
-      "archive_path": "tapes/recovered/tape17b/best/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03.ASC",
-      "sha256": "7aa4604922017fea2a11c7249e6ab4629ce83e1ef6e5395e76878c77882f9633",
-      "bytes": 11788
+      "snapshot_path": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.ASC",
+      "archive_path": "tapes/recovered/tape15b/best/06-CHEMISTRY-BALANCER-II-SAVE-1.ASC",
+      "sha256": "494b52931ad63f45c142a400db3f568d1dc5649282e4102e79ef610c1f7b1d87",
+      "bytes": 13030
     },
     {
       "canonical_path": "BALANCER.BAS",
-      "snapshot_path": "versions/v13/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03.BAS",
-      "archive_path": "tapes/recovered/tape17b/best/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03.BAS",
-      "sha256": "192a9efb5a104ed1add85a71450011b81ff6736a135b426421a5853275cdf3a1",
-      "bytes": 9601
+      "snapshot_path": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.BAS",
+      "archive_path": "tapes/recovered/tape15b/best/06-CHEMISTRY-BALANCER-II-SAVE-1.BAS",
+      "sha256": "b33263f16114534c38b17b1c69e57cb7c1b17e2651ed6533fca4848719a0a462",
+      "bytes": 10528
     }
   ]
 }
