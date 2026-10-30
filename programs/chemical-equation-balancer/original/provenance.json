@@ -1,0 +1,26 @@
+{
+  "title": "Chemical Equation Balancer",
+  "version": "v01",
+  "family": "Chemical Equation Balancer (1979)",
+  "label": "First balancer",
+  "capture": "tape14a",
+  "save": 9,
+  "order_inferred": true,
+  "order_evidence": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
+  "files": [
+    {
+      "canonical_path": "BALANCER.ASC",
+      "snapshot_path": "versions/v01/09-CHEMICAL-EQUATION-BALANCER.ASC",
+      "archive_path": "tapes/recovered/tape14a/best/09-CHEMICAL-EQUATION-BALANCER.ASC",
+      "sha256": "6778b3b33bc99f866744bcc6a3929c56ae0ec8b89451d1c35831b23a8c7e2b52",
+      "bytes": 2357
+    },
+    {
+      "canonical_path": "BALANCER.BAS",
+      "snapshot_path": "versions/v01/09-CHEMICAL-EQUATION-BALANCER.BAS",
+      "archive_path": "tapes/recovered/tape14a/best/09-CHEMICAL-EQUATION-BALANCER.BAS",
+      "sha256": "4c259793aa8d3ac1828f2c34c80ff5bb86bb627521efcc372cdf1d9d73e36668",
+      "bytes": 1873
+    }
+  ]
+}

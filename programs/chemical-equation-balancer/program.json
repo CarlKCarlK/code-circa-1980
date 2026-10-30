@@ -1,0 +1,22 @@
+{
+  "id": "chemical-equation-balancer",
+  "title": "Chemical Equation Balancer",
+  "description": "Type an unbalanced chemical equation; the program finds whole-number coefficients that conserve every element.",
+  "kind": "Utility",
+  "defaultVersion": "v01",
+  "versionOrder": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "1979 \u00b7 First balancer",
+      "family": "Chemical Equation Balancer (1979)",
+      "capture": "tape14a",
+      "save": 9,
+      "raw": "versions/v01/09-CHEMICAL-EQUATION-BALANCER.BAS",
+      "listing": "versions/v01/09-CHEMICAL-EQUATION-BALANCER.ASC",
+      "playable": true,
+      "note": "Floating-point Gaussian elimination; no parentheses. Rescales by reciprocal fractional parts until coefficients are whole.",
+      "unavailableReason": null
+    }
+  ]
+}
