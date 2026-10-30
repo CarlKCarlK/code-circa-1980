@@ -6315,6 +6315,280 @@
           "sha256": "9fa87b2c74c4f07a68e153da07a4fe9c674d9933add0d4892ec1b902179a0583"
         }
       ]
+    },
+    {
+      "version": "v17",
+      "family": "Chemistry Balancer II (1981)",
+      "label": "Test version",
+      "capture": "tape16a",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.BAS",
+      "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+      "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918",
+      "bytes": 10669,
+      "listing_sha256": "42727e08fad0252d79099ac8e530b73de21897fbd9a065707b8ea81fc917a622",
+      "listing_lines": 243,
+      "recovery_evidence": "tapes/recovered/tape16a/inventory.json",
+      "inventory_row": {
+        "summary": "Chemistry Balancer II; version with test code (inferred)",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 11,
+        "title": "Chemistry Balancer II; version with test code (inferred)",
+        "title_note": "Descriptive filenames and save/version labels inferred from listing content; source wording preserved.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 1460.0484375,
+        "source_end_s": 1626.3292916666667,
+        "selected_source": {
+          "track": 11,
+          "variant": "right-boosted",
+          "period": 94,
+          "radius": 0.2,
+          "late": true,
+          "dataRadius": 0.13,
+          "crop_start": 1459.6984375,
+          "crop_end": 1626.8292916666667,
+          "start": 1459.9951666666666,
+          "end": 1626.32925,
+          "file": "timing-refinement/T11-25808fe5e00c.BAS",
+          "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918",
+          "assessment": {
+            "good": true,
+            "lines": 243,
+            "last": 11010,
+            "normal": true,
+            "parsed": 10669,
+            "bytes": 10669,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.BAS",
+        "listing": "best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918",
+        "bytes": 10669,
+        "validation": {
+          "good": true,
+          "lines": 243,
+          "last": 11010,
+          "bases": [
+            17125
+          ],
+          "normal": true,
+          "parsed": 10669,
+          "bytes": 10669,
+          "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918"
+        },
+        "validation_summary": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "matching_sources": [
+          {
+            "track": 11,
+            "variant": "right-boosted",
+            "period": 94,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.13,
+            "crop_start": 1459.6984375,
+            "crop_end": 1626.8292916666667,
+            "start": 1459.9951666666666,
+            "end": 1626.32925,
+            "file": "timing-refinement/T11-25808fe5e00c.BAS",
+            "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918",
+            "assessment": {
+              "good": true,
+              "lines": 243,
+              "last": 11010,
+              "normal": true,
+              "parsed": 10669,
+              "bytes": 10669,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 11,
+            "variant": "left-custom-hp300",
+            "period": 94,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 1459.6984375,
+            "crop_end": 1626.8292916666667,
+            "start": 1459.897625,
+            "end": 1626.3294166666667,
+            "file": "timing-refinement/T11-25808fe5e00c.BAS",
+            "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918",
+            "assessment": {
+              "good": true,
+              "lines": 243,
+              "last": 11010,
+              "normal": true,
+              "parsed": 10669,
+              "bytes": 10669,
+              "bases": [
+                17125
+              ]
+            }
+          }
+        ],
+        "alternate_structurally_valid_candidates": [
+          {
+            "sha256": "6d22c7a38b1c8ce7e3aff4442e7b59100dfcd5e654e52dfc290606e3df5f4210",
+            "files": [
+              "timing-refinement/T11-6d22c7a38b1c.BAS"
+            ]
+          },
+          {
+            "sha256": "3fe88239784aa0e35af6be30edc9587639fe0b2f512dd33a3a499da1e46c57c2",
+            "files": [
+              "timing-refinement/T11-3fe88239784a.BAS"
+            ]
+          },
+          {
+            "sha256": "8db30acc52ab6cd09eac3bf1a69c48a8ddb1db463595d5aa76294320c1a5e6c3",
+            "files": [
+              "timing-refinement/T11-8db30acc52ab.BAS"
+            ]
+          },
+          {
+            "sha256": "ed531817d0f01b7b20b67612ab92f4f0c35f3c159172270134bf39d86c3d2855",
+            "files": [
+              "timing-refinement/T11-ed531817d0f0.BAS"
+            ]
+          },
+          {
+            "sha256": "52a22ec21853ac4581ee2a0d75d129ea26c76ddbcebcf989c4445f0db5da43d7",
+            "files": [
+              "timing-refinement/T11-52a22ec21853.BAS"
+            ]
+          },
+          {
+            "sha256": "ebdc7061a1fe762cd2956924316916858b69a582fe2823f68b604160ff6b2846",
+            "files": [
+              "timing-refinement/T11-ebdc7061a1fe.BAS"
+            ]
+          },
+          {
+            "sha256": "bf4a1b24312f2e0e0be59cb20e3d6fbdc26360ff04301ee0fd9000c8be950ee8",
+            "files": [
+              "timing-refinement/T11-bf4a1b24312f.BAS"
+            ]
+          },
+          {
+            "sha256": "9291833b2c98e97476037833dc4b08864c3e6a989105a3bef7dbd05efd955d84",
+            "files": [
+              "timing-refinement/T11-9291833b2c98.BAS"
+            ]
+          },
+          {
+            "sha256": "105dccc21d0f6bdf13505b07a3fbe5d89557b42a6bd9fd6b36bddd85b6bb2a02",
+            "files": [
+              "timing-refinement/T11-105dccc21d0f.BAS"
+            ]
+          },
+          {
+            "sha256": "08c7a9fa9f6c27db5eb8681973b47cf8db5f67aae67a54e7f671bc05b5751fe3",
+            "files": [
+              "timing-refinement/T11-08c7a9fa9f6c.BAS"
+            ]
+          },
+          {
+            "sha256": "c62b2bfebae9f4a478234ddfd7c36d691a895ee2b279dd0869d6788aa1b77695",
+            "files": [
+              "timing-refinement/T11-c62b2bfebae9.BAS"
+            ]
+          },
+          {
+            "sha256": "4d3f096321af98799a656df15f776f091aeec97b26c2bd53888513f16a65d18d",
+            "files": [
+              "timing-refinement/T11-4d3f096321af.BAS"
+            ]
+          },
+          {
+            "sha256": "ca187c7d08a2b9dc8f40f4d7b7a83f30ddb85785982588d70229ba4c5fd9b586",
+            "files": [
+              "timing-refinement/T11-ca187c7d08a2.BAS"
+            ]
+          },
+          {
+            "sha256": "87c1e4ac6164cda1117a12be1c4de8a03f07d35d90c8b7b045149808b65abd4e",
+            "files": [
+              "timing-refinement/T11-87c1e4ac6164.BAS"
+            ]
+          },
+          {
+            "sha256": "404e3cd53f61445781b42b0b30e5953e895074f52e498651999b261aed57aabc",
+            "files": [
+              "timing-refinement/T11-404e3cd53f61.BAS"
+            ]
+          },
+          {
+            "sha256": "c0b09c1fd62dd32eb8f9d865e95ff0efe88d66bbf6bfe1f7286a61f6d8421269",
+            "files": [
+              "timing-refinement/T11-c0b09c1fd62d.BAS"
+            ]
+          },
+          {
+            "sha256": "6ed7840b7f0d66cb7d3c33e79daeb5515777c6e52db547ddd70eb782da726931",
+            "files": [
+              "timing-refinement/T11-6ed7840b7f0d.BAS"
+            ]
+          },
+          {
+            "sha256": "8e72ee04582ab2bbd10a7364ac6eeb24ea558ed4f201e7bf57b3b9caa9a8d632",
+            "files": [
+              "timing-refinement/T11-8e72ee04582a.BAS"
+            ]
+          },
+          {
+            "sha256": "83c95a0fa0ec3fb9d8f347390d1155f3ac322b8d197b8cc2828df8eef0e0f15d",
+            "files": [
+              "timing-refinement/T11-83c95a0fa0ec.BAS"
+            ]
+          },
+          {
+            "sha256": "feb71138c58b240c8d5efea9ddad1d8529a71014c53830005b2b9797f8650137",
+            "files": [
+              "timing-refinement/T11-feb71138c58b.BAS"
+            ]
+          },
+          {
+            "sha256": "3fc6ac01f58d4fe7ef29b6653d12c4dd77d47f536f225f7bde4b7c3b182be34a",
+            "files": [
+              "timing-refinement/T11-3fc6ac01f58d.BAS"
+            ]
+          },
+          {
+            "sha256": "a594d07de0dc374684f30ae0d8af9149b2dfd717306be451abad09dc761b342c",
+            "files": [
+              "timing-refinement/T11-a594d07de0dc.BAS"
+            ]
+          }
+        ],
+        "prefix": null
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v17/11-CHEMISTRY-BALANCER-II-TEST-VERSION.BAS",
+      "snapshot_listing": "versions/v17/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v17/11-CHEMISTRY-BALANCER-II-TEST-VERSION.BAS",
+          "bytes": 10669,
+          "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918"
+        },
+        {
+          "path": "versions/v17/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+          "bytes": 13168,
+          "sha256": "42727e08fad0252d79099ac8e530b73de21897fbd9a065707b8ea81fc917a622"
+        }
+      ]
     }
   ]
 }
