@@ -33,4 +33,11 @@ export const quickStart = version => version.implementation==='typescript'
   : version.controls==='early'
   ? ['Click the screen. Tap Enter to place a block.','Move with 1–4, then tap Enter again.','Space starts bombardment; hold 5, then M for stronger arcs.']
   : ['Click the screen, then tap 8 to draw.','Hold 1 briefly to build up; 2 down, 3 left, 4 right.','Q starts bombardment; hold 5, then M for stronger arcs.'];
-export const launchHint = () => 'Click the screen after launch to use the original keyboard controls.';
+export const launchHint = (version, resuming) => version.implementation!=='typescript'
+  ? 'Click the screen after launch to use the original keyboard controls.'
+  : resuming ? 'Play resumes your construction. Build from scratch starts an empty field after confirmation.'
+  : 'Play starts with an arch and a tower in Building mode. Build from scratch opens an empty field.';
+export const blankStart = 'Build from scratch';
+export const modernSummary = 'Mouse and touch controls.';
+export const restartLabel = modern => modern ? 'Erase all' : 'Restart';
+export const restartConfirm = modern => modern ? 'Erase all blocks? Your construction will be lost.' : 'Restart the original program? Your construction will be lost.';

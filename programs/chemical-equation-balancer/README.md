@@ -14,12 +14,21 @@ I wrote two generations of it in TRS-80 BASIC:
   element rows, and eliminates with exact fractions kept as numerator/denominator
   pairs reduced by a GCD routine. It also reports when an equation has only a
   negative solution or is ambiguous (more than one independent way to balance it).
+  Radio Shack sold it in its catalog.
 
 Balancing is linear algebra: each element gives one homogeneous linear equation,
 each compound one unknown coefficient. A balanced equation is a strictly positive
 vector in the null space of the element-by-compound matrix. Rational solutions can
 always be scaled to integers, so the real constraints are positivity and a
 one-dimensional null space. Version II checks both.
+
+The website's default **browser version** runs a Rust port of the v20 algorithm,
+compiled to WebAssembly ([rust/](rust/), [modern/player.js](modern/player.js)). It
+answers instantly, offers sample problems in a side panel, and shows the linear
+equations it solves. Differences from the original are in
+[rust/PARITY.md](rust/PARITY.md); test evidence is in [VERIFICATION.md](VERIFICATION.md).
+The generated `rust/pkg/` is committed because the site build has no Rust
+toolchain; run `npm run build:balancer` from `app/` after changing the Rust code.
 
 ## Entering equations
 
@@ -32,8 +41,8 @@ and show parentheses as `< >`.
 All 20 distinct recovered versions are kept in [versions/](versions/), in an
 inferred development order (see [provenance.json](provenance.json)). Repeated
 identical saves and two damaged saves are recorded there as other saves of the
-same version. The default is v20, the latest Chemistry Balancer II. v06 is the most
-capable 1979 version and is much faster. Several intermediate saves are
+same version. The Original tab defaults to v20, the latest Chemistry Balancer II.
+v06 is the most capable 1979 version and is much faster. Several intermediate saves are
 debugging snapshots that stop or fail; they are kept unchanged for study.
 
 Dates: the copyright remarks give 1979 and 1981. Old programs were sometimes saved
