@@ -17,7 +17,7 @@ const galleryUrl=program=>`${collectionUrl.href}#/program/${program.id}/web-vers
 const experienceUrl=(program,version)=>new URL(`experiences/${program.id}/${version.id}/`,collectionUrl).href;
 function versionPicker(program,current){
  const versions=[...program.webVersions].reverse();
- return `<label class="version-picker">${escape(program.title)} version <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)} · ${escape(v.label)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
+ return `<label class="version-picker">Versions <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}#/program/${program.id}/typescript/play" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
 }
 function webVersionNavigation(program){
  return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span>${program.webVersions.length?versionPicker(program,webVersion):''}${webVersion?`<a href="${collectionUrl.href}#/program/${program.id}">Latest version</a>`:''}</nav>`;
@@ -43,10 +43,7 @@ async function render() {
   if(webProgram&&!parts.length)parts.push('program',webProgram);
   if (!parts.length) {
     document.title = 'Code Circa 1980';
-    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<a class="program-card" href="${route(p,defaultEdition(p))}"><div class="card-art" aria-hidden="true"><img class="collection-art" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="" width="532" height="308"></div><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)} / Original BASIC</span><h2>${escape(p.title)} <span>↗</span></h2><p>${escape(p.description)}</p><span class="card-link">Instructions & play →</span></div></a>`).join('')}</section>`;
-    const links=document.createElement('div');links.className='collection-version-links';
-    links.innerHTML=programs.filter(p=>p.webVersions.length).map(p=>versionPicker(p)).join('');
-    app.querySelector('.collection').after(links);
+    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<article class="program-card"><a class="card-art" href="${route(p,defaultEdition(p))}" tabindex="-1" aria-hidden="true"><img class="collection-art" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="" width="532" height="308"></a><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)} / Original BASIC</span><h2><a href="${route(p,defaultEdition(p))}">${escape(p.title)}</a></h2><p>${escape(p.description)}</p><div class="card-footer"><a class="card-link" href="${route(p,defaultEdition(p))}">Instructions & play →</a>${p.webVersions.length?versionPicker(p):''}</div></div></article>`).join('')}</section>`;
     return;
   }
   const program=programs.find(p=>parts[0]==='program' && p.id===parts[1]);
