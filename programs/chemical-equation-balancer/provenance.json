@@ -6061,6 +6061,260 @@
           "sha256": "5d40e10dbd4340d57bdc4c389727ef96f01f8045f46ec0102d69267f9c0f05c4"
         }
       ]
+    },
+    {
+      "version": "v16",
+      "family": "Chemistry Balancer II (1981)",
+      "label": "Raw equation",
+      "capture": "tape16a",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.BAS",
+      "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+      "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e",
+      "bytes": 10448,
+      "listing_sha256": "9fa87b2c74c4f07a68e153da07a4fe9c674d9933add0d4892ec1b902179a0583",
+      "listing_lines": 241,
+      "recovery_evidence": "tapes/recovered/tape16a/inventory.json",
+      "inventory_row": {
+        "summary": "Chemistry Balancer II; raw-equation version, save 3",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 9,
+        "title": "Chemistry Balancer II; raw-equation version, save 3",
+        "title_note": "Descriptive filenames and save/version labels inferred from listing content; source wording preserved.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 1111.7360625,
+        "source_end_s": 1275.6929791666666,
+        "selected_source": {
+          "track": 9,
+          "variant": "right-hp800",
+          "period": 90,
+          "radius": 0.2,
+          "late": true,
+          "dataRadius": 0.15,
+          "crop_start": 1111.3860625,
+          "crop_end": 1276.1929791666666,
+          "start": 1111.6682916666666,
+          "end": 1275.6930625,
+          "file": "timing-refinement/T09-b60284bf1fbc.BAS",
+          "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e",
+          "assessment": {
+            "good": true,
+            "lines": 241,
+            "last": 10000,
+            "normal": true,
+            "parsed": 10448,
+            "bytes": 10448,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/09-CHEMISTRY-BALANCER-II-SAVE3.BAS",
+        "listing": "best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e",
+        "bytes": 10448,
+        "validation": {
+          "good": true,
+          "lines": 241,
+          "last": 10000,
+          "bases": [
+            17125
+          ],
+          "normal": true,
+          "parsed": 10448,
+          "bytes": 10448,
+          "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e"
+        },
+        "validation_summary": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "matching_sources": [
+          {
+            "track": 9,
+            "variant": "right-hp800",
+            "period": 90,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 1111.3860625,
+            "crop_end": 1276.1929791666666,
+            "start": 1111.6682916666666,
+            "end": 1275.6930625,
+            "file": "timing-refinement/T09-b60284bf1fbc.BAS",
+            "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10448,
+              "bytes": 10448,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 9,
+            "variant": "right-hp800",
+            "period": 91,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 1111.3860625,
+            "crop_end": 1276.1929791666666,
+            "start": 1111.6741458333333,
+            "end": 1275.6930625,
+            "file": "timing-refinement/T09-b60284bf1fbc.BAS",
+            "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10448,
+              "bytes": 10448,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 9,
+            "variant": "left-custom-hp250",
+            "period": 92,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.13,
+            "crop_start": 1111.3860625,
+            "crop_end": 1276.1929791666666,
+            "start": 1111.7724375,
+            "end": 1275.6929791666666,
+            "file": "timing-refinement/T09-b60284bf1fbc.BAS",
+            "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10448,
+              "bytes": 10448,
+              "bases": [
+                17125
+              ]
+            }
+          }
+        ],
+        "alternate_structurally_valid_candidates": [
+          {
+            "sha256": "79ade20554a7023e28d0d3a4a64cfd20378a8532be7599a089ecc39d5337385c",
+            "files": [
+              "timing-refinement/T09-79ade20554a7.BAS"
+            ]
+          },
+          {
+            "sha256": "9c9e84b152400635f1fb1898f38b1a7c9acb993c279b4d5cd9808cdaee9d8f9d",
+            "files": [
+              "timing-refinement/T09-9c9e84b15240.BAS"
+            ]
+          },
+          {
+            "sha256": "aeef325f33df14b1f9e800d5bad41bcdb396c81ba761c8d922edc15a02886446",
+            "files": [
+              "timing-refinement/T09-aeef325f33df.BAS"
+            ]
+          },
+          {
+            "sha256": "fd621e3c86159378404845a1c040bb81ae26b567838947ddbdb98d75b53e6f33",
+            "files": [
+              "timing-refinement/T09-fd621e3c8615.BAS"
+            ]
+          },
+          {
+            "sha256": "00a737b78008d12c6f67290e8b4334db7837c5545b43502cc9e20664dfa4b736",
+            "files": [
+              "timing-refinement/T09-00a737b78008.BAS"
+            ]
+          },
+          {
+            "sha256": "b6d724419fa5a38a713e9f5ef3aed0a30ed3c734008b532a22ce56656867200a",
+            "files": [
+              "timing-refinement/T09-b6d724419fa5.BAS"
+            ]
+          },
+          {
+            "sha256": "21bed01d476c1a7068650a4f10e1fb327a66370d5900e02c583460cf167af8ac",
+            "files": [
+              "timing-refinement/T09-21bed01d476c.BAS"
+            ]
+          },
+          {
+            "sha256": "ab509c17ae2b460daf06b1800a50ffa854503bfa5a6f253d956698e740f71306",
+            "files": [
+              "timing-refinement/T09-ab509c17ae2b.BAS"
+            ]
+          },
+          {
+            "sha256": "e947186b116f39f5cef0a242d1fbda351cfce13d864f5ada35f024286fddc3af",
+            "files": [
+              "timing-refinement/T09-e947186b116f.BAS"
+            ]
+          },
+          {
+            "sha256": "c4905fc59165258209a995e34fbbb626019ad69b79c9bed5a077a6be58ba0f7e",
+            "files": [
+              "timing-refinement/T09-c4905fc59165.BAS"
+            ]
+          },
+          {
+            "sha256": "4278b82b7917d7e4d03ff4e332e817eda4fcbf8f22b485616cf8da2d50291859",
+            "files": [
+              "timing-refinement/T09-4278b82b7917.BAS"
+            ]
+          },
+          {
+            "sha256": "5669741228aa763c644f084a71919cf99dfdeebbb34f0ac7e9e2282f13e4cf6c",
+            "files": [
+              "timing-refinement/T09-5669741228aa.BAS"
+            ]
+          }
+        ],
+        "prefix": null
+      },
+      "other_saves": [
+        {
+          "capture": "tape16a",
+          "save": 10,
+          "relation": "identical",
+          "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+          "inventory_row": {
+            "summary": "Chemistry Balancer II; repeated raw-equation version, save 4",
+            "status": "validated payload; runtime untested",
+            "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+            "recovery%": "100"
+          },
+          "archive_raw": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.BAS",
+          "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e"
+        }
+      ],
+      "snapshot_raw": "versions/v16/09-CHEMISTRY-BALANCER-II-SAVE3.BAS",
+      "snapshot_listing": "versions/v16/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v16/09-CHEMISTRY-BALANCER-II-SAVE3.BAS",
+          "bytes": 10448,
+          "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e"
+        },
+        {
+          "path": "versions/v16/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+          "bytes": 12925,
+          "sha256": "9fa87b2c74c4f07a68e153da07a4fe9c674d9933add0d4892ec1b902179a0583"
+        }
+      ]
     }
   ]
 }
