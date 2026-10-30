@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
 test('train trestle loads a supported full-width bridge with three feet and can be cleared',async({page})=>{
  await page.goto('/?development=1&test#/program/castles/typescript/play');await page.locator('.advanced-tools summary').click();
- await page.getByLabel('Prebuilt pattern').selectOption('trestle');await page.getByRole('button',{name:'Load pattern',exact:true}).click();
+ await page.getByLabel('Starting scene').selectOption('trestle');await page.getByRole('button',{name:'Load',exact:true}).click();
  await expect(page.locator('.drawing-feedback')).toContainText('Train trestle bridge loaded');
  const rows=await page.evaluate(()=>{
   const screen=window.__circaPlayer.snapshot();
@@ -11,6 +11,6 @@ test('train trestle loads a supported full-width bridge with three feet and can 
  });
  expect(rows).toEqual({deck:128,feet:[21,64,107],engine:true,cars:[true,true,true,true]});
  await page.locator('#display').screenshot({path:'test-results/castles-train-trestle.png'});
- await page.getByLabel('Prebuilt pattern').selectOption('blank');await page.getByRole('button',{name:'Load pattern',exact:true}).click();
+ await page.getByLabel('Starting scene').selectOption('blank');await page.getByRole('button',{name:'Load',exact:true}).click();
  await expect(page.locator('.drawing-feedback')).toContainText('Empty field loaded');
 });

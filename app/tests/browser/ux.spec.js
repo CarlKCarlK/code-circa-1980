@@ -9,11 +9,11 @@ for(const viewport of [{width:1280,height:960},{width:390,height:844}]){
   await page.getByRole('link',{name:'Play Castles'}).click();
   await expect(page.locator('#status')).toContainText('Building · draw');
   const canvas=page.locator('#display canvas');await inViewport(page,canvas);
-  await inViewport(page,page.getByRole('button',{name:'Start bombardment',exact:true}));
+  await inViewport(page,page.getByRole('button',{name:'Fire cannons',exact:true}));
   const c=await canvas.boundingBox(),dock=await page.locator('#control-dock').boundingBox();
   expect(dock.x>=c.x+c.width||dock.y>=c.y+c.height).toBe(true);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-  await page.getByRole('button',{name:'Start bombardment',exact:true}).click();
+  await page.getByRole('button',{name:'Fire cannons',exact:true}).click();
   await expect(page.getByLabel('Cannon power')).toBeVisible();
   await page.getByLabel('Cannon power').fill('6');await page.getByLabel('Cannon angle').fill('13');
   await expect(page.getByLabel('Cannon angle').locator('..')).toContainText('45°');
@@ -52,13 +52,13 @@ test('help and switching preserve exact construction and pause state',async({pag
 test('cancelling clears and saves preserves layout; named PNG downloads',async({page})=>{
  await page.goto(start);await page.getByRole('link',{name:'Play Castles'}).click();
  await expect(page.locator('#status')).toContainText('Building');const before=await snapshot(page);
- page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'New construction',exact:true}).click();expect(await snapshot(page)).toEqual(before);
+ page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Clear field',exact:true}).click();expect(await snapshot(page)).toEqual(before);
  await page.locator('.advanced-tools summary').click();
- await page.getByLabel('Prebuilt pattern').selectOption('blank');
- page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Load pattern',exact:true}).click();expect(await snapshot(page)).toEqual(before);
+ await page.getByLabel('Starting scene').selectOption('blank');
+ page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Load',exact:true}).click();expect(await snapshot(page)).toEqual(before);
  page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Save bricks',exact:true}).click();expect(await snapshot(page)).toEqual(before);
  page.once('dialog',dialog=>dialog.accept('my bridge.png'));const download=page.waitForEvent('download');await page.getByRole('button',{name:'Save bricks',exact:true}).click();expect((await download).suggestedFilename()).toBe('my bridge.png');expect(await snapshot(page)).toEqual(before);
- page.once('dialog',dialog=>dialog.accept());await page.getByRole('button',{name:'Load pattern',exact:true}).click();
+ page.once('dialog',dialog=>dialog.accept());await page.getByRole('button',{name:'Load',exact:true}).click();
  const after=await snapshot(page);expect(after).not.toEqual(before);
  await page.getByRole('link',{name:'Collection',exact:true}).click();await page.goBack();
  await expect(page.locator('#status')).toContainText('Building');expect(await snapshot(page)).toEqual(after);
@@ -70,7 +70,7 @@ test('full screen retains Help, phase action, pause and exit in both implementat
   await page.getByRole('button',{name:'Full screen',exact:true}).click();
   await expect(page.getByRole('button',{name:'Exit full screen',exact:true})).toBeVisible();
   await page.getByRole('button',{name:'Help',exact:true}).click();await page.getByRole('button',{name:'Close help',exact:true}).click();
-  if(edition==='typescript')await expect(page.getByRole('button',{name:'Start bombardment',exact:true})).toBeVisible();
+  if(edition==='typescript')await expect(page.getByRole('button',{name:'Fire cannons',exact:true})).toBeVisible();
   await expect(page.getByRole('button',{name:'Pause',exact:true})).toBeVisible();
   await page.getByRole('button',{name:'Exit full screen',exact:true}).click();
   await expect.poll(()=>page.evaluate(()=>document.fullscreenElement)).toBe(null);
