@@ -1,0 +1,19 @@
+{
+  "description": "WebAssembly build of the Rust port; generated, not historical.",
+  "tools": {
+    "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)",
+    "wasm_pack": "wasm-pack 0.15.0",
+    "wasm_bindgen": "wasm-bindgen 0.2.126"
+  },
+  "sources": {
+    "Cargo.toml": "18c54799277ea432d4c3c7cac03310636c3ba71fdf289a8c9c62f5f31de0f579",
+    "Cargo.lock": "91a82d8964ada98e27ac3760246deca0b487d012d4ae3f0f69b33f9e6ccee96f",
+    "src/fraction.rs": "d1023c69a265dc83c49204a05a5affcdb1659d8c6b80d8e1e9cf058a7dca4650",
+    "src/lib.rs": "710a45c2fbc8966079d6f0acd791ead60f0122adc3732521f73ba6963d131d88",
+    "src/parse.rs": "4130fb28caa21bbb7e4c4fbbc23afd569a167001fddf59e77d2a4d7d6e3db786",
+    "src/solve.rs": "43117190e5526dd2d5b63bb1d080d9409407fed49be185e228f00a006b9f0f04",
+    "src/tests.rs": "44892632facef7339f328e02d3dc4aff6a5b13814ae3bdd6d8a524b092459f49"
+  },
+  "wasm_sha256": "8e75590e58fe4879f40c65c0748117f260fffe2cc1322fd4fa2cf3482dfd0051",
+  "wasm_bytes": 64556
+}

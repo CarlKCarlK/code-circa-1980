@@ -1,0 +1,106 @@
+{
+  "description": "Output of recovered versions in the TRS-80 emulator (trs80-emulator 2.3.1), recorded by app/scripts/record-balancer-parity.mjs.",
+  "recorded": "2026-10-30",
+  "cases": [
+    {
+      "equation": "H2+O2=H2.O",
+      "v20": {
+        "output": "2( H2 )+( O2 )-^ 2( H2.O )",
+        "seconds": 23.1
+      },
+      "v06": {
+        "output": "2 (H2)+ (O2) -^ 2 (H2.O)"
+      }
+    },
+    {
+      "equation": "C3.H8+O2=C.O2+H2.O",
+      "v20": {
+        "output": "( C3.H8 )+ 5( O2 )-^ 3( C.O2 )+ 4( H2.O )",
+        "seconds": 59.2
+      },
+      "v06": {
+        "output": "(C3.H8)+ 5 (O2) -^ 3 (C.O2)+ 4 (H2.O)"
+      }
+    },
+    {
+      "equation": "FE+O2=FE2.O3",
+      "v20": {
+        "output": "4( FE )+ 3( O2 )-^ 2( FE2.O3 )",
+        "seconds": 24.2
+      },
+      "v06": {
+        "output": "4 (FE)+ 3 (O2) -^ 2 (FE2.O3)"
+      }
+    },
+    {
+      "equation": "C12.H22.O11=C+H2.O",
+      "v20": {
+        "output": "( C12.H22.O11 )-^ 12( C )+ 11( H2.O )",
+        "seconds": 38.8
+      },
+      "v06": {
+        "output": "IT WILL TAKE A MOMENT MORE. (C12.H22.O11) -^ 12 (C)+ 11 (H2.O)"
+      }
+    },
+    {
+      "equation": "CA(O.H)2+H3.P.O4=CA3(P.O4)2+H2.O",
+      "v20": {
+        "output": "3( CA<O.H>2 )+ 2( H3.P.O4 )-^( CA3<P.O4>2 )+ 6( H2.O )",
+        "seconds": 100.7
+      },
+      "v06": {
+        "output": "IT WILL TAKE A MOMENT MORE. 3 (CA<O.H>2)+ 2 (H3.P.O4) -^ (CA3<P.O4>2)+ 6 (H2.O)"
+      }
+    },
+    {
+      "equation": "K.MN.O4+H.CL=K.CL+MN.CL2+H2.O+CL2",
+      "v20": {
+        "output": "2( K.MN.O4 )+ 16( H.CL )-^ 2( K.CL )+ 2( MN.CL2 )+ 8( H2.O ) + 5( CL2 )",
+        "seconds": 170.3
+      },
+      "v06": {
+        "output": "2 (K.MN.O4)+ 16 (H.CL) -^ 2 (K.CL)+ 2 (MN.CL2)+ 8 (H2.O)+ 5 (CL2)"
+      }
+    },
+    {
+      "equation": "NA2.B4.O7+H2.O+H2.S.O4=NA2.S.O4+H3.B.O3",
+      "v20": {
+        "output": "( NA2.B4.O7 )+ 5( H2.O )+( H2.S.O4 )-^( NA2.S.O4 ) + 4( H3.B.O3 )",
+        "seconds": 138.5
+      },
+      "v06": {
+        "output": "IT WILL TAKE A MOMENT MORE. (NA2.B4.O7)+ 5 (H2.O)+ (H2.S.O4) -^ (NA2.S.O4)+ 4 (H3.B.O3)"
+      }
+    },
+    {
+      "equation": "CU+H.N.O3=CU(N.O3)2+N.O+H2.O",
+      "v20": {
+        "output": "3( CU )+ 8( H.N.O3 )-^ 3( CU<N.O3>2 )+ 2( N.O )+ 4( H2.O )",
+        "seconds": 121.8
+      },
+      "v06": {
+        "output": "3 (CU)+ 8 (H.N.O3) -^ 3 (CU<N.O3>2)+ 2 (N.O)+ 4 (H2.O)"
+      }
+    },
+    {
+      "equation": "AL+O2=AL2.O3",
+      "v20": {
+        "output": "4( AL )+ 3( O2 )-^ 2( AL2.O3 )",
+        "seconds": 24.2
+      },
+      "v06": {
+        "output": "4 (AL)+ 3 (O2) -^ 2 (AL2.O3)"
+      }
+    },
+    {
+      "equation": "H2=O2",
+      "v20": {
+        "output": "FATAL ERROR: ALCHEMY !!!!!",
+        "seconds": 4.4
+      },
+      "v06": {
+        "output": "IT WILL TAKE A MOMENT MORE. IT CAN NOT BE BALANCED."
+      }
+    }
+  ]
+}

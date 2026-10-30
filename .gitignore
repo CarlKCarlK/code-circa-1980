@@ -5,3 +5,4 @@ test-results/
 .DS_Store
 Thumbs.db
 *~
+programs/chemical-equation-balancer/rust/target/

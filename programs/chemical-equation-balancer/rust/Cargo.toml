@@ -1,0 +1,17 @@
+[package]
+name = "chemistry-balancer"
+version = "0.1.0"
+edition = "2021"
+description = "Rust port of Carl Kadie's Chemistry Balancer II (1981) balancing algorithm"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "=0.2.126"
+
+[profile.release]
+opt-level = "s"
+lto = true
