@@ -2,6 +2,8 @@
 
 **Original programs. New possibilities.**
 
+**[Visit the website and play Castles](https://carlkcarlk.github.io/code-circa-1980/)**
+
 My programs from the late 1970s and early 1980s, recovered from cassette recordings
 and preserved in their original form. Selected programs will be reimagined for
 modern browsers. Games, utilities, mathematics, graphics, and experiments belong
