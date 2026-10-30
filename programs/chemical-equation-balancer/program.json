@@ -3,7 +3,7 @@
   "title": "Chemical Equation Balancer",
   "description": "Type an unbalanced chemical equation; the program finds whole-number coefficients that conserve every element.",
   "kind": "Utility",
-  "defaultVersion": "v12",
+  "defaultVersion": "v13",
   "versionOrder": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
   "versions": [
     {
@@ -148,6 +148,18 @@
       "listing": "versions/v12/02-CHEMISTRY-BALANCER-II-SAVE02.ASC",
       "playable": true,
       "note": "Adds formatted results and the \"another equation\" prompt.",
+      "unavailableReason": null
+    },
+    {
+      "id": "v13",
+      "label": "II \u00b7 Acid/base modes",
+      "family": "Chemistry Balancer II (1981)",
+      "capture": "tape17b",
+      "save": 3,
+      "raw": "versions/v13/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03.BAS",
+      "listing": "versions/v13/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03.ASC",
+      "playable": true,
+      "note": "Starts work on supplying H+, OH- and H2O for acid/base reactions; stops at a diagnostic STOP in line 1.",
       "unavailableReason": null
     }
   ]
