@@ -3517,6 +3517,166 @@
           "sha256": "fe0a4b0a1303b16c7a774cab3a4610db62a09729bde69119c32650a0e5c75f24"
         }
       ]
+    },
+    {
+      "version": "v12",
+      "family": "Chemistry Balancer II (1981)",
+      "label": "First complete Balancer II",
+      "capture": "tape17b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape17b/best/02-CHEMISTRY-BALANCER-II-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape17b/best/02-CHEMISTRY-BALANCER-II-SAVE02.ASC",
+      "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd",
+      "bytes": 8748,
+      "listing_sha256": "f396adec968741368df7927c478a85bffe09daf336f03c313830a1d3718c67a0",
+      "listing_lines": 211,
+      "recovery_evidence": "tapes/recovered/tape17b/inventory.json",
+      "inventory_row": {
+        "summary": "Chemistry Balancer II; expanded save ending at line 8000; copyright 1981 C. Kadie",
+        "status": "validated payload; runtime untested",
+        "validation": "211 ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 2,
+        "title": "Chemistry Balancer II; expanded save ending at line 8000; copyright 1981 C. Kadie",
+        "title_note": "Descriptive labels inferred from contents; original spelling preserved.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 139.9379375,
+        "source_end_s": 275.9670208333333,
+        "selected_source": {
+          "variant": "original",
+          "index": 2,
+          "start": 139.9379375,
+          "end": 275.966875,
+          "file": "original/T02-bd905c9f35dc.BAS",
+          "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd",
+          "assessment": {
+            "good": true,
+            "lines": 211,
+            "last": 8000,
+            "normal": true,
+            "parsed": 8748,
+            "bytes": 8748,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/02-CHEMISTRY-BALANCER-II-SAVE02.BAS",
+        "listing": "best/02-CHEMISTRY-BALANCER-II-SAVE02.ASC",
+        "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd",
+        "bytes": 8748,
+        "validation": {
+          "good": true,
+          "lines": 211,
+          "last": 8000,
+          "parsed": 8748,
+          "bytes": 8748,
+          "bases": [
+            17125
+          ],
+          "normal": true
+        },
+        "validation_summary": "211 ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "matching_sources": [
+          {
+            "variant": "original",
+            "index": 2,
+            "start": 139.9379375,
+            "end": 275.966875,
+            "file": "original/T02-bd905c9f35dc.BAS",
+            "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd",
+            "assessment": {
+              "good": true,
+              "lines": 211,
+              "last": 8000,
+              "normal": true,
+              "parsed": 8748,
+              "bytes": 8748,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 2,
+            "start": 139.9380625,
+            "end": 275.967,
+            "file": "right-boosted/T02-bd905c9f35dc.BAS",
+            "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd",
+            "assessment": {
+              "good": true,
+              "lines": 211,
+              "last": 8000,
+              "normal": true,
+              "parsed": 8748,
+              "bytes": 8748,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 2,
+            "start": 139.93808333333334,
+            "end": 275.9670208333333,
+            "file": "left-hp1200/T02-bd905c9f35dc.BAS",
+            "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd",
+            "assessment": {
+              "good": true,
+              "lines": 211,
+              "last": 8000,
+              "normal": true,
+              "parsed": 8748,
+              "bytes": 8748,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 2,
+            "start": 139.93810416666668,
+            "end": 275.9670208333333,
+            "file": "left-hp800/T02-bd905c9f35dc.BAS",
+            "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd",
+            "assessment": {
+              "good": true,
+              "lines": 211,
+              "last": 8000,
+              "normal": true,
+              "parsed": 8748,
+              "bytes": 8748,
+              "bases": [
+                17125
+              ]
+            }
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v12/02-CHEMISTRY-BALANCER-II-SAVE02.BAS",
+      "snapshot_listing": "versions/v12/02-CHEMISTRY-BALANCER-II-SAVE02.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v12/02-CHEMISTRY-BALANCER-II-SAVE02.BAS",
+          "bytes": 8748,
+          "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd"
+        },
+        {
+          "path": "versions/v12/02-CHEMISTRY-BALANCER-II-SAVE02.ASC",
+          "bytes": 10706,
+          "sha256": "f396adec968741368df7927c478a85bffe09daf336f03c313830a1d3718c67a0"
+        }
+      ]
     }
   ]
 }
