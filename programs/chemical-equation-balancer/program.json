@@ -3,7 +3,7 @@
   "title": "Chemical Equation Balancer",
   "description": "Type an unbalanced chemical equation; the program finds whole-number coefficients that conserve every element.",
   "kind": "Utility",
-  "defaultVersion": "v14",
+  "defaultVersion": "v15",
   "versionOrder": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
   "versions": [
     {
@@ -172,6 +172,18 @@
       "listing": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.ASC",
       "playable": true,
       "note": "Continues acid/base support and echoes the equation being solved.",
+      "unavailableReason": null
+    },
+    {
+      "id": "v15",
+      "label": "II \u00b7 Title screen",
+      "family": "Chemistry Balancer II (1981)",
+      "capture": "tape16a",
+      "save": 7,
+      "raw": "versions/v15/07-CHEMISTRY-BALANCER-II-SAVE1.BAS",
+      "listing": "versions/v15/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+      "playable": true,
+      "note": "Adds the KADIE SOFTWARE title screen and fixes the BALANCER spelling in the remark.",
       "unavailableReason": null
     }
   ]

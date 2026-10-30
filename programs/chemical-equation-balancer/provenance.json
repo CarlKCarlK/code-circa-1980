@@ -4882,6 +4882,1185 @@
           "sha256": "88061e7022a54e0f114956a4083289f5727d90121390190bd3415f61dd2c0494"
         }
       ]
+    },
+    {
+      "version": "v15",
+      "family": "Chemistry Balancer II (1981)",
+      "label": "Title screen",
+      "capture": "tape16a",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.BAS",
+      "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+      "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+      "bytes": 10435,
+      "listing_sha256": "5d40e10dbd4340d57bdc4c389727ef96f01f8045f46ec0102d69267f9c0f05c4",
+      "listing_lines": 241,
+      "recovery_evidence": "tapes/recovered/tape16a/inventory.json",
+      "inventory_row": {
+        "summary": "Chemistry Balancer II; copyright 1981 C. Kadie; save 1",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 7,
+        "title": "Chemistry Balancer II; copyright 1981 C. Kadie; save 1",
+        "title_note": "Descriptive filenames and save/version labels inferred from listing content; source wording preserved.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 749.9241666666667,
+        "source_end_s": 914.2955416666666,
+        "selected_source": {
+          "track": 7,
+          "variant": "right-hp800",
+          "period": 94,
+          "radius": 0.2,
+          "late": true,
+          "crop_start": 749.5741666666667,
+          "crop_end": 914.7955416666666,
+          "start": 749.870625,
+          "end": 914.295625,
+          "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+          "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+          "assessment": {
+            "good": true,
+            "lines": 241,
+            "last": 10000,
+            "normal": true,
+            "parsed": 10435,
+            "bytes": 10435,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/07-CHEMISTRY-BALANCER-II-SAVE1.BAS",
+        "listing": "best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+        "bytes": 10435,
+        "validation": {
+          "good": true,
+          "lines": 241,
+          "last": 10000,
+          "bases": [
+            17125
+          ],
+          "normal": true,
+          "parsed": 10435,
+          "bytes": 10435,
+          "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62"
+        },
+        "validation_summary": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "matching_sources": [
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 94,
+            "radius": 0.2,
+            "late": true,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.870625,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 95,
+            "radius": 0.2,
+            "late": true,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8743958333333,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 96,
+            "radius": 0.2,
+            "late": true,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8743958333333,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp1200",
+            "period": 94,
+            "radius": 0.2,
+            "late": true,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8706041666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp1200",
+            "period": 94,
+            "radius": 0.3,
+            "late": true,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8706041666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 91,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9530833333333,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 91,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.2,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9530833333333,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 91,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9530833333333,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 92,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9608125,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 92,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.2,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9608125,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 92,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9608125,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 93,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9627291666667,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 93,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.2,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9627291666667,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 93,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9627291666667,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 93,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.2,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9627291666667,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 94,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9684791666666,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 94,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.2,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9684791666666,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 88,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.1,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8515208333333,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 88,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8515208333333,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 88,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.2,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8515208333333,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 90,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8572291666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 90,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.2,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8572291666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 90,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.1,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8572291666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 90,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8572291666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 90,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.2,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8572291666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 91,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.859125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 91,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.1,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.859125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 91,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.859125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 92,
+            "radius": 0.12,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8649166666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 92,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8649166666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 92,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.1,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8649166666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 92,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8649166666667,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 93,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.1,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8668125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 93,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8668125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 93,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.1,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8668125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 93,
+            "radius": 0.3,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8668125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 93,
+            "radius": 0.3,
+            "late": false,
+            "dataRadius": 0.1,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8668125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 93,
+            "radius": 0.3,
+            "late": false,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.8668125,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 94,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.1,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.870625,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "right-hp800",
+            "period": 94,
+            "radius": 0.2,
+            "late": true,
+            "dataRadius": 0.15,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.870625,
+            "end": 914.295625,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 7,
+            "variant": "left-hp800",
+            "period": 94,
+            "radius": 0.3,
+            "late": true,
+            "crop_start": 749.5741666666667,
+            "crop_end": 914.7955416666666,
+            "start": 749.9684791666666,
+            "end": 914.2955,
+            "file": "timing-refinement/T07-cdfb60c7191f.BAS",
+            "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62",
+            "assessment": {
+              "good": true,
+              "lines": 241,
+              "last": 10000,
+              "normal": true,
+              "parsed": 10435,
+              "bytes": 10435,
+              "bases": [
+                17125
+              ]
+            }
+          }
+        ],
+        "alternate_structurally_valid_candidates": [
+          {
+            "sha256": "b4cc69cea6ef2ead1f89c81804816333fd98ffc3bfd0082d3eaba4e62ba0efbb",
+            "files": [
+              "timing-refinement/T07-b4cc69cea6ef.BAS"
+            ]
+          },
+          {
+            "sha256": "e3e3c4593f7ebfe79ca0e2f0da31dfae9c4f8867b8a4b0cefebc54c0a656c57b",
+            "files": [
+              "timing-refinement/T07-e3e3c4593f7e.BAS"
+            ]
+          },
+          {
+            "sha256": "318f11f4e3e18ebaf1238b5bdd9a436f577056cfdd52524eeb6f7fe3b2dd546a",
+            "files": [
+              "timing-refinement/T07-318f11f4e3e1.BAS"
+            ]
+          },
+          {
+            "sha256": "0e7079d50a360e0a4661d61c009c283577a7cc99d292518806959bfa78ee9345",
+            "files": [
+              "timing-refinement/T07-0e7079d50a36.BAS"
+            ]
+          },
+          {
+            "sha256": "67a2ae99702d7e2428fa67a371b7d8aa4eed82912c5b009a1077a05dbf6ac90c",
+            "files": [
+              "timing-refinement/T07-67a2ae99702d.BAS"
+            ]
+          },
+          {
+            "sha256": "6e76a4f03d21ab9c2d755cdbfc6a815e475863ca774002673d8abd5b2c818d02",
+            "files": [
+              "timing-refinement/T07-6e76a4f03d21.BAS"
+            ]
+          },
+          {
+            "sha256": "cc2fb85e9815c668db93af518b8b8a1472619906fa751e4db277e1bac6022278",
+            "files": [
+              "timing-refinement/T07-cc2fb85e9815.BAS"
+            ]
+          },
+          {
+            "sha256": "3559f01e22da40648418bc8117e0f8a7cdb00a2e6e5af4dd71dab4eb44df0f8b",
+            "files": [
+              "timing-refinement/T07-3559f01e22da.BAS"
+            ]
+          },
+          {
+            "sha256": "54b9f9c2cee1c417df281be62fa3d65873762560d9060b3c45f7b89b68aecfbc",
+            "files": [
+              "timing-refinement/T07-54b9f9c2cee1.BAS"
+            ]
+          }
+        ],
+        "prefix": null
+      },
+      "other_saves": [
+        {
+          "capture": "tape16a",
+          "save": 8,
+          "relation": "identical",
+          "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+          "inventory_row": {
+            "summary": "Chemistry Balancer II; repeated save 2",
+            "status": "validated payload; runtime untested",
+            "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+            "recovery%": "100"
+          },
+          "archive_raw": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.BAS",
+          "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62"
+        }
+      ],
+      "snapshot_raw": "versions/v15/07-CHEMISTRY-BALANCER-II-SAVE1.BAS",
+      "snapshot_listing": "versions/v15/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v15/07-CHEMISTRY-BALANCER-II-SAVE1.BAS",
+          "bytes": 10435,
+          "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62"
+        },
+        {
+          "path": "versions/v15/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+          "bytes": 12912,
+          "sha256": "5d40e10dbd4340d57bdc4c389727ef96f01f8045f46ec0102d69267f9c0f05c4"
+        }
+      ]
     }
   ]
 }
