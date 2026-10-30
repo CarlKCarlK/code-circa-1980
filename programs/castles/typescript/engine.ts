@@ -42,6 +42,8 @@ export class Castles {
   private pendingAngle:number|undefined;
   private action: Generator<number> | undefined;
   private previousPoint = { x: 0, y: 0 };
+  /** Counts block moves while falling; observation only (used for sound), not a rule. */
+  fallSteps = 0;
   readonly random: Random;
   constructor(random: Random = upper => upper ? 1 + Math.floor(Math.random() * upper) : Math.random()) {
     this.random = random; this.reset();
@@ -179,7 +181,7 @@ export class Castles {
       // At rest: any of the three supports holds a block. Once moving, it
       // continues through an available center/left/right route (CHK/FIRM).
       if ((!falling && (below || right || left)) || (falling && below && right && left)) { yield this.takeFallTime(); return; }
-      falling = true; this.assemblyBit(x, y, 'reset'); y++;
+      falling = true; this.fallSteps++; this.assemblyBit(x, y, 'reset'); y++;
       if (!below) { /* straight down */ } else if (!left) { x--; if (x < 0) { yield this.takeFallTime(); return; } }
       else { x++; if (x === 128) { yield this.takeFallTime(); return; } }
       this.assemblyBit(x, y, 'set'); yield this.takeFallTime();
