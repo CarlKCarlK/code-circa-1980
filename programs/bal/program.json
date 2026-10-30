@@ -17,9 +17,9 @@
       "save": 9,
       "raw": "versions/v01/09-CHEMICAL-EQUATION-BALANCER.BAS",
       "listing": "versions/v01/09-CHEMICAL-EQUATION-BALANCER.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Floating-point Gaussian elimination; no parentheses. Rescales by reciprocal fractional parts until coefficients are whole.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v02",
@@ -29,9 +29,9 @@
       "save": 3,
       "raw": "versions/v02/03-EQUATION-BALANCER-REV1-SAVE01.BAS",
       "listing": "versions/v02/03-EQUATION-BALANCER-REV1-SAVE01.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Adds a retry path for equations with too few unknowns. The prompt is bypassed by a hard-coded borax test equation.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v03",
@@ -41,9 +41,9 @@
       "save": 5,
       "raw": "versions/v03/05-EQUATION-BALANCER-REV2-SAVE01.BAS",
       "listing": "versions/v03/05-EQUATION-BALANCER-REV2-SAVE01.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Debugging save: prints trace numbers, turns on TRON in the reduction path and stops after a result.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v04",
@@ -53,9 +53,9 @@
       "save": 7,
       "raw": "versions/v04/07-EQUATION-BALANCER-REV3-SAVE01.BAS",
       "listing": "versions/v04/07-EQUATION-BALANCER-REV3-SAVE01.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Debug output removed and long results wrap, but subroutine line 2000 is missing.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v05",
@@ -65,9 +65,9 @@
       "save": 10,
       "raw": "versions/v05/10-CHEMICAL-EQUATION-BALANCER-V2.BAS",
       "listing": "versions/v05/10-CHEMICAL-EQUATION-BALANCER-V2.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Adds parenthesized groups such as CA(O.H)2 and prints the arrow as -^.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v06",
@@ -77,9 +77,9 @@
       "save": 11,
       "raw": "versions/v06/11-CHEMICAL-EQUATION-BALANCER-V3.BAS",
       "listing": "versions/v06/11-CHEMICAL-EQUATION-BALANCER-V3.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Adds counts when an element appears more than once in a compound. Most capable 1979 version.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v07",
@@ -89,9 +89,9 @@
       "save": 13,
       "raw": "versions/v07/13-CHEMICAL-EQUATION-BALANCER-V1.BAS",
       "listing": "versions/v07/13-CHEMICAL-EQUATION-BALANCER-V1.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Fixed 20-element arrays and a matrix printout; bypasses the dependent-row reduction.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v08",
@@ -101,9 +101,9 @@
       "save": 17,
       "raw": "versions/v08/17-CHEMICAL-EQUATION-BALANCER-V2.BAS",
       "listing": "versions/v08/17-CHEMICAL-EQUATION-BALANCER-V2.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Adds the 1979 copyright remarks and two pivot fixes; still bypasses dependent-row reduction.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v09",
@@ -113,9 +113,9 @@
       "save": 2,
       "raw": "versions/v09/02-CHEMISTRY-BALANCER-II-INTEGER.BAS",
       "listing": "versions/v09/02-CHEMISTRY-BALANCER-II-INTEGER.ASC",
-      "playable": true,
+      "playable": false,
       "note": "New parser and exact numerator/denominator elimination, with every variable declared integer.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v10",
@@ -125,9 +125,9 @@
       "save": 6,
       "raw": "versions/v10/06-CHEMISTRY-BALANCER-II-TEST.BAS",
       "listing": "versions/v10/06-CHEMISTRY-BALANCER-II-TEST.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Double-precision fractions and a default test equation; partial-equation search under development.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v11",
@@ -137,9 +137,9 @@
       "save": 1,
       "raw": "versions/v11/01-CHEMISTRY-BALANCER-II-SAVE01.BAS",
       "listing": "versions/v11/01-CHEMISTRY-BALANCER-II-SAVE01.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Revised numeric declarations and test routines.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v12",
@@ -149,9 +149,9 @@
       "save": 2,
       "raw": "versions/v12/02-CHEMISTRY-BALANCER-II-SAVE02.BAS",
       "listing": "versions/v12/02-CHEMISTRY-BALANCER-II-SAVE02.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Adds formatted results and the \"another equation\" prompt.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v13",
@@ -161,9 +161,9 @@
       "save": 3,
       "raw": "versions/v13/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03.BAS",
       "listing": "versions/v13/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Starts work on supplying H+, OH- and H2O for acid/base reactions; stops at a diagnostic STOP in line 1.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v14",
@@ -173,9 +173,9 @@
       "save": 6,
       "raw": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.BAS",
       "listing": "versions/v14/06-CHEMISTRY-BALANCER-II-SAVE-1.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Continues acid/base support and echoes the equation being solved.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v15",
@@ -185,9 +185,9 @@
       "save": 7,
       "raw": "versions/v15/07-CHEMISTRY-BALANCER-II-SAVE1.BAS",
       "listing": "versions/v15/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Adds the KADIE SOFTWARE title screen and fixes the BALANCER spelling in the remark.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v16",
@@ -197,9 +197,9 @@
       "save": 9,
       "raw": "versions/v16/09-CHEMISTRY-BALANCER-II-SAVE3.BAS",
       "listing": "versions/v16/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Asks for the \"raw equation\" and shows it before balancing.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v17",
@@ -209,9 +209,9 @@
       "save": 11,
       "raw": "versions/v17/11-CHEMISTRY-BALANCER-II-TEST-VERSION.BAS",
       "listing": "versions/v17/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Experimental save with test equations and test code.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v18",
@@ -221,9 +221,9 @@
       "save": 8,
       "raw": "versions/v18/08-CHEMISTRY-BALANCER-II-SAVE-3.BAS",
       "listing": "versions/v18/08-CHEMISTRY-BALANCER-II-SAVE-3.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Replaces the subset search with direct elimination and row swapping; prints matrices while working.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v19",
@@ -233,9 +233,9 @@
       "save": 10,
       "raw": "versions/v19/10-CHEMISTRY-BALANCER-II-SAVE-5.BAS",
       "listing": "versions/v19/10-CHEMISTRY-BALANCER-II-SAVE-5.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Debug matrix printing removed; a STOP remains at line 5500.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v20, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v20",
@@ -247,7 +247,8 @@
       "listing": "versions/v20/01-CHEMISTRY-BALANCER-II-SAVE01.ASC",
       "playable": true,
       "note": "Latest recovered version: STOP removed and multiple-replacement check restored.",
-      "unavailableReason": null
+      "unavailableReason": null,
+      "slug": "basic"
     }
   ]
 }
