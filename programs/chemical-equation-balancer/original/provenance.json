@@ -1,26 +1,26 @@
 {
   "title": "Chemical Equation Balancer",
-  "version": "v09",
+  "version": "v10",
   "family": "Chemistry Balancer II (1981)",
-  "label": "Integer draft",
+  "label": "Mixed precision draft",
   "capture": "tape17a",
-  "save": 2,
+  "save": 6,
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
   "files": [
     {
       "canonical_path": "BALANCER.ASC",
-      "snapshot_path": "versions/v09/02-CHEMISTRY-BALANCER-II-INTEGER.ASC",
-      "archive_path": "tapes/recovered/tape17a/best/02-CHEMISTRY-BALANCER-II-INTEGER.ASC",
-      "sha256": "5fecf5cd4df35054c5c5074769e5647662e569b95156fe60de09b6400d106575",
-      "bytes": 7780
+      "snapshot_path": "versions/v10/06-CHEMISTRY-BALANCER-II-TEST.ASC",
+      "archive_path": "tapes/recovered/tape17a/best/06-CHEMISTRY-BALANCER-II-TEST.ASC",
+      "sha256": "988b599d05d2db4e84eb9c8707b26a821772405a63a1f5b3e6222b76919395c8",
+      "bytes": 8887
     },
     {
       "canonical_path": "BALANCER.BAS",
-      "snapshot_path": "versions/v09/02-CHEMISTRY-BALANCER-II-INTEGER.BAS",
-      "archive_path": "tapes/recovered/tape17a/best/02-CHEMISTRY-BALANCER-II-INTEGER.BAS",
-      "sha256": "06927532afe779d202773c33cecdc52d0e9ccd6252e9298b439c6083d986415a",
-      "bytes": 6408
+      "snapshot_path": "versions/v10/06-CHEMISTRY-BALANCER-II-TEST.BAS",
+      "archive_path": "tapes/recovered/tape17a/best/06-CHEMISTRY-BALANCER-II-TEST.BAS",
+      "sha256": "8fd666bfb28835a38e9e53b4fd6db280d6117401f692b767867852ad22422030",
+      "bytes": 7303
     }
   ]
 }
