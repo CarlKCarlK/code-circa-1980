@@ -29,11 +29,12 @@ test('latest program links open the newest frozen experience and its version gal
 
 test('home page version dropdown opens the chosen frozen release',async({page})=>{
  await page.goto('/');
- const picker=page.getByLabel('Castles version');
- await expect(picker).toHaveValue(new RegExp(`/experiences/castles/${latest}/$`));
+ const picker=page.getByLabel('Versions');
+ await expect(picker).toHaveValue(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript/play$`));
  await expect(picker.locator('option')).toHaveCount(releases.length);
- await picker.selectOption({label:`v1 · ${releases[0].label}`});
- await expect(page).toHaveURL(/\/experiences\/castles\/v1\/$/);
+ await picker.selectOption({label:'v1'});
+ await expect(page).toHaveURL(/\/experiences\/castles\/v1\/#\/program\/castles\/typescript\/play$/);
+ await expect(page.locator('canvas')).toHaveCount(1);
 });
 
 test('previously shared play links resolve to the latest frozen release',async({page})=>{
