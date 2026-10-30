@@ -239,7 +239,7 @@ as part of this audit.
 | Castle logo from game artwork | P2: actual game imagery across entry points. |
 | First-person biography | P2: await supplied biographical facts; do not invent them. |
 | Ask filename on Save bricks | P1: named PNG layout saving with Cancel. |
-| Background color choice | Decided: no choice. One fixed midnight-blue field (`#121a2e`) behind the cool-white pixels; the user setting was removed. |
+| Background color choice | Decided: no choice. One fixed midnight-blue field (`#1b2a4e`) behind the cool-white pixels; the user setting was removed. |
 | Two castle pictures in Downloads | P2: inspect the intended images and permission/provenance when implementing; not needed for the first-play fix. |
 | Shared-screen play effort | Separate exploration after solo onboarding; define local/shared versus online before estimating. |
 | Optional sound | P2: off by default, explicit sound toggle; separate design/implementation task. |
