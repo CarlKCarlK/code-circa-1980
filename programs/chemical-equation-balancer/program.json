@@ -3,7 +3,7 @@
   "title": "Chemical Equation Balancer",
   "description": "Type an unbalanced chemical equation; the program finds whole-number coefficients that conserve every element.",
   "kind": "Utility",
-  "defaultVersion": "v17",
+  "defaultVersion": "v18",
   "versionOrder": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
   "versions": [
     {
@@ -208,6 +208,18 @@
       "listing": "versions/v17/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
       "playable": true,
       "note": "Experimental save with test equations and test code.",
+      "unavailableReason": null
+    },
+    {
+      "id": "v18",
+      "label": "II \u00b7 Elimination rework (debugging)",
+      "family": "Chemistry Balancer II (1981)",
+      "capture": "tape15b",
+      "save": 8,
+      "raw": "versions/v18/08-CHEMISTRY-BALANCER-II-SAVE-3.BAS",
+      "listing": "versions/v18/08-CHEMISTRY-BALANCER-II-SAVE-3.ASC",
+      "playable": true,
+      "note": "Replaces the subset search with direct elimination and row swapping; prints matrices while working.",
       "unavailableReason": null
     }
   ]
