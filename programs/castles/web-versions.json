@@ -4,7 +4,7 @@
       "id": "v1",
       "label": "First public release",
       "released": "2026-10-30",
-      "sourceCommit": "c97563976ab4bf2101da3caceebcfb472ae16975",
+      "sourceCommit": "572b6a7fc66177033b31d8054eb20ed8b8d1c28e",
       "files": [
         {
           "path": "assets/09-ARTILLERY-DRAFT01-B-8gzmKS.ASC",
@@ -72,14 +72,14 @@
           "sha256": "4c7f84f0bd48ff8eb0c337c5f7c5f69a2449cc27fa3621bc05ecdc7d689e7db4"
         },
         {
-          "path": "assets/index-CTDdAtR-.js",
-          "bytes": 22436,
-          "sha256": "8364a4bbac114a600bd50505b4a9502853cfc23e56c49bfb4c6da199775b0a1d"
+          "path": "assets/index-C3Rl1YVC.css",
+          "bytes": 15417,
+          "sha256": "7c48970c5ca8daa30601529a10a084ca11559515eec6ce9464777ca1fb02f347"
         },
         {
-          "path": "assets/index-DAyxGng5.css",
-          "bytes": 15153,
-          "sha256": "82ac71ca1260c80b6fab0c4dc7edf257a46802983963bab1ef3b5bafe5eceff0"
+          "path": "assets/index-DEFBjGq9.js",
+          "bytes": 23060,
+          "sha256": "038a114c86f9ba7a6d1511dc7d76688f8769ba885ce09bedc7b805f2969c15e0"
         },
         {
           "path": "assets/player-DG3vU3-j.js",
@@ -104,7 +104,7 @@
         {
           "path": "index.html",
           "bytes": 2073,
-          "sha256": "0d3fd5d24c54f6d16c9d7ae95a062b330b43350727e58861bef3a6b27a266eb7"
+          "sha256": "554c6c401bc1bf15c02ecc8f51b33be8e098705b641b06f5e5e407c4c6f48ace"
         },
         {
           "path": "licenses.txt",

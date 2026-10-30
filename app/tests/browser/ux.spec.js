@@ -5,8 +5,6 @@ async function inViewport(page,locator){const box=await locator.boundingBox();ex
 for(const viewport of [{width:1280,height:960},{width:390,height:844}]){
  test(`start and phase action fit ${viewport.width}px without overlay`,async({page})=>{
   await page.setViewportSize(viewport);await page.goto(start);
-  await inViewport(page,page.getByRole('link',{name:'Play Castles'}));
-  await page.getByRole('link',{name:'Play Castles'}).click();
   await expect(page.locator('#status')).toContainText('Building · draw');
   const canvas=page.locator('#display canvas');await inViewport(page,canvas);
   await inViewport(page,page.getByRole('button',{name:'Fire cannons',exact:true}));
@@ -24,7 +22,7 @@ for(const viewport of [{width:1280,height:960},{width:390,height:844}]){
  });
 }
 test('help and switching preserve exact construction and pause state',async({page})=>{
- await page.goto(start);await page.getByRole('link',{name:'Play Castles'}).click();
+ await page.goto(start);
  await expect(page.locator('#status')).toContainText('Building');
  const before=await snapshot(page);
  await page.getByRole('button',{name:'Help',exact:true}).click();
@@ -50,7 +48,7 @@ test('help and switching preserve exact construction and pause state',async({pag
  expect(await snapshot(page)).toEqual(original);
 });
 test('cancelling clears and saves preserves layout; named PNG downloads',async({page})=>{
- await page.goto(start);await page.getByRole('link',{name:'Play Castles'}).click();
+ await page.goto(start);
  await expect(page.locator('#status')).toContainText('Building');const before=await snapshot(page);
  page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Erase all',exact:true}).click();expect(await snapshot(page)).toEqual(before);
  await page.locator('.advanced-tools summary').click();

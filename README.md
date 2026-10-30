@@ -22,7 +22,7 @@ its catalog. The browser version runs a Rust port of the 1981 algorithm; all 20
 recovered BASIC versions also run in the emulator. See
 [programs/chemical-equation-balancer](programs/chemical-equation-balancer/).
 
-## About the author
+## About this project
 
 I had seen early personal computers, such as the Altair, in San Francisco, but nothing like them was available in my hometown of Peoria, Illinois. In the summer of 1978, between my sophomore and junior years of high school, the TRS-80 Model I arrived at our local Radio Shack. I ordered one and waited several weeks for delivery.
 
