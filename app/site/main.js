@@ -1,5 +1,6 @@
 import './style.css';
 import {programs, assetUrl, provenanceUrl} from './catalog.js';
+import {aboutAuthor} from './about.js';
 
 const app = document.querySelector('#app');
 const webProgram=import.meta.env.VITE_WEB_PROGRAM;
@@ -39,7 +40,7 @@ async function render() {
   if(webProgram&&!parts.length)parts.push('program',webProgram);
   if (!parts.length) {
     document.title = 'Code Circa 1980';
-    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<article class="program-card"><a class="card-art" href="${playUrl(p)}" tabindex="-1" aria-hidden="true"><img class="collection-art" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="" width="532" height="236"></a><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)}</span><h2><a href="${playUrl(p)}">${escape(p.title)}</a></h2><p>${escape(p.description)}</p><div class="card-footer"><a class="card-link" href="${playUrl(p)}">Play ${escape(p.title)} →</a>${p.webVersions.length>1?versionPicker(p):''}</div></div></article>`).join('')}</section>`;
+    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<article class="program-card"><a class="card-art" href="${playUrl(p)}" tabindex="-1" aria-hidden="true"><img class="collection-art" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="" width="532" height="236"></a><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)}</span><h2><a href="${playUrl(p)}">${escape(p.title)}</a></h2><p>${escape(p.description)}</p><div class="card-footer"><a class="card-link" href="${playUrl(p)}">Play ${escape(p.title)} →</a>${p.webVersions.length>1?versionPicker(p):''}</div></div></article>`).join('')}</section><section class="about-author" aria-labelledby="about-author"><h2 id="about-author">About the author</h2>${aboutAuthor.map(p=>`<p>${escape(p)}</p>`).join('')}</section>`;
     return;
   }
   const program=programs.find(p=>parts[0]==='program' && p.id===parts[1]);
