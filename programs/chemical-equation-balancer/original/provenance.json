@@ -1,26 +1,26 @@
 {
   "title": "Chemical Equation Balancer",
-  "version": "v01",
+  "version": "v02",
   "family": "Chemical Equation Balancer (1979)",
-  "label": "First balancer",
-  "capture": "tape14a",
-  "save": 9,
+  "label": "Retry draft (test equation)",
+  "capture": "tape27b",
+  "save": 3,
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. The 1979 family precedes Chemistry Balancer II (copyright 1981). Within each family the order follows source changes; within a capture, save order. Tape numbers alone do not establish chronology.",
   "files": [
     {
       "canonical_path": "BALANCER.ASC",
-      "snapshot_path": "versions/v01/09-CHEMICAL-EQUATION-BALANCER.ASC",
-      "archive_path": "tapes/recovered/tape14a/best/09-CHEMICAL-EQUATION-BALANCER.ASC",
-      "sha256": "6778b3b33bc99f866744bcc6a3929c56ae0ec8b89451d1c35831b23a8c7e2b52",
-      "bytes": 2357
+      "snapshot_path": "versions/v02/03-EQUATION-BALANCER-REV1-SAVE01.ASC",
+      "archive_path": "tapes/recovered/tape27b/best/03-EQUATION-BALANCER-REV1-SAVE01.ASC",
+      "sha256": "8c99667dcf63535eb8656c7dbdb2406c3313b54eb856e55b52f33b7ff5a646fa",
+      "bytes": 2870
     },
     {
       "canonical_path": "BALANCER.BAS",
-      "snapshot_path": "versions/v01/09-CHEMICAL-EQUATION-BALANCER.BAS",
-      "archive_path": "tapes/recovered/tape14a/best/09-CHEMICAL-EQUATION-BALANCER.BAS",
-      "sha256": "4c259793aa8d3ac1828f2c34c80ff5bb86bb627521efcc372cdf1d9d73e36668",
-      "bytes": 1873
+      "snapshot_path": "versions/v02/03-EQUATION-BALANCER-REV1-SAVE01.BAS",
+      "archive_path": "tapes/recovered/tape27b/best/03-EQUATION-BALANCER-REV1-SAVE01.BAS",
+      "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e",
+      "bytes": 2267
     }
   ]
 }
