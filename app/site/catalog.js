@@ -8,7 +8,7 @@ const balancerModern = {...balancer.versions.at(-1), id:'rust', label:'Rust · v
 const webCatalogs=import.meta.glob('../../programs/*/web-versions.json',{eager:true,import:'default'});
 export const programs = [{...castles, ...castlesView, modern, loadModernPlayer:()=>import('../../programs/castles/typescript/player.ts')}, {...balancer, ...balancerView, modern:balancerModern, loadModernPlayer:()=>import('../../programs/chemical-equation-balancer/modern/player.js')}]
   .map(program=>({...program,webVersions:webCatalogs[`../../programs/${program.id}/web-versions.json`]?.versions??[]}));
-const files = import.meta.glob('../../programs/**/*.{BAS,ASC,bin}', {query:'?url', import:'default', eager:true});
+const files = import.meta.glob(['../../programs/**/*.{BAS,ASC,bin}','!../../programs/**/target/**'], {query:'?url', import:'default', eager:true});
 const provenance = import.meta.glob('../../programs/**/provenance.json', {query:'?url', import:'default', eager:true});
 export function assetUrl(program, path) {
   const url = files[`../../programs/${program.id}/${path}`];
