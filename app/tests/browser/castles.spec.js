@@ -10,10 +10,10 @@ const pixels=async page=>page.evaluate(()=>{
  return points;
 });
 const hold=async(page,key,ms)=>{await page.keyboard.down(key);await page.waitForTimeout(ms);await page.keyboard.up(key);await page.waitForTimeout(120);};
-async function boot(page,version='v03'){
- await page.goto(`/?development=1&test#/program/castles/${version}/play`);
+async function boot(page){
+ await page.goto('/?development=1&test#/program/castles/basic/play');
  await expect(page.locator('#status')).toContainText('Running original BASIC');
- await expect.poll(async()=> (await pixels(page)).filter(p=>p[1]===47).length,{timeout:10000}).toBe(version==='v03'?128:126);
+ await expect.poll(async()=> (await pixels(page)).filter(p=>p[1]===47).length,{timeout:15000}).toBe(128);
  await page.locator('#display').focus();
 }
 
@@ -37,7 +37,7 @@ test('collection and program links open the player; versions and downloads remai
  expect(errors).toEqual([]);
 });
 
-test('original v03 builds a tower, fires, pauses, releases keys and restarts',async({page})=>{
+test('original v05 builds a tower, fires, pauses, releases keys and restarts',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await boot(page);
  await hold(page,'8',160);await hold(page,'1',1500);
@@ -69,22 +69,19 @@ test('original v03 builds a tower, fires, pauses, releases keys and restarts',as
  expect(errors).toEqual([]);
 });
 
-test('earlier self-contained versions boot and accept their original build controls',async({page})=>{
- for(const version of ['v01','v02']){
-  await boot(page,version);
-  // Build along the ground so variable emulator polling cannot skip a support row.
-  for(let i=0;i<4;i++){
-   await hold(page,'Enter',120);await hold(page,'4',80);
-  }
-  await expect.poll(async()=> (await pixels(page)).filter(([x,y])=>y===46).length).toBeGreaterThan(1);
-  await hold(page,' ',250);
-  await expect(page.locator('#status')).toContainText('Running original BASIC');
+test('earlier versions are source only and link to the playable v05',async({page})=>{
+ for(const version of ['v01','v02','v03','v04']){
+  await page.goto(`/?development=1#/program/castles/${version}`);
+  await expect(page).toHaveURL(new RegExp(`castles\/${version}$`));
+  await expect(page.getByText('This version is preserved for study.')).toBeVisible();
+  await expect(page.getByRole('link',{name:'Play the playable version →'})).toHaveAttribute('href','#/program/castles/basic/play');
+  await expect(page.locator('#display')).toHaveCount(0);
  }
 });
 
 test('phone layout has no horizontal overflow and on-screen keys draw',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- await page.goto('/?development=1#/program/castles/v03');
+ await page.goto('/?development=1#/program/castles/basic/play');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.screenshot({path:'test-results/castles-instructions-mobile.png',fullPage:true});
  await boot(page);
@@ -100,6 +97,7 @@ test('phone layout has no horizontal overflow and on-screen keys draw',async({pa
 
 test('v05 original runs with the assembled FALL dependency',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ // Links shared before the /basic route keep working.
  await page.goto('/?development=1&test#/program/castles/v05/play');
  await expect(page.locator('#status')).toContainText('Running original BASIC');
  await expect.poll(async()=> (await pixels(page)).filter(p=>p[1]===47).length,{timeout:15000}).toBe(128);
@@ -114,7 +112,8 @@ test('v05 original runs with the assembled FALL dependency',async({page})=>{
 
 test('TypeScript follows the instructions, builds, bombards, pauses and restarts',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/?development=1&test#/program/castles/v05');
+ await page.goto('/?development=1&test#/program/castles/basic');
+ await expect(page).toHaveURL(/castles\/basic\/play$/);
  await page.getByRole('link',{name:'TypeScript version',exact:true}).click();
  await expect(page).toHaveURL(/castles\/typescript\/play/);
  await page.goto('/?development=1&test#/program/castles/typescript/play/blank');

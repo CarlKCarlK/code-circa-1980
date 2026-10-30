@@ -12,8 +12,8 @@ also share tape23b with Chemistry Balancer II, copyright 1981.
 Castles began in TRS-80 BASIC. Later versions added a **Z80 assembly routine for
 falling blocks after cannon impacts**, likely to speed up the simulation. Our
 current reference is **v05 BASIC plus FALL assembly v6**; both now run together in
-the emulator, and the TypeScript port follows their rules. v03 remains available
-as the earlier, entirely BASIC version.
+the emulator, and the TypeScript port follows their rules. Earlier versions,
+including the entirely BASIC v03, are kept as source on the site.
 
 **[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)** — no installation required.
 
@@ -88,7 +88,7 @@ Tags `castles-v01` through `castles-v05` identify the canonical history commits.
 For example, `git diff castles-v01 castles-v03 -- programs/castles/original/CASTLES.ASC`
 compares the early builder with the persistent-mode version. The current canonical
 source is v05, the latest inferred historical version; the website now defaults to v05 with its derived FALL dependency loaded.
-Self-contained v03 remains available for comparison.
+Earlier versions are source only on the site; the Level II BASIC player runs v05.
 
 Every recovered listing and tokenized BASIC payload remains unchanged.
 [provenance.json](provenance.json) contains source paths, hashes, capture times,

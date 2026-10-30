@@ -15,10 +15,10 @@
       "save": 9,
       "raw": "versions/v01/09-ARTILLERY-DRAFT01.BAS",
       "listing": "versions/v01/09-ARTILLERY-DRAFT01.ASC",
-      "playable": true,
+      "playable": false,
       "controls": "early",
       "note": "Initial build mode and compact impact routine.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v05, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v02",
@@ -27,10 +27,10 @@
       "save": 10,
       "raw": "versions/v02/10-ARTILLERY-DRAFT02.BAS",
       "listing": "versions/v02/10-ARTILLERY-DRAFT02.ASC",
-      "playable": true,
+      "playable": false,
       "controls": "early",
       "note": "Revised impacts and falling blocks.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v05, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v03",
@@ -39,10 +39,10 @@
       "save": 11,
       "raw": "versions/v03/11-ARTILLERY-DRAFT03.BAS",
       "listing": "versions/v03/11-ARTILLERY-DRAFT03.ASC",
-      "playable": true,
+      "playable": false,
       "controls": "modes",
       "note": "Persistent draw/erase modes, Q to bombard, refined falling routine.",
-      "unavailableReason": null
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v05, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v04",
@@ -71,7 +71,8 @@
         "file": "dependencies/fall-v6/derived.bin",
         "address": 32512,
         "parameter": 32725
-      }
+      },
+      "slug": "basic"
     }
   ]
 }
