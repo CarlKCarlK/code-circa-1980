@@ -111,3 +111,9 @@ falling/support rules are unchanged.
 Keep the original FALL behavior by user preference: stationary blocks need one
 of three supports; moving blocks continue down or diagonally until all three
 lower positions are occupied or they reach the ground.
+
+Modern Save bricks / Load picture use a bricks-only 128 × 96 square-pixel PNG,
+with two vertical pixels per logical block and white bricks on black. Picture imports
+offer a field-sized preview and signed color controls, then visibly run original
+FALL settling after confirmation.
+See [BRICK-FILES.md](BRICK-FILES.md).

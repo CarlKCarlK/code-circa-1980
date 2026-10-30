@@ -1,4 +1,7 @@
 import {Castles} from './engine.ts';
+import {patterns} from './patterns.ts';
+import {saveBrickPng,loadBricks,placeBricks} from './bricks.ts';
+import {previewPicture} from './picture-import.ts';
 import {createPalette} from './palette.ts';
 import {StrokeGuide,screenCell,paintStroke} from './pointer.ts';
 import type {Cell,Tool} from './pointer.ts';
@@ -11,6 +14,8 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   host.tabIndex = 0; host.setAttribute('role', 'group'); host.setAttribute('aria-label', `${title} TypeScript player. Focus here to use the game keys.`);
   const ctx = canvas.getContext('2d')!;
   let paused = false, disposed = false, previous = 0, elapsed = 0, handle = 0;
+  let previewing=false, importAbort:AbortController|null=null;
+  let importFall:Generator<number>|null=null,fallWait=0;
   const tools = document.createElement('div'); tools.className = 'drawing-tools';
   tools.innerHTML = '<label><input type="checkbox" checked> Mouse controls</label><div role="group" aria-label="Mouse tool"><button type="button" data-tool="draw" aria-pressed="true">Draw</button><button type="button" data-tool="erase" aria-pressed="false">Erase</button></div>';
   const feedback = document.createElement('p'); feedback.className = 'drawing-feedback'; feedback.setAttribute('role','status'); feedback.setAttribute('aria-live','polite');
@@ -19,6 +24,18 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const guideHint=document.createElement('p');guideHint.className='small';guideHint.textContent='Grid assist steadies vertical, horizontal, and one-column-per-row diagonals. Choose Diagonal to lock a clean one-column-per-row line; Free removes snapping.';
   const launch=document.createElement('button');launch.textContent='Start bombardment';launch.type='button';
   const building=document.createElement('div');building.append(...tools.childNodes,directionLabel,guideHint,launch,feedback);tools.append(building);
+  const patternLabel=document.createElement('label');patternLabel.textContent='Prebuilt pattern ';
+  const patternSelect=document.createElement('select');patternSelect.setAttribute('aria-label','Prebuilt pattern');
+  for(const pattern of patterns){const option=document.createElement('option');option.value=pattern.id;option.textContent=pattern.label;patternSelect.append(option);}
+  patternLabel.append(patternSelect);
+  const usePattern=document.createElement('button');usePattern.type='button';usePattern.textContent='Load pattern';
+  building.insertBefore(patternLabel,launch);building.insertBefore(usePattern,launch);
+  const patternNotice=document.createElement('p');patternNotice.className='small';patternNotice.textContent='Replaces the current construction.';building.insertBefore(patternNotice,launch);
+  usePattern.onclick=()=>{
+    const pattern=patterns.find(p=>p.id===patternSelect.value)!;
+    release();loadBricks(game,pattern.create());tool='draw';elapsed=previous=0;draw(performance.now());
+    hint(`${pattern.label} loaded. Ready to build or shoot.`);
+  };
   const cannons=document.createElement('div');cannons.hidden=true;
   cannons.innerHTML='<p>Adjust before the next shot.</p><label>Power <input aria-label="Cannon power" type="range" min="0" max="9" value="0"><output>0</output></label><label>Angle <input aria-label="Cannon angle" type="range" min="0" max="25" value="0"><output>A</output></label>';
   const backToBuild=document.createElement('button');backToBuild.type='button';backToBuild.textContent='Return to building';
@@ -26,7 +43,34 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   backToBuild.onclick=()=>{release();game.beginBuilding();elapsed=previous=0;draw(performance.now());};
   const session=document.createElement('div');session.className='palette-session';
   for(const id of ['pause','restart','fullscreen']){const button=document.getElementById(id);if(button)session.append(button);}
-  tools.append(session);
+  const files=document.createElement('div');files.className='palette-session';
+  const save=document.createElement('button');save.type='button';save.textContent='Save bricks';
+  const load=document.createElement('button');load.type='button';load.textContent='Load picture';
+  const picker=document.createElement('input');picker.type='file';picker.accept='image/*';picker.hidden=true;picker.setAttribute('aria-label','Brick image file');
+  const fileStatus=document.createElement('p');fileStatus.setAttribute('role','status');fileStatus.className='small';
+  files.append(save,load,picker,fileStatus);tools.append(session,files);
+  save.onclick=async()=>{
+    release();fileStatus.textContent='Saving bricks…';
+    try{
+      const blob=await saveBrickPng(game);if(disposed)return;
+      const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='castles-bricks.png';a.click();
+      setTimeout(()=>URL.revokeObjectURL(url),1000);fileStatus.textContent='Saved bricks as PNG.';
+    }catch(error){fileStatus.textContent=error instanceof Error?error.message:'Could not save bricks.';}
+  };
+  load.onclick=()=>{release();picker.click();};
+  picker.onchange=async()=>{
+    const file=picker.files?.[0];if(!file)return;fileStatus.textContent='Loading picture…';
+    release();previewing=true;previous=elapsed=0;
+    const controller=new AbortController();importAbort=controller;
+    try{
+      const mask=await previewPicture(file,host,canvas,controller.signal);if(disposed)return;
+      if(!mask){fileStatus.textContent='Picture import canceled.';return;}
+      release();placeBricks(game,mask);importFall=game.settle(46);game.activity='settling';fallWait=0;
+      tool='draw';paused=false;elapsed=previous=0;host.dispatchEvent(new CustomEvent('playerpause',{detail:false}));
+      fileStatus.textContent='Picture loaded; loose bricks are falling.';draw(performance.now());
+    }catch{fileStatus.textContent='Could not load this picture. Choose a supported image file.';}
+    finally{if(importAbort===controller)importAbort=null;previewing=false;previous=elapsed=0;picker.value='';}
+  };
   const palette=createPalette(host,tools,title,()=>{stopStroke();hover=null;game.release();});
   launch.onclick=()=>{press('q',true);press('q',false);};
   for(const input of cannons.querySelectorAll('input'))input.oninput=()=>{
@@ -45,9 +89,11 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     if(id!==undefined&&canvas.hasPointerCapture(id))canvas.releasePointerCapture(id);
   }
   function syncTools() {
-    const available=game.phase==='building'&&!paused&&!launchPending;
-    const state=`${available}/${enabled.checked}/${tool}/${game.phase}/${launchPending}/${paused}`;
+    const available=game.phase==='building'&&!paused&&!launchPending&&!importFall;
+    const state=`${available}/${enabled.checked}/${tool}/${game.phase}/${launchPending}/${paused}/${!!importFall}`;
     if(state===lastUi)return;lastUi=state;
+    save.disabled=game.phase!=='building'||!!importFall;load.disabled=!!importFall;
+    patternSelect.disabled=usePattern.disabled=!available;
     backToBuild.disabled=paused;
     enabled.disabled=!available;direction.disabled=!available;launch.disabled=!available;
     building.hidden=game.phase!=='building';cannons.hidden=game.phase!=='bombarding';
@@ -55,7 +101,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     for(const button of toolButtons){button.disabled=!available||!enabled.checked;button.setAttribute('aria-pressed',String(button.dataset.tool===tool));}
     canvas.style.touchAction=available&&enabled.checked?'none':'auto';
     canvas.style.cursor=available&&enabled.checked?'crosshair':'default';
-    if(!available){stopStroke();hover=null;hint(paused?'Resume to draw or erase.':launchPending?'Starting bombardment…':'Choose Return to building to edit the structure again.');}
+    if(!available){stopStroke();hover=null;hint(paused?'Resume to continue.':importFall?'Loose bricks are falling.':launchPending?'Starting bombardment…':'Choose Return to building to edit the structure again.');}
     else hint(defaultHint());
   }
   function activatePointer() {
@@ -73,13 +119,13 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   }
   canvas.onpointerdown=event=>{
     host.focus({preventScroll:true});
-    if(!event.isPrimary||!enabled.checked||paused||launchPending||game.phase!=='building'||![0,2].includes(event.button))return;
+    if(!event.isPrimary||!enabled.checked||enabled.disabled||paused||launchPending||game.phase!=='building'||![0,2].includes(event.button))return;
     event.preventDefault();stopStroke();activatePointer();hover=pointerAt(event);
     stroke={id:event.pointerId,tool:event.button===2?'erase':tool,last:null,guide:null};
     canvas.setPointerCapture(event.pointerId);if(hover)applyPointer(hover);
   };
   canvas.onpointermove=event=>{
-    if(!event.isPrimary||!enabled.checked||paused||launchPending||game.phase!=='building')return;
+    if(!event.isPrimary||!enabled.checked||enabled.disabled||paused||launchPending||game.phase!=='building')return;
     if(stroke&&!(event.buttons&3))stopStroke();
     activatePointer();hover=pointerAt(event);
     if(hover){game.cursor={...hover};if(stroke?.id===event.pointerId)applyPointer(hover);else hint(defaultHint());}
@@ -96,7 +142,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   enabled.onchange=()=>{release();pointerActive=false;game.mode='move';syncTools();};
   function release() {stopStroke();hover=null;pointerActive=false;launchPending=false;game.release();}
   const press = (key: string, down: boolean) => {
-    if(paused||disposed)return;
+    if(paused||disposed||importFall)return;
     if(down){
       stopStroke();hover=null;
       if(pointerActive){game.release();game.mode=tool;pointerActive=false;}
@@ -120,11 +166,11 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
       const activeTool=stroke?.tool??tool;const result=activeTool==='move'?'unchanged':game.editStatus(hover.x,hover.y,activeTool);
       ctx.strokeStyle=result==='unsupported'||result==='protected'?'#f29d8b':activeTool==='erase'?'#f2d490':'#c1eca8';
       ctx.lineWidth=1;ctx.strokeRect(10+hover.x*4+.5,10+hover.y*8+.5,3,7);
-    } else if (game.phase === 'building' && Math.floor(time / 300) % 2 === 0) {
+    } else if (game.phase === 'building' && !importFall && Math.floor(time / 300) % 2 === 0) {
       const {x,y} = game.cursor; ctx.fillStyle = game.point(x,y) ? '#334843' : '#e6e7fc'; ctx.fillRect(10+x*4, 10+y*8, 4, 8);
     }
     const buildMode=pointerActive&&enabled.checked ? stroke?.tool??tool : game.mode;
-    const description = game.phase === 'building' ? `Building · ${buildMode}` : `Bombardment · shot ${game.shots} · power ${Math.round(game.power*10)} · angle ${String.fromCharCode(65+Math.round(game.angle*26))}`;
+    const description = importFall ? 'Loose bricks falling' : game.phase === 'building' ? `Building · ${buildMode}` : `Bombardment · shot ${game.shots} · power ${Math.round(game.power*10)} · angle ${String.fromCharCode(65+Math.round(game.angle*26))}`;
     if(game.phase!=='building')launchPending=false;
     syncTools();
     const settings=game.cannonSettings();
@@ -136,10 +182,18 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   }
   function frame(time: number) {
     if (disposed) return;
-    if (!paused) {
+    if (!paused&&!previewing) {
       if (previous) elapsed += Math.min(time-previous, 250);
-      let interval = game.stepMs;
-      while (elapsed >= interval) {elapsed -= interval; game.step(); interval = game.stepMs;}
+      if(importFall){
+        while(importFall&&elapsed>=fallWait){
+          elapsed-=fallWait;const result=importFall.next();
+          if(result.done){importFall=null;game.activity='building';game.stepMs=150;elapsed=0;fileStatus.textContent='Loaded bricks; unsupported blocks have settled.';}
+          else fallWait=Math.max(.001,result.value);
+        }
+      }else{
+        let interval = game.stepMs;
+        while (elapsed >= interval) {elapsed -= interval; game.step(); interval = game.stepMs;}
+      }
     }
     previous = time; draw(time); handle = requestAnimationFrame(frame);
   }
@@ -153,10 +207,10 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   draw(0); handle = requestAnimationFrame(frame);
   return {
     press, release, togglePause, get paused() {return paused;},
-    restart() {release();game.reset();tool='draw';paused=false;elapsed=previous=0;draw(performance.now());},
+    restart() {release();importFall=null;game.reset();tool='draw';paused=false;elapsed=previous=0;fileStatus.textContent='';draw(performance.now());},
     snapshot() {return [...game.screen];},
     diagnostics() {return {ticks:game.ticks, paused, held:[...game.held], phase:game.phase, mode:game.mode, pointerTool:tool, mouseControls:enabled.checked,direction:direction.value, dragging:!!stroke, cursor:{...game.cursor}, shots:game.shots,cannonSettings:game.cannonSettings(), activity:game.activity, stepMs:game.stepMs, error:game.error};},
-    dispose() {disposed=true; release(); cancelAnimationFrame(handle);
+    dispose() {disposed=true; importAbort?.abort();release(); cancelAnimationFrame(handle);
       palette.dispose();
       canvas.onpointerdown=canvas.onpointermove=canvas.onpointerup=canvas.onpointercancel=canvas.onlostpointercapture=canvas.onpointerleave=null;canvas.oncontextmenu=null;
       document.removeEventListener('keydown',keydown); document.removeEventListener('keyup',keyup);

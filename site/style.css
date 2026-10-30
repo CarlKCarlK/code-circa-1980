@@ -24,3 +24,7 @@
 .floating-palette p{font-size:11px;line-height:1.45;margin:8px 0}
 .palette-session{display:flex;flex-wrap:wrap;gap:5px;border-top:1px solid #abb59c;padding-top:8px;margin-top:8px}
 .palette-opacity{border-top:1px solid #abb59c;padding-top:6px;font-size:11px}
+.picture-import{width:min(calc(var(--field-width, 532px) + 40px), 96vw);max-width:none;max-height:94vh;overflow:auto;padding:18px;background:#f5f3eb;color:#283c30;border:1px solid #8a9d83;border-radius:7px}
+.picture-import::backdrop{background:#0009}.picture-import h2{font-size:24px;margin:0 0 8px}.picture-import p{margin:6px 0 10px;font-size:13px}
+.screen .picture-import canvas{width:100%;height:auto;image-rendering:pixelated;display:block}
+.picture-channels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}.picture-channels label{font-size:13px;display:flex;flex-wrap:wrap;align-items:center;gap:5px}.picture-channels input{width:100%;accent-color:#324d3e}.picture-channels output{font-variant-numeric:tabular-nums}.picture-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}

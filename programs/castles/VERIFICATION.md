@@ -97,3 +97,59 @@ All 36 unit/comparison checks pass, including mode changes preserving constructi
 cannon settings and positions, stopping an active flight, and restarting shooting.
 Typecheck and production build pass. The panel browser check exercises shooting,
 returning to building, shooting again, pause and restart.
+
+### Brick PNG save and image load (2026-10-29)
+
+All 40 unit/comparison checks pass; production build and typecheck pass. Three
+Chromium browser checks pass covering downloaded PNG dimensions and pHYs data,
+actual PNG save/reload of a supported tower, JPEG and ordinary PNG import,
+upper-left cropping, original settling, invalid-file handling without erasing
+the existing field, and the floating controls. No upload service is used.
+
+Image imports now choose the less common thresholded shade as foreground, counting
+only actual cropped pixels. All 41 unit/comparison checks and the build pass.
+Browser save/reload and JPEG/PNG import checks pass for dark-on-light and
+light-on-dark artwork. Native brick PNGs retain black-as-bricks semantics so dense
+saved constructions do not invert when reloaded.
+
+### Train trestle preset (2026-10-29)
+
+42 unit/comparison checks and the production build pass. The preset's full-width
+deck occupies row 24, with three ground-contact bricks (x=21,64,107 at row 46).
+Each foot can support at most 45 deck columns at that height, so two feet cannot
+support the 128-column span. Branching diagonal supports, a locomotive and four
+cars survive a full settling pass, including execution of the original Z80 code.
+A Chromium browser check passes for selecting/loading the pattern, its deck,
+feet and train details, and clearing with the Empty field preset. Visually
+reviewed the rendered field screenshot.
+
+Oversized picture imports now shrink proportionally to the usable 128 × 47 grid
+with nearest-neighbor sampling instead of cropping. The build and both image
+browser tests pass, including features outside the former crop area, JPEG/PNG
+on both backgrounds, and exact native saved-PNG reloads.
+### Picture import preview (2026-10-29)
+
+The TypeScript importer now previews the full game field with signed red, green,
+and blue controls before accepting a picture. Chromium checks confirm the preview
+matches the field's display width, slider changes alter the preview, Cancel retains
+an existing brick, and OK imports the selected conversion and settles unsupported
+bricks. Saved PNG reloads, JPEG/PNG imports, and invalid-file handling also pass.
+The production build, unit suite, and all 16 browser checks passed; the browser
+suite used a local preview server on an alternate port.
+
+Picture imports now center the sampled image and account for the field's twice-tall
+pixels. Chromium checks cover the preview of square-pixel images and PNGs marked
+with twice-tall pixels, as well as an unchanged saved-field round trip. The build,
+unit suite, and all 17 browser checks passed on a separate local preview port.
+
+Square-pixel saves (2026-10-29) are 128 × 96 PNGs with two identical pixels per
+logical block. Chromium checks verify every pixel pair, PNG geometry, the full
+field after a save and reload, and dense images in both the current and older
+save formats. The production build, unit suite, and all 18 browser checks passed.
+
+White-on-black saves and visible import settling (2026-10-29): Chromium checks
+confirm the PNG's white bricks, black background and paired pixels, exact reload,
+and compatibility with earlier black-brick saves. They also confirm ordinary
+images keep white as bricks regardless of which shade is more common, the loaded
+image appears before falling, intermediate falling positions are visible, and
+Pause freezes the fall. The unit suite and all 20 browser checks passed.
