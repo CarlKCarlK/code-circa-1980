@@ -8,7 +8,7 @@ import type {Cell,Tool} from './pointer.ts';
 /** Browser adapter only; all rules live in engine.ts. */
 export async function createPlayer(host: HTMLElement, _url: string, status: HTMLElement, title: string) {
   const game = new Castles();
-  const background='#121a2e';
+  const background='#1b2a4e';
   const canvas = document.createElement('canvas'); canvas.width = 532; canvas.height = 404;
   canvas.setAttribute('aria-label', `${title} TypeScript playing field`);
   const wrapper = document.createElement('div'); wrapper.append(canvas); host.replaceChildren(wrapper);
