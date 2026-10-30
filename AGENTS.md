@@ -39,7 +39,7 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
 
 ## Commands
 
-`npm ci`, `npm run dev`, `npm test`, `npm run build`, `npm run test:browser`.
+From `app/`: `npm ci`, `npm run dev`, `npm test`, `npm run build`, `npm run test:browser`.
 For a nonstandard local browser installation, set PLAYWRIGHT_CHROMIUM_EXECUTABLE.
 
 ## Preserve both views of historical versions
@@ -100,9 +100,9 @@ and [development checks](docs/development.md).
 ## Repository layout and publishing
 
 Website code, scripts, tests and artwork live under `app/`. Configuration lives
-in `config/`, and the shared VS Code workspace is in `tools/`. Keep the root
+in `app/config/`, and the shared VS Code workspace is in `tools/`. Keep the root
 listing short; put supporting documentation in `docs/`. Run the usual npm
-commands from the root; they explicitly select the relocated configuration.
+commands from `app/`; they explicitly select the relocated configuration.
 Preserve `programs/` historical paths and all frozen `public/experiences/` bytes.
 The user has authorized pushing verified changes and deploying GitHub Pages;
 complete deployment and check the live result before reporting it ready.

@@ -25,6 +25,8 @@ source and dependency versions used to create each release.
 
 ## Develop and release
 
+Run the npm commands below from `app/` (`cd app` from the repository root).
+
 Use the local Vite URL with `?development=1`, for example:
 `http://127.0.0.1:5173/?development=1#/program/castles/typescript`.
 This opens the editable source. A normal URL opens the latest frozen release.

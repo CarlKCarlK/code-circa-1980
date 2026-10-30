@@ -94,7 +94,7 @@ This preserves instructions before launch without requiring a collection detour.
 - Move TODO.md and WEB-VERSIONS.md into `docs/`, updating references. Keep this
   spec there too. Use one docs directory rather than adding several root files.
 - Evaluate moving the workspace file to `tools/` and tool configuration to
-  `config/`. Adjust relative paths and explicit config flags in package scripts,
+  `app/config/`. Adjust relative paths and explicit config flags in package scripts,
   CI, and release scripts; do not make these moves unless they reduce root
   clutter without obscuring normal developer commands. Preserve both repositories
   in the workspace. A moved TypeScript config needs its include paths adjusted.
@@ -312,7 +312,7 @@ not evidence that the live website has the same redirect loop.
 - [Player controls and lifecycle](../programs/castles/typescript/player.ts)
 - [Floating palette](../programs/castles/typescript/palette.ts)
 - [Game rules](../programs/castles/typescript/engine.ts)
-- [Styles](../app/site/style.css), [HTML metadata](../index.html)
+- [Styles](../app/site/style.css), [HTML metadata](../app/index.html)
 - [Web-release preservation workflow](WEB-VERSIONS.md)
 - [Live collection](https://carlkcarlk.github.io/code-circa-1980/)
 - [GitHub entry](https://github.com/CarlKCarlK/code-circa-1980)

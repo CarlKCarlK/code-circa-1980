@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {createServer} from 'vite';
 import {chromium} from '@playwright/test';
-const server=await createServer({configFile:new URL('../../config/vite.config.js',import.meta.url).pathname,server:{host:'127.0.0.1',port:0}});
+const server=await createServer({configFile:new URL('../config/vite.config.js',import.meta.url).pathname,server:{host:'127.0.0.1',port:0}});
 let browser;
 try{
  await server.listen();
