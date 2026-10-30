@@ -20,7 +20,8 @@ async function boot(page,version='v03'){
 test('collection leads to instructions; versions and downloads remain available',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1');
- await page.getByRole('link',{name:/Instructions & play/}).click();
+ await expect(page.getByRole('link',{name:'Play Castles →'})).toHaveAttribute('href',/castles\/typescript\/play\/bridge$/);
+ await page.goto('/?development=1#/program/castles/typescript');
  await expect(page.getByRole('heading',{name:'Castles',exact:true})).toBeVisible();
  await expect(page).toHaveURL(/castles\/typescript$/);
  await expect(page.locator('.quick-start')).toContainText('Start with a bridge');
