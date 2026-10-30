@@ -15,9 +15,14 @@ const defaultEdition = program => program.defaultImplementation==='typescript' &
 const crumbs = program => `<nav aria-label="Breadcrumb"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
 const galleryUrl=program=>`${collectionUrl.href}#/program/${program.id}/web-versions`;
 const experienceUrl=(program,version)=>new URL(`experiences/${program.id}/${version.id}/`,collectionUrl).href;
-function webVersionNavigation(program){
- return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span><a href="${galleryUrl(program)}">All web versions</a>${webVersion?`<a href="${collectionUrl.href}#/program/${program.id}">Latest version</a>`:''}</nav>`;
+function versionPicker(program,current){
+ const versions=[...program.webVersions].reverse();
+ return `<label class="version-picker">${escape(program.title)} version <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)} · ${escape(v.label)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
 }
+function webVersionNavigation(program){
+ return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span>${program.webVersions.length?versionPicker(program,webVersion):''}${webVersion?`<a href="${collectionUrl.href}#/program/${program.id}">Latest version</a>`:''}</nav>`;
+}
+// Kept for the "All web versions" link built into frozen releases v1-v3.
 function webVersionGallery(program){
  const versions=[...program.webVersions].reverse();
  return `${crumbs(program)}<section class="intro"><p class="eyebrow">Web experiences</p><h1>${escape(program.title)} versions</h1><p class="lede">Choose a version of the browser experience. Each release keeps its own controls, presentation, and playable code. Recovered BASIC versions remain available inside each release.</p></section><section class="web-version-gallery" aria-label="Web versions">${versions.map((v,i)=>`<article><p class="eyebrow">${escape(v.id)}${i===0?' · Latest':''}</p><h2>${escape(v.label)}</h2><p class="small">Released ${escape(v.released)}</p><a class="primary" href="${experienceUrl(program,v)}">Open ${escape(v.id)}</a></article>`).join('')}</section>`;
@@ -40,7 +45,7 @@ async function render() {
     document.title = 'Code Circa 1980';
     app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<a class="program-card" href="${route(p,defaultEdition(p))}"><div class="card-art" aria-hidden="true"><img class="collection-art" src="${new URL('../assets/castles-game.svg',import.meta.url).href}" alt="" width="532" height="308"></div><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)} / Original BASIC</span><h2>${escape(p.title)} <span>↗</span></h2><p>${escape(p.description)}</p><span class="card-link">Instructions & play →</span></div></a>`).join('')}</section>`;
     const links=document.createElement('div');links.className='collection-version-links';
-    for(const program of programs){const link=document.createElement('a');link.href=galleryUrl(program);link.textContent=`${program.title} · all web versions`;links.append(link);}
+    links.innerHTML=programs.filter(p=>p.webVersions.length).map(p=>versionPicker(p)).join('');
     app.querySelector('.collection').after(links);
     return;
   }
