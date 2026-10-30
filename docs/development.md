@@ -1,6 +1,8 @@
 # Development
 
-Node.js 22.12+ (or 24+) is required. From the repository root:
+Node.js 22.12+ (or 24+) is required. The quickest start, from the repository root,
+is `just show` (or `just show bal`, `just show castles`): it installs dependencies
+if needed, starts the dev server on a free port and opens your browser. Or:
 
 ```sh
 cd app

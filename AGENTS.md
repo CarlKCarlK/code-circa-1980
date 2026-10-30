@@ -42,6 +42,7 @@ AI attribution lines to commit messages or pull request descriptions.
 
 ## Commands
 
+From the root, `just show [program]` starts the dev server and opens a browser.
 From `app/`: `npm ci`, `npm run dev`, `npm test`, `npm run build`, `npm run test:browser`.
 
 Move fast: this is a personal project. After each change run `npm test` and
