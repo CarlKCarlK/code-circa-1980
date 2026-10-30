@@ -6666,6 +6666,69 @@
           "sha256": "b7e05326eb33c71bf949f68a4d900e6a9fc30520a027bf11b54842e352e5bc50"
         }
       ]
+    },
+    {
+      "version": "v19",
+      "family": "Chemistry Balancer II (1981)",
+      "label": "Elimination rework",
+      "capture": "tape15b",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape15b/best/10-CHEMISTRY-BALANCER-II-SAVE-5.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/10-CHEMISTRY-BALANCER-II-SAVE-5.ASC",
+      "sha256": "a05fc9094fb67882d6c087b9872328e87bff8946f76c19a3b9e4bb2144b65c87",
+      "bytes": 9956,
+      "listing_sha256": "a4f2eb46f92ce025123ebe3f91915c4562eb3defa51a08ffe52067cb00c3e6d0",
+      "listing_lines": 225,
+      "recovery_evidence": "tapes/recovered/tape15b/inventory.json",
+      "inventory_row": {
+        "summary": "CHEMISTRY BALANCER II SAVE 5; 225 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match; disputed bit examined in both channels",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 10,
+        "title": "CHEMISTRY-BALANCER-II-SAVE-5",
+        "title_note": "Descriptive interpretation; save numbering is capture order, not source version",
+        "binary": "tapes/recovered/tape15b/best/10-CHEMISTRY-BALANCER-II-SAVE-5.BAS",
+        "listing": "tapes/recovered/tape15b/best/10-CHEMISTRY-BALANCER-II-SAVE-5.ASC",
+        "selected_source": "tapes/recovered/tape15b/timing-refinement/T10-left-hp1200-a05fc9094fb6.BAS",
+        "matching_sources": [
+          "tapes/recovered/tape15b/timing-refinement/T10-left-hp1200-a05fc9094fb6.BAS",
+          "tapes/recovered/tape15b/timing-refinement/T10-right-boosted-a05fc9094fb6.BAS"
+        ],
+        "source_start_s": 987.213,
+        "source_end_s": 1143.6305833333333,
+        "sha256": "a05fc9094fb67882d6c087b9872328e87bff8946f76c19a3b9e4bb2144b65c87",
+        "bytes": 9956,
+        "lines": 225,
+        "last_line": 11030,
+        "pointer_bases": [
+          17125
+        ],
+        "end_marker": true,
+        "parsed_bytes": 9956,
+        "recovery_complete": true,
+        "execution_tested": false,
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "conflict_resolution": "Alternate structurally valid candidates retained. Broad timing/data-window sweep favors selection; direct inspection of disputed bit 1 (mask 0x02) finds no data pulse in both channels. See diagnostics/pulse-conflicts.json."
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v19/10-CHEMISTRY-BALANCER-II-SAVE-5.BAS",
+      "snapshot_listing": "versions/v19/10-CHEMISTRY-BALANCER-II-SAVE-5.ASC",
+      "snapshot_extra_raw": [],
+      "imported_files": [
+        {
+          "path": "versions/v19/10-CHEMISTRY-BALANCER-II-SAVE-5.BAS",
+          "bytes": 9956,
+          "sha256": "a05fc9094fb67882d6c087b9872328e87bff8946f76c19a3b9e4bb2144b65c87"
+        },
+        {
+          "path": "versions/v19/10-CHEMISTRY-BALANCER-II-SAVE-5.ASC",
+          "bytes": 12295,
+          "sha256": "a4f2eb46f92ce025123ebe3f91915c4562eb3defa51a08ffe52067cb00c3e6d0"
+        }
+      ]
     }
   ]
 }
