@@ -18,7 +18,12 @@ test('collection and program links open the Rust player directly, with About ope
  }
  await page.goto('/?development=1#/program/bal');
  await expect(page.locator('.source-details')).toHaveAttribute('open','');
- await expect(page.locator('.source-details')).toContainText('Radio Shack sold Chemistry Balancer II');
+ await expect(page.locator('.source-details')).toContainText('WITHOUT TRIAL & ERROR');
+ for(const img of await page.locator('.source-details .catalog-figures img').all()){
+  const href=await img.locator('xpath=..').getAttribute('href');
+  expect(href).toBe(await img.getAttribute('src'));
+  expect((await page.request.get(href)).ok()).toBeTruthy();
+ }
  expect(errors).toEqual([]);
 });
 

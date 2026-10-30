@@ -1,10 +1,11 @@
 # Catalog listings
 
 Two listings for my balancer programs from Radio Shack's *TRS-80 Applications
-Software Sourcebook*, Volume IV (Cat. No. 26-2114), supplied by Carl Kadie on
-2026-10-30. Transcriptions keep the original spelling and layout. The street
+Software Sourcebook*, a directory of independently sold software: Chemistry
+Equation Balancer in Volume I (1980) and Chembalancer II in Volume IV (1982,
+Cat. No. 26-2114), supplied by Carl Kadie on 2026-10-30. Transcriptions keep the original spelling and layout. The street
 address, city and phone number are blacked out in the images and marked
-[redacted] below; the catalog date is not recorded here.
+[redacted] below.
 
 ![Cover of the TRS-80 Applications Software Sourcebook, Volume IV](sourcebook-volume-iv-cover.png)
 

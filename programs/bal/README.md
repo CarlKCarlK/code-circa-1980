@@ -14,8 +14,8 @@ I wrote two generations of it in TRS-80 BASIC:
   element rows, and eliminates with exact fractions kept as numerator/denominator
   pairs reduced by a GCD routine. It also reports when an equation has only a
   negative solution or is ambiguous (more than one independent way to balance it).
-  Radio Shack sold it in its catalog; see the [catalog listings](history/) for
-  both programs.
+  I advertised both programs in Radio Shack's *TRS-80 Applications Software
+  Sourcebook*; see the [catalog listings](history/).
 
 Balancing is linear algebra: each element gives one homogeneous linear equation,
 each compound one unknown coefficient. A balanced equation is a strictly positive
