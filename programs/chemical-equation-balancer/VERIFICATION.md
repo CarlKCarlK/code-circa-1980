@@ -48,9 +48,11 @@ selectable for study; the site default is the Rust version, with v20 as Original
 ## Browser (`npm run test:browser`, `tests/browser/balancer.spec.js`)
 
 Against a production preview: the collection card reads "02 / Science" and runs
-the Rust version; the start page opens About, history & source; side-panel
-problems fill the equation and balance it; typed equations, the linear-equation
-view, an error case and Clear work; the Original tab opens v20; and v06 accepts
+the Rust version; the start page opens About, history & source; the entry box
+starts with a real equation and nothing is solved until Balance is pressed;
+side-panel problems only fill in the equation; the 1981 printout line comes
+before modern notation; typed equations, the linear-equation view, an error
+case and Clear work; the Rust/JS and Level II BASIC version tabs switch to v20; and v06 accepts
 a typed equation in the emulator and prints the correct answer.
 
 Not tested in the browser: every historical version, phone layouts, and full

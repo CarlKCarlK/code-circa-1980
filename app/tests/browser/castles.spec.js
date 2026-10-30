@@ -117,7 +117,7 @@ test('v05 original runs with the assembled FALL dependency',async({page})=>{
 test('TypeScript follows the instructions, builds, bombards, pauses and restarts',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1&test#/program/castles/v05');
- await page.getByRole('link',{name:'Browser version',exact:true}).click();
+ await page.getByRole('link',{name:'TypeScript version',exact:true}).click();
  await expect(page).toHaveURL(/castles\/typescript$/);
  await expect(page.locator('.quick-start')).toContainText('Start with an arch and a tower');
  await expect(page.locator('canvas')).toHaveCount(0);
