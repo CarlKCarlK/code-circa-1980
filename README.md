@@ -8,8 +8,8 @@ I wrote these programs in the early days of personal computing; now they run aga
 
 Build towers and bridges from supported blocks, then let two cannons test them.
 It is a software toy with no score; see if you can work out the rules of its physics.
-The browser version has mouse and touch controls; the recovered TRS-80 original
-is available alongside it.
+The browser version has mouse and touch controls; the original program from about
+1982 runs alongside it, unchanged, in an emulator.
 
 I probably wrote Castles around 1982, first in BASIC and later with a little Z80
 assembly. The date is an estimate from a dated program on the other side of the

@@ -38,7 +38,7 @@ test('help and switching preserve exact construction and pause state',async({pag
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  await page.getByRole('button',{name:'Help',exact:true}).click();await page.keyboard.press('Escape');
  expect((await page.evaluate(()=>window.__circaPlayer.diagnostics())).paused).toBe(true);
- await page.getByRole('link',{name:'Original TRS-80',exact:true}).click();
+ await page.getByRole('link',{name:'Original',exact:true}).click();
  await expect(page.locator('#status')).toContainText('Running original BASIC');
  await page.getByRole('button',{name:'Pause',exact:true}).click();
  const original=await snapshot(page);

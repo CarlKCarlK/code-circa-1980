@@ -3,7 +3,7 @@ test.beforeEach(async({page})=>{page.on('dialog',dialog=>dialog.accept());});
 test('bare Castles route selects TypeScript while the original remains selectable',async({page})=>{
  await page.goto('/?development=1#/program/castles');
  await expect(page.getByRole('link',{name:'Browser version',exact:true})).toHaveAttribute('aria-current','page');
- await page.getByRole('link',{name:'Original TRS-80',exact:true}).click();
+ await page.getByRole('link',{name:'Original',exact:true}).click();
  await expect(page).toHaveURL(/castles\/v05$/);
 });
 test('grid assist and diagonal lock draw thin supported diagonal strokes',async({page})=>{
