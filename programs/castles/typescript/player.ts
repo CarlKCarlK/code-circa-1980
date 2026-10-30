@@ -3,6 +3,7 @@ import {patterns} from './patterns.ts';
 import {saveBrickPng,loadBricks,placeBricks} from './bricks.ts';
 import {previewPicture} from './picture-import.ts';
 import {createPalette} from './palette.ts';
+import {createSound} from './sound.ts';
 import {StrokeGuide,screenCell,paintStroke} from './pointer.ts';
 import type {Cell,Tool} from './pointer.ts';
 /** Browser adapter only; all rules live in engine.ts. */
@@ -20,6 +21,12 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const IMAGE_FALL_SPEEDUP=10;
   let importFall:Generator<number>|null=null,fallWait=0;
   const dock=document.getElementById('control-dock')!;host.append(dock);
+  const sound=createSound();
+  const soundButton=document.createElement('button');soundButton.type='button';soundButton.id='sound';
+  const syncSound=()=>{soundButton.textContent=sound.muted?'Sound off':'Sound on';soundButton.setAttribute('aria-pressed',String(!sound.muted));};
+  soundButton.onclick=()=>{sound.setMuted(!sound.muted);sound.unlock();syncSound();};syncSound();
+  dock.querySelector('.essential-controls')?.append(soundButton);
+  host.addEventListener('pointerdown',()=>sound.unlock());
   const tools = document.createElement('div'); tools.className = 'drawing-tools';
   tools.innerHTML = '<div role="group" aria-label="Mouse tool"><button type="button" data-tool="draw" aria-pressed="true">Draw</button><button type="button" data-tool="erase" aria-pressed="false">Erase</button></div>';
   const feedback = document.createElement('p'); feedback.className = 'drawing-feedback'; feedback.setAttribute('role','status'); feedback.setAttribute('aria-live','polite');
@@ -40,7 +47,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const advanced=document.createElement('details');advanced.className='advanced-tools';advanced.innerHTML='<summary>More options</summary>';
   const assist=document.createElement('div');assist.append(directionLabel,guideHint);advanced.append(assist);tools.append(advanced);
   patternSelect.onchange=()=>{
-    const choice=patternSelect.value;patternSelect.value='';release();
+    const choice=patternSelect.value;patternSelect.value='';release();sound.unlock();
     if(choice==='image'){picker.click();return;}
     const pattern=patterns.find(p=>p.id===choice);if(!pattern)return;
     if(hasWork()&&!confirm('Replace your construction with this scene?'))return;
@@ -88,7 +95,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   // New players start with weak but visible shots (power 1, arc 3°) so they reach for the sliders;
   // at the BASIC's 0/0 nothing seems to happen. Keyboard Q keeps the original behavior.
   let startingAim=false;
-  launch.onclick=()=>{const {power,angle}=game.cannonSettings();startingAim=power===0&&angle===0;press('q',true);press('q',false);};
+  launch.onclick=()=>{sound.unlock();const {power,angle}=game.cannonSettings();startingAim=power===0&&angle===0;press('q',true);press('q',false);};
   for(const input of cannons.querySelectorAll('input'))input.oninput=()=>{
     const key=input.getAttribute('aria-label')==='Cannon power'?input.value:String.fromCharCode(97+Number(input.value));
     game.setCannonSetting(input.getAttribute('aria-label')==='Cannon power'?'power':'angle',Number(input.value));input.nextElementSibling!.textContent=input.getAttribute('aria-label')==='Cannon power'?key:`${Math.round(Number(input.value)*90/26)}°`;
@@ -168,7 +175,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   };
   const keydown = (event: KeyboardEvent) => {
     if (document.activeElement !== host || event.ctrlKey || event.metaKey || event.altKey) return;
-    if (/^[0-9a-z]$/i.test(event.key) || event.key === 'Shift') {event.preventDefault(); press(event.key, true);}
+    if (/^[0-9a-z]$/i.test(event.key) || event.key === 'Shift') {event.preventDefault(); sound.unlock(); press(event.key, true);}
   };
   const keyup = (event: KeyboardEvent) => { if (game.held.has(event.key.toLowerCase())) {event.preventDefault(); press(event.key, false);} };
   function draw(time: number) {
@@ -203,19 +210,26 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     const statusMessage = paused ? 'Paused' : game.phase === 'error' ? `Stopped: ${game.error}. Choose Erase all to begin again.` : description;
     if(status.textContent!==statusMessage)status.textContent=statusMessage;
   }
+  let heardShots=0,heardActivity=game.activity,heardFall=game.fallSteps;
+  function listen(){
+    if(game.shots>heardShots)sound.play('fire');
+    if(game.activity==='impact'&&heardActivity!=='impact')sound.play('impact');
+    if(game.fallSteps>heardFall)sound.play('fall');
+    heardShots=game.shots;heardActivity=game.activity;heardFall=game.fallSteps;
+  }
   function frame(time: number) {
     if (disposed) return;
     if (!paused&&!previewing) {
       if (previous) elapsed += Math.min(time-previous, 250);
       if(importFall){
         while(importFall&&elapsed>=fallWait){
-          elapsed-=fallWait;const result=importFall.next();
+          elapsed-=fallWait;const result=importFall.next();listen();
           if(result.done){importFall=null;game.activity='building';game.stepMs=150;elapsed=0;fileStatus.textContent='Image loaded; unsupported blocks have settled.';}
           else fallWait=Math.max(.001,result.value/IMAGE_FALL_SPEEDUP);
         }
       }else{
         let interval = game.stepMs;
-        while (elapsed >= interval) {elapsed -= interval; game.step(); interval = game.stepMs;}
+        while (elapsed >= interval) {elapsed -= interval; game.step(); listen(); interval = game.stepMs;}
       }
     }
     previous = time; draw(time); handle = requestAnimationFrame(frame);
@@ -235,9 +249,9 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
     press, release, togglePause, get paused() {return paused;},
     restart() {release();importFall=null;game.reset();tool='draw';keyboardActive=false;paused=false;elapsed=previous=0;fileStatus.textContent='';draw(performance.now());},
     snapshot() {return [...game.screen];},
-    diagnostics() {return {ticks:game.ticks, paused, held:[...game.held], phase:game.phase, mode:game.mode, pointerTool:tool,direction:direction.value, dragging:!!stroke, cursor:{...game.cursor}, shots:game.shots,cannonSettings:game.cannonSettings(), activity:game.activity, stepMs:game.stepMs, error:game.error};},
+    diagnostics() {return {ticks:game.ticks, paused, sounds:sound.played(), muted:sound.muted, held:[...game.held], phase:game.phase, mode:game.mode, pointerTool:tool,direction:direction.value, dragging:!!stroke, cursor:{...game.cursor}, shots:game.shots,cannonSettings:game.cannonSettings(), activity:game.activity, stepMs:game.stepMs, error:game.error};},
     dispose() {disposed=true; importAbort?.abort();release(); cancelAnimationFrame(handle);
-      palette.dispose();
+      palette.dispose();sound.dispose();soundButton.remove();
       canvas.onpointerdown=canvas.onpointermove=canvas.onpointerup=canvas.onpointercancel=canvas.onlostpointercapture=canvas.onpointerleave=null;canvas.oncontextmenu=null;
       document.removeEventListener('keydown',keydown); document.removeEventListener('keyup',keyup);
       host.removeEventListener('blur',release); window.removeEventListener('blur',release); document.removeEventListener('visibilitychange',visibility);}
