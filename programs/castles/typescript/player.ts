@@ -16,6 +16,8 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   const ctx = canvas.getContext('2d')!;
   let paused = false, disposed = false, previous = 0, elapsed = 0, handle = 0;
   let previewing=false, importAbort:AbortController|null=null;
+  // Loaded images settle 10x faster than the original FALL routine timing; cannon hits keep it.
+  const IMAGE_FALL_SPEEDUP=10;
   let importFall:Generator<number>|null=null,fallWait=0;
   const dock=document.getElementById('control-dock')!;host.append(dock);
   const tools = document.createElement('div'); tools.className = 'drawing-tools';
@@ -209,7 +211,7 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
         while(importFall&&elapsed>=fallWait){
           elapsed-=fallWait;const result=importFall.next();
           if(result.done){importFall=null;game.activity='building';game.stepMs=150;elapsed=0;fileStatus.textContent='Image loaded; unsupported blocks have settled.';}
-          else fallWait=Math.max(.001,result.value);
+          else fallWait=Math.max(.001,result.value/IMAGE_FALL_SPEEDUP);
         }
       }else{
         let interval = game.stepMs;
