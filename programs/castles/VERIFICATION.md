@@ -203,3 +203,9 @@ Safari/Firefox, screen-reader or newcomer usability study. Sessions survive
 in-page navigation, not reload. No exhaustive historical runtime parity claim.
 Optional sound, supplied biography, social preview work and additional castle
 pictures remain later tasks in the TODO. Publication is separate.
+
+Final local release check: all **28 browser tests pass** against the production
+build containing web v2. Normal latest-program and shared play links reach v2;
+the gallery still launches unchanged v1. `npm run verify:web-versions -- --against
+a23941cb96874ec7f178b7f4f6af7523b0442b46` verifies both immutable releases and
+preservation of v1. Web v2 was frozen from source commit `7362816`.
