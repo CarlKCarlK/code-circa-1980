@@ -83,6 +83,7 @@ async function render() {
     host.querySelector('#control-dock').append(app.querySelector('.keyboard-help'));
     // '/castle' starts with the default scene; '/bridge' is the older name kept for shared links.
     if(modern&&['castle','bridge'].includes(parts[4]))instance.loadStartingPattern('arch-tower');
+    program.decoratePlayer?.(instance,{dock:host.querySelector('#control-dock'),version,modern,status});
     // Read-only test interface, enabled only for a test URL.
     exposePlayer(instance);
     const pause=document.querySelector('#pause');

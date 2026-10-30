@@ -58,3 +58,21 @@ test('original 1979 v06 balances a typed equation in the emulator',async({page})
  await page.keyboard.type('FE+O2=FE2.O3');await page.keyboard.press('Enter');
  await expect.poll(()=>screenText(page),{timeout:30000}).toContain('4 (FE)+ 3 (O2) -^ 2 (FE2.O3)');
 });
+
+test('Level II BASIC player takes side-panel problems and pasted text',async({page})=>{
+ await page.goto('/?development=1&test#/program/chemical-equation-balancer/v06/play');
+ await expect(page.locator('#status')).toContainText('Running original BASIC');
+ await expect.poll(()=>screenText(page),{timeout:15000}).toContain('WHAT IS THE EQUATION');
+ await expect(page.locator('.balancer-problems summary',{hasText:'Ions'})).toHaveCount(0);
+ await page.getByRole('button',{name:'Rust'}).click();
+ await expect.poll(()=>screenText(page),{timeout:10000}).toContain('? FE+O2=FE2.O3');
+ await expect(page.locator('#display')).toBeFocused();
+ await page.keyboard.press('Enter');
+ await expect.poll(()=>screenText(page),{timeout:30000}).toContain('4 (FE)+ 3 (O2) -^ 2 (FE2.O3)');
+ await page.goto('/?development=1&test#/program/chemical-equation-balancer/v20/play');
+ await expect(page.locator('#status')).toContainText('Running original BASIC');
+ await expect.poll(()=>screenText(page),{timeout:15000}).toContain('RAW EQUATION?');
+ await page.locator('#display').click();
+ await page.evaluate(()=>{const data=new DataTransfer();data.setData('text/plain','H2 + O2 = H2.O');document.dispatchEvent(new ClipboardEvent('paste',{clipboardData:data,bubbles:true}));});
+ await expect.poll(()=>screenText(page),{timeout:10000}).toContain('? H2 + O2 = H2.O');
+});
