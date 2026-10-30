@@ -72,6 +72,15 @@ Use `npm run build:fall` to reproduce the derived executable; never describe tha
 modern build as recovered historical machine code. Record provenance for any
 new external dependency before enabling a historical version in the player.
 
+Chemical Equation Balancer uses a Rust port of Chemistry Balancer II v20 in
+`programs/chemical-equation-balancer/rust/`, compiled to WebAssembly. After
+changing Rust sources run `cargo test` there and `npm run build:balancer`, and
+commit the regenerated `rust/pkg/`; `npm test` rejects a stale build. Differences
+are in its PARITY.md. Its browser version is the site default; v20 is Original.
+
+Run browser tests against your own preview port (`PLAYWRIGHT_BASE_URL`) when
+another worktree may already be serving 5181, since Playwright reuses it.
+
 Write the collection’s personal history in first person ("I wrote"), not as a
 third-person biography. Preserve historical source credits and copyright notices.
 

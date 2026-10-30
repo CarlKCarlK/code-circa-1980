@@ -15,6 +15,13 @@ I probably wrote Castles around 1982, first in BASIC and later with a little Z80
 assembly. The date is an estimate from a dated program on the other side of the
 tape, not a date found in Castles itself. The original bytes are preserved.
 
+**[Run Chemical Equation Balancer](https://carlkcarlk.github.io/code-circa-1980/#/program/chemical-equation-balancer)**:
+type an unbalanced chemical equation and get whole-number coefficients. I wrote it
+in 1979 and rewrote it as Chemistry Balancer II in 1981, which Radio Shack sold in
+its catalog. The browser version runs a Rust port of the 1981 algorithm; all 20
+recovered BASIC versions also run in the emulator. See
+[programs/chemical-equation-balancer](programs/chemical-equation-balancer/).
+
 ## License
 
 The code is available under either [MIT](LICENSE-MIT) or
