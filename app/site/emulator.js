@@ -8,7 +8,7 @@ class CobaltScreen extends CanvasScreen { getBackgroundColor() { return '#1e4b8f
 // Executes recovered tokenized BASIC through the Z80 and original BASIC ROM.
 // The library relocates the in-memory line pointers on load. The source file
 // and every archived byte remain unchanged.
-export async function createPlayer(host, url, status, title, dependency) {
+export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC'} = {}) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Could not load original program (${response.status}).`);
   const bytes = new Uint8Array(await response.arrayBuffer());
@@ -68,12 +68,12 @@ export async function createPlayer(host, url, status, title, dependency) {
     machine.runBasicProgram(program);
     if (machineBytes) machine.eventScheduler.add(undefined, machine.tStateCount+machine.clockHz*0.31, () => machine.writeMemoryBlock(dependency.address,machineBytes));
     machine.start();
-    status.textContent = 'Running original BASIC · click the screen to use the keys';
+    status.textContent = `${running} · click the screen to use the keys`;
   }
   function togglePause() {
     release(); paused = !paused;
     if (paused) { machine.stop(); status.textContent = 'Paused'; }
-    else { machine.start(); status.textContent = 'Running original BASIC'; }
+    else { machine.start(); status.textContent = running; }
     host.dispatchEvent(new CustomEvent('playerpause', {detail:paused}));
   }
   restart();

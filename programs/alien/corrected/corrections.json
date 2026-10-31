@@ -1,0 +1,84 @@
+{
+  "source": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
+  "rule": "Spelling only, and only inside quoted strings the game prints. Tokens, line numbers, logic, REM comments and spacing are unchanged, except two line-specific layout fixes where a corrected line would otherwise exceed 63 columns (a 64-column line leaves a blank line; 65 wraps). Line pointers are recomputed for the new lengths with the original memory base.",
+  "replacements": [
+    [
+      "JUCTIONOS",
+      "JUNCTIONS"
+    ],
+    [
+      "JUCTION",
+      "JUNCTION"
+    ],
+    [
+      "ALEIN",
+      "ALIEN"
+    ],
+    [
+      "IS TO LATE",
+      "IS TOO LATE"
+    ],
+    [
+      "LEAD TWO SPACE",
+      "LEAD TO SPACE"
+    ],
+    [
+      "THOUGHOUT",
+      "THROUGHOUT"
+    ],
+    [
+      "VACUME",
+      "VACUUM"
+    ],
+    [
+      "VACUM ",
+      "VACUUM "
+    ],
+    [
+      "FALIURE",
+      "FAILURE"
+    ],
+    [
+      "DIS-OREINT",
+      "DISORIENT"
+    ],
+    [
+      "NIETHER",
+      "NEITHER"
+    ],
+    [
+      "BOOBIE-TRAPPED",
+      "BOOBY-TRAPPED"
+    ],
+    [
+      "YOUR ARE IN",
+      "YOU ARE IN"
+    ],
+    [
+      "TENICALS",
+      "TENTACLES"
+    ],
+    [
+      "GLOP TO SLIME",
+      "GLOP OF SLIME"
+    ],
+    [
+      " NO WHERE.",
+      " NOWHERE."
+    ]
+  ],
+  "layout": [
+    {
+      "line": 1010,
+      "from": "GOTTEN ON-BOARD, ALREADY",
+      "to": "GOTTEN ONBOARD, ALREADY",
+      "reason": "TOO makes this line 64 columns, which prints an extra blank line"
+    },
+    {
+      "line": 1245,
+      "from": "  CLOSING A JUNCTION:",
+      "to": "CLOSING A JUNCTION:",
+      "reason": "Corrected spelling makes this line 65 columns, which wraps YOU onto its own line"
+    }
+  ]
+}
