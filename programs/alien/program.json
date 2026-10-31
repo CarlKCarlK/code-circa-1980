@@ -1,0 +1,23 @@
+{
+  "id": "alien",
+  "title": "Alien",
+  "description": "Hunt an alien through the air vents of your spaceship before it finds you. My 1979 re-theme of Gregory Yob's Hunt the Wumpus.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "defaultVersion": "v01",
+  "versionOrder": "Inferred development sequence, not established dates. Both versions are on tape22b: v01 (saves 6-7) precedes v02 (saves 8-9) in save order, and v02 contains v01's game with additions. Tape numbers alone do not establish chronology.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Early \u00b7 Alien re-theme",
+      "capture": "tape22b",
+      "save": 6,
+      "raw": "versions/v01/06-ALIEN-HUNT-EARLY-SAVE01.BAS",
+      "listing": "versions/v01/06-ALIEN-HUNT-EARLY-SAVE01.ASC",
+      "playable": true,
+      "note": "Hunt the Wumpus re-themed: air vents, vacuum chambers, computer failure and poison gas. Drops Yob's crooked-arrow check.",
+      "unavailableReason": null,
+      "slug": "basic"
+    }
+  ]
+}

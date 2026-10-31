@@ -1,0 +1,25 @@
+{
+  "title": "Alien",
+  "version": "v01",
+  "label": "Early \u00b7 Alien re-theme",
+  "capture": "tape22b",
+  "save": 6,
+  "order_inferred": true,
+  "order_evidence": "Inferred development sequence, not established dates. Both versions are on tape22b: v01 (saves 6-7) precedes v02 (saves 8-9) in save order, and v02 contains v01's game with additions. Tape numbers alone do not establish chronology.",
+  "files": [
+    {
+      "canonical_path": "ALIEN.ASC",
+      "snapshot_path": "versions/v01/06-ALIEN-HUNT-EARLY-SAVE01.ASC",
+      "archive_path": "tapes/recovered/tape22b/best/06-ALIEN-HUNT-EARLY-SAVE01.ASC",
+      "sha256": "c245ecbe957d5035658aaa487767724eb80d2ee1cbf3e3fd93308726f932142a",
+      "bytes": 6344
+    },
+    {
+      "canonical_path": "ALIEN.BAS",
+      "snapshot_path": "versions/v01/06-ALIEN-HUNT-EARLY-SAVE01.BAS",
+      "archive_path": "tapes/recovered/tape22b/best/06-ALIEN-HUNT-EARLY-SAVE01.BAS",
+      "sha256": "b8c95badc88c6d21720d07da0726c873cc815a1fc3f4057f34b9589b19fe5710",
+      "bytes": 5514
+    }
+  ]
+}
