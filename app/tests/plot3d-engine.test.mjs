@@ -48,11 +48,11 @@ test('a formula can set NO=1 to lift the pen, as line 210 allows',()=>{
  assert.ok(count('Y=0:IF X=0 THEN NO=1')<count('Y=0'));
 });
 
-test('what-if high resolution: the same program on a 1024 × 768 screen',()=>{
- assert.deepEqual(screenSize(HIGH_RES),{width:1024,height:768});
+test('what-if high resolution: the same program on a 512 × 384 screen',()=>{
+ assert.deepEqual(screenSize(HIGH_RES),{width:512,height:384});
  const steps=[...plot({...standard,scale:HIGH_RES})],sets=steps.filter(s=>s.kind==='set');
  // Same grid points, longer lines between them.
  assert.equal(steps.length-sets.length,[...plot(standard)].filter(s=>s.kind==='point').length);
- assert.ok(sets.every(s=>s.x>=0&&s.x<1024&&s.y>=0&&s.y<768));
- assert.ok(render({...standard,scale:HIGH_RES}).reduce((n,d)=>n+d,0)>8*562);
+ assert.ok(sets.every(s=>s.x>=0&&s.x<512&&s.y>=0&&s.y<384));
+ assert.ok(render({...standard,scale:HIGH_RES}).reduce((n,d)=>n+d,0)>4*562);
 });

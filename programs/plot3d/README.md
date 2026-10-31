@@ -11,9 +11,9 @@ The site opens the **TypeScript version**: pick a surface or type your own
 line 200, drag sliders for the original's questions (they redraw instantly), and draw at the 1979 pace,
 20 times faster, or instantly. It draws the same dots as the original (see
 [typescript/PARITY.md](typescript/PARITY.md)).
-For fun, a **What if · 1024×768** screen shows the same program in a world with
-higher resolution: 1024 × 768 square dots instead of 128 × 48 tall ones, with
-only the screen size changed (`XX=1023:YY=767`, `DX=XS*240:DY=YS*240` in lines
+For fun, a **What if · 512×384** screen shows the same program in a world with
+higher resolution: 512 × 384 square dots instead of 128 × 48 tall ones, with
+only the screen size changed (`XX=511:YY=383`, `DX=XS*120:DY=YS*120` in lines
 150 and 170), so the picture keeps its size and shape. It is a what-if, not a
 recovered version, and has no parity fixtures.
 

@@ -1,6 +1,6 @@
 // Browser version of 3-D Plot v03: the same drawing rules (engine.ts), with a formula
 // box for line 200, the original's questions as sliders, a choice of speed, and a
-// what-if 1024 × 768 screen of square dots.
+// what-if 512 × 384 screen of square dots.
 // Follows the shared player contract used by Castles (see app/site/main.js).
 import {plot, standard, screenSize, HIGH_RES, type Scale, type Settings, type Step} from './engine.ts';
 import {BasicError} from './mbf.ts';
@@ -10,14 +10,14 @@ import {formulas} from './formulas.js';
 // Emulated seconds the original spends per grid point and per SET dot, fitted to
 // the recorded emulator runs (parity-fixtures.json) to within about 6%.
 export const POINT_SECONDS = 0.32, SET_SECONDS = 0.074;
-const screens: {id: string, label: string, scale: Scale}[] = [{id: 'trs80', label: 'TRS-80 · 128×48', scale: {x: 1, y: 1}}, {id: 'high', label: 'What if · 1024×768', scale: HIGH_RES}];
+const screens: {id: string, label: string, scale: Scale}[] = [{id: 'trs80', label: 'TRS-80 · 128×48', scale: {x: 1, y: 1}}, {id: 'high', label: 'What if · 512×384', scale: HIGH_RES}];
 const speeds = [{id: '1979', label: '1979 pace', factor: 1}, {id: 'fast', label: 'Fast', factor: 20}, {id: 'instant', label: 'Instant', factor: Infinity}];
 const escape = (value: string) => value.replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]!));
 
 export async function createPlayer(host: HTMLElement, _url: string, status: HTMLElement, title: string) {
   const background = '#1e4b8f', ink = '#e6e7fc';
-  // The canvas has twice the pixels it shows, so 1024 × 768 dots stay sharp; the TRS-80's
-  // 128 × 48 dots are each 8 × 16 pixels, twice as tall as wide.
+  // The TRS-80's 128 × 48 dots are each 8 × 16 canvas pixels, twice as tall as wide;
+  // the what-if 512 × 384 dots are 2 × 2.
   const canvas = document.createElement('canvas'); canvas.width = 1064; canvas.height = 808;
   canvas.setAttribute('aria-label', `${title} drawing`);
   canvas.setAttribute('role', 'img');
@@ -47,8 +47,6 @@ export async function createPlayer(host: HTMLElement, _url: string, status: HTML
   let paused = false, disposed = false, handle = 0, previous = 0, budget = 0, emulated = 0, error: string | null = null, done = false, result = '';
 
   function paint() {
-    // One-pixel dots vanish when a pixelated canvas is scaled down, so the fine screen scales smoothly.
-    canvas.style.imageRendering = screen === screens[0] ? '' : 'auto';
     ctx.fillStyle = background; ctx.fillRect(0, 0, 1064, 808); ctx.fillStyle = ink;
     const w = 1024 / width, h = 768 / height;
     for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) if (dots[y * width + x]) ctx.fillRect(20 + x * w, 20 + y * h, w, h);

@@ -7,10 +7,10 @@ import {compile, type Env} from './basic.ts';
 
 export const ORIGINAL_LINE_200 = 'IF X<>0 OR Z<>0 THEN Y=-1/SQR(X^2*18+Z^2*18)+1 ELSE Y=-1';
 // A screen scale other than 1 × 1 is a what-if, not the original: more dots on the same screen,
-// and the same program with only lines 150 and 170 scaled. HIGH_RES is 1024 × 768 square dots:
-// XX=1023:YY=767, DX=XS*240:DY=YS*240.
+// and the same program with only lines 150 and 170 scaled. HIGH_RES is 512 × 384 square dots:
+// XX=511:YY=383, DX=XS*120:DY=YS*120.
 export type Scale = {x: number, y: number};
-export const HIGH_RES: Scale = {x: 8, y: 16};
+export const HIGH_RES: Scale = {x: 4, y: 8};
 export type Settings = {tilt: number, xScale: number, yScale: number, lines: number, formula: string, switchOn?: boolean, scale?: Scale};
 export const standard: Settings = {tilt: 0.5, xScale: 1, yScale: 1, lines: 7, formula: ORIGINAL_LINE_200};
 
