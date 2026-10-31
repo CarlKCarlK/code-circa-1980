@@ -38,6 +38,16 @@ test('TypeScript: instant funnel matches the original, formulas, errors, speeds 
  // 562 dots: the standard picture the original draws in the emulator.
  expect((await modern(page)).count).toBe(562);
  await expect(page.locator('#status')).toContainText('about 84 s');
+ // Sliders redraw instantly at any speed: these settings draw the recorded 1203-dot picture.
+ await page.getByRole('button',{name:'Fast'}).click();
+ await page.locator('#plot3d-tilt').fill('1');
+ await page.locator('#plot3d-xscale').fill('1.5');
+ await page.locator('#plot3d-lines').fill('11');
+ await expect(page.locator('output[for=plot3d-lines]')).toHaveText('11');
+ const steep=await modern(page);expect(steep.done).toBe(true);expect(steep.count).toBe(1203);
+ await page.locator('#plot3d-tilt').fill('0.5');await page.locator('#plot3d-xscale').fill('1');await page.locator('#plot3d-lines').fill('7');
+ expect((await modern(page)).count).toBe(562);
+ await page.getByRole('button',{name:'Instant'}).click();
  await page.getByLabel('Surface').selectOption({label:'Saddle'});
  await expect(page.locator('#plot3d-formula')).toHaveValue('Y=X^2-Z^2');
  await expect.poll(async()=>(await modern(page)).count).not.toBe(562);
