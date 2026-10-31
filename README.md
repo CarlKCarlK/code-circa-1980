@@ -43,6 +43,13 @@ moves as the original, illegal ones and crashes included; the last of 14
 recovered versions also runs unchanged in the emulator;
 see [programs/chess](programs/chess/).
 
+**[Play Bomb](https://carlkcarlk.github.io/code-circa-1980/#/program/bomb)**:
+defuse Nefarious Nick's bombs by remembering the wire colors flashed on the
+screen and typing them back, in order and spelled right, before the clock runs
+out. Each bomb gets faster. The standalone version, probably from 1981, runs
+unchanged in the emulator; an earlier version from a three-program menu is kept
+as source; see [programs/bomb](programs/bomb/).
+
 ## About this project
 
 I had seen early personal computers, such as the Altair, in San Francisco, but nothing like them was available in my
