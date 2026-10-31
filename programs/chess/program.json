@@ -4,7 +4,7 @@
   "description": "My chess program in Level II BASIC, built to play in a tournament: type in the other side's move and it answers with its own.",
   "kind": "Game",
   "language": "Level II BASIC",
-  "defaultVersion": "v08",
+  "defaultVersion": "v09",
   "versionOrder": "Inferred development sequence, not established dates. v01 and v02 are tape1b saves 8 and 10; v03-v07 are tape13a saves 9-13; v08-v14 are tape13b saves 1-6 and 8, each in save order. Each listing is the previous one with changes, and v03 starts from v02's code (its lines 10-57 and most of the move generator are v02's). The archive labels V2-V9 were assigned by the recovery from save order; they are not in the programs. No save is dated. Tape numbers alone do not establish chronology.",
   "versions": [
     {
@@ -91,8 +91,19 @@
       "save": 1,
       "raw": "versions/v08/01-CISAB-CHESS-V3.BAS",
       "listing": "versions/v08/01-CISAB-CHESS-V3.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Shuffles the moves with the best score and tries each on the board, looking at the other side's replies before choosing (lines 1050-1210).",
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs the last recovered version; this listing and payload remain downloadable."
+    },
+    {
+      "id": "v09",
+      "label": "CISAB V4 · Reply values",
+      "capture": "tape13b",
+      "save": 2,
+      "raw": "versions/v09/02-CISAB-CHESS-V4.BAS",
+      "listing": "versions/v09/02-CISAB-CHESS-V4.ASC",
+      "playable": true,
+      "note": "DEFINT for speed; each reply is scored by the value of the piece it could take (line 3500). A debugging PRINT shows FIRST1200--.",
       "unavailableReason": null
     }
   ]
