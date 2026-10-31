@@ -19,8 +19,12 @@ test('collection and program links open the v02 player directly, with the Wumpus
  await expect(page.locator('.source-details')).toHaveAttribute('open','');
  await expect(page.locator('.source-details .program-history')).toContainText('Gregory Yob');
  await expect(page.locator('.source-details .program-history')).toContainText('More BASIC Computer Games');
+ await expect(page.locator('.source-details .program-history')).toContainText('reskinning and remixing');
+ await expect(page.locator('.source-details .program-differences')).toContainText('ARROWS AREN’T THAT CROOKED');
  await page.getByRole('button',{name:'Help'}).click();
  await expect(page.locator('.player-help')).toContainText('Close the junction you are in');
+ await expect(page.locator('.player-help')).toContainText('The gas starts in your junction');
+ await expect(page.locator('.player-help .program-differences')).toBeHidden();
  await page.getByRole('button',{name:'Close help'}).click();
  await page.goto('/?development=1#/program/alien/v01');
  await expect(page.locator('.source-only')).toContainText('Source only');

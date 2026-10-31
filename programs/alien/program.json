@@ -1,7 +1,7 @@
 {
   "id": "alien",
   "title": "Alien",
-  "description": "Hunt an alien through the air vents of your spaceship before it finds you. My 1979 re-theme of Gregory Yob's Hunt the Wumpus.",
+  "description": "Hunt an alien through your spaceship's air vents, and trap it by closing junctions. My reskin and remix of Gregory Yob's Hunt the Wumpus.",
   "kind": "Game",
   "language": "Level II BASIC",
   "defaultVersion": "v02",
