@@ -13,12 +13,28 @@ asks `WHAT COLOR ARE WE`, then `WHAT WAS THEIR FOOLISH MOVE` (the adjective is
 picked at random from ten), so whoever sits at the keyboard types in the
 opponent's moves and plays CISAB's replies on the real board.
 
-The site runs v14, the last recovered version, unchanged in the emulator.
+The site opens a Rust port of v14 on a mouse board (see below); the
+**Level II BASIC version** tab runs v14 itself, unchanged, in the emulator.
 The thirteen earlier versions are kept as source. They run from a program
 that only plays itself (v01) to the tournament player (v03 on), then add
 look-ahead, piece values and an opening.
 
-## Playing on this site
+## The Rust version
+
+`rust/` ports CISAB v14's chess logic to Rust, compiled to WebAssembly, and
+`modern/player.js` puts it on a board you play with the mouse. Given the same
+moves, it makes the same replies as the BASIC program, including its illegal
+moves and the errors that stop it. To do that it uses the TRS-80's RND and its
+single-precision rounding of move scores. `rust/PARITY.md` lists the evidence
+and the few differences. Your own moves must be legal chess. Castling, en
+passant and promotion are typed with `ADD`, as an operator would have typed
+them.
+
+After changing the Rust sources, run `cargo test` in `rust/` and
+`npm run build:chess` in `app/`, then commit the regenerated `rust/pkg/`.
+`npm run record:chess` re-records the games against the emulator.
+
+## Playing the BASIC version
 
 You play "them"; CISAB is "we". Its pieces are always at the bottom of the
 screen, yours at the top.

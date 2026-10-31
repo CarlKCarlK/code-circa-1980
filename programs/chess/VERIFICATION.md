@@ -55,9 +55,40 @@ The fast mode runs at real speed while a key is held. Without this, a
 keypress of about 0.1 s lasted 2 emulated seconds, the ROM repeated the key,
 and CISAB stopped with `?OV Error in 80`.
 
+## Rust version (`rust/`, `modern/player.js`)
+
+Recorded with `npm run record:chess` on 2026-10-31 and replayed by
+`tests/chess-rust.test.mjs` (part of `npm test`):
+
+- **22 games against v14 in the emulator.** After every typed line, the Rust
+  engine had the same prompt, the same B(0-10,0-10) array, the same RND seed
+  and adjective, and the same ending as the original. That covers 18
+  random-legal games, some answering IQ, mistyping at OK?, typing CHEAT
+  moves, or castling, taking en passant and promoting through ADD, plus
+  4 scripted games.
+- **Endings recorded in the original and reproduced in Rust:**
+  - `?BS Error in 3015` (7 games): CISAB's move list passed 120 entries;
+  - `?FC Error in 335` (4 games): a CISAB pawn on row 1;
+  - `?RG Error in 10020`: the opening squares emptied with ADD;
+  - `DARN THEY BEAT YOU!`;
+  - a checkmate. Rust reports it loops forever; the original made no move
+    in 900 emulated seconds.
+- **Arithmetic:** the step table of lines 410–650, all 5,292 scores lines
+  3000–3030 and 1205 can produce, and 3,000 RND calls match what the ROM
+  computes. The step table and a game through a searched move are also
+  checked against the emulator live, as part of `npm test`.
+
+Browser (`tests/browser/chess.spec.js`): the collection and `#/program/chess`
+open the Rust board. Clicking and dragging move pieces, and dots mark your
+legal squares. CISAB's book replies appear in the move list. Unchecking the
+opening sends IQ, after which CISAB searches. Play Black makes CISAB open
+with Nc3 on a board shown from Black's side, and New game works. The
+Level II BASIC tab still runs v14. At 390 px wide there is no horizontal
+scrolling.
+
 ## Not tested
 
-A full game, castling or promotion with `ADD`, CISAB capturing your king,
+A full game in the BASIC player, castling or promotion typed by hand with `ADD` in the BASIC player, CISAB capturing your king,
 pawns reaching the last row, games longer than a few moves, the earlier
 versions v01–v13 in the emulator, and phone keyboards. The quirks listed in
 README.md come from reading the source; only the behaviors above were run.

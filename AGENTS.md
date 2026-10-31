@@ -95,6 +95,15 @@ changing Rust sources run `cargo test` there and `npm run build:balancer`, and
 commit the regenerated `rust/pkg/`; `npm test` rejects a stale build. Differences
 are in its PARITY.md. Its browser version is the site default; v20 is Original.
 
+CISAB Chess (`programs/chess/`) opens a Rust port of v14 (`rust/`, WebAssembly,
+`modern/player.js`) by default. For the same moves it makes the same replies as
+the original, which includes its illegal moves, its BASIC errors, and its endless
+loop when checkmated. Never "fix" CISAB's play in the engine; the site enforces
+chess rules only for the human side. After Rust changes run `cargo test`,
+`npm run build:chess` (commit `rust/pkg/`), and `npm test`, which replays the
+recorded emulator games in `modern/parity-fixtures.json`; re-record them with
+`npm run record:chess`. Differences are in `rust/PARITY.md`.
+
 Run browser tests against your own preview port (`PLAYWRIGHT_BASE_URL`) when
 another worktree may already be serving 5181, since Playwright reuses it.
 

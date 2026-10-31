@@ -38,7 +38,9 @@ see [programs/plot3d](programs/plot3d/).
 **[Play CISAB Chess](https://carlkcarlk.github.io/code-circa-1980/#/program/chess)**:
 the chess program I competed with in a tournament in Peoria. CISAB (BASIC spelled
 backwards) asks what color "we" are and what "their" move was, then answers
-with its own. The last of 14 recovered versions runs unchanged in the emulator;
+with its own. Play it on a mouse board through a Rust port that makes the same
+moves as the original, illegal ones and crashes included; the last of 14
+recovered versions also runs unchanged in the emulator;
 see [programs/chess](programs/chess/).
 
 ## About this project
