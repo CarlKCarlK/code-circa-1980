@@ -24,7 +24,8 @@ recovered BASIC versions also run in the emulator. See
 
 ## About this project
 
-I had seen early personal computers, such as the Altair, in San Francisco, but nothing like them was available in my hometown of Peoria, Illinois. In the summer of 1978, between my sophomore and junior years of high school, the TRS-80 Model I arrived at our local Radio Shack. I ordered one and waited several weeks for delivery.
+I had seen early personal computers, such as the Altair, in San Francisco, but nothing like them was available in my
+high-school hometown of Peoria, Illinois. In the summer of 1978, between my sophomore and junior years of high school, the TRS-80 Model I arrived at our local Radio Shack. I ordered one and waited several weeks for delivery.
 
 The least expensive complete system cost $599 (about $3,100 in 2026 dollars). I paid for mine with years of saved Christmas and birthday money. It never even occurred to me to ask my parents' permission.
 
