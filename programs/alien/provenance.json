@@ -30,7 +30,7 @@
   "saves": [
     {
       "version": "v01",
-      "label": "Early \u00b7 Alien re-theme",
+      "label": "Early save \u00b7 before the remix",
       "capture": "tape22b",
       "save": 6,
       "archive_raw": "tapes/recovered/tape22b/best/06-ALIEN-HUNT-EARLY-SAVE01.BAS",
@@ -515,7 +515,7 @@
     },
     {
       "version": "v02",
-      "label": "Expanded \u00b7 Title, backstory, closing junctions",
+      "label": "Alien",
       "capture": "tape22b",
       "save": 8,
       "archive_raw": "tapes/recovered/tape22b/best/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",

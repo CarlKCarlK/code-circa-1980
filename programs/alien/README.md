@@ -11,11 +11,12 @@ It was published in *Creative Computing* in 1975, and Wumpus 1 and Wumpus 2 both
 appear in David Ahl's *More BASIC Computer Games* (1979). I started from Yob's
 BASIC program: his cave map (the same `DATA` table), variables, line numbering
 and much of his text. A source comment still says `2 WAMPUS`, `PITS` and `BATS`.
-The reskin comes from the 1979 film *Alien*; the remix is in how it plays.
+The reskin comes from the 1979 film *Alien*, whose tagline opens the game:
+"IN SPACE NO ONE CAN HEAR YOU SCREAM." The remix is in how it plays.
 
 ## The remix: how it plays differently
 
-The expanded version (v02) is a containment game rather than a pure hunt:
+Alien is a containment game rather than a pure hunt:
 
 - **Close junctions.** Besides moving and spraying, you can close the junction
   you are in. Nothing can enter it again: not you, not the alien, not the gas.
@@ -27,11 +28,11 @@ The expanded version (v02) is a containment game rather than a pure hunt:
 - **The alien moves on your closes too.** It can move at the start of a game,
   after a missed spray and after every close, never when you move.
 
-v01 plays almost exactly like Hunt the Wumpus. The full list is at the bottom.
+The full list is at the bottom.
 
 ## When the alien moves
 
-The alien moves only at these moments (v02):
+The alien moves only at these moments:
 
 - At the start of each game, including SAME SET-UP: half the time it tries one
   move. Overall it moves 3 times in 8.
@@ -40,8 +41,7 @@ The alien moves only at these moments (v02):
 
 A move takes it through one open vent to a neighbouring junction, chosen at random.
 It ignores vacuum chambers and booby traps, never enters a closed junction, and
-otherwise stays put. It never moves when you move. In v01 it moves after a miss
-and when you walk into it (then 3 times in 4), as in Hunt the Wumpus.
+otherwise stays put. It never moves when you move.
 
 ## Is every game different?
 
@@ -59,17 +59,13 @@ like switching a TRS-80 off and on, brings back the same two.
 
 ## Versions
 
-Two distinct versions survive on tape22b; each was saved twice, byte for byte
-identical (saves 6–7 and 8–9). The order is inferred from save order and from
-v02 containing everything in v01.
+Alien is v02 (tape22b save 8, 251 lines; save 9 is identical). The website runs
+it, unchanged, in a TRS-80 emulator at `#/program/alien/basic`.
 
-- **v01 · Early** (tape22b save 6, 214 lines): Hunt the Wumpus with new words.
-- **v02 · Expanded** (tape22b save 8, 251 lines): a block-graphics title with the
-  film's tagline, "IN SPACE NO ONE CAN HEAR YOU SCREAM.", a backstory, and the
-  play changes above.
-
-The website runs v02, unchanged, in a TRS-80 emulator at `#/program/alien/basic`.
-v01 is source only.
+An earlier save, v01 (tape22b save 6, 214 lines; save 7 is identical), is kept as
+source only. It is Hunt the Wumpus with the new words but none of the remix:
+no title, no closing junctions, fixed junction numbers. The order is inferred
+from save order and from v02 containing everything in v01.
 
 ## Date
 
@@ -87,7 +83,7 @@ Compared line by line with Yob's published listing. See
 [VERIFICATION.md](VERIFICATION.md) for what was actually run; the rest comes from
 reading the source.
 
-### Play, v02 only
+### Play
 
 - New action: close the junction you are in. Every vent into it is cut; your
   own exits stay open. You, the alien and the gas can no longer enter it.
@@ -101,20 +97,17 @@ reading the source.
 - Gas wanders only through open vents; gas in a room with no open vent gets you.
 - Closed junctions and the junction numbering carry over to later games, even
   new set-ups, until the program is run again.
-
-### Both versions
-
 - No check against gas paths that double back (Yob: "ARROWS AREN'T THAT CROOKED").
 - After a missed spray, the alien's move is checked against the room where the
   gas stopped instead of your room (Yob reset this). The alien can kill you
   from elsewhere, or move into your junction harmlessly until you walk into it.
-  In v02, a close right after a miss closes the gas's last room.
+  A close right after a miss closes the gas's last room.
 - Entering your own junction at `WHERE TO` asks again; Yob lets you stay put.
 - `SAME SET-UP` needs `YES` (Yob: `Y`); any answer except `NO` shows the
   instructions (Yob: except `N`).
 - No `RANDOM`: every start of the program replays the same worlds (above).
 
-### Where v02's instructions and code disagree
+### Where the instructions and code disagree
 
 - "One chance to flee" the alien: walking into it kills you at once.
 - The alien "often moves": only at the moments listed above.
