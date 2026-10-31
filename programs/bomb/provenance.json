@@ -1,0 +1,182 @@
+{
+  "official_title": "Bomb",
+  "title_authority": "User request wording, 2026-10-31 (\"Bomb defusing / spelling game ... standalone Nefarious Nick version, plus a version in a combined menu\"); source titles \"B O M B\" and \"<<<  B O M B  >>>\".",
+  "import_date": "2026-10-31",
+  "order_inferred": true,
+  "order_evidence": "Inferred development sequence, not established dates. Both versions are on tape17a: v01 (save 1) precedes v02 (save 3) in save order. v01 reads like a draft: a placeholder villain (MR. XX), commented-out alternative intro paragraphs, and one preset high score. v02 is Bomb on its own, rewritten with new line numbers, naming the villain Nefarious Nick and adding an attract screen and a top-ten ranking. The two share no code line for line, so the order is a judgment, not a derivation. Tape numbers alone do not establish chronology.",
+  "dating": {
+    "estimate": "probably 1981",
+    "direct_date_in_program": null,
+    "evidence": [
+      "tape17a saves 2, 6 and 7 (Chemistry Balancer II): \"10 REM CHEMISTRY BANENCER II   COPYRIGHT 1981 C. KADIE\" (same side)",
+      "tape17b saves 1-4 (Chemistry Balancer II): same copyright line (opposite side)"
+    ],
+    "caution": "Contextual estimate; old programs were sometimes saved again later."
+  },
+  "credits": {
+    "byline_in_program": null,
+    "evidence": "v01 presets the high score to 38 by \"CMK\"; CISAB Chess (tape13b) is signed \"BY CARL MYERS KADIE\"."
+  },
+  "execution_testing": "Recovery archive records no execution tests. Website emulator checks are recorded separately in VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "label": "Menu \u00b7 Bomb with radio intersection and binary search",
+      "capture": "tape17a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape17a/best/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.BAS",
+      "archive_listing": "tapes/recovered/tape17a/best/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.ASC",
+      "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf",
+      "bytes": 6783,
+      "listing_sha256": "4682176105d6af579272f9cc04afc5ef18eb656ad92baf637d3f816328a97e80",
+      "listing_lines": 134,
+      "recovery_evidence": "tapes/recovered/tape17a/inventory.json",
+      "inventory_row": {
+        "summary": "Bomb, radio intersection / relay problem, and binary search research; combined menu save",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 1,
+        "title": "Bomb, radio intersection / relay problem, and binary search research; combined menu save",
+        "title_note": "Descriptive filenames and version labels inferred from contents; original source wording preserved.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 3.9015625,
+        "source_end_s": 110.58308333333333,
+        "decoder_end_s": 110.58308333333333,
+        "selected_source": {
+          "variant": "left-hp1200",
+          "index": 1,
+          "start": 3.9015625,
+          "end": 110.58308333333333,
+          "file": "left-hp1200/T01-9f7d79127a2e.BAS",
+          "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf",
+          "assessment": {
+            "good": true,
+            "lines": 134,
+            "last": 45020,
+            "normal": true,
+            "parsed": 6783,
+            "bytes": 6783,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.BAS",
+        "listing": "best/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.ASC",
+        "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf",
+        "bytes": 6783,
+        "validation": {
+          "good": true,
+          "lines": 134,
+          "last": 45020,
+          "parsed": 6783,
+          "bytes": 6783,
+          "bases": [
+            17125
+          ],
+          "normal": true
+        },
+        "validation_summary": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "matching_sources": [
+          {
+            "variant": "left-hp1200",
+            "index": 1,
+            "start": 3.9015625,
+            "end": 110.58308333333333,
+            "file": "left-hp1200/T01-9f7d79127a2e.BAS",
+            "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf",
+            "assessment": {
+              "good": true,
+              "lines": 134,
+              "last": 45020,
+              "normal": true,
+              "parsed": 6783,
+              "bytes": 6783,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "original",
+            "index": 1,
+            "start": 3.9033333333333333,
+            "end": 110.58295833333334,
+            "file": "original/T01-9f7d79127a2e.BAS",
+            "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf",
+            "assessment": {
+              "good": true,
+              "lines": 134,
+              "last": 45020,
+              "normal": true,
+              "parsed": 6783,
+              "bytes": 6783,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 1,
+            "start": 3.9034375,
+            "end": 110.5830625,
+            "file": "right-boosted/T01-9f7d79127a2e.BAS",
+            "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf",
+            "assessment": {
+              "good": true,
+              "lines": 134,
+              "last": 45020,
+              "normal": true,
+              "parsed": 6783,
+              "bytes": 6783,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 1,
+            "start": 3.9034583333333335,
+            "end": 110.58308333333333,
+            "file": "left-hp800/T01-9f7d79127a2e.BAS",
+            "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf",
+            "assessment": {
+              "good": true,
+              "lines": 134,
+              "last": 45020,
+              "normal": true,
+              "parsed": 6783,
+              "bytes": 6783,
+              "bases": [
+                17125
+              ]
+            }
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v01/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.BAS",
+      "snapshot_listing": "versions/v01/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.BAS",
+          "bytes": 6783,
+          "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf"
+        },
+        {
+          "path": "versions/v01/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.ASC",
+          "bytes": 7833,
+          "sha256": "4682176105d6af579272f9cc04afc5ef18eb656ad92baf637d3f816328a97e80"
+        }
+      ]
+    }
+  ]
+}
