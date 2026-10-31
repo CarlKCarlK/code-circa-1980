@@ -18,7 +18,7 @@ const watchWires=page=>page.evaluate(()=>new Promise((resolve,reject)=>{
 // Bomb reads answers with INKEY$, so keys are held as a typist would.
 const tap=async(page,key)=>{await page.keyboard.down(key);await page.waitForTimeout(120);await page.keyboard.up(key);await page.waitForTimeout(100);};
 const type=async(page,text)=>{for(const k of text)await tap(page,k);await tap(page,'Enter');};
-const prompts=[/FIRST WIRE\? *$/m,/SECOND WIRE\? *$/m,/THIRD WIRE\? *$/m,/FOURTH WIRE\? *$/m,/CUT NOW\? *$/m];
+const prompts=[/FIRST WIRE\? *_? *$/m,/SECOND WIRE\? *_? *$/m,/THIRD WIRE\? *_? *$/m,/FOURTH WIRE\? *_? *$/m,/CUT NOW\? *_? *$/m];
 
 test('collection and program links open the Bomb player directly; v01 is source only',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -33,6 +33,7 @@ test('collection and program links open the Bomb player directly; v01 is source 
  await expect(page.getByRole('link',{name:'Download original payload'})).toHaveAttribute('href',/BOMB.*\.BAS$/);
  await expect(page.locator('.source-details .program-history')).toContainText('Nefarious Nick');
  await expect(page.locator('.source-details .program-history')).toContainText('MR. XX');
+ await expect(page.locator('.source-details .program-history')).toContainText('Rich Losey');
  await page.getByRole('button',{name:'Help'}).click();
  await expect(page.locator('.player-help')).toContainText('There is no fixing a typo');
  await expect(page.locator('.player-help')).toContainText('TURQUOISE');
@@ -61,7 +62,7 @@ test('Bomb runs: start from the title, defuse a bomb by typing its wires, retire
  expect(words.length).toBeGreaterThanOrEqual(3);
  expect(words.length).toBeLessThanOrEqual(5);
  for(let i=0;i<words.length;i++){
-  await expect.poll(()=>screenText(page),{timeout:10000}).toMatch(prompts[i]);
+  await expect.poll(()=>screenText(page),{timeout:20000}).toMatch(prompts[i]);
   await page.waitForTimeout(300);
   await type(page,words[i]);
  }

@@ -14,6 +14,11 @@
     "caution": "Contextual estimate; old programs were sometimes saved again later."
   },
   "credits": {
+    "designers": [
+      "Carl Kadie",
+      "Rich Losey (roommate), co-designer"
+    ],
+    "credit_authority": "User statement, 2026-10-31",
     "byline_in_program": null,
     "evidence": "v01 presets the high score to 38 by \"CMK\"; CISAB Chess (tape13b) is signed \"BY CARL MYERS KADIE\"."
   },

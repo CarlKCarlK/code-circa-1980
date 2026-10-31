@@ -1,6 +1,6 @@
 // Runs a recovered Bomb version headlessly, reads the wires it flashes, and types them back.
 import fs from 'node:fs';
-import {Trs80,Trs80Screen,Config,Keyboard,CassettePlayer,SilentSoundPlayer} from 'trs80-emulator';
+import {Trs80,Trs80Screen,Config,ModelType,BasicLevel,CGChip,Keyboard,CassettePlayer,SilentSoundPlayer} from 'trs80-emulator';
 import {decodeBasicProgram} from 'trs80-base';
 class Screen extends Trs80Screen {setConfig(){} writeChar(){}}
 export const programFolder=new URL('../../../programs/bomb/',import.meta.url);
@@ -8,15 +8,19 @@ export const programFolder=new URL('../../../programs/bomb/',import.meta.url);
 export function screenLines(m){
   return Array.from({length:16},(_,r)=>String.fromCharCode(...Array.from({length:64},(_,c)=>{const b=m.readMemory(0x3c00+r*64+c);return b<32?b+64:b>=128?32:b;})).trimEnd());
 }
-// Starts a version on the site's configuration (Model III, Level II BASIC).
+// Starts a version on the site's configuration: a stock Model I with Level II BASIC.
 export function startOriginal(raw){
   const keyboard=new Keyboard();
-  const m=new Trs80(Config.makeDefault(),new Screen(),keyboard,new CassettePlayer(),new SilentSoundPlayer());
+  const config=Config.makeDefault().withModelType(ModelType.MODEL1).withBasicLevel(BasicLevel.LEVEL2).withCGChip(CGChip.ORIGINAL);
+  const m=new Trs80(config,new Screen(),keyboard,new CassettePlayer(),new SilentSoundPlayer());
   const run=seconds=>{const end=m.tStateCount+m.clockHz*seconds;while(m.tStateCount<end)m.step();};
   const seconds=()=>m.tStateCount/m.clockHz;
   const screen=()=>screenLines(m).join('\n');
-  run(2);
-  m.runBasicProgram(decodeBasicProgram(new Uint8Array(fs.readFileSync(new URL(raw,programFolder)))));
+  // As the site does (emulator.js): answer MEMORY SIZE?, then load and RUN at READY.
+  const step=pattern=>{for(let i=0;i<500&&!pattern.test(screen());i++)run(0.02);if(!pattern.test(screen()))throw new Error(`No ${pattern} at start`);};
+  m.reset();step(/MEMORY SIZE/);keyboard.simulateKeyboardText('\n');step(/READY/);run(0.1);
+  m.loadBasicProgram(decodeBasicProgram(new Uint8Array(fs.readFileSync(new URL(raw,programFolder)))));
+  keyboard.simulateKeyboardText('RUN\n');
   // Waits until `pattern` matches the screen; returns the emulated seconds taken.
   const until=(pattern,limitSeconds=60)=>{
     const start=seconds();
@@ -31,7 +35,10 @@ export function startOriginal(raw){
   // (string handling can make one pass of its loop slow), so each key is held for
   // 0.1 s, as a typist would.
   const press=key=>{keyboard.keyEvent(key,true);run(0.1);keyboard.keyEvent(key,false);run(0.1);};
-  const type=text=>{for(const key of text)press(key==='\n'?'Enter':key);};
+  // Letters are pressed in lowercase, as the site's player sends them. The library
+  // types a capital as Shift+letter, which a Model I stores as a lowercase letter
+  // that still shows as a capital, so the answer would not match.
+  const type=text=>{for(const key of text)press(key==='\n'?'Enter':key.toLowerCase());};
   // Records each word that stays on screen row `row` for 0.2 s until `stop` matches.
   const watchWires=(row,stop,limitSeconds=60)=>{
     const words=[],onsets=[];let last='',since=0;const start=seconds();

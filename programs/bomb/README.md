@@ -1,12 +1,14 @@
 # Bomb
 
+Co-designed by Rich Losey, my roommate, and me.
+
 A bomb-defusing game that is really a memory and spelling test. The screen
 flashes three to five wire colors, one at a time. Then you type them back, in
 order, against the clock. One wrong letter and the bomb goes off. Each bomb you
 defuse shows the next one's wires faster and gives you less time to type them.
 
 There are 38 colors, some of them hard to spell under pressure (TURQUOISE,
-SAPPHIRE, KHAKI, AUBURN, CINNAMON), and the list has both GREY and GRAY.
+SAPPHIRE, KHAKI, AUBURN, CINNAMON), and the list has both GREY and GRAY, so one bomb can ask for both.
 
 ## Two versions on one tape side
 
@@ -29,6 +31,11 @@ Both recovered versions are on tape17a:
 The order v01 then v02 is inferred, not dated: v01 comes first on the tape and
 reads like a draft of v02. The site plays v02 unchanged in the emulator; v01 is
 kept as source.
+
+The site runs Bomb on a stock Model I. The source has `yOU`, `kEEP` and
+`mR. TNT`: holding Shift for a capital stores a lowercase letter. A Model I
+without the lowercase kit shows those as capitals, as they would have looked in
+1981; a Model III would show the lowercase.
 
 ## Date
 
