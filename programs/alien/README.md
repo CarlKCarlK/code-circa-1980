@@ -14,6 +14,27 @@ and much of his text. A source comment still says `2 WAMPUS`, `PITS` and `BATS`.
 The reskin comes from the 1979 film *Alien*, whose tagline opens the game:
 "IN SPACE NO ONE CAN HEAR YOU SCREAM." The remix is in how it plays.
 
+## Shared on paper, typed by hand
+
+Back then, the usual way to get someone else's program was to type it in. Books
+and magazines printed complete listings: *More BASIC Computer Games* gave each
+game's listing and a sample run. Programs were short, so a game like Hunt the
+Wumpus fit on about two pages, and paper was much cheaper than the only
+alternative, a program on cassette. A year later, Radio Shack's catalog sold my
+own Chemistry Equation Balancer for $19.95, one program on one cassette.
+
+Typing a listing in was a pain. It was slow, and every typo had to be found
+before the program would run. But by the time it ran, you had read every line.
+You knew where the map was kept and how the Wumpus decided when to move, and the
+program felt like yours to change. Alien is what I changed it into.
+
+[![Cover of More BASIC Computer Games, $7.95](history/more-basic-computer-games-cover.jpg)](history/more-basic-computer-games-cover.jpg)
+
+My copy of *More BASIC Computer Games* (1979): 84 games for $7.95. Below, page
+180, the last page of the Wumpus 1 listing.
+
+[![Page 180: the end of the Hunt the Wumpus listing](history/wumpus-listing-page-180.jpg)](history/wumpus-listing-page-180.jpg)
+
 ## The remix: how it plays differently
 
 Alien is a containment game rather than a pure hunt:
