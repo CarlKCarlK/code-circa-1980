@@ -13,7 +13,9 @@ All web versions, and Latest version links lead back to the current collection.
 
 ## Stored releases
 
-Releases were restarted on 2026-10-30: earlier snapshots v1–v5 were removed
+Every program was frozen again and published as v1 on 2026-10-31; from then
+on, changes are released as v2 and later, never by replacing v1. Releases were
+first restarted on 2026-10-30: earlier snapshots v1–v5 were removed
 (they remain in Git history) and the then-current experience became v1. To
 deliberately reset again, put `[reset-web-versions]` in the pushed head commit's
 message; the deploy then skips the release-preservation check for that push only.

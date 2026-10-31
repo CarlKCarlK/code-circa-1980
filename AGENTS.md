@@ -127,12 +127,12 @@ Use tags such as `castles-web-v1`, distinct from historical tags such as `castle
 Never fix a published snapshot in place or rebuild old releases using newer code.
 CI verifies their hashes and rejects modifications to previously published versions.
 
-**Stay on v1 until the user says otherwise.** No web URLs have been shared yet, so
-every program keeps a single web v1. To publish a change, remove that program's
-snapshot and `web-versions.json`, freeze v1 again from current source, move its
-`<program>-web-v1` tag, and put `[reset-web-versions]` in the head commit message
-so CI accepts the replacement. Do not create v2 or later for any program until
-the user explicitly gives the go-ahead.
+**Web v1 is published; new work is v2.** On 2026-10-31 every program was frozen
+and published as web v1. Never reset, replace or edit a v1 snapshot again, and
+do not use `[reset-web-versions]`. Develop changes in the editable source and,
+when the user wants a program's changes published, freeze them as that
+program's v2 with `npm run release:web` and tag `<program>-web-v2` (later v3,
+and so on). A program added after this starts at its own v1.
 
 ## No intermediate pages
 
