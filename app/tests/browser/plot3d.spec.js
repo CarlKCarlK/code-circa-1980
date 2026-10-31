@@ -48,6 +48,11 @@ test('TypeScript: instant funnel matches the original, formulas, errors, speeds 
  const steep=await modern(page);expect(steep.done).toBe(true);expect(steep.count).toBe(1203);
  await page.locator('#plot3d-tilt').fill('0.5');await page.locator('#plot3d-xscale').fill('1');await page.locator('#plot3d-lines').fill('7');
  expect((await modern(page)).count).toBe(562);
+ // The what-if 1024 × 768 screen redraws at once; switching back restores the original's picture.
+ await page.getByRole('button',{name:'What if · 1024×768'}).click();
+ const fine=await modern(page);expect(fine.done).toBe(true);expect(fine.dots.length).toBe(1024*768);expect(fine.count).toBeGreaterThan(8*562);
+ await page.getByRole('button',{name:'TRS-80 · 128×48'}).click();
+ expect((await modern(page)).count).toBe(562);
  await page.getByRole('button',{name:'Instant'}).click();
  await page.getByLabel('Surface').selectOption({label:'Saddle'});
  await expect(page.locator('#plot3d-formula')).toHaveValue('Y=X^2-Z^2');
