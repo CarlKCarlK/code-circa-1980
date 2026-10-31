@@ -107,6 +107,13 @@ Use tags such as `castles-web-v1`, distinct from historical tags such as `castle
 Never fix a published snapshot in place or rebuild old releases using newer code.
 CI verifies their hashes and rejects modifications to previously published versions.
 
+**Stay on v1 until the user says otherwise.** No web URLs have been shared yet, so
+every program keeps a single web v1. To publish a change, remove that program's
+snapshot and `web-versions.json`, freeze v1 again from current source, move its
+`<program>-web-v1` tag, and put `[reset-web-versions]` in the head commit message
+so CI accepts the replacement. Do not create v2 or later for any program until
+the user explicitly gives the go-ahead.
+
 ## No intermediate pages
 
 Never put a start, instructions, or launch page between a visitor and a program.
