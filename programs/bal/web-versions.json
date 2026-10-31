@@ -1,0 +1,362 @@
+{
+  "versions": [
+    {
+      "id": "v1",
+      "label": "Web experience v1",
+      "released": "2026-10-30",
+      "sourceCommit": "1347ff285529a8fe5ba8c3d08e767d0e339a918b",
+      "files": [
+        {
+          "path": "assets/01-CHEMISTRY-BALANCER-II-SAVE01-Da_ahb0X.ASC",
+          "bytes": 10004,
+          "sha256": "fe0a4b0a1303b16c7a774cab3a4610db62a09729bde69119c32650a0e5c75f24"
+        },
+        {
+          "path": "assets/01-CHEMISTRY-BALANCER-II-SAVE01-ht9xoh_w.BAS",
+          "bytes": 8205,
+          "sha256": "95f52c0892746209621848ef2d5482ef20cbf32c807205cc4c70ffa8d490bebd"
+        },
+        {
+          "path": "assets/02-CHEMISTRY-BALANCER-II-INTEGER-BvCMn2W5.BAS",
+          "bytes": 6408,
+          "sha256": "06927532afe779d202773c33cecdc52d0e9ccd6252e9298b439c6083d986415a"
+        },
+        {
+          "path": "assets/02-CHEMISTRY-BALANCER-II-INTEGER-ToE8h75n.ASC",
+          "bytes": 7780,
+          "sha256": "5fecf5cd4df35054c5c5074769e5647662e569b95156fe60de09b6400d106575"
+        },
+        {
+          "path": "assets/02-CHEMISTRY-BALANCER-II-SAVE02-3JaZXaLP.ASC",
+          "bytes": 10706,
+          "sha256": "f396adec968741368df7927c478a85bffe09daf336f03c313830a1d3718c67a0"
+        },
+        {
+          "path": "assets/02-CHEMISTRY-BALANCER-II-SAVE02-CviBupe8.BAS",
+          "bytes": 8748,
+          "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd"
+        },
+        {
+          "path": "assets/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03-BRoI82gO.ASC",
+          "bytes": 11788,
+          "sha256": "7aa4604922017fea2a11c7249e6ab4629ce83e1ef6e5395e76878c77882f9633"
+        },
+        {
+          "path": "assets/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03-CPv6uGyK.BAS",
+          "bytes": 9601,
+          "sha256": "192a9efb5a104ed1add85a71450011b81ff6736a135b426421a5853275cdf3a1"
+        },
+        {
+          "path": "assets/03-EQUATION-BALANCER-REV1-SAVE01-PLYMcWDk.BAS",
+          "bytes": 2267,
+          "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e"
+        },
+        {
+          "path": "assets/03-EQUATION-BALANCER-REV1-SAVE01-YD2NdSQ6.ASC",
+          "bytes": 2870,
+          "sha256": "8c99667dcf63535eb8656c7dbdb2406c3313b54eb856e55b52f33b7ff5a646fa"
+        },
+        {
+          "path": "assets/05-EQUATION-BALANCER-REV2-SAVE01-dJDdrWGh.BAS",
+          "bytes": 2287,
+          "sha256": "359f9f4bf701ed78faa4b9c7c05b5502df2774ace217a537500a43b237569bba"
+        },
+        {
+          "path": "assets/05-EQUATION-BALANCER-REV2-SAVE01-DOhBpAJU.ASC",
+          "bytes": 2914,
+          "sha256": "3b2a975706d904eb99fe72df0a14ba70db98a02c1b57ad541a5a4c716f9ba34b"
+        },
+        {
+          "path": "assets/06-CHEMISTRY-BALANCER-II-SAVE-1-nZRt1BnC.ASC",
+          "bytes": 13030,
+          "sha256": "494b52931ad63f45c142a400db3f568d1dc5649282e4102e79ef610c1f7b1d87"
+        },
+        {
+          "path": "assets/06-CHEMISTRY-BALANCER-II-SAVE-1-ZdWNTYvy.BAS",
+          "bytes": 10528,
+          "sha256": "b33263f16114534c38b17b1c69e57cb7c1b17e2651ed6533fca4848719a0a462"
+        },
+        {
+          "path": "assets/06-CHEMISTRY-BALANCER-II-TEST-DObRy9jN.ASC",
+          "bytes": 8887,
+          "sha256": "988b599d05d2db4e84eb9c8707b26a821772405a63a1f5b3e6222b76919395c8"
+        },
+        {
+          "path": "assets/06-CHEMISTRY-BALANCER-II-TEST-VYD31VEK.BAS",
+          "bytes": 7303,
+          "sha256": "8fd666bfb28835a38e9e53b4fd6db280d6117401f692b767867852ad22422030"
+        },
+        {
+          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE-2-6Vif54OX.BAS",
+          "bytes": 10528,
+          "sha256": "88061e7022a54e0f114956a4083289f5727d90121390190bd3415f61dd2c0494"
+        },
+        {
+          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE1-5KdK3haR.BAS",
+          "bytes": 10435,
+          "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62"
+        },
+        {
+          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE1-DZOP8eGy.ASC",
+          "bytes": 12912,
+          "sha256": "5d40e10dbd4340d57bdc4c389727ef96f01f8045f46ec0102d69267f9c0f05c4"
+        },
+        {
+          "path": "assets/07-EQUATION-BALANCER-REV3-SAVE01-C9OkHQGU.ASC",
+          "bytes": 2950,
+          "sha256": "5bfb927c542e93bfad6cc068c4796b16addc93695c1161744af7c886f42203d6"
+        },
+        {
+          "path": "assets/07-EQUATION-BALANCER-REV3-SAVE01-Mr_Ipr-J.BAS",
+          "bytes": 2318,
+          "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65"
+        },
+        {
+          "path": "assets/08-CHEMISTRY-BALANCER-II-SAVE-3-BB_A_MdK.ASC",
+          "bytes": 13615,
+          "sha256": "b7e05326eb33c71bf949f68a4d900e6a9fc30520a027bf11b54842e352e5bc50"
+        },
+        {
+          "path": "assets/08-CHEMISTRY-BALANCER-II-SAVE-3-DUPeg57P.BAS",
+          "bytes": 11187,
+          "sha256": "ffc80376f5ad73e8bdaa3ccfb0145a1bb530b93de3e1aa0e4588f6bde4ab8b33"
+        },
+        {
+          "path": "assets/09-ARTILLERY-DRAFT01-B-8gzmKS.ASC",
+          "bytes": 2089,
+          "sha256": "d1c130ae3efbfe61883ec398518e29dcbadc89e72dfe212c1bd41d6cd3a62077"
+        },
+        {
+          "path": "assets/09-ARTILLERY-DRAFT01-C3HW0eKP.BAS",
+          "bytes": 1634,
+          "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334"
+        },
+        {
+          "path": "assets/09-CHEMICAL-EQUATION-BALANCER-CKNeMBHG.BAS",
+          "bytes": 1873,
+          "sha256": "4c259793aa8d3ac1828f2c34c80ff5bb86bb627521efcc372cdf1d9d73e36668"
+        },
+        {
+          "path": "assets/09-CHEMICAL-EQUATION-BALANCER-uZYgykr4.ASC",
+          "bytes": 2357,
+          "sha256": "6778b3b33bc99f866744bcc6a3929c56ae0ec8b89451d1c35831b23a8c7e2b52"
+        },
+        {
+          "path": "assets/09-CHEMISTRY-BALANCER-II-SAVE3-D2qsVNeO.ASC",
+          "bytes": 12925,
+          "sha256": "9fa87b2c74c4f07a68e153da07a4fe9c674d9933add0d4892ec1b902179a0583"
+        },
+        {
+          "path": "assets/09-CHEMISTRY-BALANCER-II-SAVE3-DWuphxdf.BAS",
+          "bytes": 10448,
+          "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e"
+        },
+        {
+          "path": "assets/10-ARTILLERY-DRAFT02-6SsIC_zM.BAS",
+          "bytes": 1858,
+          "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0"
+        },
+        {
+          "path": "assets/10-ARTILLERY-DRAFT02-D2W_3xX5.ASC",
+          "bytes": 2393,
+          "sha256": "56a173b7a45f8c0da10fdecb59a62f736a44c3ab9f80e6d9cefcd6d5d995f295"
+        },
+        {
+          "path": "assets/10-CHEMICAL-EQUATION-BALANCER-V2-BSxjgRa2.ASC",
+          "bytes": 3246,
+          "sha256": "8f9bef63f9c3e1ba9d3d5dc108a9a7f7dc7f66a8b275685891f0143a72eb6b87"
+        },
+        {
+          "path": "assets/10-CHEMICAL-EQUATION-BALANCER-V2-ClnMIdLx.BAS",
+          "bytes": 2552,
+          "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561"
+        },
+        {
+          "path": "assets/10-CHEMISTRY-BALANCER-II-SAVE-5-CNoiGI0S.BAS",
+          "bytes": 9956,
+          "sha256": "a05fc9094fb67882d6c087b9872328e87bff8946f76c19a3b9e4bb2144b65c87"
+        },
+        {
+          "path": "assets/10-CHEMISTRY-BALANCER-II-SAVE-5-cuTcEibc.ASC",
+          "bytes": 12295,
+          "sha256": "a4f2eb46f92ce025123ebe3f91915c4562eb3defa51a08ffe52067cb00c3e6d0"
+        },
+        {
+          "path": "assets/11-ARTILLERY-DRAFT03-DDawzNZR.BAS",
+          "bytes": 2507,
+          "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c"
+        },
+        {
+          "path": "assets/11-ARTILLERY-DRAFT03-DvyEwrAf.ASC",
+          "bytes": 3157,
+          "sha256": "e60c2108734afe5248e55fcd4a6f530d3d4f6fdddc450605189865cf0dc89f2b"
+        },
+        {
+          "path": "assets/11-CHEMICAL-EQUATION-BALANCER-V3-Di4DDcyG.ASC",
+          "bytes": 3266,
+          "sha256": "9cdc9667d3c0a53104529972f3ec700f01b5d6e44b8cd6719952e4614d6096e9"
+        },
+        {
+          "path": "assets/11-CHEMICAL-EQUATION-BALANCER-V3-DuNaXVAF.BAS",
+          "bytes": 2570,
+          "sha256": "6123fab3889045407644cd190539718be2557137514f33178790889578c37d50"
+        },
+        {
+          "path": "assets/11-CHEMISTRY-BALANCER-II-TEST-VERSION-DlmcxdRh.BAS",
+          "bytes": 10669,
+          "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918"
+        },
+        {
+          "path": "assets/11-CHEMISTRY-BALANCER-II-TEST-VERSION-IqBvLWH-.ASC",
+          "bytes": 13168,
+          "sha256": "42727e08fad0252d79099ac8e530b73de21897fbd9a065707b8ea81fc917a622"
+        },
+        {
+          "path": "assets/13-CHEMICAL-EQUATION-BALANCER-V1-DrhnS9UJ.BAS",
+          "bytes": 2473,
+          "sha256": "5cc30236ead0ae90168d5fe5cd843c04280edd060e5b9eb8d1f60ff0150f5d9a"
+        },
+        {
+          "path": "assets/13-CHEMICAL-EQUATION-BALANCER-V1-Nwp2CwQk.ASC",
+          "bytes": 3157,
+          "sha256": "69d64049e4f4e6c44fc76801c3a4d92e987b1b3fb682513084be39a8a621312d"
+        },
+        {
+          "path": "assets/14-FALL-GRAPHICS-BASIC-V1-5VEboz5i.BAS",
+          "bytes": 2637,
+          "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d"
+        },
+        {
+          "path": "assets/14-FALL-GRAPHICS-BASIC-V1-BbzSSlDH.ASC",
+          "bytes": 3301,
+          "sha256": "44b37f9c2623a56e6b1726ba7be1bf70d09b1836464f8b57c618b8ef04547694"
+        },
+        {
+          "path": "assets/17-CHEMICAL-EQUATION-BALANCER-V2-BOAj5gXO.BAS",
+          "bytes": 2543,
+          "sha256": "7fc596e7f296269ea4bb2a090ab78f165b179a7add07e7e8324756e3e7a2de8a"
+        },
+        {
+          "path": "assets/17-CHEMICAL-EQUATION-BALANCER-V2-Dv2v2Ln1.ASC",
+          "bytes": 3197,
+          "sha256": "5a0cf3fa59b6ba5c91e0c0eb814b5b20e537dca106b827348f908bf9aaa4cc93"
+        },
+        {
+          "path": "assets/BALANCER-D-LR-bQq.ASC",
+          "bytes": 12307,
+          "sha256": "933ff5d7913a676a3361fa466d3bf1682c03f4224d3a2d43c1dc96a61a841889"
+        },
+        {
+          "path": "assets/BALANCER-DsZN7RV2.BAS",
+          "bytes": 9965,
+          "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba"
+        },
+        {
+          "path": "assets/balancer-equation-BxrkCOHy.svg",
+          "bytes": 539,
+          "sha256": "0da58c002b3e49797f1875deade5cc76f2ee309699e6ee4db3acebf3b9457db8"
+        },
+        {
+          "path": "assets/CASTLES-BOCWVuoE.BAS",
+          "bytes": 2631,
+          "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd"
+        },
+        {
+          "path": "assets/CASTLES-D6fn4NUh.ASC",
+          "bytes": 3299,
+          "sha256": "8a67855ac5ef08c8b49832d854a08474cf127762737c2b906b4d1c2b2250df83"
+        },
+        {
+          "path": "assets/castles-game-CJCfL7KS.svg",
+          "bytes": 11566,
+          "sha256": "17ee64af2412d57c817279d7ab52f471866bb8d66e5b5385884228034662ebe8"
+        },
+        {
+          "path": "assets/catalog-chembalancer-ii-RaJ0sxXm.png",
+          "bytes": 54912,
+          "sha256": "1bf5fd5a8152264917fb5a01baa27818c963771b793d79a1e1445063ecb54a14"
+        },
+        {
+          "path": "assets/catalog-chemistry-equation-balancer-Dgsth5bM.png",
+          "bytes": 54296,
+          "sha256": "3097e42854d8c50538eec288698317c1b78e3ce2c10dcb221afa3651090cc2da"
+        },
+        {
+          "path": "assets/chemistry_balancer_bg-D14Bd7TS.wasm",
+          "bytes": 64556,
+          "sha256": "8e75590e58fe4879f40c65c0748117f260fffe2cc1322fd4fa2cf3482dfd0051"
+        },
+        {
+          "path": "assets/derived-isEYttG3.bin",
+          "bytes": 214,
+          "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
+        },
+        {
+          "path": "assets/emulator-5rzRyeNz.js",
+          "bytes": 284487,
+          "sha256": "68c1f2eda3532e83ba96e5fe5f425993f6e0a77c25ef98019c83c9ceae22abcb"
+        },
+        {
+          "path": "assets/index-CQv-5o02.js",
+          "bytes": 60321,
+          "sha256": "5b9272d7c45e8ec67d915421f6417add39f5a1b754cf2c3c6c9e142bf8d8403e"
+        },
+        {
+          "path": "assets/index-DkMfkcqH.css",
+          "bytes": 18773,
+          "sha256": "f1bf0b4653aab02cf7a70a1f9a53d8962425a3aaecb9d429afc32eea270b78fb"
+        },
+        {
+          "path": "assets/player-CXzd7v84.js",
+          "bytes": 5576,
+          "sha256": "5d37db4ee9cb69d67e3a36339f048ca49373b1766a9adc9559e144af0bf9f265"
+        },
+        {
+          "path": "assets/player-DG3vU3-j.js",
+          "bytes": 32072,
+          "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
+        },
+        {
+          "path": "assets/provenance-0s6Wg97I.json",
+          "bytes": 59264,
+          "sha256": "dc47b694c3a7353e081fe52bd7612d1dc5ec82db70253636b7ec66d3d0754529"
+        },
+        {
+          "path": "assets/provenance-B3CU-BNs.json",
+          "bytes": 1187,
+          "sha256": "26737385c33691ddbb55ef5b167446cbb06aa035f2e287d81ee235b9520a995c"
+        },
+        {
+          "path": "assets/provenance-BwXI0J5k.json",
+          "bytes": 237579,
+          "sha256": "34fb98c1c717e6c3c445d13e38ce8f20501fa508f4b7bf0e53f344509cbcabaf"
+        },
+        {
+          "path": "assets/provenance-ComXN-bt.json",
+          "bytes": 7239,
+          "sha256": "f8df4dfa753503491b99f1397e84dd0c057ba69436df48c18e3a41a662f94878"
+        },
+        {
+          "path": "assets/provenance-DLi4ITDj.json",
+          "bytes": 1139,
+          "sha256": "b8bcf931ec4806be82783caff39c593a44efe5ede8980be3a7bc8e694acc50ef"
+        },
+        {
+          "path": "assets/sourcebook-volume-iv-cover-LGpL70uP.png",
+          "bytes": 835711,
+          "sha256": "881a13d48406d91b0e3955d7dad6e9f7b598bd7a4f4ea12f8e59865a637df093"
+        },
+        {
+          "path": "index.html",
+          "bytes": 2073,
+          "sha256": "7e96af7c683b1803f34d087be206967d2ae1d3ca3f3250a4699db1bd80301448"
+        },
+        {
+          "path": "licenses.txt",
+          "bytes": 16573,
+          "sha256": "ed4b26bab11354ec8af69c7d2e1d54d8044505e165d915ae5d6ae0006024f806"
+        }
+      ]
+    }
+  ]
+}
