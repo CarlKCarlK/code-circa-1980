@@ -25,9 +25,8 @@ are kept as source. See
 
 **[Play Alien](https://carlkcarlk.github.io/code-circa-1980/#/program/alien)**:
 hunt an alien through your spaceship's air vents. The game is Gregory Yob's
-*Hunt the Wumpus* (1973), which I re-themed after the film *Alien*, probably in
-1979, and then expanded with a title screen and a way to trap the alien by
-closing junctions. The expanded BASIC version runs unchanged in the emulator;
+*Hunt the Wumpus* (1973), which I reskinned after the film *Alien*, probably in
+1979, and remixed so you can trap the alien by closing junctions. The expanded BASIC version runs unchanged in the emulator;
 see [programs/alien](programs/alien/).
 
 ## About this project

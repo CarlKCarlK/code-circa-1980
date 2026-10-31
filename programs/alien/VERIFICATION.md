@@ -23,6 +23,10 @@ the library default (Model III, Level II BASIC, as on the site), typing at each 
   After NO, PLEASE WAIT A MOMENT lasts about 20 seconds (junction shuffling).
   A move (M, 1), a close (C → JUCTION # 1 IS NOW CLOSED), and a one-junction
   spray (S, 1, 5 → MISSED) all responded as the source describes.
+- Starting worlds (v02): two full runs that watched the title both started in
+  junction 18 (vents 1, 5, 6); runs that skipped the title with a key after about
+  5 or 26 emulated seconds both started in junction 9 (vents 20, 4, 15). The
+  emulator's Restart resets the machine and reboots the ROM before running.
 - v01: after NO, a two-junction shot ended with AHA! YOU GOT THE ALIEN!,
   BOY, THAT WAS CLOSE.  BUT YOU WON! and the SAME SET-UP prompt.
 
