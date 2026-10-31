@@ -862,6 +862,62 @@
           "sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836"
         }
       ]
+    },
+    {
+      "version": "v04",
+      "label": "COMPUTER CHESS V2 · Fixes",
+      "capture": "tape13a",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape13a/best/10-COMPUTER-CHESS-V2.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/10-COMPUTER-CHESS-V2.ASC",
+      "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340",
+      "bytes": 3231,
+      "listing_sha256": "236213f2c5c3c0678e16f3a819538913d535fa27218d240d735d98daed238dfc",
+      "listing_lines": 79,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "COMPUTER CHESS V2; 79 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 10,
+        "title": "COMPUTER-CHESS-V2",
+        "source": "tapes/recovered/tape13a/timing-refinement/T10-left-hp1200-05cf84527309.BAS",
+        "binary": "tapes/recovered/tape13a/best/10-COMPUTER-CHESS-V2.BAS",
+        "listing": "tapes/recovered/tape13a/best/10-COMPUTER-CHESS-V2.ASC",
+        "bytes": 3231,
+        "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340",
+        "recovery_complete": true,
+        "source_start_s": 392.8918958333333,
+        "source_end_s": 445.61083333333335,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T10-left-hp1200-05cf84527309.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T10-right-boosted-05cf84527309.BAS"
+        ],
+        "lines": 79,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v04/10-COMPUTER-CHESS-V2.BAS",
+      "snapshot_listing": "versions/v04/10-COMPUTER-CHESS-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/10-COMPUTER-CHESS-V2.BAS",
+          "bytes": 3231,
+          "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340"
+        },
+        {
+          "path": "versions/v04/10-COMPUTER-CHESS-V2.ASC",
+          "bytes": 3766,
+          "sha256": "236213f2c5c3c0678e16f3a819538913d535fa27218d240d735d98daed238dfc"
+        }
+      ]
     }
   ],
   "partial_saves": [
