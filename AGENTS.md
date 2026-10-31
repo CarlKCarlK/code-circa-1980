@@ -61,8 +61,11 @@ those same files in one commit per version, in documented inferred development
 order, verifying each committed blob against its snapshot hash. Add program-specific
 tags (for example, `castles-v01`) to make each canonical revision easy to compare.
 Append this history when earlier commits are already published; do not rewrite
-user history. Use actual import dates, preserve all historical bytes, and explain
+user history unless the user explicitly authorizes it. Use actual import dates, preserve all historical bytes, and explain
 when the latest historical source differs from the website's playable default.
+When a program began as someone else's published listing, the canonical history
+may start with a transcription of it (Alien: Yob's Hunt the Wumpus, tag
+`alien-wumpus`, also kept in `programs/alien/wumpus/`) so `git diff -w` shows the changes.
 
 ## Native TypeScript implementations
 

@@ -100,7 +100,10 @@ publicity for *Alien* (1979). On the same tape side, TEACH VI is dated
 and RELITIVITY 9 May 1979. Old programs were sometimes saved again later.
 
 [original/](original/) holds stable paths that advance through one Git commit per
-version (tags `alien-v01`, `alien-v02`) so the changes can be compared.
+version so the changes can be compared. Its first commit (tag `alien-wumpus`) is
+Yob's Hunt the Wumpus listing, transcribed from my copy of *More BASIC Computer
+Games* into [wumpus/](wumpus/); then come `alien-v01` and `alien-v02`. Compare with
+`git diff -w alien-wumpus alien-v01 -- programs/alien/original/ALIEN.ASC`.
 
 ## All differences from Hunt the Wumpus
 
