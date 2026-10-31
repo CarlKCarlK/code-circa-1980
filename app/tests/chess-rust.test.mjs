@@ -48,10 +48,10 @@ test('steps match the ROM running now',()=>{
   assert.deepEqual(JSON.parse(steps_json()),readSteps(runBasicText(stepsProgram)));
 });
 
-test('Rust engine matches v14 running now through a searched move',()=>{
-  const o=startOriginal('versions/v14/08-CISAB-CHESS-V9.BAS'),engine=new Engine();
+test('Rust engine matches corrected v14 running now through a searched move',()=>{
+  const o=startOriginal('corrected/CHESS.BAS'),engine=new Engine();
   o.until(/COLOR ARE WE/,30);
-  for(const [line,prompt] of [['BLACK',/COULMB\)\?/],['2,5,4,5',/^OK\?\?/],['IQ',/COULMB\)\?/]]){
+  for(const [line,prompt] of [['BLACK',/COLUMN\)\?/],['2,5,4,5',/^OK\?\?/],['IQ',/COLUMN\)\?/]]){
     o.type(`${line}\n`);o.run(1);o.until(prompt,900);engine.input(line);
   }
   const s=JSON.parse(engine.snapshot());

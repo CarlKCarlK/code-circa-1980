@@ -1984,5 +1984,23 @@
         }
       ]
     }
+  ],
+  "derived_editions": [
+    {
+      "id": "corrected",
+      "description": "v14 with six bugs fixed and its printed spelling corrected; not a recovered artifact",
+      "source_version": "v14",
+      "source_sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7",
+      "raw": "corrected/CHESS.BAS",
+      "listing": "corrected/CHESS.ASC",
+      "sha256": "97399fe3f1ea881f1399f4f0687b0288b99e04ee4148783f6249d07e0bea64b4",
+      "bytes": 5098,
+      "listing_sha256": "fd7b585bc37e002eeab80a75296c9ab89da01422e80491f0ce6d0fd432afae9e",
+      "corrections": "corrected/corrections.json",
+      "changes": "corrected/changes.json",
+      "build": "app/scripts/build-chess-corrected.mjs",
+      "created": "2026-10-31",
+      "requested_by": "user"
+    }
   ]
 }

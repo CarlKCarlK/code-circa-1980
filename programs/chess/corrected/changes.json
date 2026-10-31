@@ -1,0 +1,103 @@
+{
+  "source": "versions/v14/08-CISAB-CHESS-V9.BAS",
+  "source_sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7",
+  "sha256": "97399fe3f1ea881f1399f4f0687b0288b99e04ee4148783f6249d07e0bea64b4",
+  "bytes": 5098,
+  "listing_sha256": "fd7b585bc37e002eeab80a75296c9ab89da01422e80491f0ce6d0fd432afae9e",
+  "changes": [
+    {
+      "line": 14,
+      "from": "PM=120",
+      "to": "PM=300",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 80,
+      "from": "(ROW,COLUMB,NEW ROW,COULMB)",
+      "to": "(ROW,COLUMN,NEW ROW,COLUMN)",
+      "count": 1,
+      "kind": "spelling"
+    },
+    {
+      "line": 110,
+      "from": "B(RO,CO)=0:RN=0:CN=0:RO=0:CO=0:IFABS(B(RN,CN))=6AND RN=8THENB(RN,CN)=SGN(B(RN,CN))*2:RN=0:GOSUB10000",
+      "to": "B(RO,CO)=0:IFABS(B(RN,CN))=6AND RN=8THENB(RN,CN)=SGN(B(RN,CN))*2:GOSUB10000",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 111,
+      "inserted": "111 RN=0:CN=0:RO=0:CO=0",
+      "kind": "bug"
+    },
+    {
+      "line": 210,
+      "from": "GOSUB 2000",
+      "to": "GOTO 2000",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 335,
+      "from": "IF B(R-2,C)=0",
+      "to": "IF R=7 AND B(R-2,C)=0",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 1005,
+      "from": "i CAN'T MOVE",
+      "to": "I CAN'T MOVE",
+      "count": 1,
+      "kind": "spelling"
+    },
+    {
+      "line": 1300,
+      "from": "IFB(R8,C8)=-6 AND R8=1 THEN B(R8,C8)=-2",
+      "to": "IFB(R7,C7)=-6 AND R8=1 THEN B(R7,C7)=-2",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 1330,
+      "from": "i WON",
+      "to": "I WON",
+      "count": 3,
+      "kind": "spelling"
+    },
+    {
+      "line": 9500,
+      "from": "IF B(8,2)<>0 THEN",
+      "to": "IF B(8,2)=-4 AND B(6,3)>=0 THEN",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 9510,
+      "from": "IF B(8,7)<>0 THEN",
+      "to": "IF B(8,7)=-4 AND B(6,6)>=0 THEN",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 9520,
+      "from": "IF B(7,5)<>0 THEN",
+      "to": "IF B(7,5)=-6 AND B(6,5)=0 AND B(5,5)=0 THEN",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 9530,
+      "from": "IF B(8,6)<>0 THEN",
+      "to": "IF B(8,6)=-3 AND B(7,5)=0 AND B(6,4)=0 AND B(5,3)>=0 THEN",
+      "count": 1,
+      "kind": "bug"
+    },
+    {
+      "line": 9540,
+      "inserted": "9540 S$=\"\":GOTO 210",
+      "kind": "bug"
+    }
+  ]
+}

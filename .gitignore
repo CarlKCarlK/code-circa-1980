@@ -7,3 +7,5 @@ Thumbs.db
 *~
 programs/bal/rust/target/
 programs/chess/rust/target/
+programs/chess/rating/third_party/
+programs/chess/rating/uci/target/

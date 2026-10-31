@@ -1,0 +1,99 @@
+{
+  "source": "versions/v14/08-CISAB-CHESS-V9.BAS",
+  "note": "Each edit replaces text in one line of the recovered listing, or inserts a line; the build re-tokenizes only those lines and keeps every other byte.",
+  "edits": [
+    {
+      "line": 14,
+      "from": "PM=120",
+      "to": "PM=300",
+      "kind": "bug",
+      "reason": "PM sizes the move lists in line 15. Rooks, bishops and queens list some squares two or three times, so busy positions passed 120 entries and stopped with ?BS Error in 3015 or 3500. 300 entries cost about 4 KB."
+    },
+    {
+      "line": 80,
+      "from": "(ROW,COLUMB,NEW ROW,COULMB)",
+      "to": "(ROW,COLUMN,NEW ROW,COLUMN)",
+      "kind": "spelling"
+    },
+    {
+      "line": 110,
+      "from": "B(RO,CO)=0:RN=0:CN=0:RO=0:CO=0:IFABS(B(RN,CN))=6AND RN=8THENB(RN,CN)=SGN(B(RN,CN))*2:RN=0:GOSUB10000",
+      "to": "B(RO,CO)=0:IFABS(B(RN,CN))=6AND RN=8THENB(RN,CN)=SGN(B(RN,CN))*2:GOSUB10000",
+      "kind": "bug",
+      "reason": "Their pawn on row 8 was never promoted: RN was set to 0 before the test. The test now comes first; line 111 clears the move afterwards, as before."
+    },
+    {
+      "line": 111,
+      "insert": "111 RN=0:CN=0:RO=0:CO=0",
+      "kind": "bug",
+      "reason": "The statements moved from line 110, so a second ADD still does not repeat the move."
+    },
+    {
+      "line": 210,
+      "from": "GOSUB 2000",
+      "to": "GOTO 2000",
+      "kind": "bug",
+      "reason": "Line 2000's routine always leaves by GOTO, so this GOSUB never returned and every searched move left a frame on BASIC's stack. GOTO does the same without the leak."
+    },
+    {
+      "line": 335,
+      "from": "IF B(R-2,C)=0",
+      "to": "IF R=7 AND B(R-2,C)=0",
+      "kind": "bug",
+      "reason": "Our pawns could step two squares from any row, even off the board to row 0; now only from row 7, where they start."
+    },
+    {
+      "line": 1005,
+      "from": "i CAN'T MOVE",
+      "to": "I CAN'T MOVE",
+      "kind": "spelling"
+    },
+    {
+      "line": 1300,
+      "from": "IFB(R8,C8)=-6 AND R8=1 THEN B(R8,C8)=-2",
+      "to": "IFB(R7,C7)=-6 AND R8=1 THEN B(R7,C7)=-2",
+      "kind": "bug",
+      "reason": "Our pawn on row 1 was never promoted: the test looked at the square it moves to, which never holds our pawn. It now looks at the pawn's square, so line 1320 moves a queen."
+    },
+    {
+      "line": 1330,
+      "from": "i WON",
+      "to": "I WON",
+      "kind": "spelling"
+    },
+    {
+      "line": 9500,
+      "from": "IF B(8,2)<>0 THEN",
+      "to": "IF B(8,2)=-4 AND B(6,3)>=0 THEN",
+      "kind": "bug",
+      "reason": "The opening moved whatever stood on its square, wherever it was going. Each move now needs its own piece at home and a clear path, and must not land on one of its own pieces."
+    },
+    {
+      "line": 9510,
+      "from": "IF B(8,7)<>0 THEN",
+      "to": "IF B(8,7)=-4 AND B(6,6)>=0 THEN",
+      "kind": "bug",
+      "reason": "As line 9500."
+    },
+    {
+      "line": 9520,
+      "from": "IF B(7,5)<>0 THEN",
+      "to": "IF B(7,5)=-6 AND B(6,5)=0 AND B(5,5)=0 THEN",
+      "kind": "bug",
+      "reason": "As line 9500; a pawn needs both squares ahead empty."
+    },
+    {
+      "line": 9530,
+      "from": "IF B(8,6)<>0 THEN",
+      "to": "IF B(8,6)=-3 AND B(7,5)=0 AND B(6,4)=0 AND B(5,3)>=0 THEN",
+      "kind": "bug",
+      "reason": "As line 9500; the bishop's path is rows 7 and 6."
+    },
+    {
+      "line": 9540,
+      "insert": "9540 S$=\"\":GOTO 210",
+      "kind": "bug",
+      "reason": "When no opening move can be played, CISAB ends its opening and thinks. Before, it fell into line 10000 and stopped with ?RG Error in 10020."
+    }
+  ]
+}

@@ -15,11 +15,11 @@ const PROMOTIONS = [[2,'Queen'], [5,'Rook'], [3,'Bishop'], [4,'Knight']];
 function endMessage(end) {
   if (end.kind === 'theyWin') return ['You took CISAB’s king.', 'DARN THEY BEAT YOU! Taking its king is the only way CISAB admits defeat (line 100).'];
   if (end.kind === 'forever') return ['Checkmate: you win.', 'Every move CISAB can find loses its king, so lines 1010–1220 repeat forever. It never knew it had lost; the 1979 program simply never moves again.'];
-  if (end.kind === 'stalemate') return ['Stalemate: a draw.', 'i CAN’T MOVE.  STALEMATE (line 1005).'];
+  if (end.kind === 'stalemate') return ['Stalemate: a draw.', 'I CAN’T MOVE.  STALEMATE (line 1005).'];
   const why = {
     'BS 3015': 'CISAB listed more than 120 moves of its own. Rooks, bishops and queens list some squares two or three times (they step half a square at a time), and DIM in line 15 has room for 120.',
     'BS 3500': 'CISAB listed more than 120 of your moves while mapping the squares you attack. Your rooks, bishops and queens count some squares two or three times, and DIM in line 15 has room for 120.',
-    'FC 335': 'A CISAB pawn reached your back row and was never promoted (line 1300 checks the wrong square). Looking two squares ahead, line 335 asks for row −1.',
+    'FC 335': 'A CISAB pawn stood on your back row, and line 335, looking two squares ahead, asked for row −1.',
     'RG 10020': 'The four squares of CISAB’s opening were all empty, so line 9530 fell into the board-drawing subroutine, whose RETURN has no GOSUB.',
   }[end.text.replace(/^\?(\w\w) Error in (\d+)$/, '$1 $2')] ?? 'The 1979 program stops here.';
   return [`CISAB is disqualified: ${end.text}. You win.`, `${why} The 1979 program stops here.`];
@@ -65,7 +65,7 @@ export async function createPlayer(host, _url, status, title) {
     let mode = 'move';
     for (const line of newLines) {
       if (mode === 'color') lines.push(`WHAT COLOR ARE WE? ${line}`);
-      else if (mode === 'move') { lines.push(`WHAT WAS THEIR ${adjective} MOVE (ROW,COLUMB,NEW ROW,COULMB)? ${line}`); if (events.some(e => e.kind === 'ohDarn')) lines.push('OH DARN!'); }
+      else if (mode === 'move') { lines.push(`WHAT WAS THEIR ${adjective} MOVE (ROW,COLUMN,NEW ROW,COLUMN)? ${line}`); if (events.some(e => e.kind === 'ohDarn')) lines.push('OH DARN!'); }
       else if (mode === 'ok') lines.push(`OK?? ${line}`);
       else lines.push('K=1,Q=2,B=3,N=4,R=5,P=6  WE ARE NEG. GIVE R,C,V', `? ${line}`);
       mode = mode === 'move' || mode === 'add' ? 'ok' : line === 'ADD' ? 'add' : 'done';

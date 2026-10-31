@@ -20,7 +20,8 @@ as they were committed.
 
 `tests/helpers/chess-reference.mjs` runs a version on the site's configuration
 (Model III, Level II BASIC) and answers its prompts. `tests/chess-original.test.mjs`
-(part of `npm test`) checks:
+(part of `npm test`) runs the corrected edition the site plays; the
+observations below held for the recovered v14 as well. It checks:
 
 - As White, CISAB's first move is the knight from row 8, column 2 to row 6,
   column 3; after `2,5,4,5` and `OK`, its second is the other knight to row 6,
@@ -60,19 +61,22 @@ and CISAB stopped with `?OV Error in 80`.
 Recorded with `npm run record:chess` on 2026-10-31 and replayed by
 `tests/chess-rust.test.mjs` (part of `npm test`):
 
-- **22 games against v14 in the emulator.** After every typed line, the Rust
-  engine had the same prompt, the same B(0-10,0-10) array, the same RND seed
-  and adjective, and the same ending as the original. That covers 18
-  random-legal games, some answering IQ, mistyping at OK?, typing CHEAT
-  moves, or castling, taking en passant and promoting through ADD, plus
-  4 scripted games.
-- **Endings recorded in the original and reproduced in Rust:**
-  - `?BS Error in 3015` (7 games): CISAB's move list passed 120 entries;
-  - `?FC Error in 335` (4 games): a CISAB pawn on row 1;
-  - `?RG Error in 10020`: the opening squares emptied with ADD;
+- **22 games against corrected v14** (`corrected/CHESS.BAS`) **in the
+  emulator.** After every typed line, the Rust engine had the same prompt,
+  the same B(0-10,0-10) array, the same RND seed and adjective, and the same
+  ending as the BASIC program. That covers 18 random-legal games, some
+  answering IQ, mistyping at OK?, typing CHEAT moves, or castling, taking en
+  passant and promoting through ADD, plus 4 scripted games.
+- **No error stopped any of the 18 random games**; each reached its move
+  limit. The same games recorded against the recovered v14, before the
+  corrections, ended with `?BS Error in 3015` (7 games) and
+  `?FC Error in 335` (4 games).
+- **Scripted endings:**
   - `DARN THEY BEAT YOU!`;
-  - a checkmate. Rust reports it loops forever; the original made no move
-    in 900 emulated seconds.
+  - a checkmate: Rust reports it loops forever, and the BASIC program made no
+    move in 900 emulated seconds;
+  - with the opening squares emptied through ADD, CISAB thinks (line 9540)
+    where v14 stopped with `?RG Error in 10020`.
 - **Arithmetic:** the step table of lines 410–650, all 5,292 scores lines
   3000–3030 and 1205 can produce, and 3,000 RND calls match what the ROM
   computes. The step table and a game through a searched move are also
@@ -83,11 +87,16 @@ open the Rust board. Clicking and dragging move pieces, and dots mark your
 legal squares. CISAB's book replies appear in the move list. Unchecking the
 opening sends IQ, after which CISAB searches. Play Black makes CISAB open
 with Nc3 on a board shown from Black's side, and New game works. The
-Level II BASIC tab still runs v14. At 390 px wide there is no horizontal
-scrolling. An illegal move disqualifies CISAB. In the test, after d4, d5 and h3,
-its opening pushes d7-d5 onto your pawn, and the board then ends the game.
-Rust unit tests check your 20 opening moves, castling typed with ADD, and an
-en passant capture offered after its pawn steps two squares.
+Level II BASIC tab runs corrected v14. At 390 px wide there is no horizontal
+scrolling. An illegal move disqualifies CISAB. In the test, after e3, Bc4 and Bxf7+,
+its opening plays d7-d5 while in check, and the board ends the game.
+Rust unit tests check your 20 opening moves, castling typed with ADD, an en
+passant capture offered after its pawn steps two squares, and a blocked
+opening move being skipped.
+
+`tests/chess-corrected.test.mjs` rebuilds the corrected edition from the
+recovered v14 bytes. It checks that only the listed lines changed, and that
+every other line keeps its recovered bytes.
 
 ## Not tested
 

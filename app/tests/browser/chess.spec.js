@@ -8,7 +8,7 @@ const screenText=async page=>page.evaluate(()=>{
 const square=async(page,row,column)=>(await screenText(page)).split('\n')[row-1].slice(column*6,column*6+3).trim();
 const tap=async(page,key)=>{await page.keyboard.down(key);await page.waitForTimeout(120);await page.keyboard.up(key);await page.waitForTimeout(80);};
 const type=async(page,text)=>{for(const k of text)await tap(page,k);await tap(page,'Enter');};
-const movePrompt=/COULMB\)\? *.?\s*$/;
+const movePrompt=/COLUMN\)\? *.?\s*$/;
 
 test('collection and program links open the Rust board directly; BASIC v14 and source-only versions remain',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -29,7 +29,7 @@ test('collection and program links open the Rust board directly; BASIC v14 and s
  await page.getByRole('button',{name:'Close help'}).click();
  await page.getByRole('link',{name:'Level II BASIC version'}).click();
  await expect(page).toHaveURL(/#\/program\/chess\/basic\/play$/);
- await expect(page.getByRole('link',{name:'Download original payload'})).toHaveAttribute('href',/CHESS.*\.BAS$/); // v14 is bundled once with the identical original/CHESS.BAS.
+ await expect(page.getByRole('link',{name:'Download BASIC payload'})).toHaveAttribute('href',/CHESS.*\.BAS$/); // The corrected edition the BASIC tab runs.
  await expect(page.getByRole('button',{name:'Fast (×20)'})).toHaveAttribute('aria-pressed','true');
  await page.getByRole('button',{name:'Help'}).click();
  await expect(page.locator('.player-help')).toContainText('Answers at OK?');
@@ -74,15 +74,15 @@ test('Rust board: click and drag moves, CISAB answers from the original algorith
  expect(errors).toEqual([]);
 });
 
-test('an illegal CISAB move disqualifies it: its opening pushes d7-d5 onto your pawn',async({page})=>{
+test('an illegal CISAB move disqualifies it: its opening ignores check',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1&test#/program/chess/rust/play');
- for(const [a,b] of [[[2,5],[4,5]],[[4,5],[5,5]],[[2,1],[3,1]]]){ // d4, d5, h3
+ for(const [a,b] of [[[2,4],[3,4]],[[1,3],[4,6]],[[4,6],[7,3]]]){ // e3, Bc4, Bxf7+
   await sq(page,...a).click();await sq(page,...b).click();
   await expect.poll(async()=>(await page.evaluate(()=>window.__circaPlayer.snapshot())).thinking,{timeout:5000}).toBe(false);
  }
  await expect(page.locator('.chess-end')).toContainText('CISAB is disqualified: illegal move. You win.');
- await expect(page.locator('.chess-end')).toContainText('dxd5 is not a legal chess move');
+ await expect(page.locator('.chess-end')).toContainText('d5 ignores check');
  await expect(page.locator('.chess-moves .tag.illegal')).toHaveCount(1);
  await sq(page,2,2).click();
  await expect(page.locator('.chess-board .target')).toHaveCount(0);

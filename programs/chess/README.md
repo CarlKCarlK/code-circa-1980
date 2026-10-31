@@ -13,8 +13,15 @@ asks `WHAT COLOR ARE WE`, then `WHAT WAS THEIR FOOLISH MOVE` (the adjective is
 picked at random from ten), so whoever sits at the keyboard types in the
 opponent's moves and plays CISAB's replies on the real board.
 
+I also had Sargon, Dan and Kathe Spracklen's chess program for the TRS-80. For
+a mediocre player like me, who played only with family and friends, it was
+great: it taught me to stop overlooking my own dumb moves, and I got much
+better against my friends. CISAB asks the same question Sargon made me ask: after this
+move, what can they take?
+
 The site opens a Rust port of v14 on a mouse board (see below); the
-**Level II BASIC version** tab runs v14 itself, unchanged, in the emulator.
+**Level II BASIC version** tab runs v14 in the emulator, with the corrections
+listed under "Fixed for this site".
 The thirteen earlier versions are kept as source. They run from a program
 that only plays itself (v01) to the tournament player (v03 on), then add
 look-ahead, piece values and an opening.
@@ -45,7 +52,7 @@ screen, yours at the top.
 2. At `WHAT COLOR ARE WE?` type `WHITE` (CISAB moves first) or `BLACK`
    (you move first), then `Enter`. Only the first letter counts: W means
    White, anything else Black.
-3. At `WHAT WAS THEIR … MOVE (ROW,COLUMB,NEW ROW,COULMB)?` type four numbers
+3. At `WHAT WAS THEIR … MOVE (ROW,COLUMN,NEW ROW,COLUMN)?` type four numbers
    separated by commas, then `Enter`. Rows are numbered 1–8 from the top of
    the screen, columns 1–8 from the left. As White, CISAB opens by moving the
    knight from row 8 column 2 to row 6 column 3; reply `2,5,4,5` to push your
@@ -78,7 +85,7 @@ CISAB only checks that the square you move from holds one of your pieces
 (otherwise it flashes `**** CHEAT *****`). It does not check the rest of your
 move. Use `ADD` for moves it does not know: castling (move the king, then
 `ADD` the rook on its new square and `0` on its old one), en passant, and
-promotion.
+promotion to anything but a queen.
 
 The game ends when a king is captured. If you take CISAB's king it prints
 `DARN THEY BEAT YOU!`. There is no check or checkmate detection.
@@ -132,19 +139,42 @@ and 10 are identical to v01 and v02. Two saves are damaged:
 
 Their recovered files are in [partial/](partial/), unchanged and not playable.
 
+## Fixed for this site
+
+Both players run v14 with six bugs fixed and two spellings corrected, at my
+request; each keeps what the program meant to do
+([corrected/](corrected/), every change listed in `corrected/changes.json`;
+the recovered bytes stay in `versions/v14`):
+
+- Line 1300: CISAB's pawns promote to a queen on your back row. The test
+  looked at the square the pawn moved to, so they never did; they stayed
+  pawns, and the next turn stopped the program with `?FC Error in 335`.
+- Line 335: CISAB's pawns step two squares only from their starting row.
+  They could from any row, even off the board to row 0.
+- Lines 110-111: your pawns promote to a queen on row 8. Line 110 erased the
+  move before testing it.
+- Line 14: move lists hold 300 entries, not 120. Rooks, bishops and queens
+  list some squares two or three times, so busy positions overflowed and
+  stopped with `?BS Error in 3015` or `3500`.
+- Line 210: `GOTO 2000`, not `GOSUB`. The GOSUB never returned, so every
+  searched move left a frame on BASIC's stack.
+- Lines 9500-9540: each opening move needs its own piece at home and a clear
+  path; when none fits, CISAB thinks. It used to move whatever stood on those
+  squares, through pieces, and stopped with `?RG Error in 10020` when all four
+  were empty.
+- `COLUMN` for `COLUMB` and `COULMB`; `I` for `i` in `I CAN'T MOVE` and `I WON`.
+
+Before the fixes, in 100 rating games against Texel's weakest setting, the two
+pawn bugs caused 75 of CISAB's 79 illegal moves, the opening the other 4, and
+the 120-entry move lists all 7 crashes ([rating/](rating/)).
+
 ## Quirks kept from the original
 
 From reading the v14 source; only the behaviors in VERIFICATION.md were run.
 
-- `COLUMB` and `COULMB` for "column".
-- `CHECKMATE.....i WON!` can never print: line 1330 tests `R`, which by
+- `CHECKMATE.....I WON!` can never print: line 1330 tests `R`, which by
   then is a loop counter, not a score. If CISAB takes your king, it just
   asks for your next move.
-- Your pawns are never promoted: line 110 clears the move's row and column
-  before checking for promotion. CISAB's promotion check (line 1300) looks
-  at the target square before its pawn moves there. Use `ADD`.
-- Its opening moves only check that the piece is still on its starting
-  square, not that the path is clear.
 - Line 1075 looks for CLEAR (`\` on the site's keyboard) between trial moves
   to stop the look-ahead. Holding it during CISAB's second move made no
   difference in my tests.

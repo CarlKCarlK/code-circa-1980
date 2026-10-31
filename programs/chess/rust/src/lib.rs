@@ -1,7 +1,7 @@
 //! CISAB, in Rust.
 //!
 //! A port of the chess program in Carl Kadie's TRS-80 Level II BASIC listing
-//! CISAB V9 (v14, tape13b save 8). `engine` follows the original's move
+//! CISAB V9 (v14, tape13b save 8), as corrected for the site (programs/chess/corrected/). `engine` follows the original's move
 //! generator, scores, shuffle and look-ahead with Level II's RND and rounding,
 //! so for the same answers it makes the same moves, illegal ones included, and
 //! stops where the original stops. `rules` checks only your moves. See PARITY.md.
@@ -26,7 +26,7 @@ fn json_sq((r, c): Square) -> String {
 pub fn end_json(end: &End) -> String {
     match end {
         End::TheyWin => r#"{"kind":"theyWin","text":"DARN THEY BEAT YOU!"}"#.into(),
-        End::Stalemate => r#"{"kind":"stalemate","text":"i CAN'T MOVE.  STALEMATE"}"#.into(),
+        End::Stalemate => r#"{"kind":"stalemate","text":"I CAN'T MOVE.  STALEMATE"}"#.into(),
         End::ThinksForever => r#"{"kind":"forever","text":""}"#.into(),
         End::Error { code, line } => format!(r#"{{"kind":"error","text":"?{code} Error in {line}"}}"#),
     }
@@ -108,8 +108,23 @@ pub fn illegal_reason(before: &[[i8; 11]; 11], after: &[[i8; 11]; 11], from: Squ
     if !on(to) {
         return Some("moves a piece off the board");
     }
+    let at = |(r, c): Square| before[r as usize][c as usize];
+    if !rules::cisab_move_is_pseudo_legal(before, from, to) {
+        let pawn = at(from) == -6;
+        return Some(if at(to) < 0 {
+            "takes its own piece"
+        } else if pawn && from.1 == to.1 && at(to) != 0 {
+            "moves a pawn straight onto a piece"
+        } else if pawn && from.1 == to.1 && from.0 - to.0 == 2 && from.0 != 7 {
+            "moves a pawn two squares after its first move"
+        } else if pawn && from.1 != to.1 && at(to) == 0 {
+            "moves a pawn diagonally without taking"
+        } else {
+            "jumps over a piece"
+        });
+    }
     if !rules::cisab_move_is_legal(before, from, to) {
-        return Some(if rules::in_check(after, -1) { "leaves its king in check" } else { "is not a legal chess move" });
+        return Some(if rules::in_check(before, -1) { "ignores check" } else { "puts its own king in check" });
     }
     if to.0 == 1 && after[1][to.1 as usize] == -6 {
         return Some("leaves a pawn unpromoted on the last row");
@@ -140,9 +155,7 @@ impl Game {
 
     /// The opening move CISAB makes as White before your first move, as JSON (or null).
     pub fn first_reply(&mut self) -> String {
-        let reply = self.engine.last_move.map(|(from, to)| format!(r#"{{"from":{},"to":{},"legal":true}}"#, json_sq(from), json_sq(to)));
-        self.after_cisab();
-        reply.unwrap_or("null".into())
+        self.take_first_reply().map(|(from, to)| format!(r#"{{"from":{},"to":{},"legal":true}}"#, json_sq(from), json_sq(to))).unwrap_or("null".into())
     }
 
     fn send(&mut self, line: &str) {
@@ -183,6 +196,45 @@ impl Game {
     /// pawn reaching row 8; `iq` answers IQ instead of OK, ending CISAB's opening.
     /// Returns the new events as JSON, or an error if the move is not legal.
     pub fn play(&mut self, fr: i16, fc: i16, tr: i16, tc: i16, promote: i8, iq: bool) -> Result<String, String> {
+        let (reply, after_you) = self.make_move((fr, fc), (tr, tc), promote, iq)?;
+        let reply = reply.map(|r| {
+            format!(r#"{{"from":{},"to":{},"legal":{},"reason":{}}}"#, json_sq(r.from), json_sq(r.to), r.illegal.is_none(), r.illegal.map(json_str).unwrap_or("null".into()))
+        });
+        Ok(format!(r#"{{"events":[{}],"afterYou":{},"reply":{}}}"#, self.events.join(","), board_json(&after_you), reply.unwrap_or("null".into())))
+    }
+
+    /// Board, prompt, your legal moves and status, as JSON.
+    pub fn state(&self) -> String {
+        let e = &self.engine;
+        let moves: Vec<String> = self
+            .legal()
+            .iter()
+            .map(|m| format!(r#"{{"from":{},"to":{},"promotes":{},"castles":{},"passant":{}}}"#, json_sq(m.from), json_sq(m.to), m.promotes, m.rook.is_some(), m.passant.is_some()))
+            .collect();
+        format!(
+            r#"{{"engine":{},"moves":[{}],"inCheck":{},"cisabInCheck":{},"hasKing":{},"typed":[{}]}}"#,
+            snapshot_json(e),
+            moves.join(","),
+            rules::in_check(&e.b, 1),
+            rules::in_check(&e.b, -1),
+            rules::king(&e.b, 1).is_some(),
+            self.typed.iter().map(|t| json_str(t)).collect::<Vec<_>>().join(",")
+        )
+    }
+}
+
+/// CISAB's answer to your move, and why it breaks the rules of chess if it does.
+pub struct Reply {
+    pub from: Square,
+    pub to: Square,
+    /// A pawn reaching row 1 became a queen (line 1300).
+    pub promotes: bool,
+    pub illegal: Option<&'static str>,
+}
+
+impl Game {
+    /// Plays your move, then CISAB's reply; returns the reply and the board after your move.
+    pub fn make_move(&mut self, (fr, fc): Square, (tr, tc): Square, promote: i8, iq: bool) -> Result<(Option<Reply>, rules::Board), String> {
         let m = self.legal().into_iter().find(|m| m.from == (fr, fc) && m.to == (tr, tc)).ok_or("Not a legal move")?;
         if m.promotes && !(2..=5).contains(&promote) {
             return Err("Choose a piece to promote to".into());
@@ -217,31 +269,30 @@ impl Game {
             self.touch(m.to);
             self.send(if iq { "IQ" } else { "OK" });
         }
-        let reply = self.engine.last_move.map(|(from, to)| {
-            let reason = illegal_reason(&after_you, &self.engine.b, from, to);
-            format!(r#"{{"from":{},"to":{},"legal":{},"reason":{}}}"#, json_sq(from), json_sq(to), reason.is_none(), reason.map(json_str).unwrap_or("null".into()))
+        let reply = self.engine.last_move.map(|(from, to)| Reply {
+            from,
+            to,
+            promotes: (1..=8).contains(&from.0) && after_you[from.0 as usize][from.1 as usize] == -6 && to.0 == 1,
+            illegal: illegal_reason(&after_you, &self.engine.b, from, to),
         });
         self.after_cisab();
-        Ok(format!(r#"{{"events":[{}],"afterYou":{},"reply":{}}}"#, self.events.join(","), board_json(&after_you), reply.unwrap_or("null".into())))
+        Ok((reply, after_you))
     }
 
-    /// Board, prompt, your legal moves and status, as JSON.
-    pub fn state(&self) -> String {
-        let e = &self.engine;
-        let moves: Vec<String> = self
-            .legal()
-            .iter()
-            .map(|m| format!(r#"{{"from":{},"to":{},"promotes":{},"castles":{},"passant":{}}}"#, json_sq(m.from), json_sq(m.to), m.promotes, m.rook.is_some(), m.passant.is_some()))
-            .collect();
-        format!(
-            r#"{{"engine":{},"moves":[{}],"inCheck":{},"cisabInCheck":{},"hasKing":{},"typed":[{}]}}"#,
-            snapshot_json(e),
-            moves.join(","),
-            rules::in_check(&e.b, 1),
-            rules::in_check(&e.b, -1),
-            rules::king(&e.b, 1).is_some(),
-            self.typed.iter().map(|t| json_str(t)).collect::<Vec<_>>().join(",")
-        )
+    /// CISAB's opening move as White, made before your first move.
+    pub fn take_first_reply(&mut self) -> Option<(Square, Square)> {
+        let reply = self.engine.last_move;
+        self.after_cisab();
+        reply
+    }
+
+    /// How the program ended, if it has.
+    pub fn end(&self) -> Option<&End> {
+        self.engine.end.as_ref()
+    }
+
+    pub fn board(&self) -> &rules::Board {
+        &self.engine.b
     }
 }
 

@@ -15,7 +15,7 @@ export function startOriginal(raw){
   run(2);
   m.runBasicProgram(decodeBasicProgram(new Uint8Array(fs.readFileSync(new URL(raw,programFolder)))));
   // Waits until `pattern` matches the last non-blank screen line (the live prompt);
-  // returns the emulated seconds taken. Prompts: /COLOR/, /COULMB\)\?/ (their move),
+  // returns the emulated seconds taken. Prompts: /COLOR/, /COLUMN\)\?/ (their move),
   // /^OK\?\?/ (confirm) and /^\?/ (ADD's R,C,V).
   const prompt=()=>screenLines(m).filter(Boolean).at(-1)??'';
   const until=(pattern,limitSeconds=600)=>{

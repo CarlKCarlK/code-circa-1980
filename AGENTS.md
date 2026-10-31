@@ -71,7 +71,7 @@ may start with a transcription of it (Alien: Yob's Hunt the Wumpus, tag
 
 Behavior first, improvements later. Castles now uses v05 plus FALL assembly v6
 as its native TypeScript reference. Each program's site runs only its best BASIC
-version, at `#/program/<id>/basic` (Castles v05, bal v20, Alien v02 with its spelling corrected from `programs/alien/corrected/`, 3-D Plot v03, CISAB Chess v14). Never offer two
+version, at `#/program/<id>/basic` (Castles v05, bal v20, Alien v02 with its spelling corrected from `programs/alien/corrected/`, 3-D Plot v03, CISAB Chess v14 with six bugs and its spelling corrected from `programs/chess/corrected/`). Never offer two
 playable BASIC editions of one program (for example with and without corrections); the user wants only the best one. Other recovered
 versions are source only (listing, payload, provenance). Keep `programs/castles/typescript/` separate from all recovered files.
 The modern implementation is a first review baseline, with differences documented
@@ -95,7 +95,7 @@ changing Rust sources run `cargo test` there and `npm run build:balancer`, and
 commit the regenerated `rust/pkg/`; `npm test` rejects a stale build. Differences
 are in its PARITY.md. Its browser version is the site default; v20 is Original.
 
-CISAB Chess (`programs/chess/`) opens a Rust port of v14 (`rust/`, WebAssembly,
+CISAB Chess (`programs/chess/`) opens a Rust port of corrected v14 (`rust/`, WebAssembly,
 `modern/player.js`) by default. For the same moves it makes the same replies as
 the original, which includes its illegal moves, its BASIC errors, and its endless
 loop when checkmated. Never "fix" CISAB's play in the engine. The board offers

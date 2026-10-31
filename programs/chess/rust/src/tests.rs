@@ -96,13 +96,14 @@ fn game_types_castling_with_add() {
 }
 
 #[test]
-fn a_pawn_capturing_straight_ahead_is_illegal() {
-    // You are White: d4, d5, h3; CISAB's opening pushes d7-d5 onto your pawn.
+fn a_blocked_opening_move_is_skipped() {
+    // You are White: d4, d5, h3. Its opening pawn move d7-d5 is blocked, so it plays
+    // its next opening move or thinks; either way the move is legal.
     let mut g = crate::Game::new(true);
     g.play(2, 5, 4, 5, 0, false).unwrap();
     g.play(4, 5, 5, 5, 0, false).unwrap();
     let r = g.play(2, 1, 3, 1, 0, false).unwrap();
-    assert!(r.contains(r#""legal":false"#) && r.contains("not a legal chess move"), "{r}");
+    assert!(r.contains(r#""legal":true"#), "{r}");
 }
 
 #[test]

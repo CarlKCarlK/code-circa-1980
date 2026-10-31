@@ -98,6 +98,15 @@ pub fn apply(b: &Board, m: &HumanMove) -> Board {
 
 /// Your legal moves. `passant` is the square a CISAB pawn just skipped, if any.
 pub fn legal_moves(b: &Board, rights: Rights, passant: Option<Square>) -> Vec<HumanMove> {
+    moves(b, rights, passant, true)
+}
+
+/// Moves by the rules of each piece, ignoring check.
+pub fn pseudo_legal_moves(b: &Board, rights: Rights, passant: Option<Square>) -> Vec<HumanMove> {
+    moves(b, rights, passant, false)
+}
+
+fn moves(b: &Board, rights: Rights, passant: Option<Square>, check: bool) -> Vec<HumanMove> {
     let mut moves = Vec::new();
     let plain = |from: Square, to: Square| HumanMove { from, to, rook: None, passant: None, promotes: false };
     for r in 1..=8 {
@@ -178,7 +187,7 @@ pub fn legal_moves(b: &Board, rights: Rights, passant: Option<Square>) -> Vec<Hu
             }
             // With no king (CISAB's opening can land on it), any move is allowed.
             let has_king = king(b, 1).is_some();
-            moves.extend(targets.into_iter().filter(|m| !has_king || !in_check(&apply(b, m), 1)));
+            moves.extend(targets.into_iter().filter(|m| !check || !has_king || !in_check(&apply(b, m), 1)));
         }
     }
     moves
@@ -187,6 +196,15 @@ pub fn legal_moves(b: &Board, rights: Rights, passant: Option<Square>) -> Vec<Hu
 /// Whether CISAB's move would be legal chess: your rules, on the board turned upside
 /// down with the colors swapped. (CISAB never castles or takes en passant.)
 pub fn cisab_move_is_legal(b: &Board, from: Square, to: Square) -> bool {
+    cisab_move_in(b, from, to, legal_moves)
+}
+
+/// Whether CISAB's move follows its piece's rules, ignoring check.
+pub fn cisab_move_is_pseudo_legal(b: &Board, from: Square, to: Square) -> bool {
+    cisab_move_in(b, from, to, pseudo_legal_moves)
+}
+
+fn cisab_move_in(b: &Board, from: Square, to: Square, list: fn(&Board, Rights, Option<Square>) -> Vec<HumanMove>) -> bool {
     if !on_board(from) || !on_board(to) {
         return false;
     }
@@ -197,5 +215,5 @@ pub fn cisab_move_is_legal(b: &Board, from: Square, to: Square) -> bool {
         }
     }
     let flip = |(r, c): Square| (9 - r, c);
-    legal_moves(&m, Rights { col1: false, col8: false }, None).iter().any(|mv| mv.from == flip(from) && mv.to == flip(to))
+    list(&m, Rights { col1: false, col8: false }, None).iter().any(|mv| mv.from == flip(from) && mv.to == flip(to))
 }

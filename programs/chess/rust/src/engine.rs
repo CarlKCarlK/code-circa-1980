@@ -1,4 +1,8 @@
-//! CISAB v14 (CISAB V9, tape13b save 8), statement for statement where it matters.
+//! CISAB v14 (CISAB V9, tape13b save 8), statement for statement where it matters,
+//! with the corrections the site plays (programs/chess/corrected/): pawns promote
+//! on the last row (lines 110 and 1300) and step two squares only from their
+//! first row (line 335); move lists hold 300 entries (line 14); and the opening
+//! plays only moves that fit the board (lines 9500-9540).
 //!
 //! The struct holds the BASIC program's variables; methods are named after the
 //! line numbers they follow. It answers the same typed lines the original reads
@@ -18,8 +22,8 @@ pub const ADJECTIVES: [&str; 10] = [
 /// .91 (line 3005) and 1E-30 (line 9000) as Level II parses them.
 pub const POINT_91: [u8; 4] = [0xc3, 0xf5, 0x68, 0x80];
 pub const TINY: [u8; 4] = [0x60, 0x42, 0x22, 0x1d];
-/// PM=120 in line 14 sizes the move arrays: subscripts 0-120.
-const DIM: usize = 120;
+/// PM=300 in line 14 sizes the move arrays: subscripts 0-300 (120 in the recovered v14).
+const DIM: usize = 300;
 
 /// Steps along one direction: FOR M=1 TO 12 STEP .5 with RN=INT(COS(A)*M+.5)+R and
 /// CN=INT(.5+SIN(A)*M)+C (line 430). A is a multiple of 45°, so exact cosines give
@@ -69,7 +73,7 @@ pub fn knight_steps() -> Vec<(i16, i16)> {
 pub enum Prompt {
     /// Line 70: WHAT COLOR ARE WE?
     Color,
-    /// Line 80: WHAT WAS THEIR … MOVE (ROW,COLUMB,NEW ROW,COULMB)?
+    /// Line 80: WHAT WAS THEIR … MOVE (ROW,COLUMN,NEW ROW,COLUMN)?
     Move,
     /// Line 107: OK?
     Ok,
@@ -325,12 +329,16 @@ impl Cisab {
         }
     }
 
-    /// Makes their move. After it RN, CN, RO and CO are 0, so a second ADD moves B(0,0).
+    /// Makes their move; a pawn reaching row 8 becomes a queen. Line 111 then sets
+    /// RN, CN, RO and CO to 0, so a second ADD moves B(0,0).
     fn line110(&mut self) -> Run<()> {
         let (ro, co, rn, cn) = self.typed;
         let piece = self.get(ro, co, 110)?;
         self.set(rn, cn, piece, 110)?;
         self.set(ro, co, 0, 110)?;
+        if piece.abs() == 6 && rn == 8 {
+            self.set(rn, cn, piece.signum() * 2, 110)?;
+        }
         self.typed = (0, 0, 0, 0);
         Ok(())
     }
@@ -348,8 +356,12 @@ impl Cisab {
     /// NOW IT IS OUR TURN: the opening, or the search.
     fn line200(&mut self) -> Run<()> {
         self.events.push(Event::OurTurn);
-        let book = self.opening;
-        let (from, to) = if book { self.line9500()? } else { self.search()? };
+        let opening = if self.opening { self.line9500() } else { None };
+        let book = opening.is_some();
+        let (from, to) = match opening {
+            Some(m) => m,
+            None => self.search()?,
+        };
         self.last_move = Some((from, to));
         self.events.push(Event::Moved { from, to, book });
         self.line80()
@@ -358,20 +370,29 @@ impl Cisab {
 
 // The opening (lines 9500-9530) and the search (lines 210-2050, 3000-4020).
 impl Cisab {
-    fn line9500(&mut self) -> Run<((i16, i16), (i16, i16))> {
-        // Each move only checks that its square is not empty; whatever is there moves.
-        for (from, to, last) in [((8, 2), (6, 3), false), ((8, 7), (6, 6), false), ((7, 5), (5, 5), false), ((8, 6), (5, 3), true)] {
-            if self.b[from.0][from.1] != 0 {
+    /// Each opening move needs its own piece at home, a clear path, and a square
+    /// without one of its own pieces. When none can be played, line 9540 ends the
+    /// opening and CISAB thinks.
+    fn line9500(&mut self) -> Option<((i16, i16), (i16, i16))> {
+        let b = |r: usize, c: usize| self.b[r][c];
+        let moves = [
+            ((8, 2), (6, 3), b(8, 2) == -4 && b(6, 3) >= 0),
+            ((8, 7), (6, 6), b(8, 7) == -4 && b(6, 6) >= 0),
+            ((7, 5), (5, 5), b(7, 5) == -6 && b(6, 5) == 0 && b(5, 5) == 0),
+            ((8, 6), (5, 3), b(8, 6) == -3 && b(7, 5) == 0 && b(6, 4) == 0 && b(5, 3) >= 0),
+        ];
+        for (k, (from, to, ok)) in moves.into_iter().enumerate() {
+            if ok {
                 self.b[to.0][to.1] = self.b[from.0][from.1];
                 self.b[from.0][from.1] = 0;
-                if last {
+                if k == 3 {
                     self.opening = false;
                 }
-                return Ok(((from.0 as i16, from.1 as i16), (to.0 as i16, to.1 as i16)));
+                return Some(((from.0 as i16, from.1 as i16), (to.0 as i16, to.1 as i16)));
             }
         }
-        // Line 10000 draws the board, and its RETURN has no GOSUB.
-        Err(End::Error { code: "RG", line: 10020 })
+        self.opening = false;
+        None
     }
 
     fn flip(&mut self) {
@@ -500,10 +521,10 @@ impl Cisab {
         self.line1300(self.ro[rx], self.co[rx], self.rn[rx], self.cn[rx])
     }
 
-    /// Lines 1300-1320. The promotion test looks at the square before the pawn arrives.
+    /// Lines 1300-1320: a pawn moving to row 1 becomes a queen.
     fn line1300(&mut self, r7: i16, c7: i16, r8: i16, c8: i16) -> Run<((i16, i16), (i16, i16))> {
-        if self.get(r8, c8, 1300)? == -6 && r8 == 1 {
-            self.set(r8, c8, -2, 1300)?;
+        if self.get(r7, c7, 1300)? == -6 && r8 == 1 {
+            self.set(r7, c7, -2, 1300)?;
             self.events.push(Event::Promoted);
         }
         let piece = self.get(r7, c7, 1320)?;
@@ -556,8 +577,8 @@ impl Cisab {
         Ok(())
     }
 
-    /// Lines 300-340 and 4000-4010. Our pawns go up the screen and may step two
-    /// squares from any row; theirs only count their diagonal captures.
+    /// Lines 300-340 and 4000-4010. Our pawns go up the screen and step two squares
+    /// from row 7; theirs only count their diagonal captures.
     fn pawn(&mut self, r: i16, c: i16) -> Run<()> {
         if self.sw {
             if c + 1 <= 8 && self.get(r + 1, c + 1, 4000)? >= 0 {
@@ -589,8 +610,9 @@ impl Cisab {
                 self.line3000(r, c, r - 1, c)?;
             }
         }
-        // From row 1, B(R-2,C) is B(-1,C): ?FC Error in 335.
-        if self.get(r - 2, c, 335)? == 0 && self.get(r - 1, c, 335)? == 0 {
+        // BASIC evaluates every operand: from row 1, B(R-2,C) is B(-1,C), ?FC Error in 335.
+        let (two, one) = (self.get(r - 2, c, 335)?, self.get(r - 1, c, 335)?);
+        if r == 7 && two == 0 && one == 0 {
             self.line3000(r, c, r - 2, c)?;
         }
         Ok(())

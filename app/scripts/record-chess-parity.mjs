@@ -1,4 +1,4 @@
-// Plays games against the original CISAB v14 in the emulator and records, after
+// Plays games against CISAB v14 (as corrected for the site) in the emulator and records, after
 // every typed line, the prompt, the whole B array, the RND seed and the adjective.
 // tests/chess-rust.test.mjs replays the same lines into the Rust engine.
 // Your moves are chosen at random (seeded) from the legal ones; some games answer
@@ -9,7 +9,8 @@ import {startOriginal,readBoard,readSeed,screenLines,programFolder,runBasicText,
 const pkg=new URL('rust/pkg/',programFolder);
 const {initSync,Engine,legal_moves_json}=await import(new URL('cisab_chess.js',pkg));
 initSync({module:fs.readFileSync(new URL('cisab_chess_bg.wasm',pkg))});
-const raw=JSON.parse(fs.readFileSync(new URL('program.json',programFolder))).versions.find(v=>v.id==='v14').raw;
+// The site's BASIC version: v14 with its corrections (programs/chess/corrected/).
+const raw='corrected/CHESS.BAS';
 
 export const cases=[
   {name:'white-book',we:'WHITE',seed:1,moves:12},
@@ -27,7 +28,7 @@ export const cases=[
   {name:'take-king',lines:['BLACK','1,4,8,4']},
   // ADD makes a back-rank mate; every move loses the king, so lines 1010-1220 repeat forever.
   {name:'checkmated',lines:['BLACK','2,1,3,1','ADD','8,1,5','ADD','8,2,0','ADD','8,3,0','IQ']},
-  // With its opening squares emptied by ADD, line 9530 falls into 10000, whose RETURN has no GOSUB.
+  // With its opening squares emptied by ADD, line 9540 ends the opening and CISAB thinks.
   {name:'opening-runs-out',lines:['WHITE','2,1,3,1','ADD','8,7,0','ADD','7,5,0','ADD','8,6,0','OK']},
   // A second ADD repeats line 110 with RN, CN, RO and CO all 0; NO asks for the move again.
   {name:'add-twice-and-no',lines:['BLACK','2,5,4,5','NO','2,5,4,5','ADD','3,3,4','ADD','0,0,0','OK','1,7,3,6','OK']},
@@ -41,8 +42,8 @@ function status(m){
   const error=/\?(\w\w) Error in (\d+)/.exec(text);
   if(error)return {prompt:'ended',end:`?${error[1]} Error in ${error[2]}`};
   if(/DARN THEY BEAT YOU!/.test(text)&&/READY/.test(text))return {prompt:'ended',end:'DARN THEY BEAT YOU!'};
-  if(/STALEMATE/.test(text)&&/READY/.test(text))return {prompt:'ended',end:"i CAN'T MOVE.  STALEMATE"};
-  if(/COULMB\)\? *$/.test(last))return {prompt:'move',adjective:/THEIR (\w+) MOVE/.exec(last)[1]};
+  if(/STALEMATE/.test(text)&&/READY/.test(text))return {prompt:'ended',end:"I CAN'T MOVE.  STALEMATE"};
+  if(/COLUMN\)\? *$/.test(last))return {prompt:'move',adjective:/THEIR (\w+) MOVE/.exec(last)[1]};
   if(/^OK\?\? *$/.test(last))return {prompt:'ok'};
   if(/^\? *$/.test(last))return {prompt:'add'};
   if(/COLOR ARE WE\? *$/.test(last))return {prompt:'color'};

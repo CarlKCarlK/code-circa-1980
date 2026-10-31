@@ -1,7 +1,10 @@
 # CISAB in Rust: parity with the original
 
 The Rust engine (`src/engine.rs`) ports the chess logic of CISAB v14 (CISAB V9,
-tape13b save 8, `versions/v14/08-CISAB-CHESS-V9.BAS`). It keeps the BASIC
+tape13b save 8) as corrected for the site (`corrected/CHESS.BAS`): pawns
+promote and step two squares only from their first row, move lists hold 300
+entries, and the opening plays only moves that fit. See `corrected/README.md`.
+The parity evidence below is for that edition. It keeps the BASIC
 program's variables and follows its statements. Display statements (PRINT@, the
 move animation) become events instead. Given the same typed answers, it should
 reach the same position as the original after every answer: the same moves
@@ -24,10 +27,10 @@ screen never shows), the same RND seed and adjective, and the same ending.
   separate entry in the move list.
 - **Errors.** The original stops in the same places, and Rust stops with the
   same message:
-  - `?BS Error in 3015`: more than 120 moves of CISAB's.
-  - `?BS Error in 3500`: more than 120 of yours.
-  - `?FC Error in 335`: a CISAB pawn on row 1 looks at `B(-1,C)`.
-  - `?RG Error in 10020`: all four opening squares are empty.
+  - `?BS Error in 3015` or `3500`: more than 300 moves of CISAB's or yours
+    (120 before the fix); not seen since.
+  - `?FC Error in 335`: a CISAB pawn on row 1 looks at `B(-1,C)`. With
+    promotion fixed, only a pawn put there with ADD can reach it.
   - `?BS Error in 80` or `1050`: RND returns N+1, which can happen but is very rare.
 - **Thinking forever.** When every move loses its king, lines 1010–1220
   repeat with nothing changing. The Rust engine detects that state and stops
@@ -35,7 +38,7 @@ screen never shows), the same RND seed and adjective, and the same ending.
 
 ## Evidence
 
-- `npm run record:chess` plays 22 games against v14 in the emulator
+- `npm run record:chess` plays 22 games against corrected v14 in the emulator
   (trs80-emulator 2.3.1, Model III Level II). It records the prompt, the
   whole B array, the RND seed and the adjective after every typed line.
   - Your moves are random legal moves from a fixed seed, sometimes greedy for
