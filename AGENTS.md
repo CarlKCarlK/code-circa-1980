@@ -71,7 +71,7 @@ may start with a transcription of it (Alien: Yob's Hunt the Wumpus, tag
 
 Behavior first, improvements later. Castles now uses v05 plus FALL assembly v6
 as its native TypeScript reference. Each program's site runs only its best BASIC
-version, at `#/program/<id>/basic` (Castles v05, bal v20, Alien v02 with its spelling corrected from `programs/alien/corrected/`). Never offer two
+version, at `#/program/<id>/basic` (Castles v05, bal v20, Alien v02 with its spelling corrected from `programs/alien/corrected/`, 3-D Plot v03). Never offer two
 playable BASIC editions of one program (for example with and without corrections); the user wants only the best one. Other recovered
 versions are source only (listing, payload, provenance). Keep `programs/castles/typescript/` separate from all recovered files.
 The modern implementation is a first review baseline, with differences documented
@@ -80,6 +80,12 @@ Use `npm run typecheck`; `npm test` also runs ROM/Z80 comparison fixtures.
 Use `npm run build:fall` to reproduce the derived executable; never describe that
 modern build as recovered historical machine code. Record provenance for any
 new external dependency before enabling a historical version in the player.
+
+3-D Plot's TypeScript version (`programs/plot3d/typescript/`) reproduces v03's
+dots exactly, using Level II rounding and ports of the ROM's LOG/EXP/SIN/ATN
+(`mbf.ts`). After any engine change, `npm test` must still match the emulator
+fixtures; re-record them with `npm run record:plot3d`. Surface formulas are
+Level II BASIC line-200 text shared by both players (`formulas.js`).
 
 Chemical Equation Balancer's official short name is **bal**: use it for its folder
 (`programs/bal/`), URLs (`#/program/bal`), program ID, and tags (`bal-v01`,
