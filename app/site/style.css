@@ -43,8 +43,8 @@
 .quick-controls{display:grid;gap:10px}.key-group{display:grid;grid-template-columns:62px 1fr;align-items:start;gap:8px}
 .key-group-label{font-size:12px;font-weight:600;color:#5f646b;padding-top:10px}
 .key-group>div{display:flex;flex-wrap:wrap;gap:6px}
-.game-key{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:4px 8px;font-size:12px}
-.game-key kbd{font-size:12px;padding:1px 5px}
+.game-key,.word-key{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:4px 8px;font-size:12px}
+.game-key kbd,.word-key kbd{font-size:12px;padding:1px 5px}
 .key-pad>div{display:grid;grid-template-columns:repeat(3,44px);gap:6px}
 .key-pad .game-key{justify-content:center;padding:4px;flex-direction:column;gap:0;min-height:44px}
 .key-pad .game-key span{font-size:13px;line-height:1}
