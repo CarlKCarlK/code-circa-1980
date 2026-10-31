@@ -1,0 +1,25 @@
+{
+  "title": "3-D Plot",
+  "version": "v01",
+  "label": "Draft · Surface with LINE",
+  "capture": "tape19b",
+  "save": 2,
+  "order_inferred": true,
+  "order_evidence": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
+  "files": [
+    {
+      "canonical_path": "PLOT3D.ASC",
+      "snapshot_path": "versions/v01/02-3D-SURFACE-PLOT-V1.ASC",
+      "archive_path": "tapes/recovered/tape19b/best/02-3D-SURFACE-PLOT-V1.ASC",
+      "sha256": "f80dbce3a85d1de83a26cae406541b193949b7399e6fee9c459120f05cc4aa40",
+      "bytes": 565
+    },
+    {
+      "canonical_path": "PLOT3D.BAS",
+      "snapshot_path": "versions/v01/02-3D-SURFACE-PLOT-V1.BAS",
+      "archive_path": "tapes/recovered/tape19b/best/02-3D-SURFACE-PLOT-V1.BAS",
+      "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+      "bytes": 486
+    }
+  ]
+}
