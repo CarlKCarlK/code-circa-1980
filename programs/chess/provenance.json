@@ -1814,6 +1814,119 @@
           "sha256": "22612374d600c0c4bc7317bf49393f7779a57e623da8d12e1f034d49c2b6cead"
         }
       ]
+    },
+    {
+      "folder": "partial/tape13b-save07",
+      "capture": "tape13b",
+      "save": 7,
+      "note": "Damaged save between v13 and v14. Its validated 38-line prefix (lines 10-310) has v14's normal board DATA but v13's DAMN wording and no opening (no S$), so it falls between them.",
+      "inventory_row": {
+        "summary": "CISAB CHESS DAMAGED SAVE; 38 complete prefix lines",
+        "status": "damaged chess-program recording",
+        "validation": "Exact 1493-byte prefix and raw candidate match both channels; later stream damaged",
+        "recovery%": ""
+      },
+      "recovery_item": {
+        "order": 7,
+        "title": "CISAB-CHESS-DAMAGED-SAVE",
+        "source": "tapes/recovered/tape13b/timing-refinement/T7-left-hp1200-8eeac2dafa3c.BAS",
+        "binary": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE.BAS",
+        "listing": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE.ASC",
+        "bytes": 4648,
+        "sha256": "8eeac2dafa3c39dbcc1d331c4bf2c7b4925f55402f62a0aa26b9d7c123032ded",
+        "recovery_complete": false,
+        "source_start_s": 566.1063541666666,
+        "source_end_s": 640.2284375,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T7-left-hp1200-8eeac2dafa3c.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T7-right-boosted-8eeac2dafa3c.BAS"
+        ],
+        "lines": 38,
+        "last_line": 310,
+        "pointer_bases": [
+          28038,
+          56326,
+          60045,
+          -1907,
+          19216,
+          48273,
+          19095,
+          -743,
+          51098,
+          5403,
+          21669,
+          47655,
+          27692,
+          46254,
+          6831,
+          5936,
+          16558,
+          1842,
+          55166,
+          19893,
+          19253,
+          47670,
+          55735,
+          30522,
+          959,
+          26314,
+          27469,
+          6349,
+          26964,
+          61524,
+          43616,
+          56417,
+          17125,
+          17127,
+          39023,
+          18419,
+          23924,
+          39413,
+          30582,
+          10867,
+          49912,
+          19577,
+          48378,
+          -2178
+        ],
+        "prefix_binary": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX.BAS",
+        "prefix_bytes": 1493,
+        "prefix_sha256": "cdb4ee1ebbb3083e5bccd98a155448c928b07d2604b916f29828c33c0b630cda",
+        "uncertain_full_listing": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN.ASC"
+      },
+      "files": [
+        {
+          "path": "partial/tape13b-save07/07-CISAB-CHESS-DAMAGED-SAVE.ASC",
+          "archive_path": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE.ASC",
+          "bytes": 1744,
+          "sha256": "27eb7ba78bfcfeed7f7622aa0896c37a2f5176416d3ccc32db3397f1c0afa8fd"
+        },
+        {
+          "path": "partial/tape13b-save07/07-CISAB-CHESS-DAMAGED-SAVE.BAS",
+          "archive_path": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE.BAS",
+          "bytes": 4648,
+          "sha256": "8eeac2dafa3c39dbcc1d331c4bf2c7b4925f55402f62a0aa26b9d7c123032ded"
+        },
+        {
+          "path": "partial/tape13b-save07/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX.BAS",
+          "archive_path": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX.BAS",
+          "bytes": 1493,
+          "sha256": "cdb4ee1ebbb3083e5bccd98a155448c928b07d2604b916f29828c33c0b630cda"
+        },
+        {
+          "path": "partial/tape13b-save07/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN.ASC",
+          "bytes": 6842,
+          "sha256": "3a15b0bbde329dc2cf22d4062969cb48ef1b077caec085e0ec60af19e93aef46"
+        },
+        {
+          "path": "partial/tape13b-save07/notes.txt",
+          "archive_path": "tapes/recovered/tape13b/partial/notes.txt",
+          "bytes": 227,
+          "sha256": "39ce70dbad6e508247310d29eb8bddf3b0d4e873a91aa6fdc7132821b6ba5620"
+        }
+      ]
     }
   ]
 }
