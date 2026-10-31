@@ -13,7 +13,14 @@
       "David H. Ahl, More BASIC Computer Games (1979): Wumpus 1 and Wumpus 2"
     ],
     "evidence": "Same dodecahedral DATA table, variables, line numbering (2000/2500/3000/3380/4000) and much instruction text as the published Yob listing; source comment \"1-YOU 2 WAMPUS 3&4 PITS 5&6BATS\"; v01 comment \"IS ARROW AT L(1) OR L(2)\". No credit line appears in the recovered source.",
-    "comparison_listing": "https://github.com/WECMuseum/hunt_the_wumpus/blob/main/WUMPUS.BAS (header: BY GREGORY YOB); consulted, not imported"
+    "comparison_listing": "https://github.com/WECMuseum/hunt_the_wumpus/blob/main/WUMPUS.BAS (header: BY GREGORY YOB); consulted, not imported",
+    "transcription": {
+      "file": "wumpus/WUMPUS.ASC",
+      "sha256": "30ca5375434696155e9825ed439340517c0df1b4a1f4b30dfcf959c471de98ff",
+      "source": "More BASIC Computer Games (1979), pages 179-180, photos of the author's copy",
+      "git_tag": "alien-wumpus",
+      "notes": "Printed spelling and typos kept; LIST/Ok omitted; leading spaces in indented strings estimated; lines 2510 and 2530 partly covered in the photo."
+    }
   },
   "dating": {
     "estimate": "probably 1979",
@@ -30,7 +37,7 @@
   "saves": [
     {
       "version": "v01",
-      "label": "Early save \u00b7 before the remix",
+      "label": "Early save · before the remix",
       "capture": "tape22b",
       "save": 6,
       "archive_raw": "tapes/recovered/tape22b/best/06-ALIEN-HUNT-EARLY-SAVE01.BAS",
