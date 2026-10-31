@@ -46,7 +46,6 @@ test('Rust version balances problems from the side panel and typed equations',as
  await expect(page.locator('.balancer-math')).toContainText('(a, b, c, d, e, f) = (2, 16, 2, 2, 8, 5)');
  await page.locator('#equation').fill('c3.h8 + o2 = c.o2 + h2.o');await page.keyboard.press('Enter');
  await expect(page.locator('.trs80')).toHaveText('( C3.H8 )+ 5( O2 )-^ 3( C.O2 )+ 4( H2.O )');
- await page.locator('.balancer-problems summary',{hasText:'Cannot be balanced'}).click();
  await page.getByRole('button',{name:'Ambiguous'}).click();
  await page.getByRole('button',{name:'Balance',exact:true}).click();
  await expect(page.locator('.balancer-error')).toContainText('FATAL ERROR: AMBIGUOUS EQUATION');

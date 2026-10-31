@@ -10,10 +10,13 @@ export const problems = [
   {group:'Cannot be balanced', items:[['Alchemy (lead into gold)','PB = AU'],['Ambiguous','H2 + O2 = H2.O + H2.O2'],['Wrong side','H2.O + H2 = H2.O2']]},
 ];
 // A Problems section whose buttons call choose(equation).
-export function problemPanel(choose, {groups = problems, note = ''} = {}) {
+// Compact lists every group inline as rows of chips, for a single-column page.
+export function problemPanel(choose, {groups = problems, note = '', compact = false} = {}) {
   const section = document.createElement('section');
-  section.className = 'balancer-problems';
-  section.innerHTML = `<h3>Problems</h3>${groups.map(p => `<details ${p.group === 'Starters' || p.group === 'Harder' ? 'open' : ''}><summary>${escape(p.group)}</summary><div>${p.items.map(([label, eq]) => `<button type="button" data-equation="${escape(eq)}">${escape(label)}</button>`).join('')}</div></details>`).join('')}<p class="small">${escape(note)}</p>`;
+  section.className = compact ? 'balancer-problems compact' : 'balancer-problems';
+  section.innerHTML = compact
+    ? `<h3>Try a problem</h3><div class="problem-groups">${groups.map(p => `<div class="problem-group"><span>${escape(p.group)}</span>${p.items.map(([label, eq]) => `<button type="button" data-equation="${escape(eq)}" title="${escape(eq)}">${escape(label)}</button>`).join('')}</div>`).join('')}</div>`
+    : `<h3>Problems</h3>${groups.map(p => `<details ${p.group === 'Starters' || p.group === 'Harder' ? 'open' : ''}><summary>${escape(p.group)}</summary><div>${p.items.map(([label, eq]) => `<button type="button" data-equation="${escape(eq)}">${escape(label)}</button>`).join('')}</div></details>`).join('')}<p class="small">${escape(note)}</p>`;
   section.onclick = event => {
     const button = event.target.closest('button[data-equation]');
     if (button) choose(button.dataset.equation);

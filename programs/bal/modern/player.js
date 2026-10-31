@@ -17,6 +17,9 @@ export async function createPlayer(host, _url, status, title) {
   const dock = document.getElementById('control-dock');
   host.replaceChildren(panel);
   host.append(dock);
+  // One column: the problems sit under the entry and the controls form a slim bar,
+  // so the About section below stays close to the first screen.
+  host.classList.add('balancer-host');
   host.setAttribute('aria-label', `${title}. Type an equation or choose a problem.`);
 
   const form = panel.querySelector('form'), input = panel.querySelector('input'), output = panel.querySelector('.balancer-result');
@@ -49,8 +52,8 @@ export async function createPlayer(host, _url, status, title) {
     status.textContent = 'Press Balance to solve it';
   }
   const problemList = problemPanel(text => { if (!paused) { choose(text); input.focus({preventScroll:true}); } },
-    {note:'A problem fills in the equation. Press Balance to solve it, or edit it first.'});
-  dock.append(problemList);
+    {compact:true});
+  form.after(problemList);
   status.textContent = 'Rust engine ready · press Balance, edit the equation, or choose a problem';
   input.focus({preventScroll:true});
 
