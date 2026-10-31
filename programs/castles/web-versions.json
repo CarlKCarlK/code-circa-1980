@@ -1,0 +1,722 @@
+{
+  "versions": [
+    {
+      "id": "v1",
+      "label": "First Castles experience",
+      "released": "2026-10-31",
+      "sourceCommit": "5958aa96c9e717d16c5bc808e0773dc9349d7543",
+      "files": [
+        {
+          "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Bm5Fk48R.BAS",
+          "bytes": 6783,
+          "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf"
+        },
+        {
+          "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Dfep4PH9.ASC",
+          "bytes": 7833,
+          "sha256": "4682176105d6af579272f9cc04afc5ef18eb656ad92baf637d3f816328a97e80"
+        },
+        {
+          "path": "assets/01-CHEMISTRY-BALANCER-II-SAVE01-Da_ahb0X.ASC",
+          "bytes": 10004,
+          "sha256": "fe0a4b0a1303b16c7a774cab3a4610db62a09729bde69119c32650a0e5c75f24"
+        },
+        {
+          "path": "assets/01-CHEMISTRY-BALANCER-II-SAVE01-ht9xoh_w.BAS",
+          "bytes": 8205,
+          "sha256": "95f52c0892746209621848ef2d5482ef20cbf32c807205cc4c70ffa8d490bebd"
+        },
+        {
+          "path": "assets/01-CISAB-CHESS-V3-C95bDHfu.ASC",
+          "bytes": 4963,
+          "sha256": "5f77fb8da1c4487d92f7e861c0c9cc24b5d202d110c35c63182b4e32f792dfad"
+        },
+        {
+          "path": "assets/01-CISAB-CHESS-V3-Dn1e3AdT.BAS",
+          "bytes": 4150,
+          "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5"
+        },
+        {
+          "path": "assets/02-3D-SURFACE-PLOT-V1-D5kWIkFB.ASC",
+          "bytes": 565,
+          "sha256": "f80dbce3a85d1de83a26cae406541b193949b7399e6fee9c459120f05cc4aa40"
+        },
+        {
+          "path": "assets/02-3D-SURFACE-PLOT-V1-DzKnsQ3C.BAS",
+          "bytes": 486,
+          "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91"
+        },
+        {
+          "path": "assets/02-CHEMISTRY-BALANCER-II-INTEGER-BvCMn2W5.BAS",
+          "bytes": 6408,
+          "sha256": "06927532afe779d202773c33cecdc52d0e9ccd6252e9298b439c6083d986415a"
+        },
+        {
+          "path": "assets/02-CHEMISTRY-BALANCER-II-INTEGER-ToE8h75n.ASC",
+          "bytes": 7780,
+          "sha256": "5fecf5cd4df35054c5c5074769e5647662e569b95156fe60de09b6400d106575"
+        },
+        {
+          "path": "assets/02-CHEMISTRY-BALANCER-II-SAVE02-3JaZXaLP.ASC",
+          "bytes": 10706,
+          "sha256": "f396adec968741368df7927c478a85bffe09daf336f03c313830a1d3718c67a0"
+        },
+        {
+          "path": "assets/02-CHEMISTRY-BALANCER-II-SAVE02-CviBupe8.BAS",
+          "bytes": 8748,
+          "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd"
+        },
+        {
+          "path": "assets/02-CISAB-CHESS-V4-BDk1O1Ps.BAS",
+          "bytes": 4182,
+          "sha256": "1148980286284d202359c3d5c4819183c2b84a46d835d966426a8eac09626a75"
+        },
+        {
+          "path": "assets/02-CISAB-CHESS-V4-BDORHyqg.ASC",
+          "bytes": 5024,
+          "sha256": "27da75cafafb6b3a5d88a81373a3982f9a6c118d929cb4248a46c561b3dfd12b"
+        },
+        {
+          "path": "assets/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03-BRoI82gO.ASC",
+          "bytes": 11788,
+          "sha256": "7aa4604922017fea2a11c7249e6ab4629ce83e1ef6e5395e76878c77882f9633"
+        },
+        {
+          "path": "assets/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03-CPv6uGyK.BAS",
+          "bytes": 9601,
+          "sha256": "192a9efb5a104ed1add85a71450011b81ff6736a135b426421a5853275cdf3a1"
+        },
+        {
+          "path": "assets/03-CISAB-CHESS-V5-C0TsHcKX.BAS",
+          "bytes": 4428,
+          "sha256": "84c9d299c27f9120ea6e4bee492dbbda87eaa25e1bbb2424dabdf5b0c579dc61"
+        },
+        {
+          "path": "assets/03-CISAB-CHESS-V5-CpHREd5V.ASC",
+          "bytes": 5318,
+          "sha256": "8a61f0b1db78a5322c3e5aac1b079e5b07a5690b7fc57ab927a3b45273176cba"
+        },
+        {
+          "path": "assets/03-EQUATION-BALANCER-REV1-SAVE01-PLYMcWDk.BAS",
+          "bytes": 2267,
+          "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e"
+        },
+        {
+          "path": "assets/03-EQUATION-BALANCER-REV1-SAVE01-YD2NdSQ6.ASC",
+          "bytes": 2870,
+          "sha256": "8c99667dcf63535eb8656c7dbdb2406c3313b54eb856e55b52f33b7ff5a646fa"
+        },
+        {
+          "path": "assets/04-CISAB-CHESS-V6-BXJv2GBw.BAS",
+          "bytes": 4678,
+          "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e"
+        },
+        {
+          "path": "assets/04-CISAB-CHESS-V6-oYOSMBBf.ASC",
+          "bytes": 5622,
+          "sha256": "4a4f8b216d9df8f7dc94ee779c5af579340c576083414b6743129522ffe6ffc3"
+        },
+        {
+          "path": "assets/05-CISAB-CHESS-V7-An7pJ_Ke.ASC",
+          "bytes": 5608,
+          "sha256": "59be11416498166a92d66dca9fc58efd795788ba2e55d7d3f780ed58b57f87ce"
+        },
+        {
+          "path": "assets/05-CISAB-CHESS-V7-Dnyvr-XM.BAS",
+          "bytes": 4661,
+          "sha256": "8d0b2fb25ea9885cb20085dc901d1b3d574e9692097e81b0200839fe9a9f32bf"
+        },
+        {
+          "path": "assets/05-EQUATION-BALANCER-REV2-SAVE01-dJDdrWGh.BAS",
+          "bytes": 2287,
+          "sha256": "359f9f4bf701ed78faa4b9c7c05b5502df2774ace217a537500a43b237569bba"
+        },
+        {
+          "path": "assets/05-EQUATION-BALANCER-REV2-SAVE01-DOhBpAJU.ASC",
+          "bytes": 2914,
+          "sha256": "3b2a975706d904eb99fe72df0a14ba70db98a02c1b57ad541a5a4c716f9ba34b"
+        },
+        {
+          "path": "assets/06-ALIEN-HUNT-EARLY-SAVE01-CQYtL9i8.ASC",
+          "bytes": 6344,
+          "sha256": "c245ecbe957d5035658aaa487767724eb80d2ee1cbf3e3fd93308726f932142a"
+        },
+        {
+          "path": "assets/06-ALIEN-HUNT-EARLY-SAVE01-k3HNDoWK.BAS",
+          "bytes": 5514,
+          "sha256": "b8c95badc88c6d21720d07da0726c873cc815a1fc3f4057f34b9589b19fe5710"
+        },
+        {
+          "path": "assets/06-CHEMISTRY-BALANCER-II-SAVE-1-nZRt1BnC.ASC",
+          "bytes": 13030,
+          "sha256": "494b52931ad63f45c142a400db3f568d1dc5649282e4102e79ef610c1f7b1d87"
+        },
+        {
+          "path": "assets/06-CHEMISTRY-BALANCER-II-SAVE-1-ZdWNTYvy.BAS",
+          "bytes": 10528,
+          "sha256": "b33263f16114534c38b17b1c69e57cb7c1b17e2651ed6533fca4848719a0a462"
+        },
+        {
+          "path": "assets/06-CHEMISTRY-BALANCER-II-TEST-DObRy9jN.ASC",
+          "bytes": 8887,
+          "sha256": "988b599d05d2db4e84eb9c8707b26a821772405a63a1f5b3e6222b76919395c8"
+        },
+        {
+          "path": "assets/06-CHEMISTRY-BALANCER-II-TEST-VYD31VEK.BAS",
+          "bytes": 7303,
+          "sha256": "8fd666bfb28835a38e9e53b4fd6db280d6117401f692b767867852ad22422030"
+        },
+        {
+          "path": "assets/06-CISAB-CHESS-V8-DDgtMrd2.BAS",
+          "bytes": 4717,
+          "sha256": "bde86d5f1e150834de3cf5fb880a052e9d708c957e3c841a14736779ed5de9da"
+        },
+        {
+          "path": "assets/06-CISAB-CHESS-V8-DfiI1DzP.ASC",
+          "bytes": 5664,
+          "sha256": "0126e816867ae8936e138fd45af3147f7c5cfa7a408bb33c8cbc18ffb74d9e58"
+        },
+        {
+          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE-2-6Vif54OX.BAS",
+          "bytes": 10528,
+          "sha256": "88061e7022a54e0f114956a4083289f5727d90121390190bd3415f61dd2c0494"
+        },
+        {
+          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE1-5KdK3haR.BAS",
+          "bytes": 10435,
+          "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62"
+        },
+        {
+          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE1-DZOP8eGy.ASC",
+          "bytes": 12912,
+          "sha256": "5d40e10dbd4340d57bdc4c389727ef96f01f8045f46ec0102d69267f9c0f05c4"
+        },
+        {
+          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-DFHjH5kT.ASC",
+          "bytes": 1744,
+          "sha256": "27eb7ba78bfcfeed7f7622aa0896c37a2f5176416d3ccc32db3397f1c0afa8fd"
+        },
+        {
+          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-DTiLj9i7.BAS",
+          "bytes": 4648,
+          "sha256": "8eeac2dafa3c39dbcc1d331c4bf2c7b4925f55402f62a0aa26b9d7c123032ded"
+        },
+        {
+          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX-CNXoKTE1.BAS",
+          "bytes": 1493,
+          "sha256": "cdb4ee1ebbb3083e5bccd98a155448c928b07d2604b916f29828c33c0b630cda"
+        },
+        {
+          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN-7aB-RTgq.ASC",
+          "bytes": 6842,
+          "sha256": "3a15b0bbde329dc2cf22d4062969cb48ef1b077caec085e0ec60af19e93aef46"
+        },
+        {
+          "path": "assets/07-EQUATION-BALANCER-REV3-SAVE01-C9OkHQGU.ASC",
+          "bytes": 2950,
+          "sha256": "5bfb927c542e93bfad6cc068c4796b16addc93695c1161744af7c886f42203d6"
+        },
+        {
+          "path": "assets/07-EQUATION-BALANCER-REV3-SAVE01-Mr_Ipr-J.BAS",
+          "bytes": 2318,
+          "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65"
+        },
+        {
+          "path": "assets/08-CHEMISTRY-BALANCER-II-SAVE-3-BB_A_MdK.ASC",
+          "bytes": 13615,
+          "sha256": "b7e05326eb33c71bf949f68a4d900e6a9fc30520a027bf11b54842e352e5bc50"
+        },
+        {
+          "path": "assets/08-CHEMISTRY-BALANCER-II-SAVE-3-DUPeg57P.BAS",
+          "bytes": 11187,
+          "sha256": "ffc80376f5ad73e8bdaa3ccfb0145a1bb530b93de3e1aa0e4588f6bde4ab8b33"
+        },
+        {
+          "path": "assets/08-COMPUTER-CHESS-DaYmqqPM.BAS",
+          "bytes": 2829,
+          "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff"
+        },
+        {
+          "path": "assets/08-COMPUTER-CHESS-DDg0lF-L.ASC",
+          "bytes": 3279,
+          "sha256": "9bfa53c2912e658cfd30f00f1a44bc65da7efe39195d5cd4d61be09ed8b25b44"
+        },
+        {
+          "path": "assets/09-ARTILLERY-DRAFT01-B-8gzmKS.ASC",
+          "bytes": 2089,
+          "sha256": "d1c130ae3efbfe61883ec398518e29dcbadc89e72dfe212c1bd41d6cd3a62077"
+        },
+        {
+          "path": "assets/09-ARTILLERY-DRAFT01-C3HW0eKP.BAS",
+          "bytes": 1634,
+          "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334"
+        },
+        {
+          "path": "assets/09-CHEMICAL-EQUATION-BALANCER-CKNeMBHG.BAS",
+          "bytes": 1873,
+          "sha256": "4c259793aa8d3ac1828f2c34c80ff5bb86bb627521efcc372cdf1d9d73e36668"
+        },
+        {
+          "path": "assets/09-CHEMICAL-EQUATION-BALANCER-uZYgykr4.ASC",
+          "bytes": 2357,
+          "sha256": "6778b3b33bc99f866744bcc6a3929c56ae0ec8b89451d1c35831b23a8c7e2b52"
+        },
+        {
+          "path": "assets/09-CHEMISTRY-BALANCER-II-SAVE3-D2qsVNeO.ASC",
+          "bytes": 12925,
+          "sha256": "9fa87b2c74c4f07a68e153da07a4fe9c674d9933add0d4892ec1b902179a0583"
+        },
+        {
+          "path": "assets/09-CHEMISTRY-BALANCER-II-SAVE3-DWuphxdf.BAS",
+          "bytes": 10448,
+          "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e"
+        },
+        {
+          "path": "assets/09-COMPUTER-CHESS-CROt-_5u.ASC",
+          "bytes": 3682,
+          "sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836"
+        },
+        {
+          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-PREFIX-BpTE8Xjn.ASC",
+          "bytes": 2255,
+          "sha256": "a252075a752798682f1621b57d4b44343b646b4ca6b7459a42de887d5c1c2915"
+        },
+        {
+          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-PREFIX-CjL-LylZ.BAS",
+          "bytes": 1981,
+          "sha256": "22612374d600c0c4bc7317bf49393f7779a57e623da8d12e1f034d49c2b6cead"
+        },
+        {
+          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-RAW-BZACyHWQ.BAS",
+          "bytes": 2021,
+          "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78"
+        },
+        {
+          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-UNCERTAIN-ByhKYX2J.ASC",
+          "bytes": 2343,
+          "sha256": "3d5229cc1ff1ad03553068f148a64c150b18dd428763013f04ff79c0e58698ca"
+        },
+        {
+          "path": "assets/09-COMPUTER-CHESS-y6sSbyxQ.BAS",
+          "bytes": 3168,
+          "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a"
+        },
+        {
+          "path": "assets/10-3D-SURFACE-PLOT-V2-BidyU50h.BAS",
+          "bytes": 574,
+          "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0"
+        },
+        {
+          "path": "assets/10-3D-SURFACE-PLOT-V2-DRqMAmmJ.ASC",
+          "bytes": 678,
+          "sha256": "d8223cde4d09a67057aa42a6e3451945e61f27ef21e6071293b6241c15faab54"
+        },
+        {
+          "path": "assets/10-ARTILLERY-DRAFT02-6SsIC_zM.BAS",
+          "bytes": 1858,
+          "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0"
+        },
+        {
+          "path": "assets/10-ARTILLERY-DRAFT02-D2W_3xX5.ASC",
+          "bytes": 2393,
+          "sha256": "56a173b7a45f8c0da10fdecb59a62f736a44c3ab9f80e6d9cefcd6d5d995f295"
+        },
+        {
+          "path": "assets/10-CHEMICAL-EQUATION-BALANCER-V2-BSxjgRa2.ASC",
+          "bytes": 3246,
+          "sha256": "8f9bef63f9c3e1ba9d3d5dc108a9a7f7dc7f66a8b275685891f0143a72eb6b87"
+        },
+        {
+          "path": "assets/10-CHEMICAL-EQUATION-BALANCER-V2-ClnMIdLx.BAS",
+          "bytes": 2552,
+          "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561"
+        },
+        {
+          "path": "assets/10-CHEMISTRY-BALANCER-II-SAVE-5-CNoiGI0S.BAS",
+          "bytes": 9956,
+          "sha256": "a05fc9094fb67882d6c087b9872328e87bff8946f76c19a3b9e4bb2144b65c87"
+        },
+        {
+          "path": "assets/10-CHEMISTRY-BALANCER-II-SAVE-5-cuTcEibc.ASC",
+          "bytes": 12295,
+          "sha256": "a4f2eb46f92ce025123ebe3f91915c4562eb3defa51a08ffe52067cb00c3e6d0"
+        },
+        {
+          "path": "assets/10-COMPUTER-CHESS-SELF-PLAY-CMshQopW.BAS",
+          "bytes": 2912,
+          "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674"
+        },
+        {
+          "path": "assets/10-COMPUTER-CHESS-SELF-PLAY-CmzLPw2f.ASC",
+          "bytes": 3372,
+          "sha256": "c47407e493b2e0cea106b13ba74dfcf5e7c3b875410b45b78fa7c354f7deefde"
+        },
+        {
+          "path": "assets/10-COMPUTER-CHESS-V2-bwDpi5lb.BAS",
+          "bytes": 3231,
+          "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340"
+        },
+        {
+          "path": "assets/10-COMPUTER-CHESS-V2-CufbBYXV.ASC",
+          "bytes": 3766,
+          "sha256": "236213f2c5c3c0678e16f3a819538913d535fa27218d240d735d98daed238dfc"
+        },
+        {
+          "path": "assets/11-ARTILLERY-DRAFT03-DDawzNZR.BAS",
+          "bytes": 2507,
+          "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c"
+        },
+        {
+          "path": "assets/11-ARTILLERY-DRAFT03-DvyEwrAf.ASC",
+          "bytes": 3157,
+          "sha256": "e60c2108734afe5248e55fcd4a6f530d3d4f6fdddc450605189865cf0dc89f2b"
+        },
+        {
+          "path": "assets/11-CHEMICAL-EQUATION-BALANCER-V3-Di4DDcyG.ASC",
+          "bytes": 3266,
+          "sha256": "9cdc9667d3c0a53104529972f3ec700f01b5d6e44b8cd6719952e4614d6096e9"
+        },
+        {
+          "path": "assets/11-CHEMICAL-EQUATION-BALANCER-V3-DuNaXVAF.BAS",
+          "bytes": 2570,
+          "sha256": "6123fab3889045407644cd190539718be2557137514f33178790889578c37d50"
+        },
+        {
+          "path": "assets/11-CHEMISTRY-BALANCER-II-TEST-VERSION-DlmcxdRh.BAS",
+          "bytes": 10669,
+          "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918"
+        },
+        {
+          "path": "assets/11-CHEMISTRY-BALANCER-II-TEST-VERSION-IqBvLWH-.ASC",
+          "bytes": 13168,
+          "sha256": "42727e08fad0252d79099ac8e530b73de21897fbd9a065707b8ea81fc917a622"
+        },
+        {
+          "path": "assets/11-CISAB-CHESS-EARLY-BJHkXMk9.ASC",
+          "bytes": 4335,
+          "sha256": "1dab2c20d91a3f399cef102197febf4fe3a7e81c08d52d5aac6089a672b58754"
+        },
+        {
+          "path": "assets/11-CISAB-CHESS-EARLY-D2k5rnzF.BAS",
+          "bytes": 3709,
+          "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8"
+        },
+        {
+          "path": "assets/12-CISAB-CHESS-BkMQjbt6.ASC",
+          "bytes": 4873,
+          "sha256": "ffbb3679e03d67a52cee951a725bc01b56378938ee47354a582e3b5d3c524e51"
+        },
+        {
+          "path": "assets/12-CISAB-CHESS-DGMRqIdx.BAS",
+          "bytes": 4125,
+          "sha256": "e1c7cda70e14658f74523e19d237492be6294fc549a4b54a5f73b27eba33ac46"
+        },
+        {
+          "path": "assets/13-CHEMICAL-EQUATION-BALANCER-V1-DrhnS9UJ.BAS",
+          "bytes": 2473,
+          "sha256": "5cc30236ead0ae90168d5fe5cd843c04280edd060e5b9eb8d1f60ff0150f5d9a"
+        },
+        {
+          "path": "assets/13-CHEMICAL-EQUATION-BALANCER-V1-Nwp2CwQk.ASC",
+          "bytes": 3157,
+          "sha256": "69d64049e4f4e6c44fc76801c3a4d92e987b1b3fb682513084be39a8a621312d"
+        },
+        {
+          "path": "assets/13-CISAB-CHESS-V2-Bc_J4aCz.BAS",
+          "bytes": 3920,
+          "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f"
+        },
+        {
+          "path": "assets/13-CISAB-CHESS-V2-DPxum06O.ASC",
+          "bytes": 4697,
+          "sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853"
+        },
+        {
+          "path": "assets/14-FALL-GRAPHICS-BASIC-V1-5VEboz5i.BAS",
+          "bytes": 2637,
+          "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d"
+        },
+        {
+          "path": "assets/14-FALL-GRAPHICS-BASIC-V1-BbzSSlDH.ASC",
+          "bytes": 3301,
+          "sha256": "44b37f9c2623a56e6b1726ba7be1bf70d09b1836464f8b57c618b8ef04547694"
+        },
+        {
+          "path": "assets/17-CHEMICAL-EQUATION-BALANCER-V2-BOAj5gXO.BAS",
+          "bytes": 2543,
+          "sha256": "7fc596e7f296269ea4bb2a090ab78f165b179a7add07e7e8324756e3e7a2de8a"
+        },
+        {
+          "path": "assets/17-CHEMICAL-EQUATION-BALANCER-V2-Dv2v2Ln1.ASC",
+          "bytes": 3197,
+          "sha256": "5a0cf3fa59b6ba5c91e0c0eb814b5b20e537dca106b827348f908bf9aaa4cc93"
+        },
+        {
+          "path": "assets/ALIEN-b0SSbTKd.BAS",
+          "bytes": 7571,
+          "sha256": "eea9e3638c75a0d4322ce7fe0e0b2e5bc2ae4dc7632d9a1c331de6f18fbcda21"
+        },
+        {
+          "path": "assets/ALIEN-Bw5kHFdw.ASC",
+          "bytes": 8772,
+          "sha256": "a5821a67a2aa2c8dc51084f8560cc419d843155727bf4764139ba49038b3af7f"
+        },
+        {
+          "path": "assets/ALIEN-CWvdOez8.ASC",
+          "bytes": 8783,
+          "sha256": "71daaedfdf4702506c8defa88078b5d8f393aa1400fdd1a7cf7c94b2aa72a486"
+        },
+        {
+          "path": "assets/ALIEN-mk4m3E3S.BAS",
+          "bytes": 7560,
+          "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad"
+        },
+        {
+          "path": "assets/alien-vents-Ba2Ravfz.svg",
+          "bytes": 619,
+          "sha256": "4d8133cf0c84ba6d06f7d868b39027224b0facda740867b2712cafaf019e1a93"
+        },
+        {
+          "path": "assets/BALANCER-D-LR-bQq.ASC",
+          "bytes": 12307,
+          "sha256": "933ff5d7913a676a3361fa466d3bf1682c03f4224d3a2d43c1dc96a61a841889"
+        },
+        {
+          "path": "assets/BALANCER-DsZN7RV2.BAS",
+          "bytes": 9965,
+          "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba"
+        },
+        {
+          "path": "assets/balancer-equation-BxrkCOHy.svg",
+          "bytes": 539,
+          "sha256": "0da58c002b3e49797f1875deade5cc76f2ee309699e6ee4db3acebf3b9457db8"
+        },
+        {
+          "path": "assets/BOMB-DcFsqWpX.ASC",
+          "bytes": 6092,
+          "sha256": "aa46286ecd291a992b5bf4d07daeb55ccf1bdc1fe394d9526d7ffe3ab5300c06"
+        },
+        {
+          "path": "assets/BOMB-lmNZk5JD.BAS",
+          "bytes": 5002,
+          "sha256": "db060072e075f604c06ce3aaa50f27487a57b55b1a563db4eccc853c185f984d"
+        },
+        {
+          "path": "assets/bomb-wires-DNPFEKL1.svg",
+          "bytes": 870,
+          "sha256": "047ae6008779bf4da3cd47802a384887d6706d1c226315ef27c0c0c760b9ce7e"
+        },
+        {
+          "path": "assets/CASTLES-BOCWVuoE.BAS",
+          "bytes": 2631,
+          "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd"
+        },
+        {
+          "path": "assets/CASTLES-D6fn4NUh.ASC",
+          "bytes": 3299,
+          "sha256": "8a67855ac5ef08c8b49832d854a08474cf127762737c2b906b4d1c2b2250df83"
+        },
+        {
+          "path": "assets/castles-game-CJCfL7KS.svg",
+          "bytes": 11566,
+          "sha256": "17ee64af2412d57c817279d7ab52f471866bb8d66e5b5385884228034662ebe8"
+        },
+        {
+          "path": "assets/catalog-chembalancer-ii-RaJ0sxXm.png",
+          "bytes": 54912,
+          "sha256": "1bf5fd5a8152264917fb5a01baa27818c963771b793d79a1e1445063ecb54a14"
+        },
+        {
+          "path": "assets/catalog-chemistry-equation-balancer-Dgsth5bM.png",
+          "bytes": 54296,
+          "sha256": "3097e42854d8c50538eec288698317c1b78e3ce2c10dcb221afa3651090cc2da"
+        },
+        {
+          "path": "assets/chemistry_balancer_bg-D14Bd7TS.wasm",
+          "bytes": 64556,
+          "sha256": "8e75590e58fe4879f40c65c0748117f260fffe2cc1322fd4fa2cf3482dfd0051"
+        },
+        {
+          "path": "assets/chess-board-cK9NdvPC.svg",
+          "bytes": 2004,
+          "sha256": "32324b881ae454fece1e2cdbb5dfbc08550d89bf344c2ff572f9db7b201b24fa"
+        },
+        {
+          "path": "assets/CHESS-BunQR6Jf.ASC",
+          "bytes": 6131,
+          "sha256": "fd7b585bc37e002eeab80a75296c9ab89da01422e80491f0ce6d0fd432afae9e"
+        },
+        {
+          "path": "assets/CHESS-C3Qon-Xl.BAS",
+          "bytes": 5098,
+          "sha256": "97399fe3f1ea881f1399f4f0687b0288b99e04ee4148783f6249d07e0bea64b4"
+        },
+        {
+          "path": "assets/CHESS-C9bSG-iT.ASC",
+          "bytes": 6011,
+          "sha256": "cb6c6a8a04316c8a91b2199f46b9f752620800e90de7559343ff35651aa4d7ba"
+        },
+        {
+          "path": "assets/CHESS-DewmwQis.BAS",
+          "bytes": 4997,
+          "sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7"
+        },
+        {
+          "path": "assets/cisab_chess_bg-wPNkYMCt.wasm",
+          "bytes": 71012,
+          "sha256": "c3a00eb7f8022ac1947e23d9da0ff17fe83592a651b122fe0b8297ad8dacca9e"
+        },
+        {
+          "path": "assets/derived-isEYttG3.bin",
+          "bytes": 214,
+          "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
+        },
+        {
+          "path": "assets/emulator-DLimb0mk.js",
+          "bytes": 285617,
+          "sha256": "2fa467e11d94145603a60eec1eb9e648938ddc41ab85ba093c7cf3c62867864d"
+        },
+        {
+          "path": "assets/index-CNw1lBAV.css",
+          "bytes": 24114,
+          "sha256": "9c622fc40395e228c98b503382291584a68351a980e51952cc40b277d75b02ba"
+        },
+        {
+          "path": "assets/index-DeVg2ojx.js",
+          "bytes": 114668,
+          "sha256": "af2ea860589a51d6242ce51dedbca738a34836cfd2d4faee1fde4a475084c1a9"
+        },
+        {
+          "path": "assets/more-basic-computer-games-cover-C1gCIwjZ.jpg",
+          "bytes": 145402,
+          "sha256": "719f3d1021bf98322f8e2fd70584aba371c791e73ef22ad4945820ab8b77cefc"
+        },
+        {
+          "path": "assets/player-CMiiRFZU.js",
+          "bytes": 16093,
+          "sha256": "21833ef1d1eb2a09d941f2eefd7a5c646e148306571b5e95f97b6251a0907f57"
+        },
+        {
+          "path": "assets/player-DG3vU3-j.js",
+          "bytes": 32072,
+          "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
+        },
+        {
+          "path": "assets/player-DVUzkcgw.js",
+          "bytes": 5576,
+          "sha256": "ea12573bb93d36596865e157a0dca6e1bd78e93319f2d5bdd9707e0319c11f18"
+        },
+        {
+          "path": "assets/player-eWiBiQus.js",
+          "bytes": 12370,
+          "sha256": "4f75f99139adafe593d8b55761e94a2226e578a2e8a8438b68aa7f71960b6120"
+        },
+        {
+          "path": "assets/PLOT3D-CmRZnxul.ASC",
+          "bytes": 1220,
+          "sha256": "28388f6afe64220d79dbcc694e42bebf2a96047e49cdc5f93b2c29a443f26302"
+        },
+        {
+          "path": "assets/plot3d-funnel-D-_UFgPJ.svg",
+          "bytes": 9795,
+          "sha256": "c75d2a9b4685fb0baad92f161fe34b9888dfcd66dd27b444654f4d07f3ef7e3a"
+        },
+        {
+          "path": "assets/PLOT3D-GtK-rabh.BAS",
+          "bytes": 1056,
+          "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03"
+        },
+        {
+          "path": "assets/provenance--o0pMDMG.json",
+          "bytes": 1256,
+          "sha256": "64e9fcbca271e88c296408c1aea7936b2c09629fb17777819a2c4d99715f0410"
+        },
+        {
+          "path": "assets/provenance-0s6Wg97I.json",
+          "bytes": 59264,
+          "sha256": "dc47b694c3a7353e081fe52bd7612d1dc5ec82db70253636b7ec66d3d0754529"
+        },
+        {
+          "path": "assets/provenance-B3CU-BNs.json",
+          "bytes": 1187,
+          "sha256": "26737385c33691ddbb55ef5b167446cbb06aa035f2e287d81ee235b9520a995c"
+        },
+        {
+          "path": "assets/provenance-B9dl32Iw.json",
+          "bytes": 1309,
+          "sha256": "b6f5b1053ed6f0e07aab48ab4dcbd51a9edd6bb07e78112ce660a4c2fc021777"
+        },
+        {
+          "path": "assets/provenance-BlDyQ0PI.json",
+          "bytes": 81218,
+          "sha256": "090c2f3008bbbe9bac2f00bbf5191aaf74414239fbbafd95c74f1b290bb8f6f0"
+        },
+        {
+          "path": "assets/provenance-BwXI0J5k.json",
+          "bytes": 237579,
+          "sha256": "34fb98c1c717e6c3c445d13e38ce8f20501fa508f4b7bf0e53f344509cbcabaf"
+        },
+        {
+          "path": "assets/provenance-CjmcVI6y.json",
+          "bytes": 32839,
+          "sha256": "f2acf8169c920bc1246511dc3738298868d1ca05af37fee308da9be9f82b17e4"
+        },
+        {
+          "path": "assets/provenance-ComXN-bt.json",
+          "bytes": 7239,
+          "sha256": "f8df4dfa753503491b99f1397e84dd0c057ba69436df48c18e3a41a662f94878"
+        },
+        {
+          "path": "assets/provenance-CV6rMlZr.json",
+          "bytes": 31019,
+          "sha256": "07d5c6ef213dc628704d8da74c763a69eb277b1d9d1446cf10daa4675190016c"
+        },
+        {
+          "path": "assets/provenance-CyYvacnA.json",
+          "bytes": 1354,
+          "sha256": "694492a9b834e3f6eed7402516ed4fb0470e11737c2405d82708ca64c6387fef"
+        },
+        {
+          "path": "assets/provenance-D6bej6UW.json",
+          "bytes": 11908,
+          "sha256": "4601daea5182ca197a7b6b2336902410ce24ce7790054226add4a69ed82bd4d2"
+        },
+        {
+          "path": "assets/provenance-DLi4ITDj.json",
+          "bytes": 1139,
+          "sha256": "b8bcf931ec4806be82783caff39c593a44efe5ede8980be3a7bc8e694acc50ef"
+        },
+        {
+          "path": "assets/provenance-EIEKQLON.json",
+          "bytes": 1074,
+          "sha256": "4e05e51f0c257825539d8661eef5e20b7d342e742d04795f5099f02239947aac"
+        },
+        {
+          "path": "assets/sourcebook-volume-iv-cover-LGpL70uP.png",
+          "bytes": 835711,
+          "sha256": "881a13d48406d91b0e3955d7dad6e9f7b598bd7a4f4ea12f8e59865a637df093"
+        },
+        {
+          "path": "assets/WUMPUS-1M8CKtSn.ASC",
+          "bytes": 5969,
+          "sha256": "30ca5375434696155e9825ed439340517c0df1b4a1f4b30dfcf959c471de98ff"
+        },
+        {
+          "path": "assets/wumpus-listing-page-180-CxQfjWz2.jpg",
+          "bytes": 319216,
+          "sha256": "41afda357395ac264eb88af6d746ce78b7b80469b6ebc47b8f7e6fe0f9d43e95"
+        },
+        {
+          "path": "index.html",
+          "bytes": 2073,
+          "sha256": "a938957c4030bfa736dd7f09915f6aa9c73493a5aa9d2fcda8ef64b9859facf9"
+        },
+        {
+          "path": "licenses.txt",
+          "bytes": 16573,
+          "sha256": "ed4b26bab11354ec8af69c7d2e1d54d8044505e165d915ae5d6ae0006024f806"
+        }
+      ]
+    }
+  ]
+}
