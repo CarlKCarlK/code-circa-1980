@@ -72,18 +72,20 @@ test('TypeScript: instant funnel matches the original, formulas, errors, speeds 
  expect(errors).toEqual([]);
 });
 
-test('original v03 runs: standard settings draw the funnel, then pause and restart',async({page})=>{
- test.setTimeout(240000); // The standard picture takes about 85 emulated seconds.
+test('original v03 runs fast: standard settings draw the funnel, then pause and restart',async({page})=>{
+ test.setTimeout(90000); // The standard picture takes about 85 emulated seconds, about 4 at ×20.
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1&test#/program/plot3d/basic/play');
  await expect(page.locator('#status')).toContainText('Running original BASIC');
  await expect.poll(()=>screenText(page),{timeout:15000}).toContain('3-D PLOT   (C) 1979   CARL KADIE');
  await expect.poll(()=>screenText(page),{timeout:5000}).toMatch(/TILT\? *$/m);
+ await page.getByRole('button',{name:'Fast (×20)'}).click();
  await page.getByRole('button',{name:'Answer every question with Enter'}).click();
  await expect(page.locator('#display')).toBeFocused();
- await expect.poll(()=>litDots(page),{timeout:20000}).toBeGreaterThan(20);
+ const start=Date.now();
  // Done: the program prints D in the top-left corner and loops.
- await expect.poll(()=>screenText(page),{timeout:200000,intervals:[2000]}).toMatch(/^D/);
+ await expect.poll(()=>screenText(page),{timeout:60000,intervals:[500]}).toMatch(/^D/);
+ expect(Date.now()-start).toBeLessThan(30000);
  expect(await litDots(page)).toBeGreaterThan(400);
  await page.getByRole('button',{name:'Pause'}).click();
  await expect(page.locator('#status')).toHaveText('Paused');
@@ -91,7 +93,8 @@ test('original v03 runs: standard settings draw the funnel, then pause and resta
  page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:'Restart'}).click();
  await expect.poll(()=>screenText(page),{timeout:15000}).toMatch(/TILT\? *$/m);
- expect(await litDots(page)).toBe(0);
+ // The picture is gone; only the blinking cursor (a 2-dot graphics block) may show.
+ expect(await litDots(page)).toBeLessThanOrEqual(2);
  expect(errors).toEqual([]);
 });
 

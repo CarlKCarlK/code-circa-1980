@@ -8,13 +8,15 @@ steeply into a point at the centre, like a gravity well. The program prints
 ## Two ways to run it
 
 The site opens the **TypeScript version**: pick a surface or type your own
-line 200, set the original's questions as fields, and draw at the 1979 pace,
+line 200, drag sliders for the original's questions (they redraw instantly), and draw at the 1979 pace,
 20 times faster, or instantly. It draws the same dots as the original (see
 [typescript/PARITY.md](typescript/PARITY.md)).
 
 The **Level II BASIC version** runs v03 unchanged in the emulator. Its
 **Line 200** box does what a 1979 owner would: it presses BREAK, types the new
-line 200 and `RUN`. Restart brings back the original line.
+line 200 and `RUN`. Restart brings back the original line. Its **Fast (×20)** button
+runs the emulated TRS-80 about 20 times faster, so the funnel takes about
+4 seconds; **1979 speed** is the real machine's pace.
 
 ## Running the original
 

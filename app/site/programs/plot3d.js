@@ -37,7 +37,7 @@ export function instructions(version) {
     return `${history}<div class="instruction-grid">${use}${formulaHelp}${how}${note}</div>${list}`;
   }
   const run = `<section><h2>Watch it draw.</h2><h3>Your first minute</h3><ol><li>Click the screen so it gets your keys.</li><li>Press ${key('Enter')} at each of the five questions to keep the standard settings, or use the <strong>Standard settings</strong> button to answer all five.</li><li>Watch the grid appear. With the standard settings it takes about 80 seconds. A ${code('D')} in the top-left corner means done.</li><li>Press Restart and try other answers, such as ${code('TILT')} ${code('0')} or ${code('1')}, or ${code('11')} lines.</li></ol></section>`;
-  const table = `<section><h2>The questions</h2><dl>${settings.map(([q, d, text]) => `<div><dt>${code(q)} <span class="small">(standard ${escape(d)})</span></dt><dd>${escape(text)}</dd></div>`).join('')}</dl><p>Type a number and ${key('Enter')}, or just ${key('Enter')} to keep the standard value.</p></section>`;
+  const table = `<section><h2>The questions</h2><dl>${settings.map(([q, d, text]) => `<div><dt>${code(q)} <span class="small">(standard ${escape(d)})</span></dt><dd>${escape(text)}</dd></div>`).join('')}</dl><p>Type a number and ${key('Enter')}, or just ${key('Enter')} to keep the standard value.</p><p><strong>Fast (×20)</strong> runs the emulated TRS-80 about 20 times faster, so the funnel takes about 4 seconds instead of 80; <strong>1979 speed</strong> is the real machine's pace.</p></section>`;
   const change = `<section><h2>Change line 200</h2><p>Pick a surface or type a line in the <strong>Line 200</strong> box and press <strong>Type into BASIC</strong>. It does what a 1979 owner would: presses BREAK (${key('Esc')}), types the new line 200, then ${code('RUN')}. Answer the questions as usual. You can also do it yourself at the keyboard. Restart brings back the original line.</p></section>`;
   const note = `<section><h2>This version</h2><p>${escape(version.note)}</p></section>`;
   return `${history}<div class="instruction-grid">${run}${table}${change}${formulaHelp}${how}${note}</div>${list}`;
@@ -81,4 +81,17 @@ export function decoratePlayer(instance, {dock, modern}) {
     display();
   };
   dock.querySelector('.essential-controls').after(form);
+
+  // The original at its real speed, or about 20 times faster.
+  const speeds = document.createElement('div');
+  speeds.className = 'plot3d-speed';
+  speeds.setAttribute('role', 'group');
+  speeds.setAttribute('aria-label', 'Emulator speed');
+  speeds.innerHTML = `<button type="button" data-speed="1" aria-pressed="true">1979 speed</button><button type="button" data-speed="20" aria-pressed="false">Fast (×20)</button>`;
+  for (const b of speeds.querySelectorAll('button')) b.onclick = () => {
+    instance.setSpeed(Number(b.dataset.speed));
+    for (const other of speeds.querySelectorAll('button')) other.setAttribute('aria-pressed', String(other === b));
+    display();
+  };
+  dock.querySelector('.essential-controls').after(speeds);
 }

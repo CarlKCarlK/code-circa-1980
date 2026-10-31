@@ -56,6 +56,17 @@ Resume and Restart work (Restart returns to an empty screen at `TILT?`).
   types the Saddle line: after RUN the questions return, and BREAK and
   `LIST 200` show `200 Y=X↑2-Z↑2` stored in the program.
 
+## Sliders and BASIC fast mode (2026-10-31)
+
+- TypeScript sliders redraw instantly while Fast is selected: TILT 1, X SCALE
+  1.5 and 11 lines give the recorded 1203-dot picture, and the standard values
+  give 562 again.
+- The BASIC player's Fast (×20) runs extra Z80 steps each animation frame.
+  With it, the standard funnel reached `D` well within the test's 30-second
+  limit (the whole browser test took about 5 s), and Pause, Resume and Restart
+  still work. The emulated program and its bytes are unchanged; only how many
+  instructions run per real second changes.
+
 ## Not tested
 
 Non-default answers in the BASIC browser player, phone keyboards, and the

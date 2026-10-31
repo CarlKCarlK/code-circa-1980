@@ -78,9 +78,30 @@ export async function createPlayer(host, url, status, title, dependency) {
     else { machine.start(); status.textContent = 'Running original BASIC'; }
     host.dispatchEvent(new CustomEvent('playerpause', {detail:paused}));
   }
+  // Optional fast mode: extra Z80 steps each animation frame, on top of the
+  // machine's own real-time pacing. Speed survives Restart.
+  let speed = 1, fastHandle = 0, lastFrame = 0;
+  function fastFrame(time) {
+    fastHandle = 0;
+    if (disposed || speed <= 1) return;
+    if (!paused) {
+      const seconds = lastFrame ? Math.min(0.1, (time - lastFrame) / 1000) : 0;
+      const target = machine.tStateCount + machine.clockHz * seconds * (speed - 1);
+      const deadline = performance.now() + 12;
+      while (machine.tStateCount < target && performance.now() < deadline) for (let i = 0; i < 1000; i++) machine.step();
+    }
+    lastFrame = time;
+    fastHandle = requestAnimationFrame(fastFrame);
+  }
+  function setSpeed(multiplier) {
+    speed = multiplier; lastFrame = 0;
+    cancelAnimationFrame(fastHandle); fastHandle = 0;
+    if (speed > 1) fastHandle = requestAnimationFrame(fastFrame);
+  }
   restart();
   return {
-    press, release, restart, togglePause, type, keys,
+    press, release, restart, togglePause, type, keys, setSpeed,
+    get speed() {return speed;},
     hasWork(){return Array.from({length:1024},(_,i)=>machine.readMemory(0x3c00+i)).some((code,i)=>code>=128&&code<192&&(code&(i<960?63:15))!==0);},
     get paused() {return paused;},
     // Memory inspection supports reproducible browser smoke tests. It does not
@@ -88,7 +109,7 @@ export async function createPlayer(host, url, status, title, dependency) {
     snapshot() { return Array.from({length:1024}, (_,i) => machine.readMemory(0x3c00+i)); },
     diagnostics() {return {tStates:machine.tStateCount, paused, held:[...held]};},
     dispose() {
-      disposed = true; release(); machine.stop();
+      disposed = true; release(); machine.stop(); cancelAnimationFrame(fastHandle);
       document.removeEventListener('keydown', keydown); document.removeEventListener('keyup', keyup); document.removeEventListener('paste', paste);
       host.removeEventListener('blur', onBlur); window.removeEventListener('blur', onBlur);
       document.removeEventListener('visibilitychange', visibility);
