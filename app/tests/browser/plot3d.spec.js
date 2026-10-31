@@ -16,8 +16,9 @@ test('collection opens the TypeScript player; drafts are source only',async({pag
  await expect(card.getByRole('link',{name:'Run 3-D Plot →'})).toHaveAttribute('href',/#\/program\/plot3d\/typescript\/play$/);
  await page.goto('/?development=1#/program/plot3d');
  await expect(page).toHaveURL(/#\/program\/plot3d\/typescript\/play$/);
- await expect(page.locator('.source-details .program-history')).toContainText('LINE');
+ await expect(page.locator('.source-details .program-history').first()).toContainText('LINE');
  await expect(page.locator('.source-details .program-differences')).toContainText('CKADIE');
+ await expect(page.locator('.source-details')).toContainText('What AI makes possible');
  await page.getByRole('button',{name:'Help'}).click();
  await expect(page.locator('.player-help')).toContainText('PI and E');
  await page.getByRole('button',{name:'Close help'}).click();
