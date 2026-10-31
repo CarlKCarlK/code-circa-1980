@@ -5,7 +5,7 @@
   "kind": "Graphics",
   "language": "Level II BASIC",
   "actionVerb": "Run",
-  "defaultVersion": "v02",
+  "defaultVersion": "v03",
   "versionOrder": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
   "versions": [
     {
@@ -26,8 +26,19 @@
       "save": 10,
       "raw": "versions/v02/10-3D-SURFACE-PLOT-V2.BAS",
       "listing": "versions/v02/10-3D-SURFACE-PLOT-V2.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Replaces LINE with a line-drawing subroutine of SET calls, so it runs in Level II BASIC. The surface is set to Y=0, so it draws a flat tilted grid, apparently to test the new routine.",
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v03, the finished version; this listing and payload remain downloadable."
+    },
+    {
+      "id": "v03",
+      "label": "3-D PLOT (C) 1979 · Prompts",
+      "capture": "tape5a",
+      "save": 1,
+      "raw": "versions/v03/01-3D-PLOT-1979.BAS",
+      "listing": "versions/v03/01-3D-PLOT-1979.ASC",
+      "playable": true,
+      "note": "Adds the title and credit, prompts for tilt, X and Y scale, a SWITCH option and the number of grid lines (ENTER keeps each default), and restores the funnel surface.",
       "unavailableReason": null,
       "slug": "basic"
     }
