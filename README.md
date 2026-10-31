@@ -18,8 +18,9 @@ tape, not a date found in Castles itself. The original bytes are preserved.
 **[Run Chemical Equation Balancer](https://carlkcarlk.github.io/code-circa-1980/#/program/bal)**:
 type an unbalanced chemical equation and get whole-number coefficients. I wrote it
 in 1979 and rewrote it as Chemistry Balancer II in 1981, which I advertised in
-Radio Shack's *TRS-80 Applications Software Sourcebook*. The browser version runs a Rust port of the 1981 algorithm; all 20
-recovered BASIC versions also run in the emulator. See
+Radio Shack's *TRS-80 Applications Software Sourcebook*. The browser version runs a Rust port of the 1981 algorithm; the
+final BASIC version (v20) also runs in the emulator, and all 20 recovered versions
+are kept as source. See
 [programs/bal](programs/bal/).
 
 ## About this project
