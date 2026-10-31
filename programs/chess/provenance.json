@@ -1030,6 +1030,62 @@
           "sha256": "ffbb3679e03d67a52cee951a725bc01b56378938ee47354a582e3b5d3c524e51"
         }
       ]
+    },
+    {
+      "version": "v07",
+      "label": "CISAB V2 · Pawn double step",
+      "capture": "tape13a",
+      "save": 13,
+      "archive_raw": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.ASC",
+      "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f",
+      "bytes": 3920,
+      "listing_sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853",
+      "listing_lines": 98,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V2; 98 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 13,
+        "title": "CISAB-CHESS-V2",
+        "source": "tapes/recovered/tape13a/timing-refinement/T13-left-hp1200-b85114baba98.BAS",
+        "binary": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.BAS",
+        "listing": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.ASC",
+        "bytes": 3920,
+        "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f",
+        "recovery_complete": true,
+        "source_start_s": 619.333375,
+        "source_end_s": 682.6984791666666,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T13-left-hp1200-b85114baba98.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T13-right-boosted-b85114baba98.BAS"
+        ],
+        "lines": 98,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v07/13-CISAB-CHESS-V2.BAS",
+      "snapshot_listing": "versions/v07/13-CISAB-CHESS-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v07/13-CISAB-CHESS-V2.BAS",
+          "bytes": 3920,
+          "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f"
+        },
+        {
+          "path": "versions/v07/13-CISAB-CHESS-V2.ASC",
+          "bytes": 4697,
+          "sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853"
+        }
+      ]
     }
   ],
   "partial_saves": [
