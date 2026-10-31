@@ -512,6 +512,456 @@
           "sha256": "c245ecbe957d5035658aaa487767724eb80d2ee1cbf3e3fd93308726f932142a"
         }
       ]
+    },
+    {
+      "version": "v02",
+      "label": "Expanded \u00b7 Title, backstory, closing junctions",
+      "capture": "tape22b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape22b/best/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape22b/best/08-ALIEN-HUNT-EXPANDED-SAVE01.ASC",
+      "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+      "bytes": 7560,
+      "listing_sha256": "a5821a67a2aa2c8dc51084f8560cc419d843155727bf4764139ba49038b3af7f",
+      "listing_lines": 251,
+      "recovery_evidence": "tapes/recovered/tape22b/inventory.json",
+      "inventory_row": {
+        "summary": "ALIEN HUNT EXPANDED SAVE01",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 8,
+        "detected_group": 8,
+        "title": "ALIEN HUNT EXPANDED SAVE01",
+        "title_note": "Descriptive filenames and save/template/fragment sequence labels inferred from content and capture order; source titles preserved in listings.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 555.3931458333333,
+        "source_end_s": 672.0102083333334,
+        "selected_source": {
+          "variant": "right-boosted",
+          "index": 8,
+          "start": 555.3931458333333,
+          "end": 672.0101875,
+          "file": "right-boosted/T08-578c336cb89f.BAS",
+          "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+          "assessment": {
+            "good": true,
+            "exact_eof": true,
+            "trailer_hex": "",
+            "lines": 251,
+            "last": 6040,
+            "normal": true,
+            "parsed": 7560,
+            "bytes": 7560,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
+        "listing": "best/08-ALIEN-HUNT-EXPANDED-SAVE01.ASC",
+        "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+        "bytes": 7560,
+        "validation": {
+          "good": true,
+          "exact_eof": true,
+          "trailer_hex": "",
+          "lines": 251,
+          "last": 6040,
+          "normal": true,
+          "parsed": 7560,
+          "bytes": 7560,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "right-boosted",
+            "index": 8,
+            "start": 555.3931458333333,
+            "end": 672.0101875,
+            "file": "right-boosted/T08-578c336cb89f.BAS",
+            "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 251,
+              "last": 6040,
+              "normal": true,
+              "parsed": 7560,
+              "bytes": 7560,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 8,
+            "start": 555.3931666666666,
+            "end": 672.0102083333334,
+            "file": "left-hp1200/T08-578c336cb89f.BAS",
+            "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 251,
+              "last": 6040,
+              "normal": true,
+              "parsed": 7560,
+              "bytes": 7560,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 8,
+            "start": 555.394875,
+            "end": 672.0102083333334,
+            "file": "left-hp800/T08-578c336cb89f.BAS",
+            "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 251,
+              "last": 6040,
+              "normal": true,
+              "parsed": 7560,
+              "bytes": 7560,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "original",
+            "index": 8,
+            "start": 555.3948958333333,
+            "end": 672.0100625,
+            "file": "original/T08-578c336cb89f.BAS",
+            "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 251,
+              "last": 6040,
+              "normal": true,
+              "parsed": 7560,
+              "bytes": 7560,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 8,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T08-578c336cb89f.BAS",
+            "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 251,
+              "last": 6040,
+              "normal": true,
+              "parsed": 7560,
+              "bytes": 7560,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 555.0931458333333,
+            "crop_end": 672.4102083333333,
+            "start": 555.3894375,
+            "end": 672.0102083333334,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 8,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T08-578c336cb89f.BAS",
+            "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 251,
+              "last": 6040,
+              "normal": true,
+              "parsed": 7560,
+              "bytes": 7560,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 555.0931458333333,
+            "crop_end": 672.4102083333333,
+            "start": 555.3894583333333,
+            "end": 672.0102083333334,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 8,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T08-578c336cb89f.BAS",
+            "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+            "assessment": {
+              "good": true,
+              "exact_eof": true,
+              "trailer_hex": "",
+              "lines": 251,
+              "last": 6040,
+              "normal": true,
+              "parsed": 7560,
+              "bytes": 7560,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 555.0931458333333,
+            "crop_end": 672.4102083333333,
+            "start": 555.4852083333333,
+            "end": 672.0101875,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "other_saves": [
+        {
+          "capture": "tape22b",
+          "save": 9,
+          "relation": "identical",
+          "archive_raw": "tapes/recovered/tape22b/best/09-ALIEN-HUNT-EXPANDED-SAVE02.BAS",
+          "archive_listing": "tapes/recovered/tape22b/best/09-ALIEN-HUNT-EXPANDED-SAVE02.ASC",
+          "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+          "inventory_row": {
+            "summary": "ALIEN HUNT EXPANDED SAVE02",
+            "status": "validated payload; runtime untested",
+            "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+            "recovery%": "100"
+          }
+        }
+      ],
+      "snapshot_raw": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
+      "snapshot_listing": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
+          "bytes": 7560,
+          "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad"
+        },
+        {
+          "path": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.ASC",
+          "bytes": 8772,
+          "sha256": "a5821a67a2aa2c8dc51084f8560cc419d843155727bf4764139ba49038b3af7f"
+        }
+      ]
     }
   ]
 }
