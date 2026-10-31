@@ -35,7 +35,8 @@ kept as source.
 The site runs Bomb on a stock Model I. The source has `yOU`, `kEEP` and
 `mR. TNT`: holding Shift for a capital stores a lowercase letter. A Model I
 without the lowercase kit shows those as capitals, as they would have looked in
-1981; a Model III would show the lowercase.
+1981; a Model III would show the lowercase. The screen uses the Model III font
+like the rest of the site, not the Model I's blockier original characters.
 
 ## Date
 

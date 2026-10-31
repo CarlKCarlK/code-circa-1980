@@ -3,7 +3,12 @@ import {CanvasScreen} from 'trs80-emulator-web';
 import {decodeBasicProgram} from 'trs80-base';
 
 // Match the TypeScript field (player.ts) instead of the library's gray-green AUTHENTIC_BACKGROUND.
-class CobaltScreen extends CanvasScreen { getBackgroundColor() { return '#1e4b8f'; } }
+class CobaltScreen extends CanvasScreen {
+  getBackgroundColor() { return '#1e4b8f'; }
+  // Every program is drawn in the Model III font, including one running on a Model I,
+  // whose original character generator has blockier letters.
+  setConfig(config) { super.setConfig(config.withModelType(ModelType.MODEL3).withCGChip(CGChip.LOWER_CASE)); }
+}
 
 // Executes recovered tokenized BASIC through the Z80 and original BASIC ROM.
 // The library relocates the in-memory line pointers on load. The source file

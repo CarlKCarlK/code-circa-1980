@@ -20,7 +20,7 @@ const quirks = [
   'The program never uses RANDOM. The attract screen draws with random numbers, so the first bomb’s wires depend on when you press a key.',
   'Line 875 reads IF TN>RN(9) PRINT, with no THEN; Level II BASIC runs it.',
   'Rankings live only in memory: Restart clears them.',
-  'The source has yOU, kEEP and mR. TNT: Shift held for a capital stores a lowercase letter. A stock Model I shows them as capitals, so this site runs Bomb on one.'
+  'The source has yOU, kEEP and mR. TNT: Shift held for a capital stores a lowercase letter. A stock Model I shows them as capitals, so this site runs Bomb on one, drawn in the same Model III font as the other programs.'
 ];
 
 // Describes v02 as played on this site; v01 is listed under Source.
