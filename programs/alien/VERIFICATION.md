@@ -42,14 +42,14 @@ the background pages show no wrapped or blank-padded lines.
 
 ## Browser (`npm run test:browser`, `tests/browser/alien.spec.js`)
 
-Against a production preview: the card reads "03 / Game" and opens the
-corrected edition at `#/program/alien/corrected/play` directly, with Corrected
-spelling and Original spelling tabs; the corrected edition reaches the first
-prompt and shows YOU ARE IN JUNCTION and NO. OF JUNCTIONS; the About section is open and credits
-Gregory Yob and *More BASIC Computer Games*; Help shows the commands; v01 is
-source only and links to the player. In the emulator, a key skips the title, the
-NO button answers the first prompt, a move through the first listed vent gets the
-original program's answer, and Pause, Resume and Restart work.
+Against a production preview: the card reads "03 / Game" and opens the one
+playable version at `#/program/alien/basic/play` directly, with no edition tabs;
+it runs the corrected-spelling program. The About section is open, credits
+Gregory Yob and *More BASIC Computer Games*, and both book photos load; Help shows
+the commands; v01 is source only and links to the player. In the emulator, a key
+skips the title, the NO button answers the first prompt, YOU ARE IN JUNCTION
+appears, a move through the first listed vent gets the program's answer, and
+Pause, Resume and Restart work. The recovered v02 bytes ran headless only (above).
 
 ## Not tested
 

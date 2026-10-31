@@ -82,11 +82,10 @@ like switching a TRS-80 off and on, brings back the same two.
 
 Alien is v02 (tape22b save 8, 251 lines; save 9 is identical).
 
-The website plays it in a TRS-80 emulator. By default it runs a **corrected
-spelling** edition: v02 with the misspellings in its printed text fixed (ALIEN,
-JUNCTION, TOO and others), derived at my request and kept separately in
-[corrected/](corrected/), which lists every change. The program logic is unchanged. The
-**Original spelling** tab (`#/program/alien/basic`) runs the recovered v02 exactly.
+The website plays it in a TRS-80 emulator with the misspellings in its printed
+text fixed (ALIEN, JUNCTION, TOO and others). The corrected program was derived at my
+request and is kept separately in [corrected/](corrected/), which lists every change.
+The program logic is unchanged, and the recovered v02 files are kept unchanged.
 
 An earlier save, v01 (tape22b save 6, 214 lines; save 7 is identical), is kept as
 source only. It is Hunt the Wumpus with the new words but none of the remix:
@@ -143,7 +142,7 @@ reading the source.
   and then carries on.
 - "THE ALIEN IS TRAPPED. YOU HAVE WON!" can print more than once.
 - The original spells ALEIN, JUCTION, VACUM, BOOBIE-TRAPPED, YOUR ARE, TO LATE
-  and more. The site's default edition corrects the printed spelling; the
+  and more. The site corrects the printed spelling; the
   recovered files are unchanged.
 
 ### Unchanged

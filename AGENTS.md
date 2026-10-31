@@ -68,7 +68,8 @@ when the latest historical source differs from the website's playable default.
 
 Behavior first, improvements later. Castles now uses v05 plus FALL assembly v6
 as its native TypeScript reference. Each program's site runs only its best BASIC
-version, at `#/program/<id>/basic` (Castles v05, bal v20, Alien v02; Alien defaults to a separate corrected-spelling edition of v02 in `programs/alien/corrected/`, run by the same emulator); other recovered
+version, at `#/program/<id>/basic` (Castles v05, bal v20, Alien v02 with its spelling corrected from `programs/alien/corrected/`). Never offer two
+playable BASIC editions of one program (for example with and without corrections); the user wants only the best one. Other recovered
 versions are source only (listing, payload, provenance). Keep `programs/castles/typescript/` separate from all recovered files.
 The modern implementation is a first review baseline, with differences documented
 in its PARITY.md. Do not silently claim cycle-exact or exhaustive equivalence.

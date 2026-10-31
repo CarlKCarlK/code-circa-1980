@@ -4,8 +4,8 @@
 (`../versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS`, SHA-256
 `578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad`) with the spelling in its printed text corrected, made at
 my request in 2026 because the misspellings (ALEIN, JUCTION, TO LATE, ...) get in
-the way of play. The website runs this edition by default; its Original spelling
-tab runs the recovered v02 unchanged.
+the way of play. The website plays only this edition; the recovered v02 files are
+unchanged and downloadable as source.
 
 Rules, from [corrections.json](corrections.json):
 
