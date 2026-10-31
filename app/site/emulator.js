@@ -79,12 +79,13 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     host.dispatchEvent(new CustomEvent('playerpause', {detail:paused}));
   }
   // Optional fast mode: extra Z80 steps each animation frame, on top of the
-  // machine's own real-time pacing. Speed survives Restart.
+  // machine's own real-time pacing. Speed survives Restart. While a key is held
+  // the machine runs at real speed, so a normal press does not auto-repeat.
   let speed = 1, fastHandle = 0, lastFrame = 0;
   function fastFrame(time) {
     fastHandle = 0;
     if (disposed || speed <= 1) return;
-    if (!paused) {
+    if (!paused && held.size === 0) {
       const seconds = lastFrame ? Math.min(0.1, (time - lastFrame) / 1000) : 0;
       const target = machine.tStateCount + machine.clockHz * seconds * (speed - 1);
       const deadline = performance.now() + 12;

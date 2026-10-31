@@ -71,7 +71,7 @@ may start with a transcription of it (Alien: Yob's Hunt the Wumpus, tag
 
 Behavior first, improvements later. Castles now uses v05 plus FALL assembly v6
 as its native TypeScript reference. Each program's site runs only its best BASIC
-version, at `#/program/<id>/basic` (Castles v05, bal v20, Alien v02 with its spelling corrected from `programs/alien/corrected/`, 3-D Plot v03). Never offer two
+version, at `#/program/<id>/basic` (Castles v05, bal v20, Alien v02 with its spelling corrected from `programs/alien/corrected/`, 3-D Plot v03, CISAB Chess v14). Never offer two
 playable BASIC editions of one program (for example with and without corrections); the user wants only the best one. Other recovered
 versions are source only (listing, payload, provenance). Keep `programs/castles/typescript/` separate from all recovered files.
 The modern implementation is a first review baseline, with differences documented

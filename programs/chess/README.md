@@ -8,7 +8,7 @@ spelled backwards. The last version's listing begins:
 11 '   BY    CARL MYERS KADIE
 ```
 
-I competed with it in a tournament in Peoria. It is built for that job. It
+I competed with it in a tournament in Peoria, my high-school hometown. It is built for that job. It
 asks `WHAT COLOR ARE WE`, then `WHAT WAS THEIR FOOLISH MOVE` (the adjective is
 picked at random from ten), so whoever sits at the keyboard types in the
 opponent's moves and plays CISAB's replies on the real board.

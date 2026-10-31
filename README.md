@@ -35,6 +35,12 @@ answer a few questions and watch a 1979 Level II BASIC program draw a funnel-sha
 formula. A TypeScript version draws the same dots up to instantly; the finished BASIC version runs unchanged in the emulator;
 see [programs/plot3d](programs/plot3d/).
 
+**[Play CISAB Chess](https://carlkcarlk.github.io/code-circa-1980/#/program/chess)**:
+the chess program I competed with in a tournament in Peoria. CISAB (BASIC spelled
+backwards) asks what color "we" are and what "their" move was, then answers
+with its own. The last of 14 recovered versions runs unchanged in the emulator;
+see [programs/chess](programs/chess/).
+
 ## About this project
 
 I had seen early personal computers, such as the Altair, in San Francisco, but nothing like them was available in my

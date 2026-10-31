@@ -63,5 +63,5 @@
 .plot3d-panel{display:grid;gap:10px;margin:12px 0}.plot3d-panel label{display:grid;gap:4px;font-size:13px;font-weight:600}.plot3d-panel .small{font-weight:400;margin:0}
 .plot3d-line{display:flex;align-items:center;gap:6px;font:14px ui-monospace,Menlo,Consolas,monospace}.plot3d-line input{flex:1;min-width:0;font:14px/1.4 ui-monospace,Menlo,Consolas,monospace;padding:6px 8px;text-transform:uppercase}
 .plot3d-panel select{font:inherit;padding:5px}.plot3d-settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.plot3d-settings label{grid-template-columns:1fr auto}.plot3d-settings output{font:13px ui-monospace,Menlo,Consolas,monospace;font-weight:400}.plot3d-settings input{grid-column:1/-1;width:100%;margin:0;accent-color:#1e4b8f}
-.plot3d-speed{display:flex;gap:6px}.plot3d-speed button{flex:1;font-size:13px;white-space:nowrap;padding-inline:4px}.plot3d-speed [aria-pressed=true]{background:#1e4b8f;color:#fff}
+.plot3d-speed,.speed-toggle{display:flex;gap:6px}:is(.plot3d-speed,.speed-toggle) button{flex:1;font-size:13px;white-space:nowrap;padding-inline:4px}:is(.plot3d-speed,.speed-toggle) [aria-pressed=true]{background:#1e4b8f;color:#fff}
 .plot3d-message{margin:0;color:#a3331f;font:13px ui-monospace,Menlo,Consolas,monospace}.plot3d-message:empty{display:none}
