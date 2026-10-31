@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {render,plot,standard,ORIGINAL_LINE_200,WIDTH} from '../../programs/plot3d/typescript/engine.ts';
+import {render,plot,standard,ORIGINAL_LINE_200,WIDTH,screenSize,HIGH_RES} from '../../programs/plot3d/typescript/engine.ts';
 import {compile} from '../../programs/plot3d/typescript/basic.ts';
 import {round,add} from '../../programs/plot3d/typescript/mbf.ts';
 import {settingsFor} from '../../programs/plot3d/typescript/parity-cases.js';
@@ -46,4 +46,13 @@ test('formulas accept Level II syntax: no spaces, keywords inside names, two-let
 test('a formula can set NO=1 to lift the pen, as line 210 allows',()=>{
  const count=formula=>[...plot({...standard,formula})].filter(s=>s.kind==='set').length;
  assert.ok(count('Y=0:IF X=0 THEN NO=1')<count('Y=0'));
+});
+
+test('what-if high resolution: the same program on a 512 × 384 screen',()=>{
+ assert.deepEqual(screenSize(HIGH_RES),{width:512,height:384});
+ const steps=[...plot({...standard,scale:HIGH_RES})],sets=steps.filter(s=>s.kind==='set');
+ // Same grid points, longer lines between them.
+ assert.equal(steps.length-sets.length,[...plot(standard)].filter(s=>s.kind==='point').length);
+ assert.ok(sets.every(s=>s.x>=0&&s.x<512&&s.y>=0&&s.y<384));
+ assert.ok(render({...standard,scale:HIGH_RES}).reduce((n,d)=>n+d,0)>4*562);
 });
