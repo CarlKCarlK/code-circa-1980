@@ -23,6 +23,13 @@ final BASIC version (v20) also runs in the emulator, and all 20 recovered versio
 are kept as source. See
 [programs/bal](programs/bal/).
 
+**[Play Alien](https://carlkcarlk.github.io/code-circa-1980/#/program/alien)**:
+hunt an alien through your spaceship's air vents. The game is Gregory Yob's
+*Hunt the Wumpus* (1973), which I re-themed after the film *Alien*, probably in
+1979, and then expanded with a title screen and a way to trap the alien by
+closing junctions. The expanded BASIC version runs unchanged in the emulator;
+see [programs/alien](programs/alien/).
+
 ## About this project
 
 I had seen early personal computers, such as the Altair, in San Francisco, but nothing like them was available in my
