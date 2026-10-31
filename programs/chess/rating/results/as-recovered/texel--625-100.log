@@ -1,0 +1,86 @@
+illegal	6	d7d5	moves a pawn straight onto a piece
+illegal	18	b6b4	moves a pawn two squares after its first move
+illegal	22	c2b1	leaves a pawn unpromoted on the last row
+illegal	22	c2b1	leaves a pawn unpromoted on the last row
+illegal	25	d7c8	leaves a pawn unpromoted on the last row
+illegal	21	d7c8	leaves a pawn unpromoted on the last row
+illegal	21	d7c8	leaves a pawn unpromoted on the last row
+illegal	28	h5h3	moves a pawn two squares after its first move
+illegal	52	d3d1	moves a pawn two squares after its first move
+illegal	25	g7h8	leaves a pawn unpromoted on the last row
+illegal	35	a3a5	moves a pawn two squares after its first move
+crash	55	-	?BS Error in 3015
+illegal	41	f7g8	leaves a pawn unpromoted on the last row
+illegal	90	h4h2	moves a pawn two squares after its first move
+crash	89	-	?BS Error in 3015
+illegal	26	c2d1	leaves a pawn unpromoted on the last row
+illegal	22	e2d1	leaves a pawn unpromoted on the last row
+illegal	95	b6b8	moves a pawn two squares after its first move
+illegal	26	d2d1	leaves a pawn unpromoted on the last row
+illegal	17	d7c8	leaves a pawn unpromoted on the last row
+illegal	102	b5b3	moves a pawn two squares after its first move
+illegal	46	a4a2	moves a pawn two squares after its first move
+illegal	29	e7d8	leaves a pawn unpromoted on the last row
+illegal	75	f6f8	moves a pawn two squares after its first move
+illegal	60	b2b1	leaves a pawn unpromoted on the last row
+illegal	19	d7c8	leaves a pawn unpromoted on the last row
+illegal	16	d2c1	leaves a pawn unpromoted on the last row
+crash	103	-	?BS Error in 3015
+illegal	8	c8f5	jumps over a piece
+illegal	42	h6h4	moves a pawn two squares after its first move
+illegal	46	a4a2	moves a pawn two squares after its first move
+illegal	75	g5g7	moves a pawn two squares after its first move
+illegal	38	g4g2	moves a pawn two squares after its first move
+illegal	25	e7f8	leaves a pawn unpromoted on the last row
+crash	65	-	?BS Error in 3015
+illegal	52	e6e4	moves a pawn two squares after its first move
+illegal	102	h6h4	moves a pawn two squares after its first move
+illegal	8	c8f5	jumps over a piece
+illegal	18	d2c1	leaves a pawn unpromoted on the last row
+illegal	40	a2a1	leaves a pawn unpromoted on the last row
+illegal	17	e7f8	leaves a pawn unpromoted on the last row
+illegal	25	g4g6	moves a pawn two squares after its first move
+illegal	55	g4g6	moves a pawn two squares after its first move
+illegal	57	a7a8	leaves a pawn unpromoted on the last row
+illegal	41	e7d8	leaves a pawn unpromoted on the last row
+illegal	19	e7d8	leaves a pawn unpromoted on the last row
+illegal	109	g3g5	moves a pawn two squares after its first move
+illegal	33	c7c8	leaves a pawn unpromoted on the last row
+crash	76	-	?BS Error in 3015
+illegal	15	e7d8	leaves a pawn unpromoted on the last row
+illegal	38	g2h1	leaves a pawn unpromoted on the last row
+illegal	6	d7d5	moves a pawn straight onto a piece
+illegal	20	b2c1	leaves a pawn unpromoted on the last row
+illegal	44	h5h3	moves a pawn two squares after its first move
+illegal	42	c2c1	leaves a pawn unpromoted on the last row
+illegal	43	d7c8	leaves a pawn unpromoted on the last row
+illegal	39	e7e8	leaves a pawn unpromoted on the last row
+illegal	44	c2b1	leaves a pawn unpromoted on the last row
+illegal	128	c6c4	moves a pawn two squares after its first move
+illegal	61	h7h8	leaves a pawn unpromoted on the last row
+illegal	76	f3f1	moves a pawn two squares after its first move
+illegal	116	b5b3	moves a pawn two squares after its first move
+illegal	71	d6d8	moves a pawn two squares after its first move
+illegal	30	e2f1	leaves a pawn unpromoted on the last row
+illegal	37	g7h8	leaves a pawn unpromoted on the last row
+illegal	31	h3h5	moves a pawn two squares after its first move
+illegal	18	f2g1	leaves a pawn unpromoted on the last row
+illegal	121	d5d7	moves a pawn two squares after its first move
+illegal	67	f3f5	moves a pawn two squares after its first move
+illegal	33	d7d8	leaves a pawn unpromoted on the last row
+illegal	21	b7a8	leaves a pawn unpromoted on the last row
+crash	134	-	?BS Error in 3015
+illegal	20	f2g1	leaves a pawn unpromoted on the last row
+illegal	32	b5b3	moves a pawn two squares after its first move
+illegal	66	b3b1	moves a pawn two squares after its first move
+illegal	71	g3g5	moves a pawn two squares after its first move
+illegal	30	f2f1	leaves a pawn unpromoted on the last row
+illegal	31	h7g8	leaves a pawn unpromoted on the last row
+illegal	27	e7e8	leaves a pawn unpromoted on the last row
+illegal	51	a4a6	moves a pawn two squares after its first move
+illegal	28	b2a1	leaves a pawn unpromoted on the last row
+illegal	31	f7f8	leaves a pawn unpromoted on the last row
+illegal	24	d2c1	leaves a pawn unpromoted on the last row
+illegal	82	d2d1	leaves a pawn unpromoted on the last row
+crash	72	-	?BS Error in 3015
+illegal	139	h4h6	moves a pawn two squares after its first move

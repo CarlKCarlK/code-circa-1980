@@ -1,0 +1,28 @@
+Results of CISAB vs Texel--625 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -436.43 +/- 325.96, nElo: -911.38 +/- 152.27
+Games: 20, Wins: 0, Losses: 17, Draws: 3, Points: 1.5 (7.50 %)
+vs Texel--625: 20 games, CISAB scored 1.5 (7.5%) -> Texel-calibrated estimate -1061 ± 289 (95%)
+   illegal move 17, draw 3
+Results of CISAB vs Texel--400 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -269.37 +/- 132.70, nElo: -498.78 +/- 152.27
+Games: 20, Wins: 1, Losses: 14, Draws: 5, Points: 3.5 (17.50 %)
+vs Texel--400: 20 games, CISAB scored 3.5 (17.5%) -> Texel-calibrated estimate -669 ± 200 (95%)
+   illegal move 13, draw 5, win 1, crash 1
+Results of CISAB vs Texel--200 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -inf +/- -nan, nElo: -inf +/- -nan
+Games: 16, Wins: 0, Losses: 16, Draws: 0, Points: 0.0 (0.00 %)
+Results of CISAB vs Texel--200 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -inf +/- -nan, nElo: -inf +/- -nan
+Games: 20, Wins: 0, Losses: 20, Draws: 0, Points: 0.0 (0.00 %)
+vs Texel--200: 20 games, CISAB scored 0 (0.0%) -> Texel-calibrated estimate -836 ± 488 (95%)
+   illegal move 18, chess loss 2
+Results of CISAB vs Texel-0 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -511.50 +/- nan, nElo: -1105.53 +/- 152.27
+Games: 20, Wins: 0, Losses: 18, Draws: 2, Points: 1.0 (5.00 %)
+vs Texel-0: 20 games, CISAB scored 1 (5.0%) -> Texel-calibrated estimate -512 ± 349 (95%)
+   illegal move 16, draw 2, chess loss 1, crash 1
+Results of CISAB vs Texel-200 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -inf +/- -nan, nElo: -inf +/- -nan
+Games: 20, Wins: 0, Losses: 20, Draws: 0, Points: 0.0 (0.00 %)
+vs Texel-200: 20 games, CISAB scored 0 (0.0%) -> Texel-calibrated estimate -836 ± 488 (95%)
+   illegal move 12, chess loss 7, crash 1

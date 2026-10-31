@@ -1,0 +1,49 @@
+Results of CISAB vs Texel--625 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -361.24 +/- nan, nElo: -399.83 +/- 160.50
+Games: 18, Wins: 1, Losses: 15, Draws: 2, Points: 2.0 (11.11 %)
+Results of CISAB vs Texel--625 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -338.04 +/- 238.56, nElo: -425.52 +/- 120.38
+Games: 32, Wins: 2, Losses: 26, Draws: 4, Points: 4.0 (12.50 %)
+Results of CISAB vs Texel--625 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -404.67 +/- 159.80, nElo: -579.17 +/- 86.48
+Games: 62, Wins: 2, Losses: 53, Draws: 7, Points: 5.5 (8.87 %)
+Results of CISAB vs Texel--625 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -406.56 +/- 133.71, nElo: -607.77 +/- 79.16
+Games: 74, Wins: 2, Losses: 63, Draws: 9, Points: 6.5 (8.78 %)
+Results of CISAB vs Texel--625 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -424.78 +/- 125.90, nElo: -629.69 +/- 70.24
+Games: 94, Wins: 3, Losses: 82, Draws: 9, Points: 7.5 (7.98 %)
+Results of CISAB vs Texel--625 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -401.92 +/- 111.13, nElo: -587.45 +/- 68.10
+Games: 100, Wins: 4, Losses: 86, Draws: 10, Points: 9.0 (9.00 %)
+vs Texel--625: 100 games, CISAB scored 9 (9.0%) -> Texel-calibrated estimate -1027 ± 119 (95%)
+   illegal move 79, draw 10, crash 7, win 4
+     44  illegal: leaves a pawn unpromoted on the last row
+     31  illegal: moves a pawn two squares after its first move
+      7  crash: ?BS Error in 3015
+      2  illegal: moves a pawn straight onto a piece
+      2  illegal: jumps over a piece
+Results of CISAB vs Texel--400 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -636.43 +/- nan, nElo: -1555.94 +/- 152.27
+Games: 20, Wins: 0, Losses: 19, Draws: 1, Points: 0.5 (2.50 %)
+Results of CISAB vs Texel--400 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -563.75 +/- nan, nElo: -952.88 +/- 107.67
+Games: 40, Wins: 1, Losses: 38, Draws: 1, Points: 1.5 (3.75 %)
+Results of CISAB vs Texel--400 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -448.52 +/- 186.93, nElo: -676.45 +/- 85.12
+Games: 64, Wins: 3, Losses: 58, Draws: 3, Points: 4.5 (7.03 %)
+Results of CISAB vs Texel--400 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -416.56 +/- 125.04, nElo: -637.37 +/- 74.30
+Games: 84, Wins: 4, Losses: 74, Draws: 6, Points: 7.0 (8.33 %)
+Results of CISAB vs Texel--400 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -433.73 +/- 126.07, nElo: -670.82 +/- 71.00
+Games: 92, Wins: 4, Losses: 82, Draws: 6, Points: 7.0 (7.61 %)
+Results of CISAB vs Texel--400 (30+0.2, NULL - 1t, NULL - 16MB):
+Elo: -424.28 +/- 118.33, nElo: -638.69 +/- 68.10
+Games: 100, Wins: 5, Losses: 89, Draws: 6, Points: 8.0 (8.00 %)
+vs Texel--400: 100 games, CISAB scored 8 (8.0%) -> Texel-calibrated estimate -824 ± 126 (95%)
+   illegal move 82, crash 7, draw 6, win 5
+     49  illegal: leaves a pawn unpromoted on the last row
+     33  illegal: moves a pawn two squares after its first move
+      6  crash: ?BS Error in 3015
+      1  crash: ?BS Error in 3500

@@ -1,0 +1,792 @@
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "2"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:10"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:02 -0700"]
+[PlyCount "15"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {/0 0.000s} h5 {-1.24/5 1.346s} 2. Nf3 {/0 0.000s} h4 {-1.66/6 1.041s}
+3. e4 {/0 0.000s} Nf6 {-2.05/6 1.273s} 4. Bc4 {/0 0.000s} Rh5 {-2.05/5 1.084s}
+5. e5 {/0 0.000s} Rh8 {-4.22/6 0.826s} 6. exf6 {/0 0.000s} b6 {-5.21/6 3.601s}
+7. fxe7 {/0 0.000s} a5 {-11.05/6 1.206s, White makes an illegal move: e7d8} 0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "5"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:12"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:04 -0700"]
+[PlyCount "28"]
+[Termination "normal"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {/0 0.000s} g6 {-5.77/8 1.069s} 2. Nf3 {/0 0.000s} a6 {0.00/5 0.520s}
+3. e4 {/0 0.000s} Nf6 {-1.34/5 1.149s} 4. Bc4 {/0 0.000s} c6 {-1.64/5 1.356s}
+5. e5 {/0 0.000s} b5 {+0.39/6 0.602s} 6. Bf1 {/0 0.000s} Ng4 {+1.43/5 0.393s}
+7. e6 {/0 0.000s} h5 {-2.60/6 0.665s} 8. exd7+ {/0 0.000s} Qxd7 {-0.55/5 1.223s}
+9. d3 {/0 0.000s} b4 {+2.69/6 0.637s} 10. Ne4 {/0 0.000s} Qa7 {-2.17/5 0.996s}
+11. Neg5 {/0 0.000s} Be6 {-0.83/5 2.312s} 12. Nxe6 {/0 0.000s}
+Bh6 {+M3/4 0.139s} 13. Bxh6 {/0 0.000s} Nd7 {+0.57/5 1.043s} 14. Bg7 {/0 0.000s}
+Qxf2# {+M1/2 0.000s, Black mates} 0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "1"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:14"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:07 -0700"]
+[PlyCount "31"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {/0 0.000s} b6 {-0.29/5 1.190s} 2. Nf3 {/0 0.000s} Ba6 {-0.38/5 1.280s}
+3. e4 {/0 0.000s} d5 {-1.91/6 0.711s} 4. Bc4 {/0 0.000s} f5 {-3.89/7 1.639s}
+5. Bb3 {/0 0.000s} c5 {-4.20/5 1.048s} 6. exf5 {/0 0.000s} Bc4 {-2.60/6 0.920s}
+7. Bxc4 {/0 0.000s} dxc4 {-2.60/4 0.301s} 8. d3 {/0 0.000s} Na6 {-4.05/4 1.302s}
+9. d4 {/0 0.000s} Rb8 {-3.61/4 0.968s} 10. d5 {/0 0.000s} Nb4 {-3.74/5 0.934s}
+11. d6 {/0 0.000s} b5 {-0.86/4 0.292s} 12. d7+ {/0 0.000s} Kf7 {-6.21/5 0.629s}
+13. Ne4 {/0 0.000s} Rb7 {-M2/3 0.010s} 14. Nxc5 {/0 0.000s} g6 {-10.29/5 0.766s}
+15. Nxb7 {/0 0.000s} Qe8 {-12.89/5 2.987s, White makes an illegal move: d7e8}
+0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "3"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:14"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:07 -0700"]
+[PlyCount "31"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {/0 0.000s} b6 {-0.29/5 1.191s} 2. Nf3 {/0 0.000s} Ba6 {-0.38/5 1.290s}
+3. e4 {/0 0.000s} d5 {-1.91/6 0.701s} 4. Bc4 {/0 0.000s} f5 {-3.89/7 1.638s}
+5. Bb3 {/0 0.000s} c5 {-4.20/5 1.049s} 6. exf5 {/0 0.000s} Bc4 {-2.60/6 0.921s}
+7. Bxc4 {/0 0.000s} dxc4 {-2.60/4 0.301s} 8. d3 {/0 0.000s} Na6 {-4.05/4 1.303s}
+9. d4 {/0 0.000s} Rb8 {-3.61/4 0.968s} 10. d5 {/0 0.000s} Nb4 {-3.74/5 0.934s}
+11. d6 {/0 0.000s} b5 {-0.86/4 0.292s} 12. d7+ {/0 0.000s} Kf7 {-6.21/5 0.630s}
+13. Ne4 {/0 0.000s} Rb7 {-M2/3 0.009s} 14. Nxc5 {/0 0.000s} g6 {-10.29/5 0.765s}
+15. Nxb7 {/0 0.000s} Qe8 {-12.89/5 2.987s, White makes an illegal move: d7e8}
+0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "3"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:15"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:07 -0700"]
+[PlyCount "27"]
+[Termination "normal"]
+[TimeControl "30+0.2"]
+[ECO "A46"]
+[Opening "Indian Defense: Knights Variation"]
+
+1. Nf3 {+0.24/5 1.191s} Nf6 {/0 0.000s} 2. d4 {+0.31/5 1.031s} Nc6 {/0 0.000s}
+3. b4 {-1.01/5 1.131s} d5 {/0 0.000s} 4. h3 {-1.36/5 1.092s} Bf5 {/0 0.000s}
+5. Bh6 {-1.38/6 1.694s} gxh6 {/0 0.000s} 6. Qd2 {-1.28/4 0.390s} h5 {/0 0.000s}
+7. g3 {-3.98/3 0.421s} Rc8 {/0 0.000s} 8. Qf4 {-5.80/6 0.633s} Bxc2 {/0 0.000s}
+9. Nbd2 {-7.98/5 0.989s} Nd7 {/0 0.000s} 10. Rc1 {-1.10/5 3.347s}
+Ba4 {/0 0.000s} 11. Ne5 {-4.26/6 2.989s} Nxb4 {/0 0.000s} 12. h4 {+M3/4 0.130s}
+Nb6 {/0 0.000s} 13. Rh3 {+M3/4 0.151s} Nxa2 {/0 0.000s}
+14. Qxf7# {+M1/2 0.000s, White mates} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "1"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:15"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:07 -0700"]
+[PlyCount "30"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A01"]
+[Opening "Nimzo-Larsen Attack: Indian Variation"]
+
+1. b3 {+0.30/5 1.190s} Nf6 {/0 0.000s} 2. e3 {+0.38/5 1.155s} Nc6 {/0 0.000s}
+3. Nh3 {0.00/6 0.832s} d5 {/0 0.000s} 4. Qe2 {-0.25/5 0.420s} Bf5 {/0 0.000s}
+5. c4 {+0.87/5 0.907s} dxc4 {/0 0.000s} 6. a3 {-0.57/6 0.592s} cxb3 {/0 0.000s}
+7. Qc4 {-0.33/5 0.765s} Na5 {/0 0.000s} 8. e4 {-7.27/6 0.717s} Bxh3 {/0 0.000s}
+9. Kd1 {-12.39/5 3.545s} Bg4+ {/0 0.000s} 10. f3 {-12.04/5 2.295s}
+Bd7 {/0 0.000s} 11. Be2 {-9.59/5 0.537s} Nxc4 {/0 0.000s}
+12. Bf1 {-9.69/5 0.843s} Ne5 {/0 0.000s} 13. Bb5 {-10.60/3 0.811s}
+Bxb5 {/0 0.000s} 14. Ra2 {-14.13/6 0.740s} bxa2 {/0 0.000s}
+15. Kc2 {-13.60/4 0.267s, Black makes an illegal move: a2b1} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "8"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:15"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:07 -0700"]
+[PlyCount "30"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A01"]
+[Opening "Nimzo-Larsen Attack: Indian Variation"]
+
+1. b3 {+0.30/5 1.190s} Nf6 {/0 0.000s} 2. e3 {+0.38/5 1.155s} Nc6 {/0 0.000s}
+3. Nh3 {0.00/6 0.831s} d5 {/0 0.000s} 4. Qe2 {-0.25/5 0.430s} Bf5 {/0 0.000s}
+5. c4 {+0.87/5 0.907s} dxc4 {/0 0.000s} 6. a3 {-0.57/6 0.592s} cxb3 {/0 0.000s}
+7. Qc4 {-0.33/5 0.766s} Na5 {/0 0.000s} 8. e4 {-7.27/6 0.717s} Bxh3 {/0 0.000s}
+9. Kd1 {-12.39/5 3.545s} Bg4+ {/0 0.000s} 10. f3 {-12.04/5 2.296s}
+Bd7 {/0 0.000s} 11. Be2 {-9.59/5 0.536s} Nxc4 {/0 0.000s}
+12. Bf1 {-9.69/5 0.843s} Ne5 {/0 0.000s} 13. Bb5 {-10.60/3 0.810s}
+Bxb5 {/0 0.000s} 14. Ra2 {-14.13/6 0.739s} bxa2 {/0 0.000s}
+15. Kc2 {-13.60/4 0.267s, Black makes an illegal move: a2b1} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "6"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:15"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:07 -0700"]
+[PlyCount "30"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A01"]
+[Opening "Nimzo-Larsen Attack: Indian Variation"]
+
+1. b3 {+0.30/5 1.189s} Nf6 {/0 0.000s} 2. e3 {+0.38/5 1.155s} Nc6 {/0 0.000s}
+3. Nh3 {0.00/6 0.831s} d5 {/0 0.000s} 4. Qe2 {-0.25/5 0.430s} Bf5 {/0 0.000s}
+5. c4 {+0.87/5 0.908s} dxc4 {/0 0.000s} 6. a3 {-0.57/6 0.591s} cxb3 {/0 0.000s}
+7. Qc4 {-0.33/5 0.766s} Na5 {/0 0.000s} 8. e4 {-7.27/6 0.717s} Bxh3 {/0 0.000s}
+9. Kd1 {-12.39/5 3.545s} Bg4+ {/0 0.000s} 10. f3 {-12.04/5 2.295s}
+Bd7 {/0 0.000s} 11. Be2 {-9.59/5 0.537s} Nxc4 {/0 0.000s}
+12. Bf1 {-9.69/5 0.843s} Ne5 {/0 0.000s} 13. Bb5 {-10.60/3 0.810s}
+Bxb5 {/0 0.000s} 14. Ra2 {-14.13/6 0.740s} bxa2 {/0 0.000s}
+15. Kc2 {-13.60/4 0.267s, Black makes an illegal move: a2b1} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "4"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:25"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:17 -0700"]
+[PlyCount "64"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {+0.14/5 1.183s} Nf6 {/0 0.000s} 2. g3 {-0.13/5 1.151s} Nc6 {/0 0.000s}
+3. b4 {+2.87/5 1.898s} d5 {/0 0.000s} 4. b5 {+3.19/6 0.671s} Bf5 {/0 0.000s}
+5. a4 {+2.84/7 0.471s} Na5 {/0 0.000s} 6. Na2 {-0.95/5 1.043s} b6 {/0 0.000s}
+7. Bg2 {0.00/4 0.282s} Be6 {/0 0.000s} 8. Nc3 {-0.39/5 1.008s} Nc4 {/0 0.000s}
+9. h3 {+5.80/4 0.779s} Na5 {/0 0.000s} 10. Kf1 {+5.95/6 1.515s} Nc4 {/0 0.000s}
+11. e3 {-0.02/5 0.923s} Na5 {/0 0.000s} 12. Bf3 {-0.05/5 0.897s} Nc4 {/0 0.000s}
+13. d4 {-0.14/5 0.873s} Na5 {/0 0.000s} 14. Bg4 {+0.34/6 1.739s} Bd7 {/0 0.000s}
+15. Bd2 {+1.37/4 0.292s} Bc8 {/0 0.000s} 16. Ra2 {+0.62/5 1.433s}
+Bb7 {/0 0.000s} 17. Kg2 {+0.35/5 0.976s} Nc4 {/0 0.000s}
+18. Qe2 {-0.60/3 0.260s} Na5 {/0 0.000s} 19. Rh2 {+0.86/4 0.241s}
+Ng8 {/0 0.000s} 20. Qf3 {0.00/5 0.727s} f6 {/0 0.000s} 21. Qe2 {+0.64/5 0.714s}
+h6 {/0 0.000s} 22. Bh5+ {+3.11/6 1.073s} Kd7 {/0 0.000s}
+23. Qd3 {+3.50/5 0.669s} g5 {/0 0.000s} 24. h4 {+2.40/3 0.231s} gxh4 {/0 0.000s}
+25. Nd1 {+1.92/5 0.337s} hxg3 {/0 0.000s} 26. Ne2 {-2.40/6 0.658s}
+gxh2 {/0 0.000s} 27. Kxh2 {-2.40/4 0.402s} Nb3 {/0 0.000s}
+28. Bc3 {+0.76/4 0.277s} Nxd4 {/0 0.000s} 29. Qxd4 {-0.62/5 0.621s}
+e6 {/0 0.000s} 30. e4 {-5.70/4 0.611s} Ke7 {/0 0.000s} 31. Ra1 {-5.64/5 0.662s}
+Kd6 {/0 0.000s} 32. Bg6 {+1.63/5 0.528s, Black makes an illegal move: h6h4} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "8"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:25"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:17 -0700"]
+[PlyCount "43"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {/0 0.000s} g5 {-0.86/5 2.835s} 2. Nf3 {/0 0.000s} h6 {-0.78/6 0.681s}
+3. e4 {/0 0.000s} c6 {-1.36/6 1.012s} 4. Bc4 {/0 0.000s} Qb6 {-0.48/4 0.301s}
+5. b3 {/0 0.000s} Qc7 {-1.25/5 1.053s} 6. h3 {/0 0.000s} Qd6 {-0.94/5 1.333s}
+7. d3 {/0 0.000s} c5 {-1.87/3 0.392s} 8. d4 {/0 0.000s} Qg6 {+3.73/4 2.454s}
+9. e5 {/0 0.000s} Nc6 {-10.02/5 2.219s} 10. dxc5 {/0 0.000s} b6 {-2.88/4 0.321s}
+11. cxb6 {/0 0.000s} Nd8 {-4.29/5 0.835s} 12. bxa7 {/0 0.000s}
+Ne6 {-10.40/5 2.833s} 13. Be2 {/0 0.000s} Qf5 {-2.94/4 0.300s}
+14. Nh2 {/0 0.000s} Rxa7 {+2.98/4 0.485s} 15. a3 {/0 0.000s}
+Qxe5 {+8.19/5 1.492s} 16. Bxg5 {/0 0.000s} Nd8 {+7.15/4 0.608s}
+17. Bh4 {/0 0.000s} Nb7 {+8.03/5 1.308s} 18. Bxe7 {/0 0.000s}
+d6 {+1.01/4 2.172s} 19. Bh4 {/0 0.000s} Ne7 {+1.15/5 1.061s}
+20. Bxe7 {/0 0.000s} Bxe7 {+0.48/4 0.502s} 21. b4 {/0 0.000s}
+Kd8 {+2.74/5 1.399s, White makes an illegal move: b4b6} 0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "6"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:26"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:19 -0700"]
+[PlyCount "53"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {/0 0.000s} f6 {-2.30/5 2.836s} 2. Nf3 {/0 0.000s} e6 {-1.43/5 1.102s}
+3. e4 {/0 0.000s} Nh6 {-1.69/5 1.070s} 4. Bc4 {/0 0.000s} Nc6 {-1.29/5 1.043s}
+5. Bf1 {/0 0.000s} f5 {-1.05/5 1.011s} 6. exf5 {/0 0.000s} Nb8 {-2.85/6 1.611s}
+7. fxe6 {/0 0.000s} Qh4 {-10.48/5 1.848s} 8. Nxh4 {/0 0.000s}
+dxe6 {-9.89/4 1.941s} 9. Bc4 {/0 0.000s} Bc5 {-9.86/4 1.934s} 10. f4 {/0 0.000s}
+Nc6 {-10.43/4 0.871s} 11. Bf1 {/0 0.000s} O-O {-7.42/4 0.547s}
+12. f5 {/0 0.000s} Bb6 {-0.24/6 0.649s} 13. f6 {/0 0.000s} gxf6 {-9.10/5 0.724s}
+14. Rb1 {/0 0.000s} Bd7 {-8.64/5 0.972s} 15. d3 {/0 0.000s}
+Kg7 {-11.28/5 1.292s} 16. Ra1 {/0 0.000s} Kg8 {-12.84/6 0.392s}
+17. Bxh6 {/0 0.000s} Rf7 {-10.40/4 0.642s} 18. Rb1 {/0 0.000s}
+Rd8 {-10.33/4 0.630s} 19. Bc1 {/0 0.000s} Bc8 {-10.28/3 0.666s}
+20. d4 {/0 0.000s} a6 {-7.98/4 0.504s} 21. d5 {/0 0.000s} a5 {-9.49/4 0.601s}
+22. dxc6 {/0 0.000s} e5 {-13.39/6 1.979s} 23. Qxd8+ {/0 0.000s}
+Rf8 {-13.43/5 0.464s} 24. Qd5+ {/0 0.000s} Be6 {-14.12/4 0.325s}
+25. Qxe6+ {/0 0.000s} Kg7 {-13.36/4 0.232s} 26. cxb7 {/0 0.000s}
+Rd8 {-M8/5 0.947s, White makes an illegal move: b7b8} 0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "4"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:28"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:20 -0700"]
+[PlyCount "89"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {/0 0.000s} a5 {-0.83/5 1.789s} 2. Nf3 {/0 0.000s} b6 {-0.34/5 1.130s}
+3. e4 {/0 0.000s} Bb7 {-0.59/5 1.034s} 4. Bc4 {/0 0.000s} a4 {-0.71/5 1.073s}
+5. Bd3 {/0 0.000s} c5 {-0.10/5 1.043s} 6. e5 {/0 0.000s} f5 {-1.12/5 3.490s}
+7. Nh4 {/0 0.000s} d5 {-0.63/4 0.575s} 8. Bxf5 {/0 0.000s} Qd7 {-8.31/6 0.903s}
+9. Bd3 {/0 0.000s} Ba6 {-1.74/5 0.876s} 10. Be2 {/0 0.000s} Nh6 {-1.04/5 0.898s}
+11. Bf3 {/0 0.000s} Nf5 {-2.13/4 1.087s} 12. Nxf5 {/0 0.000s}
+Qc8 {-5.45/4 0.252s} 13. Ne3 {/0 0.000s} h5 {-7.64/5 2.770s}
+14. Nexd5 {/0 0.000s} g5 {-6.01/5 0.452s} 15. Nxb6 {/0 0.000s}
+a3 {-11.84/5 0.888s} 16. Nxa8 {/0 0.000s} e6 {-9.40/4 0.437s}
+17. bxa3 {/0 0.000s} Qc7 {-11.93/4 0.884s} 18. Nxc7+ {/0 0.000s}
+Ke7 {-13.12/5 0.655s} 19. Ne4 {/0 0.000s} Kd8 {-12.39/4 0.195s}
+20. Nxe6+ {/0 0.000s} Kc8 {-12.39/3 0.261s} 21. N4xg5 {/0 0.000s}
+Bd6 {-12.83/5 1.264s} 22. exd6 {/0 0.000s} Rg8 {-16.28/6 0.837s}
+23. Nh7 {/0 0.000s} Rg6 {-12.10/4 2.016s} 24. Nxc5 {/0 0.000s}
+Kd8 {-14.29/4 0.163s} 25. Bxh5 {/0 0.000s} Rxg2 {-18.58/4 0.525s}
+26. h3 {/0 0.000s} Bf1 {-M4/4 0.227s} 27. Kxf1 {/0 0.000s} Rxf2+ {-M6/5 0.121s}
+28. Kxf2 {/0 0.000s} Na6 {-51.21/4 0.142s} 29. Nxa6 {/0 0.000s}
+Kd7 {-50.09/4 0.133s} 30. Nf6+ {/0 0.000s} Kd8 {-M6/5 0.122s}
+31. Kg2 {/0 0.000s} Kc8 {-M4/3 0.011s} 32. Bg4+ {/0 0.000s}
+Kb7 {-51.21/3 0.183s} 33. Nb4 {/0 0.000s} Ka8 {-51.21/4 0.163s}
+34. Nd7 {/0 0.000s} Kb7 {-M4/5 0.140s} 35. Nf6 {/0 0.000s} Kb8 {-51.25/4 0.152s}
+36. Kh2 {/0 0.000s} Kb7 {-51.14/4 0.167s} 37. Kg1 {/0 0.000s}
+Kb6 {-50.94/3 0.184s} 38. Bd7 {/0 0.000s} Ka5 {-51.14/4 0.153s}
+39. Nc6+ {/0 0.000s} Ka4 {-M2/3 0.010s} 40. Be6 {/0 0.000s}
+Kb5 {-50.98/1 0.011s} 41. Nb8 {/0 0.000s} Ka5 {-51.02/4 0.167s}
+42. Bb3 {/0 0.000s} Kb5 {-51.06/4 0.167s} 43. Qe2+ {/0 0.000s}
+Kc5 {-51.14/4 0.166s} 44. d7 {/0 0.000s}
+Kb6 {-M4/4 0.201s, White makes an illegal move: d7d8} 0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "7"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:31"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:23 -0700"]
+[PlyCount "110"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Clemenz Opening"]
+
+1. h3 {-0.42/4 0.811s} Nf6 {/0 0.000s} 2. c4 {-0.18/5 0.792s} Nc6 {/0 0.000s}
+3. d3 {-0.43/4 0.723s} d5 {/0 0.000s} 4. Qb3 {-0.31/5 1.132s} Bf5 {/0 0.000s}
+5. Qb5 {+2.52/5 0.503s} Bxd3 {/0 0.000s} 6. Bf4 {-0.33/5 0.305s} Bc2 {/0 0.000s}
+7. Nf3 {-0.38/3 0.449s} Bxb1 {/0 0.000s} 8. cxd5 {-0.62/5 3.735s}
+Bc2 {/0 0.000s} 9. Rd1 {-1.02/4 0.729s} Bxd1 {/0 0.000s}
+10. Nd2 {-6.47/3 0.558s} Bc2 {/0 0.000s} 11. Bg3 {-2.47/4 0.642s}
+Nxd5 {/0 0.000s} 12. Bf4 {-11.49/5 3.180s} Nxf4 {/0 0.000s}
+13. a4 {-7.52/4 1.783s} Bxa4 {/0 0.000s} 14. Qc5 {-12.11/4 0.837s}
+Nb8 {/0 0.000s} 15. b3 {-8.98/4 0.342s} Bd7 {/0 0.000s} 16. Kd1 {-9.87/4 0.300s}
+c6 {/0 0.000s} 17. Qb4 {-10.85/5 0.741s} Nd5 {/0 0.000s}
+18. Qc3 {-12.47/5 1.135s} Nxc3+ {/0 0.000s} 19. Kc1 {-13.44/5 0.690s}
+Na2+ {/0 0.000s} 20. Kd1 {-12.89/5 0.848s} Be6 {/0 0.000s}
+21. Rg1 {-13.46/4 0.980s} Bf5 {/0 0.000s} 22. h4 {-14.12/6 0.979s}
+Na6 {/0 0.000s} 23. f3 {-13.62/4 0.607s} Qb8 {/0 0.000s}
+24. Nb1 {-13.58/4 0.173s} Bxb1 {/0 0.000s} 25. Ke1 {-13.76/5 0.499s}
+Qg3+ {/0 0.000s} 26. Kd2 {-13.76/4 0.178s} Qxh4 {/0 0.000s}
+27. g3 {-13.61/3 0.201s} Qf6 {/0 0.000s} 28. Rg2 {-M4/5 0.170s} Bg6 {/0 0.000s}
+29. e3 {-13.58/3 0.248s} N6b4 {/0 0.000s} 30. f4 {-13.68/3 0.520s}
+Nd5 {/0 0.000s} 31. Bd3 {-13.59/3 0.224s} Bh5 {/0 0.000s} 32. e4 {-M2/3 0.010s}
+Nb6 {/0 0.000s} 33. Ke3 {-13.40/3 0.570s} Nb4 {/0 0.000s}
+34. Rd2 {-13.34/3 0.558s} a5 {/0 0.000s} 35. g4 {-12.08/4 0.731s}
+Bxg4 {/0 0.000s} 36. Ba6 {-15.45/4 1.135s} bxa6 {/0 0.000s}
+37. Kf2 {-17.60/5 0.319s} Qxf4+ {/0 0.000s} 38. Ke1 {-15.95/4 0.281s}
+Qxe4+ {/0 0.000s} 39. Kf2 {-19.19/5 0.493s} e6 {/0 0.000s}
+40. Rd3 {-52.12/5 0.409s} Qxd3 {/0 0.000s} 41. Ke1 {-M2/3 0.019s}
+Qxb3 {/0 0.000s} 42. Kd2 {-M4/3 0.145s} Ra7 {/0 0.000s} 43. Kc1 {-M2/3 0.010s}
+Re7 {/0 0.000s} 44. Kd2 {-52.08/1 0.010s} c5 {/0 0.000s} 45. Ke1 {-M4/3 0.150s}
+Kd8 {/0 0.000s} 46. Kf1 {-M6/3 0.143s} Qd1+ {/0 0.000s}
+47. Kg2 {-52.20/3 0.175s} Bf5 {/0 0.000s} 48. Kh2 {-52.12/3 0.176s}
+Bc2 {/0 0.000s} 49. Kg2 {-52.08/3 0.167s} Nd7 {/0 0.000s}
+50. Kg3 {-52.08/3 0.178s} Qd4 {/0 0.000s} 51. Kh3 {-52.12/3 0.179s}
+g6 {/0 0.000s} 52. Kh2 {-52.08/3 0.169s} c4 {/0 0.000s}
+53. Kh1 {-52.20/3 0.151s} Bg7 {/0 0.000s} 54. Kh2 {-M4/3 0.151s}
+Qf2+ {/0 0.000s} 55. Kh3 {-M2/3 0.020s, Black makes an illegal move: a5a3} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "5"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:32"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:24 -0700"]
+[PlyCount "68"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Mieses Opening"]
+
+1. d3 {+0.25/5 1.190s} Nf6 {/0 0.000s} 2. Be3 {+0.58/5 0.520s} Nc6 {/0 0.000s}
+3. Nc3 {-0.01/5 1.141s} d5 {/0 0.000s} 4. Nf3 {-0.83/5 1.112s} Bf5 {/0 0.000s}
+5. Qb1 {-1.38/5 1.083s} a6 {/0 0.000s} 6. Bd2 {-0.69/5 1.052s} d4 {/0 0.000s}
+7. g4 {-3.87/6 0.280s} Bxg4 {/0 0.000s} 8. b4 {-7.08/5 0.635s} dxc3 {/0 0.000s}
+9. Be3 {-7.68/6 0.974s} Bxf3 {/0 0.000s} 10. h4 {-10.48/5 0.986s}
+Bxh1 {/0 0.000s} 11. Qc1 {-9.03/5 0.962s} Nxb4 {/0 0.000s}
+12. Bh6 {-11.12/5 2.075s} gxh6 {/0 0.000s} 13. Kd1 {-12.49/5 0.910s}
+h5 {/0 0.000s} 14. Bg2 {-11.84/5 2.935s} Bxg2 {/0 0.000s}
+15. e4 {-11.66/5 0.847s} Rc8 {/0 0.000s} 16. f4 {-11.77/5 0.637s} b5 {/0 0.000s}
+17. a3 {-12.90/6 1.450s} Nc6 {/0 0.000s} 18. f5 {-11.60/5 0.718s}
+Nb8 {/0 0.000s} 19. a4 {-11.22/5 0.606s} b4 {/0 0.000s}
+20. Qh6 {-13.47/6 0.550s} Bxh6 {/0 0.000s} 21. Rc1 {-13.26/3 0.216s}
+Bf8 {/0 0.000s} 22. e5 {-13.33/3 0.218s} Ng8 {/0 0.000s}
+23. Ke2 {-12.23/4 0.529s} Kd7 {/0 0.000s} 24. Rf1 {-13.48/4 0.630s}
+Bd5 {/0 0.000s} 25. e6+ {-12.63/5 0.679s} Ke8 {/0 0.000s}
+26. Rf3 {-13.42/5 2.074s} fxe6 {/0 0.000s} 27. fxe6 {-16.39/5 0.353s}
+Bh6 {/0 0.000s} 28. Re3 {-16.45/6 1.840s} Bc6 {/0 0.000s}
+29. Rh3 {-12.84/4 0.518s} Bxa4 {/0 0.000s} 30. Kf3 {-17.29/5 0.705s}
+Bxc2 {/0 0.000s} 31. Kf2 {-17.64/4 0.444s} Bb1 {/0 0.000s}
+32. Rg3 {-16.37/5 0.251s} Nf6 {/0 0.000s} 33. Rh3 {-15.99/4 1.527s}
+Ng8 {/0 0.000s} 34. Rf3 {-18.04/6 1.372s, Black makes an illegal move: c3c1} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "7"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:34"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:27 -0700"]
+[PlyCount "111"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening: Laroche Gambit"]
+
+1. Nc3 {/0 0.000s} b5 {+2.38/5 2.610s} 2. Nf3 {/0 0.000s} b4 {+2.87/6 0.701s}
+3. e4 {/0 0.000s} c6 {+1.90/7 0.643s} 4. Bc4 {/0 0.000s} Qb6 {+2.62/5 0.675s}
+5. Ne2 {/0 0.000s} h5 {-1.30/5 0.470s} 6. Bd3 {/0 0.000s} f6 {-1.74/5 0.532s}
+7. Bc4 {/0 0.000s} Qb7 {-1.19/6 1.424s} 8. Neg1 {/0 0.000s} c5 {+2.52/6 0.611s}
+9. Bd3 {/0 0.000s} Qc7 {-1.06/5 2.160s} 10. h4 {/0 0.000s} Rh6 {-1.35/5 1.067s}
+11. Bf1 {/0 0.000s} Kf7 {-0.58/5 3.099s} 12. Bc4+ {/0 0.000s}
+e6 {+0.65/5 0.803s} 13. Kf1 {/0 0.000s} f5 {-4.59/6 0.353s} 14. exf5 {/0 0.000s}
+Nc6 {-2.51/4 0.745s} 15. fxe6+ {/0 0.000s} dxe6 {-2.51/4 0.231s}
+16. Bd3 {/0 0.000s} Ke7 {-2.52/6 0.500s} 17. Bb5 {/0 0.000s}
+Qd7 {-1.66/5 0.851s} 18. d3 {/0 0.000s} Qd5 {-3.61/4 0.222s} 19. Nh2 {/0 0.000s}
+Qxg2+ {-10.84/5 1.980s} 20. Kxg2 {/0 0.000s} Kf7 {-11.33/5 0.887s}
+21. Bxc6 {/0 0.000s} e5 {-13.38/6 2.229s} 22. Bxa8 {/0 0.000s}
+Ke8 {-13.34/5 0.793s} 23. Qf1 {/0 0.000s} Bh3+ {-11.67/5 1.924s}
+24. Kxh3 {/0 0.000s} a6 {-11.58/4 0.435s} 25. Bf3 {/0 0.000s}
+b3 {-13.10/4 0.524s} 26. cxb3 {/0 0.000s} Nf6 {-13.06/4 0.481s}
+27. Bxh6 {/0 0.000s} Nd5 {-13.26/5 1.629s} 28. Bc1 {/0 0.000s}
+a5 {-13.29/4 0.429s} 29. Bxd5 {/0 0.000s} e4 {-12.95/5 0.384s}
+30. dxe4 {/0 0.000s} g5 {-16.96/5 0.406s} 31. hxg5 {/0 0.000s}
+h4 {-14.91/4 0.434s} 32. Kxh4 {/0 0.000s} c4 {-15.94/2 0.163s}
+33. bxc4 {/0 0.000s} Bb4 {-16.90/4 0.393s} 34. Be6 {/0 0.000s}
+Be1 {-47.06/6 0.391s} 35. Qxe1 {/0 0.000s} Kd8 {-47.06/5 0.386s}
+36. Qxa5+ {/0 0.000s} Ke7 {-47.06/5 0.236s} 37. Bf5 {/0 0.000s}
+Ke8 {-51.08/3 0.126s} 38. Qc5 {/0 0.000s} Kd8 {-51.08/3 0.125s}
+39. Qd4+ {/0 0.000s} Kc7 {-51.08/3 0.133s} 40. Bd2 {/0 0.000s}
+Kb8 {-51.20/3 0.131s} 41. Bb4 {/0 0.000s} Ka8 {-51.12/3 0.132s}
+42. Bc3 {/0 0.000s} Kb7 {-51.08/3 0.136s} 43. Qd1 {/0 0.000s}
+Ka8 {-51.12/3 0.132s} 44. Be6 {/0 0.000s} Ka7 {-51.12/3 0.135s}
+45. Bc8 {/0 0.000s} Ka8 {-51.16/3 0.132s} 46. Bh3 {/0 0.000s}
+Kb7 {-51.20/4 0.394s} 47. Bb4 {/0 0.000s} Ka7 {-51.12/3 0.136s}
+48. Bf5 {/0 0.000s} Kb7 {-51.08/3 0.132s} 49. Qf3 {/0 0.000s}
+Kb6 {-47.10/6 0.226s} 50. Bd2 {/0 0.000s} Kb7 {-51.08/3 0.141s}
+51. Bf4 {/0 0.000s} Kc6 {-51.08/4 0.122s} 52. Bg4 {/0 0.000s}
+Kc5 {-50.04/3 0.135s} 53. g6 {/0 0.001s} Kb6 {-51.12/3 0.134s}
+54. Qe3+ {/0 0.000s} Ka5 {-51.08/4 0.176s} 55. Qc1 {/0 0.000s}
+Kb4 {-51.08/3 0.134s, White makes an illegal move: c4c6} 0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "10"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:22"]
+[GameStartTime "2026-10-31T15:08:07 -0700"]
+[GameEndTime "2026-10-31T15:08:29 -0700"]
+[PlyCount "48"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A45"]
+[Opening "Canard Opening"]
+
+1. d4 {+0.34/5 1.181s} Nf6 {/0 0.000s} 2. f4 {-0.38/5 1.151s} Nc6 {/0 0.000s}
+3. c3 {-0.13/5 1.120s} d5 {/0 0.000s} 4. Be3 {-0.90/5 1.091s} Bf5 {/0 0.000s}
+5. Qc1 {-0.22/5 1.062s} Bg6 {/0 0.000s} 6. Nh3 {-0.17/5 1.031s} Qd6 {/0 0.000s}
+7. Qd2 {-0.38/5 0.930s} Nb8 {/0 0.000s} 8. g3 {+0.21/5 0.981s} Bf5 {/0 0.000s}
+9. Na3 {+0.44/3 0.352s} Qa6 {/0 0.000s} 10. g4 {+8.53/4 0.583s} Bxg4 {/0 0.000s}
+11. Qd1 {-1.35/3 0.390s} g6 {/0 0.000s} 12. Qb3 {-1.31/3 0.421s} b6 {/0 0.000s}
+13. Qd1 {-1.30/3 0.382s} Bf5 {/0 0.000s} 14. Bg1 {-0.08/4 0.462s}
+Be6 {/0 0.000s} 15. e4 {+2.39/7 1.100s} Qa5 {/0 0.000s} 16. Be3 {-1.36/5 2.310s}
+dxe4 {/0 0.000s} 17. Kd2 {-2.44/5 1.358s} h6 {/0 0.000s}
+18. Bg1 {-1.78/4 0.311s} Rg8 {/0 0.000s} 19. Bd3 {-9.12/6 0.563s}
+exd3 {/0 0.000s} 20. Qb1 {-5.36/4 0.776s} Bxh3 {/0 0.000s}
+21. Qd1 {-10.43/4 0.743s} Bf5 {/0 0.000s} 22. Qb1 {-13.38/5 2.504s}
+Be6 {/0 0.000s} 23. b3 {-9.28/4 0.941s} Qxa3 {/0 0.000s}
+24. Qxd3 {-10.40/4 0.784s, Black makes an illegal move: g6g4} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "10"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:22"]
+[GameStartTime "2026-10-31T15:08:07 -0700"]
+[GameEndTime "2026-10-31T15:08:30 -0700"]
+[PlyCount "41"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A06"]
+[Opening "Zukertort Opening: Reversed Mexican Defense"]
+
+1. Nc3 {/0 0.000s} d5 {-9.02/6 0.750s} 2. Nf3 {/0 0.000s} d4 {+2.94/7 1.604s}
+3. e4 {/0 0.000s} Bg4 {+3.17/6 1.447s} 4. Bc4 {/0 0.000s} Nd7 {+6.33/5 1.081s}
+5. Ne2 {/0 0.000s} c5 {-0.95/5 1.054s} 6. Nfxd4 {/0 0.000s}
+cxd4 {+6.77/7 1.024s} 7. Nxd4 {/0 0.000s} Ngf6 {+8.74/5 0.994s}
+8. f3 {/0 0.000s} Nxe4 {+6.34/5 0.875s} 9. fxg4 {/0 0.000s} a5 {-1.37/4 0.691s}
+10. d3 {/0 0.000s} Ng5 {-5.87/5 0.956s} 11. Bxg5 {/0 0.000s} b5 {-3.43/5 3.152s}
+12. Bxb5 {/0 0.000s} a4 {-3.66/4 2.812s} 13. Be3 {/0 0.000s} h6 {-7.68/4 0.723s}
+14. Bc4 {/0 0.000s} g6 {-8.97/5 0.703s} 15. Ne2 {/0 0.000s}
+Qa5+ {-2.67/6 1.879s} 16. Kf2 {/0 0.000s} Qh5 {-10.19/6 0.674s}
+17. gxh5 {/0 0.000s} Nb6 {-13.73/5 1.204s} 18. Bb5+ {/0 0.000s}
+Nd7 {-13.65/2 0.244s} 19. hxg6 {/0 0.000s} Bg7 {-13.55/2 0.242s}
+20. gxf7+ {/0 0.000s} Kd8 {-13.62/3 0.758s, White makes an illegal move: f7f8}
+0-1
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "2"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:40"]
+[GameStartTime "2026-10-31T15:07:51 -0700"]
+[GameEndTime "2026-10-31T15:08:32 -0700"]
+[PlyCount "176"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A10"]
+[Opening "English Opening: Achilles-Omega Gambit"]
+
+1. e4 {+0.48/5 1.182s} Nf6 {/0 0.000s} 2. c4 {+3.35/6 1.609s} Nc6 {/0 0.000s}
+3. f4 {+2.11/5 1.265s} d5 {/0 0.000s} 4. h3 {-2.10/6 3.719s} Bf5 {/0 0.000s}
+5. Kf2 {-3.65/5 1.363s} Bxe4 {/0 0.000s} 6. d3 {-10.48/5 0.909s} Bf5 {/0 0.000s}
+7. Qa4 {-2.89/5 1.358s} b5 {/0 0.000s} 8. cxd5 {-5.67/6 2.971s} Nb8 {/0 0.000s}
+9. Qb3 {-2.55/5 0.657s} b4 {/0 0.000s} 10. a3 {-1.58/6 0.474s} bxa3 {/0 0.000s}
+11. Bd2 {-1.07/3 0.443s} Na6 {/0 0.000s} 12. Ke2 {-1.33/4 0.250s} a2 {/0 0.000s}
+13. Rxa2 {+4.20/4 2.544s} Nc5 {/0 0.000s} 14. Ra5 {-12.84/5 2.273s}
+Nxb3 {/0 0.000s} 15. Kf3 {-12.72/5 2.032s} a6 {/0 0.000s}
+16. Bc3 {-12.22/5 0.488s} Nd7 {/0 0.000s} 17. Kg3 {-10.81/3 0.674s}
+Nxa5 {/0 0.000s} 18. Kh2 {-9.86/3 0.394s} Nb3 {/0 0.000s}
+19. h4 {-10.15/5 0.664s} Na1 {/0 0.000s} 20. Nf3 {-10.00/5 1.660s}
+Nc2 {/0 0.000s} 21. Bd2 {-9.81/4 0.141s} Nf6 {/0 0.000s}
+22. Nc3 {-11.52/5 0.431s} Nh5 {/0 0.000s} 23. Rg1 {-9.86/4 0.482s}
+Bg4 {/0 0.000s} 24. Nd1 {-12.52/3 0.141s} Qxd5 {/0 0.000s}
+25. Ne3 {-11.91/5 0.421s} Qxf3 {/0 0.000s} 26. Ba5 {-M4/5 0.109s}
+Qxe3 {/0 0.000s} 27. b4 {-12.35/4 0.716s} c6 {/0 0.000s}
+28. Kh1 {-13.73/4 0.249s} Nxf4 {/0 0.000s} 29. Bb6 {-12.88/4 0.341s}
+Qxb6 {/0 0.000s} 30. Be2 {-16.33/6 0.280s} Bxe2 {/0 0.000s}
+31. g4 {-16.30/4 1.053s} Nxb4 {/0 0.000s} 32. Rd1 {-M6/5 0.173s}
+Bxd1 {/0 0.000s} 33. Kh2 {-M4/4 0.100s} Nbxd3 {/0 0.000s} 34. Kg3 {-M2/3 0.010s}
+Ne6 {/0 0.000s} 35. Kh3 {-18.55/4 0.374s} Qc7 {/0 0.000s}
+36. g5 {-17.69/4 0.125s} Ba4 {/0 0.000s} 37. g6 {-51.20/4 0.238s}
+fxg6 {/0 0.000s} 38. Kg4 {-51.04/5 0.129s} a5 {/0 0.000s}
+39. Kh3 {-18.68/5 0.667s} Kd7 {/0 0.000s} 40. Kg4 {-51.22/4 0.699s}
+Qe5 {/0 0.000s} 41. h5 {-51.22/4 0.911s} gxh5+ {/0 0.000s}
+42. Kh4 {-M2/3 0.010s} Nb2 {/0 0.000s} 43. Kh3 {-51.22/1 0.000s}
+Qe3+ {/0 0.000s} 44. Kg2 {-51.22/2 0.135s} Bc2 {/0 0.000s}
+45. Kf1 {-38.60/6 0.204s} Qa7 {/0 0.000s} 46. Ke2 {-51.14/3 0.102s}
+Ba4 {/0 0.000s} 47. Kf3 {-51.22/2 0.134s} Bb5 {/0 0.000s}
+48. Kg3 {-51.14/3 0.114s} Bf1 {/0 0.000s} 49. Kh4 {-M4/4 0.150s} Be2 {/0 0.000s}
+50. Kg3 {-M4/3 0.103s} Ba6 {/0 0.000s} 51. Kh2 {-51.18/3 0.114s} Bf1 {/0 0.000s}
+52. Kg3 {-M4/4 0.109s} Bd3 {/0 0.000s} 53. Kh2 {-51.18/3 0.124s} Bb1 {/0 0.000s}
+54. Kg3 {-M4/3 0.103s} Qe3+ {/0 0.000s} 55. Kg2 {-51.26/3 0.123s}
+Rd8 {/0 0.000s} 56. Kh1 {-51.26/3 0.122s} Qb6 {/0 0.000s}
+57. Kh2 {-51.18/3 0.123s} Na4 {/0 0.000s} 58. Kg3 {-M4/3 0.112s}
+Qg1+ {/0 0.000s} 59. Kh3 {-M6/4 0.110s} Be4 {/0 0.001s} 60. Kh4 {-M2/2 0.010s}
+Qg2 {/0 0.000s} 61. Kxh5 {-M2/2 0.010s} Qa2 {/0 0.000s}
+62. Kh4 {-50.22/4 0.134s} Nac5 {/0 0.000s} 63. Kh3 {-50.18/3 0.133s}
+Bh1 {/0 0.001s} 64. Kh4 {-50.14/3 0.150s} Qc2 {/0 0.000s}
+65. Kh5 {-50.18/3 0.188s} Nf4+ {/0 0.001s} 66. Kg5 {-46.20/4 0.515s}
+Nd5 {/0 0.001s} 67. Kh5 {-50.18/3 0.128s} Bg2 {/0 0.001s}
+68. Kg5 {-50.18/3 0.159s} Qd1 {/0 0.001s} 69. Kf5 {-M2/3 0.019s} Rb8 {/0 0.001s}
+70. Ke5 {-50.14/3 0.139s} Ne3 {/0 0.001s} 71. Kf4 {-50.14/1 0.010s}
+Nc2 {/0 0.001s} 72. Kg3 {-46.29/4 0.388s} Be4 {/0 0.001s} 73. Kf2 {-M2/3 0.019s}
+Ra8 {/0 0.001s} 74. Kg3 {-50.18/1 0.000s} Qh5 {/0 0.001s}
+75. Kf4 {-50.18/2 0.166s} Bg2 {/0 0.001s} 76. Kg3 {-50.26/2 0.010s}
+Bh1 {/0 0.001s} 77. Kf4 {-M4/3 0.121s} Nd4 {/0 0.001s} 78. Kg3 {-M6/3 0.111s}
+Qf5 {/0 0.001s} 79. Kh4 {-50.18/2 0.169s} Nce6 {/0 0.001s}
+80. Kg3 {-50.18/1 0.000s} Qe4 {/0 0.001s} 81. Kf2 {-17.24/3 0.160s}
+Qh4+ {/0 0.001s} 82. Kf1 {-17.24/3 0.215s} Kc7 {/0 0.001s}
+83. Kg1 {-17.27/1 0.000s} Bd5 {/0 0.001s} 84. Kf1 {-17.25/1 0.000s}
+Bf3 {/0 0.001s} 85. Kg1 {-17.27/1 0.000s} Bd1 {/0 0.001s}
+86. Kg2 {-13.74/3 0.156s} Qe4+ {/0 0.001s} 87. Kh2 {-13.74/3 0.154s}
+Qd5 {/0 0.001s} 88. Kg3 {-M4/3 0.132s, Black makes an illegal move: a5a3} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "9"]
+[White "Texel--200"]
+[Black "CISAB"]
+[Result "1-0"]
+[EngineWhiteName "Texel 1.12"]
+[EngineWhiteAuthor "Peter Osterlund"]
+[EngineBlackName "CISAB v14 (Rust port)"]
+[EngineBlackAuthor "Carl Kadie"]
+[GameDuration "00:00:32"]
+[GameStartTime "2026-10-31T15:08:04 -0700"]
+[GameEndTime "2026-10-31T15:08:36 -0700"]
+[PlyCount "76"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Anderssen's Opening"]
+
+1. a3 {+0.18/5 1.011s} Nf6 {/0 0.000s} 2. e3 {+0.06/5 1.163s} Nc6 {/0 0.000s}
+3. Qe2 {+0.38/6 0.712s} d5 {/0 0.000s} 4. c4 {+0.07/4 0.371s} Bf5 {/0 0.000s}
+5. c5 {+0.15/4 0.373s} Bg6 {/0 0.000s} 6. f4 {+0.28/5 0.363s} Bf5 {/0 0.000s}
+7. b3 {+0.78/4 0.685s} Bc8 {/0 0.000s} 8. Qd1 {+0.41/5 1.083s} Na5 {/0 0.000s}
+9. Ne2 {+0.60/5 1.045s} Bd7 {/0 0.000s} 10. h3 {-3.77/5 1.022s} h5 {/0 0.000s}
+11. b4 {+3.76/5 0.991s} Nc6 {/0 0.000s} 12. Nec3 {+0.82/5 0.972s} h4 {/0 0.000s}
+13. Bd3 {+0.73/5 0.941s} d4 {/0 0.000s} 14. b5 {-1.87/6 0.916s} Na5 {/0 0.000s}
+15. exd4 {+1.19/5 0.892s} Rc8 {/0 0.000s} 16. Ra2 {-0.38/6 1.175s}
+Rh6 {/0 0.000s} 17. Be4 {-2.77/6 0.531s} b6 {/0 0.000s} 18. c6 {+2.12/7 0.753s}
+Be6 {/0 0.000s} 19. Na4 {-7.11/7 0.280s} Bxa2 {/0 0.000s}
+20. Qb3 {-10.60/5 1.922s} Bxb3 {/0 0.000s} 21. Bb2 {-9.05/4 0.444s}
+Bxa4 {/0 0.000s} 22. Kf1 {-10.60/3 1.252s} Nxe4 {/0 0.000s}
+23. Nc3 {-12.97/6 0.491s} Bb3 {/0 0.000s} 24. Ne2 {-11.48/5 1.453s}
+Nxd2+ {/0 0.000s} 25. Kf2 {-13.62/4 0.531s} f6 {/0 0.000s}
+26. Rh2 {-13.65/4 0.848s} Ne4+ {/0 0.000s} 27. Ke3 {-13.24/4 0.810s}
+Nd6 {/0 0.000s} 28. Ng1 {-13.47/6 2.102s} Nxb5 {/0 0.000s}
+29. Kf2 {-13.51/5 0.523s} Nxc6 {/0 0.000s} 30. Rh1 {-13.61/5 0.814s}
+Bd1 {/0 0.000s} 31. Ne2 {-10.60/4 0.309s} Ba4 {/0 0.000s}
+32. g4 {-14.88/5 1.767s} Na5 {/0 0.000s} 33. Kf1 {-11.90/4 0.441s}
+Bc2 {/0 0.000s} 34. Kf2 {-13.63/3 0.452s} Be4 {/0 0.000s}
+35. Ba1 {-13.23/5 0.853s} Bxh1 {/0 0.000s} 36. g5 {-11.96/4 0.381s}
+Rh7 {/0 0.000s} 37. Ng1 {-12.38/4 1.434s} fxg5 {/0 0.000s}
+38. Ke3 {-13.47/3 0.375s, Black makes an illegal move: g5g3} 1-0
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2026.10.31"]
+[Round "9"]
+[White "CISAB"]
+[Black "Texel--200"]
+[Result "0-1"]
+[EngineWhiteName "CISAB v14 (Rust port)"]
+[EngineWhiteAuthor "Carl Kadie"]
+[EngineBlackName "Texel 1.12"]
+[EngineBlackAuthor "Peter Osterlund"]
+[GameDuration "00:00:39"]
+[GameStartTime "2026-10-31T15:08:02 -0700"]
+[GameEndTime "2026-10-31T15:08:42 -0700"]
+[PlyCount "121"]
+[Termination "illegal move"]
+[TimeControl "30+0.2"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+
+1. Nc3 {/0 0.000s} f6 {-2.30/5 2.834s} 2. Nf3 {/0 0.000s} d5 {-1.12/5 1.101s}
+3. e4 {/0 0.000s} g5 {-0.92/5 1.512s} 4. Bc4 {/0 0.000s} Bd7 {-5.85/5 1.028s}
+5. Bxd5 {/0 0.000s} Qc8 {-1.68/5 1.002s} 6. Bb3 {/0 0.000s} Bh6 {-1.72/5 0.971s}
+7. Qe2 {/0 0.000s} Bg7 {-1.48/5 0.953s} 8. d3 {/0 0.000s} e5 {-1.04/4 0.371s}
+9. Bd5 {/0 0.000s} a6 {-1.76/3 0.311s} 10. Bd2 {/0 0.000s} a5 {-2.23/3 0.381s}
+11. b3 {/0 0.000s} c6 {-1.67/6 0.573s} 12. Bc4 {/0 0.000s} Kf8 {-2.15/3 0.300s}
+13. Be3 {/0 0.000s} Bg4 {-1.69/3 0.373s} 14. Nxg5 {/0 0.000s}
+Nh6 {+3.96/5 1.811s} 15. Qf1 {/0 0.000s} Be6 {-9.29/4 2.894s}
+16. Bxe6 {/0 0.000s} b5 {-9.17/4 2.588s} 17. Bxc8 {/0 0.000s}
+Ke7 {-10.44/4 2.095s} 18. Bh3 {/0 0.000s} Rf8 {-10.60/4 0.604s}
+19. Nxh7 {/0 0.000s} Ra6 {-12.59/5 0.588s} 20. Rc1 {/0 0.000s}
+Rg8 {-11.85/6 0.732s} 21. Nd1 {/0 0.000s} Ke8 {-10.42/3 0.560s}
+22. g3 {/0 0.000s} Ng4 {-10.60/3 0.553s} 23. Bc5 {/0 0.000s}
+b4 {-10.60/3 1.281s} 24. Bxg4 {/0 0.000s} Nd7 {-11.67/5 1.199s}
+25. Be3 {/0 0.000s} Nb8 {-10.60/3 0.474s} 26. Be6 {/0 0.000s}
+Ra7 {-13.39/5 1.095s} 27. Bxg8 {/0 0.000s} Ra8 {-M6/5 0.566s}
+28. Qg2 {/0 0.000s} Nd7 {-12.03/4 0.290s} 29. Bd2 {/0 0.000s}
+Nc5 {-11.97/4 0.251s} 30. Bc4 {/0 0.000s} Ra7 {-11.76/4 0.310s}
+31. Bg8 {/0 0.000s} Ra6 {-11.83/4 0.629s} 32. Bc4 {/0 0.000s}
+Bh8 {-13.45/5 0.439s} 33. Bxa6 {/0 0.000s} Nd7 {-13.14/5 0.512s}
+34. f3 {/0 0.000s} Kd8 {-11.79/4 0.261s} 35. Bc4 {/0 0.000s}
+Kc7 {-13.38/5 0.393s} 36. h3 {/0 0.000s} Kb6 {-13.40/5 0.882s}
+37. Qe2 {/0 0.000s} Kc5 {-13.06/4 0.110s} 38. Bg8 {/0 0.000s}
+Kd6 {-11.70/4 0.407s} 39. Kf1 {/0 0.000s} f5 {-11.98/4 0.221s}
+40. exf5 {/0 0.000s} Nf6 {-12.96/3 0.370s} 41. Bf7 {/0 0.000s}
+Nd5 {-11.85/4 1.059s} 42. Bg6 {/0 0.000s} Nf6 {-13.20/3 0.555s}
+43. Nf8 {/0 0.000s} Nh7 {-12.98/3 0.296s} 44. Nxh7 {/0 0.000s}
+a4 {-13.29/4 0.324s} 45. bxa4 {/0 0.000s} b3 {-13.13/3 0.100s}
+46. cxb3 {/0 0.000s} Kd7 {-17.13/4 0.184s} 47. Kg1 {/0 0.000s}
+Kc7 {-13.26/4 0.292s} 48. Bc3 {/0 0.000s} e4 {-35.84/6 1.002s}
+49. Bxh8 {/0 0.000s} Kd6 {-18.60/4 0.084s} 50. fxe4 {/0 0.000s}
+Ke7 {-46.91/6 0.543s} 51. Rxc6 {/0 0.000s} Kd7 {-46.91/5 0.439s}
+52. Rc3 {/0 0.000s} Kd8 {-52.98/3 0.079s} 53. Ng5 {/0 0.000s}
+Ke7 {-46.95/3 0.100s} 54. Rc6 {/0 0.000s} Kd8 {-52.98/3 0.091s}
+55. Re6 {/0 0.000s} Kc7 {-53.06/4 0.094s} 56. e5 {/0 0.000s}
+Kb8 {-53.02/3 0.093s} 57. a3 {/0 0.001s} Kc7 {-53.02/4 0.082s}
+58. Re7+ {/0 0.000s} Kb6 {-M4/3 0.080s} 59. Ne4 {/0 0.000s} Ka5 {-M4/3 0.080s}
+60. Bg7 {/0 0.000s} Kb6 {-M4/4 0.089s, White makes an illegal move: g3g5} 0-1
+
