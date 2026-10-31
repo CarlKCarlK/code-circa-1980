@@ -918,6 +918,62 @@
           "sha256": "236213f2c5c3c0678e16f3a819538913d535fa27218d240d735d98daed238dfc"
         }
       ]
+    },
+    {
+      "version": "v05",
+      "label": "CISAB · Title, ADD, attacked squares",
+      "capture": "tape13a",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape13a/best/11-CISAB-CHESS-EARLY.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/11-CISAB-CHESS-EARLY.ASC",
+      "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8",
+      "bytes": 3709,
+      "listing_sha256": "1dab2c20d91a3f399cef102197febf4fe3a7e81c08d52d5aac6089a672b58754",
+      "listing_lines": 90,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS EARLY; 90 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 11,
+        "title": "CISAB-CHESS-EARLY",
+        "source": "tapes/recovered/tape13a/timing-refinement/T11-left-hp1200-0f2491241304.BAS",
+        "binary": "tapes/recovered/tape13a/best/11-CISAB-CHESS-EARLY.BAS",
+        "listing": "tapes/recovered/tape13a/best/11-CISAB-CHESS-EARLY.ASC",
+        "bytes": 3709,
+        "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8",
+        "recovery_complete": true,
+        "source_start_s": 462.42035416666664,
+        "source_end_s": 522.7035,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T11-left-hp1200-0f2491241304.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T11-right-boosted-0f2491241304.BAS"
+        ],
+        "lines": 90,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v05/11-CISAB-CHESS-EARLY.BAS",
+      "snapshot_listing": "versions/v05/11-CISAB-CHESS-EARLY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/11-CISAB-CHESS-EARLY.BAS",
+          "bytes": 3709,
+          "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8"
+        },
+        {
+          "path": "versions/v05/11-CISAB-CHESS-EARLY.ASC",
+          "bytes": 4335,
+          "sha256": "1dab2c20d91a3f399cef102197febf4fe3a7e81c08d52d5aac6089a672b58754"
+        }
+      ]
     }
   ],
   "partial_saves": [

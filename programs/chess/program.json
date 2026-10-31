@@ -4,7 +4,7 @@
   "description": "My chess program in Level II BASIC, built to play in a tournament: type in the other side's move and it answers with its own.",
   "kind": "Game",
   "language": "Level II BASIC",
-  "defaultVersion": "v04",
+  "defaultVersion": "v05",
   "versionOrder": "Inferred development sequence, not established dates. v01 and v02 are tape1b saves 8 and 10; v03-v07 are tape13a saves 9-13; v08-v14 are tape13b saves 1-6 and 8, each in save order. Each listing is the previous one with changes, and v03 starts from v02's code (its lines 10-57 and most of the move generator are v02's). The archive labels V2-V9 were assigned by the recovery from save order; they are not in the programs. No save is dated. Tape numbers alone do not establish chronology.",
   "versions": [
     {
@@ -47,8 +47,19 @@
       "save": 10,
       "raw": "versions/v04/10-COMPUTER-CHESS-V2.BAS",
       "listing": "versions/v04/10-COMPUTER-CHESS-V2.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Promotes pawns only on the last row, redraws the board after CHEAT, and prints OH DAMN! when they capture.",
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs the last recovered version; this listing and payload remain downloadable."
+    },
+    {
+      "id": "v05",
+      "label": "CISAB · Title, ADD, attacked squares",
+      "capture": "tape13a",
+      "save": 11,
+      "raw": "versions/v05/11-CISAB-CHESS-EARLY.BAS",
+      "listing": "versions/v05/11-CISAB-CHESS-EARLY.ASC",
+      "playable": true,
+      "note": "The C I S A B title screen. ADD at OK? lets the operator put any piece on any square. Before moving it marks every square the other side attacks (lines 2000-2030) and counts them in each move's score.",
       "unavailableReason": null
     }
   ]
