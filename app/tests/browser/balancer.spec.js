@@ -36,7 +36,7 @@ test('Rust version balances problems from the side panel and typed equations',as
  await expect(page.locator('.balancer-result')).toBeEmpty();
  await page.getByRole('button',{name:'Balance',exact:true}).click();
  await expect(page.locator('.balanced')).toHaveText('C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O');
- await page.getByRole('button',{name:'Permanganate'}).click();
+ await page.getByRole('button',{name:'Permanganate',exact:true}).click();
  await expect(page.locator('.balancer-result')).toBeEmpty();
  await page.getByRole('button',{name:'Balance',exact:true}).click();
  await expect(page.locator('.balancer-result > p').first()).toHaveClass('trs80');
