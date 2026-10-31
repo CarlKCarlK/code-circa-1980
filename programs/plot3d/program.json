@@ -7,7 +7,7 @@
   "actionVerb": "Run",
   "defaultVersion": "v03",
   "defaultImplementation": "typescript",
-  "versionOrder": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
+  "versionOrder": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC; most likely from Microsoft's cassette Level III BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420. My recollection (2026-10-31, tentative): I probably dropped LINE so that more people, most of whom had only Level II, could run the program and see the picture; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
   "versions": [
     {
       "id": "v01",
@@ -18,7 +18,7 @@
       "listing": "versions/v01/02-3D-SURFACE-PLOT-V1.ASC",
       "playable": false,
       "note": "A funnel-shaped surface drawn as a 7 × 7 wire grid with the LINE statement. No prompts or title.",
-      "unavailableReason": "Source only. LINE is not a Level II BASIC statement: on the site's Model III Level II BASIC this version stops with ?L3 Error in 150. Its payload was saved with a higher program start (pointer base 22204, not Level II's 17125), so it was probably written under a DOS or BASIC extension that provided LINE; that environment was not recovered."
+      "unavailableReason": "Source only. LINE is not a Level II BASIC statement: on the site's Model III Level II BASIC this version stops with ?L3 Error in 150. Its payload was saved with a higher program start (pointer base 22204, not Level II's 17125), so it was probably written under a BASIC extension loaded into memory below the program. The most likely is Microsoft's Level III BASIC, a cassette add-on to Level II whose additions included LINE for drawing lines and boxes (TRSDOS Disk BASIC had no graphics LINE). That environment was not recovered."
     },
     {
       "id": "v02",

@@ -5,7 +5,7 @@
   "capture": "tape5a",
   "save": 1,
   "order_inferred": true,
-  "order_evidence": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
+  "order_evidence": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC; most likely from Microsoft's cassette Level III BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420. Carl Kadie's recollection (2026-10-31, tentative): he probably dropped LINE so that more people, most of whom had only Level II, could run the program and see the picture; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
   "files": [
     {
       "canonical_path": "PLOT3D.ASC",

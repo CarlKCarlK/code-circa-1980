@@ -68,11 +68,16 @@ The order is inferred from the source, not from dates:
 1. **v01** (tape19b save 2): the bare surface, a 7 × 7 grid drawn with
    `LINE(GX,GY)-(OX,OY),SET`. Level II BASIC has no `LINE`, so it stops with
    `?L3 Error in 150`. It was saved with a higher program start than Level II
-   uses (pointer base 22204 instead of 17125), so it was probably written under a
-   DOS or BASIC extension that had `LINE`. Source only.
+   uses (pointer base 22204 instead of 17125), so something was loaded below it.
+   The likeliest candidate is Microsoft's Level III BASIC, a cassette add-on to
+   Level II whose additions included `LINE` for lines and boxes. TRSDOS Disk BASIC
+   had no graphics `LINE`. Source only.
 2. **v02** (tape19b save 10): replaces `LINE` with the `SET` line-drawing
    subroutine, and sets `Y=0`, which draws a flat tilted grid (apparently a test
-   of the new routine). Source only.
+   of the new routine). Source only. My recollection, which is tentative: I think
+   I dropped `LINE` so that more people could run the program and see the
+   picture, since most owners had only Level II. The tapes fit this: v03 adds a
+   title, prompts and a credit, and it was saved more often than the drafts.
 3. **v03** (tape5a saves 1–2; also tape23a save 11, identical, and tape25a
    save 18, identical except for its one-letter cassette name): adds the title,
    the prompts and the 1979 credit, restores the funnel, and keeps v02's
