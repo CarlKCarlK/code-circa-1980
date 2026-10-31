@@ -4,7 +4,7 @@
   "description": "Hunt an alien through the air vents of your spaceship before it finds you. My 1979 re-theme of Gregory Yob's Hunt the Wumpus.",
   "kind": "Game",
   "language": "Level II BASIC",
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Inferred development sequence, not established dates. Both versions are on tape22b: v01 (saves 6-7) precedes v02 (saves 8-9) in save order, and v02 contains v01's game with additions. Tape numbers alone do not establish chronology.",
   "versions": [
     {
@@ -14,8 +14,19 @@
       "save": 6,
       "raw": "versions/v01/06-ALIEN-HUNT-EARLY-SAVE01.BAS",
       "listing": "versions/v01/06-ALIEN-HUNT-EARLY-SAVE01.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Hunt the Wumpus re-themed: air vents, vacuum chambers, computer failure and poison gas. Drops Yob's crooked-arrow check.",
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v02, the latest version; this listing and payload remain downloadable."
+    },
+    {
+      "id": "v02",
+      "label": "Expanded \u00b7 Title, backstory, closing junctions",
+      "capture": "tape22b",
+      "save": 8,
+      "raw": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
+      "listing": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.ASC",
+      "playable": true,
+      "note": "Adds a block-graphics title with the film's tagline, a backstory, shuffled junction numbers, and closing junctions to trap the alien. Bumping the alien now kills you.",
       "unavailableReason": null,
       "slug": "basic"
     }
