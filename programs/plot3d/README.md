@@ -46,7 +46,8 @@ The order is inferred from the source, not from dates:
 2. **v02** (tape19b save 10): replaces `LINE` with the `SET` line-drawing
    subroutine, and sets `Y=0`, which draws a flat tilted grid (apparently a test
    of the new routine). Source only.
-3. **v03** (tape5a saves 1–2; also tape23a save 11, identical): adds the title,
+3. **v03** (tape5a saves 1–2; also tape23a save 11, identical, and tape25a
+   save 18, identical except for its one-letter cassette name): adds the title,
    the prompts and the 1979 credit, restores the funnel, and keeps v02's
    subroutine verbatim. A later save on tape29a is damaged; its recovered first
    17 lines match v03. **The site runs v03.**
@@ -68,7 +69,7 @@ The order is inferred from the source, not from dates:
 
 v03 prints `(C) 1979`. v01 and v02 share tape19b with a Chemical Equation
 Balancer save marked `COPYRIGHT 1979 CARL KADIE`. A copyright year is not a save
-date; tape23a and tape29a hold later saves of v03.
+date; tape23a, tape25a and tape29a hold other saves of v03.
 
 See `provenance.json` for archive paths, hashes and recovery evidence, and
 `VERIFICATION.md` for what was run in the emulator.

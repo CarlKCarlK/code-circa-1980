@@ -8,10 +8,10 @@
     "estimate": "1979",
     "direct_date_in_program": "v03 line 70: PRINT\"3-D PLOT   (C) 1979   CARL KADIE\"",
     "evidence": [
-      "v03 prints (C) 1979 (tape5a saves 1-2; tape23a save 11; tape29a save 1)",
+      "v03 prints (C) 1979 (tape5a saves 1-2; tape23a save 11; tape25a save 18; tape29a save 1)",
       "tape19b save 17 CHEMICAL EQUATION BALANCER V2: \"' REM COPYRIGHT 1979 CARL KADIE\" (same side as v01 and v02)"
     ],
-    "caution": "A copyright year is not a save date; old programs were sometimes saved again later (tape23a and tape29a hold later saves of v03)."
+    "caution": "A copyright year is not a save date; old programs were sometimes saved again later (tape23a, tape25a and tape29a hold other saves of v03)."
   },
   "execution_testing": "Recovery archive records no execution tests. Website emulator checks are recorded separately in VERIFICATION.md.",
   "saves": [
@@ -982,6 +982,20 @@
           "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03",
           "inventory_row": {
             "summary": "3D PLOT",
+            "status": "validated payload; runtime untested",
+            "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+            "recovery%": "100"
+          }
+        },
+        {
+          "capture": "tape25a",
+          "save": 18,
+          "relation": "same program bytes; only the one-character cassette name differs (G, as on the tape19b drafts, instead of P)",
+          "archive_raw": "tapes/recovered/tape25a/best/18-THREE-D-PLOT.BAS",
+          "archive_listing": "tapes/recovered/tape25a/best/18-THREE-D-PLOT.ASC",
+          "sha256": "aec42b876ce9b6f39c0fb83ecf9fe88746f44e8f62be35dde6cd7572e2a7a519",
+          "inventory_row": {
+            "summary": "THREE D PLOT",
             "status": "validated payload; runtime untested",
             "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
             "recovery%": "100"

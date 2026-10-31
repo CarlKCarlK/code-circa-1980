@@ -10,7 +10,8 @@ routine has been exercised.
 All three snapshots match the archive SHA-256 hashes and recovery records:
 pointer-consistent BASIC lines, end markers, line counts (v01 21, v02 28,
 v03 42) and last lines, and listings identical to `decodeBasicProgram`. The
-repeated saves tape5a save 2 and tape23a save 11 have the same hash as v03.
+repeated saves tape5a save 2 and tape23a save 11 have the same hash as v03;
+tape25a save 18 differs only in byte 3, the cassette name (G instead of P).
 The damaged tape29a save's validated 17-line prefix has the same listing text as
 v03's first 17 lines, with pointer base 22204 instead of 17125. Each
 `plot3d-vNN` tag's `original/PLOT3D.BAS` and `PLOT3D.ASC` were checked against
