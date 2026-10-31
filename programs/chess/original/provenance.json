@@ -1,25 +1,25 @@
 {
   "title": "CISAB Chess",
-  "version": "v02",
-  "label": "COMPUTER CHESS · You or itself",
-  "capture": "tape1b",
-  "save": 10,
+  "version": "v03",
+  "label": "COMPUTER CHESS · Tournament player",
+  "capture": "tape13a",
+  "save": 9,
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. v01 and v02 are tape1b saves 8 and 10; v03-v07 are tape13a saves 9-13; v08-v14 are tape13b saves 1-6 and 8, each in save order. Each listing is the previous one with changes, and v03 starts from v02's code (its lines 10-57 and most of the move generator are v02's). The archive labels V2-V9 were assigned by the recovery from save order; they are not in the programs. No save is dated. Tape numbers alone do not establish chronology.",
   "files": [
     {
       "canonical_path": "CHESS.ASC",
-      "snapshot_path": "versions/v02/10-COMPUTER-CHESS-SELF-PLAY.ASC",
-      "archive_path": "tapes/recovered/tape1b/best/10-COMPUTER-CHESS-SELF-PLAY.ASC",
-      "sha256": "c47407e493b2e0cea106b13ba74dfcf5e7c3b875410b45b78fa7c354f7deefde",
-      "bytes": 3372
+      "snapshot_path": "versions/v03/09-COMPUTER-CHESS.ASC",
+      "archive_path": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.ASC",
+      "sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836",
+      "bytes": 3682
     },
     {
       "canonical_path": "CHESS.BAS",
-      "snapshot_path": "versions/v02/10-COMPUTER-CHESS-SELF-PLAY.BAS",
-      "archive_path": "tapes/recovered/tape1b/best/10-COMPUTER-CHESS-SELF-PLAY.BAS",
-      "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
-      "bytes": 2912
+      "snapshot_path": "versions/v03/09-COMPUTER-CHESS.BAS",
+      "archive_path": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.BAS",
+      "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a",
+      "bytes": 3168
     }
   ]
 }

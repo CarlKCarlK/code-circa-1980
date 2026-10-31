@@ -806,6 +806,62 @@
           "sha256": "c47407e493b2e0cea106b13ba74dfcf5e7c3b875410b45b78fa7c354f7deefde"
         }
       ]
+    },
+    {
+      "version": "v03",
+      "label": "COMPUTER CHESS · Tournament player",
+      "capture": "tape13a",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.ASC",
+      "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a",
+      "bytes": 3168,
+      "listing_sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836",
+      "listing_lines": 78,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "COMPUTER CHESS; 78 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 9,
+        "title": "COMPUTER-CHESS",
+        "source": "tapes/recovered/tape13a/timing-refinement/T9-left-hp1200-4146e10e7b14.BAS",
+        "binary": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.BAS",
+        "listing": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.ASC",
+        "bytes": 3168,
+        "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a",
+        "recovery_complete": true,
+        "source_start_s": 327.85991666666666,
+        "source_end_s": 379.7810416666667,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T9-left-hp1200-4146e10e7b14.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T9-right-boosted-4146e10e7b14.BAS"
+        ],
+        "lines": 78,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v03/09-COMPUTER-CHESS.BAS",
+      "snapshot_listing": "versions/v03/09-COMPUTER-CHESS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/09-COMPUTER-CHESS.BAS",
+          "bytes": 3168,
+          "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a"
+        },
+        {
+          "path": "versions/v03/09-COMPUTER-CHESS.ASC",
+          "bytes": 3682,
+          "sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836"
+        }
+      ]
     }
   ],
   "partial_saves": [
