@@ -4,7 +4,7 @@
   "description": "My chess program in Level II BASIC, built to play in a tournament: type in the other side's move and it answers with its own.",
   "kind": "Game",
   "language": "Level II BASIC",
-  "defaultVersion": "v11",
+  "defaultVersion": "v12",
   "versionOrder": "Inferred development sequence, not established dates. v01 and v02 are tape1b saves 8 and 10; v03-v07 are tape13a saves 9-13; v08-v14 are tape13b saves 1-6 and 8, each in save order. Each listing is the previous one with changes, and v03 starts from v02's code (its lines 10-57 and most of the move generator are v02's). The archive labels V2-V9 were assigned by the recovery from save order; they are not in the programs. No save is dated. Tape numbers alone do not establish chronology.",
   "versions": [
     {
@@ -124,8 +124,19 @@
       "save": 4,
       "raw": "versions/v11/04-CISAB-CHESS-V6.BAS",
       "listing": "versions/v11/04-CISAB-CHESS-V6.ASC",
-      "playable": true,
+      "playable": false,
       "note": "Adds BY CARL MYERS KADIE and restores the full board. Scores moves differently when its own king is threatened, and animates moves faster.",
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs the last recovered version; this listing and payload remain downloadable."
+    },
+    {
+      "id": "v12",
+      "label": "CISAB V7 · Cleanup",
+      "capture": "tape13b",
+      "save": 5,
+      "raw": "versions/v12/05-CISAB-CHESS-V7.BAS",
+      "listing": "versions/v12/05-CISAB-CHESS-V7.ASC",
+      "playable": true,
+      "note": "Puts the board back after a rejected trial move, prints KEYFREE, and stops redrawing the whole board every turn.",
       "unavailableReason": null
     }
   ]
