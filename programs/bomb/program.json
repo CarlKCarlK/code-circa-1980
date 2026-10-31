@@ -1,0 +1,34 @@
+{
+  "id": "bomb",
+  "title": "Bomb",
+  "description": "Defuse a bomb by typing back its wire colors, in order and spelled right, before time runs out. Each bomb gets faster.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "defaultVersion": "v02",
+  "versionOrder": "Inferred development sequence, not established dates. Both versions are on tape17a: v01 (save 1) precedes v02 (save 3) in save order. v01 reads like a draft: a placeholder villain (MR. XX), commented-out alternative intro paragraphs, and one preset high score. v02 is Bomb on its own, rewritten with new line numbers, naming the villain Nefarious Nick and adding an attract screen and a top-ten ranking. The two share no code line for line, so the order is a judgment, not a derivation. Tape numbers alone do not establish chronology.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Menu \u00b7 Bomb with radio intersection and binary search",
+      "capture": "tape17a",
+      "save": 1,
+      "raw": "versions/v01/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.BAS",
+      "listing": "versions/v01/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.ASC",
+      "playable": false,
+      "note": "Bomb as item 1 of a three-program menu, with RADIO INTERSECTION (circles around two random stations) and BINARY SEARCH research. The villain is a placeholder, MR. XX; one high score, preset to 38 by CMK.",
+      "unavailableReason": "Source only. On this site the Level II BASIC player runs v02, the standalone Nefarious Nick version; this listing and payload remain downloadable."
+    },
+    {
+      "id": "v02",
+      "label": "Nefarious Nick",
+      "capture": "tape17a",
+      "save": 3,
+      "raw": "versions/v02/03-BOMB-NEFARIOUS-NICK.BAS",
+      "listing": "versions/v02/03-BOMB-NEFARIOUS-NICK.ASC",
+      "playable": true,
+      "note": "Bomb on its own, and the version this site plays: the villain is Thomas Nicholas Taggert, Nefarious Nick (Mr. TNT); an arcade-style attract screen; a top-ten ranking with posthumous ranks; 38 colors. The site runs it on a stock Model I, which shows the source's shifted letters (yOU) as capitals.",
+      "unavailableReason": null,
+      "slug": "basic"
+    }
+  ]
+}

@@ -1,14 +1,21 @@
-import {Config, ModelType, BasicLevel, Keyboard, Trs80, CassettePlayer, SilentSoundPlayer} from 'trs80-emulator';
+import {Config, ModelType, BasicLevel, CGChip, Keyboard, Trs80, CassettePlayer, SilentSoundPlayer} from 'trs80-emulator';
 import {CanvasScreen} from 'trs80-emulator-web';
 import {decodeBasicProgram} from 'trs80-base';
 
 // Match the TypeScript field (player.ts) instead of the library's gray-green AUTHENTIC_BACKGROUND.
-class CobaltScreen extends CanvasScreen { getBackgroundColor() { return '#1e4b8f'; } }
+class CobaltScreen extends CanvasScreen {
+  getBackgroundColor() { return '#1e4b8f'; }
+  // Every program is drawn in the Model III font, including one running on a Model I,
+  // whose original character generator has blockier letters.
+  setConfig(config) { super.setConfig(config.withModelType(ModelType.MODEL3).withCGChip(CGChip.LOWER_CASE)); }
+}
 
 // Executes recovered tokenized BASIC through the Z80 and original BASIC ROM.
 // The library relocates the in-memory line pointers on load. The source file
 // and every archived byte remain unchanged.
-export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC'} = {}) {
+// A program can ask for a stock Model I (`model: 'MODEL1'`): its ROM shows shifted
+// letters in capitals, as 1978 machines without the lowercase kit did.
+export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC', model} = {}) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Could not load original program (${response.status}).`);
   const bytes = new Uint8Array(await response.arrayBuffer());
@@ -20,7 +27,9 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     if (!response.ok) throw Error('Could not load FALL dependency');
     machineBytes=new Uint8Array(await response.arrayBuffer());
   }
-  const config = Config.makeDefault().withModelType(ModelType.MODEL3).withBasicLevel(BasicLevel.LEVEL2);
+  const config = model === 'MODEL1'
+    ? Config.makeDefault().withModelType(ModelType.MODEL1).withBasicLevel(BasicLevel.LEVEL2).withCGChip(CGChip.ORIGINAL)
+    : Config.makeDefault().withModelType(ModelType.MODEL3).withBasicLevel(BasicLevel.LEVEL2);
   const screen = new CobaltScreen(1);
   const keyboard = new Keyboard();
   const machine = new Trs80(config, screen, keyboard, new CassettePlayer(), new SilentSoundPlayer());
@@ -49,7 +58,9 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     }
   };
   // Typed and pasted text goes through the ROM's keyboard routine, as if keyed in.
-  const type = text => { if (!paused && !disposed) keyboard.simulateKeyboardText(text.replace(/\r\n?/g, '\n')); };
+  // The library types capitals as Shift+letter, which a Model I stores as lowercase
+  // (shown as capitals), so on a Model I letters go in unshifted, as keys do.
+  const type = text => { if (!paused && !disposed) keyboard.simulateKeyboardText((model === 'MODEL1' ? text.toLowerCase() : text).replace(/\r\n?/g, '\n')); };
   // Named keys in order, each pressed and released, for keys text cannot name (Escape is BREAK).
   const keys = names => { if (!paused && !disposed) for (const key of names) { keyboard.keyEvent(key, true); keyboard.keyEvent(key, false); } };
   const paste = event => {
@@ -65,9 +76,23 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
   host.addEventListener('blur', onBlur);
   window.addEventListener('blur', onBlur);
   document.addEventListener('visibilitychange', visibility);
+  // The library's runBasicProgram types its answers on Model III timing. A Model I
+  // boots differently, so answer MEMORY SIZE? and wait for READY on screen first.
+  function runOnModel1() {
+    machine.reset();
+    const screenText = () => String.fromCharCode(...Array.from({length:1024}, (_, i) => machine.readMemory(0x3c00 + i) & 0x7f));
+    let answered = false;
+    const check = () => {
+      const text = screenText();
+      if (!answered && text.includes('MEMORY SIZE')) { keyboard.simulateKeyboardText('\n'); answered = true; }
+      else if (answered && text.includes('READY')) { machine.loadBasicProgram(program); keyboard.simulateKeyboardText('RUN\n'); return; }
+      machine.eventScheduler.add(undefined, machine.tStateCount + machine.clockHz * 0.05, check);
+    };
+    machine.eventScheduler.add(undefined, machine.tStateCount + machine.clockHz * 0.05, check);
+  }
   function restart() {
     release(); machine.stop(); paused = false;
-    machine.runBasicProgram(program);
+    if (model === 'MODEL1') runOnModel1(); else machine.runBasicProgram(program);
     if (machineBytes) machine.eventScheduler.add(undefined, machine.tStateCount+machine.clockHz*0.31, () => machine.writeMemoryBlock(dependency.address,machineBytes));
     machine.start();
     status.textContent = `${running} · click the screen to use the keys`;
