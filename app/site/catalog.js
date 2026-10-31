@@ -20,7 +20,7 @@ const chessModern = {...chessVersions.at(-1), slug:undefined, id:'rust', label:'
 const webCatalogs=import.meta.glob('../../programs/*/web-versions.json',{eager:true,import:'default'});
 export const programs = [{...castles, ...castlesView, modern, loadModernPlayer:()=>import('../../programs/castles/typescript/player.ts')}, {...balancer, ...balancerView, modern:balancerModern, loadModernPlayer:()=>import('../../programs/bal/modern/player.js')}, {...alien, ...alienView, versions:alienVersions}, {...plot3d, ...plot3dView, modern:plot3dModern, loadModernPlayer:()=>import('../../programs/plot3d/typescript/player.ts')}, {...chess, ...chessView, versions:chessVersions, modern:chessModern, loadModernPlayer:()=>import('../../programs/chess/modern/player.js')}]
   .map(program=>({...program,webVersions:webCatalogs[`../../programs/${program.id}/web-versions.json`]?.versions??[]}));
-const files = import.meta.glob(['../../programs/**/*.{BAS,ASC,bin}','!../../programs/**/target/**'], {query:'?url', import:'default', eager:true});
+const files = import.meta.glob(['../../programs/**/*.{BAS,ASC,bin}','!../../programs/**/target/**','!../../programs/**/third_party/**'], {query:'?url', import:'default', eager:true});
 const provenance = import.meta.glob('../../programs/**/provenance.json', {query:'?url', import:'default', eager:true});
 export function assetUrl(program, path) {
   const url = files[`../../programs/${program.id}/${path}`];
