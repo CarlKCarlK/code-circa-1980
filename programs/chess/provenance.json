@@ -1254,6 +1254,62 @@
           "sha256": "8a61f0b1db78a5322c3e5aac1b079e5b07a5690b7fc57ab927a3b45273176cba"
         }
       ]
+    },
+    {
+      "version": "v11",
+      "label": "CISAB V6 · Byline",
+      "capture": "tape13b",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape13b/best/04-CISAB-CHESS-V6.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/04-CISAB-CHESS-V6.ASC",
+      "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e",
+      "bytes": 4678,
+      "listing_sha256": "4a4f8b216d9df8f7dc94ee779c5af579340c576083414b6743129522ffe6ffc3",
+      "listing_lines": 118,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V6; 118 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 4,
+        "title": "CISAB-CHESS-V6",
+        "source": "tapes/recovered/tape13b/timing-refinement/T4-left-hp1200-1ba01b899412.BAS",
+        "binary": "tapes/recovered/tape13b/best/04-CISAB-CHESS-V6.BAS",
+        "listing": "tapes/recovered/tape13b/best/04-CISAB-CHESS-V6.ASC",
+        "bytes": 4678,
+        "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e",
+        "recovery_complete": true,
+        "source_start_s": 307.00395833333334,
+        "source_end_s": 381.69779166666666,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T4-left-hp1200-1ba01b899412.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T4-right-boosted-1ba01b899412.BAS"
+        ],
+        "lines": 118,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v11/04-CISAB-CHESS-V6.BAS",
+      "snapshot_listing": "versions/v11/04-CISAB-CHESS-V6.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v11/04-CISAB-CHESS-V6.BAS",
+          "bytes": 4678,
+          "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e"
+        },
+        {
+          "path": "versions/v11/04-CISAB-CHESS-V6.ASC",
+          "bytes": 5622,
+          "sha256": "4a4f8b216d9df8f7dc94ee779c5af579340c576083414b6743129522ffe6ffc3"
+        }
+      ]
     }
   ],
   "partial_saves": [
