@@ -94,3 +94,24 @@ fn game_types_castling_with_add() {
     let state = g.state();
     assert!(state.contains(r#""1,5,1,7","ADD","1,6,5","ADD","1,8,0","OK""#), "{state}");
 }
+
+#[test]
+fn a_pawn_capturing_straight_ahead_is_illegal() {
+    // You are White: d4, d5, h3; CISAB's opening pushes d7-d5 onto your pawn.
+    let mut g = crate::Game::new(true);
+    g.play(2, 5, 4, 5, 0, false).unwrap();
+    g.play(4, 5, 5, 5, 0, false).unwrap();
+    let r = g.play(2, 1, 3, 1, 0, false).unwrap();
+    assert!(r.contains(r#""legal":false"#) && r.contains("not a legal chess move"), "{r}");
+}
+
+#[test]
+fn en_passant_is_offered_after_its_pawn_steps_two() {
+    // You are White: e4, e5, h3; CISAB's opening answers d7-d5 beside your pawn.
+    let mut g = crate::Game::new(true);
+    for (fr, fc, tr, tc) in [(2, 4, 4, 4), (4, 4, 5, 4), (2, 1, 3, 1)] {
+        g.play(fr, fc, tr, tc, 0, false).unwrap();
+    }
+    let state = g.state();
+    assert!(state.contains(r#"{"from":[5,4],"to":[6,5],"promotes":false,"castles":false,"passant":true}"#), "{state}");
+}

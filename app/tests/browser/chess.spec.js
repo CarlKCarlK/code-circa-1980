@@ -74,6 +74,21 @@ test('Rust board: click and drag moves, CISAB answers from the original algorith
  expect(errors).toEqual([]);
 });
 
+test('an illegal CISAB move disqualifies it: its opening pushes d7-d5 onto your pawn',async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/?development=1&test#/program/chess/rust/play');
+ for(const [a,b] of [[[2,5],[4,5]],[[4,5],[5,5]],[[2,1],[3,1]]]){ // d4, d5, h3
+  await sq(page,...a).click();await sq(page,...b).click();
+  await expect.poll(async()=>(await page.evaluate(()=>window.__circaPlayer.snapshot())).thinking,{timeout:5000}).toBe(false);
+ }
+ await expect(page.locator('.chess-end')).toContainText('CISAB is disqualified: illegal move. You win.');
+ await expect(page.locator('.chess-end')).toContainText('dxd5 is not a legal chess move');
+ await expect(page.locator('.chess-moves .tag.illegal')).toHaveCount(1);
+ await sq(page,2,2).click();
+ await expect(page.locator('.chess-board .target')).toHaveCount(0);
+ expect(errors).toEqual([]);
+});
+
 test('CISAB v14 plays: WHITE, its opening, a typed move confirmed with OK, pause and restart',async({page})=>{
  test.setTimeout(90000);
  const errors=[];page.on('pageerror',e=>errors.push(e.message));

@@ -84,7 +84,10 @@ legal squares. CISAB's book replies appear in the move list. Unchecking the
 opening sends IQ, after which CISAB searches. Play Black makes CISAB open
 with Nc3 on a board shown from Black's side, and New game works. The
 Level II BASIC tab still runs v14. At 390 px wide there is no horizontal
-scrolling.
+scrolling. An illegal move disqualifies CISAB. In the test, after d4, d5 and h3,
+its opening pushes d7-d5 onto your pawn, and the board then ends the game.
+Rust unit tests check your 20 opening moves, castling typed with ADD, and an
+en passant capture offered after its pawn steps two squares.
 
 ## Not tested
 

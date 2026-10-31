@@ -98,8 +98,9 @@ are in its PARITY.md. Its browser version is the site default; v20 is Original.
 CISAB Chess (`programs/chess/`) opens a Rust port of v14 (`rust/`, WebAssembly,
 `modern/player.js`) by default. For the same moves it makes the same replies as
 the original, which includes its illegal moves, its BASIC errors, and its endless
-loop when checkmated. Never "fix" CISAB's play in the engine; the site enforces
-chess rules only for the human side. After Rust changes run `cargo test`,
+loop when checkmated. Never "fix" CISAB's play in the engine. The board offers
+the human every legal move, and disqualifies CISAB on an illegal move or a BASIC
+error. After Rust changes run `cargo test`,
 `npm run build:chess` (commit `rust/pkg/`), and `npm test`, which replays the
 recorded emulator games in `modern/parity-fixtures.json`; re-record them with
 `npm run record:chess`. Differences are in `rust/PARITY.md`.

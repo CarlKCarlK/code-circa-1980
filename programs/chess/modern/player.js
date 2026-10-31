@@ -14,15 +14,15 @@ const PROMOTIONS = [[2,'Queen'], [5,'Rook'], [3,'Bishop'], [4,'Knight']];
 // Why the original program stops, for each way it can end.
 function endMessage(end) {
   if (end.kind === 'theyWin') return ['You took CISAB’s king.', 'DARN THEY BEAT YOU! Taking its king is the only way CISAB admits defeat (line 100).'];
-  if (end.kind === 'forever') return ['CISAB is checkmated and doesn’t know it.', 'Every move it tries loses its king, so lines 1010–1220 repeat forever. The 1979 program never moves again. You win.'];
-  if (end.kind === 'stalemate') return ['CISAB has no moves.', 'i CAN’T MOVE.  STALEMATE (line 1005).'];
+  if (end.kind === 'forever') return ['Checkmate: you win.', 'Every move CISAB can find loses its king, so lines 1010–1220 repeat forever. It never knew it had lost; the 1979 program simply never moves again.'];
+  if (end.kind === 'stalemate') return ['Stalemate: a draw.', 'i CAN’T MOVE.  STALEMATE (line 1005).'];
   const why = {
     'BS 3015': 'CISAB listed more than 120 moves of its own. Rooks, bishops and queens list some squares two or three times (they step half a square at a time), and DIM in line 15 has room for 120.',
     'BS 3500': 'CISAB listed more than 120 of your moves while mapping the squares you attack. Your rooks, bishops and queens count some squares two or three times, and DIM in line 15 has room for 120.',
     'FC 335': 'A CISAB pawn reached your back row and was never promoted (line 1300 checks the wrong square). Looking two squares ahead, line 335 asks for row −1.',
     'RG 10020': 'The four squares of CISAB’s opening were all empty, so line 9530 fell into the board-drawing subroutine, whose RETURN has no GOSUB.',
   }[end.text.replace(/^\?(\w\w) Error in (\d+)$/, '$1 $2')] ?? 'The 1979 program stops here.';
-  return [`The original program stops: ${end.text}`, why];
+  return [`CISAB is disqualified: ${end.text}. You win.`, `${why} The 1979 program stops here.`];
 }
 
 export async function createPlayer(host, _url, status, title) {
@@ -46,7 +46,7 @@ export async function createPlayer(host, _url, status, title) {
   const book = panel.querySelector('.chess-book input'), moveList = panel.querySelector('.chess-moves');
   const offboard = panel.querySelector('.chess-offboard'), transcript = panel.querySelector('.chess-transcript pre');
 
-  let game, youWhite = true, state, history = [], lines = [], selected = null, thinking = false, shown = null, last = null, timer = 0;
+  let game, youWhite = true, dq = null, state, history = [], lines = [], selected = null, thinking = false, shown = null, last = null, timer = 0;
 
   // CISAB's squares: rows 1-8 from your back row, columns 1-8 across its screen.
   const square = (r, c) => youWhite ? `${'hgfedcba'[c - 1]}${r}` : `${'abcdefgh'[c - 1]}${9 - r}`;
@@ -85,7 +85,7 @@ export async function createPlayer(host, _url, status, title) {
     clearTimeout(timer);
     youWhite = white;
     game = new Game(white);
-    history = []; lines = []; selected = null; thinking = false; last = null;
+    history = []; lines = []; selected = null; thinking = false; last = null; dq = null;
     refresh();
     lines.push(`WHAT COLOR ARE WE? ${state.typed[0]}`);
     const reply = JSON.parse(game.first_reply());
@@ -105,7 +105,7 @@ export async function createPlayer(host, _url, status, title) {
   }
 
   function play(m, promote = 0) {
-    if (thinking || state.engine.prompt !== 'move') return;
+    if (thinking || dq || state.engine.prompt !== 'move') return;
     const before = state.engine.board, adjective = ADJECTIVES[state.engine.adjective - 1], typedBefore = state.typed.length;
     const iq = !book.checked && state.engine.opening;
     const result = JSON.parse(game.play(m.from[0], m.from[1], m.to[0], m.to[1], promote, iq));
@@ -123,6 +123,8 @@ export async function createPlayer(host, _url, status, title) {
     timer = setTimeout(() => {
       thinking = false;
       history.push({by:'cisab', text:san(result.afterYou, reply, 'cisab'), raw:`${reply.from}–${reply.to}`, legal:reply.legal, book:opening});
+      // An illegal move disqualifies CISAB; the board shows the move it made.
+      if (!reply.legal) dq = {text:history.at(-1).text, reason:reply.reason};
       last = reply;
       shown = state.engine.board;
       render();
@@ -147,7 +149,7 @@ export async function createPlayer(host, _url, status, title) {
 
   function render() {
     const e = state.engine, b = shown ?? e.board;
-    const over = e.end || (!thinking && e.prompt === 'move' && state.moves.length === 0);
+    const over = e.end || dq || (!thinking && e.prompt === 'move' && state.moves.length === 0);
     const targets = selected ? legalFrom(selected).map(m => `${m.to}`) : [];
     const checkSq = !thinking && state.inCheck ? findKing(b, 1) : null;
     const cells = [];
@@ -172,16 +174,17 @@ export async function createPlayer(host, _url, status, title) {
     else prompt.textContent = e.end?.text || 'READY';
 
     let heading = '', detail = '';
-    if (!thinking && e.end) [heading, detail] = endMessage(e.end);
+    if (dq) [heading, detail] = ['CISAB is disqualified: illegal move. You win.', `Its move ${dq.text} ${dq.reason}. The 1979 program never checked its own moves and would have played on; the Level II BASIC tab runs it unchanged.`];
+    else if (!thinking && e.end) [heading, detail] = endMessage(e.end);
     else if (!thinking && e.prompt === 'move' && state.moves.length === 0) {
-      [heading, detail] = state.inCheck ? ['Checkmate. CISAB wins, but doesn’t notice.', 'The 1979 program would simply ask for your next move. You have none, so press New game.'] : ['Stalemate: you have no legal move.', 'CISAB doesn’t know about stalemate either. Press New game.'];
+      [heading, detail] = state.inCheck ? ['Checkmate: CISAB wins.', 'It never noticed: the 1979 program would simply ask for your next move.'] : ['Stalemate: a draw.', 'You have no legal move, and you are not in check.'];
     }
     endBox.hidden = !heading;
     endBox.innerHTML = heading ? `<strong>${escape(heading)}</strong><p>${escape(detail)}</p><button type="button">New game</button>` : '';
     endBox.querySelector('button')?.addEventListener('click', () => start(youWhite));
 
     // One row per move number: White's move, then Black's.
-    const cell = h => `<span class="ply ${h.by}" title="${h.by === 'you' ? 'You' : 'CISAB'} · row,column as typed into the original: ${escape(h.raw)}"><span class="san">${escape(h.text)}</span>${h.book ? '<span class="tag" title="From the opening in lines 9500-9530">book</span>' : ''}${h.legal ? '' : '<span class="tag illegal" title="Not a legal chess move. CISAB plays it anyway, as in 1979.">illegal</span>'}<span class="raw">${escape(h.raw)}</span></span>`;
+    const cell = h => `<span class="ply ${h.by}" title="${h.by === 'you' ? 'You' : 'CISAB'} · row,column as typed into the original: ${escape(h.raw)}"><span class="san">${escape(h.text)}</span>${h.book ? '<span class="tag" title="From the opening in lines 9500-9530">book</span>' : ''}${h.legal ? '' : '<span class="tag illegal" title="Not a legal chess move: CISAB is disqualified.">illegal</span>'}<span class="raw">${escape(h.raw)}</span></span>`;
     const rows = [];
     history.forEach((h, k) => {
       const white = (h.by === 'you') === youWhite;
@@ -212,6 +215,7 @@ export async function createPlayer(host, _url, status, title) {
     const el = ev.target.closest('.sq');
     if (!el || thinking || state.engine.prompt !== 'move' || !promotion.hidden) return;
     const sq = [Number(el.dataset.r), Number(el.dataset.c)];
+    if (dq) return;
     if (selected && `${selected}` !== `${sq}` && tryMove(selected, sq)) { ev.preventDefault(); return; }
     if (state.engine.board[sq[0]][sq[1]] > 0 && legalFrom(sq).length) {
       ev.preventDefault();
@@ -242,7 +246,7 @@ export async function createPlayer(host, _url, status, title) {
   board.addEventListener('keydown', ev => {
     if (ev.key !== 'Enter' && ev.key !== ' ') return;
     const el = ev.target.closest('.sq');
-    if (!el || thinking) return;
+    if (!el || thinking || dq) return;
     ev.preventDefault();
     const sq = [Number(el.dataset.r), Number(el.dataset.c)];
     if (selected && tryMove(selected, sq)) return;
@@ -261,11 +265,11 @@ export async function createPlayer(host, _url, status, title) {
     press() {}, release() {},
     restart() { start(youWhite); },
     togglePause() {},
-    hasWork() { return history.some(h => h.by === 'you') && !state.engine.end; },
+    hasWork() { return history.some(h => h.by === 'you') && !state.engine.end && !dq; },
     get paused() { return false; },
     loadStartingPattern() {},
-    snapshot() { return {youWhite, prompt:state.engine.prompt, board:state.engine.board, history, moves:state.moves, end:state.engine.end, thinking, typed:state.typed}; },
-    diagnostics() { return {youWhite, prompt:state.engine.prompt, moves:history.length, end:state.engine.end?.text ?? null, thinking}; },
+    snapshot() { return {youWhite, dq, prompt:state.engine.prompt, board:state.engine.board, history, moves:state.moves, end:state.engine.end, thinking, typed:state.typed}; },
+    diagnostics() { return {youWhite, prompt:state.engine.prompt, moves:history.length, end:dq ? `illegal: ${dq.text}` : state.engine.end?.text ?? null, thinking}; },
     play(from, to, promote = 0) { const m = state.moves.find(x => `${x.from}` === `${from}` && `${x.to}` === `${to}`); if (m) play(m, promote); return Boolean(m); },
     dispose() { clearTimeout(timer); panel.remove(); },
   };

@@ -101,6 +101,22 @@ impl Default for Engine {
     }
 }
 
+/// Why CISAB's move breaks the rules of chess, if it does. `before` is the board
+/// it moved on, `after` the board it left.
+pub fn illegal_reason(before: &[[i8; 11]; 11], after: &[[i8; 11]; 11], from: Square, to: Square) -> Option<&'static str> {
+    let on = |(r, c): Square| (1..=8).contains(&r) && (1..=8).contains(&c);
+    if !on(to) {
+        return Some("moves a piece off the board");
+    }
+    if !rules::cisab_move_is_legal(before, from, to) {
+        return Some(if rules::in_check(after, -1) { "leaves its king in check" } else { "is not a legal chess move" });
+    }
+    if to.0 == 1 && after[1][to.1 as usize] == -6 {
+        return Some("leaves a pawn unpromoted on the last row");
+    }
+    None
+}
+
 /// A game on the site: your legal move becomes the lines an operator would type.
 #[wasm_bindgen]
 pub struct Game {
@@ -202,7 +218,8 @@ impl Game {
             self.send(if iq { "IQ" } else { "OK" });
         }
         let reply = self.engine.last_move.map(|(from, to)| {
-            format!(r#"{{"from":{},"to":{},"legal":{}}}"#, json_sq(from), json_sq(to), rules::cisab_move_is_legal(&after_you, from, to))
+            let reason = illegal_reason(&after_you, &self.engine.b, from, to);
+            format!(r#"{{"from":{},"to":{},"legal":{},"reason":{}}}"#, json_sq(from), json_sq(to), reason.is_none(), reason.map(json_str).unwrap_or("null".into()))
         });
         self.after_cisab();
         Ok(format!(r#"{{"events":[{}],"afterYou":{},"reply":{}}}"#, self.events.join(","), board_json(&after_you), reply.unwrap_or("null".into())))

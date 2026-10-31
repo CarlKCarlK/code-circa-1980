@@ -64,7 +64,9 @@ screen never shows), the same RND seed and adjective, and the same ending.
 - **Timing and display.** Not modeled: the TRS-80 took minutes per searched
   move.
 
-The site's board (`modern/player.js` and `src/rules.rs`) adds rules for your
-side only: your moves must be legal chess. Castling, en passant and promotion
+The site's board (`modern/player.js` and `src/rules.rs`) adds what the original
+never had: it offers you every legal chess move and no others, and it judges
+CISAB's moves without changing them. An illegal move (`illegal_reason` in
+`src/lib.rs`), or an error that stops the original, disqualifies CISAB. Castling, en passant and promotion
 are typed as an operator would have typed them, with ADD. CISAB never sees
 anything the original could not have been told.

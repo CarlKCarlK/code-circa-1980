@@ -26,7 +26,9 @@ look-ahead, piece values and an opening.
 moves, it makes the same replies as the BASIC program, including its illegal
 moves and the errors that stop it. To do that it uses the TRS-80's RND and its
 single-precision rounding of move scores. `rust/PARITY.md` lists the evidence
-and the few differences. Your own moves must be legal chess. Castling, en
+and the few differences. You can make every legal chess move. CISAB never
+checked its own moves; the site does, and an illegal move or a BASIC error that
+would stop the original disqualifies it. Castling, en
 passant and promotion are typed with `ADD`, as an operator would have typed
 them.
 
