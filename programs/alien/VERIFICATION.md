@@ -30,10 +30,22 @@ the library default (Model III, Level II BASIC, as on the site), typing at each 
 - v01: after NO, a two-junction shot ended with AHA! YOU GOT THE ALIEN!,
   BOY, THAT WAS CLOSE.  BUT YOU WON! and the SAME SET-UP prompt.
 
+## Corrected-spelling edition (`tests/alien-corrected.test.mjs`)
+
+`npm test` rebuilds `corrected/ALIEN.BAS` from v02 with `corrections.json` and
+checks that it matches the committed file and `changes.json`; that line numbers,
+the memory base and every byte outside quoted strings equal v02; that the pointer
+chain ends exactly; and that no printed string keeps the listed misspellings.
+In the headless emulator it played the same opening as v02 (same world, same
+responses and emulated timings for move, close and spray) with corrected text, and
+the background pages show no wrapped or blank-padded lines.
+
 ## Browser (`npm run test:browser`, `tests/browser/alien.spec.js`)
 
-Against a production preview: the card reads "03 / Game" and opens
-`#/program/alien/basic/play` directly; the About section is open and credits
+Against a production preview: the card reads "03 / Game" and opens the
+corrected edition at `#/program/alien/corrected/play` directly, with Corrected
+spelling and Original spelling tabs; the corrected edition reaches the first
+prompt and shows YOU ARE IN JUNCTION and NO. OF JUNCTIONS; the About section is open and credits
 Gregory Yob and *More BASIC Computer Games*; Help shows the commands; v01 is
 source only and links to the player. In the emulator, a key skips the title, the
 NO button answers the first prompt, a move through the first listed vent gets the

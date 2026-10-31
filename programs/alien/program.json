@@ -5,6 +5,7 @@
   "kind": "Game",
   "language": "Level II BASIC",
   "defaultVersion": "v02",
+  "defaultImplementation": "corrected",
   "versionOrder": "Inferred development sequence, not established dates. Both versions are on tape22b: v01 (saves 6-7) precedes v02 (saves 8-9) in save order, and v02 contains v01's game with additions. Tape numbers alone do not establish chronology.",
   "versions": [
     {

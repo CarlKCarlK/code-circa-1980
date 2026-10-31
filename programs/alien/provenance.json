@@ -963,5 +963,23 @@
         }
       ]
     }
+  ],
+  "derived_editions": [
+    {
+      "id": "corrected",
+      "description": "v02 with printed spelling corrected; not a recovered artifact",
+      "source_version": "v02",
+      "source_sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+      "raw": "corrected/ALIEN.BAS",
+      "listing": "corrected/ALIEN.ASC",
+      "sha256": "eea9e3638c75a0d4322ce7fe0e0b2e5bc2ae4dc7632d9a1c331de6f18fbcda21",
+      "bytes": 7571,
+      "listing_sha256": "71daaedfdf4702506c8defa88078b5d8f393aa1400fdd1a7cf7c94b2aa72a486",
+      "corrections": "corrected/corrections.json",
+      "changes": "corrected/changes.json",
+      "build": "app/scripts/build-alien-corrected.mjs",
+      "created": "2026-10-30",
+      "requested_by": "user"
+    }
   ]
 }

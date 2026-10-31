@@ -1,0 +1,221 @@
+{
+  "source": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
+  "source_sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
+  "sha256": "eea9e3638c75a0d4322ce7fe0e0b2e5bc2ae4dc7632d9a1c331de6f18fbcda21",
+  "bytes": 7571,
+  "listing_sha256": "71daaedfdf4702506c8defa88078b5d8f393aa1400fdd1a7cf7c94b2aa72a486",
+  "changes": [
+    {
+      "line": 1010,
+      "from": "IS TO LATE",
+      "to": "IS TOO LATE",
+      "count": 1
+    },
+    {
+      "line": 1010,
+      "from": "GOTTEN ON-BOARD, ALREADY",
+      "to": "GOTTEN ONBOARD, ALREADY",
+      "count": 1,
+      "layout": "TOO makes this line 64 columns, which prints an extra blank line"
+    },
+    {
+      "line": 1030,
+      "from": "THOUGHOUT",
+      "to": "THROUGHOUT",
+      "count": 1
+    },
+    {
+      "line": 1040,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 3
+    },
+    {
+      "line": 1080,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 1080,
+      "from": "LEAD TWO SPACE",
+      "to": "LEAD TO SPACE",
+      "count": 1
+    },
+    {
+      "line": 1080,
+      "from": "VACUM ",
+      "to": "VACUUM ",
+      "count": 1
+    },
+    {
+      "line": 1100,
+      "from": "FALIURE",
+      "to": "FAILURE",
+      "count": 1
+    },
+    {
+      "line": 1120,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 1120,
+      "from": "DIS-OREINT",
+      "to": "DISORIENT",
+      "count": 1
+    },
+    {
+      "line": 1125,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 1140,
+      "from": "ALEIN",
+      "to": "ALIEN",
+      "count": 1
+    },
+    {
+      "line": 1150,
+      "from": "ALEIN",
+      "to": "ALIEN",
+      "count": 1
+    },
+    {
+      "line": 1230,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 1240,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 1245,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 2
+    },
+    {
+      "line": 1245,
+      "from": "NIETHER",
+      "to": "NEITHER",
+      "count": 1
+    },
+    {
+      "line": 1245,
+      "from": "  CLOSING A JUNCTION:",
+      "to": "CLOSING A JUNCTION:",
+      "count": 1,
+      "layout": "Corrected spelling makes this line 65 columns, which wraps YOU onto its own line"
+    },
+    {
+      "line": 1300,
+      "from": "ALEIN",
+      "to": "ALIEN",
+      "count": 1
+    },
+    {
+      "line": 1350,
+      "from": "ALEIN",
+      "to": "ALIEN",
+      "count": 1
+    },
+    {
+      "line": 1380,
+      "from": "VACUME",
+      "to": "VACUUM",
+      "count": 1
+    },
+    {
+      "line": 1390,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 1390,
+      "from": "FALIURE",
+      "to": "FAILURE",
+      "count": 1
+    },
+    {
+      "line": 1390,
+      "from": "BOOBIE-TRAPPED",
+      "to": "BOOBY-TRAPPED",
+      "count": 1
+    },
+    {
+      "line": 2100,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 2100,
+      "from": "BOOBIE-TRAPPED",
+      "to": "BOOBY-TRAPPED",
+      "count": 1
+    },
+    {
+      "line": 2130,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 2130,
+      "from": "YOUR ARE IN",
+      "to": "YOU ARE IN",
+      "count": 1
+    },
+    {
+      "line": 2148,
+      "from": " NO WHERE.",
+      "to": " NOWHERE.",
+      "count": 1
+    },
+    {
+      "line": 3040,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 3080,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    },
+    {
+      "line": 3420,
+      "from": "GLOP TO SLIME",
+      "to": "GLOP OF SLIME",
+      "count": 1
+    },
+    {
+      "line": 4160,
+      "from": "TENICALS",
+      "to": "TENTACLES",
+      "count": 1
+    },
+    {
+      "line": 4280,
+      "from": "JUCTIONOS",
+      "to": "JUNCTIONS",
+      "count": 1
+    },
+    {
+      "line": 6015,
+      "from": "JUCTION",
+      "to": "JUNCTION",
+      "count": 1
+    }
+  ]
+}
