@@ -39,7 +39,7 @@ for(const name of fs.readdirSync(root)){
     assert.equal(offset+2,bytes.length);assert.equal(bases.size,1);
     // Recovery inventories record structure either under validation or on the item itself.
     const structure=typeof save.recovery_item.validation==='object'?save.recovery_item.validation:save.recovery_item;
-    assert.equal(lines,structure.lines);
+    assert.equal(lines,structure.lines??structure.line_count);
     assert.equal(last,structure.last??structure.last_line);
     assert.equal(createHash('sha256').update(bytes).digest('hex'),save.recovery_item.sha256);
     const listing=fs.readFileSync(new URL(version.listing,folder),'utf8');
