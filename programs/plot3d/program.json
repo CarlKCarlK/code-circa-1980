@@ -6,6 +6,7 @@
   "language": "Level II BASIC",
   "actionVerb": "Run",
   "defaultVersion": "v03",
+  "defaultImplementation": "typescript",
   "versionOrder": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
   "versions": [
     {

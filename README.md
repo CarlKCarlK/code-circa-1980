@@ -31,7 +31,8 @@ see [programs/alien](programs/alien/).
 
 **[Run 3-D Plot](https://carlkcarlk.github.io/code-circa-1980/#/program/plot3d)**:
 answer a few questions and watch a 1979 Level II BASIC program draw a funnel-shaped
-3-D surface as a wire grid, one block-graphics dot at a time. The finished version runs unchanged in the emulator;
+3-D surface as a wire grid, one block-graphics dot at a time, or type your own
+formula. A TypeScript version draws the same dots up to instantly; the finished BASIC version runs unchanged in the emulator;
 see [programs/plot3d](programs/plot3d/).
 
 ## About this project

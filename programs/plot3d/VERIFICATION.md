@@ -40,7 +40,23 @@ emulator the title and `TILT?` appear, the Standard settings button answers all
 five prompts, the grid draws until `D` appears (over 400 lit dots), and Pause,
 Resume and Restart work (Restart returns to an empty screen at `TILT?`).
 
+## TypeScript version and line-200 box (2026-10-31)
+
+- `npm test` (`tests/plot3d-engine.test.mjs`): the engine's dots equal the
+  emulator's for all 12 recorded drawings, and it raises `?/0` for 1 line
+  (`parity-fixtures.json`, recorded with `npm run record:plot3d`). The fixtures
+  include six line-200 formulas typed into the original with the same keys the
+  BASIC page sends. Also tested: the default formula equals the recovered line
+  200, Level II rounding lands the FOR loop on 0, the formula syntax, and `NO=1`.
+- Browser (`tests/browser/plot3d.spec.js`): the collection opens the TypeScript
+  player; Instant draws 562 dots and reports about 84 s for the original; the
+  Saddle preset redraws; `y=sqr(x)` stops with `?FC Error in 200`; a syntax
+  error is reported; 1979 pace has drawn under 100 dots after 1.5 s; Pause,
+  Resume and Fast finish the funnel. In the BASIC player, the line-200 box
+  types the Saddle line: after RUN the questions return, and BREAK and
+  `LIST 200` show `200 Y=X↑2-Z↑2` stored in the program.
+
 ## Not tested
 
-Non-default answers in the browser, error cases such as 1 line, and phone
-keyboards. The quirks listed in README.md come from reading the source.
+Non-default answers in the BASIC browser player, phone keyboards, and the
+TypeScript player's 1979 pace against a stopwatch. The quirks listed in README.md come from reading the source.

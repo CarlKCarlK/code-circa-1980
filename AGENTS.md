@@ -77,6 +77,12 @@ Use `npm run build:fall` to reproduce the derived executable; never describe tha
 modern build as recovered historical machine code. Record provenance for any
 new external dependency before enabling a historical version in the player.
 
+3-D Plot's TypeScript version (`programs/plot3d/typescript/`) reproduces v03's
+dots exactly, using Level II rounding and ports of the ROM's LOG/EXP/SIN/ATN
+(`mbf.ts`). After any engine change, `npm test` must still match the emulator
+fixtures; re-record them with `npm run record:plot3d`. Surface formulas are
+Level II BASIC line-200 text shared by both players (`formulas.js`).
+
 Chemical Equation Balancer's official short name is **bal**: use it for its folder
 (`programs/bal/`), URLs (`#/program/bal`), program ID, and tags (`bal-v01`,
 `bal-web-v1`). Chemical Equation Balancer uses a Rust port of Chemistry Balancer II v20 in

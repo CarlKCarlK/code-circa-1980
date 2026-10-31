@@ -50,6 +50,8 @@ export async function createPlayer(host, url, status, title, dependency) {
   };
   // Typed and pasted text goes through the ROM's keyboard routine, as if keyed in.
   const type = text => { if (!paused && !disposed) keyboard.simulateKeyboardText(text.replace(/\r\n?/g, '\n')); };
+  // Named keys in order, each pressed and released, for keys text cannot name (Escape is BREAK).
+  const keys = names => { if (!paused && !disposed) for (const key of names) { keyboard.keyEvent(key, true); keyboard.keyEvent(key, false); } };
   const paste = event => {
     if (document.activeElement !== host) return;
     event.preventDefault(); type(event.clipboardData.getData('text'));
@@ -78,7 +80,7 @@ export async function createPlayer(host, url, status, title, dependency) {
   }
   restart();
   return {
-    press, release, restart, togglePause, type,
+    press, release, restart, togglePause, type, keys,
     hasWork(){return Array.from({length:1024},(_,i)=>machine.readMemory(0x3c00+i)).some((code,i)=>code>=128&&code<192&&(code&(i<960?63:15))!==0);},
     get paused() {return paused;},
     // Memory inspection supports reproducible browser smoke tests. It does not
