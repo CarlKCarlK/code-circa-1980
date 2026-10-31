@@ -1086,6 +1086,62 @@
           "sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853"
         }
       ]
+    },
+    {
+      "version": "v08",
+      "label": "CISAB V3 · Tries its best moves",
+      "capture": "tape13b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.ASC",
+      "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5",
+      "bytes": 4150,
+      "listing_sha256": "5f77fb8da1c4487d92f7e861c0c9cc24b5d202d110c35c63182b4e32f792dfad",
+      "listing_lines": 104,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V3; 104 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 1,
+        "title": "CISAB-CHESS-V3",
+        "source": "tapes/recovered/tape13b/timing-refinement/T1-left-hp1200-55a226163aa3.BAS",
+        "binary": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.BAS",
+        "listing": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.ASC",
+        "bytes": 4150,
+        "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5",
+        "recovery_complete": true,
+        "source_start_s": 75.8006875,
+        "source_end_s": 142.40233333333333,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T1-left-hp1200-55a226163aa3.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T1-right-boosted-55a226163aa3.BAS"
+        ],
+        "lines": 104,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v08/01-CISAB-CHESS-V3.BAS",
+      "snapshot_listing": "versions/v08/01-CISAB-CHESS-V3.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v08/01-CISAB-CHESS-V3.BAS",
+          "bytes": 4150,
+          "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5"
+        },
+        {
+          "path": "versions/v08/01-CISAB-CHESS-V3.ASC",
+          "bytes": 4963,
+          "sha256": "5f77fb8da1c4487d92f7e861c0c9cc24b5d202d110c35c63182b4e32f792dfad"
+        }
+      ]
     }
   ],
   "partial_saves": [

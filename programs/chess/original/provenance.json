@@ -1,25 +1,25 @@
 {
   "title": "CISAB Chess",
-  "version": "v07",
-  "label": "CISAB V2 · Pawn double step",
-  "capture": "tape13a",
-  "save": 13,
+  "version": "v08",
+  "label": "CISAB V3 · Tries its best moves",
+  "capture": "tape13b",
+  "save": 1,
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. v01 and v02 are tape1b saves 8 and 10; v03-v07 are tape13a saves 9-13; v08-v14 are tape13b saves 1-6 and 8, each in save order. Each listing is the previous one with changes, and v03 starts from v02's code (its lines 10-57 and most of the move generator are v02's). The archive labels V2-V9 were assigned by the recovery from save order; they are not in the programs. No save is dated. Tape numbers alone do not establish chronology.",
   "files": [
     {
       "canonical_path": "CHESS.ASC",
-      "snapshot_path": "versions/v07/13-CISAB-CHESS-V2.ASC",
-      "archive_path": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.ASC",
-      "sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853",
-      "bytes": 4697
+      "snapshot_path": "versions/v08/01-CISAB-CHESS-V3.ASC",
+      "archive_path": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.ASC",
+      "sha256": "5f77fb8da1c4487d92f7e861c0c9cc24b5d202d110c35c63182b4e32f792dfad",
+      "bytes": 4963
     },
     {
       "canonical_path": "CHESS.BAS",
-      "snapshot_path": "versions/v07/13-CISAB-CHESS-V2.BAS",
-      "archive_path": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.BAS",
-      "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f",
-      "bytes": 3920
+      "snapshot_path": "versions/v08/01-CISAB-CHESS-V3.BAS",
+      "archive_path": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.BAS",
+      "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5",
+      "bytes": 4150
     }
   ]
 }
