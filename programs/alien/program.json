@@ -9,24 +9,24 @@
   "versions": [
     {
       "id": "v01",
-      "label": "Early \u00b7 Alien re-theme",
+      "label": "Early save \u00b7 before the remix",
       "capture": "tape22b",
       "save": 6,
       "raw": "versions/v01/06-ALIEN-HUNT-EARLY-SAVE01.BAS",
       "listing": "versions/v01/06-ALIEN-HUNT-EARLY-SAVE01.ASC",
       "playable": false,
-      "note": "Hunt the Wumpus re-themed: air vents, vacuum chambers, computer failure and poison gas. Drops Yob's crooked-arrow check.",
+      "note": "An earlier save: Hunt the Wumpus with the Alien words but none of the remix (no title, no closing junctions, fixed junction numbers).",
       "unavailableReason": "Source only. On this site the Level II BASIC player runs v02, the latest version; this listing and payload remain downloadable."
     },
     {
       "id": "v02",
-      "label": "Expanded \u00b7 Title, backstory, closing junctions",
+      "label": "Alien",
       "capture": "tape22b",
       "save": 8,
       "raw": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
       "listing": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.ASC",
       "playable": true,
-      "note": "Adds a block-graphics title with the film's tagline, a backstory, shuffled junction numbers, and closing junctions to trap the alien. Bumping the alien now kills you.",
+      "note": "Alien as played on this site: the title with the film\u2019s tagline, backstory, shuffled junction numbers, and closing junctions to trap the alien.",
       "unavailableReason": null,
       "slug": "basic"
     }
