@@ -2,9 +2,10 @@
   "versions": [
     {
       "id": "v1",
-      "label": "First bal experience",
+      "path": "bal/v1/",
+      "label": "Web experience v1",
       "released": "2026-10-31",
-      "sourceCommit": "0be85ddeead17c71b7d322af70c5f6bd2468234e",
+      "sourceCommit": "4cfe8338e119b0b53028381e7fd0a47970e87cee",
       "files": [
         {
           "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Bm5Fk48R.BAS",
@@ -572,9 +573,14 @@
           "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
         },
         {
-          "path": "assets/emulator-BmzoAKjK.js",
+          "path": "assets/emulator-Dj4xGGx6.js",
           "bytes": 285617,
-          "sha256": "8e737fa6385b8bbb0e84bc052e02005090b5211b9811d904dc0cbf78b13d6f22"
+          "sha256": "fbc4bc35ebfab333ba9e9a0645a7266d86666663ae3f1abd9a769821476840d3"
+        },
+        {
+          "path": "assets/index-Bi_53LJp.js",
+          "bytes": 232614,
+          "sha256": "e9f33b3293ae8a6d54823d4e95f473b8abef2344f7d4e5d7366faac08faaab9d"
         },
         {
           "path": "assets/index-CNw1lBAV.css",
@@ -582,19 +588,19 @@
           "sha256": "9c622fc40395e228c98b503382291584a68351a980e51952cc40b277d75b02ba"
         },
         {
-          "path": "assets/index-WF4ttxbQ.js",
-          "bytes": 134096,
-          "sha256": "ea23ed5d60f5999bf4ea922d90595ae334bedaae80cbbd4db64676959d29405b"
-        },
-        {
           "path": "assets/more-basic-computer-games-cover-C1gCIwjZ.jpg",
           "bytes": 145402,
           "sha256": "719f3d1021bf98322f8e2fd70584aba371c791e73ef22ad4945820ab8b77cefc"
         },
         {
-          "path": "assets/player-Bdj4eq_9.js",
+          "path": "assets/player-Brig3zNG.js",
           "bytes": 12370,
-          "sha256": "182259043358fe03fe5fd04415f89ef2271d6562c1c84dea6d7f18ee2bf20328"
+          "sha256": "a95b0352e7b702c492571308de857facff1a4a751d086a26b87297affaf1a88b"
+        },
+        {
+          "path": "assets/player-BxiIHR95.js",
+          "bytes": 5576,
+          "sha256": "e4cec7f91308e0cb5ea6cfe141637226952704edb0a9d37007c187995d849fdb"
         },
         {
           "path": "assets/player-CMiiRFZU.js",
@@ -605,11 +611,6 @@
           "path": "assets/player-DG3vU3-j.js",
           "bytes": 32072,
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
-        },
-        {
-          "path": "assets/player-DKU-spHB.js",
-          "bytes": 5576,
-          "sha256": "edcfa5687ccb6f65dd91d9e1b57c1a98586713081b2866bce97f80bfe1b33915"
         },
         {
           "path": "assets/PLOT3D-CmRZnxul.ASC",
@@ -709,7 +710,7 @@
         {
           "path": "index.html",
           "bytes": 2073,
-          "sha256": "4355f966094d7c7b878fedfb813df351c84be8aeb53b4f46dce4d849976d123d"
+          "sha256": "6aa10622332d2b2e95e76cd99fd7b4d2b2b3a4b4fbd85bb2a7ad41c3f8b39bb1"
         },
         {
           "path": "licenses.txt",

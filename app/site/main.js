@@ -22,7 +22,7 @@ const playUrl=program=>!development&&!webProgram?experienceUrl(program,program.w
 function versionPicker(program,current){
  const versions=[...program.webVersions];
  // The frozen catalog was read before this release was added to it.
- if(current&&!versions.some(v=>v.id===current))versions.push({id:current});
+ if(current&&!versions.some(v=>v.id===current))versions.push({id:current,path:`${program.id}/${current}/`});
  versions.reverse();
  return `<label class="version-picker">Versions <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
 }

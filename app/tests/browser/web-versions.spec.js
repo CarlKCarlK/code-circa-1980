@@ -37,14 +37,21 @@ for(const id of ids)test(`${id}: immutable release opens its default player with
  }else if(id==='plot3d'){
   await page.getByRole('button',{name:'Instant',exact:true}).click();
   await page.getByRole('button',{name:'Draw',exact:true}).click();
-  await expect(page.locator('#status')).toContainText('562');
+  await expect(page.locator('#status')).toContainText('Done. The original takes about 84 s');
  }else if(id==='castles'){
   await page.getByRole('button',{name:'Fire cannons',exact:true}).click();
   await expect(page.getByRole('button',{name:'Return to building',exact:true})).toBeVisible();
  }else{
   await expect(page.locator('#status')).toContainText('Running');
   await page.goto(`${path}?test`);
-  await expect.poll(()=>page.evaluate(()=>window.__circaPlayer?String.fromCharCode(...window.__circaPlayer.snapshot()):''),{timeout:15000}).toContain(id==='bomb'?'DEPOSIT':'ALIEN');
+  await expect(page.locator('#status')).toContainText('Running');
+  if(id==='alien'){
+   // Allow ROM startup and RUN's queued Enter to clear before sending a key.
+   await page.locator('#display').click();
+   await page.waitForTimeout(1500);
+   await page.keyboard.down(' ');await page.waitForTimeout(120);await page.keyboard.up(' ');
+  }
+  await expect.poll(()=>page.evaluate(()=>window.__circaPlayer?String.fromCharCode(...window.__circaPlayer.snapshot().map(c=>c<32?c+64:c)):''),{timeout:15000}).toContain(id==='bomb'?'DEPOSIT':'DO YOU NEED BACKGROUND INFORMATION?');
  }
  await page.reload();
  await expect(page.locator('#display')).toBeVisible();
@@ -56,7 +63,7 @@ test('existing BASIC and source tabs use query links, with history and separate 
  await page.goto(`/castles/${latest}/?test`);
  await expect(page.locator('#status')).toContainText('Building');
  const initial=await page.evaluate(()=>window.__circaPlayer.snapshot());
- await page.getByRole('link',{name:'Original TRS-80 version'}).click();
+ await page.getByRole('link',{name:'Level II BASIC version'}).click();
  await expect(page).toHaveURL(/\?test=&lang=basic$/);
  await expect(page.locator('#status')).toContainText('Running');
  await page.goBack();

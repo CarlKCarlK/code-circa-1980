@@ -34,15 +34,15 @@ test('legacy links translate without retaining redundant routing',()=>{
 test('each released program has intact web releases starting at v1',async()=>{
  assert.ok(await verifyWebVersions({allowUnreleased:true})>0);
 });
-test('changing an archived asset fails release verification',async()=>{
+for(const cleanPath of [false,true])test(`changing an archived asset fails release verification (${cleanPath?'clean':'legacy'} path)`,async()=>{
  const root=await fs.mkdtemp(path.join(os.tmpdir(),'circa-release-test-'));
  try {
-  const program=path.join(root,'programs','example'),snapshot=path.join(root,'public','experiences','example','v1');
+  const program=path.join(root,'programs','example'),snapshot=path.join(root,'public',cleanPath?'example':'experiences/example','v1');
   await fs.mkdir(program,{recursive:true});await fs.mkdir(snapshot,{recursive:true});
   await fs.writeFile(path.join(program,'program.json'),JSON.stringify({id:'example'}));
   await fs.writeFile(path.join(snapshot,'index.html'),'<h1>Original experience</h1>');
   await fs.writeFile(path.join(snapshot,'licenses.txt'),'License retained.');
-  const catalog={versions:[{id:'v1',label:'First release',released:'2026-10-30',sourceCommit:'a'.repeat(40),files:await snapshotFiles(snapshot)}]};
+  const catalog={versions:[{id:'v1',...(cleanPath?{path:'example/v1/'}:{}),label:'First release',released:'2026-10-30',sourceCommit:'a'.repeat(40),files:await snapshotFiles(snapshot)}]};
   await fs.writeFile(path.join(program,'web-versions.json'),JSON.stringify(catalog));
   assert.equal(await verifyWebVersions({root}),1);
   await fs.writeFile(path.join(snapshot,'index.html'),'<h1>Changed experience</h1>');

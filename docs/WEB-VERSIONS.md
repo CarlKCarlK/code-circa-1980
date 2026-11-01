@@ -37,6 +37,8 @@ It refuses to run after migration or when any later release exists. The old
 `public/experiences/` snapshots remain in Git history. The migration deployment
 uses `[reset-web-versions]` once to permit the authorized replacement. This does
 not authorize future resets: subsequent changes must become v2, v3, and so on.
+The tag `web-v1-clean-urls` identifies the rebuilt six-program release; older
+program web tags remain available as historical references.
 
 The built snapshot keeps its own JavaScript, CSS, original payloads, and license
 notices. Rebuilding the collection copies earlier snapshots rather than
@@ -74,3 +76,8 @@ collection can evolve independently.
 compares against the previous commit and rejects changes or deletion of published
 releases. `npm run verify:web-versions -- --against <commit>` runs the same
 preservation check locally.
+
+`node scripts/check-release-urls.mjs` verifies all six live default-player URLs,
+their exact frozen HTML hashes, and the collection's direct version links.
+Pass a different base URL to check a local preview, for example
+`node scripts/check-release-urls.mjs http://127.0.0.1:5279/`.

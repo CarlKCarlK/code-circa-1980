@@ -2,9 +2,10 @@
   "versions": [
     {
       "id": "v1",
-      "label": "First CISAB Chess experience",
+      "path": "chess/v1/",
+      "label": "Web experience v1",
       "released": "2026-10-31",
-      "sourceCommit": "6d7cbc5d69e218bc06f5cc480a16745aae86a52b",
+      "sourceCommit": "4cfe8338e119b0b53028381e7fd0a47970e87cee",
       "files": [
         {
           "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Bm5Fk48R.BAS",
@@ -572,9 +573,14 @@
           "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
         },
         {
-          "path": "assets/emulator-D36XGmSR.js",
+          "path": "assets/emulator-B31NUZ8e.js",
           "bytes": 285617,
-          "sha256": "bb5aa807e8f83b6d9549b97f7023832cb33e834be88a7bad55b95ec471092a90"
+          "sha256": "1a36981b8e46ba66ee4da612f7e59a60f14935a0f027a4696810cb091f2fc5ac"
+        },
+        {
+          "path": "assets/index-B2QydMo7.js",
+          "bytes": 232616,
+          "sha256": "a990e82b1e057292a39e01b127838659e5013450d81b55bdc76a647b75b036d9"
         },
         {
           "path": "assets/index-CNw1lBAV.css",
@@ -582,24 +588,14 @@
           "sha256": "9c622fc40395e228c98b503382291584a68351a980e51952cc40b277d75b02ba"
         },
         {
-          "path": "assets/index-CNZxlpAb.js",
-          "bytes": 192385,
-          "sha256": "f0dbc69f9ee64e6216f14386f3f128f3b3df69c846f140684c31f4a67f1212b9"
-        },
-        {
           "path": "assets/more-basic-computer-games-cover-C1gCIwjZ.jpg",
           "bytes": 145402,
           "sha256": "719f3d1021bf98322f8e2fd70584aba371c791e73ef22ad4945820ab8b77cefc"
         },
         {
-          "path": "assets/player-BnZBK2P8.js",
+          "path": "assets/player-BgG9jINf.js",
           "bytes": 5576,
-          "sha256": "f7c6c48a577734eaa30fc6c731ea3f6cfbbd5eb90bad66280257de0164e7c3c1"
-        },
-        {
-          "path": "assets/player-BuZwW69c.js",
-          "bytes": 12370,
-          "sha256": "115362438652a7536a3115ba624284e8d7bc2abe25e288419f3c140e8a19bef2"
+          "sha256": "aa1d8ba45443bfd83a6ec5001ee884eeab940ef88f0f98c055562eb5b7560b8d"
         },
         {
           "path": "assets/player-CMiiRFZU.js",
@@ -610,6 +606,11 @@
           "path": "assets/player-DG3vU3-j.js",
           "bytes": 32072,
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
+        },
+        {
+          "path": "assets/player-DSY8woWE.js",
+          "bytes": 12370,
+          "sha256": "54a8f9cbdb9ecc804f9fec9ae2ada5dbd3e1da3f080d399872905ea8314719cb"
         },
         {
           "path": "assets/PLOT3D-CmRZnxul.ASC",
@@ -709,7 +710,7 @@
         {
           "path": "index.html",
           "bytes": 2073,
-          "sha256": "624dbea20cef6725de43f7dd2814527fd9aeae2f7c0b27cef31c50b72e2d1dfe"
+          "sha256": "e16d84cd15d828cee0875326f51b2173f606089ea8536c09e0dec748292c5c60"
         },
         {
           "path": "licenses.txt",

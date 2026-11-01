@@ -2,9 +2,10 @@
   "versions": [
     {
       "id": "v1",
-      "label": "First 3-D Plot experience",
+      "path": "plot3d/v1/",
+      "label": "Web experience v1",
       "released": "2026-10-31",
-      "sourceCommit": "44782bba2a927e24a35088934602f46a328fde9d",
+      "sourceCommit": "4cfe8338e119b0b53028381e7fd0a47970e87cee",
       "files": [
         {
           "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Bm5Fk48R.BAS",
@@ -572,14 +573,14 @@
           "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
         },
         {
-          "path": "assets/emulator-BH_Z37_A.js",
+          "path": "assets/emulator-C09auxcn.js",
           "bytes": 285617,
-          "sha256": "74823e0774d67ce966ac71f09e0bb9c34805f4fb9cdbfd075b103e923e0521f3"
+          "sha256": "019b235f72484b1f5525f3e4bdd85449eae80db9ad1ab2a889976af321f2a516"
         },
         {
-          "path": "assets/index-CkvhAIEO.js",
-          "bytes": 172953,
-          "sha256": "e494a39430786de8e8e40215bcb91c844072f71724f1f3cf9fb4a61560002869"
+          "path": "assets/index-C0wG8uhe.js",
+          "bytes": 232617,
+          "sha256": "80ac8b7fef018573fa7d148a2da21d6a2146fda3d7bc943d7b23bd1f7ac02a7e"
         },
         {
           "path": "assets/index-CNw1lBAV.css",
@@ -592,9 +593,9 @@
           "sha256": "719f3d1021bf98322f8e2fd70584aba371c791e73ef22ad4945820ab8b77cefc"
         },
         {
-          "path": "assets/player-BPNedBl0.js",
+          "path": "assets/player-B9TTn1Gv.js",
           "bytes": 5576,
-          "sha256": "8a51566cfbd17eea7c94fa132f3627cc5bbbbba84ababc36621030494ba61528"
+          "sha256": "dfb1d1062d5dc6f1146b05b2c70ea7327c653637c33fb28feef1a128265ec550"
         },
         {
           "path": "assets/player-CMiiRFZU.js",
@@ -602,14 +603,14 @@
           "sha256": "21833ef1d1eb2a09d941f2eefd7a5c646e148306571b5e95f97b6251a0907f57"
         },
         {
+          "path": "assets/player-De-EnZeM.js",
+          "bytes": 12370,
+          "sha256": "c5461dfbd3028e3f9d6aa1490bc4c15d814ede70d0193e350d9431f4d610b4c4"
+        },
+        {
           "path": "assets/player-DG3vU3-j.js",
           "bytes": 32072,
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
-        },
-        {
-          "path": "assets/player-L4TBpMdA.js",
-          "bytes": 12370,
-          "sha256": "d3f2ac9aeb7e2d6491b2d8af10aeadc5d9db080c8fb5ac90363b5b04b71c0948"
         },
         {
           "path": "assets/PLOT3D-CmRZnxul.ASC",
@@ -709,7 +710,7 @@
         {
           "path": "index.html",
           "bytes": 2073,
-          "sha256": "b0326e18b2ed42df45b1a8b1ae6224667c48aa4260ad5a4af7ad2b09b9cc8806"
+          "sha256": "38f5f238361b7e5ce8b7f8976195ff2aa133be125d0f3a2f604c45fde0feb04c"
         },
         {
           "path": "licenses.txt",

@@ -2,9 +2,10 @@
   "versions": [
     {
       "id": "v1",
-      "label": "First Castles experience",
+      "path": "castles/v1/",
+      "label": "Web experience v1",
       "released": "2026-10-31",
-      "sourceCommit": "5958aa96c9e717d16c5bc808e0773dc9349d7543",
+      "sourceCommit": "4cfe8338e119b0b53028381e7fd0a47970e87cee",
       "files": [
         {
           "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Bm5Fk48R.BAS",
@@ -572,9 +573,14 @@
           "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
         },
         {
-          "path": "assets/emulator-DLimb0mk.js",
+          "path": "assets/emulator--29K8yN5.js",
           "bytes": 285617,
-          "sha256": "2fa467e11d94145603a60eec1eb9e648938ddc41ab85ba093c7cf3c62867864d"
+          "sha256": "e9a817efd49abe029e8b1b31383279de081d81123426acf4fbdb95f343fcad68"
+        },
+        {
+          "path": "assets/index-BocVpd_D.js",
+          "bytes": 232618,
+          "sha256": "eed1ecb4eb41483dd92c79e0f082933b4163b7b40005ec2973495c21db72dca9"
         },
         {
           "path": "assets/index-CNw1lBAV.css",
@@ -582,14 +588,19 @@
           "sha256": "9c622fc40395e228c98b503382291584a68351a980e51952cc40b277d75b02ba"
         },
         {
-          "path": "assets/index-DeVg2ojx.js",
-          "bytes": 114668,
-          "sha256": "af2ea860589a51d6242ce51dedbca738a34836cfd2d4faee1fde4a475084c1a9"
-        },
-        {
           "path": "assets/more-basic-computer-games-cover-C1gCIwjZ.jpg",
           "bytes": 145402,
           "sha256": "719f3d1021bf98322f8e2fd70584aba371c791e73ef22ad4945820ab8b77cefc"
+        },
+        {
+          "path": "assets/player-Bzh966iq.js",
+          "bytes": 5576,
+          "sha256": "54263f332bdff684acc26c65fb690bc9ae7473f58f3919b6da157232404f0237"
+        },
+        {
+          "path": "assets/player-CeoMU-VZ.js",
+          "bytes": 12370,
+          "sha256": "c37b3eb001a6214b73f827799481b69b2a90c7ade5c75bc3aec57e3481c4f3cf"
         },
         {
           "path": "assets/player-CMiiRFZU.js",
@@ -600,16 +611,6 @@
           "path": "assets/player-DG3vU3-j.js",
           "bytes": 32072,
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
-        },
-        {
-          "path": "assets/player-DVUzkcgw.js",
-          "bytes": 5576,
-          "sha256": "ea12573bb93d36596865e157a0dca6e1bd78e93319f2d5bdd9707e0319c11f18"
-        },
-        {
-          "path": "assets/player-eWiBiQus.js",
-          "bytes": 12370,
-          "sha256": "4f75f99139adafe593d8b55761e94a2226e578a2e8a8438b68aa7f71960b6120"
         },
         {
           "path": "assets/PLOT3D-CmRZnxul.ASC",
@@ -709,7 +710,7 @@
         {
           "path": "index.html",
           "bytes": 2073,
-          "sha256": "a938957c4030bfa736dd7f09915f6aa9c73493a5aa9d2fcda8ef64b9859facf9"
+          "sha256": "be3e6457460317721573a6d1efb101dd2ed9a480ff859a41ff0678e0eb9b4308"
         },
         {
           "path": "licenses.txt",
