@@ -115,7 +115,7 @@ third-person biography. Preserve historical source credits and copyright notices
 
 Every program starts with web v1, separately from recovered historical versions.
 Follow [WEB-VERSIONS.md](docs/WEB-VERSIONS.md). Published builds under
-`public/experiences/<program>/vN/` are immutable. Public program links default to
+`public/<program>/vN/` are immutable. Public program links default to
 the latest entry in `programs/<program>/web-versions.json`; the gallery and permanent
 version URLs retain every earlier experience. Preserve its entire player, styling,
 instructions, original payloads, and license notices.
@@ -127,12 +127,19 @@ Use tags such as `castles-web-v1`, distinct from historical tags such as `castle
 Never fix a published snapshot in place or rebuild old releases using newer code.
 CI verifies their hashes and rejects modifications to previously published versions.
 
-**Web v1 is published; new work is v2.** On 2026-10-31 every program was frozen
-and published as web v1. Never reset, replace or edit a v1 snapshot again, and
-do not use `[reset-web-versions]`. Develop changes in the editable source and,
-when the user wants a program's changes published, freeze them as that
-program's v2 with `npm run release:web` and tag `<program>-web-v2` (later v3,
-and so on). A program added after this starts at its own v1.
+**Clean release URLs are `/<program>/vN/`.** They open the release's frozen
+default player with no hash or query parameters. Collection cards and version
+selectors link directly to these paths. Existing alternate implementation/source
+navigation uses query parameters, never public hash routes. The editable local
+app can retain its development hash routes.
+
+On 2026-10-31 the user explicitly authorized replacing the six unshared v1 builds
+to establish these clean URLs. This one-time migration uses
+`node scripts/migrate-web-v1.mjs --replace-unshared-v1` and a migration commit
+containing `[reset-web-versions]`. Old snapshots remain in Git history. After that
+migration, v1 is immutable: all subsequent program changes become v2 or later
+with `npm run release:web -- <program>`. Never reset or replace these new v1s
+without another explicit user instruction. A new program starts at its own v1.
 
 ## No intermediate pages
 
@@ -146,7 +153,7 @@ non-player page, explaining why and linking to a playable one.
 ## Castles web UX
 
 Browser play starts with the arch and tower; the Start from picker offers other
-scenes and an empty field (`/play/blank` opens one directly). Controls always dock
+scenes and an empty field (`?scene=blank` opens one directly in a frozen release). Controls always dock
 beside the field on desktop and below it on phones. Help pauses and restores
 the same scene and prior pause state. Browser and Original keep separate paused
 in-memory sessions until reload; do not imply scene transfer or persistence to
@@ -161,6 +168,6 @@ Website code, scripts, tests and artwork live under `app/`. Configuration lives
 in `app/config/`, and the shared VS Code workspace is in `tools/`. Keep the root
 listing short; put supporting documentation in `docs/`. Run the usual npm
 commands from `app/`; they explicitly select the relocated configuration.
-Preserve `programs/` historical paths and all frozen `public/experiences/` bytes.
+Preserve `programs/` historical paths and all frozen `public/<program>/vN/` bytes.
 The user has authorized pushing verified changes and deploying GitHub Pages;
 complete deployment and check the live result before reporting it ready.

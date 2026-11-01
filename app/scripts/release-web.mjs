@@ -17,7 +17,8 @@ const catalogPath=path.join(programPath,'web-versions.json');
 let catalog;
 try {catalog=JSON.parse(await fs.readFile(catalogPath,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;catalog={versions:[]};}
 const version=`v${catalog.versions.length+1}`;
-const destination=path.join(projectRoot,'public','experiences',program,version);
+const releasePath=`${program}/${version}/`;
+const destination=path.join(projectRoot,'public',releasePath);
 try {await fs.access(destination);throw Error(`Refusing to overwrite ${destination}`);}catch(error){if(error.code!=='ENOENT')throw error;}
 const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:projectRoot,encoding:'utf8'}).trim();
 const temporary=await fs.mkdtemp(path.join(os.tmpdir(),'circa-web-release-'));
@@ -26,7 +27,7 @@ try {
     define:{'import.meta.env.VITE_WEB_PROGRAM':JSON.stringify(program),'import.meta.env.VITE_WEB_VERSION':JSON.stringify(version)},
     build:{outDir:temporary,emptyOutDir:true}});
   await fs.copyFile(path.join(projectRoot,'public','licenses.txt'),path.join(temporary,'licenses.txt'));
-  const release={id:version,label:args[1]||`Web experience ${version}`,
+  const release={id:version,path:releasePath,label:args[1]||`Web experience ${version}`,
     released:new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()),
     sourceCommit,files:await snapshotFiles(temporary)};
   await fs.mkdir(path.dirname(destination),{recursive:true});

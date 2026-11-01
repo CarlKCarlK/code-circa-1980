@@ -15,17 +15,18 @@ current reference is **v05 BASIC plus FALL assembly v6**; both now run together 
 the emulator, and the TypeScript port follows their rules. Earlier versions,
 including the entirely BASIC v03, are kept as source on the site.
 
-**[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)** — no installation required.
+**[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/castles/v1/)** — no installation required.
 
-The short start page offers a bridge or an empty field. The default Browser
+The player opens directly with an arch and tower. The default Browser
 version uses TypeScript with mouse/touch controls; Original TRS-80 runs the
 recovered BASIC in an emulator. In the player, switch between separate sessions;
 the inactive one pauses. Scenes do not transfer, and sessions last until reload.
 Help pauses play and preserves the current construction.
 
-Web v2 improves onboarding and controls. [Web v1](https://carlkcarlk.github.io/code-circa-1980/experiences/castles/v1/)
-remains unchanged in the [web version gallery](https://carlkcarlk.github.io/code-circa-1980/#/program/castles/web-versions).
-These releases are separate from the recovered BASIC versions.
+[Web v1](https://carlkcarlk.github.io/code-circa-1980/castles/v1/) freezes this
+browser experience. Future updates receive their own URLs; this link keeps the
+same player, instructions and assets. Web releases are separate from recovered
+BASIC versions.
 See [development](../../docs/development.md) and [web releases](../../docs/WEB-VERSIONS.md).
 
 ## Browser controls

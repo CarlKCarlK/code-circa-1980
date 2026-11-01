@@ -1,34 +1,92 @@
 import {test,expect} from '@playwright/test';
 import fs from 'node:fs';
-const releases=JSON.parse(fs.readFileSync(new URL('../../../programs/castles/web-versions.json',import.meta.url),'utf8')).versions;
-const latest=releases.at(-1).id;
+const ids=['castles','bal','alien','plot3d','chess','bomb'];
+const releases=id=>JSON.parse(fs.readFileSync(new URL(`../../../programs/${id}/web-versions.json`,import.meta.url),'utf8')).versions;
+const latest=releases('castles').at(-1).id;
 
-test('the collection opens the newest frozen experience straight into play',async({page})=>{
- const errors=[];page.on('pageerror',error=>errors.push(error.message));
+test('collection links point directly to clean, versioned releases',async({page})=>{
  await page.goto('/');
+ for(const id of ids){
+  const path=`/${id}/${releases(id).at(-1).id}/`;
+  const card=page.locator('.program-card').nth(ids.indexOf(id));
+  for(const link of await card.locator('a').all())await expect(link).toHaveAttribute('href',new RegExp(`${path}$`));
+ }
  await page.getByRole('link',{name:'Play Castles →'}).click();
- await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript/play/castle$`));
+ await expect(page).toHaveURL(new RegExp(`/castles/${latest}/$`));
  await expect(page.locator('#status')).toContainText('Building');
- await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
- if(!await page.getByRole('navigation',{name:'Web experience'}).isVisible())await page.locator('.source-details > summary').click();
- await expect(page.getByRole('navigation',{name:'Web experience'})).toContainText(`Web experience ${latest}`);
+ await page.getByRole('button',{name:'Pause',exact:true}).click();
+ await expect(page.locator('#status')).toHaveText('Paused');
+});
+
+for(const id of ids)test(`${id}: immutable release opens its default player without changing the URL`,async({page})=>{
+ const errors=[];page.on('pageerror',error=>errors.push(error.message));
+ const path=`/${id}/${releases(id).at(-1).id}/`;
+ await page.goto(path);
+ await expect(page.locator('#display')).toBeVisible();
+ await expect(page.locator('#status')).not.toContainText('Loading');
+ await expect(page.locator('#status')).not.toContainText('Unable to start');
+ await expect(page).toHaveURL(new RegExp(`${path}$`));
+ if(id==='chess'){
+  await expect(page.locator('.chess-board .sq')).toHaveCount(64);
+  await page.locator('.sq[data-r="2"][data-c="4"]').click();
+  await page.locator('.sq[data-r="4"][data-c="4"]').click();
+  await expect(page.locator('.chess-moves')).toContainText('Nf6');
+ }else if(id==='bal'){
+  await page.getByRole('button',{name:'Balance',exact:true}).click();
+  await expect(page.locator('.balanced')).toHaveText('C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O');
+ }else if(id==='plot3d'){
+  await page.getByRole('button',{name:'Instant',exact:true}).click();
+  await page.getByRole('button',{name:'Draw',exact:true}).click();
+  await expect(page.locator('#status')).toContainText('562');
+ }else if(id==='castles'){
+  await page.getByRole('button',{name:'Fire cannons',exact:true}).click();
+  await expect(page.getByRole('button',{name:'Return to building',exact:true})).toBeVisible();
+ }else{
+  await expect(page.locator('#status')).toContainText('Running');
+  await page.goto(`${path}?test`);
+  await expect.poll(()=>page.evaluate(()=>window.__circaPlayer?String.fromCharCode(...window.__circaPlayer.snapshot()):''),{timeout:15000}).toContain(id==='bomb'?'DEPOSIT':'ALIEN');
+ }
+ await page.reload();
+ await expect(page.locator('#display')).toBeVisible();
+ expect(new URL(page.url()).hash).toBe('');
  expect(errors).toEqual([]);
 });
 
-test('home page version dropdown opens the chosen frozen release',async({page})=>{
- test.skip(releases.length<2,'The dropdown appears only when there is more than one release.');
- await page.goto('/');
- const picker=page.getByLabel('Versions');
- await expect(picker).toHaveValue(new RegExp(`/experiences/castles/${latest}/#/program/castles/typescript/play/castle$`));
- await expect(picker.locator('option')).toHaveCount(releases.length);
- await picker.selectOption({label:'v1'});
- await expect(page).toHaveURL(/\/experiences\/castles\/v1\/#\/program\/castles\/typescript\/play\/castle$/);
- await expect(page.locator('canvas')).toHaveCount(1);
+test('existing BASIC and source tabs use query links, with history and separate sessions',async({page})=>{
+ await page.goto(`/castles/${latest}/?test`);
+ await expect(page.locator('#status')).toContainText('Building');
+ const initial=await page.evaluate(()=>window.__circaPlayer.snapshot());
+ await page.getByRole('link',{name:'Original TRS-80 version'}).click();
+ await expect(page).toHaveURL(/\?test=&lang=basic$/);
+ await expect(page.locator('#status')).toContainText('Running');
+ await page.goBack();
+ await expect(page.locator('#status')).toContainText('Building');
+ expect(await page.evaluate(()=>window.__circaPlayer.snapshot())).toEqual(initial);
+ if(!await page.locator('.source-details').evaluate(el=>el.open))await page.locator('.source-details > summary').click();
+ await page.locator('.versions > summary').click();
+ await page.locator('.versions a').first().click();
+ await expect(page).toHaveURL(/\?test=&source=v01$/);
+ await expect(page.locator('.source-only')).toBeVisible();
+ await page.getByRole('link',{name:'Play the playable version →'}).click();
+ await expect(page).toHaveURL(/\?test=&lang=basic$/);
+ await expect(page.locator('#status')).toContainText('Running');
 });
 
-test('previously shared play links resolve to the latest frozen release',async({page})=>{
- await page.goto('/?test#/program/castles/typescript/play');
- await expect(page).toHaveURL(new RegExp(`/experiences/castles/${latest}/[?]test#/program/castles/typescript/play$`));
+test('previously shared collection links resolve to the clean latest release',async({page})=>{
+ await page.goto('/#/program/castles/typescript/play/castle');
+ await expect(page).toHaveURL(new RegExp(`/castles/${latest}/$`));
  await expect(page.locator('#status')).toContainText('Building');
- expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().phase)).toBe('building');
+ await page.goto('/?program=bomb');
+ await expect(page).toHaveURL(new RegExp(`/bomb/${releases('bomb').at(-1).id}/$`));
+ await expect(page.locator('#status')).toContainText('Running');
+});
+
+test('home page version dropdown opens the chosen frozen release',async({page})=>{
+ test.skip(releases('castles').length<2,'The dropdown appears only when there is more than one release.');
+ await page.goto('/');
+ const picker=page.getByLabel('Versions').first();
+ await expect(picker).toHaveValue(new RegExp(`/castles/${latest}/$`));
+ await picker.selectOption({label:'v1'});
+ await expect(page).toHaveURL(/\/castles\/v1\/$/);
+ await expect(page.locator('canvas')).toHaveCount(1);
 });

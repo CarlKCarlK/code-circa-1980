@@ -2,9 +2,9 @@
 
 I wrote these programs in the early days of personal computing; now they run again in your browser.
 
-[![An arch and a tower in Castles, partly knocked down by cannon fire](app/assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)
+[![An arch and a tower in Castles, partly knocked down by cannon fire](app/assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/castles/v1/)
 
-**[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/#/program/castles)** — no installation required.
+**[Play Castles in your browser](https://carlkcarlk.github.io/code-circa-1980/castles/v1/)** — no installation required.
 
 Build towers and bridges from supported blocks, then let two cannons test them.
 It is a software toy with no score; see if you can work out the rules of its physics.
@@ -15,7 +15,7 @@ I probably wrote Castles around 1982, first in BASIC and later with a little Z80
 assembly. The date is an estimate from a dated program on the other side of the
 tape, not a date found in Castles itself. The original bytes are preserved.
 
-**[Run Chemical Equation Balancer](https://carlkcarlk.github.io/code-circa-1980/#/program/bal)**:
+**[Run Chemical Equation Balancer](https://carlkcarlk.github.io/code-circa-1980/bal/v1/)**:
 type an unbalanced chemical equation and get whole-number coefficients. I wrote it
 in 1979 and rewrote it as Chemistry Balancer II in 1981, which I advertised in
 Radio Shack's *TRS-80 Applications Software Sourcebook*. The browser version runs a Rust port of the 1981 algorithm; the
@@ -23,19 +23,19 @@ final BASIC version (v20) also runs in the emulator, and all 20 recovered versio
 are kept as source. See
 [programs/bal](programs/bal/).
 
-**[Play Alien](https://carlkcarlk.github.io/code-circa-1980/#/program/alien)**:
+**[Play Alien](https://carlkcarlk.github.io/code-circa-1980/alien/v1/)**:
 hunt an alien through your spaceship's air vents. The game is Gregory Yob's
 *Hunt the Wumpus* (1973), which I reskinned after the film *Alien*, probably in
 1979, and remixed so you can trap the alien by closing junctions. The BASIC
 program runs in the emulator, with its spelling corrected; see [programs/alien](programs/alien/).
 
-**[Run 3-D Plot](https://carlkcarlk.github.io/code-circa-1980/#/program/plot3d)**:
+**[Run 3-D Plot](https://carlkcarlk.github.io/code-circa-1980/plot3d/v1/)**:
 answer a few questions and watch a 1979 Level II BASIC program draw a funnel-shaped
 3-D surface as a wire grid, one block-graphics dot at a time, or type your own
 formula. A TypeScript version draws the same dots up to instantly; the finished BASIC version runs unchanged in the emulator;
 see [programs/plot3d](programs/plot3d/).
 
-**[Play CISAB Chess](https://carlkcarlk.github.io/code-circa-1980/#/program/chess)**:
+**[Play CISAB Chess](https://carlkcarlk.github.io/code-circa-1980/chess/v1/)**:
 the chess program I competed with in a tournament in Peoria. CISAB (BASIC spelled
 backwards) asks what color "we" are and what "their" move was, then answers
 with its own. Play it on a mouse board through a Rust port that makes the same
@@ -43,7 +43,7 @@ moves as the original, illegal ones and crashes included; the last of 14
 recovered versions also runs unchanged in the emulator;
 see [programs/chess](programs/chess/).
 
-**[Play Bomb](https://carlkcarlk.github.io/code-circa-1980/#/program/bomb)**:
+**[Play Bomb](https://carlkcarlk.github.io/code-circa-1980/bomb/v1/)**:
 a game my roommate Rich Losey and I designed: defuse Nefarious Nick's bombs by remembering the wire colors flashed on the
 screen and typing them back, in order and spelled right, before the clock runs
 out. Each bomb gets faster. The standalone version, probably from 1981, runs

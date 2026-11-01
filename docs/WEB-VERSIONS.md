@@ -5,30 +5,44 @@ controls, presentation, instructions, TypeScript rules, emulator integration, an
 its bundled assets. They are separate from recovered BASIC versions such as
 Castles v01–v05.
 
-The public collection and previously shared program links open the latest web
-release. The **All web versions** gallery links to every release. A direct URL
-such as `experiences/castles/v1/` always opens that frozen experience, including
-its instructions and choice of TypeScript or original emulator. Its Collection,
-All web versions, and Latest version links lead back to the current collection.
+The public collection links directly to the latest web release. Permanent URLs
+contain only the short program name and its web version:
+
+- `https://carlkcarlk.github.io/code-circa-1980/bomb/v1/`
+- `https://carlkcarlk.github.io/code-circa-1980/chess/v1/`
+
+A release URL opens its frozen default player directly, without a hash, query,
+start page, or further redirect. Bomb and Alien default to BASIC; Castles and
+3-D Plot to TypeScript; bal and CISAB Chess to Rust/WASM. A release freezes the
+default choice as well as its code, instructions, assets and licenses. A future
+release cannot change an earlier URL's behavior.
+
+Existing implementation and historical-source links use query parameters such as
+`?lang=basic` and `?source=v01`. They are optional navigation inside a release;
+ordinary play links never include them. There is no new configuration interface.
+Editable development routes retain the older hash scheme for local testing.
 
 ## Stored releases
 
-Every program was frozen again and published as v1 on 2026-10-31; from then
-on, changes are released as v2 and later, never by replacing v1. Releases were
-first restarted on 2026-10-30: earlier snapshots v1–v5 were removed
-(they remain in Git history) and the then-current experience became v1. To
-deliberately reset again, put `[reset-web-versions]` in the pushed head commit's
-message; the deploy then skips the release-preservation check for that push only.
-
-- `public/experiences/<program>/vN/` contains an immutable, self-contained production build.
+- `public/<program>/vN/` contains an immutable, self-contained production build.
 - `programs/<program>/web-versions.json` lists releases in order, starting at v1,
-  with a release date, source commit, and every file's size and SHA-256 hash.
-- `app/site/` and `programs/<program>/typescript/` remain the editable source.
+  with their relative `path`, release date, source commit, and every file's size
+  and SHA-256 hash.
+- `app/site/` and implementation directories remain the editable source.
+
+On 2026-10-31 the user explicitly authorized rebuilding all six unshared v1
+releases at these shorter URLs. The one-time migration was
+`node scripts/migrate-web-v1.mjs --replace-unshared-v1`, after committing source.
+It refuses to run after migration or when any later release exists. The old
+`public/experiences/` snapshots remain in Git history. The migration deployment
+uses `[reset-web-versions]` once to permit the authorized replacement. This does
+not authorize future resets: subsequent changes must become v2, v3, and so on.
 
 The built snapshot keeps its own JavaScript, CSS, original payloads, and license
-notices. Rebuilding the current site copies earlier snapshots rather than
+notices. Rebuilding the collection copies earlier snapshots rather than
 rebuilding their code. The source commit and pinned package lock retain the
-source and dependency versions used to create each release.
+source and dependency versions used to create each release. Historical source
+files and recovery evidence are unchanged by the URL migration.
 
 ## Develop and release
 

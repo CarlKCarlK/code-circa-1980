@@ -1,30 +1,33 @@
 import './style.css';
 import {programs, assetUrl, provenanceUrl} from './catalog.js';
 import {aboutAuthor} from './about.js';
+import {defaultEdition, releasePath, routeParts, editionSearch, releaseSearch} from './routes.js';
 
 const app = document.querySelector('#app');
 const webProgram=import.meta.env.VITE_WEB_PROGRAM;
 const webVersion=import.meta.env.VITE_WEB_VERSION;
-const collectionUrl=new URL(webProgram?'../../../':'./',location.href);
+const collectionUrl=new URL(webProgram?'../../':'./',location.href);
 const development=import.meta.env.DEV || new URLSearchParams(location.search).has('development');
 if(webProgram)document.querySelector('.brand').href=collectionUrl.href;
 let player = null, navigation = 0, activeRoute = null;
 const sessions = new Map();
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 // A version may route by a fixed slug (bal's playable BASIC is /basic) instead of its ID.
-const route = (program, version, play=false) => `#/program/${program.id}/${version.slug??version.id}${play ? '/play' : ''}`;
-const defaultEdition = program => program.defaultImplementation && program.modern ? program.modern : program.versions.find(v=>v.id===program.defaultVersion);
+const route = (program, version, play=false) => webProgram===program.id ? `${location.pathname}${editionSearch(program,version,undefined,location.search)}` : `#/program/${program.id}/${version.slug??version.id}${play ? '/play' : ''}`;
 const actionVerb = program => program.actionVerb ?? 'Play';
 const crumbs = program => `<nav aria-label="Breadcrumb"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
-const experienceUrl=(program,version)=>new URL(`experiences/${program.id}/${version.id}/`,collectionUrl).href;
+const experienceUrl=(program,version)=>new URL(releasePath(program.id,version),collectionUrl).href;
 // Open straight into the game with the default castle scene.
-const playUrl=program=>`${route(program,defaultEdition(program),true)}${program.playSuffix??''}`;
+const playUrl=program=>!development&&!webProgram?experienceUrl(program,program.webVersions.at(-1)):`${route(program,defaultEdition(program),true)}${program.playSuffix??''}`;
 function versionPicker(program,current){
- const versions=[...program.webVersions].reverse();
- return `<label class="version-picker">Versions <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}${playUrl(program)}" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
+ const versions=[...program.webVersions];
+ // The frozen catalog was read before this release was added to it.
+ if(current&&!versions.some(v=>v.id===current))versions.push({id:current});
+ versions.reverse();
+ return `<label class="version-picker">Versions <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
 }
 function webVersionNavigation(program){
- return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span>${program.webVersions.length>1?versionPicker(program,webVersion):''}${webVersion?`<a href="${collectionUrl.href}#/program/${program.id}">Latest version</a>`:''}</nav>`;
+ return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span>${program.webVersions.length+(webVersion&&!program.webVersions.some(v=>v.id===webVersion)?1:0)>1?versionPicker(program,webVersion):''}${webVersion?`<a href="${collectionUrl.href}?program=${program.id}">Latest version</a>`:''}</nav>`;
 }
 function versionList(program, selected) {
  return `<details class="versions"><summary>${program.versions.length} recovered versions · development order is inferred</summary><p>${escape(program.versionOrder)}</p><ol>${program.versions.map(v=>`<li><a href="${route(program,v)}" ${selected.id===v.id?'aria-current="page"':''}>${escape(v.id.toUpperCase())} · ${escape(v.label)}</a><span class="small">${escape(v.capture)} / save ${v.save}${v.playable?'':' · source only'}</span><p>${escape(v.note)}</p></li>`).join('')}</ol></details>`;
@@ -38,8 +41,7 @@ async function render() {
     sessions.set(activeRoute,{player,content,running});
   }
   player=null;activeRoute=null;delete window.__circaPlayer;
-  const parts=location.hash.slice(1).split('/').filter(Boolean);
-  if(webProgram&&!parts.length)parts.push('program',webProgram);
+  const parts=routeParts(location.hash,webProgram,location.search);
   if (!parts.length) {
     document.title = 'Code Circa 1980';
     app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p><p class="intro-links"><a href="#about-author">About this project ↓</a></p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<article class="program-card"><a class="card-art" href="${playUrl(p)}" tabindex="-1" aria-hidden="true"><img class="collection-art" src="${p.art.src}" alt="" width="532" height="236"></a><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)}</span><h2><a href="${playUrl(p)}">${escape(p.title)}</a></h2><p>${escape(p.description)}</p><div class="card-footer"><a class="card-link" href="${playUrl(p)}">${actionVerb(p)} ${escape(p.title)} →</a>${p.webVersions.length>1?versionPicker(p):''}</div></div></article>`).join('')}</section><section class="about-author" aria-labelledby="about-author"><h2 id="about-author">About this project</h2>${aboutAuthor.map(p=>`<p>${escape(p)}</p>`).join('')}</section>`;
@@ -51,13 +53,17 @@ async function render() {
   if(program&&((!webProgram&&!development)||(webProgram&&webProgram!==program.id))){
     const latest=program.webVersions.at(-1);
     if(!latest){app.innerHTML=`${crumbs(program)}<h1>No web releases yet</h1>`;return;}
-    const url=new URL(experienceUrl(program,latest));url.search=location.search;url.hash=location.hash;location.replace(url);return;
+    const url=new URL(experienceUrl(program,latest));url.search=releaseSearch(program,parts,location.search);location.replace(url);return;
   }
   const version=!parts[2] && program ? defaultEdition(program) : parts[2]===program?.modern?.id ? program.modern : program?.versions.find(v=>(v.slug??v.id)===parts[2]||v.id===parts[2]);
-  if(!program || !version){app.innerHTML='<h1>Program not found</h1><p><a href="#/">Back to the collection</a></p>';return;}
+  if(!program || !version){app.innerHTML=`<h1>Program not found</h1><p><a href="${collectionUrl.href}">Back to the collection</a></p>`;return;}
   document.title=`${program.title} · Code Circa 1980`;
-  const playing=parts[3]==='play' && version.playable;
+  const playing=(Boolean(webProgram)||parts[3]==='play') && version.playable;
   const modern=Boolean(program.modern)&&version.id===program.modern.id;
+  if(webProgram){
+    const url=`${location.pathname}${editionSearch(program,version,parts[4],location.search)}`;
+    if(`${location.pathname}${location.search}${location.hash}`!==url)history.replaceState(null,'',url);
+  }
   // No start page: a playable program or version opens straight into its player.
   if(!playing&&version.playable){location.replace(`${route(program,version,true)}${modern?program.playSuffix??'':''}`);return;}
   const reference=program.versions.find(v=>v.id===program.defaultVersion);
@@ -87,7 +93,7 @@ async function render() {
     player=instance;activeRoute=sessionKey;
     host.querySelector('#control-dock').append(app.querySelector('.keyboard-help'));
     // '/castle' starts with the default scene; '/bridge' is the older name kept for shared links.
-    if(modern&&['castle','bridge'].includes(parts[4]))instance.loadStartingPattern('arch-tower');
+    if(modern&&['castle','bridge'].includes(parts[4]??(webProgram?program.playSuffix?.slice(1):undefined)))instance.loadStartingPattern('arch-tower');
     program.decoratePlayer?.(instance,{dock:host.querySelector('#control-dock'),version,modern,status});
     // Read-only test interface, enabled only for a test URL.
     exposePlayer(instance);
@@ -128,5 +134,15 @@ async function render() {
 function exposePlayer(instance){
   if(new URLSearchParams(location.search).has('test'))window.__circaPlayer={snapshot:()=>instance.snapshot(),diagnostics:()=>instance.diagnostics()};
 }
+// Keep the existing implementation/source tabs and paused sessions in-page.
+// Their links use query parameters; the default player has neither query nor hash.
+app.addEventListener('click',event=>{
+  const link=event.target.closest('a[href]');
+  if(!webProgram||!link||link.hasAttribute('download')||link.target||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  const url=new URL(link.href);
+  if(url.origin!==location.origin||url.pathname!==location.pathname||url.hash)return;
+  event.preventDefault();history.pushState(null,'',url);render();
+});
+window.addEventListener('popstate',render);
 window.addEventListener('hashchange',render);
 render();
