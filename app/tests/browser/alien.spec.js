@@ -71,3 +71,10 @@ test('Alien runs with corrected spelling: skip the title, answer NO, spray promp
  await expect.poll(()=>screenText(page),{timeout:10000}).not.toContain('VENTS LEAD TO');
  expect(errors).toEqual([]);
 });
+
+test('Alien shows the skip tip below the player controls',async({page})=>{
+ await page.goto('/?development=1&test#/program/alien/basic/play');
+ await expect(page.locator('.intro-tip')).toBeVisible();
+ await expect(page.locator('.intro-tip')).toContainText('press any key while the title letters are drawing');
+ await expect(page.locator('.speed-toggle')).toHaveCount(0);
+});

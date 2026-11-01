@@ -75,4 +75,10 @@ export function decoratePlayer(instance, {dock}) {
     group.lastChild.append(button);
   }
   dock.querySelector('.quick-controls').append(group);
+
+  // Line 5020 checks INKEY$ only while the title letters draw.
+  const tip = document.createElement('p');
+  tip.className = 'small intro-tip';
+  tip.textContent = 'To skip the intro, click the screen and press any key while the title letters are drawing.';
+  dock.querySelector('.essential-controls').after(tip);
 }

@@ -47,7 +47,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       defaulting to 1979 speed. Reuse the existing `setSpeed` emulator support and the
       3-D Plot toggle (`app/site/programs/plot3d.js`), which already defaults to 1979
       speed. (CISAB Chess's toggle defaults to Fast.)
-- [ ] Alien: make the intro quicker to get past without editing the BASIC. Any key
+- [x] Alien: make the intro quicker to get past without editing the BASIC. Any key
       already skips the title while its letters draw (line 5020 checks INKEY$), but
       the stars/ship/"IN SPACE NO ONE CAN HEAR YOU SCREAM" phase (5080-5110) and the
       ~20 s "PLEASE WAIT" setup cannot be skipped. Add the same "1979 speed | Fast
