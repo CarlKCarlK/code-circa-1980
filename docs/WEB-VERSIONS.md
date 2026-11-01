@@ -60,9 +60,12 @@ also exercise published snapshots and the public default links.
 2. Run `npm run release:web -- castles --label "Description of this release"`.
    The command chooses the next unused sequential version, builds without copying
    old snapshots into it, and records the source commit and file hashes.
-3. Run `npm test`, `npm run build`, and `npm run test:browser`. Check the new
-   snapshot as well as the active source. For a new program, add its catalog entry
-   and create v1 before publishing.
+3. Run `npm test` and `npm run build`; start `npm run test:browser` in the
+   background. Check the new snapshot as well as the active source. For a new
+   program, add its catalog entry and create v1 before publishing. As authorized
+   on 2026-10-31, browser checks do not block publishing: GitHub runs them in
+   a separate workflow. Deployment still requires build, unit tests and release
+   integrity to pass. Report and fix browser failures afterward.
 4. Commit the new snapshot and its catalog entry. Add a program-specific tag such
    as `castles-web-v2`, then push the commit and tag. GitHub Actions verifies and
    publishes the site. The newest catalog entry becomes the public default.

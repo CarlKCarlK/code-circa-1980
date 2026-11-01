@@ -48,8 +48,10 @@ From `app/`: `npm ci`, `npm run dev`, `npm test`, `npm run build`, `npm run test
 Move fast: this is a personal project. After each change run `npm test` and
 `npm run build` (seconds) before committing. Start `npm run test:browser`
 (Playwright, minutes) in the background and keep working; report and fix any
-failures when it finishes. Wait for browser tests only before publishing a
-web release.
+failures when it finishes. On 2026-10-31 the user authorized publishing without
+waiting for browser tests: the project has no users yet. Build, unit tests and
+release-integrity checks gate deployment. Browser checks run in a separate
+GitHub workflow and must not block publication; report and fix failures afterward.
 For a nonstandard local browser installation, set PLAYWRIGHT_CHROMIUM_EXECUTABLE.
 
 ## Preserve both views of historical versions
