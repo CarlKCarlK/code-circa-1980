@@ -50,8 +50,8 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
 - [x] Alien: make the intro quicker to get past without editing the BASIC. Any key
       already skips the title while its letters draw (line 5020 checks INKEY$), but
       the stars/ship/"IN SPACE NO ONE CAN HEAR YOU SCREAM" phase (5080-5110) and the
-      ~20 s "PLEASE WAIT" setup cannot be skipped. Add the same "1979 speed | Fast
-      (×20)" toggle as bal and 3-D Plot (default 1979 speed). Add a visible note by
+      ~20 s "PLEASE WAIT" setup cannot be skipped. (A speed toggle was tried and
+      declined: Alien doesn't need it.) Add a visible note by
       the player (not only in Help) telling users that pressing a key during the first
       part of the intro, while the title letters draw, skips ahead.
 - [ ] Alien: shift the page's emphasis toward my changes to Yob's *Hunt the Wumpus*
