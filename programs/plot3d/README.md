@@ -2,7 +2,7 @@
 
 Answer a few questions and the TRS-80 draws a 3-D surface as a wire grid, one
 block-graphics dot at a time. The surface is a funnel: flat at the rim, dropping
-steeply into a point at the centre, like a gravity well. The program prints
+steeply into a point at the center, like a gravity well. The program prints
 `3-D PLOT   (C) 1979   CARL KADIE`.
 
 ## Two ways to run it
@@ -35,15 +35,15 @@ runs the emulated TRS-80 about 20 times faster, so the funnel takes about
 | Prompt | Standard | What it does |
 |---|---|---|
 | `TILT` | `.5` | How far the far edge of the grid is shifted up and to the left. `0` gives a side view; larger values look down on it more. |
-| `X SCALE` | `1` | Width: 1 is 30 dots each side of centre. |
+| `X SCALE` | `1` | Width: 1 is 30 dots each side of center. |
 | `Y SCALE` | `1` | Height: 1 is 15 dots each way. |
 | `SWITCH ON` | not `YES` | `YES` draws the whole picture a second time over the first. Nothing changes, so it only doubles the time. |
-| `HOW MANY LINES` | `7` | Grid lines in each direction. Odd numbers put a line through the centre point. `1` stops with a division-by-zero error. |
+| `HOW MANY LINES` | `7` | Grid lines in each direction. Odd numbers put a line through the center point. `1` stops with a division-by-zero error. |
 
 ## How it works
 
 For each grid point (X, Z) from −1 to 1, the height is
-Y = 1 − 1/√(18X² + 18Z²) (Y = −1 at the centre). The screen position is an
+Y = 1 − 1/√(18X² + 18Z²) (Y = −1 at the center). The screen position is an
 oblique projection: `GX = 63.5 + X·DX − Z·DX·TILT` and
 `GY = 23.5 − Y·DY + Z·DY·TILT`. Points off the 128 × 48 screen lift the pen.
 

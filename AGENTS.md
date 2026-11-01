@@ -37,6 +37,13 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
    remaining limits. Keep publication and future modern rewrites out of scope
    unless requested. Never spawn subagents unless the user explicitly asks.
 
+Use American spelling in all new prose, UI text, comments, and docs: color,
+behavior, neighbor, favorite, center, gray, catalog, canceled, labeled, -ize/-yze
+(organize, analyze). Watch especially for British "-our" and "-re" endings. Never
+change spelling inside recovered historical files, quoted program output, or
+program data (Bomb's color list deliberately has both GREY and GRAY). Leave
+frozen release builds under `public/` alone; rebuild them instead.
+
 Do not add AI co-author trailers (such as `Co-Authored-By: Claude …`) or other
 AI attribution lines to commit messages or pull request descriptions.
 

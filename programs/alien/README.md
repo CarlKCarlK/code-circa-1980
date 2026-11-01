@@ -60,7 +60,7 @@ The alien moves only at these moments:
 - After a spray that misses: it moves 3 times in 4.
 - After you close a junction: it moves 3 times in 4.
 
-A move takes it through one open vent to a neighbouring junction, chosen at random.
+A move takes it through one open vent to a neighboring junction, chosen at random.
 It ignores vacuum chambers and booby traps, never enters a closed junction, and
 otherwise stays put. It never moves when you move.
 
