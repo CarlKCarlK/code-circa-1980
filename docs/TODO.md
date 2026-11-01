@@ -43,7 +43,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       and Z80 assembly, so it could have mouse controls and sound. It was tested
       against the original to make sure blocks, cannon shots, and falling debris
       behave the same way. The original program runs unchanged under Original."
-- [ ] bal: give the BASIC (emulator) version a "1979 speed | Fast (×20)" toggle,
+- [x] bal: give the BASIC (emulator) version a "1979 speed | Fast (×20)" toggle,
       defaulting to 1979 speed. Reuse the existing `setSpeed` emulator support and the
       3-D Plot toggle (`app/site/programs/plot3d.js`), which already defaults to 1979
       speed. (CISAB Chess's toggle defaults to Fast.)

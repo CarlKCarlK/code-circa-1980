@@ -30,8 +30,8 @@ export function instructions(version) {
   const thisVersion = isModern(version)
     ? `<section><h2>This version</h2><p>A Rust port of the Chemistry Balancer II algorithm (v20), compiled to WebAssembly. It follows the same steps and error checks: alchemy, ambiguous and negative solutions, independent sub-equations. Press Balance for an instant answer, shown first in the 1981 printout style, then in modern notation, and as the system of linear equations it solves.</p></section>`
     : isII(version)
-    ? `<section><h2>This version</h2><p>${escape(version.note)}</p><p>Chemistry Balancer II works exactly with fractions, so it is slow on 1980 hardware: about 20 seconds for water and up to three minutes for larger equations. The spinner at the top right shows it is working. The answer uses ${code('-^')} as the arrow and ${code('< >')} for parentheses. Type ${key('Y')} and ${key('Enter')} to balance another.</p></section>`
-    : `<section><h2>This version</h2><p>${escape(version.note)}</p><p>The 1979 program answers quickly and then asks for the next equation. If it stops with ${code('Break')} or an error, press Restart.</p></section>`;
+    ? `<section><h2>This version</h2><p>${escape(version.note)}</p><p>Chemistry Balancer II works exactly with fractions, so it is slow on 1980 hardware: about 20 seconds for water and up to three minutes for larger equations. The spinner at the top right shows it is working. <strong>Fast (×20)</strong> runs the emulated TRS-80 about 20 times faster. The answer uses ${code('-^')} as the arrow and ${code('< >')} for parentheses. Type ${key('Y')} and ${key('Enter')} to balance another.</p></section>`
+    : `<section><h2>This version</h2><p>${escape(version.note)}</p><p>The 1979 program answers quickly and then asks for the next equation. <strong>Fast (×20)</strong> runs the emulated TRS-80 about 20 times faster. If it stops with ${code('Break')} or an error, press Restart.</p></section>`;
   return `${history}<div class="instruction-grid">${entry}${thisVersion}</div>`;
 }
 
@@ -52,4 +52,17 @@ export function decoratePlayer(instance, {dock, version, modern, status}) {
     host.focus({preventScroll:true});
     status.textContent = 'Typed at the prompt · press Enter to balance';
   }, {groups, note: isII(version) ? 'A problem types the equation at the prompt; press Enter. After an answer, type Y and Enter first. You can also paste.' : 'A problem types the equation at the prompt; press Enter. You can also paste.'}));
+
+  // The original at its real speed, or about 20 times faster.
+  const speeds = document.createElement('div');
+  speeds.className = 'speed-toggle';
+  speeds.setAttribute('role', 'group');
+  speeds.setAttribute('aria-label', 'Emulator speed');
+  speeds.innerHTML = `<button type="button" data-speed="1" aria-pressed="true">1979 speed</button><button type="button" data-speed="20" aria-pressed="false">Fast (×20)</button>`;
+  for (const b of speeds.querySelectorAll('button')) b.onclick = () => {
+    instance.setSpeed(Number(b.dataset.speed));
+    for (const other of speeds.querySelectorAll('button')) other.setAttribute('aria-pressed', String(other === b));
+    host.focus({preventScroll:true});
+  };
+  dock.querySelector('.essential-controls').after(speeds);
 }

@@ -85,3 +85,18 @@ test('Level II BASIC player takes side-panel problems and pasted text',async({pa
  await expect.poll(()=>screenText(page),{timeout:10000}).toContain('? FE + O2 = FE2.O3');
  await expect(page.locator('#display')).toBeFocused();
 });
+
+test('Level II BASIC player starts at 1979 speed; Fast (×20) balances water in seconds',async({page})=>{
+ test.setTimeout(60000);
+ await page.goto('/?development=1&test#/program/bal/basic/play');
+ await expect(page.getByRole('button',{name:'1979 speed'})).toHaveAttribute('aria-pressed','true');
+ await expect(page.getByRole('button',{name:'Fast (×20)'})).toHaveAttribute('aria-pressed','false');
+ await expect.poll(()=>screenText(page),{timeout:15000}).toContain('RAW EQUATION?');
+ await page.getByRole('button',{name:'Fast (×20)'}).click();
+ await expect(page.getByRole('button',{name:'Fast (×20)'})).toHaveAttribute('aria-pressed','true');
+ await expect(page.locator('#display')).toBeFocused();
+ await page.keyboard.type('H2 + O2 = H2.O');await page.keyboard.press('Enter');
+ const start=Date.now();
+ await expect.poll(async()=>(await screenText(page)).replace(/ /g,''),{timeout:20000,intervals:[250]}).toContain('2(H2)+(O2)-^2(H2.O)');
+ console.log(`water at Fast: ${((Date.now()-start)/1000).toFixed(1)} s`);
+});
