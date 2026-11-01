@@ -25,6 +25,7 @@ export const quickHelp = version => version.implementation==='typescript'
   : 'Click the game screen first so it gets your keys. Hold each key briefly: the original program checks the keyboard as it runs, and reads Power and Arc between shots.';
 // Collection card.
 export const art = {src:new URL('../../assets/castles-game.svg',import.meta.url).href, alt:'An arch and a tower built from Castles blocks, partly knocked down by cannon fire'};
+export const aboutOpen = true;
 // Open straight into the game with the default castle scene.
 export const playSuffix = '/castle';
 export const restartLabel = modern => modern ? 'Erase all' : 'Restart';

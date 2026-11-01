@@ -25,7 +25,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       `programs/<program>/web-versions.json`. Versioned URLs stay permanent and frozen.
       Decide whether it redirects to `castles/vN/` or serves the latest release in
       place; either way, also handle the form without the trailing slash.
-- [ ] Castles: start with "About, history & source" open, like the other five
+- [x] Castles: start with "About, history & source" open, like the other five
       programs. Castles is the only one without `export const aboutOpen = true;`
       (see `app/site/programs/*.js`); check the phone layout still shows the field first.
 - [ ] Castles: explain the TypeScript version on the page (Castles is first in the
