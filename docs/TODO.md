@@ -28,7 +28,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
 - [x] Castles: start with "About, history & source" open, like the other five
       programs. Castles is the only one without `export const aboutOpen = true;`
       (see `app/site/programs/*.js`); check the phone layout still shows the field first.
-- [ ] Castles: explain the TypeScript version on the page (Castles is first in the
+- [x] Castles: explain the TypeScript version on the page (Castles is first in the
       gallery, so most visitors meet TypeScript here). Points to cover, kept accurate
       to [PARITY.md](../programs/castles/typescript/PARITY.md):
       - Written with AI tools from the original v05 BASIC and its FALL v6 Z80
