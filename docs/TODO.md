@@ -151,6 +151,9 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       keydown as code 229. Pass Backspace through unchanged (it still blows you up).
       Keep the screen visible above the keyboard (visualViewport). Test on a real
       phone. Could later serve Alien's and Chess's BASIC versions too.
+- [ ] bal: add a section comparing the BASIC code with the Rust port: how the 1981
+      Chemistry Balancer II algorithm reads in each (data structures, exact fraction
+      arithmetic, control flow), with short side-by-side excerpts.
 - [ ] New browser icon. Redraw the "80" in lettering evoking either the TRS-80
       nameplate or Zilog's Z80 marking (inspired by, not a copy of, either trademark).
       Draw it as SVG paths rather than font text so it renders the same everywhere,
