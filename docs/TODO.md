@@ -153,7 +153,16 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       phone. Could later serve Alien's and Chess's BASIC versions too.
 - [ ] bal: add a section comparing the BASIC code with the Rust port: how the 1981
       Chemistry Balancer II algorithm reads in each (data structures, exact fraction
-      arithmetic, control flow), with short side-by-side excerpts.
+      arithmetic, control flow), with short side-by-side excerpts. Draft in
+      `programs/bal/basic-vs-rust.md`: the GCD routine (lines 4000–4090) as BASIC,
+      a one-for-one readable pseudocode rewrite, and Rust; the line 3140 call site;
+      and "What differs" (including BASIC's real 2-D arrays and 0-to-n indexing).
+      Put it on the bal page (`app/site/programs/bal.js`) once the draft is final.
+- [ ] Article for This Week in Rust (via Medium): a survey of all six programs,
+      working title "Why BASIC Is Better than TypeScript and Rust". Real thesis: the
+      ideas in a program matter more than its syntax; syntax, typing, and tooling help,
+      but come second. Draft in `docs/article-draft.md`; builds on the bal draft. Castles and 3-D Plot have TypeScript
+      versions, bal and Chess have Rust; Alien and Bomb have no modern port yet.
 - [ ] New browser icon. Redraw the "80" in lettering evoking either the TRS-80
       nameplate or Zilog's Z80 marking (inspired by, not a copy of, either trademark).
       Draw it as SVG paths rather than font text so it renders the same everywhere,
