@@ -38,7 +38,7 @@ export function instructions() {
 export const onScreenKeys = () => [
   {label:'Keys', keys:[['Enter','Enter'],[' ','Any key']]}
 ];
-export const quickHelp = () => 'Click the screen first so it gets your keys. Press any key at the title screen and Enter on each page. Remember the colors in the box, then type each one and press Enter. Typos cannot be fixed.';
+export const quickHelp = () => 'Click the screen first so it gets your keys. Press any key at the title screen and Enter on each page. Remember the colors in the box, then type each one and press Enter. Typos cannot be fixed. On a phone, tap Keyboard to type.';
 
 // YES and NO type the whole answer and Enter for the retire question, which uses INPUT.
 export function decoratePlayer(instance, {dock}) {
@@ -54,4 +54,52 @@ export function decoratePlayer(instance, {dock}) {
     group.lastChild.append(button);
   }
   dock.querySelector('.quick-controls').append(group);
+  dock.querySelector('.quick-controls').append(phoneKeyboard(instance));
+}
+
+// Phones open their own keyboard only for a focused text field. A hidden field
+// holds one sentinel character so Backspace still produces an input event; what
+// is typed after it goes to the emulator, then the field is reset. Backspace is
+// passed through, so it still becomes part of the answer, as on the original.
+function phoneKeyboard(instance) {
+  const SENTINEL = '_';
+  const group = document.createElement('div');
+  group.className = 'key-group';
+  group.innerHTML = '<span class="key-group-label">Phone</span><div></div>';
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'word-key';
+  button.innerHTML = '<kbd>⌨</kbd><span>Keyboard</span>';
+  button.setAttribute('aria-label', 'Open the phone keyboard to type wire colors');
+  const field = document.createElement('input');
+  field.type = 'text';
+  field.className = 'phone-keyboard-field';
+  field.setAttribute('aria-label', 'Type here to send keys to the TRS-80');
+  for (const [name, value] of Object.entries({autocomplete:'off', autocorrect:'off', autocapitalize:'characters', spellcheck:'false', enterkeyhint:'enter', inputmode:'text'})) field.setAttribute(name, value);
+  field.style.cssText = 'position:fixed;left:0;bottom:0;width:1px;height:1px;opacity:0;font-size:16px;border:0;padding:0;pointer-events:none';
+  let sent = '';
+  const reset = () => { field.value = SENTINEL; field.setSelectionRange(1, 1); sent = ''; };
+  const sendBackspaces = n => { for (let i = 0; i < n; i++) instance.keys(['Backspace']); };
+  field.addEventListener('input', event => {
+    if (!field.value.startsWith(SENTINEL)) { sendBackspaces(1 + sent.length); reset(); return; }
+    const now = field.value.slice(1);
+    let common = 0;
+    while (common < now.length && common < sent.length && now[common] === sent[common]) common++;
+    sendBackspaces(sent.length - common);
+    const added = now.slice(common).replace(/[^ -~]/g, '');
+    if (added) instance.type(added);
+    sent = now;
+    if (!event.isComposing) reset();
+  });
+  field.addEventListener('compositionend', reset);
+  field.addEventListener('keydown', event => {
+    if (event.key === 'Enter') { event.preventDefault(); instance.type('\n'); reset(); }
+  });
+  button.onclick = () => {
+    reset();
+    field.focus({preventScroll:true});
+    document.querySelector('#display')?.scrollIntoView({block:'start'});
+  };
+  group.lastChild.append(button, field);
+  return group;
 }

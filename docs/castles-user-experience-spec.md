@@ -310,7 +310,7 @@ not evidence that the live website has the same redirect loop.
 ## Implementation references
 
 - [README](../README.md) and [Castles README](../programs/castles/README.md)
-- [Current TODO](TODO.md)
+- [Current TODO](TODO.md) · [Web v1 TODO archive](TODO-web-v1.md)
 - [Navigation and page layout](../app/site/main.js)
 - [Instructions and historical controls](../app/site/programs/castles.js)
 - [Player controls and lifecycle](../programs/castles/typescript/player.ts)
