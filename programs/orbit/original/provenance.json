@@ -1,46 +1,46 @@
 {
-  "version": "v05",
+  "version": "v06",
   "capture": "tape11b",
-  "save": 16,
-  "archive_raw": "tapes/recovered/tape11b/best/16-ORBIT-SIMULATOR-V5.BAS",
-  "archive_listing": "tapes/recovered/tape11b/best/16-ORBIT-SIMULATOR-V5.ASC",
+  "save": 17,
+  "archive_raw": "tapes/recovered/tape11b/best/17-ORBIT-SIMULATOR-V6.BAS",
+  "archive_listing": "tapes/recovered/tape11b/best/17-ORBIT-SIMULATOR-V6.ASC",
   "imported_files": [
     {
-      "path": "versions/v05/16-ORBIT-SIMULATOR-V5.BAS",
-      "archive_path": "tapes/recovered/tape11b/best/16-ORBIT-SIMULATOR-V5.BAS",
-      "bytes": 2529,
-      "sha256": "2d1b33bd57095751e6a327bf445b90a107ac2be90d7a5f659da89f698cbd1875"
+      "path": "versions/v06/17-ORBIT-SIMULATOR-V6.BAS",
+      "archive_path": "tapes/recovered/tape11b/best/17-ORBIT-SIMULATOR-V6.BAS",
+      "bytes": 3008,
+      "sha256": "cda8b3e6f5612ca795640d972733c6c23e98df10f2bab229a904d4d4ea6402b9"
     },
     {
-      "path": "versions/v05/16-ORBIT-SIMULATOR-V5.ASC",
-      "archive_path": "tapes/recovered/tape11b/best/16-ORBIT-SIMULATOR-V5.ASC",
-      "bytes": 2829,
-      "sha256": "7521bd28fc6124e3fa20a6066aa2db641445c227b4b2ab56c43e999ad65855e5"
+      "path": "versions/v06/17-ORBIT-SIMULATOR-V6.ASC",
+      "archive_path": "tapes/recovered/tape11b/best/17-ORBIT-SIMULATOR-V6.ASC",
+      "bytes": 3371,
+      "sha256": "8a3477c20d918ed1c2558a22b9fcad8db1cfa04cbec51ef0e8d7c96451c31fd6"
     }
   ],
   "recovery_item": {
-    "lines": 73,
-    "last": 2310,
+    "lines": 85,
+    "last": 3080,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "2d1b33bd57095751e6a327bf445b90a107ac2be90d7a5f659da89f698cbd1875"
+    "sha256": "cda8b3e6f5612ca795640d972733c6c23e98df10f2bab229a904d4d4ea6402b9"
   },
   "inventory_row": {
     "tape": "11",
     "side": "b",
-    "order": "16",
+    "order": "17",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "ORBIT SIMULATOR V5; 73 lines",
+    "summary": "ORBIT SIMULATOR V6; 85 lines",
     "capture": "tape11b",
     "capture_scope": "possible skipped program (tangled tape)",
     "baud": "500",
     "platform": "TRS-80 BASIC; extensions may be required",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
-    "source_start_s": "580.912",
-    "recovered_bytes": "2529",
-    "source_file": "tapes/recovered/tape11b/best/16-ORBIT-SIMULATOR-V5.ASC",
+    "source_start_s": "636.973",
+    "recovered_bytes": "3008",
+    "source_file": "tapes/recovered/tape11b/best/17-ORBIT-SIMULATOR-V6.ASC",
     "wav": "tapes/tape11b.wav",
     "folder": "tapes/recovered/tape11b/best",
     "recovery_date": "2026-10-27",
