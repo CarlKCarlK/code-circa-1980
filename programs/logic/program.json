@@ -19,6 +19,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "LOGIC CIRCUIT SIMULATOR SAVE 2",
+      "capture": "tape15b",
+      "save": 15,
+      "raw": "versions/v02/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.BAS",
+      "listing": "versions/v02/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
