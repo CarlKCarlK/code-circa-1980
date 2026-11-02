@@ -64,6 +64,17 @@
       "playable": false,
       "note": "Untouched recovered save. 10 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v06",
+      "label": "Magazine article subject index V2",
+      "capture": "tape7a",
+      "save": 3,
+      "raw": "versions/v06/03-MAGAZINE-ARTICLE-INDEX-V2.BAS",
+      "listing": "versions/v06/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. 13 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
