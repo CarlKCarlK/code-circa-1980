@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape20b",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.BAS",
+  "archive_listing": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/01-SUPERPOWER-INVESTING-SAVE01.BAS",
+      "archive_path": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.BAS",
+      "bytes": 3060,
+      "sha256": "265b99f2d3c65d1f19120be1e733bd0f093ab058d9492783b9bfbfd3f4177b11"
+    },
+    {
+      "path": "versions/v01/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+      "archive_path": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+      "bytes": 3219,
+      "sha256": "dd2adf1a779fc460307a7f9c01a2b86c599a2224995d121cc92d1d838ecd5020"
+    }
+  ],
+  "recovery_item": {
+    "lines": 91,
+    "last": 10010,
+    "pointer_base": 22204,
+    "normal_end_marker": true,
+    "sha256": "265b99f2d3c65d1f19120be1e733bd0f093ab058d9492783b9bfbfd3f4177b11"
+  },
+  "inventory_row": {
+    "tape": "20",
+    "side": "b",
+    "order": "1",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "SUPERPOWER INVESTING SAVE01",
+    "capture": "tape20b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "19.601",
+    "recovered_bytes": "3060",
+    "source_file": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+    "wav": "tapes/tape20b.wav",
+    "folder": "tapes/recovered/tape20b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+  "execution_tested": false
+}

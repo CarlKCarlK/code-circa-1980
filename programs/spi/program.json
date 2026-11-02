@@ -1,0 +1,25 @@
+{
+  "id": "spi",
+  "title": "Superpower Investing",
+  "description": "Replay an early professional program using historical sample share prices.",
+  "kind": "Finance",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v05",
+  "versionOrder": "Five within-side saves retained in capture order. Empty-data templates alternate with data-bearing revisions; these are not five proven successive algorithm versions. The last data-bearing save is the default.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SUPERPOWER INVESTING SAVE01",
+      "capture": "tape20b",
+      "save": 1,
+      "raw": "versions/v01/01-SUPERPOWER-INVESTING-SAVE01.BAS",
+      "listing": "versions/v01/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
