@@ -10,12 +10,22 @@ class CobaltScreen extends CanvasScreen {
   setConfig(config) { super.setConfig(config.withModelType(ModelType.MODEL3).withCGChip(CGChip.LOWER_CASE)); }
 }
 
+// Model III parallel printer ports. Capture the original ROM's output without
+// changing BASIC or intercepting console output from unrelated machines.
+class CollectionMachine extends Trs80 {
+  writePort(address, value) {
+    const port=address & 0xff;
+    if(this.onPrint && port>=0xf8 && port<=0xfb) this.onPrint(value);
+    else super.writePort(address,value);
+  }
+}
+
 // Executes recovered tokenized BASIC through the Z80 and original BASIC ROM.
 // The library relocates the in-memory line pointers on load. The source file
 // and every archived byte remain unchanged.
 // A program can ask for a stock Model I (`model: 'MODEL1'`): its ROM shows shifted
 // letters in capitals, as 1978 machines without the lowercase kit did.
-export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC', model} = {}) {
+export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC', model, printer = false} = {}) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Could not load original program (${response.status}).`);
   const bytes = new Uint8Array(await response.arrayBuffer());
@@ -32,9 +42,21 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     : Config.makeDefault().withModelType(ModelType.MODEL3).withBasicLevel(BasicLevel.LEVEL2);
   const screen = new CobaltScreen(1);
   const keyboard = new Keyboard();
-  const machine = new Trs80(config, screen, keyboard, new CassettePlayer(), new SilentSoundPlayer());
+  const machine = new CollectionMachine(config, screen, keyboard, new CassettePlayer(), new SilentSoundPlayer());
   host.replaceChildren(screen.getNode());
   host.append(document.getElementById('control-dock'));
+  let printout;
+  if(printer){
+    const sheet=document.createElement('details');sheet.className='printer-output';sheet.open=true;sheet.hidden=true;
+    sheet.innerHTML='<summary>Printer · team roster</summary><pre aria-label="Original printer output"></pre>';
+    printout=sheet.querySelector('pre');host.append(sheet);
+    machine.onPrint=value=>{
+      sheet.hidden=false;
+      if(value===13)printout.textContent+='\n';
+      else if(value===12)printout.textContent+='\n────────\n';
+      else if(value>=32&&value<127)printout.textContent+=String.fromCharCode(value);
+    };
+  }
   host.tabIndex = 0;
   host.setAttribute('role', 'group');
   host.setAttribute('aria-label', `${title} emulator. Focus here to use the game keys.`);
@@ -92,6 +114,7 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
   }
   function restart() {
     release(); machine.stop(); paused = false;
+    if(printout)printout.textContent='';
     if (model === 'MODEL1') runOnModel1(); else machine.runBasicProgram(program);
     if (machineBytes) machine.eventScheduler.add(undefined, machine.tStateCount+machine.clockHz*0.31, () => machine.writeMemoryBlock(dependency.address,machineBytes));
     machine.start();

@@ -1,5 +1,6 @@
 import './style.css';
-import {programs, assetUrl, provenanceUrl} from './catalog.js';
+import {programs, allPrograms, morePrograms, assetUrl, provenanceUrl} from './catalog.js';
+import {galleryCards} from './gallery.js';
 import {aboutAuthor} from './about.js';
 import {defaultEdition, releasePath, routeParts, editionSearch, releaseSearch} from './routes.js';
 
@@ -15,10 +16,11 @@ const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<'
 // A version may route by a fixed slug (bal's playable BASIC is /basic) instead of its ID.
 const route = (program, version, play=false) => webProgram===program.id ? `${location.pathname}${editionSearch(program,version,undefined,location.search)}` : `#/program/${program.id}/${version.slug??version.id}${play ? '/play' : ''}`;
 const actionVerb = program => program.actionVerb ?? 'Play';
-const crumbs = program => `<nav aria-label="Breadcrumb"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
+const collectionHref = program => program?.gallery==='more' ? (webProgram?new URL('#/more',collectionUrl).href:'#/more') : (webProgram?collectionUrl.href:'#/');
+const crumbs = program => `<nav aria-label="Breadcrumb"><a href="${collectionHref(program)}">Collection</a><span>/</span><span>${escape(program.title)}</span></nav>`;
 const experienceUrl=(program,version)=>new URL(releasePath(program.id,version),collectionUrl).href;
 // Open straight into the game with the default castle scene.
-const playUrl=program=>!development&&!webProgram?experienceUrl(program,program.webVersions.at(-1)):`${route(program,defaultEdition(program),true)}${program.playSuffix??''}`;
+const playUrl=program=>!development&&!webProgram&&program.webVersions.length?experienceUrl(program,program.webVersions.at(-1)):`${route(program,defaultEdition(program),true)}${program.playSuffix??''}`;
 function versionPicker(program,current){
  const versions=[...program.webVersions];
  // The frozen catalog was read before this release was added to it.
@@ -42,15 +44,27 @@ async function render() {
   }
   player=null;activeRoute=null;delete window.__circaPlayer;
   const parts=routeParts(location.hash,webProgram,location.search);
+  const more=parts[0]==='more';
+  const currentProgram=allPrograms.find(p=>parts[0]==='program'&&p.id===parts[1]);
+  document.querySelector('.brand').href=collectionHref(more?{gallery:'more'}:currentProgram);
+  document.querySelector('meta[name="robots"]')?.remove();
+  if(more||currentProgram?.gallery==='more'){
+    const robots=document.createElement('meta');robots.name='robots';robots.content='noindex, nofollow';document.head.append(robots);
+  }
+  if(more){
+    document.title='More from the tapes · Code Circa 1980';
+    app.innerHTML=`<section class="intro"><p class="eyebrow">Another shelf of the time capsule</p><h1>More from<br><em>the tapes.</em></h1><p class="lede">A few more original programs, recovered from cassette.<br>Coaching teams, chasing medals, and flying toward the Death Star.</p></section>${galleryCards(morePrograms,{playUrl,versionPicker,actionVerb})}`;
+    return;
+  }
   if (!parts.length) {
     document.title = 'Code Circa 1980';
-    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p><p class="intro-links"><a href="#about-author">About this project ↓</a></p></section><section aria-label="Programs" class="collection">${programs.map((p,i)=>`<article class="program-card"><a class="card-art" href="${playUrl(p)}" tabindex="-1" aria-hidden="true"><img class="collection-art" src="${p.art.src}" alt="" width="532" height="236"></a><div class="card-copy"><span class="eyebrow">${String(i+1).padStart(2,'0')} / ${escape(p.kind)}</span><h2><a href="${playUrl(p)}">${escape(p.title)}</a></h2><p>${escape(p.description)}</p><div class="card-footer"><a class="card-link" href="${playUrl(p)}">${actionVerb(p)} ${escape(p.title)} →</a>${p.webVersions.length>1?versionPicker(p):''}</div></div></article>`).join('')}</section><section class="about-author" aria-labelledby="about-author"><h2 id="about-author">About this project</h2>${aboutAuthor.map(p=>`<p>${escape(p)}</p>`).join('')}</section>`;
+    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p><p class="intro-links"><a href="#about-author">About this project ↓</a></p></section>${galleryCards(programs,{playUrl,versionPicker,actionVerb})}<section class="about-author" aria-labelledby="about-author"><h2 id="about-author">About this project</h2>${aboutAuthor.map(p=>`<p>${escape(p)}</p>`).join('')}</section>`;
     // The hash holds the route, so scroll to the bio instead of navigating.
     app.querySelector('.intro-links a').onclick=event=>{event.preventDefault();app.querySelector('.about-author').scrollIntoView({behavior:'smooth'});};
     return;
   }
-  const program=programs.find(p=>parts[0]==='program' && p.id===parts[1]);
-  if(program&&((!webProgram&&!development)||(webProgram&&webProgram!==program.id))){
+  const program=currentProgram;
+  if(program&&((!webProgram&&!development&&program.webVersions.length)||(webProgram&&webProgram!==program.id))){
     const latest=program.webVersions.at(-1);
     if(!latest){app.innerHTML=`${crumbs(program)}<h1>No web releases yet</h1>`;return;}
     const url=new URL(experienceUrl(program,latest));url.search=releaseSearch(program,parts,location.search);location.replace(url);return;
@@ -81,14 +95,14 @@ async function render() {
   }
   const sourceDetails=`<details class="source-details" ${program.aboutOpen?'open':''}><summary>About, history & source</summary>${program.instructions(version)}<section class="source-section"><h3>Source</h3><p>${escape(version.note)}${version.derived?'':' Original bytes and historical quirks are preserved.'}</p><p><a href="${assetUrl(program,version.listing)}" download>Download BASIC listing</a> · <a href="${assetUrl(program,version.raw)}" download>Download ${version.derived?'BASIC':'original'} payload</a> · <a href="${provenanceUrl(program)}" download>Recovery provenance</a></p>${versionList(program,version)}${webVersionNavigation(program)}</section></details>`;
   const unavailable=`<p>This version is preserved for study.</p><p>${escape(version.unavailableReason??'')}</p><a href="${route(program,reference,true)}">${actionVerb(program)} the playable version →</a>`;
-  app.innerHTML=playing?`<section class="player-section"><header class="player-header"><a href="${webProgram?collectionUrl.href:'#/'}">Collection</a><h1>${escape(program.title)}</h1>${implementationTabs}</header><div class="player-workspace"><div id="display" class="screen" tabindex="0" aria-label="Loading player"></div><aside id="control-dock" aria-label="Game controls"><div class="essential-controls"><button id="help">Help</button><button id="pause">Pause</button><button id="restart">${escape(program.restartLabel?.(modern)??'Restart')}</button><button id="fullscreen">Full screen</button></div><p id="status" role="status">Loading ${modern?'the browser version':'the original program'}…</p></aside></div><details class="keyboard-help" ${modern?'':'open'} ${program.onScreenKeys(version).length?'':'hidden'}><summary>Original keyboard controls</summary><div class="quick-controls" aria-label="On-screen game keys">${program.onScreenKeys(version).map(group=>`<div class="key-group${group.pad?' key-pad':''}"><span class="key-group-label">${escape(group.label)}</span><div>${[...group.keys,...(group.extra??[])].map(([k,action])=>`<button class="game-key" data-key="${k}" aria-label="Game key ${k===' '?'Space':escape(k)}"><kbd>${k===' '?'Space':escape(k.toUpperCase())}</kbd><span>${escape(action)}</span></button>`).join('')}</div></div>`).join('')}</div><p>${escape(program.quickHelp(version))}</p></details>${sourceDetails}</section>`:`${crumbs(program)}<section class="source-only"><h1>${escape(program.title)} · ${escape(version.id.toUpperCase())}</h1>${implementationTabs}${unavailable}</section>${sourceDetails}`;
+  app.innerHTML=playing?`<section class="player-section"><header class="player-header"><a href="${collectionHref(program)}">Collection</a><h1>${escape(program.title)}</h1>${implementationTabs}</header><div class="player-workspace"><div id="display" class="screen" tabindex="0" aria-label="Loading player"></div><aside id="control-dock" aria-label="Game controls"><div class="essential-controls"><button id="help">Help</button><button id="pause">Pause</button><button id="restart">${escape(program.restartLabel?.(modern)??'Restart')}</button><button id="fullscreen">Full screen</button></div><p id="status" role="status">Loading ${modern?'the browser version':'the original program'}…</p></aside></div><details class="keyboard-help" ${modern?'':'open'} ${program.onScreenKeys(version).length?'':'hidden'}><summary>Original keyboard controls</summary><div class="quick-controls" aria-label="On-screen game keys">${program.onScreenKeys(version).map(group=>`<div class="key-group${group.pad?' key-pad':''}"><span class="key-group-label">${escape(group.label)}</span><div>${[...group.keys,...(group.extra??[])].map(([k,action])=>`<button class="game-key" data-key="${k}" aria-label="Game key ${k===' '?'Space':escape(k)}"><kbd>${k===' '?'Space':escape(k.toUpperCase())}</kbd><span>${escape(action)}</span></button>`).join('')}</div></div>`).join('')}</div><p>${escape(program.quickHelp(version))}</p></details>${sourceDetails}</section>`:`${crumbs(program)}<section class="source-only"><h1>${escape(program.title)} · ${escape(version.id.toUpperCase())}</h1>${implementationTabs}${unavailable}</section>${sourceDetails}`;
   window.scrollTo(0,0);
   if (!playing) return;
   const host=document.querySelector('#display'), status=document.querySelector('#status');
   try {
     const {createPlayer}=modern?await program.loadModernPlayer():await import('./emulator.js');
     if(thisNavigation!==navigation)return;
-    const instance=await createPlayer(host,assetUrl(program,version.raw),status,program.title,version.machineCode?{...version.machineCode,url:assetUrl(program,version.machineCode.file)}:undefined,{running:modern?undefined:version.running,model:modern?undefined:program.model});
+    const instance=await createPlayer(host,assetUrl(program,version.raw),status,program.title,version.machineCode?{...version.machineCode,url:assetUrl(program,version.machineCode.file)}:undefined,{running:modern?undefined:version.running,model:modern?undefined:program.model,printer:!modern&&program.printer});
     if(thisNavigation!==navigation){instance.dispose();return;}
     player=instance;activeRoute=sessionKey;
     host.querySelector('#control-dock').append(app.querySelector('.keyboard-help'));

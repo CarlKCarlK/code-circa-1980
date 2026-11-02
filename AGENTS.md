@@ -180,3 +180,12 @@ commands from `app/`; they explicitly select the relocated configuration.
 Preserve `programs/` historical paths and all frozen `public/<program>/vN/` bytes.
 The user has authorized pushing verified changes and deploying GitHub Pages;
 complete deployment and check the live result before reporting it ready.
+
+## Unlinked second gallery
+
+Programs with `gallery: "more"` appear only at `#/more`, not on the main gallery.
+Keep this gallery and its programs unlinked from the main collection until the
+user requests otherwise. Reuse shared gallery markup and player controls.
+Speech and Olympics are separate entries even though their code is related.
+The X-wing identity remains tentative. Coaching games capture the original
+Model III printer-port output in a roster panel without altering recovered BASIC.

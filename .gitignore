@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 dist/
 playwright-report/
 test-results/
@@ -10,3 +10,5 @@ programs/chess/rust/target/
 programs/chess/rating/third_party/
 programs/chess/rating/uci/target/
 programs/chess/rating/config.json
+
+/worktrees/
