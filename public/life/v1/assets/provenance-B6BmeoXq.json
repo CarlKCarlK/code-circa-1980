@@ -1,0 +1,52 @@
+{
+  "version": "v03",
+  "capture": "tape3a",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.BAS",
+  "archive_listing": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v03/02-OLYMPICS-1980-CARL-KADIE.BAS",
+      "archive_path": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.BAS",
+      "bytes": 7485,
+      "sha256": "364c5a0ef5e8e95d18cf93310aa2f8e1accdfa6fcab86dea8d58250686a7df23"
+    },
+    {
+      "path": "versions/v03/02-OLYMPICS-1980-CARL-KADIE.ASC",
+      "archive_path": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.ASC",
+      "bytes": 9258,
+      "sha256": "419414424a049a44c967ea442087ac7e58eae411db9d5399826ad02a2087ecd9"
+    }
+  ],
+  "recovery_item": {
+    "lines": 232,
+    "last": 2290,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "364c5a0ef5e8e95d18cf93310aa2f8e1accdfa6fcab86dea8d58250686a7df23"
+  },
+  "inventory_row": {
+    "tape": "3",
+    "side": "a",
+    "order": "2",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "OLYMPICS 1980 CARL KADIE; 232 lines",
+    "capture": "tape3a",
+    "capture_scope": "full",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload",
+    "validation": "232 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+    "source_start_s": "",
+    "recovered_bytes": "7485",
+    "source_file": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.ASC",
+    "wav": "tapes/tape3a.wav",
+    "folder": "tapes/recovered/tape3a/best",
+    "recovery_date": "2026-10-25",
+    "recorder_volume": "5/10",
+    "next_action": "Execution-test"
+  },
+  "recovery_inventory": "tapes/recovered/tape3a/inventory.json",
+  "execution_tested": false
+}
