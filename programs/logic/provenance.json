@@ -162,6 +162,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape15b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape15b",
+      "save": 17,
+      "archive_raw": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.BAS",
+          "archive_path": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.BAS",
+          "bytes": 4930,
+          "sha256": "f4bad7b14c7509744387f158aae6bc955ebd0fb519fc8c3888f07adb79d8034f"
+        },
+        {
+          "path": "versions/v04/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.ASC",
+          "archive_path": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.ASC",
+          "bytes": 5837,
+          "sha256": "596a404f3b53012853f36e09550514b6149e21ba925e1841e6cc83ac5feaebc3"
+        }
+      ],
+      "recovery_item": {
+        "lines": 95,
+        "last": 1630,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "f4bad7b14c7509744387f158aae6bc955ebd0fb519fc8c3888f07adb79d8034f"
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "b",
+        "order": "17",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LOGIC CIRCUIT SIMULATOR SAVE 4; 95 lines",
+        "capture": "tape15b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "source_start_s": "1472.361",
+        "recovered_bytes": "4930",
+        "source_file": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.ASC",
+        "wav": "tapes/tape15b.wav",
+        "folder": "tapes/recovered/tape15b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape15b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
