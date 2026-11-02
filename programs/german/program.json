@@ -75,6 +75,17 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v07",
+      "label": "GERMAN VOCABULARY TEMPLATE SAVE01",
+      "capture": "tape25a",
+      "save": 9,
+      "raw": "versions/v07/09-GERMAN-VOCABULARY-TEMPLATE-SAVE01.BAS",
+      "listing": "versions/v07/09-GERMAN-VOCABULARY-TEMPLATE-SAVE01.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
