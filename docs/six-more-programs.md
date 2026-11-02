@@ -63,5 +63,8 @@ PLAYWRIGHT_BASE_URL=http://127.0.0.1:5187 PLAYWRIGHT_WORKERS=3 npm run test:brow
 ```
 
 The six startup/control checks and six direct frozen-v1 checks live in
-app/tests/browser/learning.spec.js. Final regression results follow completion
-of the full suite.
+app/tests/browser/learning.spec.js. Final regression on November 2, 2026: **83 browser checks passed, one existing
+check skipped**. The full run includes the six original startup/control checks,
+six clean frozen-v1 checks, and prior main/extra-gallery regressions. Unit/archive
+checks, production build, and all 20 release-integrity checks also passed.
+The working tree was clean after local commits; nothing was merged or deployed.
