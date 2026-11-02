@@ -1,0 +1,25 @@
+{
+  "id": "magazine",
+  "title": "Magazine Index",
+  "description": "An alphabetized subject index of historical magazine articles, printed by the original BASIC.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v11",
+  "versionOrder": "Inferred from source changes: empty templates precede data-bearing forms, and tape7a V2 through V6 expand formatting and article data. Cross-tape template order is uncertain. V6 is the selected complete index.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Magazine article subject index V1",
+      "capture": "tape7a",
+      "save": 1,
+      "raw": "versions/v01/01-MAGAZINE-ARTICLE-INDEX-V1.BAS",
+      "listing": "versions/v01/01-MAGAZINE-ARTICLE-INDEX-V1.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. 10 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
