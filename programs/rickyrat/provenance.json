@@ -318,6 +318,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape18b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v07",
+      "capture": "tape18b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape18b/best/08-RICKY-RAT-V6.BAS",
+      "archive_listing": "tapes/recovered/tape18b/best/08-RICKY-RAT-V6.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v07/08-RICKY-RAT-V6.BAS",
+          "archive_path": "tapes/recovered/tape18b/best/08-RICKY-RAT-V6.BAS",
+          "bytes": 4528,
+          "sha256": "f1dcc545bd4392ddea2abc9ffab570c4169b3619320407c63c7d9306926b127c"
+        },
+        {
+          "path": "versions/v07/08-RICKY-RAT-V6.ASC",
+          "archive_path": "tapes/recovered/tape18b/best/08-RICKY-RAT-V6.ASC",
+          "bytes": 5474,
+          "sha256": "101f6a55c42d1136c2c06d0f4aa9471ac7cad72a7fc3ce19b4ceb5363c590bb0"
+        }
+      ],
+      "recovery_item": {
+        "lines": 168,
+        "last": 5020,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "f1dcc545bd4392ddea2abc9ffab570c4169b3619320407c63c7d9306926b127c"
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "b",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "RICKY RAT V6",
+        "capture": "tape18b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "479.065",
+        "recovered_bytes": "4528",
+        "source_file": "tapes/recovered/tape18b/best/08-RICKY-RAT-V6.ASC",
+        "wav": "tapes/tape18b.wav",
+        "folder": "tapes/recovered/tape18b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
