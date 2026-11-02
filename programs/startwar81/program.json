@@ -1,6 +1,6 @@
 {
-  "id": "xwing",
-  "title": "startwar81",
+  "id": "startwar81",
+  "title": "Star Wars cockpit",
   "description": "A tentative match: fly a Star Wars cockpit, evade fighters, and attack the Death Star.",
   "kind": "Game",
   "language": "Level II BASIC",
@@ -31,5 +31,9 @@
       "note": "Untouched recovered payload. Exact left/right payload; 40 ordered lines; consistent pointer base 17125; end marker; exact EOF",
       "unavailableReason": "Source only. This site plays the selected complete reference version."
     }
-  ]
+  ],
+  "legacyProgramIds": [
+    "xwing"
+  ],
+  "titleNote": "Descriptive display title inferred from the cockpit and Star Wars messages; no explicit title appears in either listing."
 }

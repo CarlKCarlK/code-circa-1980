@@ -86,3 +86,12 @@ The final branch is `second-gallery`. Open tools/code-circa-1980.code-workspace
 in this worktree to keep the website and recovery archive together. The local
 preview is at http://127.0.0.1:5187/#/more. This work is committed locally and
 has not been merged, pushed, or deployed.
+
+## Short name and display title
+
+Use `startwar81` for the folder, program ID, and new URLs. The visible title is
+**Star Wars cockpit**, a descriptive label because neither recovered listing
+prints an explicit title. Old xwing/v1 and xwing/v2 snapshots and their catalog
+remain unchanged. The current catalog carries those releases forward; new
+releases use startwar81 paths. Legacy xwing hash/query routes remain aliases.
+Original tag names and committed file paths remain intact as historical evidence.

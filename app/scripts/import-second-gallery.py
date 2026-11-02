@@ -1,8 +1,12 @@
-"""Import unchanged recovered snapshots; --commit retains canonical Git history."""
+"""Historical initial import method, before xwing was renamed to startwar81.
+
+Retained for provenance; use Git history to reproduce the original import.
+"""
 import argparse, csv, hashlib, json, shutil, subprocess
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('archive',type=Path);p.add_argument('--commit',action='store_true');args=p.parse_args()
 root=Path(__file__).resolve().parents[2];archive=args.archive.resolve()
+if (root/'programs/startwar81').exists():raise SystemExit('Initial import already migrated to startwar81; refusing to reimport.')
 rows=list(csv.DictReader((archive/'tape-inventory.tsv').open(encoding='utf-8-sig'),delimiter='\t'))
 def digest(b):return hashlib.sha256(b).hexdigest()
 def write(p,obj):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(obj,indent=2)+'\n')

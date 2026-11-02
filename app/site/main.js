@@ -45,7 +45,7 @@ async function render() {
   player=null;activeRoute=null;delete window.__circaPlayer;
   const parts=routeParts(location.hash,webProgram,location.search);
   const more=parts[0]==='more';
-  const currentProgram=allPrograms.find(p=>parts[0]==='program'&&p.id===parts[1]);
+  const currentProgram=allPrograms.find(p=>parts[0]==='program'&&(p.id===parts[1]||p.legacyProgramIds?.includes(parts[1])));
   document.querySelector('.brand').href=collectionHref(more?{gallery:'more'}:currentProgram);
   document.querySelector('meta[name="robots"]')?.remove();
   if(more||currentProgram?.gallery==='more'){

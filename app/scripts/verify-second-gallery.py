@@ -4,12 +4,13 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[2]
 def sha(b):return hashlib.sha256(b).hexdigest()
 count=0
-for slug in ['speech','olympics','xwing']:
+for slug in ['speech','olympics','startwar81']:
  folder=root/'programs'/slug;e=json.loads((folder/'provenance.json').read_text())
+ history=e.get('canonical_history_id',slug)
  for save in e['saves']:
   for f in save['imported_files']:
    b=(folder/f['path']).read_bytes();assert len(b)==f['bytes'] and sha(b)==f['sha256']
-   canonical=f'programs/{slug}/original/{slug.upper()}{Path(f["path"]).suffix}'
+   canonical=f'programs/{history}/original/{history.upper()}{Path(f["path"]).suffix}'
    committed=subprocess.check_output(['git','show',f'{slug}-{save["version"]}:{canonical}'],cwd=root)
    assert sha(committed)==f['sha256'],canonical
   count+=1
