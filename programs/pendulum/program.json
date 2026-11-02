@@ -20,6 +20,18 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "PENDULUM",
+      "capture": "tape22a",
+      "save": 5,
+      "raw": "versions/v02/05-PENDULUM.BAS",
+      "listing": "versions/v02/05-PENDULUM.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": null
     }
   ]
 }
