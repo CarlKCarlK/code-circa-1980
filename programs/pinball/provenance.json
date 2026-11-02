@@ -318,6 +318,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v07",
+      "capture": "tape12a",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape12a/best/11-PINBALL.BAS",
+      "archive_listing": "tapes/recovered/tape12a/best/11-PINBALL.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v07/11-PINBALL.BAS",
+          "archive_path": "tapes/recovered/tape12a/best/11-PINBALL.BAS",
+          "bytes": 2239,
+          "sha256": "b98f04f9437b37f91bd65d30d3277322822f25c65fe96886e5f85c6a6b0f6122"
+        },
+        {
+          "path": "versions/v07/11-PINBALL.ASC",
+          "archive_path": "tapes/recovered/tape12a/best/11-PINBALL.ASC",
+          "bytes": 2867,
+          "sha256": "c0eda0c527dbc02b1e1a380d8a0058d849e6425a11202c0fa92628fa9252fccb"
+        }
+      ],
+      "recovery_item": {
+        "lines": 34,
+        "last": 750,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "b98f04f9437b37f91bd65d30d3277322822f25c65fe96886e5f85c6a6b0f6122"
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "a",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL; 34 lines",
+        "capture": "tape12a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+        "source_start_s": "760.490",
+        "recovered_bytes": "2239",
+        "source_file": "tapes/recovered/tape12a/best/11-PINBALL.ASC",
+        "wav": "tapes/tape12a.wav",
+        "folder": "tapes/recovered/tape12a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {

@@ -74,6 +74,18 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v07",
+      "label": "PINBALL",
+      "capture": "tape12a",
+      "save": 11,
+      "raw": "versions/v07/11-PINBALL.BAS",
+      "listing": "versions/v07/11-PINBALL.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+      "unavailableReason": null
     }
   ]
 }
