@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 const screen=page=>page.evaluate(()=>window.__circaPlayer?String.fromCharCode(...window.__circaPlayer.snapshot().map(c=>c<32?c+64:c>=128?32:c)):'');
-const boot=async(page,id)=>{page.on('dialog',d=>d.accept());await page.goto(`/?development=1&test#/program/${id}`);await expect(page.locator('#status')).toContainText(id==='life'?'Running original Z80':id==='poker'?'Running corrected BASIC':'Running original BASIC');};
+const boot=async(page,id)=>{page.on('dialog',d=>d.accept());await page.goto(`/?development=1&test#/program/${id}`);await expect(page.locator('#status')).toContainText(id==='life'?'Running corrected Z80':id==='poker'?'Running corrected BASIC':'Running original BASIC');};
 const answer=async(page,value)=>{const field=page.getByRole('textbox',{name:'Answer for the original program'});await expect(field).toBeEnabled();await field.fill(value);await page.getByRole('button',{name:'Send + Enter'}).click();await expect(field).toBeEnabled();};
 const tap=async(page,key)=>{await page.locator('#display').focus();await page.keyboard.down(key);await page.waitForTimeout(150);await page.keyboard.up(key);};
 const capture=async(page,id)=>{if(process.env.CAPTURE_GALLERY_ART==='1'){if(id==='magazine'){await page.locator('.printer-output').evaluate(node=>{node.style.width='680px';const pre=node.querySelector('pre');pre.style.height='360px';pre.style.overflow='hidden';});await page.locator('.printer-output').screenshot({path:`assets/${id}-screen.png`});}else await page.locator('#display canvas').screenshot({path:`assets/${id}-screen.png`});}};
@@ -24,8 +24,8 @@ test('Magazine Index sends original article references to the printer and restar
 test('Poker deals a hand and accepts a fold',async({page})=>{
  test.setTimeout(90000);await boot(page,'poker');await expect.poll(()=>screen(page),{timeout:40000}).toContain('YOUR HAND');await expect.poll(()=>screen(page),{timeout:20000}).toContain('BET');await capture(page,'poker');await answer(page,'0');await noError(page);await expect.poll(()=>screen(page),{timeout:20000}).toMatch(/FOLD|ANTE|WIN|DEAL/);await restart(page,'YOUR HAND');
 });
-test('LIFE enters its original assembly editor and runs a drawn pattern',async({page})=>{
- test.setTimeout(90000);await boot(page,'life');await page.waitForTimeout(1800);
+for(const release of [false,true])test(`LIFE ${release?'web v2':'development'} enters its corrected assembly editor and runs a drawn pattern`,async({page})=>{
+ test.setTimeout(90000);if(release){await page.goto('/life/v2/?test');await expect(page.locator('#status')).toContainText('Running corrected Z80');await expect(page.getByRole('link',{name:'Download assembled Z80 payload',exact:true})).toBeVisible();}else await boot(page,'life');await page.waitForTimeout(1800);
  for(const key of [' ','ArrowRight',' ','ArrowRight',' ']){await page.locator('#display').focus();await page.keyboard.down(key);await page.waitForTimeout(90);await page.keyboard.up(key);await page.waitForTimeout(400);}
  const before=await page.evaluate(()=>window.__circaPlayer.snapshot());expect(before.filter(c=>c>128&&c<192).length).toBeGreaterThan(0);await tap(page,'Enter');await expect.poll(()=>page.evaluate(()=>window.__circaPlayer.snapshot()),{timeout:25000}).not.toEqual(before);await page.waitForTimeout(11000);await capture(page,'life');await noError(page);await tap(page,'Escape');await expect.poll(()=>page.evaluate(()=>window.__circaPlayer.snapshot().filter(c=>c>128&&c<192).length),{timeout:25000}).toBeLessThanOrEqual(1);await restart(page);await page.waitForTimeout(1500);expect(await page.evaluate(()=>window.__circaPlayer.snapshot().filter(c=>c>128&&c<192).length)).toBeLessThanOrEqual(1);
 });

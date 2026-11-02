@@ -243,3 +243,12 @@ Poker now plays only the minimally corrected derivative of tape12b save 6
 The patch reverses line 2190, removes debug STOP 1005, corrects THEEN at 3310,
 and fixes quoted spelling. Keep its web release at unshared v1. Tests cover
 executable patch scope, real-ROM card evaluation/drawing, and browser showdown.
+
+On November 2, 2026, the user requested a new LIFE version fixing its corner-copy
+bug. LIFE now advances to immutable web v2; preserve its existing web v1.
+The one playable edition is the corrected derivative of v06 in
+`programs/life/corrected/`: LD BC,991 becomes LD BC,992 after CALL GEN.
+Run `npm run build:life-corrected` to reproduce it; `build:life` still reproduces
+the untouched recovered-source assembly in `derived/`. The full-loop Z80 tests
+cover six generations of stationary, oscillating, moving, and wrapped patterns,
+plus the old corner failure. Preserve recovered sources and both derived builds.

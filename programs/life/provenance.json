@@ -363,5 +363,16 @@
     "path": "app/assets/life-screen.png",
     "sha256": "44edf5a8cc78c540e4fb05269194a6db41db6719becd05c724bb23b7ff4679a6",
     "method": "Captured from original emulator canvas; original aspect ratio retained."
-  }
+  },
+  "derived_editions": [
+    {
+      "id": "corrected-v06",
+      "source": "tape10b save 6 (v06)",
+      "path": "corrected/",
+      "build_manifest": "corrected/build.json",
+      "sha256": "957cf51a782da8cfa5343cfcd378c40a7c1d65a812e86ce17a4dc3e8104225de",
+      "changes": "Change LD BC,991 to LD BC,992 after CALL GEN, copying the final active-field character. Prepend ORG 8000H for assembly. No other instructions changed.",
+      "execution_testing": "Six complete generations each of block, blinker, glider, edge blinker, corner glider, and isolated bottom-right cell compared with Conway rules in the actual Z80 emulator; untouched executable reproduces corner failure. See VERIFICATION.md."
+    }
+  ]
 }

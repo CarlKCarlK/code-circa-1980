@@ -1,12 +1,12 @@
 {
   "id": "life",
   "title": "LIFE",
-  "description": "Draw a population and watch the original Z80 assembly run Conway\u2019s Game of Life.",
+  "description": "Draw a population and watch Z80 assembly run Conway\u2019s Game of Life, with the corner-copy bug corrected.",
   "kind": "Game",
   "language": "Z80 assembly",
   "gallery": "more",
   "showWebVersions": false,
-  "unsharedWebV1": true,
+  "unsharedWebV1": false,
   "defaultVersion": "v06",
   "versionOrder": "Six consecutive EDTASM source saves, ordered by within-side sequence and code changes. Source dates are unknown. The last complete source is assembled separately for execution; the recovered compiled recording is only a header.",
   "versions": [
