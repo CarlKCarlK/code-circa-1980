@@ -42,6 +42,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v04",
+      "label": "MAGAZINE INDEX",
+      "capture": "tape7b",
+      "save": 1,
+      "raw": "versions/v04/01-MAGAZINE-INDEX.BAS",
+      "listing": "versions/v04/01-MAGAZINE-INDEX.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. 10 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }

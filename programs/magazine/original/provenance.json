@@ -1,52 +1,52 @@
 {
-  "version": "v03",
-  "capture": "tape11a",
-  "save": 3,
-  "archive_raw": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.BAS",
-  "archive_listing": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.ASC",
+  "version": "v04",
+  "capture": "tape7b",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.BAS",
+  "archive_listing": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.ASC",
   "imported_files": [
     {
-      "path": "versions/v03/03-MAGAZINE-SUBJECT-INDEX.BAS",
-      "archive_path": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.BAS",
-      "bytes": 665,
-      "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+      "path": "versions/v04/01-MAGAZINE-INDEX.BAS",
+      "archive_path": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.BAS",
+      "bytes": 703,
+      "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
     },
     {
-      "path": "versions/v03/03-MAGAZINE-SUBJECT-INDEX.ASC",
-      "archive_path": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.ASC",
-      "bytes": 868,
-      "sha256": "f4981b90a5988884188ac2d107dfc1f6e7af62e26a922e0e3d20860f0b3500b9"
+      "path": "versions/v04/01-MAGAZINE-INDEX.ASC",
+      "archive_path": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.ASC",
+      "bytes": 906,
+      "sha256": "ae30841e92bbb04075e905d25b1c5fbaf7a5927bd7dfd740782bc6d21f1da128"
     }
   ],
   "recovery_item": {
     "lines": 10,
     "last": 999,
-    "pointer_base": 17125,
+    "pointer_base": 22204,
     "normal_end_marker": true,
-    "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+    "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
   },
   "inventory_row": {
-    "tape": "11",
-    "side": "a",
-    "order": "3",
+    "tape": "7",
+    "side": "b",
+    "order": "1",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "MAGAZINE SUBJECT INDEX; 10 lines",
-    "capture": "tape11a",
+    "summary": "MAGAZINE INDEX; 10 readable line records",
+    "capture": "tape7b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
-    "validation": "Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
-    "source_start_s": "91.707",
-    "recovered_bytes": "665",
-    "source_file": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.ASC",
-    "wav": "tapes/tape11a.wav",
-    "folder": "tapes/recovered/tape11a/best",
-    "recovery_date": "2026-10-27",
+    "validation": "10 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+    "source_start_s": "",
+    "recovered_bytes": "703",
+    "source_file": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.ASC",
+    "wav": "tapes/tape7b.wav",
+    "folder": "tapes/recovered/tape7b/best",
+    "recovery_date": "2026-10-26",
     "recorder_volume": "",
-    "next_action": "Execution-test with compatible runtime"
+    "next_action": "Execution-test; keep printer output for index programs"
   },
-  "recovery_inventory": "tapes/recovered/tape11a/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape7b/inventory.json",
   "execution_tested": false
 }
