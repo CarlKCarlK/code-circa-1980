@@ -20,6 +20,17 @@
       "playable": false,
       "note": "Untouched recovered save. Valid EDTASM source records and 1A end; exact left/right timing matches; not assembled",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "LIFE ASSEMBLY V2",
+      "capture": "tape10b",
+      "save": 2,
+      "raw": "versions/v02/02-LIFE-ASSEMBLY-V2.ASM",
+      "listing": "versions/v02/02-LIFE-ASSEMBLY-V2.TXT",
+      "playable": false,
+      "note": "Untouched recovered save. Valid EDTASM source records and 1A end; exact left/right timing matches; not assembled",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
