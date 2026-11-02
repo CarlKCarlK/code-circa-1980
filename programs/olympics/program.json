@@ -1,0 +1,23 @@
+{
+  "id": "olympics",
+  "title": "Olympics",
+  "description": "Coach a nation\u2019s team through invented Olympic events, training, and medal ceremonies.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "defaultVersion": "v03",
+  "versionOrder": "Inferred: tape3apartial save 1 and tape3a save 1 are identical repeated captures of the earlier form; tape3a save 2 adds the 1980 copyright, revised event names and further checks. Capture order alone does not date the program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "tape3apartial \u00b7 save 1",
+      "capture": "tape3apartial",
+      "save": 1,
+      "raw": "versions/v01/OLYMPICS.BAS",
+      "listing": "versions/v01/OLYMPICS.ASC",
+      "playable": false,
+      "note": "Untouched recovered payload. Filtered left and normalized right yield identical 7134 bytes; normal BASIC end marker; not execution-tested",
+      "unavailableReason": "Source only. This site plays the selected complete reference version."
+    }
+  ]
+}
