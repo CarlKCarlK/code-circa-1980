@@ -3,7 +3,7 @@
 Every program is published at web v1. Changes below become v2; v1 URLs stay frozen.
 Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
 
-- [ ] README points to the gallery. Link the main call to action and the Castles
+- [x] README points to the gallery. Link the main call to action and the Castles
       image to `https://carlkcarlk.github.io/code-circa-1980/`. Keep only a short
       list of program names, with no direct player or release links (decide whether
       to keep `programs/<slug>/` source links). Keep About, License, and AI policy.
