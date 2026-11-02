@@ -18,6 +18,17 @@
       "playable": false,
       "note": "Untouched recovered payload. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. This site plays the selected complete reference version."
+    },
+    {
+      "id": "v02",
+      "label": "tape20a \u00b7 save 6",
+      "capture": "tape20a",
+      "save": 6,
+      "raw": "versions/v02/06-SPEECH-COACHING-DRAFT03.BAS",
+      "listing": "versions/v02/06-SPEECH-COACHING-DRAFT03.ASC",
+      "playable": false,
+      "note": "Untouched recovered payload. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. This site plays the selected complete reference version."
     }
   ]
 }
