@@ -58,6 +58,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape7a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.BAS",
+          "bytes": 665,
+          "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+        },
+        {
+          "path": "versions/v02/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.ASC",
+          "bytes": 868,
+          "sha256": "f4981b90a5988884188ac2d107dfc1f6e7af62e26a922e0e3d20860f0b3500b9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 10,
+        "last": 999,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V1; 10 lines; duplicate of save 1",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "10 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "665",
+        "source_file": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
