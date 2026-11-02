@@ -42,6 +42,18 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v04",
+      "label": "PEORIA GRAND PRIX",
+      "capture": "tape15b",
+      "save": 12,
+      "raw": "versions/v04/12-PEORIA-GRAND-PRIX.BAS",
+      "listing": "versions/v04/12-PEORIA-GRAND-PRIX.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+      "unavailableReason": null
     }
   ]
 }
