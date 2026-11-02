@@ -1,24 +1,25 @@
 # Verification
 
-Imported November 2, 2026. Recovery validation is separate from execution.
-`cd app && npm test` validates complete snapshot hashes, BASIC pointer chains,
-end markers, ordered line numbers, and listings. Run
-`python3 app/scripts/verify-second-gallery.py` to check the canonical tags,
-current originals, partial hashes, and untouched raw prefix ranges.
+The selected player is now tape30a save 2 (v02), the later arrow-key form.
+Tape23b save 5 (v01) remains source only. Both complete raw payloads and listings,
+canonical tagged blobs, and the damaged prefix/raw ranges were hash-checked.
 
-The browser check runs v01 (tape23b save 5), enters CODE 1, reaches the cockpit,
-checks radar movement while holding digit 4, and exercises pause/resume and
-restart. Results are in docs/second-gallery.md. An initial check incorrectly
-required the fleeting countdown value 300; it already read 293 when inspected.
+The earlier note treating '[' at line 190 as suspect was incorrect. The installed
+trs80-base 2.3.1 token table uses '[' for exponentiation. Original-ROM execution
+of `PRINT 2[3` prints 8. A direct ROM/Z80 run of the untouched v02 reaches the
+cockpit, its countdown begins, and ArrowLeft changes the radar. The browser
+check also exercises the selected arrow controls, pause/resume, and restart.
+No payload bytes were changed to choose this later version.
 
-No claim of a completed Death Star attack or exhaustive control testing.
-The X-wing identification remains tentative. v02 is source only because its
-alternate control expression at line 190 is suspect. No recovery bytes have
-been repaired or replaced. The damaged earlier save remains separate.
+No claim of a completed Death Star mission, exhaustive combat/bomb testing, or
+confirmed X-wing identification. Headers store only cassette name S. The user
+specified starwars81 as the internal/URL short name; the display title is the
+descriptive Star Wars cockpit because neither listing prints an explicit title.
 
-The internal identifier was migrated from xwing to startwar81 after the user
-clarified the naming preference. Neither listing prints an explicit title; the
-user-facing title is the descriptive "Star Wars cockpit." New playback uses
-startwar81/v3. Old xwing/v1 and v2 releases remain byte for byte unchanged, and
-legacy hash/query routes resolve to the current short name. All canonical tag
-blobs and payload hashes were rechecked after the folder/file rename.
+The user authorized resetting unshared extras to web v1; only the best player
+is offered, with earlier saves under Source. The original published main-gallery
+releases are outside this exception. Final results are in docs/second-gallery.md
+and docs/four-more-programs.md at the repository root.
+
+Reproduce the original-ROM operator and control probe from the repository root:
+`node app/scripts/probe-starwars-controls.mjs`.

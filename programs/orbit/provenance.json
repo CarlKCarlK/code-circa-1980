@@ -322,6 +322,14 @@
   ],
   "dating": {
     "direct_date": null,
-    "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+    "search": "No direct year/date found in the selected simulator or sampled readable neighboring tape11a/tape11b BASIC listings.",
+    "caution": "No creation or save date established. Tape11b capture caveats are retained from its inventory, not applied to other programs."
+  },
+  "artwork": {
+    "kind": "Original emulator canvas screenshot",
+    "path": "app/assets/orbit-screen.png",
+    "sha256": "69348229308946420bda93215a51e761f1255e0ef0c97c0f23b658399e64f1b8",
+    "reference": "v06",
+    "method": "CAPTURE_GALLERY_ART=1 with tests/browser/experiments.spec.js; native canvas aspect ratio, Model III font and cobalt palette."
   }
 }

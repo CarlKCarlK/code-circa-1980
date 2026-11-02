@@ -9,14 +9,14 @@ test('second gallery is separate and unlinked; cards launch players directly',as
  await expect(page.locator('a[href*="more"],a[href*="speech"],a[href*="olympics"],a[href*="starwars81"]')).toHaveCount(0);
  await page.goto('/#/more');
  await expect(page.getByRole('heading',{level:1})).toContainText('the tapes.');
- await expect(page.locator('.program-card')).toHaveCount(3);
- await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','Star Wars cockpit']);
+ await expect(page.locator('.program-card')).toHaveCount(7);
+ await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','Star Wars cockpit','Ricky Rat','Pinball','Logic circuit simulator','Orbit simulator']);
  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content','noindex, nofollow');
  await page.getByRole('link',{name:'Play Speech →'}).click();
  await expect(page.locator('#display')).toBeVisible();
  await expect(page.locator('.player-header').getByRole('link',{name:'Collection',exact:true})).toHaveAttribute('href',/#\/more$/);
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
- await expect(page.locator('.program-card')).toHaveCount(3);
+ await expect(page.locator('.program-card')).toHaveCount(7);
 });
 for(const id of ['speech','olympics'])test(`${id}: original starts, accepts setup input, pauses and restarts`,async({page})=>{
  test.setTimeout(270000);
@@ -50,7 +50,7 @@ for(const id of ['speech','olympics'])test(`${id}: original starts, accepts setu
  await expect.poll(()=>text(page),{timeout:15000}).not.toContain('THE EVENTS ARE');
  expect(errors).toEqual([]);
 });
-test('X-wing candidate starts, digit controls move the cockpit, and restart returns to CODE',async({page})=>{
+test('X-wing candidate starts, arrow controls move the cockpit, and restart returns to CODE',async({page})=>{
  test.setTimeout(90000);
  await page.goto('/?development=1&test#/program/starwars81');
  await expect.poll(()=>text(page),{timeout:15000}).toContain('CODE');
@@ -60,7 +60,7 @@ test('X-wing candidate starts, digit controls move the cockpit, and restart retu
  await expect.poll(()=>page.evaluate(()=>String.fromCharCode(...window.__circaPlayer.snapshot().slice(250,255))),{timeout:60000}).toMatch(/\d/);
  const radar=()=>page.evaluate(()=>window.__circaPlayer.snapshot().filter((_,i)=>i<192&&i%64>=54));
  const before=await radar();
- await page.keyboard.down('4');await page.waitForTimeout(3500);await page.keyboard.up('4');
+ await page.keyboard.down('ArrowLeft');await page.waitForTimeout(3500);await page.keyboard.up('ArrowLeft');
  const after=await radar();expect(after).not.toEqual(before);
  expect(await text(page)).not.toMatch(/ERROR|SN IN|FC IN/);
  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');
@@ -80,7 +80,7 @@ for(const id of ['speech','olympics','starwars81'])test(`${id}: frozen v1 opens 
  await expect(page.locator('.player-header').getByRole('link',{name:'Collection',exact:true})).toHaveAttribute('href',/#\/more$/);
  await expect(page.getByRole('link',{name:'Download original payload'})).toBeVisible();
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
- await expect(page.locator('.program-card')).toHaveCount(3);
+ await expect(page.locator('.program-card')).toHaveCount(7);
  expect(errors).toEqual([]);
 });
 
@@ -94,7 +94,7 @@ test('starwars81 is the URL name while the cockpit has a descriptive display tit
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
- await expect(page.locator('.program-card')).toHaveCount(3);
+ await expect(page.locator('.program-card')).toHaveCount(7);
 });
 
 test('extra programs offer one best player without web-version choices',async({page})=>{
@@ -105,7 +105,7 @@ test('extra programs offer one best player without web-version choices',async({p
  await expect(page.locator('.version-picker,.web-version-nav')).toHaveCount(0);
  await page.locator('.versions > summary').click();
  await expect(page.locator('.versions li')).toHaveCount(2);
- await page.getByRole('link',{name:/V02/}).click();
+ await page.getByRole('link',{name:/V01/}).click();
  await expect(page.locator('.source-only')).toContainText('Source only');
  await expect(page.locator('#display')).toHaveCount(0);
  await page.getByRole('link',{name:'Play the playable version →'}).click();

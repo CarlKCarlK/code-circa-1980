@@ -374,6 +374,18 @@
   ],
   "dating": {
     "direct_date": null,
-    "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+    "contextual_source_lines": [
+      "tape12a save 2: 10 'TEACH VI                      BY CARL KADIE JAN. 11,1979",
+      "tape12b saves 4/7/8/13: same TEACH VI credit (opposite side)",
+      "tape9a saves 1/5/12: 10 'TEACH III            BY      CARL KADIE    OCT. 21,1978 (opposite side of earlier Pinball saves)"
+    ],
+    "caution": "Neighboring source dates are context, not a Pinball creation/save date."
+  },
+  "artwork": {
+    "kind": "Original emulator canvas screenshot",
+    "path": "app/assets/pinball-screen.png",
+    "sha256": "e23bf7df4721e26e073007f3f22cbeb6367c9bf6ee3f71d32d0a3ba527ee9986",
+    "reference": "v07",
+    "method": "CAPTURE_GALLERY_ART=1 with tests/browser/experiments.spec.js; native canvas aspect ratio, Model III font and cobalt palette."
   }
 }

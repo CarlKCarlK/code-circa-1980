@@ -87,5 +87,6 @@
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
       "unavailableReason": null
     }
-  ]
+  ],
+  "unsharedWebV1": true
 }

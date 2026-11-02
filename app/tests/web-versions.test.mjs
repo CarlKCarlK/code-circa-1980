@@ -1,3 +1,4 @@
+import {planRelease} from '../scripts/release-policy.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
@@ -48,4 +49,15 @@ for(const cleanPath of [false,true])test(`changing an archived asset fails relea
   await fs.writeFile(path.join(snapshot,'index.html'),'<h1>Changed experience</h1>');
   await assert.rejects(verifyWebVersions({root}),/Snapshot integrity failure/);
  }finally {await fs.rm(root,{recursive:true,force:true});}
+});
+
+test('unshared extras remain at v1, while published snapshots cannot be refreshed',()=>{
+ const catalog={versions:[{id:'v1',path:'example/v1/'}]},extra={id:'example',gallery:'more',unsharedWebV1:true};
+ assert.deepEqual(planRelease(extra,{versions:[]}),{version:'v1',replace:false});
+ assert.throws(()=>planRelease(extra,catalog),/stays at v1/);
+ assert.deepEqual(planRelease(extra,catalog,{refreshUnshared:true}),{version:'v1',replace:true});
+ assert.throws(()=>planRelease({...extra,gallery:undefined},catalog,{refreshUnshared:true}),/Only an explicitly marked/);
+ assert.throws(()=>planRelease({...extra,unsharedWebV1:false},catalog,{refreshUnshared:true}),/Only an explicitly marked/);
+ assert.throws(()=>planRelease(extra,{versions:[...catalog.versions,{id:'v2',path:'example/v2/'}]},{refreshUnshared:true}),/Only an explicitly marked/);
+ assert.deepEqual(planRelease({id:'example'},catalog),{version:'v2',replace:false});
 });

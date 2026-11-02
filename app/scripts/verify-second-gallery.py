@@ -4,8 +4,9 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[2]
 def sha(b):return hashlib.sha256(b).hexdigest()
 count=0
-for slug in ['speech','olympics','starwars81']:
+for slug in ['speech','olympics','starwars81','rickyrat','pinball','logic','orbit']:
  folder=root/'programs'/slug;e=json.loads((folder/'provenance.json').read_text())
+ if 'artwork' in e:assert sha((root/e['artwork']['path']).read_bytes())==e['artwork']['sha256']
  history=e.get('canonical_history_id',slug)
  for save in e['saves']:
   for f in save['imported_files']:

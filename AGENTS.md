@@ -202,3 +202,16 @@ iterations may replace their unshared v1 snapshots. Offer one best playable
 version, without web-version menus. Other recovered versions are source only.
 This exception does not permit changing any previously published main-gallery
 release. Use `starwars81` exactly for the cockpit game's internal and URL name.
+
+For local v1 iterations, mark extra programs with `unsharedWebV1: true`, commit
+the source, and run `npm run release:web -- <id> --refresh-unshared-v1`. The
+release helper refuses this option for main-gallery/published programs and
+refuses to advance these extras to v2 automatically. New extras use the normal
+release command once to create v1. Use `showWebVersions: false` here.
+
+Ricky Rat, Pinball, the logic-circuit simulator, and the orbit simulator were
+also requested for the unlinked gallery on November 2, 2026. Their compact IDs
+are rickyrat, pinball, logic, and orbit; they follow the same unshared-v1 policy.
+Gallery artwork for these four is captured from the actual original players at
+native canvas aspect ratio. Only set CAPTURE_GALLERY_ART=1 when intentionally
+refreshing those PNGs; ordinary browser tests must not alter tracked artwork.

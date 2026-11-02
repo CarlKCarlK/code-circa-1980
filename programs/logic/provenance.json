@@ -270,6 +270,17 @@
   ],
   "dating": {
     "direct_date": null,
-    "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+    "contextual_source_lines": [
+      "tape15b saves 6 and 7: 10 REM CHEMISTRY BANENCER II   COPYRIGHT 1981 C. KADIE",
+      "tape15b saves 8\u201310: 10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+    ],
+    "caution": "Same-side copyright context only; no direct simulator date or save date is established. No readable BASIC listing on the opposite tape15a side was available in best/."
+  },
+  "artwork": {
+    "kind": "Original emulator canvas screenshot",
+    "path": "app/assets/logic-screen.png",
+    "sha256": "8d50401ae44b7cafc6b4627efc41c7db4f7d1fca3db6e7695cf11b302128b9cc",
+    "reference": "v05",
+    "method": "CAPTURE_GALLERY_ART=1 with tests/browser/experiments.spec.js; native canvas aspect ratio, Model III font and cobalt palette."
   }
 }

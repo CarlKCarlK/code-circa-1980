@@ -1,28 +1,23 @@
 # Star Wars cockpit
 
-A tentative match: fly a Star Wars cockpit, evade fighters, and attack the Death Star.
+The correct internal and URL short name is **starwars81**. Neither recovered
+listing prints an explicit title; the display title is descriptive. The match
+to the remembered X-wing game remains tentative.
 
-Shown only in the unlinked second gallery (`#/more`). The player runs v01 unchanged through the TRS-80 emulator.
+The site plays one selected version: v02, tape30a save 2, with arrow-key steering
+and Space to fire. v01 (tape23b save 5) uses digit controls and remains source
+only. Both recovered payloads and listings are unchanged, and the earlier
+damaged tape23b save 4 remains separate in partial/.
 
-Inferred: tape23b save 5 uses the digit-key matrix; tape30a save 2 adds an alternate arrow-key read at line 190 and changes line 200. That suggests a later control experiment, not an established date. v01 remains the playable default; v02 contains a suspect expression at line 190. The remembered X-wing identity is unconfirmed; neither listing names an X-wing.
+The decoder’s `[` is the BASIC exponent operator. The earlier development note
+calling line 190 suspect was incorrect; original ROM execution confirms `2[3`
+prints 8, and the untouched later version reaches the cockpit and responds to
+ArrowLeft. That note is corrected here rather than changing historical bytes.
 
-The X-wing identity is a tentative match to the remembered game. Neither source names the craft. v02’s line 190 has a suspect `[` expression; it is source only.
+Canonical files use STARWARS81; original historical paths and import tags are
+recorded by canonical_history_id. All related headers store cassette name `S`.
+Locations: tape23b save 4 at 7:18 (damaged) and save 5 at 8:20 (complete), and
+tape30a save 2 at 2:42. These are recording times, not physical tape counters.
 
-All recovered snapshots are retained in `versions/`. `original/` advances through
-individual commits and program tags; its latest historical snapshot may differ
-from the playable default. Hashes, archive links, and inventory evidence are in
-`provenance.json`. Recovery validation did not include execution testing. See
-`VERIFICATION.md` for new website checks.
-
-All three related recovered headers use cassette name `S`. Look on tape23b at
-7:18 (damaged save 4) and 8:20 (complete save 5), and on tape30a at 2:42 (save 2).
-These are recording times; "Star Wars cockpit" is a descriptive recovery label.
-
-The user specified **starwars81** as the URL and internal short name (November 2, 2026).
-Neither recovered listing prints a title, so **Star Wars cockpit** is a descriptive
-display title. The recovered match remains tentative; the raw headers contain
-only cassette name `S`. Source and URLs use `starwars81`. The user confirmed that extra-program URLs
-had not been shared and authorized resetting them to web v1. Only the best
-player is offered; the other recovered version remains source only. Historical
-import commits and tag names remain in Git as provenance. Canonical files now
-use STARWARS81; canonical_history_id records their original committed paths.
+The unshared web experience stays at v1 until the user says otherwise. No web
+version menu is offered. See VERIFICATION.md for executed checks and limits.

@@ -3,10 +3,13 @@ import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {build} from 'vite';
+import {planRelease} from './release-policy.mjs';
 import {projectRoot,snapshotFiles,verifyWebVersions} from './web-versions.mjs';
 
-const [program,...args]=process.argv.slice(2);
-if(!program||!/^[-a-z0-9]+$/.test(program)||args.length&&!(args.length===2&&args[0]==='--label'))throw Error('Usage: npm run release:web -- PROGRAM [--label "Release title"]');
+const [program,...options]=process.argv.slice(2);
+const refreshUnshared=options.includes('--refresh-unshared-v1');
+const args=options.filter(value=>value!=='--refresh-unshared-v1');
+if(!program||!/^[-a-z0-9]+$/.test(program)||args.length&&!(args.length===2&&args[0]==='--label'))throw Error('Usage: npm run release:web -- PROGRAM [--label "Release title"] [--refresh-unshared-v1]');
 const programPath=path.join(projectRoot,'programs',program);
 const metadata=JSON.parse(await fs.readFile(path.join(programPath,'program.json'),'utf8'));
 if(metadata.id!==program)throw Error('Program ID does not match its folder.');
@@ -16,10 +19,10 @@ await verifyWebVersions({allowUnreleased:true});
 const catalogPath=path.join(programPath,'web-versions.json');
 let catalog;
 try {catalog=JSON.parse(await fs.readFile(catalogPath,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;catalog={versions:[]};}
-const version=`v${catalog.versions.length+1}`;
+const {version,replace}=planRelease(metadata,catalog,{refreshUnshared});
 const releasePath=`${program}/${version}/`;
 const destination=path.join(projectRoot,'public',releasePath);
-try {await fs.access(destination);throw Error(`Refusing to overwrite ${destination}`);}catch(error){if(error.code!=='ENOENT')throw error;}
+try {await fs.access(destination);if(!replace)throw Error(`Refusing to overwrite ${destination}`);}catch(error){if(error.code!=='ENOENT')throw error;}
 const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:projectRoot,encoding:'utf8'}).trim();
 const temporary=await fs.mkdtemp(path.join(os.tmpdir(),'circa-web-release-'));
 try {
@@ -31,10 +34,11 @@ try {
     released:new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()),
     sourceCommit,files:await snapshotFiles(temporary)};
   await fs.mkdir(path.dirname(destination),{recursive:true});
+  if(replace)await fs.rm(destination,{recursive:true});
   await fs.cp(temporary,destination,{recursive:true,errorOnExist:true,force:false});
-  catalog.versions.push(release);
+  if(replace)catalog.versions=[release];else catalog.versions.push(release);
   await fs.writeFile(catalogPath,JSON.stringify(catalog,null,2)+'\n');
   // Other programs may be in the same import batch; deployment still verifies strictly.
   await verifyWebVersions({allowUnreleased:true});
-  console.log(`Frozen ${metadata.title} ${version}. Commit ${catalogPath} and ${destination}; keep earlier releases unchanged.`);
+  console.log(`Frozen ${metadata.title} ${version}. Commit ${catalogPath} and ${destination}; ${replace?'only this explicitly unshared v1 was refreshed.':'keep earlier releases unchanged.'}`);
 }finally {await fs.rm(temporary,{recursive:true,force:true});}

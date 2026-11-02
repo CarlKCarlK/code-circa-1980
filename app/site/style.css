@@ -72,3 +72,5 @@
 /* Original LPRINT output remains readable beside the coaching games. */
 .printer-output{grid-column:1/-1;width:100%;margin-top:1rem;padding:1rem;background:var(--paper,#f5f3eb);color:#1e3051;text-align:left}
 .printer-output pre{overflow-x:auto;max-height:24rem;font:14px/1.5 monospace;white-space:pre}
+
+.original-answer{display:flex;flex-wrap:wrap;gap:8px;align-items:end}.original-answer label{display:grid;gap:4px;font-size:12px;flex:1;min-width:0}.original-answer input{min-width:0;width:100%;font:16px monospace;padding:8px;border:1px solid #bac1cc;border-radius:3px}

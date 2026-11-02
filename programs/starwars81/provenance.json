@@ -3,7 +3,7 @@
   "title_authority": "Descriptive recovery label, not a title printed by the program. The user specified starwars81 as the URL and internal short name on 2026-11-02.",
   "import_date": "2026-11-02",
   "order_inferred": true,
-  "order_evidence": "Inferred: tape23b save 5 uses the digit-key matrix; tape30a save 2 adds an alternate arrow-key read at line 190 and changes line 200. That suggests a later control experiment, not an established date. v01 remains the playable default; v02 contains a suspect expression at line 190. The remembered X-wing identity is unconfirmed; neither listing names an X-wing.",
+  "order_evidence": "Inferred: tape23b save 5 uses digit-key controls; tape30a save 2 adds an arrow-key read at line 190 and changes line 200. This suggests a later control revision, not an established date. The site plays the tested arrow-key form v02; v01 remains source only. The [ notation is the decoder\u2019s exponent operator, not a damaged character. The remembered X-wing identity is still tentative.",
   "execution_testing": "Recovery validation is separate from website execution tests; see VERIFICATION.md.",
   "saves": [
     {
@@ -119,5 +119,11 @@
   "short_name": "starwars81",
   "canonical_history_id": "xwing",
   "remembered_short_name": "starwars81",
-  "display_title_kind": "descriptive; not printed by the recovered program"
+  "display_title_kind": "descriptive; not printed by the recovered program",
+  "website_reference": {
+    "version": "v02",
+    "capture": "tape30a",
+    "save": 2,
+    "note": "The decoder renders BASIC exponentiation as [. Verified by original ROM execution (2[3 prints 8), and the complete v02 reaches the cockpit and responds to ArrowLeft. No payload bytes changed."
+  }
 }

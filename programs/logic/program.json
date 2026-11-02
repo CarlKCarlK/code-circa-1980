@@ -65,5 +65,6 @@
       "note": "Untouched recovered save. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
       "unavailableReason": null
     }
-  ]
+  ],
+  "unsharedWebV1": true
 }
