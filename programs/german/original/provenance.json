@@ -1,46 +1,46 @@
 {
-  "version": "v09",
+  "version": "v10",
   "capture": "tape13a",
-  "save": 1,
-  "archive_raw": "tapes/recovered/tape13a/best/01-LANGUAGE-GERMAN-VOCABULARY.BAS",
-  "archive_listing": "tapes/recovered/tape13a/best/01-LANGUAGE-GERMAN-VOCABULARY.ASC",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape13a/best/02-LANGUAGE-GERMAN-VERBS.BAS",
+  "archive_listing": "tapes/recovered/tape13a/best/02-LANGUAGE-GERMAN-VERBS.ASC",
   "imported_files": [
     {
-      "path": "versions/v09/01-LANGUAGE-GERMAN-VOCABULARY.BAS",
-      "archive_path": "tapes/recovered/tape13a/best/01-LANGUAGE-GERMAN-VOCABULARY.BAS",
-      "bytes": 3750,
-      "sha256": "499061aca514efea7cf1022ea3ab13824c4ba92398b576a8a0d457f013eee823"
+      "path": "versions/v10/02-LANGUAGE-GERMAN-VERBS.BAS",
+      "archive_path": "tapes/recovered/tape13a/best/02-LANGUAGE-GERMAN-VERBS.BAS",
+      "bytes": 4314,
+      "sha256": "b2589ae0482067ee2e0e2dd7b79644c6ec47184d167ea0a871c73c96dabf3dd2"
     },
     {
-      "path": "versions/v09/01-LANGUAGE-GERMAN-VOCABULARY.ASC",
-      "archive_path": "tapes/recovered/tape13a/best/01-LANGUAGE-GERMAN-VOCABULARY.ASC",
-      "bytes": 4397,
-      "sha256": "d5b8315b2c7c7751af760ab0c7728d9f3a6b6c6198dc1fcd2906f6c375b969fb"
+      "path": "versions/v10/02-LANGUAGE-GERMAN-VERBS.ASC",
+      "archive_path": "tapes/recovered/tape13a/best/02-LANGUAGE-GERMAN-VERBS.ASC",
+      "bytes": 4970,
+      "sha256": "02ccf03319034e92cb8d1c1abdbe492a5f4442395e3c9f20b9b2845a8579a51e"
     }
   ],
   "recovery_item": {
-    "lines": 82,
+    "lines": 85,
     "last": 1020,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "499061aca514efea7cf1022ea3ab13824c4ba92398b576a8a0d457f013eee823"
+    "sha256": "b2589ae0482067ee2e0e2dd7b79644c6ec47184d167ea0a871c73c96dabf3dd2"
   },
   "inventory_row": {
     "tape": "13",
     "side": "a",
-    "order": "1",
+    "order": "2",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "LANGUAGE GERMAN VOCABULARY; 82 lines",
+    "summary": "LANGUAGE GERMAN VERBS; 85 lines",
     "capture": "tape13a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
-    "source_start_s": "13.700",
-    "recovered_bytes": "3750",
-    "source_file": "tapes/recovered/tape13a/best/01-LANGUAGE-GERMAN-VOCABULARY.ASC",
+    "source_start_s": "84.321",
+    "recovered_bytes": "4314",
+    "source_file": "tapes/recovered/tape13a/best/02-LANGUAGE-GERMAN-VERBS.ASC",
     "wav": "tapes/tape13a.wav",
     "folder": "tapes/recovered/tape13a/best",
     "recovery_date": "2026-10-27",

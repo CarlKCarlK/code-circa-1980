@@ -108,6 +108,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v10",
+      "label": "LANGUAGE GERMAN VERBS",
+      "capture": "tape13a",
+      "save": 2,
+      "raw": "versions/v10/02-LANGUAGE-GERMAN-VERBS.BAS",
+      "listing": "versions/v10/02-LANGUAGE-GERMAN-VERBS.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
