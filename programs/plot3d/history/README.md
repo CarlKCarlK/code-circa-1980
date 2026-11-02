@@ -23,3 +23,7 @@ marked [redacted] below.
 - Sold as "3-D Plotter" for $9.95 on cassette, for a Model I with Level II BASIC
   or a Model III, with 4K. It was not offered on disk or as a source listing.
 - "FUCTION" and "TWO VARIABLE" are the catalog's own spelling.
+- In 2026 dollars, $9.95 is roughly $35–40: $40.69 if the catalog is from 1980,
+  $36.88 for 1981, $34.74 for 1982 (CPI-U annual averages 82.4, 90.9 and 96.5;
+  September 2026 CPI-U 336.940). The page rounds to a range because the
+  catalog's year is unknown.

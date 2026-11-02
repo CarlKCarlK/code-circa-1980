@@ -7,7 +7,7 @@ Web v2 implements the P0/P1 entry, first-play, and continuity work in
 - [x] Reduce the text before the game field becomes visible.
 - [x] Improve switching between the original and TypeScript versions.
 - [x] Base the castle logo on actual game artwork.
-- [ ] Add a short first-person biography: where I was in life and when I got the computer.
+- [x] Add a short first-person biography: where I was in life and when I got the computer.
 - [x] Remove the Run locally and Verify directions from the README.
 - [x] Change the README license's third-person reference to Carl Kadie to first person.
 - [x] Add a GitHub Pages (github.io) site with versions, icons, and Twitter/Facebook link previews.

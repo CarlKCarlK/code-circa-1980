@@ -1,7 +1,5 @@
 # BASIC and Rust: Reducing a Fraction
 
-*Draft for the bal page. Not yet on the site.*
-
 Chemistry Balancer II (1981) does all of its arithmetic with exact fractions.
 Every fraction is stored as a numerator and a denominator and reduced by their
 greatest common divisor (GCD) after each operation. The browser version is a Rust

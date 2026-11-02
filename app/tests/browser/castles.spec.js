@@ -24,7 +24,7 @@ test('collection and program links open the player; versions and downloads remai
  await page.goto('/?development=1#/program/castles/typescript');
  await expect(page).toHaveURL(/castles\/typescript\/play\/castle$/);
  await expect(page.locator('#display canvas')).toHaveCount(1);
- if(!await page.locator('.source-details').evaluate(el=>el.open))await page.locator('.source-details > summary').click();
+ await expect(page.locator('.source-details')).toHaveAttribute('open',''); // About starts open, like the other programs.
  for(const name of ['Download BASIC listing','Download original payload','Recovery provenance']){
   const href=await page.getByRole('link',{name,exact:true}).getAttribute('href');
   const response=await page.request.get(href);expect(response.ok()).toBeTruthy();

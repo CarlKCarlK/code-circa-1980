@@ -97,3 +97,14 @@ test('home page version dropdown opens the chosen frozen release',async({page})=
  await expect(page).toHaveURL(/\/castles\/v1\/$/);
  await expect(page.locator('canvas')).toHaveCount(1);
 });
+
+// GitHub Pages 301s /castles to /castles/ itself; the preview server does not, so check that form live with curl.
+test('unversioned program URLs open the latest release',async({page})=>{
+ for(const id of ids){
+  await page.goto(`/${id}/`);
+  await expect(page).toHaveURL(new RegExp(`/${id}/${releases(id).at(-1).id}/$`));
+ }
+ // The query carries over (BASIC is not Castles' default, so the release keeps it).
+ await page.goto('/castles/?lang=basic');
+ await expect(page).toHaveURL(new RegExp(`/castles/${latest}/\\?lang=basic$`));
+});

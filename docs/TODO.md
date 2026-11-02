@@ -3,11 +3,11 @@
 Every program is published at web v1. Changes below become v2; v1 URLs stay frozen.
 Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
 
-- [ ] README points to the gallery. Link the main call to action and the Castles
+- [x] README points to the gallery. Link the main call to action and the Castles
       image to `https://carlkcarlk.github.io/code-circa-1980/`. Keep only a short
       list of program names, with no direct player or release links (decide whether
       to keep `programs/<slug>/` source links). Keep About, License, and AI policy.
-- [ ] One link preview for every page. The gallery and every release page (for
+- [x] One link preview for every page. The gallery and every release page (for
       example `bomb/v1/`) share the same preview, keeping the Castles artwork as
       the image. Replace the "Code Circa 1980: Castles" title and Castles
       description with the gallery's own wording:
@@ -18,7 +18,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       deployed tags with a server-side fetch (curl) or a server-side checker such as
       opengraph.xyz; browser-only previewers such as previewer.pro cannot read
       cross-origin pages and wrongly report "Not detected".
-- [ ] Unversioned program URLs. `https://carlkcarlk.github.io/code-circa-1980/castles/`
+- [x] Unversioned program URLs. `https://carlkcarlk.github.io/code-circa-1980/castles/`
       (and `bal/`, `alien/`, `plot3d/`, `chess/`, `bomb/`) currently return 404.
       Each should open that program's latest web release (today `vN` = `v1`) and
       move forward automatically when a newer release is published, driven by
@@ -54,14 +54,14 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       declined: Alien doesn't need it.) Add a visible note by
       the player (not only in Help) telling users that pressing a key during the first
       part of the intro, while the title letters draw, skips ahead.
-- [ ] Alien: shift the page's emphasis toward my changes to Yob's *Hunt the Wumpus*
+- [x] Alien: shift the page's emphasis toward my changes to Yob's *Hunt the Wumpus*
       code (the *Alien* reskin, closing junctions, and other remixes) and toward how
       typing in a program from a book teaches you how it works. Also trim: the page has
       too much text and some of it repeats; cut redundancy while doing this rewrite.
 - [x] 3-D Plot: show its *TRS-80 Applications Software Sourcebook* listing ("3-D
       Plotter", $9.95 on cassette) with the address redacted, in the page history and
       `programs/plot3d/history/`. Still unknown: which volume and year.
-- [ ] 3-D Plot: rewrite the first two history paragraphs. Drop the `LINE`-statement
+- [x] 3-D Plot: rewrite the first two history paragraphs. Drop the `LINE`-statement
       detail. Instead cover:
       - Non-square dots: a block-graphics dot is about twice as tall as it is wide.
         Every version, from the first draft on, scales X by 30 dots and Y by 15
@@ -76,7 +76,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
         and to the right (nearer ones down and to the left; the middle row stays put),
         by an amount set by TILT. No hidden-line removal. At TILT .5 with the 30/15
         scaling it is specifically a cabinet projection (45° at half depth; derived).
-- [ ] 3-D Plot: fix the TILT help text (page table and `programs/plot3d/README.md`).
+- [x] 3-D Plot: fix the TILT help text (page table and `programs/plot3d/README.md`).
       It says the far edge shifts "up and to the left", but by lines 220-230 the back
       row (Z = -1) shifts up and to the right. "Larger values look down on the grid
       more" is also loose: TILT lengthens the diagonal depth offset. Confirm against
@@ -151,7 +151,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       keydown as code 229. Pass Backspace through unchanged (it still blows you up).
       Keep the screen visible above the keyboard (visualViewport). Test on a real
       phone. Could later serve Alien's and Chess's BASIC versions too.
-- [ ] bal: add a section comparing the BASIC code with the Rust port: how the 1981
+- [x] bal: add a section comparing the BASIC code with the Rust port: how the 1981
       Chemistry Balancer II algorithm reads in each (data structures, exact fraction
       arithmetic, control flow), with short side-by-side excerpts. Draft in
       `programs/bal/basic-vs-rust.md`: the GCD routine (lines 4000–4090) as BASIC,
@@ -163,7 +163,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       ideas in a program matter more than its syntax; syntax, typing, and tooling help,
       but come second. Draft in `docs/article-draft.md`; builds on the bal draft. Castles and 3-D Plot have TypeScript
       versions, bal and Chess have Rust; Alien and Bomb have no modern port yet.
-- [ ] New browser icon. Redraw the "80" in lettering evoking either the TRS-80
+- [x] New browser icon. Redraw the "80" in lettering evoking either the TRS-80
       nameplate or Zilog's Z80 marking (inspired by, not a copy of, either trademark).
       Draw it as SVG paths rather than font text so it renders the same everywhere,
       and check legibility at 16 px. Applies to the gallery and v2 releases only.
