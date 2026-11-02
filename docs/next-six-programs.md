@@ -57,3 +57,8 @@ unshared web v1; this task did not publish them or add a main-gallery link.
 Use `npm run preview -- --port 5317 --strictPort` from app/, then open
 `http://127.0.0.1:5317/#/more`. The shared workspace is
 `tools/code-circa-1980.code-workspace`, with the recovery archive alongside it.
+
+Follow-up: Worm One’s November 1973 article reference is now identified and linked
+in Help and About, with research notes under programs/worm/history/. Its optional
+20× emulator speed is included in a refreshed unshared web v1. The subsequent
+full browser run passes all 100 cases, including the corrected gallery test.
