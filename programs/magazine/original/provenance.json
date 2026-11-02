@@ -1,21 +1,21 @@
 {
-  "version": "v06",
+  "version": "v07",
   "capture": "tape7a",
-  "save": 3,
-  "archive_raw": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.BAS",
-  "archive_listing": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.BAS",
+  "archive_listing": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.ASC",
   "imported_files": [
     {
-      "path": "versions/v06/03-MAGAZINE-ARTICLE-INDEX-V2.BAS",
-      "archive_path": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.BAS",
-      "bytes": 1158,
-      "sha256": "a244980827444bebceedec341925b6ada9533afbb9369850afc201d215911fb7"
+      "path": "versions/v07/04-MAGAZINE-ARTICLE-INDEX-V3.BAS",
+      "archive_path": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.BAS",
+      "bytes": 1200,
+      "sha256": "fa55c0ca20d8c32602d234da1fdc0ebe61bb618787c59363e23c0f1808b95555"
     },
     {
-      "path": "versions/v06/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
-      "archive_path": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
-      "bytes": 1376,
-      "sha256": "9f4b469150ef20f33b2de2dd24b3aebfe7fea2638afe19aa7fc8d797647dcf3e"
+      "path": "versions/v07/04-MAGAZINE-ARTICLE-INDEX-V3.ASC",
+      "archive_path": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.ASC",
+      "bytes": 1440,
+      "sha256": "ec37d550025777eb5897eb8dcde31d1785a1e2f56d10cad9623e72ddf73e800f"
     }
   ],
   "recovery_item": {
@@ -23,15 +23,15 @@
     "last": 999,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "a244980827444bebceedec341925b6ada9533afbb9369850afc201d215911fb7"
+    "sha256": "fa55c0ca20d8c32602d234da1fdc0ebe61bb618787c59363e23c0f1808b95555"
   },
   "inventory_row": {
     "tape": "7",
     "side": "a",
-    "order": "3",
+    "order": "4",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "Magazine article subject index V2; 13 lines",
+    "summary": "Magazine article subject index V3; 13 lines",
     "capture": "tape7a",
     "capture_scope": "unknown",
     "baud": "500",
@@ -39,8 +39,8 @@
     "status": "validated payload; runtime untested",
     "validation": "13 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
     "source_start_s": "",
-    "recovered_bytes": "1158",
-    "source_file": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
+    "recovered_bytes": "1200",
+    "source_file": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.ASC",
     "wav": "tapes/tape7a.wav",
     "folder": "tapes/recovered/tape7a/best",
     "recovery_date": "2026-10-26",
