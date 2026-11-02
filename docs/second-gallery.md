@@ -46,3 +46,16 @@ All work remains local on branch `second-gallery`. Program-specific verification
 notes distinguish recovery validation from new emulator checks and their limits.
 Olympics card artwork uses circles; its corrected aspect ratio was checked in
 the rendered gallery, and the build and gallery navigation check passed.
+
+## Current completion
+
+The extra gallery now contains Speech, Olympics, Star Wars cockpit
+(`starwars81`), Ricky Rat (`rickyrat`), Pinball (`pinball`), Logic circuit
+simulator (`logic`), and Orbit simulator (`orbit`). Every extra has exactly one
+web v1 and one playable recovered reference. Older saves remain source only;
+there are no web-version menus. Olympic rings are circular.
+
+See four-more-programs.md for provenance, selected references, known historical
+limits, reproducible commands, and the final 71-pass browser run. All 49 complete
+extra-program snapshots and all 14 site snapshots passed integrity checks.
+The main gallery remains six entries with no inbound link to this gallery.

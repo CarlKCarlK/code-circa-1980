@@ -83,3 +83,27 @@ source downloads, and gallery navigation. They do not exhaust all rat outcomes,
 all Pinball collisions, all logic circuits, or astronomical trajectories. Orbit
 has not been validated as a scientifically accurate simulator. Recovery framing
 validation and new website execution testing remain distinct in provenance.
+
+## Final results — November 2, 2026
+
+- Unit/archive checks and the production build passed.
+- All 49 complete extra-program snapshots, canonical tagged payload/listing
+  blobs, partial-prefix ranges, and screenshot hashes passed verification.
+- All 14 current web snapshots passed release-integrity verification against
+  e951413: seven preexisting main-gallery experiences plus seven extras at v1.
+  The previously published main-gallery files are unchanged.
+- The full browser suite passed **71 tests**, with **one preexisting skipped
+  test**. This includes meaningful original-program input/output, all four new
+  frozen URLs, the selected later cockpit controls, the seven-card gallery,
+  source downloads, one-player policy, pause/restart, and main-gallery checks.
+- Desktop and 390-pixel phone layouts were inspected; the phone gallery's
+  content width equals its viewport width, with no web-version pickers.
+
+The source-history caption now says "saves" only for the extra gallery, leaving
+Chess and the other main programs' established wording intact. During testing,
+a preview rebuild briefly interrupted one load; final checks used a completed,
+stable build. The Orbit restart test uses a single dialog handler so a restart
+without a confirmation cannot leave a stale handler for the next restart.
+
+Finished on the isolated local `second-gallery` worktree branch. No merge,
+push, deployment, modern game rewrite, or unrelated program import was performed.
