@@ -1,46 +1,46 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape15b",
-  "save": 15,
-  "archive_raw": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.BAS",
-  "archive_listing": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
+  "save": 16,
+  "archive_raw": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.BAS",
+  "archive_listing": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.BAS",
-      "archive_path": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.BAS",
-      "bytes": 3474,
-      "sha256": "283e7027d9d9ce1fde8ac8fc0dfdfdf18fba0a9e732e9ed0326dd2510958ffed"
+      "path": "versions/v03/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.BAS",
+      "archive_path": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.BAS",
+      "bytes": 4235,
+      "sha256": "0986c88f7fc682a0d53f46934ee7bbbcdc79d74a4b1bceb5e141cebc20aada50"
     },
     {
-      "path": "versions/v02/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
-      "archive_path": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
-      "bytes": 4122,
-      "sha256": "71bbad13defada98fcfcaa365742d4cd022868521c67eb9007b5e1d9fa550dd7"
+      "path": "versions/v03/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.ASC",
+      "archive_path": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.ASC",
+      "bytes": 4977,
+      "sha256": "e19d6016af10726ffc0ab4e4d5943c5f107807c8d16e271e171e3e872701fa7a"
     }
   ],
   "recovery_item": {
-    "lines": 62,
-    "last": 1240,
+    "lines": 77,
+    "last": 1410,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "283e7027d9d9ce1fde8ac8fc0dfdfdf18fba0a9e732e9ed0326dd2510958ffed"
+    "sha256": "0986c88f7fc682a0d53f46934ee7bbbcdc79d74a4b1bceb5e141cebc20aada50"
   },
   "inventory_row": {
     "tape": "15",
     "side": "b",
-    "order": "15",
+    "order": "16",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "LOGIC CIRCUIT SIMULATOR SAVE 2; 62 lines",
+    "summary": "LOGIC CIRCUIT SIMULATOR SAVE 3; 77 lines",
     "capture": "tape15b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
-    "source_start_s": "1332.945",
-    "recovered_bytes": "3474",
-    "source_file": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
+    "source_start_s": "1394.924",
+    "recovered_bytes": "4235",
+    "source_file": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.ASC",
     "wav": "tapes/tape15b.wav",
     "folder": "tapes/recovered/tape15b/best",
     "recovery_date": "2026-10-27",
