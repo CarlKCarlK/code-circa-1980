@@ -219,5 +219,16 @@
   "dating": {
     "direct_source_lines": [],
     "caution": "Source notices and book years do not establish tape-save dates or cross-program chronology."
+  },
+  "artwork": {
+    "path": "app/assets/learningttt-gallery.svg",
+    "sha256": "6ee78799609f86fd60fcd791c7309282367394dd16b44dc1a2175e6d5551ad53",
+    "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+  },
+  "runtime_adaptation": {
+    "path": "runtime/",
+    "manifest": "runtime/changes.json",
+    "sha256": "e98bd526f1165250ccc94fc57e6a4c5435440dd15ff170a8226adcd82e7b863f",
+    "description": "Runtime adaptation: inline DEF FN expressions for stock Level II BASIC. No game rules or historical bugs corrected."
   }
 }

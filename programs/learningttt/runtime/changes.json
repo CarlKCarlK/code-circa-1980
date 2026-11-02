@@ -1,0 +1,37 @@
+{
+  "source": "versions/v04/08-LEARNING-TIC-TAC-TOE-V2.BAS",
+  "source_sha256": "4b8920ce05f69cc22a8287f10650f9a4afaf504c1f8954ad82cecd7cbe1cce15",
+  "sha256": "e98bd526f1165250ccc94fc57e6a4c5435440dd15ff170a8226adcd82e7b863f",
+  "description": "Runtime adaptation: inline DEF FN expressions for stock Level II BASIC. No game rules or historical bugs corrected.",
+  "removed_declarations": [
+    10,
+    12
+  ],
+  "changes": [
+    {
+      "line": 215,
+      "before": "215 IF B(FNX(CH),FNY(CH))<>0 THEN C(CH)=-18",
+      "after": "215 IF B((INT(((CH-1)/3-INT((CH-1)/3))*3+.5)+1),(INT((CH-1)/3)+1))<>0 THEN C(CH)=-18"
+    },
+    {
+      "line": 218,
+      "before": "218 PRINTC(CH);B(FNX(CH),FNY(CH))",
+      "after": "218 PRINTC(CH);B((INT(((CH-1)/3-INT((CH-1)/3))*3+.5)+1),(INT((CH-1)/3)+1))"
+    },
+    {
+      "line": 300,
+      "before": "300 B(FNX(CH),FNY(CH))=INT(2-CP/2)",
+      "after": "300 B((INT(((CH-1)/3-INT((CH-1)/3))*3+.5)+1),(INT((CH-1)/3)+1))=INT(2-CP/2)"
+    },
+    {
+      "line": 305,
+      "before": "305 PRINT\"*** \"FNX(CH);FNY(CH),INT(2-CP/2)",
+      "after": "305 PRINT\"*** \"(INT(((CH-1)/3-INT((CH-1)/3))*3+.5)+1);(INT((CH-1)/3)+1),INT(2-CP/2)"
+    },
+    {
+      "line": 4010,
+      "before": "4010 R=FNM(R,4):IFR=0THENR=4",
+      "after": "4010 R=INT((R/4-INT(R/4))*4+.5):IFR=0THENR=4"
+    }
+  ]
+}

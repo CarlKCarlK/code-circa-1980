@@ -84,3 +84,11 @@ entries. Its standalone player, source-view URLs, and latest-release redirect
 are no longer emitted. Sources and corrections remain in programs/poker/; its
 exact former web snapshot is retained in website-archive/v1 outside public/.
 Earlier completion counts above describe their original import stage.
+
+## Next six additions
+
+Worm One, Peoria Grand Prix, Pendulum, Sentence Generator, Learning Tic-Tac-Toe,
+and Superpower Investing add six entries, bringing the active gallery to 18.
+They preserve 21 additional complete captures with canonical version tags.
+See [the import and history notes](next-six-programs.md), including the uncertain
+SPI/BOND professional chronology and the Tic-Tac-Toe stock-ROM adaptation.

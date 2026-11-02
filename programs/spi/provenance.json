@@ -277,6 +277,11 @@
   "personal_history": {
     "source": "User recollection, November 2, 2026",
     "text": "Superpower Investing was my first professional program, unless the bond-amortization program I wrote for my dad came earlier.",
-    "chronology": "Unresolved. BOND source on tape31a save 1 has line 20: PRINT\"  (C) 1979 CARL KADIE. SPI line 40 says COPYRIGHT (C) 1974, but that notice does not establish the program or save date. No relative order is asserted."
+    "chronology": "Unresolved. BOND on tape31a save 1 has line 20: PRINT\"  (C) 1979 CARL KADIE. SPI line 40 says COPYRIGHT (C) 1974. These notices do not establish the programs\u2019 creation dates or relative order."
+  },
+  "artwork": {
+    "path": "app/assets/spi-gallery.svg",
+    "sha256": "e04278e20645be62c425e87a4fea812ff80576249ddf6ab8fa9d75f92fbc90a2",
+    "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
   }
 }

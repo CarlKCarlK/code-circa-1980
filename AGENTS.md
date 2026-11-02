@@ -260,3 +260,27 @@ player route, redirect, or public release without a new request. Its withdrawn
 web v1 is preserved byte for byte in programs/poker/website-archive/v1. The
 release checker validates archived snapshots but excludes them from active
 release counts; the build and release helper respect the withdrawal flag.
+
+## Six additional games and experiments
+
+On November 2, 2026, the user requested Worm One (`worm`), Peoria Grand Prix
+(`peoria`), Pendulum (`pendulum`), Sentence Generator (`sentences`), Learning
+Tic-Tac-Toe (`learningttt`), and Superpower Investing (`spi`) in More. Keep them
+at unshared web v1 and offer one selected player apiece. Their 21 snapshots and
+canonical tagged histories preserve complete captured sources, including drafts
+and empty-price templates. Peoria includes the related two-mile race forms.
+Exclude the quarantined file8b sentence item; preserve names and vocabulary in
+the two tape10b sources. Use the shared real-ROM emulator, not a rewrite.
+
+Tic-Tac-Toe’s v04 needs its DEF FN expressions expanded for stock Level II ROM;
+rebuild the separate derivative with `npm run build:learningttt-runtime`.
+Keep every other record body unchanged and document historical prototype bugs.
+The loader adaptation does not make its learning or rule enforcement correct.
+Browser checks live in `next-six.spec.js`; artifact/ROM checks in `next-six.test.mjs`.
+
+SPI personal history: “Superpower Investing was my first professional program,
+unless the bond-amortization program I wrote for my dad came earlier.” This is
+user recollection, not a proven date order. SPI has a 1974 notice; BOND on tape31a
+has a 1979 Carl Kadie notice. Neither dates these saves or settles their order.
+Do not import BOND or claim it executes in the TRS-80 emulator: its recovered
+payload is Commodore BASIC, likely PET/CBM, with the exact machine unverified.

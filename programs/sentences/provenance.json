@@ -115,5 +115,10 @@
   "dating": {
     "direct_source_lines": [],
     "caution": "Source notices and book years do not establish tape-save dates or cross-program chronology."
+  },
+  "artwork": {
+    "path": "app/assets/sentences-gallery.svg",
+    "sha256": "f8f9ab057757af10a50b586695ccd7616f185fba393144bf46681d2dfe173721",
+    "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
   }
 }

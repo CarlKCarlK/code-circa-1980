@@ -4,7 +4,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[2]
 def sha(b):return hashlib.sha256(b).hexdigest()
 count=0
-for slug in ['speech','olympics','starwars81','rickyrat','pinball','logic','orbit','skinner','german','magazine','teachvi','poker','life']:
+for slug in ['speech','olympics','starwars81','rickyrat','pinball','logic','orbit','skinner','german','magazine','teachvi','poker','life','worm','peoria','pendulum','sentences','learningttt','spi']:
  folder=root/'programs'/slug;e=json.loads((folder/'provenance.json').read_text())
  for key in ['artwork','emulator_capture']:
   if key in e:assert sha((root/e[key]['path']).read_bytes())==e[key]['sha256']
