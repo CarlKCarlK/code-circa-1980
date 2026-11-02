@@ -130,5 +130,6 @@
       "note": "Untouched recovered payload. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
       "unavailableReason": "Source only. This site plays the selected complete reference version."
     }
-  ]
+  ],
+  "showWebVersions": false
 }

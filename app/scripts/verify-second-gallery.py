@@ -4,7 +4,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[2]
 def sha(b):return hashlib.sha256(b).hexdigest()
 count=0
-for slug in ['speech','olympics','startwar81']:
+for slug in ['speech','olympics','starwars81']:
  folder=root/'programs'/slug;e=json.loads((folder/'provenance.json').read_text())
  history=e.get('canonical_history_id',slug)
  for save in e['saves']:

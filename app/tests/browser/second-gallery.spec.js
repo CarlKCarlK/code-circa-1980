@@ -6,7 +6,7 @@ const type=async(page,s)=>{for(const k of s)await tap(page,k);await tap(page,'En
 test('second gallery is separate and unlinked; cards launch players directly',async({page})=>{
  await page.goto('/');
  await expect(page.locator('.program-card')).toHaveCount(6);
- await expect(page.locator('a[href*="more"],a[href*="speech"],a[href*="olympics"],a[href*="startwar81"]')).toHaveCount(0);
+ await expect(page.locator('a[href*="more"],a[href*="speech"],a[href*="olympics"],a[href*="starwars81"]')).toHaveCount(0);
  await page.goto('/#/more');
  await expect(page.getByRole('heading',{level:1})).toContainText('the tapes.');
  await expect(page.locator('.program-card')).toHaveCount(3);
@@ -52,7 +52,7 @@ for(const id of ['speech','olympics'])test(`${id}: original starts, accepts setu
 });
 test('X-wing candidate starts, digit controls move the cockpit, and restart returns to CODE',async({page})=>{
  test.setTimeout(90000);
- await page.goto('/?development=1&test#/program/startwar81');
+ await page.goto('/?development=1&test#/program/starwars81');
  await expect.poll(()=>text(page),{timeout:15000}).toContain('CODE');
  await page.locator('#display').focus();await type(page,'1');
  await page.waitForTimeout(1000);await tap(page,' ');
@@ -70,7 +70,7 @@ test('X-wing candidate starts, digit controls move the cockpit, and restart retu
  await expect(page.locator('.source-details')).toContainText('identification is tentative');
 });
 
-for(const id of ['speech','olympics','xwing'])test(`${id}: frozen v1 opens its original player directly`,async({page})=>{
+for(const id of ['speech','olympics','starwars81'])test(`${id}: frozen v1 opens its original player directly`,async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(`/${id}/v1/?test`);
  await expect(page.locator('#display canvas')).toHaveCount(1);
@@ -84,10 +84,10 @@ for(const id of ['speech','olympics','xwing'])test(`${id}: frozen v1 opens its o
  expect(errors).toEqual([]);
 });
 
-test('startwar81 is the URL name while the cockpit has a descriptive display title',async({page})=>{
+test('starwars81 is the URL name while the cockpit has a descriptive display title',async({page})=>{
  await page.goto('/#/more');
  await page.getByRole('link',{name:'Play Star Wars cockpit →'}).click();
- await expect(page).toHaveURL(/\/startwar81\/v3\/$/);
+ await expect(page).toHaveURL(/\/starwars81\/v1\/$/);
  await expect(page.locator('.player-header h1')).toHaveText('Star Wars cockpit');
  await expect(page.locator('#status')).toContainText('Running original BASIC');
  await expect(page.locator('.source-details')).toContainText('identification is tentative');
@@ -97,9 +97,17 @@ test('startwar81 is the URL name while the cockpit has a descriptive display tit
  await expect(page.locator('.program-card')).toHaveCount(3);
 });
 
-// Old hash links resolve through the current identifier; old frozen URLs stay intact.
-test('legacy X-wing route resolves to the current short name',async({page})=>{
- await page.goto('/?program=xwing');
- await expect(page).toHaveURL(/\/startwar81\/v3\/$/);
- await expect(page.locator('.player-header h1')).toHaveText('Star Wars cockpit');
+test('extra programs offer one best player without web-version choices',async({page})=>{
+ await page.goto('/#/more');
+ await expect(page.locator('.version-picker')).toHaveCount(0);
+ await page.getByRole('link',{name:'Play Star Wars cockpit →'}).click();
+ await expect(page).toHaveURL(/\/starwars81\/v1\/$/);
+ await expect(page.locator('.version-picker,.web-version-nav')).toHaveCount(0);
+ await page.locator('.versions > summary').click();
+ await expect(page.locator('.versions li')).toHaveCount(2);
+ await page.getByRole('link',{name:/V02/}).click();
+ await expect(page.locator('.source-only')).toContainText('Source only');
+ await expect(page.locator('#display')).toHaveCount(0);
+ await page.getByRole('link',{name:'Play the playable version →'}).click();
+ await expect(page.locator('#display')).toBeVisible();
 });

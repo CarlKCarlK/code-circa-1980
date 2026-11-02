@@ -49,23 +49,3 @@ for(const cleanPath of [false,true])test(`changing an archived asset fails relea
   await assert.rejects(verifyWebVersions({root}),/Snapshot integrity failure/);
  }finally {await fs.rm(root,{recursive:true,force:true});}
 });
-
-test('a renamed program retains its old frozen paths and catalog exactly',async()=>{
- const root=await fs.mkdtemp(path.join(os.tmpdir(),'circa-release-rename-'));
- try{
-  const legacy=path.join(root,'programs','oldname'),current=path.join(root,'programs','newname'),snapshot=path.join(root,'public','oldname','v1');
-  for(const dir of [legacy,current,snapshot])await fs.mkdir(dir,{recursive:true});
-  await fs.writeFile(path.join(current,'program.json'),JSON.stringify({id:'newname',legacyProgramIds:['oldname']}));
-  await fs.writeFile(path.join(snapshot,'index.html'),'Old frozen player');
-  await fs.writeFile(path.join(snapshot,'licenses.txt'),'License retained');
-  const version={id:'v1',path:'oldname/v1/',label:'Original title',released:'2026-11-02',sourceCommit:'a'.repeat(40),files:await snapshotFiles(snapshot)};
-  await fs.writeFile(path.join(legacy,'web-versions.json'),JSON.stringify({versions:[version]}));
-  const catalog=path.join(current,'web-versions.json');
-  await fs.writeFile(catalog,JSON.stringify({versions:[version]}));
-  assert.equal(await verifyWebVersions({root}),1);
-  await fs.writeFile(catalog,JSON.stringify({versions:[{...version,label:'Changed'}]}));
-  await assert.rejects(verifyWebVersions({root}),/Legacy release was changed or removed/);
-  await fs.writeFile(catalog,JSON.stringify({versions:[{...version,path:'unrelated/v1/'}]}));
-  await assert.rejects(verifyWebVersions({root}),/Invalid release path/);
- }finally{await fs.rm(root,{recursive:true,force:true});}
-});

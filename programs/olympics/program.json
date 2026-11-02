@@ -42,5 +42,6 @@
       "note": "Untouched recovered payload. 232 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
       "unavailableReason": null
     }
-  ]
+  ],
+  "showWebVersions": false
 }

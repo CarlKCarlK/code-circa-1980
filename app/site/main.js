@@ -29,6 +29,7 @@ function versionPicker(program,current){
  return `<label class="version-picker">Versions <select onchange="location.href=this.value">${versions.map((v,i)=>`<option value="${experienceUrl(program,v)}" ${(current??versions[0].id)===v.id?'selected':''}>${escape(v.id)}${i===0?' (latest)':''}</option>`).join('')}</select></label>`;
 }
 function webVersionNavigation(program){
+ if(program.showWebVersions===false)return '';
  return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span>${program.webVersions.length+(webVersion&&!program.webVersions.some(v=>v.id===webVersion)?1:0)>1?versionPicker(program,webVersion):''}${webVersion?`<a href="${collectionUrl.href}?program=${program.id}">Latest version</a>`:''}</nav>`;
 }
 function versionList(program, selected) {
@@ -45,7 +46,7 @@ async function render() {
   player=null;activeRoute=null;delete window.__circaPlayer;
   const parts=routeParts(location.hash,webProgram,location.search);
   const more=parts[0]==='more';
-  const currentProgram=allPrograms.find(p=>parts[0]==='program'&&(p.id===parts[1]||p.legacyProgramIds?.includes(parts[1])));
+  const currentProgram=allPrograms.find(p=>parts[0]==='program'&&p.id===parts[1]);
   document.querySelector('.brand').href=collectionHref(more?{gallery:'more'}:currentProgram);
   document.querySelector('meta[name="robots"]')?.remove();
   if(more||currentProgram?.gallery==='more'){

@@ -190,5 +190,15 @@ Programs with `gallery: "more"` appear only at `#/more`, not on the main gallery
 Keep this gallery and its programs unlinked from the main collection until the
 user requests otherwise. Reuse shared gallery markup and player controls.
 Speech and Olympics are separate entries even though their code is related.
-The X-wing identity remains tentative. Use `startwar81` for the program ID, source folder, new URLs, and new tags. Display a source title when present; neither current listing prints one, so use the descriptive display title "Star Wars cockpit." Old `xwing` release URLs and tags remain intact for compatibility. Coaching games capture the original
+The X-wing identity remains tentative. Use `starwars81` for the program ID, source folder, new URLs, and new tags. Display a source title when present; neither current listing prints one, so use the descriptive display title "Star Wars cockpit." Historical import tags remain intact as provenance. Coaching games capture the original
 Model III printer-port output in a roster panel without altering recovered BASIC.
+
+## Extra-program release policy
+
+On November 2, 2026, the user confirmed no extra-program URLs had been shared
+and authorized resetting Speech, Olympics, and starwars81 to unshared web v1.
+Keep these extra programs at web v1 until the user says to advance them; local
+iterations may replace their unshared v1 snapshots. Offer one best playable
+version, without web-version menus. Other recovered versions are source only.
+This exception does not permit changing any previously published main-gallery
+release. Use `starwars81` exactly for the cockpit game's internal and URL name.
