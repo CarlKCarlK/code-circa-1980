@@ -1,0 +1,25 @@
+{
+  "id": "sentences",
+  "title": "Sentence Generator",
+  "description": "Generate student-era nonsense from stored names and word groups.",
+  "kind": "Experiment",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v02",
+  "versionOrder": "Two consecutive tape10b saves. The later form adds prepositional phrases and clauses and disables adjective/adverb text. The quarantined file8b item is excluded.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SENTENCE GENERATOR",
+      "capture": "tape10b",
+      "save": 11,
+      "raw": "versions/v01/11-SENTENCE-GENERATOR.BAS",
+      "listing": "versions/v01/11-SENTENCE-GENERATOR.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
