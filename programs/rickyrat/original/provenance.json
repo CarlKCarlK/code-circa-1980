@@ -1,19 +1,19 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape18b",
-  "save": 2,
-  "archive_raw": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.BAS",
-  "archive_listing": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.ASC",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape18b/best/03-RICKY-RAT-V1-REPEATED-SAVE.BAS",
+  "archive_listing": "tapes/recovered/tape18b/best/03-RICKY-RAT-V1-REPEATED-SAVE.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/02-RICKY-RAT-V1.BAS",
-      "archive_path": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.BAS",
+      "path": "versions/v02/03-RICKY-RAT-V1-REPEATED-SAVE.BAS",
+      "archive_path": "tapes/recovered/tape18b/best/03-RICKY-RAT-V1-REPEATED-SAVE.BAS",
       "bytes": 3425,
       "sha256": "bcaf33083ff2fdcb380ed8979165455150608f00993e863018b021fdec916581"
     },
     {
-      "path": "versions/v01/02-RICKY-RAT-V1.ASC",
-      "archive_path": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.ASC",
+      "path": "versions/v02/03-RICKY-RAT-V1-REPEATED-SAVE.ASC",
+      "archive_path": "tapes/recovered/tape18b/best/03-RICKY-RAT-V1-REPEATED-SAVE.ASC",
       "bytes": 4191,
       "sha256": "05ea80819e267c2cbe61a65dffc0336cf140fbe1bab6352a610996213e99fee5"
     }
@@ -28,19 +28,19 @@
   "inventory_row": {
     "tape": "18",
     "side": "b",
-    "order": "2",
+    "order": "3",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "RICKY RAT V1",
+    "summary": "RICKY RAT V1 REPEATED SAVE",
     "capture": "tape18b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "76.653",
+    "source_start_s": "135.742",
     "recovered_bytes": "3425",
-    "source_file": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.ASC",
+    "source_file": "tapes/recovered/tape18b/best/03-RICKY-RAT-V1-REPEATED-SAVE.ASC",
     "wav": "tapes/tape18b.wav",
     "folder": "tapes/recovered/tape18b",
     "recovery_date": "2026-10-28",
