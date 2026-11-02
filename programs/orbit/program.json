@@ -52,6 +52,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v05",
+      "label": "ORBIT SIMULATOR V5",
+      "capture": "tape11b",
+      "save": 16,
+      "raw": "versions/v05/16-ORBIT-SIMULATOR-V5.BAS",
+      "listing": "versions/v05/16-ORBIT-SIMULATOR-V5.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
