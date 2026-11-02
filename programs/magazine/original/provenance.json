@@ -1,19 +1,19 @@
 {
-  "version": "v10",
+  "version": "v11",
   "capture": "tape7a",
-  "save": 7,
-  "archive_raw": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
-  "archive_listing": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.BAS",
+  "archive_listing": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.ASC",
   "imported_files": [
     {
-      "path": "versions/v10/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
-      "archive_path": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
+      "path": "versions/v11/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.BAS",
+      "archive_path": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.BAS",
       "bytes": 4080,
       "sha256": "2500a5792ba842e4b7a47573cfd21ba8f3cffcfd0ddde486db0a198ee6f5baae"
     },
     {
-      "path": "versions/v10/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
-      "archive_path": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+      "path": "versions/v11/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.ASC",
+      "archive_path": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.ASC",
       "bytes": 4399,
       "sha256": "cb1c08adefe4b12c0a1a3c0ada82ea35a088d5110311da3a76efdd61e39c980d"
     }
@@ -28,10 +28,10 @@
   "inventory_row": {
     "tape": "7",
     "side": "a",
-    "order": "7",
+    "order": "8",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "Magazine article subject index V6; 26 lines",
+    "summary": "Magazine article subject index V6; 26 lines; duplicate of save 7",
     "capture": "tape7a",
     "capture_scope": "unknown",
     "baud": "500",
@@ -40,7 +40,7 @@
     "validation": "26 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
     "source_start_s": "",
     "recovered_bytes": "4080",
-    "source_file": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+    "source_file": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.ASC",
     "wav": "tapes/tape7a.wav",
     "folder": "tapes/recovered/tape7a/best",
     "recovery_date": "2026-10-26",
