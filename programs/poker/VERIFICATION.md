@@ -14,3 +14,12 @@ full house and flush, and drawing without the debug STOP. The source-only
 snapshots and canonical tagged originals still pass their archive hashes.
 Browser round-trip checks are in app/tests/browser/poker-corrected.spec.js.
 See corrected/README.md for exact changes and remaining historical limitations.
+
+Verified November 2, 2026: all five focused Poker patch/emulator tests pass;
+the complete unit/archive suite and production build pass. Fourteen targeted
+browser checks pass, including complete Poker rounds through betting, drawing,
+and showdown in both development and frozen v1, five distinct computer cards,
+pause/restart, and the six newer programs' startup/direct-v1 checks. All 93
+extra-program recovery snapshots/canonical tags pass hash checks; all 20 web
+releases pass integrity checks against the published main-gallery baseline.
+These checks do not establish correctness of every historical poker branch.
