@@ -1,46 +1,46 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape21a",
-  "save": 9,
-  "archive_raw": "tapes/recovered/tape21a/best/09-PEORIA-TWO-MILE-RACE.BAS",
-  "archive_listing": "tapes/recovered/tape21a/best/09-PEORIA-TWO-MILE-RACE.ASC",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape21a/best/10-PEORIA-RACE-TWO-PLAYER.BAS",
+  "archive_listing": "tapes/recovered/tape21a/best/10-PEORIA-RACE-TWO-PLAYER.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/09-PEORIA-TWO-MILE-RACE.BAS",
-      "archive_path": "tapes/recovered/tape21a/best/09-PEORIA-TWO-MILE-RACE.BAS",
-      "bytes": 724,
-      "sha256": "5978060b7e94434a6bf9a5e3c611433f8a2a921ec8ae3c3ae7b3462fcfc635ab"
+      "path": "versions/v02/10-PEORIA-RACE-TWO-PLAYER.BAS",
+      "archive_path": "tapes/recovered/tape21a/best/10-PEORIA-RACE-TWO-PLAYER.BAS",
+      "bytes": 1123,
+      "sha256": "a0f968ba4b36806856dee5e5ea00dab124dd2b44f836f5fa716d293eb818e556"
     },
     {
-      "path": "versions/v01/09-PEORIA-TWO-MILE-RACE.ASC",
-      "archive_path": "tapes/recovered/tape21a/best/09-PEORIA-TWO-MILE-RACE.ASC",
-      "bytes": 981,
-      "sha256": "4962970693235a3df7e76220b297147020c3e7e25b67a7e9f57554a514f563ba"
+      "path": "versions/v02/10-PEORIA-RACE-TWO-PLAYER.ASC",
+      "archive_path": "tapes/recovered/tape21a/best/10-PEORIA-RACE-TWO-PLAYER.ASC",
+      "bytes": 1444,
+      "sha256": "b8054c7adfc078d128b9d8fb86190d694ebe3add42a595ad5f35169c79ddcd87"
     }
   ],
   "recovery_item": {
-    "lines": 13,
-    "last": 1010,
+    "lines": 20,
+    "last": 360,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "5978060b7e94434a6bf9a5e3c611433f8a2a921ec8ae3c3ae7b3462fcfc635ab"
+    "sha256": "a0f968ba4b36806856dee5e5ea00dab124dd2b44f836f5fa716d293eb818e556"
   },
   "inventory_row": {
     "tape": "21",
     "side": "a",
-    "order": "9",
+    "order": "10",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "PEORIA TWO MILE RACE",
+    "summary": "PEORIA RACE TWO PLAYER",
     "capture": "tape21a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "217.986",
-    "recovered_bytes": "724",
-    "source_file": "tapes/recovered/tape21a/best/09-PEORIA-TWO-MILE-RACE.ASC",
+    "source_start_s": "240.749",
+    "recovered_bytes": "1123",
+    "source_file": "tapes/recovered/tape21a/best/10-PEORIA-RACE-TWO-PLAYER.ASC",
     "wav": "tapes/tape21a.wav",
     "folder": "tapes/recovered/tape21a",
     "recovery_date": "2026-10-28",

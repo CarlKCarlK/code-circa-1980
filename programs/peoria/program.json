@@ -20,6 +20,17 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "PEORIA RACE TWO PLAYER",
+      "capture": "tape21a",
+      "save": 10,
+      "raw": "versions/v02/10-PEORIA-RACE-TWO-PLAYER.BAS",
+      "listing": "versions/v02/10-PEORIA-RACE-TWO-PLAYER.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
