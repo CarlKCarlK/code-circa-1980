@@ -7,7 +7,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       image to `https://carlkcarlk.github.io/code-circa-1980/`. Keep only a short
       list of program names, with no direct player or release links (decide whether
       to keep `programs/<slug>/` source links). Keep About, License, and AI policy.
-- [ ] One link preview for every page. The gallery and every release page (for
+- [x] One link preview for every page. The gallery and every release page (for
       example `bomb/v1/`) share the same preview, keeping the Castles artwork as
       the image. Replace the "Code Circa 1980: Castles" title and Castles
       description with the gallery's own wording:
