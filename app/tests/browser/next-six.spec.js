@@ -39,3 +39,15 @@ for(const id of ['worm','peoria','pendulum','sentences','learningttt','spi'])tes
  const link=page.getByRole('link',{name:id==='learningttt'?'Download BASIC payload':'Download original payload',exact:true});expect((await page.request.get(await link.getAttribute('href'))).ok()).toBe(true);await noError(page);
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(18);
 });
+
+for(const release of [false,true])test(`Worm One ${release?'web v1':'development'}: article links and optional 20× pacing preserve pause and restart`,async({page})=>{
+ test.setTimeout(60000);page.on('dialog',d=>d.accept());await page.goto(release?'/worm/v1/?test':'/?development=1&test#/program/worm');await expect(page.locator('#status')).toContainText('Running original BASIC');
+ const speed=page.getByRole('combobox',{name:'Worm One speed'});await expect(speed).toHaveValue('1');
+ const source=page.locator('.source-details');await expect(source.getByRole('link',{name:/Fantastic patterns/})).toHaveAttribute('href','https://www.scientificamerican.com/article/mathematical-games-1973-11/');await expect(source.getByRole('link',{name:/Michael Beeler/})).toHaveAttribute('href','https://dspace.mit.edu/handle/1721.1/6210');
+ await answer(page,'WHICH PATTERN','1A 2A 3AAAA 4A');await answer(page,'STARTING LOCATION','64,24');await expect.poll(()=>graphics(page),{timeout:20000}).toBeGreaterThan(0);
+ const measure=async()=>{const start=await page.evaluate(()=>window.__circaPlayer.diagnostics().tStates);await page.waitForTimeout(600);return (await page.evaluate(()=>window.__circaPlayer.diagnostics().tStates))-start;};
+ const original=await measure();await speed.selectOption('20');await expect(speed).toHaveValue('20');const fast=await measure();expect(fast).toBeGreaterThan(original*3);expect(await screen(page)).toContain('2A 3AAAA 4A');
+ await page.getByRole('button',{name:'Pause',exact:true}).click();const stopped=await page.evaluate(()=>window.__circaPlayer.diagnostics().tStates);await page.waitForTimeout(300);expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().tStates)).toBe(stopped);await page.getByRole('button',{name:'Resume',exact:true}).click();
+ await page.getByRole('button',{name:'Help',exact:true}).click();await expect(page.locator('#status')).toHaveText('Paused');await expect(page.locator('.player-help').getByRole('link',{name:/Fantastic patterns/})).toBeVisible();await page.getByRole('button',{name:'Close help'}).click();await expect(page.locator('#status')).toContainText('Running');
+ await page.getByRole('button',{name:'Restart',exact:true}).click();await expect(speed).toHaveValue('20');await expect.poll(()=>screen(page),{timeout:15000}).toContain('WHICH PATTERN');await speed.selectOption('1');await expect(speed).toHaveValue('1');await noError(page);
+});

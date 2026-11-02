@@ -284,3 +284,10 @@ user recollection, not a proven date order. SPI has a 1974 notice; BOND on tape3
 has a 1979 Carl Kadie notice. Neither dates these saves or settles their order.
 Do not import BOND or claim it executes in the TRS-80 emulator: its recovered
 payload is Commodore BASIC, likely PET/CBM, with the exact machine unverified.
+
+Worm One’s About/Help cites Gardner’s November 1973 Mathematical Games column
+and links to the publisher and Beeler’s June 1973 MIT memo. Research notes are
+in programs/worm/history/scientific-american.md. Its Speed selector offers
+original 1× (default) and nominal 20× through the shared emulator; changing speed
+keeps the current path, survives Restart, and respects Pause/Help. Keep its
+unshared web experience at v1 and preserve every recovered payload byte.

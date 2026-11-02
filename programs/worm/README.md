@@ -21,3 +21,24 @@ source-structure validation, and inferred ordering. Recovery validation is
 separate from emulator execution; see `VERIFICATION.md` for actual checks.
 Run locally from `app/` with `npm run dev`, then open
 `/?development=1#/program/worm` directly in the player.
+
+## Article and speed control
+
+The citation is Martin Gardner’s November 1973 Mathematical Games column,
+[“Fantastic patterns traced by programmed ‘worms’”](https://www.scientificamerican.com/article/mathematical-games-1973-11/),
+Scientific American 229(5), starting on page 116,
+DOI [10.1038/scientificamerican1173-116](https://doi.org/10.1038/scientificamerican1173-116).
+The publisher’s page identifies the article but does not provide the full text.
+
+These worms model feeding paths selected by local rules and previous trails.
+[Michael Beeler’s Paterson’s Worm](https://dspace.mit.edu/handle/1721.1/6210),
+MIT AI Memo 290 (June 1973), is available through MIT with a PDF download.
+The recovered program’s six-direction grid and rule tables support the connection
+to this family; exact equivalence to every published rule is not established.
+See [the research notes](history/scientific-american.md).
+
+The player starts at Original (1×). Select Fast (20×) to accelerate the same
+emulated program without clearing the current path. The selected speed survives
+Restart; Pause and Help still stop the machine. Actual speed depends on the
+browser and available processing time. Held keys temporarily use original-speed
+pacing through the shared emulator to avoid unwanted auto-repeat.

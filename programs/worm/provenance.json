@@ -241,5 +241,27 @@
     "path": "programs/worm/verification/screen.png",
     "sha256": "5c5eef923f892311674ebd8ad6fdc8f5dd1a804c2702ad791fa62e4cec42b63a",
     "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
+  },
+  "research": {
+    "date": "2026-11-02",
+    "article": {
+      "author": "Martin Gardner",
+      "column": "Mathematical Games",
+      "issue": "November 1973",
+      "volume": 229,
+      "number": 5,
+      "starting_page": 116,
+      "doi": "10.1038/scientificamerican1173-116",
+      "url": "https://www.scientificamerican.com/article/mathematical-games-1973-11/"
+    },
+    "technical_memo": {
+      "author": "Michael Beeler",
+      "title": "Paterson\u2019s Worm",
+      "date": "June 1973",
+      "report": "MIT AI Memo 290",
+      "url": "https://dspace.mit.edu/handle/1721.1/6210"
+    },
+    "notes": "history/scientific-american.md",
+    "scope": "The citation is identified; exact equivalence of recovered program rules to all published variants is not claimed."
   }
 }
