@@ -1,0 +1,25 @@
+{
+  "id": "teachvi",
+  "title": "TEACH VI",
+  "description": "An early German vocabulary quiz credited January 11, 1979.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v06",
+  "versionOrder": "Inferred from added scoring, question-range selection, and retry behavior; the fixed-length tape22b form precedes the configurable tape12b forms in this presentation. Cross-tape chronology is uncertain.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TEACH VI",
+      "capture": "tape12a",
+      "save": 2,
+      "raw": "versions/v01/02-TEACH-VI.BAS",
+      "listing": "versions/v01/02-TEACH-VI.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
