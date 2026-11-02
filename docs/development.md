@@ -54,3 +54,15 @@ files are unchanged; this maintenance change needs no new game release.
 The HTML entry and npm manifests also live in `app/`; configuration uses browser
 module resolution for the TypeScript sources outside that package. CI installs
 from `app/package-lock.json`, runs commands in `app/`, and uploads root `dist/`.
+
+### Six further unlinked programs
+
+The `second-gallery` worktree adds Skinner Box, German tutor, Magazine Index,
+TEACH VI, Poker, and LIFE at `#/more`. No main-gallery inbound link is added.
+All six use unshared web v1 and one playable reference. Source and canonical
+history preserve 44 complete recovered saves, plus German's damaged fragment
+and LIFE's incomplete compiled header. `npm run build:life` assembles the
+separate LIFE executable; `npm test` checks a blinker in the actual Z80 code.
+`tests/browser/learning.spec.js` covers original startup, representative input,
+printing, pause/restart, and direct frozen v1 paths. Set CAPTURE_GALLERY_ART=1
+only to deliberately update their original-screen PNGs.

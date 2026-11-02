@@ -1,7 +1,7 @@
 // Original BASIC players; the helpers send real keyboard input, never change RAM.
 const common='<p>Click the screen to give it keyboard focus. Pause freezes the original machine; Help pauses it and restores the prior pause state when closed. Restart begins a fresh run. Held keys are released on blur, navigation, pause, and restart.</p>';
 const art=id=>({src:new URL(`../../assets/${id}-screen.png`,import.meta.url).href});
-const answers=(instance,{dock},example)=>{
+export const answers=(instance,{dock},example)=>{
  const form=document.createElement('form');form.className='original-answer';
  form.innerHTML='<label>Type an answer or command<input aria-label="Answer for the original program" autocomplete="off" autocapitalize="characters" spellcheck="false"></label><button type="submit">Send + Enter</button>';
  const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));

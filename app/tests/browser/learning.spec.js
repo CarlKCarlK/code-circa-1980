@@ -1,0 +1,34 @@
+import {test,expect} from '@playwright/test';
+const screen=page=>page.evaluate(()=>window.__circaPlayer?String.fromCharCode(...window.__circaPlayer.snapshot().map(c=>c<32?c+64:c>=128?32:c)):'');
+const boot=async(page,id)=>{page.on('dialog',d=>d.accept());await page.goto(`/?development=1&test#/program/${id}`);await expect(page.locator('#status')).toContainText(id==='life'?'Running original Z80':'Running original BASIC');};
+const answer=async(page,value)=>{const field=page.getByRole('textbox',{name:'Answer for the original program'});await expect(field).toBeEnabled();await field.fill(value);await page.getByRole('button',{name:'Send + Enter'}).click();await expect(field).toBeEnabled();};
+const tap=async(page,key)=>{await page.locator('#display').focus();await page.keyboard.down(key);await page.waitForTimeout(150);await page.keyboard.up(key);};
+const capture=async(page,id)=>{if(process.env.CAPTURE_GALLERY_ART==='1'){if(id==='magazine'){await page.locator('.printer-output').evaluate(node=>{node.style.width='680px';const pre=node.querySelector('pre');pre.style.height='360px';pre.style.overflow='hidden';});await page.locator('.printer-output').screenshot({path:`assets/${id}-screen.png`});}else await page.locator('#display canvas').screenshot({path:`assets/${id}-screen.png`});}};
+const noError=async page=>expect(await screen(page)).not.toMatch(/\?(?:SN|FC|OM|UL|DD|BS|OV|TM|NF|RG) ERROR/i);
+async function restart(page,prompt){await page.getByRole('button',{name:'Pause',exact:true}).click();const t=await page.evaluate(()=>window.__circaPlayer.diagnostics().tStates);await page.waitForTimeout(180);expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().tStates)).toBe(t);await page.getByRole('button',{name:'Resume',exact:true}).click();await page.getByRole('button',{name:'Restart',exact:true}).click();if(prompt)await expect.poll(()=>screen(page),{timeout:40000}).toContain(prompt);}
+test('Skinner Box counts attempts, advances its clock and accepts a schedule guess',async({page})=>{
+ test.setTimeout(90000);await boot(page,'skinner');await expect.poll(()=>screen(page)).toContain('WELCOME  RAT!');await tap(page,'a');await expect.poll(()=>screen(page)).toContain('TIME SINCE LAST');await page.waitForTimeout(2200);await tap(page,'a');await capture(page,'skinner');await noError(page);await tap(page,'1');await expect.poll(()=>screen(page)).toContain('WHICH SCHEDULE');await answer(page,'FR');await expect.poll(()=>screen(page)).toContain('AVERAGE');await answer(page,'5');await expect.poll(()=>screen(page),{timeout:15000}).toContain('PRESS ANY BUTTON');await noError(page);await restart(page,'WELCOME  RAT!');
+});
+test('German tutor configures a one-word lesson and marks a correct answer',async({page})=>{
+ test.setTimeout(120000);await boot(page,'german');await page.waitForTimeout(1000);await tap(page,' ');await expect.poll(()=>screen(page),{timeout:40000}).toContain('LIKE TO START WITH');
+ const steps=[['LIKE TO START WITH','1'],['LIKE TO END WITH','1'],['GERMAN TO ENGLISH','YES'],['PERCENTAGE SCORE','NO'],['LETTER GRADE','NO'],['WORD ORDER RANDOM','NO'],['QUICK OPTION','NO']];
+ for(const [prompt,value] of steps){await expect.poll(()=>screen(page)).toContain(prompt);await answer(page,value);}
+ await capture(page,'german');await answer(page,'IT BRINGS');await expect.poll(()=>screen(page)).toContain('DAS IST RICHTIG');await noError(page);await restart(page);
+});
+test('TEACH VI quizzes EVENING and reports a correct answer',async({page})=>{
+ test.setTimeout(90000);await boot(page,'teachvi');await expect.poll(()=>screen(page)).toContain('ON WHAT QUESTION');await answer(page,'1,1');await expect.poll(()=>screen(page)).toContain('EVENING');await capture(page,'teachvi');await answer(page,'DER ABEND');await expect.poll(()=>screen(page)).toContain("THAT'S RIGHT");await tap(page,' ');await expect.poll(()=>screen(page)).toContain('100');await noError(page);await restart(page,'ON WHAT QUESTION');
+});
+test('Magazine Index sends original article references to the printer and restarts',async({page})=>{
+ test.setTimeout(90000);await boot(page,'magazine');await expect(page.locator('.printer-output pre')).toContainText('PAGE',{timeout:60000});await capture(page,'magazine');expect((await page.locator('.printer-output pre').textContent()).length).toBeGreaterThan(30);await noError(page);await restart(page);await expect(page.locator('.printer-output pre')).toContainText('PAGE',{timeout:60000});
+});
+test('Poker deals a hand and accepts a fold',async({page})=>{
+ test.setTimeout(90000);await boot(page,'poker');await expect.poll(()=>screen(page),{timeout:40000}).toContain('YOUR HAND');await expect.poll(()=>screen(page),{timeout:20000}).toContain('BET');await capture(page,'poker');await answer(page,'0');await noError(page);await expect.poll(()=>screen(page),{timeout:20000}).toMatch(/FOLD|ANTE|WIN|DEAL/);await restart(page,'YOUR HAND');
+});
+test('LIFE enters its original assembly editor and runs a drawn pattern',async({page})=>{
+ test.setTimeout(90000);await boot(page,'life');await page.waitForTimeout(1800);
+ for(const key of [' ','ArrowRight',' ','ArrowRight',' ']){await page.locator('#display').focus();await page.keyboard.down(key);await page.waitForTimeout(90);await page.keyboard.up(key);await page.waitForTimeout(400);}
+ const before=await page.evaluate(()=>window.__circaPlayer.snapshot());expect(before.filter(c=>c>128&&c<192).length).toBeGreaterThan(0);await tap(page,'Enter');await expect.poll(()=>page.evaluate(()=>window.__circaPlayer.snapshot()),{timeout:25000}).not.toEqual(before);await page.waitForTimeout(11000);await capture(page,'life');await noError(page);await tap(page,'Escape');await page.waitForTimeout(400);await restart(page);
+});
+for(const id of ['skinner','german','magazine','teachvi','poker','life'])test(`${id}: frozen v1 opens directly and retains downloadable originals`,async({page})=>{
+ await page.goto(`/${id}/v1/?test`);await expect(page.locator('#display canvas')).toHaveCount(1);await expect(page.locator('#status')).toContainText(id==='life'?'Running original Z80':'Running original BASIC');expect(new URL(page.url()).hash).toBe('');await expect(page.locator('.version-picker,.web-version-nav')).toHaveCount(0);const link=page.getByRole('link',{name:'Download original payload',exact:true});expect((await page.request.get(await link.getAttribute('href'))).ok()).toBe(true);await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(13);
+});

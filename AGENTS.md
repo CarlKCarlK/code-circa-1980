@@ -215,3 +215,13 @@ are rickyrat, pinball, logic, and orbit; they follow the same unshared-v1 policy
 Gallery artwork for these four is captured from the actual original players at
 native canvas aspect ratio. Only set CAPTURE_GALLERY_ART=1 when intentionally
 refreshing those PNGs; ordinary browser tests must not alter tracked artwork.
+
+The next requested extra programs are skinner, german, magazine, teachvi, poker,
+and life. They follow the same single-player, unshared-v1 policy. Magazine Index
+captures LPRINT with optional emulator acceleration; its source is unchanged.
+Poker uses the self-contained text save; later graphics-extension saves are
+source only. LIFE preserves raw EDTASM plus both exports. Run `npm run build:life`
+from app/ to reproduce its separately derived executable and BASIC USR bootstrap.
+Do not describe that build as a recovered historical binary. Archive checks
+validate EDTASM records separately from BASIC. Browser evidence is in
+app/tests/browser/learning.spec.js; LIFE also has an original-Z80 blinker fixture.

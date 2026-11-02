@@ -26,6 +26,19 @@ for(const name of fs.readdirSync(root)){
       assert.equal(bytes.length,file.bytes);
       assert.equal(createHash('sha256').update(bytes).digest('hex'),file.sha256);
     }
+    if(metadata.format==='EDTASM'){
+      const raw=fs.readFileSync(new URL(version.raw,folder));
+      assert.equal(raw[0],0xd3);assert.equal(raw.at(-1),0x1a);
+      const records=raw.subarray(7,-1).toString('latin1').split('\r');assert.equal(records.pop(),'');
+      const numbered=records.map(record=>{
+        assert.match(record.slice(0,5),/^[\xb0-\xb9]{5}$/);assert.equal(record[5],' ');
+        return [...record].map(c=>String.fromCharCode(c.charCodeAt(0)&127)).join('');
+      }).join('\n')+'\n';
+      assert.equal(numbered,fs.readFileSync(new URL(version.listing,folder),'utf8'));
+      const unnumbered=save.imported_files.find(f=>f.path.endsWith('.Z80'));
+      assert.equal(numbered.split('\n').filter(Boolean).map(x=>x.slice(6)).join('\n')+'\n',fs.readFileSync(new URL(unnumbered.path,folder),'utf8'));
+      assert.equal(records.length,save.recovery_item.lines);return;
+    }
     assert.equal(version.raw,save.imported_files.find(f=>f.path.endsWith('.BAS')).path);
     assert.equal(version.listing,save.imported_files.find(f=>f.path.endsWith('.ASC')).path);
     const bytes=fs.readFileSync(new URL(version.raw,folder));

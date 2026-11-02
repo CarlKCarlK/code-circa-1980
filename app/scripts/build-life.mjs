@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {Asm} from 'z80-asm';
+import {parseBasicText} from 'trs80-base';
+const folder=new URL('../../programs/life/',import.meta.url);
+const source=fs.readFileSync(new URL('versions/v06/06-LIFE-ASSEMBLY-V6.Z80',folder));
+// The recovered source has no ORG. Choose free RAM explicitly in this derived build.
+const lines=['\tORG 8000H',...source.toString().trimEnd().split(/\r?\n/)];
+const asm=new Asm(name=>name==='life.asm'?lines:undefined);asm.assembleFile('life.asm');
+const errors=asm.assembledLines.filter(line=>line.error);
+if(errors.length)throw Error(errors.map(x=>`${x.line}: ${x.error}`).join('\n'));
+const used=asm.assembledLines.filter(line=>line.binary.length);
+const start=Math.min(...used.map(l=>l.address)),end=Math.max(...used.map(l=>l.address+l.binary.length));
+const binary=new Uint8Array(end-start);for(const l of used)binary.set(l.binary,l.address-start);
+const hash=b=>createHash('sha256').update(b).digest('hex');
+fs.mkdirSync(new URL('derived/',folder),{recursive:true});
+fs.writeFileSync(new URL('derived/life.bin',folder),binary);
+const bootstrap='10 CLEAR 50:POKE 16526,0:POKE 16527,128:A=USR(0):END\n';
+fs.writeFileSync(new URL('derived/LIFE-BOOT.ASC',folder),bootstrap);
+fs.writeFileSync(new URL('derived/LIFE-BOOT.BAS',folder),parseBasicText(bootstrap));
+fs.writeFileSync(new URL('derived/build.json',folder),JSON.stringify({description:'Modern assembly of untouched recovered LIFE v6; not recovered historical machine code.',source:'versions/v06/06-LIFE-ASSEMBLY-V6.Z80',source_sha256:hash(source),assembler:'z80-asm 2.3.0',transformation:'Prepend ORG 8000H; no recovered instructions changed. Separate BASIC bootstrap sets the Level II USR vector and enters through USR.',origin:start,bytes:binary.length,sha256:hash(binary),symbols:Object.fromEntries([...asm.scopes[0].symbols].map(([k,v])=>[k,v.value]))},null,2)+'\n');
+console.log(`LIFE: ${binary.length} bytes at ${start}, ${hash(binary)}`);

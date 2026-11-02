@@ -1,6 +1,6 @@
 {
   "official_title": "Skinner Box",
-  "title_authority": "Descriptive recovery title inferred from source behavior; no explicit title screen identified.",
+  "title_authority": "Recovered source heading/comment",
   "short_name": "skinner",
   "import_date": "2026-11-02",
   "order_inferred": true,
@@ -167,5 +167,10 @@
   "dating": {
     "direct_date": null,
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+  },
+  "artwork": {
+    "path": "app/assets/skinner-screen.png",
+    "sha256": "0f475d77445f0f26c79b506d7c89bf214143b13993a6ec963fcdc251c4419036",
+    "method": "Captured from original emulator canvas; original aspect ratio retained."
   }
 }

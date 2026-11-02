@@ -132,5 +132,6 @@
       "note": "Untouched recovered save. 26 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
       "unavailableReason": null
     }
-  ]
+  ],
+  "printer": true
 }

@@ -1,6 +1,6 @@
 {
   "official_title": "Poker",
-  "title_authority": "Descriptive recovery title inferred from source behavior; no explicit title screen identified.",
+  "title_authority": "Recovered source heading/comment",
   "short_name": "poker",
   "import_date": "2026-11-02",
   "order_inferred": true,
@@ -323,5 +323,10 @@
   "dating": {
     "direct_date": null,
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+  },
+  "artwork": {
+    "path": "app/assets/poker-screen.png",
+    "sha256": "cafeeb4aa70e087e68710cc40445f8d17645e7bca435479098e391b98eecf11c",
+    "method": "Captured from original emulator canvas; original aspect ratio retained."
   }
 }

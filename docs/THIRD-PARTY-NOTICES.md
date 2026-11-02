@@ -81,3 +81,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Recovered Poker listing
+
+The historical Poker heading credits Creative Computing, Morristown, New Jersey
+(with original transcription spelling retained). These recovered third-party
+source credits remain intact; the collection's license does not replace any
+rights associated with the original published listing. No new authorship is
+claimed for that listing.

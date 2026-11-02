@@ -1,6 +1,6 @@
 {
   "official_title": "LIFE",
-  "title_authority": "Descriptive recovery title inferred from source behavior; no explicit title screen identified.",
+  "title_authority": "Recovered source heading/comment",
   "short_name": "life",
   "import_date": "2026-11-02",
   "order_inferred": true,
@@ -353,5 +353,10 @@
   "dating": {
     "direct_date": null,
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+  },
+  "artwork": {
+    "path": "app/assets/life-screen.png",
+    "sha256": "44edf5a8cc78c540e4fb05269194a6db41db6719becd05c724bb23b7ff4679a6",
+    "method": "Captured from original emulator canvas; original aspect ratio retained."
   }
 }

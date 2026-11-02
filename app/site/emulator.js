@@ -34,7 +34,7 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
   let machineBytes;
   if (dependency) {
     const response=await fetch(dependency.url);
-    if (!response.ok) throw Error('Could not load FALL dependency');
+    if (!response.ok) throw Error('Could not load machine-code dependency');
     machineBytes=new Uint8Array(await response.arrayBuffer());
   }
   const config = model === 'MODEL1'
@@ -48,7 +48,7 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
   let printout;
   if(printer){
     const sheet=document.createElement('details');sheet.className='printer-output';sheet.open=true;sheet.hidden=true;
-    sheet.innerHTML='<summary>Printer · team roster</summary><pre aria-label="Original printer output"></pre>';
+    sheet.innerHTML='<summary>Printer output</summary><pre aria-label="Original printer output"></pre>';
     printout=sheet.querySelector('pre');host.append(sheet);
     machine.onPrint=value=>{
       sheet.hidden=false;
@@ -157,7 +157,7 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     // Memory inspection supports reproducible browser smoke tests. It does not
     // modify the running program or expose a different gameplay implementation.
     snapshot() { return Array.from({length:1024}, (_,i) => machine.readMemory(0x3c00+i)); },
-    diagnostics() {return {tStates:machine.tStateCount, paused, held:[...held]};},
+    diagnostics() {return {tStates:machine.tStateCount, pc:machine.z80.regs.pc, paused, held:[...held]};},
     dispose() {
       disposed = true; release(); machine.stop(); cancelAnimationFrame(fastHandle);
       document.removeEventListener('keydown', keydown); document.removeEventListener('keyup', keyup); document.removeEventListener('paste', paste);

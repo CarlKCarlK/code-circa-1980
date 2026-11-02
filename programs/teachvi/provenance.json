@@ -1,6 +1,6 @@
 {
   "official_title": "TEACH VI",
-  "title_authority": "Descriptive recovery title inferred from source behavior; no explicit title screen identified.",
+  "title_authority": "Recovered source heading/comment",
   "short_name": "teachvi",
   "import_date": "2026-11-02",
   "order_inferred": true,
@@ -323,5 +323,10 @@
   "dating": {
     "direct_date": null,
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+  },
+  "artwork": {
+    "path": "app/assets/teachvi-screen.png",
+    "sha256": "3910dd5fc60f74ff0f21bbbf977013aa24fd15b9ba8d3d9eb45e4e4f227234d5",
+    "method": "Captured from original emulator canvas; original aspect ratio retained."
   }
 }

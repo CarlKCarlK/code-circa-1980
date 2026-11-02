@@ -3,7 +3,7 @@
   "title": "LIFE",
   "description": "Draw a population and watch the original Z80 assembly run Conway\u2019s Game of Life.",
   "kind": "Game",
-  "language": "Level II BASIC",
+  "language": "Z80 assembly",
   "gallery": "more",
   "showWebVersions": false,
   "unsharedWebV1": true,
@@ -75,7 +75,15 @@
       "playable": true,
       "slug": "basic",
       "note": "Untouched recovered save. Valid EDTASM source records and 1A end; exact left/right timing matches; not assembled",
-      "unavailableReason": null
+      "unavailableReason": null,
+      "runtimeRaw": "derived/LIFE-BOOT.BAS",
+      "machineCode": {
+        "file": "derived/life.bin",
+        "address": 32768
+      },
+      "running": "Running original Z80 assembly"
     }
-  ]
+  ],
+  "format": "EDTASM",
+  "listingLabel": "Download assembly listing"
 }

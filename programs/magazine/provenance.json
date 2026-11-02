@@ -1,6 +1,6 @@
 {
   "official_title": "Magazine Index",
-  "title_authority": "Descriptive recovery title inferred from source behavior; no explicit title screen identified.",
+  "title_authority": "Descriptive title inferred from index behavior",
   "short_name": "magazine",
   "import_date": "2026-11-02",
   "order_inferred": true,
@@ -583,5 +583,10 @@
   "dating": {
     "direct_date": null,
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+  },
+  "artwork": {
+    "path": "app/assets/magazine-screen.png",
+    "sha256": "80c9607ca20ac6211d6173e6bfb51f9bdca25a30b139e09e476ed75962f87e93",
+    "method": "Captured from original emulator printer output; original aspect ratio retained."
   }
 }
