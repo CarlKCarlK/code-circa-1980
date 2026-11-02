@@ -1,0 +1,67 @@
+{
+  "official_title": "Pendulum",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "pendulum",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred from the added experiment title, validation of half-swings, and final period/time/frequency display. Exact cross-tape chronology is unknown.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21a",
+      "save": 17,
+      "archive_raw": "tapes/recovered/tape21a/best/17-PENDULUM.BAS",
+      "archive_listing": "tapes/recovered/tape21a/best/17-PENDULUM.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/17-PENDULUM.BAS",
+          "archive_path": "tapes/recovered/tape21a/best/17-PENDULUM.BAS",
+          "bytes": 648,
+          "sha256": "8fcdfd409eb7aebe3f06fef2ecf8784e6b0aac1859c7abac85a980649e79ca37"
+        },
+        {
+          "path": "versions/v01/17-PENDULUM.ASC",
+          "archive_path": "tapes/recovered/tape21a/best/17-PENDULUM.ASC",
+          "bytes": 728,
+          "sha256": "b59fadb13cf71f48c99ace20ccd797c3eea38111759460d3e8d9ae2e38825c28"
+        }
+      ],
+      "recovery_item": {
+        "lines": 28,
+        "last": 650,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "8fcdfd409eb7aebe3f06fef2ecf8784e6b0aac1859c7abac85a980649e79ca37"
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "a",
+        "order": "17",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PENDULUM",
+        "capture": "tape21a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "458.347",
+        "recovered_bytes": "648",
+        "source_file": "tapes/recovered/tape21a/best/17-PENDULUM.ASC",
+        "wav": "tapes/tape21a.wav",
+        "folder": "tapes/recovered/tape21a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source notices and book years do not establish tape-save dates or cross-program chronology."
+  }
+}

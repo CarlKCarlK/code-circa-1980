@@ -1,0 +1,25 @@
+{
+  "id": "pendulum",
+  "title": "Pendulum",
+  "description": "An animated physics experiment with string length and gravity.",
+  "kind": "Simulation",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v02",
+  "versionOrder": "Inferred from the added experiment title, validation of half-swings, and final period/time/frequency display. Exact cross-tape chronology is unknown.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PENDULUM",
+      "capture": "tape21a",
+      "save": 17,
+      "raw": "versions/v01/17-PENDULUM.BAS",
+      "listing": "versions/v01/17-PENDULUM.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
