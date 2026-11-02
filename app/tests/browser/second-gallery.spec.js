@@ -83,3 +83,16 @@ for(const id of ['speech','olympics','xwing'])test(`${id}: frozen v1 opens its o
  await expect(page.locator('.program-card')).toHaveCount(3);
  expect(errors).toEqual([]);
 });
+
+test('remembered name startwar81 opens its latest frozen player',async({page})=>{
+ await page.goto('/#/more');
+ await page.getByRole('link',{name:'Play startwar81 →'}).click();
+ await expect(page).toHaveURL(/\/xwing\/v2\/$/);
+ await expect(page.locator('.player-header h1')).toHaveText('startwar81');
+ await expect(page.locator('#status')).toContainText('Running original BASIC');
+ await expect(page.locator('.source-details')).toContainText('identification is tentative');
+ await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
+ await page.setViewportSize({width:390,height:844});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
+ await expect(page.locator('.program-card')).toHaveCount(3);
+});

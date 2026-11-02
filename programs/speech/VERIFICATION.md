@@ -12,7 +12,7 @@ Chromium runs the recovered v10 (tape11b save 7) in the real TRS-80 emulator.
 The initial smoke check reached the coach count, accepted a coach and school,
 and generated the events; Help, pause/resume, and restart were exercised.
 The expanded browser check also covers the original printer roster and student
-selection. Final suite results are recorded in docs/second-gallery.md.
+selection prompt. Final suite results are recorded in docs/second-gallery.md.
 
 No claim of a completed tournament season or exhaustive historical correctness.
 Damaged recordings are source only. LPRINT is captured at Model III printer

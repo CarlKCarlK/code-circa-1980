@@ -31,7 +31,7 @@ from recovery detection intervals in the WAVs, not physical tape counter values.
 The main gallery retains its original six entries. Both galleries use the same
 card renderer and stylesheet. These three players return to the second gallery.
 The page and players request no indexing. There is no inbound navigation link
-from the main collection. Initial web v1 snapshots are frozen locally; no
+from the main collection. Initial web v1 snapshots are frozen locally; startwar81 also has a v2 preserving the newly remembered name while keeping its earlier X-wing label in v1; no
 existing published snapshot was modified. No merge or deployment was performed.
 
 ## Verification commands
@@ -56,7 +56,7 @@ PLAYWRIGHT_BASE_URL=http://127.0.0.1:5187 PLAYWRIGHT_WORKERS=3 npm run test:brow
 The verifier checks all sixteen snapshots, canonical tagged listing/payload
 blobs, current original files, partial hashes, and unmodified raw prefix ranges.
 The archive suite checks complete BASIC structure and listing conversion. The
-release-integrity check verifies ten immutable experiences, including the seven
+release-integrity check verifies eleven immutable experiences, including the seven
 that predate this worktree. Desktop and 390-pixel phone views were inspected;
 the phone page has no horizontal overflow.
 
@@ -67,3 +67,22 @@ new frozen v1 player. A stale Castles test closed an already-open source panel;
 it was corrected to open that panel only when needed, and its rerun passed.
 Complete tournament seasons, Olympic competitions, and the Death Star mission
 were not played through. No claim of exhaustive historical behavior testing.
+
+## Results — November 2, 2026
+
+- Unit/archive checks and production build passed.
+- All sixteen complete snapshots, canonical tag blobs, and partial prefix/hash
+  checks passed; all eleven frozen web experiences passed integrity verification
+  against the worktree's starting commit e951413.
+- The full browser run had 60 passing tests, one preexisting skipped test, and
+  one failing cockpit-startup assertion. That assertion watched a reticle while
+  BASIC was still drawing; it now waits for the stable timer field to contain
+  a number. The final focused run passed all eight tests, including that flight
+  check, both coaching games, all three v1 snapshots, the renamed startwar81 v2,
+  return navigation, and phone gallery width. The broad suite was not rerun
+  after the title/prose change; all affected gallery/player checks were rerun.
+
+The final branch is `second-gallery`. Open tools/code-circa-1980.code-workspace
+in this worktree to keep the website and recovery archive together. The local
+preview is at http://127.0.0.1:5187/#/more. This work is committed locally and
+has not been merged, pushed, or deployed.
