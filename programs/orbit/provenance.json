@@ -110,6 +110,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape11b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape11b",
+      "save": 14,
+      "archive_raw": "tapes/recovered/tape11b/best/14-ORBIT-SIMULATOR-V3.BAS",
+      "archive_listing": "tapes/recovered/tape11b/best/14-ORBIT-SIMULATOR-V3.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/14-ORBIT-SIMULATOR-V3.BAS",
+          "archive_path": "tapes/recovered/tape11b/best/14-ORBIT-SIMULATOR-V3.BAS",
+          "bytes": 1130,
+          "sha256": "8c3dcde895c5baf2e8b7e8307e7e1f6d73366e97295e6bd96cddd0f64e80bd11"
+        },
+        {
+          "path": "versions/v03/14-ORBIT-SIMULATOR-V3.ASC",
+          "archive_path": "tapes/recovered/tape11b/best/14-ORBIT-SIMULATOR-V3.ASC",
+          "bytes": 1270,
+          "sha256": "b1f4449d075e12fb614c5dff0aec63cc42b3231da4b04f747d7715c704e9282a"
+        }
+      ],
+      "recovery_item": {
+        "lines": 43,
+        "last": 1020,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "8c3dcde895c5baf2e8b7e8307e7e1f6d73366e97295e6bd96cddd0f64e80bd11"
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "b",
+        "order": "14",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "ORBIT SIMULATOR V3; 43 lines",
+        "capture": "tape11b",
+        "capture_scope": "possible skipped program (tangled tape)",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be required",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "source_start_s": "518.921",
+        "recovered_bytes": "1130",
+        "source_file": "tapes/recovered/tape11b/best/14-ORBIT-SIMULATOR-V3.ASC",
+        "wav": "tapes/tape11b.wav",
+        "folder": "tapes/recovered/tape11b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime; capture may omit another program"
+      },
+      "recovery_inventory": "tapes/recovered/tape11b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
