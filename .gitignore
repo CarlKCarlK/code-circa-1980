@@ -12,3 +12,6 @@ programs/chess/rating/uci/target/
 programs/chess/rating/config.json
 
 /worktrees/
+
+__pycache__/
+*.pyc
