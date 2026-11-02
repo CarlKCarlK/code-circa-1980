@@ -1,19 +1,19 @@
 {
-  "version": "v04",
+  "version": "v05",
   "capture": "tape12b",
-  "save": 7,
-  "archive_raw": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.BAS",
-  "archive_listing": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.ASC",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape12b/best/08-TEACH-VI-V2-SAVE2.BAS",
+  "archive_listing": "tapes/recovered/tape12b/best/08-TEACH-VI-V2-SAVE2.ASC",
   "imported_files": [
     {
-      "path": "versions/v04/07-TEACH-VI-V2.BAS",
-      "archive_path": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.BAS",
+      "path": "versions/v05/08-TEACH-VI-V2-SAVE2.BAS",
+      "archive_path": "tapes/recovered/tape12b/best/08-TEACH-VI-V2-SAVE2.BAS",
       "bytes": 3106,
       "sha256": "178f8343d12e198fa271bf7196b97867ea10f12c9bd446e96850fad93fab91f3"
     },
     {
-      "path": "versions/v04/07-TEACH-VI-V2.ASC",
-      "archive_path": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.ASC",
+      "path": "versions/v05/08-TEACH-VI-V2-SAVE2.ASC",
+      "archive_path": "tapes/recovered/tape12b/best/08-TEACH-VI-V2-SAVE2.ASC",
       "bytes": 3376,
       "sha256": "a7119fab2b0e6d2077ab8b3ad78dada498b17f86bdc61e0d7dd6079e16d32e23"
     }
@@ -28,19 +28,19 @@
   "inventory_row": {
     "tape": "12",
     "side": "b",
-    "order": "7",
+    "order": "8",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "TEACH VI V2; 37 lines",
+    "summary": "TEACH VI V2 SAVE2; 37 lines; identical to save 7",
     "capture": "tape12b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
-    "source_start_s": "343.766",
+    "source_start_s": "402.238",
     "recovered_bytes": "3106",
-    "source_file": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.ASC",
+    "source_file": "tapes/recovered/tape12b/best/08-TEACH-VI-V2-SAVE2.ASC",
     "wav": "tapes/tape12b.wav",
     "folder": "tapes/recovered/tape12b/best",
     "recovery_date": "2026-10-27",
