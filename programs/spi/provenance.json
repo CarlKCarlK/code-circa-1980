@@ -110,6 +110,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape20b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/03-SUPERPOWER-INVESTING-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.BAS",
+          "bytes": 3509,
+          "sha256": "a8d3e0fcdb8a7e88c8f56c734cacaea2714269df33e5c09f844689c5a7f5996f"
+        },
+        {
+          "path": "versions/v03/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+          "bytes": 3758,
+          "sha256": "425451a04579a32e60bd9b4f7102f3bd8420fb67579341b23b3539ed7e8a3b35"
+        }
+      ],
+      "recovery_item": {
+        "lines": 107,
+        "last": 20140,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "a8d3e0fcdb8a7e88c8f56c734cacaea2714269df33e5c09f844689c5a7f5996f"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "b",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SUPERPOWER INVESTING SAVE02",
+        "capture": "tape20b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "130.608",
+        "recovered_bytes": "3509",
+        "source_file": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+        "wav": "tapes/tape20b.wav",
+        "folder": "tapes/recovered/tape20b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {

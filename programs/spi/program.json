@@ -31,6 +31,17 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v03",
+      "label": "SUPERPOWER INVESTING SAVE02",
+      "capture": "tape20b",
+      "save": 3,
+      "raw": "versions/v03/03-SUPERPOWER-INVESTING-SAVE02.BAS",
+      "listing": "versions/v03/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
