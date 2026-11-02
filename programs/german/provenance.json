@@ -578,6 +578,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape19b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v12",
+      "capture": "tape19b",
+      "save": 15,
+      "archive_raw": "tapes/recovered/tape19b/best/15-TEACH-GERMAN-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape19b/best/15-TEACH-GERMAN-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v12/15-TEACH-GERMAN-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape19b/best/15-TEACH-GERMAN-SAVE2.BAS",
+          "bytes": 4504,
+          "sha256": "2c4d39bf1fbb63dff0fdb744da148923b215eaf08f7fafbf5db36646c4a103d9"
+        },
+        {
+          "path": "versions/v12/15-TEACH-GERMAN-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape19b/best/15-TEACH-GERMAN-SAVE2.ASC",
+          "bytes": 5224,
+          "sha256": "4df3f6aa693e16a55c1a80889e5dd257410821f72ed80f09fd75ad3a4498a50e"
+        }
+      ],
+      "recovery_item": {
+        "lines": 80,
+        "last": 20000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "2c4d39bf1fbb63dff0fdb744da148923b215eaf08f7fafbf5db36646c4a103d9"
+      },
+      "inventory_row": {
+        "tape": "19",
+        "side": "b",
+        "order": "15",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TEACH GERMAN SAVE2",
+        "capture": "tape19b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "534.695",
+        "recovered_bytes": "4504",
+        "source_file": "tapes/recovered/tape19b/best/15-TEACH-GERMAN-SAVE2.ASC",
+        "wav": "tapes/tape19b.wav",
+        "folder": "tapes/recovered/tape19b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape19b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {

@@ -130,6 +130,18 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v12",
+      "label": "TEACH GERMAN SAVE2",
+      "capture": "tape19b",
+      "save": 15,
+      "raw": "versions/v12/15-TEACH-GERMAN-SAVE2.BAS",
+      "listing": "versions/v12/15-TEACH-GERMAN-SAVE2.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": null
     }
   ]
 }
