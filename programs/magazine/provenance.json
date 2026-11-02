@@ -474,6 +474,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v10",
+      "capture": "tape7a",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v10/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
+          "bytes": 4080,
+          "sha256": "2500a5792ba842e4b7a47573cfd21ba8f3cffcfd0ddde486db0a198ee6f5baae"
+        },
+        {
+          "path": "versions/v10/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+          "bytes": 4399,
+          "sha256": "cb1c08adefe4b12c0a1a3c0ada82ea35a088d5110311da3a76efdd61e39c980d"
+        }
+      ],
+      "recovery_item": {
+        "lines": 26,
+        "last": 1000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "2500a5792ba842e4b7a47573cfd21ba8f3cffcfd0ddde486db0a198ee6f5baae"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "7",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V6; 26 lines",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "26 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "4080",
+        "source_file": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
