@@ -31,6 +31,18 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v03",
+      "label": "SKINNER BOX V3",
+      "capture": "tape10a",
+      "save": 3,
+      "raw": "versions/v03/03-SKINNER-BOX-V3.BAS",
+      "listing": "versions/v03/03-SKINNER-BOX-V3.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": null
     }
   ]
 }

@@ -1,46 +1,46 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape10a",
-  "save": 2,
-  "archive_raw": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.BAS",
-  "archive_listing": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.ASC",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape10a/best/03-SKINNER-BOX-V3.BAS",
+  "archive_listing": "tapes/recovered/tape10a/best/03-SKINNER-BOX-V3.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/02-SKINNER-BOX-V2.BAS",
-      "archive_path": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.BAS",
-      "bytes": 1488,
-      "sha256": "c321b56c1e6791098a758b64b517947083502688a6b9ea9d72ac492b4dd261d2"
+      "path": "versions/v03/03-SKINNER-BOX-V3.BAS",
+      "archive_path": "tapes/recovered/tape10a/best/03-SKINNER-BOX-V3.BAS",
+      "bytes": 1509,
+      "sha256": "2bb030fe6d58634d74b8c8639fa312f504ec2387d84e84a091cc56c859b5ed36"
     },
     {
-      "path": "versions/v02/02-SKINNER-BOX-V2.ASC",
-      "archive_path": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.ASC",
-      "bytes": 1737,
-      "sha256": "a6c648edead6204e4512d47c68a79f581d03b0b3aac035c653ae38065b4b755a"
+      "path": "versions/v03/03-SKINNER-BOX-V3.ASC",
+      "archive_path": "tapes/recovered/tape10a/best/03-SKINNER-BOX-V3.ASC",
+      "bytes": 1763,
+      "sha256": "ae4bafcdbd71549cb367b245b67422cee37108dfd5d60be3bd5a52c3ee390af8"
     }
   ],
   "recovery_item": {
-    "lines": 58,
+    "lines": 56,
     "last": 3060,
     "pointer_base": 22204,
     "normal_end_marker": true,
-    "sha256": "c321b56c1e6791098a758b64b517947083502688a6b9ea9d72ac492b4dd261d2"
+    "sha256": "2bb030fe6d58634d74b8c8639fa312f504ec2387d84e84a091cc56c859b5ed36"
   },
   "inventory_row": {
     "tape": "10",
     "side": "a",
-    "order": "2",
+    "order": "3",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "SKINNER BOX V2; 58 lines",
+    "summary": "SKINNER BOX V3; 56 lines",
     "capture": "tape10a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 BASIC; TIME$ format required",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
-    "source_start_s": "31.862",
-    "recovered_bytes": "1488",
-    "source_file": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.ASC",
+    "source_start_s": "72.564",
+    "recovered_bytes": "1509",
+    "source_file": "tapes/recovered/tape10a/best/03-SKINNER-BOX-V3.ASC",
     "wav": "tapes/tape10a.wav",
     "folder": "tapes/recovered/tape10a/best",
     "recovery_date": "2026-10-27",
