@@ -35,3 +35,25 @@ From app/ run `npm run build:learningttt-runtime`, `npm test`, `npm run build`,
 and `npm run test:browser`. Set PLAYWRIGHT_BASE_URL to a private production
 preview port to avoid using another worktree’s server. Browser screenshots are
 test artifacts, not gallery illustrations. Gallery SVGs are modern illustrations.
+
+## Final verification — November 2, 2026
+
+- All 21 imported payloads/listings match the archive; 114 total snapshots and
+  every canonical tag/current original pass the shared verifier.
+- `npm test` passes all 18 test files, including the adaptation and actual-ROM
+  arithmetic tests. `npm run build` passes.
+- All 32 active web releases pass hash/catalog verification against pre-import
+  commit 6b0e882; no existing release bytes were changed by this import.
+- The full 98-case browser run passed 97 cases. Its sole failure was a new test
+  incorrectly expecting the hidden Help dialog to be absent from the DOM.
+  That assertion was corrected to require the dialog to be hidden; the targeted
+  gallery recheck passes, including image decoding and 390px layout.
+- All six source runtime scenarios and all six frozen-v1 startup/download/return
+  checks passed in that full run. Screenshots and per-program execution limits
+  are recorded in programs/<id>/verification and VERIFICATION.md.
+
+The work is committed locally on second-gallery. The six new players remain at
+unshared web v1; this task did not publish them or add a main-gallery link.
+Use `npm run preview -- --port 5317 --strictPort` from app/, then open
+`http://127.0.0.1:5317/#/more`. The shared workspace is
+`tools/code-circa-1980.code-workspace`, with the recovery archive alongside it.

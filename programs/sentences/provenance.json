@@ -120,5 +120,19 @@
     "path": "app/assets/sentences-gallery.svg",
     "sha256": "f8f9ab057757af10a50b586695ccd7616f185fba393144bf46681d2dfe173721",
     "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "edition": "Original v02",
+    "execution_tested": true,
+    "test": "app/tests/browser/next-six.spec.js",
+    "checks": "Automatic output containing names and common words, pause/resume and restart verified.",
+    "limits": "Short-run sampling only; no exhaustive random sentence or long-session test.",
+    "note": "This website evidence is separate from the preserved recovery-inventory execution_tested flags."
+  },
+  "emulator_capture": {
+    "path": "programs/sentences/verification/screen.png",
+    "sha256": "35f18eb4aca3c37518e2af596364e3371d14dd384aad180af88d0f6d815e531e",
+    "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
   }
 }

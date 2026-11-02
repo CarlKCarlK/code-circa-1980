@@ -28,9 +28,10 @@ test('Superpower Investing calculates its historical sample and prints final pro
 
 test('More contains eighteen readable cards and all six new direct player links',async({page})=>{
  await page.goto('/#/more');await expect(page.locator('.program-card')).toHaveCount(18);
+ expect(await page.locator('.program-card img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0))).toBe(true);
  for(const title of ['Worm One','Peoria Grand Prix','Pendulum','Sentence Generator','Learning Tic-Tac-Toe','Superpower Investing'])await expect(page.getByRole('heading',{name:title,exact:true})).toHaveCount(1);
  for(const width of [1280,390]){await page.setViewportSize({width,height:960});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
- await page.getByRole('link',{name:'Play Pendulum →'}).click();await expect(page.locator('#display canvas')).toHaveCount(1);await expect(page.locator('.player-help,.instructions-start')).toHaveCount(0);
+ await page.getByRole('link',{name:'Play Pendulum →'}).click();await expect(page.locator('#display canvas')).toHaveCount(1);await expect(page.locator('.instructions-start')).toHaveCount(0);await expect(page.locator('.player-help')).toBeHidden();
 });
 for(const id of ['worm','peoria','pendulum','sentences','learningttt','spi'])test(`${id}: frozen web v1 starts directly with source downloads and returns to More`,async({page})=>{
  test.setTimeout(60000);await page.goto(`/${id}/v1/?test`);await expect(page.locator('#display canvas')).toHaveCount(1);expect(new URL(page.url()).hash).toBe('');await expect(page.locator('#status')).toContainText(id==='learningttt'?'Running adapted BASIC':'Running original BASIC');

@@ -227,5 +227,19 @@
     "path": "app/assets/worm-gallery.svg",
     "sha256": "a355c305e0f7cb2a2b6b2b206db7ddf19d1c25c42b5d37fabd72b78600ecb26d",
     "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "edition": "Original v04",
+    "execution_tested": true,
+    "test": "app/tests/browser/next-six.spec.js",
+    "checks": "Rule and starting coordinates accepted; a visible path drawn; pause/resume and restart verified. A separate direct-ROM probe ran six different rules for 100 emulated seconds apiece; some stop with D and others produce longer traces.",
+    "limits": "Only sampled rules and coordinates were tested; no exhaustive pattern enumeration.",
+    "note": "This website evidence is separate from the preserved recovery-inventory execution_tested flags."
+  },
+  "emulator_capture": {
+    "path": "programs/worm/verification/screen.png",
+    "sha256": "5c5eef923f892311674ebd8ad6fdc8f5dd1a804c2702ad791fa62e4cec42b63a",
+    "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
   }
 }
