@@ -333,5 +333,14 @@
     "path": "app/assets/poker-screen.png",
     "sha256": "cafeeb4aa70e087e68710cc40445f8d17645e7bca435479098e391b98eecf11c",
     "method": "Captured from original emulator canvas; original aspect ratio retained."
-  }
+  },
+  "derived_editions": [
+    {
+      "path": "corrected/POKER.BAS",
+      "source": "versions/v02/06-POKER.BAS",
+      "sha256": "a0ed9397fc9ebfd7732c20c34b5124261c273083cfc37250396cabd40570d6cb",
+      "changes": "corrected/changes.json",
+      "status": "Modern minimal correction, not recovered historical bytes"
+    }
+  ]
 }

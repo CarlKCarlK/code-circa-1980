@@ -30,7 +30,7 @@ print feedback. German's introductory message can be skipped with Space.
 
 Magazine Index uses original LPRINT output. The printer panel starts at 20×
 emulation and can switch to original speed; BASIC bytes remain unchanged.
-Poker uses the self-contained text form credited to Creative Computing. Later
+Poker uses a minimally corrected derivative of the self-contained text form credited to Creative Computing. The separate patch repairs card evaluation, removes a draw-time STOP, fixes a THEN typo, and corrects displayed spelling. Recovered saves remain untouched. Later
 saves require unavailable LINE/GET/PUT extensions, so they remain source only.
 
 LIFE uses the original Z80 instructions assembled separately with pinned

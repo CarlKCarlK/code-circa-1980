@@ -8,7 +8,7 @@
   "showWebVersions": false,
   "unsharedWebV1": true,
   "defaultVersion": "v02",
-  "versionOrder": "The self-contained text form and its repeat precede graphical revisions in inferred development order. Later forms use LINE/GET/PUT extensions unavailable in the stock ROM. The text repeat is the playable default.",
+  "versionOrder": "Inferred presentation order: two closely related self-contained text saves, followed by graphical revisions. The text saves differ: tape12b save 6 reverses line 2190 and adds a debugging STOP. Later forms use LINE/GET/PUT extensions unavailable in the stock ROM. A separately corrected derivative of the selected text save is the playable default. Cross-tape chronology is not established.",
   "versions": [
     {
       "id": "v01",

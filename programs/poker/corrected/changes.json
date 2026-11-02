@@ -1,0 +1,118 @@
+{
+  "source": "versions/v02/06-POKER.BAS",
+  "source_sha256": "bd187b69f89d8f078254468c82c3228993d7a13d476cc68cd45255b55c1c9ac9",
+  "sha256": "a0ed9397fc9ebfd7732c20c34b5124261c273083cfc37250396cabd40570d6cb",
+  "listing_sha256": "d7543d3774b46acde72957957b6473e0de4d2f5e6d319aa8161320ec975bbd97",
+  "description": "Separate corrected edition; recovered historical files are unchanged.",
+  "changes": [
+    {
+      "line": 4,
+      "from": "CHREATIVE",
+      "to": "CREATIVE",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 4,
+      "from": "MORRISTIWN",
+      "to": "MORRISTOWN",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 40,
+      "from": "WWELCOME",
+      "to": "WELCOME",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 50,
+      "from": "OPEEN",
+      "to": "OPEN",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 50,
+      "from": "DRAWW",
+      "to": "DRAW",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 50,
+      "from": "YOOU",
+      "to": "YOU",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 70,
+      "from": "DOWWN",
+      "to": "DOWN",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 690,
+      "from": "YOOU",
+      "to": "YOU",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 700,
+      "from": "DO YOU WITH TO CONTINUE",
+      "to": "DO YOU WISH TO CONTINUE",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 1005,
+      "from": "STOP",
+      "to": null,
+      "reason": "Remove the draw-time debugging stop, absent in the other text save."
+    },
+    {
+      "line": 2190,
+      "from": "A(Z)=BB",
+      "to": "BB=A(Z)",
+      "reason": "Read each card into the rank helper instead of overwriting the hand; matches the other recovered text save."
+    },
+    {
+      "line": 3210,
+      "from": "YOOU",
+      "to": "YOU",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 3310,
+      "from": "IFT<=25THEEN3350",
+      "to": "IFT<=25THEN3350",
+      "reason": "Correct misspelled THEN keyword; preserve the existing condition and target."
+    },
+    {
+      "line": 3860,
+      "from": "SELL YOU WATCH",
+      "to": "SELL YOUR WATCH",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 3930,
+      "from": "WWATCH",
+      "to": "WATCH",
+      "reason": "Displayed text spelling",
+      "count": 1
+    },
+    {
+      "line": 4090,
+      "from": "YOUR WAS IS SHOT",
+      "to": "YOUR WAD IS SHOT",
+      "reason": "Displayed text spelling",
+      "count": 1
+    }
+  ]
+}

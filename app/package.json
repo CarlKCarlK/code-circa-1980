@@ -8,7 +8,7 @@
     "dev": "vite --config config/vite.config.js --host 127.0.0.1",
     "build": "npm run typecheck && vite build --config config/vite.config.js",
     "preview": "vite --config config/vite.config.js preview --host 127.0.0.1",
-    "test": "node --test tests/archive.test.mjs tests/castles-parity.test.mjs tests/castles-timing.test.mjs tests/castles-pointer.test.mjs tests/castles-bricks.test.mjs tests/castles-patterns.test.mjs tests/balancer-engine.test.mjs tests/alien-corrected.test.mjs tests/web-versions.test.mjs tests/plot3d-engine.test.mjs tests/chess-original.test.mjs tests/chess-rust.test.mjs tests/chess-corrected.test.mjs tests/bomb-original.test.mjs tests/life-original.test.mjs",
+    "test": "node --test tests/archive.test.mjs tests/castles-parity.test.mjs tests/castles-timing.test.mjs tests/castles-pointer.test.mjs tests/castles-bricks.test.mjs tests/castles-patterns.test.mjs tests/balancer-engine.test.mjs tests/alien-corrected.test.mjs tests/web-versions.test.mjs tests/plot3d-engine.test.mjs tests/chess-original.test.mjs tests/chess-rust.test.mjs tests/chess-corrected.test.mjs tests/bomb-original.test.mjs tests/life-original.test.mjs tests/poker-corrected.test.mjs",
     "release:web": "node scripts/release-web.mjs",
     "verify:web-versions": "node scripts/web-versions.mjs",
     "test:browser": "playwright test --config config/playwright.config.js",
@@ -22,7 +22,8 @@
     "build:chess": "node scripts/build-chess.mjs",
     "record:chess": "node scripts/record-chess-parity.mjs",
     "build:chess-corrected": "node scripts/build-chess-corrected.mjs",
-    "build:life": "node scripts/build-life.mjs"
+    "build:life": "node scripts/build-life.mjs",
+    "build:poker-corrected": "node scripts/build-poker-corrected.mjs"
   },
   "dependencies": {
     "trs80-base": "2.3.1",

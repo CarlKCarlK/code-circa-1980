@@ -2,6 +2,8 @@
 
 Play five-card draw against the computer with the recovered text version.
 
-The self-contained text form and its repeat precede graphical revisions in inferred development order. Later forms use LINE/GET/PUT extensions unavailable in the stock ROM. The text repeat is the playable default.
+Two closely related text saves precede graphical revisions in the inferred presentation order; their cross-tape chronology is uncertain. Later forms use LINE/GET/PUT extensions unavailable in the stock ROM. A corrected derivative of tape12b save 6 is the playable default.
 
-Only v02 is playable. All recovered bytes are preserved unchanged. See provenance.json and VERIFICATION.md.
+Only the corrected derivative of v02 is playable. All recovered bytes are preserved unchanged. See provenance.json and VERIFICATION.md.
+
+The tape12b text save is not identical to tape4b save 2: its reversed assignment and draw-time STOP are corrected only in the separate playable derivative.

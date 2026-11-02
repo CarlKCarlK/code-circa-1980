@@ -236,3 +236,10 @@ Original emulator PNG captures remain separate; CAPTURE_GALLERY_ART=1 updates
 those evidence captures only, not the live gallery illustrations. Provenance
 records the illustration under artwork and the original under emulator_capture.
 Gallery-only illustration changes do not require rebuilding frozen players.
+
+Poker now plays only the minimally corrected derivative of tape12b save 6
+(import v02), in programs/poker/corrected/. Rebuild with
+`npm run build:poker-corrected`. Preserve all recovered originals and snapshots.
+The patch reverses line 2190, removes debug STOP 1005, corrects THEEN at 3310,
+and fixes quoted spelling. Keep its web release at unshared v1. Tests cover
+executable patch scope, real-ROM card evaluation/drawing, and browser showdown.
