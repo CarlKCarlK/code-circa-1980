@@ -1,52 +1,52 @@
 {
-  "version": "v02",
-  "capture": "tape22b",
-  "save": 5,
-  "archive_raw": "tapes/recovered/tape22b/best/05-TEACH-VI-GERMAN.BAS",
-  "archive_listing": "tapes/recovered/tape22b/best/05-TEACH-VI-GERMAN.ASC",
+  "version": "v03",
+  "capture": "tape12b",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape12b/best/04-TEACH-VI.BAS",
+  "archive_listing": "tapes/recovered/tape12b/best/04-TEACH-VI.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/05-TEACH-VI-GERMAN.BAS",
-      "archive_path": "tapes/recovered/tape22b/best/05-TEACH-VI-GERMAN.BAS",
-      "bytes": 2947,
-      "sha256": "ebeb3debe777d60896ffb9903aadde2324baededb744ea2f519f96b47c885a87"
+      "path": "versions/v03/04-TEACH-VI.BAS",
+      "archive_path": "tapes/recovered/tape12b/best/04-TEACH-VI.BAS",
+      "bytes": 1907,
+      "sha256": "02a4e620e1eb9c9be2a720e454c37fb1b45a7cf2c0adbe2a45f015235dd966a7"
     },
     {
-      "path": "versions/v02/05-TEACH-VI-GERMAN.ASC",
-      "archive_path": "tapes/recovered/tape22b/best/05-TEACH-VI-GERMAN.ASC",
-      "bytes": 3205,
-      "sha256": "0b904013968ffa37599c8141e7a6e5275df6b92df87bcde21cf7738eb82a9d71"
+      "path": "versions/v03/04-TEACH-VI.ASC",
+      "archive_path": "tapes/recovered/tape12b/best/04-TEACH-VI.ASC",
+      "bytes": 2142,
+      "sha256": "010697a6491da718c53b4407ecb8a8a45f8ee425b69342a6d5be8dbd86a0e9ab"
     }
   ],
   "recovery_item": {
-    "lines": 36,
+    "lines": 32,
     "last": 32000,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "ebeb3debe777d60896ffb9903aadde2324baededb744ea2f519f96b47c885a87"
+    "sha256": "02a4e620e1eb9c9be2a720e454c37fb1b45a7cf2c0adbe2a45f015235dd966a7"
   },
   "inventory_row": {
-    "tape": "22",
+    "tape": "12",
     "side": "b",
-    "order": "5",
+    "order": "4",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "TEACH VI GERMAN",
-    "capture": "tape22b",
+    "summary": "TEACH VI; 32 lines",
+    "capture": "tape12b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
-    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "159.026",
-    "recovered_bytes": "2947",
-    "source_file": "tapes/recovered/tape22b/best/05-TEACH-VI-GERMAN.ASC",
-    "wav": "tapes/tape22b.wav",
-    "folder": "tapes/recovered/tape22b",
-    "recovery_date": "2026-10-28",
+    "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+    "source_start_s": "91.295",
+    "recovered_bytes": "1907",
+    "source_file": "tapes/recovered/tape12b/best/04-TEACH-VI.ASC",
+    "wav": "tapes/tape12b.wav",
+    "folder": "tapes/recovered/tape12b/best",
+    "recovery_date": "2026-10-27",
     "recorder_volume": "",
-    "next_action": "Runtime testing only if requested"
+    "next_action": "Execution-test with compatible runtime"
   },
-  "recovery_inventory": "tapes/recovered/tape22b/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape12b/inventory.json",
   "execution_tested": false
 }
