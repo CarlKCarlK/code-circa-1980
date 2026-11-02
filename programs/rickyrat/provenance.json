@@ -1,0 +1,67 @@
+{
+  "official_title": "Ricky Rat",
+  "title_authority": "Printed in recovered source",
+  "short_name": "rickyrat",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred from source changes and within-side save order. All complete saves are on tape18b; saves 2 and 3 repeat the first form. Saves 15 and 19 are damaged and remain separate. Import v15 is recovery-label V14, save 18, the latest complete form. The later damaged V15 is not substituted or repaired.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape18b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.BAS",
+      "archive_listing": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-RICKY-RAT-V1.BAS",
+          "archive_path": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.BAS",
+          "bytes": 3425,
+          "sha256": "bcaf33083ff2fdcb380ed8979165455150608f00993e863018b021fdec916581"
+        },
+        {
+          "path": "versions/v01/02-RICKY-RAT-V1.ASC",
+          "archive_path": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.ASC",
+          "bytes": 4191,
+          "sha256": "05ea80819e267c2cbe61a65dffc0336cf140fbe1bab6352a610996213e99fee5"
+        }
+      ],
+      "recovery_item": {
+        "lines": 157,
+        "last": 5010,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "bcaf33083ff2fdcb380ed8979165455150608f00993e863018b021fdec916581"
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "RICKY RAT V1",
+        "capture": "tape18b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "76.653",
+        "recovered_bytes": "3425",
+        "source_file": "tapes/recovered/tape18b/best/02-RICKY-RAT-V1.ASC",
+        "wav": "tapes/tape18b.wav",
+        "folder": "tapes/recovered/tape18b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_line": "6000 'RICKY RAT  BY CARL KADIE   6 AUG 82   K",
+    "interpretation": "Direct dated source credit; does not establish every revision date or tape save date."
+  }
+}

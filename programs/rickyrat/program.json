@@ -1,0 +1,24 @@
+{
+  "id": "rickyrat",
+  "title": "Ricky Rat",
+  "description": "Two rats race through a generated maze, using the original 1982 BASIC algorithms.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "defaultVersion": "v15",
+  "versionOrder": "Inferred from source changes and within-side save order. All complete saves are on tape18b; saves 2 and 3 repeat the first form. Saves 15 and 19 are damaged and remain separate. Import v15 is recovery-label V14, save 18, the latest complete form. The later damaged V15 is not substituted or repaired.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "RICKY RAT V1",
+      "capture": "tape18b",
+      "save": 2,
+      "raw": "versions/v01/02-RICKY-RAT-V1.BAS",
+      "listing": "versions/v01/02-RICKY-RAT-V1.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
