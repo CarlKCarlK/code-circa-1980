@@ -1,0 +1,25 @@
+{
+  "id": "poker",
+  "title": "Poker",
+  "description": "Play five-card draw against the computer with the recovered text version.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v02",
+  "versionOrder": "The self-contained text form and its repeat precede graphical revisions in inferred development order. Later forms use LINE/GET/PUT extensions unavailable in the stock ROM. The text repeat is the playable default.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "POKER",
+      "capture": "tape4b",
+      "save": 2,
+      "raw": "versions/v01/02-POKER.BAS",
+      "listing": "versions/v01/02-POKER.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. 412 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
