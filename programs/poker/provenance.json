@@ -58,6 +58,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape4b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape12b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape12b/best/06-POKER.BAS",
+      "archive_listing": "tapes/recovered/tape12b/best/06-POKER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/06-POKER.BAS",
+          "archive_path": "tapes/recovered/tape12b/best/06-POKER.BAS",
+          "bytes": 5988,
+          "sha256": "bd187b69f89d8f078254468c82c3228993d7a13d476cc68cd45255b55c1c9ac9"
+        },
+        {
+          "path": "versions/v02/06-POKER.ASC",
+          "archive_path": "tapes/recovered/tape12b/best/06-POKER.ASC",
+          "bytes": 7475,
+          "sha256": "b16f83721d9117e0ccd71d03973f16a2468fc98be9fe0ea1a7f1f8eae762e7e9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 412,
+        "last": 5000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "bd187b69f89d8f078254468c82c3228993d7a13d476cc68cd45255b55c1c9ac9"
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "POKER; 412 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "source_start_s": "232.031",
+        "recovered_bytes": "5988",
+        "source_file": "tapes/recovered/tape12b/best/06-POKER.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
