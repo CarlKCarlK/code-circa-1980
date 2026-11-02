@@ -214,6 +214,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape7b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape7b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/02-MAGAZINE-INDEX-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.BAS",
+          "bytes": 703,
+          "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
+        },
+        {
+          "path": "versions/v05/02-MAGAZINE-INDEX-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.ASC",
+          "bytes": 906,
+          "sha256": "ae30841e92bbb04075e905d25b1c5fbaf7a5927bd7dfd740782bc6d21f1da128"
+        }
+      ],
+      "recovery_item": {
+        "lines": 10,
+        "last": 999,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MAGAZINE INDEX SAVE2; 10 readable line records",
+        "capture": "tape7b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "10 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "703",
+        "source_file": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.ASC",
+        "wav": "tapes/tape7b.wav",
+        "folder": "tapes/recovered/tape7b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; keep printer output for index programs"
+      },
+      "recovery_inventory": "tapes/recovered/tape7b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
