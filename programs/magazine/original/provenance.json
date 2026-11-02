@@ -1,19 +1,19 @@
 {
-  "version": "v08",
+  "version": "v09",
   "capture": "tape7a",
-  "save": 5,
-  "archive_raw": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.BAS",
-  "archive_listing": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.ASC",
+  "save": 6,
+  "archive_raw": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.BAS",
+  "archive_listing": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.ASC",
   "imported_files": [
     {
-      "path": "versions/v08/05-MAGAZINE-ARTICLE-INDEX-V4.BAS",
-      "archive_path": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.BAS",
+      "path": "versions/v09/06-MAGAZINE-ARTICLE-INDEX-V5.BAS",
+      "archive_path": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.BAS",
       "bytes": 1960,
-      "sha256": "a13921fac281d622843c5353b8f9f2012618fc16fbbb0266695f0385e829989f"
+      "sha256": "7fc4d26fc92961f277b0bc9b6eaef963f89453d54544ef32b18cf5ad6597d055"
     },
     {
-      "path": "versions/v08/05-MAGAZINE-ARTICLE-INDEX-V4.ASC",
-      "archive_path": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.ASC",
+      "path": "versions/v09/06-MAGAZINE-ARTICLE-INDEX-V5.ASC",
+      "archive_path": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.ASC",
       "bytes": 2246,
       "sha256": "f97360e5619c0699e828fb61d18041a60c5c11f997cac03a50afbaf4f893a5e7"
     }
@@ -23,15 +23,15 @@
     "last": 1000,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "a13921fac281d622843c5353b8f9f2012618fc16fbbb0266695f0385e829989f"
+    "sha256": "7fc4d26fc92961f277b0bc9b6eaef963f89453d54544ef32b18cf5ad6597d055"
   },
   "inventory_row": {
     "tape": "7",
     "side": "a",
-    "order": "5",
+    "order": "6",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "Magazine article subject index V4; 17 lines",
+    "summary": "Magazine article subject index V5; 17 lines",
     "capture": "tape7a",
     "capture_scope": "unknown",
     "baud": "500",
@@ -40,7 +40,7 @@
     "validation": "17 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
     "source_start_s": "",
     "recovered_bytes": "1960",
-    "source_file": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.ASC",
+    "source_file": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.ASC",
     "wav": "tapes/tape7a.wav",
     "folder": "tapes/recovered/tape7a/best",
     "recovery_date": "2026-10-26",
