@@ -18,7 +18,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       deployed tags with a server-side fetch (curl) or a server-side checker such as
       opengraph.xyz; browser-only previewers such as previewer.pro cannot read
       cross-origin pages and wrongly report "Not detected".
-- [ ] Unversioned program URLs. `https://carlkcarlk.github.io/code-circa-1980/castles/`
+- [x] Unversioned program URLs. `https://carlkcarlk.github.io/code-circa-1980/castles/`
       (and `bal/`, `alien/`, `plot3d/`, `chess/`, `bomb/`) currently return 404.
       Each should open that program's latest web release (today `vN` = `v1`) and
       move forward automatically when a newer release is published, driven by
