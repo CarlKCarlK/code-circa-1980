@@ -222,8 +222,8 @@
   },
   "artwork": {
     "path": "app/assets/learningttt-gallery.svg",
-    "sha256": "6ee78799609f86fd60fcd791c7309282367394dd16b44dc1a2175e6d5551ad53",
-    "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+    "sha256": "bef009af5a65b7886190c3dea67133b2ea324606bc7baea31e6bcafcb039231a",
+    "description": "Modern illustrative SVG with a square board, equal cells, equal-diagonal X marks, and a round O; not an emulator screenshot or execution evidence."
   },
   "runtime_adaptation": {
     "path": "runtime/",

@@ -26,3 +26,9 @@ from the original recovery-inventory evidence.
 Unit tests, production build, all 114 canonical/snapshot checks, and preservation
 of all 32 active web releases pass. The final browser-suite result is recorded
 in docs/next-six-programs.md.
+
+Gallery-art correction, November 2, 2026: the illustration now uses a square
+270-by-270 board with equal 90-by-90 cells, equal-diagonal X marks, and a round
+O. Desktop and 390px captures were inspected; the gallery image/link/layout
+check, unit tests, and production build pass. The provenance artwork hash is
+updated. This gallery-only change leaves the frozen v1 player unchanged.
