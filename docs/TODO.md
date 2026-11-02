@@ -163,7 +163,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       ideas in a program matter more than its syntax; syntax, typing, and tooling help,
       but come second. Draft in `docs/article-draft.md`; builds on the bal draft. Castles and 3-D Plot have TypeScript
       versions, bal and Chess have Rust; Alien and Bomb have no modern port yet.
-- [ ] New browser icon. Redraw the "80" in lettering evoking either the TRS-80
+- [x] New browser icon. Redraw the "80" in lettering evoking either the TRS-80
       nameplate or Zilog's Z80 marking (inspired by, not a copy of, either trademark).
       Draw it as SVG paths rather than font text so it renders the same everywhere,
       and check legibility at 16 px. Applies to the gallery and v2 releases only.
