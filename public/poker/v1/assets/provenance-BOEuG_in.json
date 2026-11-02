@@ -169,6 +169,11 @@
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
   },
   "artwork": {
+    "path": "app/assets/skinner-gallery.svg",
+    "sha256": "cf3000c5efe6b6c042f7a11728a8c4f40c3cb59c79ee7703ece0444e95785b41",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "path": "app/assets/skinner-screen.png",
     "sha256": "0f475d77445f0f26c79b506d7c89bf214143b13993a6ec963fcdc251c4419036",
     "method": "Captured from original emulator canvas; original aspect ratio retained."

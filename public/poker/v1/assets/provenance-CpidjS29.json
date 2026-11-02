@@ -585,6 +585,11 @@
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
   },
   "artwork": {
+    "path": "app/assets/magazine-gallery.svg",
+    "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "path": "app/assets/magazine-screen.png",
     "sha256": "80c9607ca20ac6211d6173e6bfb51f9bdca25a30b139e09e476ed75962f87e93",
     "method": "Captured from original emulator printer output; original aspect ratio retained."

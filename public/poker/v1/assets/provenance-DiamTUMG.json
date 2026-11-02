@@ -637,6 +637,11 @@
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
   },
   "artwork": {
+    "path": "app/assets/german-gallery.svg",
+    "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "path": "app/assets/german-screen.png",
     "sha256": "f8b09d8a85509f213da3f34852a93cbb2c8287fdbfca504d24f8d60f7219a255",
     "method": "Captured from original emulator canvas; original aspect ratio retained."
