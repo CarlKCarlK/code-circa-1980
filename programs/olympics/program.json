@@ -18,6 +18,17 @@
       "playable": false,
       "note": "Untouched recovered payload. Filtered left and normalized right yield identical 7134 bytes; normal BASIC end marker; not execution-tested",
       "unavailableReason": "Source only. This site plays the selected complete reference version."
+    },
+    {
+      "id": "v02",
+      "label": "tape3a \u00b7 save 1",
+      "capture": "tape3a",
+      "save": 1,
+      "raw": "versions/v02/01-OLYMPICS.BAS",
+      "listing": "versions/v02/01-OLYMPICS.ASC",
+      "playable": false,
+      "note": "Untouched recovered payload. 229 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, left-hp1600; not execution-tested",
+      "unavailableReason": "Source only. This site plays the selected complete reference version."
     }
   ]
 }

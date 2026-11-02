@@ -1,19 +1,19 @@
 {
-  "version": "v01",
-  "capture": "tape3apartial",
+  "version": "v02",
+  "capture": "tape3a",
   "save": 1,
-  "archive_raw": "tapes/recovered/tape3apartial/best/OLYMPICS.BAS",
-  "archive_listing": "tapes/recovered/tape3apartial/best/OLYMPICS.ASC",
+  "archive_raw": "tapes/recovered/tape3a/best/01-OLYMPICS.BAS",
+  "archive_listing": "tapes/recovered/tape3a/best/01-OLYMPICS.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/OLYMPICS.BAS",
-      "archive_path": "tapes/recovered/tape3apartial/best/OLYMPICS.BAS",
+      "path": "versions/v02/01-OLYMPICS.BAS",
+      "archive_path": "tapes/recovered/tape3a/best/01-OLYMPICS.BAS",
       "bytes": 7134,
       "sha256": "fa2f8a759185f96b386f4da782e7951d707d67f6c082680d09be2cb45d8a4052"
     },
     {
-      "path": "versions/v01/OLYMPICS.ASC",
-      "archive_path": "tapes/recovered/tape3apartial/best/OLYMPICS.ASC",
+      "path": "versions/v02/01-OLYMPICS.ASC",
+      "archive_path": "tapes/recovered/tape3a/best/01-OLYMPICS.ASC",
       "bytes": 8856,
       "sha256": "3e6aa48a9ccc5c9a8bbbedcc78ea7b82afcdb6a9c72ed60899a10d5f2a2453df"
     }
@@ -31,22 +31,22 @@
     "order": "1",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "OLYMPICS; sports/coaching game; 229 lines",
-    "capture": "tape3apartial",
-    "capture_scope": "partial",
+    "summary": "OLYMPICS; 229 lines",
+    "capture": "tape3a",
+    "capture_scope": "full",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload",
-    "validation": "Filtered left and normalized right yield identical 7134 bytes; normal BASIC end marker; not execution-tested",
+    "validation": "229 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, left-hp1600; not execution-tested",
     "source_start_s": "",
     "recovered_bytes": "7134",
-    "source_file": "tapes/recovered/tape3apartial/best/OLYMPICS.ASC",
-    "wav": "tapes/tape3apartial.wav",
-    "folder": "tapes/recovered/tape3apartial/best",
+    "source_file": "tapes/recovered/tape3a/best/01-OLYMPICS.ASC",
+    "wav": "tapes/tape3a.wav",
+    "folder": "tapes/recovered/tape3a/best",
     "recovery_date": "2026-10-25",
     "recorder_volume": "5/10",
-    "next_action": "Record full side; execution-test"
+    "next_action": "Execution-test"
   },
-  "recovery_inventory": "tapes/recovered/tape3apartial/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape3a/inventory.json",
   "execution_tested": false
 }
