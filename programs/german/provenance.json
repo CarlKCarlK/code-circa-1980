@@ -1,0 +1,67 @@
+{
+  "official_title": "German tutor",
+  "title_authority": "Descriptive recovery title inferred from source behavior; no explicit title screen identified.",
+  "short_name": "german",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred grouping by source features and lessons, not tape numbering: early vocabulary forms, timed vocabulary/template forms, then vocabulary and verb forms with configurable grading. Different lessons are not necessarily successive revisions. The two tape19b verb saves are the selected developed form; exact cross-tape chronology remains uncertain.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape11a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape11a/best/05-GERMAN-VOCABULARY-TUTOR.BAS",
+      "archive_listing": "tapes/recovered/tape11a/best/05-GERMAN-VOCABULARY-TUTOR.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-GERMAN-VOCABULARY-TUTOR.BAS",
+          "archive_path": "tapes/recovered/tape11a/best/05-GERMAN-VOCABULARY-TUTOR.BAS",
+          "bytes": 4119,
+          "sha256": "773a92d5b5a00da3c642b0f8dbf1752c51c4259c4e33ba144b15d66d10e1b5d5"
+        },
+        {
+          "path": "versions/v01/05-GERMAN-VOCABULARY-TUTOR.ASC",
+          "archive_path": "tapes/recovered/tape11a/best/05-GERMAN-VOCABULARY-TUTOR.ASC",
+          "bytes": 4733,
+          "sha256": "156940949f9362b7d2f8a8992b37f960c1b81268651df8878effe9543ec414bc"
+        }
+      ],
+      "recovery_item": {
+        "lines": 79,
+        "last": 20000,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "773a92d5b5a00da3c642b0f8dbf1752c51c4259c4e33ba144b15d66d10e1b5d5"
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "a",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GERMAN VOCABULARY TUTOR; 79 lines",
+        "capture": "tape11a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+        "source_start_s": "131.275",
+        "recovered_bytes": "4119",
+        "source_file": "tapes/recovered/tape11a/best/05-GERMAN-VOCABULARY-TUTOR.ASC",
+        "wav": "tapes/tape11a.wav",
+        "folder": "tapes/recovered/tape11a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape11a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_date": null,
+    "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+  }
+}

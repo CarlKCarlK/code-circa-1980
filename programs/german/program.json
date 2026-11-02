@@ -1,0 +1,25 @@
+{
+  "id": "german",
+  "title": "German tutor",
+  "description": "Practice German verbs and vocabulary with a configurable original quiz.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v12",
+  "versionOrder": "Inferred grouping by source features and lessons, not tape numbering: early vocabulary forms, timed vocabulary/template forms, then vocabulary and verb forms with configurable grading. Different lessons are not necessarily successive revisions. The two tape19b verb saves are the selected developed form; exact cross-tape chronology remains uncertain.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GERMAN VOCABULARY TUTOR",
+      "capture": "tape11a",
+      "save": 5,
+      "raw": "versions/v01/05-GERMAN-VOCABULARY-TUTOR.BAS",
+      "listing": "versions/v01/05-GERMAN-VOCABULARY-TUTOR.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
