@@ -10,7 +10,7 @@ test('second gallery is separate and unlinked; cards launch players directly',as
  await page.goto('/#/more');
  await expect(page.getByRole('heading',{level:1})).toContainText('the tapes.');
  await expect(page.locator('.program-card')).toHaveCount(3);
- await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','X-wing fighter']);
+ await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','startwar81']);
  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content','noindex, nofollow');
  await page.getByRole('link',{name:'Play Speech →'}).click();
  await expect(page.locator('#display')).toBeVisible();
@@ -56,7 +56,8 @@ test('X-wing candidate starts, digit controls move the cockpit, and restart retu
  await expect.poll(()=>text(page),{timeout:15000}).toContain('CODE');
  await page.locator('#display').focus();await type(page,'1');
  await page.waitForTimeout(1000);await tap(page,' ');
- await expect.poll(()=>text(page),{timeout:30000}).toContain('* --- *');
+ // The timer begins after the BASIC cockpit drawing finishes; its value varies.
+ await expect.poll(()=>page.evaluate(()=>String.fromCharCode(...window.__circaPlayer.snapshot().slice(250,255))),{timeout:60000}).toMatch(/\d/);
  const radar=()=>page.evaluate(()=>window.__circaPlayer.snapshot().filter((_,i)=>i<192&&i%64>=54));
  const before=await radar();
  await page.keyboard.down('4');await page.waitForTimeout(3500);await page.keyboard.up('4');
@@ -67,4 +68,18 @@ test('X-wing candidate starts, digit controls move the cockpit, and restart retu
  page.once('dialog',d=>d.accept());await page.getByRole('button',{name:'Restart',exact:true}).click();
  await expect.poll(()=>text(page),{timeout:15000}).toContain('CODE');
  await expect(page.locator('.source-details')).toContainText('identification is tentative');
+});
+
+for(const id of ['speech','olympics','xwing'])test(`${id}: frozen v1 opens its original player directly`,async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(`/${id}/v1/?test`);
+ await expect(page.locator('#display canvas')).toHaveCount(1);
+ await expect(page.locator('#status')).toContainText('Running original BASIC');
+ expect(new URL(page.url()).pathname).toBe(`/${id}/v1/`);
+ expect(new URL(page.url()).hash).toBe('');
+ await expect(page.locator('.player-header').getByRole('link',{name:'Collection',exact:true})).toHaveAttribute('href',/#\/more$/);
+ await expect(page.getByRole('link',{name:'Download original payload'})).toBeVisible();
+ await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
+ await expect(page.locator('.program-card')).toHaveCount(3);
+ expect(errors).toEqual([]);
 });

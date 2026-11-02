@@ -12,3 +12,58 @@ paths advance in separate commits and program-specific tags. Development order
 is inferred from source changes; capture numbers do not establish dates.
 
 This branch is kept separate for review; no merge or deployment is part of this pass.
+
+## Programs and recovery evidence
+
+- Speech: eleven complete snapshots; default v10 is tape11b save 7. Its repeat
+  is retained as v11. Two malformed tape20a recordings remain in partial/.
+- Olympics: three complete snapshots, including the repeated earlier capture;
+  default v03 is tape3a save 2, with the explicit 1980 Carl Kadie copyright.
+- startwar81 (remembered title): tentative identification; default v01 is tape23b save 5.
+  v02 (tape30a save 2) preserves the later alternate-control experiment as source.
+  The damaged tape23b save 4 is retained separately. All three raw headers store
+  cassette name `S`. The user remembers the longer name as `startwar81`; spelling is preserved exactly.
+
+X-wing source locations: tape23b save 4 at 7:18–8:10 (damaged), save 5 at
+8:20–9:16 (complete); tape30a save 2 at 2:42–3:36 (complete). Times are rounded
+from recovery detection intervals in the WAVs, not physical tape counter values.
+
+The main gallery retains its original six entries. Both galleries use the same
+card renderer and stylesheet. These three players return to the second gallery.
+The page and players request no indexing. There is no inbound navigation link
+from the main collection. Initial web v1 snapshots are frozen locally; no
+existing published snapshot was modified. No merge or deployment was performed.
+
+## Verification commands
+
+From the repository root:
+
+```sh
+python3 app/scripts/verify-second-gallery.py
+cd app
+npm test
+npm run build
+npm run verify:web-versions -- --against e951413
+npm run preview -- --port 5187 --strictPort
+```
+
+With that preview running, in another terminal in app/:
+
+```sh
+PLAYWRIGHT_BASE_URL=http://127.0.0.1:5187 PLAYWRIGHT_WORKERS=3 npm run test:browser
+```
+
+The verifier checks all sixteen snapshots, canonical tagged listing/payload
+blobs, current original files, partial hashes, and unmodified raw prefix ranges.
+The archive suite checks complete BASIC structure and listing conversion. The
+release-integrity check verifies ten immutable experiences, including the seven
+that predate this worktree. Desktop and 390-pixel phone views were inspected;
+the phone page has no horizontal overflow.
+
+Browser checks exercise gallery separation, direct player navigation, coaching
+setup and event generation, event-requirement pages, Speech's actual printer
+output, Help, pause/resume, restart, X-wing radar movement with digit 4, and each
+new frozen v1 player. A stale Castles test closed an already-open source panel;
+it was corrected to open that panel only when needed, and its rerun passed.
+Complete tournament seasons, Olympic competitions, and the Death Star mission
+were not played through. No claim of exhaustive historical behavior testing.

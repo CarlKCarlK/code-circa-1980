@@ -187,5 +187,5 @@ Programs with `gallery: "more"` appear only at `#/more`, not on the main gallery
 Keep this gallery and its programs unlinked from the main collection until the
 user requests otherwise. Reuse shared gallery markup and player controls.
 Speech and Olympics are separate entries even though their code is related.
-The X-wing identity remains tentative. Coaching games capture the original
+The X-wing identity remains tentative; the user remembers its title as `startwar81` (preserve that exact spelling). Its import folder and tags remain `xwing`. Coaching games capture the original
 Model III printer-port output in a roster panel without altering recovered BASIC.

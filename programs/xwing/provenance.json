@@ -1,6 +1,6 @@
 {
-  "official_title": "X-wing fighter",
-  "title_authority": "User request, 2026-11-02; X-wing identity is tentative.",
+  "official_title": "startwar81",
+  "title_authority": "User recollection, 2026-11-02: I think I called it \"startwar81\". Spelling preserved exactly; identification of the recovered game remains tentative.",
   "import_date": "2026-11-02",
   "order_inferred": true,
   "order_evidence": "Inferred: tape23b save 5 uses the digit-key matrix; tape30a save 2 adds an alternate arrow-key read at line 190 and changes line 200. That suggests a later control experiment, not an established date. v01 remains the playable default; v02 contains a suspect expression at line 190. The remembered X-wing identity is unconfirmed; neither listing names an X-wing.",
@@ -114,5 +114,7 @@
   "dating": {
     "direct_date": null,
     "context": "Olympics has a direct 1980 copyright. X-wing shares tape23b with Chemistry Balancer II, whose line 10 says COPYRIGHT 1981 C. KADIE. Speech has no confirmed date in these listings. These do not establish save dates."
-  }
+  },
+  "remembered_title": "startwar81",
+  "cassette_name": "S"
 }
