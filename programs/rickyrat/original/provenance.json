@@ -1,46 +1,46 @@
 {
-  "version": "v09",
+  "version": "v10",
   "capture": "tape18b",
-  "save": 11,
-  "archive_raw": "tapes/recovered/tape18b/best/11-RICKY-RAT-V8.BAS",
-  "archive_listing": "tapes/recovered/tape18b/best/11-RICKY-RAT-V8.ASC",
+  "save": 12,
+  "archive_raw": "tapes/recovered/tape18b/best/12-RICKY-RAT-V9.BAS",
+  "archive_listing": "tapes/recovered/tape18b/best/12-RICKY-RAT-V9.ASC",
   "imported_files": [
     {
-      "path": "versions/v09/11-RICKY-RAT-V8.BAS",
-      "archive_path": "tapes/recovered/tape18b/best/11-RICKY-RAT-V8.BAS",
-      "bytes": 5839,
-      "sha256": "a9384a867e387f4e06762026d3c99f10917fb839662340be48b017b798337f46"
+      "path": "versions/v10/12-RICKY-RAT-V9.BAS",
+      "archive_path": "tapes/recovered/tape18b/best/12-RICKY-RAT-V9.BAS",
+      "bytes": 6201,
+      "sha256": "ce3c0c70c3ebdb6a69f4d4d36ac76b1d27ad996444df0302eb4b250e09c8c33e"
     },
     {
-      "path": "versions/v09/11-RICKY-RAT-V8.ASC",
-      "archive_path": "tapes/recovered/tape18b/best/11-RICKY-RAT-V8.ASC",
-      "bytes": 7014,
-      "sha256": "3ffa275f59ca973079a6dc6a6ba7dd960132afa5b8400f4932969bc02bf7934f"
+      "path": "versions/v10/12-RICKY-RAT-V9.ASC",
+      "archive_path": "tapes/recovered/tape18b/best/12-RICKY-RAT-V9.ASC",
+      "bytes": 7432,
+      "sha256": "af9826079ce34d313109d96e5519223dcd80e9ca8b65f2e2dcf61df6afd2fc98"
     }
   ],
   "recovery_item": {
-    "lines": 199,
+    "lines": 203,
     "last": 6400,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "a9384a867e387f4e06762026d3c99f10917fb839662340be48b017b798337f46"
+    "sha256": "ce3c0c70c3ebdb6a69f4d4d36ac76b1d27ad996444df0302eb4b250e09c8c33e"
   },
   "inventory_row": {
     "tape": "18",
     "side": "b",
-    "order": "11",
+    "order": "12",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "RICKY RAT V8",
+    "summary": "RICKY RAT V9",
     "capture": "tape18b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "786.146",
-    "recovered_bytes": "5839",
-    "source_file": "tapes/recovered/tape18b/best/11-RICKY-RAT-V8.ASC",
+    "source_start_s": "887.405",
+    "recovered_bytes": "6201",
+    "source_file": "tapes/recovered/tape18b/best/12-RICKY-RAT-V9.ASC",
     "wav": "tapes/tape18b.wav",
     "folder": "tapes/recovered/tape18b",
     "recovery_date": "2026-10-28",
