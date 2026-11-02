@@ -65,6 +65,17 @@
       "playable": false,
       "note": "Untouched recovered save. 406 consistent pointers; normal end marker; matches original, right-boosted; not execution-tested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v06",
+      "label": "POKER V3 SAVE2",
+      "capture": "tape4b",
+      "save": 16,
+      "raw": "versions/v06/16-POKER-V3-SAVE2.BAS",
+      "listing": "versions/v06/16-POKER-V3-SAVE2.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. 406 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }

@@ -266,6 +266,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape4b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v06",
+      "capture": "tape4b",
+      "save": 16,
+      "archive_raw": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v06/16-POKER-V3-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.BAS",
+          "bytes": 7895,
+          "sha256": "ccadd6f01b3a059d821d6d39750914adc8676b88b6e8d6fba649d21090689523"
+        },
+        {
+          "path": "versions/v06/16-POKER-V3-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.ASC",
+          "bytes": 10048,
+          "sha256": "58e81c9e7e0dc5be9bfdfa48e9ae16fe90aca814b9a6d2970ad61289322dc615"
+        }
+      ],
+      "recovery_item": {
+        "lines": 406,
+        "last": 9010,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "ccadd6f01b3a059d821d6d39750914adc8676b88b6e8d6fba649d21090689523"
+      },
+      "inventory_row": {
+        "tape": "4",
+        "side": "b",
+        "order": "16",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "POKER V3 SAVE2; 406 lines; T13-C1",
+        "capture": "tape4b",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extended features",
+        "status": "validated payload; runtime untested",
+        "validation": "406 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "7895",
+        "source_file": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.ASC",
+        "wav": "tapes/tape4b.wav",
+        "folder": "tapes/recovered/tape4b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Identify compatible extended BASIC for DEF FN, LINE graphics, GET graphics, PUT graphics"
+      },
+      "recovery_inventory": "tapes/recovered/tape4b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
