@@ -370,6 +370,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v08",
+      "capture": "tape25a",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape25a/best/10-GERMAN-VOCABULARY-TEMPLATE-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape25a/best/10-GERMAN-VOCABULARY-TEMPLATE-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v08/10-GERMAN-VOCABULARY-TEMPLATE-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape25a/best/10-GERMAN-VOCABULARY-TEMPLATE-SAVE02.BAS",
+          "bytes": 3322,
+          "sha256": "bce30f57c84962c6af61457ced77682537fb8cbeedc6985689e3f3d07eaa8a59"
+        },
+        {
+          "path": "versions/v08/10-GERMAN-VOCABULARY-TEMPLATE-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape25a/best/10-GERMAN-VOCABULARY-TEMPLATE-SAVE02.ASC",
+          "bytes": 3919,
+          "sha256": "8e4ae319a5b85378870e72d91d8bb846bbfc6f6d66ae45854d742eee7a379aa1"
+        }
+      ],
+      "recovery_item": {
+        "lines": 75,
+        "last": 20000,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "bce30f57c84962c6af61457ced77682537fb8cbeedc6985689e3f3d07eaa8a59"
+      },
+      "inventory_row": {
+        "tape": "25",
+        "side": "a",
+        "order": "10",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GERMAN VOCABULARY TEMPLATE SAVE02",
+        "capture": "tape25a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC family",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "312.677",
+        "recovered_bytes": "3322",
+        "source_file": "tapes/recovered/tape25a/best/10-GERMAN-VOCABULARY-TEMPLATE-SAVE02.ASC",
+        "wav": "tapes/tape25a.wav",
+        "folder": "tapes/recovered/tape25a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
