@@ -1,0 +1,287 @@
+{
+  "official_title": "Superpower Investing",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "spi",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Five within-side saves retained in capture order. Empty-data templates alternate with data-bearing revisions; these are not five proven successive algorithm versions. The last data-bearing save is the default.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape20b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-SUPERPOWER-INVESTING-SAVE01.BAS",
+          "archive_path": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.BAS",
+          "bytes": 3060,
+          "sha256": "265b99f2d3c65d1f19120be1e733bd0f093ab058d9492783b9bfbfd3f4177b11"
+        },
+        {
+          "path": "versions/v01/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+          "archive_path": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+          "bytes": 3219,
+          "sha256": "dd2adf1a779fc460307a7f9c01a2b86c599a2224995d121cc92d1d838ecd5020"
+        }
+      ],
+      "recovery_item": {
+        "lines": 91,
+        "last": 10010,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "265b99f2d3c65d1f19120be1e733bd0f093ab058d9492783b9bfbfd3f4177b11"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SUPERPOWER INVESTING SAVE01",
+        "capture": "tape20b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "19.601",
+        "recovered_bytes": "3060",
+        "source_file": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+        "wav": "tapes/tape20b.wav",
+        "folder": "tapes/recovered/tape20b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape20b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape20b/best/02-SUPERPOWER-INVESTING-TEMPLATE01.BAS",
+      "archive_listing": "tapes/recovered/tape20b/best/02-SUPERPOWER-INVESTING-TEMPLATE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/02-SUPERPOWER-INVESTING-TEMPLATE01.BAS",
+          "archive_path": "tapes/recovered/tape20b/best/02-SUPERPOWER-INVESTING-TEMPLATE01.BAS",
+          "bytes": 2844,
+          "sha256": "9203f4c8f35e9f5fef4c504cf05368d665fa42570cc0c3b038cb5934f6f1c42a"
+        },
+        {
+          "path": "versions/v02/02-SUPERPOWER-INVESTING-TEMPLATE01.ASC",
+          "archive_path": "tapes/recovered/tape20b/best/02-SUPERPOWER-INVESTING-TEMPLATE01.ASC",
+          "bytes": 2983,
+          "sha256": "de81d2de67fbafa806197136de6f46f0694d97389871d5a88b696b2a8d72fd16"
+        }
+      ],
+      "recovery_item": {
+        "lines": 86,
+        "last": 10010,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "9203f4c8f35e9f5fef4c504cf05368d665fa42570cc0c3b038cb5934f6f1c42a"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SUPERPOWER INVESTING TEMPLATE01",
+        "capture": "tape20b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "76.258",
+        "recovered_bytes": "2844",
+        "source_file": "tapes/recovered/tape20b/best/02-SUPERPOWER-INVESTING-TEMPLATE01.ASC",
+        "wav": "tapes/tape20b.wav",
+        "folder": "tapes/recovered/tape20b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape20b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/03-SUPERPOWER-INVESTING-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.BAS",
+          "bytes": 3509,
+          "sha256": "a8d3e0fcdb8a7e88c8f56c734cacaea2714269df33e5c09f844689c5a7f5996f"
+        },
+        {
+          "path": "versions/v03/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+          "bytes": 3758,
+          "sha256": "425451a04579a32e60bd9b4f7102f3bd8420fb67579341b23b3539ed7e8a3b35"
+        }
+      ],
+      "recovery_item": {
+        "lines": 107,
+        "last": 20140,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "a8d3e0fcdb8a7e88c8f56c734cacaea2714269df33e5c09f844689c5a7f5996f"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "b",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SUPERPOWER INVESTING SAVE02",
+        "capture": "tape20b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "130.608",
+        "recovered_bytes": "3509",
+        "source_file": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+        "wav": "tapes/tape20b.wav",
+        "folder": "tapes/recovered/tape20b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape20b",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape20b/best/07-SUPERPOWER-INVESTING-TEMPLATE02.BAS",
+      "archive_listing": "tapes/recovered/tape20b/best/07-SUPERPOWER-INVESTING-TEMPLATE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/07-SUPERPOWER-INVESTING-TEMPLATE02.BAS",
+          "archive_path": "tapes/recovered/tape20b/best/07-SUPERPOWER-INVESTING-TEMPLATE02.BAS",
+          "bytes": 3115,
+          "sha256": "f7c0bcad9e289264790d7c44091ba8e7884b20687ee3d3f37cc6e8e65e3281b3"
+        },
+        {
+          "path": "versions/v04/07-SUPERPOWER-INVESTING-TEMPLATE02.ASC",
+          "archive_path": "tapes/recovered/tape20b/best/07-SUPERPOWER-INVESTING-TEMPLATE02.ASC",
+          "bytes": 3278,
+          "sha256": "fb2e2d9a3559da98f39f7fecc54edf563328598ae5b5d74090d7b13fa5e52f58"
+        }
+      ],
+      "recovery_item": {
+        "lines": 94,
+        "last": 1040,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "f7c0bcad9e289264790d7c44091ba8e7884b20687ee3d3f37cc6e8e65e3281b3"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "b",
+        "order": "7",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SUPERPOWER INVESTING TEMPLATE02",
+        "capture": "tape20b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "351.501",
+        "recovered_bytes": "3115",
+        "source_file": "tapes/recovered/tape20b/best/07-SUPERPOWER-INVESTING-TEMPLATE02.ASC",
+        "wav": "tapes/tape20b.wav",
+        "folder": "tapes/recovered/tape20b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape20b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape20b/best/08-SUPERPOWER-INVESTING-SAVE03.BAS",
+      "archive_listing": "tapes/recovered/tape20b/best/08-SUPERPOWER-INVESTING-SAVE03.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/08-SUPERPOWER-INVESTING-SAVE03.BAS",
+          "archive_path": "tapes/recovered/tape20b/best/08-SUPERPOWER-INVESTING-SAVE03.BAS",
+          "bytes": 3224,
+          "sha256": "b8a54415d5dab19738b1132b3dd40e4ec9ec694f8a881c1df990e645cd26a403"
+        },
+        {
+          "path": "versions/v05/08-SUPERPOWER-INVESTING-SAVE03.ASC",
+          "archive_path": "tapes/recovered/tape20b/best/08-SUPERPOWER-INVESTING-SAVE03.ASC",
+          "bytes": 3386,
+          "sha256": "f37216f7183a6b0bf28c46630a323705c952fd1376c6ace89c6495bf0b007ccd"
+        }
+      ],
+      "recovery_item": {
+        "lines": 94,
+        "last": 940,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "b8a54415d5dab19738b1132b3dd40e4ec9ec694f8a881c1df990e645cd26a403"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "b",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SUPERPOWER INVESTING SAVE03",
+        "capture": "tape20b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "407.731",
+        "recovered_bytes": "3224",
+        "source_file": "tapes/recovered/tape20b/best/08-SUPERPOWER-INVESTING-SAVE03.ASC",
+        "wav": "tapes/tape20b.wav",
+        "folder": "tapes/recovered/tape20b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [
+      "40 REM            COPYRIGHT (C) 1974"
+    ],
+    "caution": "Source notices and book years do not establish tape-save dates or cross-program chronology."
+  },
+  "personal_history": {
+    "source": "User recollection, November 2, 2026",
+    "text": "Superpower Investing was my first professional program, unless the bond-amortization program I wrote for my dad came earlier.",
+    "chronology": "Unresolved. BOND on tape31a save 1 has line 20: PRINT\"  (C) 1979 CARL KADIE. SPI line 40 says COPYRIGHT (C) 1974. These notices do not establish the programs\u2019 creation dates or relative order."
+  },
+  "artwork": {
+    "path": "app/assets/spi-gallery.svg",
+    "sha256": "e04278e20645be62c425e87a4fea812ff80576249ddf6ab8fa9d75f92fbc90a2",
+    "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+  }
+}

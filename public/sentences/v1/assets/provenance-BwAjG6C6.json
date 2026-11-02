@@ -1,0 +1,29 @@
+{
+  "status": "Damaged; no synthetic terminator or repaired bytes. PREFIX files are validated prefixes only; UNCERTAIN listings are unvalidated. Not playable.",
+  "files": [
+    {
+      "path": "04-STAR-WARS-COCKPIT-EARLY-DAMAGED-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape23b/partial/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-PREFIX.ASC",
+      "bytes": 1307,
+      "sha256": "a4bfe33cca16ed7df7dda6b69577d4b1bf9ad1d645eaacaaafe21df17fc3cd02"
+    },
+    {
+      "path": "04-STAR-WARS-COCKPIT-EARLY-DAMAGED-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape23b/partial/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-PREFIX.BIN",
+      "bytes": 1063,
+      "sha256": "d66f7ef3975204232807e7b5ce9d7849e3b80525e62e482e2bd0d55a6c5b3b4b"
+    },
+    {
+      "path": "04-STAR-WARS-COCKPIT-EARLY-DAMAGED-RAW.BAS",
+      "archive_path": "tapes/recovered/tape23b/partial/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-RAW.BAS",
+      "bytes": 3139,
+      "sha256": "09ba0405ce09ab0a83a670e4da3845b1008e5ce59ebfd1aed83c06f43a7a77f6"
+    },
+    {
+      "path": "04-STAR-WARS-COCKPIT-EARLY-DAMAGED-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape23b/partial/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-UNCERTAIN.ASC",
+      "bytes": 4639,
+      "sha256": "db8aa70562c87c0248171409dbb0a5a37dc417ea8f7bd8f66a2ee97bc2cdf532"
+    }
+  ]
+}
