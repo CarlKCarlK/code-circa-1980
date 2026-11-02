@@ -151,6 +151,17 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v14",
+      "label": "RICKY RAT V13",
+      "capture": "tape18b",
+      "save": 17,
+      "raw": "versions/v14/17-RICKY-RAT-V13.BAS",
+      "listing": "versions/v14/17-RICKY-RAT-V13.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
