@@ -1,0 +1,24 @@
+{
+  "id": "pinball",
+  "title": "Pinball",
+  "description": "A BASIC pinball table with bumpers, scoring, five balls, and a Space-controlled flipper.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "defaultVersion": "v07",
+  "versionOrder": "Inferred from source changes: the three tape9b forms each have repeated saves; tape12a save 11 adds rounded display addresses and changed collision/miss handling. Cross-tape order is an inference from these edits, not tape numbering or an established date.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PINBALL EARLY",
+      "capture": "tape9b",
+      "save": 16,
+      "raw": "versions/v01/16-PINBALL-EARLY.BAS",
+      "listing": "versions/v01/16-PINBALL-EARLY.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
