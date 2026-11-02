@@ -41,6 +41,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v04",
+      "label": "ORBIT SIMULATOR V4",
+      "capture": "tape11b",
+      "save": 15,
+      "raw": "versions/v04/15-ORBIT-SIMULATOR-V4.BAS",
+      "listing": "versions/v04/15-ORBIT-SIMULATOR-V4.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
