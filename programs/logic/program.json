@@ -1,0 +1,24 @@
+{
+  "id": "logic",
+  "title": "Logic circuit simulator",
+  "description": "Create switches, gates, and lights; wire a circuit and test its output in original BASIC.",
+  "kind": "Simulation",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "defaultVersion": "v05",
+  "versionOrder": "Inferred from five consecutive tape15b saves. Later forms add device identification, initialization, reset, and truth-table functionality; source grows from 45 to 116 lines. Dates are not established. The latest complete save is the selected reference.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LOGIC CIRCUIT SIMULATOR SAVE 1",
+      "capture": "tape15b",
+      "save": 14,
+      "raw": "versions/v01/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.BAS",
+      "listing": "versions/v01/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}

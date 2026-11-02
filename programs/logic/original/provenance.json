@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape15b",
+  "save": 14,
+  "archive_raw": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.BAS",
+  "archive_listing": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.BAS",
+      "archive_path": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.BAS",
+      "bytes": 2676,
+      "sha256": "bcb2bf6867274132b7faa4ea10022cef3d2f6c66d12da3e490d630669e189ae0"
+    },
+    {
+      "path": "versions/v01/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+      "archive_path": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+      "bytes": 3111,
+      "sha256": "145a17065ae69fdde028f05505871974f6ee0238c7b8615f11211ad29a7186e8"
+    }
+  ],
+  "recovery_item": {
+    "lines": 45,
+    "last": 940,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "bcb2bf6867274132b7faa4ea10022cef3d2f6c66d12da3e490d630669e189ae0"
+  },
+  "inventory_row": {
+    "tape": "15",
+    "side": "b",
+    "order": "14",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "LOGIC CIRCUIT SIMULATOR SAVE 1; 45 lines",
+    "capture": "tape15b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+    "source_start_s": "1282.416",
+    "recovered_bytes": "2676",
+    "source_file": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+    "wav": "tapes/tape15b.wav",
+    "folder": "tapes/recovered/tape15b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape15b/inventory.json",
+  "execution_tested": false
+}
