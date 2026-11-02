@@ -44,8 +44,11 @@ At original speed a generation takes roughly ten seconds.
 The six VERIFICATION.md files record representative runtime checks and their
 limits. These checks do not validate every historical path or correct original
 bugs. The native LIFE test verifies a horizontal blinker becomes vertical.
-Gallery artwork is captured from the actual original canvas, or the original
+Original verification captures come from the actual canvas, or the original
 printer output for Magazine Index. Ordinary tests do not rewrite these PNGs.
+The gallery now uses separate illustrative SVGs with larger shapes and readable
+text, following user feedback that the reduced screenshots looked poor. These
+illustrations do not claim to show exact emulator output.
 
 ## Verification commands
 

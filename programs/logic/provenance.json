@@ -277,6 +277,11 @@
     "caution": "Same-side copyright context only; no direct simulator date or save date is established. No readable BASIC listing on the opposite tape15a side was available in best/."
   },
   "artwork": {
+    "path": "app/assets/logic-gallery.svg",
+    "sha256": "a006dd4167503275189b28caa9cc17033a612cc757f54e2a12a73b36032b7e3e",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "kind": "Original emulator canvas screenshot",
     "path": "app/assets/logic-screen.png",
     "sha256": "8d50401ae44b7cafc6b4627efc41c7db4f7d1fca3db6e7695cf11b302128b9cc",

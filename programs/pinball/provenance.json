@@ -382,6 +382,11 @@
     "caution": "Neighboring source dates are context, not a Pinball creation/save date."
   },
   "artwork": {
+    "path": "app/assets/pinball-gallery.svg",
+    "sha256": "d0f495586fb93b6fa8062540e94631a2ba147468c2220399693342bf5798715a",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "kind": "Original emulator canvas screenshot",
     "path": "app/assets/pinball-screen.png",
     "sha256": "e23bf7df4721e26e073007f3f22cbeb6367c9bf6ee3f71d32d0a3ba527ee9986",

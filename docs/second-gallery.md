@@ -61,3 +61,17 @@ See [the four-program notes](four-more-programs.md) and [the six-program notes](
 limits, reproducible commands, and browser results. All 93 complete
 extra-program snapshots and all 20 site snapshots passed integrity checks.
 The main gallery remains six entries with no inbound link to this gallery.
+
+## Readable card artwork
+
+The user requested clearer previews after the thirteen-entry gallery was added.
+The ten screenshot-based cards now use cobalt-and-cream SVG illustrations with
+large shapes and minimal text. Orbit shows a planet and trajectory; the learning
+programs show readable examples; the games show a maze, table, cards, or cells.
+The earlier emulator PNGs remain as separate evidence, with their hashes retained
+in provenance. Speech, Olympics, and starwars81 keep their existing SVG artwork.
+
+Verified: all thirteen images decode, desktop and 390px layouts render without
+horizontal overflow, and both gallery navigation checks pass. Unit/archive
+checks and production build pass. This affects the shared gallery; existing
+frozen players and all published main-gallery bytes remain unchanged.

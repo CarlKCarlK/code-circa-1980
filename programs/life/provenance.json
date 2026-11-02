@@ -355,6 +355,11 @@
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
   },
   "artwork": {
+    "path": "app/assets/life-gallery.svg",
+    "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "path": "app/assets/life-screen.png",
     "sha256": "44edf5a8cc78c540e4fb05269194a6db41db6719becd05c724bb23b7ff4679a6",
     "method": "Captured from original emulator canvas; original aspect ratio retained."

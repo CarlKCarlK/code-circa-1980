@@ -225,3 +225,14 @@ from app/ to reproduce its separately derived executable and BASIC USR bootstrap
 Do not describe that build as a recovered historical binary. Archive checks
 validate EDTASM records separately from BASIC. Browser evidence is in
 app/tests/browser/learning.spec.js; LIFE also has an original-Z80 blinker fixture.
+
+## Gallery illustrations
+
+On November 2, 2026, the user asked to improve the unreadable screenshot
+previews on the more page. Its ten PNG-based cards now use program-specific
+`app/assets/*-gallery.svg` illustrations. Keep their cobalt/cream palette and
+large, legible shapes. These are illustrative artwork, not execution evidence.
+Original emulator PNG captures remain separate; CAPTURE_GALLERY_ART=1 updates
+those evidence captures only, not the live gallery illustrations. Provenance
+records the illustration under artwork and the original under emulator_capture.
+Gallery-only illustration changes do not require rebuilding frozen players.

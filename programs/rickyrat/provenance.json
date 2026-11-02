@@ -793,6 +793,11 @@
     "interpretation": "Direct dated source credit; does not establish every revision date or tape save date."
   },
   "artwork": {
+    "path": "app/assets/rickyrat-gallery.svg",
+    "sha256": "52be9a88c33b2ec64e7f1954b15aed41b3b1c7519b357d21dd1060d208b2eaf6",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "kind": "Original emulator canvas screenshot",
     "path": "app/assets/rickyrat-screen.png",
     "sha256": "1cb00831c79e5e8ee110611b81844b7a77b2b9c2f9b397640439bede89755cf2",

@@ -325,6 +325,11 @@
     "caution": "No save date is established. Neighboring copyright/source dates provide context only."
   },
   "artwork": {
+    "path": "app/assets/poker-gallery.svg",
+    "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "path": "app/assets/poker-screen.png",
     "sha256": "cafeeb4aa70e087e68710cc40445f8d17645e7bca435479098e391b98eecf11c",
     "method": "Captured from original emulator canvas; original aspect ratio retained."

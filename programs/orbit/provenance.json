@@ -326,6 +326,11 @@
     "caution": "No creation or save date established. Tape11b capture caveats are retained from its inventory, not applied to other programs."
   },
   "artwork": {
+    "path": "app/assets/orbit-gallery.svg",
+    "sha256": "bb16a767d6ba42aea73a5bc71337848cccaf0d2075179f2c731531908940629e",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "kind": "Original emulator canvas screenshot",
     "path": "app/assets/orbit-screen.png",
     "sha256": "69348229308946420bda93215a51e761f1255e0ef0c97c0f23b658399e64f1b8",

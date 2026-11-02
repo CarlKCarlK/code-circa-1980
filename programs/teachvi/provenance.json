@@ -325,6 +325,11 @@
     "interpretation": "January 11, 1979 is a direct dated source credit. It does not establish the date of each revision or cassette save."
   },
   "artwork": {
+    "path": "app/assets/teachvi-gallery.svg",
+    "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
     "path": "app/assets/teachvi-screen.png",
     "sha256": "3910dd5fc60f74ff0f21bbbf977013aa24fd15b9ba8d3d9eb45e4e4f227234d5",
     "method": "Captured from original emulator canvas; original aspect ratio retained."

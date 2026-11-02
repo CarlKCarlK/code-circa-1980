@@ -6,7 +6,8 @@ def sha(b):return hashlib.sha256(b).hexdigest()
 count=0
 for slug in ['speech','olympics','starwars81','rickyrat','pinball','logic','orbit','skinner','german','magazine','teachvi','poker','life']:
  folder=root/'programs'/slug;e=json.loads((folder/'provenance.json').read_text())
- if 'artwork' in e:assert sha((root/e['artwork']['path']).read_bytes())==e['artwork']['sha256']
+ for key in ['artwork','emulator_capture']:
+  if key in e:assert sha((root/e[key]['path']).read_bytes())==e[key]['sha256']
  history=e.get('canonical_history_id',slug)
  for save in e['saves']:
   for f in save['imported_files']:
