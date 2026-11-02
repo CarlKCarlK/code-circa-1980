@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape10a",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape10a/best/01-SKINNER-BOX-EARLY.BAS",
+  "archive_listing": "tapes/recovered/tape10a/best/01-SKINNER-BOX-EARLY.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/01-SKINNER-BOX-EARLY.BAS",
+      "archive_path": "tapes/recovered/tape10a/best/01-SKINNER-BOX-EARLY.BAS",
+      "bytes": 849,
+      "sha256": "c2f275afd45cafb7b6eb550bdc84eeb09797761645bf833699d46d4c871bbbb2"
+    },
+    {
+      "path": "versions/v01/01-SKINNER-BOX-EARLY.ASC",
+      "archive_path": "tapes/recovered/tape10a/best/01-SKINNER-BOX-EARLY.ASC",
+      "bytes": 982,
+      "sha256": "e0969277d9874efb4bbaf2c4619164cd69d0135caac7e63e8de454c26e920e4b"
+    }
+  ],
+  "recovery_item": {
+    "lines": 31,
+    "last": 2000,
+    "pointer_base": 22204,
+    "normal_end_marker": true,
+    "sha256": "c2f275afd45cafb7b6eb550bdc84eeb09797761645bf833699d46d4c871bbbb2"
+  },
+  "inventory_row": {
+    "tape": "10",
+    "side": "a",
+    "order": "1",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "SKINNER BOX EARLY; 31 lines",
+    "capture": "tape10a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 BASIC; TIME$ format required",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+    "source_start_s": "10.201",
+    "recovered_bytes": "849",
+    "source_file": "tapes/recovered/tape10a/best/01-SKINNER-BOX-EARLY.ASC",
+    "wav": "tapes/tape10a.wav",
+    "folder": "tapes/recovered/tape10a/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with matching TIME$ format and OUT255 sound support"
+  },
+  "recovery_inventory": "tapes/recovered/tape10a/inventory.json",
+  "execution_tested": false
+}

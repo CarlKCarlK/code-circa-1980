@@ -1,0 +1,25 @@
+{
+  "id": "skinner",
+  "title": "Skinner Box",
+  "description": "Discover a hidden reinforcement schedule by acting as the rat.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v03",
+  "versionOrder": "Three successive tape10a forms; later saves add schedule identification and statistics.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SKINNER BOX EARLY",
+      "capture": "tape10a",
+      "save": 1,
+      "raw": "versions/v01/01-SKINNER-BOX-EARLY.BAS",
+      "listing": "versions/v01/01-SKINNER-BOX-EARLY.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
