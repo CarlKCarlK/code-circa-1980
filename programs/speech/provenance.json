@@ -473,6 +473,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape11a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v10",
+      "capture": "tape11b",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape11b/best/07-SPEECH-TEAM-COACH-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape11b/best/07-SPEECH-TEAM-COACH-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v10/07-SPEECH-TEAM-COACH-GAME.BAS",
+          "archive_path": "tapes/recovered/tape11b/best/07-SPEECH-TEAM-COACH-GAME.BAS",
+          "bytes": 6418,
+          "sha256": "0281a95ac124b0e7a93faff2203ed32dc14c69cb66f8cf40b5fd6de421bf8b1e"
+        },
+        {
+          "path": "versions/v10/07-SPEECH-TEAM-COACH-GAME.ASC",
+          "archive_path": "tapes/recovered/tape11b/best/07-SPEECH-TEAM-COACH-GAME.ASC",
+          "bytes": 8003,
+          "sha256": "922a512a9adb6163cb74a39c5404a379f5d9c0c3514bd241421ea65264a6140c"
+        }
+      ],
+      "recovery_item": {
+        "lines": 236,
+        "last": 3060,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "0281a95ac124b0e7a93faff2203ed32dc14c69cb66f8cf40b5fd6de421bf8b1e"
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "b",
+        "order": "7",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SPEECH TEAM COACH GAME; 236 lines",
+        "capture": "tape11b",
+        "capture_scope": "possible skipped program (tangled tape)",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be required",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "source_start_s": "165.014",
+        "recovered_bytes": "6418",
+        "source_file": "tapes/recovered/tape11b/best/07-SPEECH-TEAM-COACH-GAME.ASC",
+        "wav": "tapes/tape11b.wav",
+        "folder": "tapes/recovered/tape11b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime; capture may omit another program"
+      },
+      "recovery_inventory": "tapes/recovered/tape11b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {

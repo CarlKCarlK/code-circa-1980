@@ -106,6 +106,18 @@
       "playable": false,
       "note": "Untouched recovered payload. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
       "unavailableReason": "Source only. This site plays the selected complete reference version."
+    },
+    {
+      "id": "v10",
+      "label": "tape11b \u00b7 save 7",
+      "capture": "tape11b",
+      "save": 7,
+      "raw": "versions/v10/07-SPEECH-TEAM-COACH-GAME.BAS",
+      "listing": "versions/v10/07-SPEECH-TEAM-COACH-GAME.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered payload. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": null
     }
   ]
 }
