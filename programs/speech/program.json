@@ -118,6 +118,17 @@
       "slug": "basic",
       "note": "Untouched recovered payload. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
       "unavailableReason": null
+    },
+    {
+      "id": "v11",
+      "label": "tape11b \u00b7 save 8",
+      "capture": "tape11b",
+      "save": 8,
+      "raw": "versions/v11/08-SPEECH-TEAM-COACH-GAME-SAVE2.BAS",
+      "listing": "versions/v11/08-SPEECH-TEAM-COACH-GAME-SAVE2.ASC",
+      "playable": false,
+      "note": "Untouched recovered payload. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Source only. This site plays the selected complete reference version."
     }
   ]
 }
