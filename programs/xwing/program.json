@@ -19,6 +19,17 @@
       "slug": "basic",
       "note": "Untouched recovered payload. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": null
+    },
+    {
+      "id": "v02",
+      "label": "tape30a \u00b7 save 2",
+      "capture": "tape30a",
+      "save": 2,
+      "raw": "versions/v02/02-STAR-WARS-THEMED-GAME.BAS",
+      "listing": "versions/v02/02-STAR-WARS-THEMED-GAME.ASC",
+      "playable": false,
+      "note": "Untouched recovered payload. Exact left/right payload; 40 ordered lines; consistent pointer base 17125; end marker; exact EOF",
+      "unavailableReason": "Source only. This site plays the selected complete reference version."
     }
   ]
 }

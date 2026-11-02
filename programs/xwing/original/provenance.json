@@ -1,52 +1,52 @@
 {
-  "version": "v01",
-  "capture": "tape23b",
-  "save": 5,
-  "archive_raw": "tapes/recovered/tape23b/best/05-STAR-WARS-COCKPIT.BAS",
-  "archive_listing": "tapes/recovered/tape23b/best/05-STAR-WARS-COCKPIT.ASC",
+  "version": "v02",
+  "capture": "tape30a",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape30a/best/02-STAR-WARS-THEMED-GAME.BAS",
+  "archive_listing": "tapes/recovered/tape30a/best/02-STAR-WARS-THEMED-GAME.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/05-STAR-WARS-COCKPIT.BAS",
-      "archive_path": "tapes/recovered/tape23b/best/05-STAR-WARS-COCKPIT.BAS",
-      "bytes": 3392,
-      "sha256": "d4ff7730ec29cc2b9334d85689b5b1c4ebab0003f487dcb7434597df17dcd8ff"
+      "path": "versions/v02/02-STAR-WARS-THEMED-GAME.BAS",
+      "archive_path": "tapes/recovered/tape30a/best/02-STAR-WARS-THEMED-GAME.BAS",
+      "bytes": 3427,
+      "sha256": "5813607850ee80510e20cc57cecd71155d12f22651169af6de639b1c27248d4c"
     },
     {
-      "path": "versions/v01/05-STAR-WARS-COCKPIT.ASC",
-      "archive_path": "tapes/recovered/tape23b/best/05-STAR-WARS-COCKPIT.ASC",
-      "bytes": 4366,
-      "sha256": "0991144811fde1252a670c92007e157c05ae70c5dee1f5cac2fc2cee006a7475"
+      "path": "versions/v02/02-STAR-WARS-THEMED-GAME.ASC",
+      "archive_path": "tapes/recovered/tape30a/best/02-STAR-WARS-THEMED-GAME.ASC",
+      "bytes": 4413,
+      "sha256": "910ae10edbd803edaa7a788ce9771ecac5e5c341ab2cadb525415214014faa06"
     }
   ],
   "recovery_item": {
-    "lines": 39,
+    "lines": 40,
     "last": 3100,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "d4ff7730ec29cc2b9334d85689b5b1c4ebab0003f487dcb7434597df17dcd8ff"
+    "sha256": "5813607850ee80510e20cc57cecd71155d12f22651169af6de639b1c27248d4c"
   },
   "inventory_row": {
-    "tape": "23",
-    "side": "b",
-    "order": "5",
+    "tape": "30",
+    "side": "a",
+    "order": "2",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "STAR WARS COCKPIT",
-    "capture": "tape23b",
+    "summary": "Star Wars-themed game (descriptive title)",
+    "capture": "tape30a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
-    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "500.457",
-    "recovered_bytes": "3392",
-    "source_file": "tapes/recovered/tape23b/best/05-STAR-WARS-COCKPIT.ASC",
-    "wav": "tapes/tape23b.wav",
-    "folder": "tapes/recovered/tape23b",
-    "recovery_date": "2026-10-28",
+    "validation": "Exact left/right payload; 40 ordered lines; consistent pointer base 17125; end marker; exact EOF",
+    "source_start_s": "161.547",
+    "recovered_bytes": "3427",
+    "source_file": "tapes/recovered/tape30a/best/02-STAR-WARS-THEMED-GAME.ASC",
+    "wav": "tapes/tape30a.wav",
+    "folder": "tapes/recovered/tape30a",
+    "recovery_date": "2026-10-29",
     "recorder_volume": "",
     "next_action": "Runtime testing only if requested"
   },
-  "recovery_inventory": "tapes/recovered/tape23b/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape30a/inventory.json",
   "execution_tested": false
 }
