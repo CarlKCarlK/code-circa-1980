@@ -31,6 +31,17 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v03",
+      "label": "PEORIA TWO MILE RACE",
+      "capture": "tape15b",
+      "save": 11,
+      "raw": "versions/v03/11-PEORIA-TWO-MILE-RACE.BAS",
+      "listing": "versions/v03/11-PEORIA-TWO-MILE-RACE.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
