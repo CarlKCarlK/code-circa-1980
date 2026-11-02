@@ -213,6 +213,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape20a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape20a",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape20a/best/09-SPEECH-COACHING-DRAFT06.BAS",
+      "archive_listing": "tapes/recovered/tape20a/best/09-SPEECH-COACHING-DRAFT06.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/09-SPEECH-COACHING-DRAFT06.BAS",
+          "archive_path": "tapes/recovered/tape20a/best/09-SPEECH-COACHING-DRAFT06.BAS",
+          "bytes": 3213,
+          "sha256": "89ce323fe59affa76963b41e92d22c5dbd24ec5611d0f2540bcb385cb84adc60"
+        },
+        {
+          "path": "versions/v05/09-SPEECH-COACHING-DRAFT06.ASC",
+          "archive_path": "tapes/recovered/tape20a/best/09-SPEECH-COACHING-DRAFT06.ASC",
+          "bytes": 3928,
+          "sha256": "c456390debd9f0297b74be33c92670f5bc12b1d93506bef053e57b3842f276b1"
+        }
+      ],
+      "recovery_item": {
+        "lines": 130,
+        "last": 1300,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "89ce323fe59affa76963b41e92d22c5dbd24ec5611d0f2540bcb385cb84adc60"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "a",
+        "order": "9",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SPEECH COACHING DRAFT06",
+        "capture": "tape20a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "493.633",
+        "recovered_bytes": "3213",
+        "source_file": "tapes/recovered/tape20a/best/09-SPEECH-COACHING-DRAFT06.ASC",
+        "wav": "tapes/tape20a.wav",
+        "folder": "tapes/recovered/tape20a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
