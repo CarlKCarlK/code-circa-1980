@@ -1,9 +1,9 @@
-# Unlinked second gallery
+# Second gallery
 
 Open `http://127.0.0.1:5187/#/more` in the local preview. The gallery uses the
-main collection's shared card renderer and stylesheet, with no inbound link
-from the main collection. Players return here. The site is unlinked, not
-access-controlled.
+main collection's shared card renderer and stylesheet. Since November 2, 2026,
+the only inbound link is a small "More uncurated programs" link below the main
+collection's cards. Players return here. Its pages remain noindex, nofollow.
 
 ## Release policy
 

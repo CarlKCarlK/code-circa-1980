@@ -184,11 +184,11 @@ Preserve `programs/` historical paths and all frozen `public/<program>/vN/` byte
 The user has authorized pushing verified changes and deploying GitHub Pages;
 complete deployment and check the live result before reporting it ready.
 
-## Unlinked second gallery
+## Second gallery
 
 Programs with `gallery: "more"` appear only at `#/more`, not on the main gallery.
-Keep this gallery and its programs unlinked from the main collection until the
-user requests otherwise. Reuse shared gallery markup and player controls.
+On November 2, 2026, the user requested one small link, "More uncurated programs,"
+below the main collection's cards; keep it the only inbound link. Reuse shared gallery markup and player controls.
 Speech and Olympics are separate entries even though their code is related.
 The X-wing identity remains tentative. Use `starwars81` for the program ID, source folder, new URLs, and new tags. Display a source title when present; neither current listing prints one, so use the descriptive display title "Star Wars cockpit." Historical import tags remain intact as provenance. Coaching games capture the original
 Model III printer-port output in a roster panel without altering recovered BASIC.
