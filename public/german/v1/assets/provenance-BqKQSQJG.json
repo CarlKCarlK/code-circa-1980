@@ -1,0 +1,53 @@
+{
+  "status": "Damaged; no synthetic terminator or repaired bytes. PREFIX files are validated prefixes only; UNCERTAIN listings are unvalidated. Not playable.",
+  "files": [
+    {
+      "path": "05-SPEECH-COACHING-DRAFT02-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape20a/partial/05-SPEECH-COACHING-DRAFT02-PREFIX.ASC",
+      "bytes": 1030,
+      "sha256": "f5ecea2cd2b04500235d1494a336accaba2bd687265211f877ed46bfcd385181"
+    },
+    {
+      "path": "05-SPEECH-COACHING-DRAFT02-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape20a/partial/05-SPEECH-COACHING-DRAFT02-PREFIX.BIN",
+      "bytes": 887,
+      "sha256": "6cca306165f6c833e3cdb23e300f8b057811c4383ed3aa975b9fcdf3bc57779e"
+    },
+    {
+      "path": "05-SPEECH-COACHING-DRAFT02-RAW.BAS",
+      "archive_path": "tapes/recovered/tape20a/partial/05-SPEECH-COACHING-DRAFT02-RAW.BAS",
+      "bytes": 1896,
+      "sha256": "9f2e186a25bc9d836f5f1f913fe4a6241054b8e15a1e2283c9d2428f0438885a"
+    },
+    {
+      "path": "05-SPEECH-COACHING-DRAFT02-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape20a/partial/05-SPEECH-COACHING-DRAFT02-UNCERTAIN.ASC",
+      "bytes": 2349,
+      "sha256": "b2dcdb39aa94f01ef918e5945fe99c2fe0b33f5f273b8d8514edc9012aaaa12d"
+    },
+    {
+      "path": "13-SPEECH-COACHING-DRAFT10-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape20a/partial/13-SPEECH-COACHING-DRAFT10-PREFIX.ASC",
+      "bytes": 6017,
+      "sha256": "675395942b14b4021d5a8ebbdaa6a8c14988bda10f03976817bd51ffab9d5227"
+    },
+    {
+      "path": "13-SPEECH-COACHING-DRAFT10-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape20a/partial/13-SPEECH-COACHING-DRAFT10-PREFIX.BIN",
+      "bytes": 4904,
+      "sha256": "48a829b7608706b0e11adb1b6717e01b9cabacbe795756bdfa7cf2b4c9610aea"
+    },
+    {
+      "path": "13-SPEECH-COACHING-DRAFT10-RAW.BAS",
+      "archive_path": "tapes/recovered/tape20a/partial/13-SPEECH-COACHING-DRAFT10-RAW.BAS",
+      "bytes": 4947,
+      "sha256": "79584cc6ab4535ebf46f8e7e82cc3b76e9b283f86017d57a2784d01b57189dd4"
+    },
+    {
+      "path": "13-SPEECH-COACHING-DRAFT10-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape20a/partial/13-SPEECH-COACHING-DRAFT10-UNCERTAIN.ASC",
+      "bytes": 6117,
+      "sha256": "12ed7c5f2fdbbfa9fa4a2fa1517eae415c3d1e0677af6eb0f93bdb7daae1b06c"
+    }
+  ]
+}
