@@ -24,7 +24,7 @@ test('collection and program links open the Rust board directly; BASIC v14 and s
  await expect(page.locator('.source-details .program-history')).toContainText('tournament in Peoria');
  await expect(page.locator('.source-section')).toContainText('14 recovered versions');
  await page.getByRole('button',{name:'Help'}).click();
- await expect(page.locator('.player-help')).toContainText('Play against the 1979 program on a modern board');
+ await expect(page.locator('.player-help')).toContainText('Play against the 1980 program on a modern board');
  await expect(page.locator('.player-help')).toContainText('?BS Error in 3015');
  await page.getByRole('button',{name:'Close help'}).click();
  await page.getByRole('link',{name:'Level II BASIC version'}).click();
@@ -45,7 +45,8 @@ const sq=(page,r,c)=>page.locator(`.chess-board .sq[data-r="${r}"][data-c="${c}"
 test('Rust board: click and drag moves, CISAB answers from the original algorithm, Play Black and New game',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1&test#/program/chess/rust/play');
- await expect(page.locator('.chess-prompt')).toHaveText(/^WHAT WAS THEIR [A-Z]+ MOVE\?$/);
+ await expect(page.locator('.chess-prompt')).toHaveText('Your move: click or drag one of your pieces.');
+ await expect(page.locator('.chess-note')).toContainText('In 1980 there was no board like this');
  // You are White, at the bottom: e2 is CISAB's row 2, column 4.
  await sq(page,2,4).click();
  await expect(page.locator('.chess-board .target')).toHaveCount(2);

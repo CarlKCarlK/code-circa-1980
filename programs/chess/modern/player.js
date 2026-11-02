@@ -14,15 +14,15 @@ const PROMOTIONS = [[2,'Queen'], [5,'Rook'], [3,'Bishop'], [4,'Knight']];
 // Why the original program stops, for each way it can end.
 function endMessage(end) {
   if (end.kind === 'theyWin') return ['You took CISAB’s king.', 'DARN THEY BEAT YOU! Taking its king is the only way CISAB admits defeat (line 100).'];
-  if (end.kind === 'forever') return ['Checkmate: you win.', 'Every move CISAB can find loses its king, so lines 1010–1220 repeat forever. It never knew it had lost; the 1979 program simply never moves again.'];
+  if (end.kind === 'forever') return ['Checkmate: you win.', 'Every move CISAB can find loses its king, so lines 1010–1220 repeat forever. It never knew it had lost; the 1980 program simply never moves again.'];
   if (end.kind === 'stalemate') return ['Stalemate: a draw.', 'I CAN’T MOVE.  STALEMATE (line 1005).'];
   const why = {
     'BS 3015': 'CISAB listed more than 120 moves of its own. Rooks, bishops and queens list some squares two or three times (they step half a square at a time), and DIM in line 15 has room for 120.',
     'BS 3500': 'CISAB listed more than 120 of your moves while mapping the squares you attack. Your rooks, bishops and queens count some squares two or three times, and DIM in line 15 has room for 120.',
     'FC 335': 'A CISAB pawn stood on your back row, and line 335, looking two squares ahead, asked for row −1.',
     'RG 10020': 'The four squares of CISAB’s opening were all empty, so line 9530 fell into the board-drawing subroutine, whose RETURN has no GOSUB.',
-  }[end.text.replace(/^\?(\w\w) Error in (\d+)$/, '$1 $2')] ?? 'The 1979 program stops here.';
-  return [`CISAB is disqualified: ${end.text}. You win.`, `${why} The 1979 program stops here.`];
+  }[end.text.replace(/^\?(\w\w) Error in (\d+)$/, '$1 $2')] ?? 'The 1980 program stops here.';
+  return [`CISAB is disqualified: ${end.text}. You win.`, `${why} The 1980 program stops here.`];
 }
 
 export async function createPlayer(host, _url, status, title) {
@@ -30,7 +30,7 @@ export async function createPlayer(host, _url, status, title) {
   const dock = document.getElementById('control-dock');
   const field = document.createElement('div');
   field.className = 'chess-field';
-  field.innerHTML = `<p class="chess-prompt trs80" aria-live="polite"></p><div class="chess-board-wrap"><div class="chess-board" role="grid" aria-label="Chess board"></div><div class="chess-files" aria-hidden="true"></div><div class="chess-ranks" aria-hidden="true"></div></div><div class="chess-end" hidden></div><div class="chess-promotion" hidden role="dialog" aria-label="Promote your pawn"><p>Promote to</p><div></div></div>`;
+  field.innerHTML = `<p class="chess-note">In 1980 there was no board like this. CISAB had only a text screen, and an operator typed each move as ROW,COLUMN,NEW ROW,COLUMN.</p><p class="chess-prompt" aria-live="polite"></p><div class="chess-board-wrap"><div class="chess-board" role="grid" aria-label="Chess board"></div><div class="chess-files" aria-hidden="true"></div><div class="chess-ranks" aria-hidden="true"></div></div><div class="chess-end" hidden></div><div class="chess-promotion" hidden role="dialog" aria-label="Promote your pawn"><p>Promote to</p><div></div></div>`;
   host.replaceChildren(field);
   host.append(dock);
   host.classList.add('chess-host');
@@ -169,15 +169,16 @@ export async function createPlayer(host, _url, status, title) {
     field.querySelector('.chess-ranks').innerHTML = [...Array(8)].map((_, i) => `<span>${square(8 - i, 1).slice(1)}</span>`).join('');
     board.classList.toggle('busy', thinking || Boolean(over));
 
-    if (thinking) prompt.textContent = 'NOW IT IS OUR TURN';
-    else if (e.prompt === 'move') prompt.textContent = `WHAT WAS THEIR ${ADJECTIVES[e.adjective - 1]} MOVE?`;
+    // The 1980 program had no board: the transcript keeps its prompts.
+    if (thinking) prompt.textContent = 'CISAB is thinking…';
+    else if (e.prompt === 'move') prompt.textContent = 'Your move: click or drag one of your pieces.';
     else prompt.textContent = e.end?.text || 'READY';
 
     let heading = '', detail = '';
-    if (dq) [heading, detail] = ['CISAB is disqualified: illegal move. You win.', `Its move ${dq.text} ${dq.reason}. The 1979 program never checked its own moves and would have played on; the Level II BASIC tab runs it unchanged.`];
+    if (dq) [heading, detail] = ['CISAB is disqualified: illegal move. You win.', `Its move ${dq.text} ${dq.reason}. The 1980 program never checked its own moves and would have played on; the Level II BASIC tab runs it unchanged.`];
     else if (!thinking && e.end) [heading, detail] = endMessage(e.end);
     else if (!thinking && e.prompt === 'move' && state.moves.length === 0) {
-      [heading, detail] = state.inCheck ? ['Checkmate: CISAB wins.', 'It never noticed: the 1979 program would simply ask for your next move.'] : ['Stalemate: a draw.', 'You have no legal move, and you are not in check.'];
+      [heading, detail] = state.inCheck ? ['Checkmate: CISAB wins.', 'It never noticed: the 1980 program would simply ask for your next move.'] : ['Stalemate: a draw.', 'You have no legal move, and you are not in check.'];
     }
     endBox.hidden = !heading;
     endBox.innerHTML = heading ? `<strong>${escape(heading)}</strong><p>${escape(detail)}</p><button type="button">New game</button>` : '';

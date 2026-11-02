@@ -81,20 +81,20 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       row (Z = -1) shifts up and to the right. "Larger values look down on the grid
       more" is also loose: TILT lengthens the diagonal depth offset. Confirm against
       an emulator drawing before rewording.
-- [ ] CISAB Chess (Rust/JS): replace the prompt above the mouse board, "WHAT WAS
+- [x] CISAB Chess (Rust/JS): replace the prompt above the mouse board, "WHAT WAS
       THEIR FOOLISH MOVE?" (`programs/chess/modern/player.js:173`, adjective rotates
       through the original's DATA list), with wording that makes clear the 1979
       original didn't look like this: it had only a text screen, and an operator typed
       each move as ROW,COLUMN,NEW ROW,COLUMN. Keep the original prompt and its
       rotating adjectives in the transcript (line 68) and the emulator version.
-- [ ] CISAB Chess: replace "a mediocre player like me" with "a very casual player
+- [x] CISAB Chess: replace "a mediocre player like me" with "a very casual player
       like me" (Sargon paragraph in `app/site/programs/chess.js` history and
       `programs/chess/README.md`).
-- [ ] CISAB Chess: remove the version-by-version paragraph from the page history
+- [x] CISAB Chess: remove the version-by-version paragraph from the page history
       ("Fourteen versions survive on three cassette sides…" through "v14: A four-move
       opening and IQ. Both players on this site run this version") in
       `app/site/programs/chess.js`. The versions stay in `programs/chess/versions/`.
-- [ ] CISAB Chess: add its approximate playing strength and how it was measured,
+- [x] CISAB Chess: add its approximate playing strength and how it was measured,
       from `programs/chess/rating/RESULTS.md`:
       - About 100 Elo on Texel's calibrated scale (104 ± 50, 95%): very weak, roughly a
         player who knows the moves but little else. It never lost to random legal moves
@@ -107,13 +107,13 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
         good as Texel's own calibration.
       - Its weak spot: it knows nothing of check, mate, or stalemate, so it
         stalemated the opponent in 129 of 200 games while ahead by a queen or more.
-- [ ] CISAB Chess: explain the Rust engine in plain terms: a statement-by-statement
+- [x] CISAB Chess: explain the Rust engine in plain terms: a statement-by-statement
       port of corrected v14 to Rust/WebAssembly that reproduces the TRS-80's RND
       generator and single-precision rounding, so given the same moves it makes the
       same replies, illegal ones and BASIC errors included. Checked against games
       recorded from the emulator (`programs/chess/rust/PARITY.md`). The site adds
       only what the original lacked: it checks moves and disqualifies an illegal one.
-- [ ] CISAB Chess: add a (long is fine) paragraph on how it worked and why BASIC
+- [x] CISAB Chess: add a (long is fine) paragraph on how it worked and why BASIC
       made it hard. Draft points, from the v14 source (verify each before publishing):
       - How it chooses: lists every move, scores each as roughly (value of what it
         captures) ÷ (risk to the moving piece if the square is attacked), with a bonus

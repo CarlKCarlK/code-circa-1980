@@ -7,13 +7,15 @@
   "author_credit": "v11-v14 line 11: \"BY    CARL MYERS KADIE\"",
   "context": "User note in the recovery archive (programs-to-find.md): \"Chess program — one I competed with in Peoria.\" From v03 on the program asks WHAT COLOR ARE WE and WHAT WAS THEIR ... MOVE, i.e. an operator relays an opponent's moves.",
   "dating": {
-    "estimate": null,
+    "estimate": "Summer 1980 (contextual)",
     "direct_date_in_program": null,
     "evidence": [
       "No dated line in any chess save or in the other saves on tape1b, tape13a and tape13b.",
-      "tape1b save 1 is ORION (COPYRIGHT 1979, Automated Simulations), a commercial program; it shows only that tape1b was recorded in 1979 or later."
+      "tape1b save 1 is ORION (COPYRIGHT 1979, Automated Simulations), a commercial program; it shows only that tape1b was recorded in 1979 or later.",
+      "Illinois Chess Bulletin, Vol. III, No. 4 (June-July 1980), Peoria column: \"BILL NAFF reports that Peoria will host a COMPUTER CHESS TOURNAMENT on Saturday, July 12 at the Ramada Inn.\" Clippings supplied by Carl Kadie on 2026-11-01; see history/README.md.",
+      "Carl Kadie (2026-11-01): wrote CISAB the summer after high school for a computer chess tournament in Peoria, Illinois."
     ],
-    "caution": "Undated. Old programs were sometimes saved again later."
+    "caution": "Contextual, not a direct date: the bulletin dates the tournament, not any save. v01-v02 (before the tournament prompts) could be earlier, and old programs were sometimes saved again later."
   },
   "execution_testing": "Recovery archive records no execution tests. Website emulator checks are recorded separately in VERIFICATION.md.",
   "saves": [

@@ -8,13 +8,17 @@ spelled backwards. The last version's listing begins:
 11 '   BY    CARL MYERS KADIE
 ```
 
-I competed with it in a tournament in Peoria, my high-school hometown. It is built for that job. It
+I wrote it the summer after high school for a computer chess tournament in
+Peoria, Illinois. I think everyone else used commercial programs such as Sargon.
+It is built for that job. It
 asks `WHAT COLOR ARE WE`, then `WHAT WAS THEIR FOOLISH MOVE` (the adjective is
 picked at random from ten), so whoever sits at the keyboard types in the
 opponent's moves and plays CISAB's replies on the real board.
 
-I also had Sargon, Dan and Kathe Spracklen's chess program for the TRS-80. For
-a mediocre player like me, who played only with family and friends, it was
+An aside: at home I also had Sargon, Dan and Kathe Spracklen's commercial chess
+program for the TRS-80. I played against it myself; it wasn't my tournament
+entry. For
+a very casual player like me, who played only with family and friends, it was
 great: it taught me to stop overlooking my own dumb moves, and I got much
 better against my friends. CISAB asks the same question Sargon made me ask: after this
 move, what can they take?
