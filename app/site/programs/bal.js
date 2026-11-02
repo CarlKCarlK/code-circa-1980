@@ -1,5 +1,6 @@
 // Chemical Equation Balancer instructions and controls; shared navigation remains generic.
 import {problems, problemPanel} from '../../../programs/bal/problems.js';
+import comparisonMarkdown from '../../../programs/bal/basic-vs-rust.md?raw';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const key = text => `<kbd>${escape(text)}</kbd>`;
 const code = text => `<code>${escape(text)}</code>`;
@@ -18,6 +19,34 @@ const cite = (href, text) => `<a class="cite" href="${href}" target="_blank" rel
 const volumeOneListing = figure('catalog-chemistry-equation-balancer.png', 687, 110, 'Catalog listing for Chemistry Equation Balancer, $19.95 on cassette', 'Chemistry Equation Balancer in the 1980 Radio Shack Applications Software Sourcebook, Volume I. Listed at $19.95 on cassette.', 'listing');
 const volumeFourListing = figure('catalog-chembalancer-ii.png', 665, 107, 'Catalog listing for Chembalancer II, $39.95 on cassette', 'Chembalancer II in the 1982 Radio Shack Applications Software Sourcebook, Volume IV. Listed at $39.95 on cassette.', 'listing');
 const volumeFourCover = figure('sourcebook-volume-iv-cover.png', 781, 1012, 'Cover of the Radio Shack TRS-80 Applications Software Sourcebook, Volume IV', 'Cover of Radio Shack’s <em>TRS-80 Applications Software Sourcebook</em>, Volume IV (1982).', 'cover');
+// The BASIC/Rust comparison is written once, in programs/bal/basic-vs-rust.md, and rendered here.
+const repo = 'https://github.com/CarlKCarlK/code-circa-1980/blob/main/programs/bal/';
+// Inline markdown, outside code spans: bold, italic and links (relative links go to GitHub).
+const inline = text => text.split(/(`[^`]+`)/).map((part, i) => i % 2 ? code(part.slice(1, -1)) : escape(part)
+  .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\*(.+?)\*/g, '<em>$1</em>')
+  .replace(/\[(.+?)\]\((.+?)\)/g, (_, label, href) => `<a href="${/^https?:/.test(href) ? href : repo + href}" target="_blank" rel="noopener">${label}</a>`)).join('');
+// Only the markdown this file uses: headings, paragraphs, lists and fenced code.
+function markdown(source) {
+  const out = [], lines = source.trim().split('\n');
+  const text = block => block.join(' ').replace(/\s+/g, ' ');
+  for (let i = 0; i < lines.length;) {
+    if (!lines[i].trim()) { i++; continue; }
+    const block = [];
+    if (lines[i].startsWith('```')) {
+      while (!lines[++i].startsWith('```')) block.push(lines[i]);
+      i++;
+      out.push(`<pre class="code-sample"><code>${escape(block.join('\n'))}</code></pre>`);
+      continue;
+    }
+    while (i < lines.length && lines[i].trim() && !lines[i].startsWith('```')) block.push(lines[i++]);
+    const heading = block[0].match(/^(#+) (.*)/);
+    if (heading) out.push(`<h${heading[1].length + 1}>${inline(heading[2])}</h${heading[1].length + 1}>`);
+    else if (block[0].startsWith('- ')) out.push(`<ul class="tips">${block.join('\n').split(/\n(?=- )/).map(item => `<li>${inline(text(item.slice(2).split('\n')))}</li>`).join('')}</ul>`);
+    else out.push(`<p>${inline(text(block))}</p>`);
+  }
+  return out.join('');
+}
+const comparison = `<section class="program-code">${markdown(comparisonMarkdown)}</section>`;
 export const art = {src:new URL('../../assets/balancer-equation.svg',import.meta.url).href, alt:'A balanced equation on a TRS-80 screen: (C3.H8) + 5(O2) -^ 3(C.O2) + 4(H2.O)'};
 export const actionVerb = 'Run';
 export const aboutOpen = true;
@@ -32,7 +61,7 @@ export function instructions(version) {
     : isII(version)
     ? `<section><h2>This version</h2><p>${escape(version.note)}</p><p>Chemistry Balancer II works exactly with fractions, so it is slow on 1980 hardware: about 20 seconds for water and up to three minutes for larger equations. The spinner at the top right shows it is working. <strong>Fast (×20)</strong> runs the emulated TRS-80 about 20 times faster. The answer uses ${code('-^')} as the arrow and ${code('< >')} for parentheses. Type ${key('Y')} and ${key('Enter')} to balance another.</p></section>`
     : `<section><h2>This version</h2><p>${escape(version.note)}</p><p>The 1979 program answers quickly and then asks for the next equation. <strong>Fast (×20)</strong> runs the emulated TRS-80 about 20 times faster. If it stops with ${code('Break')} or an error, press Restart.</p></section>`;
-  return `${history}<div class="instruction-grid">${entry}${thisVersion}</div>`;
+  return `${history}<div class="instruction-grid">${entry}${thisVersion}</div>${comparison}`;
 }
 
 export const onScreenKeys = version => isModern(version) ? []

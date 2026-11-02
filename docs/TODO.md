@@ -151,7 +151,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       keydown as code 229. Pass Backspace through unchanged (it still blows you up).
       Keep the screen visible above the keyboard (visualViewport). Test on a real
       phone. Could later serve Alien's and Chess's BASIC versions too.
-- [ ] bal: add a section comparing the BASIC code with the Rust port: how the 1981
+- [x] bal: add a section comparing the BASIC code with the Rust port: how the 1981
       Chemistry Balancer II algorithm reads in each (data structures, exact fraction
       arithmetic, control flow), with short side-by-side excerpts. Draft in
       `programs/bal/basic-vs-rust.md`: the GCD routine (lines 4000–4090) as BASIC,

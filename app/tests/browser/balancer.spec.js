@@ -19,6 +19,11 @@ test('collection and program links open the Rust player directly, with About ope
  await page.goto('/?development=1#/program/bal');
  await expect(page.locator('.source-details')).toHaveAttribute('open','');
  await expect(page.locator('.source-details')).toContainText('WITHOUT TRIAL & ERROR');
+ // The BASIC/Rust comparison is rendered from programs/bal/basic-vs-rust.md: six code samples, the GCD routine first.
+ const comparison=page.locator('.source-details .program-code');
+ await expect(comparison.locator('pre')).toHaveCount(6);
+ await expect(comparison.locator('pre').first()).toContainText('4040 R8=A8-B8*INT(A8/B8)');
+ await expect(page.locator('.player-help .program-code')).toBeHidden();
  for(const img of await page.locator('.source-details .program-history figure img').all()){
   const href=await img.locator('xpath=..').getAttribute('href');
   expect(href).toBe(await img.getAttribute('src'));
