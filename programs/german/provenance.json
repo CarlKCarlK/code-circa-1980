@@ -162,6 +162,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape11a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape11a",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.BAS",
+      "archive_listing": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/11-GERMAN-VOCABULARY-TUTOR-V4.BAS",
+          "archive_path": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.BAS",
+          "bytes": 4076,
+          "sha256": "3414f48cf92aa78fe15d8e35e6588e6b9c5b5af3adab078f444a5efcb0f532dd"
+        },
+        {
+          "path": "versions/v04/11-GERMAN-VOCABULARY-TUTOR-V4.ASC",
+          "archive_path": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.ASC",
+          "bytes": 4715,
+          "sha256": "f0b65344dfc8912c4bdbf4a286ca7cfa728eb0aeeece5ce89e759e8b76d1fbe6"
+        }
+      ],
+      "recovery_item": {
+        "lines": 81,
+        "last": 810,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "3414f48cf92aa78fe15d8e35e6588e6b9c5b5af3adab078f444a5efcb0f532dd"
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "a",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GERMAN VOCABULARY TUTOR V4; 81 lines",
+        "capture": "tape11a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+        "source_start_s": "419.589",
+        "recovered_bytes": "4076",
+        "source_file": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.ASC",
+        "wav": "tapes/tape11a.wav",
+        "folder": "tapes/recovered/tape11a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape11a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
