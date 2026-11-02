@@ -29,6 +29,18 @@
       "playable": false,
       "note": "Untouched recovered payload. 229 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, left-hp1600; not execution-tested",
       "unavailableReason": "Source only. This site plays the selected complete reference version."
+    },
+    {
+      "id": "v03",
+      "label": "tape3a \u00b7 save 2",
+      "capture": "tape3a",
+      "save": 2,
+      "raw": "versions/v03/02-OLYMPICS-1980-CARL-KADIE.BAS",
+      "listing": "versions/v03/02-OLYMPICS-1980-CARL-KADIE.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered payload. 232 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+      "unavailableReason": null
     }
   ]
 }
