@@ -1,46 +1,46 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape11a",
-  "save": 8,
-  "archive_raw": "tapes/recovered/tape11a/best/08-GERMAN-VOCABULARY-TUTOR-V2.BAS",
-  "archive_listing": "tapes/recovered/tape11a/best/08-GERMAN-VOCABULARY-TUTOR-V2.ASC",
+  "save": 9,
+  "archive_raw": "tapes/recovered/tape11a/best/09-GERMAN-VOCABULARY-TUTOR-V3.BAS",
+  "archive_listing": "tapes/recovered/tape11a/best/09-GERMAN-VOCABULARY-TUTOR-V3.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/08-GERMAN-VOCABULARY-TUTOR-V2.BAS",
-      "archive_path": "tapes/recovered/tape11a/best/08-GERMAN-VOCABULARY-TUTOR-V2.BAS",
-      "bytes": 3592,
-      "sha256": "5e1d622b307713debe2058cc27f416e16c40eb9b20bf105bb9eb3e7f5013a24d"
+      "path": "versions/v03/09-GERMAN-VOCABULARY-TUTOR-V3.BAS",
+      "archive_path": "tapes/recovered/tape11a/best/09-GERMAN-VOCABULARY-TUTOR-V3.BAS",
+      "bytes": 3964,
+      "sha256": "11bec3b803529c725586ed9378527762b91a930e72a102c0c8a737603f16f6b1"
     },
     {
-      "path": "versions/v02/08-GERMAN-VOCABULARY-TUTOR-V2.ASC",
-      "archive_path": "tapes/recovered/tape11a/best/08-GERMAN-VOCABULARY-TUTOR-V2.ASC",
-      "bytes": 4197,
-      "sha256": "ede5f4c69b7688727a91538c779ef856b28621262a78b6b1b3ca34614a276b30"
+      "path": "versions/v03/09-GERMAN-VOCABULARY-TUTOR-V3.ASC",
+      "archive_path": "tapes/recovered/tape11a/best/09-GERMAN-VOCABULARY-TUTOR-V3.ASC",
+      "bytes": 4593,
+      "sha256": "d3177e7d2adc6c9e7351eea791e76d134633aedfd0646736da22bf408bda9a8f"
     }
   ],
   "recovery_item": {
-    "lines": 76,
-    "last": 20000,
+    "lines": 79,
+    "last": 32000,
     "pointer_base": 22204,
     "normal_end_marker": true,
-    "sha256": "5e1d622b307713debe2058cc27f416e16c40eb9b20bf105bb9eb3e7f5013a24d"
+    "sha256": "11bec3b803529c725586ed9378527762b91a930e72a102c0c8a737603f16f6b1"
   },
   "inventory_row": {
     "tape": "11",
     "side": "a",
-    "order": "8",
+    "order": "9",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "GERMAN VOCABULARY TUTOR V2; 76 lines",
+    "summary": "GERMAN VOCABULARY TUTOR V3; 79 lines",
     "capture": "tape11a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
-    "source_start_s": "241.998",
-    "recovered_bytes": "3592",
-    "source_file": "tapes/recovered/tape11a/best/08-GERMAN-VOCABULARY-TUTOR-V2.ASC",
+    "source_start_s": "307.358",
+    "recovered_bytes": "3964",
+    "source_file": "tapes/recovered/tape11a/best/09-GERMAN-VOCABULARY-TUTOR-V3.ASC",
     "wav": "tapes/tape11a.wav",
     "folder": "tapes/recovered/tape11a/best",
     "recovery_date": "2026-10-27",

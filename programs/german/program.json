@@ -31,6 +31,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v03",
+      "label": "GERMAN VOCABULARY TUTOR V3",
+      "capture": "tape11a",
+      "save": 9,
+      "raw": "versions/v03/09-GERMAN-VOCABULARY-TUTOR-V3.BAS",
+      "listing": "versions/v03/09-GERMAN-VOCABULARY-TUTOR-V3.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
