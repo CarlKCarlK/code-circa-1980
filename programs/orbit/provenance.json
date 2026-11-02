@@ -1,0 +1,67 @@
+{
+  "official_title": "Orbit simulator",
+  "title_authority": "Descriptive recovery title inferred from source behavior; no explicit title screen identified.",
+  "short_name": "orbit",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred from source changes and tape11b save order: six labeled forms, with later forms adding adaptive scale and setup options. The v1\u2013v4 and v5\u2013v6 groups are parts of the same simulator. Some latest menu branches are unfinished historical code; completeness of cassette recovery is separate from runtime behavior.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape11b",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape11b/best/11-ORBIT-SIMULATOR-V1.BAS",
+      "archive_listing": "tapes/recovered/tape11b/best/11-ORBIT-SIMULATOR-V1.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/11-ORBIT-SIMULATOR-V1.BAS",
+          "archive_path": "tapes/recovered/tape11b/best/11-ORBIT-SIMULATOR-V1.BAS",
+          "bytes": 880,
+          "sha256": "d231c8ba50cbc7f16c6b989f1a2d5f29f21b82bce215c20cb8118ed1b0fd0cdb"
+        },
+        {
+          "path": "versions/v01/11-ORBIT-SIMULATOR-V1.ASC",
+          "archive_path": "tapes/recovered/tape11b/best/11-ORBIT-SIMULATOR-V1.ASC",
+          "bytes": 1003,
+          "sha256": "fab215da84d5df9fc08b4d59404f6f3864fc83d5d39f52e44c6d2602a8dbca8f"
+        }
+      ],
+      "recovery_item": {
+        "lines": 38,
+        "last": 1020,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "d231c8ba50cbc7f16c6b989f1a2d5f29f21b82bce215c20cb8118ed1b0fd0cdb"
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "b",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "ORBIT SIMULATOR V1; 38 lines",
+        "capture": "tape11b",
+        "capture_scope": "possible skipped program (tangled tape)",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be required",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "source_start_s": "437.524",
+        "recovered_bytes": "880",
+        "source_file": "tapes/recovered/tape11b/best/11-ORBIT-SIMULATOR-V1.ASC",
+        "wav": "tapes/tape11b.wav",
+        "folder": "tapes/recovered/tape11b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime; capture may omit another program"
+      },
+      "recovery_inventory": "tapes/recovered/tape11b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_date": null,
+    "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+  }
+}

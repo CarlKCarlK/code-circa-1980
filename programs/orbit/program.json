@@ -1,0 +1,24 @@
+{
+  "id": "orbit",
+  "title": "Orbit simulator",
+  "description": "Plot a spacecraft\u2019s motion around massive bodies with an early BASIC gravity simulation.",
+  "kind": "Simulation",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "defaultVersion": "v06",
+  "versionOrder": "Inferred from source changes and tape11b save order: six labeled forms, with later forms adding adaptive scale and setup options. The v1\u2013v4 and v5\u2013v6 groups are parts of the same simulator. Some latest menu branches are unfinished historical code; completeness of cassette recovery is separate from runtime behavior.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ORBIT SIMULATOR V1",
+      "capture": "tape11b",
+      "save": 11,
+      "raw": "versions/v01/11-ORBIT-SIMULATOR-V1.BAS",
+      "listing": "versions/v01/11-ORBIT-SIMULATOR-V1.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
