@@ -58,6 +58,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape10a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape10a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.BAS",
+      "archive_listing": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/02-SKINNER-BOX-V2.BAS",
+          "archive_path": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.BAS",
+          "bytes": 1488,
+          "sha256": "c321b56c1e6791098a758b64b517947083502688a6b9ea9d72ac492b4dd261d2"
+        },
+        {
+          "path": "versions/v02/02-SKINNER-BOX-V2.ASC",
+          "archive_path": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.ASC",
+          "bytes": 1737,
+          "sha256": "a6c648edead6204e4512d47c68a79f581d03b0b3aac035c653ae38065b4b755a"
+        }
+      ],
+      "recovery_item": {
+        "lines": 58,
+        "last": 3060,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "c321b56c1e6791098a758b64b517947083502688a6b9ea9d72ac492b4dd261d2"
+      },
+      "inventory_row": {
+        "tape": "10",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SKINNER BOX V2; 58 lines",
+        "capture": "tape10a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; TIME$ format required",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "31.862",
+        "recovered_bytes": "1488",
+        "source_file": "tapes/recovered/tape10a/best/02-SKINNER-BOX-V2.ASC",
+        "wav": "tapes/tape10a.wav",
+        "folder": "tapes/recovered/tape10a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with matching TIME$ format and OUT255 sound support"
+      },
+      "recovery_inventory": "tapes/recovered/tape10a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {

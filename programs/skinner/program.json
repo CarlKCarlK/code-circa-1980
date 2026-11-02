@@ -20,6 +20,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "SKINNER BOX V2",
+      "capture": "tape10a",
+      "save": 2,
+      "raw": "versions/v02/02-SKINNER-BOX-V2.BAS",
+      "listing": "versions/v02/02-SKINNER-BOX-V2.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
