@@ -61,3 +61,15 @@ test('unshared extras remain at v1, while published snapshots cannot be refreshe
  assert.throws(()=>planRelease(extra,{versions:[...catalog.versions,{id:'v2',path:'example/v2/'}]},{refreshUnshared:true}),/Only an explicitly marked/);
  assert.deepEqual(planRelease({id:'example'},catalog),{version:'v2',replace:false});
 });
+
+test('withdrawn programs retain verified snapshots outside public output',async()=>{
+ const root=await fs.mkdtemp(path.join(os.tmpdir(),'circa-withdrawn-test-'));
+ try{
+  const folder=path.join(root,'programs','example'),snapshot=path.join(folder,'website-archive','v1');await fs.mkdir(snapshot,{recursive:true});await fs.mkdir(path.join(root,'public'));
+  await fs.writeFile(path.join(folder,'program.json'),JSON.stringify({id:'example',website:false}));await fs.writeFile(path.join(snapshot,'index.html'),'Archived player');await fs.writeFile(path.join(snapshot,'licenses.txt'),'License');
+  const catalog={versions:[{id:'v1',path:'example/v1/',label:'Archived',sourceCommit:'a'.repeat(40),released:'2026-11-02',files:await snapshotFiles(snapshot)}]};await fs.writeFile(path.join(folder,'web-versions.json'),JSON.stringify(catalog));
+  assert.equal(await verifyWebVersions({root}),0);
+  await fs.mkdir(path.join(root,'public','example'));await assert.rejects(verifyWebVersions({root}),/still has public files/);await fs.rmdir(path.join(root,'public','example'));
+  await fs.writeFile(path.join(snapshot,'index.html'),'Changed archive');await assert.rejects(verifyWebVersions({root}),/Snapshot integrity failure/);
+ }finally{await fs.rm(root,{recursive:true,force:true});}
+});

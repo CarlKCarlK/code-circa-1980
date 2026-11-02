@@ -75,3 +75,12 @@ Verified: all thirteen images decode, desktop and 390px layouts render without
 horizontal overflow, and both gallery navigation checks pass. Unit/archive
 checks and production build pass. This affects the shared gallery; existing
 frozen players and all published main-gallery bytes remain unchanged.
+
+## Poker withdrawn
+
+Poker was removed at the user’s request on November 2, 2026, after identifying
+its Creative Computing provenance. The active more gallery now has twelve
+entries. Its standalone player, source-view URLs, and latest-release redirect
+are no longer emitted. Sources and corrections remain in programs/poker/; its
+exact former web snapshot is retained in website-archive/v1 outside public/.
+Earlier completion counts above describe their original import stage.

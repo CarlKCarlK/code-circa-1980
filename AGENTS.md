@@ -252,3 +252,11 @@ Run `npm run build:life-corrected` to reproduce it; `build:life` still reproduce
 the untouched recovered-source assembly in `derived/`. The full-loop Z80 tests
 cover six generations of stationary, oscillating, moving, and wrapped patterns,
 plus the old corner failure. Preserve recovered sources and both derived builds.
+
+On November 2, 2026, the user requested removing Poker from the website.
+`programs/poker/program.json` now has `website: false`. Keep its recovered
+sources and corrections as archive material; do not restore a gallery entry,
+player route, redirect, or public release without a new request. Its withdrawn
+web v1 is preserved byte for byte in programs/poker/website-archive/v1. The
+release checker validates archived snapshots but excludes them from active
+release counts; the build and release helper respect the withdrawal flag.

@@ -71,7 +71,7 @@ async function render() {
     if(!latest){app.innerHTML=`${crumbs(program)}<h1>No web releases yet</h1>`;return;}
     const url=new URL(experienceUrl(program,latest));url.search=releaseSearch(program,parts,location.search);location.replace(url);return;
   }
-  const version=!parts[2] && program ? defaultEdition(program) : parts[2]===program?.modern?.id ? program.modern : program?.versions.find(v=>(v.slug??v.id)===parts[2]||v.id===parts[2]);
+  const version=!parts[2] && program ? defaultEdition(program) : program&&parts[2]===program.modern?.id ? program.modern : program?.versions.find(v=>(v.slug??v.id)===parts[2]||v.id===parts[2]);
   if(!program || !version){app.innerHTML=`<h1>Program not found</h1><p><a href="${collectionUrl.href}">Back to the collection</a></p>`;return;}
   document.title=`${program.title} · Code Circa 1980`;
   const playing=(Boolean(webProgram)||parts[3]==='play') && version.playable;

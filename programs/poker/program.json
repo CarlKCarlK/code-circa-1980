@@ -77,5 +77,7 @@
       "note": "Untouched recovered save. 406 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
-  ]
+  ],
+  "website": false,
+  "websiteRemoval": "Removed at the user\u2019s request on November 2, 2026. Recovered sources, corrections, and the retired web snapshot remain archived."
 }

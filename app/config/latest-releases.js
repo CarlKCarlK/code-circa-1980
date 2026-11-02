@@ -18,6 +18,8 @@ export default function latestReleases(){
     generateBundle(){
       if(!enabled)return;
       for(const id of fs.readdirSync(programs)){
+        const metadata=`${programs}${id}/program.json`;
+        if(fs.existsSync(metadata)&&JSON.parse(fs.readFileSync(metadata,'utf8')).website===false)continue;
         const catalog=`${programs}${id}/web-versions.json`;
         if(!fs.existsSync(catalog))continue;
         const latest=JSON.parse(fs.readFileSync(catalog,'utf8')).versions.at(-1);

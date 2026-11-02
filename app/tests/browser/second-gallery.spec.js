@@ -9,14 +9,14 @@ test('second gallery is separate and unlinked; cards launch players directly',as
  await expect(page.locator('a[href*="more"],a[href*="speech"],a[href*="olympics"],a[href*="starwars81"]')).toHaveCount(0);
  await page.goto('/#/more');
  await expect(page.getByRole('heading',{level:1})).toContainText('the tapes.');
- await expect(page.locator('.program-card')).toHaveCount(13);
- await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','Star Wars cockpit','Ricky Rat','Pinball','Logic circuit simulator','Orbit simulator','Skinner Box','German tutor','Magazine Index','TEACH VI','Poker','LIFE']);
+ await expect(page.locator('.program-card')).toHaveCount(12);
+ await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','Star Wars cockpit','Ricky Rat','Pinball','Logic circuit simulator','Orbit simulator','Skinner Box','German tutor','Magazine Index','TEACH VI','LIFE']);
  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content','noindex, nofollow');
  await page.getByRole('link',{name:'Play Speech →'}).click();
  await expect(page.locator('#display')).toBeVisible();
  await expect(page.locator('.player-header').getByRole('link',{name:'Collection',exact:true})).toHaveAttribute('href',/#\/more$/);
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
- await expect(page.locator('.program-card')).toHaveCount(13);
+ await expect(page.locator('.program-card')).toHaveCount(12);
 });
 for(const id of ['speech','olympics'])test(`${id}: original starts, accepts setup input, pauses and restarts`,async({page})=>{
  test.setTimeout(270000);
@@ -80,7 +80,7 @@ for(const id of ['speech','olympics','starwars81'])test(`${id}: frozen v1 opens 
  await expect(page.locator('.player-header').getByRole('link',{name:'Collection',exact:true})).toHaveAttribute('href',/#\/more$/);
  await expect(page.getByRole('link',{name:'Download original payload'})).toBeVisible();
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
- await expect(page.locator('.program-card')).toHaveCount(13);
+ await expect(page.locator('.program-card')).toHaveCount(12);
  expect(errors).toEqual([]);
 });
 
@@ -94,7 +94,7 @@ test('starwars81 is the URL name while the cockpit has a descriptive display tit
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
- await expect(page.locator('.program-card')).toHaveCount(13);
+ await expect(page.locator('.program-card')).toHaveCount(12);
 });
 
 test('extra programs offer one best player without web-version choices',async({page})=>{

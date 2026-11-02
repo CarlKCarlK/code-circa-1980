@@ -12,6 +12,7 @@ const args=options.filter(value=>value!=='--refresh-unshared-v1');
 if(!program||!/^[-a-z0-9]+$/.test(program)||args.length&&!(args.length===2&&args[0]==='--label'))throw Error('Usage: npm run release:web -- PROGRAM [--label "Release title"] [--refresh-unshared-v1]');
 const programPath=path.join(projectRoot,'programs',program);
 const metadata=JSON.parse(await fs.readFile(path.join(programPath,'program.json'),'utf8'));
+if(metadata.website===false)throw Error('This program was removed from the website.');
 if(metadata.id!==program)throw Error('Program ID does not match its folder.');
 const dirty=execFileSync('git',['status','--porcelain','--','app','programs','public'],{cwd:projectRoot,encoding:'utf8'}).trim();
 if(dirty)throw Error(`Commit the source before freezing a web release:\n${dirty}`);

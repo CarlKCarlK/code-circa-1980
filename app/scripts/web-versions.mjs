@@ -21,11 +21,15 @@ export async function snapshotFiles(folder,prefix='') {
 export async function verifyWebVersions({root=projectRoot,against,allowUnreleased=false}={}) {
   if(against&&/^0+$/.test(against))against=undefined;
   if(against)execFileSync('git',['rev-parse','--verify',`${against}^{commit}`],{cwd:root,stdio:'pipe'});
-  let count=0;
+  let count=0;const retired=new Set();
   for(const entry of await fs.readdir(path.join(root,'programs'),{withFileTypes:true})) {
     if(!entry.isDirectory())continue;
     const programPath=path.join(root,'programs',entry.name);
-    try {await fs.access(path.join(programPath,'program.json'));}catch{continue;}
+    let metadata;try {metadata=JSON.parse(await fs.readFile(path.join(programPath,'program.json'),'utf8'));}catch(error){if(error.code==='ENOENT')continue;throw error;}
+    if(metadata.website===false){
+      retired.add(entry.name);
+      try {await fs.access(path.join(root,'public',entry.name));throw Error(`Removed program still has public files: ${entry.name}`);}catch(error){if(error.code!=='ENOENT')throw error;}
+    }
     const relative=`programs/${entry.name}/web-versions.json`;
     let catalog;
     try {catalog=JSON.parse(await fs.readFile(path.join(root,relative),'utf8'));}
@@ -35,10 +39,10 @@ export async function verifyWebVersions({root=projectRoot,against,allowUnrelease
       if(version.id!==`v${index+1}`)throw Error(`Web versions must start at v1 and increase in order: ${relative}`);
       if(!/^[0-9a-f]{40}$/.test(version.sourceCommit)||!/^\d{4}-\d{2}-\d{2}$/.test(version.released)||!version.label)throw Error(`Incomplete release metadata: ${entry.name}/${version.id}`);
       if(version.path!==undefined&&version.path!==`${entry.name}/${version.id}/`)throw Error(`Invalid release path: ${entry.name}/${version.id}`);
-      const actual=await snapshotFiles(path.join(root,'public',releasePath(entry.name,version)));
+      const actual=await snapshotFiles(metadata.website===false?path.join(programPath,'website-archive',version.id):path.join(root,'public',releasePath(entry.name,version)));
       if(JSON.stringify(actual)!==JSON.stringify(version.files))throw Error(`Snapshot integrity failure: ${entry.name}/${version.id}`);
       if(!actual.some(file=>file.path==='index.html')||!actual.some(file=>file.path==='licenses.txt'))throw Error(`Snapshot lacks its entry point or licenses: ${entry.name}/${version.id}`);
-      count++;
+      if(metadata.website!==false)count++;
     }
     if(against){
       let previous;
@@ -52,7 +56,7 @@ export async function verifyWebVersions({root=projectRoot,against,allowUnrelease
   if(against){
     const removedCatalogs=execFileSync('git',['diff','--name-only','--diff-filter=DR',against,'HEAD','--','programs'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(file=>file.endsWith('/web-versions.json'));
     if(removedCatalogs.length)throw Error(`Published release catalogs cannot be removed: ${removedCatalogs.join(', ')}`);
-    const changes=execFileSync('git',['diff','--name-status','--diff-filter=MDR',against,'HEAD','--','public'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(line=>/\tpublic\/(?:experiences\/)?[^/]+\/v\d+\//.test(line)).join('\n');
+    const changes=execFileSync('git',['diff','--name-status','--diff-filter=MDR',against,'HEAD','--','public'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(line=>{const match=line.match(/\tpublic\/(?:experiences\/)?([^/]+)\/v\d+\//);return match&&!retired.has(match[1]);}).join('\n');
     if(changes)throw Error(`Published snapshot files cannot change or be removed:\n${changes}`);
   }
   return count;
