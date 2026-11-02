@@ -1,0 +1,2008 @@
+{
+  "official_title": "CISAB Chess",
+  "title_authority": "No official title supplied; the user asked for \"my chess program\" (2026-10-31). The program calls itself CISAB (line 10: CISAB A COMPUTER CHESS GAME IN BASIC; title screen C I S A B). CISAB is BASIC spelled backwards.",
+  "import_date": "2026-10-31",
+  "order_inferred": true,
+  "order_evidence": "Inferred development sequence, not established dates. v01 and v02 are tape1b saves 8 and 10; v03-v07 are tape13a saves 9-13; v08-v14 are tape13b saves 1-6 and 8, each in save order. Each listing is the previous one with changes, and v03 starts from v02's code (its lines 10-57 and most of the move generator are v02's). The archive labels V2-V9 were assigned by the recovery from save order; they are not in the programs. No save is dated. Tape numbers alone do not establish chronology.",
+  "author_credit": "v11-v14 line 11: \"BY    CARL MYERS KADIE\"",
+  "context": "User note in the recovery archive (programs-to-find.md): \"Chess program — one I competed with in Peoria.\" From v03 on the program asks WHAT COLOR ARE WE and WHAT WAS THEIR ... MOVE, i.e. an operator relays an opponent's moves.",
+  "dating": {
+    "estimate": "Summer 1980 (contextual)",
+    "direct_date_in_program": null,
+    "evidence": [
+      "No dated line in any chess save or in the other saves on tape1b, tape13a and tape13b.",
+      "tape1b save 1 is ORION (COPYRIGHT 1979, Automated Simulations), a commercial program; it shows only that tape1b was recorded in 1979 or later.",
+      "Illinois Chess Bulletin, Vol. III, No. 4 (June-July 1980), Peoria column: \"BILL NAFF reports that Peoria will host a COMPUTER CHESS TOURNAMENT on Saturday, July 12 at the Ramada Inn.\" Clippings supplied by Carl Kadie on 2026-11-01; see history/README.md.",
+      "Carl Kadie (2026-11-01): wrote CISAB the summer after high school for a computer chess tournament in Peoria, Illinois."
+    ],
+    "caution": "Contextual, not a direct date: the bulletin dates the tournament, not any save. v01-v02 (before the tournament prompts) could be earlier, and old programs were sometimes saved again later."
+  },
+  "execution_testing": "Recovery archive records no execution tests. Website emulator checks are recorded separately in VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "label": "COMPUTER CHESS · Plays itself",
+      "capture": "tape1b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape1b/best/08-COMPUTER-CHESS.BAS",
+      "archive_listing": "tapes/recovered/tape1b/best/08-COMPUTER-CHESS.ASC",
+      "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+      "bytes": 2829,
+      "listing_sha256": "9bfa53c2912e658cfd30f00f1a44bc65da7efe39195d5cd4d61be09ed8b25b44",
+      "listing_lines": 74,
+      "recovery_evidence": "tapes/recovered/tape1b/inventory.json",
+      "inventory_row": {
+        "summary": "COMPUTER CHESS",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 8,
+        "title": "COMPUTER CHESS",
+        "name_inferred": false,
+        "complete": true,
+        "execution_tested": false,
+        "raw": "tapes/recovered/tape1b/best/08-COMPUTER-CHESS.BAS",
+        "listing": "tapes/recovered/tape1b/best/08-COMPUTER-CHESS.ASC",
+        "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+        "bytes": 2829,
+        "line_count": 74,
+        "last_line": 20010,
+        "memory_base": 17125,
+        "end_marker": true,
+        "parsed_bytes": 2829,
+        "source_start_s": 447.725375,
+        "source_end_s": 493.3514166666667,
+        "selected_source": {
+          "capture": "tape1b",
+          "variant": "left-hp800",
+          "index": 8,
+          "start": 447.725375,
+          "end": 493.3514166666667,
+          "file": "tapes/recovered/tape1b/left-hp800/T08.BAS",
+          "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+          "assessment": {
+            "good": true,
+            "lines": 74,
+            "last": 20010,
+            "base": 17125,
+            "normal": true,
+            "parsed": 2829,
+            "prefixEnd": 2827,
+            "bytes": 2829,
+            "reason": "valid"
+          }
+        },
+        "matching_sources": [
+          {
+            "capture": "tape1b",
+            "variant": "left-hp800",
+            "index": 8,
+            "start": 447.725375,
+            "end": 493.3514166666667,
+            "file": "tapes/recovered/tape1b/left-hp800/T08.BAS",
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b",
+            "index": 8,
+            "variant": "left-hp1200",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 447.475375,
+            "cropEnd": 493.8514166666667,
+            "start": 447.6715208333333,
+            "end": 493.35141666666664,
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T08-left-hp1200-c52d3ed07b6809cf.BAS"
+          },
+          {
+            "capture": "tape1b",
+            "index": 8,
+            "variant": "right-hp1200",
+            "period": 94,
+            "radius": 0.2,
+            "late": true,
+            "cropStart": 447.475375,
+            "cropEnd": 493.8514166666667,
+            "start": 447.7715,
+            "end": 493.3515208333333,
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T08-right-hp1200-c52d3ed07b6809cf.BAS"
+          },
+          {
+            "capture": "tape1b",
+            "index": 8,
+            "variant": "right-hp800",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 447.475375,
+            "cropEnd": 493.8514166666667,
+            "start": 447.7713333333333,
+            "end": 493.35154166666666,
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T08-right-hp800-c52d3ed07b6809cf.BAS"
+          },
+          {
+            "capture": "tape1b",
+            "index": 8,
+            "variant": "right-boosted",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 447.475375,
+            "cropEnd": 493.8514166666667,
+            "start": 447.771375,
+            "end": 493.3513958333333,
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T08-right-boosted-c52d3ed07b6809cf.BAS"
+          }
+        ],
+        "matching_other_captures": [
+          {
+            "capture": "tape1b2",
+            "variant": "original",
+            "index": 8,
+            "start": 446.41075,
+            "end": 491.9504375,
+            "file": "tapes/recovered/tape1b2/original/T08.BAS",
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b2",
+            "variant": "left-hp1200",
+            "index": 8,
+            "start": 446.40897916666665,
+            "end": 491.9505833333333,
+            "file": "tapes/recovered/tape1b2/left-hp1200/T08.BAS",
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b2",
+            "variant": "left-hp800",
+            "index": 8,
+            "start": 446.4108958333333,
+            "end": 491.95060416666666,
+            "file": "tapes/recovered/tape1b2/left-hp800/T08.BAS",
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b2",
+            "variant": "right-boosted",
+            "index": 8,
+            "start": 446.4089583333333,
+            "end": 491.9505833333333,
+            "file": "tapes/recovered/tape1b2/right-boosted/T08.BAS",
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b2",
+            "index": 8,
+            "variant": "left-hp1200",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 446.15897916666665,
+            "cropEnd": 492.4505833333333,
+            "start": 446.3551875,
+            "end": 491.9505833333333,
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b2/timing-refinement/T08-left-hp1200-c52d3ed07b6809cf.BAS"
+          },
+          {
+            "capture": "tape1b2",
+            "index": 8,
+            "variant": "right-hp1200",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 446.15897916666665,
+            "cropEnd": 492.4505833333333,
+            "start": 446.45310416666666,
+            "end": 491.9507083333333,
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b2/timing-refinement/T08-right-hp1200-c52d3ed07b6809cf.BAS"
+          },
+          {
+            "capture": "tape1b2",
+            "index": 8,
+            "variant": "right-hp800",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 446.15897916666665,
+            "cropEnd": 492.4505833333333,
+            "start": 446.45310416666666,
+            "end": 491.95054166666665,
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b2/timing-refinement/T08-right-hp800-c52d3ed07b6809cf.BAS"
+          },
+          {
+            "capture": "tape1b2",
+            "index": 8,
+            "variant": "right-boosted",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 446.15897916666665,
+            "cropEnd": 492.4505833333333,
+            "start": 446.453125,
+            "end": 491.9505833333333,
+            "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff",
+            "assessment": {
+              "good": true,
+              "lines": 74,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2829,
+              "prefixEnd": 2827,
+              "bytes": 2829,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b2/timing-refinement/T08-right-boosted-c52d3ed07b6809cf.BAS"
+          }
+        ]
+      },
+      "other_saves": [
+        {
+          "capture": "tape1b2",
+          "save": 8,
+          "relation": "identical (second capture of the same side)",
+          "archive_raw": "tapes/recovered/tape1b2/best/08-COMPUTER-CHESS.BAS",
+          "archive_listing": "tapes/recovered/tape1b2/best/08-COMPUTER-CHESS.ASC",
+          "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff"
+        }
+      ],
+      "snapshot_raw": "versions/v01/08-COMPUTER-CHESS.BAS",
+      "snapshot_listing": "versions/v01/08-COMPUTER-CHESS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/08-COMPUTER-CHESS.BAS",
+          "bytes": 2829,
+          "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff"
+        },
+        {
+          "path": "versions/v01/08-COMPUTER-CHESS.ASC",
+          "bytes": 3279,
+          "sha256": "9bfa53c2912e658cfd30f00f1a44bc65da7efe39195d5cd4d61be09ed8b25b44"
+        }
+      ]
+    },
+    {
+      "version": "v02",
+      "label": "COMPUTER CHESS · You or itself",
+      "capture": "tape1b",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape1b/best/10-COMPUTER-CHESS-SELF-PLAY.BAS",
+      "archive_listing": "tapes/recovered/tape1b/best/10-COMPUTER-CHESS-SELF-PLAY.ASC",
+      "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+      "bytes": 2912,
+      "listing_sha256": "c47407e493b2e0cea106b13ba74dfcf5e7c3b875410b45b78fa7c354f7deefde",
+      "listing_lines": 76,
+      "recovery_evidence": "tapes/recovered/tape1b/inventory.json",
+      "inventory_row": {
+        "summary": "COMPUTER CHESS, self-play variant",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 10,
+        "title": "COMPUTER CHESS, self-play variant",
+        "name_inferred": false,
+        "complete": true,
+        "execution_tested": false,
+        "raw": "tapes/recovered/tape1b/best/10-COMPUTER-CHESS-SELF-PLAY.BAS",
+        "listing": "tapes/recovered/tape1b/best/10-COMPUTER-CHESS-SELF-PLAY.ASC",
+        "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+        "bytes": 2912,
+        "line_count": 76,
+        "last_line": 20010,
+        "memory_base": 17125,
+        "end_marker": true,
+        "parsed_bytes": 2912,
+        "source_start_s": 552.0015416666666,
+        "source_end_s": 599.7670208333333,
+        "selected_source": {
+          "capture": "tape1b",
+          "variant": "left-hp1200",
+          "index": 10,
+          "start": 552.0015416666666,
+          "end": 599.7670208333333,
+          "file": "tapes/recovered/tape1b/left-hp1200/T10.BAS",
+          "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+          "assessment": {
+            "good": true,
+            "lines": 76,
+            "last": 20010,
+            "base": 17125,
+            "normal": true,
+            "parsed": 2912,
+            "prefixEnd": 2910,
+            "bytes": 2912,
+            "reason": "valid"
+          }
+        },
+        "matching_sources": [
+          {
+            "capture": "tape1b",
+            "variant": "left-hp1200",
+            "index": 10,
+            "start": 552.0015416666666,
+            "end": 599.7670208333333,
+            "file": "tapes/recovered/tape1b/left-hp1200/T10.BAS",
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b",
+            "variant": "left-hp800",
+            "index": 10,
+            "start": 552.0015625,
+            "end": 599.7670416666666,
+            "file": "tapes/recovered/tape1b/left-hp800/T10.BAS",
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b",
+            "index": 10,
+            "variant": "left-hp1200",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 551.7515416666666,
+            "cropEnd": 600.2670208333333,
+            "start": 551.9497708333333,
+            "end": 599.7670208333333,
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T10-left-hp1200-8964709a39c036c9.BAS"
+          },
+          {
+            "capture": "tape1b",
+            "index": 10,
+            "variant": "right-hp1200",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 551.7515416666666,
+            "cropEnd": 600.2670208333333,
+            "start": 552.0490208333333,
+            "end": 599.7671458333333,
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T10-right-hp1200-8964709a39c036c9.BAS"
+          },
+          {
+            "capture": "tape1b",
+            "index": 10,
+            "variant": "right-hp800",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 551.7515416666666,
+            "cropEnd": 600.2670208333333,
+            "start": 552.0490416666667,
+            "end": 599.7671458333333,
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T10-right-hp800-8964709a39c036c9.BAS"
+          },
+          {
+            "capture": "tape1b",
+            "index": 10,
+            "variant": "right-boosted",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 551.7515416666666,
+            "cropEnd": 600.2670208333333,
+            "start": 552.0490625,
+            "end": 599.7669999999999,
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T10-right-boosted-8964709a39c036c9.BAS"
+          }
+        ],
+        "matching_other_captures": [
+          {
+            "capture": "tape1b2",
+            "variant": "original",
+            "index": 10,
+            "start": 550.6826666666667,
+            "end": 598.681125,
+            "file": "tapes/recovered/tape1b2/original/T10.BAS",
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b2",
+            "variant": "left-hp1200",
+            "index": 10,
+            "start": 550.6905625,
+            "end": 598.6812708333333,
+            "file": "tapes/recovered/tape1b2/left-hp1200/T10.BAS",
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b2",
+            "variant": "left-hp800",
+            "index": 10,
+            "start": 550.6905833333333,
+            "end": 598.6812916666667,
+            "file": "tapes/recovered/tape1b2/left-hp800/T10.BAS",
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b2",
+            "variant": "right-boosted",
+            "index": 10,
+            "start": 550.74775,
+            "end": 598.6812708333333,
+            "file": "tapes/recovered/tape1b2/right-boosted/T10.BAS",
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            }
+          },
+          {
+            "capture": "tape1b2",
+            "index": 10,
+            "variant": "left-hp1200",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 550.4405625,
+            "cropEnd": 599.1812708333333,
+            "start": 550.7364166666667,
+            "end": 598.6812708333334,
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b2/timing-refinement/T10-left-hp1200-8964709a39c036c9.BAS"
+          },
+          {
+            "capture": "tape1b2",
+            "index": 10,
+            "variant": "right-hp1200",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 550.4405625,
+            "cropEnd": 599.1812708333333,
+            "start": 550.7363541666667,
+            "end": 598.6813958333333,
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b2/timing-refinement/T10-right-hp1200-8964709a39c036c9.BAS"
+          },
+          {
+            "capture": "tape1b2",
+            "index": 10,
+            "variant": "right-hp800",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 550.4405625,
+            "cropEnd": 599.1812708333333,
+            "start": 550.7363750000001,
+            "end": 598.6812291666668,
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b2/timing-refinement/T10-right-hp800-8964709a39c036c9.BAS"
+          },
+          {
+            "capture": "tape1b2",
+            "index": 10,
+            "variant": "right-boosted",
+            "period": 94,
+            "radius": 0.12,
+            "late": true,
+            "cropStart": 550.4405625,
+            "cropEnd": 599.1812708333333,
+            "start": 550.7363958333334,
+            "end": 598.6812708333334,
+            "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674",
+            "assessment": {
+              "good": true,
+              "lines": 76,
+              "last": 20010,
+              "base": 17125,
+              "normal": true,
+              "parsed": 2912,
+              "prefixEnd": 2910,
+              "bytes": 2912,
+              "reason": "valid"
+            },
+            "file": "tapes/recovered/tape1b2/timing-refinement/T10-right-boosted-8964709a39c036c9.BAS"
+          }
+        ]
+      },
+      "other_saves": [
+        {
+          "capture": "tape1b2",
+          "save": 10,
+          "relation": "identical (second capture of the same side)",
+          "archive_raw": "tapes/recovered/tape1b2/best/10-COMPUTER-CHESS-SELF-PLAY.BAS",
+          "archive_listing": "tapes/recovered/tape1b2/best/10-COMPUTER-CHESS-SELF-PLAY.ASC",
+          "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674"
+        }
+      ],
+      "snapshot_raw": "versions/v02/10-COMPUTER-CHESS-SELF-PLAY.BAS",
+      "snapshot_listing": "versions/v02/10-COMPUTER-CHESS-SELF-PLAY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/10-COMPUTER-CHESS-SELF-PLAY.BAS",
+          "bytes": 2912,
+          "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674"
+        },
+        {
+          "path": "versions/v02/10-COMPUTER-CHESS-SELF-PLAY.ASC",
+          "bytes": 3372,
+          "sha256": "c47407e493b2e0cea106b13ba74dfcf5e7c3b875410b45b78fa7c354f7deefde"
+        }
+      ]
+    },
+    {
+      "version": "v03",
+      "label": "COMPUTER CHESS · Tournament player",
+      "capture": "tape13a",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.ASC",
+      "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a",
+      "bytes": 3168,
+      "listing_sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836",
+      "listing_lines": 78,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "COMPUTER CHESS; 78 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 9,
+        "title": "COMPUTER-CHESS",
+        "source": "tapes/recovered/tape13a/timing-refinement/T9-left-hp1200-4146e10e7b14.BAS",
+        "binary": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.BAS",
+        "listing": "tapes/recovered/tape13a/best/09-COMPUTER-CHESS.ASC",
+        "bytes": 3168,
+        "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a",
+        "recovery_complete": true,
+        "source_start_s": 327.85991666666666,
+        "source_end_s": 379.7810416666667,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T9-left-hp1200-4146e10e7b14.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T9-right-boosted-4146e10e7b14.BAS"
+        ],
+        "lines": 78,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v03/09-COMPUTER-CHESS.BAS",
+      "snapshot_listing": "versions/v03/09-COMPUTER-CHESS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/09-COMPUTER-CHESS.BAS",
+          "bytes": 3168,
+          "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a"
+        },
+        {
+          "path": "versions/v03/09-COMPUTER-CHESS.ASC",
+          "bytes": 3682,
+          "sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836"
+        }
+      ]
+    },
+    {
+      "version": "v04",
+      "label": "COMPUTER CHESS V2 · Fixes",
+      "capture": "tape13a",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape13a/best/10-COMPUTER-CHESS-V2.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/10-COMPUTER-CHESS-V2.ASC",
+      "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340",
+      "bytes": 3231,
+      "listing_sha256": "236213f2c5c3c0678e16f3a819538913d535fa27218d240d735d98daed238dfc",
+      "listing_lines": 79,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "COMPUTER CHESS V2; 79 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 10,
+        "title": "COMPUTER-CHESS-V2",
+        "source": "tapes/recovered/tape13a/timing-refinement/T10-left-hp1200-05cf84527309.BAS",
+        "binary": "tapes/recovered/tape13a/best/10-COMPUTER-CHESS-V2.BAS",
+        "listing": "tapes/recovered/tape13a/best/10-COMPUTER-CHESS-V2.ASC",
+        "bytes": 3231,
+        "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340",
+        "recovery_complete": true,
+        "source_start_s": 392.8918958333333,
+        "source_end_s": 445.61083333333335,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T10-left-hp1200-05cf84527309.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T10-right-boosted-05cf84527309.BAS"
+        ],
+        "lines": 79,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v04/10-COMPUTER-CHESS-V2.BAS",
+      "snapshot_listing": "versions/v04/10-COMPUTER-CHESS-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/10-COMPUTER-CHESS-V2.BAS",
+          "bytes": 3231,
+          "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340"
+        },
+        {
+          "path": "versions/v04/10-COMPUTER-CHESS-V2.ASC",
+          "bytes": 3766,
+          "sha256": "236213f2c5c3c0678e16f3a819538913d535fa27218d240d735d98daed238dfc"
+        }
+      ]
+    },
+    {
+      "version": "v05",
+      "label": "CISAB · Title, ADD, attacked squares",
+      "capture": "tape13a",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape13a/best/11-CISAB-CHESS-EARLY.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/11-CISAB-CHESS-EARLY.ASC",
+      "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8",
+      "bytes": 3709,
+      "listing_sha256": "1dab2c20d91a3f399cef102197febf4fe3a7e81c08d52d5aac6089a672b58754",
+      "listing_lines": 90,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS EARLY; 90 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 11,
+        "title": "CISAB-CHESS-EARLY",
+        "source": "tapes/recovered/tape13a/timing-refinement/T11-left-hp1200-0f2491241304.BAS",
+        "binary": "tapes/recovered/tape13a/best/11-CISAB-CHESS-EARLY.BAS",
+        "listing": "tapes/recovered/tape13a/best/11-CISAB-CHESS-EARLY.ASC",
+        "bytes": 3709,
+        "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8",
+        "recovery_complete": true,
+        "source_start_s": 462.42035416666664,
+        "source_end_s": 522.7035,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T11-left-hp1200-0f2491241304.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T11-right-boosted-0f2491241304.BAS"
+        ],
+        "lines": 90,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v05/11-CISAB-CHESS-EARLY.BAS",
+      "snapshot_listing": "versions/v05/11-CISAB-CHESS-EARLY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/11-CISAB-CHESS-EARLY.BAS",
+          "bytes": 3709,
+          "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8"
+        },
+        {
+          "path": "versions/v05/11-CISAB-CHESS-EARLY.ASC",
+          "bytes": 4335,
+          "sha256": "1dab2c20d91a3f399cef102197febf4fe3a7e81c08d52d5aac6089a672b58754"
+        }
+      ]
+    },
+    {
+      "version": "v06",
+      "label": "CISAB · Piece values",
+      "capture": "tape13a",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape13a/best/12-CISAB-CHESS.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/12-CISAB-CHESS.ASC",
+      "sha256": "e1c7cda70e14658f74523e19d237492be6294fc549a4b54a5f73b27eba33ac46",
+      "bytes": 4125,
+      "listing_sha256": "ffbb3679e03d67a52cee951a725bc01b56378938ee47354a582e3b5d3c524e51",
+      "listing_lines": 101,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS; 101 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 12,
+        "title": "CISAB-CHESS",
+        "source": "tapes/recovered/tape13a/timing-refinement/T12-left-hp1200-e1c7cda70e14.BAS",
+        "binary": "tapes/recovered/tape13a/best/12-CISAB-CHESS.BAS",
+        "listing": "tapes/recovered/tape13a/best/12-CISAB-CHESS.ASC",
+        "bytes": 4125,
+        "sha256": "e1c7cda70e14658f74523e19d237492be6294fc549a4b54a5f73b27eba33ac46",
+        "recovery_complete": true,
+        "source_start_s": 538.81375,
+        "source_end_s": 605.0201875,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T12-left-hp1200-e1c7cda70e14.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T12-right-boosted-e1c7cda70e14.BAS"
+        ],
+        "lines": 101,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v06/12-CISAB-CHESS.BAS",
+      "snapshot_listing": "versions/v06/12-CISAB-CHESS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v06/12-CISAB-CHESS.BAS",
+          "bytes": 4125,
+          "sha256": "e1c7cda70e14658f74523e19d237492be6294fc549a4b54a5f73b27eba33ac46"
+        },
+        {
+          "path": "versions/v06/12-CISAB-CHESS.ASC",
+          "bytes": 4873,
+          "sha256": "ffbb3679e03d67a52cee951a725bc01b56378938ee47354a582e3b5d3c524e51"
+        }
+      ]
+    },
+    {
+      "version": "v07",
+      "label": "CISAB V2 · Pawn double step",
+      "capture": "tape13a",
+      "save": 13,
+      "archive_raw": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.ASC",
+      "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f",
+      "bytes": 3920,
+      "listing_sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853",
+      "listing_lines": 98,
+      "recovery_evidence": "tapes/recovered/tape13a/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V2; 98 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 13,
+        "title": "CISAB-CHESS-V2",
+        "source": "tapes/recovered/tape13a/timing-refinement/T13-left-hp1200-b85114baba98.BAS",
+        "binary": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.BAS",
+        "listing": "tapes/recovered/tape13a/best/13-CISAB-CHESS-V2.ASC",
+        "bytes": 3920,
+        "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f",
+        "recovery_complete": true,
+        "source_start_s": 619.333375,
+        "source_end_s": 682.6984791666666,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13a/timing-refinement/T13-left-hp1200-b85114baba98.BAS",
+          "tapes/recovered/tape13a/timing-refinement/T13-right-boosted-b85114baba98.BAS"
+        ],
+        "lines": 98,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v07/13-CISAB-CHESS-V2.BAS",
+      "snapshot_listing": "versions/v07/13-CISAB-CHESS-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v07/13-CISAB-CHESS-V2.BAS",
+          "bytes": 3920,
+          "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f"
+        },
+        {
+          "path": "versions/v07/13-CISAB-CHESS-V2.ASC",
+          "bytes": 4697,
+          "sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853"
+        }
+      ]
+    },
+    {
+      "version": "v08",
+      "label": "CISAB V3 · Tries its best moves",
+      "capture": "tape13b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.ASC",
+      "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5",
+      "bytes": 4150,
+      "listing_sha256": "5f77fb8da1c4487d92f7e861c0c9cc24b5d202d110c35c63182b4e32f792dfad",
+      "listing_lines": 104,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V3; 104 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 1,
+        "title": "CISAB-CHESS-V3",
+        "source": "tapes/recovered/tape13b/timing-refinement/T1-left-hp1200-55a226163aa3.BAS",
+        "binary": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.BAS",
+        "listing": "tapes/recovered/tape13b/best/01-CISAB-CHESS-V3.ASC",
+        "bytes": 4150,
+        "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5",
+        "recovery_complete": true,
+        "source_start_s": 75.8006875,
+        "source_end_s": 142.40233333333333,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T1-left-hp1200-55a226163aa3.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T1-right-boosted-55a226163aa3.BAS"
+        ],
+        "lines": 104,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v08/01-CISAB-CHESS-V3.BAS",
+      "snapshot_listing": "versions/v08/01-CISAB-CHESS-V3.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v08/01-CISAB-CHESS-V3.BAS",
+          "bytes": 4150,
+          "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5"
+        },
+        {
+          "path": "versions/v08/01-CISAB-CHESS-V3.ASC",
+          "bytes": 4963,
+          "sha256": "5f77fb8da1c4487d92f7e861c0c9cc24b5d202d110c35c63182b4e32f792dfad"
+        }
+      ]
+    },
+    {
+      "version": "v09",
+      "label": "CISAB V4 · Reply values",
+      "capture": "tape13b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape13b/best/02-CISAB-CHESS-V4.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/02-CISAB-CHESS-V4.ASC",
+      "sha256": "1148980286284d202359c3d5c4819183c2b84a46d835d966426a8eac09626a75",
+      "bytes": 4182,
+      "listing_sha256": "27da75cafafb6b3a5d88a81373a3982f9a6c118d929cb4248a46c561b3dfd12b",
+      "listing_lines": 105,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V4; 105 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 2,
+        "title": "CISAB-CHESS-V4",
+        "source": "tapes/recovered/tape13b/timing-refinement/T2-left-hp1200-114898028628.BAS",
+        "binary": "tapes/recovered/tape13b/best/02-CISAB-CHESS-V4.BAS",
+        "listing": "tapes/recovered/tape13b/best/02-CISAB-CHESS-V4.ASC",
+        "bytes": 4182,
+        "sha256": "1148980286284d202359c3d5c4819183c2b84a46d835d966426a8eac09626a75",
+        "recovery_complete": true,
+        "source_start_s": 154.51622916666668,
+        "source_end_s": 221.658,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T2-left-hp1200-114898028628.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T2-right-boosted-114898028628.BAS"
+        ],
+        "lines": 105,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v09/02-CISAB-CHESS-V4.BAS",
+      "snapshot_listing": "versions/v09/02-CISAB-CHESS-V4.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v09/02-CISAB-CHESS-V4.BAS",
+          "bytes": 4182,
+          "sha256": "1148980286284d202359c3d5c4819183c2b84a46d835d966426a8eac09626a75"
+        },
+        {
+          "path": "versions/v09/02-CISAB-CHESS-V4.ASC",
+          "bytes": 5024,
+          "sha256": "27da75cafafb6b3a5d88a81373a3982f9a6c118d929cb4248a46c561b3dfd12b"
+        }
+      ]
+    },
+    {
+      "version": "v10",
+      "label": "CISAB V5 · Test position",
+      "capture": "tape13b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape13b/best/03-CISAB-CHESS-V5.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/03-CISAB-CHESS-V5.ASC",
+      "sha256": "84c9d299c27f9120ea6e4bee492dbbda87eaa25e1bbb2424dabdf5b0c579dc61",
+      "bytes": 4428,
+      "listing_sha256": "8a61f0b1db78a5322c3e5aac1b079e5b07a5690b7fc57ab927a3b45273176cba",
+      "listing_lines": 111,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V5; 111 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 3,
+        "title": "CISAB-CHESS-V5",
+        "source": "tapes/recovered/tape13b/timing-refinement/T3-left-hp1200-84c9d299c27f.BAS",
+        "binary": "tapes/recovered/tape13b/best/03-CISAB-CHESS-V5.BAS",
+        "listing": "tapes/recovered/tape13b/best/03-CISAB-CHESS-V5.ASC",
+        "bytes": 4428,
+        "sha256": "84c9d299c27f9120ea6e4bee492dbbda87eaa25e1bbb2424dabdf5b0c579dc61",
+        "recovery_complete": true,
+        "source_start_s": 228.57166666666666,
+        "source_end_s": 298.8860833333333,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T3-left-hp1200-84c9d299c27f.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T3-right-boosted-84c9d299c27f.BAS"
+        ],
+        "lines": 111,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v10/03-CISAB-CHESS-V5.BAS",
+      "snapshot_listing": "versions/v10/03-CISAB-CHESS-V5.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v10/03-CISAB-CHESS-V5.BAS",
+          "bytes": 4428,
+          "sha256": "84c9d299c27f9120ea6e4bee492dbbda87eaa25e1bbb2424dabdf5b0c579dc61"
+        },
+        {
+          "path": "versions/v10/03-CISAB-CHESS-V5.ASC",
+          "bytes": 5318,
+          "sha256": "8a61f0b1db78a5322c3e5aac1b079e5b07a5690b7fc57ab927a3b45273176cba"
+        }
+      ]
+    },
+    {
+      "version": "v11",
+      "label": "CISAB V6 · Byline",
+      "capture": "tape13b",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape13b/best/04-CISAB-CHESS-V6.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/04-CISAB-CHESS-V6.ASC",
+      "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e",
+      "bytes": 4678,
+      "listing_sha256": "4a4f8b216d9df8f7dc94ee779c5af579340c576083414b6743129522ffe6ffc3",
+      "listing_lines": 118,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V6; 118 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 4,
+        "title": "CISAB-CHESS-V6",
+        "source": "tapes/recovered/tape13b/timing-refinement/T4-left-hp1200-1ba01b899412.BAS",
+        "binary": "tapes/recovered/tape13b/best/04-CISAB-CHESS-V6.BAS",
+        "listing": "tapes/recovered/tape13b/best/04-CISAB-CHESS-V6.ASC",
+        "bytes": 4678,
+        "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e",
+        "recovery_complete": true,
+        "source_start_s": 307.00395833333334,
+        "source_end_s": 381.69779166666666,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T4-left-hp1200-1ba01b899412.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T4-right-boosted-1ba01b899412.BAS"
+        ],
+        "lines": 118,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v11/04-CISAB-CHESS-V6.BAS",
+      "snapshot_listing": "versions/v11/04-CISAB-CHESS-V6.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v11/04-CISAB-CHESS-V6.BAS",
+          "bytes": 4678,
+          "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e"
+        },
+        {
+          "path": "versions/v11/04-CISAB-CHESS-V6.ASC",
+          "bytes": 5622,
+          "sha256": "4a4f8b216d9df8f7dc94ee779c5af579340c576083414b6743129522ffe6ffc3"
+        }
+      ]
+    },
+    {
+      "version": "v12",
+      "label": "CISAB V7 · Cleanup",
+      "capture": "tape13b",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape13b/best/05-CISAB-CHESS-V7.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/05-CISAB-CHESS-V7.ASC",
+      "sha256": "8d0b2fb25ea9885cb20085dc901d1b3d574e9692097e81b0200839fe9a9f32bf",
+      "bytes": 4661,
+      "listing_sha256": "59be11416498166a92d66dca9fc58efd795788ba2e55d7d3f780ed58b57f87ce",
+      "listing_lines": 120,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V7; 120 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 5,
+        "title": "CISAB-CHESS-V7",
+        "source": "tapes/recovered/tape13b/timing-refinement/T5-left-hp1200-8d0b2fb25ea9.BAS",
+        "binary": "tapes/recovered/tape13b/best/05-CISAB-CHESS-V7.BAS",
+        "listing": "tapes/recovered/tape13b/best/05-CISAB-CHESS-V7.ASC",
+        "bytes": 4661,
+        "sha256": "8d0b2fb25ea9885cb20085dc901d1b3d574e9692097e81b0200839fe9a9f32bf",
+        "recovery_complete": true,
+        "source_start_s": 397.41060416666664,
+        "source_end_s": 471.85675,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T5-left-hp1200-8d0b2fb25ea9.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T5-right-boosted-8d0b2fb25ea9.BAS"
+        ],
+        "lines": 120,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v12/05-CISAB-CHESS-V7.BAS",
+      "snapshot_listing": "versions/v12/05-CISAB-CHESS-V7.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v12/05-CISAB-CHESS-V7.BAS",
+          "bytes": 4661,
+          "sha256": "8d0b2fb25ea9885cb20085dc901d1b3d574e9692097e81b0200839fe9a9f32bf"
+        },
+        {
+          "path": "versions/v12/05-CISAB-CHESS-V7.ASC",
+          "bytes": 5608,
+          "sha256": "59be11416498166a92d66dca9fc58efd795788ba2e55d7d3f780ed58b57f87ce"
+        }
+      ]
+    },
+    {
+      "version": "v13",
+      "label": "CISAB V8 · Test position again",
+      "capture": "tape13b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape13b/best/06-CISAB-CHESS-V8.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/06-CISAB-CHESS-V8.ASC",
+      "sha256": "bde86d5f1e150834de3cf5fb880a052e9d708c957e3c841a14736779ed5de9da",
+      "bytes": 4717,
+      "listing_sha256": "0126e816867ae8936e138fd45af3147f7c5cfa7a408bb33c8cbc18ffb74d9e58",
+      "listing_lines": 121,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V8; 121 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 6,
+        "title": "CISAB-CHESS-V8",
+        "source": "tapes/recovered/tape13b/timing-refinement/T6-left-hp1200-bde86d5f1e15.BAS",
+        "binary": "tapes/recovered/tape13b/best/06-CISAB-CHESS-V8.BAS",
+        "listing": "tapes/recovered/tape13b/best/06-CISAB-CHESS-V8.ASC",
+        "bytes": 4717,
+        "sha256": "bde86d5f1e150834de3cf5fb880a052e9d708c957e3c841a14736779ed5de9da",
+        "recovery_complete": true,
+        "source_start_s": 480.6705,
+        "source_end_s": 555.8934583333333,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T6-left-hp1200-bde86d5f1e15.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T6-right-boosted-bde86d5f1e15.BAS"
+        ],
+        "lines": 121,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v13/06-CISAB-CHESS-V8.BAS",
+      "snapshot_listing": "versions/v13/06-CISAB-CHESS-V8.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v13/06-CISAB-CHESS-V8.BAS",
+          "bytes": 4717,
+          "sha256": "bde86d5f1e150834de3cf5fb880a052e9d708c957e3c841a14736779ed5de9da"
+        },
+        {
+          "path": "versions/v13/06-CISAB-CHESS-V8.ASC",
+          "bytes": 5664,
+          "sha256": "0126e816867ae8936e138fd45af3147f7c5cfa7a408bb33c8cbc18ffb74d9e58"
+        }
+      ]
+    },
+    {
+      "version": "v14",
+      "label": "CISAB V9 · Opening",
+      "capture": "tape13b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape13b/best/08-CISAB-CHESS-V9.BAS",
+      "archive_listing": "tapes/recovered/tape13b/best/08-CISAB-CHESS-V9.ASC",
+      "sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7",
+      "bytes": 4997,
+      "listing_sha256": "cb6c6a8a04316c8a91b2199f46b9f752620800e90de7559343ff35651aa4d7ba",
+      "listing_lines": 125,
+      "recovery_evidence": "tapes/recovered/tape13b/inventory.json",
+      "inventory_row": {
+        "summary": "CISAB CHESS V9; 125 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 8,
+        "title": "CISAB-CHESS-V9",
+        "source": "tapes/recovered/tape13b/timing-refinement/T8-left-hp1200-14fe0fcb4547.BAS",
+        "binary": "tapes/recovered/tape13b/best/08-CISAB-CHESS-V9.BAS",
+        "listing": "tapes/recovered/tape13b/best/08-CISAB-CHESS-V9.ASC",
+        "bytes": 4997,
+        "sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7",
+        "recovery_complete": true,
+        "source_start_s": 650.9417291666666,
+        "source_end_s": 730.2594791666667,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T8-left-hp1200-14fe0fcb4547.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T8-right-boosted-14fe0fcb4547.BAS"
+        ],
+        "lines": 125,
+        "last_line": 20010,
+        "pointer_bases": [
+          17125
+        ]
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v14/08-CISAB-CHESS-V9.BAS",
+      "snapshot_listing": "versions/v14/08-CISAB-CHESS-V9.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v14/08-CISAB-CHESS-V9.BAS",
+          "bytes": 4997,
+          "sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7"
+        },
+        {
+          "path": "versions/v14/08-CISAB-CHESS-V9.ASC",
+          "bytes": 6011,
+          "sha256": "cb6c6a8a04316c8a91b2199f46b9f752620800e90de7559343ff35651aa4d7ba"
+        }
+      ]
+    }
+  ],
+  "partial_saves": [
+    {
+      "folder": "partial/tape1b-save09",
+      "capture": "tape1b",
+      "save": 9,
+      "note": "Damaged save between v01 and v02 on the tape. Its validated 50-line prefix (lines 10-610) is identical to the first 50 lines of v02, so it is probably an earlier save of v02. tape1b2 save 9 has the same validated prefix.",
+      "inventory_row": {
+        "summary": "COMPUTER CHESS, incomplete captured save",
+        "status": "damaged / partial BASIC",
+        "validation": "Validated untouched prefix: 50 lines through 610; exact left/right prefix agreement; no synthetic end marker; No complete end marker recovered in any sweep. 50 ordered lines through 610 (1981-byte prefix) match both channels; later partial line is unvalidated. Not filled from another chess save.",
+        "recovery%": ""
+      },
+      "recovery_item": {
+        "order": 9,
+        "title": "COMPUTER CHESS, incomplete captured save",
+        "name_inferred": false,
+        "complete": false,
+        "execution_tested": false,
+        "raw": "tapes/recovered/tape1b/partial/09-COMPUTER-CHESS-INCOMPLETE-RAW.BAS",
+        "listing": "tapes/recovered/tape1b/partial/09-COMPUTER-CHESS-INCOMPLETE-UNCERTAIN.ASC",
+        "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78",
+        "bytes": 2021,
+        "line_count": 50,
+        "last_line": 610,
+        "memory_base": 17125,
+        "end_marker": false,
+        "parsed_bytes": 1981,
+        "source_start_s": 508.8640625,
+        "source_end_s": 543.5887291666667,
+        "selected_source": {
+          "capture": "tape1b",
+          "variant": "left-hp1200",
+          "index": 9,
+          "start": 508.8640625,
+          "end": 543.5887291666667,
+          "file": "tapes/recovered/tape1b/left-hp1200/T09.BAS",
+          "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78",
+          "assessment": {
+            "good": false,
+            "lines": 50,
+            "last": 610,
+            "base": 17125,
+            "normal": false,
+            "parsed": 1981,
+            "prefixEnd": 1981,
+            "bytes": 2021,
+            "reason": "unterminated line"
+          }
+        },
+        "matching_sources": [
+          {
+            "capture": "tape1b",
+            "variant": "left-hp1200",
+            "index": 9,
+            "start": 508.8640625,
+            "end": 543.5887291666667,
+            "file": "tapes/recovered/tape1b/left-hp1200/T09.BAS",
+            "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78",
+            "assessment": {
+              "good": false,
+              "lines": 50,
+              "last": 610,
+              "base": 17125,
+              "normal": false,
+              "parsed": 1981,
+              "prefixEnd": 1981,
+              "bytes": 2021,
+              "reason": "unterminated line"
+            }
+          },
+          {
+            "capture": "tape1b",
+            "index": 9,
+            "variant": "left-hp1200",
+            "period": 96,
+            "radius": 0.3,
+            "late": true,
+            "cropStart": 508.6140625,
+            "cropEnd": 544.0887291666667,
+            "start": 508.81641666666667,
+            "end": 543.5887291666667,
+            "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78",
+            "assessment": {
+              "good": false,
+              "lines": 50,
+              "last": 610,
+              "base": 17125,
+              "normal": false,
+              "parsed": 1981,
+              "prefixEnd": 1981,
+              "bytes": 2021,
+              "reason": "unterminated line"
+            },
+            "file": "tapes/recovered/tape1b/timing-refinement/T09-left-hp1200-4099e2d80da026b4.BAS"
+          }
+        ],
+        "matching_other_captures": [],
+        "prefix": {
+          "raw": "tapes/recovered/tape1b/partial/09-COMPUTER-CHESS-INCOMPLETE-PREFIX.BAS",
+          "listing": "tapes/recovered/tape1b/partial/09-COMPUTER-CHESS-INCOMPLETE-PREFIX.ASC",
+          "byte_range": [
+            0,
+            1981
+          ],
+          "sha256": "22612374d600c0c4bc7317bf49393f7779a57e623da8d12e1f034d49c2b6cead",
+          "bytes": 1981,
+          "line_count": 50,
+          "last_line": 610,
+          "memory_base": 17125,
+          "synthetic_end_marker": false,
+          "matching_sources": [
+            {
+              "file": "tapes/recovered/tape1b/left-hp1200/T09.BAS",
+              "variant": "left-hp1200",
+              "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78"
+            },
+            {
+              "file": "tapes/recovered/tape1b/left-hp800/T09.BAS",
+              "variant": "left-hp800",
+              "sha256": "15df4563ab64ea39ddf2533dba9502e70f4351f23afd8fadac7b80da58ee3cb1"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-left-hp1200-7691058294ea10e4.BAS",
+              "variant": "left-hp1200",
+              "sha256": "7691058294ea10e433c6e4e5399f635a905336cd5a85e03e8b41290f249b7fe7"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-left-hp1200-a9e563a609fbacc1.BAS",
+              "variant": "left-hp1200",
+              "sha256": "a9e563a609fbacc1dc27f6b6afd71d3e858086624613175591e9daf1b2743503"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-left-hp1200-4099e2d80da026b4.BAS",
+              "variant": "left-hp1200",
+              "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-left-hp1200-b290ee3032ffa167.BAS",
+              "variant": "left-hp1200",
+              "sha256": "b290ee3032ffa1675f26da0e92f51fe4bb37ff794abe8391bf51064c2da35a9d"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-left-hp1200-667d62090e4e9f52.BAS",
+              "variant": "left-hp1200",
+              "sha256": "667d62090e4e9f52853981f15063c48d0ae9057993fc32dc844e9c5d24e65605"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-hp1200-a9e563a609fbacc1.BAS",
+              "variant": "right-hp1200",
+              "sha256": "a9e563a609fbacc1dc27f6b6afd71d3e858086624613175591e9daf1b2743503"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-hp1200-43eae5d988806615.BAS",
+              "variant": "right-hp1200",
+              "sha256": "43eae5d9888066150d05a77d6accc0551bb7676953e7cd5a9406bdc6175595c7"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-hp1200-0a5fab732a6cfc35.BAS",
+              "variant": "right-hp1200",
+              "sha256": "0a5fab732a6cfc35d829aba10b8b621cda2bf8b45b43c4c029bd047678dd300e"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-hp800-a9e563a609fbacc1.BAS",
+              "variant": "right-hp800",
+              "sha256": "a9e563a609fbacc1dc27f6b6afd71d3e858086624613175591e9daf1b2743503"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-hp800-7cd5137e32b1d069.BAS",
+              "variant": "right-hp800",
+              "sha256": "7cd5137e32b1d069f312b7cdb48ac2d123e8b0ef37d440b141f5ef2c895edcb9"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-hp800-0799fe47158d050e.BAS",
+              "variant": "right-hp800",
+              "sha256": "0799fe47158d050e140d58e09ebcf9345fb5d73c0945259dce3d760a5710ab5a"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-hp800-31c6211aec72ee7a.BAS",
+              "variant": "right-hp800",
+              "sha256": "31c6211aec72ee7a71557e5f58010decd130561855f6be8a80ef7f6fbcf73717"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-boosted-dc5372dd840c182f.BAS",
+              "variant": "right-boosted",
+              "sha256": "dc5372dd840c182fe4d7964462e609fc9bd737d308dff0466383200d2ae658f1"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-boosted-a9e563a609fbacc1.BAS",
+              "variant": "right-boosted",
+              "sha256": "a9e563a609fbacc1dc27f6b6afd71d3e858086624613175591e9daf1b2743503"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-boosted-54373a2c0e03a4a2.BAS",
+              "variant": "right-boosted",
+              "sha256": "54373a2c0e03a4a25ced780c62c38a5dd4bb018bf83ee19161cdaad7dad7da0f"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/T09-right-boosted-38c63df9c7428b99.BAS",
+              "variant": "right-boosted",
+              "sha256": "38c63df9c7428b999a762a0e3524c817c2f99bae7c595a7022ba058d58d14cfa"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-db291ed802c25a54.BAS",
+              "variant": "left-hp800",
+              "sha256": "db291ed802c25a542fc082cf02c537e45df683757666c33d63721169e5cd835d"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-a9e563a609fbacc1.BAS",
+              "variant": "left-hp800",
+              "sha256": "a9e563a609fbacc1dc27f6b6afd71d3e858086624613175591e9daf1b2743503"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-dab9e153241a11ce.BAS",
+              "variant": "left-hp800",
+              "sha256": "dab9e153241a11ce2879f688e1d3434e6c8441c07b00193570caa7309a4a8d17"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-b710edabcb7efa28.BAS",
+              "variant": "left-hp800",
+              "sha256": "b710edabcb7efa28d6599a04b8cd9987a7fa9508abdb6809ee8f37071cbf41c3"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-15df4563ab64ea39.BAS",
+              "variant": "left-hp800",
+              "sha256": "15df4563ab64ea39ddf2533dba9502e70f4351f23afd8fadac7b80da58ee3cb1"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-9ff0f3b971d89088.BAS",
+              "variant": "left-hp800",
+              "sha256": "9ff0f3b971d89088f769907e8e3164a2e0490a729e217c5d62f6c84637e51cc9"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-0f27548015fbf389.BAS",
+              "variant": "left-hp800",
+              "sha256": "0f27548015fbf38972e720b87cdd47d04b551c4896bb6fd5d57828d8ff712e64"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-21209a547d2f76a2.BAS",
+              "variant": "left-hp800",
+              "sha256": "21209a547d2f76a2c9471b350b33c5997bfae5a48126572df8f98aebc81c2b25"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-28ea41e03f1506b3.BAS",
+              "variant": "left-hp800",
+              "sha256": "28ea41e03f1506b3611a37c8a1536f63e36a2f4537e3dea3ea7000752440fa40"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-6ce26387358c04ca.BAS",
+              "variant": "left-hp800",
+              "sha256": "6ce26387358c04ca5d2c4983f1cdad93ea67e050d191fb11fe5e60e8c2c22c2e"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-cd60cf039d0834c7.BAS",
+              "variant": "left-hp800",
+              "sha256": "cd60cf039d0834c7c1a139f1a918c62222e17122a94f49136c3a7ab5381fb75e"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-left-hp800-eef32c9a32d40a04.BAS",
+              "variant": "left-hp800",
+              "sha256": "eef32c9a32d40a04f2ad88cf43ab669cdd100f32e05161b6a46f439ba79ca1eb"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp1200-a6a568963e0a3a4a.BAS",
+              "variant": "right-hp1200",
+              "sha256": "a6a568963e0a3a4ae98f166dfa1d19b36f2eadd53563c3fbeb4fdde9f8490899"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp1200-a9e563a609fbacc1.BAS",
+              "variant": "right-hp1200",
+              "sha256": "a9e563a609fbacc1dc27f6b6afd71d3e858086624613175591e9daf1b2743503"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp1200-080e7a04cc4e6693.BAS",
+              "variant": "right-hp1200",
+              "sha256": "080e7a04cc4e6693a6ca95920bf3db4f87f34aacd520dc0e6e354b8cc8c02497"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp1200-0a5fab732a6cfc35.BAS",
+              "variant": "right-hp1200",
+              "sha256": "0a5fab732a6cfc35d829aba10b8b621cda2bf8b45b43c4c029bd047678dd300e"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp1200-20ce05943f70f509.BAS",
+              "variant": "right-hp1200",
+              "sha256": "20ce05943f70f5096e436f58c7f4455a61c699352ca47db5f43c7bd5cf46fd1f"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp1200-abe03af15c0b95c6.BAS",
+              "variant": "right-hp1200",
+              "sha256": "abe03af15c0b95c62c22c3d39a3f38d1040e51f76ba296dcafb2b5b93ae2f262"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp1200-bd915bd5a0ed4906.BAS",
+              "variant": "right-hp1200",
+              "sha256": "bd915bd5a0ed4906d2774c4d2758d6230e7b15a35d3638457a4526dff3d34005"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-6142a8674347c533.BAS",
+              "variant": "right-hp800",
+              "sha256": "6142a8674347c53353b317d84189ff1a75e6adf3825b1aba51f22d28be0f9474"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-a9e563a609fbacc1.BAS",
+              "variant": "right-hp800",
+              "sha256": "a9e563a609fbacc1dc27f6b6afd71d3e858086624613175591e9daf1b2743503"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-13fd1f7537343e72.BAS",
+              "variant": "right-hp800",
+              "sha256": "13fd1f7537343e7250f550e57005b73f143395b608787f9eca57dc31ed448eb0"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-1f66f00416b419e5.BAS",
+              "variant": "right-hp800",
+              "sha256": "1f66f00416b419e53bb29ae7dda7a47583367da435c7a327acd6b113644bb45e"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-31c6211aec72ee7a.BAS",
+              "variant": "right-hp800",
+              "sha256": "31c6211aec72ee7a71557e5f58010decd130561855f6be8a80ef7f6fbcf73717"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-63e4fc27d963e580.BAS",
+              "variant": "right-hp800",
+              "sha256": "63e4fc27d963e58026883dd85b3377ca0c5b7d5797550869786c8279bd6e2af8"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-e5e3819008202d6a.BAS",
+              "variant": "right-hp800",
+              "sha256": "e5e3819008202d6ad755f5389479111459e18bff9f3ebd9be188e5618fab618e"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-c87d9f3c137d4d12.BAS",
+              "variant": "right-hp800",
+              "sha256": "c87d9f3c137d4d12797077e1f88fdbe98baed09e25b392a221e7f8f001bdf76c"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-0116ce403da78b85.BAS",
+              "variant": "right-hp800",
+              "sha256": "0116ce403da78b85be463b5a9eced50189bf91acf0b2fc7828610886a2b5a50e"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-19183d9a0f4b83bc.BAS",
+              "variant": "right-hp800",
+              "sha256": "19183d9a0f4b83bc3615fa2ff73d4c1972587ecea7f32a6cfdbf77cce278899a"
+            },
+            {
+              "file": "tapes/recovered/tape1b/timing-refinement/W09-right-hp800-415756022cd0227c.BAS",
+              "variant": "right-hp800",
+              "sha256": "415756022cd0227c9de730580d7bd213b97b8f48fa7b4710a07013a4e8a623a8"
+            }
+          ]
+        },
+        "unresolved": "No complete end marker recovered in any sweep. 50 ordered lines through 610 (1981-byte prefix) match both channels; later partial line is unvalidated. Not filled from another chess save."
+      },
+      "files": [
+        {
+          "path": "partial/tape1b-save09/09-COMPUTER-CHESS-INCOMPLETE-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape1b/partial/09-COMPUTER-CHESS-INCOMPLETE-PREFIX.ASC",
+          "bytes": 2255,
+          "sha256": "a252075a752798682f1621b57d4b44343b646b4ca6b7459a42de887d5c1c2915"
+        },
+        {
+          "path": "partial/tape1b-save09/09-COMPUTER-CHESS-INCOMPLETE-PREFIX.BAS",
+          "archive_path": "tapes/recovered/tape1b/partial/09-COMPUTER-CHESS-INCOMPLETE-PREFIX.BAS",
+          "bytes": 1981,
+          "sha256": "22612374d600c0c4bc7317bf49393f7779a57e623da8d12e1f034d49c2b6cead"
+        },
+        {
+          "path": "partial/tape1b-save09/09-COMPUTER-CHESS-INCOMPLETE-RAW.BAS",
+          "archive_path": "tapes/recovered/tape1b/partial/09-COMPUTER-CHESS-INCOMPLETE-RAW.BAS",
+          "bytes": 2021,
+          "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78"
+        },
+        {
+          "path": "partial/tape1b-save09/09-COMPUTER-CHESS-INCOMPLETE-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape1b/partial/09-COMPUTER-CHESS-INCOMPLETE-UNCERTAIN.ASC",
+          "bytes": 2343,
+          "sha256": "3d5229cc1ff1ad03553068f148a64c150b18dd428763013f04ff79c0e58698ca"
+        }
+      ],
+      "other_captures": [
+        {
+          "capture": "tape1b2",
+          "save": 9,
+          "relation": "same validated prefix bytes; raw candidates differ after the damage",
+          "archive_prefix": "tapes/recovered/tape1b2/partial/09-COMPUTER-CHESS-INCOMPLETE-PREFIX.BAS",
+          "sha256": "22612374d600c0c4bc7317bf49393f7779a57e623da8d12e1f034d49c2b6cead"
+        }
+      ]
+    },
+    {
+      "folder": "partial/tape13b-save07",
+      "capture": "tape13b",
+      "save": 7,
+      "note": "Damaged save between v13 and v14. Its validated 38-line prefix (lines 10-310) has v14's normal board DATA but v13's DAMN wording and no opening (no S$), so it falls between them.",
+      "inventory_row": {
+        "summary": "CISAB CHESS DAMAGED SAVE; 38 complete prefix lines",
+        "status": "damaged chess-program recording",
+        "validation": "Exact 1493-byte prefix and raw candidate match both channels; later stream damaged",
+        "recovery%": ""
+      },
+      "recovery_item": {
+        "order": 7,
+        "title": "CISAB-CHESS-DAMAGED-SAVE",
+        "source": "tapes/recovered/tape13b/timing-refinement/T7-left-hp1200-8eeac2dafa3c.BAS",
+        "binary": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE.BAS",
+        "listing": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE.ASC",
+        "bytes": 4648,
+        "sha256": "8eeac2dafa3c39dbcc1d331c4bf2c7b4925f55402f62a0aa26b9d7c123032ded",
+        "recovery_complete": false,
+        "source_start_s": 566.1063541666666,
+        "source_end_s": 640.2284375,
+        "execution_tested": false,
+        "matching_sources": [
+          "tapes/recovered/tape13b/timing-refinement/T7-left-hp1200-8eeac2dafa3c.BAS",
+          "tapes/recovered/tape13b/timing-refinement/T7-right-boosted-8eeac2dafa3c.BAS"
+        ],
+        "lines": 38,
+        "last_line": 310,
+        "pointer_bases": [
+          28038,
+          56326,
+          60045,
+          -1907,
+          19216,
+          48273,
+          19095,
+          -743,
+          51098,
+          5403,
+          21669,
+          47655,
+          27692,
+          46254,
+          6831,
+          5936,
+          16558,
+          1842,
+          55166,
+          19893,
+          19253,
+          47670,
+          55735,
+          30522,
+          959,
+          26314,
+          27469,
+          6349,
+          26964,
+          61524,
+          43616,
+          56417,
+          17125,
+          17127,
+          39023,
+          18419,
+          23924,
+          39413,
+          30582,
+          10867,
+          49912,
+          19577,
+          48378,
+          -2178
+        ],
+        "prefix_binary": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX.BAS",
+        "prefix_bytes": 1493,
+        "prefix_sha256": "cdb4ee1ebbb3083e5bccd98a155448c928b07d2604b916f29828c33c0b630cda",
+        "uncertain_full_listing": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN.ASC"
+      },
+      "files": [
+        {
+          "path": "partial/tape13b-save07/07-CISAB-CHESS-DAMAGED-SAVE.ASC",
+          "archive_path": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE.ASC",
+          "bytes": 1744,
+          "sha256": "27eb7ba78bfcfeed7f7622aa0896c37a2f5176416d3ccc32db3397f1c0afa8fd"
+        },
+        {
+          "path": "partial/tape13b-save07/07-CISAB-CHESS-DAMAGED-SAVE.BAS",
+          "archive_path": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE.BAS",
+          "bytes": 4648,
+          "sha256": "8eeac2dafa3c39dbcc1d331c4bf2c7b4925f55402f62a0aa26b9d7c123032ded"
+        },
+        {
+          "path": "partial/tape13b-save07/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX.BAS",
+          "archive_path": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX.BAS",
+          "bytes": 1493,
+          "sha256": "cdb4ee1ebbb3083e5bccd98a155448c928b07d2604b916f29828c33c0b630cda"
+        },
+        {
+          "path": "partial/tape13b-save07/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape13b/partial/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN.ASC",
+          "bytes": 6842,
+          "sha256": "3a15b0bbde329dc2cf22d4062969cb48ef1b077caec085e0ec60af19e93aef46"
+        },
+        {
+          "path": "partial/tape13b-save07/notes.txt",
+          "archive_path": "tapes/recovered/tape13b/partial/notes.txt",
+          "bytes": 227,
+          "sha256": "39ce70dbad6e508247310d29eb8bddf3b0d4e873a91aa6fdc7132821b6ba5620"
+        }
+      ]
+    }
+  ],
+  "derived_editions": [
+    {
+      "id": "corrected",
+      "description": "v14 with six bugs fixed and its printed spelling corrected; not a recovered artifact",
+      "source_version": "v14",
+      "source_sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7",
+      "raw": "corrected/CHESS.BAS",
+      "listing": "corrected/CHESS.ASC",
+      "sha256": "97399fe3f1ea881f1399f4f0687b0288b99e04ee4148783f6249d07e0bea64b4",
+      "bytes": 5098,
+      "listing_sha256": "fd7b585bc37e002eeab80a75296c9ab89da01422e80491f0ce6d0fd432afae9e",
+      "corrections": "corrected/corrections.json",
+      "changes": "corrected/changes.json",
+      "build": "app/scripts/build-chess-corrected.mjs",
+      "created": "2026-10-31",
+      "requested_by": "user"
+    }
+  ]
+}
