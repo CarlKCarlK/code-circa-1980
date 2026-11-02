@@ -1,0 +1,25 @@
+{
+  "id": "peoria",
+  "title": "Peoria Grand Prix",
+  "description": "Steer through a changing road in a one- or two-driver BASIC race.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v04",
+  "versionOrder": "Inferred from source changes: single-driver two-mile race, two-driver fixed-width race, changing-width race, then five-stage Grand Prix. Within-side save order corroborates the two pairs; cross-tape order is uncertain.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PEORIA TWO MILE RACE",
+      "capture": "tape21a",
+      "save": 9,
+      "raw": "versions/v01/09-PEORIA-TWO-MILE-RACE.BAS",
+      "listing": "versions/v01/09-PEORIA-TWO-MILE-RACE.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
