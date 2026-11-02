@@ -42,6 +42,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v04",
+      "label": "TEACH VI V2",
+      "capture": "tape12b",
+      "save": 7,
+      "raw": "versions/v04/07-TEACH-VI-V2.BAS",
+      "listing": "versions/v04/07-TEACH-VI-V2.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }

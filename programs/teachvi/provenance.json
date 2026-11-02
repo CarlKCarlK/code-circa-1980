@@ -162,6 +162,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape12b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape12b",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.BAS",
+      "archive_listing": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/07-TEACH-VI-V2.BAS",
+          "archive_path": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.BAS",
+          "bytes": 3106,
+          "sha256": "178f8343d12e198fa271bf7196b97867ea10f12c9bd446e96850fad93fab91f3"
+        },
+        {
+          "path": "versions/v04/07-TEACH-VI-V2.ASC",
+          "archive_path": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.ASC",
+          "bytes": 3376,
+          "sha256": "a7119fab2b0e6d2077ab8b3ad78dada498b17f86bdc61e0d7dd6079e16d32e23"
+        }
+      ],
+      "recovery_item": {
+        "lines": 37,
+        "last": 32000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "178f8343d12e198fa271bf7196b97867ea10f12c9bd446e96850fad93fab91f3"
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "7",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TEACH VI V2; 37 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "source_start_s": "343.766",
+        "recovered_bytes": "3106",
+        "source_file": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
