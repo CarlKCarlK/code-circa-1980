@@ -1,52 +1,52 @@
 {
-  "version": "v04",
-  "capture": "tape11a",
-  "save": 11,
-  "archive_raw": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.BAS",
-  "archive_listing": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.ASC",
+  "version": "v05",
+  "capture": "tape25a",
+  "save": 7,
+  "archive_raw": "tapes/recovered/tape25a/best/07-GERMAN-VOCABULARY-SAVE01.BAS",
+  "archive_listing": "tapes/recovered/tape25a/best/07-GERMAN-VOCABULARY-SAVE01.ASC",
   "imported_files": [
     {
-      "path": "versions/v04/11-GERMAN-VOCABULARY-TUTOR-V4.BAS",
-      "archive_path": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.BAS",
-      "bytes": 4076,
-      "sha256": "3414f48cf92aa78fe15d8e35e6588e6b9c5b5af3adab078f444a5efcb0f532dd"
+      "path": "versions/v05/07-GERMAN-VOCABULARY-SAVE01.BAS",
+      "archive_path": "tapes/recovered/tape25a/best/07-GERMAN-VOCABULARY-SAVE01.BAS",
+      "bytes": 1826,
+      "sha256": "e373872226e8f31b0be3823bf3e5280b6b5ae4b160527541ed7467f926d3ee2c"
     },
     {
-      "path": "versions/v04/11-GERMAN-VOCABULARY-TUTOR-V4.ASC",
-      "archive_path": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.ASC",
-      "bytes": 4715,
-      "sha256": "f0b65344dfc8912c4bdbf4a286ca7cfa728eb0aeeece5ce89e759e8b76d1fbe6"
+      "path": "versions/v05/07-GERMAN-VOCABULARY-SAVE01.ASC",
+      "archive_path": "tapes/recovered/tape25a/best/07-GERMAN-VOCABULARY-SAVE01.ASC",
+      "bytes": 2113,
+      "sha256": "4e113281a6b7f59d48a786363d84911eece2938f22cae003c99807ab3cae5c51"
     }
   ],
   "recovery_item": {
-    "lines": 81,
-    "last": 810,
+    "lines": 45,
+    "last": 10000,
     "pointer_base": 22204,
     "normal_end_marker": true,
-    "sha256": "3414f48cf92aa78fe15d8e35e6588e6b9c5b5af3adab078f444a5efcb0f532dd"
+    "sha256": "e373872226e8f31b0be3823bf3e5280b6b5ae4b160527541ed7467f926d3ee2c"
   },
   "inventory_row": {
-    "tape": "11",
+    "tape": "25",
     "side": "a",
-    "order": "11",
+    "order": "7",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "GERMAN VOCABULARY TUTOR V4; 81 lines",
-    "capture": "tape11a",
+    "summary": "GERMAN VOCABULARY SAVE01",
+    "capture": "tape25a",
     "capture_scope": "unknown",
     "baud": "500",
-    "platform": "TRS-80 Model I/III BASIC",
+    "platform": "TRS-80 Model I/III BASIC family",
     "status": "validated payload; runtime untested",
-    "validation": "Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
-    "source_start_s": "419.589",
-    "recovered_bytes": "4076",
-    "source_file": "tapes/recovered/tape11a/best/11-GERMAN-VOCABULARY-TUTOR-V4.ASC",
-    "wav": "tapes/tape11a.wav",
-    "folder": "tapes/recovered/tape11a/best",
-    "recovery_date": "2026-10-27",
+    "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "173.999",
+    "recovered_bytes": "1826",
+    "source_file": "tapes/recovered/tape25a/best/07-GERMAN-VOCABULARY-SAVE01.ASC",
+    "wav": "tapes/tape25a.wav",
+    "folder": "tapes/recovered/tape25a",
+    "recovery_date": "2026-10-28",
     "recorder_volume": "",
-    "next_action": "Execution-test with compatible runtime"
+    "next_action": "Runtime testing only if requested"
   },
-  "recovery_inventory": "tapes/recovered/tape11a/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
   "execution_tested": false
 }
