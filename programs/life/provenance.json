@@ -291,6 +291,63 @@
       },
       "recovery_inventory": "tapes/recovered/tape10b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v06",
+      "capture": "tape10b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape10b/best/06-LIFE-ASSEMBLY-V6.ASM",
+      "archive_listing": "tapes/recovered/tape10b/best/06-LIFE-ASSEMBLY-V6.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v06/06-LIFE-ASSEMBLY-V6.ASM",
+          "archive_path": "tapes/recovered/tape10b/best/06-LIFE-ASSEMBLY-V6.ASM",
+          "bytes": 3713,
+          "sha256": "d60ff6d10b8f6a85b5b4f5581c1c5bbb269dbaf2d2d87670c41bba08f8e9d882"
+        },
+        {
+          "path": "versions/v06/06-LIFE-ASSEMBLY-V6.TXT",
+          "archive_path": "tapes/recovered/tape10b/best/06-LIFE-ASSEMBLY-V6.TXT",
+          "bytes": 3705,
+          "sha256": "c549e214d26d98ed4e92171b514ea87768ec56e2a061fe7417ed51416afee940"
+        },
+        {
+          "path": "versions/v06/06-LIFE-ASSEMBLY-V6.Z80",
+          "archive_path": "tapes/recovered/tape10b/best/06-LIFE-ASSEMBLY-V6.Z80",
+          "bytes": 2319,
+          "sha256": "a8e7791838358c99a8f0a1be04af00819a75cb84b51ee6f573bf11c05c5cca65"
+        }
+      ],
+      "recovery_item": {
+        "format": "EDTASM",
+        "lines": 231,
+        "normal_end_marker": true,
+        "sha256": "d60ff6d10b8f6a85b5b4f5581c1c5bbb269dbaf2d2d87670c41bba08f8e9d882"
+      },
+      "inventory_row": {
+        "tape": "10",
+        "side": "b",
+        "order": "6",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "LIFE ASSEMBLY V6; 231 lines",
+        "capture": "tape10b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated source; runtime untested",
+        "validation": "Valid EDTASM source records and 1A end; exact left/right timing matches; not assembled",
+        "source_start_s": "336.725",
+        "recovered_bytes": "3713",
+        "source_file": "tapes/recovered/tape10b/best/06-LIFE-ASSEMBLY-V6.TXT",
+        "wav": "tapes/tape10b.wav",
+        "folder": "tapes/recovered/tape10b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Assemble selected LIFE source with compatible Z80 assembler"
+      },
+      "recovery_inventory": "tapes/recovered/tape10b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
