@@ -162,6 +162,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape9b",
+      "save": 19,
+      "archive_raw": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/19-PINBALL-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.BAS",
+          "bytes": 1813,
+          "sha256": "6e9a63b8a51455a4147655283cf3266221c65729d87086d10869bd03bdb8af5b"
+        },
+        {
+          "path": "versions/v04/19-PINBALL-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.ASC",
+          "bytes": 2338,
+          "sha256": "8de50c612d6bd5d9a589387410e03481c40c1574b0ecb09d38100cb15978dfcd"
+        }
+      ],
+      "recovery_item": {
+        "lines": 28,
+        "last": 200,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "6e9a63b8a51455a4147655283cf3266221c65729d87086d10869bd03bdb8af5b"
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "19",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL SAVE2; 28 lines; identical to save 18",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "562.460",
+        "recovered_bytes": "1813",
+        "source_file": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
