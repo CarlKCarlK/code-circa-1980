@@ -34,7 +34,7 @@ runs the emulated TRS-80 about 20 times faster, so the funnel takes about
 
 | Prompt | Standard | What it does |
 |---|---|---|
-| `TILT` | `.5` | How far the far edge of the grid is shifted up and to the left. `0` gives a side view; larger values look down on it more. |
+| `TILT` | `.5` | How far the back of the grid is shifted up and to the right, and the front down and to the left. `0` gives a flat side view; larger values draw the depth lines longer, always at 45°. |
 | `X SCALE` | `1` | Width: 1 is 30 dots each side of center. |
 | `Y SCALE` | `1` | Height: 1 is 15 dots each way. |
 | `SWITCH ON` | not `YES` | `YES` draws the whole picture a second time over the first. Nothing changes, so it only doubles the time. |

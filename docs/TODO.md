@@ -61,7 +61,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
 - [x] 3-D Plot: show its *TRS-80 Applications Software Sourcebook* listing ("3-D
       Plotter", $9.95 on cassette) with the address redacted, in the page history and
       `programs/plot3d/history/`. Still unknown: which volume and year.
-- [ ] 3-D Plot: rewrite the first two history paragraphs. Drop the `LINE`-statement
+- [x] 3-D Plot: rewrite the first two history paragraphs. Drop the `LINE`-statement
       detail. Instead cover:
       - Non-square dots: a block-graphics dot is about twice as tall as it is wide.
         Every version, from the first draft on, scales X by 30 dots and Y by 15
@@ -76,7 +76,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
         and to the right (nearer ones down and to the left; the middle row stays put),
         by an amount set by TILT. No hidden-line removal. At TILT .5 with the 30/15
         scaling it is specifically a cabinet projection (45° at half depth; derived).
-- [ ] 3-D Plot: fix the TILT help text (page table and `programs/plot3d/README.md`).
+- [x] 3-D Plot: fix the TILT help text (page table and `programs/plot3d/README.md`).
       It says the far edge shifts "up and to the left", but by lines 220-230 the back
       row (Z = -1) shifts up and to the right. "Larger values look down on the grid
       more" is also loose: TILT lengthens the diagonal depth offset. Confirm against
