@@ -1,0 +1,25 @@
+{
+  "id": "learningttt",
+  "title": "Learning Tic-Tac-Toe",
+  "description": "Explore an experimental BASIC opponent that stores feedback between rounds.",
+  "kind": "Experiment",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v04",
+  "versionOrder": "Inferred experimental branches: unfinished string-board/debugging form, two identical numeric-board drafts, then the developed numeric-board form. The tape8a pair precedes its expanded save on that side. Cross-tape chronology and branch relationships are uncertain.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LEARNING TIC TAC TOE",
+      "capture": "tape12b",
+      "save": 12,
+      "raw": "versions/v01/12-LEARNING-TIC-TAC-TOE.BAS",
+      "listing": "versions/v01/12-LEARNING-TIC-TAC-TOE.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}

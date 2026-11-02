@@ -1,0 +1,67 @@
+{
+  "official_title": "Learning Tic-Tac-Toe",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "learningttt",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred experimental branches: unfinished string-board/debugging form, two identical numeric-board drafts, then the developed numeric-board form. The tape8a pair precedes its expanded save on that side. Cross-tape chronology and branch relationships are uncertain.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape12b",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape12b/best/12-LEARNING-TIC-TAC-TOE.BAS",
+      "archive_listing": "tapes/recovered/tape12b/best/12-LEARNING-TIC-TAC-TOE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/12-LEARNING-TIC-TAC-TOE.BAS",
+          "archive_path": "tapes/recovered/tape12b/best/12-LEARNING-TIC-TAC-TOE.BAS",
+          "bytes": 1657,
+          "sha256": "4ab3770091de3a49d0331e7e4e7d1d44269ffc55819aea9f4d98733a2f852742"
+        },
+        {
+          "path": "versions/v01/12-LEARNING-TIC-TAC-TOE.ASC",
+          "archive_path": "tapes/recovered/tape12b/best/12-LEARNING-TIC-TAC-TOE.ASC",
+          "bytes": 2129,
+          "sha256": "0dbd0e2a2b30bd5656ae0a264aec023244dd603d80e87e885fb1942fcf9b89cc"
+        }
+      ],
+      "recovery_item": {
+        "lines": 76,
+        "last": 13000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "4ab3770091de3a49d0331e7e4e7d1d44269ffc55819aea9f4d98733a2f852742"
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LEARNING TIC TAC TOE; 76 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "source_start_s": "562.302",
+        "recovered_bytes": "1657",
+        "source_file": "tapes/recovered/tape12b/best/12-LEARNING-TIC-TAC-TOE.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source notices and book years do not establish tape-save dates or cross-program chronology."
+  }
+}
