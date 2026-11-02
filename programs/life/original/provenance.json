@@ -1,0 +1,57 @@
+{
+  "version": "v01",
+  "capture": "tape10b",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape10b/best/01-LIFE-ASSEMBLY-V1.ASM",
+  "archive_listing": "tapes/recovered/tape10b/best/01-LIFE-ASSEMBLY-V1.TXT",
+  "imported_files": [
+    {
+      "path": "versions/v01/01-LIFE-ASSEMBLY-V1.ASM",
+      "archive_path": "tapes/recovered/tape10b/best/01-LIFE-ASSEMBLY-V1.ASM",
+      "bytes": 3590,
+      "sha256": "43a15aae17405304f0933325b57d23c214bd3851d9e68bf2aa432b013293983d"
+    },
+    {
+      "path": "versions/v01/01-LIFE-ASSEMBLY-V1.TXT",
+      "archive_path": "tapes/recovered/tape10b/best/01-LIFE-ASSEMBLY-V1.TXT",
+      "bytes": 3582,
+      "sha256": "c8064d544a5e5add8da7e9db6f1d9982f99a9d862ab152a17dd5a478a7f073e5"
+    },
+    {
+      "path": "versions/v01/01-LIFE-ASSEMBLY-V1.Z80",
+      "archive_path": "tapes/recovered/tape10b/best/01-LIFE-ASSEMBLY-V1.Z80",
+      "bytes": 2226,
+      "sha256": "9ccf4e1083bdf83b7ecbb5cdd7069364429ec4403fbcfd1de4f309b674c3da7b"
+    }
+  ],
+  "recovery_item": {
+    "format": "EDTASM",
+    "lines": 226,
+    "normal_end_marker": true,
+    "sha256": "43a15aae17405304f0933325b57d23c214bd3851d9e68bf2aa432b013293983d"
+  },
+  "inventory_row": {
+    "tape": "10",
+    "side": "b",
+    "order": "1",
+    "type": "assembly source (EDTASM)",
+    "recovery%": "100",
+    "summary": "LIFE ASSEMBLY V1; 226 lines",
+    "capture": "tape10b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Z80 / EDTASM",
+    "status": "validated source; runtime untested",
+    "validation": "Valid EDTASM source records and 1A end; exact left/right timing matches; not assembled",
+    "source_start_s": "6.300",
+    "recovered_bytes": "3590",
+    "source_file": "tapes/recovered/tape10b/best/01-LIFE-ASSEMBLY-V1.TXT",
+    "wav": "tapes/tape10b.wav",
+    "folder": "tapes/recovered/tape10b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Assemble selected LIFE source with compatible Z80 assembler"
+  },
+  "recovery_inventory": "tapes/recovered/tape10b/inventory.json",
+  "execution_tested": false
+}

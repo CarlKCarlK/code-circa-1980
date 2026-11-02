@@ -1,0 +1,25 @@
+{
+  "id": "life",
+  "title": "LIFE",
+  "description": "Draw a population and watch the original Z80 assembly run Conway\u2019s Game of Life.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v06",
+  "versionOrder": "Six consecutive EDTASM source saves, ordered by within-side sequence and code changes. Source dates are unknown. The last complete source is assembled separately for execution; the recovered compiled recording is only a header.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LIFE ASSEMBLY V1",
+      "capture": "tape10b",
+      "save": 1,
+      "raw": "versions/v01/01-LIFE-ASSEMBLY-V1.ASM",
+      "listing": "versions/v01/01-LIFE-ASSEMBLY-V1.TXT",
+      "playable": false,
+      "note": "Untouched recovered save. Valid EDTASM source records and 1A end; exact left/right timing matches; not assembled",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
