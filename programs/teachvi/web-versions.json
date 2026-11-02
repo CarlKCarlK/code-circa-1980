@@ -5,7 +5,7 @@
       "path": "teachvi/v1/",
       "label": "Web experience v1",
       "released": "2026-11-02",
-      "sourceCommit": "8921e8f37a5775cb3f3c34b31c4748fbc8e4f4bd",
+      "sourceCommit": "857bb2bc893db1b3bfc5cbe9ab3e127b8253f681",
       "files": [
         {
           "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Bm5Fk48R.BAS",
@@ -1323,9 +1323,9 @@
           "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
         },
         {
-          "path": "assets/emulator-D1zE6luG.js",
+          "path": "assets/emulator-nO5b07ym.js",
           "bytes": 286228,
-          "sha256": "25fd60cabadf56cb04c5c77da00387ee546dc21cdd6b7f00a1cf84f24459734f"
+          "sha256": "53500d6afe3ee034d15db7df76b39309d07dd6aa466bd46d8fbe93a70bc14469"
         },
         {
           "path": "assets/GERMAN-b4Vu0Tmp.BAS",
@@ -1358,9 +1358,9 @@
           "sha256": "2b6e6c5c531d19b8322f6fc6ee408fcdfbb0e742bd52cebd0cc444e12596c018"
         },
         {
-          "path": "assets/index-gX--JkMe.js",
-          "bytes": 747156,
-          "sha256": "1efca3bcf2ae2f89ca2d26a09576eca5d5b6ad242d1dec423c43a14c35037b36"
+          "path": "assets/index-Dl5vk7c5.js",
+          "bytes": 896528,
+          "sha256": "cb00e58c8a575ea762b34fd04eb99d313cb682f4ed50e46382cdbbab4728d8e5"
         },
         {
           "path": "assets/LIFE-BdX5oyFl.ASM",
@@ -1488,14 +1488,14 @@
           "sha256": "e23bf7df4721e26e073007f3f22cbeb6367c9bf6ee3f71d32d0a3ba527ee9986"
         },
         {
-          "path": "assets/player-BPL63rI2.js",
-          "bytes": 12370,
-          "sha256": "6fa43db8e0106ef71b2a660120eaa309f25eb462f28354d911b4e974d26ff8d3"
-        },
-        {
           "path": "assets/player-Bs8GeNyd.js",
           "bytes": 16248,
           "sha256": "e4dcd4e5a6443ea360e5ecf182eb077e431d8ce47f4760934d6d984a763b6344"
+        },
+        {
+          "path": "assets/player-DBc9I23B.js",
+          "bytes": 12370,
+          "sha256": "c9b326ddea7cfb9d00ba78c2aaf947916df4cf959c17e8b9c90efb8e8c4b96c8"
         },
         {
           "path": "assets/player-DG3vU3-j.js",
@@ -1503,9 +1503,9 @@
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
         },
         {
-          "path": "assets/player-V7eM9OeL.js",
+          "path": "assets/player-DiaKIsOd.js",
           "bytes": 5576,
-          "sha256": "f4910ecb2622c06526d0b2e60a15a6370593fb317cec3cc217fd4c70373438a6"
+          "sha256": "ca4f43d9e894ce5140417953cc7a63551428edb04bbdd5687605d5a2a95559ab"
         },
         {
           "path": "assets/PLOT3D-CmRZnxul.ASC",
@@ -1583,6 +1583,11 @@
           "sha256": "0115eb25e919041c81f19b46468f5c2415ee4bdda1ea5c49b8deba49b8ed3864"
         },
         {
+          "path": "assets/provenance-BkBeszd3.json",
+          "bytes": 13126,
+          "sha256": "75012824a54050e30f5c26864fc8eba5824ed2cd95c68041336da713142a42fa"
+        },
+        {
           "path": "assets/provenance-BqKQSQJG.json",
           "bytes": 2314,
           "sha256": "b9d8fd5a5fb3e3b44d0430ebddd2eaff082562d71f46a8bb578dde47db02588f"
@@ -1626,11 +1631,6 @@
           "path": "assets/provenance-CkbBLRyn.json",
           "bytes": 1793,
           "sha256": "3d37df448d952661fb2bb7b7072dd23f530f83491dfec273285ab502785a6f4b"
-        },
-        {
-          "path": "assets/provenance-CmKVvtIl.json",
-          "bytes": 13024,
-          "sha256": "bab09faa39951e68eb473c5f885ce6d7a21a27fc6bd6e742776ad88f76f43ffc"
         },
         {
           "path": "assets/provenance-COhdPm_k.json",
@@ -1850,7 +1850,7 @@
         {
           "path": "index.html",
           "bytes": 2073,
-          "sha256": "7cad00b14a34a37c8a6551bf76cd2cd49ed90608d94aa641dec463120bbf230d"
+          "sha256": "393b21c0d29bf8d3f7df8ac454b47345e05ba25578bd58c4a9d0f7cc4bb7917a"
         },
         {
           "path": "licenses.txt",
