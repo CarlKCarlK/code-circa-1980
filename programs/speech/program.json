@@ -1,0 +1,23 @@
+{
+  "id": "speech",
+  "title": "Speech",
+  "description": "Coach a speech team: recruit students, assign events, and plan a tournament season.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "defaultVersion": "v10",
+  "versionOrder": "Inferred: eight complete tape20a drafts in save order, then tape11a save 12 (expanded introduction and team assignment), then tape11b saves 7 and 8 (new title animation, event uniqueness check and corrected award lookup). The last two are repeated saves. Tape numbers alone do not establish chronology. Damaged draft 02 and draft 10 remain separate; later malformed material is not treated as a complete version.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "tape20a \u00b7 save 4",
+      "capture": "tape20a",
+      "save": 4,
+      "raw": "versions/v01/04-SPEECH-COACHING-DRAFT01.BAS",
+      "listing": "versions/v01/04-SPEECH-COACHING-DRAFT01.ASC",
+      "playable": false,
+      "note": "Untouched recovered payload. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. This site plays the selected complete reference version."
+    }
+  ]
+}

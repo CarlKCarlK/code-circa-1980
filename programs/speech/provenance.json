@@ -1,0 +1,66 @@
+{
+  "official_title": "Speech",
+  "title_authority": "User request, 2026-11-02.",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred: eight complete tape20a drafts in save order, then tape11a save 12 (expanded introduction and team assignment), then tape11b saves 7 and 8 (new title animation, event uniqueness check and corrected award lookup). The last two are repeated saves. Tape numbers alone do not establish chronology. Damaged draft 02 and draft 10 remain separate; later malformed material is not treated as a complete version.",
+  "execution_testing": "Recovery validation is separate from website execution tests; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape20a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.BAS",
+      "archive_listing": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/04-SPEECH-COACHING-DRAFT01.BAS",
+          "archive_path": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.BAS",
+          "bytes": 1881,
+          "sha256": "b7b80045880a901d80543e09524828ebdf9de99487687c0d049c0988214c3dd8"
+        },
+        {
+          "path": "versions/v01/04-SPEECH-COACHING-DRAFT01.ASC",
+          "archive_path": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.ASC",
+          "bytes": 2325,
+          "sha256": "a5bb3eff8f13125301d823169073a53d1a3f7c1b1fd803a23efb44a50ca99e8a"
+        }
+      ],
+      "recovery_item": {
+        "lines": 85,
+        "last": 940,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "b7b80045880a901d80543e09524828ebdf9de99487687c0d049c0988214c3dd8"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "a",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SPEECH COACHING DRAFT01",
+        "capture": "tape20a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "256.189",
+        "recovered_bytes": "1881",
+        "source_file": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.ASC",
+        "wav": "tapes/tape20a.wav",
+        "folder": "tapes/recovered/tape20a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_date": null,
+    "context": "Olympics has a direct 1980 copyright. X-wing shares tape23b with Chemistry Balancer II, whose line 10 says COPYRIGHT 1981 C. KADIE. Speech has no confirmed date in these listings. These do not establish save dates."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape20a",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.BAS",
+  "archive_listing": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/04-SPEECH-COACHING-DRAFT01.BAS",
+      "archive_path": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.BAS",
+      "bytes": 1881,
+      "sha256": "b7b80045880a901d80543e09524828ebdf9de99487687c0d049c0988214c3dd8"
+    },
+    {
+      "path": "versions/v01/04-SPEECH-COACHING-DRAFT01.ASC",
+      "archive_path": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.ASC",
+      "bytes": 2325,
+      "sha256": "a5bb3eff8f13125301d823169073a53d1a3f7c1b1fd803a23efb44a50ca99e8a"
+    }
+  ],
+  "recovery_item": {
+    "lines": 85,
+    "last": 940,
+    "pointer_base": 22204,
+    "normal_end_marker": true,
+    "sha256": "b7b80045880a901d80543e09524828ebdf9de99487687c0d049c0988214c3dd8"
+  },
+  "inventory_row": {
+    "tape": "20",
+    "side": "a",
+    "order": "4",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "SPEECH COACHING DRAFT01",
+    "capture": "tape20a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "256.189",
+    "recovered_bytes": "1881",
+    "source_file": "tapes/recovered/tape20a/best/04-SPEECH-COACHING-DRAFT01.ASC",
+    "wav": "tapes/tape20a.wav",
+    "folder": "tapes/recovered/tape20a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape20a/inventory.json",
+  "execution_tested": false
+}
