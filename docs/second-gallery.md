@@ -19,10 +19,10 @@ This branch is kept separate for review; no merge or deployment is part of this 
   is retained as v11. Two malformed tape20a recordings remain in partial/.
 - Olympics: three complete snapshots, including the repeated earlier capture;
   default v03 is tape3a save 2, with the explicit 1980 Carl Kadie copyright.
-- startwar81 (remembered title): tentative identification; default v01 is tape23b save 5.
+- Star Wars cockpit (`startwar81` internally): tentative identification; default v01 is tape23b save 5.
   v02 (tape30a save 2) preserves the later alternate-control experiment as source.
   The damaged tape23b save 4 is retained separately. All three raw headers store
-  cassette name `S`. The user remembers the longer name as `startwar81`; spelling is preserved exactly.
+  cassette name `S`. The user specified `startwar81` as the internal short name; spelling is preserved exactly.
 
 X-wing source locations: tape23b save 4 at 7:18–8:10 (damaged), save 5 at
 8:20–9:16 (complete); tape30a save 2 at 2:42–3:36 (complete). Times are rounded
@@ -95,3 +95,19 @@ prints an explicit title. Old xwing/v1 and xwing/v2 snapshots and their catalog
 remain unchanged. The current catalog carries those releases forward; new
 releases use startwar81 paths. Legacy xwing hash/query routes remain aliases.
 Original tag names and committed file paths remain intact as historical evidence.
+
+### Naming migration verification
+
+The naming migration uses `programs/startwar81/`, program ID `startwar81`,
+STARTWAR81 canonical source filenames, and new `startwar81-*` tags. Historical
+commits retain their old paths; the new historical tag aliases point to those
+same commits, and the verifier checks the original committed blobs explicitly.
+The current player opens at `/startwar81/v3/` and displays **Star Wars cockpit**.
+
+After this migration, unit/archive checks, production build, and canonical/raw
+hash checks passed. The full browser suite passed **63 tests**, with **one
+preexisting skipped test**. Checks include the new URL and display title, legacy
+query/hash routing, old frozen URLs, movement in the original program, both
+coaching games, and the main gallery. All **12** frozen experiences passed
+integrity verification against the pre-migration commit `373ebac`; every earlier
+frozen file and catalog is unchanged. Changes remain on the local worktree branch.

@@ -9,6 +9,9 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
 1. Inspect the recovery archive in the sibling VS Code workspace. Identify related
    versions using inventory, listings, clusters, and user descriptions. Follow an
    official title supplied by the user; preserve archive labels and capture/save IDs.
+   Keep a user-supplied short name separate from the display title: use the short
+   name for folders, program IDs, and URLs; show a title from the recovered code
+   when present, or identify a descriptive display title as inferred.
 2. Add `programs/<slug>/` with `program.json`, `README.md`, `provenance.json`, and
    `versions/<sequence>/`. Copy raw recovered payloads and listings byte for byte;
    verify hashes, structure, and line counts. Do not alter historical spelling,
