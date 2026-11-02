@@ -51,11 +51,13 @@ the rendered gallery, and the build and gallery navigation check passed.
 
 The extra gallery now contains Speech, Olympics, Star Wars cockpit
 (`starwars81`), Ricky Rat (`rickyrat`), Pinball (`pinball`), Logic circuit
-simulator (`logic`), and Orbit simulator (`orbit`). Every extra has exactly one
+simulator (`logic`), Orbit simulator (`orbit`), Skinner Box (`skinner`), German
+tutor (`german`), Magazine Index (`magazine`), TEACH VI (`teachvi`), Poker
+(`poker`), and LIFE (`life`). Every extra has exactly one
 web v1 and one playable recovered reference. Older saves remain source only;
 there are no web-version menus. Olympic rings are circular.
 
-See four-more-programs.md for provenance, selected references, known historical
-limits, reproducible commands, and the final 71-pass browser run. All 49 complete
-extra-program snapshots and all 14 site snapshots passed integrity checks.
+See [the four-program notes](four-more-programs.md) and [the six-program notes](six-more-programs.md) for provenance, selected references, known historical
+limits, reproducible commands, and browser results. All 93 complete
+extra-program snapshots and all 20 site snapshots passed integrity checks.
 The main gallery remains six entries with no inbound link to this gallery.
