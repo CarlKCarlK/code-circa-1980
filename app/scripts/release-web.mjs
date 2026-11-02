@@ -34,6 +34,7 @@ try {
   await fs.cp(temporary,destination,{recursive:true,errorOnExist:true,force:false});
   catalog.versions.push(release);
   await fs.writeFile(catalogPath,JSON.stringify(catalog,null,2)+'\n');
-  await verifyWebVersions();
+  // Other programs may be in the same import batch; deployment still verifies strictly.
+  await verifyWebVersions({allowUnreleased:true});
   console.log(`Frozen ${metadata.title} ${version}. Commit ${catalogPath} and ${destination}; keep earlier releases unchanged.`);
 }finally {await fs.rm(temporary,{recursive:true,force:true});}
