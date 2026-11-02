@@ -31,8 +31,8 @@ test('collection and program links open the Bomb player directly; v01 is source 
  await expect(page.locator('.implementations')).toHaveCount(0);
  await expect(page.locator('#display')).toBeVisible();
  await expect(page.getByRole('link',{name:'Download original payload'})).toHaveAttribute('href',/BOMB.*\.BAS$/);
- await expect(page.locator('.source-details .program-history')).toContainText('Nefarious Nick');
- await expect(page.locator('.source-details .program-history')).toContainText('MR. XX');
+ await expect(page.locator('.source-details .program-history')).toContainText('learned to spell AZURE');
+ await expect(page.locator('.source-details .program-history')).toContainText('Rich and I thought that was very funny');
  await expect(page.locator('.source-details .program-history')).toContainText('Rich Losey');
  await page.getByRole('button',{name:'Help'}).click();
  await expect(page.locator('.player-help')).toContainText('There is no fixing a typo');

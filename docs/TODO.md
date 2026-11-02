@@ -134,10 +134,10 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       - Close with: I didn't learn the theory behind programs like this (game-tree
         search, minimax, evaluation functions) until years later, in AI classes in
         college.
-- [ ] Bomb: remove the two-versions paragraph from the page history ("Two versions
+- [x] Bomb: remove the two-versions paragraph from the page history ("Two versions
       survive on one tape side…" through "…a top-ten table that ranks you even after
       you blow up.") in `app/site/programs/bomb.js`. Both versions stay in the repo.
-- [ ] Bomb: add to the history, in my voice:
+- [x] Bomb: add to the history, in my voice:
       - Backspacing always kills you: line 620 adds every key but Enter to the
         answer, so a backspace erases the letter on screen but stays in the answer,
         which can never match (line 900, the bomb goes off). Currently only a tip.
