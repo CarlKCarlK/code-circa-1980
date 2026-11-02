@@ -54,7 +54,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       declined: Alien doesn't need it.) Add a visible note by
       the player (not only in Help) telling users that pressing a key during the first
       part of the intro, while the title letters draw, skips ahead.
-- [ ] Alien: shift the page's emphasis toward my changes to Yob's *Hunt the Wumpus*
+- [x] Alien: shift the page's emphasis toward my changes to Yob's *Hunt the Wumpus*
       code (the *Alien* reskin, closing junctions, and other remixes) and toward how
       typing in a program from a book teaches you how it works. Also trim: the page has
       too much text and some of it repeats; cut redundancy while doing this rewrite.

@@ -23,7 +23,7 @@ test('collection and program links open the one BASIC player directly, with the 
  await expect(page.locator('.source-details')).toHaveAttribute('open','');
  await expect(page.locator('.source-details .program-history')).toContainText('Gregory Yob');
  await expect(page.locator('.source-details .program-history')).toContainText('More BASIC Computer Games');
- await expect(page.locator('.source-details .program-history')).toContainText('reskinning and remixing');
+ await expect(page.locator('.source-details .program-history')).toContainText('I changed it in two steps');
  await expect(page.locator('.source-details .program-history')).toContainText('Typing a listing in was a pain');
  for (const img of await page.locator('.source-details .program-history figure img').all()) {
   await img.scrollIntoViewIfNeeded();
