@@ -162,6 +162,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape8a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape8a",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.BAS",
+      "archive_listing": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/08-LEARNING-TIC-TAC-TOE-V2.BAS",
+          "archive_path": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.BAS",
+          "bytes": 2667,
+          "sha256": "4b8920ce05f69cc22a8287f10650f9a4afaf504c1f8954ad82cecd7cbe1cce15"
+        },
+        {
+          "path": "versions/v04/08-LEARNING-TIC-TAC-TOE-V2.ASC",
+          "archive_path": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.ASC",
+          "bytes": 3244,
+          "sha256": "cdc23047965e9e022ed65fa457ecb0cfba837253379360281492c77dad3812f0"
+        }
+      ],
+      "recovery_item": {
+        "lines": 128,
+        "last": 8040,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "4b8920ce05f69cc22a8287f10650f9a4afaf504c1f8954ad82cecd7cbe1cce15"
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "a",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LEARNING TIC TAC TOE V2; 128 lines",
+        "capture": "tape8a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+        "source_start_s": "328.172",
+        "recovered_bytes": "2667",
+        "source_file": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.ASC",
+        "wav": "tapes/tape8a.wav",
+        "folder": "tapes/recovered/tape8a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with required BASIC extensions; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape8a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {

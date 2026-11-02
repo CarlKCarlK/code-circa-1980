@@ -1,46 +1,46 @@
 {
-  "version": "v03",
+  "version": "v04",
   "capture": "tape8a",
-  "save": 7,
-  "archive_raw": "tapes/recovered/tape8a/best/07-LEARNING-TIC-TAC-TOE-SAVE2.BAS",
-  "archive_listing": "tapes/recovered/tape8a/best/07-LEARNING-TIC-TAC-TOE-SAVE2.ASC",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.BAS",
+  "archive_listing": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v03/07-LEARNING-TIC-TAC-TOE-SAVE2.BAS",
-      "archive_path": "tapes/recovered/tape8a/best/07-LEARNING-TIC-TAC-TOE-SAVE2.BAS",
-      "bytes": 1891,
-      "sha256": "bb243ea344ab7e0410b56a6d4bf0b5584f95f9f0aa6033470df1b4238cd0b3be"
+      "path": "versions/v04/08-LEARNING-TIC-TAC-TOE-V2.BAS",
+      "archive_path": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.BAS",
+      "bytes": 2667,
+      "sha256": "4b8920ce05f69cc22a8287f10650f9a4afaf504c1f8954ad82cecd7cbe1cce15"
     },
     {
-      "path": "versions/v03/07-LEARNING-TIC-TAC-TOE-SAVE2.ASC",
-      "archive_path": "tapes/recovered/tape8a/best/07-LEARNING-TIC-TAC-TOE-SAVE2.ASC",
-      "bytes": 2347,
-      "sha256": "532ee3c1146dae2331332f3fba766fba4bc389d77884430a0c570eb7e4c09d54"
+      "path": "versions/v04/08-LEARNING-TIC-TAC-TOE-V2.ASC",
+      "archive_path": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.ASC",
+      "bytes": 3244,
+      "sha256": "cdc23047965e9e022ed65fa457ecb0cfba837253379360281492c77dad3812f0"
     }
   ],
   "recovery_item": {
-    "lines": 106,
+    "lines": 128,
     "last": 8040,
     "pointer_base": 22204,
     "normal_end_marker": true,
-    "sha256": "bb243ea344ab7e0410b56a6d4bf0b5584f95f9f0aa6033470df1b4238cd0b3be"
+    "sha256": "4b8920ce05f69cc22a8287f10650f9a4afaf504c1f8954ad82cecd7cbe1cce15"
   },
   "inventory_row": {
     "tape": "8",
     "side": "a",
-    "order": "7",
+    "order": "8",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "LEARNING TIC TAC TOE SAVE2; 106 lines; identical to save 6",
+    "summary": "LEARNING TIC TAC TOE V2; 128 lines",
     "capture": "tape8a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
-    "source_start_s": "289.360",
-    "recovered_bytes": "1891",
-    "source_file": "tapes/recovered/tape8a/best/07-LEARNING-TIC-TAC-TOE-SAVE2.ASC",
+    "source_start_s": "328.172",
+    "recovered_bytes": "2667",
+    "source_file": "tapes/recovered/tape8a/best/08-LEARNING-TIC-TAC-TOE-V2.ASC",
     "wav": "tapes/tape8a.wav",
     "folder": "tapes/recovered/tape8a/best",
     "recovery_date": "2026-10-26",

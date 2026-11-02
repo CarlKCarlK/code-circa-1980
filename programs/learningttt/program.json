@@ -42,6 +42,18 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v04",
+      "label": "LEARNING TIC TAC TOE V2",
+      "capture": "tape8a",
+      "save": 8,
+      "raw": "versions/v04/08-LEARNING-TIC-TAC-TOE-V2.BAS",
+      "listing": "versions/v04/08-LEARNING-TIC-TAC-TOE-V2.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+      "unavailableReason": null
     }
   ]
 }
