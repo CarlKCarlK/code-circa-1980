@@ -1,0 +1,24 @@
+{
+  "id": "xwing",
+  "title": "X-wing fighter",
+  "description": "A tentative match: fly a Star Wars cockpit, evade fighters, and attack the Death Star.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "defaultVersion": "v01",
+  "versionOrder": "Inferred: tape23b save 5 uses the digit-key matrix; tape30a save 2 adds an alternate arrow-key read at line 190 and changes line 200. That suggests a later control experiment, not an established date. v01 remains the playable default; v02 contains a suspect expression at line 190. The remembered X-wing identity is unconfirmed; neither listing names an X-wing.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "tape23b \u00b7 save 5",
+      "capture": "tape23b",
+      "save": 5,
+      "raw": "versions/v01/05-STAR-WARS-COCKPIT.BAS",
+      "listing": "versions/v01/05-STAR-WARS-COCKPIT.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered payload. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": null
+    }
+  ]
+}
