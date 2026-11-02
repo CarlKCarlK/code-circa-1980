@@ -120,5 +120,19 @@
     "path": "app/assets/pendulum-gallery.svg",
     "sha256": "3a4aadaa695755128ecf7b6978c05e63c0309076426d4d854a330c27e21e36e7",
     "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "edition": "Original v02",
+    "execution_tested": true,
+    "test": "app/tests/browser/next-six.spec.js",
+    "checks": "Two swings, Earth, and a 1-meter string accepted; visible animation, final period and frequency, pause/resume and restart verified.",
+    "limits": "Other gravity values and complete calibration of the elapsed-time counter were not tested.",
+    "note": "This website evidence is separate from the preserved recovery-inventory execution_tested flags."
+  },
+  "emulator_capture": {
+    "path": "programs/pendulum/verification/screen.png",
+    "sha256": "a86d0f504ed03f4082c4545915ce9321d7b69eb373a5b1a79b1b7f35dbaf198d",
+    "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
   }
 }

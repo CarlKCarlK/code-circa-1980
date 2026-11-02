@@ -283,5 +283,19 @@
     "path": "app/assets/spi-gallery.svg",
     "sha256": "e04278e20645be62c425e87a4fea812ff80576249ddf6ab8fa9d75f92fbc90a2",
     "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "edition": "Original v05",
+    "execution_tested": true,
+    "test": "app/tests/browser/next-six.spec.js",
+    "checks": "Stored sample calculation reached REAL PROFIT (WITHOUT BANK INTEREST) and READY; observed final value 1890.8. Pause/resume and rerunning the calculation verified.",
+    "limits": "This observes original output; it is not an independent financial-formula audit or a live-data test.",
+    "note": "This website evidence is separate from the preserved recovery-inventory execution_tested flags."
+  },
+  "emulator_capture": {
+    "path": "programs/spi/verification/screen.png",
+    "sha256": "e44b8ee66f629219dd651606268f689920c33e984f8a972013462e6b04ea1819",
+    "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
   }
 }

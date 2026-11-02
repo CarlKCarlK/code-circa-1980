@@ -230,5 +230,19 @@
     "manifest": "runtime/changes.json",
     "sha256": "e98bd526f1165250ccc94fc57e6a4c5435440dd15ff170a8226adcd82e7b863f",
     "description": "Runtime adaptation: inline DEF FN expressions for stock Level II BASIC. No game rules or historical bugs corrected."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "edition": "Stock-ROM adapted v04",
+    "execution_tested": true,
+    "test": "app/tests/browser/next-six.spec.js",
+    "checks": "YES first-player choice, 1,1, move, computer reply, 0,0,C feedback, new-round prompt, pause/resume and restart verified. Two additional tests verify exact adaptation artifacts, unchanged other records, and expression evaluation in the actual Level II ROM.",
+    "limits": "No claim of correct learning, optimal play, win detection, or complete rule enforcement. Original prototype bugs remain documented.",
+    "note": "This website evidence is separate from the preserved recovery-inventory execution_tested flags."
+  },
+  "emulator_capture": {
+    "path": "programs/learningttt/verification/screen.png",
+    "sha256": "96fe20fab1c9135a11f41a943401e8b48a77a015f0c4cba30f276c65b63e8c72",
+    "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
   }
 }

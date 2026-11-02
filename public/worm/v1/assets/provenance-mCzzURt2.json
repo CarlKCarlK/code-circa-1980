@@ -224,5 +224,19 @@
     "path": "app/assets/peoria-gallery.svg",
     "sha256": "f86e5e116874bffc51e7bfd1020aac1696da178eb6bf166d8f8ff17ab3fb9deb",
     "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "edition": "Original v04",
+    "execution_tested": true,
+    "test": "app/tests/browser/next-six.spec.js",
+    "checks": "Skill 1 and driver count 1 accepted; countdown, scrolling road, held-arrow input, pause/resume and restart verified.",
+    "limits": "Two-driver controls were read from the source but not exercised in the browser. No complete five-stage scoring audit.",
+    "note": "This website evidence is separate from the preserved recovery-inventory execution_tested flags."
+  },
+  "emulator_capture": {
+    "path": "programs/peoria/verification/screen.png",
+    "sha256": "73e435591abc938801a3bcd89327761039957170436309de56c455f34cb1d567",
+    "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
   }
 }
