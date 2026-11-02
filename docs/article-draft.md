@@ -1,40 +1,32 @@
 # Why BASIC Is Better than TypeScript and Rust
 
-*Working draft for This Week in Rust (via Medium). Notes in [brackets] are for
-us, not readers. Verify every claim against the source before publishing.*
+*Draft for This Week in Rust (via Medium). Open questions for Carl are at the end.*
 
-I recently had the pleasure of restoring 45-year-old programs that I wrote in
-BASIC in high school and college. I hadn't seen them in all that time. They were
-not as bad as I thought. Let's look at each one and see why, while also comparing
-them with modern languages.
+This year I recovered programs I wrote in BASIC in high school and college,
+between 1979 and 1982. They had sat on cassette tapes for more than 40 years. I
+digitized the tapes, decoded the audio back into bytes, and put six of the
+programs on the web at [Code Circa 1980](https://carlkcarlk.github.io/code-circa-1980/).
+Each one runs unchanged in a TRS-80 emulator, and four of them also have a
+modern version: two in TypeScript and two in Rust, compiled to WebAssembly.
 
-[Not every section needs a code sample. Use code only where it shows something
-(the balancer's GCD, CISAB's look-ahead); elsewhere, compare in words.]
+I expected to be embarrassed. Instead, the programs were better than I
+remembered, and when I put each one beside its modern port, BASIC kept winning
+small arguments.
 
-[Thesis, to land in the intro or the close: the ideas in a program matter more
-than its syntax. Syntax, typing, and tooling help, but they come second. The
-title is the hook; turn it within the first few paragraphs.]
+So, is BASIC better than TypeScript and Rust? No. But the comparison shows
+something I believe more strongly after this project: **the ideas in a program
+matter more than its syntax.** Syntax, typing, and tooling help, sometimes a lot,
+but they come second. Here are the six programs, oldest first.
 
-[Setup paragraph: TRS-80 Model I, Level II BASIC, cassette tapes. Recovered from
-audio in 2026; every program now runs in the browser at code-circa-1980, original
-in an emulator, with TypeScript or Rust versions for four of them.]
+The machine was a TRS-80 Model I with Level II BASIC: a 64 × 16 text screen, 128 × 48 block graphics, and a cassette recorder for
+storage. Variable names were significant only to two letters, and subroutines
+took no arguments.
 
-## 3-D Plot (1979)
+## 3-D Plot (1979): the formula is a line of code
 
-**The idea.** Draw a 3-D surface as a wire grid on a 128 × 48 block-graphics
-screen: an oblique projection, plus a line-drawing routine, because Level II BASIC
-had no line command.
-
-**Why it holds up.** The formula is a single line (line 200), so the program is
-really a tiny plotting engine: type your own surface and RUN. Line 180 defines
-`PI` and `E`, which the default funnel never uses, and line 210 lets a formula
-lift the pen (`NO=1`) where the surface is undefined. It was designed to be
-extended.
-
-**Modern comparison.** The line routine (lines 360–420): find the length, take
-unit steps, `SET` each dot. Compare a TypeScript version: [excerpt from
-`programs/plot3d/typescript/`]. In TypeScript the formula would be a function
-argument; in 1979 the "function argument" was "edit line 200."
+3-D Plot draws a math surface as a wire grid. Level II BASIC has no command to
+draw a line, only `SET` to turn on one pixel, so the program projects each grid
+point onto the screen and joins neighbors with its own line routine:
 
 ```basic
 360 D=SQR( (GX-OX)[2+(GY-OY)[2)
@@ -46,90 +38,209 @@ argument; in 1979 the "function argument" was "edit line 200."
 420 RETURN
 ```
 
-[Note for readers: `[` is how the TRS-80 listing shows `↑`, exponentiation.]
+(The TRS-80 prints `↑`, exponentiation, as `[`.)
 
-## Chemical Equation Balancer (1979, 1981)
+There was no prompt for a formula. To plot your own surface, you edited line 200
+and typed `RUN`. Line 180 predefines `PI` and `E` for that purpose, and line 210
+lets a formula lift the pen where the surface is undefined. The program was a
+tiny plotting engine, with BASIC itself as the formula language.
 
-**The idea.** Balancing a chemical equation is solving a system of linear
-equations. School taught trial and error; I realized it was Gaussian elimination.
+The TypeScript version is where this gets interesting. It keeps the idea. Its
+"Your own surface" box takes a Level II BASIC line 200, and the port includes a
+small BASIC expression compiler to run it. Forty-seven years later, BASIC is
+still the right syntax for the job: short, forgiving, and readable by someone who
+has never programmed.
 
-**Why it holds up.** Version II (1981) switched from floating point to exact
-fractions, and it detects equations with only negative solutions or with more than
-one independent solution. That's real linear algebra, not guessing.
+BASIC also has its own surprises. Because only two letters count, `SWITCH`,
+which the program asks about at startup, is the same variable as `SW`, which line
+330 tests. `TILT` is `TI`, and `XSCALE` is `XS`. The port has to model that
+explicitly; the original gets it for free, and so do its bugs.
 
-**Modern comparison.** The GCD routine as BASIC, a one-for-one readable rewrite,
-and the Rust port. [Use `programs/bal/basic-vs-rust.md`, trimmed.] Wins on both
-sides: BASIC has true 2-D arrays and 0-to-n indexing; Rust has parameters, real
-integers, and overflow checks.
+## Chemical Equation Balancer (1979, 1981): it was linear algebra all along
 
-## Alien (Hunt the Wumpus remix)
+In school we balanced chemical equations by trial and error. Then my math teacher
+taught us Gaussian elimination, and I realized balancing an equation *is* solving
+a system of linear equations: one equation per element, one unknown per compound.
+I wrote a floating-point balancer in 1979 and advertised it in Radio Shack's
+*Applications Software Sourcebook*. In 1981 I rewrote it with exact fractions.
+That let it recognize equations with no positive solution or with more than one
+independent solution.
 
-**The idea.** Start from Gregory Yob's *Hunt the Wumpus* (1973), typed in from
-*More BASIC Computer Games*, and reskin it after the film *Alien*. Then change how
-it plays: close junctions to trap the alien, shuffle junction numbers each run,
-make the alien move after your closes.
+Every fraction is reduced by the greatest common divisor after each operation.
+Here is the core of the 1981 routine, and the Rust port:
 
-**Why it holds up.** Typing in a listing meant reading every line, so the program
-felt like mine to change. Remixing shared code is what open source does today.
+```basic
+4020 A8=N8:B8=D8
+4030 A8=ABS(A8):B8=ABS(B8)
+4040 R8=A8-B8*INT(A8/B8)
+4050 IF R8<>0 THEN A8=B8:B8=R8:GOTO4040
+4070 N8=N8/B8:D8=D8/B8
+```
 
-**Modern comparison.** [Candidate: the dodecahedron map as a `DATA` table vs. a
-Rust/TypeScript adjacency array. No modern port exists yet; either write a small
-excerpt for the article or keep this section about the idea.] [Date unknown;
-check the tape evidence.]
+```rust
+pub fn gcd(a: i128, b: i128) -> i128 {
+    let (mut a, mut b) = (a.abs(), b.abs());
+    while b != 0 {
+        (a, b) = (b, a % b);
+    }
+    a
+}
+```
 
-## CISAB Chess (high school)
+Same algorithm: Euclid's. The differences are all in the plumbing. BASIC
+subroutines take no parameters, so callers load the globals `N8` and `D8`,
+`GOSUB 4000`, and copy the answer back out. There is no `MOD`, so the remainder
+is `A8-B8*INT(A8/B8)`. The numbers are double-precision floats that stay exact
+only while they remain whole, and the program checks for coefficients above 1E16
+and reports OVERFLOW. Rust has parameters, real integers, `%`, and `try_from` to
+catch overflow the moment it happens.
 
-**The idea.** A chess program for a tournament in Peoria. It asks "WHAT WAS THEIR
-FOOLISH MOVE," scores each move by what it captures and what it risks, then looks
-ahead: after this move, what can they take?
+But BASIC wins one round. `DIM N(EN,CN+1)` makes a real rectangular 2-D array,
+and BASIC counts from 0 *to* n, so every array has a spare row and column 0. The
+program uses them for bookkeeping: compound numbers, element groups, and the
+answer's coefficients. The Rust port uses `Vec<Vec<Fraction>>` and separate
+vectors for the bookkeeping.
 
-**Why it holds up.** Its look-ahead is the core idea of game-tree search, which I
-didn't learn by name until AI classes in college.
+## Alien (1979): typing in teaches you the code
 
-**Modern comparison.** Why BASIC made it hard: no parameters, locals, or
-recursion, so look-ahead could not call itself. Instead, it negates every square
-so the same move generator plays for the other side, with flags (`SW`, `QT`) and
-the board saved and restored by hand. Variable names are significant only to two
-letters. The Rust port reproduces it statement by statement, including the TRS-80's
-RND and single-precision rounding. [Excerpt: the board negation, BASIC vs. Rust.
-See the CISAB items in `docs/TODO.md` and `programs/chess/rust/PARITY.md`.]
+Back then, you got someone else's program by typing it in from a book. I typed
+Gregory Yob's *Hunt the Wumpus* (1973) from David Ahl's *More BASIC Computer
+Games*. It was slow, and every typo had to be found before the program would
+run. But by the time it ran, I had read every line, and the program felt like
+mine to change.
 
-## Bomb (about 1981, with Rich Losey)
+I changed it in two steps, both saved on the same tape. First, a reskin after the
+film *Alien*: the cave became a spaceship's air vents and arrows became poison
+gas. Then a remix of the rules. You can close the junction you're in, so nothing
+can enter it again, and win by trapping the alien instead of gassing it. The
+junction numbers are shuffled each run, so there's no map to memorize.
 
-**The idea.** A bomb-defusing game that is really a memory and spelling test:
-watch the wire colors flash, then type them back against the clock.
+There's no modern port, and it doesn't need one for this point. What made the
+remix possible wasn't the language. It was having the whole program in my head,
+which typing it in forced on me. Today we get that from reading source on
+GitHub, if we bother.
 
-**Why it holds up.** It's a complete little arcade game: an attract screen
-("DEPOSIT $.25"), rising difficulty, a top-ten table with posthumous ranks. The
-humor holds up too: GREY and GRAY are both wires.
+## CISAB Chess (1980): look-ahead without recursion
 
-**Modern comparison.** [Candidate: line 620, where every key but Enter joins the
-answer, so Backspace erases the letter on screen but not from the answer, and you
-blow up. Compare modern input handling. No modern port exists.]
+The summer after high school, I wrote CISAB (BASIC spelled backwards) for a
+computer chess tournament in Peoria, Illinois. An operator typed in the
+opponent's moves at `WHAT WAS THEIR FOOLISH MOVE`. CISAB scored each move by
+what it captured and what it put at risk, then tried its best moves and looked at
+what the other side could take in reply.
 
-## Castles (about 1982)
+That reply check is the beginning of game-tree search. In Rust you'd write it as
+a recursive function that takes a position and a side. Level II BASIC has no
+parameters, no local variables, and a `GOSUB` that can't carry state, so CISAB
+does something cruder and rather clever. To see the board as the opponent does,
+it negates every square, runs the same move generator, and negates them back:
 
-**The idea.** Build towers and bridges from blocks that need support, then let two
-cannons bombard them, with falling debris.
+```basic
+2000 SW=1:FORR=1TO8:FORC=1TO8:B(R,C)=-B(R,C):J(R,C)=0:NEXTC,R
+2020 CV=9:RV=9:FV=0:SW=0:FORR=1TO8:FORC=1TO8:B(R,C)=-B(R,C):NEXTC,R
+```
 
-**Why it holds up.** When BASIC got too slow for the falling blocks, I wrote that
-part in Z80 assembly and called it from BASIC with USR. That's the same move as
-writing the hot loop in Rust or C today and calling it from Python or JavaScript.
+The flag `SW` tells the shared code which side it's playing for. The Rust port
+keeps the same structure, and gives it names:
 
-**Modern comparison.** Here the TypeScript version (a port of v05 plus FALL v6)
-is better, and not because of syntax. It's published on the web, so anyone can
-play it with a click, and you build with the mouse or a finger: drag up from the
-ground to build a tower. The original makes you click into an emulator, tap 8 to
-draw, and steer with the number keys 1–4. Same rules, same game; the platform is
-what changed. [No code sample needed.]
+```rust
+fn flip(&mut self) {
+    for r in 1..=8 {
+        for c in 1..=8 {
+            self.b[r][c] = -self.b[r][c];
+        }
+    }
+}
+
+/// Line 2000: the other side's view, with the attack map cleared.
+fn line2000(&mut self) {
+    self.sw = true;
+    self.flip();
+    self.j = [[false; 11]; 11];
+    if !self.qt {
+        self.pm = 0;
+    }
+}
+```
+
+The port is deliberately faithful. Given the same moves, it makes the same
+replies as the BASIC program, including the TRS-80's random-number generator and
+its single-precision rounding of move scores. That fidelity let me measure the
+program for the first time. Over 200 games against the chess engine Texel at its
+weakest setting, CISAB rated about 104 ± 50. Rust didn't make CISAB stronger, but
+it made it fast enough to find out how strong it was.
+
+## Bomb (1981): the clock is a loop counter
+
+My roommate Rich Losey and I designed Bomb: wire colors flash, and you type them
+back before the fuse runs out. Here is the input loop:
+
+```basic
+620 M$=INKEY$:TM=TM+1:IF TM>SP THEN 900 ELSE IF M$<>CHR$(13) AND M$<>"" THEN AN$=AN$+M$:PRINT M$;:GOTO 620  ELSE IF M$=CHR$(13) THEN PRINT:RETURN  ELSE IF M$="" THEN 620
+```
+
+Two things a modern programmer would never do. The timer is `TM`, a count of
+trips through the loop, so the fuse is only as long as the CPU is slow. And every
+key except Enter joins the answer, including Backspace: it erases the letter on
+screen, but the answer can never match, and the bomb goes off. In TypeScript
+you'd use a real clock and an input element that handles editing for you.
+
+Yet the game holds up. It has an attract screen (`TO PLAY DEPOSIT $.25 IN BOX`),
+rising difficulty, and a top-ten table that marks scores set by blowing up as
+posthumous. The color list includes both GREY and GRAY, and you have to type the
+one shown. Rich and I thought that was very funny.
+
+## Castles (1982): the hot loop in a faster language
+
+Castles lets you build towers and arches from blocks that need support, then
+bombard them with two cannons. When BASIC was too slow for the falling debris, I
+wrote that part in Z80 assembly and called it from BASIC:
+
+```basic
+195 IF NY<46 THEN POKE 32725,NY+1:POKE 16526,0:POKE 16527,127:DV=USR(0)
+```
+
+`POKE 16526,0:POKE 16527,127` sets the address of the machine-code routine,
+and the argument goes in through a memory location. There's no foreign-function
+interface, just shared memory and a jump. It's the same move as writing the hot
+loop in Rust and calling it from Python or JavaScript today.
+
+Here the TypeScript version is clearly better, and not because of syntax. It runs
+on the web with a click, and you build with a mouse or a finger: drag up from the
+ground to raise a tower. In the original you click into an emulator, tap 8 to
+start drawing, and steer with the number keys. The rules are the same; what
+changed is the platform.
 
 ## What I learned
 
-[Close: the ideas held up (linear algebra, look-ahead, extensible plotting,
-remixing, performance-critical code in a faster language). The syntax didn't
-matter much. Modern languages make the same ideas safer and easier to read, and
-the modern platform (the web, the mouse, touch) makes them easier to share and
-play. Both are real but secondary. Fair-play list of BASIC wins: 2-D arrays, 0-to-n
-indexing, instant edit-and-RUN, the listing *is* the documentation.]
+The ideas held up: linear algebra instead of guessing, look-ahead, a plotting
+engine extended by editing one line, remixing someone else's code, and moving the
+hot loop into a faster language. None of them depended on BASIC, and none of them
+needed Rust.
 
-[Links: code-circa-1980 site, the repo, This Week in Rust.]
+Modern languages make the same ideas safer and easier to read. Parameters,
+local variables, real integers and named functions would have saved me hours in
+1980. The modern platform, meaning the web, the mouse and touch, makes the
+programs easier to share and to play. Both matter, but both come second to having
+an idea worth writing down.
+
+And BASIC deserves a fair-play list: real 2-D arrays, 0-to-n indexing that
+pleases both camps, instant edit-and-`RUN`, and listings short enough to type in
+and understand completely.
+
+You can play all six, original and modern, at
+[carlkcarlk.github.io/code-circa-1980](https://carlkcarlk.github.io/code-circa-1980/).
+The source, including the recovered tapes' bytes and the Rust ports, is on
+[GitHub](https://github.com/CarlKCarlK/code-circa-1980).
+
+## Open questions for Carl
+
+- Title: keep the provocative title, given that the intro answers "No"?
+- 3-D Plot: is "forty-seven years later" right for the date of publication
+  (1979 → 2026)?
+- 3-D Plot: is the `SWITCH`/`SW` paragraph worth keeping, or too far in the weeds?
+- Chess: the Texel rating ran on the Rust port, not on a real TRS-80; the text
+  says the port made it "fast enough to find out." Is that framing acceptable?
+- Alien: the "if we bother" line is a jab at readers; keep or soften?
+- Length is about 1,800 words. This Week in Rust links rather than reprints, so
+  length is flexible, but Medium readers may prefer to drop one code sample
+  (Bomb's line 620 is the least essential).
