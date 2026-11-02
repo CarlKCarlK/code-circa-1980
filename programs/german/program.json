@@ -119,6 +119,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v11",
+      "label": "TEACH GERMAN SAVE1",
+      "capture": "tape19b",
+      "save": 14,
+      "raw": "versions/v11/14-TEACH-GERMAN-SAVE1.BAS",
+      "listing": "versions/v11/14-TEACH-GERMAN-SAVE1.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
