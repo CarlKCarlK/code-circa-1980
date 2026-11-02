@@ -1,0 +1,70 @@
+{
+  "official_title": "Worm One",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "worm",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Four consecutive tape3a saves. Inferred development order follows save order and additions to the grid bookkeeping and starting-position input. Source credit is July 27, 1980; this does not date every save.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape3a",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape3a/best/11-WORM-ONE.BAS",
+      "archive_listing": "tapes/recovered/tape3a/best/11-WORM-ONE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/11-WORM-ONE.BAS",
+          "archive_path": "tapes/recovered/tape3a/best/11-WORM-ONE.BAS",
+          "bytes": 850,
+          "sha256": "0832309e9dad643fe17736fa2ab5b1ae529c9a1c035ee7f38f145f3afbfb0e97"
+        },
+        {
+          "path": "versions/v01/11-WORM-ONE.ASC",
+          "archive_path": "tapes/recovered/tape3a/best/11-WORM-ONE.ASC",
+          "bytes": 1009,
+          "sha256": "54f172d4304407d3105252b396e9e63ea4b274f7d4db5e1f15d5206fb44d8668"
+        }
+      ],
+      "recovery_item": {
+        "lines": 33,
+        "last": 1050,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "0832309e9dad643fe17736fa2ab5b1ae529c9a1c035ee7f38f145f3afbfb0e97"
+      },
+      "inventory_row": {
+        "tape": "3",
+        "side": "a",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "WORM ONE; 33 lines",
+        "capture": "tape3a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload",
+        "validation": "33 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "850",
+        "source_file": "tapes/recovered/tape3a/best/11-WORM-ONE.ASC",
+        "wav": "tapes/tape3a.wav",
+        "folder": "tapes/recovered/tape3a/best",
+        "recovery_date": "2026-10-25",
+        "recorder_volume": "5/10",
+        "next_action": "Execution-test"
+      },
+      "recovery_inventory": "tapes/recovered/tape3a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [
+      "30 PRINT\"SEE: SCIENTIFIC AMERICAN, NOVEMBER 1973\"",
+      "60 PRINT\"27 JULY 1980"
+    ],
+    "caution": "Source notices and book years do not establish tape-save dates or cross-program chronology."
+  }
+}

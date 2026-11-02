@@ -1,0 +1,25 @@
+{
+  "id": "worm",
+  "title": "Worm One",
+  "description": "Watch a rule-driven worm trace a visual pattern.",
+  "kind": "Simulation",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v04",
+  "versionOrder": "Four consecutive tape3a saves. Inferred development order follows save order and additions to the grid bookkeeping and starting-position input. Source credit is July 27, 1980; this does not date every save.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "WORM ONE",
+      "capture": "tape3a",
+      "save": 11,
+      "raw": "versions/v01/11-WORM-ONE.BAS",
+      "listing": "versions/v01/11-WORM-ONE.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. 33 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
