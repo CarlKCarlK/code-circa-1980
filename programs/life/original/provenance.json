@@ -1,51 +1,51 @@
 {
-  "version": "v04",
+  "version": "v05",
   "capture": "tape10b",
-  "save": 4,
-  "archive_raw": "tapes/recovered/tape10b/best/04-LIFE-ASSEMBLY-V4.ASM",
-  "archive_listing": "tapes/recovered/tape10b/best/04-LIFE-ASSEMBLY-V4.TXT",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape10b/best/05-LIFE-ASSEMBLY-V5.ASM",
+  "archive_listing": "tapes/recovered/tape10b/best/05-LIFE-ASSEMBLY-V5.TXT",
   "imported_files": [
     {
-      "path": "versions/v04/04-LIFE-ASSEMBLY-V4.ASM",
-      "archive_path": "tapes/recovered/tape10b/best/04-LIFE-ASSEMBLY-V4.ASM",
-      "bytes": 3699,
-      "sha256": "bd6599eab0e53cf4f6dc33b82425590e6a63232012e645c90cfa86ad3e0c5fee"
+      "path": "versions/v05/05-LIFE-ASSEMBLY-V5.ASM",
+      "archive_path": "tapes/recovered/tape10b/best/05-LIFE-ASSEMBLY-V5.ASM",
+      "bytes": 3664,
+      "sha256": "b7d66d8fec617b5d8555c47ffdd03485c32f25ce12833e19cba37d6fc81a91a7"
     },
     {
-      "path": "versions/v04/04-LIFE-ASSEMBLY-V4.TXT",
-      "archive_path": "tapes/recovered/tape10b/best/04-LIFE-ASSEMBLY-V4.TXT",
-      "bytes": 3691,
-      "sha256": "ff8f1671f64a5081a08ef35b024d4a17e220bdf349837a626fa5216502e6f62b"
+      "path": "versions/v05/05-LIFE-ASSEMBLY-V5.TXT",
+      "archive_path": "tapes/recovered/tape10b/best/05-LIFE-ASSEMBLY-V5.TXT",
+      "bytes": 3656,
+      "sha256": "d73bb8e7c5f29f3c232f39a936abedb3b12bdaaa98f066eda19799d5f75a495e"
     },
     {
-      "path": "versions/v04/04-LIFE-ASSEMBLY-V4.Z80",
-      "archive_path": "tapes/recovered/tape10b/best/04-LIFE-ASSEMBLY-V4.Z80",
-      "bytes": 2299,
-      "sha256": "a258448f5d46b860e672ccfb5c0550cb6a80820f706caf78182c06661f39d489"
+      "path": "versions/v05/05-LIFE-ASSEMBLY-V5.Z80",
+      "archive_path": "tapes/recovered/tape10b/best/05-LIFE-ASSEMBLY-V5.Z80",
+      "bytes": 2288,
+      "sha256": "e02f3e1f1bb8d9923e83ae8817050533636c1c88896566009ea3d191cf518036"
     }
   ],
   "recovery_item": {
     "format": "EDTASM",
-    "lines": 232,
+    "lines": 228,
     "normal_end_marker": true,
-    "sha256": "bd6599eab0e53cf4f6dc33b82425590e6a63232012e645c90cfa86ad3e0c5fee"
+    "sha256": "b7d66d8fec617b5d8555c47ffdd03485c32f25ce12833e19cba37d6fc81a91a7"
   },
   "inventory_row": {
     "tape": "10",
     "side": "b",
-    "order": "4",
+    "order": "5",
     "type": "assembly source (EDTASM)",
     "recovery%": "100",
-    "summary": "LIFE ASSEMBLY V4; 232 lines",
+    "summary": "LIFE ASSEMBLY V5; 228 lines",
     "capture": "tape10b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Z80 / EDTASM",
     "status": "validated source; runtime untested",
     "validation": "Valid EDTASM source records and 1A end; exact left/right timing matches; not assembled",
-    "source_start_s": "206.365",
-    "recovered_bytes": "3699",
-    "source_file": "tapes/recovered/tape10b/best/04-LIFE-ASSEMBLY-V4.TXT",
+    "source_start_s": "271.870",
+    "recovered_bytes": "3664",
+    "source_file": "tapes/recovered/tape10b/best/05-LIFE-ASSEMBLY-V5.TXT",
     "wav": "tapes/tape10b.wav",
     "folder": "tapes/recovered/tape10b/best",
     "recovery_date": "2026-10-27",
