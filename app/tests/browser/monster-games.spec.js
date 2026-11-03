@@ -1,32 +1,6 @@
 import {test,expect} from '@playwright/test';
-const screen=p=>p.evaluate(()=>String.fromCharCode(...window.__circaPlayer.snapshot().map(c=>c<32?c+64:c>=128?32:c)));
-const compact=async p=>(await screen(p)).replace(/\s/g,'');
-const boot=async(p,id)=>{p.on('dialog',d=>d.accept());await p.goto(`/?development=1&test#/program/${id}`);await expect(p.locator('#status')).toContainText('Running original BASIC');await p.getByRole('combobox',{name:'Emulator speed'}).selectOption('20');};
-const answer=async(p,prompt,value)=>{await expect.poll(()=>compact(p),{timeout:40000}).toContain(prompt.replace(/\s/g,''));const f=p.getByRole('textbox',{name:'Answer for the original program'});await expect(f).toBeEnabled();await f.fill(value);await p.getByRole('button',{name:'Send + Enter'}).click();await expect(f).toBeEnabled();};
-const tap=async(p,key)=>{await p.locator('#display').focus();await p.keyboard.down(key);await p.waitForTimeout(100);await p.keyboard.up(key);};
-const noError=async p=>expect(await screen(p)).not.toMatch(/\?(?:SN|FC|OM|UL|DD|BS|OV|TM|NF|RG|OD|L3) ERROR/i);
-const capture=async(p,id)=>p.locator('#display canvas').screenshot({path:`test-results/monster-${id}.png`});
-const pauseRestart=async(p,prompt)=>{await p.getByRole('button',{name:'Pause',exact:true}).click();const n=await p.evaluate(()=>window.__circaPlayer.diagnostics().tStates);await p.waitForTimeout(150);expect(await p.evaluate(()=>window.__circaPlayer.diagnostics().tStates)).toBe(n);await p.getByRole('button',{name:'Resume',exact:true}).click();await p.getByRole('button',{name:'Restart',exact:true}).click();await p.waitForTimeout(700);await expect.poll(()=>screen(p),{timeout:40000}).toContain(prompt);await expect(p.getByRole('combobox',{name:'Emulator speed'})).toHaveValue('20');};
-test('Jaberwocky starts and accepts moving, shooting, and dynamite',async({page:p})=>{
- test.setTimeout(120000);await boot(p,'jaberwocky');await expect.poll(()=>compact(p),{timeout:40000}).toContain('WHATWOULDYOULIKETODO');await noError(p);await capture(p,'jaberwocky');
- await answer(p,'WHAT WOULD YOU LIKE TO DO','MOVE');await answer(p,'WHICH DIRECTION','NORTH');await expect.poll(()=>compact(p)).toContain('WHATWOULDYOULIKETODO');await noError(p);
- await pauseRestart(p,'WHAT WOULD YOU LIKE TO DO');await answer(p,'WHAT WOULD YOU LIKE TO DO','SHOOT');await answer(p,'SHOOT IN','NORTH');await expect.poll(()=>screen(p)).toMatch(/YOU MISSED|PUT THE JABERWOCKY|FIRED IN TO A SOLID WALL/);if((await screen(p)).includes('?UL'))expect(await screen(p)).toContain('Error in 720');
- await pauseRestart(p,'WHAT WOULD YOU LIKE TO DO');await answer(p,'WHAT WOULD YOU LIKE TO DO','EXPLODE');await expect.poll(()=>screen(p)).toContain('PUSH ANY BUTTON');await tap(p,'Enter');await expect.poll(()=>compact(p)).toContain('WHATWOULDYOULIKETODO');await noError(p);await expect.poll(()=>compact(p)).toContain('6STICKSOFDYNOMITE');await answer(p,'WHAT WOULD YOU LIKE TO DO','MOVE');await answer(p,'WHICH DIRECTION','NORTH');await expect.poll(()=>screen(p)).toContain('BOOM');
-});
-test('Cave Game runs its move, dart and cave-sealing inputs',async({page:p})=>{
- test.setTimeout(100000);await boot(p,'cave');await answer(p,'BEFORE','YES');await expect.poll(()=>screen(p)).toContain('WHICH ONE SHALL IT BE');await capture(p,'cave');
- await answer(p,'WHICH ONE SHALL IT BE','0');await expect.poll(()=>screen(p)).toContain('WHICH ONE SHALL IT BE');await noError(p);
- const text=await screen(p);const m=text.match(/CAVES\s*(\d+)\s*,\s*(\d+)\s*,\s*OR\s*(\d+)/);expect(m).toBeTruthy();const destination=m.slice(1).map(Number).find(x=>x>0);await answer(p,'WHICH ONE SHALL IT BE',String(destination));await p.waitForTimeout(300);expect(await screen(p)).toMatch(/TURN # 2|YOU DID YOU FOULD/);await noError(p);
- await pauseRestart(p,'BEFORE');await answer(p,'BEFORE','YES');const m2=(await screen(p)).match(/CAVES\s*(\d+)\s*,\s*(\d+)\s*,\s*OR\s*(\d+)/);await answer(p,'WHICH ONE SHALL IT BE',String(Number(m2[1])*100));await p.waitForTimeout(300);expect(await screen(p)).toMatch(/4  DARTS|YOU DID YOU FOULD/);await noError(p);
-});
-test('JAB generates a maze and accepts movement and timed drops',async({page:p})=>{
- test.setTimeout(120000);await boot(p,'jab');await answer(p,'HOW MANY JABBERWOCKIES','1');await expect.poll(()=>screen(p),{timeout:40000}).toContain('WHAT TO DO?');await noError(p);await capture(p,'jab');
- const before=await p.evaluate(()=>window.__circaPlayer.snapshot());await tap(p,'ArrowRight');await p.waitForTimeout(250);expect(await p.evaluate(()=>window.__circaPlayer.snapshot())).not.toEqual(before);await noError(p);
- await p.waitForTimeout(600);await tap(p,'0');await p.waitForTimeout(700);if(!(await screen(p)).includes('DROPS,TIMER'))await tap(p,'0');await answer(p,'DROPS,TIMER','2,3');await tap(p,'ArrowLeft');await p.waitForTimeout(200);await expect.poll(()=>screen(p)).toContain('998 ML');await capture(p,'jab-drops');await noError(p);await pauseRestart(p,'HOW MANY JABBERWOCKIES');
-});
-
-for(const [id,prompt] of [['jaberwocky','WHAT WOULD YOU LIKE TO DO'],['cave','BEFORE'],['jab','HOW MANY JABBERWOCKIES']])test(`${id}: frozen v1 opens directly and returns to More`,async({page:p})=>{
- test.setTimeout(100000);await p.goto(`/${id}/v1/?test`);await expect(p.locator('#display canvas')).toHaveCount(1);await expect(p.locator('#status')).toContainText('Running original BASIC');expect(new URL(p.url()).hash).toBe('');await expect(p.getByRole('combobox',{name:'Emulator speed'})).toHaveValue('1');await p.getByRole('combobox',{name:'Emulator speed'}).selectOption('20');await expect.poll(()=>screen(p),{timeout:40000}).toContain(prompt);
+for(const id of ['jaberwocky','cave','jab'])test(`${id}: frozen v1 opens directly and returns to More`,async({page:p})=>{
+ test.setTimeout(100000);await p.goto(`/${id}/v1/?test`);await expect(p.locator('#display canvas')).toHaveCount(1);await expect(p.locator('#status')).toContainText('Running original BASIC');expect(new URL(p.url()).hash).toBe('');await expect(p.getByRole('combobox',{name:'Emulator speed'})).toHaveValue('1');
  const download=p.getByRole('link',{name:'Download original payload',exact:true});expect((await p.request.get(await download.getAttribute('href'))).ok()).toBe(true);await p.getByRole('button',{name:'Help',exact:true}).click();await expect(p.locator('.player-help')).toBeVisible();await expect(p.locator('#status')).toContainText('Paused');await p.getByRole('button',{name:'Close help',exact:true}).click();await expect(p.locator('.player-help')).toBeHidden();
  await p.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(p.locator('.program-card')).toHaveCount(34);
 });

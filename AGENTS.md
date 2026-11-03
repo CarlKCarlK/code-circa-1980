@@ -31,7 +31,8 @@ name is **Castles**. Do not add remasters or unrelated programs until requested.
    separate and documented. Confine keyboard capture to the focused player; clear
    pressed keys on blur, visibility change, pause, restart, and navigation.
 7. Run `npm test`, `npm run build`, and `npm run test:browser`. Browser checks must
-   exercise actual startup and meaningful input/output, not just page rendering.
+   exercise actual startup and meaningful input/output, not just page rendering,
+   except for More programs (see "Second gallery").
    Record evidence in the program's verification notes. Never claim unperformed
    runtime testing or that a smoke test validates every historical routine.
 8. Keep original recovery evidence separate from new execution evidence. Retain
@@ -193,6 +194,14 @@ Speech and Olympics are separate entries even though their code is related.
 The X-wing identity remains tentative. Use `starwars81` for the program ID, source folder, new URLs, and new tags. Display a source title when present; neither current listing prints one, so use the descriptive display title "Star Wars cockpit." Historical import tags remain intact as provenance. Coaching games capture the original
 Model III printer-port output in a roster panel without altering recovered BASIC.
 
+On November 3, 2026, the user decided browser tests no longer exercise the BASIC
+of More programs: no gameplay checks, prompt waits, or BASIC-output assertions.
+Browser checks for More cover only our JS: gallery, player opening, Help, pause,
+speed, downloads, navigation, and attribution. Bugs in these BASIC programs are
+not ours to fix for now. Older VERIFICATION.md and provenance records describe
+tests removed that day; those tests remain in Git history before that change.
+This does not change testing for the main gallery.
+
 ## Extra-program release policy
 
 On November 2, 2026, the user confirmed no extra-program URLs had been shared
@@ -213,8 +222,9 @@ Ricky Rat, Pinball, the logic-circuit simulator, and the orbit simulator were
 also requested for the unlinked gallery on November 2, 2026. Their compact IDs
 are rickyrat, pinball, logic, and orbit; they follow the same unshared-v1 policy.
 Gallery artwork for these four is captured from the actual original players at
-native canvas aspect ratio. Only set CAPTURE_GALLERY_ART=1 when intentionally
-refreshing those PNGs; ordinary browser tests must not alter tracked artwork.
+native canvas aspect ratio. The CAPTURE_GALLERY_ART=1 refresh lived in More
+gameplay tests removed on November 3, 2026; the existing PNGs stay as they are.
+Browser tests must not alter tracked artwork.
 
 The next requested extra programs are skinner, german, magazine, teachvi, poker,
 and life. They follow the same single-player, unshared-v1 policy. Magazine Index
@@ -232,8 +242,8 @@ On November 2, 2026, the user asked to improve the unreadable screenshot
 previews on the more page. Its ten PNG-based cards now use program-specific
 `app/assets/*-gallery.svg` illustrations. Keep their cobalt/cream palette and
 large, legible shapes. These are illustrative artwork, not execution evidence.
-Original emulator PNG captures remain separate; CAPTURE_GALLERY_ART=1 updates
-those evidence captures only, not the live gallery illustrations. Provenance
+Original emulator PNG captures remain separate evidence and are not the live
+gallery illustrations. Provenance
 records the illustration under artwork and the original under emulator_capture.
 Gallery-only illustration changes do not require rebuilding frozen players.
 
