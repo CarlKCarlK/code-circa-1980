@@ -1,0 +1,40 @@
+{
+  "id": "chemistry-elements",
+  "title": "Chemistry Elements",
+  "description": "Chemistry Elements. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CHEMISTRY ELEMENTS",
+      "capture": "tape4a",
+      "save": 6,
+      "raw": "versions/v01/06-CHEMISTRY-ELEMENTS.BAS",
+      "listing": "versions/v01/06-CHEMISTRY-ELEMENTS.ASC",
+      "playable": false,
+      "note": "validated payload. 28 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-CHEMISTRY-ELEMENTS.ASC",
+          "label": "06-CHEMISTRY-ELEMENTS.ASC"
+        },
+        {
+          "path": "versions/v01/06-CHEMISTRY-ELEMENTS.BAS",
+          "label": "06-CHEMISTRY-ELEMENTS.BAS"
+        }
+      ],
+      "startupSource": "10 DIM A$(20),V1(20),V2(20),W(20)\n20 FOR I=1TO2:READ C(I),CM(I),CP(I):PRINTC(I),CM(I),CP(I):NEXTI\n30 FOR I=1TO2\n40 M(I)=CM(I)-C(I)\n50 S(I)=CP(I)-CM(I)\n60 SW=32.06\n70 SM(I)=S(I)/SW\n80 MG(I)=M(I)/SM(I)\n90 NEXT I\n100 PRINTM(1);M(2):PRINTS(1);S(2):PRINTMG(1);MG(2)\n105 PRINT:PRINT\n110 READ A$(E+1),V1(E+1),V2(E+1)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
