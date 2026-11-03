@@ -114,6 +114,51 @@
   ],
   "dating": {
     "direct_source_lines": [],
-    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence."
+    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence.",
+    "neighbor_context": [
+      {
+        "capture": "tape9a",
+        "save": 1,
+        "archive_listing": "tapes/recovered/tape9a/best/01-TEACH-III-TEST-DATA.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      },
+      {
+        "capture": "tape9a",
+        "save": 5,
+        "archive_listing": "tapes/recovered/tape9a/best/05-TEACH-III-VOCABULARY.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      },
+      {
+        "capture": "tape9a",
+        "save": 12,
+        "archive_listing": "tapes/recovered/tape9a/best/12-TEACH-III-VOCABULARY-V2.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      }
+    ],
+    "note": "Direct quoted source notices only; same-side context is stronger, but neither notices nor tape numbers date these saves."
+  },
+  "artwork": {
+    "path": "app/assets/cave-gallery.svg",
+    "sha256": "49eba2ce8c8aee3317b2a9ef9a0da0d385cadd417bd8b2825a756a88ed7a1ce5",
+    "description": "Modern illustrative SVG, not emulator execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "test": "app/tests/browser/monster-games.spec.js",
+    "checks": "Original-ROM browser execution: YES skips instructions, 0 seals the current cave, an available cave number moves, and a cave number times 100 consumes a dart and also moves (or meets the beast). Pause/resume and restart pass. No exhaustive random graphs or retained-state retries were tested.",
+    "reference": {
+      "version": "v02",
+      "capture": "tape9a",
+      "save": 11,
+      "payload": "versions/v02/11-CAVE-GAME.BAS",
+      "sha256": "24f5f14fafb0e553f5fc2b330cd781086108e84e9b48211007933037d42989d9"
+    },
+    "note": "New execution evidence; recovery archive execution flags and historical bytes remain unchanged."
+  },
+  "emulator_capture": {
+    "path": "programs/cave/verification/screen.png",
+    "sha256": "6f7805e2958f67ed2f954110f386ebc68848f5720d8d7ac87e0728001fbad14d",
+    "description": "Actual original-ROM emulator screenshot; separate from illustrative gallery artwork."
   }
 }

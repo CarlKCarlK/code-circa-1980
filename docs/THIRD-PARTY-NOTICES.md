@@ -89,3 +89,9 @@ The historical Poker heading credits Creative Computing, Morristown, New Jersey
 source credits remain intact; the collection's license does not replace any
 rights associated with the original published listing. No new authorship is
 claimed for that listing.
+
+## Cave and monster-game source comparisons
+
+Jaberwocky incorporates dispatcher and room descriptions from Roger Chaffee’s Quest, published in BYTE, July 1979, pp. 176–186. The comparison baseline contains selected source excerpts, not a complete runnable Quest. The published listing credits Chaffee and Peninsula School, copyright 1978, with permission to use, not sell. Preserve that attribution and restriction for borrowed material.
+
+The early JAB maze forms derive from Jack Hauber’s Amazing in BASIC Computer Games (1978), edited by David H. Ahl. The upstream electronic transcription retains its Creative Computing heading and is credited separately in programs/jab/upstream/. This is third-party comparison material; the collection’s general license does not establish rights to these published sources. Neither upstream source was recovered from Carl’s cassettes in this import.

@@ -368,3 +368,26 @@ field to 40 columns. It erases old suffixes without touching the position
 counter at column 40. The ROM regression runs long-to-short labels and verifies
 the counter/grid remain intact; the browser checks HOWIE followed by blanks.
 There are now four changed record bodies including the three spelling edits.
+
+## Cave and monster-game additions
+
+The user requested Jaberwocky (`jaberwocky`), Cave Game (`cave`), and JAB
+(`jab`) on November 2, 2026. Preserve seven complete saves and JAB’s separate
+damaged tape16a save 5: 270 untouched prefix bytes, ten records through 71, no
+added terminator. JAB and Jaberwocky are different programs. Each has one selected
+original-ROM player and unshared web v1; More has 29 cards.
+
+Canonical comparison history begins with selected published Quest excerpts
+(`jaberwocky-quest-excerpt`, explicitly incomplete and non-executable) and a
+complete electronic transcription of Hauber’s Amazing (`jab-amazing`, not a
+byte-verified print transcription). Cave Game has no verified upstream baseline.
+Do not turn these comparison baselines into recovered captures or assert direct
+chronology between Cave Game, Jaberwocky, and Alien. JAB’s cross-tape order is
+inferred; its earliest forms borrow Amazing but later forms replace the maze
+generator. Preserve published credits and terms in upstream/ and notices.
+
+Jaberwocky’s historical endings can raise ?UL because line 1000 is absent. Cave
+Game’s dart branch also moves the player. JAB may require a second 0 after ending
+a movement burst to enter its explosive prompt. These quirks are documented,
+not silently fixed. Run verify-monster-games.py with the recovery archive and
+monster-games.spec.js for source/history/prefix and original-ROM browser checks.

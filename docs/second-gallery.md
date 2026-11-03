@@ -104,3 +104,7 @@ source-history uncertainty, and execution verification limits.
 AIM is now grouped under SPI’s investing selector, with no separate card.
 Keyword Cipher, Word Search, Space Colony, and Computa-Match bring More to 27
 entries. See [the related-program notes](related-more-programs.md).
+
+## Cave and monster games
+
+Jaberwocky, Cave Game, and JAB add three entries after Space Colony’s withdrawal, bringing More to 29 cards. Seven complete saves, one damaged prefix, and two separately documented published-source comparison baselines are preserved. See [monster-games.md](monster-games.md).

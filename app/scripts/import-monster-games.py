@@ -1,7 +1,7 @@
 """Preserve the requested three cave/maze groups and canonical per-save history."""
 import argparse,csv,hashlib,json,shutil,subprocess
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('archive',type=Path);p.add_argument('--commit',action='store_true');args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('archive',type=Path);p.add_argument('--commit',action='store_true');p.add_argument('--resume',action='store_true');args=p.parse_args()
 r=Path(__file__).resolve().parents[2];archive=args.archive.resolve()
 rows=list(csv.DictReader((archive/'tape-inventory.tsv').open(encoding='utf-8-sig'),delimiter='\t'))
 def digest(b):return hashlib.sha256(b).hexdigest()
@@ -23,7 +23,8 @@ configs=[
 
 
 for slug,*_ in configs:
- if (r/'programs'/slug/'program.json').exists():raise SystemExit(f'Refusing to overwrite {slug}')
+ if git('tag','--list',slug+'-v*'):raise SystemExit(f'Refusing to replace completed tagged history for {slug}')
+ if (r/'programs'/slug/'program.json').exists() and not args.resume:raise SystemExit(f'Refusing to overwrite {slug}')
 for slug,title,description,saves,selected,order in configs:
  folder=r/'programs'/slug;folder.mkdir(parents=True,exist_ok=True)
  metadata=dict(id=slug,title=title,description=description,kind='Game',language='Level II BASIC',gallery='more',showWebVersions=False,unsharedWebV1=True,defaultVersion=f'v{selected:02}',versionOrder=order,versions=[])
@@ -32,7 +33,7 @@ for slug,title,description,saves,selected,order in configs:
  if (folder/'upstream/provenance.json').exists():evidence['upstream']=json.loads((folder/'upstream/provenance.json').read_text())
  for i,(capture,save) in enumerate(saves,1):
   row=next(x for x in rows if x['capture']==capture and int(x['order'])==save)
-  source=Path(row['source_file']);raw=source.with_suffix('.BAS');v=f'v{i:02}';dest=folder/'versions'/v;dest.mkdir(parents=True)
+  source=Path(row['source_file']);raw=source.with_suffix('.BAS');v=f'v{i:02}';dest=folder/'versions'/v;dest.mkdir(parents=True,exist_ok=True)
   paths=[raw,source]
   b=(archive/raw).read_bytes()
   assessment=structure(b)

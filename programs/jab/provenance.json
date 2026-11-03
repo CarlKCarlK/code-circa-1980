@@ -218,7 +218,76 @@
   ],
   "dating": {
     "direct_source_lines": [],
-    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence."
+    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence.",
+    "neighbor_context": [
+      {
+        "capture": "tape16a",
+        "save": 4,
+        "archive_listing": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+        "line": "20 'COPYRIGHT 1980  CARL KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 7,
+        "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 7,
+        "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT  KADIE 1981\":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": 8,
+        "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 8,
+        "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT  KADIE 1981\":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": 9,
+        "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 9,
+        "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": 10,
+        "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 10,
+        "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": 11,
+        "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 11,
+        "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      }
+    ],
+    "note": "Direct quoted source notices only; same-side context is stronger, but neither notices nor tape numbers date these saves."
   },
   "upstream": {
     "author": "Jack Hauber",
@@ -229,5 +298,29 @@
     "sha256": "0638d75685bd0d474b9c625698287165ef297c979a9841597e33ca088e35417d",
     "note": "Jack Hauber, Amazing, BASIC Computer Games (1978), pp. 2\u20133. Complete electronic transcription obtained from the GReaperEx/bcg mirror of Vintage BASIC. Not a recovered cassette or verified byte-for-byte transcription of the print edition. Published source attribution and the maze-generation algorithm match the early tape16a forms; numbered records are reorganized there. The later JAB forms replace the generator. No claim that the complete JAB game came from this book.",
     "execution_tested": false
+  },
+  "artwork": {
+    "path": "app/assets/jab-gallery.svg",
+    "sha256": "f0bb26fb766c87997f4a6dc9ac92558097293eee75b5961a89892642b5d56245",
+    "description": "Modern illustrative SVG, not emulator execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "test": "app/tests/browser/monster-games.spec.js",
+    "checks": "Original-ROM browser execution: generate maze, select one monster, arrow-key movement, 0 explosive prompt (a second 0 after an unfinished movement burst), 2,3 drops/timer input reducing flask to 998 ML, a subsequent move, pause/resume, and restart. No full maze clear, all enemy states, or exhaustive explosion geometry was tested.",
+    "reference": {
+      "version": "v04",
+      "capture": "tape30a",
+      "save": 1,
+      "payload": "versions/v04/01-JAB-JABBERWOCKIES.BAS",
+      "sha256": "9b40f2c2650f11d90cc38de5dd88702de8be1de0cde993adc5c90e0e452dd756"
+    },
+    "note": "New execution evidence; recovery archive execution flags and historical bytes remain unchanged."
+  },
+  "emulator_capture": {
+    "path": "programs/jab/verification/screen.png",
+    "sha256": "ff0a0bbd9eb54fec78e94b8e81712f84716b4883ac17afe6a55a5d294f8f973b",
+    "description": "Actual original-ROM emulator screenshot; separate from illustrative gallery artwork."
   }
 }
