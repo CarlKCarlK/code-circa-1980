@@ -38,6 +38,34 @@
       ],
       "startupSource": "00130 KEYSCN\tLD\tC,0\t;FOR FIRST ROW\n00140 \tLD\tA,(3801H)\t;FIRST ROW ADDRESS\n00150 \tOR\tA\t; TEST ZERO OR NON-ZERO\n00160 \tJP\tNZ,KEY10\t;GO IF KEY PRESSED\n00170 \tLD\tA,(3802H)\t; SECOND ROW ADDRESS\n00180 \tOR\tA\t; TEST ZERO OR NON-ZERO\n00190 \tJP\tZ,KEYSCN\t;GO IF NO KEY PRESSED\n00200 \tLD\tC,8\t;FOR 2ND ROW\n00210 KEY10\tLD\tB,0FFH\t; INDEX\n00220 KEY20\tINC\tB\t; DECREMENT (?) INDEX\n00230 \tSRL\tA\t; SHIFT 'TIL NON-ZERO\n00240 \tJP\tNZ,KEY20\t; GO IF NOT ZERO",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "KEYSCN KEYBOARD",
+      "capture": "tape18a",
+      "save": 6,
+      "raw": "versions/v02/06-KEYSCN-KEYBOARD.ASM",
+      "listing": "versions/v02/06-KEYSCN-KEYBOARD.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/06-KEYSCN-KEYBOARD.ASM",
+          "label": "06-KEYSCN-KEYBOARD.ASM"
+        },
+        {
+          "path": "versions/v02/06-KEYSCN-KEYBOARD.TXT",
+          "label": "06-KEYSCN-KEYBOARD.TXT"
+        },
+        {
+          "path": "versions/v02/06-KEYSCN-KEYBOARD.Z80",
+          "label": "06-KEYSCN-KEYBOARD.Z80"
+        }
+      ],
+      "startupSource": "00100 KEYSCN\tLD\tC,0\t\t;FOR FIRST ROW\n00110 \tLD\tA,(3801H)\t;FIRST ROW ADDRESS\n00120 \tOR\tA\t\t; TEST ZERO OR NON-ZERO\n00130 \tJP\tNZ,KEY10\t;GO IF KEY PRESSED\n00140 \tLD\tC,8\t\t;REPEAT FOR OTHER ROWS\n00150 \tLD\tA,(3802H)\n00160 \tOR\tA\n00170 \tJP\tNZ,KEY10\n00180 \tLD\tC,16\n00190 \tLD\tA,(3804H)\n00200 \tOR\tA\n00210 \tJP\tNZ,KEY10",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

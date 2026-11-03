@@ -1,33 +1,33 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape18a",
-  "save": 5,
-  "archive_raw": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.ASM",
-  "archive_listing": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
+  "save": 6,
+  "archive_raw": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.ASM",
+  "archive_listing": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.TXT",
   "imported_files": [
     {
-      "path": "versions/v01/05-KEYSCN-TWO-ROWS.ASM",
-      "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.ASM",
-      "bytes": 904,
-      "sha256": "96f1caf8f824872112ee55ab566a4250312ef9c118637903fc9d87c25c724e67"
+      "path": "versions/v02/06-KEYSCN-KEYBOARD.ASM",
+      "archive_path": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.ASM",
+      "bytes": 1107,
+      "sha256": "2f6dffc0ad53b8b2fdb3b9e1a4efbeb7ba3eb7c5933053df7bfe7b645144ed06"
     },
     {
-      "path": "versions/v01/05-KEYSCN-TWO-ROWS.TXT",
-      "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
-      "bytes": 896,
-      "sha256": "eb3443b876bfc504876c81f13a46214b500f8c12d5e4f197ad25c11a3559859e"
+      "path": "versions/v02/06-KEYSCN-KEYBOARD.TXT",
+      "archive_path": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.TXT",
+      "bytes": 1099,
+      "sha256": "be2972ce5bedfa9d844756ff738cc18b6403c0f91ade783dc9493b82f2f2b9e7"
     },
     {
-      "path": "versions/v01/05-KEYSCN-TWO-ROWS.Z80",
-      "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.Z80",
-      "bytes": 728,
-      "sha256": "99adee5fba03f45650e1328bcb022b4426dfeca591362b9d5341916261fd4041"
+      "path": "versions/v02/06-KEYSCN-KEYBOARD.Z80",
+      "archive_path": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.Z80",
+      "bytes": 853,
+      "sha256": "5e09f9f6b137d05da884c0811b2fa3789cf5537cd1c01f17fb49fa30744222b9"
     }
   ],
   "recovery_item": {
     "format": "assembly source (EDTASM)",
-    "sha256": "96f1caf8f824872112ee55ab566a4250312ef9c118637903fc9d87c25c724e67",
-    "bytes": 904,
+    "sha256": "2f6dffc0ad53b8b2fdb3b9e1a4efbeb7ba3eb7c5933053df7bfe7b645144ed06",
+    "bytes": 1107,
     "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
     "import_validation": "Exact file hashes; format-specific checks below.",
     "source_notice_lines": []
@@ -35,19 +35,19 @@
   "inventory_row": {
     "tape": "18",
     "side": "a",
-    "order": "5",
+    "order": "6",
     "type": "assembly source (EDTASM)",
     "recovery%": "100",
-    "summary": "KEYSCN TWO ROWS",
+    "summary": "KEYSCN KEYBOARD",
     "capture": "tape18a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Z80 / EDTASM",
     "status": "validated payload; runtime untested",
     "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
-    "source_start_s": "140.114",
-    "recovered_bytes": "904",
-    "source_file": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
+    "source_start_s": "164.530",
+    "recovered_bytes": "1107",
+    "source_file": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.TXT",
     "wav": "tapes/tape18a.wav",
     "folder": "tapes/recovered/tape18a",
     "recovery_date": "2026-10-28",
