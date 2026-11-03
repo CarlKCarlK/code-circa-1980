@@ -1,0 +1,74 @@
+{
+  "official_title": "3-D Sphere Projection",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "3d_sphere_projection_p197",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21a",
+      "save": 19,
+      "archive_raw": "tapes/recovered/tape21a/best/19-3D-SPHERE-PROJECTION.BAS",
+      "archive_listing": "tapes/recovered/tape21a/best/19-3D-SPHERE-PROJECTION.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/19-3D-SPHERE-PROJECTION.ASC",
+          "archive_path": "tapes/recovered/tape21a/best/19-3D-SPHERE-PROJECTION.ASC",
+          "bytes": 410,
+          "sha256": "732c373c3c5a7072368b7b03de1c2eda16c72a2ea93aafad6c3b016b1a804da3"
+        },
+        {
+          "path": "versions/v01/19-3D-SPHERE-PROJECTION.BAS",
+          "archive_path": "tapes/recovered/tape21a/best/19-3D-SPHERE-PROJECTION.BAS",
+          "bytes": 348,
+          "sha256": "77158efbf30aff224014589e5c088d156e6bca3173be9bb5c216633587f05215"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "77158efbf30aff224014589e5c088d156e6bca3173be9bb5c216633587f05215",
+        "bytes": 348,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 23,
+        "last": 1000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 346,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "a",
+        "order": "19",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "3D SPHERE PROJECTION",
+        "capture": "tape21a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "500.960",
+        "recovered_bytes": "348",
+        "source_file": "tapes/recovered/tape21a/best/19-3D-SPHERE-PROJECTION.ASC",
+        "wav": "tapes/tape21a.wav",
+        "folder": "tapes/recovered/tape21a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

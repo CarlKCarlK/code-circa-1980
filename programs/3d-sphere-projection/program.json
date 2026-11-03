@@ -1,0 +1,40 @@
+{
+  "id": "3d-sphere-projection",
+  "title": "3-D Sphere Projection",
+  "description": "3-D Sphere Projection. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "3D SPHERE PROJECTION",
+      "capture": "tape21a",
+      "save": 19,
+      "raw": "versions/v01/19-3D-SPHERE-PROJECTION.BAS",
+      "listing": "versions/v01/19-3D-SPHERE-PROJECTION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/19-3D-SPHERE-PROJECTION.ASC",
+          "label": "19-3D-SPHERE-PROJECTION.ASC"
+        },
+        {
+          "path": "versions/v01/19-3D-SPHERE-PROJECTION.BAS",
+          "label": "19-3D-SPHERE-PROJECTION.BAS"
+        }
+      ],
+      "startupSource": "50 POKE16553,255\n60 READ D\n70 PI=3.14159265359\n90 CLS\n100 P=23\n110 FORDD=1TOD:READS0:READSO\n120 FORA0=0TOPISTEPS0\n130 FORAO=0TOPI*2STEPSO\n200 X=P*SIN(A0)*COS(AO)\n210 Y=P*SIN(A0)*SIN(AO)\n230 Z=P*COS(A0)\n300 XG=X",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
