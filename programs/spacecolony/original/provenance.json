@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape12a",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape12a/best/05-KING.BAS",
+  "archive_listing": "tapes/recovered/tape12a/best/05-KING.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/05-KING.BAS",
+      "archive_path": "tapes/recovered/tape12a/best/05-KING.BAS",
+      "bytes": 6490,
+      "sha256": "47bd22cec28eb8caa9d33406c52d9b82caea182b063513bde4d25e3042694d8e"
+    },
+    {
+      "path": "versions/v01/05-KING.ASC",
+      "archive_path": "tapes/recovered/tape12a/best/05-KING.ASC",
+      "bytes": 7505,
+      "sha256": "e72782bf894a7014bba6ad98161053fbc5662e30d1cfa7ca0a0e4ce632400938"
+    }
+  ],
+  "recovery_item": {
+    "lines": 234,
+    "last": 2046,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "47bd22cec28eb8caa9d33406c52d9b82caea182b063513bde4d25e3042694d8e"
+  },
+  "inventory_row": {
+    "tape": "12",
+    "side": "a",
+    "order": "5",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "KING; 234 lines",
+    "capture": "tape12a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+    "source_start_s": "305.001",
+    "recovered_bytes": "6490",
+    "source_file": "tapes/recovered/tape12a/best/05-KING.ASC",
+    "wav": "tapes/tape12a.wav",
+    "folder": "tapes/recovered/tape12a/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape12a/inventory.json",
+  "execution_tested": false
+}

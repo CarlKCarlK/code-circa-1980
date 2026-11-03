@@ -1,0 +1,25 @@
+{
+  "id": "spacecolony",
+  "title": "Space Colony",
+  "description": "Manage a solar colony\u2019s workers, resources, and budget.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v02",
+  "versionOrder": "Inferred from source comparison: recovered King precedes its space-themed adaptation. The exact cross-tape chronology is unknown. Three damaged Space Colony recordings remain source only.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "KING",
+      "capture": "tape12a",
+      "save": 5,
+      "raw": "versions/v01/05-KING.BAS",
+      "listing": "versions/v01/05-KING.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
