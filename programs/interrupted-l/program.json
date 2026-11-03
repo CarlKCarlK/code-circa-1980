@@ -1,0 +1,36 @@
+{
+  "id": "interrupted-l",
+  "title": "Interrupted L",
+  "description": "Interrupted L. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "INTERRUPTED L SAVE",
+      "capture": "tape14a",
+      "save": 5,
+      "raw": "versions/v01/05-INTERRUPTED-L-SAVE.BAS",
+      "listing": "versions/v01/05-INTERRUPTED-L-SAVE.BAS",
+      "playable": false,
+      "note": "damaged recording. Five-byte header-only save matches original and both channels; no complete record/end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/05-INTERRUPTED-L-SAVE.BAS",
+          "label": "05-INTERRUPTED-L-SAVE.BAS"
+        }
+      ],
+      "startupSource": "\ufffd\ufffd\ufffdL\ufffd",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
