@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape24a",
+      "save": 17,
+      "archive_raw": "tapes/recovered/tape24a/best/17-MATRIX-WORKSPACE-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape24a/best/17-MATRIX-WORKSPACE-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/17-MATRIX-WORKSPACE-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape24a/best/17-MATRIX-WORKSPACE-SAVE02.ASC",
+          "bytes": 1366,
+          "sha256": "0e6726e0cb1337f2c182a35b55c40c0d76d9d8f54b0744aea589e0774066e35c"
+        },
+        {
+          "path": "versions/v02/17-MATRIX-WORKSPACE-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape24a/best/17-MATRIX-WORKSPACE-SAVE02.BAS",
+          "bytes": 1138,
+          "sha256": "a640e0af67c5258e6c7e01db5a03dcc34b31ba0c75c8e2c3c6d9ed97b0b996a3"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "a640e0af67c5258e6c7e01db5a03dcc34b31ba0c75c8e2c3c6d9ed97b0b996a3",
+        "bytes": 1138,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 54,
+        "last": 871,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1136,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "24",
+        "side": "a",
+        "order": "17",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MATRIX WORKSPACE SAVE02",
+        "capture": "tape24a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "663.906",
+        "recovered_bytes": "1138",
+        "source_file": "tapes/recovered/tape24a/best/17-MATRIX-WORKSPACE-SAVE02.ASC",
+        "wav": "tapes/tape24a.wav",
+        "folder": "tapes/recovered/tape24a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
