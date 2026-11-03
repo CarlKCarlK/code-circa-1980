@@ -36,6 +36,32 @@
       "controlSource": [
         "10557 IF INKEY$=\"\" THEN 10557"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "STABLE MATCHING SAVE02",
+      "capture": "tape24a",
+      "save": 7,
+      "raw": "versions/v02/07-STABLE-MATCHING-SAVE02.BAS",
+      "listing": "versions/v02/07-STABLE-MATCHING-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/07-STABLE-MATCHING-SAVE02.ASC",
+          "label": "07-STABLE-MATCHING-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v02/07-STABLE-MATCHING-SAVE02.BAS",
+          "label": "07-STABLE-MATCHING-SAVE02.BAS"
+        }
+      ],
+      "startupSource": "2 P=979\n10 CLEAR 2000\n50 INPUT \"HOW MANY MEN (MUST BE AN EQUAL # OF MEN & WOMEN)\";N\n80 DIM P(N,N,1),N$(N,1)\n100 FOR L=0 TO1:FOR I=1 TO N\n105 CLS\n110 READ N$(I,L)\n115 FOR J=1 TO N\n120 PRINT\"I WANT \";\n125 IF L THEN PRINT\"WOMEN #\"; ELSE PRINT \"MAN #\";\n130 PRINT I;\"'S PREFERENCE FOR \";:IF L THEN PRINT\"MAN #\"; ELSE PRINT\"WOMAN #\";\n135 PRINT J;\":\":READ P(I,J,L)",
+      "controlSource": [
+        "10557 IF INKEY$=\"\" THEN 10557"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
