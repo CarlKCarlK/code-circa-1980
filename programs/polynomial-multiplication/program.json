@@ -1,0 +1,40 @@
+{
+  "id": "polynomial-multiplication",
+  "title": "Polynomial Multiplication",
+  "description": "Polynomial Multiplication. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Polynomial multiplication",
+      "capture": "tape1a",
+      "save": 2,
+      "raw": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.BAS",
+      "listing": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.ASC",
+          "label": "02-POLYNOMIAL-MULTIPLICATION.ASC"
+        },
+        {
+          "path": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.BAS",
+          "label": "02-POLYNOMIAL-MULTIPLICATION.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 PRINT\"THS PROGRAM MULTIPLYS 2 VARIABLES\"\n20 PRINT\"POLYNOMIALS.\"\n30 PRINT\n40 INPUT\"IN THE FIRST POLYNOMIAL WHAT IS THE HIGHEST POWER OF X\";FX\n50 INPUT\"IN THE FIRST POLYNOMIAL WHAT IS THE HIGHEST POWER OF H\";FH\n60 PRINT\n70 INPUT\"IN THE SECOND POLYNOMIAL WHAT IS THE HIGHEST POWERR OF X\";SX\n80 INPUT\"IN THE SECOND POLYNOMIAL WHAT IS THE HIGHEST POWER OF H\";SH\n90 DIM F(FX,FH),S(SX,SH),A(SX+FX,FH+SH)\n95 PRINT\n100 FOR PX=FXTO0 STEP-1",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
