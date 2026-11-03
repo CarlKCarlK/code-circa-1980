@@ -1,0 +1,40 @@
+{
+  "id": "tic-tac-toe-routines",
+  "title": "Tic Tac Toe Routines",
+  "description": "Tic Tac Toe Routines. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TIC TAC TOE ROUTINES",
+      "capture": "tape12b",
+      "save": 10,
+      "raw": "versions/v01/10-TIC-TAC-TOE-ROUTINES.BAS",
+      "listing": "versions/v01/10-TIC-TAC-TOE-ROUTINES.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/10-TIC-TAC-TOE-ROUTINES.ASC",
+          "label": "10-TIC-TAC-TOE-ROUTINES.ASC"
+        },
+        {
+          "path": "versions/v01/10-TIC-TAC-TOE-ROUTINES.BAS",
+          "label": "10-TIC-TAC-TOE-ROUTINES.BAS"
+        }
+      ],
+      "startupSource": "1000 ' FLIP ON HORZ\n1010 FORC=1TO3STEP2\n1020 X$=B$(C,1):B$(C,1)=B$(C,2):B$(C,2)=X$:X$=\"\"\n1030 NEXT\n2000 ' FLIP ON VERT\n2010 FORC=1TO3STEP3\n2020 X$=B$(1,C):B$(1,C)=B$(2,C):B$(C,2)=X$:X$=\"\"\n2028 FORF=1TO3\n2030 NEXT:RETURN\n3000 'PRINT BOARD\n3010 IFM=1THENGOSUB1000ELSE IFM=2THENGOSUB2000ELSEIFM=3THENGOSUB1000:GOSUB2000\n3020 PRINT@0,\"\";",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

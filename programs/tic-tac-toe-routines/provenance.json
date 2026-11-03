@@ -1,0 +1,74 @@
+{
+  "official_title": "Tic Tac Toe Routines",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "tic_tac_toe_routines_p47",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape12b",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape12b/best/10-TIC-TAC-TOE-ROUTINES.BAS",
+      "archive_listing": "tapes/recovered/tape12b/best/10-TIC-TAC-TOE-ROUTINES.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/10-TIC-TAC-TOE-ROUTINES.ASC",
+          "archive_path": "tapes/recovered/tape12b/best/10-TIC-TAC-TOE-ROUTINES.ASC",
+          "bytes": 1645,
+          "sha256": "00e3410591c06eb7364dc54941bd49511a80c4ab2185bb25a303e294e0b98a49"
+        },
+        {
+          "path": "versions/v01/10-TIC-TAC-TOE-ROUTINES.BAS",
+          "archive_path": "tapes/recovered/tape12b/best/10-TIC-TAC-TOE-ROUTINES.BAS",
+          "bytes": 1232,
+          "sha256": "e4731742ff84859fd258ac18923e2a276711eb8488a123db4e2d69310f4bde2a"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "e4731742ff84859fd258ac18923e2a276711eb8488a123db4e2d69310f4bde2a",
+        "bytes": 1232,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 59,
+        "last": 10010,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1230,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "10",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TIC TAC TOE ROUTINES; 59 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "source_start_s": "486.651",
+        "recovered_bytes": "1232",
+        "source_file": "tapes/recovered/tape12b/best/10-TIC-TAC-TOE-ROUTINES.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
