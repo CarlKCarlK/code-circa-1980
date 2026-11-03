@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape15b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape16b",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape16b/best/05-SQUARE-ROOT.BAS",
+      "archive_listing": "tapes/recovered/tape16b/best/05-SQUARE-ROOT.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/05-SQUARE-ROOT.ASC",
+          "archive_path": "tapes/recovered/tape16b/best/05-SQUARE-ROOT.ASC",
+          "bytes": 1049,
+          "sha256": "1b28d9b994c13a8b8cfe8885eb2ca4883bb63f037092aa25e4758e8a63f749ac"
+        },
+        {
+          "path": "versions/v02/05-SQUARE-ROOT.BAS",
+          "archive_path": "tapes/recovered/tape16b/best/05-SQUARE-ROOT.BAS",
+          "bytes": 869,
+          "sha256": "68875ef35c5bd002edc52a8e5f3bdc94e90d88d5db844e1a879aaff3df513a42"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "68875ef35c5bd002edc52a8e5f3bdc94e90d88d5db844e1a879aaff3df513a42",
+        "bytes": 869,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 33,
+        "last": 32000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 867,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "b",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Square Root timed exercise",
+        "capture": "tape16b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "69.228",
+        "recovered_bytes": "869",
+        "source_file": "tapes/recovered/tape16b/best/05-SQUARE-ROOT.ASC",
+        "wav": "tapes/tape16b.wav",
+        "folder": "tapes/recovered/tape16b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",

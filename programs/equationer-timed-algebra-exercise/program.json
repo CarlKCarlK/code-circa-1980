@@ -37,6 +37,33 @@
         "110 IF INKEY$=\"\"THEN110",
         "145 A$=INKEY$:PRINT@50,STRING$(LEN(Q$),\"\u0019\");A$;:T=T+1:PRINT@55,INT(AT-T+1);:IFT>AT THEN 200  ELSEIFA$=\"\"THEN145ELSEIFA$=CHR$(13)THEN150ELSEQ$=Q$+A$:GOTO145"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "Square Root timed exercise",
+      "capture": "tape16b",
+      "save": 5,
+      "raw": "versions/v02/05-SQUARE-ROOT.BAS",
+      "listing": "versions/v02/05-SQUARE-ROOT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/05-SQUARE-ROOT.ASC",
+          "label": "05-SQUARE-ROOT.ASC"
+        },
+        {
+          "path": "versions/v02/05-SQUARE-ROOT.BAS",
+          "label": "05-SQUARE-ROOT.BAS"
+        }
+      ],
+      "startupSource": "2 AT=1000\n5 CLS\n7 GOSUB 20000\n10 READ X1,Y1,X2,Y2:IF X1=-1 THEN X1=OX:Y1=OY\n15 IF X1=-999 THEN 100\n30 OX=X2:OY=Y2\n40 GOSUB1000\n50 GOTO 10\n100 PRINT@448+34,\"SQUARE ROOT\";\n110 IF INKEY$=\"\"THEN110\n120 CLS\n130 N=RND(15)",
+      "controlSource": [
+        "110 IF INKEY$=\"\"THEN110",
+        "145 A$=INKEY$:PRINTA$;:T=T+1:IFT>AT THEN 200  ELSEIFA$=\"\"THEN145ELSEIFA$=CHR$(13)THEN150ELSEQ$=Q$+A$:GOTO145"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
