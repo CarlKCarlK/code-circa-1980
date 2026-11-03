@@ -43,6 +43,39 @@
         "515 FOR I=1TO 500:IF INKEY$=\"\"THEN NEXTI ELSE 700",
         "540 IF INKEY$=\"\"THEN NEXTI:GOTO 490"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "TRS80 PRESENTATION ADVENTURE SAVE02",
+      "capture": "tape23a",
+      "save": 13,
+      "raw": "versions/v02/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.BAS",
+      "listing": "versions/v02/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.ASC",
+          "label": "13-TRS80-PRESENTATION-ADVENTURE-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v02/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.BAS",
+          "label": "13-TRS80-PRESENTATION-ADVENTURE-SAVE02.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 500\n20 CLS\n25 PRINTCHR$(23);\n30 PI=3.14159\n100 FOR A=PI*.8TO PI*2.2 STEP .05\n110 X= COS(A)*24+60\n:Y=-SIN(A)*12+16\n:SET(X+1,Y+4):SET(X,Y+4)\n:NEXT A\n120 FOR X= -40 TO 40:SET (X+60,8+4):NEXTX\n130 FOR A=0 TO PI*.95 STEP .05:X=COS(A)*20+60:Y=-SIN(A)*10+8:SET(X,Y+4):SET(X+1,Y+4):NEXTA\n140 E=406:E$=\" O    O  \":PRINT@E,E$;",
+      "controlSource": [
+        "340 A$=INKEY$+INKEY$",
+        "350 IF INKEY$=\"\"THEN350",
+        "360 FOR X=1TO100:PRINTCHR$(23):PRINT@RND(100),CHR$(32+RND(60));:PRINTCHR$(28):A$=INKEY$+INKEY$:NEXTX:CLS",
+        "410 IF INKEY$=\"\"THEN 400",
+        "430 FOR I=1TO 9:PRINT\"P E R S O N A L\":FOR K=1TO30:PRINT:FORT=1TOI*10:IF INKEY$=\"\"THENNEXT T:NEXTK,I",
+        "510 IF INKEY$=\"\"THENNEXTIELSE 700",
+        "515 FOR I=1TO 500:IF INKEY$=\"\"THEN NEXTI ELSE 700",
+        "540 IF INKEY$=\"\"THEN NEXTI:GOTO 490"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
