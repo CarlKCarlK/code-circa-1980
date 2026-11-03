@@ -1,52 +1,52 @@
 {
-  "version": "v01",
-  "capture": "tape12a",
-  "save": 5,
-  "archive_raw": "tapes/recovered/tape12a/best/05-KING.BAS",
-  "archive_listing": "tapes/recovered/tape12a/best/05-KING.ASC",
+  "version": "v02",
+  "capture": "tape14a",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape14a/best/03-SPACE-COLONY.BAS",
+  "archive_listing": "tapes/recovered/tape14a/best/03-SPACE-COLONY.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/05-KING.BAS",
-      "archive_path": "tapes/recovered/tape12a/best/05-KING.BAS",
-      "bytes": 6490,
-      "sha256": "47bd22cec28eb8caa9d33406c52d9b82caea182b063513bde4d25e3042694d8e"
+      "path": "versions/v02/03-SPACE-COLONY.BAS",
+      "archive_path": "tapes/recovered/tape14a/best/03-SPACE-COLONY.BAS",
+      "bytes": 6800,
+      "sha256": "3493c195607de350ef6f6ec8382d8988075a90711135df45ed402165834266cc"
     },
     {
-      "path": "versions/v01/05-KING.ASC",
-      "archive_path": "tapes/recovered/tape12a/best/05-KING.ASC",
-      "bytes": 7505,
-      "sha256": "e72782bf894a7014bba6ad98161053fbc5662e30d1cfa7ca0a0e4ce632400938"
+      "path": "versions/v02/03-SPACE-COLONY.ASC",
+      "archive_path": "tapes/recovered/tape14a/best/03-SPACE-COLONY.ASC",
+      "bytes": 7933,
+      "sha256": "60491b39bb5f40b49f3e8d85ebadc286808a6b1ab13bcd638889a93692b47c61"
     }
   ],
   "recovery_item": {
-    "lines": 234,
+    "lines": 239,
     "last": 2046,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "47bd22cec28eb8caa9d33406c52d9b82caea182b063513bde4d25e3042694d8e"
+    "sha256": "3493c195607de350ef6f6ec8382d8988075a90711135df45ed402165834266cc"
   },
   "inventory_row": {
-    "tape": "12",
+    "tape": "14",
     "side": "a",
-    "order": "5",
+    "order": "3",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "KING; 234 lines",
-    "capture": "tape12a",
+    "summary": "SPACE COLONY; 239 lines",
+    "capture": "tape14a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
-    "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
-    "source_start_s": "305.001",
-    "recovered_bytes": "6490",
-    "source_file": "tapes/recovered/tape12a/best/05-KING.ASC",
-    "wav": "tapes/tape12a.wav",
-    "folder": "tapes/recovered/tape12a/best",
+    "validation": "Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+    "source_start_s": "216.944",
+    "recovered_bytes": "6800",
+    "source_file": "tapes/recovered/tape14a/best/03-SPACE-COLONY.ASC",
+    "wav": "tapes/tape14a.wav",
+    "folder": "tapes/recovered/tape14a/best",
     "recovery_date": "2026-10-27",
     "recorder_volume": "",
     "next_action": "Execution-test with compatible runtime"
   },
-  "recovery_inventory": "tapes/recovered/tape12a/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape14a/inventory.json",
   "execution_tested": false
 }
