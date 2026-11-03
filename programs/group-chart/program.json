@@ -38,6 +38,32 @@
         "200 A$=INKEY$:IFA$=\"\"THEN200",
         "270 A$=INKEY$:IFA$=\"\"THEN270"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "GROUP CHART",
+      "capture": "tape21b",
+      "save": 10,
+      "raw": "versions/v02/10-GROUP-CHART.BAS",
+      "listing": "versions/v02/10-GROUP-CHART.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/10-GROUP-CHART.ASC",
+          "label": "10-GROUP-CHART.ASC"
+        },
+        {
+          "path": "versions/v02/10-GROUP-CHART.BAS",
+          "label": "10-GROUP-CHART.BAS"
+        }
+      ],
+      "startupSource": "10 'GROUP CHART\n20 DIM M(50):CLS\n30 PRINT\"PUSH SPACE UNTILL YOU SEE: 130 A=M(C)   ,THEN PUSH\"\n40 PRINT\"THE 'I' KEY, NOW PUSH IN THE OPERATION YOU WISH AND\"\n50 PRINT\"PRESS THE ENTER KEY. THEN FINAL STEP IS TO TYPE IN\"\n60 PRINT\"'GOTO 90' AND PRESS ENTER.\"\n70 EDIT130\n90 '\n100 INPUT\"HOW MANY NUMBERS\";N\n110 FORC=1TON:PRINT\"WHAT IS NUMBER\";C;:INPUTM(C):NEXTC\n115 CLS:PRINT\"   \";:FORC=1TON:PRINTM(C);\" \";:NEXTC:PRINT:PRINT\"   ---\";:FORC=1TON:PRINT\"---\";:NEXTC:PRINT\n120 FORC=1TON",
+      "controlSource": [
+        "150 A$=INKEY$:IFA$=\"\"THEN90 ELSE10"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"

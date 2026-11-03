@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape21b",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape21b/best/10-GROUP-CHART.BAS",
+      "archive_listing": "tapes/recovered/tape21b/best/10-GROUP-CHART.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/10-GROUP-CHART.ASC",
+          "archive_path": "tapes/recovered/tape21b/best/10-GROUP-CHART.ASC",
+          "bytes": 591,
+          "sha256": "27c540364db24462798bffd54c889822e5c1eef50a3f110fd09937946356efdd"
+        },
+        {
+          "path": "versions/v02/10-GROUP-CHART.BAS",
+          "archive_path": "tapes/recovered/tape21b/best/10-GROUP-CHART.BAS",
+          "bytes": 495,
+          "sha256": "45f1d59f5ad02aea1b6b10720db5a9c49dc5b77fa70abdecd12a33f250ae04e4"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "45f1d59f5ad02aea1b6b10720db5a9c49dc5b77fa70abdecd12a33f250ae04e4",
+        "bytes": 495,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 16,
+        "last": 150,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 493,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "b",
+        "order": "10",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GROUP CHART",
+        "capture": "tape21b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "330.786",
+        "recovered_bytes": "495",
+        "source_file": "tapes/recovered/tape21b/best/10-GROUP-CHART.ASC",
+        "wav": "tapes/tape21b.wav",
+        "folder": "tapes/recovered/tape21b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
