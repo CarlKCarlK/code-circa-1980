@@ -1,0 +1,26 @@
+{
+  "id": "jaberwocky",
+  "title": "Jaberwocky",
+  "description": "Track a cave monster, fire crossbow stingers, or seal caverns with dynamite.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "One complete captured save. Its room dispatcher and descriptions borrow from Roger Chaffee\u2019s Quest. No direct source date or relative order with Alien is established.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "JABERWOCKY",
+      "capture": "tape20a",
+      "save": 3,
+      "raw": "versions/v01/03-JABERWOCKY.BAS",
+      "listing": "versions/v01/03-JABERWOCKY.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": null
+    }
+  ]
+}
