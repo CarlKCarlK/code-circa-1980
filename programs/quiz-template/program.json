@@ -1,0 +1,40 @@
+{
+  "id": "quiz-template",
+  "title": "Quiz Template",
+  "description": "Quiz Template. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "QUIZ TEMPLATE SAVE01",
+      "capture": "tape21b",
+      "save": 7,
+      "raw": "versions/v01/07-QUIZ-TEMPLATE-SAVE01.BAS",
+      "listing": "versions/v01/07-QUIZ-TEMPLATE-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/07-QUIZ-TEMPLATE-SAVE01.ASC",
+          "label": "07-QUIZ-TEMPLATE-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/07-QUIZ-TEMPLATE-SAVE01.BAS",
+          "label": "07-QUIZ-TEMPLATE-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "10 L=36\n30 DIMA$(100)\n40 RESTORE\n50 Q=Q-1\n60 Q=Q*4\n70 S=S*2\n80 CLEAR(1000)\n90 POKE16553,255\n95 'PLACE NUMBER QUESTION *2 HERE\n100 FORI=1TOL\n110 READA$(I)\n120 NEXTI",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
