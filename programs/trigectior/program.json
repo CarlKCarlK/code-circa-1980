@@ -1,0 +1,25 @@
+{
+  "id": "trigectior",
+  "title": "Trigectior",
+  "description": "Plot a projectile from its speed, launch angle, and screen scale.",
+  "kind": "Science",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v02",
+  "versionOrder": "Inferred from the added screen-scale input, wrapping logic, and flight summary. Both sources credit October 24, 1978; exact save dates and cross-tape chronology are unknown.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TRIGECTIOR PROJECTILE",
+      "capture": "tape21a",
+      "save": 13,
+      "raw": "versions/v01/13-TRIGECTIOR-PROJECTILE.BAS",
+      "listing": "versions/v01/13-TRIGECTIOR-PROJECTILE.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
