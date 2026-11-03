@@ -1,0 +1,40 @@
+{
+  "id": "how-to-interpreter",
+  "title": "How To Interpreter",
+  "description": "How To Interpreter. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "HOW TO INTERPRETER SAVE01",
+      "capture": "tape23a",
+      "save": 4,
+      "raw": "versions/v01/04-HOW-TO-INTERPRETER-SAVE01.BAS",
+      "listing": "versions/v01/04-HOW-TO-INTERPRETER-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-HOW-TO-INTERPRETER-SAVE01.ASC",
+          "label": "04-HOW-TO-INTERPRETER-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/04-HOW-TO-INTERPRETER-SAVE01.BAS",
+          "label": "04-HOW-TO-INTERPRETER-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR 5000:CLS\n10 IN=0:RN=0:CN=0:LN=0:MN=0:VN=0\n15 TC$=\"PLEASE CONTINUE EXPLAINING \"\n20 DIM P$(70),MT$(20),VT$(40)\n100 PRINT\"WHAT ARE YOU GOING TO TELL ME HOW TO DO?\":PRINT\"HOW TO \";:GOSUB 950:T=0:MT$(0)=\"NULL1\"+T$:PRINT:T1=1:T$(0)=T$:GOTO 220\n150 PRINT CHR$(94);:GOSUB 950\n160 IF T$=\"THAT'S ALL\"OR T$=\"THATS ALL\" OR T$=\"THAT IS ALL\"THEN 200 ELSE IF LEFT$(T$,4)=\"MAKE\"THEN 300 ELSE IF LEFT$(T$,7)=\"COMPUTE\" THEN 400 ELSE IF LEFT$(T$,3)=\"NOW\"THEN500 ELSE IF LEFT$(T$,5)=\"FIRST\"THEN 600 ELSE IF LEFT$(T$,5)=\"WHILE\" THEN 700\n170 IF LEFT$(T$,4)=\"LIST\"THEN 800\n180 PRINT:PRINT\"I DON'T UNDERSTAND, PLEASE SAY 'THAT'S ALL' OR 'LIST', OR WRITE A STATMENT WITH 'MAKE','NOW','COMPUTE','FIRST - WHILE - THEN',  OR 'IF - THEN - ELSE'\":PRINT:GOTO 150\n200 PRINT:PRINT\"OK\":PRINT\n210 FOR T=MN TO 0 STEP -1:IF LEFT$(MT$(T),4)<>\"NULL\"THEN NEXT T:GOTO 1100 ELSE T1=VAL( MID$(MT$(T),5,1)):T$(0)=MID$(MT$(T),6)\n220 T$(1)=\"HOW TO \":T$(2)=T$(1)+\"FIND \":T$(3)=T$(2)+\" WHEN \"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
