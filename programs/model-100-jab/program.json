@@ -1,0 +1,42 @@
+{
+  "id": "model-100-jab",
+  "title": "Model 100 JAB",
+  "description": "Model 100 JAB. 4 recovered saves.",
+  "kind": "Archive",
+  "language": "Model 100",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Cassette name J",
+      "capture": "tape2bpartial",
+      "save": 1,
+      "raw": "versions/v01/01-J-BASIC-TAPE-BLOCK.BIN",
+      "listing": "versions/v01/01-J.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-J-BASIC-TAPE-BLOCK.BIN",
+          "label": "01-J-BASIC-TAPE-BLOCK.BIN"
+        },
+        {
+          "path": "versions/v01/01-J.ASC",
+          "label": "01-J.ASC"
+        }
+      ],
+      "startupSource": "10 DEFINT A-Z\n15 SOUND ON\n20 INPUT\"layout\";T:FOR I=1TOT:J=RND(1):NEXT I\n80 WL=10:DP=5\n90  NR=20:NP=3:CC!=.5\n100 DIM NX(NR-1,NP-1),RS(NR-1)\n110 FOR I=0TO NR-1\n115 S=I*RND(1):FORJ=0TO2:NX(I,J)=NX(S,J):NEXT J\n120 T=RND(1)*3\n130 FOR J=0TO2: IF J=T THEN NX(S,1)= (I+1) MOD NR :ELSE NX(S,J)=RND(1)*NR\n140 NEXTJ:NEXT I\n150 HP=RND(1)*NR",
+      "controlSource": [
+        "180 TM=TM+1:SOUND 10000,1:IF HA AND HC THEN GOSUB 200:IF INKEY$<>\"\" THEN GOSUB 1200 :ELSE 185"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
