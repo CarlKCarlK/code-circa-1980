@@ -1,0 +1,40 @@
+{
+  "id": "nim-stone-game",
+  "title": "Nim Stone Game",
+  "description": "Nim Stone Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Nim stone game",
+      "capture": "tape16b",
+      "save": 15,
+      "raw": "versions/v01/15-NIM.BAS",
+      "listing": "versions/v01/15-NIM.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/15-NIM.ASC",
+          "label": "15-NIM.ASC"
+        },
+        {
+          "path": "versions/v01/15-NIM.BAS",
+          "label": "15-NIM.BAS"
+        }
+      ],
+      "startupSource": "2 DEFINT A-Z\n5 CLS\n10 PRINT \"NIM\"\n20 FORX=1 TO 1000:NEXT X\n30 CLS\n40 PRINT \"YOU GO FIRST\"\n50 INPUT X\n60 IF X<>1 AND X<>2 THEN PRINT \"CHEAT!!!\"\n70 Y=Y+X\n80 GOSUB 1000\n90 Z=3-X\n100 Y=Y+Z",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
