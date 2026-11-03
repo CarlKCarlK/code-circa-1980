@@ -1,19 +1,19 @@
 {
-  "version": "v03",
+  "version": "v04",
   "capture": "tape27a",
-  "save": 4,
-  "archive_raw": "tapes/recovered/tape27a/best/04-FRACTION-WORKSHEETS-LATER-SAVE01.BAS",
-  "archive_listing": "tapes/recovered/tape27a/best/04-FRACTION-WORKSHEETS-LATER-SAVE01.ASC",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.BAS",
+  "archive_listing": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
   "imported_files": [
     {
-      "path": "versions/v03/04-FRACTION-WORKSHEETS-LATER-SAVE01.ASC",
-      "archive_path": "tapes/recovered/tape27a/best/04-FRACTION-WORKSHEETS-LATER-SAVE01.ASC",
+      "path": "versions/v04/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
+      "archive_path": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
       "bytes": 2674,
       "sha256": "1c3b72c0032162d47bc5f8e9a46bebc720017d9aa5a1b2494147ea16523a3bde"
     },
     {
-      "path": "versions/v03/04-FRACTION-WORKSHEETS-LATER-SAVE01.BAS",
-      "archive_path": "tapes/recovered/tape27a/best/04-FRACTION-WORKSHEETS-LATER-SAVE01.BAS",
+      "path": "versions/v04/05-FRACTION-WORKSHEETS-LATER-SAVE02.BAS",
+      "archive_path": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.BAS",
       "bytes": 2219,
       "sha256": "12333be4f3f02ea5f78bb82a93b06b4a4e26d32e7586a0d1846fc1198b997596"
     }
@@ -36,19 +36,19 @@
   "inventory_row": {
     "tape": "27",
     "side": "a",
-    "order": "4",
+    "order": "5",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "FRACTION WORKSHEETS LATER SAVE01",
+    "summary": "FRACTION WORKSHEETS LATER SAVE02",
     "capture": "tape27a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC family",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "115.714",
+    "source_start_s": "161.769",
     "recovered_bytes": "2219",
-    "source_file": "tapes/recovered/tape27a/best/04-FRACTION-WORKSHEETS-LATER-SAVE01.ASC",
+    "source_file": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
     "wav": "tapes/tape27a.wav",
     "folder": "tapes/recovered/tape27a",
     "recovery_date": "2026-10-29",
