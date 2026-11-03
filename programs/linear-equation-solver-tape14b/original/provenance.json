@@ -1,19 +1,19 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape14b",
-  "save": 3,
-  "archive_raw": "tapes/recovered/tape14b/best/03-LINEAR-EQUATION-SOLVER.BAS",
-  "archive_listing": "tapes/recovered/tape14b/best/03-LINEAR-EQUATION-SOLVER.ASC",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape14b/best/04-LINEAR-EQUATION-SOLVER-REPEAT.BAS",
+  "archive_listing": "tapes/recovered/tape14b/best/04-LINEAR-EQUATION-SOLVER-REPEAT.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/03-LINEAR-EQUATION-SOLVER.ASC",
-      "archive_path": "tapes/recovered/tape14b/best/03-LINEAR-EQUATION-SOLVER.ASC",
+      "path": "versions/v02/04-LINEAR-EQUATION-SOLVER-REPEAT.ASC",
+      "archive_path": "tapes/recovered/tape14b/best/04-LINEAR-EQUATION-SOLVER-REPEAT.ASC",
       "bytes": 715,
       "sha256": "a50e905440b46e61394e356c5fb25fe202653c0a6556d9e9c2c5bde9ceae826f"
     },
     {
-      "path": "versions/v01/03-LINEAR-EQUATION-SOLVER.BAS",
-      "archive_path": "tapes/recovered/tape14b/best/03-LINEAR-EQUATION-SOLVER.BAS",
+      "path": "versions/v02/04-LINEAR-EQUATION-SOLVER-REPEAT.BAS",
+      "archive_path": "tapes/recovered/tape14b/best/04-LINEAR-EQUATION-SOLVER-REPEAT.BAS",
       "bytes": 567,
       "sha256": "ff8df73226114d7e7c16081a9c2a13118042ff4ddab18022fe272703317e6954"
     }
@@ -36,19 +36,19 @@
   "inventory_row": {
     "tape": "14",
     "side": "b",
-    "order": "3",
+    "order": "4",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "LINEAR EQUATION SOLVER; 25 lines",
+    "summary": "LINEAR EQUATION SOLVER REPEAT; 25 lines",
     "capture": "tape14b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
-    "source_start_s": "181.971",
+    "source_start_s": "200.449",
     "recovered_bytes": "567",
-    "source_file": "tapes/recovered/tape14b/best/03-LINEAR-EQUATION-SOLVER.ASC",
+    "source_file": "tapes/recovered/tape14b/best/04-LINEAR-EQUATION-SOLVER-REPEAT.ASC",
     "wav": "tapes/tape14b.wav",
     "folder": "tapes/recovered/tape14b/best",
     "recovery_date": "2026-10-27",

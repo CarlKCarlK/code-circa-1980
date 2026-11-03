@@ -34,6 +34,30 @@
       ],
       "startupSource": "1 '\n100 INPUT\"WHAT ORDER\";D\n110 DIMA(D,D+1)\n115 DIMB(D+1)\n120 FORX=1TOD:FORY=1TOD+1\n130 PRINT\"WHAT IS A(\"X\",\"Y\")\";:INPUTA$:IFA$=\"H\"THEN4000ELSEA(X,Y)=VAL(A$)\n140 NEXT\n160 NEXT\n170 FORR=1TOD\n180 GOSUB3000:PRINT\n200 F=1/A(R,R):RX=R:GOSUB1000\n210 FORB=1TOD+1:P(B)=A(R,B):NEXT",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "LINEAR EQUATION SOLVER REPEAT",
+      "capture": "tape14b",
+      "save": 4,
+      "raw": "versions/v02/04-LINEAR-EQUATION-SOLVER-REPEAT.BAS",
+      "listing": "versions/v02/04-LINEAR-EQUATION-SOLVER-REPEAT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/04-LINEAR-EQUATION-SOLVER-REPEAT.ASC",
+          "label": "04-LINEAR-EQUATION-SOLVER-REPEAT.ASC"
+        },
+        {
+          "path": "versions/v02/04-LINEAR-EQUATION-SOLVER-REPEAT.BAS",
+          "label": "04-LINEAR-EQUATION-SOLVER-REPEAT.BAS"
+        }
+      ],
+      "startupSource": "1 '\n100 INPUT\"WHAT ORDER\";D\n110 DIMA(D,D+1)\n115 DIMB(D+1)\n120 FORX=1TOD:FORY=1TOD+1\n130 PRINT\"WHAT IS A(\"X\",\"Y\")\";:INPUTA$:IFA$=\"H\"THEN4000ELSEA(X,Y)=VAL(A$)\n140 NEXT\n160 NEXT\n170 FORR=1TOD\n180 GOSUB3000:PRINT\n200 F=1/A(R,R):RX=R:GOSUB1000\n210 FORB=1TOD+1:P(B)=A(R,B):NEXT",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
