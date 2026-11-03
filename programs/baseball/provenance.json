@@ -130,6 +130,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape8a/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape8a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/02-BASEBALL-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
+          "bytes": 4142,
+          "sha256": "6119f70081573e623ece072ede93efcc287183c11098e088a9aa3157aae2ca03"
+        },
+        {
+          "path": "versions/v03/02-BASEBALL-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.BAS",
+          "bytes": 3453,
+          "sha256": "fb3d1c965fa3ad7dfc38850b42fe6472e026cdce6020573ca2fcacb56f97e45a"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "fb3d1c965fa3ad7dfc38850b42fe6472e026cdce6020573ca2fcacb56f97e45a",
+        "bytes": 3453,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 82,
+        "last": 6000,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 3451,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "BASEBALL SAVE2; 82 lines; identical to save 1",
+        "capture": "tape8a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC with graphics extensions",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+        "source_start_s": "78.893",
+        "recovered_bytes": "3453",
+        "source_file": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
+        "wav": "tapes/tape8a.wav",
+        "folder": "tapes/recovered/tape8a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with required BASIC extensions; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape8a/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",

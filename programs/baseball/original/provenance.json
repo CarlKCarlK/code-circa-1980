@@ -1,19 +1,19 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape8a",
-  "save": 1,
-  "archive_raw": "tapes/recovered/tape8a/best/01-BASEBALL.BAS",
-  "archive_listing": "tapes/recovered/tape8a/best/01-BASEBALL.ASC",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.BAS",
+  "archive_listing": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/01-BASEBALL.ASC",
-      "archive_path": "tapes/recovered/tape8a/best/01-BASEBALL.ASC",
+      "path": "versions/v03/02-BASEBALL-SAVE2.ASC",
+      "archive_path": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
       "bytes": 4142,
       "sha256": "6119f70081573e623ece072ede93efcc287183c11098e088a9aa3157aae2ca03"
     },
     {
-      "path": "versions/v02/01-BASEBALL.BAS",
-      "archive_path": "tapes/recovered/tape8a/best/01-BASEBALL.BAS",
+      "path": "versions/v03/02-BASEBALL-SAVE2.BAS",
+      "archive_path": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.BAS",
       "bytes": 3453,
       "sha256": "fb3d1c965fa3ad7dfc38850b42fe6472e026cdce6020573ca2fcacb56f97e45a"
     }
@@ -36,19 +36,19 @@
   "inventory_row": {
     "tape": "8",
     "side": "a",
-    "order": "1",
+    "order": "2",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "BASEBALL; 82 lines",
+    "summary": "BASEBALL SAVE2; 82 lines; identical to save 1",
     "capture": "tape8a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 BASIC with graphics extensions",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
-    "source_start_s": "14.203",
+    "source_start_s": "78.893",
     "recovered_bytes": "3453",
-    "source_file": "tapes/recovered/tape8a/best/01-BASEBALL.ASC",
+    "source_file": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
     "wav": "tapes/tape8a.wav",
     "folder": "tapes/recovered/tape8a/best",
     "recovery_date": "2026-10-26",
