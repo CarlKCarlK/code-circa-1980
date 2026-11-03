@@ -1,0 +1,40 @@
+{
+  "id": "polynomial-interpolation",
+  "title": "Polynomial Interpolation",
+  "description": "Polynomial Interpolation. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "POLYNOMIAL INTERPOLATION",
+      "capture": "tape19b",
+      "save": 3,
+      "raw": "versions/v01/03-POLYNOMIAL-INTERPOLATION.BAS",
+      "listing": "versions/v01/03-POLYNOMIAL-INTERPOLATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-POLYNOMIAL-INTERPOLATION.ASC",
+          "label": "03-POLYNOMIAL-INTERPOLATION.ASC"
+        },
+        {
+          "path": "versions/v01/03-POLYNOMIAL-INTERPOLATION.BAS",
+          "label": "03-POLYNOMIAL-INTERPOLATION.BAS"
+        }
+      ],
+      "startupSource": "10 INPUT\"HOW MANY POINTS\";P\n20 IF P<0 THEN P=-P:RN=1ELSERN=0\n30 R=P\n40 DIM A(P+1,P+1),P(P+1,1)\n50 LX=-1:LY=-1:HX=-1:HY=-1\n60 FOR I=1TOP\n70 PRINT\" POINT #\"I\" (X,Y) \";\n80 INPUT P(I,0),P(I,1)\n90 IF P(I,0)<LX OR LX=-1 THEN LX=P(I,0)\n100 IF P(I,0)>HX OR HX=-1 THEN HX=P(I,0)\n110 IF P(I,1)<LY OR LY=-1 THEN LY=P(I,1)\n120 IF P(I,1)>HY OR HY=-1 THEN HY=P(I,1)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
