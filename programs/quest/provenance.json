@@ -245,6 +245,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape25b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape25b",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.BAS",
+      "archive_listing": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/05-QUEST-SAVE05.ASC",
+          "archive_path": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.ASC",
+          "bytes": 10997,
+          "sha256": "3a0ff5119c201545f49f905bc25982fde1491eb0991bc553a1fc5f3a76c73150"
+        },
+        {
+          "path": "versions/v05/05-QUEST-SAVE05.BAS",
+          "archive_path": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.BAS",
+          "bytes": 9123,
+          "sha256": "bd5d158c65729401fba8b364b56714aaf7bd338f81f52b8cdf76880ed93b2ba4"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "bd5d158c65729401fba8b364b56714aaf7bd338f81f52b8cdf76880ed93b2ba4",
+        "bytes": 9123,
+        "archive_validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 455,
+        "last": 9999,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 9121,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "25",
+        "side": "b",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "QUEST SAVE05",
+        "capture": "tape25b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC family",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "501.388",
+        "recovered_bytes": "9123",
+        "source_file": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.ASC",
+        "wav": "tapes/tape25b.wav",
+        "folder": "tapes/recovered/tape25b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape25b/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",

@@ -1,27 +1,27 @@
 {
-  "version": "v04",
+  "version": "v05",
   "capture": "tape25b",
-  "save": 4,
-  "archive_raw": "tapes/recovered/tape25b/best/04-QUEST-SAVE04.BAS",
-  "archive_listing": "tapes/recovered/tape25b/best/04-QUEST-SAVE04.ASC",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.BAS",
+  "archive_listing": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.ASC",
   "imported_files": [
     {
-      "path": "versions/v04/04-QUEST-SAVE04.ASC",
-      "archive_path": "tapes/recovered/tape25b/best/04-QUEST-SAVE04.ASC",
-      "bytes": 10939,
-      "sha256": "368fdc7d834ba26f510b39569e1bb4fef2506bd183269d8611b403f1a0aee9a9"
+      "path": "versions/v05/05-QUEST-SAVE05.ASC",
+      "archive_path": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.ASC",
+      "bytes": 10997,
+      "sha256": "3a0ff5119c201545f49f905bc25982fde1491eb0991bc553a1fc5f3a76c73150"
     },
     {
-      "path": "versions/v04/04-QUEST-SAVE04.BAS",
-      "archive_path": "tapes/recovered/tape25b/best/04-QUEST-SAVE04.BAS",
-      "bytes": 9080,
-      "sha256": "49da6ba5d3768117c7e680f7117dd9e9947cc3d9690c4de77a540c490c0f5b9e"
+      "path": "versions/v05/05-QUEST-SAVE05.BAS",
+      "archive_path": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.BAS",
+      "bytes": 9123,
+      "sha256": "bd5d158c65729401fba8b364b56714aaf7bd338f81f52b8cdf76880ed93b2ba4"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "49da6ba5d3768117c7e680f7117dd9e9947cc3d9690c4de77a540c490c0f5b9e",
-    "bytes": 9080,
+    "sha256": "bd5d158c65729401fba8b364b56714aaf7bd338f81f52b8cdf76880ed93b2ba4",
+    "bytes": 9123,
     "archive_validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
     "lines": 455,
@@ -30,25 +30,25 @@
       22204
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 9078,
+    "parsed_bytes": 9121,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "25",
     "side": "b",
-    "order": "4",
+    "order": "5",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "QUEST SAVE04",
+    "summary": "QUEST SAVE05",
     "capture": "tape25b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC family",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "352.531",
-    "recovered_bytes": "9080",
-    "source_file": "tapes/recovered/tape25b/best/04-QUEST-SAVE04.ASC",
+    "source_start_s": "501.388",
+    "recovered_bytes": "9123",
+    "source_file": "tapes/recovered/tape25b/best/05-QUEST-SAVE05.ASC",
     "wav": "tapes/tape25b.wav",
     "folder": "tapes/recovered/tape25b",
     "recovery_date": "2026-10-28",
