@@ -20,6 +20,18 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "TRIGECTIOR PROJECTILE",
+      "capture": "tape22a",
+      "save": 4,
+      "raw": "versions/v02/04-TRIGECTIOR-PROJECTILE.BAS",
+      "listing": "versions/v02/04-TRIGECTIOR-PROJECTILE.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": null
     }
   ]
 }
