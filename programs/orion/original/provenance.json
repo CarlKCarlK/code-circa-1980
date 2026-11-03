@@ -1,0 +1,63 @@
+{
+  "version": "v01",
+  "capture": "tape1b",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape1b/best/01-ORION.BAS",
+  "archive_listing": "tapes/recovered/tape1b/best/01-ORION.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/01-ORION.ASC",
+      "archive_path": "tapes/recovered/tape1b/best/01-ORION.ASC",
+      "bytes": 13146,
+      "sha256": "749a84a337d761914e6014035e4a22d1ae2564691631f3041c4cc94105c4caf0"
+    },
+    {
+      "path": "versions/v01/01-ORION.BAS",
+      "archive_path": "tapes/recovered/tape1b/best/01-ORION.BAS",
+      "bytes": 10930,
+      "sha256": "c5c4d7f0e647d18ff305fdc714858004519b39745de51c289f5280fd3d0b3a5c"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "c5c4d7f0e647d18ff305fdc714858004519b39745de51c289f5280fd3d0b3a5c",
+    "bytes": 10930,
+    "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 280,
+    "last": 6020,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 10928,
+    "source_notice_lines": [
+      "10 REM ORION, TRS-80 VERSION-COPYRIGHT 1979, AUTOMATED SIMULATIONS, REV 1",
+      "35 CLS:PRINTCHR$(23):PRINT@208,\"STARFLEET  ORION\":PRINT@658,\"COPYRIGHT 1979\":PRINT@778,\"AUTOMATED  SIMULATIONS\":FORI=1TO1500:NEXTI"
+    ]
+  },
+  "inventory_row": {
+    "tape": "1",
+    "side": "b",
+    "order": "1",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "ORION, Automated Simulations, 1979",
+    "capture": "tape1b",
+    "capture_scope": "full",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "11.240",
+    "recovered_bytes": "10930",
+    "source_file": "tapes/recovered/tape1b/best/01-ORION.ASC",
+    "wav": "tapes/tape1b.wav",
+    "folder": "tapes/recovered/tape1b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape1b/inventory.json",
+  "execution_tested": false
+}
