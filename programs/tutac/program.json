@@ -21,6 +21,17 @@
       "slug": "basic",
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
       "unavailableReason": null
+    },
+    {
+      "id": "v02",
+      "label": "TUTAC COMPUTER V2",
+      "capture": "file8b",
+      "save": 19,
+      "raw": "versions/v02/19-TUTAC-COMPUTER-V2.BAS",
+      "listing": "versions/v02/19-TUTAC-COMPUTER-V2.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Source only: earlier prototype, debugging stops, or unavailable graphics extension. The site offers one selected self-contained reference."
     }
   ]
 }
