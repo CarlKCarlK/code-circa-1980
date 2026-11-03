@@ -60,6 +60,30 @@
       "controlSource": [
         "999 IF INKEY$=\"\"THEN 999ELSE RUN"
       ]
+    },
+    {
+      "id": "v03",
+      "label": "ROOM MAZE GENERATOR SAVE03",
+      "capture": "tape23a",
+      "save": 9,
+      "raw": "versions/v03/09-ROOM-MAZE-GENERATOR-SAVE03.BAS",
+      "listing": "versions/v03/09-ROOM-MAZE-GENERATOR-SAVE03.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v03/09-ROOM-MAZE-GENERATOR-SAVE03.ASC",
+          "label": "09-ROOM-MAZE-GENERATOR-SAVE03.ASC"
+        },
+        {
+          "path": "versions/v03/09-ROOM-MAZE-GENERATOR-SAVE03.BAS",
+          "label": "09-ROOM-MAZE-GENERATOR-SAVE03.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 50:DEFINT A-Z\n20 XM=21:YM=21:PN= (XM/2)*(YM/2):DN=XM*YM:CM=XM*YM/2\n40 DIM B(XM,YM),PS(PN),PE(PN),DP(DN),DX(DN),DY(DN),CX(CM),CY(CM),C1(CM),C2(CM)\n50 RM = XM*YM/21\n55 B$(1)=\"S\"+CHR$(191)+\"S\":B$(0)=CHR$(140)+\"S\"+CHR$(140):B$(3)=\" \"+CHR$(191)+\" \":B$(2)=STRING$(3,CHR$(140)):B$(4)=CHR$(149)+\" \"+CHR$(170):B$(5)=STRING$(3,CHR$(176)):B$(6)=STRING$(3,CHR$(191)):B$(8)=\"   \"\n60 'CLS\n70 FOR RC=1TO RM\n80 XD=RND(4)*2-1:YD=RND(4)*2-1\n90 XS= RND(  (XM-XD-2+1)/2)*2:YS=RND( (YM-YD-2+1)/2)*2\n100 FOR XC=XS+1 TO XS+XD:FOR YC=YS+1 TO YS+YD:B(XC,YC)=0:NEXTYC,XC\n110 FOR XC=XS TO XS+XD+1:B( XC,YS)=-1:B(XC,YS+YD+1)=-1:NEXTXC\n120 FOR YC=YS TO YS+YD+1:B( XS,YC)=-1:B(XS+XD+1,YC)=-1:NEXTYC",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
