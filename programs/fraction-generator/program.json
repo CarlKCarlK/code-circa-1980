@@ -1,0 +1,40 @@
+{
+  "id": "fraction-generator",
+  "title": "Fraction Generator",
+  "description": "Fraction Generator. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "FRACTION GENERATOR",
+      "capture": "tape27a",
+      "save": 1,
+      "raw": "versions/v01/01-FRACTION-GENERATOR.BAS",
+      "listing": "versions/v01/01-FRACTION-GENERATOR.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-FRACTION-GENERATOR.ASC",
+          "label": "01-FRACTION-GENERATOR.ASC"
+        },
+        {
+          "path": "versions/v01/01-FRACTION-GENERATOR.BAS",
+          "label": "01-FRACTION-GENERATOR.BAS"
+        }
+      ],
+      "startupSource": "100 D=RND(RND(100))\n110 N=RND(RND(100))\n130 R=RND(RND(13))\n140 D=D*R:IFD>100THEN100\n150 N=N*R\n160 N1=RND(N)\n170 N2=N-N1\n175 D1=D:D2=D\n177 IFN1>=D1ORN2>=D2ORN1=0ORN2=0THEN100\n180 H=N1:IFN2>N1THENH=N2\n190 FORC=1TOH\n200 IFN1/C=INT(N1/C)ANDD1/C=INT(D1/C)THENN1=N1/C:D1=D1/C",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
