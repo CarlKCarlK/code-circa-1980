@@ -1,0 +1,40 @@
+{
+  "id": "dnd-reference",
+  "title": "D&D Reference",
+  "description": "D&D Reference. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "DND REFERENCE V1",
+      "capture": "tape19a",
+      "save": 9,
+      "raw": "versions/v01/09-DND-REFERENCE-V1.BAS",
+      "listing": "versions/v01/09-DND-REFERENCE-V1.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/09-DND-REFERENCE-V1.ASC",
+          "label": "09-DND-REFERENCE-V1.ASC"
+        },
+        {
+          "path": "versions/v01/09-DND-REFERENCE-V1.BAS",
+          "label": "09-DND-REFERENCE-V1.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR 700\n10 INPUT A$\n20 READ B$\n25 PRINTB$\n30 FOR I=1TOLEN(B$)-LEN(A$)\n40 IF MID$(B$,I,LEN(A$))=A$ THENPRINTB$ELSE NEXTI\n50 GOTO 20\n1000 DATA\"@SELECTING CHARACTORS\nTOTAL THE ROLL OF 3 6-SIDED DICE FOR EACH OF THE FOLLOWING\",STRENGTH,INTELLIGENCE,WISDOM,CONSTITUTION,DEXTERITY,CHARISMA\n1010 DATA@DECIDE CLASS,FIGHTERS - STRENTH OF 9 -12 AVERAGE 13+ VERY GOOD,MAGIC USERS - INTELLIGENCE OF 13+,CLERICS - WISDOM 13+,THIEVES - DEXTERITY 13+\n1020 DATA@DECIDE RACE,HALFINGS DEXTERITY 9+ OR COSTITUTION 9+,DWARFS COSTITUTION 9+\n1030 DATA@YOU CAN AJUST YOUR ABILITY SCORES (BUT NEVER BELOW 9),MAGIC USERS & CLERICS -- ADD 1 TO (INTELLIGENCE / WISDOM )FOR",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
