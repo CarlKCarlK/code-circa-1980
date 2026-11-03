@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape10b",
+      "save": 15,
+      "archive_raw": "tapes/recovered/tape10b/best/15-RACE.BAS",
+      "archive_listing": "tapes/recovered/tape10b/best/15-RACE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/15-RACE.ASC",
+          "archive_path": "tapes/recovered/tape10b/best/15-RACE.ASC",
+          "bytes": 3178,
+          "sha256": "011cd591d5137132dfea5f1470c8209aba902c09dddff60bd724bde9f0792470"
+        },
+        {
+          "path": "versions/v02/15-RACE.BAS",
+          "archive_path": "tapes/recovered/tape10b/best/15-RACE.BAS",
+          "bytes": 2626,
+          "sha256": "8e444dccda3e2e653e89674c30f063e533c59d4ba5c051b1e79eb51d40e9a034"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "8e444dccda3e2e653e89674c30f063e533c59d4ba5c051b1e79eb51d40e9a034",
+        "bytes": 2626,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 65,
+        "last": 5150,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2624,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "10",
+        "side": "b",
+        "order": "15",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "RACE; 65 lines",
+        "capture": "tape10b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be needed",
+        "status": "validated source; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+        "source_start_s": "649.515",
+        "recovered_bytes": "2626",
+        "source_file": "tapes/recovered/tape10b/best/15-RACE.ASC",
+        "wav": "tapes/tape10b.wav",
+        "folder": "tapes/recovered/tape10b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
