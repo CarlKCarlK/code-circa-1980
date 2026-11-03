@@ -65,6 +65,71 @@
       },
       "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape25a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape25a/partial/05-REFRACTION-TRUNCATED-SAVE-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape25a/partial/05-REFRACTION-TRUNCATED-SAVE-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape25a/partial/05-REFRACTION-TRUNCATED-SAVE-PREFIX.ASC",
+          "bytes": 1196,
+          "sha256": "9092b7dc88dad87e005d7147d9263bcb3bc6ede8362fe6e44bb33146b5210cc6"
+        },
+        {
+          "path": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape25a/partial/05-REFRACTION-TRUNCATED-SAVE-PREFIX.BIN",
+          "bytes": 1066,
+          "sha256": "a5c063d01294b427c7793ab3aa4abf8a78fe310ba72bd13e725635197a0e2f58"
+        },
+        {
+          "path": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-RAW.BAS",
+          "archive_path": "tapes/recovered/tape25a/partial/05-REFRACTION-TRUNCATED-SAVE-RAW.BAS",
+          "bytes": 1078,
+          "sha256": "0cbbab3a8bf39eb8d9cf772e2ceb17ed2bba3a88161a1a3632afcc36be42ae96"
+        },
+        {
+          "path": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape25a/partial/05-REFRACTION-TRUNCATED-SAVE-UNCERTAIN.ASC",
+          "bytes": 1213,
+          "sha256": "ad6887d4566db51421d5d07e9e4aad0be3cf6e60067d354e1f51ebc035b5ba99"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "a5c063d01294b427c7793ab3aa4abf8a78fe310ba72bd13e725635197a0e2f58",
+        "bytes": 1066,
+        "archive_validation": "Truncated; untouched valid prefix [0,1066); 29 lines; pointer base 22204; cross-channel confirmed [0,1066); no synthetic end marker",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "25",
+        "side": "a",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "REFRACTION TRUNCATED SAVE",
+        "capture": "tape25a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC family",
+        "status": "truncated; valid prefix only; runtime untested",
+        "validation": "Truncated; untouched valid prefix [0,1066); 29 lines; pointer base 22204; cross-channel confirmed [0,1066); no synthetic end marker",
+        "source_start_s": "110.614",
+        "recovered_bytes": "1078",
+        "source_file": "tapes/recovered/tape25a/partial/05-REFRACTION-TRUNCATED-SAVE-PREFIX.ASC",
+        "wav": "tapes/tape25a.wav",
+        "folder": "tapes/recovered/tape25a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Better capture/source may improve truncated stream; see report"
+      },
+      "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",

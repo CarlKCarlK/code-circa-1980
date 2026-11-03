@@ -36,6 +36,40 @@
       "controlSource": [
         "120 IFINKEY$=\"\"THEN120  ELSECLS"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "REFRACTION TRUNCATED SAVE",
+      "capture": "tape25a",
+      "save": 5,
+      "raw": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-PREFIX.BIN",
+      "listing": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-PREFIX.ASC",
+      "playable": false,
+      "note": "truncated; valid prefix only; runtime untested. Truncated; untouched valid prefix [0,1066); 29 lines; pointer base 22204; cross-channel confirmed [0,1066); no synthetic end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-PREFIX.ASC",
+          "label": "05-REFRACTION-TRUNCATED-SAVE-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-PREFIX.BIN",
+          "label": "05-REFRACTION-TRUNCATED-SAVE-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-RAW.BAS",
+          "label": "05-REFRACTION-TRUNCATED-SAVE-RAW.BAS"
+        },
+        {
+          "path": "versions/v02/05-REFRACTION-TRUNCATED-SAVE-UNCERTAIN.ASC",
+          "label": "05-REFRACTION-TRUNCATED-SAVE-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 CLS\n20 'REFRACTION\n30 PRINT:PRINT:PRINT:PRINT\n40 PRINT\"WELCOME, THIS IS A SIMULATION OF LIGHT THOUGH TWO MEDIUMS.\"\n50 PRINT\"THEN 'N' TO THE RIGHT OF EACH MEDIUM IS IT'S INDEX OF\"\n60 PRINT\"REFRACTION. USING THESE NUMBERS YOU SHOULD BE ABLE HIT THE\"\n70 PRINT\"TARGET.  THE BLANK SPOT ON THE BOTTOM IS WHERE YOUR LIGHT\"\n80 PRINT\"BEAM WILL START, THE BLANK SPOT ON TOP IS THE TARGET.\"\n90 PRINT\"THE MEDIUM WITH THE INDEX OF 1.00029 IS AIR. THE OTHER\"\n100 PRINT\"VARIES FROM ONE TO THREE (SPACE HAS INDEX OF ONE, DIAMONDS HAVE AN INDEX OF 2.4195).  YOU SHOULD BE ABLE TO GET ANY TARGET\"\n110 PRINT\"IN THREE TRIES. GOOD LUCK. (PRESS ANY BUTTON)\n120 IFINKEY$=\"\"THEN120  ELSECLS",
+      "controlSource": [
+        "120 IFINKEY$=\"\"THEN120  ELSECLS"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
