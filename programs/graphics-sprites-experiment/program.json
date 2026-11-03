@@ -1,0 +1,40 @@
+{
+  "id": "graphics-sprites-experiment",
+  "title": "Graphics Sprites Experiment",
+  "description": "Graphics Sprites Experiment. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GRAPHICS SPRITES EXPERIMENT",
+      "capture": "tape25a",
+      "save": 2,
+      "raw": "versions/v01/02-GRAPHICS-SPRITES-EXPERIMENT.BAS",
+      "listing": "versions/v01/02-GRAPHICS-SPRITES-EXPERIMENT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/02-GRAPHICS-SPRITES-EXPERIMENT.ASC",
+          "label": "02-GRAPHICS-SPRITES-EXPERIMENT.ASC"
+        },
+        {
+          "path": "versions/v01/02-GRAPHICS-SPRITES-EXPERIMENT.BAS",
+          "label": "02-GRAPHICS-SPRITES-EXPERIMENT.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 LINE(0,0)-(7,2),SET,BF:LINE(2,0)-(5,2),RESET,B:RESET(1,1):RESET(6,1)\n30 DIM A%(2):GET@(0,0)-(7,2),G,A%\n40 CLS\n50 PRINT@0,CHR$(179);CHR$(140);CHR$(166);CHR$(145)\n60 DIMB%(2):GET@(0,0)-(6,2),G,B%\n70 CLS\n80 LINE(0,0)-(6,2),SET,B\n90 DIMC%(2):GET@(0,0)-(6,2),G,C%\n100 CLS\n110 LINE(3,0)-(3,2),SET:LINE(0,1)-(7,1),SET:LINE(4,0)-(4,2),SET\n120 DIMD%(2):GET@(0,0)-(7,2),G,D%",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
