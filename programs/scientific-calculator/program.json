@@ -1,0 +1,42 @@
+{
+  "id": "scientific-calculator",
+  "title": "Scientific Calculator",
+  "description": "Scientific Calculator. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SCIENTIFIC CALCULATOR",
+      "capture": "tape9b",
+      "save": 12,
+      "raw": "versions/v01/12-SCIENTIFIC-CALCULATOR.BAS",
+      "listing": "versions/v01/12-SCIENTIFIC-CALCULATOR.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/12-SCIENTIFIC-CALCULATOR.ASC",
+          "label": "12-SCIENTIFIC-CALCULATOR.ASC"
+        },
+        {
+          "path": "versions/v01/12-SCIENTIFIC-CALCULATOR.BAS",
+          "label": "12-SCIENTIFIC-CALCULATOR.BAS"
+        }
+      ],
+      "startupSource": "1 CLS\n2 POKE16553,255\n5 READB$:IFB$=\"DONE\"THENRESTORE:GOTO10ELSEREADR$:PRINTTAB(35)CHR$(191);\" \";B$TAB(50)R$:GOTO5\n9 CLS\n10 '\n100 A$=INKEY$:IFA$=\"\"THEN100\n105 IFA$=\" \"THENA$=\"=\"\n110 PRINTA$;\n120 IFVAL(A$)<>0ORA$=\"0\"ORA$=\".\"ORA$=\"-\"THEN T$=T$+A$:F=1:GOTO140ELSEM=VAL(T$):T$=\"\":IFA$=\"=\"THEN300ELSEO$=A$:IFF<>1THENM=P\n130 M1=M:M=0\n140 GOTO100\n300 IFO$=\"+\"THENP=M1+M",
+      "controlSource": [
+        "100 A$=INKEY$:IFA$=\"\"THEN100"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
