@@ -1,0 +1,44 @@
+{
+  "id": "group-chart",
+  "title": "Group Chart",
+  "description": "Group Chart. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GROUP CHART",
+      "capture": "tape21a",
+      "save": 3,
+      "raw": "versions/v01/03-GROUP-CHART.BAS",
+      "listing": "versions/v01/03-GROUP-CHART.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-GROUP-CHART.ASC",
+          "label": "03-GROUP-CHART.ASC"
+        },
+        {
+          "path": "versions/v01/03-GROUP-CHART.BAS",
+          "label": "03-GROUP-CHART.BAS"
+        }
+      ],
+      "startupSource": "10 'GROUP CHART\n20 DIM M(50):CLS\n30 PRINT\"PUSH SPACE UNTILL YOU SEE: 2000 X3=X1      ,THEN PUSH\"\n40 PRINT\"THE 'I' KEY, NOW PUSH IN THE OPERATION YOU WISH AND\"\n50 PRINT\"PRESS THE ENTER KEY. THEN FINAL STEP IS TO TYPE IN\"\n60 PRINT\"'GOTO 90' AND PRESS ENTER.\"\n70 EDIT2000\n90 '\n100 INPUT\"HOW MANY NUMBERS\";N\n110 FORC=1TON:PRINT\"WHAT IS NUMBER\";C;:INPUTM(C):NEXTC\n115 CLS:PRINT\"   \";:FORC=1TON:PRINTM(C);\" \";:NEXTC:PRINT:PRINT\"   ---\";:FORC=1TON:PRINT\"---\";:NEXTC:PRINT\n120 FORC=1TON",
+      "controlSource": [
+        "160 A$=INKEY$:IFA$=\"\"THEN160",
+        "200 A$=INKEY$:IFA$=\"\"THEN200",
+        "270 A$=INKEY$:IFA$=\"\"THEN270"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

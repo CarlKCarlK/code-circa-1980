@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape21a",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape21a/best/03-GROUP-CHART.BAS",
+  "archive_listing": "tapes/recovered/tape21a/best/03-GROUP-CHART.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/03-GROUP-CHART.ASC",
+      "archive_path": "tapes/recovered/tape21a/best/03-GROUP-CHART.ASC",
+      "bytes": 1521,
+      "sha256": "266f25cb69d82a109d30666e2a86f9231fbf7fe30c5a1fd9cdca8d126ee4496b"
+    },
+    {
+      "path": "versions/v01/03-GROUP-CHART.BAS",
+      "archive_path": "tapes/recovered/tape21a/best/03-GROUP-CHART.BAS",
+      "bytes": 1240,
+      "sha256": "6a9e6b9f77f8668f1e3f6db83188a8f011ae31d15f7c840bc1a683e1592e0502"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "6a9e6b9f77f8668f1e3f6db83188a8f011ae31d15f7c840bc1a683e1592e0502",
+    "bytes": 1240,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 29,
+    "last": 2000,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1238,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "21",
+    "side": "a",
+    "order": "3",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "GROUP CHART",
+    "capture": "tape21a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "65.931",
+    "recovered_bytes": "1240",
+    "source_file": "tapes/recovered/tape21a/best/03-GROUP-CHART.ASC",
+    "wav": "tapes/tape21a.wav",
+    "folder": "tapes/recovered/tape21a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+  "execution_tested": false
+}
