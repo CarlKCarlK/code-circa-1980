@@ -62,6 +62,32 @@
       "controlSource": [
         "196 A$=INKEY$:IFA$=\"\"THEN196ELSEPRINT"
       ]
+    },
+    {
+      "id": "v03",
+      "label": "MARKET V2",
+      "capture": "tape12a",
+      "save": 7,
+      "raw": "versions/v03/07-MARKET-V2.BAS",
+      "listing": "versions/v03/07-MARKET-V2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested; raw trailer preserved after BASIC end",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v03/07-MARKET-V2.ASC",
+          "label": "07-MARKET-V2.ASC"
+        },
+        {
+          "path": "versions/v03/07-MARKET-V2.BAS",
+          "label": "07-MARKET-V2.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR300\n20 POKE16553,255\n50 CLS:PRINT:PRINT:PRINT\"                       WELCOME TO MARKET\"\n60 PRINT:PRINT\"           THIS A SIMULATION BEWEEN TWO COMPANIES\"\n70 PRINT:PRINT:PRINT:PRINT\n130 DIMC(2),I(2),T(2),A(2),L(2),D(2),P(2),V(2),W(2),B(2),E(5)\n135 PRINT\"DO YOU WHAT INSTRUCTIONS\";\n140 INPUTH$\n145 READK2,N,K,K3,C(1),C(2),I(1),I(2),F,U,R,G1,G2,G3,M1,K4\n150 Q=0\n151 W2=0\n152 W4=0",
+      "controlSource": [
+        "196 A$=INKEY$:IFA$=\"\"THEN196ELSEPRINT"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"

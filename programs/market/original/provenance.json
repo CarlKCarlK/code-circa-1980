@@ -1,54 +1,60 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape12a",
-  "save": 4,
-  "archive_raw": "tapes/recovered/tape12a/partial/04-MARKET-DAMAGED-RECORDING.BAS",
-  "archive_listing": "tapes/recovered/tape12a/partial/04-MARKET-DAMAGED-RECORDING.ASC",
+  "save": 7,
+  "archive_raw": "tapes/recovered/tape12a/best/07-MARKET-V2.BAS",
+  "archive_listing": "tapes/recovered/tape12a/best/07-MARKET-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/04-MARKET-DAMAGED-RECORDING.ASC",
-      "archive_path": "tapes/recovered/tape12a/partial/04-MARKET-DAMAGED-RECORDING.ASC",
-      "bytes": 2796,
-      "sha256": "3b849fe21dd4b96a8def4716f85639a04211243b6d6fe734d09f0ffebded0be3"
+      "path": "versions/v03/07-MARKET-V2.ASC",
+      "archive_path": "tapes/recovered/tape12a/best/07-MARKET-V2.ASC",
+      "bytes": 6663,
+      "sha256": "64df30c50e545b0e63742fcb1e1f40b00175afae772eb40eff9d4def116bf136"
     },
     {
-      "path": "versions/v02/04-MARKET-DAMAGED-RECORDING.BAS",
-      "archive_path": "tapes/recovered/tape12a/partial/04-MARKET-DAMAGED-RECORDING.BAS",
-      "bytes": 5596,
-      "sha256": "3b3d5d8d20d4dbcd619e5df87024665bd6dc02839cbb7fd22ef30ad6d179c178"
+      "path": "versions/v03/07-MARKET-V2.BAS",
+      "archive_path": "tapes/recovered/tape12a/best/07-MARKET-V2.BAS",
+      "bytes": 5828,
+      "sha256": "1cb5d7fd334f1c7e00b855d93076cae1bccd696df50d175d8326ef17e21ff013"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "3b3d5d8d20d4dbcd619e5df87024665bd6dc02839cbb7fd22ef30ad6d179c178",
-    "bytes": 5596,
-    "archive_validation": "109-line exact 2375-byte prefix through 690; matching earlier save and three raw decodes; remainder structurally damaged",
+    "sha256": "1cb5d7fd334f1c7e00b855d93076cae1bccd696df50d175d8326ef17e21ff013",
+    "bytes": 5828,
+    "archive_validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested; raw trailer preserved after BASIC end",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "structure_conflict": true,
+    "lines": 271,
+    "last": 1510,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": false,
+    "parsed_bytes": 5597,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "12",
     "side": "a",
-    "order": "4",
+    "order": "7",
     "type": "BASIC",
-    "recovery%": "",
-    "summary": "MARKET DAMAGED RECORDING; 109 lines",
+    "recovery%": "100",
+    "summary": "MARKET V2; 271 lines",
     "capture": "tape12a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
-    "status": "damaged MARKET recording",
-    "validation": "109-line exact 2375-byte prefix through 690; matching earlier save and three raw decodes; remainder structurally damaged",
-    "source_start_s": "208.035",
-    "recovered_bytes": "5596",
-    "source_file": "tapes/recovered/tape12a/partial/04-MARKET-DAMAGED-RECORDING.ASC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested; raw trailer preserved after BASIC end",
+    "source_start_s": "461.993",
+    "recovered_bytes": "5828",
+    "source_file": "tapes/recovered/tape12a/best/07-MARKET-V2.ASC",
     "wav": "tapes/tape12a.wav",
-    "folder": "tapes/recovered/tape12a/partial",
+    "folder": "tapes/recovered/tape12a/best",
     "recovery_date": "2026-10-27",
     "recorder_volume": "",
-    "next_action": "Compare another capture if needed; earlier complete MARKET save exists"
+    "next_action": "Execution-test with compatible runtime"
   },
-  "recovery_inventory": "tapes/recovered/tape12a/partial/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape12a/best/inventory.json",
   "execution_tested": false
 }
