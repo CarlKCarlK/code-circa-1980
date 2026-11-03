@@ -1,0 +1,36 @@
+{
+  "id": "star-trek-level-i",
+  "title": "Star Trek Level I",
+  "description": "Star Trek Level I. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I Level I BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "STAR TREK LEVEL I",
+      "capture": "tape14b",
+      "save": 1,
+      "raw": "versions/v01/01-STAR-TREK-LEVEL-I.ASC",
+      "listing": "versions/v01/01-STAR-TREK-LEVEL-I.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Address length, ordered CR-terminated records, additive checksum; exact left/right agreement; runtime untested",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-STAR-TREK-LEVEL-I.ASC",
+          "label": "01-STAR-TREK-LEVEL-I.ASC"
+        }
+      ],
+      "startupSource": "1 REM STAR TREK REVISED BY ANTHONY D'AGOSTA FOR THE TRS-80\n5 P.\"THE PLAYER, AS CAPTAIN OF THE ENTERPRISE ALTERNATES\"\n10 P.\"MOVES WITH THE KLINGON BATTLE CRUISER. AFTER A READOUT\"\n15 P.\"OF THE RANGE AND BEARING TO THE ENEMY VESSEL, THE PLAY-\"\n20 P.\"ER IS QUIERIED FOR HIS COMMAND.\":P.\" \"\n25 P.\"PHASORS HAVE RANGE FROM 0 TO 5 MILLION KILOMETERS\"\n26 P.\"(5E+06 KM). PHOTON TORPEDOES MAY BE USED FOR RANGES\"\n27 P.\"2E+06 KM AND GREATER.\":P.\" \"\n30 P.\"FOWARD PHASORS AND PHOTON TORPEDOES MAY BE USED FOR \"\n35 P.\"BEARINGS 0 THRU 90 DEGREES. REAR PHASORS MAY BE USED\"\n40 P.\"FOR BEARINGS 90 THRU 180 DEGREES.\":P.\" \":P.\" \"\n50 F.I=1TO13:A(I)=1:N.I:A(7)=0:A(14)=0:P.\"ENTER STARDATE\"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
