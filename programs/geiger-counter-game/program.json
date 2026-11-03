@@ -1,0 +1,43 @@
+{
+  "id": "geiger-counter-game",
+  "title": "Geiger Counter Game",
+  "description": "Geiger Counter Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC with graphics extensions",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GEIGER COUNTER GAME",
+      "capture": "file8b",
+      "save": 2,
+      "raw": "versions/v01/02-GEIGER-COUNTER-GAME.BAS",
+      "listing": "versions/v01/02-GEIGER-COUNTER-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-GEIGER-COUNTER-GAME.ASC",
+          "label": "02-GEIGER-COUNTER-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/02-GEIGER-COUNTER-GAME.BAS",
+          "label": "02-GEIGER-COUNTER-GAME.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 PX=RND(128)-1:TX=RND(128)-1:TY=RND(45)-1+3:PY=RND(48)-1\n30 S=1\n35 ON ERROR GOTO 3000\n40 PRINT\"USE OF A GIGER COUNTER\"\n50 PRINT\"RADIOACTIVE WASTE HAS BEEN DUMPED IN THIS AREA. YOUR JOB IS TO  FIND IT.   YOU HAVE ONLY YOUR GIGER COUNTER. WHEN YOU THINK YOU HAVE FOUND IT PUSH THE SPACE BAR.\n60 PRINT\"YOU HAVE OTHER CONTROLS.  THE (CLEAR) BUTTON WILL CLEAR AWAY    YOUR OLD PATH.  YOU CONTROL YOUR MOVEMENT WITH THE BUTTONS      Q,W,E,  A,S,D, Z,X,C   THE S IS STAND STILL THE W IS UP , D     RIGHT, AND SO ON.\"\n70 PRINT\"YOU ALSO CONTROL THE COUNTER WITH THE BUTTONS 1-9.    9 IS THE  MOST SENSEATIVE. 1 IS ONLY EFFECTIVE VERY CLOSE. IF A BUTTON, 8  FOR EXAMPLE CLICKS EVERY SECOND THE WASTE IS WITHIN A 8 YARD    (BLOCK) RADIUS.\"\n80 PRINT\"GOOD LUCK\"\n90 PRINT:PRINT:PRINT\"PRESS (SPACE) WHEN READY\";\n95 IF INKEY$=\"\"THENOUT255,1:OUT255,2:OUT255,3:GOTO95ELSECLS:PRINT@35,\"SETTING   \";S:PRINT@0,\"tIME (SEC)\";\n100 A$=INKEY$",
+      "controlSource": [
+        "95 IF INKEY$=\"\"THENOUT255,1:OUT255,2:OUT255,3:GOTO95ELSECLS:PRINT@35,\"SETTING   \";S:PRINT@0,\"tIME (SEC)\";",
+        "100 A$=INKEY$"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

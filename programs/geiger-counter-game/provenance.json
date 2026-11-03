@@ -1,0 +1,74 @@
+{
+  "official_title": "Geiger Counter Game",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "geiger_counter_game_p83",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "file8b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/file8b/best/02-GEIGER-COUNTER-GAME.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/02-GEIGER-COUNTER-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-GEIGER-COUNTER-GAME.ASC",
+          "archive_path": "tapes/recovered/file8b/best/02-GEIGER-COUNTER-GAME.ASC",
+          "bytes": 1984,
+          "sha256": "a949566f91a6bbac2a07af595f1f2e80ab8d613c1cd7f05280d0e8c3d0bb1113"
+        },
+        {
+          "path": "versions/v01/02-GEIGER-COUNTER-GAME.BAS",
+          "archive_path": "tapes/recovered/file8b/best/02-GEIGER-COUNTER-GAME.BAS",
+          "bytes": 1699,
+          "sha256": "14d2a8e67f50dcba321041b7d69be4c37ba0ee3cb6e207e6897b5f7aebc5efd6"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "14d2a8e67f50dcba321041b7d69be4c37ba0ee3cb6e207e6897b5f7aebc5efd6",
+        "bytes": 1699,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 40,
+        "last": 3010,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1697,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GEIGER COUNTER GAME; 40 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC with graphics extensions",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "41.468",
+        "recovered_bytes": "1699",
+        "source_file": "tapes/recovered/file8b/best/02-GEIGER-COUNTER-GAME.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
