@@ -99,6 +99,30 @@
         "200 A$=INKEY$",
         "2015 A$=INKEY$:IFA$=\"\"THEN2020ELSEIFA$=\"@\"THENO=-1ELSEIFA$=CHR$(8)THENO=0ELSEIFA$=CHR$(9)THENO=1"
       ]
+    },
+    {
+      "id": "v04",
+      "label": "BASEBALL FRAGMENT",
+      "capture": "tape8a",
+      "save": 3,
+      "raw": "versions/v04/03-BASEBALL-FRAGMENT.BAS",
+      "listing": "versions/v04/03-BASEBALL-FRAGMENT.ASC",
+      "playable": false,
+      "note": "damaged / partial BASIC. Five complete prefix lines through 18; exact first 74 bytes listed; no normal end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v04/03-BASEBALL-FRAGMENT.ASC",
+          "label": "03-BASEBALL-FRAGMENT.ASC"
+        },
+        {
+          "path": "versions/v04/03-BASEBALL-FRAGMENT.BAS",
+          "label": "03-BASEBALL-FRAGMENT.BAS"
+        }
+      ],
+      "startupSource": "10 'BASEBALL\n15 PI=-3.14159\n16 IN=1:QW=1\n17 TT=1\n18 BA=PI+PI/2",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

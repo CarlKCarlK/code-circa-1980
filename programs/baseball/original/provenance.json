@@ -1,60 +1,54 @@
 {
-  "version": "v03",
+  "version": "v04",
   "capture": "tape8a",
-  "save": 2,
-  "archive_raw": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.BAS",
-  "archive_listing": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape8a/partial/03-BASEBALL-FRAGMENT.BAS",
+  "archive_listing": "tapes/recovered/tape8a/partial/03-BASEBALL-FRAGMENT.ASC",
   "imported_files": [
     {
-      "path": "versions/v03/02-BASEBALL-SAVE2.ASC",
-      "archive_path": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
-      "bytes": 4142,
-      "sha256": "6119f70081573e623ece072ede93efcc287183c11098e088a9aa3157aae2ca03"
+      "path": "versions/v04/03-BASEBALL-FRAGMENT.ASC",
+      "archive_path": "tapes/recovered/tape8a/partial/03-BASEBALL-FRAGMENT.ASC",
+      "bytes": 63,
+      "sha256": "00bea2a3fc44a54b784c845ee9aef7d365f6dd53a432b9c2541969800bee58a2"
     },
     {
-      "path": "versions/v03/02-BASEBALL-SAVE2.BAS",
-      "archive_path": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.BAS",
-      "bytes": 3453,
-      "sha256": "fb3d1c965fa3ad7dfc38850b42fe6472e026cdce6020573ca2fcacb56f97e45a"
+      "path": "versions/v04/03-BASEBALL-FRAGMENT.BAS",
+      "archive_path": "tapes/recovered/tape8a/partial/03-BASEBALL-FRAGMENT.BAS",
+      "bytes": 741,
+      "sha256": "7306e400230b9c25f2bdf5216c1df45afd0d97f24256c8f2397f657490f0fb93"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "fb3d1c965fa3ad7dfc38850b42fe6472e026cdce6020573ca2fcacb56f97e45a",
-    "bytes": 3453,
-    "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+    "sha256": "7306e400230b9c25f2bdf5216c1df45afd0d97f24256c8f2397f657490f0fb93",
+    "bytes": 741,
+    "archive_validation": "Five complete prefix lines through 18; exact first 74 bytes listed; no normal end marker",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 82,
-    "last": 6000,
-    "pointer_bases": [
-      22204
-    ],
-    "normal_end_marker": true,
-    "parsed_bytes": 3451,
+    "structure_conflict": true,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "8",
     "side": "a",
-    "order": "2",
+    "order": "3",
     "type": "BASIC",
-    "recovery%": "100",
-    "summary": "BASEBALL SAVE2; 82 lines; identical to save 1",
+    "recovery%": "",
+    "summary": "BASEBALL FRAGMENT; 5 lines",
     "capture": "tape8a",
     "capture_scope": "unknown",
     "baud": "500",
-    "platform": "TRS-80 BASIC with graphics extensions",
-    "status": "validated payload; runtime untested",
-    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
-    "source_start_s": "78.893",
-    "recovered_bytes": "3453",
-    "source_file": "tapes/recovered/tape8a/best/02-BASEBALL-SAVE2.ASC",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "damaged / partial BASIC",
+    "validation": "Five complete prefix lines through 18; exact first 74 bytes listed; no normal end marker",
+    "source_start_s": "152.366",
+    "recovered_bytes": "741",
+    "source_file": "tapes/recovered/tape8a/partial/03-BASEBALL-FRAGMENT.ASC",
     "wav": "tapes/tape8a.wav",
-    "folder": "tapes/recovered/tape8a/best",
+    "folder": "tapes/recovered/tape8a/partial",
     "recovery_date": "2026-10-26",
     "recorder_volume": "",
-    "next_action": "Execution-test with required BASIC extensions; source may be unfinished"
+    "next_action": "Rerecord fragment if needed; separate following full baseball save recovered"
   },
-  "recovery_inventory": "tapes/recovered/tape8a/best/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape8a/partial/inventory.json",
   "execution_tested": false
 }
