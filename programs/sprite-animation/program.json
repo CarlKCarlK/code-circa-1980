@@ -37,6 +37,30 @@
         "140 A$=INKEY$:IFA$=\",\"THENFX=FX-1ELSEIFA$=\".\"THENFX=FX+1ELSEIFA$=\"A\"THENFY=FY+1ELSEIFA$=\"Q\"THENFY=FY-1ELSEIFA$=\" \"THENA=-A:LINE(MX-8,MY+6)-(MX+1,MY+6),RESET:PUT@(MX,MY)-(13+MX,13+MY),SET,A%ELSE 140  ",
         "210 A$=INKEY$:IFA$=\"\"THEN210  ELSEN=VAL(A$)"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "SPRITE ANIMATION V2",
+      "capture": "tape4b",
+      "save": 11,
+      "raw": "versions/v02/11-SPRITE-ANIMATION-V2.BAS",
+      "listing": "versions/v02/11-SPRITE-ANIMATION-V2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 20 consistent pointers; normal end marker; matches original, left-hp800; not execution-tested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/11-SPRITE-ANIMATION-V2.ASC",
+          "label": "11-SPRITE-ANIMATION-V2.ASC"
+        },
+        {
+          "path": "versions/v02/11-SPRITE-ANIMATION-V2.BAS",
+          "label": "11-SPRITE-ANIMATION-V2.BAS"
+        }
+      ],
+      "startupSource": "10 A=1\n20 DIMF%(20)\n30 DIMA%(30)\n40 MX=64:MY=13\n50 LINE(0, 11)-(12,16),SET,BF:LINE(3,16)-(9,18),SET,BF:LINE(2,5)-(10,9),SET,BF:LINE(10,13)-(10,16),RESET:LINE(2,13)-(2,16),RESET:LINE(6,16)-(6,19),RESET:LINE(3,10)-(9,10),SET\n60 RESET(11,16):RESET(1,16)\n70 FORP=2TO9:LINE(P,4)-(6,0),SET:NEXT\n80 GET@(0,0)-(13,18),G,A%\n90 GET@(0,3)-(13,11),G,F%\n100 CLS\n110 GOTO190  \n120 PUT@(MX,MY)-(13+MX,MY+18),SET,A%",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
