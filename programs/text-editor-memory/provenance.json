@@ -1,0 +1,74 @@
+{
+  "official_title": "Text Editor Memory",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "text_editor_memory_p176",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape19b",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape19b/best/12-TEXT-EDITOR-MEMORY.BAS",
+      "archive_listing": "tapes/recovered/tape19b/best/12-TEXT-EDITOR-MEMORY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/12-TEXT-EDITOR-MEMORY.ASC",
+          "archive_path": "tapes/recovered/tape19b/best/12-TEXT-EDITOR-MEMORY.ASC",
+          "bytes": 866,
+          "sha256": "46de0df41176e8653f5390cd23ea1e9b4f90b94ec5a55b15a18410ca01ba7bfc"
+        },
+        {
+          "path": "versions/v01/12-TEXT-EDITOR-MEMORY.BAS",
+          "archive_path": "tapes/recovered/tape19b/best/12-TEXT-EDITOR-MEMORY.BAS",
+          "bytes": 649,
+          "sha256": "e282037735099a55b1fe9a0f57ab91143324199da4c6cf9ab3331ed8cb7a2804"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "e282037735099a55b1fe9a0f57ab91143324199da4c6cf9ab3331ed8cb7a2804",
+        "bytes": 649,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 21,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 647,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "19",
+        "side": "b",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TEXT EDITOR MEMORY",
+        "capture": "tape19b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "372.035",
+        "recovered_bytes": "649",
+        "source_file": "tapes/recovered/tape19b/best/12-TEXT-EDITOR-MEMORY.ASC",
+        "wav": "tapes/tape19b.wav",
+        "folder": "tapes/recovered/tape19b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape19b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
