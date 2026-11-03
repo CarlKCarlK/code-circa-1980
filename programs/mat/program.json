@@ -1,0 +1,44 @@
+{
+  "id": "mat",
+  "title": "Mat",
+  "description": "Mat. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MAT matrix calculator \u2014 save 1",
+      "capture": "tape26a",
+      "save": 2,
+      "raw": "versions/v01/02-MAT-SAVE01.IMG",
+      "listing": "versions/v01/02-MAT-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. PC-121x header and 104 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/02-MAT-SAVE01.ASC",
+          "label": "02-MAT-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/02-MAT-SAVE01.IMG",
+          "label": "02-MAT-SAVE01.IMG"
+        },
+        {
+          "path": "versions/v01/02-MAT-SAVE01.TAP",
+          "label": "02-MAT-SAVE01.TAP"
+        }
+      ],
+      "startupSource": "  200 \"N\"INPUT \"ARE YOU SURE(Y/N)\";T$\n  210 IF T$=\"Y\"LET A(27)=28\n  220 END \n  300 \"C\"INPUT \"SIZE(R,C)\";N,M\n  310 A=A(27):A(A)=M+N/10:A(27)=A+N*M+1\n  320 I=1:J=1\n  330 PRINT \"CALLED \";A\n  340 END \n  400 \"V\"FOR I=1 TO (A(A)-INT (A(A)))*10+.5\n  410 PAUSE \"ROW \";I\n  420 FOR J=1 TO INT (A(A))\n  430 INPUT A(A+(I-1)*INT (A(A))+J)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
