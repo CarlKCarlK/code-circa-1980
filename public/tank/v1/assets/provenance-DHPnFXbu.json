@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape20a",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape20a/best/03-JABERWOCKY.BAS",
+  "archive_listing": "tapes/recovered/tape20a/best/03-JABERWOCKY.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/03-JABERWOCKY.BAS",
+      "archive_path": "tapes/recovered/tape20a/best/03-JABERWOCKY.BAS",
+      "bytes": 7123,
+      "sha256": "ab0298f1e56b73f44ec6a3baa1b726300da164b873600d4b9e2ab7e379a7a9eb"
+    },
+    {
+      "path": "versions/v01/03-JABERWOCKY.ASC",
+      "archive_path": "tapes/recovered/tape20a/best/03-JABERWOCKY.ASC",
+      "bytes": 8230,
+      "sha256": "acc14a7d562cc0eb4bdeda0cc37988ca5decc39bac512c0fae718e2bf3920873"
+    }
+  ],
+  "recovery_item": {
+    "lines": 255,
+    "last": 9999,
+    "pointer_base": 22204,
+    "normal_end_marker": true,
+    "sha256": "ab0298f1e56b73f44ec6a3baa1b726300da164b873600d4b9e2ab7e379a7a9eb"
+  },
+  "inventory_row": {
+    "tape": "20",
+    "side": "a",
+    "order": "3",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "JABERWOCKY",
+    "capture": "tape20a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "130.156",
+    "recovered_bytes": "7123",
+    "source_file": "tapes/recovered/tape20a/best/03-JABERWOCKY.ASC",
+    "wav": "tapes/tape20a.wav",
+    "folder": "tapes/recovered/tape20a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape20a/inventory.json",
+  "execution_tested": false
+}

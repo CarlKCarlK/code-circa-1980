@@ -1,0 +1,10 @@
+{
+  "author": "Jack Hauber",
+  "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas",
+  "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=3",
+  "artifact": "AMAZING.ASC",
+  "bytes": 3094,
+  "sha256": "0638d75685bd0d474b9c625698287165ef297c979a9841597e33ca088e35417d",
+  "note": "Jack Hauber, Amazing, BASIC Computer Games (1978), pp. 2\u20133. Complete electronic transcription obtained from the GReaperEx/bcg mirror of Vintage BASIC. Not a recovered cassette or verified byte-for-byte transcription of the print edition. Published source attribution and the maze-generation algorithm match the early tape16a forms; numbered records are reorganized there. The later JAB forms replace the generator. No claim that the complete JAB game came from this book.",
+  "execution_tested": false
+}
