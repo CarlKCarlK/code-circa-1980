@@ -1,0 +1,42 @@
+{
+  "id": "horse-race",
+  "title": "Horse Race",
+  "description": "Horse Race. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "HORSE RACE",
+      "capture": "tape14a",
+      "save": 12,
+      "raw": "versions/v01/12-HORSE-RACE.BAS",
+      "listing": "versions/v01/12-HORSE-RACE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/12-HORSE-RACE.ASC",
+          "label": "12-HORSE-RACE.ASC"
+        },
+        {
+          "path": "versions/v01/12-HORSE-RACE.BAS",
+          "label": "12-HORSE-RACE.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR1000:'                    HORSE RACE i\n20 CLS\n30 H$(1)=CHR$(156)+CHR$(173)+CHR$(131)\n40 H$(2)=CHR$(152)+CHR$(142)+CHR$(158)+CHR$(131)\n60 H$(3)=CHR$(131)+CHR$(158)+CHR$(172)\n70 H$(4)=CHR$(131)+CHR$(173)+CHR$(141)+CHR$(164)\n160 PRINT\"WELCOME TO INTERRUPT DOWNS, THE TRACK WHERE\"\n170 PRINT\"YOU CAN WIN BIG MONEY\"\n180 PRINT:PRINT\"HOW MANY HORSES ARE IN THE RACE\";:INPUTN\n190 IFN>7THENPRINT\"SORRY TRACK ONLY HOLDS SEVEN (7)\":GOTO180\n200 IFN<3THENPRINT\"SORRY MUST HAVE AT LEAST THREE (3)\":GOTO180\n210 PRINT\"TYPE THE HORSES NAMES\"",
+      "controlSource": [
+        "465 IFINKEY$=\"\"THEN465ELSECLS:PRINT:PRINT:PRINT\"                            HERE ARE THE RESULTS\""
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
