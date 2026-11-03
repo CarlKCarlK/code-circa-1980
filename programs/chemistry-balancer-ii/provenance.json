@@ -191,6 +191,62 @@
       },
       "recovery_inventory": "tapes/recovered/tape7b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape7b",
+      "save": 22,
+      "archive_raw": "tapes/recovered/tape7b/partial/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.BAS",
+      "archive_listing": "tapes/recovered/tape7b/partial/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC",
+          "archive_path": "tapes/recovered/tape7b/partial/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC",
+          "bytes": 6643,
+          "sha256": "e8c812ffb204eec92b593fe0c76f421007f58bd90d84c7af35c7a4baabbb41d4"
+        },
+        {
+          "path": "versions/v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.BAS",
+          "archive_path": "tapes/recovered/tape7b/partial/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.BAS",
+          "bytes": 5493,
+          "sha256": "c04139305a83ca9157e508754a65cb11ed40bdea7080e1b092b366824c7cb96c"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "c04139305a83ca9157e508754a65cb11ed40bdea7080e1b092b366824c7cb96c",
+        "bytes": 5493,
+        "archive_validation": "154 consistent BASIC record pointers; Out-of-order line number 13268 followed by 410; Other suspect source expressions remain; no manual repair",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "structure_conflict": true,
+        "source_notice_lines": [
+          "10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE"
+        ]
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "b",
+        "order": "22",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "CHEMISTRY BALENCER II DAMAGED LINES; 154 readable line records",
+        "capture": "tape7b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged / partial BASIC",
+        "validation": "154 consistent BASIC record pointers; Out-of-order line number 13268 followed by 410; Other suspect source expressions remain; no manual repair",
+        "source_start_s": "",
+        "recovered_bytes": "5493",
+        "source_file": "tapes/recovered/tape7b/partial/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC",
+        "wav": "tapes/tape7b.wav",
+        "folder": "tapes/recovered/tape7b/partial",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Rerecord later chemistry saves, including full ending"
+      },
+      "recovery_inventory": "tapes/recovered/tape7b/partial/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
