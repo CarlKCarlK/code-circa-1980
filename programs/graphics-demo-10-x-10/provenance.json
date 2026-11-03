@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape1b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape1b",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape1b/best/04-MAZE-FIRST-PERSON-VARIANT.BAS",
+      "archive_listing": "tapes/recovered/tape1b/best/04-MAZE-FIRST-PERSON-VARIANT.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/04-MAZE-FIRST-PERSON-VARIANT.ASC",
+          "archive_path": "tapes/recovered/tape1b/best/04-MAZE-FIRST-PERSON-VARIANT.ASC",
+          "bytes": 2954,
+          "sha256": "7d19ce8bfa8ea765f11f15ceb5966242a5d8e23b23c32cf755bad7498cd3b943"
+        },
+        {
+          "path": "versions/v02/04-MAZE-FIRST-PERSON-VARIANT.BAS",
+          "archive_path": "tapes/recovered/tape1b/best/04-MAZE-FIRST-PERSON-VARIANT.BAS",
+          "bytes": 2490,
+          "sha256": "424d0adae6260366dec74b9117977e69081826489a042272ea65322609fdbc86"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "424d0adae6260366dec74b9117977e69081826489a042272ea65322609fdbc86",
+        "bytes": 2490,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 73,
+        "last": 6040,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2488,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "1",
+        "side": "b",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Maze / first-person view, W=10 L=10 (descriptive identification)",
+        "capture": "tape1b",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "262.787",
+        "recovered_bytes": "2490",
+        "source_file": "tapes/recovered/tape1b/best/04-MAZE-FIRST-PERSON-VARIANT.ASC",
+        "wav": "tapes/tape1b.wav",
+        "folder": "tapes/recovered/tape1b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape1b/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
