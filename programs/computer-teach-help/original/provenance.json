@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape21a",
+  "save": 11,
+  "archive_raw": "tapes/recovered/tape21a/best/11-COMPUTER-TEACH-HELP.BAS",
+  "archive_listing": "tapes/recovered/tape21a/best/11-COMPUTER-TEACH-HELP.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/11-COMPUTER-TEACH-HELP.ASC",
+      "archive_path": "tapes/recovered/tape21a/best/11-COMPUTER-TEACH-HELP.ASC",
+      "bytes": 1299,
+      "sha256": "68cbce1fc06147afdba92aa46274989192645d3b891107bb1d1c578159b1ce8f"
+    },
+    {
+      "path": "versions/v01/11-COMPUTER-TEACH-HELP.BAS",
+      "archive_path": "tapes/recovered/tape21a/best/11-COMPUTER-TEACH-HELP.BAS",
+      "bytes": 1085,
+      "sha256": "bc13829c514f3f9a5097168148b3cecc78c6a16ed6d9bf5a99b7c2735cfee78d"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "bc13829c514f3f9a5097168148b3cecc78c6a16ed6d9bf5a99b7c2735cfee78d",
+    "bytes": 1085,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 37,
+    "last": 530,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1083,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "21",
+    "side": "a",
+    "order": "11",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "COMPUTER TEACH HELP",
+    "capture": "tape21a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "271.549",
+    "recovered_bytes": "1085",
+    "source_file": "tapes/recovered/tape21a/best/11-COMPUTER-TEACH-HELP.ASC",
+    "wav": "tapes/tape21a.wav",
+    "folder": "tapes/recovered/tape21a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+  "execution_tested": false
+}

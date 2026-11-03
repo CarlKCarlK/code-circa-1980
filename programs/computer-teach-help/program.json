@@ -1,0 +1,45 @@
+{
+  "id": "computer-teach-help",
+  "title": "Computer Teach Help",
+  "description": "Computer Teach Help. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "COMPUTER TEACH HELP",
+      "capture": "tape21a",
+      "save": 11,
+      "raw": "versions/v01/11-COMPUTER-TEACH-HELP.BAS",
+      "listing": "versions/v01/11-COMPUTER-TEACH-HELP.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/11-COMPUTER-TEACH-HELP.ASC",
+          "label": "11-COMPUTER-TEACH-HELP.ASC"
+        },
+        {
+          "path": "versions/v01/11-COMPUTER-TEACH-HELP.BAS",
+          "label": "11-COMPUTER-TEACH-HELP.BAS"
+        }
+      ],
+      "startupSource": "10 CLS:' COMPUTER TEACH HELP\n20 INPUT\"WHAT PART NOW\"; C\n25 C=INT(C*10)\n30 IFC=1THEN100\n40 IFC=2THEN200\n50 IFC=3THEN300\n60 IFC=12THEN500\n70 PRINT\"SORRY THAT PART NOT HERE\"\n80 GOTO20\n100 CLS:PRINTCHR$(23)\n110 PRINT\"HELLO, I AM A COMPUTER.  A COM- PUTER IS A PROGRAMABLE TRUTH    TABLE, THAT CAN PREFORM SIMPLE  ALGEBRIC PROBLEMS A GREAT SPEED.  iT IS NOT MAGIC, ANY MORE THANAN AIRPLANE IS MAGIC. IT FOLLOWSDIRECTIONS WITHOUT QUESTION,\";\n120 PRINT\" UN-LESS IT IS UNABLE IT COMPLETE   THE TASK, IN WHICH CASE IT IS   PROGRAMED TO STOP AND TELL WHY.\"",
+      "controlSource": [
+        "130 A$=INKEY$:IFA$=\"\"THEN130ELSE10",
+        "240 A$=INKEY$:IFA$=\"\"THEN240",
+        "360 A$=INKEY$:IFA$=\"\"THEN360ELSE10",
+        "530 A$=INKEY$:IFA$=\"\"THEN530ELSEGOTO10"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
