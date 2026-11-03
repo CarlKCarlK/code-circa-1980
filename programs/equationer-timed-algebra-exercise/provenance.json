@@ -1,0 +1,74 @@
+{
+  "official_title": "Equationer Timed Algebra Exercise",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "equationer_timed_algebra_exercise_p28",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape15b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape15b/best/02-EQUATIONER.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/02-EQUATIONER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-EQUATIONER.ASC",
+          "archive_path": "tapes/recovered/tape15b/best/02-EQUATIONER.ASC",
+          "bytes": 1328,
+          "sha256": "760ae6da09d006a1fc73e066c9fe3102ab5a79378ab18d0328f1fef32afbf8fc"
+        },
+        {
+          "path": "versions/v01/02-EQUATIONER.BAS",
+          "archive_path": "tapes/recovered/tape15b/best/02-EQUATIONER.BAS",
+          "bytes": 1111,
+          "sha256": "42cc9b399ee035b785b2afaa37268310d59439a32eaab8a9fb3a0e0b48daf98c"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "42cc9b399ee035b785b2afaa37268310d59439a32eaab8a9fb3a0e0b48daf98c",
+        "bytes": 1111,
+        "archive_validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 34,
+        "last": 32000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1109,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "EQUATIONER; 34 lines",
+        "capture": "tape15b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "source_start_s": "33.898",
+        "recovered_bytes": "1111",
+        "source_file": "tapes/recovered/tape15b/best/02-EQUATIONER.ASC",
+        "wav": "tapes/tape15b.wav",
+        "folder": "tapes/recovered/tape15b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape15b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

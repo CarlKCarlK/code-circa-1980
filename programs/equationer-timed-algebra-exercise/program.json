@@ -1,0 +1,43 @@
+{
+  "id": "equationer-timed-algebra-exercise",
+  "title": "Equationer Timed Algebra Exercise",
+  "description": "Equationer Timed Algebra Exercise. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "EQUATIONER",
+      "capture": "tape15b",
+      "save": 2,
+      "raw": "versions/v01/02-EQUATIONER.BAS",
+      "listing": "versions/v01/02-EQUATIONER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-EQUATIONER.ASC",
+          "label": "02-EQUATIONER.ASC"
+        },
+        {
+          "path": "versions/v01/02-EQUATIONER.BAS",
+          "label": "02-EQUATIONER.BAS"
+        }
+      ],
+      "startupSource": "2 AT=100000\n5 CLS\n7 GOSUB 20000\n10 READ X1,Y1,X2,Y2:IFX1=-1 THEN X1=OX:Y1=OY\n15 IF X1=-999 THEN 100\n30 OX=X2:OY=Y2\n40 GOSUB1000\n50 GOTO 10\n100 PRINT@448+34+128,\"EQUATIONER\";\n110 IF INKEY$=\"\"THEN110\n120 CLS\n130 X=RND(15):P1=RND(5):P2=RND(5):A1=RND(6):A2=P1*X+A1-P2*X:IFP1=P2 THEN X=-999",
+      "controlSource": [
+        "110 IF INKEY$=\"\"THEN110",
+        "145 A$=INKEY$:PRINT@50,STRING$(LEN(Q$),\"\u0019\");A$;:T=T+1:PRINT@55,INT(AT-T+1);:IFT>AT THEN 200  ELSEIFA$=\"\"THEN145ELSEIFA$=CHR$(13)THEN150ELSEQ$=Q$+A$:GOTO145"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
