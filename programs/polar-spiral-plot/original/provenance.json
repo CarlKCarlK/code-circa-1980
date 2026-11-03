@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape11b",
+  "save": 20,
+  "archive_raw": "tapes/recovered/tape11b/best/20-POLAR-SPIRAL-PLOT.BAS",
+  "archive_listing": "tapes/recovered/tape11b/best/20-POLAR-SPIRAL-PLOT.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/20-POLAR-SPIRAL-PLOT.ASC",
+      "archive_path": "tapes/recovered/tape11b/best/20-POLAR-SPIRAL-PLOT.ASC",
+      "bytes": 272,
+      "sha256": "a9aeee1676043bc1b1d34aa2a3d3d171a5dea6c6ad51d3599348941654a17f94"
+    },
+    {
+      "path": "versions/v01/20-POLAR-SPIRAL-PLOT.BAS",
+      "archive_path": "tapes/recovered/tape11b/best/20-POLAR-SPIRAL-PLOT.BAS",
+      "bytes": 238,
+      "sha256": "29fcc6b7465aaab951168277b962a645c267f034389373ed7ad39cda2f15af8a"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "29fcc6b7465aaab951168277b962a645c267f034389373ed7ad39cda2f15af8a",
+    "bytes": 238,
+    "archive_validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 13,
+    "last": 1020,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 236,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "11",
+    "side": "b",
+    "order": "20",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "POLAR SPIRAL PLOT; 13 lines",
+    "capture": "tape11b",
+    "capture_scope": "possible skipped program (tangled tape)",
+    "baud": "500",
+    "platform": "TRS-80 BASIC; extensions may be required",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+    "source_start_s": "766.633",
+    "recovered_bytes": "238",
+    "source_file": "tapes/recovered/tape11b/best/20-POLAR-SPIRAL-PLOT.ASC",
+    "wav": "tapes/tape11b.wav",
+    "folder": "tapes/recovered/tape11b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime; capture may omit another program"
+  },
+  "recovery_inventory": "tapes/recovered/tape11b/best/inventory.json",
+  "execution_tested": false
+}
