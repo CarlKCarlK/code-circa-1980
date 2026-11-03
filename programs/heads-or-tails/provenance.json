@@ -1,0 +1,74 @@
+{
+  "official_title": "Heads Or Tails",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "heads_or_tails_p150",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape16b",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape16b/best/11-HEADS-OR-TAILS.BAS",
+      "archive_listing": "tapes/recovered/tape16b/best/11-HEADS-OR-TAILS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/11-HEADS-OR-TAILS.ASC",
+          "archive_path": "tapes/recovered/tape16b/best/11-HEADS-OR-TAILS.ASC",
+          "bytes": 312,
+          "sha256": "a1d4a2e8f8fa9d0ef5c8f00591064ba244dc37aaafc70b925a8d8ad4b185c3eb"
+        },
+        {
+          "path": "versions/v01/11-HEADS-OR-TAILS.BAS",
+          "archive_path": "tapes/recovered/tape16b/best/11-HEADS-OR-TAILS.BAS",
+          "bytes": 245,
+          "sha256": "d3dda427858d0a6da2939c8b9cada3a5abe08481bc8209e7aaa36e21fca3502f"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "d3dda427858d0a6da2939c8b9cada3a5abe08481bc8209e7aaa36e21fca3502f",
+        "bytes": 245,
+        "archive_validation": "Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 10,
+        "last": 100,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 243,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "b",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Heads or tails",
+        "capture": "tape16b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "207.758",
+        "recovered_bytes": "245",
+        "source_file": "tapes/recovered/tape16b/best/11-HEADS-OR-TAILS.ASC",
+        "wav": "tapes/tape16b.wav",
+        "folder": "tapes/recovered/tape16b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
