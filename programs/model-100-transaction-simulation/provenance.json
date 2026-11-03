@@ -58,6 +58,59 @@
       },
       "recovery_inventory": "tapes/recovered/tape2a/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape2a",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape2a/best/12-T-BASIC-TAPE-BLOCK.BIN",
+      "archive_listing": "tapes/recovered/tape2a/best/12-T.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/12-T-BASIC-TAPE-BLOCK.BIN",
+          "archive_path": "tapes/recovered/tape2a/best/12-T-BASIC-TAPE-BLOCK.BIN",
+          "bytes": 2118,
+          "sha256": "c75dc8b89ba8b7a21a59630fb0522d46009b2ae02bb76505e1334b8db3685d3a"
+        },
+        {
+          "path": "versions/v02/12-T.ASC",
+          "archive_path": "tapes/recovered/tape2a/best/12-T.ASC",
+          "bytes": 2205,
+          "sha256": "79faf03cb5edd3cfa11029906c57921e270c45a170218b3458e838e98222c9e5"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "c75dc8b89ba8b7a21a59630fb0522d46009b2ae02bb76505e1334b8db3685d3a",
+        "bytes": 2118,
+        "archive_validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "12",
+        "type": "Model 100 BASIC",
+        "recovery%": "100",
+        "summary": "Cassette name T; Transaction/multiprogram simulation; 63 validated lines",
+        "capture": "tape2a",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "validated payload; runtime untested",
+        "validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+        "source_start_s": "424.876",
+        "recovered_bytes": "2118",
+        "source_file": "tapes/recovered/tape2a/best/12-T.ASC",
+        "wav": "tapes/tape2a.wav",
+        "folder": "tapes/recovered/tape2a/best",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
