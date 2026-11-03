@@ -1,0 +1,40 @@
+{
+  "id": "card-game",
+  "title": "Card Game",
+  "description": "Card Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CARD GAME",
+      "capture": "tape3a",
+      "save": 7,
+      "raw": "versions/v01/07-CARD-GAME.BAS",
+      "listing": "versions/v01/07-CARD-GAME.ASC",
+      "playable": false,
+      "note": "validated payload. 45 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/07-CARD-GAME.ASC",
+          "label": "07-CARD-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/07-CARD-GAME.BAS",
+          "label": "07-CARD-GAME.BAS"
+        }
+      ],
+      "startupSource": "5 DEFINT A-Z\n10 P=4:DIM C$(13),P$(P),H$(P,4),R(P),L(P)\n20 FOR I=1TO13:C$(I)=STR$(I):NEXTI\n30 C$(11)=\"10\":C$(12)=\"10\":C$(13)=\"NN\":C$(4)=\"SM\":C$(9)=\"RV\":C$(10)=\"MT\"\n50 P$(1)=\"NN OT RV SM MT BLIZTKREIG\"\n60 P$(2)=\"OT MT NN SM RV NICE GUY\"\n70 P$(3)=\"OT NN SM RV MT SAMES BEFORE REV.\"\n80 P$(4)=\"OT NN RV SM MT REV.S BEFORE SAME\"\n90 'P$(5)=\"MT RV SM RO NN DUMB S\"\n200 CLS\n210 FOR I=1TOP:PRINT@I*64,\"PLAYER #\"I\" - \"RIGHT$(P$(I),LEN(P$(I))-15);\": \";LEFT$(P$(I),15);\n220 NEXT I",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
