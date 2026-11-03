@@ -1,19 +1,19 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape9b",
-  "save": 14,
-  "archive_raw": "tapes/recovered/tape9b/best/14-SCREEN-TEXT-CAPTURE-EDITOR.BAS",
-  "archive_listing": "tapes/recovered/tape9b/best/14-SCREEN-TEXT-CAPTURE-EDITOR.ASC",
+  "save": 15,
+  "archive_raw": "tapes/recovered/tape9b/best/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.BAS",
+  "archive_listing": "tapes/recovered/tape9b/best/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/14-SCREEN-TEXT-CAPTURE-EDITOR.ASC",
-      "archive_path": "tapes/recovered/tape9b/best/14-SCREEN-TEXT-CAPTURE-EDITOR.ASC",
+      "path": "versions/v02/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.ASC",
+      "archive_path": "tapes/recovered/tape9b/best/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.ASC",
       "bytes": 577,
       "sha256": "10f7cc84bcef971699c1e4dab471e0896d40df4a90d08c686f9e2a299e524009"
     },
     {
-      "path": "versions/v01/14-SCREEN-TEXT-CAPTURE-EDITOR.BAS",
-      "archive_path": "tapes/recovered/tape9b/best/14-SCREEN-TEXT-CAPTURE-EDITOR.BAS",
+      "path": "versions/v02/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.BAS",
+      "archive_path": "tapes/recovered/tape9b/best/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.BAS",
       "bytes": 448,
       "sha256": "4f08e967e06cb679121092d3ac381c7a6f2d0c7e05c09830b05e0818271bdd53"
     }
@@ -36,19 +36,19 @@
   "inventory_row": {
     "tape": "9",
     "side": "b",
-    "order": "14",
+    "order": "15",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "SCREEN TEXT CAPTURE EDITOR; 17 lines",
+    "summary": "SCREEN TEXT CAPTURE EDITOR SAVE2; 17 lines; identical to save 14",
     "capture": "tape9b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
-    "source_start_s": "410.577",
+    "source_start_s": "427.675",
     "recovered_bytes": "448",
-    "source_file": "tapes/recovered/tape9b/best/14-SCREEN-TEXT-CAPTURE-EDITOR.ASC",
+    "source_file": "tapes/recovered/tape9b/best/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.ASC",
     "wav": "tapes/tape9b.wav",
     "folder": "tapes/recovered/tape9b/best",
     "recovery_date": "2026-10-26",
