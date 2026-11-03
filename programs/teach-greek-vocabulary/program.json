@@ -1,0 +1,46 @@
+{
+  "id": "teach-greek-vocabulary",
+  "title": "Teach Greek Vocabulary",
+  "description": "Teach Greek Vocabulary. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TEACH GREEK VOCABULARY",
+      "capture": "tape24a",
+      "save": 2,
+      "raw": "versions/v01/02-TEACH-GREEK-VOCABULARY.BAS",
+      "listing": "versions/v01/02-TEACH-GREEK-VOCABULARY.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-TEACH-GREEK-VOCABULARY.ASC",
+          "label": "02-TEACH-GREEK-VOCABULARY.ASC"
+        },
+        {
+          "path": "versions/v01/02-TEACH-GREEK-VOCABULARY.BAS",
+          "label": "02-TEACH-GREEK-VOCABULARY.BAS"
+        }
+      ],
+      "startupSource": "10 'TEACH     CARL KADIE   809 E. MCCLURE, PEORIA, IL 61603\n20 CLEAR1000\n30 DEFINT W\n40 DEFSTR I,L,G,M,A,Q,E\n50 READ INFO\n60 IFINFO<>\"DONE\"ANDINFO<>\"MESSAGE\"THENNUMBER= NUMBER+1 : GOTO 50   ELSE IF INFO =\"DONE\"THEN70 ELSE CLS:FOR XI=1TO15:READ INFO:IF INFO<>\"DONE\"THEN PRINT TAB(32-LEN(INFO)/2);INFO:NEXTXIELSEPRINT@964,\"PRESS (BAR)\";:FORXI=1TO5000:IFINKEY$<>\"\"THEN70 ELSE NEXT\n70 RESTORE:CLS\n80 PRINT \"I KNOW \"; NUMBER ;\"GREEK WORDS.\"\n90 PRINT@320, \"WHICH ONE WOULD YOU LIKE TO START WITH (1 -\"; NUMBER ;\")\";:INPUT START\n100 IF START<1 OR START>NUMBER THEN 90   \n110 PRINT \"AND WHICH WORD WOULD YOU LIKE TO END WITH (\"; START ;\"-\"; NUMBER ;\")\";:INPUT FINAL\n120 IF FINAL<START OR FINAL>NUMBER THEN 110  ",
+      "controlSource": [
+        "60 IFINFO<>\"DONE\"ANDINFO<>\"MESSAGE\"THENNUMBER= NUMBER+1 : GOTO 50   ELSE IF INFO =\"DONE\"THEN70 ELSE CLS:FOR XI=1TO15:READ INFO:IF INFO<>\"DONE\"THEN PRINT TAB(32-LEN(INFO)/2);INFO:NEXTXIELSEPRINT@964,\"PRESS (BAR)\";:FORXI=1TO5000:IFINKEY$<>\"\"THEN70 ELSE NEXT",
+        "270 IF INKEY$=\"\"THEN270",
+        "410 IF QICK=\"YES\" AND INKEY$=\"\"THEN400ELSEPRINT:PRINT\"THAT'S RIGHT!!!DAS RICHTIG ANWART IST\":PRINTANSWER:PRINT:PRINT\"(PRESS 'X' IF WRONG.... '/' IF RIGHT)",
+        "420 IFQICK=\"YES\" THEN A$=INKEY$:IFA$<>\"X\"ANDA$<>\"/\"THEN420  ELSEIFA$=\"X\"THENPRINT\"DAS TUT MEIR LEIT.\":WR=WR+1:WO(WR)=WO(TURN)ELSEPRINT\"GUT!\":RI=RI+1",
+        "530 IF INKEY$=\"\"THEN530  "
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
