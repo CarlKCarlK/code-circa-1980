@@ -1,0 +1,45 @@
+{
+  "id": "speech-coaching",
+  "title": "Speech Trek \u2014 graphics edition",
+  "description": "Speech Trek \u2014 graphics edition. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extended features",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SPEECH TREK",
+      "capture": "tape6a",
+      "save": 2,
+      "raw": "versions/v01/02-SPEECH-TREK.BAS",
+      "listing": "versions/v01/02-SPEECH-TREK.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 240 consistent pointers; normal end marker; matches 2 decoding variants; not execution-tested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/02-SPEECH-TREK.ASC",
+          "label": "02-SPEECH-TREK.ASC"
+        },
+        {
+          "path": "versions/v01/02-SPEECH-TREK.BAS",
+          "label": "02-SPEECH-TREK.BAS"
+        }
+      ],
+      "startupSource": "2 CLEAR 1000\n5 CLS:FORX=1TO100:PRINT@RND(1020),\".\";:NEXT\n15 LINE(44,17)-(96,25),SET,BF\n20 PI=3.14159\n25 FOR A=PI/4TOPI/2STEP .03\n30 X=COS(A)*-15:Y=SIN(A)*8:LINE(44,17)-(43.5+X,Y+17.5),SET\n35 NEXT\n40 LINE(97,18)-(99,23),SET\n45 LINE(99,23)-(96,25),SET\n50 LINE(97,20)-(97,23),SET\n55 LINE(47,27)-(101,28),SET,BF\n60 SET(46,27):SET(102,27)",
+      "controlSource": [
+        "605 A$=INKEY$:A$=INKEY$:A$=\"\"",
+        "610 IFINKEY$=\"\"THEN610",
+        "1450 IFINKEY$=\"\"THEN1450",
+        "1620 IFINKEY$=\"\"THEN1620"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

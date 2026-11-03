@@ -1,0 +1,74 @@
+{
+  "official_title": "Speech Trek \u2014 graphics edition",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "speech_coaching_p4",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape6a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape6a/best/02-SPEECH-TREK.BAS",
+      "archive_listing": "tapes/recovered/tape6a/best/02-SPEECH-TREK.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-SPEECH-TREK.ASC",
+          "archive_path": "tapes/recovered/tape6a/best/02-SPEECH-TREK.ASC",
+          "bytes": 8375,
+          "sha256": "ff9afb1699ed30aca8caadebb40cf5a5cbe735f8d9f806c253446a973035e6e9"
+        },
+        {
+          "path": "versions/v01/02-SPEECH-TREK.BAS",
+          "archive_path": "tapes/recovered/tape6a/best/02-SPEECH-TREK.BAS",
+          "bytes": 6739,
+          "sha256": "715fe6e2b4a6f0f76e333edb3923848db6a84f5535e7198d54f938209d97697e"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "715fe6e2b4a6f0f76e333edb3923848db6a84f5535e7198d54f938209d97697e",
+        "bytes": 6739,
+        "archive_validation": "240 consistent pointers; normal end marker; matches 2 decoding variants; not execution-tested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 240,
+        "last": 3060,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 6737,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "6",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SPEECH TREK; 240 lines",
+        "capture": "tape6a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extended features",
+        "status": "validated payload; runtime untested",
+        "validation": "240 consistent pointers; normal end marker; matches 2 decoding variants; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "6739",
+        "source_file": "tapes/recovered/tape6a/best/02-SPEECH-TREK.ASC",
+        "wav": "tapes/tape6a.wav",
+        "folder": "tapes/recovered/tape6a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Identify compatible extended BASIC; execution-test"
+      },
+      "recovery_inventory": "tapes/recovered/tape6a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
