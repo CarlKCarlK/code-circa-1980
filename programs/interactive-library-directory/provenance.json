@@ -1,0 +1,74 @@
+{
+  "official_title": "Interactive Library Directory",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "interactive_library_directory_p37",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "file8b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/file8b/best/06-INTERACTIVE-LIBRARY-DIRECTORY.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/06-INTERACTIVE-LIBRARY-DIRECTORY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/06-INTERACTIVE-LIBRARY-DIRECTORY.ASC",
+          "archive_path": "tapes/recovered/file8b/best/06-INTERACTIVE-LIBRARY-DIRECTORY.ASC",
+          "bytes": 3203,
+          "sha256": "9e0d45a64f4070d31db859e83405bbc207e1d3119f1e85b8420a338a7a628a4c"
+        },
+        {
+          "path": "versions/v01/06-INTERACTIVE-LIBRARY-DIRECTORY.BAS",
+          "archive_path": "tapes/recovered/file8b/best/06-INTERACTIVE-LIBRARY-DIRECTORY.BAS",
+          "bytes": 2636,
+          "sha256": "469eedbe80ea80b1068db66e7736276d036f3b18ed6de22e4015634e89bb550e"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "469eedbe80ea80b1068db66e7736276d036f3b18ed6de22e4015634e89bb550e",
+        "bytes": 2636,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 45,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2634,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "INTERACTIVE LIBRARY DIRECTORY; 45 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "155.642",
+        "recovered_bytes": "2636",
+        "source_file": "tapes/recovered/file8b/best/06-INTERACTIVE-LIBRARY-DIRECTORY.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

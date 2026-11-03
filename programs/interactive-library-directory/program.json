@@ -1,0 +1,43 @@
+{
+  "id": "interactive-library-directory",
+  "title": "Interactive Library Directory",
+  "description": "Interactive Library Directory. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "INTERACTIVE LIBRARY DIRECTORY",
+      "capture": "file8b",
+      "save": 6,
+      "raw": "versions/v01/06-INTERACTIVE-LIBRARY-DIRECTORY.BAS",
+      "listing": "versions/v01/06-INTERACTIVE-LIBRARY-DIRECTORY.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-INTERACTIVE-LIBRARY-DIRECTORY.ASC",
+          "label": "06-INTERACTIVE-LIBRARY-DIRECTORY.ASC"
+        },
+        {
+          "path": "versions/v01/06-INTERACTIVE-LIBRARY-DIRECTORY.BAS",
+          "label": "06-INTERACTIVE-LIBRARY-DIRECTORY.BAS"
+        }
+      ],
+      "startupSource": "20 L=0\n30 DIM E(10):'MAX # OF SHELFS THAT A (SUB)SECTION CAN BE ON\n90 CLS:RESTORE:R=0\n95 CLS:PRINT\"PRESS THE LETTER OF THE AREA YOU WISH TO INVESTIGATE\":PRINT\n100 READ A$:IF A$=\"U\"  THEN R=R+1ELSEIFA$=\"D\"THEN R=R-1\n110 IF R>L THEN200\n120 IF L=R AND A$<>\"U\" AND A$<>\"D\"THEN LZ=LZ+1:PRINTCHR$(LZ+64)\" ) \";:IF RIGHT$(A$,1)=\")\"THENGOSUB260:PRINT A$ELSEPRINTA$\n130 GOTO 100\n200 PRINT:PRINT\"YOUR CHOICE ? \";\n202 C$=INKEY$:IFC$=\"\"THEN202\n203 IFC$<\"A\"OR ASC(C$)>LZ+64 THEN 202ELSEPRINTC$;\n205 C=ASC(C$)-64",
+      "controlSource": [
+        "202 C$=INKEY$:IFC$=\"\"THEN202",
+        "380 A$=INKEY$:IFA$=\"C\"THENRUNELSEIFA$=\"E\"THENENDELSE380"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
