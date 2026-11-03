@@ -38,6 +38,34 @@
       ],
       "startupSource": "  200 \"N\"INPUT \"ARE YOU SURE(Y/N)\";T$\n  210 IF T$=\"Y\"LET A(27)=28\n  220 END \n  300 \"C\"INPUT \"SIZE(R,C)\";N,M\n  310 A=A(27):A(A)=M+N/10:A(27)=A+N*M+1\n  320 I=1:J=1\n  330 PRINT \"CALLED \";A\n  340 END \n  400 \"V\"FOR I=1 TO (A(A)-INT (A(A)))*10+.5\n  410 PAUSE \"ROW \";I\n  420 FOR J=1 TO INT (A(A))\n  430 INPUT A(A+(I-1)*INT (A(A))+J)",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "MAT matrix calculator \u2014 repeated save",
+      "capture": "tape26a",
+      "save": 3,
+      "raw": "versions/v02/03-MAT-SAVE02.IMG",
+      "listing": "versions/v02/03-MAT-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. PC-121x header and 104 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/03-MAT-SAVE02.ASC",
+          "label": "03-MAT-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v02/03-MAT-SAVE02.IMG",
+          "label": "03-MAT-SAVE02.IMG"
+        },
+        {
+          "path": "versions/v02/03-MAT-SAVE02.TAP",
+          "label": "03-MAT-SAVE02.TAP"
+        }
+      ],
+      "startupSource": "  200 \"N\"INPUT \"ARE YOU SURE(Y/N)\";T$\n  210 IF T$=\"Y\"LET A(27)=28\n  220 END \n  300 \"C\"INPUT \"SIZE(R,C)\";N,M\n  310 A=A(27):A(A)=M+N/10:A(27)=A+N*M+1\n  320 I=1:J=1\n  330 PRINT \"CALLED \";A\n  340 END \n  400 \"V\"FOR I=1 TO (A(A)-INT (A(A)))*10+.5\n  410 PAUSE \"ROW \";I\n  420 FOR J=1 TO INT (A(A))\n  430 INPUT A(A+(I-1)*INT (A(A))+J)",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
