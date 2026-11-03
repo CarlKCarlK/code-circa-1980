@@ -101,5 +101,10 @@
     "path": "programs/johnscircle/verification/screen.png",
     "sha256": "d4c7cda973cef7ff053785a5a806e2331ea17dd4b094f3107c8482e0d306298c",
     "description": "Actual original-ROM browser-emulator capture, separate from the modern gallery illustration."
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Jointly credited to John Hartman and Carl Kadie in the recovered source.",
+    "evidence": "Recovered source line 1: JOHN'S CIRCLE BY JOHN HARTMAN & CARL KADIE."
   }
 }

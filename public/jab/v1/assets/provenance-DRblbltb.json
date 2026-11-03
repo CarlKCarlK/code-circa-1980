@@ -303,5 +303,10 @@
       "id": "aim",
       "relationship": "Related Lichello-based investing program; distinct formulas, dataset, canonical history and default reference. Grouped in one gallery entry."
     }
-  ]
+  ],
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Based on Robert Lichello\u2019s Superpower Investing method; BASIC programming credited to Carl Kadie.",
+    "evidence": "Recovered source lines 10\u201330 credit the method title, BOOK: ROBERT LICHELLO, and PROGRAM: CARL KADIE."
+  }
 }

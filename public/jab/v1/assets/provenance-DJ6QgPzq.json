@@ -374,5 +374,10 @@
       "changes": "Change LD BC,991 to LD BC,992 after CALL GEN, copying the final active-field character. Prepend ORG 8000H for assembly. No other instructions changed.",
       "execution_testing": "Six complete generations each of block, blinker, glider, edge blinker, corner glider, and isolated bottom-right cell compared with Conway rules in the actual Z80 emulator; untouched executable reproduces corner failure. See VERIFICATION.md."
     }
-  ]
+  ],
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Implements John Conway\u2019s Game of Life.",
+    "evidence": "Existing source/ROM fixtures verify the Conway birth/survival rules; this credits the underlying cellular automaton rather than claiming an identified published Z80 source."
+  }
 }

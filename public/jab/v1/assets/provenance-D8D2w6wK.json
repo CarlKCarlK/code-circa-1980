@@ -803,5 +803,11 @@
     "sha256": "1cb00831c79e5e8ee110611b81844b7a77b2b9c2f9b397640439bede89755cf2",
     "reference": "v15",
     "method": "CAPTURE_GALLERY_ART=1 with tests/browser/experiments.spec.js; native canvas aspect ratio, Model III font and cobalt palette."
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Maze generation adapts Jack Hauber\u2019s Amazing; the rat-racing behavior is separate.",
+    "evidence": "The W/V arrays, Q/Z flags, numbered traversal, and randomized carving branches in the recovered generator match Amazing; rat-control routines are additional code.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
   }
 }
