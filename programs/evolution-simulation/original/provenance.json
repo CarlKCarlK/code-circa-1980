@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape11a",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape11a/best/02-EVOLUTION-SIMULATION.BAS",
+  "archive_listing": "tapes/recovered/tape11a/best/02-EVOLUTION-SIMULATION.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/02-EVOLUTION-SIMULATION.ASC",
+      "archive_path": "tapes/recovered/tape11a/best/02-EVOLUTION-SIMULATION.ASC",
+      "bytes": 762,
+      "sha256": "c7c38a9812d60bf66c890ff5e0466db98f81a6e1259126e9e8604ad2d202d944"
+    },
+    {
+      "path": "versions/v01/02-EVOLUTION-SIMULATION.BAS",
+      "archive_path": "tapes/recovered/tape11a/best/02-EVOLUTION-SIMULATION.BAS",
+      "bytes": 691,
+      "sha256": "6fb2f62ba5002d0957588f4d8dc0e100f40af62dcea1ea70a2344396915eea82"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "6fb2f62ba5002d0957588f4d8dc0e100f40af62dcea1ea70a2344396915eea82",
+    "bytes": 691,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 32,
+    "last": 190,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 689,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "11",
+    "side": "a",
+    "order": "2",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "EVOLUTION SIMULATION; 32 lines",
+    "capture": "tape11a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+    "source_start_s": "51.076",
+    "recovered_bytes": "691",
+    "source_file": "tapes/recovered/tape11a/best/02-EVOLUTION-SIMULATION.ASC",
+    "wav": "tapes/tape11a.wav",
+    "folder": "tapes/recovered/tape11a/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape11a/best/inventory.json",
+  "execution_tested": false
+}

@@ -1,0 +1,40 @@
+{
+  "id": "evolution-simulation",
+  "title": "Evolution Simulation",
+  "description": "Evolution Simulation. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "EVOLUTION SIMULATION",
+      "capture": "tape11a",
+      "save": 2,
+      "raw": "versions/v01/02-EVOLUTION-SIMULATION.BAS",
+      "listing": "versions/v01/02-EVOLUTION-SIMULATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-EVOLUTION-SIMULATION.ASC",
+          "label": "02-EVOLUTION-SIMULATION.ASC"
+        },
+        {
+          "path": "versions/v01/02-EVOLUTION-SIMULATION.BAS",
+          "label": "02-EVOLUTION-SIMULATION.BAS"
+        }
+      ],
+      "startupSource": "2 CLEAR 300\n3 DEFDBL A,B,D-Z\n4 A=RND(0)\n5 CLS\n6 S=1:T=1:F=1:GOTO10\n7 INPUT\"CHANCE OF SMALL CHANGE,CHANGE OF TOTAL CHANGE,CHANGE IN MATCH UP WINDOW,FLEX OF SPEICES, INTIAL MATCH UP WINDOW\";S,T,W,F,I:CLS\n10 '\n17 A=RND(0)\n20 E=RND(0)\n25 A=.5555555555555555\n30 G=G+1\n40 '",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
