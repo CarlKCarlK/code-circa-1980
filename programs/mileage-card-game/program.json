@@ -38,6 +38,40 @@
         "1330 IF INKEY$<>\"D\" THEN 1330 ",
         "9180 B$=INKEY$:IF B$=\"B\" THEN PRINT:GOTO 20 ELSE 9180"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "Mileage card game",
+      "capture": "tape17b",
+      "save": 6,
+      "raw": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.BIN",
+      "listing": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged captured save; validated prefix; runtime untested. Interrupted mid-line 330; first 26 ordered records through line 320 / 740 untouched bytes agree left/right; consistent pointer base 22204; no added end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.ASC",
+          "label": "06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.BIN",
+          "label": "06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-RAW.BAS",
+          "label": "06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-RAW.BAS"
+        },
+        {
+          "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-UNCERTAIN.ASC",
+          "label": "06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "5 CLEAR50\n10 DIMD(105),C(7,1),S(4,1),M(1),H$(1),H(1),L(1),FP(4,1),R(1),PM(20)\n20 PRINT\"SETTING UP DECK  ......  WAIT\"\n30 FOR C=0TO4:FORP=0TO1:S(C,P)=0:F(C,P)=0:NEXT P,C:  FOR H=0TO1:M(H)=0:T(H)=0:R(H)=0:L(H)=0:CO(H)=0:NEXTH\n40 FOR X=0TO105\n50 S=RND(X+1)-1\n60 D(X)=D(S):D(S)=X:NEXTX\n80 PC=0\n90 FOR X=0 TO 1:H(X)=1:H$(X)=\"0NEEDS A ROLL\":NEXTX\n100 FORX=0TO1:C(0,X)=6:NEXTX\n105 FOR Y=0 TO 5:FOR X=0 TO 1\n110 C(Y+1,X)=D(X+Y*2)",
+      "controlSource": [
+        "230 M$=INKEY$:IF M$=\" \" THEN C7=0:GOTO 260 ELSE IF M$=\"C\" THEN 1000  ELSE 230"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
