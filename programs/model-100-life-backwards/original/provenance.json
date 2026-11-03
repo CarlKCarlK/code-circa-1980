@@ -1,113 +1,125 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape2a",
-  "save": 21,
-  "archive_raw": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.BIN",
-  "archive_listing": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.ASC",
+  "save": 22,
+  "archive_raw": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.BIN",
+  "archive_listing": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/21-L-BASIC-PREFIX.ASC",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.ASC",
-      "bytes": 401,
-      "sha256": "e4b8184c1711a4274b854fd087caf3e4b0ce9337eb7a6f9678e6c12cd77d0ca5"
+      "path": "versions/v03/22-L-BASIC-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.ASC",
+      "bytes": 8,
+      "sha256": "40d24ef7be3aa34c78c1b79ea89d65753891ca9bf9077f90aa930e8267ef38d4"
     },
     {
-      "path": "versions/v02/21-L-BASIC-PREFIX.BIN",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.BIN",
-      "bytes": 297,
-      "sha256": "ce20ad4643a6c5fdb10f58673988f9cf0e319f6180db4f2efd266b901b06babd"
+      "path": "versions/v03/22-L-BASIC-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.BIN",
+      "bytes": 8,
+      "sha256": "21314479adcd3663345e8a803ba3beba2d7bd2c7d718077b8f61d42a51e9f839"
     },
     {
-      "path": "versions/v02/21-L-HEADER.BIN",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-HEADER.BIN",
+      "path": "versions/v03/22-L-HEADER.BIN",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-HEADER.BIN",
       "bytes": 38,
-      "sha256": "9b30bbb15684651344c3403ccff29a9eccbb934fbd89824a9624359dd34ebca4"
+      "sha256": "eeaa57bf54401e10531b49fd285bbcf217eb47813884d7a824f7238b5fe70085"
     },
     {
-      "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.ASC",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.ASC",
-      "bytes": 3728,
-      "sha256": "1b8a8376ea8054ff307119e010d11935da89226344fd1e4f8d6cb8de69edbcd8"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-0d7e927f416b.ASC",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-0d7e927f416b.ASC",
+      "bytes": 112,
+      "sha256": "d6b3cadbd6d0c4e9ee0f904d4bbf734a90218552d63b3456d60150207ec46db5"
     },
     {
-      "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.BIN",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.BIN",
-      "bytes": 3229,
-      "sha256": "44dcb87de3d9f491d8a8c5b0cc493795f0ed93ed0587b13f0c51dc050e6e12c1"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-0d7e927f416b.BIN",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-0d7e927f416b.BIN",
+      "bytes": 52,
+      "sha256": "0d7e927f416bbbd7c5067852e99d8568f204445fe3ad01836e0bdc027b1a3b0e"
     },
     {
-      "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.ASC",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.ASC",
-      "bytes": 3728,
-      "sha256": "389d5813d958b1d4efb09b118776785dbb46d19663b4ad5d90a87c2070460282"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-2209656332d0.ASC",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-2209656332d0.ASC",
+      "bytes": 94,
+      "sha256": "126de2b6902221ecc2dda5357ba531a6d5cd2c9f24f19fddbc994ea60dcb35a2"
     },
     {
-      "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.BIN",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.BIN",
-      "bytes": 3229,
-      "sha256": "84363014b14cbfb1cf75b14276817323fe931810023c907f452f442ef58894b2"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-2209656332d0.BIN",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-2209656332d0.BIN",
+      "bytes": 52,
+      "sha256": "2209656332d09488fc40d4bd726e9c392756e58c3727896018f2922cbe3318f0"
     },
     {
-      "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.ASC",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.ASC",
-      "bytes": 3743,
-      "sha256": "e95569a199f3cfd3742399903011778638f66da927b79cf0b0543cdfb2167b6a"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-aa35dfad740d.ASC",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-aa35dfad740d.ASC",
+      "bytes": 98,
+      "sha256": "f319277d75a368a03a0ef07805bfe59f6cfada9064f4e53b7949c32eee5cc74a"
     },
     {
-      "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.BIN",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.BIN",
-      "bytes": 3229,
-      "sha256": "949d25001554e7575f29c4ef2147da83b746180b0abe319445d8d91fa51a1f47"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-aa35dfad740d.BIN",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-aa35dfad740d.BIN",
+      "bytes": 52,
+      "sha256": "aa35dfad740d012de2db98e6d914104de060ac47082ad22c1b0b4c660531a5cb"
     },
     {
-      "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.ASC",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.ASC",
-      "bytes": 3743,
-      "sha256": "0deca157b153989e864565ce6d742e7d284e85ed65bbe0be4e4aff55792552b6"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-d023a96cf83d.ASC",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-d023a96cf83d.ASC",
+      "bytes": 109,
+      "sha256": "7eb5f14de7f8ed7c3236ae81cb099f6cd6743556a7a763f9dbf80d293385720a"
     },
     {
-      "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.BIN",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.BIN",
-      "bytes": 3229,
-      "sha256": "fcb3da25b6bc31e5d6096709dc804366509c5aaf0472db9186ac17d5b05651e7"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-d023a96cf83d.BIN",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-d023a96cf83d.BIN",
+      "bytes": 52,
+      "sha256": "d023a96cf83d24950e4e0fc85f76f39b53f7fef3b222ba1453335aae37535b8c"
     },
     {
-      "path": "versions/v02/21-L-RAW.BIN",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-RAW.BIN",
-      "bytes": 3249,
-      "sha256": "e8742a9de9057708c768f01abb2a4033cb9f2d53d0cf70e490f73ca43b97b125"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-e4818eb7b9db.ASC",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-e4818eb7b9db.ASC",
+      "bytes": 106,
+      "sha256": "5fd9e58a6057ab14d2696cbeb7f8da3d4bee09f31cad700efcfaf03a47f95721"
     },
     {
-      "path": "versions/v02/21-L-UNCERTAIN.ASC",
-      "archive_path": "tapes/recovered/tape2a/partial/21-L-UNCERTAIN.ASC",
-      "bytes": 401,
-      "sha256": "e4b8184c1711a4274b854fd087caf3e4b0ce9337eb7a6f9678e6c12cd77d0ca5"
+      "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-e4818eb7b9db.BIN",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-e4818eb7b9db.BIN",
+      "bytes": 52,
+      "sha256": "e4818eb7b9db359d9e7bdc076abb030aff4b78d4f4dc691c0d9ff5d0d8e04a53"
+    },
+    {
+      "path": "versions/v03/22-L-RAW.BIN",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-RAW.BIN",
+      "bytes": 4966,
+      "sha256": "0ac143dc6a25f1325cb6f6c2063c8ad89337f4aacf7f20465ae264a5fd6d60da"
+    },
+    {
+      "path": "versions/v03/22-L-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape2a/partial/22-L-UNCERTAIN.ASC",
+      "bytes": 8,
+      "sha256": "40d24ef7be3aa34c78c1b79ea89d65753891ca9bf9077f90aa930e8267ef38d4"
     }
   ],
   "recovery_item": {
     "format": "Model 100 BASIC",
-    "sha256": "ce20ad4643a6c5fdb10f58673988f9cf0e319f6180db4f2efd266b901b06babd",
-    "bytes": 297,
-    "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 8 lines through 310; exact left/right prefix agreement",
+    "sha256": "21314479adcd3663345e8a803ba3beba2d7bd2c7d718077b8f61d42a51e9f839",
+    "bytes": 8,
+    "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 1 lines through 10; exact left/right prefix agreement",
     "import_validation": "Exact file hashes; format-specific checks below.",
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "2",
     "side": "a",
-    "order": "21",
+    "order": "22",
     "type": "Model 100 BASIC",
     "recovery%": "",
-    "summary": "Cassette name L; LIFE backwards, April 27 1985; damaged captured save",
+    "summary": "Cassette name L; late LIFE backwards variant (descriptive identification); damaged captured save",
     "capture": "tape2a",
     "capture_scope": "full",
     "baud": "1500",
     "platform": "Model 100",
     "status": "damaged / partial Model 100 BASIC",
-    "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 8 lines through 310; exact left/right prefix agreement",
-    "source_start_s": "593.985",
-    "recovered_bytes": "3249",
-    "source_file": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.ASC",
+    "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 1 lines through 10; exact left/right prefix agreement",
+    "source_start_s": "730.629",
+    "recovered_bytes": "4966",
+    "source_file": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.ASC",
     "wav": "tapes/tape2a.wav",
     "folder": "tapes/recovered/tape2a/left-sweep",
     "recovery_date": "2026-10-28",
