@@ -58,6 +58,59 @@
       },
       "recovery_inventory": "tapes/recovered/tape2a/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape2a2",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape2a2/best/06-S-BASIC-TAPE-BLOCK.BIN",
+      "archive_listing": "tapes/recovered/tape2a2/best/06-S.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/06-S-BASIC-TAPE-BLOCK.BIN",
+          "archive_path": "tapes/recovered/tape2a2/best/06-S-BASIC-TAPE-BLOCK.BIN",
+          "bytes": 1405,
+          "sha256": "3027b9f7f08fa05a71b8f0c18487dd1090ed07f8c8ddf9ec0c2a5d5b9a7349ef"
+        },
+        {
+          "path": "versions/v02/06-S.ASC",
+          "archive_path": "tapes/recovered/tape2a2/best/06-S.ASC",
+          "bytes": 1523,
+          "sha256": "2eeb059a90e7c88e2ae52caf0b9b9a7e981b04ab24054f08b071e02b2d486c52"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "3027b9f7f08fa05a71b8f0c18487dd1090ed07f8c8ddf9ec0c2a5d5b9a7349ef",
+        "bytes": 1405,
+        "archive_validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "6",
+        "type": "Model 100 BASIC",
+        "recovery%": "100",
+        "summary": "Cassette name S; Cassette name S; 39 validated lines",
+        "capture": "tape2a2",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "validated payload; runtime untested",
+        "validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
+        "source_start_s": "166.220",
+        "recovered_bytes": "1405",
+        "source_file": "tapes/recovered/tape2a2/best/06-S.ASC",
+        "wav": "tapes/tape2a2.wav",
+        "folder": "tapes/recovered/tape2a2/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a2/left-sweep/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
