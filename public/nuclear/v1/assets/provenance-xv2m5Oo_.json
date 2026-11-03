@@ -1,0 +1,74 @@
+{
+  "official_title": "Relativity",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "relativity",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "One complete captured save. The source credit says May 9, 1979; this is a source date, not a tape-save date.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape22a",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape22a/best/10-RELITIVITY.BAS",
+      "archive_listing": "tapes/recovered/tape22a/best/10-RELITIVITY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/10-RELITIVITY.BAS",
+          "archive_path": "tapes/recovered/tape22a/best/10-RELITIVITY.BAS",
+          "bytes": 1251,
+          "sha256": "3c60b448de3b4025cd24137cb5591102ec0bd1a7f9bfb1c9d155e71cc427dd51"
+        },
+        {
+          "path": "versions/v01/10-RELITIVITY.ASC",
+          "archive_path": "tapes/recovered/tape22a/best/10-RELITIVITY.ASC",
+          "bytes": 1510,
+          "sha256": "91d5017aa77931d8e4de36942e234db31e12fb94c4ad3fb50ef9b1adf664ab86"
+        }
+      ],
+      "recovery_item": {
+        "lines": 47,
+        "last": 3110,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "3c60b448de3b4025cd24137cb5591102ec0bd1a7f9bfb1c9d155e71cc427dd51"
+      },
+      "inventory_row": {
+        "tape": "22",
+        "side": "a",
+        "order": "10",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "RELITIVITY",
+        "capture": "tape22a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "366.234",
+        "recovered_bytes": "1251",
+        "source_file": "tapes/recovered/tape22a/best/10-RELITIVITY.ASC",
+        "wav": "tapes/tape22a.wav",
+        "folder": "tapes/recovered/tape22a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape22a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [
+      "1 ' RELITIVITY                A QUICKY PROGAM BY CARL KADIE         WRITTEN ON A.D. MAY NINTH NINETEEN SEVENTY-NINE (5-9-79)"
+    ],
+    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/relativity-gallery.svg",
+    "sha256": "39a3207cae69f3f7b4fefa330daa2c077e3c389debfec2315af5bea0e90f041a",
+    "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
+  }
+}
