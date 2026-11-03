@@ -62,6 +62,33 @@
       "controlSource": [
         "10557 IF INKEY$=\"\" THEN 10557"
       ]
+    },
+    {
+      "id": "v03",
+      "label": "QUESTIONNAIRE MATCHMAKING SAVE03",
+      "capture": "tape24a",
+      "save": 10,
+      "raw": "versions/v03/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.BAS",
+      "listing": "versions/v03/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v03/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.ASC",
+          "label": "10-QUESTIONNAIRE-MATCHMAKING-SAVE03.ASC"
+        },
+        {
+          "path": "versions/v03/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.BAS",
+          "label": "10-QUESTIONNAIRE-MATCHMAKING-SAVE03.BAS"
+        }
+      ],
+      "startupSource": "2 CLS: PRINTCHR$(23);\"THIS IS NOT-SCIENTIFIC!!!!!!!!!\"\n3 PRINT\"\n\nTHIS IS FOR FUN ONLY.\n\n(PRESS ANY BUTTON)\n4 IF INKEY$=\"\"THEN 4\n5 CLS\n10 CLEAR 2000\n20 PRINT\"RUNNING\nDATA SHOULD BE OF FORM....\n#QUESTIONS,#MALES,#FEMALES,A1M1,A2M2,...A1MM,A2MM..ANMM,A1F1...",
+      "controlSource": [
+        "4 IF INKEY$=\"\"THEN 4",
+        "10557 IF INKEY$=\"\" THEN 10557"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"

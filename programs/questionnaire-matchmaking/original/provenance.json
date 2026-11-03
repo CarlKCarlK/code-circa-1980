@@ -1,54 +1,54 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape24a",
-  "save": 9,
-  "archive_raw": "tapes/recovered/tape24a/best/09-QUESTIONNAIRE-MATCHMAKING-SAVE02.BAS",
-  "archive_listing": "tapes/recovered/tape24a/best/09-QUESTIONNAIRE-MATCHMAKING-SAVE02.ASC",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape24a/best/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.BAS",
+  "archive_listing": "tapes/recovered/tape24a/best/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/09-QUESTIONNAIRE-MATCHMAKING-SAVE02.ASC",
-      "archive_path": "tapes/recovered/tape24a/best/09-QUESTIONNAIRE-MATCHMAKING-SAVE02.ASC",
-      "bytes": 2621,
-      "sha256": "4ccf073719894c0c2f946b4c6ffaa5fd97ee5768e4b49159bf39be6ff517b8e0"
+      "path": "versions/v03/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.ASC",
+      "archive_path": "tapes/recovered/tape24a/best/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.ASC",
+      "bytes": 2944,
+      "sha256": "bf2e536102942771d9f43725163fde6837f64f46ec9b0067b382fd21a3d3af85"
     },
     {
-      "path": "versions/v02/09-QUESTIONNAIRE-MATCHMAKING-SAVE02.BAS",
-      "archive_path": "tapes/recovered/tape24a/best/09-QUESTIONNAIRE-MATCHMAKING-SAVE02.BAS",
-      "bytes": 2167,
-      "sha256": "587ebf9f74ed672f496ab9a4b83aba221e23a4aa19e67ccf0071226092fb01cb"
+      "path": "versions/v03/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.BAS",
+      "archive_path": "tapes/recovered/tape24a/best/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.BAS",
+      "bytes": 2467,
+      "sha256": "a37300f637d1a44b829e4ed1cf1b3fb69f0baa9e99f06c392238396c12ccc5f8"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "587ebf9f74ed672f496ab9a4b83aba221e23a4aa19e67ccf0071226092fb01cb",
-    "bytes": 2167,
+    "sha256": "a37300f637d1a44b829e4ed1cf1b3fb69f0baa9e99f06c392238396c12ccc5f8",
+    "bytes": 2467,
     "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 57,
-    "last": 20000,
+    "lines": 63,
+    "last": 20010,
     "pointer_bases": [
       17125
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 2165,
+    "parsed_bytes": 2465,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "24",
     "side": "a",
-    "order": "9",
+    "order": "10",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "QUESTIONNAIRE MATCHMAKING SAVE02",
+    "summary": "QUESTIONNAIRE MATCHMAKING SAVE03",
     "capture": "tape24a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "304.007",
-    "recovered_bytes": "2167",
-    "source_file": "tapes/recovered/tape24a/best/09-QUESTIONNAIRE-MATCHMAKING-SAVE02.ASC",
+    "source_start_s": "348.359",
+    "recovered_bytes": "2467",
+    "source_file": "tapes/recovered/tape24a/best/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.ASC",
     "wav": "tapes/tape24a.wav",
     "folder": "tapes/recovered/tape24a",
     "recovery_date": "2026-10-28",
