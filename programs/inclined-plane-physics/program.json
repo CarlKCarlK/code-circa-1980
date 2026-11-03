@@ -1,0 +1,40 @@
+{
+  "id": "inclined-plane-physics",
+  "title": "Inclined Plane Physics",
+  "description": "Inclined Plane Physics. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "INCLINED PLANE PHYSICS",
+      "capture": "tape11a",
+      "save": 1,
+      "raw": "versions/v01/01-INCLINED-PLANE-PHYSICS.BAS",
+      "listing": "versions/v01/01-INCLINED-PLANE-PHYSICS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-INCLINED-PLANE-PHYSICS.ASC",
+          "label": "01-INCLINED-PLANE-PHYSICS.ASC"
+        },
+        {
+          "path": "versions/v01/01-INCLINED-PLANE-PHYSICS.BAS",
+          "label": "01-INCLINED-PLANE-PHYSICS.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 PRINT\"ON AN INCLINE PLANE AN OBJECT WITH A WEIGHT (W1) IS \"\n30 PRINT\"CONNECTED BY A LINE OVER A FRICTIONLESS PULLEY TO A \"\n40 PRINT\"SECOND WEIGHT (W2). WITH A CERTAIN COEFFEICNT OF \"\n50 PRINT\"FRICTION BETWEEN THE PLANE AND WEIGHT ONE (U),\"\n60 PRINT    \"AT WHAT TWO ANGLES WILL THE BLOCK MOVE AT A CONSTANT\"\n70 PRINT    \"SPEED.\"\n80 PRINT\n90 INPUT\"WHAT IS W1,W2, AND U\";W,W2,U\n100 C=W2[2/4-1\n110 B=-2*W2/(U[2*W)+1\n120 A=1/U[2",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
