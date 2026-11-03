@@ -94,6 +94,38 @@
       ],
       "startupSource": "00010 TEST\tLD\tB,40\n00030 NEXT\tCALL\tOUTCH\n00035 \tINC\tB\n00040 \tJP\tNZ,NEXT\n00050 STOP\tJP\tTEST\n01000 OUTCH\tJP\tSKIPP\t;SUBROUTINE TO PRINT ON SCREEN\n01100 \t\t\t; INPUT  A,ZERO   B,CHARACTER\n01200 CURS\tDEFW\t$\t;LOCATION OF SCREEN\n01300 SCREEN\tEQU\t15360\t;BEGINING OF SCREEN MEM\n01400 SKIPP\tPUSH\tHL\t;SAVE HL\n01500 \tLD\tHL,(CURS) ; PUT LOCATION IN HL\n01600 \tPUSH\tDE\t;SAVE DE",
       "controlSource": []
+    },
+    {
+      "id": "v04",
+      "label": "OUTCH SCREEN OUTPUT DAMAGED",
+      "capture": "tape18a",
+      "save": 4,
+      "raw": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.BIN",
+      "listing": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.TXT",
+      "playable": false,
+      "note": "damaged. Untouched 633-byte prefix: 22 complete EDTASM records with exact left/right agreement; no added end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.BIN",
+          "label": "04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.TXT",
+          "label": "04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.TXT"
+        },
+        {
+          "path": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-RAW.ASM",
+          "label": "04-OUTCH-SCREEN-OUTPUT-DAMAGED-RAW.ASM"
+        },
+        {
+          "path": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-UNCERTAIN.TXT",
+          "label": "04-OUTCH-SCREEN-OUTPUT-DAMAGED-UNCERTAIN.TXT"
+        }
+      ],
+      "startupSource": "01000 OUTCH\tJP\tSKIP1\t;SUBROUTINE TO PRINT ON SCREE1\n01010 \t\t\t; INPUT  A,ZERO   B,CHARACTER\n01020 CURS1\tDEFW\t$\t;LOCATION OF SCREE1\n01030 SCREE1\tEQU\t15360\t;BEGINING OF SCREE1 MEM\n01040 SKIP1\tPUSH\tHL\t;SAVE HL\n01050 \tLD\tHL,(CURS1) ; PUT LOCATION IN HL\n01060 \tPUSH\tDE\t;SAVE DE\n01070 \tPUSH\tBC\n01080 \tLD\tDE,1022\n01090 \tSBC\tHL,DE\n01100 \tJP\tM,GOOD1\n01110 SCROL1\tPUSH\tHL ",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
