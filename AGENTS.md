@@ -462,3 +462,7 @@ frozen v1 through config/archive-release.js. release-remaining.mjs freezes the
 committed batch once, refusing existing releases. Browser tests cover website
 behavior only, never the BASIC gameplay, as already requested. Keep all extras
 at unshared v1; preserve main-gallery and LIFE frozen releases.
+
+The user requested correcting the Liers Poker title on November 3, 2026: display
+Liar’s Poker. Keep the liers-poker ID, URL, and historical filenames; the recovered
+listing still prints LIER'S POKER.

@@ -1,4 +1,4 @@
-# Liers Poker
+# Liar’s Poker
 
 Original author and any earlier published source have not been established. Preserved here as recovered cassette material.
 
