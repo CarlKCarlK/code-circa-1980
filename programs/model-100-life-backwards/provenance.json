@@ -1,0 +1,85 @@
+{
+  "official_title": "Model 100 LIFE Backwards",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Model 100 LIFE backwards",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape2a",
+      "save": 20,
+      "archive_raw": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/20-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.ASC",
+          "bytes": 640,
+          "sha256": "012da7513b3b895ec8f2bbd9eb90b830f97a3bf6c9e51876ce3a01c876c8190a"
+        },
+        {
+          "path": "versions/v01/20-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.BIN",
+          "bytes": 515,
+          "sha256": "d01551412f6435eb71f87732c87e72c0a73af92730d214b3b0ed6e099ed4af60"
+        },
+        {
+          "path": "versions/v01/20-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "9b30bbb15684651344c3403ccff29a9eccbb934fbd89824a9624359dd34ebca4"
+        },
+        {
+          "path": "versions/v01/20-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-RAW.BIN",
+          "bytes": 1480,
+          "sha256": "890b5255a2d44de99158ef4132c751edb7d1b05ed15de90e4806799bc3087313"
+        },
+        {
+          "path": "versions/v01/20-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-UNCERTAIN.ASC",
+          "bytes": 640,
+          "sha256": "012da7513b3b895ec8f2bbd9eb90b830f97a3bf6c9e51876ce3a01c876c8190a"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "d01551412f6435eb71f87732c87e72c0a73af92730d214b3b0ed6e099ed4af60",
+        "bytes": 515,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "20",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; LIFE backwards, April 27 1985; damaged captured save",
+        "capture": "tape2a",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+        "source_start_s": "567.650",
+        "recovered_bytes": "1480",
+        "source_file": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a.wav",
+        "folder": "tapes/recovered/tape2a/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a/left-sweep/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
