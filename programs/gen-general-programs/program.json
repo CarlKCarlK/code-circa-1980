@@ -1,0 +1,44 @@
+{
+  "id": "gen-general-programs",
+  "title": "Gen General Programs",
+  "description": "Gen General Programs. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GEN general mathematics collection",
+      "capture": "tape26a",
+      "save": 4,
+      "raw": "versions/v01/04-GEN-GENERAL-PROGRAMS.IMG",
+      "listing": "versions/v01/04-GEN-GENERAL-PROGRAMS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. PC-121x header and 168 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/04-GEN-GENERAL-PROGRAMS.ASC",
+          "label": "04-GEN-GENERAL-PROGRAMS.ASC"
+        },
+        {
+          "path": "versions/v01/04-GEN-GENERAL-PROGRAMS.IMG",
+          "label": "04-GEN-GENERAL-PROGRAMS.IMG"
+        },
+        {
+          "path": "versions/v01/04-GEN-GENERAL-PROGRAMS.TAP",
+          "label": "04-GEN-GENERAL-PROGRAMS.TAP"
+        }
+      ],
+      "startupSource": "    1 \"=\"USING : INPUT \">>>\";Z$: GOTO Z$\n    2 END \n   10 \"BOOL\"CLEAR : INPUT \"NO.INPUTS?\",Z: USING \"####\"\n   20 GOSUB 100: FOR W=1 TO Z: PAUSE \"INPUT#\";W;\"=\";A(W): NEXT W\n   30 X=0<X: PRINT \"X=\";X:Y=Z+1\n   40 Y=Y-1: IF Y=0 GOTO 1\n   50 A(Y)=0=A(Y): IF A(Y) GOTO 20\n   60 GOTO 40\n  100 D=0=A:E=0=B:F=0=C\n  110 X=DEC+DBF+AEF+ABC: RETURN \n  210 \"CO\"INPUT Y,X:C=Y: IF Y-X>X LET X=Y-X\n  220 FOR Z=1 TO X:C=C/Z: IF Y-Z>Y-X LET C=CY-CZ",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
