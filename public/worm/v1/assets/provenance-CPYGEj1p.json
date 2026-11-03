@@ -1,0 +1,52 @@
+{
+  "version": "v04",
+  "capture": "file8b",
+  "save": 16,
+  "archive_raw": "tapes/recovered/file8b/best/16-COMPUTA-MATCH.BAS",
+  "archive_listing": "tapes/recovered/file8b/best/16-COMPUTA-MATCH.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v04/16-COMPUTA-MATCH.BAS",
+      "archive_path": "tapes/recovered/file8b/best/16-COMPUTA-MATCH.BAS",
+      "bytes": 2180,
+      "sha256": "ba20961fdb778c40fcd680b8eff90dddfd6409c1d2763d654977263a360abb71"
+    },
+    {
+      "path": "versions/v04/16-COMPUTA-MATCH.ASC",
+      "archive_path": "tapes/recovered/file8b/best/16-COMPUTA-MATCH.ASC",
+      "bytes": 2469,
+      "sha256": "845b3c7bf97c6143b738f363efb2cd37d9e52ea7744d5f708ef60882d9bdab87"
+    }
+  ],
+  "recovery_item": {
+    "lines": 61,
+    "last": 9999,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "ba20961fdb778c40fcd680b8eff90dddfd6409c1d2763d654977263a360abb71"
+  },
+  "inventory_row": {
+    "tape": "8",
+    "side": "b",
+    "order": "16",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "COMPUTA MATCH; 61 lines",
+    "capture": "file8b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+    "source_start_s": "589.491",
+    "recovered_bytes": "2180",
+    "source_file": "tapes/recovered/file8b/best/16-COMPUTA-MATCH.ASC",
+    "wav": "tapes/file8b.wav",
+    "folder": "tapes/recovered/file8b/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+  },
+  "recovery_inventory": "tapes/recovered/file8b/inventory.json",
+  "execution_tested": false
+}
