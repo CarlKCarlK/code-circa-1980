@@ -34,6 +34,32 @@
       ],
       "startupSource": "5 CLS\n10 INPUT\"MOD\";M\n15 INPUT \"+ OR * \";F$\n20 FORX=0TOM-1\n30 FORY=0TOM-1\n40 IF F$=\"+\"THENA=X+YELSE A=X*Y\n50 B=INT(((A/M)-INT(A/M))*M+.5)\n60 PRINTB;\" \";\n70 NEXTY\n80 PRINT\n90 NEXTX\n100 END",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "MODULAR OPERATION CHART",
+      "capture": "tape22a",
+      "save": 1,
+      "raw": "versions/v02/01-MODULAR-OPERATION-CHART.BAS",
+      "listing": "versions/v02/01-MODULAR-OPERATION-CHART.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/01-MODULAR-OPERATION-CHART.ASC",
+          "label": "01-MODULAR-OPERATION-CHART.ASC"
+        },
+        {
+          "path": "versions/v02/01-MODULAR-OPERATION-CHART.BAS",
+          "label": "01-MODULAR-OPERATION-CHART.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 INPUT\"MOD\";M\n15 INPUT \"+ OR * \";F$\n18 CLS:PRINT\"CHART FOR MOD\"M\"AND THE OPERATION OF\";:IFF$=\"+\"THENPRINT\" ADDITION.\";ELSEPRINT\" MULTIPLCATION.\";\n20 FORX=0TOM-1\n30 FORY=0TOM-1\n40 IF F$=\"+\"THENA=X+YELSE A=X*Y\n50 B=INT(((A/M)-INT(A/M))*M+.5)\n60 PRINT@Y*4+X*64+64,B;\n70 NEXTY\n80 PRINT\n90 NEXTX",
+      "controlSource": [
+        "100 IFINKEY$<>\"\"THENENDELSE100"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
