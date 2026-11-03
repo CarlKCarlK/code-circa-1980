@@ -34,6 +34,38 @@
       ],
       "startupSource": "10 CLS:CLEAR 100\n20 PRINT\"SWORDS\"\n30 PRINT:PRINT\n40 INPUT\"HOW MANY\";NS\n45 PRINT:PRINT\"ANSWER 1ST QUESTION:  A-AUTOMATIC   L-LEFT KEYS    R-RIGHT KEYS\"\n46 PRINT\"ANSWER 2ND QUESTION:  0 TO 1, HIGH SLOWS PLAYER DOWN \":PRINT\"(MAKE AT LEAST ONE HANDICAP 0)\":PRINT\n47 DIM T(NS),H(NS),C$(NS),X(NS),Y(NS):LF=0:RF=0\n50 FOR I=1 TO NS\n60 PRINT\"SWORDS \";I;\")  \";\n70 INPUT T$\n80 IF T$=\"A\"THEN ELSE IF T$=\"L\" AND LF=0THEN LF=I ELSE IF T$=\"R\" AND RF=0 THEN RF=I ELSE PRINT:PRINT\"TRY AGAIN\":GOTO60\n85 H(I)=0:INPUT\"HANDICAP\";H(I)",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "SWORDS DAMAGED",
+      "capture": "tape23b",
+      "save": 3,
+      "raw": "versions/v02/03-SWORDS-DAMAGED-PREFIX.BIN",
+      "listing": "versions/v02/03-SWORDS-DAMAGED-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged; valid prefix only; runtime untested. Damaged; untouched valid prefix [0,64); 4 lines; pointer base 17125; cross-channel confirmed [0,64); no synthetic end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/03-SWORDS-DAMAGED-PREFIX.ASC",
+          "label": "03-SWORDS-DAMAGED-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v02/03-SWORDS-DAMAGED-PREFIX.BIN",
+          "label": "03-SWORDS-DAMAGED-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v02/03-SWORDS-DAMAGED-RAW.BAS",
+          "label": "03-SWORDS-DAMAGED-RAW.BAS"
+        },
+        {
+          "path": "versions/v02/03-SWORDS-DAMAGED-UNCERTAIN.ASC",
+          "label": "03-SWORDS-DAMAGED-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 CLS:CLEAR 100\n20 PRINT\"SWORDS\"\n30 PRINT:PRINT\n40 INPUT\"HOW MANY SWORDS\";NS",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
