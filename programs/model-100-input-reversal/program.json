@@ -154,6 +154,30 @@
       ],
       "startupSource": "10 DIM S(100)\n20 L$=INPUT$(1):PRINTL$;:IF L$=CHR$(13) THEN 100\n30 IF L$=\".\" THEN S(S)=0 :ELSE S(S)=1\n40 S=S+1:GOTO 20\n100 FOR I=S-1 TO 0 STEP -1:PRINTS(I);:T=T*2+S(I):NEXT I:PRINT T:T=0:S=0:GOTO 20",
       "controlSource": []
+    },
+    {
+      "id": "v07",
+      "label": "Cassette name L",
+      "capture": "tape2a2",
+      "save": 18,
+      "raw": "versions/v07/18-L-BASIC-TAPE-BLOCK.BIN",
+      "listing": "versions/v07/18-L.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v07/18-L-BASIC-TAPE-BLOCK.BIN",
+          "label": "18-L-BASIC-TAPE-BLOCK.BIN"
+        },
+        {
+          "path": "versions/v07/18-L.ASC",
+          "label": "18-L.ASC"
+        }
+      ],
+      "startupSource": "10 DIM S(100)\n20 L$=INPUT$(1):PRINTL$;:IF L$=CHR$(13) THEN 100\n30 IF L$=\".\" THEN S(S)=0 :ELSE S(S)=1\n40 S=S+1:GOTO 20\n100 FOR I=S-1 TO 0 STEP -1:PRINTS(I);:T=T*2+S(I):NEXT I:PRINT T:T=0:S=0:GOTO 20",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

@@ -1,19 +1,19 @@
 {
-  "version": "v06",
+  "version": "v07",
   "capture": "tape2a2",
-  "save": 17,
-  "archive_raw": "tapes/recovered/tape2a2/best/17-L-BASIC-TAPE-BLOCK.BIN",
-  "archive_listing": "tapes/recovered/tape2a2/best/17-L.ASC",
+  "save": 18,
+  "archive_raw": "tapes/recovered/tape2a2/best/18-L-BASIC-TAPE-BLOCK.BIN",
+  "archive_listing": "tapes/recovered/tape2a2/best/18-L.ASC",
   "imported_files": [
     {
-      "path": "versions/v06/17-L-BASIC-TAPE-BLOCK.BIN",
-      "archive_path": "tapes/recovered/tape2a2/best/17-L-BASIC-TAPE-BLOCK.BIN",
+      "path": "versions/v07/18-L-BASIC-TAPE-BLOCK.BIN",
+      "archive_path": "tapes/recovered/tape2a2/best/18-L-BASIC-TAPE-BLOCK.BIN",
       "bytes": 177,
       "sha256": "59a37601f3406327411bbe7168b4b5076d085a87416e336b8c2c55bc5edfe26f"
     },
     {
-      "path": "versions/v06/17-L.ASC",
-      "archive_path": "tapes/recovered/tape2a2/best/17-L.ASC",
+      "path": "versions/v07/18-L.ASC",
+      "archive_path": "tapes/recovered/tape2a2/best/18-L.ASC",
       "bytes": 198,
       "sha256": "3b5af303f15fb38fce3148935c7a3237d89c04f875f00cdfd10f7f5358c5b1b9"
     }
@@ -29,25 +29,25 @@
   "inventory_row": {
     "tape": "2",
     "side": "a",
-    "order": "17",
+    "order": "18",
     "type": "Model 100 BASIC",
     "recovery%": "100",
-    "summary": "Cassette name L; Cassette name L; 5 validated lines",
+    "summary": "Cassette name L; 10 DIM S(100); 5 validated lines",
     "capture": "tape2a2",
     "capture_scope": "full",
     "baud": "1500",
     "platform": "Model 100",
     "status": "validated payload; runtime untested",
     "validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-    "source_start_s": "517.561",
+    "source_start_s": "542.700",
     "recovered_bytes": "177",
-    "source_file": "tapes/recovered/tape2a2/best/17-L.ASC",
+    "source_file": "tapes/recovered/tape2a2/best/18-L.ASC",
     "wav": "tapes/tape2a2.wav",
-    "folder": "tapes/recovered/tape2a2/left-sweep",
+    "folder": "tapes/recovered/tape2a2/best",
     "recovery_date": "2026-10-28",
     "recorder_volume": "3/10",
     "next_action": "Runtime testing only if requested"
   },
-  "recovery_inventory": "tapes/recovered/tape2a2/left-sweep/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape2a2/best/inventory.json",
   "execution_tested": false
 }
