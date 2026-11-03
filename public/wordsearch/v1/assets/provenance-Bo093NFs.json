@@ -227,5 +227,25 @@
     "path": "app/assets/computamatch-gallery.svg",
     "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c",
     "description": "Modern illustrative SVG, separate from execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "reference": {
+      "capture": "file8b",
+      "save": 16,
+      "version": "v04",
+      "payload": "versions/v04/16-COMPUTA-MATCH.BAS",
+      "sha256": "ba20961fdb778c40fcd680b8eff90dddfd6409c1d2763d654977263a360abb71"
+    },
+    "checks": "Original formatted COMPUTA-MATCH sample reports appear; pause/resume and restart rerun the same historical dataset.",
+    "limits": "No new participant dataset or exhaustive matching-strategy audit. Historical names/phone-like fields are preserved sample records; identity/accuracy is not asserted.",
+    "test": "app/tests/browser/related-more.spec.js",
+    "note": "Separate from preserved recovery-stage execution flags."
+  },
+  "emulator_capture": {
+    "path": "programs/computamatch/verification/screen.png",
+    "sha256": "129ac0990a07ce70a9c3a6892eeb086541e7e511c79fa58286c7b92aea9cab6b",
+    "description": "Original-ROM browser execution capture; separate from the modern gallery SVG."
   }
 }

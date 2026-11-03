@@ -76,5 +76,25 @@
     "manifest": "corrected/changes.json",
     "sha256": "625defee0c63aa782d5d439b822625e93736ea4c2848fd549c12d5a5ab916427",
     "description": "Five-record working derivative; raw recovery stays unchanged."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "reference": {
+      "capture": "tape21b",
+      "save": 2,
+      "version": "v01",
+      "payload": "corrected/CIPHER.BAS",
+      "sha256": "625defee0c63aa782d5d439b822625e93736ea4c2848fd549c12d5a5ab916427"
+    },
+    "checks": "HELLO + KEY + ENCODE produces SJJWT; restart and DECODE restores HELLO. Actual-ROM fixtures also verify ABC/B and space/wrapping boundaries; artifact regeneration and unchanged other records pass.",
+    "limits": "Only letters/spaces and keywords up to ten letters are supported by the tested examples. Other punctuation/input limits retain source behavior. Only the separate five-record derivative is the working default.",
+    "test": "app/tests/browser/related-more.spec.js",
+    "note": "Separate from preserved recovery-stage execution flags."
+  },
+  "emulator_capture": {
+    "path": "programs/cipher/verification/screen.png",
+    "sha256": "5d84bb8102fd9c49f9a6cda52c9034723557c526add05126b2253aac0df52ba7",
+    "description": "Original-ROM browser execution capture; separate from the modern gallery SVG."
   }
 }

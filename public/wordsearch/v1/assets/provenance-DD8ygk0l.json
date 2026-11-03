@@ -68,5 +68,35 @@
     "path": "app/assets/wordsearch-gallery.svg",
     "sha256": "b5f62ba44c50eb14360b18fa031ffaffc678aa3f2745a96bb9b40ebd4171af2b",
     "description": "Modern illustrative SVG, separate from execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "reference": {
+      "capture": "tape4a",
+      "save": 7,
+      "version": "v01",
+      "payload": "versions/v01/07-WORD-SEARCH.BAS",
+      "sha256": "10a7c263f658033c90ea1a2e1dc906d7dd5d56eebef275eff4d63c4ba1378609"
+    },
+    "checks": "Browser shows the original placement search progressing through stored words and responds to speed/pause/restart controls. A separate full original-ROM run reaches DONE, fills all 225 cells, lists included words after Space, and redraws the identical grid after another Space.",
+    "limits": "Browser tests bound the slow search rather than waiting for full completion; the full end-to-end result is from the direct ROM harness. Actual accelerated speed depends on device capacity.",
+    "test": "app/tests/browser/related-more.spec.js",
+    "note": "Separate from preserved recovery-stage execution flags."
+  },
+  "emulator_capture": {
+    "path": "programs/wordsearch/verification/screen.png",
+    "sha256": "249a9d960f4c028a70dbe664d94c013bf7c255bd4d4c8109b914e72dfa1c2b50",
+    "description": "Original-ROM browser execution capture; separate from the modern gallery SVG."
+  },
+  "full_rom_verification": {
+    "file": "verification/full-rom-run.json",
+    "method": "app/scripts/check-wordsearch.mjs",
+    "checks": [
+      "Original full stored list reaches DONE",
+      "All 225 grid cells contain letters",
+      "Space displays the included words, including UNITONE",
+      "A second Space redraws the exact same grid"
+    ]
   }
 }
