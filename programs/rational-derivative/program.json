@@ -1,0 +1,40 @@
+{
+  "id": "rational-derivative",
+  "title": "Rational and Polynomial Derivatives",
+  "description": "Rational and Polynomial Derivatives. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Derivative of a rational/polynomial function",
+      "capture": "tape1a",
+      "save": 1,
+      "raw": "versions/v01/01-DERIVATIVE.BAS",
+      "listing": "versions/v01/01-DERIVATIVE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-DERIVATIVE.ASC",
+          "label": "01-DERIVATIVE.ASC"
+        },
+        {
+          "path": "versions/v01/01-DERIVATIVE.BAS",
+          "label": "01-DERIVATIVE.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 150:CLS\n20 PRINT:PRINT\"THIS FINDS THE DERIVATIVE OF A FUNCTION OF THE FORM : \"\n25 PRINT\n30 PRINT\"        3X[4+ 0X[3 +2X[2+ -6X[1 +5X[0\n40 PRINT\"F(X)=  -------------------------------------\"\n50 PRINT\"      6X[3+ -8X[2 + 0X[2+ 1X[1 +4X[0\n60 PRINT\n70 INPUT\"WHAT IS THE HIGHEST POWER OF THE VARIABLE IN THE TOP\";NP\n80 INPUT\"WHAT IS THE HIGHEST POWER OF THE VARIABLE IN THE BOTTON\";DP\n90 PRINT\n100 PRINT@448,STRING$(128,\" \")\n110 PRINT@448,\"FIRST THE TOP....\":FORXX=1TO400:NEXTXX",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
