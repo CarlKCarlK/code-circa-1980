@@ -1,6 +1,6 @@
 {
   "id": "trigectior",
-  "title": "Trigectior",
+  "title": "Trajectory",
   "description": "Plot a projectile from its speed, launch angle, and screen scale.",
   "kind": "Science",
   "language": "Level II BASIC",

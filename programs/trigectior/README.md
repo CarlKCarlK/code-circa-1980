@@ -1,4 +1,4 @@
-# Trigectior
+# Trajectory
 
 2 complete captured save(s) preserved. The player selects v02
 (tape22a save 4). Other recovered forms are source only.
@@ -25,3 +25,7 @@ validation; VERIFICATION.md separates that evidence from new runtime checks.
 The browser experience stays at unshared web v1.
 
 From app/, run `npm run dev`, then open `/?development=1#/program/trigectior`.
+
+The website display title corrects the apparent historical misspelling
+TRIGECTIOR to Trajectory at the user’s request. The existing internal ID,
+archive filenames, canonical tags, and recovered bytes retain their provenance.

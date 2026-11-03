@@ -12,4 +12,20 @@ Syntax help, U238=TH234+ producing 2:HE:4, damaged-source download link, pause/r
 The original payload runs through the Z80 and BASIC ROM; no modern gameplay
 implementation substitutes for it. These checks do not establish exhaustive
 historical correctness. Per-program limits are documented in README.md.
-The final production/release and browser evidence will be appended below.
+## Recorded emulator evidence — November 2, 2026
+
+Original syntax help and U238=TH234+ produce the observed 2:HE:4 result. Prefix download link, pause/resume and restart pass.
+
+Limits: One complete program executed; the damaged recording is source only. No exhaustive parser/element-table/reaction validation.
+
+`verification/screen.png` is an actual emulator capture; its hash and the new
+execution record are in provenance.json. The gallery SVG is a separate modern
+illustration. Recovery-inventory execution flags remain historical evidence.
+
+All 121 snapshot/canonical checks, strict BASIC/listing validation, unit tests,
+and the production build pass. All 37 web release manifests validate against
+the pre-import commit without changing an existing release. Final browser-suite
+results are recorded in docs/five-science-programs.md.
+
+The full browser regression run passes all 112 cases (5.5 minutes), including
+all five new frozen-v1 startup/download/navigation checks.

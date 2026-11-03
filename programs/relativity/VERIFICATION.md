@@ -12,4 +12,23 @@ All three modes: rod drawing, graph completion at 20×, changing clock values at
 The original payload runs through the Z80 and BASIC ROM; no modern gameplay
 implementation substitutes for it. These checks do not establish exhaustive
 historical correctness. Per-program limits are documented in README.md.
-The final production/release and browser evidence will be appended below.
+## Recorded emulator evidence — November 2, 2026
+
+Rod mode with length 40 and speed 80%; graph completion at 20×; clock mode at 80% and 1× with changing values; pause/resume and restart.
+
+Limits: Clock labels, loop-driven timing, and formulas remain historical. No calibrated elapsed-time claim or exhaustive special-value coverage.
+
+`verification/screen.png` is an actual emulator capture; its hash and the new
+execution record are in provenance.json. The gallery SVG is a separate modern
+illustration. Recovery-inventory execution flags remain historical evidence.
+
+All 121 snapshot/canonical checks, strict BASIC/listing validation, unit tests,
+and the production build pass. All 37 web release manifests validate against
+the pre-import commit without changing an existing release. Final browser-suite
+results are recorded in docs/five-science-programs.md.
+
+The full browser regression run passes all 112 cases (5.5 minutes), including
+all five new frozen-v1 startup/download/navigation checks.
+
+An additional targeted run confirms the 1× default and preservation of the
+selected 20× speed across Restart after exercising all three modes.

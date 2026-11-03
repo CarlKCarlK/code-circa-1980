@@ -120,5 +120,25 @@
     "path": "app/assets/reflex-gallery.svg",
     "sha256": "5b3966ba047dafdef68ab5a4699de68f612b133b4f35caecc1aa69e0c446e7cc",
     "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "test": "app/tests/browser/science-five.spec.js",
+    "checks": "Mode 1 accepts Space at GO and prints a reaction result; returns to menu. Mode 2 accepts interval inputs and prints a result. Mode 3 accepts D and reaches its original outcome/retry prompt. Pause/resume and restart pass.",
+    "limits": "No independent timing calibration, exhaustive early/late-key scenarios, or claim of testing a winning gunfight. All tests use 1\u00d7.",
+    "note": "New website evidence; original recovery-inventory execution flags remain unchanged.",
+    "reference": {
+      "version": "v02",
+      "capture": "tape9b",
+      "save": 8,
+      "payload": "versions/v02/08-REFLEX-TESTS-SAVE2.BAS",
+      "sha256": "c5b0253d9962544be47ee8e442a75ddbf16554b6bb36862b434086eafe7e7713"
+    }
+  },
+  "emulator_capture": {
+    "path": "programs/reflex/verification/screen.png",
+    "sha256": "12eee107f5c34d0c3eb72280ca60c8efc9e588b585b1e614430deafeaf689eb9",
+    "description": "Actual original-ROM browser-emulator capture, separate from the modern gallery illustration."
   }
 }

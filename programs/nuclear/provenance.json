@@ -62,7 +62,14 @@
   ],
   "dating": {
     "direct_source_lines": [],
-    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings.",
+    "neighbor_context": [
+      {
+        "archive_listing": "tapes/recovered/tape14a/best/02-STAR-WAY.ASC",
+        "line": "1 'STAR WAY         BY CARL KADIE (C) 1979"
+      }
+    ],
+    "neighbor_context_note": "Same-side dated source notice, not proof of the nuclear program\u2019s creation/save date."
   },
   "artwork": {
     "path": "app/assets/nuclear-gallery.svg",
@@ -76,5 +83,25 @@
     "manifest": "partial/provenance.json",
     "completeness": "damaged; not playable",
     "execution_tested": false
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "test": "app/tests/browser/science-five.spec.js",
+    "checks": "Original syntax help and U238=TH234+ produce the observed 2:HE:4 result. Prefix download link, pause/resume and restart pass.",
+    "limits": "One complete program executed; the damaged recording is source only. No exhaustive parser/element-table/reaction validation.",
+    "note": "New website evidence; original recovery-inventory execution flags remain unchanged.",
+    "reference": {
+      "version": "v01",
+      "capture": "tape14a",
+      "save": 8,
+      "payload": "versions/v01/08-NUCLEAR-EQUATION-SOLVER.BAS",
+      "sha256": "a52c382ce1406256bc90c8e446d5638ad324ef244ae87061c5ccdfc92a7a1653"
+    }
+  },
+  "emulator_capture": {
+    "path": "programs/nuclear/verification/screen.png",
+    "sha256": "568ae863ac48470237fa5baa29ee670fd0a4850b77a13975815a841e61f01158",
+    "description": "Actual original-ROM browser-emulator capture, separate from the modern gallery illustration."
   }
 }

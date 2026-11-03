@@ -64,11 +64,42 @@
     "direct_source_lines": [
       "1 ' RELITIVITY                A QUICKY PROGAM BY CARL KADIE         WRITTEN ON A.D. MAY NINTH NINETEEN SEVENTY-NINE (5-9-79)"
     ],
-    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings.",
+    "neighbor_context": [
+      {
+        "archive_listing": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.ASC",
+        "line": "10 'TRIGECTIOR           BY CARL KADIE A.D.  OCT. 24, 1978"
+      },
+      {
+        "archive_listing": "tapes/recovered/tape22b/best/05-TEACH-VI-GERMAN.ASC",
+        "line": "10 'TEACH VI                      BY CARL KADIE JAN. 11,1979"
+      }
+    ],
+    "neighbor_context_note": "Same-side/opposite-side source credits were searched. These are contextual notices, not save dates; no date is assigned to undated John\u2019s Circle."
   },
   "artwork": {
     "path": "app/assets/relativity-gallery.svg",
     "sha256": "39a3207cae69f3f7b4fefa330daa2c077e3c389debfec2315af5bea0e90f041a",
     "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "test": "app/tests/browser/science-five.spec.js",
+    "checks": "Rod mode with length 40 and speed 80%; graph completion at 20\u00d7; clock mode at 80% and 1\u00d7 with changing values; pause/resume and restart.",
+    "limits": "Clock labels, loop-driven timing, and formulas remain historical. No calibrated elapsed-time claim or exhaustive special-value coverage.",
+    "note": "New website evidence; original recovery-inventory execution flags remain unchanged.",
+    "reference": {
+      "version": "v01",
+      "capture": "tape22a",
+      "save": 10,
+      "payload": "versions/v01/10-RELITIVITY.BAS",
+      "sha256": "3c60b448de3b4025cd24137cb5591102ec0bd1a7f9bfb1c9d155e71cc427dd51"
+    }
+  },
+  "emulator_capture": {
+    "path": "programs/relativity/verification/screen.png",
+    "sha256": "36f5a3402c1276a6a8a737d6d97614b52f423eddf22e2bffee96741e0c1e7645",
+    "description": "Actual original-ROM browser-emulator capture, separate from the modern gallery illustration."
   }
 }

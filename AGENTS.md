@@ -315,3 +315,9 @@ end marker, independent-channel confirmation. Run
 prefix structure, and channel provenance. Do not splice the two recordings.
 The separately titled feet-per-second Projectile Trajectory on tape21b is not
 assumed to be a Trigectior revision. Browser checks live in science-five.spec.js.
+
+The user requested correcting the apparent Trigectior misspelling: display
+Trajectory as its title. Keep the existing trigectior internal ID and historical
+filenames/tags for provenance; do not change recovered program comments/bytes.
+Reflex’s original line 5000 spells CATALOGUE in both identical saves; that is
+quoted historical text, so retain it. All new prose still uses American catalog.
