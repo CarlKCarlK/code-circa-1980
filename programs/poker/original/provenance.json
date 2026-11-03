@@ -1,19 +1,19 @@
 {
-  "version": "v03",
+  "version": "v04",
   "capture": "tape4b",
-  "save": 13,
-  "archive_raw": "tapes/recovered/tape4b/best/13-POKER-V2.BAS",
-  "archive_listing": "tapes/recovered/tape4b/best/13-POKER-V2.ASC",
+  "save": 14,
+  "archive_raw": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.BAS",
+  "archive_listing": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.ASC",
   "imported_files": [
     {
-      "path": "versions/v03/13-POKER-V2.BAS",
-      "archive_path": "tapes/recovered/tape4b/best/13-POKER-V2.BAS",
+      "path": "versions/v04/14-POKER-V2-SAVE2.BAS",
+      "archive_path": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.BAS",
       "bytes": 7214,
       "sha256": "98f30433739c5f119d286ed73f3d3de9874fc221c325f8477a00bcca29980870"
     },
     {
-      "path": "versions/v03/13-POKER-V2.ASC",
-      "archive_path": "tapes/recovered/tape4b/best/13-POKER-V2.ASC",
+      "path": "versions/v04/14-POKER-V2-SAVE2.ASC",
+      "archive_path": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.ASC",
       "bytes": 8911,
       "sha256": "5d221aadb99e12d6df2912fb5a09792ee9a2f9203efb2374978d92c03f60f2ef"
     }
@@ -28,19 +28,19 @@
   "inventory_row": {
     "tape": "4",
     "side": "b",
-    "order": "13",
+    "order": "14",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "POKER V2; 422 lines; T10-C1",
+    "summary": "POKER V2 SAVE2; 422 lines; T11-C1",
     "capture": "tape4b",
     "capture_scope": "full",
     "baud": "500",
     "platform": "TRS-80 BASIC; extended features",
     "status": "validated payload; runtime untested",
-    "validation": "422 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+    "validation": "422 consistent pointers; normal end marker; matches original; not execution-tested",
     "source_start_s": "",
     "recovered_bytes": "7214",
-    "source_file": "tapes/recovered/tape4b/best/13-POKER-V2.ASC",
+    "source_file": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.ASC",
     "wav": "tapes/tape4b.wav",
     "folder": "tapes/recovered/tape4b/best",
     "recovery_date": "2026-10-26",
