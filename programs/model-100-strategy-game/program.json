@@ -1,0 +1,40 @@
+{
+  "id": "model-100-strategy-game",
+  "title": "Model 100 Strategy Game",
+  "description": "Model 100 Strategy Game. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "Model 100",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Cassette name S",
+      "capture": "tape2a",
+      "save": 6,
+      "raw": "versions/v01/06-S-BASIC-TAPE-BLOCK.BIN",
+      "listing": "versions/v01/06-S.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/06-S-BASIC-TAPE-BLOCK.BIN",
+          "label": "06-S-BASIC-TAPE-BLOCK.BIN"
+        },
+        {
+          "path": "versions/v01/06-S.ASC",
+          "label": "06-S.ASC"
+        }
+      ],
+      "startupSource": "1 '\n5 PI=3.14159\n6 R=VAL(RIGHT$(TIME$,2)):FORI=1TOR:I=I+RND(1)*0:NEXTI\n10 'start\n11 C$(0)=\"Germany\":C$(1)=\"Russia\":N(0)=0:N(1)=0:CLS:PRINT\" The Secret War \":PRINT\n12 KEY1,\"ASSERT \":KEY2,\"INVEST \":KEY3,\"SPY \":KEY4,\"DEFEND \":KEY5,\"CALL\"+CHR$(13):KEY6,\"HELP\"+CHR$(13)\n15 'turn\n20 'front\n21 IF N(0)>2 OR N(1)>2 THEN 900 :'end\n30 PRINT\"Front \";N(0)+N(1)+1:M=0\n40 'battle\n41 IF ABS(M)=2 GOTO  300 :'eof",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
