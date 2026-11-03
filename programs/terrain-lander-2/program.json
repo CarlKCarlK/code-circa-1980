@@ -34,6 +34,30 @@
       ],
       "startupSource": "5 DIM M(127)\n10 PI=3.14159\n20 A=PI/2\n30 CLS\n40 OY=47-RND(20)\n50 FORX=0TO127\n60 Y=47-RND(20)\n70 IF RND(3)=1THEN Y=OY:GOTO 90   \n80 IF ABS(Y-OY)>4THEN60   \n90 LINE(X,47)-(X,Y),SET\n95 M(X)=Y\n100 OY=Y",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "TERRAIN LANDER FRAGMENT 2",
+      "capture": "tape11b",
+      "save": 2,
+      "raw": "versions/v02/02-TERRAIN-LANDER-FRAGMENT-2.BAS",
+      "listing": "versions/v02/02-TERRAIN-LANDER-FRAGMENT-2.ASC",
+      "playable": false,
+      "note": "damaged terrain/lander recording. Exact 173-byte readable prefix matches three variants; remainder damaged",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/02-TERRAIN-LANDER-FRAGMENT-2.ASC",
+          "label": "02-TERRAIN-LANDER-FRAGMENT-2.ASC"
+        },
+        {
+          "path": "versions/v02/02-TERRAIN-LANDER-FRAGMENT-2.BAS",
+          "label": "02-TERRAIN-LANDER-FRAGMENT-2.BAS"
+        }
+      ],
+      "startupSource": "5 DIM M(127)\n10 PI=3.14159\n20 A=PI/2\n30 CLS\n40 OY=47-RND(20)\n50 FORX=0TO127\n60 Y=47-RND(20)\n70 IF RND(3)=1THEN Y=OY:GOTO 90   \n80 IF ABS(Y-OY)>4THEN60   \n90 LINE(X,47)-(X,Y),SET\n95 M(X)=Y",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
