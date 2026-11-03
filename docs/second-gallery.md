@@ -100,3 +100,7 @@ Circle bring the active More gallery to 23 programs. Seven complete captured
 saves and the separate damaged nuclear recording are preserved. See
 [five-science-programs.md](five-science-programs.md) for selections, dates,
 source-history uncertainty, and execution verification limits.
+
+AIM is now grouped under SPI’s investing selector, with no separate card.
+Keyword Cipher, Word Search, Space Colony, and Computa-Match bring More to 27
+entries. See [the related-program notes](related-more-programs.md).

@@ -55,5 +55,7 @@
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": null
     }
-  ]
+  ],
+  "galleryHidden": true,
+  "parentProgram": "spi"
 }

@@ -21,3 +21,5 @@ source-structure validation, and inferred ordering. Recovery validation is
 separate from emulator execution; see `VERIFICATION.md` for actual checks.
 Run locally from `app/` with `npm run dev`, then open
 `/?development=1#/program/spi` directly in the player.
+
+AIM is grouped with SPI in one gallery entry. The Investing program selector opens either algorithm’s player. Their snapshots, canonical tags, data, and formulas remain separate; AIM is not relabeled as an SPI revision.

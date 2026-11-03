@@ -115,5 +115,17 @@
   "dating": {
     "direct_source_lines": [],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/spacecolony-gallery.svg",
+    "sha256": "cdf999374dcb80673733a9249ec43ec235a1f504b9380085dcb23c2cad6aeb61",
+    "description": "Modern illustrative SVG, separate from execution evidence."
+  },
+  "origin": {
+    "original_program": "King / Pollution Game",
+    "original_author": "James A. Storer",
+    "primary_source": "https://www.cs.brandeis.edu/~storer/LunarLander/PollutionGame/King-101BasicComputerGames.pdf",
+    "evidence": "Published Setats Detinu / Rallods instructions match recovered King. Space Colony reuses the resource-budget structure with a solar-colony theme.",
+    "adaptation_authorship": "Not established by direct source credit."
   }
 }

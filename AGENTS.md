@@ -321,3 +321,32 @@ Trajectory as its title. Keep the existing trigectior internal ID and historical
 filenames/tags for provenance; do not change recovered program comments/bytes.
 Reflex’s original line 5000 spells CATALOGUE in both identical saves; that is
 quoted historical text, so retain it. All new prose still uses American catalog.
+
+## Investing group and four more additions
+
+The user requested grouping AIM with SPI, plus Keyword Cipher (`cipher`), Word
+Search (`wordsearch`), Space Colony (`spacecolony`), and Computa-Match
+(`computamatch`). More now has 27 cards: AIM (`aim`) has galleryHidden: true and
+parentProgram: spi, reached by the Investing program selector on both players.
+Preserve separate metadata, formulas, snapshots, canonical tags, and sources;
+AIM is not an SPI revision. SPI’s existing default and personal history remain.
+All five source collections have one selected player each and unshared web v1.
+
+Twelve complete saves are preserved in this batch, plus two AIM and three Space
+Colony damaged recordings. `verify-related-partials.py /path/to/trs80` checks all
+export hashes, exact raw prefix ranges, ordered structures, and every claimed
+matching candidate. Do not fill fragments from complete saves.
+
+Cipher’s separate five-record derivative is rebuilt with build:cipher-corrected;
+it fixes input loop direction and character representation, not the raw source.
+Its book-code attribution is retained. Word Search executes the full original
+list and search, with adjustable 1×/20×/200× pacing; completion remains slow.
+`node app/scripts/check-wordsearch.mjs` checks the original full generation and
+Space/list/redraw flow through the real ROM; it is a long manual check.
+
+Space Colony’s origin is James A. Storer’s King / Pollution Game; credit the
+primary book scan linked in its provenance rather than claiming a wholly original
+game. Computa-Match retains its original sample names/phone-like fields; the
+runtime provenance explains the sample status. Do not include the quarantined
+file8b sentence item. Group/derivative fixtures are in related-more.test.mjs;
+browser scenarios are in related-more.spec.js.

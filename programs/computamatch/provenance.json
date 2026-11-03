@@ -217,7 +217,15 @@
     }
   ],
   "dating": {
-    "direct_source_lines": [],
+    "direct_source_lines": [
+      "20 REMARK    PROGRAMED: CARL KADIE  SENATOR, WOODRUFF HIGH",
+      "50 REMARK    DATE: JANUARY 6TH, 1980 "
+    ],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/computamatch-gallery.svg",
+    "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c",
+    "description": "Modern illustrative SVG, separate from execution evidence."
   }
 }

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-02",
+  "source": "versions/v01/07-WORD-SEARCH.BAS",
+  "source_sha256": "10a7c263f658033c90ea1a2e1dc906d7dd5d56eebef275eff4d63c4ba1378609",
+  "model": "Stock Model III / Level II ROM via trs80-emulator 2.3.1",
+  "execution_tested": true,
+  "checks": [
+    "Original full stored list reaches DONE",
+    "All 225 grid cells contain letters",
+    "Space displays the included words, including UNITONE",
+    "A second Space redraws the exact same grid"
+  ],
+  "emulated_seconds": 15628.870985243055,
+  "wall_seconds": 215.821,
+  "grid": "SRICHUNITONEYABASPHOTOSLLIKSDRCNHCSYINDWVIDEOUODOITSPOHSKROWLSBPRSSHETCUYLADREABRUENATRELFEEIRNACMRCOALERLDUTFKSLEEROPHSONUINSSLHRTAPCUNALCNEITCALNETLGMOIATDHAMEEIILLOTPLTEUEIWDDMIKNTALSIRTCALAYVIOLTSNPONSROKTAOSTEOPDSNWTGHHN",
+  "grid_sha256": "58ee68d41cff04b0bd706f2cbf4ab6cc0e7278ec0bdf54f47955ce8300dd46b3"
+}

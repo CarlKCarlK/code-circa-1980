@@ -217,7 +217,20 @@
     }
   ],
   "dating": {
-    "direct_source_lines": [],
+    "direct_source_lines": [
+      "20 REM            BOOK: ROBERT LICHELLO",
+      "30 REM            PROGRAM: CARL KADIE",
+      "40 REM            COPYRIGHT (C) 1977"
+    ],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/aim-gallery.svg",
+    "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778",
+    "description": "Modern illustrative SVG, separate from execution evidence."
+  },
+  "collection_group": {
+    "parent": "spi",
+    "note": "Distinct algorithm and history, selected through SPI\u2019s one investing gallery entry."
   }
 }

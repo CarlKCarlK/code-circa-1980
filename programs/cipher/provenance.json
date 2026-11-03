@@ -61,7 +61,20 @@
     }
   ],
   "dating": {
-    "direct_source_lines": [],
+    "direct_source_lines": [
+      "5 ' CODE FROM \"BASIC PROGRAMMING\" MODIFIED BY C.M. KADIE FOR THE TRS-80"
+    ],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/cipher-gallery.svg",
+    "sha256": "7cd57d882e809678611fec6639dedb32e67b067ef027fa64428ccf4423f7ac3a",
+    "description": "Modern illustrative SVG, separate from execution evidence."
+  },
+  "corrected_edition": {
+    "path": "corrected/",
+    "manifest": "corrected/changes.json",
+    "sha256": "625defee0c63aa782d5d439b822625e93736ea4c2848fd549c12d5a5ab916427",
+    "description": "Five-record working derivative; raw recovery stays unchanged."
   }
 }

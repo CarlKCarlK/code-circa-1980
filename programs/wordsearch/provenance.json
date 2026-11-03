@@ -63,5 +63,10 @@
   "dating": {
     "direct_source_lines": [],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/wordsearch-gallery.svg",
+    "sha256": "b5f62ba44c50eb14360b18fa031ffaffc678aa3f2745a96bb9b40ebd4171af2b",
+    "description": "Modern illustrative SVG, separate from execution evidence."
   }
 }

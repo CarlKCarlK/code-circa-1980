@@ -1,7 +1,7 @@
 {
   "id": "spi",
   "title": "Superpower Investing",
-  "description": "Replay an early professional program using historical sample share prices.",
+  "description": "Two related early investing programs: SPI and Automatic Investment Management, using historical sample prices.",
   "kind": "Finance",
   "language": "Level II BASIC",
   "gallery": "more",
@@ -66,5 +66,8 @@
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": null
     }
+  ],
+  "relatedPrograms": [
+    "aim"
   ]
 }

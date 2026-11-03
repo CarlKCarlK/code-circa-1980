@@ -1,0 +1,38 @@
+{
+  "source": "versions/v01/02-KEYWORD-CIPHER.BAS",
+  "source_sha256": "77c0c604cfd071fd4c6c2ca7e9979a5375c1758ad60a521102e7bb717e5b41f0",
+  "sha256": "625defee0c63aa782d5d439b822625e93736ea4c2848fd549c12d5a5ab916427",
+  "changes": [
+    {
+      "line": 50,
+      "before": "50 L(0)=LEN(M$):FORC=L(0)TO1:L=L+1:L(L)=ASC(RIGHT$(M$,C)):NEXTC",
+      "after": "50 L(0)=LEN(M$):FORC=L(0)TO1STEP-1:L=L+1:L(L)=ASC(RIGHT$(M$,C)):NEXTC",
+      "reason": "Read every message character, not only the first."
+    },
+    {
+      "line": 80,
+      "before": "80 K(0)=LEN(K$):FORC=K(0)TO1:K=K+1:K(K)=ASC(RIGHT$(K$,C)):NEXTC",
+      "after": "80 K(0)=LEN(K$):FORC=K(0)TO1STEP-1:K=K+1:K(K)=ASC(RIGHT$(K$,C)):NEXTC",
+      "reason": "Read every keyword character, not only the first."
+    },
+    {
+      "line": 440,
+      "before": "440 FORC=1TOL(0):M$=M$+CHR$(L(C)+64):NEXTC",
+      "after": "440 FORC=1TOL(0):M$=M$+CHR$(L(C)):NEXTC",
+      "reason": "Stored values are already character codes."
+    },
+    {
+      "line": 520,
+      "before": "520 IFX=ASC(\"`\")THEN570",
+      "after": "520 IFX=ASC(\"@\")THEN570",
+      "reason": "Use code 64 for the space slot in the 27-symbol alphabet."
+    },
+    {
+      "line": 550,
+      "before": "550 X=ASC(\"`\")",
+      "after": "550 X=ASC(\"@\")",
+      "reason": "Use code 64 for the space slot in the 27-symbol alphabet."
+    }
+  ],
+  "limits": "Message support tested for A–Z and spaces, keywords A–Z up to 10 letters. Other punctuation and long inputs retain original behavior."
+}

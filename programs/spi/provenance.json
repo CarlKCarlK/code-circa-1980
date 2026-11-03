@@ -297,5 +297,11 @@
     "path": "programs/spi/verification/screen.png",
     "sha256": "e44b8ee66f629219dd651606268f689920c33e984f8a972013462e6b04ea1819",
     "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
-  }
+  },
+  "related_programs": [
+    {
+      "id": "aim",
+      "relationship": "Related Lichello-based investing program; distinct formulas, dataset, canonical history and default reference. Grouped in one gallery entry."
+    }
+  ]
 }

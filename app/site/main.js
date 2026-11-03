@@ -112,7 +112,7 @@ async function render() {
     host.querySelector('#control-dock').append(app.querySelector('.keyboard-help'));
     // '/castle' starts with the default scene; '/bridge' is the older name kept for shared links.
     if(modern&&['castle','bridge'].includes(parts[4]??(webProgram?program.playSuffix?.slice(1):undefined)))instance.loadStartingPattern('arch-tower');
-    program.decoratePlayer?.(instance,{dock:host.querySelector('#control-dock'),version,modern,status});
+    program.decoratePlayer?.(instance,{dock:host.querySelector('#control-dock'),version,modern,status,navigateProgram:id=>{const target=allPrograms.find(p=>p.id===id);if(target)location.href=route(target,defaultEdition(target),true);}});
     // Read-only test interface, enabled only for a test URL.
     exposePlayer(instance);
     const pause=document.querySelector('#pause');
