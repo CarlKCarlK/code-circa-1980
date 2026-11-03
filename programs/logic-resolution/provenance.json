@@ -125,6 +125,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape32a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape32a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape32a/best/05-LOGIC-RESOLUTION-SAVE03.BAS",
+      "archive_listing": "tapes/recovered/tape32a/best/05-LOGIC-RESOLUTION-SAVE03.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/05-LOGIC-RESOLUTION-SAVE03.ASC",
+          "archive_path": "tapes/recovered/tape32a/best/05-LOGIC-RESOLUTION-SAVE03.ASC",
+          "bytes": 1441,
+          "sha256": "9682420fc709ac223f42ef29a6e6fc57a44a1a823dc7c6813747b71457d993cb"
+        },
+        {
+          "path": "versions/v03/05-LOGIC-RESOLUTION-SAVE03.BAS",
+          "archive_path": "tapes/recovered/tape32a/best/05-LOGIC-RESOLUTION-SAVE03.BAS",
+          "bytes": 1212,
+          "sha256": "83061929e53fe3e20ce27eb39b98dff664e8bb00fa13e84621ff7b02d31f02d9"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "83061929e53fe3e20ce27eb39b98dff664e8bb00fa13e84621ff7b02d31f02d9",
+        "bytes": 1212,
+        "archive_validation": "Exact independent left/right payload; 33 ordered lines; pointer base 27202; end marker; exact EOF",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 33,
+        "last": 2050,
+        "pointer_bases": [
+          27202
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1210,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "32",
+        "side": "a",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Logic-resolution theorem prover \u2014 save 3 (descriptive title)",
+        "capture": "tape32a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Exact independent left/right payload; 33 ordered lines; pointer base 27202; end marker; exact EOF",
+        "source_start_s": "320.915",
+        "recovered_bytes": "1212",
+        "source_file": "tapes/recovered/tape32a/best/05-LOGIC-RESOLUTION-SAVE03.ASC",
+        "wav": "tapes/tape32a.wav",
+        "folder": "tapes/recovered/tape32a",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape32a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
