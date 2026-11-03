@@ -1,0 +1,42 @@
+{
+  "id": "drama-anthology-index",
+  "title": "Drama Anthology Index",
+  "description": "Drama Anthology Index. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "DRAMA ANTHOLOGY INDEX",
+      "capture": "tape25a",
+      "save": 13,
+      "raw": "versions/v01/13-DRAMA-ANTHOLOGY-INDEX.BAS",
+      "listing": "versions/v01/13-DRAMA-ANTHOLOGY-INDEX.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/13-DRAMA-ANTHOLOGY-INDEX.ASC",
+          "label": "13-DRAMA-ANTHOLOGY-INDEX.ASC"
+        },
+        {
+          "path": "versions/v01/13-DRAMA-ANTHOLOGY-INDEX.BAS",
+          "label": "13-DRAMA-ANTHOLOGY-INDEX.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 1000\n20 'FORMAT B* BOOK TITLE,A* AUTHOR,PLAY TITLE\n30 CLS\n40 PRINT\"DO YOU WISH TO SEARCH BY\"\n50 PRINT\n60 PRINT\"AUTHOR\"\n70 PRINT\"BOOK TITLE\"\n80 PRINT\"PLAY TITLE\"\n90 PRINT\n100 INPUT\"CHOICE\";C$\n110 PRINT\"WHAT IS \"C$\"'S NAME\";:INPUT N$\n120 L$=LEFT$(C$,1)",
+      "controlSource": [
+        "460 IF INKEY$=\"\"THEN460  ELSERUN"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
