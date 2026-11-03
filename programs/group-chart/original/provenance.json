@@ -1,60 +1,60 @@
 {
-  "version": "v02",
-  "capture": "tape21b",
-  "save": 10,
-  "archive_raw": "tapes/recovered/tape21b/best/10-GROUP-CHART.BAS",
-  "archive_listing": "tapes/recovered/tape21b/best/10-GROUP-CHART.ASC",
+  "version": "v03",
+  "capture": "tape22a",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape22a/best/02-GROUP-CHART.BAS",
+  "archive_listing": "tapes/recovered/tape22a/best/02-GROUP-CHART.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/10-GROUP-CHART.ASC",
-      "archive_path": "tapes/recovered/tape21b/best/10-GROUP-CHART.ASC",
-      "bytes": 591,
-      "sha256": "27c540364db24462798bffd54c889822e5c1eef50a3f110fd09937946356efdd"
+      "path": "versions/v03/02-GROUP-CHART.ASC",
+      "archive_path": "tapes/recovered/tape22a/best/02-GROUP-CHART.ASC",
+      "bytes": 869,
+      "sha256": "348eeecfc4d6ab159d574f772f76f6f62c8cd4ceb320b9cb2a5cba9760c99f39"
     },
     {
-      "path": "versions/v02/10-GROUP-CHART.BAS",
-      "archive_path": "tapes/recovered/tape21b/best/10-GROUP-CHART.BAS",
-      "bytes": 495,
-      "sha256": "45f1d59f5ad02aea1b6b10720db5a9c49dc5b77fa70abdecd12a33f250ae04e4"
+      "path": "versions/v03/02-GROUP-CHART.BAS",
+      "archive_path": "tapes/recovered/tape22a/best/02-GROUP-CHART.BAS",
+      "bytes": 728,
+      "sha256": "069952eba804e8e4feea3a8a9fb87aae1551ed67a2ba4f76179c49b49e376b8b"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "45f1d59f5ad02aea1b6b10720db5a9c49dc5b77fa70abdecd12a33f250ae04e4",
-    "bytes": 495,
+    "sha256": "069952eba804e8e4feea3a8a9fb87aae1551ed67a2ba4f76179c49b49e376b8b",
+    "bytes": 728,
     "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 16,
-    "last": 150,
+    "lines": 20,
+    "last": 10000,
     "pointer_bases": [
       17125
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 493,
+    "parsed_bytes": 726,
     "source_notice_lines": []
   },
   "inventory_row": {
-    "tape": "21",
-    "side": "b",
-    "order": "10",
+    "tape": "22",
+    "side": "a",
+    "order": "2",
     "type": "BASIC",
     "recovery%": "100",
     "summary": "GROUP CHART",
-    "capture": "tape21b",
+    "capture": "tape22a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "330.786",
-    "recovered_bytes": "495",
-    "source_file": "tapes/recovered/tape21b/best/10-GROUP-CHART.ASC",
-    "wav": "tapes/tape21b.wav",
-    "folder": "tapes/recovered/tape21b",
+    "source_start_s": "31.633",
+    "recovered_bytes": "728",
+    "source_file": "tapes/recovered/tape22a/best/02-GROUP-CHART.ASC",
+    "wav": "tapes/tape22a.wav",
+    "folder": "tapes/recovered/tape22a",
     "recovery_date": "2026-10-28",
     "recorder_volume": "",
     "next_action": "Runtime testing only if requested"
   },
-  "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape22a/inventory.json",
   "execution_tested": false
 }
