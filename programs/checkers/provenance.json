@@ -1,0 +1,74 @@
+{
+  "official_title": "Checkers",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "checkers_p75",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape9b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape9b/best/01-CHECKERS.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/01-CHECKERS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-CHECKERS.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/01-CHECKERS.ASC",
+          "bytes": 2744,
+          "sha256": "b984e9d6543b258134039805b243997cae6eaa085f0578273735ab860825b7dc"
+        },
+        {
+          "path": "versions/v01/01-CHECKERS.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/01-CHECKERS.BAS",
+          "bytes": 2085,
+          "sha256": "9add2ab198d91d6da4788d8bd04ec7b1d9b5cb63aa1085371dd61e29b2612f58"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "9add2ab198d91d6da4788d8bd04ec7b1d9b5cb63aa1085371dd61e29b2612f58",
+        "bytes": 2085,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 60,
+        "last": 22001,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2083,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "CHECKERS; 60 lines",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "12.702",
+        "recovered_bytes": "2085",
+        "source_file": "tapes/recovered/tape9b/best/01-CHECKERS.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
