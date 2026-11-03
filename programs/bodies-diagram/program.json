@@ -1,0 +1,40 @@
+{
+  "id": "bodies-diagram",
+  "title": "Bodies Diagram",
+  "description": "Bodies Diagram. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extended features",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BODIES DIAGRAM",
+      "capture": "tape4b",
+      "save": 7,
+      "raw": "versions/v01/07-BODIES-DIAGRAM.BAS",
+      "listing": "versions/v01/07-BODIES-DIAGRAM.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 22 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/07-BODIES-DIAGRAM.ASC",
+          "label": "07-BODIES-DIAGRAM.ASC"
+        },
+        {
+          "path": "versions/v01/07-BODIES-DIAGRAM.BAS",
+          "label": "07-BODIES-DIAGRAM.BAS"
+        }
+      ],
+      "startupSource": "10 INPUT\"HOW MANY BODIES ARE THERE\";BN\n20 FORI=1TOBN\n30 PRINT\"WHAT IS THE X,Y, AND MASS OF BODY #\";I;\n40 INPUTB(I,1),B(I,2),B(I,3)\n50 B(I,2)=B(I,2)/2\n60 NEXT\n70 X=64:Y=24\n80 CLS\n90 FORI=1TOBN\n100 LINE@(B(I,1),B(I,2))-(B(I,1)+B(I,3),B(I,2)+B(I,3)/4),SET,BF\n110 NEXT\n120 FORI=1TOBN",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
