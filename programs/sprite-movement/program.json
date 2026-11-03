@@ -1,0 +1,42 @@
+{
+  "id": "sprite-movement",
+  "title": "Sprite Movement",
+  "description": "Sprite Movement. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extended features",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SPRITE MOVEMENT",
+      "capture": "tape4b",
+      "save": 12,
+      "raw": "versions/v01/12-SPRITE-MOVEMENT.BAS",
+      "listing": "versions/v01/12-SPRITE-MOVEMENT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/12-SPRITE-MOVEMENT.ASC",
+          "label": "12-SPRITE-MOVEMENT.ASC"
+        },
+        {
+          "path": "versions/v01/12-SPRITE-MOVEMENT.BAS",
+          "label": "12-SPRITE-MOVEMENT.BAS"
+        }
+      ],
+      "startupSource": "2 X=40:XO=X:Y=30:YO=Y\n5 SE=1\n10 CLS:LINE(0,0)-(15,0),SET:LINE(0,1)-(15,1),SET:LINE(1,2)-(14,2),SET:LINE(1,0)-(4,0),RESET:LINE(7,0)-(13,0),RESET\n15 DIMS%(20),M%(20)\n20 GET@(0,0)-(15,2),G,S%:CLS:LINE@(1,0)-(1,2),SET:SET(0,1):SET(2,3):SET(0,3):SET(2,1):GET@(0,0)-(2,3),G,M%\n30 CLS\n40 FORI=0TO383:PRINTCHR$(191);:NEXT\n50 A$=INKEY$:IFA$=\"2\"THENYY=1ELSEIFA$=\"1\"THENYY=-1ELSEIFA$=\"3\"THENXX=-1ELSEIFA$=\"4\"THENXX=1ELSEIFA$=\" \"ANDF=0THENF=1:CM=XX:MX=X+7:MY=Y-1:NX=MX:NY=MY:MS=1\n60 X=X+XX:Y=Y+YY*.1\n64 IFY<17THENYY=0\n70 PUT@(XO,YO)-(XO+15,YO+2),XOR,S%:IFSE<>1THENPUT@(X,Y)-(X+15,Y+2),XOR,S%:XO=X:YO=Y\n75 SE=0",
+      "controlSource": [
+        "50 A$=INKEY$:IFA$=\"2\"THENYY=1ELSEIFA$=\"1\"THENYY=-1ELSEIFA$=\"3\"THENXX=-1ELSEIFA$=\"4\"THENXX=1ELSEIFA$=\" \"ANDF=0THENF=1:CM=XX:MX=X+7:MY=Y-1:NX=MX:NY=MY:MS=1"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

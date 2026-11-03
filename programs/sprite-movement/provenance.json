@@ -1,0 +1,74 @@
+{
+  "official_title": "Sprite Movement",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "sprite_movement_p257",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape4b",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape4b/best/12-SPRITE-MOVEMENT.BAS",
+      "archive_listing": "tapes/recovered/tape4b/best/12-SPRITE-MOVEMENT.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/12-SPRITE-MOVEMENT.ASC",
+          "archive_path": "tapes/recovered/tape4b/best/12-SPRITE-MOVEMENT.ASC",
+          "bytes": 791,
+          "sha256": "897f45be45dfc5baa63db04e7398716da382e58ea3c0c2c98b83c531dc1d06dc"
+        },
+        {
+          "path": "versions/v01/12-SPRITE-MOVEMENT.BAS",
+          "archive_path": "tapes/recovered/tape4b/best/12-SPRITE-MOVEMENT.BAS",
+          "bytes": 667,
+          "sha256": "dc3e70ae125846df7049c044e70f0a646d104b7f774f573e32778773e79bff2b"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "dc3e70ae125846df7049c044e70f0a646d104b7f774f573e32778773e79bff2b",
+        "bytes": 667,
+        "archive_validation": "18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 18,
+        "last": 1000,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 665,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "4",
+        "side": "b",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SPRITE MOVEMENT; 18 lines; T9-C1",
+        "capture": "tape4b",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extended features",
+        "status": "validated payload; runtime untested",
+        "validation": "18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "667",
+        "source_file": "tapes/recovered/tape4b/best/12-SPRITE-MOVEMENT.ASC",
+        "wav": "tapes/tape4b.wav",
+        "folder": "tapes/recovered/tape4b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Identify compatible extended BASIC for LINE graphics, GET graphics, PUT graphics"
+      },
+      "recovery_inventory": "tapes/recovered/tape4b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
