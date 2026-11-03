@@ -1,0 +1,40 @@
+{
+  "id": "lunar-landing-simulator",
+  "title": "Lunar Landing Simulator",
+  "description": "Lunar Landing Simulator. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LUNAR LANDING SIMULATOR",
+      "capture": "tape11a",
+      "save": 13,
+      "raw": "versions/v01/13-LUNAR-LANDING-SIMULATOR.BAS",
+      "listing": "versions/v01/13-LUNAR-LANDING-SIMULATOR.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/13-LUNAR-LANDING-SIMULATOR.ASC",
+          "label": "13-LUNAR-LANDING-SIMULATOR.ASC"
+        },
+        {
+          "path": "versions/v01/13-LUNAR-LANDING-SIMULATOR.BAS",
+          "label": "13-LUNAR-LANDING-SIMULATOR.BAS"
+        }
+      ],
+      "startupSource": "15 Z$=\"GO\"\n20 B1=1:M=17.95:F1=5.25:N=7.5:R0=926:V0=1.29:T=0:H0=60:R=R0+H0:A=-3.425:R1=0:A1=8.84361E-4:R3=0:A3=0:M1=7.45:M0=M1:B=750:T1=0:F=0:P=0:N=1:M2=0:S=0:C=0\n135 IFZ$=\"YES\"THEN      \n140 PRINT\n145 PRINT\"LLS\"\n150 PRINT\n155 PRINT\"HAVE YOU EVER FLOWN A MISSION BEFORE\";\n160 PRINT\"(YES OR NO)\";\n165 INPUTQ$\n170 IFQ$=\"YES\"THEN190  \n175 IFQ$=\"NO\"THEN 205  \n180 PRINT\"JUST ANSWER THE QUESTION, PLEASE, \";",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
