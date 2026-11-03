@@ -1,54 +1,54 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape11b",
-  "save": 9,
-  "archive_raw": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.BAS",
-  "archive_listing": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape11b/best/10-GRAPHICS-CHASE-GAME.BAS",
+  "archive_listing": "tapes/recovered/tape11b/best/10-GRAPHICS-CHASE-GAME.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
-      "archive_path": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
-      "bytes": 659,
-      "sha256": "e48263487f15063d111fcf9e8994d2f1015a31ccb7d4aca9d6408968b034066e"
+      "path": "versions/v02/10-GRAPHICS-CHASE-GAME.ASC",
+      "archive_path": "tapes/recovered/tape11b/best/10-GRAPHICS-CHASE-GAME.ASC",
+      "bytes": 1643,
+      "sha256": "40f73eb9a6b5709281b6bd9e749f1534e68f668a3703ecb38ec12f666228969c"
     },
     {
-      "path": "versions/v01/09-GRAPHICS-CHASE-GAME-EARLY.BAS",
-      "archive_path": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.BAS",
-      "bytes": 549,
-      "sha256": "cdd52be991e820785a1e4a855a4f7f14e27afb59a9a14d8ca68986e3e82b6dd2"
+      "path": "versions/v02/10-GRAPHICS-CHASE-GAME.BAS",
+      "archive_path": "tapes/recovered/tape11b/best/10-GRAPHICS-CHASE-GAME.BAS",
+      "bytes": 1342,
+      "sha256": "9d5b6a34de384cc19f1b80ffb8e6703d624d6affb7784bb222e6c2213554c6bc"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "cdd52be991e820785a1e4a855a4f7f14e27afb59a9a14d8ca68986e3e82b6dd2",
-    "bytes": 549,
+    "sha256": "9d5b6a34de384cc19f1b80ffb8e6703d624d6affb7784bb222e6c2213554c6bc",
+    "bytes": 1342,
     "archive_validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 14,
-    "last": 1010,
+    "lines": 35,
+    "last": 1040,
     "pointer_bases": [
-      17125
+      22204
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 547,
+    "parsed_bytes": 1340,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "11",
     "side": "b",
-    "order": "9",
+    "order": "10",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "GRAPHICS CHASE GAME EARLY; 14 lines",
+    "summary": "GRAPHICS CHASE GAME; 35 lines",
     "capture": "tape11b",
     "capture_scope": "possible skipped program (tangled tape)",
     "baud": "500",
     "platform": "TRS-80 BASIC; extensions may be required",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
-    "source_start_s": "382.658",
-    "recovered_bytes": "549",
-    "source_file": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
+    "source_start_s": "404.248",
+    "recovered_bytes": "1342",
+    "source_file": "tapes/recovered/tape11b/best/10-GRAPHICS-CHASE-GAME.ASC",
     "wav": "tapes/tape11b.wav",
     "folder": "tapes/recovered/tape11b/best",
     "recovery_date": "2026-10-27",

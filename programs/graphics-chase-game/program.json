@@ -36,6 +36,32 @@
       "controlSource": [
         "100 A$=INKEY$:IF VAL(A$)<>0THENRESTORE: FOR C=1TOVAL(A$):READ XX,YY:NEXTC"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "GRAPHICS CHASE GAME",
+      "capture": "tape11b",
+      "save": 10,
+      "raw": "versions/v02/10-GRAPHICS-CHASE-GAME.BAS",
+      "listing": "versions/v02/10-GRAPHICS-CHASE-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/10-GRAPHICS-CHASE-GAME.ASC",
+          "label": "10-GRAPHICS-CHASE-GAME.ASC"
+        },
+        {
+          "path": "versions/v02/10-GRAPHICS-CHASE-GAME.BAS",
+          "label": "10-GRAPHICS-CHASE-GAME.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 Y=RND(42)+1:X=RND(118)+2:BX=RND(118)+2:BY=RND(42)+1:OX=X:OY=Y:PX=BX:PY=BY\n30 CY=RND(3)-1:CX=RND(3)-1\n40 DIM H%(10),C%(10),I%(10),D%(10)\n50 PRINT CHR$(172)+CHR$(187)+CHR$(144):PRINT CHR$(130)+\" \"+CHR$(129)\n60 GET@(0,0)-(4,3),G,H%\n70 CLS:PRINTCHR$(142)+CHR$(156)+CHR$(172)\n80 GET @(0,0)-(5,2),G,C%\n90 CLS:PRINTCHR$(160)+CHR$(183)+CHR$(156):PRINTCHR$(130)+\" \";CHR$(129)\n100 GET@(1,0)-(5,3),G,I%\n110 CLS:PRINT CHR$(156)+CHR$(172)+CHR$(141)\n120 GET@(0,0)-(5,2),G,D%",
+      "controlSource": [
+        "140 A$=INKEY$:IFA$=\" \"THEN GOSUB1000ELSEIF A$<>\"\"THENRESTORE: FOR C=1TO9:READM$, XX,YY:IF M$=A$ THEN XX=XX*2:GOTO150  ELSE NEXT"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
