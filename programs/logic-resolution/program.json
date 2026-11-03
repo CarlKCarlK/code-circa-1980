@@ -1,0 +1,40 @@
+{
+  "id": "logic-resolution",
+  "title": "Logic Resolution",
+  "description": "Logic Resolution. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Logic-resolution theorem prover \u2014 save 1 (descriptive title)",
+      "capture": "tape32a",
+      "save": 3,
+      "raw": "versions/v01/03-LOGIC-RESOLUTION-SAVE01.BAS",
+      "listing": "versions/v01/03-LOGIC-RESOLUTION-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Exact independent left/right payload; 33 ordered lines; pointer base 27202; end marker; exact EOF",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/03-LOGIC-RESOLUTION-SAVE01.ASC",
+          "label": "03-LOGIC-RESOLUTION-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/03-LOGIC-RESOLUTION-SAVE01.BAS",
+          "label": "03-LOGIC-RESOLUTION-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "2 CLS\n5 CLEAR 2000\n7 DEFINT A-Y\n10 DIM P(200,1),W$(200),F(200,1)\n14 DEF FNX(X,Y)=B\n15 DEF FNM(A,B)= ((A>=B)ANDA)+((B>A)ANDB)\n16 Z2=1/LOG(2)\n17 'DATA #A,B,,#B,C,,#C,D,,#D,E,,A,,#E,DONE\n20 DATA  #A,B,  ,#A,C,  ,#D,E,F,G, ,#C,D, ,#F,#B, ,A, ,#G, ,#E, DONE\n25 DIM S$(10,1):FORI=1TO10:S$=CHR$(I+ASC(\"A\")-1):FORJ=0TO1:IF J=1 THEN S$=\"#\"+S$\n27 S$(I,J)=S$:NEXTJ,I\n28 R=1",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
