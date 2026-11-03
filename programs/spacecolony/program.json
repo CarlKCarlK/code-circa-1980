@@ -20,6 +20,18 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "SPACE COLONY",
+      "capture": "tape14a",
+      "save": 3,
+      "raw": "versions/v02/03-SPACE-COLONY.BAS",
+      "listing": "versions/v02/03-SPACE-COLONY.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+      "unavailableReason": null
     }
   ]
 }
