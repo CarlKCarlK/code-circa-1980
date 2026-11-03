@@ -1,0 +1,40 @@
+{
+  "id": "model-100-traveling-salesman",
+  "title": "Model 100 Traveling Salesman",
+  "description": "Model 100 Traveling Salesman. 4 recovered saves.",
+  "kind": "Archive",
+  "language": "Model 100",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Cassette name T",
+      "capture": "tape2a",
+      "save": 9,
+      "raw": "versions/v01/09-T-BASIC-TAPE-BLOCK.BIN",
+      "listing": "versions/v01/09-T.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/09-T-BASIC-TAPE-BLOCK.BIN",
+          "label": "09-T-BASIC-TAPE-BLOCK.BIN"
+        },
+        {
+          "path": "versions/v01/09-T.ASC",
+          "label": "09-T.ASC"
+        }
+      ],
+      "startupSource": "10 'traveling salesman\n14  DEFSNG A\n15 DEFINT B-Z\n16 FC!=.9\n20 INPUT \"How many cites\";C\n30 DIM C(1,C)\n40 INPUT\"random sequence\";R:FORI=1TOR:C(0,0)=RND(1):NEXTI\n45 CLS\n50 FORJ=0TO1:FORI=1TOC:C(J,I)=RND(1)*63:NEXTI,J\n60 DIM N(C),R(C),A(C):FORI=1TOC:N(I)=I+1:NEXT I:N(C)=1\n70 GOSUB 1000:AR=C*100\n100 IF A(0) < AR THEN AR=A(0):FOR I=1TO C:R(I)=N(I):NEXTI:LINE(0,0)-(63,63),0,BF:II=1:FORI=1TOC:LINE(C(0,II),C(1,II))-(C(0,N(II)),C(1,N(II))),1:II=N(II):NEXTI:PRINT@280,INT(AR);",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
