@@ -66,6 +66,34 @@
       ],
       "startupSource": "00100 PRCES\tLD\tA,(TST)\n00110 \tCALL\tSPECL\n00120 \tLD\tE,127\n00140 \tLD\tD,A\n00150 \tLD\tD,40\n00160 LUP\tCALL\tFALL\n00180 \tDEC\tE\n00200 \tJP\tP,LUP\n00220 \tDEC\tD\n00240 \tLD\tE,127\n00260 \tJP\tP,LUP\n00280 \tRET\t\t; ALL DONE -- BACK TO BASIC",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "FALL ASSEMBLY V3",
+      "capture": "tape18a",
+      "save": 16,
+      "raw": "versions/v03/16-FALL-ASSEMBLY-V3.ASM",
+      "listing": "versions/v03/16-FALL-ASSEMBLY-V3.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v03/16-FALL-ASSEMBLY-V3.ASM",
+          "label": "16-FALL-ASSEMBLY-V3.ASM"
+        },
+        {
+          "path": "versions/v03/16-FALL-ASSEMBLY-V3.TXT",
+          "label": "16-FALL-ASSEMBLY-V3.TXT"
+        },
+        {
+          "path": "versions/v03/16-FALL-ASSEMBLY-V3.Z80",
+          "label": "16-FALL-ASSEMBLY-V3.Z80"
+        }
+      ],
+      "startupSource": "00100 PRCES\tLD\tA,(TST)\n00110 \tCALL\tSPECL\n00120 \tLD\tE,127\n00130 \tLD\tD,A\n00140 \tLD\tD,40\n00150 LUP\tCALL\tFALL\n00160 \tDEC\tE\n00170 \tJP\tP,LUP\n00180 \tDEC\tD\n00190 \tLD\tE,127\n00200 \tJP\tP,LUP\n00210 \tRET\t\t; ALL DONE -- BACK TO BASIC",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
