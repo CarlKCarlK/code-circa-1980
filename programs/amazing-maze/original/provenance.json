@@ -1,60 +1,60 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape12b",
-  "save": 15,
-  "archive_raw": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
-  "archive_listing": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+  "save": 16,
+  "archive_raw": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.BAS",
+  "archive_listing": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC",
-      "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC",
-      "bytes": 4770,
-      "sha256": "de4e871159625f7bf6de61bfadbf374ff8150f0caf89ff3c0238c897fd99e493"
+      "path": "versions/v03/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
+      "archive_path": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
+      "bytes": 3580,
+      "sha256": "fd1b68d5afd5b7bba73c6ec3d4502456289e6e844ff70912fec84c342f14ec58"
     },
     {
-      "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
-      "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
-      "bytes": 958,
-      "sha256": "08958f656832dae09dc9dd12bec7816e3059dc418c478489b0b812372116328d"
-    },
-    {
-      "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
-      "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
-      "bytes": 2733,
-      "sha256": "4bf3ad63c52f5eb3585520d76ec12c62d9dd1ae30cfac44cae23463daf571e04"
+      "path": "versions/v03/16-AMAZING-PROGRAM-GRAPHICS-V2.BAS",
+      "archive_path": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.BAS",
+      "bytes": 2944,
+      "sha256": "4c1a66962c5e20c2da05b37bf1951b38c525dcb20140b430f6721bf9a78db1b1"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "4bf3ad63c52f5eb3585520d76ec12c62d9dd1ae30cfac44cae23463daf571e04",
-    "bytes": 2733,
-    "archive_validation": "Exact 792-byte readable prefix matches three variants; full stream damaged",
+    "sha256": "4c1a66962c5e20c2da05b37bf1951b38c525dcb20140b430f6721bf9a78db1b1",
+    "bytes": 2944,
+    "archive_validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "structure_conflict": true,
+    "lines": 158,
+    "last": 4020,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 2942,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "12",
     "side": "b",
-    "order": "15",
+    "order": "16",
     "type": "BASIC",
-    "recovery%": "",
-    "summary": "AMAZING PROGRAM DAMAGED COPY; 45 lines",
+    "recovery%": "100",
+    "summary": "AMAZING PROGRAM GRAPHICS V2; 158 lines",
     "capture": "tape12b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
-    "status": "damaged maze-program recording",
-    "validation": "Exact 792-byte readable prefix matches three variants; full stream damaged",
-    "source_start_s": "729.878",
-    "recovered_bytes": "2733",
-    "source_file": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+    "source_start_s": "790.597",
+    "recovered_bytes": "2944",
+    "source_file": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
     "wav": "tapes/tape12b.wav",
-    "folder": "tapes/recovered/tape12b/partial",
+    "folder": "tapes/recovered/tape12b/best",
     "recovery_date": "2026-10-27",
     "recorder_volume": "",
-    "next_action": "Consider another capture if needed; two full maze versions recovered"
+    "next_action": "Execution-test with compatible runtime"
   },
-  "recovery_inventory": "tapes/recovered/tape12b/partial/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
   "execution_tested": false
 }
