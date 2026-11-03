@@ -1,0 +1,40 @@
+{
+  "id": "programmable-calculator-draft",
+  "title": "Programmable Calculator Draft",
+  "description": "Programmable Calculator Draft. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PROGRAMMABLE CALCULATOR DRAFT",
+      "capture": "tape25a",
+      "save": 14,
+      "raw": "versions/v01/14-PROGRAMMABLE-CALCULATOR-DRAFT.BAS",
+      "listing": "versions/v01/14-PROGRAMMABLE-CALCULATOR-DRAFT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/14-PROGRAMMABLE-CALCULATOR-DRAFT.ASC",
+          "label": "14-PROGRAMMABLE-CALCULATOR-DRAFT.ASC"
+        },
+        {
+          "path": "versions/v01/14-PROGRAMMABLE-CALCULATOR-DRAFT.BAS",
+          "label": "14-PROGRAMMABLE-CALCULATOR-DRAFT.BAS"
+        }
+      ],
+      "startupSource": "5 '***** GAVE UP JULY 1979 BECAUSE OF DIFFICULTIES IN SIMMULATION *****\n1000 REM     PROGRAMMER\n1010 '\n1020 REM     DEFINE CONSTANTS\n1030     PI = 3.14159\n1040     E  = 2.7179766\n1050 '\n1060 REM     DEFINE NEW FUCTIONS\n1070     DEF FNS(X) = ATN( X/ SQR( -X * X +1 ) ):'  ARC-SINE\n1080     DEF FNC(X) = - FNS( X ) + PI/2         :'  ARC-COSINE\n1090     DEF FNL(X) = E [ X                     :'  ANTI-LOG\n1100     DEF FNR(X) = X / PI *180               :'  RAD TO DEG",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
