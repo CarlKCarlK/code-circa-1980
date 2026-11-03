@@ -1,0 +1,40 @@
+{
+  "id": "blackjack-analysis",
+  "title": "Blackjack Analysis",
+  "description": "Blackjack Analysis. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BLACKJACK ANALYSIS",
+      "capture": "tape25a",
+      "save": 15,
+      "raw": "versions/v01/15-BLACKJACK-ANALYSIS.BAS",
+      "listing": "versions/v01/15-BLACKJACK-ANALYSIS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/15-BLACKJACK-ANALYSIS.ASC",
+          "label": "15-BLACKJACK-ANALYSIS.ASC"
+        },
+        {
+          "path": "versions/v01/15-BLACKJACK-ANALYSIS.BAS",
+          "label": "15-BLACKJACK-ANALYSIS.BAS"
+        }
+      ],
+      "startupSource": "1 CLEAR 200\n2 F=1\n5 CLS\n10 ' BLACKJACK ANAISLYS\n15 DIMC(52)\n20 FORX=1TO13:C(X)=X:C(X+13)=X:C(X+26)=X:C(X+39)=X:NEXT\n25 FORX=1TO52:IFC(X)>10 THENC(X)=10 ELSE IF C(X)=1THENC(X)=11\n26 NEXT\n30 FORX=1TO52:R1=RND(52):R2=RND(52):H=C(R1):C(R1)=C(R2):C(R2)=H:NEXT\n35 GH=GH+1:IFGH<6THEN30\n40 P=1\n50 IFP>45THENP=1:GOTO30",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
