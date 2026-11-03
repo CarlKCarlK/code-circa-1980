@@ -1,0 +1,40 @@
+{
+  "id": "electric-potential-map",
+  "title": "Electric Potential Map",
+  "description": "Electric Potential Map. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ELECTRIC POTENTIAL MAP",
+      "capture": "tape22a",
+      "save": 12,
+      "raw": "versions/v01/12-ELECTRIC-POTENTIAL-MAP.BAS",
+      "listing": "versions/v01/12-ELECTRIC-POTENTIAL-MAP.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/12-ELECTRIC-POTENTIAL-MAP.ASC",
+          "label": "12-ELECTRIC-POTENTIAL-MAP.ASC"
+        },
+        {
+          "path": "versions/v01/12-ELECTRIC-POTENTIAL-MAP.BAS",
+          "label": "12-ELECTRIC-POTENTIAL-MAP.BAS"
+        }
+      ],
+      "startupSource": "10 INPUT\"HOW MANY CHARGES DO YOU HAVE\";N\n30 FORI=1TON\n32 PRINT\"TYPE IN THE X AND Y  POSITIONS OF CHARGE \";I;:INPUT A(I),B(I)\n33 B(I)=B(I)*10:A(I)=A(I)*10\n34 NEXTI\n35 FORI=1TON:A(I)=A(I)*SQR(3)/2:NEXTI\n40 PRINT\"TYPE IN THE SIZE OF EACH CHARGE/ USE 3 FOR A CHARGE OF 3Q\"\n50 FORI=1TON:PRINT\"CHARGE \";I;:INPUTC(I):NEXTI\n60 GOTO130\n70 V=0\n80 FORI=1TON\n85 R=SQR((X-A(I))[2+(Y-B(I))[2)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
