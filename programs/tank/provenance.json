@@ -62,6 +62,90 @@
   ],
   "dating": {
     "direct_source_lines": [],
-    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence."
+    "caution": "Direct source notices and nearby saves provide context, not tape-save dates. Same-side context is stronger than opposite-side context. Tape numbers do not establish chronology.",
+    "neighbor_context": [
+      {
+        "capture": "tape16a",
+        "save": "4",
+        "archive_listing": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+        "line": "20 'COPYRIGHT 1980  CARL KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "7",
+        "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "7",
+        "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT  KADIE 1981\":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": "8",
+        "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "8",
+        "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT  KADIE 1981\":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": "9",
+        "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "9",
+        "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": "10",
+        "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "10",
+        "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": "11",
+        "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "11",
+        "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      }
+    ]
+  },
+  "source_research": {
+    "date": "2026-11-03",
+    "finding": "The recovered source explicitly credits COPYRIGHT 1980 CARL KADIE. No prior published source listing was identified. It is a design draft with pseudocode and missing routines, not a finished game.",
+    "sources": []
+  },
+  "website_execution": {
+    "date": "2026-11-03",
+    "execution_tested": false,
+    "test": "app/tests/browser/history-five.spec.js",
+    "checks_and_limits": "Source-only browser entry verified: no emulator or playable-version self-link, working original listing/payload downloads and earlier-prefix links. No Tank program execution is claimed. The validated captured payload contains unfinished syntax, pseudocode, and missing behavior."
+  },
+  "artwork": {
+    "path": "app/assets/tank-gallery.svg",
+    "sha256": "3fb43f6eb0b01662674b0b80eae891254a023c597839c1b4640390b90c2b8604",
+    "description": "Modern illustrative SVG, not execution evidence."
   }
 }

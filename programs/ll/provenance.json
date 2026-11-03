@@ -62,7 +62,27 @@
   ],
   "dating": {
     "direct_source_lines": [],
-    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence."
+    "caution": "Direct source notices and nearby saves provide context, not tape-save dates. Same-side context is stronger than opposite-side context. Tape numbers do not establish chronology.",
+    "neighbor_context": [
+      {
+        "capture": "tape9a",
+        "save": "1",
+        "archive_listing": "tapes/recovered/tape9a/best/01-TEACH-III-TEST-DATA.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      },
+      {
+        "capture": "tape9a",
+        "save": "5",
+        "archive_listing": "tapes/recovered/tape9a/best/05-TEACH-III-VOCABULARY.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      },
+      {
+        "capture": "tape9a",
+        "save": "12",
+        "archive_listing": "tapes/recovered/tape9a/best/12-TEACH-III-VOCABULARY-V2.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      }
+    ]
   },
   "upstream": {
     "author": "Jim Storer; BASIC version published by Creative Computing",
@@ -73,5 +93,43 @@
     "sha256": "744231549befd5eab29d8e792f14967e515fe5238fa76ad6f2a73a96356655f9",
     "note": "Complete electronic BASIC Computer Games transcription from a Vintage BASIC mirror. Common state variables and polynomial physics establish the relationship; print transcription and exact intermediate edition are not verified. Preserves mirror text, including O in line 200 and printed spelling. Not a recovered cassette.",
     "execution_tested": false
+  },
+  "source_research": {
+    "date": "2026-11-03",
+    "finding": "The full original FOCAL listing is downloaded unchanged from Jim Storer\u2019s own history archive, which credits Matthew House\u2019s transcription. This is the first canonical source commit, ll-storer1969. A complete electronic transcription of published BASIC Lunar follows as ll-basic1978, before untouched tape9a save 9 at ll-v01. The original FOCAL, published BASIC, and recovered adaptation share state variables and polynomial physics. The exact intermediate BASIC edition used by Carl is unknown. The recovered record 1710 omits the published branch\u2019s GOSUB physics call; the position polynomial also lacks the final Q^5 term. Do not claim numerical identity or repair those differences.",
+    "sources": [
+      "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander.html",
+      "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander/LunarLanderListingText.txt",
+      "https://www.atariarchives.org/basicgames/showpage.php?page=106",
+      "https://raw.githubusercontent.com/GReaperEx/bcg/master/lunar.bas"
+    ]
+  },
+  "website_execution": {
+    "date": "2026-11-03",
+    "execution_tested": true,
+    "test": "app/tests/browser/history-five.spec.js",
+    "checks_and_limits": "Original-ROM checks passed for tape9a save 9: NO at instructions; 0,10 advances the free fall and plotted point; 0,120 reaches impact at 113.553 seconds and 4008.79 mph; 75,10 after restart leaves 15750 pounds of fuel. Pause/resume and restart passed. No successful soft landing, upward-motion branch, or exhaustive physics parity is claimed. Upstream FOCAL and published BASIC baselines were not executed.",
+    "reference": {
+      "capture": "tape9a",
+      "save": 9,
+      "version": "v01",
+      "payload": "versions/v01/09-LUNAR-LANDER.BAS",
+      "sha256": "1adfbc5370ab3f1d3bcd6ebad949b4d8d5b5d25b2381436ca3bb21d1fc54193c"
+    }
+  },
+  "artwork": {
+    "path": "app/assets/ll-gallery.svg",
+    "sha256": "f57f40ffcd289892eca959f4933f9e05d7e10bb5dc00fbde26356db1391a39cc",
+    "description": "Modern illustrative SVG, not execution evidence."
+  },
+  "emulator_capture": {
+    "path": "programs/ll/verification/screen.png",
+    "sha256": "927a56abe41a2e78523f785524f83c2497e14fd9a57871c7f0752408f82273ee"
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "A BASIC adaptation of Jim Storer\u2019s 1969 Lunar Lander.",
+    "evidence": "Full original FOCAL and published BASIC electronic transcription are retained in upstream/ and start canonical history.",
+    "url": "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander.html"
   }
 }

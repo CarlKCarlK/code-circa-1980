@@ -95,3 +95,9 @@ claimed for that listing.
 Jaberwocky incorporates dispatcher and room descriptions from Roger Chaffee’s Quest, published in BYTE, July 1979, pp. 176–186. The comparison baseline contains selected source excerpts, not a complete runnable Quest. The published listing credits Chaffee and Peninsula School, copyright 1978, with permission to use, not sell. Preserve that attribution and restriction for borrowed material.
 
 The early JAB maze forms derive from Jack Hauber’s Amazing in BASIC Computer Games (1978), edited by David H. Ahl. The upstream electronic transcription retains its Creative Computing heading and is credited separately in programs/jab/upstream/. This is third-party comparison material; the collection’s general license does not establish rights to these published sources. Neither upstream source was recovered from Carl’s cassettes in this import.
+
+## Lunar Lander and teaching-machine references
+
+Jim Storer’s 1969 Lunar Lander FOCAL listing is preserved from his own archive’s transcription credited to Matthew House. The published BASIC Lunar electronic transcription retains its Creative Computing heading and source text. Source URLs, exact file hashes, and transcription limits are in programs/ll/upstream/. These historical comparison sources have their own authorship; the collection’s general license does not assign new rights to them. TUTAC’s teaching-machine design is credited to Theodore G. Scott’s Basic Computer Programming; no modern Python simulator is incorporated or labeled a historical ancestor.
+
+Visible More-page credits additionally identify Hauber’s Amazing in Ricky Rat’s maze generation, Conway’s LIFE rules, Lichello’s investing methods, Gardner’s cited worm discussion, the book-code notice in Cipher, and John Hartman’s joint authorship for John’s Circle. These credits distinguish code, rules/design, inspiration, and collaboration; they do not assert newly discovered published code where none was identified.

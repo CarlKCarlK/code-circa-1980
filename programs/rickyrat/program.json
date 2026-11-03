@@ -176,5 +176,9 @@
       "unavailableReason": null
     }
   ],
-  "unsharedWebV1": true
+  "unsharedWebV1": true,
+  "attribution": {
+    "text": "Maze generation adapts Jack Hauber\u2019s Amazing; the rat-racing behavior is separate.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
+  }
 }

@@ -55,5 +55,9 @@
       "note": "Untouched recovered save. 63 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
       "unavailableReason": null
     }
-  ]
+  ],
+  "attribution": {
+    "text": "Inspired by the programmed-worm experiments described by Martin Gardner in Scientific American, November 1973.",
+    "url": "https://www.scientificamerican.com/article/mathematical-games-1973-11/"
+  }
 }

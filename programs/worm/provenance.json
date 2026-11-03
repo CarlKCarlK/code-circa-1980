@@ -263,5 +263,11 @@
     },
     "notes": "history/scientific-american.md",
     "scope": "The citation is identified; exact equivalence of recovered program rules to all published variants is not claimed."
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Inspired by the programmed-worm experiments described by Martin Gardner in Scientific American, November 1973.",
+    "evidence": "Recovered source line 30 cites this issue. Existing history/scientific-american.md distinguishes inspiration from unverified exact rule equivalence.",
+    "url": "https://www.scientificamerican.com/article/mathematical-games-1973-11/"
   }
 }

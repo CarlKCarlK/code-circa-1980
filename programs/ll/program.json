@@ -22,5 +22,9 @@
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
       "unavailableReason": null
     }
-  ]
+  ],
+  "attribution": {
+    "text": "A BASIC adaptation of Jim Storer\u2019s 1969 Lunar Lander.",
+    "url": "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander.html"
+  }
 }

@@ -31,8 +31,8 @@ test('John’s Circle draws a circle and a second ellipse',async({page})=>{
  test.setTimeout(70000);await boot(page,'johnscircle');await answer(page,'?','40,20');await expect.poll(()=>graphics(page),{timeout:15000}).toBeGreaterThan(20);await page.waitForTimeout(2500);const before=await snapshot(page);await tap(page,'Enter');await answer(page,'?','50,10');await page.waitForTimeout(2500);expect(await snapshot(page)).not.toEqual(before);await capture(page,'johnscircle');await noError(page);await restart(page,'?');
 });
 
-test('More has twenty-nine cards with readable artwork and direct new player links',async({page})=>{
- await page.goto('/#/more');await expect(page.locator('.program-card')).toHaveCount(29);
+test('More has thirty-four cards with readable artwork and direct new player links',async({page})=>{
+ await page.goto('/#/more');await expect(page.locator('.program-card')).toHaveCount(34);
  for(const title of ['Trajectory','Relativity','Reflex Tests','Nuclear Equation Completer','John’s Circle'])await expect(page.getByRole('heading',{name:title,exact:true})).toHaveCount(1);
  expect(await page.locator('.program-card img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0))).toBe(true);
  for(const width of [1280,390]){await page.setViewportSize({width,height:960});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
@@ -42,5 +42,5 @@ for(const id of ids)test(`${id}: frozen v1 starts directly, downloads its payloa
  test.setTimeout(60000);await page.goto(`/${id}/v1/?test`);await expect(page.locator('#display canvas')).toHaveCount(1);await expect(page.locator('#status')).toContainText('Running original BASIC');expect(new URL(page.url()).hash).toBe('');if(id==='trigectior')await expect(page.locator('.player-header h1')).toHaveText('Trajectory');
  const prompt={trigectior:'SPEED',relativity:'PRESS ENTER',reflex:'WHAT IS YOUR PLEASURE',nuclear:'TYPE PROBLEM',johnscircle:'?'}[id];await expect.poll(()=>screen(page),{timeout:20000}).toContain(prompt);await noError(page);
  const link=page.getByRole('link',{name:'Download original payload',exact:true});expect((await page.request.get(await link.getAttribute('href'))).ok()).toBe(true);
- await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(29);
+ await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(34);
 });

@@ -218,6 +218,65 @@
   ],
   "dating": {
     "direct_source_lines": [],
-    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence."
+    "caution": "Direct source notices and nearby saves provide context, not tape-save dates. Same-side context is stronger than opposite-side context. Tape numbers do not establish chronology.",
+    "neighbor_context": [
+      {
+        "capture": "tape12a",
+        "save": "2",
+        "archive_listing": "tapes/recovered/tape12a/best/02-TEACH-VI.ASC",
+        "line": "10 'TEACH VI                      BY CARL KADIE JAN. 11,1979"
+      },
+      {
+        "capture": "tape12b",
+        "save": "4",
+        "archive_listing": "tapes/recovered/tape12b/best/04-TEACH-VI.ASC",
+        "line": "10 'TEACH VI                      BY CARL KADIE JAN. 11,1979"
+      },
+      {
+        "capture": "tape12b",
+        "save": "7",
+        "archive_listing": "tapes/recovered/tape12b/best/07-TEACH-VI-V2.ASC",
+        "line": "10 'TEACH VI                      BY CARL KADIE JAN. 11,1979"
+      },
+      {
+        "capture": "tape12b",
+        "save": "8",
+        "archive_listing": "tapes/recovered/tape12b/best/08-TEACH-VI-V2-SAVE2.ASC",
+        "line": "10 'TEACH VI                      BY CARL KADIE JAN. 11,1979"
+      },
+      {
+        "capture": "tape12b",
+        "save": "13",
+        "archive_listing": "tapes/recovered/tape12b/best/13-TEACH-VI-V3.ASC",
+        "line": "10 'TEACH VI                      BY CARL KADIE JAN. 11,1979"
+      }
+    ]
+  },
+  "source_research": {
+    "date": "2026-11-03",
+    "finding": "No matching published listing was identified by searches for the title and distinctive P.C. ANDERSON dialogue. Similarity to Clue-style mysteries does not prove a source. The canonical history begins with the earliest captured draft.",
+    "sources": []
+  },
+  "website_execution": {
+    "date": "2026-11-03",
+    "execution_tested": true,
+    "test": "app/tests/browser/history-five.spec.js",
+    "checks_and_limits": "Original-ROM checks passed: NO at instructions, suspect and weapon lists, BRING ME PROF. EINS, WHAT ROOM WHERE YOU IN?, NOTHING MORE, pause/resume and restart. The courtroom is unfinished (missing 5050/5500), and no completed verdict is claimed.",
+    "reference": {
+      "capture": "tape12a",
+      "save": 12,
+      "version": "v04",
+      "payload": "versions/v04/12-WHO-DONNT-V4.BAS",
+      "sha256": "f72b9179077173f57bb5a76e8837613f850ae230743f1dd4eda1f51e0ce64493"
+    }
+  },
+  "artwork": {
+    "path": "app/assets/whodonnt-gallery.svg",
+    "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755",
+    "description": "Modern illustrative SVG, not execution evidence."
+  },
+  "emulator_capture": {
+    "path": "programs/whodonnt/verification/screen.png",
+    "sha256": "ebe2908401815dcdde9bb1eadd25da9ddd309f18cc46ae2b4e6acb5ed0cb1abe"
   }
 }

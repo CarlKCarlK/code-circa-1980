@@ -22,5 +22,9 @@
       "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": null
     }
-  ]
+  ],
+  "attribution": {
+    "text": "Uses room descriptions and dispatch code from Roger Chaffee\u2019s Quest, published in BYTE in July 1979.",
+    "url": "https://www.worldradiohistory.com/Archive-Byte/70s/Byte-1979-07.pdf"
+  }
 }

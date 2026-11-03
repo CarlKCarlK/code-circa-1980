@@ -55,5 +55,9 @@
       "note": "Untouched recovered save. Exact left/right payload; 183 ordered lines; consistent pointer base 17125; end marker; exact EOF",
       "unavailableReason": null
     }
-  ]
+  ],
+  "attribution": {
+    "text": "Early maze versions adapt Jack Hauber\u2019s Amazing; later JAB versions replace the maze generator.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
+  }
 }

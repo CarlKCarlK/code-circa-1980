@@ -114,6 +114,69 @@
   ],
   "dating": {
     "direct_source_lines": [],
-    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence."
+    "caution": "Direct source notices and nearby saves provide context, not tape-save dates. Same-side context is stronger than opposite-side context. Tape numbers do not establish chronology.",
+    "neighbor_context": [
+      {
+        "capture": "file8b",
+        "save": "13",
+        "archive_listing": "tapes/recovered/file8b/best/13-COMPUTER-MATCH-UP-EARLY.ASC",
+        "line": "50 REMARK    DATE: JANUARY 6TH, 1980 "
+      },
+      {
+        "capture": "file8b",
+        "save": "14",
+        "archive_listing": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.ASC",
+        "line": "50 REMARK    DATE: JANUARY 6TH, 1980 "
+      },
+      {
+        "capture": "file8b",
+        "save": "15",
+        "archive_listing": "tapes/recovered/file8b/best/15-COMPUTER-MATCH-UP-V3.ASC",
+        "line": "50 REMARK    DATE: JANUARY 6TH, 1980 "
+      },
+      {
+        "capture": "file8b",
+        "save": "16",
+        "archive_listing": "tapes/recovered/file8b/best/16-COMPUTA-MATCH.ASC",
+        "line": "50 REMARK    DATE: JANUARY 6TH, 1980 "
+      }
+    ]
+  },
+  "source_research": {
+    "date": "2026-11-03",
+    "finding": "The source explicitly says COMPUTER LIKE IN TUTOR TEXT. Theodore G. Scott\u2019s Basic Computer Programming describes the TUTAC teaching machine. Its decimal card layout and opcodes 00/15/25/50/60/61/62 match the recovered interpreter. The independent modern Python simulator confirms the design reference but is not a historical BASIC ancestor and is not inserted into canonical history.",
+    "sources": [
+      "https://github.com/mvanmoer/TUTAC",
+      "https://babel.hathitrust.org/cgi/pt?id=mdp.39015033508683;view=1up;seq=7",
+      "https://bitsavers.trailing-edge.com/magazines/Computers_And_Automation/196303.pdf"
+    ]
+  },
+  "website_execution": {
+    "date": "2026-11-03",
+    "execution_tested": true,
+    "test": "app/tests/browser/history-five.spec.js",
+    "checks_and_limits": "Original-ROM checks passed for file8b save 18: R loads and executes the embedded addition deck, prints the exact encoded result 10009671948, and reaches FINISHED. Pause/resume and restart passed. No claim of full TUTAC instruction-set coverage; the multiplication/debugging version and suspect candidate are source only.",
+    "reference": {
+      "capture": "file8b",
+      "save": 18,
+      "version": "v01",
+      "payload": "versions/v01/18-TUTAC-COMPUTER.BAS",
+      "sha256": "fd95be9b7a3ea5fff59673f1e616dfd5f0ff98ffdab9d809dd45fd5bd9f78589"
+    }
+  },
+  "artwork": {
+    "path": "app/assets/tutac-gallery.svg",
+    "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63",
+    "description": "Modern illustrative SVG, not execution evidence."
+  },
+  "emulator_capture": {
+    "path": "programs/tutac/verification/screen.png",
+    "sha256": "9e00b6926708df97adbbf1284368ca11ff127bf2c6dab77a37835ca44829c94a"
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Implements part of the TUTAC teaching computer from Theodore G. Scott\u2019s Basic Computer Programming.",
+    "evidence": "Recovered title says COMPUTER LIKE IN TUTOR TEXT; the decimal card layout and opcodes match TUTAC. No earlier BASIC implementation has been established.",
+    "url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015033508683;view=1up;seq=7"
   }
 }

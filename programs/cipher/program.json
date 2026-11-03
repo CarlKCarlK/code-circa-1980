@@ -22,5 +22,8 @@
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": null
     }
-  ]
+  ],
+  "attribution": {
+    "text": "Adapted from code in BASIC Programming, with TRS-80 modifications credited to C. M. Kadie. The exact book edition is unknown."
+  }
 }

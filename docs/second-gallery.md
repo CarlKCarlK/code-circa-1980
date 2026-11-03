@@ -108,3 +108,7 @@ entries. See [the related-program notes](related-more-programs.md).
 ## Cave and monster games
 
 Jaberwocky, Cave Game, and JAB add three entries after Space Colony’s withdrawal, bringing More to 29 cards. Seven complete saves, one damaged prefix, and two separately documented published-source comparison baselines are preserved. See [monster-games.md](monster-games.md).
+
+## Five historical programs and visible credits
+
+Who Donnt?, Dungeon Trainer, TUTAC Computer, Tank Game, and Lunar Lander bring More to 34 entries, appended at the end. Tank is source only. See [five-history-programs.md](five-history-programs.md). Strong documented prior-work connections now appear directly under the player title; see [more-attributions.md](more-attributions.md).

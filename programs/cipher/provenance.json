@@ -96,5 +96,10 @@
     "path": "programs/cipher/verification/screen.png",
     "sha256": "5d84bb8102fd9c49f9a6cda52c9034723557c526add05126b2253aac0df52ba7",
     "description": "Original-ROM browser execution capture; separate from the modern gallery SVG."
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Adapted from code in BASIC Programming, with TRS-80 modifications credited to C. M. Kadie. The exact book edition is unknown.",
+    "evidence": "Recovered source line 5 explicitly credits code from BASIC PROGRAMMING modified by C.M. Kadie."
   }
 }

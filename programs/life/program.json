@@ -85,5 +85,8 @@
     }
   ],
   "format": "EDTASM",
-  "listingLabel": "Download assembly listing"
+  "listingLabel": "Download assembly listing",
+  "attribution": {
+    "text": "Implements John Conway\u2019s Game of Life."
+  }
 }

@@ -252,5 +252,10 @@
     "path": "programs/aim/verification/screen.png",
     "sha256": "8cedcfba85c1a56c308af0030670489e6dd01b28e792a47a0d7e1a8a191b0f6f",
     "description": "Original-ROM browser execution capture; separate from the modern gallery SVG."
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Based on Robert Lichello\u2019s Automatic Investment Management method; BASIC programming credited to Carl Kadie.",
+    "evidence": "Recovered source lines 10\u201330 credit the method title, BOOK: ROBERT LICHELLO, and PROGRAM: CARL KADIE."
   }
 }

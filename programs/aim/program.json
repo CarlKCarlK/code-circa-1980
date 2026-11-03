@@ -57,5 +57,8 @@
     }
   ],
   "galleryHidden": true,
-  "parentProgram": "spi"
+  "parentProgram": "spi",
+  "attribution": {
+    "text": "Based on Robert Lichello\u2019s Automatic Investment Management method; BASIC programming credited to Carl Kadie."
+  }
 }

@@ -160,5 +160,11 @@
     "path": "programs/jaberwocky/verification/screen.png",
     "sha256": "a8460c7eda182aa1a33c9a954067420e70e8ebf96aa34795abe087124686ff8e",
     "description": "Actual original-ROM emulator screenshot; separate from illustrative gallery artwork."
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "Uses room descriptions and dispatch code from Roger Chaffee\u2019s Quest, published in BYTE in July 1979.",
+    "evidence": "Same numbered dispatcher and room descriptions; see upstream excerpts and history notes.",
+    "url": "https://www.worldradiohistory.com/Archive-Byte/70s/Byte-1979-07.pdf"
   }
 }

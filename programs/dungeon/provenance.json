@@ -218,6 +218,71 @@
   ],
   "dating": {
     "direct_source_lines": [],
-    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence."
+    "caution": "Direct source notices and nearby saves provide context, not tape-save dates. Same-side context is stronger than opposite-side context. Tape numbers do not establish chronology.",
+    "neighbor_context": [
+      {
+        "capture": "tape3a",
+        "save": "2",
+        "archive_listing": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.ASC",
+        "line": "5 ' OLYMPICS  -    (C) 1980   CARL KADIE"
+      },
+      {
+        "capture": "tape3a",
+        "save": "17",
+        "archive_listing": "tapes/recovered/tape3a/best/17-LIFE.ASC",
+        "line": "30 ' 1 AUG 1980"
+      },
+      {
+        "capture": "file8b",
+        "save": "13",
+        "archive_listing": "tapes/recovered/file8b/best/13-COMPUTER-MATCH-UP-EARLY.ASC",
+        "line": "50 REMARK    DATE: JANUARY 6TH, 1980 "
+      },
+      {
+        "capture": "file8b",
+        "save": "14",
+        "archive_listing": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.ASC",
+        "line": "50 REMARK    DATE: JANUARY 6TH, 1980 "
+      },
+      {
+        "capture": "file8b",
+        "save": "15",
+        "archive_listing": "tapes/recovered/file8b/best/15-COMPUTER-MATCH-UP-V3.ASC",
+        "line": "50 REMARK    DATE: JANUARY 6TH, 1980 "
+      },
+      {
+        "capture": "file8b",
+        "save": "16",
+        "archive_listing": "tapes/recovered/file8b/best/16-COMPUTA-MATCH.ASC",
+        "line": "50 REMARK    DATE: JANUARY 6TH, 1980 "
+      }
+    ]
+  },
+  "source_research": {
+    "date": "2026-11-03",
+    "finding": "No matching published BASIC listing was identified by title and FIGHTING MAN searches. The text borrows tabletop fantasy terminology; that is not evidence that the program was typed from a published listing.",
+    "sources": []
+  },
+  "website_execution": {
+    "date": "2026-11-03",
+    "execution_tested": true,
+    "test": "app/tests/browser/history-five.spec.js",
+    "checks_and_limits": "Original-ROM checks passed for the self-contained file8b save 9: equipment/HP display, F to fight, Y to parry, a monster response, pause/resume and restart. Combat tables are never initialized in this captured text save. Later graphics-extension variants were not executed; exhaustive random encounters and tabletop-rule correctness were not tested.",
+    "reference": {
+      "capture": "file8b",
+      "save": 9,
+      "version": "v02",
+      "payload": "versions/v02/09-DUNGEON-TRAINER.BAS",
+      "sha256": "0dfe59c4a1d26d116d34d28a023d5314533604109e11fbdb8c4f6637fd85f70f"
+    }
+  },
+  "artwork": {
+    "path": "app/assets/dungeon-gallery.svg",
+    "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1",
+    "description": "Modern illustrative SVG, not execution evidence."
+  },
+  "emulator_capture": {
+    "path": "programs/dungeon/verification/screen.png",
+    "sha256": "130fa0ee366ec6901b73833b431b4f8e8d165636d4d62f36997df33e0bc818fc"
   }
 }

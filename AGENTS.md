@@ -391,3 +391,29 @@ Game’s dart branch also moves the player. JAB may require a second 0 after end
 a movement burst to enter its explosive prompt. These quirks are documented,
 not silently fixed. Run verify-monster-games.py with the recovery archive and
 monster-games.spec.js for source/history/prefix and original-ROM browser checks.
+
+## Five historical additions and visible attributions (November 3, 2026)
+
+The requested final five More entries are whodonnt, dungeon, tutac, tank, and ll,
+appended after the existing cards. Preserve twelve complete captured snapshots
+and per-save tagged histories. Dungeon runs text v02; later graphics-extension
+forms stay source only. TUTAC runs v01’s embedded addition deck; v02 debugging
+and the separate suspect v03 remain preserved. Tank is sourceOnly:true with no
+emulator or playable-version link: complete cassette framing preserves an
+unfinished design draft. Its earlier tape1a candidate and 1274-byte prefix (34
+records through 320, no end marker added) stay separate.
+
+Lunar Lander history starts with Storer’s full original FOCAL transcription at
+ll-storer1969, then a published BASIC transcription at ll-basic1978, then the
+untouched recovered ll-v01. Neither upstream file is a recovered cassette or a
+claimed exact intermediate edition. Who Donnt?’s courtroom and several other
+historical routines remain unfinished. Verify archive/history/prefix evidence
+with app/scripts/verify-five-history.py and runtime with history-five.spec.js.
+
+Strong documented prior-work connections belong in program.json’s attribution
+field, rendered directly below the title and above the emulator. Keep evidence
+in provenance.json. Distinguish borrowed code, underlying designs/rules,
+inspiration, and joint authorship; do not invent published ancestors from
+generic similarity. More now has 34 cards. New extras stay at unshared web v1.
+LIFE’s attribution change creates immutable web v3; retain v1 and v2 unchanged.
+See docs/more-attributions.md and more-attributions.spec.js.

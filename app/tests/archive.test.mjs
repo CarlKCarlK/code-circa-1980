@@ -13,9 +13,11 @@ for(const name of fs.readdirSync(root)){
  test(`${metadata.title}: catalog and version provenance`,()=>{
    assert.equal(metadata.id,name);assert.equal(metadata.title,evidence.official_title);
    assert.equal(new Set(metadata.versions.map(v=>v.id)).size,metadata.versions.length);
-   assert.ok(metadata.versions.find(v=>v.id===metadata.defaultVersion)?.playable);
+   assert.ok(metadata.versions.find(v=>v.id===metadata.defaultVersion));
+   if(metadata.sourceOnly)assert.ok(metadata.versions.every(v=>!v.playable&&v.unavailableReason));
+   else assert.ok(metadata.versions.find(v=>v.id===metadata.defaultVersion)?.playable);
    assert.equal(metadata.versions.length,evidence.saves.length);
-   if(metadata.gallery==='more')assert.equal(metadata.versions.filter(v=>v.playable).length,1,'Only one best recovered save is playable');
+   if(metadata.gallery==='more')assert.equal(metadata.versions.filter(v=>v.playable).length,metadata.sourceOnly?0:1,'One selected player, or an explicitly source-only collection');
  });
  for(const version of metadata.versions){
   test(`${metadata.title} ${version.id}: unchanged bytes, BASIC structure, listing`,()=>{

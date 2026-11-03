@@ -22,5 +22,8 @@
       "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": null
     }
-  ]
+  ],
+  "attribution": {
+    "text": "Jointly credited to John Hartman and Carl Kadie in the recovered source."
+  }
 }
