@@ -1,0 +1,44 @@
+{
+  "id": "outch-test",
+  "title": "OUTCH \u2014 screen output routines",
+  "description": "OUTCH \u2014 screen output routines. 4 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Z80 / EDTASM",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "OUTCH SCREEN OUTPUT",
+      "capture": "tape18a",
+      "save": 1,
+      "raw": "versions/v01/01-OUTCH-SCREEN-OUTPUT.ASM",
+      "listing": "versions/v01/01-OUTCH-SCREEN-OUTPUT.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-OUTCH-SCREEN-OUTPUT.ASM",
+          "label": "01-OUTCH-SCREEN-OUTPUT.ASM"
+        },
+        {
+          "path": "versions/v01/01-OUTCH-SCREEN-OUTPUT.TXT",
+          "label": "01-OUTCH-SCREEN-OUTPUT.TXT"
+        },
+        {
+          "path": "versions/v01/01-OUTCH-SCREEN-OUTPUT.Z80",
+          "label": "01-OUTCH-SCREEN-OUTPUT.Z80"
+        }
+      ],
+      "startupSource": "06650 OUTCH\tEQU\t$\t;SUBROUTINE TO PRINT ON SCREEN\n06750 \t\t\t; INPUT  A,ZERO   B,CHARACTER\n06850 CURS\tDEFW\t$\t;LOCATION OF SCREEN\n06950 SCREEN\tEQU\t15360\t;BEGINING OF SCREEN MEM\n07050 \tPUSH\tHL\t;SAVE HL\n07150 \tLD\tHL,(CURS) ; PUT LOCATION IN HL\n07250 \tPUS@\tDE\t;SAVE DE\n07350 \tLD\tDE,1024\n07450 \tSBC\tHL,DE\n07550 \tJP\tM,GOOD\n07650 SCROLL\tEQU\t$ ;SCROLL UP\n07750 \tPUSH\tHL ",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
