@@ -1,0 +1,25 @@
+{
+  "id": "dungeon",
+  "title": "Dungeon Trainer",
+  "description": "Practice fantasy combat with armor, weapons, parrying, and withdrawal.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v02",
+  "versionOrder": "Text prototypes precede the graphics-extension branch by source features; cross-tape chronology is inferred. The self-contained text v02 is playable; later LINE/GET/PUT animation forms require an unavailable graphics extension.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "DUNGEON TRAINER EARLY",
+      "capture": "file8b",
+      "save": 8,
+      "raw": "versions/v01/08-DUNGEON-TRAINER-EARLY.BAS",
+      "listing": "versions/v01/08-DUNGEON-TRAINER-EARLY.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Source only: earlier prototype, debugging stops, or unavailable graphics extension. The site offers one selected self-contained reference."
+    }
+  ]
+}
