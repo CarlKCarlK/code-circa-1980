@@ -1,0 +1,42 @@
+{
+  "id": "freeway",
+  "title": "Freeway",
+  "description": "Freeway. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC with graphics extensions",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "FREEWAY",
+      "capture": "tape8a",
+      "save": 11,
+      "raw": "versions/v01/11-FREEWAY.BAS",
+      "listing": "versions/v01/11-FREEWAY.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/11-FREEWAY.ASC",
+          "label": "11-FREEWAY.ASC"
+        },
+        {
+          "path": "versions/v01/11-FREEWAY.BAS",
+          "label": "11-FREEWAY.BAS"
+        }
+      ],
+      "startupSource": "10 ' FREEWAY\n20 CLS\n30 DIM A%(25),B%(25)\n40 LINE(0,0)-(3,1),CHR$(191),BF:LINE(0,0)-(0,2),RESET:LINE(7,0)-(7,2),RESET:LINE(1,1)-(1,3),RESET:LINE(6,1)-(6,3),RESET:RESET(2,0):RESET(5,0):RESET(2,1):RESET(5,1):RESET(1,3):RESET(6,5):RESET(6,3):RESET(1,5)\n50 GET@(0,0)-(3,1),A%\n60 LINE(0,0)-(3,1),CHR$(191),BF:LINE(0,5)-(0,3),RESET:LINE(7,5)-(7,3),RESET:LINE(1,4)-(1,2),RESET:LINE(6,4)-(6,2),RESET:RESET(2,5):RESET(5,5):RESET(2,4):RESET(5,4):RESET(1,2):RESET(6,0):RESET(6,2):RESET(1,0)\n70 GET@(0,0)-(3,1),B%\n75 CLS\n80 FOR C=0TO6:LINE(C*7+11,0)-(C*7+11,15),\":\":NEXT\n90 FOR C=0TO2:LINE(C*28+4,0)-(C*28+4,15),CHR$(191):NEXT\n100 LINE(11,9)-(11,15),CHR$(191):LINE(53,0)-(53,6),CHR$(191)\n110 FORC=3TO5:R=RND(2):IFR=1THEND(C)=1ELSED(C)=-1",
+      "controlSource": [
+        "200 A$=INKEY$:IFA$=\"1\"THEN DD=1ELSE IF A$=\"2\"THEN DD=.5ELSE IF A$=\"3\"THEN DD=.25 ELSE IFA$=\"Z\"THEN S=-1ELSEIFA$=\"X\"THENS=0ELSEIFA$=\"C\"THENS=1"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
