@@ -129,6 +129,65 @@
       },
       "recovery_inventory": "tapes/recovered/tape26a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape26a",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape26a/best/07-WAR-SAVE03.IMG",
+      "archive_listing": "tapes/recovered/tape26a/best/07-WAR-SAVE03.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/07-WAR-SAVE03.ASC",
+          "archive_path": "tapes/recovered/tape26a/best/07-WAR-SAVE03.ASC",
+          "bytes": 1859,
+          "sha256": "22c753e752ba6bb2d6c6a569f30e7fc9b9586adf537657df379a7c4a3584902e"
+        },
+        {
+          "path": "versions/v03/07-WAR-SAVE03.IMG",
+          "archive_path": "tapes/recovered/tape26a/best/07-WAR-SAVE03.IMG",
+          "bytes": 1254,
+          "sha256": "6d8febd5374afb27031aa85df3520ccf6a54f8371fc0246bd20bda32b28a48e0"
+        },
+        {
+          "path": "versions/v03/07-WAR-SAVE03.TAP",
+          "archive_path": "tapes/recovered/tape26a/best/07-WAR-SAVE03.TAP",
+          "bytes": 1421,
+          "sha256": "00e7f631402e5f1457f524f7fd00fe8b0f5996481e29b5812fe357dcb8bd829f"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "6d8febd5374afb27031aa85df3520ccf6a54f8371fc0246bd20bda32b28a48e0",
+        "bytes": 1254,
+        "archive_validation": "PC-121x header and 156 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "26",
+        "side": "a",
+        "order": "7",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "WAR game \u2014 save 3",
+        "capture": "tape26a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "PC-121x header and 156 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+        "source_start_s": "562.738",
+        "recovered_bytes": "1254",
+        "source_file": "tapes/recovered/tape26a/best/07-WAR-SAVE03.ASC",
+        "wav": "tapes/tape26a.wav",
+        "folder": "tapes/recovered/tape26a",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape26a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",

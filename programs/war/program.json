@@ -70,6 +70,34 @@
       ],
       "startupSource": "    5 T=0:W=1:Y=1983:P=1:N=100:L=52\n   20 PRINT \"YR\";Y;\",WP\";W;\",RS\";N:Y=Y+1: INPUT \"# NEW WEAPONS?\";I:I=I*(I>=0)*(I<101)\n   40 W=W+I:T=(T=0): IF T=P GOTO 300\n   50 INPUT \"WAR? (Y/N) \";A$(L): PRINT \"ENTER, AFTER BEEP\": PRINT #\"A\";A$(L)\n   60 IF A$(L)=\"Y\"LET T=(T=0): GOTO 345\n   70 PAUSE \"DECISION PENDING\": INPUT #\"B\";A(L)\n   80 A=A(L): IF A<>1 GOTO 120\n   90 PAUSE \"PEACE!!!\": GOSUB \"D\":I=INT (W*D/100)+1: IF P=T BEEP I\n  100 W=W-I: PAUSE \"WE LOSE \";I: IF P<>T BEEP I\n  110 GOTO 20\n  120 IF A<>2 GOTO 170\n  130 PAUSE \"TRADE!!!\": GOSUB \"D\":I=INT (N*D/100)+1:N=N-I: PAUSE \"WE GIVE \";I",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "WAR game \u2014 save 3",
+      "capture": "tape26a",
+      "save": 7,
+      "raw": "versions/v03/07-WAR-SAVE03.IMG",
+      "listing": "versions/v03/07-WAR-SAVE03.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. PC-121x header and 156 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v03/07-WAR-SAVE03.ASC",
+          "label": "07-WAR-SAVE03.ASC"
+        },
+        {
+          "path": "versions/v03/07-WAR-SAVE03.IMG",
+          "label": "07-WAR-SAVE03.IMG"
+        },
+        {
+          "path": "versions/v03/07-WAR-SAVE03.TAP",
+          "label": "07-WAR-SAVE03.TAP"
+        }
+      ],
+      "startupSource": "    5 T=0:W=1:Y=83:P=1:N=99:L=42:R=0\n   20 R=R+1:N=N+R: PRINT Y;\":WP\";W;\",RS\";N;\",GW\";R:Y=Y+1\n   30 INPUT \"# NEW WEAPONS?\";I\n   40 I=INT (I*(I>0)*(I<101)):N=N-INT (I/5)+1:W=W+I:T=(T=0): IF T=P GOTO 300\n   50 INPUT \"WAR? (Y/N) \";A$(L): PRINT \"ENTER, AFTER BEEP\": PRINT #\"A\";A$(L)\n   60 IF A$(L)=\"Y\"LET T=(T=0): GOTO 345\n   70 INPUT #\"B\";A(L):A=A(L): IF A<>1 GOTO 120\n   90 PAUSE \"PEACE!!!\": GOSUB \"D\":I=INT (W*D/100)+1: IF P=T BEEP I\n  100 W=W-I: PAUSE \"WE LOSE \";I: IF P<>T BEEP I\n  110 GOTO 20\n  120 IF A<>2 GOTO 170\n  130 PAUSE \"TRADE!!!\": GOSUB \"D\":I=INT (N*D/100)+1:N=N-I: PAUSE \"WE GIVE \";I",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
