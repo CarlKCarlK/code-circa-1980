@@ -1,0 +1,40 @@
+{
+  "id": "football",
+  "title": "Football",
+  "description": "Football. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "FOOTBALL",
+      "capture": "tape20a",
+      "save": 1,
+      "raw": "versions/v01/01-FOOTBALL.BAS",
+      "listing": "versions/v01/01-FOOTBALL.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-FOOTBALL.ASC",
+          "label": "01-FOOTBALL.ASC"
+        },
+        {
+          "path": "versions/v01/01-FOOTBALL.BAS",
+          "label": "01-FOOTBALL.BAS"
+        }
+      ],
+      "startupSource": "10 CLS:PRINTTAB(23);\"FOOTBALL\"\n30 PRINT:PRINT\n220 PRINT\"THIS IS MID STATE 10 CHAMPIONSHIP FOOTBALL.\"\n230 PRINT\"YOU WILL QUARTERBACK WOODRUFF. CALL PLAYS AS FOLLOWS:\"\n240 PRINT\"1=SIMPLE RUN; 2= TRICKY RUN; 3= SHORT PASS;\"\n250 PRINT\"4=LONG PASS; 5= PUNT; 6= QUICK KICK;7=PLACE KICK.\"\n260 PRINT\n270 PRINT\"CHOOSE YOU OPPONENT\";\n280 INPUT O$(1)\n290 O$(0)=\"WOODRUFF\"\n300 PRINT\n310 LETS(0)=0:LET S(1)=0",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
