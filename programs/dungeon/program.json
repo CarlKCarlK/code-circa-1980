@@ -43,6 +43,17 @@
       "playable": false,
       "note": "Untouched recovered save. 68 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
       "unavailableReason": "Source only: earlier prototype, debugging stops, or unavailable graphics extension. The site offers one selected self-contained reference."
+    },
+    {
+      "id": "v04",
+      "label": "DUNGEON TRAINER V2",
+      "capture": "tape3a",
+      "save": 16,
+      "raw": "versions/v04/16-DUNGEON-TRAINER-V2.BAS",
+      "listing": "versions/v04/16-DUNGEON-TRAINER-V2.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. 71 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+      "unavailableReason": "Source only: earlier prototype, debugging stops, or unavailable graphics extension. The site offers one selected self-contained reference."
     }
   ]
 }

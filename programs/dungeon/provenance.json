@@ -162,6 +162,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape3a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape3a",
+      "save": 16,
+      "archive_raw": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.BAS",
+      "archive_listing": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/16-DUNGEON-TRAINER-V2.BAS",
+          "archive_path": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.BAS",
+          "bytes": 3246,
+          "sha256": "804212db731613c2b10b5d3c7eed9ce1e9ec49d7186b71af6bbfaa87af2b118b"
+        },
+        {
+          "path": "versions/v04/16-DUNGEON-TRAINER-V2.ASC",
+          "archive_path": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.ASC",
+          "bytes": 3944,
+          "sha256": "3abe32603044be6b0416bb9ce8cc98f559c0737abac4609625f50504712e9031"
+        }
+      ],
+      "recovery_item": {
+        "lines": 71,
+        "last": 6110,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "804212db731613c2b10b5d3c7eed9ce1e9ec49d7186b71af6bbfaa87af2b118b"
+      },
+      "inventory_row": {
+        "tape": "3",
+        "side": "a",
+        "order": "16",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "DUNGEON TRAINER V2; 71 lines",
+        "capture": "tape3a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload",
+        "validation": "71 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "3246",
+        "source_file": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.ASC",
+        "wav": "tapes/tape3a.wav",
+        "folder": "tapes/recovered/tape3a/best",
+        "recovery_date": "2026-10-25",
+        "recorder_volume": "5/10",
+        "next_action": "Execution-test"
+      },
+      "recovery_inventory": "tapes/recovered/tape3a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {

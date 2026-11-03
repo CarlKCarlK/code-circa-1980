@@ -1,46 +1,46 @@
 {
-  "version": "v03",
+  "version": "v04",
   "capture": "tape3a",
-  "save": 15,
-  "archive_raw": "tapes/recovered/tape3a/best/15-DUNGEON-TRAINER.BAS",
-  "archive_listing": "tapes/recovered/tape3a/best/15-DUNGEON-TRAINER.ASC",
+  "save": 16,
+  "archive_raw": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.BAS",
+  "archive_listing": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v03/15-DUNGEON-TRAINER.BAS",
-      "archive_path": "tapes/recovered/tape3a/best/15-DUNGEON-TRAINER.BAS",
-      "bytes": 2895,
-      "sha256": "c6df5d1d83f26ee7267d3c6e10b0bc06bfdce87c36476aaa11542c59f8aba657"
+      "path": "versions/v04/16-DUNGEON-TRAINER-V2.BAS",
+      "archive_path": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.BAS",
+      "bytes": 3246,
+      "sha256": "804212db731613c2b10b5d3c7eed9ce1e9ec49d7186b71af6bbfaa87af2b118b"
     },
     {
-      "path": "versions/v03/15-DUNGEON-TRAINER.ASC",
-      "archive_path": "tapes/recovered/tape3a/best/15-DUNGEON-TRAINER.ASC",
-      "bytes": 3514,
-      "sha256": "64fb38fb067bfe22d56f3bb3d8ec197a1083a903a2d0e243a14f64c7113c9fb6"
+      "path": "versions/v04/16-DUNGEON-TRAINER-V2.ASC",
+      "archive_path": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.ASC",
+      "bytes": 3944,
+      "sha256": "3abe32603044be6b0416bb9ce8cc98f559c0737abac4609625f50504712e9031"
     }
   ],
   "recovery_item": {
-    "lines": 68,
-    "last": 6000,
+    "lines": 71,
+    "last": 6110,
     "pointer_base": 22204,
     "normal_end_marker": true,
-    "sha256": "c6df5d1d83f26ee7267d3c6e10b0bc06bfdce87c36476aaa11542c59f8aba657"
+    "sha256": "804212db731613c2b10b5d3c7eed9ce1e9ec49d7186b71af6bbfaa87af2b118b"
   },
   "inventory_row": {
     "tape": "3",
     "side": "a",
-    "order": "15",
+    "order": "16",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "DUNGEON TRAINER; 68 lines",
+    "summary": "DUNGEON TRAINER V2; 71 lines",
     "capture": "tape3a",
     "capture_scope": "full",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload",
-    "validation": "68 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+    "validation": "71 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
     "source_start_s": "",
-    "recovered_bytes": "2895",
-    "source_file": "tapes/recovered/tape3a/best/15-DUNGEON-TRAINER.ASC",
+    "recovered_bytes": "3246",
+    "source_file": "tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.ASC",
     "wav": "tapes/tape3a.wav",
     "folder": "tapes/recovered/tape3a/best",
     "recovery_date": "2026-10-25",
