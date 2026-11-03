@@ -1,0 +1,40 @@
+{
+  "id": "knights-tour-draft",
+  "title": "Knights Tour Draft",
+  "description": "Knights Tour Draft. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "KNIGHTS TOUR DRAFT",
+      "capture": "tape18b",
+      "save": 20,
+      "raw": "versions/v01/20-KNIGHTS-TOUR-DRAFT.BAS",
+      "listing": "versions/v01/20-KNIGHTS-TOUR-DRAFT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/20-KNIGHTS-TOUR-DRAFT.ASC",
+          "label": "20-KNIGHTS-TOUR-DRAFT.ASC"
+        },
+        {
+          "path": "versions/v01/20-KNIGHTS-TOUR-DRAFT.BAS",
+          "label": "20-KNIGHTS-TOUR-DRAFT.BAS"
+        }
+      ],
+      "startupSource": "5 DEFINT A-Z\n10 'KNIGHT'S TOUR\n20 DIM  M(65,2)\n30 M=1\n40 FOR P=1TO8:READ X(P),Y(P):NEXT P\n50    DATA -2,+1,  -2,-1,  -1,+2, +1,+2, +2,+1, +2,-1\n60    DATA  -1,-2,  +1,-2\n70 CLS\n100 IF M=1 THEN   ELSE 200\n110  M(1,2)=M(1,2)+1:T=M(1,2):IF T>1 THEN PRINT\"NO SOULTION\":STOP\n120  X=2:Y=8\n130       B(X,Y)=-1:M(1,0)=X:M(1,1)=Y:PRINT@X+X+X+Y*64-1,M;",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
