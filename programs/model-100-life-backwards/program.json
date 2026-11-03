@@ -234,6 +234,50 @@
       ],
       "startupSource": "10 REM life backwards april 27, 1985\n90 DEFINT A-Z\n100 DX=20:DY=20\n110 DIM CN(375,1),NW(DX,DY),OD(DX,DY)\n330 CLS\n340 OPEN \"lifed.do\" FOR INPUT AS #1\n350 FOR I=0TO1:TZ=0\n360 INPUT #1,CN(TZ,I):IF CN(TZ,I)=-1 THEN NEXT I :ELSE TZ=TZ+1:GOTO 360\n370 FOR I=1 TO 9:MK(I)=2^(I-1):NEXT I\n500 'main program",
       "controlSource": []
+    },
+    {
+      "id": "v05",
+      "label": "Cassette name L",
+      "capture": "tape2a2",
+      "save": 20,
+      "raw": "versions/v05/20-L-BASIC-PREFIX.BIN",
+      "listing": "versions/v05/20-L-BASIC-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v05/20-L-BASIC-PREFIX.ASC",
+          "label": "20-L-BASIC-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v05/20-L-BASIC-PREFIX.BIN",
+          "label": "20-L-BASIC-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v05/20-L-HEADER.BIN",
+          "label": "20-L-HEADER.BIN"
+        },
+        {
+          "path": "versions/v05/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.ASC",
+          "label": "20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.ASC"
+        },
+        {
+          "path": "versions/v05/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.BIN",
+          "label": "20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.BIN"
+        },
+        {
+          "path": "versions/v05/20-L-RAW.BIN",
+          "label": "20-L-RAW.BIN"
+        },
+        {
+          "path": "versions/v05/20-L-UNCERTAIN.ASC",
+          "label": "20-L-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 REM life backwards april 27, 1985\n90 DEFINT A-Z\n100 DX=20:DY=20\n110 DIM T6(4,4)\n280 PRINT\"Setting up\"\n290 DIM CN(380,1)\n300 FOR I = 0 TO 511:IZ=I:TZ=0:\t\t\tFOR J=0 TO 8:\t\t\t\t  CZ(J)=IZ MOD 2:TZ=TZ+CZ(J):\t\t  IZ= IZ/2:\t\t\t\t  NEXT J\n310 MZ= -((CZ(4)=1 AND (TZ=3 OR TZ=4)) OR(CZ(4)=0 AND TZ=3)):CN(TZ(MZ),MZ)=I:TZ(MZ)=TZ(MZ)+1:NEXTI\n320 FOR MZ=0TO1:CN(TZ(MZ),MZ)=-1:NEXTMZ\n330 CLS\n500 'main program\n510 GOSUB 1000:'begin",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

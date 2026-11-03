@@ -409,6 +409,89 @@
       },
       "recovery_inventory": "tapes/recovered/tape2a/left-sweep/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape2a2",
+      "save": 20,
+      "archive_raw": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/20-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.ASC",
+          "bytes": 640,
+          "sha256": "d9a0b6c5c5b2b7342baa1622342c31ad7f0b34d9c1a4810962ad631b3273d4e5"
+        },
+        {
+          "path": "versions/v05/20-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.BIN",
+          "bytes": 515,
+          "sha256": "455e699172c81d352063464ee1b185c3252a56813b3fbbeba8b5b42c1e265b4f"
+        },
+        {
+          "path": "versions/v05/20-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "9b30bbb15684651344c3403ccff29a9eccbb934fbd89824a9624359dd34ebca4"
+        },
+        {
+          "path": "versions/v05/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.ASC",
+          "bytes": 968,
+          "sha256": "0a0dcae4114e7304be264af4b1739b292e74da5fb556284714df008d44727666"
+        },
+        {
+          "path": "versions/v05/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.BIN",
+          "bytes": 839,
+          "sha256": "cdf7b21969c6ce99a241b43596e13a8b6fff7648104c8d11b2bcf4c613ae7215"
+        },
+        {
+          "path": "versions/v05/20-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-RAW.BIN",
+          "bytes": 2253,
+          "sha256": "188103ca9b76f6c9ab146c2d8469aae7803ae07892ce0480f8f2d4cf717450b3"
+        },
+        {
+          "path": "versions/v05/20-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-UNCERTAIN.ASC",
+          "bytes": 640,
+          "sha256": "d9a0b6c5c5b2b7342baa1622342c31ad7f0b34d9c1a4810962ad631b3273d4e5"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "455e699172c81d352063464ee1b185c3252a56813b3fbbeba8b5b42c1e265b4f",
+        "bytes": 515,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "20",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; LIFE backwards, April 27 1985; damaged captured save",
+        "capture": "tape2a2",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+        "source_start_s": "563.109",
+        "recovered_bytes": "2253",
+        "source_file": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a2.wav",
+        "folder": "tapes/recovered/tape2a2/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a2/left-sweep/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
