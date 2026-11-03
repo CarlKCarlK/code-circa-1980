@@ -1,54 +1,60 @@
 {
-  "version": "v04",
-  "capture": "tape12b",
-  "save": 17,
-  "archive_raw": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.BAS",
-  "archive_listing": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.ASC",
+  "version": "v05",
+  "capture": "tape14b",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.BAS",
+  "archive_listing": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.ASC",
   "imported_files": [
     {
-      "path": "versions/v04/17-AMAZING-PROGRAM-FRAGMENT.ASC",
-      "archive_path": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.ASC",
-      "bytes": 1739,
-      "sha256": "38f2ba3228e0539f8a6090f08acdd110a58a7bacb9565406e3c6dd80d1c68424"
+      "path": "versions/v05/02-AMAZING-MAZE.ASC",
+      "archive_path": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.ASC",
+      "bytes": 3580,
+      "sha256": "fd1b68d5afd5b7bba73c6ec3d4502456289e6e844ff70912fec84c342f14ec58"
     },
     {
-      "path": "versions/v04/17-AMAZING-PROGRAM-FRAGMENT.BAS",
-      "archive_path": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.BAS",
-      "bytes": 1505,
-      "sha256": "c91a8c4cf3d8651612a9a141819dbb001bb222a1f875afa1e70719c1f84c187b"
+      "path": "versions/v05/02-AMAZING-MAZE.BAS",
+      "archive_path": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.BAS",
+      "bytes": 2944,
+      "sha256": "83d375d80fc2a3b60dd9978f9c62cc35411436cd38674a2195d9bd503066a780"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "c91a8c4cf3d8651612a9a141819dbb001bb222a1f875afa1e70719c1f84c187b",
-    "bytes": 1505,
-    "archive_validation": "Exact 1438-byte readable prefix matches three variants; full stream damaged",
+    "sha256": "83d375d80fc2a3b60dd9978f9c62cc35411436cd38674a2195d9bd503066a780",
+    "bytes": 2944,
+    "archive_validation": "Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "structure_conflict": true,
+    "lines": 158,
+    "last": 4020,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 2942,
     "source_notice_lines": []
   },
   "inventory_row": {
-    "tape": "12",
+    "tape": "14",
     "side": "b",
-    "order": "17",
+    "order": "2",
     "type": "BASIC",
-    "recovery%": "",
-    "summary": "AMAZING PROGRAM FRAGMENT; 81 lines",
-    "capture": "tape12b",
+    "recovery%": "100",
+    "summary": "AMAZING MAZE; 158 lines",
+    "capture": "tape14b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
-    "status": "damaged maze-program recording",
-    "validation": "Exact 1438-byte readable prefix matches three variants; full stream damaged",
-    "source_start_s": "849.075",
-    "recovered_bytes": "1505",
-    "source_file": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.ASC",
-    "wav": "tapes/tape12b.wav",
-    "folder": "tapes/recovered/tape12b/partial",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+    "source_start_s": "126.130",
+    "recovered_bytes": "2944",
+    "source_file": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.ASC",
+    "wav": "tapes/tape14b.wav",
+    "folder": "tapes/recovered/tape14b/best",
     "recovery_date": "2026-10-27",
     "recorder_volume": "",
-    "next_action": "Consider another capture if needed; two full maze versions recovered"
+    "next_action": "Execution-test with compatible runtime"
   },
-  "recovery_inventory": "tapes/recovered/tape12b/partial/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape14b/best/inventory.json",
   "execution_tested": false
 }

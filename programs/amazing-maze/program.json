@@ -114,6 +114,32 @@
       ],
       "startupSource": "5 XS=0:YS=3\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n40 FORX=0TO127:SET(X,3):NEXT\n90 PRINT@704,\"\";\n100 INPUT\"WHAT ARE YOUR WIDTH AND LENGTH\";H,V\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
       "controlSource": []
+    },
+    {
+      "id": "v05",
+      "label": "AMAZING MAZE",
+      "capture": "tape14b",
+      "save": 2,
+      "raw": "versions/v05/02-AMAZING-MAZE.BAS",
+      "listing": "versions/v05/02-AMAZING-MAZE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v05/02-AMAZING-MAZE.ASC",
+          "label": "02-AMAZING-MAZE.ASC"
+        },
+        {
+          "path": "versions/v05/02-AMAZING-MAZE.BAS",
+          "label": "02-AMAZING-MAZE.BAS"
+        }
+      ],
+      "startupSource": "5 XS=0:YS=3\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n40 FORX=0TO127:SET(X,3):NEXT\n90 PRINT@704,\"\";\n100 INPUT\"WHAT ARE YOUR WIDTH AND LENGTH\";H,V\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
+      "controlSource": [
+        "2000 A$=INKEY$"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
