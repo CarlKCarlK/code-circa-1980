@@ -64,6 +64,42 @@
         "4026 IF INKEY$=\"\"THEN4026ELSECLS",
         "4050 IF INKEY$=\"\"THEN4050 ELSE RUN"
       ]
+    },
+    {
+      "id": "v03",
+      "label": "DND REFERENCE V3 DAMAGED",
+      "capture": "tape19a",
+      "save": 11,
+      "raw": "versions/v03/11-DND-REFERENCE-V3-DAMAGED-PREFIX.BIN",
+      "listing": "versions/v03/11-DND-REFERENCE-V3-DAMAGED-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged. Damaged raw; exact left/right prefix bytes 0:7752, 82 ordered records through 4005; pointer base 22204; no added end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v03/11-DND-REFERENCE-V3-DAMAGED-PREFIX.ASC",
+          "label": "11-DND-REFERENCE-V3-DAMAGED-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v03/11-DND-REFERENCE-V3-DAMAGED-PREFIX.BIN",
+          "label": "11-DND-REFERENCE-V3-DAMAGED-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v03/11-DND-REFERENCE-V3-DAMAGED-RAW.BAS",
+          "label": "11-DND-REFERENCE-V3-DAMAGED-RAW.BAS"
+        },
+        {
+          "path": "versions/v03/11-DND-REFERENCE-V3-DAMAGED-UNCERTAIN.ASC",
+          "label": "11-DND-REFERENCE-V3-DAMAGED-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 CLEAR 300\n15 LSET RESET\n20 CLS:LINE INPUT\"COMMAND (H FOR HELP): \";A$\n21 IF LEFT$(A$,1)=\"[\"THEN3000ELSEIFA$=\"H\"THEN4000ELSEIFA$=\"R\"THEN A$=\"[[[[[[\"ELSEIF A$=\"M\" THEN 5000\n25 J=1:I=1\n30 J=INSTR(J+1,A$,\" \"):IF J<>0 THEN I=I+1:GOTO30\n40 DIM W$(I)\n50 L=1:A$=A$+\" \":FOR J=1TOI\n60 K=INSTR(K+1,A$,\" \"):W$(J)=MID$(A$,L,K-L):L=K+1:NEXTJ\n64 FOR J=1TOI\n65 IF LEFT$(W$(J),1) <CHR$(96) THEN C9=C9+1:W$(C9)=W$(J)ELSEW$(J)=\"\"\n66 NEXT J:I=C9",
+      "controlSource": [
+        "160 IFINKEY$=\"\"THEN160ELSECLS:LG=0",
+        "210 IF INKEY$=\"\"THEN210ELSE10",
+        "3040 IFINKEY$=\"\"THEN3040 ELSE RUN"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
