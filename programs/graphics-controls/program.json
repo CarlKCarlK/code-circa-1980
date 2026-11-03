@@ -1,0 +1,42 @@
+{
+  "id": "graphics-controls",
+  "title": "Graphics Controls",
+  "description": "Graphics Controls. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GRAPHICS CONTROLS",
+      "capture": "tape4b",
+      "save": 1,
+      "raw": "versions/v01/01-GRAPHICS-CONTROLS.BAS",
+      "listing": "versions/v01/01-GRAPHICS-CONTROLS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 25 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-GRAPHICS-CONTROLS.ASC",
+          "label": "01-GRAPHICS-CONTROLS.ASC"
+        },
+        {
+          "path": "versions/v01/01-GRAPHICS-CONTROLS.BAS",
+          "label": "01-GRAPHICS-CONTROLS.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n15 Y=1:X=50\n20 YL=47\n25 DIM O(100,2,4)\n30 XR=2\n40 FORC=1TO4:READF,H:X(C)=YL*F:Y(C)=YL*H:NEXT\n50 DATA1,0,0,0,0,1,1,1\n60 A$=INKEY$:IFA$=\"Z\"THENAA=-1ELSEIFA$=\"X\"THENAA=0ELSEIFA$=\"C\"THENAA=1ELSEIFA$=\",\"THENBB=-1ELSEIFA$=\".\"THENBB=0ELSEIFA$=\"/\"THENBB=1\n65 X=X+AA*5:Y=Y+BB*5\n100 XX=X/100*YL:YY=Y/100*YL\n110 FORC=1TO5\n120 S=(Y(C)-YY)/(X(C)-XX)",
+      "controlSource": [
+        "60 A$=INKEY$:IFA$=\"Z\"THENAA=-1ELSEIFA$=\"X\"THENAA=0ELSEIFA$=\"C\"THENAA=1ELSEIFA$=\",\"THENBB=-1ELSEIFA$=\".\"THENBB=0ELSEIFA$=\"/\"THENBB=1"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

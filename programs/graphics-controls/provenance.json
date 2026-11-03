@@ -1,0 +1,74 @@
+{
+  "official_title": "Graphics Controls",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "graphics_controls_p247",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape4b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape4b/best/01-GRAPHICS-CONTROLS.BAS",
+      "archive_listing": "tapes/recovered/tape4b/best/01-GRAPHICS-CONTROLS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-GRAPHICS-CONTROLS.ASC",
+          "archive_path": "tapes/recovered/tape4b/best/01-GRAPHICS-CONTROLS.ASC",
+          "bytes": 756,
+          "sha256": "9a860bfb66cda99bda07bdfe461639881e9d9e5ed7f0ee08376d83c088168d63"
+        },
+        {
+          "path": "versions/v01/01-GRAPHICS-CONTROLS.BAS",
+          "archive_path": "tapes/recovered/tape4b/best/01-GRAPHICS-CONTROLS.BAS",
+          "bytes": 654,
+          "sha256": "7d4aec346a322360388a7e2b7d917b6efa52f9ab35c1aea5d2aa6bda4233c98a"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "7d4aec346a322360388a7e2b7d917b6efa52f9ab35c1aea5d2aa6bda4233c98a",
+        "bytes": 654,
+        "archive_validation": "25 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 25,
+        "last": 1050,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 652,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "4",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GRAPHICS CONTROLS; 25 lines; T1-C1",
+        "capture": "tape4b",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "25 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "654",
+        "source_file": "tapes/recovered/tape4b/best/01-GRAPHICS-CONTROLS.ASC",
+        "wav": "tapes/tape4b.wav",
+        "folder": "tapes/recovered/tape4b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test"
+      },
+      "recovery_inventory": "tapes/recovered/tape4b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
