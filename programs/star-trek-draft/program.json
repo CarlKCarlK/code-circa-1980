@@ -1,0 +1,40 @@
+{
+  "id": "star-trek-draft",
+  "title": "Star Trek Draft",
+  "description": "Star Trek Draft. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "STAR TREK DRAFT",
+      "capture": "tape9a",
+      "save": 8,
+      "raw": "versions/v01/08-STAR-TREK-DRAFT.BAS",
+      "listing": "versions/v01/08-STAR-TREK-DRAFT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/08-STAR-TREK-DRAFT.ASC",
+          "label": "08-STAR-TREK-DRAFT.ASC"
+        },
+        {
+          "path": "versions/v01/08-STAR-TREK-DRAFT.BAS",
+          "label": "08-STAR-TREK-DRAFT.BAS"
+        }
+      ],
+      "startupSource": "20 EN=3000:DIMK%(101):INPUT\"WELCOME CAPTAIN, HOW MANY KLINGONS ARE WE AFTER\";NK:FORX%=1TONK:K%(X%*2)=RND(64):K%(X%*2+1)=RND(64):NEXT:K%(1)=32:K%(0)=32:INPUT\"AND STARBASES\";SB:FORX=NKTONK+SB:K%(X*2)=RND(64):K%(X*2+1)=RND(64):NEXT\n100 RANDOM:'STAR TREK\n500 RESTORE:PRINT:INPUT\"COMMAND:\";C\n510 ONCGOTO1000,2000,3000,4000,5000,6000,7000\n1000 CLS:PRINT\"YOUR CAN:\":FORX=1TO7:READA$:PRINT\"COMMAND\"X\"= \"A$:NEXT:GOTO100\n10000 DATA\"OPTIONS\",\"SHORT RANGE SENSOR\",\"LONG RANGE SENSOR SCAN\",\"PHASER CONTROL\",\"PHOTON TORPEDO CONTROL\",\"SHIELD CONTROL\",\"WARP ENGINE CONTROL\",\"\u0001",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
