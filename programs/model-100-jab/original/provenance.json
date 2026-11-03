@@ -1,52 +1,82 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape2bpartial",
-  "save": 2,
-  "archive_raw": "tapes/recovered/tape2bpartial/best/02-J-BASIC-TAPE-BLOCK.BIN",
-  "archive_listing": "tapes/recovered/tape2bpartial/best/02-J.ASC",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape2bpartial/partial/03-J-BASIC-PREFIX.BIN",
+  "archive_listing": "tapes/recovered/tape2bpartial/partial/03-J-BASIC-PREFIX.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/02-J-BASIC-TAPE-BLOCK.BIN",
-      "archive_path": "tapes/recovered/tape2bpartial/best/02-J-BASIC-TAPE-BLOCK.BIN",
-      "bytes": 2396,
-      "sha256": "6a0f488948827da72775387a7d0084e8c870f570098787afd37937e9f8730132"
+      "path": "versions/v03/03-J-BASIC-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape2bpartial/partial/03-J-BASIC-PREFIX.ASC",
+      "bytes": 545,
+      "sha256": "38edf89a64f7cd131973d461daf1e1b533dd45fe6c28d64e8e54a22e41090527"
     },
     {
-      "path": "versions/v02/02-J.ASC",
-      "archive_path": "tapes/recovered/tape2bpartial/best/02-J.ASC",
-      "bytes": 2925,
-      "sha256": "6fa43471ef843e1b440269a25c52e13072677913be7d0ed4b79a90f3d996906d"
+      "path": "versions/v03/03-J-BASIC-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape2bpartial/partial/03-J-BASIC-PREFIX.BIN",
+      "bytes": 446,
+      "sha256": "148c7bbadf26a36914b9f313f12a0eccfa14c1a25c37de0df2d1cc4f3b086a1b"
+    },
+    {
+      "path": "versions/v03/03-J-HEADER.BIN",
+      "archive_path": "tapes/recovered/tape2bpartial/partial/03-J-HEADER.BIN",
+      "bytes": 38,
+      "sha256": "f5a0ad7382aa18b5870d4484bca4a8546d667312c1d65f79800a78a8876861c0"
+    },
+    {
+      "path": "versions/v03/03-J-LONGEST-STRUCTURAL-PREFIX-362a0138df65.ASC",
+      "archive_path": "tapes/recovered/tape2bpartial/partial/03-J-LONGEST-STRUCTURAL-PREFIX-362a0138df65.ASC",
+      "bytes": 1104,
+      "sha256": "1f7b63e9a508be7c5d4c4763d9d01c8133dc723be9d141adbb7bd1c260680c63"
+    },
+    {
+      "path": "versions/v03/03-J-LONGEST-STRUCTURAL-PREFIX-362a0138df65.BIN",
+      "archive_path": "tapes/recovered/tape2bpartial/partial/03-J-LONGEST-STRUCTURAL-PREFIX-362a0138df65.BIN",
+      "bytes": 911,
+      "sha256": "362a0138df65ebe9939d2088b7963a1150b7970ef9faa9bcf91c5159059c3671"
+    },
+    {
+      "path": "versions/v03/03-J-RAW.BIN",
+      "archive_path": "tapes/recovered/tape2bpartial/partial/03-J-RAW.BIN",
+      "bytes": 2396,
+      "sha256": "5080c4c386ce63a97dfcba80554b1f70db7e2d25e64a4f9e4cdc84bd15ae9532"
+    },
+    {
+      "path": "versions/v03/03-J-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape2bpartial/partial/03-J-UNCERTAIN.ASC",
+      "bytes": 1104,
+      "sha256": "1f7b63e9a508be7c5d4c4763d9d01c8133dc723be9d141adbb7bd1c260680c63"
     }
   ],
   "recovery_item": {
     "format": "Model 100 BASIC",
-    "sha256": "6a0f488948827da72775387a7d0084e8c870f570098787afd37937e9f8730132",
-    "bytes": 2396,
-    "archive_validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+    "sha256": "148c7bbadf26a36914b9f313f12a0eccfa14c1a25c37de0df2d1cc4f3b086a1b",
+    "bytes": 446,
+    "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 18 lines through 200; exact left/right prefix agreement",
     "import_validation": "Exact file hashes; format-specific checks below.",
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "2",
     "side": "b",
-    "order": "2",
+    "order": "3",
     "type": "Model 100 BASIC",
-    "recovery%": "100",
-    "summary": "Cassette name J; room/passage game with gas hazards and a Jab; 87 validated lines",
+    "recovery%": "",
+    "summary": "Cassette name J; room/passage game with gas hazards and a Jab; damaged captured save",
     "capture": "tape2bpartial",
     "capture_scope": "partial",
     "baud": "1500",
     "platform": "Model 100",
-    "status": "validated payload; runtime untested",
-    "validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-    "source_start_s": "38.178",
+    "status": "damaged / partial Model 100 BASIC",
+    "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 18 lines through 200; exact left/right prefix agreement",
+    "source_start_s": "65.657",
     "recovered_bytes": "2396",
-    "source_file": "tapes/recovered/tape2bpartial/best/02-J.ASC",
+    "source_file": "tapes/recovered/tape2bpartial/partial/03-J-BASIC-PREFIX.ASC",
     "wav": "tapes/tape2bpartial.wav",
     "folder": "tapes/recovered/tape2bpartial/left-sweep",
     "recovery_date": "2026-10-28",
     "recorder_volume": "3/10",
-    "next_action": "Runtime testing only if requested"
+    "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
   },
   "recovery_inventory": "tapes/recovered/tape2bpartial/left-sweep/inventory.json",
   "execution_tested": false
