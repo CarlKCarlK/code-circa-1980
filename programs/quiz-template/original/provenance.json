@@ -1,30 +1,30 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape21b",
-  "save": 8,
-  "archive_raw": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.BAS",
-  "archive_listing": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
+  "save": 12,
+  "archive_raw": "tapes/recovered/tape21b/best/12-QUIZ-TEMPLATE-SAVE03.BAS",
+  "archive_listing": "tapes/recovered/tape21b/best/12-QUIZ-TEMPLATE-SAVE03.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.ASC",
-      "archive_path": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
-      "bytes": 689,
-      "sha256": "3bc6b4d49d56399e6f23c7600d22d54d303e12297d1c2beb5995da06dfc6d4f8"
+      "path": "versions/v03/12-QUIZ-TEMPLATE-SAVE03.ASC",
+      "archive_path": "tapes/recovered/tape21b/best/12-QUIZ-TEMPLATE-SAVE03.ASC",
+      "bytes": 713,
+      "sha256": "4639b9765a7578d2b744e84e389f94dbd875a6e21f18fe3bef21b2efcc9f4108"
     },
     {
-      "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.BAS",
-      "archive_path": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.BAS",
+      "path": "versions/v03/12-QUIZ-TEMPLATE-SAVE03.BAS",
+      "archive_path": "tapes/recovered/tape21b/best/12-QUIZ-TEMPLATE-SAVE03.BAS",
       "bytes": 624,
-      "sha256": "c5b4c8e7e1a5c532f1be49371af7c9f5f0c877df494c3337a6057818d70517af"
+      "sha256": "42e96cb30759e4652f637006f0f28f521362c5e9f777e58fe88318dec3fda27a"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "c5b4c8e7e1a5c532f1be49371af7c9f5f0c877df494c3337a6057818d70517af",
+    "sha256": "42e96cb30759e4652f637006f0f28f521362c5e9f777e58fe88318dec3fda27a",
     "bytes": 624,
     "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 37,
+    "lines": 23,
     "last": 1000,
     "pointer_bases": [
       17125
@@ -36,19 +36,19 @@
   "inventory_row": {
     "tape": "21",
     "side": "b",
-    "order": "8",
+    "order": "12",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "QUIZ TEMPLATE SAVE02",
+    "summary": "QUIZ TEMPLATE SAVE03",
     "capture": "tape21b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "288.303",
+    "source_start_s": "392.724",
     "recovered_bytes": "624",
-    "source_file": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
+    "source_file": "tapes/recovered/tape21b/best/12-QUIZ-TEMPLATE-SAVE03.ASC",
     "wav": "tapes/tape21b.wav",
     "folder": "tapes/recovered/tape21b",
     "recovery_date": "2026-10-28",
