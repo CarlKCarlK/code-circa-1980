@@ -1,0 +1,40 @@
+{
+  "id": "amazing-dungeon-and-maze",
+  "title": "Amazing Dungeon And Maze",
+  "description": "Amazing Dungeon And Maze. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "AMAZING DUNGEON AND MAZE",
+      "capture": "tape19a",
+      "save": 6,
+      "raw": "versions/v01/06-AMAZING-DUNGEON-AND-MAZE.BAS",
+      "listing": "versions/v01/06-AMAZING-DUNGEON-AND-MAZE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-AMAZING-DUNGEON-AND-MAZE.ASC",
+          "label": "06-AMAZING-DUNGEON-AND-MAZE.ASC"
+        },
+        {
+          "path": "versions/v01/06-AMAZING-DUNGEON-AND-MAZE.BAS",
+          "label": "06-AMAZING-DUNGEON-AND-MAZE.BAS"
+        }
+      ],
+      "startupSource": "5 XS=0:YS=1\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n90 PRINT \"DIMENTIONS UP TO 63,21\";\n95 INPUT H,V\n100 PRINT@0,\"\";:INPUT\"DO YOU WANT A DUNJON OR A MAZE \";D$:CLS\n101 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n160 Q=0:Z=0:X=INT(RND(0)*H+1)\n165 FORI=1TOH\n170 IFI=XTHEN173",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
