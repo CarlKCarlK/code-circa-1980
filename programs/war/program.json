@@ -1,0 +1,48 @@
+{
+  "id": "war",
+  "title": "War",
+  "description": "War. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "WAR game \u2014 damaged earlier save",
+      "capture": "tape26a",
+      "save": 5,
+      "raw": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.BIN",
+      "listing": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged; runtime untested. 996-byte checksum-backed ordered prefix; 29 lines through 330; exact left/right agreement; raw TAP mapping retained; no synthetic EOF",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+          "label": "05-WAR-SAVE01-DAMAGED-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.BIN",
+          "label": "05-WAR-SAVE01-DAMAGED-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v01/05-WAR-SAVE01-DAMAGED-RAW.TAP",
+          "label": "05-WAR-SAVE01-DAMAGED-RAW.TAP"
+        },
+        {
+          "path": "versions/v01/05-WAR-SAVE01-DAMAGED-UNCERTAIN.ASC",
+          "label": "05-WAR-SAVE01-DAMAGED-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "    5 T=0:W=1:Y=1983:P=0:N=100:L=28\n   20 PAUSE \"YR\";Y;\",WP\";W;\",RS\";N:Y=Y+1: INPUT \"HOW MANY MORE WEAPONS\";I: IF I>100 LET I=100\n   30 IF I<0 THEN I=0\n   40 W=W+I:T=(T=0): IF T=P GOTO 300\n   50 INPUT \"DECLARE WAR? (Y/N) \";A$: GOSUB 900:A$(L)=A$: PRINT #\"A\";A$(L)\n   60 IF A$=\"Y\"LET T=(T=0): GOTO 345\n   70 PAUSE \"WAIT FOR YEARS DECISION\": INPUT #\"B\";A(L)\n   80 A=A(L): IF A<>1 GOTO 120\n   90 PAUSE \"PEACE!!!\": GOSUB \"D\":I=INT (W*D/100)+1: IF P=T BEEP I\n  100 W=W-I: PAUSE \"YOU LOSE \";I: IF P<>T BEEP I\n  110 GOTO 20\n  120 IF A<>2 GOTO 170",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

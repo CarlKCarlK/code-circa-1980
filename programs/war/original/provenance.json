@@ -1,0 +1,65 @@
+{
+  "version": "v01",
+  "capture": "tape26a",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.BIN",
+  "archive_listing": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+      "bytes": 1484,
+      "sha256": "9bf8b992a8eea4b1894f0b35f8a4209c8414fcb7b7e7ae7fdf6336f3e4ca647e"
+    },
+    {
+      "path": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.BIN",
+      "bytes": 996,
+      "sha256": "6be9d21ee0907523b4ec65da99e02e879de317b35133186953bf84d66a0b6f45"
+    },
+    {
+      "path": "versions/v01/05-WAR-SAVE01-DAMAGED-RAW.TAP",
+      "archive_path": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-RAW.TAP",
+      "bytes": 1589,
+      "sha256": "384d882242c37b27bc65600ea83f660bfa2e5470138041c374ad6cedce950345"
+    },
+    {
+      "path": "versions/v01/05-WAR-SAVE01-DAMAGED-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-UNCERTAIN.ASC",
+      "bytes": 2290,
+      "sha256": "730f027884f768c3231ebecbe48f6256077866a6db0f817feb14c2b0ca2d0e02"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "6be9d21ee0907523b4ec65da99e02e879de317b35133186953bf84d66a0b6f45",
+    "bytes": 996,
+    "archive_validation": "996-byte checksum-backed ordered prefix; 29 lines through 330; exact left/right agreement; raw TAP mapping retained; no synthetic EOF",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "26",
+    "side": "a",
+    "order": "5",
+    "type": "BASIC",
+    "recovery%": "",
+    "summary": "WAR game \u2014 damaged earlier save",
+    "capture": "tape26a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
+    "status": "damaged; runtime untested",
+    "validation": "996-byte checksum-backed ordered prefix; 29 lines through 330; exact left/right agreement; raw TAP mapping retained; no synthetic EOF",
+    "source_start_s": "315.923",
+    "recovered_bytes": "996",
+    "source_file": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+    "wav": "tapes/tape26a.wav",
+    "folder": "tapes/recovered/tape26a",
+    "recovery_date": "2026-10-29",
+    "recorder_volume": "",
+    "next_action": "Better source/capture may improve recovery; see report"
+  },
+  "recovery_inventory": "tapes/recovered/tape26a/inventory.json",
+  "execution_tested": false
+}
