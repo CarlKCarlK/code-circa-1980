@@ -1,46 +1,46 @@
 {
-  "version": "v04",
+  "version": "v05",
   "capture": "tape4b",
-  "save": 14,
-  "archive_raw": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.BAS",
-  "archive_listing": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.ASC",
+  "save": 15,
+  "archive_raw": "tapes/recovered/tape4b/best/15-POKER-V3.BAS",
+  "archive_listing": "tapes/recovered/tape4b/best/15-POKER-V3.ASC",
   "imported_files": [
     {
-      "path": "versions/v04/14-POKER-V2-SAVE2.BAS",
-      "archive_path": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.BAS",
-      "bytes": 7214,
-      "sha256": "98f30433739c5f119d286ed73f3d3de9874fc221c325f8477a00bcca29980870"
+      "path": "versions/v05/15-POKER-V3.BAS",
+      "archive_path": "tapes/recovered/tape4b/best/15-POKER-V3.BAS",
+      "bytes": 7895,
+      "sha256": "ccadd6f01b3a059d821d6d39750914adc8676b88b6e8d6fba649d21090689523"
     },
     {
-      "path": "versions/v04/14-POKER-V2-SAVE2.ASC",
-      "archive_path": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.ASC",
-      "bytes": 8911,
-      "sha256": "5d221aadb99e12d6df2912fb5a09792ee9a2f9203efb2374978d92c03f60f2ef"
+      "path": "versions/v05/15-POKER-V3.ASC",
+      "archive_path": "tapes/recovered/tape4b/best/15-POKER-V3.ASC",
+      "bytes": 10048,
+      "sha256": "58e81c9e7e0dc5be9bfdfa48e9ae16fe90aca814b9a6d2970ad61289322dc615"
     }
   ],
   "recovery_item": {
-    "lines": 422,
-    "last": 8000,
+    "lines": 406,
+    "last": 9010,
     "pointer_base": 22204,
     "normal_end_marker": true,
-    "sha256": "98f30433739c5f119d286ed73f3d3de9874fc221c325f8477a00bcca29980870"
+    "sha256": "ccadd6f01b3a059d821d6d39750914adc8676b88b6e8d6fba649d21090689523"
   },
   "inventory_row": {
     "tape": "4",
     "side": "b",
-    "order": "14",
+    "order": "15",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "POKER V2 SAVE2; 422 lines; T11-C1",
+    "summary": "POKER V3; 406 lines; T12-C1",
     "capture": "tape4b",
     "capture_scope": "full",
     "baud": "500",
     "platform": "TRS-80 BASIC; extended features",
     "status": "validated payload; runtime untested",
-    "validation": "422 consistent pointers; normal end marker; matches original; not execution-tested",
+    "validation": "406 consistent pointers; normal end marker; matches original, right-boosted; not execution-tested",
     "source_start_s": "",
-    "recovered_bytes": "7214",
-    "source_file": "tapes/recovered/tape4b/best/14-POKER-V2-SAVE2.ASC",
+    "recovered_bytes": "7895",
+    "source_file": "tapes/recovered/tape4b/best/15-POKER-V3.ASC",
     "wav": "tapes/tape4b.wav",
     "folder": "tapes/recovered/tape4b/best",
     "recovery_date": "2026-10-26",
