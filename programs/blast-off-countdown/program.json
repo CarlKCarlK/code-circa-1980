@@ -1,0 +1,40 @@
+{
+  "id": "blast-off-countdown",
+  "title": "Blast Off Countdown",
+  "description": "Blast Off Countdown. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Blast Off countdown",
+      "capture": "tape16b",
+      "save": 10,
+      "raw": "versions/v01/10-BLAST-OFF.BAS",
+      "listing": "versions/v01/10-BLAST-OFF.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/10-BLAST-OFF.ASC",
+          "label": "10-BLAST-OFF.ASC"
+        },
+        {
+          "path": "versions/v01/10-BLAST-OFF.BAS",
+          "label": "10-BLAST-OFF.BAS"
+        }
+      ],
+      "startupSource": "3 CLS\n5 LET X=10\n10 PRINT X\n13 FOR A=1 TO 500:NEXT A\n15 LET X=X-1\n18 IF X=0 THEN  PRINT \"BLAST OFF\" :END\n20 GOTO 10",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
