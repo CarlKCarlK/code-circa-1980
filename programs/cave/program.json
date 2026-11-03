@@ -1,0 +1,25 @@
+{
+  "id": "cave",
+  "title": "Cave Game",
+  "description": "Hunt the beast in one-way caverns with darts and dynamite.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v02",
+  "versionOrder": "Inferred development order follows consecutive tape9a saves and expanded instructions. Both preserve distinct historical bugs; no date or order relative to Alien/Jaberwocky is established.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CAVE GAME EARLY",
+      "capture": "tape9a",
+      "save": 10,
+      "raw": "versions/v01/10-CAVE-GAME-EARLY.BAS",
+      "listing": "versions/v01/10-CAVE-GAME-EARLY.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}

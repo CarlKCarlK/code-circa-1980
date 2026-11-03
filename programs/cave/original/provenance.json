@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape9a",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.BAS",
+  "archive_listing": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/10-CAVE-GAME-EARLY.BAS",
+      "archive_path": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.BAS",
+      "bytes": 762,
+      "sha256": "17c033e9057857ee181040373459574f74afb77e0afb943b3a6c13864a198898"
+    },
+    {
+      "path": "versions/v01/10-CAVE-GAME-EARLY.ASC",
+      "archive_path": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.ASC",
+      "bytes": 901,
+      "sha256": "99d3a707f70bb98ba2c43b4432283c8e05f1ece7c4c423c4973f9893d02ffc18"
+    }
+  ],
+  "recovery_item": {
+    "lines": 16,
+    "last": 10000,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "17c033e9057857ee181040373459574f74afb77e0afb943b3a6c13864a198898"
+  },
+  "inventory_row": {
+    "tape": "9",
+    "side": "a",
+    "order": "10",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "CAVE GAME EARLY; 16 lines",
+    "capture": "tape9a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+    "source_start_s": "355.358",
+    "recovered_bytes": "762",
+    "source_file": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.ASC",
+    "wav": "tapes/tape9a.wav",
+    "folder": "tapes/recovered/tape9a/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test; historical source may be unfinished"
+  },
+  "recovery_inventory": "tapes/recovered/tape9a/inventory.json",
+  "execution_tested": false
+}
