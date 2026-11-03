@@ -194,6 +194,59 @@
       },
       "recovery_inventory": "tapes/recovered/tape2bpartial/left-sweep/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape2bpartial",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape2bpartial/best/04-J-BASIC-TAPE-BLOCK.BIN",
+      "archive_listing": "tapes/recovered/tape2bpartial/best/04-J.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/04-J-BASIC-TAPE-BLOCK.BIN",
+          "archive_path": "tapes/recovered/tape2bpartial/best/04-J-BASIC-TAPE-BLOCK.BIN",
+          "bytes": 2396,
+          "sha256": "6a0f488948827da72775387a7d0084e8c870f570098787afd37937e9f8730132"
+        },
+        {
+          "path": "versions/v04/04-J.ASC",
+          "archive_path": "tapes/recovered/tape2bpartial/best/04-J.ASC",
+          "bytes": 2925,
+          "sha256": "6fa43471ef843e1b440269a25c52e13072677913be7d0ed4b79a90f3d996906d"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "6a0f488948827da72775387a7d0084e8c870f570098787afd37937e9f8730132",
+        "bytes": 2396,
+        "archive_validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "b",
+        "order": "4",
+        "type": "Model 100 BASIC",
+        "recovery%": "100",
+        "summary": "Cassette name J; room/passage game with gas hazards and a Jab; 87 validated lines",
+        "capture": "tape2bpartial",
+        "capture_scope": "partial",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "validated payload; runtime untested",
+        "validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+        "source_start_s": "99.462",
+        "recovered_bytes": "2396",
+        "source_file": "tapes/recovered/tape2bpartial/best/04-J.ASC",
+        "wav": "tapes/tape2bpartial.wav",
+        "folder": "tapes/recovered/tape2bpartial/best",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape2bpartial/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
