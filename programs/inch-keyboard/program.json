@@ -66,6 +66,34 @@
       ],
       "startupSource": "00100 KEYSCN\tLD\tC,0\t\t;FOR FIRST ROW\n00110 \tLD\tA,(3801H)\t;FIRST ROW ADDRESS\n00120 \tOR\tA\t\t; TEST ZERO OR NON-ZERO\n00130 \tJP\tNZ,KEY10\t;GO IF KEY PRESSED\n00140 \tLD\tC,8\t\t;REPEAT FOR OTHER ROWS\n00150 \tLD\tA,(3802H)\n00160 \tOR\tA\n00170 \tJP\tNZ,KEY10\n00180 \tLD\tC,16\n00190 \tLD\tA,(3804H)\n00200 \tOR\tA\n00210 \tJP\tNZ,KEY10",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "INCH KEYBOARD V1",
+      "capture": "tape18a",
+      "save": 7,
+      "raw": "versions/v03/07-INCH-KEYBOARD-V1.ASM",
+      "listing": "versions/v03/07-INCH-KEYBOARD-V1.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v03/07-INCH-KEYBOARD-V1.ASM",
+          "label": "07-INCH-KEYBOARD-V1.ASM"
+        },
+        {
+          "path": "versions/v03/07-INCH-KEYBOARD-V1.TXT",
+          "label": "07-INCH-KEYBOARD-V1.TXT"
+        },
+        {
+          "path": "versions/v03/07-INCH-KEYBOARD-V1.Z80",
+          "label": "07-INCH-KEYBOARD-V1.Z80"
+        }
+      ],
+      "startupSource": "00100 KEYSCN\tLD\tC,0\t\t;FOR FIRST ROW\n00200 \tLD\tA,(3801H)\t;FIRST ROW ADDRESS\n00300 \tOR\tA\t\t;TEST ZERO OR NON-ZERO\n00400 \tJP\tNZ,KEY10\t;GO IF KEY PRESSED\n00500 \tLD\tC,8\t\t;REPEAT FOR OTHER ROWS\n00600 \tLD\tA,(3802H)\n00700 \tOR\tA\n00800 \tJP\tNZ,KEY10\n00900 \tLD\tC,16\n01000 \tLD\tA,(3804H)\n01100 \tOR\tA\n01200 \tJP\tNZ,KEY10",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
