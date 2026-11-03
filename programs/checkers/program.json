@@ -34,6 +34,30 @@
       ],
       "startupSource": "70 CLS:POKE16553,255\n80 DIM R(4),S(7,7):G=-1:R(0)=-99\n90 DATA1,0,1,0,0,0,-1,0,0,1,0,0,0,-1,0,-1,15\n120 FORX=0TO7:FORY=0TO7:READJ:IFJ=15THEN180\n160 S(X,Y)=J:GOTO200\n180 RESTORE:READS(X,Y)\n200 NEXTY,X\n210 GOSUB1420\n230 PRINT@490,\"I AM THINKING. \";:FORX=0TO7:FORY=0TO7:IFS(X,Y)>-1THEN350\n310 IFS(X,Y)=-1THENFORA=-1TO1STEP2:B=G:GOSUB650:NEXTA\n330 IFS(X,Y)=-2THENFORA=-1TO1STEP2:FORB=-1TO1STEP2:GOSUB650:NEXTB,A\n350 NEXTY,X:GOTO1140",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "CHECKERS SAVE2",
+      "capture": "tape9b",
+      "save": 2,
+      "raw": "versions/v02/02-CHECKERS-SAVE2.BAS",
+      "listing": "versions/v02/02-CHECKERS-SAVE2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/02-CHECKERS-SAVE2.ASC",
+          "label": "02-CHECKERS-SAVE2.ASC"
+        },
+        {
+          "path": "versions/v02/02-CHECKERS-SAVE2.BAS",
+          "label": "02-CHECKERS-SAVE2.BAS"
+        }
+      ],
+      "startupSource": "70 CLS:POKE16553,255\n80 DIM R(4),S(7,7):G=-1:R(0)=-99\n90 DATA1,0,1,0,0,0,-1,0,0,1,0,0,0,-1,0,-1,15\n120 FORX=0TO7:FORY=0TO7:READJ:IFJ=15THEN180\n160 S(X,Y)=J:GOTO200\n180 RESTORE:READS(X,Y)\n200 NEXTY,X\n210 GOSUB1420\n230 PRINT@490,\"I AM THINKING. \";:FORX=0TO7:FORY=0TO7:IFS(X,Y)>-1THEN350\n310 IFS(X,Y)=-1THENFORA=-1TO1STEP2:B=G:GOSUB650:NEXTA\n330 IFS(X,Y)=-2THENFORA=-1TO1STEP2:FORB=-1TO1STEP2:GOSUB650:NEXTB,A\n350 NEXTY,X:GOTO1140",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
