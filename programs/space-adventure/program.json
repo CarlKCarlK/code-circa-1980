@@ -1,0 +1,42 @@
+{
+  "id": "space-adventure",
+  "title": "Space Adventure",
+  "description": "Space Adventure. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SPACE ADVENTURE",
+      "capture": "tape3a",
+      "save": 9,
+      "raw": "versions/v01/09-SPACE-ADVENTURE.BAS",
+      "listing": "versions/v01/09-SPACE-ADVENTURE.ASC",
+      "playable": false,
+      "note": "validated payload. 26 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/09-SPACE-ADVENTURE.ASC",
+          "label": "09-SPACE-ADVENTURE.ASC"
+        },
+        {
+          "path": "versions/v01/09-SPACE-ADVENTURE.BAS",
+          "label": "09-SPACE-ADVENTURE.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR 260:CLS:PRINT\"SPACE ADVENTURE\"\n7 X=50:Y=50:X2=.001:Y2=.001:T=1\n10 DIM P(20,6,2)\n20 FOR S=1TO20: P(S,0,0)=RND(0)*100:P(S,0,1)=RND(0)*100:P(S,0,2)=RND(0)*100:FORP=1TO6:P(S,P,0)=P(S,0,0)+RND(0)-.5:P(S,P,1)=P(S,0,1)+RND(0)-.5:P(S,P,2)=RND(0):NEXTP,S\n30 CLS:PRINT@960,\"\";\n90 M$=\"\":PRINT@960,STRING$(52,\" \");:PRINT@960,\"\";\n100 PRINTCHR$(14);:A$=INKEY$:IFA$=\"\"THEN150ELSE IF A$=CHR$(13) THEN 1000 ELSEIFA$=CHR$(8)THEN M$=LEFT$(M$,LEN(M$)-1):PRINT@960,M$;\"  \";CHR$(24);CHR$(24);ELSEIFLEN(M$)>60 THEN 150 ELSEM$=M$+A$:PRINT@960+LEN(M$)-1,A$;\n150 '\n160 Y=Y+VY*T+.5*AY*T[2:X=X+VX*T+.5*AX*T[2:IF X>X1 AND X<X2 AND Y>Y1 AND Y<Y2 THEN RESET(OX,OY):SET( (X-X1)/(X2-X1)*105, (Y-Y1)/(Y2-Y1)*41):OX= (X-X1)/(X2-X1)*105:OY=(Y-Y1)/(Y2-Y1)*41ELSERESET(OX,OY):PRINT@896,\"OFF SCREEN\";\n165 IFS$=\"Y\"ANDSGN(VX)<>X7THEN AX=0\n166 IFS$=\"Y\"ANDSGN(VY)<>Y7THEN AY=0\n170 VX=VX+AX*T:VY=VY+AY*T:PRINT@54,SQR(VX[2+VY[2);CHR$(14);:GOTO100",
+      "controlSource": [
+        "100 PRINTCHR$(14);:A$=INKEY$:IFA$=\"\"THEN150ELSE IF A$=CHR$(13) THEN 1000 ELSEIFA$=CHR$(8)THEN M$=LEFT$(M$,LEN(M$)-1):PRINT@960,M$;\"  \";CHR$(24);CHR$(24);ELSEIFLEN(M$)>60 THEN 150 ELSEM$=M$+A$:PRINT@960+LEN(M$)-1,A$;"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
