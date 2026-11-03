@@ -1,0 +1,42 @@
+{
+  "id": "anti-aircraft-game",
+  "title": "Anti Aircraft Game",
+  "description": "Anti Aircraft Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ANTI AIRCRAFT GAME",
+      "capture": "tape21b",
+      "save": 5,
+      "raw": "versions/v01/05-ANTI-AIRCRAFT-GAME.BAS",
+      "listing": "versions/v01/05-ANTI-AIRCRAFT-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/05-ANTI-AIRCRAFT-GAME.ASC",
+          "label": "05-ANTI-AIRCRAFT-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/05-ANTI-AIRCRAFT-GAME.BAS",
+          "label": "05-ANTI-AIRCRAFT-GAME.BAS"
+        }
+      ],
+      "startupSource": "1 CLS:PRINT:PRINTCHR$(23);\"HIT 'Z' KEY TO AIM LEFT.\"\n2 PRINT\"HIT '/' KEY TO AIM RIGHT.\"\n3 PRINT\"HIT SPACE BAR TO FIRE.\"\n4 FORI=1TO500:NEXT\n6 CLS:FORE=0TO127:T=47-RND(3):FORY=47TOTSTEP-1:SET(E,Y):NEXTY:NEXTE\n10 CA=928:I=1:PRINT @ CA,\"*\";: PRINT @ 991,\"***\";\n20 F=0\n30 IFI>=15 PRINT @ 124,\"      \";:I=1\n40 PRINT @ 64 +I*4,\"     \";:I=I+RND(10)/10:PRINT @ 64+I*4,\" (+) \";\n50 IFF=0THEN200\n60 RESET(MX,MY):MX=MX-MD:MY=MY-8:IFMX<=0 ORMX>=127 THEN20\n70 IFMY>2SET(MX,MY):GOTO30",
+      "controlSource": [
+        "200 Y$=INKEY$"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
