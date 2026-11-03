@@ -1,0 +1,26 @@
+{
+  "id": "relativity",
+  "title": "Relativity",
+  "description": "Explore moving rods, length-contraction graphs, and ship/Earth clocks.",
+  "kind": "Science",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "One complete captured save. The source credit says May 9, 1979; this is a source date, not a tape-save date.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "RELITIVITY",
+      "capture": "tape22a",
+      "save": 10,
+      "raw": "versions/v01/10-RELITIVITY.BAS",
+      "listing": "versions/v01/10-RELITIVITY.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": null
+    }
+  ]
+}
