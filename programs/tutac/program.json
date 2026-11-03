@@ -1,0 +1,26 @@
+{
+  "id": "tutac",
+  "title": "TUTAC Computer",
+  "description": "Run a decimal computer simulator and its embedded punched-card program.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Consecutive complete saves add subtraction and experimental multiplication. v01 runs its embedded addition deck; v02 contains debugging STOP statements. A separate suspect v03 candidate remains in review/.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TUTAC COMPUTER",
+      "capture": "file8b",
+      "save": 18,
+      "raw": "versions/v01/18-TUTAC-COMPUTER.BAS",
+      "listing": "versions/v01/18-TUTAC-COMPUTER.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": null
+    }
+  ]
+}

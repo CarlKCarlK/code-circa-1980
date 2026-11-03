@@ -1,0 +1,67 @@
+{
+  "official_title": "TUTAC Computer",
+  "title_authority": "Recovered title or descriptive title from the recovered behavior; archive labels retained.",
+  "short_name": "tutac",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Consecutive complete saves add subtraction and experimental multiplication. v01 runs its embedded addition deck; v02 contains debugging STOP statements. A separate suspect v03 candidate remains in review/.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "file8b",
+      "save": 18,
+      "archive_raw": "tapes/recovered/file8b/best/18-TUTAC-COMPUTER.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/18-TUTAC-COMPUTER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/18-TUTAC-COMPUTER.BAS",
+          "archive_path": "tapes/recovered/file8b/best/18-TUTAC-COMPUTER.BAS",
+          "bytes": 1269,
+          "sha256": "fd95be9b7a3ea5fff59673f1e616dfd5f0ff98ffdab9d809dd45fd5bd9f78589"
+        },
+        {
+          "path": "versions/v01/18-TUTAC-COMPUTER.ASC",
+          "archive_path": "tapes/recovered/file8b/best/18-TUTAC-COMPUTER.ASC",
+          "bytes": 1515,
+          "sha256": "b0fcad1ac0dcace78dd76e507de2fe836493500fa1440f0b035a27a163e82458"
+        }
+      ],
+      "recovery_item": {
+        "lines": 49,
+        "last": 20000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "fd95be9b7a3ea5fff59673f1e616dfd5f0ff98ffdab9d809dd45fd5bd9f78589"
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "18",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TUTAC COMPUTER; 49 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "673.166",
+        "recovered_bytes": "1269",
+        "source_file": "tapes/recovered/file8b/best/18-TUTAC-COMPUTER.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence."
+  }
+}
