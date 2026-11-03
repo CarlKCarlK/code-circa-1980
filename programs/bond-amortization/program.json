@@ -1,0 +1,44 @@
+{
+  "id": "bond-amortization",
+  "title": "BOND \u2014 Bond Amortization",
+  "description": "BOND \u2014 Bond Amortization. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "Commodore BASIC; likely PET/CBM ($0401), exact machine unverified",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BOND \u2014 Bond amortization",
+      "capture": "tape31a",
+      "save": 1,
+      "raw": "versions/v01/01-BOND-AMORTIZATION-SAVE01.BIN",
+      "listing": "versions/v01/01-BOND-AMORTIZATION-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Exact left/right and repeated blocks; odd parity; XOR checksum; end-of-block marker; 83 ordered BASIC lines; pointers at $0401; end marker; one preserved trailing 01 byte",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-BOND-AMORTIZATION-SAVE01.ASC",
+          "label": "01-BOND-AMORTIZATION-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/01-BOND-AMORTIZATION-SAVE01.BIN",
+          "label": "01-BOND-AMORTIZATION-SAVE01.BIN"
+        },
+        {
+          "path": "versions/v01/01-BOND-AMORTIZATION-SAVE01.PRG",
+          "label": "01-BOND-AMORTIZATION-SAVE01.PRG"
+        }
+      ],
+      "startupSource": "10 PRINT\" BOND AMORTIZATON\"\n20 PRINT\"  (C) 1979 CARL KADIE\n30 PRINT\n40 INPUT\"PRICIPAL\";PR\n50 INPUT\"INTEREST\";IN\n60 INPUT\"NUMBER OF YEARS\";NY\n70 INPUT\"YEAR\";YR\n80 INPUT\"ANNUAL MATURITY\";AM\n85 DIMT(6,NY),M(NY)\n86 FOR AD=1 TO NY:M(AD)=-1:NEXT AD\n90 OPEN1,4:OPEN2,4,1:OPEN3,4,2:OPEN4,4,4\n94 PRINT#1,\"YEAR         \";",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
