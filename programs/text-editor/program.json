@@ -1,0 +1,45 @@
+{
+  "id": "text-editor",
+  "title": "Text Editor",
+  "description": "Text Editor. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Keyboard-driven text entry/editor",
+      "capture": "tape1a",
+      "save": 5,
+      "raw": "versions/v01/05-TEXT-EDITOR.BAS",
+      "listing": "versions/v01/05-TEXT-EDITOR.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/05-TEXT-EDITOR.ASC",
+          "label": "05-TEXT-EDITOR.ASC"
+        },
+        {
+          "path": "versions/v01/05-TEXT-EDITOR.BAS",
+          "label": "05-TEXT-EDITOR.BAS"
+        }
+      ],
+      "startupSource": "490 DIM P$(70)\n495 CLS\n500 R$=\"\":PRINT\"READY\"\n501 PRINT \">\";\n502 PRINT CHR$(14);\n510 A$=INKEY$\n520 IF A$=\"\" THEN 510 ELSE IF A$=CHR$(8) THEN GOTO700 ELSE IF A$=CHR$(31) THEN CLS: GOTO 502 ELSE IFA$=CHR$(13) THEN PRINT:GOTO 600\n530 R$=R$+A$\n540 PRINTA$;:GOTO 510\n600 IF R$=\"\" THEN 501\n605 IF VAL(LEFT$(R$,1))>0 THEN GOSUB 820:R$=\"\":GOTO 501\n610 IF LEFT$(R$,4)=\"LIST\" THEN 11000",
+      "controlSource": [
+        "510 A$=INKEY$",
+        "780 IF INKEY$=\"\" THEN 770 ELSE PRINT: RETURN",
+        "11120 IF INKEY$=\"\" THEN 11120 ",
+        "11180 IF INKEY$=\"\" THEN 11180 "
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
