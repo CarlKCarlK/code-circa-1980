@@ -1,12 +1,10 @@
 {
-  "author": "Jim Storer",
-  "original_language": "FOCAL",
-  "historical_date": "1969",
-  "source_url": "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander/LunarLanderListingText.txt",
-  "context_url": "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander.html",
-  "file": "LUNAR-1969.FOC",
-  "bytes": 2033,
-  "sha256": "1fc49b2a6eb24b0fdb628614eff779d1cd37f388c92364d50446540c07c882b1",
-  "note": "Downloaded unchanged from Storer\u2019s historical archive, which credits transcription to Matthew House. This is a transcription of the original FOCAL listing, not recovered tape bytes and not a TRS-80 executable. Terminal prompt/header lines are preserved. No historical date is assigned to this modern Git commit.",
+  "author": "Jim Storer; BASIC version published by Creative Computing",
+  "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/lunar.bas",
+  "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=106",
+  "file": "LUNAR-1978.ASC",
+  "bytes": 2074,
+  "sha256": "744231549befd5eab29d8e792f14967e515fe5238fa76ad6f2a73a96356655f9",
+  "note": "Complete electronic BASIC Computer Games transcription from a Vintage BASIC mirror. Common state variables and polynomial physics establish the relationship; print transcription and exact intermediate edition are not verified. Preserves mirror text, including O in line 200 and printed spelling. Not a recovered cassette.",
   "execution_tested": false
 }
