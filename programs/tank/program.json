@@ -1,0 +1,27 @@
+{
+  "id": "tank",
+  "title": "Tank Game",
+  "description": "Study an unfinished design for programmable battling tanks.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "One validated captured design draft, with an earlier uncertain tape1a candidate preserved separately. Its 1980 Carl Kadie notice is a source credit, not a save date. No runnable captured edition exists.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Tank Game",
+      "capture": "tape16a",
+      "save": 4,
+      "raw": "versions/v01/04-TANK-GAME.BAS",
+      "listing": "versions/v01/04-TANK-GAME.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Unfinished design draft: pseudocode, incomplete syntax, missing setup and DESTROYED routine. No runnable recovered version exists."
+    }
+  ],
+  "sourceOnly": true,
+  "actionVerb": "View source"
+}
