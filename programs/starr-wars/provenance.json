@@ -67,6 +67,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape14a/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape14b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape14b/best/08-STARR-WARS.BAS",
+      "archive_listing": "tapes/recovered/tape14b/best/08-STARR-WARS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/08-STARR-WARS.ASC",
+          "archive_path": "tapes/recovered/tape14b/best/08-STARR-WARS.ASC",
+          "bytes": 4267,
+          "sha256": "6d1dbf5db82e29b09469ee718f1de38be88bf9212d47568a8a1760db76844c15"
+        },
+        {
+          "path": "versions/v02/08-STARR-WARS.BAS",
+          "archive_path": "tapes/recovered/tape14b/best/08-STARR-WARS.BAS",
+          "bytes": 3829,
+          "sha256": "33e83e50f6e5785116257f20118f6d8dee1cedfb09b886cf58f815e6b61638eb"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "33e83e50f6e5785116257f20118f6d8dee1cedfb09b886cf58f815e6b61638eb",
+        "bytes": 3829,
+        "archive_validation": "Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 47,
+        "last": 20000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 3827,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "14",
+        "side": "b",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "STARR WARS; 47 lines",
+        "capture": "tape14b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+        "source_start_s": "442.236",
+        "recovered_bytes": "3829",
+        "source_file": "tapes/recovered/tape14b/best/08-STARR-WARS.ASC",
+        "wav": "tapes/tape14b.wav",
+        "folder": "tapes/recovered/tape14b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape14b/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
