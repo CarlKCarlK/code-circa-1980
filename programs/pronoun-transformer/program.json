@@ -1,8 +1,8 @@
 {
   "id": "pronoun-transformer",
   "title": "Pronoun Transformer",
-  "description": "Pronoun Transformer. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 6,
       "raw": "versions/v01/06-PRONOUN-TRANSFORMER.BAS",
       "listing": "versions/v01/06-PRONOUN-TRANSFORMER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/06-PRONOUN-TRANSFORMER.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 CLEAR 500:CLS\n20 INPUT A$\n25 A$=A$+\".\":B$=\"\":C$=\"\":C=0:OC=0:WN=0:WC=0:E$=\"***\":D$=\"***\":SC=0\n30 \n                    REM GET RID OF PUNUATIONI\n\n40 B$=A$:A$=\"\":FORI=1TOLEN(B$):C=ASC(MID$(B$,I,1)):IFC<64 THEN C$=\" \":IF OC=1 THEN C$=\"\"ELSEOC=1ELSEIF C>95 THEN OC=0:C$=CHR$(C-32)ELSEOC=0:C$=CHR$(C)\n45 IF C$=\" \"THEN WN=WN+1\n50 A$=A$+C$:NEXTI:C$=\"\":OC=0\n60                       REM GO THOUGH WORD BY WORD\n\n70 WC=WC+1:GOSUB 990:IF B$=\"***\"THEN 200",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

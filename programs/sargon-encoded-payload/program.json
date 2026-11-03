@@ -1,14 +1,14 @@
 {
   "id": "sargon-encoded-payload",
   "title": "SARGON II",
-  "description": "SARGON II. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I Z80",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated captured payload; runtime untested. Exact independent left/right bytes; 1 block checksums valid; full framing and transfer address; exact framed EOF; initial A5 sync retained",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/01-SARGON-LOADER-MEMORY.BIN",
@@ -57,7 +56,6 @@
       "playable": false,
       "note": "validated captured payload; runtime untested. Exact independent left/right bytes; 45 block checksums valid; full framing and transfer address; A5 sync and trailing zero explicitly retained; loader-derived XOR interpretation",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/02-SARGON-ENCODED-PAYLOAD-MEMORY.BIN",
@@ -84,5 +82,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "SARGON II by Dan and Kathe Spracklen, copyright 1979 Hayden. This is third-party machine code; the displayed disassembly was derived during recovery."
+  }
 }

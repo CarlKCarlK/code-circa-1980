@@ -1,14 +1,14 @@
 {
   "id": "sprite-animation",
   "title": "Sprite Animation",
-  "description": "Sprite Animation. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 BASIC; extended features",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 42 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/10-SPRITE-ANIMATION.ASC",
@@ -48,7 +47,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 20 consistent pointers; normal end marker; matches original, left-hp800; not execution-tested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/11-SPRITE-ANIMATION-V2.ASC",
@@ -63,5 +61,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

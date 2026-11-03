@@ -1,14 +1,14 @@
 {
   "id": "questionnaire-matchmaking",
   "title": "Questionnaire Matchmaking",
-  "description": "Questionnaire Matchmaking. 4 recovered saves.",
-  "kind": "Archive",
+  "description": "4 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v04",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/08-QUESTIONNAIRE-MATCHMAKING-SAVE01.ASC",
@@ -47,7 +46,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v02/09-QUESTIONNAIRE-MATCHMAKING-SAVE02.ASC",
@@ -73,7 +71,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v03/10-QUESTIONNAIRE-MATCHMAKING-SAVE03.ASC",
@@ -97,10 +94,9 @@
       "save": 11,
       "raw": "versions/v04/11-QUESTIONNAIRE-MATCHMAKING-SAVE04.BAS",
       "listing": "versions/v04/11-QUESTIONNAIRE-MATCHMAKING-SAVE04.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v04/11-QUESTIONNAIRE-MATCHMAKING-SAVE04.ASC",
@@ -115,8 +111,12 @@
       "controlSource": [
         "10556 X$=INKEY$+INKEY$",
         "10557 IF INKEY$=\"\" THEN 10557"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

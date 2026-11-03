@@ -1,8 +1,8 @@
 {
   "id": "combination-lock",
   "title": "Combination Lock",
-  "description": "Combination Lock. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-COMBINATION-LOCK.BAS",
       "listing": "versions/v01/05-COMBINATION-LOCK.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. 14 consistent pointers; normal end marker; matches 4 decoding variants; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-COMBINATION-LOCK.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "10 CLS\n20 INPUT\"HOW MANY LEVELS\";LV\n30 FORI=1TOLV:C(I)=RND(100)\n40 NEXT\n50 L=1\n60 CLS\n70 FORX=56 TO73:SET(X,3):SET(X,LV*3+8):NEXTX:FORY=3TOLV*3+8:SET(56,Y):SET(73,Y):NEXT\n100 A$=INKEY$:IFA$=\"\"THEN130ELSEIFA$=CHR$(8) OR A$=CHR$(24)THEN CN=-1ELSE IFA$=CHR$(9)ORA$=CHR$(25)THEN CN=1ELSEIFA$=\" \"THEN 400 ELSEIFVAL(A$)<>0 THEN L=VAL(A$)ELSEGOTO 130\n130 L(L)=L(L)+CN:PRINT@64*L+64+30,L(L);\n140 IF L(L)=C(L) AND CN<>0THEN OUT255,1:OUT255,2\n145 IF A$=CHR$(24)ORA$=CHR$(25) THEN CN=0\n150 GOTO 100",
       "controlSource": [
         "100 A$=INKEY$:IFA$=\"\"THEN130ELSEIFA$=CHR$(8) OR A$=CHR$(24)THEN CN=-1ELSE IFA$=CHR$(9)ORA$=CHR$(25)THEN CN=1ELSEIFA$=\" \"THEN 400 ELSEIFVAL(A$)<>0 THEN L=VAL(A$)ELSEGOTO 130"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

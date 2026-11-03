@@ -195,5 +195,11 @@
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
   "dating": {
     "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Uses Dungeons & Dragons rules and reference material. The precise rulebook editions and origins of the program code have not been established."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
   }
 }

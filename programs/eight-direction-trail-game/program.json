@@ -1,8 +1,8 @@
 {
   "id": "eight-direction-trail-game",
   "title": "Eight Direction Trail Game",
-  "description": "Eight Direction Trail Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 9,
       "raw": "versions/v01/09-EIGHT-DIRECTION-TRAIL-GAME.BAS",
       "listing": "versions/v01/09-EIGHT-DIRECTION-TRAIL-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/09-EIGHT-DIRECTION-TRAIL-GAME.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 CLS:P=500:O=345:POKE16553,255\n10 A$=INKEY$:IFA$=\",\"THEND=D-1\n20 IFA$=\".\"THEND=D+1\n25 IFA$=\"C\"THENCLS\n30 IFD>8THEND=1\n40 IFD<1THEND=8\n50 FORQ=1TOD:READC:NEXT:P=P+C\n60 DATA -64,-62,2,66,64,62,-2,-66\n65 IFP<0THENP=P+1024\n70 IFP>1023THENP=P-1024 ELSEPRINT @ O,\":\";:PRINT  @ P,\"#\";:O=P\n80 RESTORE:FORQ=1TO100:NEXT:Y=INT(P/64):X=(P/64-Y)*64:IFPOINT(X,Y)THEN750 ELSEGOTO10\n500 FORZ=1TO100:SET(RND(128)-1,RND(48)-1):NEXTZ:RETURN",
       "controlSource": [
         "10 A$=INKEY$:IFA$=\",\"THEND=D-1"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

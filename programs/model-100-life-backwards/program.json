@@ -1,14 +1,14 @@
 {
   "id": "model-100-life-backwards",
   "title": "Model 100 LIFE Backwards",
-  "description": "Model 100 LIFE Backwards. 8 recovered saves.",
-  "kind": "Archive",
+  "description": "8 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "Model 100",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v08",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/20-L-BASIC-PREFIX.ASC",
@@ -57,7 +56,6 @@
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 8 lines through 310; exact left/right prefix agreement",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/21-L-BASIC-PREFIX.ASC",
@@ -125,7 +123,6 @@
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 1 lines through 10; exact left/right prefix agreement",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/22-L-BASIC-PREFIX.ASC",
@@ -201,7 +198,6 @@
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 10 lines through 500; exact left/right prefix agreement",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v04/23-L-BASIC-PREFIX.ASC",
@@ -245,7 +241,6 @@
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v05/20-L-BASIC-PREFIX.ASC",
@@ -289,7 +284,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v06/21-L-BASIC-TAPE-BLOCK.BIN",
@@ -313,7 +307,6 @@
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 9 lines through 370; no cross-channel prefix match",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v07/22-L-BASIC-PREFIX.ASC",
@@ -349,7 +342,6 @@
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 11 lines through 510; exact left/right prefix agreement",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v08/23-L-BASIC-PREFIX.ASC",
@@ -416,5 +408,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

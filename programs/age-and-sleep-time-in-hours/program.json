@@ -1,8 +1,8 @@
 {
   "id": "age-and-sleep-time-in-hours",
   "title": "Age And Sleep Time In Hours",
-  "description": "Age And Sleep Time In Hours. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-AGE-IN-HOURS.BAS",
       "listing": "versions/v01/04-AGE-IN-HOURS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-AGE-IN-HOURS.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 PRINT\"HOW MANY YEARS OLD ARE YOU\"\n10 INPUTY\n20 H=Y*365*24\n30 PRINTH\n35 PRINT\"IS HOW MANY HOURS YOU HAVE LIVED\"\n40 PRINTH/3\n45 PRINT\"IS HOW MANY HOURS YOU HAVE SLEPT\"",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

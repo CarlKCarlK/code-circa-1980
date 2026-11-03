@@ -1,14 +1,14 @@
 {
   "id": "dnd-reference",
   "title": "D&D Reference",
-  "description": "D&D Reference. 3 recovered saves.",
-  "kind": "Archive",
+  "description": "3 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/09-DND-REFERENCE-V1.ASC",
@@ -42,10 +41,9 @@
       "save": 10,
       "raw": "versions/v02/10-DND-REFERENCE-V2.BAS",
       "listing": "versions/v02/10-DND-REFERENCE-V2.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/10-DND-REFERENCE-V2.ASC",
@@ -63,7 +61,8 @@
         "3040 IFINKEY$=\"\"THEN3040 ELSE RUN",
         "4026 IF INKEY$=\"\"THEN4026ELSECLS",
         "4050 IF INKEY$=\"\"THEN4050 ELSE RUN"
-      ]
+      ],
+      "slug": "basic"
     },
     {
       "id": "v03",
@@ -75,7 +74,6 @@
       "playable": false,
       "note": "damaged. Damaged raw; exact left/right prefix bytes 0:7752, 82 ordered records through 4005; pointer base 22204; no added end marker",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/11-DND-REFERENCE-V3-DAMAGED-PREFIX.ASC",
@@ -102,5 +100,8 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Uses Dungeons & Dragons rules and reference material. The precise rulebook editions and origins of the program code have not been established."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "graphics-chase-game",
   "title": "Graphics Chase Game",
-  "description": "Graphics Chase Game. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 BASIC; extensions may be required",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 9,
       "raw": "versions/v01/09-GRAPHICS-CHASE-GAME-EARLY.BAS",
       "listing": "versions/v01/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
@@ -35,7 +34,8 @@
       "startupSource": "10 CLS\n20 Y=RND(48)-1:X=RND(128)-1:BX=RND(128)-1:BY=RND(48)-1\n30 CY=RND(3)-1:CX=RND(3)-1\n100 A$=INKEY$:IF VAL(A$)<>0THENRESTORE: FOR C=1TOVAL(A$):READ XX,YY:NEXTC\n110 DATA 0,-1, 0,1, -1,0, 1,0, 0,0, 1,1, 1,-1, -1,1, -1,-1\n120 IF XX+X>=0 AND X+XX<=127 AND YY+Y>=0 AND Y+YY<=47 THEN X=X+XX:Y=Y+YY\n130 D=SQR( (X-BX)[2+(Y-BY)[2)\n140 IF D<=1 THEN 1000\n150 IF RND(D/2)=1 THEN CX=SGN(BX-X):CY=SGN(BY-Y)\n160 IF BX+CX>0 AND BX+CX<=127 AND CY+BY>=0 AND CY+BY<=47 THEN BY=BY+CY:BX=BX+CXELSE CX=RND(3)-2:CY=RND(3)-2:GOTO 160\n170 RESET(OX,OY):SET(X,Y):OX=X:OY=Y:RESET(PX,PY):SET(BX,BY):PX=BX:PY=BY\n180 GOTO 100",
       "controlSource": [
         "100 A$=INKEY$:IF VAL(A$)<>0THENRESTORE: FOR C=1TOVAL(A$):READ XX,YY:NEXTC"
-      ]
+      ],
+      "slug": "basic"
     },
     {
       "id": "v02",
@@ -47,7 +47,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/10-GRAPHICS-CHASE-GAME.ASC",
@@ -64,5 +63,8 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "alien-shooter",
   "title": "Alien Shooter",
-  "description": "Alien Shooter. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-ALIEN-SHOOTER.BAS",
       "listing": "versions/v01/03-ALIEN-SHOOTER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Exact left/right payload; 59 ordered lines; consistent pointer base 17125; end marker; exact EOF",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-ALIEN-SHOOTER.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 RANDOM\n7 DIMA(64),B(64)\n10 CLS:A=5:S=3:P=10:Y=60\n12 A$=STRING$(5,143)\n20 FOR X=1TOA\n30 A(X)=((INT((116/A)-INT(116/(A*2)))*X)-1)*2-2\n35 IFA(X)>122THENA(X)=122ELSEIFA(X)<6THENA(X)=6\n40 B(X)=0:NEXTX\n50 PRINT\"KEYS USED ARE \";CHR$(93);CHR$(94);\"TO MOVE,CLEAR TO MAKE A NEW SHIELD,AND ENTER TO FIRE\"\n60 INPUT\"PRESS ENTER TO START GAME\";B$\n70 CLS\n80 '*SET UP GRAPHICS*",
       "controlSource": [
         "495 A$=INKEY$:IF A$=\"\"THEN495"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "nim-stone-game",
   "title": "Nim Stone Game",
-  "description": "Nim Stone Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 15,
       "raw": "versions/v01/15-NIM.BAS",
       "listing": "versions/v01/15-NIM.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/15-NIM.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "2 DEFINT A-Z\n5 CLS\n10 PRINT \"NIM\"\n20 FORX=1 TO 1000:NEXT X\n30 CLS\n40 PRINT \"YOU GO FIRST\"\n50 INPUT X\n60 IF X<>1 AND X<>2 THEN PRINT \"CHEAT!!!\"\n70 Y=Y+X\n80 GOSUB 1000\n90 Z=3-X\n100 Y=Y+Z",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

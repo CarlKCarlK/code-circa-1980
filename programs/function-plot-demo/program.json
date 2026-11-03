@@ -1,8 +1,8 @@
 {
   "id": "function-plot-demo",
   "title": "Function Plot Demo",
-  "description": "Function Plot Demo. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-FUNCTION-PLOT-DEMO.BAS",
       "listing": "versions/v01/05-FUNCTION-PLOT-DEMO.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-FUNCTION-PLOT-DEMO.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "90 CLS\n100 FORXX=-12TO12STEP.2:Y=0:GOSUB3000:NEXT\n110 FORY=-12TO12STEP.4:XX=0:GOSUB3000:NEXT\n130 FORXX=-10TO10STEP5:Y=0:RESET(4*XX+48,48-(Y*2+24)):NEXT\n140 FORY=-10TO10STEP5:XX=0:RESET(4*XX+48,48-(Y*2+24)):NEXT\n200 FORXX=-12TO12STEP.1\n210 X=XX:GOSUB1000:GOSUB3000:NEXT\n230 FORXX=-12TO12STEP.1\n240 X=XX:GOSUB2000:GOSUB3000:NEXT\n270 FORXX=-12TO12STEP.1\n280 X=XX:GOSUB2000:X=Y:GOSUB1000:GOSUB3000:NEXT\n320 FORXX=-12TO12STEP.1",
       "controlSource": [
         "340 A$=INKEY$:IFA$=\"\"THEN340ELSEEND"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

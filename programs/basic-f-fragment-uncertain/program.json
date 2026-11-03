@@ -1,8 +1,8 @@
 {
   "id": "basic-f-fragment-uncertain",
   "title": "Basic F Fragment Uncertain",
-  "description": "Basic F Fragment Uncertain. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "damaged; runtime untested. 13-byte header/fragment agrees left/right; zero validated lines; missing line terminator and program EOF; listing UNCERTAIN",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/01-BASIC-F-FRAGMENT-RAW.BAS",
@@ -36,5 +35,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

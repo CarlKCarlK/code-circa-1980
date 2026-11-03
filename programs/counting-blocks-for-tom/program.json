@@ -1,8 +1,8 @@
 {
   "id": "counting-blocks-for-tom",
   "title": "Counting Blocks For Tom",
-  "description": "Counting Blocks For Tom. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC family",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-COUNTING-BLOCKS-FOR-TOM.BAS",
       "listing": "versions/v01/03-COUNTING-BLOCKS-FOR-TOM.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-COUNTING-BLOCKS-FOR-TOM.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "100 X=RND(20)-1\n105 CLS\n107 PRINT CHR$(23)\n110 FORQ=1TOX\n120 PRINTCHR$(191);\"  \";\n130 NEXT\n200 PRINT@400,\"HOW MANY BLOCKS ARE SHOWING TOM\";\n210 INPUTA\n220 IFA=X THENCLS:FORX=1TO600:PRINT\"TOMMY \";:NEXT:GOTO260\n225 CLS\n230 PRINT \"NO\"\n250 FORX=1TO500:NEXT",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -28,6 +28,27 @@ for(const name of fs.readdirSync(root)){
       assert.equal(bytes.length,file.bytes);
       assert.equal(createHash('sha256').update(bytes).digest('hex'),file.sha256);
     }
+    if(metadata.archiveImport){
+      const bytes=fs.readFileSync(new URL(version.raw,folder));
+      assert.equal(createHash('sha256').update(bytes).digest('hex'),save.recovery_item.sha256);
+      assert.ok(save.imported_files.some(f=>f.path===version.listing));
+      if(save.recovery_item.normal_end_marker){
+        assert.deepEqual([...bytes.subarray(0,3)],[0xd3,0xd3,0xd3]);
+        let offset=4,last=-1,lines=0;const bases=new Set();
+        while(offset+4<=bytes.length&&bytes.readUInt16LE(offset)!==0){
+          const line=bytes.readUInt16LE(offset+2);assert.ok(line>last);last=line;lines++;
+          const end=bytes.indexOf(0,offset+4);assert.ok(end>=offset+4);
+          bases.add(bytes.readUInt16LE(offset)-end-1);offset=end+1;
+        }
+        assert.equal(offset+2,bytes.length);assert.ok(bases.size<=1);
+        assert.equal(lines,save.recovery_item.lines);assert.equal(last,save.recovery_item.last);
+        const listing=fs.readFileSync(new URL(version.listing,folder),'utf8');
+        assert.equal(decodeBasicProgram(bytes).asAscii().replaceAll('\r\n','\n').trimEnd(),listing.replaceAll('\r\n','\n').trimEnd());
+      }
+      if(version.playable){assert.ok(save.recovery_item.normal_end_marker);assert.equal(save.inventory_row['recovery%'],'100');assert.doesNotMatch(save.inventory_row.platform,/Model 100|Commodore|Pocket/);}
+      else assert.ok(version.unavailableReason);
+      return;
+    }
     if(metadata.format==='EDTASM'){
       const raw=fs.readFileSync(new URL(version.raw,folder));
       assert.equal(raw[0],0xd3);assert.equal(raw.at(-1),0x1a);

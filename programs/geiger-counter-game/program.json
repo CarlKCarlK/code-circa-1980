@@ -1,8 +1,8 @@
 {
   "id": "geiger-counter-game",
   "title": "Geiger Counter Game",
-  "description": "Geiger Counter Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 BASIC with graphics extensions",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 2,
       "raw": "versions/v01/02-GEIGER-COUNTER-GAME.BAS",
       "listing": "versions/v01/02-GEIGER-COUNTER-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/02-GEIGER-COUNTER-GAME.ASC",
@@ -36,8 +35,12 @@
       "controlSource": [
         "95 IF INKEY$=\"\"THENOUT255,1:OUT255,2:OUT255,3:GOTO95ELSECLS:PRINT@35,\"SETTING   \";S:PRINT@0,\"tIME (SEC)\";",
         "100 A$=INKEY$"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

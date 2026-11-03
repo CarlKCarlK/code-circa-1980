@@ -1,8 +1,8 @@
 {
   "id": "reverse-numbers-game",
   "title": "Reverse Numbers Game",
-  "description": "Reverse Numbers Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 14,
       "raw": "versions/v01/14-REVERSE-NUMBERS-GAME.BAS",
       "listing": "versions/v01/14-REVERSE-NUMBERS-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/14-REVERSE-NUMBERS-GAME.ASC",
@@ -33,8 +32,20 @@
         }
       ],
       "startupSource": "160 DIMA(15):N=9:INPUT\"DO YOU WANT THE RULES\";B$:IFB$=\"YES\"THENGOSUB710\n210 FORI=1TON:A(I)=I:NEXT:FORI=NTO2STEP-1:RANDOM:K=INT(RND(I)+1):T=A(I):A(I)=A(K):A(K)=T:NEXT:PRINT:PRINT\"HERE WE GO . . . THE LIST IS :\":T=0:GOSUB610\n330 INPUT\"HOW MANY SHALL I REVERSE\";R:IFR=0THEN520ELSEIFR>NTHENPRINT\"OOPS ! TOO MANY - I CAN REVERSE AT MOST\"N:GOTO330ELSET=T+1:FORK=1TOINT(R/2):Z=A(K):A(K)=A(R-K+1):A(R-K+1)=Z:NEXTK:GOSUB610:FORK=1TON:IFA(K)<>KTHEN330ELSENEXTK:PRINT\"YOU WIN IN\"T\"MOVES ! \n520 PRINT:INPUT\"WOULD YOU LIKE TO PLAY AGIAN\";B$:IFB$<>\"NO\"THEN210ELSEEND\n610 PRINT:FORK=1TON:PRINTA(K);:NEXTK:PRINT:RETURN\n710 PRINT\"THIS IS THE GAME OF 'REVERSE'. TO WIN ALL YOU DO IS\":PRINT\"ARRANGE THE LIST OF NUMBERS ( 1 THOUGH\"N\") IN\":PRINT\"NUMBERICAL ORDER FROM LEFT TO RIGHT. TO MOVE TELL ME\":PRINT\"HOU MANY NUMBERS (COUNTING FROM THE LEFT) TO\":PRINT\"REVERSE.\t\":INPUT\"(FOR EXSAMPLE ENTER)\";B$\n770 PRINT\"2 3 4 5 1 6 7 8 9\":PRINT\"AND YOU REVERSE FOUR\":PRINT\"5 4 3 2  6 7 8 9\":PRINT\"NOW TO WIM JUST REVERSE FIVE\":PRINT\"1 2 3 4 5 6 7 8 9\":PRINT:PRINT\"NO DOUBT YOU WILL LIKE THIS GAME OF SKILL\":PRINT\"TO QUIT JUST TYPE '0'\":PRINT:INPUT\"(ENTER)\";B$:RETURN",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Adapted from Reverse, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=135"
+  },
+  "upstreamDownloads": [
+    {
+      "path": "upstream/REVERSE.ASC",
+      "label": "Published comparison listing",
+      "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/reverse.bas"
+    }
+  ]
 }

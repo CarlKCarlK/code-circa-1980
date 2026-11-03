@@ -1,8 +1,8 @@
 {
   "id": "ratios-and-percentages-practice",
   "title": "Ratios And Percentages Practice",
-  "description": "Ratios And Percentages Practice. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-RATIOS-AND-PERCENTAGES.BAS",
       "listing": "versions/v01/03-RATIOS-AND-PERCENTAGES.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-RATIOS-AND-PERCENTAGES.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "1 '\n10 N1=RND(54)\n20 N2=RND(N1)\n30 CLS\n40 FOR X=1TON1:SET(X,1):NEXTX\n50 FOR X=1TON2:SET(X,4):NEXTX\n60 PRINT@N1/2+1,N1;\n70 PRINT@N2/2+65,N2;\n75 N1=N1+N2\n80 PRINT:PRINT\n90 INPUT\"RATIO \";A$\n95 A$=\" \"+A$",
       "controlSource": [
         "1050 A$=INKEY$:IFA$=\"\"THEN1050"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

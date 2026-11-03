@@ -1,8 +1,8 @@
 {
   "id": "location-editor",
   "title": "Location Editor",
-  "description": "Location Editor. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-LOCATION-EDITOR.BAS",
       "listing": "versions/v01/03-LOCATION-EDITOR.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. 25 consistent pointers; normal end marker; matches 5 decoding variants; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-LOCATION-EDITOR.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 CLEAR 10000\n10 DIM L$(50,1),D(6)\n20 CLS\n100 INPUT\"ORDERS \";O$\n110 IF O$<>\"HELP\"THEN 200\n120 PRINT\"YOUR OPTIONS ARE :\"\n130 PRINT\"   HELP - INFORMATION\"\n140 PRINT\"   DESCRIBE - YOU TELL ME ABOUT A LOCATION.\"\n150 PRINT\"   LIST - I LIST ALL THE ROOMS AND LOCATIONS\"\n160  PRINT\"   DOOR - YOU CREATE A PASSAGE BETEEN TWO LOCATIONS\"\n170 PRINT\"TRAVEL - TYPE N(ORTH), S(OUTH), W(EST), E(AST), U(P),OR D(OWN)\"\n190 GOTO 100",
       "controlSource": [
         "325 A$=INKEY$:IFA$=\"\" THEN 325ELSE CLS"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

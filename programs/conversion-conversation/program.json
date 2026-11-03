@@ -1,8 +1,8 @@
 {
   "id": "conversion-conversation",
   "title": "Conversion Conversation",
-  "description": "Conversion Conversation. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 6,
       "raw": "versions/v01/06-CONVERSION-CONVERSATION.BAS",
       "listing": "versions/v01/06-CONVERSION-CONVERSATION.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/06-CONVERSION-CONVERSATION.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "2 CLEAR300\n5 CLS\n10 REM           CONVERSION\n15 T=17\n20 PRINT\"HELLO, I AM A COMPUTER AND I WOULD LIKE TO TAKE WITH YOU.\"\n30 PRINT\n40 PRINT\"WHAT WOULD YOU LIKE TO TAKE ABOUT?\";\n50 LINE INPUT H$\n60 R=-999\n62 H$=H$+\" \"\n65 RESTORE\n70 FOR S=1TOT",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

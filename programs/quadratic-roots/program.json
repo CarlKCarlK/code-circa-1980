@@ -1,8 +1,8 @@
 {
   "id": "quadratic-roots",
   "title": "Quadratic Roots",
-  "description": "Quadratic Roots. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-QUADRATIC-ROOTS.BAS",
       "listing": "versions/v01/04-QUADRATIC-ROOTS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload. 47 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-QUADRATIC-ROOTS.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "0 GOTO 1990 \n10 FOR G=-100TO100 STEP 10\n30 X=G:GOSUB1000\n40 IF Y1=0 THEN CLS:GOTO100 ELSE G=OG-Y/Y1\n50 IF OG=G THEN PRINT:PRINT\"****** \" G\"*******\":GOTO 100\n60 OG=G:PRINTG;:GOTO30\n100 NEXT G:PRINT \"DONE\":END\n500 CLS\n505 FOR X=1 TO 125:NEXT X\n510 PRINT:PRINT:PRINT:PRINT \"                 *******************\":PRINT:PRINT:PRINT\"             I DID IT, CARL------RICH L.\":PRINT:PRINT:PRINT:PRINT\"                ********************\"\n515 FOR X=1 TO 500:NEXT X\n520 GOTO 500",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

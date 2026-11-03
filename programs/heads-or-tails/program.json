@@ -1,8 +1,8 @@
 {
   "id": "heads-or-tails",
   "title": "Heads Or Tails",
-  "description": "Heads Or Tails. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 11,
       "raw": "versions/v01/11-HEADS-OR-TAILS.BAS",
       "listing": "versions/v01/11-HEADS-OR-TAILS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/11-HEADS-OR-TAILS.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "10 CLS\n20 PRINT \"HEADS OR TAILS ?\"\n30 INPUT A$\n40 PRINT : PRINT : PRINT\n50 FOR T=1 TO 1000 : NEXT T\n60 R=RND (2)\n70 IF R=1 THEN PRINT \"HEADS\" ELSE PRINT\"TAILS\"\n80 FOR T=1 TO 500 :NEXT T\n90 IF (R=1 AND A$=\"HEADS\") OR (R=2 AND A$=\"TAILS\")THEN PRINT \"VICTORY\" ELSE PRINT \"DEFEAT\"\n100 IF INKEY$=\"\"THEN 100  ELSE RUN",
       "controlSource": [
         "100 IF INKEY$=\"\"THEN 100  ELSE RUN"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,3 +1,4 @@
+import {MORE_COUNT} from './helpers/catalog.js';
 import {test,expect} from '@playwright/test';
 test('second gallery is separate, reached by one small link; cards launch players directly',async({page})=>{
  await page.goto('/');
@@ -7,14 +8,14 @@ test('second gallery is separate, reached by one small link; cards launch player
  await page.getByRole('link',{name:'More uncurated programs →'}).click();
  await expect(page).toHaveURL(/#\/more$/);
  await expect(page.getByRole('heading',{level:1})).toContainText('the tapes.');
- await expect(page.locator('.program-card')).toHaveCount(34);
- await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','Star Wars cockpit','Ricky Rat','Pinball','Logic circuit simulator','Orbit simulator','Skinner Box','German tutor','Magazine Index','TEACH VI','LIFE','Worm One','Peoria Grand Prix','Pendulum','Sentence Generator','Learning Tic-Tac-Toe','Superpower Investing','Trajectory','Relativity','Reflex Tests','Nuclear Equation Completer','John’s Circle','Keyword Cipher','Word Search','Computa-Match','Jaberwocky','Cave Game','JAB — The Best of the Monster Games','Who Donnt?','Dungeon Trainer','TUTAC Computer','Unfinished Tank Game','Lunar Lander']);
+ await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
+ expect((await page.locator('.program-card h2').allTextContents()).slice(0,34)).toEqual(['Speech','Olympics','Star Wars cockpit','Ricky Rat','Pinball','Logic circuit simulator','Orbit simulator','Skinner Box','German tutor','Magazine Index','TEACH VI','LIFE','Worm One','Peoria Grand Prix','Pendulum','Sentence Generator','Learning Tic-Tac-Toe','Superpower Investing','Trajectory','Relativity','Reflex Tests','Nuclear Equation Completer','John’s Circle','Keyword Cipher','Word Search','Computa-Match','Jaberwocky','Cave Game','JAB — The Best of the Monster Games','Who Donnt?','Dungeon Trainer','TUTAC Computer','Unfinished Tank Game','Lunar Lander']);
  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content','noindex, nofollow');
  await page.getByRole('link',{name:'Play Speech →'}).click();
  await expect(page.locator('#display')).toBeVisible();
  await expect(page.locator('.player-header').getByRole('link',{name:'Collection',exact:true})).toHaveAttribute('href',/#\/more$/);
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
- await expect(page.locator('.program-card')).toHaveCount(34);
+ await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
 });
 for(const id of ['speech','olympics','starwars81'])test(`${id}: frozen v1 opens its original player directly`,async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -26,7 +27,7 @@ for(const id of ['speech','olympics','starwars81'])test(`${id}: frozen v1 opens 
  await expect(page.locator('.player-header').getByRole('link',{name:'Collection',exact:true})).toHaveAttribute('href',/#\/more$/);
  await expect(page.getByRole('link',{name:'Download original payload'})).toBeVisible();
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
- await expect(page.locator('.program-card')).toHaveCount(34);
+ await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
  expect(errors).toEqual([]);
 });
 
@@ -40,7 +41,7 @@ test('starwars81 is the URL name while the cockpit has a descriptive display tit
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
- await expect(page.locator('.program-card')).toHaveCount(34);
+ await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
 });
 
 test('extra programs offer one best player without web-version choices',async({page})=>{

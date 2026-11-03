@@ -1,14 +1,14 @@
 {
   "id": "chemistry-calculations",
   "title": "Chemistry Calculations",
-  "description": "Chemistry Calculations. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload. 21 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/03-CHEMISTRY-CALCULATIONS.ASC",
@@ -42,10 +41,9 @@
       "save": 5,
       "raw": "versions/v02/05-CHEMISTRY-CALCULATIONS-V2.BAS",
       "listing": "versions/v02/05-CHEMISTRY-CALCULATIONS-V2.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload. 17 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/05-CHEMISTRY-CALCULATIONS-V2.ASC",
@@ -57,8 +55,12 @@
         }
       ],
       "startupSource": "20 FOR I=1TO2:READ C(I),CM(I),CP(I):PRINTC(I),CM(I),CP(I):NEXTI\n30 FOR I=1TO2\n40 M(I)=CM(I)-C(I)\n50 S(I)=CP(I)-CM(I)\n60 SW=32.06\n70 SM(I)=S(I)/SW\n80 MG(I)=M(I)/SM(I)\n90 NEXT I\n100 PRINTM(1);M(2):PRINTS(1);S(2):PRINTMG(1);MG(2)\n105 PRINT:PRINT\n110 FOR I=1TO5\n120 PRINTI/2*MG(1);I/2*MG(2),\"+\";I",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

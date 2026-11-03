@@ -1,14 +1,14 @@
 {
   "id": "3d-perspective",
   "title": "3-D Perspective",
-  "description": "3-D Perspective. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/20-3D-PERSPECTIVE-SAVE01.ASC",
@@ -42,10 +41,9 @@
       "save": 21,
       "raw": "versions/v02/21-3D-PERSPECTIVE-SAVE02.BAS",
       "listing": "versions/v02/21-3D-PERSPECTIVE-SAVE02.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/21-3D-PERSPECTIVE-SAVE02.ASC",
@@ -57,8 +55,12 @@
         }
       ],
       "startupSource": "20 INPUT\"WHERE ARE YOU (X,Y,Z)\";XO,YO,ZO:YO=-(YO)\n30 INPUT\"WHAT IS THE SCALE\";TS\n50 POKE16553,255\n70 CLS\n80 FORPP=0TO63:PRINT@PP+448,\".\";:NEXT\n90 READ D:FORDD=1TOD\n100 READX1,Y1,Z1,X2,Y2,Z2:Y1=-(Y1):Y2=-(Y2)\n110 SY=(Y1-Y2)/100:SX=(X1-X2)/100:SZ=(Z1-Z2)/100\n120 FORC=1TO100STEP4\n130 Y=SY*C+Y2-YO\n140 X=SX*C+X2-XO\n150 Z=SZ*C+Z2-ZO",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

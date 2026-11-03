@@ -1,8 +1,8 @@
 {
   "id": "speech-coaching",
   "title": "Speech Trek \u2014 graphics edition",
-  "description": "Speech Trek \u2014 graphics edition. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 BASIC; extended features",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 240 consistent pointers; normal end marker; matches 2 decoding variants; not execution-tested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/02-SPEECH-TREK.ASC",
@@ -41,5 +40,10 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

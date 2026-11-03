@@ -1,14 +1,14 @@
 {
   "id": "extemp-article-index",
   "title": "Extemp Article Index",
-  "description": "Extemp Article Index. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/03-EXTEMP-ARTICLE-INDEX-SAVE01.ASC",
@@ -42,10 +41,9 @@
       "save": 4,
       "raw": "versions/v02/04-EXTEMP-ARTICLE-INDEX-SAVE02.BAS",
       "listing": "versions/v02/04-EXTEMP-ARTICLE-INDEX-SAVE02.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/04-EXTEMP-ARTICLE-INDEX-SAVE02.ASC",
@@ -57,8 +55,12 @@
         }
       ],
       "startupSource": "10 INPUT\"DD\";DD\n20 DIMC$(DD)\n30 R$=\"ZZZZZ\"\n100 READA$:L=LEN(A$):V=VAL(A$):IFL<>1ANDV=0THEN140ELSEIFV<>0ANDV<1000THENP=VELSEIFV<>0ANDV>=1000THEND=VELSEIFA$=\"U\"THENM$=\"U.S. NEWS\"ELSEIFA$=\"N\"THENM$=\"NEWSWEEK\"ELSEIFA$=\"T\"THENM$=\"TIME\"ELSEIFA$=\"D\"THENFORI=XTODD:C$(I)=CHR$(RND(70)+32):NEXT:X=DD:GOTO10000\n110 GOTO100\n140 X=X+1:C$(X)=A$+STR$(130000-D)+LEFT$(M$,1)+STR$(P)\n150 GOTO100\n200 FORK=1TON:PRINTC$(K):NEXT:STOP:M=INT(D/10000):DY=INT((D-M*10000)/100):Y=1900+INT(D-DY*100-M*10000):PRINTT$\",\";TAB(10);MM$;M\"-\"DY\"-\"Y\", PAGE\";P:R$=\"ZZZZZ\":RESTORE:U(U)=1:X=0:GOTO100\n1000 DATAU,10779,23,NIXON OUR BEST PRESIDENT?,ILLEAL ALLIANS,MEXICO,24,TAXES,BROWN,N,123079,56,HELL NO WE WON'T GO,DRAFT,MILITARY\n2000 DATAMEXICO,13,MEXICO,T,34,MEXICO\n9999 DATA\"D\"\n10000 PRINT\"GO!\"",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

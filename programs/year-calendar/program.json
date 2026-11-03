@@ -1,8 +1,8 @@
 {
   "id": "year-calendar",
   "title": "Year Calendar",
-  "description": "Year Calendar. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 10,
       "raw": "versions/v01/10-YEAR-CALENDAR.BAS",
       "listing": "versions/v01/10-YEAR-CALENDAR.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/10-YEAR-CALENDAR.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "10 CLEAR1000\n100 INPUT\"YEAR\";Y\n110 D=1:M=1\n120 M=M+12:Y=Y-1\n130 N=D+2*M+INT(.6*(M+1))+Y+INT(Y/4)-INT(Y/100)+INT(Y/400)+2\n140 N=INT((N/7-INT(N/7))*7+.5)\n150 IFN=0THENN=-6ELSEN=-N+1\n210 DIM M(12),M$(12)\n230 D=N\n240 Y=Y+1\n260 FORN=1TO12:READM(N):NEXTN:IFINT(Y/4)=Y/4THENM(2)=29\n270 FORN=1TO12:READM$(N):NEXT",
       "controlSource": [
         "2000 IFINKEY$=\"\"THEN2000ELSERETURN"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

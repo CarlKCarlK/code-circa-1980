@@ -1,8 +1,8 @@
 {
   "id": "acceleration-from-data",
   "title": "Acceleration From Data",
-  "description": "Acceleration From Data. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 BASIC; extensions may be required",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-ACCELERATION-FROM-DATA.BAS",
       "listing": "versions/v01/03-ACCELERATION-FROM-DATA.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-ACCELERATION-FROM-DATA.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 READ D:IF D>=0THEN N=N+1:GOTO10\n20 RESTORE\n30 FOR C=1TO N\n40 READ D\n50 T=C/3000\n60 A=2*D/T[2\n70 AV=A/N\n80 NEXT C\n90 PRINT\"AVERAGE ACELLERATION\";AV\"FT/SEC\n100 RESTORE\n110 FORC=1TON\n120 READ D",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

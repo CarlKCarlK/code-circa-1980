@@ -1,14 +1,14 @@
 {
   "id": "stable-matching",
   "title": "Stable Matching",
-  "description": "Stable Matching. 4 recovered saves.",
-  "kind": "Archive",
+  "description": "4 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v04",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/06-STABLE-MATCHING-SAVE01.ASC",
@@ -47,7 +46,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v02/07-STABLE-MATCHING-SAVE02.ASC",
@@ -73,7 +71,6 @@
       "playable": false,
       "note": "damaged; validated prefix only. Conflicting pulse/timing candidates despite complete-looking structure; exact left/right 15-byte prefix through line 10; no synthetic terminator",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/06-STABLE-MATCHING-SAVE01-NOTES.txt",
@@ -106,10 +103,9 @@
       "save": 7,
       "raw": "versions/v04/07-STABLE-MATCHING-SAVE02.BAS",
       "listing": "versions/v04/07-STABLE-MATCHING-SAVE02.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Exact independent left/right payload; 79 ordered lines; pointer base 27202; end marker; exact EOF",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v04/07-STABLE-MATCHING-SAVE02.ASC",
@@ -123,8 +119,12 @@
       "startupSource": "10 CLEAR 2000\n20 PRINT\"RUNNING\nDATA SHOULD BE OF FORM....\n#QUESTIONS,#MALES,#FEMALES,A1M1,A2M2,...A1MM,A2MM..ANMM,A1F1...\n25 READ QU,ML,FM:N=ML:IF FM>NTHEN N=FM\n30 DIM P(N,N,1),PP(N),RJ(N),A(N,QU,1),N$(N,1)\n35 PRINT\n40 PRINT\"NOW SOMEONE MUST (SECRETLY) TELL ME WHO EVERYONE IS\"\n50 FORI=1TOFM:PRINT\"WHO IS FEMALE #\"I;:INPUT N$(I,1):NEXTI\n60 FORI=1TOML:PRINT\"WHO IS MALE #\"I;:INPUT N$(I,0):NEXTI\n70  INPUT\"HOW MANY CORRECTIONS (0 FOR NONE)\";C\n80 IF C<>0 THENFOR C1=1TOC:INPUT\"SEX (0=MALE,1=FEMALE),NUMBER,CORRECT NAME\";S,I,N$(I,S):NEXTC1:GOTO70",
       "controlSource": [
         "10557 IF INKEY$=\"\" THEN 10557"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "chemistry-valences",
   "title": "Chemistry Valences",
-  "description": "Chemistry Valences. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 6,
       "raw": "versions/v01/06-CHEMISTRY-VALENCES.BAS",
       "listing": "versions/v01/06-CHEMISTRY-VALENCES.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/06-CHEMISTRY-VALENCES.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 DIM C$(6,3),V$(4,3)\n10 FOR S=1TO6:FOR N=1TO 3:READ C$(S,N):NEXTN,S\n20 FOR V=1TO4:FORE=1TO3:READ V$(V,E):NEXTE,V\n30 PRINT\"VAL. ACIDS =1, VAL. METALS=2\":INPUTA:ON A GOTO2000,3000\n1000 DATA HYDROGEN OXIDE,WATER,H2O,  HYDROGEN CHLORIDE,HYDROCLORIC ACID,H.CL,  HYRDOGEN SULFATE,SULFURIC ACID,H2(S.O4),        HYDROGEN ACETATE,ACETIC ACID, H(C2H3O2),  HYDROGEN NITRATE, NITRIC ACID,H(N.O3),HYDROGEN PHOSPHATE\n1010 DATA PHOSPHORIC ACID,H3(P.O4)\n1020 ' OTHER STUFF\n1030 DATA NA.BR, K.CL, AG(N.O3)\n1040 DATA CA.F2,CU(N.O3)2, BA(S.O4)\n1050 DATA AL.CL3, BI(N.O3)3,FE(P.O4)\n1060 DATA TI.CL4,C.H4,SI.F4\n2000 CLS:PRINT\"NAME TO FORUMLA\"",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

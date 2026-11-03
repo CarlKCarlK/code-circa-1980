@@ -370,5 +370,12 @@
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
   "dating": {
     "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Adapted from Roger Chaffee\u2019s Quest, published in BYTE, July 1979. The source explicitly names the article.",
+      "url": "https://www.worldradiohistory.com/Archive-Byte/70s/Byte-1979-07.pdf"
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
   }
 }

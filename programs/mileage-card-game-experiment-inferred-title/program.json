@@ -1,8 +1,8 @@
 {
   "id": "mileage-card-game-experiment-inferred-title",
   "title": "Mileage Card Game \u2014 early experiment",
-  "description": "Mileage Card Game \u2014 early experiment. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-MILEAGE-CARD-GAME.BAS",
       "listing": "versions/v01/05-MILEAGE-CARD-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-MILEAGE-CARD-GAME.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 PRINT\"JUST A MINUTE.... SETTING UP DECK\"\n10 DIMD(105)\n15 DIM PH(7):DIM CH(7)\n20 FOR X=0TO105\n30 S=RND(X+1)-1\n40 D(X)=D(S)\n50 D(S)=X\n60 NEXTX\n70 PH(0)=6:CH(0)=6\n75 FOR P=0TO5:PH(P+1)=D(P):NEXTP\n80 FOR C=6TO11:CH(C-5)=D(C):NEXTC\n90 PC=12",
       "controlSource": [
         "3191 IF INKEY$<>\"D\" THEN 3191"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Based on the Mille Bornes card game. The source of the program code and the extent of any borrowed implementation have not been established."
+  }
 }

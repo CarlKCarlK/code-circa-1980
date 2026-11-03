@@ -1,8 +1,8 @@
 {
   "id": "expanding-circles",
   "title": "Expanding Circles",
-  "description": "Expanding Circles. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 18,
       "raw": "versions/v01/18-EXPANDING-CIRCLES.BAS",
       "listing": "versions/v01/18-EXPANDING-CIRCLES.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/18-EXPANDING-CIRCLES.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 CLS\n10 R=R+1\n20 FORD=0TO6.24STEP.1\n30 X=R*COS(D)\n40 Y=R*SIN(D)\n50 XG=INT(X*2+64.5):YG=INT(Y+24.5)\n52 IFXG<0THENXG=XG+128:GOTO52\n54 IFXG>127THENXG=XG-128:GOTO52\n55 IFYG<0THENYG=YG+48:GOTO55\n56 IFYG>47THENYG=YG-48:GOTO55\n58 SET(XG,YG)\n60 NEXT:GOTO10",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

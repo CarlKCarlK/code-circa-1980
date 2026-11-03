@@ -1,14 +1,14 @@
 {
   "id": "quiz-template",
   "title": "Quiz Template",
-  "description": "Quiz Template. 3 recovered saves.",
-  "kind": "Archive",
+  "description": "3 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/07-QUIZ-TEMPLATE-SAVE01.ASC",
@@ -45,7 +44,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.ASC",
@@ -66,10 +64,9 @@
       "save": 12,
       "raw": "versions/v03/12-QUIZ-TEMPLATE-SAVE03.BAS",
       "listing": "versions/v03/12-QUIZ-TEMPLATE-SAVE03.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v03/12-QUIZ-TEMPLATE-SAVE03.ASC",
@@ -81,8 +78,12 @@
         }
       ],
       "startupSource": "10 'PLACE NO. OF QUESTIONS ON THIS LINE AS 'Q'\n20 Q=Q*2\n30 DIMA$(100)\n40 RESTORE\n80 CLEAR(1000)\n90 POKE16553,255\n100 FORI=1TOQ\n110 READA$(I)\n120 NEXTI\n180 C=0:U=0\n190 K=-1\n200 FORI=1TOQ STEP2",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

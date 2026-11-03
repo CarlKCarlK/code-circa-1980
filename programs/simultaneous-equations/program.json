@@ -1,14 +1,14 @@
 {
   "id": "simultaneous-equations",
   "title": "Simultaneous Equations",
-  "description": "Simultaneous Equations. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/03-SIMULTANEOUS-EQUATIONS-SAVE01.ASC",
@@ -42,10 +41,9 @@
       "save": 4,
       "raw": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.BAS",
       "listing": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC",
@@ -57,8 +55,12 @@
         }
       ],
       "startupSource": "10 PRINT\"SIMULTANEOUS EQUATIONS\"\n20 PRINT\n30 DIM A(20,21)\n50 INPUT\"NUMBER OF EQUATIONS\";R\n60 PRINT\"COEFFIICIENT MATRIX....\"\n70 FORJ=1TOR\n80 PRINT\"EQUATION\";J\n90   FORI=1TOR+1\n100     IF I=R+1 THEN 130\n110     PRINT\"  COEFFICIENT\";I;\n120     GOTO 140\n130     PRINT\" CONSTANT\";",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

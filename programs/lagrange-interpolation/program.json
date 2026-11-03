@@ -1,8 +1,8 @@
 {
   "id": "lagrange-interpolation",
   "title": "Lagrange Interpolation",
-  "description": "Lagrange Interpolation. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 23,
       "raw": "versions/v01/23-LAGRANGE-INTERPOLATION.BAS",
       "listing": "versions/v01/23-LAGRANGE-INTERPOLATION.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/23-LAGRANGE-INTERPOLATION.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "100 CLS\n130 DIMX(12),Y(12)\n140 INPUT\"NUMBER OF KNOOWN POINTS\";P\n160 FORI=1TOP\n170 PRINT\"X,Y OF POINT\"I;\n180 INPUTX(I),Y(I)\n190 NEXTI\n200 ONERROR GOTO 1000:CLS\n210 FORA=1TO63\n330 B=0:FORJ%=1TOP:T=1:FORI%=1TOP:IFI%=J%THENNEXTI%ELSET=T*(A-X(I%))/(X(J%)-X(I%)):NEXTI%\n400 B=B+T*Y(J%):NEXTJ%:SET(A*2,48-B):SET(A*2+1.5,48-B+.5):NEXTA\n1000 GOTO1000",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

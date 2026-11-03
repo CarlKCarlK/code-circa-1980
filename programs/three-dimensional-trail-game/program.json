@@ -1,8 +1,8 @@
 {
   "id": "three-dimensional-trail-game",
   "title": "Three Dimensional Trail Game",
-  "description": "Three Dimensional Trail Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-THREE-DIMENSIONAL-TRAIL-GAME.BAS",
       "listing": "versions/v01/04-THREE-DIMENSIONAL-TRAIL-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-THREE-DIMENSIONAL-TRAIL-GAME.ASC",
@@ -37,8 +36,12 @@
         "1200 M$=\"\":FOR I=1TOTM:M$=INKEY$+M$+INKEY$+INKEY$+INKEY$:NEXTI:IFM$=\"\"THEN1300ELSE FOR II=1TOLEN(M$):A$=MID$(M$,II,1):IFVAL(A$)<>0THEN VL=VAL(A$)ELSEIFA$=\"0\"THENVL=10ELSEIFA$=\":\"THENVL=11ELSEIFA$=\"-\"THENVL=12",
         "1420 PRINT@960,\"PLAYER \";MT\" CRASHED.\";:S(3-MT)=S(3-MT)+1:S(3)=S(0):FORX=0TO42STEP21:PRINT@X,\"PLAYER \"X/21+1\"= \"S(X/21+1);:NEXTX:P$=INKEY$+INKEY$+INKEY$",
         "1430 IF INKEY$=\"\"THEN1430 ELSE POKE 16380,S(1)+33:POKE 16381,S(2)+33:POKE 16382,S(3)+33:CLEAR:S(1)=PEEK(16380):S(2)=PEEK(16381):S(3)=PEEK(16382):FORI=1TO3:S(I)=S(I)-33:NEXTI:GOTO 1000"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

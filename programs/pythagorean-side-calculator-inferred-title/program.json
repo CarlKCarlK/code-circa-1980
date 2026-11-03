@@ -1,8 +1,8 @@
 {
   "id": "pythagorean-side-calculator-inferred-title",
   "title": "Pythagorean Side Calculator",
-  "description": "Pythagorean Side Calculator. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 8,
       "raw": "versions/v01/08-PYTHAGOREAN-CALCULATOR.BAS",
       "listing": "versions/v01/08-PYTHAGOREAN-CALCULATOR.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/08-PYTHAGOREAN-CALCULATOR.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 PRINT\" PUT IN TWO NUMBERS\"\n10 INPUT X , Y\n20 PRINT \"IS\" X \"THE LONG SIDE\"\n30 INPUT A$\n35 IF A$=\"Y\"AND X<YTHEN STOP\n40 IF A$=\"Y\" THEN Z=X[2-Y[2\n50 IF A$=\"N\" THEN Z=X[2+Y[2\n60 PRINTSQR(Z)",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "fall-interrupted-capture-2",
   "title": "FALL \u2014 interrupted recording",
-  "description": "FALL \u2014 interrupted recording. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Z80 / EDTASM",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "interrupted capture. Untouched 461-byte prefix: 20 complete EDTASM records with exact left/right agreement; no added end marker; capture stop/rewind/restart reported by user",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.BIN",
@@ -44,5 +43,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

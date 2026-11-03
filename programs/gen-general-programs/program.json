@@ -1,8 +1,8 @@
 {
   "id": "gen-general-programs",
   "title": "Gen General Programs",
-  "description": "Gen General Programs. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. PC-121x header and 168 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/04-GEN-GENERAL-PROGRAMS.ASC",
@@ -40,5 +39,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

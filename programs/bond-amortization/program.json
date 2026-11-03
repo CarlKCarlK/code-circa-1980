@@ -1,14 +1,14 @@
 {
   "id": "bond-amortization",
   "title": "BOND \u2014 Bond Amortization",
-  "description": "BOND \u2014 Bond Amortization. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "Commodore BASIC; likely PET/CBM ($0401), exact machine unverified",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Exact left/right and repeated blocks; odd parity; XOR checksum; end-of-block marker; 83 ordered BASIC lines; pointers at $0401; end marker; one preserved trailing 01 byte",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/01-BOND-AMORTIZATION-SAVE01.ASC",
@@ -49,7 +48,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Exact left/right and repeated blocks; odd parity; XOR checksum; end-of-block marker; 83 ordered BASIC lines; pointers at $0401; end marker; one preserved trailing 01 byte",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/02-BOND-AMORTIZATION-SAVE02.ASC",
@@ -68,5 +66,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "The recovered BOND source credits Carl Kadie, 1979. Written for Commodore BASIC, likely PET/CBM; the exact machine and its date relative to SPI remain unverified."
+  }
 }

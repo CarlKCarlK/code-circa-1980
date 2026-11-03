@@ -1,8 +1,8 @@
 {
   "id": "class-schedule",
   "title": "Class Schedule",
-  "description": "Class Schedule. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-CLASS-SCHEDULE.BAS",
       "listing": "versions/v01/03-CLASS-SCHEDULE.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact end marker and payload length; exact independently processed left/right byte agreement after timing refinement",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-CLASS-SCHEDULE.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 DIM D(10,5,2),D$(10)\n20 FOR C=1TO7\n30 READ D$(C)\n35 READ TM,DY$\n40 FOR D=1TO5\n50 IF VAL(LEFT$(DY$,1))<>(D) THEN 80 ELSE DY$=RIGHT$(DY$,LEN(DY$)-1)\n60 D(C,D,1)=TM\n75 IFC<>2THEND(C,D,2)=D(C,D,1)+1ELSE D(C,D,2)=D(C,D,1)+3\n77 IF D(C,D,2)>15 THEN D(C,D,2)=15\n80 NEXTD,C\n90 CLS\n100 PRINT\"         MONDAY    TUESDAY   WENSDAY   THURSDAY  FRIDAY\";",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

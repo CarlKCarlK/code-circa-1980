@@ -1,8 +1,8 @@
 {
   "id": "star-navigation-game",
   "title": "Star Navigation Game",
-  "description": "Star Navigation Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 BASIC with graphics extensions",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/01-STAR-NAVIGATION-GAME.ASC",
@@ -40,5 +39,10 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

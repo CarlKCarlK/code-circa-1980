@@ -429,3 +429,31 @@ LIFE’s attribution change creates immutable web v3; retain v1 and v2 unchanged
 See docs/more-attributions.md and more-attributions.spec.js.
 
 The user’s official display title is **Unfinished Tank Game** (November 3, 2026). Keep `tank` as the ID and retain historical Tank Game source titles, filenames, and tags.
+
+## Comprehensive More archive (November 3, 2026)
+
+The user authorized adding every remaining identified program, including strongly
+derivative and third-party listings with prominent attribution. This supersedes
+the Poker and Space Colony withdrawals: both are restored at the end of the
+existing 34 cards, followed by the inventory-driven imports. Prior withdrawn
+snapshots remain unchanged in website-archive/. BOND is now included as source
+only, preserving its Commodore dialect; no TRS-80 execution is claimed.
+
+The batch adds 241 collections and 405 captured items, including repeated saves
+and damaged fragments; 175 collections offer one complete stock-BASIC player,
+and 66 are source only. Collections are conservative and sometimes provisional:
+cluster similarity does not establish one author, a revision sequence, or dates.
+Additional balancer experiments and assembly development material are identified
+separately from the existing selected main-gallery players. Every inventory row
+is accounted for in docs/remaining-coverage.json. Quarantined items stay excluded;
+unknown data, text documents, audio, and header-only fragments are supporting
+material, not new program cards. No recovery pass or inventory rewrite occurred.
+
+app/scripts/import-remaining.py preserves snapshots and canonical tagged commits;
+the reviewed plan is docs/remaining-import-plan.json. Do not rerun it over existing
+imports. verify-remaining.py checks archive files and committed canonical blobs.
+New archive views use programs/archive.js and import only their own assets into
+frozen v1 through config/archive-release.js. release-remaining.mjs freezes the
+committed batch once, refusing existing releases. Browser tests cover website
+behavior only, never the BASIC gameplay, as already requested. Keep all extras
+at unshared v1; preserve main-gallery and LIFE frozen releases.

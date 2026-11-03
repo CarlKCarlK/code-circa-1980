@@ -1,14 +1,14 @@
 {
   "id": "interactive-library-directory",
   "title": "Interactive Library Directory",
-  "description": "Interactive Library Directory. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/06-INTERACTIVE-LIBRARY-DIRECTORY.ASC",
@@ -45,10 +44,9 @@
       "save": 7,
       "raw": "versions/v02/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.BAS",
       "listing": "versions/v02/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.ASC",
@@ -63,8 +61,12 @@
       "controlSource": [
         "202 C$=INKEY$:IFC$=\"\"THEN202",
         "380 A$=INKEY$:IFA$=\"C\"THENRUNELSEIFA$=\"E\"THENCLS:ENDELSE380"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

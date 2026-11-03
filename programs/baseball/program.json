@@ -1,14 +1,14 @@
 {
   "id": "baseball",
   "title": "Baseball",
-  "description": "Baseball. 5 recovered saves.",
-  "kind": "Archive",
+  "description": "5 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I/III BASIC family",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v05",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "truncated; valid prefix only; runtime untested. Truncated; untouched valid prefix [0,2883); 69 lines; pointer base 22204; cross-channel confirmed [0,2883); no synthetic end marker",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-PREFIX.ASC",
@@ -56,7 +55,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/01-BASEBALL.ASC",
@@ -83,7 +81,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/02-BASEBALL-SAVE2.ASC",
@@ -110,7 +107,6 @@
       "playable": false,
       "note": "damaged / partial BASIC. Five complete prefix lines through 18; exact first 74 bytes listed; no normal end marker",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v04/03-BASEBALL-FRAGMENT.ASC",
@@ -134,7 +130,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v05/04-BASEBALL-V2.ASC",
@@ -152,5 +147,10 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

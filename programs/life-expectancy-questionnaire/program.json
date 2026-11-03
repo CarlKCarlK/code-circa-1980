@@ -1,8 +1,8 @@
 {
   "id": "life-expectancy-questionnaire",
   "title": "LIFE Expectancy Questionnaire",
-  "description": "LIFE Expectancy Questionnaire. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 11,
       "raw": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.BAS",
       "listing": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "40 GOTO90\n50 CLS:PRINT@384,\"\";:RETURN\n90 '\n950 LE=72\n1000 CLS:PRINT@384,\"ARE YOU  <MALE>  OR  <FEMALE>\";:INPUTA$\n1010 IFA$=\"MALE\"THENLE=LE-3ELSEIFA$=\"FEMALE\"THENLE=LE+4ELSEGOTO1000\n1050 GOSUB50:INPUT\"WHAT IS THE APPROXITATE POPULATION OF YOUR COMMUNITY\";A\n1060 IFA>=2E+6THENLE=LE-2ELSEIFA<=10000THENLE=LE+2\n2000 GOSUB50:INPUT\"DO YOU WORK AT A <DESK>, AT A JOB THAT REQUIRES REGULAR HEAVY   PHYSICAL <LABOR>,  OR AT <NEITHER>\";A$\n2010 IFA$=\"DESK\"THENLE=LE-3ELSEIFA$=\"LABOR\"THENLE=LE+3ELSEIFA$<>\"NEITHER\"THEN2000\n2050 GOSUB50:INPUT\"HOW MANY DAYS A WEEK DO YOU EXERCISE STRENUOUSLY (TENNIS,RUNNINGSWIMMING, ETC.) \";A\n2060 IFA>=5THENINPUT\"HOW MINUNTES A SESSION\";A",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

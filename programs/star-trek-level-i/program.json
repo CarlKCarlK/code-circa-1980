@@ -1,8 +1,8 @@
 {
   "id": "star-trek-level-i",
   "title": "Star Trek Level I",
-  "description": "Star Trek Level I. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I Level I BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Address length, ordered CR-terminated records, additive checksum; exact left/right agreement; runtime untested",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/01-STAR-TREK-LEVEL-I.ASC",
@@ -32,5 +31,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "The recovered source credits Anthony D\u2019Agosta\u2019s TRS-80 revision of Star Trek. The original edition and intervening changes are unverified."
+  }
 }

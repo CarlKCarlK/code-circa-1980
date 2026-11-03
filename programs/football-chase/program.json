@@ -1,8 +1,8 @@
 {
   "id": "football-chase",
   "title": "Football Chase",
-  "description": "Football Chase. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-FOOTBALL-CHASE.BAS",
       "listing": "versions/v01/04-FOOTBALL-CHASE.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. 29 consistent pointers; normal end marker; matches 6 decoding variants; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-FOOTBALL-CHASE.ASC",
@@ -37,8 +36,12 @@
         "80 A$=INKEY$:IFA$=\"\"THEN80ELSE100",
         "90 A$=INKEY$",
         "610 FORP=1TO1000:NEXT:A$=INKEY$:X=5:Y=5:OX=5:OY=5:GOTO 20"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

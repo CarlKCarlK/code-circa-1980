@@ -1,8 +1,8 @@
 {
   "id": "number-guessing-1-to-100",
   "title": "Number Guessing 1 To 100",
-  "description": "Number Guessing 1 To 100. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 2,
       "raw": "versions/v01/02-NUMBER-GUESSING-1-100.BAS",
       "listing": "versions/v01/02-NUMBER-GUESSING-1-100.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/02-NUMBER-GUESSING-1-100.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 CLS\n20 X=RND(100)\n30 INPUT\"WHAT IS YOUR NUMBER\";G\n40 IFG<XTHENPRINT\"TOO SMALL\"\n50 IFG>XTHENPRINT\"TOO LARGE\"\n60 IF G=X THEN 200\n70 GOTO 30\n200 PRINT\"YES\"\n205 GOTO200",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

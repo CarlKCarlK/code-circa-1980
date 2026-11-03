@@ -1,3 +1,4 @@
+import {MORE_COUNT} from './helpers/catalog.js';
 import {test,expect} from '@playwright/test';
 for(const [id,title] of [['rickyrat','Ricky Rat'],['pinball','Pinball'],['logic','Logic circuit simulator'],['orbit','Orbit simulator']])test(`${id}: one frozen v1 player opens directly and returns to the extra gallery`,async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -10,7 +11,7 @@ for(const [id,title] of [['rickyrat','Ricky Rat'],['pinball','Pinball'],['logic'
  const raw=await page.getByRole('link',{name:'Download original payload',exact:true}).getAttribute('href');
  const response=await page.request.get(raw);expect(response.ok()).toBe(true);
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
- await expect(page.locator('.program-card')).toHaveCount(34);
+ await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
  await expect(page.locator('.version-picker')).toHaveCount(0);
  expect(errors).toEqual([]);
 });

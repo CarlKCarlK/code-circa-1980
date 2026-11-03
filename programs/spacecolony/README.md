@@ -26,3 +26,5 @@ unshared web v1. From app/ run `npm run dev` and open
 Removed from the website at my request on November 2, 2026. The recovered
 program is an adaptation of Storer’s King / Pollution Game. Sources and the
 retired unshared v1 remain archived; there is no active gallery card or player.
+
+Restored with prominent prior-work attribution on November 3, 2026. Published comparison source is in upstream/. The appended comparison and replay tags preserve the earlier import history without rewriting it. The withdrawn website snapshot remains unchanged in website-archive/v1.

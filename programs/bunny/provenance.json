@@ -134,5 +134,22 @@
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
   "dating": {
     "caution": "Source notices are not save dates. No inferred historical dates are assigned."
-  }
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Adapted from Bunny, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+      "url": "https://www.atariarchives.org/basicgames/showpage.php?page=35"
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "upstream": [
+    {
+      "file": "docs/research/published-basic/bunny.bas",
+      "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/bunny.bas",
+      "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=35",
+      "sha256": "8c90e0c1c9c319deca67df01f396e2b5cdf6afd3a6ce3f84fb554bdea2ab3699",
+      "bytes": 1392,
+      "note": "Complete electronic transcription from the Vintage BASIC mirror, preserved unchanged. Matching source statements establish the comparison; exact parent edition and print transcription are not verified. Not a recovered cassette or an execution-tested program."
+    }
+  ]
 }

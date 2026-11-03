@@ -1,12 +1,12 @@
 # Code Circa 1980
 
-I wrote these programs in the early days of personal computing; now they run again in your browser.
+I wrote and adapted programs in the early days of personal computing; this collection preserves them alongside the published programs and experiments on my tapes.
 
 [![An arch and a tower in Castles, partly knocked down by cannon fire](app/assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/)
 
 **[Play them in your browser](https://carlkcarlk.github.io/code-circa-1980/)**: no installation required.
 
-The programs: Castles, Chemical Equation Balancer, Alien, 3-D Plot, CISAB Chess, and Bomb.
+The main collection: Castles, Chemical Equation Balancer, Alien, 3-D Plot, CISAB Chess, and Bomb. The More gallery preserves 277 additional entries, including adaptations and third-party listings with source credits. Unsupported or damaged programs are source only. See [archive coverage and verification](docs/comprehensive-more.md).
 
 ## About this project
 
@@ -23,7 +23,7 @@ The TRS-80 never acquired the prestige of the Apple II or Commodore PET, and BAS
 
 ## License
 
-The code is available under either [MIT](LICENSE-MIT) or
+Carl Kadie’s code is available under either [MIT](LICENSE-MIT) or
 [Apache-2.0](LICENSE-APACHE), at your option (`MIT OR Apache-2.0`). Preserve historical
 copyright notices. Third-party dependencies retain their own terms; see
 [THIRD-PARTY-NOTICES.md](docs/THIRD-PARTY-NOTICES.md).

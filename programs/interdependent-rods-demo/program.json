@@ -1,8 +1,8 @@
 {
   "id": "interdependent-rods-demo",
   "title": "Interdependent Rods Demo",
-  "description": "Interdependent Rods Demo. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.BAS",
       "listing": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 CLS\n10 FOR R=1TO10\n20 R(R)=RND(40)\n30 NEXT R\n35 FORR=1TO10:O(R)=R:NEXTR:FORR=1TO10:RN=RND(10):H=O(R):O(R)=O(RN):O(RN)=H:NEXTR\n40 GOSUB1000\n50 FOR R=1TO10\n60 W(R)=RND(10):H(R)=RND(0):IF RND(2)=1THEN H(R)=1/H(R)\n70 NEXT R\n75 FORQ=1TO10:R=O(Q):IF R<>S THEN LETR(R)=H(R)*R(W(R))\n76 NEXTQ\n80 GOSUB1000",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

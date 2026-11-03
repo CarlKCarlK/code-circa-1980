@@ -1,14 +1,14 @@
 {
   "id": "chemistry-balancer-ii",
   "title": "Chemistry Balancer II \u2014 earlier experiments",
-  "description": "Chemistry Balancer II \u2014 earlier experiments. 7 recovered saves.",
-  "kind": "Archive",
+  "description": "7 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v07",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 53 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
       "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
@@ -45,7 +44,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 139 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
       "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/20-CHEMISTRY-BALENCER-II.ASC",
@@ -69,7 +67,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 157 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
       "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/21-CHEMISTRY-BALENCER-II-V2.ASC",
@@ -93,7 +90,6 @@
       "playable": false,
       "note": "damaged / partial BASIC. 154 consistent BASIC record pointers; Out-of-order line number 13268 followed by 410; Other suspect source expressions remain; no manual repair",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC",
@@ -117,7 +113,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 152 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
       "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v05/23-CHEMISTRY-BALENCER-II-V3.ASC",
@@ -141,7 +136,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 158 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
       "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v06/24-CHEMISTRY-BALENCER-II-V4.ASC",
@@ -165,7 +159,6 @@
       "playable": false,
       "note": "damaged / partial BASIC. 139 consistent BASIC record pointers; No decoded end-of-program marker before WAV ends; Listing contains only 139 complete prefix records; raw candidate retains the remainder",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
@@ -180,5 +173,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "The recovered source credits Carl Kadie. Any earlier published sources have not been established."
+  }
 }

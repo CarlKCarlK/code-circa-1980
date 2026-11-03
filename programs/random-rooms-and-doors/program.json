@@ -1,8 +1,8 @@
 {
   "id": "random-rooms-and-doors",
   "title": "Random Rooms And Doors",
-  "description": "Random Rooms And Doors. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 8,
       "raw": "versions/v01/08-RANDOM-ROOMS-AND-DOORS.BAS",
       "listing": "versions/v01/08-RANDOM-ROOMS-AND-DOORS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/08-RANDOM-ROOMS-AND-DOORS.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 CLS:DEFINT A-Z\n7 DIM B(119,47),R(100)\n15 FOR I=2TO 100\n20 XL=INT( RND(0)*20)+2\n30 YL=INT( RND(0)*10)+2\n40 X=RND(119-XL):Y=RND(47-YL)\n50 FORXI=XTOX+XL:SET(XI,Y):SET(XI,Y+YL):B(XI,Y)=1:B(XI,Y+YL)=1:NEXTXI:FOR YI=YTOY+YL:SET(X,YI):SET(X+XL,YI):B(X,YI)=1:B(X+XL,YI)=1:NEXTYI\n60 FOR XI=X+1TOX+XL-1:FORYI=Y+1TOY+YL-1:RESET(XI,YI):B(XI,YI)=I:NEXTYI,XI\n70 NEXT I\n80 FOR X=0TO119:FORY=0TO47:GOSUB 100\n90 IF POINT(X,Y) THEN RESET (X,Y):SET(X,Y) ELSE SET(X,Y):RESET(X,Y)\n95 NEXT Y,X:R(1)=2:GOTO130",
       "controlSource": [
         "1000 IF INKEY$=\"\"THEN 1000"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

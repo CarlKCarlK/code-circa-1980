@@ -1,8 +1,8 @@
 {
   "id": "pythagorean-timed-exercise",
   "title": "Pythagorean Timed Exercise",
-  "description": "Pythagorean Timed Exercise. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 7,
       "raw": "versions/v01/07-PYTHAGOREAN.BAS",
       "listing": "versions/v01/07-PYTHAGOREAN.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/07-PYTHAGOREAN.ASC",
@@ -36,8 +35,12 @@
       "controlSource": [
         "110 IF INKEY$=\"\"THEN110",
         "145 A$=INKEY$:PRINT@50,STRING$(LEN(Q$),\"\u0019\");A$;:T=T+1:PRINT@55,INT(AT-T+1);:IFT>AT THEN 200  ELSEIFA$=\"\"THEN145ELSEIFA$=CHR$(13)THEN147ELSEQ$=Q$+A$:GOTO145"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

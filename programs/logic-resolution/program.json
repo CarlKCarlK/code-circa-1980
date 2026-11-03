@@ -1,14 +1,14 @@
 {
   "id": "logic-resolution",
   "title": "Logic Resolution",
-  "description": "Logic Resolution. 3 recovered saves.",
-  "kind": "Archive",
+  "description": "3 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Exact independent left/right payload; 33 ordered lines; pointer base 27202; end marker; exact EOF",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/03-LOGIC-RESOLUTION-SAVE01.ASC",
@@ -45,7 +44,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Exact independent left/right payload; 33 ordered lines; pointer base 27202; end marker; exact EOF",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/04-LOGIC-RESOLUTION-SAVE02.ASC",
@@ -69,7 +67,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Exact independent left/right payload; 33 ordered lines; pointer base 27202; end marker; exact EOF",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/05-LOGIC-RESOLUTION-SAVE03.ASC",
@@ -84,5 +81,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

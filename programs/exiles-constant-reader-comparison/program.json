@@ -1,14 +1,14 @@
 {
   "id": "exiles-constant-reader-comparison",
   "title": "Exiles Constant Reader Comparison",
-  "description": "Exiles Constant Reader Comparison. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/01-ORWELL-1984-BOOK-REPORT.ASC",
@@ -42,10 +41,9 @@
       "save": 4,
       "raw": "versions/v02/04-EXILES-CONSTANT-READER-COMPARISON.BAS",
       "listing": "versions/v02/04-EXILES-CONSTANT-READER-COMPARISON.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/04-EXILES-CONSTANT-READER-COMPARISON.ASC",
@@ -57,8 +55,12 @@
         }
       ],
       "startupSource": "10 'COMPARISON\n20 'WHEN COMPARING 'THE EXILES' AND  ''WE SHOULD STUDY FRIST THESIMILARITES OF CHARATORS, THEN PLOT AND FINALY THE THEMES.\n30 PRINT\"IN BRADBARY'S STORY THE CREW HAVE VIRGUELY NO PERSONSONLY.\n40 PRINT\"THEY ARE DESCRIBED AS CLEAN AND STERILE, LACKING ANY EMONITON OR HUMAN FEELING. IN SHORT A MR. SPOCK TYPE, WITHOUT VULCAN EARS. \n50 PRINT\"ON THE OTHER HAND THE CREW IN THE 'CONSTANT READER', SEEM TO POSESS ENOUGH IDEOSINROUS AND NERROSES TO BE CONSIDERED NOT ONLY HUMAN, BUT \";\n60 PRINT\"ALSO ENOUGH THAT THEY CAN BE IDENIFIED AS PEOPLE. IN THIS SECOND SITUATION BOOKS ARE NOT RESTRICTED, JUST NEGLECTED.\n70 PRINT\"IT IS IN THIS FACT THAT THE COMPARISON OF THE CHARACTOR CAN BE MADE. \n80 PRINT\"CLEAN MINDLESSNESS ON ONE HAND AND HUMAN DIFFERANCES ON THEOTHER.\n90 PRINT\"   WHEN CONSIDERING THE SIMILARITES AND DIFFERANCES OF THE TWO STORIES' PLOT, IT IS APPEREND THAT THE SIMILARITES ARE THE MOST OBVESOUS. IN BOTH STORIES A SHIP FROM EARTH IS SENT TO A PREVIOUSLY UNEXPLORED PLANET. \n100 PRINT\"IN RESPONSE TO THIS INVASION THE PLANET ATTEMPS TO DEFEND   ITS SELF BY USING IDEAS FROM LITERATURE. THIS IS WERE THE SIMALARITES END AND THE DIFFERSECS EMERGE. FOR IN 'EXILES' THE ATTEMP IS FRUITLESS, WHILE A SIMILAR STRADIGY WORKS IN  \";\n110 PRINT\"'CONSTANT READER'.",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

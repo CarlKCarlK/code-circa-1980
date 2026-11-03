@@ -1,14 +1,14 @@
 {
   "id": "star-trek-with",
   "title": "Star Trek With",
-  "description": "Star Trek With. 3 recovered saves.",
-  "kind": "Archive",
+  "description": "3 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 105 consistent pointers; end marker; matches original and 3 audio variants; not execution-tested",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/01-STAR-TREK-WITH-SAVE.ASC",
@@ -45,7 +44,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 98 consistent pointers; end marker; matches original and 3 audio variants; not execution-tested",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/02-STAR-TREK-SHORTER.ASC",
@@ -69,7 +67,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 107 consistent pointers; end marker; matches original and 3 audio variants; not execution-tested",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/07-STAR-TREK-WITH-SAVE-V2.ASC",
@@ -84,5 +81,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "The recovered source credits Anthony D\u2019Agosta\u2019s TRS-80 revision of Star Trek. The original edition and intervening changes are unverified."
+  }
 }

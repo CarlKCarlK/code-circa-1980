@@ -1,8 +1,8 @@
 {
   "id": "furies-fighters",
   "title": "Furies Fighters",
-  "description": "Furies Fighters. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 1,
       "raw": "versions/v01/01-FURIES-FIGHTERS.BAS",
       "listing": "versions/v01/01-FURIES-FIGHTERS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/01-FURIES-FIGHTERS.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 CLS\n10 DEFINT A-Z\n15 INPUT\"HOW MANY FURIES\";NM\n20 DIM TM(NM),XM(NM),YM(NM)\n25 CLS\n30 P(0)=15430+64:P(1)=16020+64*3+30:SC=43:S1(0)=2:S2(0)=2:S1(1)=2:S2(1)=2:HD(0)=10:HD(1)=10:POKE P(0),94:POKE P(1),93:A(0)=3\n40 FOR X=2TO126:SET(X,2):SET(127-X,45):NEXTX:FORY=2TO45:SET(1,47-Y):SET(127,Y):NEXTY\n50 FOR X=1TO3:PRINT@RND(1022),CHR$(191);CHR$(191);:NEXTX\n60 FORI=1TONM:TM(I)=RND(2)-1:XM(I)=TM(I)*50+4:YM(I)=RND(10)+3:PRINT@XM(I)+YM(I)*64,\".\";:NEXTI\n100 FOR I=0TO8:READ S(I):NEXTI\n110 FOR I=0TO8:READ C(I):NEXTI\n112 FOR I=0TO8:T(I)=64*S(I)+2*C(I):NEXTI",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

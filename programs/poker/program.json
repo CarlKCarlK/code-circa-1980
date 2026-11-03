@@ -78,6 +78,10 @@
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ],
-  "website": false,
-  "websiteRemoval": "Removed at the user\u2019s request on November 2, 2026. Recovered sources, corrections, and the retired web snapshot remain archived."
+  "websiteRemoval": "Removed at the user\u2019s request on November 2, 2026. Recovered sources, corrections, and the retired web snapshot remain archived.",
+  "websiteRestoration": "Restored November 3, 2026, at the user\u2019s request to include derivative programs with prominent attribution.",
+  "attribution": {
+    "text": "Adapted from Creative Computing\u2019s published Poker listing. Six recovered saves and the separate documented correction patch are preserved.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=129"
+  }
 }

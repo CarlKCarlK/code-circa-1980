@@ -1,8 +1,8 @@
 {
   "id": "bacterial-growth",
   "title": "Bacterial Growth",
-  "description": "Bacterial Growth. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 2,
       "raw": "versions/v01/02-BACTERIAL-GROWTH.BAS",
       "listing": "versions/v01/02-BACTERIAL-GROWTH.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload. 27 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/02-BACTERIAL-GROWTH.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 PRINT\"COMPUTER SIMULATION OF BACTERIAL GROWTH\"\n20 READ X,NUT,WASTE\n25 SAM=SAM+1\n30 IF X=-1 AND NUT=-1 AND WASTE=-1 THEN 600\n40 DAY=0\n60 RATE =0\n65 PRINT:PRINT\"SIMULATION \";SAM\n70 PRINT\"INITIAL BACTERIA COUNT (MILLIONS)\",X\n80 PRINT\"INITIAL NUTRIENT CONCENTRATION (PERCENT)\",NUT\n90 PRINT\"INITIAL WASTE CONSENTRATION (PERCENT)\",WASTE\n100 RATE = (NUT/10)-(WASTE/10)+1\n110 IF RATE < 1 THEN 160 ELSE DAYS=DAYS +1",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

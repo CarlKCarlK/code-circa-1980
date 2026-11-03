@@ -1,14 +1,14 @@
 {
   "id": "screen-text-capture-editor",
   "title": "Screen Text Capture Editor",
-  "description": "Screen Text Capture Editor. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/14-SCREEN-TEXT-CAPTURE-EDITOR.ASC",
@@ -44,10 +43,9 @@
       "save": 15,
       "raw": "versions/v02/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.BAS",
       "listing": "versions/v02/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/15-SCREEN-TEXT-CAPTURE-EDITOR-SAVE2.ASC",
@@ -61,8 +59,12 @@
       "startupSource": "10 CLEAR1700\n20 DIMA$(15)\n100 A$=INKEY$\n110 IFVAL(A$)>0ORA$=\"0\"THENN=VAL(A$)+N*10\n120 IFA$=\"Q\"THENFORX=1TON:L=L-64:NEXT:N=0\n130 IFA$=\"W\"THENFORX=1TON:L=L+64:NEXT:N=0\n140 IFA$=\"E\"THENFORX=1TON:L=L-1:NEXT:N=0\n150 IFA$=\"R\"THENFORX=1TON:L=L+1:NEXT:N=0\n160 IFA$=\" \"THEN2000\n170 IFA$=\"D\"THENPRINT@0,\"\";:FORX=0TOX1:PRINTA$(X);:NEXT:N=0\n180 IFA$=\"S\"THENX1=N:N=0\n500 GOSUB1500",
       "controlSource": [
         "100 A$=INKEY$"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

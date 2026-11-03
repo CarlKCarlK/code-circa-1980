@@ -1,8 +1,8 @@
 {
   "id": "binomial-coefficients",
   "title": "Binomial Coefficients",
-  "description": "Binomial Coefficients. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 1,
       "raw": "versions/v01/01-BINOMIAL-COEFFICIENTS.BAS",
       "listing": "versions/v01/01-BINOMIAL-COEFFICIENTS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. 19 consistent pointers; normal end marker; matches 6 decoding variants; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/01-BINOMIAL-COEFFICIENTS.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "1 CLS\n2 REM  BINOMAL COEFFECINENTS      CMKADIEADDEC1980\n5 DEFDBL A-Z\n10 INPUT\"WHICH ROW, COLLUM\";R,C\n20 IF C>R THEN PRINT\"TRY AGAIN....\":GOTO 10\n25 A=1\n26 PRINTCHR$(151)\"    \"R\"    \"CHR$(171):PRINT CHR$(149) TAB(10+LEN(STR$(R))) CHR$(170 ):PRINT CHR$(181)\"    \"C TAB(10+LEN(STR$(R)))   CHR$(186)CHR$(27)\"  >>>----\t\"CHR$(94)\" \";\n30 D=R-C:IF D>C THEN H=C:C=D:D=H\n32 Y=D+1\n35 X=R-D\n40 X=X+1\n50 Y=Y-1",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "checkers-tape25a",
   "title": "Checkers",
-  "description": "Checkers. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I/III BASIC family",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/16-CHECKERS.ASC",
@@ -39,5 +38,18 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Adapted from Checkers, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=40"
+  },
+  "upstreamDownloads": [
+    {
+      "path": "upstream/CHECKERS.ASC",
+      "label": "Published comparison listing",
+      "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/checkers.bas"
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "id": "life-pascal-uncertain",
   "title": "LIFE \u2014 Pascal draft",
-  "description": "LIFE \u2014 Pascal draft. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80; Pascal-like source; exact dialect unverified",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "damaged source; runtime untested. 4/6 block checksums valid; blocks 3-6 exact left/right data and address matches; first two blocks conflict; 78 ending lacks SYSTEM entry address",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/01-LIFE-PASCAL-DAMAGED.3BN",
@@ -48,5 +47,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

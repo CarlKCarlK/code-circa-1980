@@ -1,8 +1,8 @@
 {
   "id": "morse-code-sender",
   "title": "Morse Code Sender",
-  "description": "Morse Code Sender. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 6,
       "raw": "versions/v01/06-MORSE-CODE-SENDER.BAS",
       "listing": "versions/v01/06-MORSE-CODE-SENDER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. 36 consistent pointers; normal end marker; matches 5 decoding variants; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/06-MORSE-CODE-SENDER.ASC",
@@ -36,8 +35,12 @@
       "controlSource": [
         "100 FORX=1TO200:NEXT:IFINKEY$=\"\"THEN 70ELSE30",
         "210 A$=INKEY$"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

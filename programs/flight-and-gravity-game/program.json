@@ -1,8 +1,8 @@
 {
   "id": "flight-and-gravity-game",
   "title": "Flight And Gravity Game",
-  "description": "Flight And Gravity Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 2,
       "raw": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.BAS",
       "listing": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.ASC",
@@ -36,8 +35,12 @@
       "controlSource": [
         "100 A$=INKEY$",
         "510 B$=INKEY$:IFB$=\"\"THEN510ELSE90"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

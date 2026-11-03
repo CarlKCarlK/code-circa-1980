@@ -1,8 +1,8 @@
 {
   "id": "three-dimensional-tic-tac-toe",
   "title": "Three Dimensional Tic Tac Toe",
-  "description": "Three Dimensional Tic Tac Toe. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC family",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 17,
       "raw": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.BAS",
       "listing": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC",
@@ -33,8 +32,20 @@
         }
       ],
       "startupSource": "99 CLS\n100 PRINT TAB(33);\"TIC TAC TOE\"\n110 PRINT TAB(15);\"CREATIVE COMPUTING  MORRISTOWN, NJ\"\n120 PRINT:PRINT:PRINT\n210 PRINT \"DO YOU WANT INSTRUCTIONS\";\n220 INPUT C$\n230 IF C$=\"NO\" THEN 315\n240 IF C$=\"YES\" THEN 265\n250 PRINT \"INCORRECT ANSWER.  PLEASE TYPE 'YES' OR 'NO'\";\n260 GOTO220\n265 PRINT\n270 PRINT\"THE GAME IS TIC-TAC-TOE IN A 4X4X4 CUBE.\"",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Adapted from Qubic, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=168"
+  },
+  "upstreamDownloads": [
+    {
+      "path": "upstream/QUBIC.ASC",
+      "label": "Published comparison listing",
+      "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/qubic.bas"
+    }
+  ]
 }

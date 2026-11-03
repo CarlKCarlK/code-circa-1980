@@ -1,8 +1,8 @@
 {
   "id": "red-or-blue-guessing-game",
   "title": "Red Or Blue Guessing Game",
-  "description": "Red Or Blue Guessing Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 9,
       "raw": "versions/v01/09-RED-OR-BLUE-GUESSING-GAME.BAS",
       "listing": "versions/v01/09-RED-OR-BLUE-GUESSING-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/09-RED-OR-BLUE-GUESSING-GAME.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "2 GOTO500\n5 PRINT\"                   ,-------*-------,\n10 PRINT\",--------------    '----   -------'\n20 PRINT\" '---------  --'        /  /        A WINNER\"\"\n30 PRINT\"     ,----'  '---------/  /--,\"\n40 PRINT\"      '---------------------'\n50 RETURN\n100 PRINT\"        -##-\n110 PRINT\"     <-( OO )->\n120 PRINT\"        V--V\n130 PRINT\"         !!\n140 PRINT\"     *===!!===*          YOU LOSE",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

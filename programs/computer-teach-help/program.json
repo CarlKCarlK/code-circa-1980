@@ -1,8 +1,8 @@
 {
   "id": "computer-teach-help",
   "title": "Computer Teach Help",
-  "description": "Computer Teach Help. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 11,
       "raw": "versions/v01/11-COMPUTER-TEACH-HELP.BAS",
       "listing": "versions/v01/11-COMPUTER-TEACH-HELP.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/11-COMPUTER-TEACH-HELP.ASC",
@@ -38,7 +37,8 @@
         "240 A$=INKEY$:IFA$=\"\"THEN240",
         "360 A$=INKEY$:IFA$=\"\"THEN360ELSE10",
         "530 A$=INKEY$:IFA$=\"\"THEN530ELSEGOTO10"
-      ]
+      ],
+      "slug": "basic"
     },
     {
       "id": "v02",
@@ -50,7 +50,6 @@
       "playable": false,
       "note": "damaged; valid prefix only; runtime untested. Damaged; untouched valid prefix [0,830); 27 lines; pointer base 17125; cross-channel confirmed [0,673); no synthetic end marker",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/03-COMPUTER-TEACH-HELP-PREFIX.ASC",
@@ -76,5 +75,8 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

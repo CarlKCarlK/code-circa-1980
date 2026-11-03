@@ -1,8 +1,8 @@
 {
   "id": "blackjack",
   "title": "Blackjack",
-  "description": "Blackjack. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-BLACKJACK.BAS",
       "listing": "versions/v01/05-BLACKJACK.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload. 48 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-BLACKJACK.ASC",
@@ -36,8 +35,12 @@
       "controlSource": [
         "605 A$=INKEY$:IFA$=\" \"THEN1000ELSE IFA$=\"S\"THEN2000",
         "2050 A$=INKEY$:IFA$=\"\"THEN2050ELSECLS:GOTO610"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

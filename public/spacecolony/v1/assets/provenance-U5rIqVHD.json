@@ -1,0 +1,291 @@
+{
+  "official_title": "Logic circuit simulator",
+  "title_authority": "Descriptive recovery title inferred from source behavior; no explicit title screen identified.",
+  "short_name": "logic",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred from five consecutive tape15b saves. Later forms add device identification, initialization, reset, and truth-table functionality; source grows from 45 to 116 lines. Dates are not established. The latest complete save is the selected reference.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape15b",
+      "save": 14,
+      "archive_raw": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.BAS",
+          "archive_path": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.BAS",
+          "bytes": 2676,
+          "sha256": "bcb2bf6867274132b7faa4ea10022cef3d2f6c66d12da3e490d630669e189ae0"
+        },
+        {
+          "path": "versions/v01/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+          "archive_path": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+          "bytes": 3111,
+          "sha256": "145a17065ae69fdde028f05505871974f6ee0238c7b8615f11211ad29a7186e8"
+        }
+      ],
+      "recovery_item": {
+        "lines": 45,
+        "last": 940,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "bcb2bf6867274132b7faa4ea10022cef3d2f6c66d12da3e490d630669e189ae0"
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "b",
+        "order": "14",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LOGIC CIRCUIT SIMULATOR SAVE 1; 45 lines",
+        "capture": "tape15b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "source_start_s": "1282.416",
+        "recovered_bytes": "2676",
+        "source_file": "tapes/recovered/tape15b/best/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1.ASC",
+        "wav": "tapes/tape15b.wav",
+        "folder": "tapes/recovered/tape15b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape15b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape15b",
+      "save": 15,
+      "archive_raw": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.BAS",
+          "archive_path": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.BAS",
+          "bytes": 3474,
+          "sha256": "283e7027d9d9ce1fde8ac8fc0dfdfdf18fba0a9e732e9ed0326dd2510958ffed"
+        },
+        {
+          "path": "versions/v02/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
+          "archive_path": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
+          "bytes": 4122,
+          "sha256": "71bbad13defada98fcfcaa365742d4cd022868521c67eb9007b5e1d9fa550dd7"
+        }
+      ],
+      "recovery_item": {
+        "lines": 62,
+        "last": 1240,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "283e7027d9d9ce1fde8ac8fc0dfdfdf18fba0a9e732e9ed0326dd2510958ffed"
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "b",
+        "order": "15",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LOGIC CIRCUIT SIMULATOR SAVE 2; 62 lines",
+        "capture": "tape15b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "source_start_s": "1332.945",
+        "recovered_bytes": "3474",
+        "source_file": "tapes/recovered/tape15b/best/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2.ASC",
+        "wav": "tapes/tape15b.wav",
+        "folder": "tapes/recovered/tape15b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape15b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape15b",
+      "save": 16,
+      "archive_raw": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.BAS",
+          "archive_path": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.BAS",
+          "bytes": 4235,
+          "sha256": "0986c88f7fc682a0d53f46934ee7bbbcdc79d74a4b1bceb5e141cebc20aada50"
+        },
+        {
+          "path": "versions/v03/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.ASC",
+          "archive_path": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.ASC",
+          "bytes": 4977,
+          "sha256": "e19d6016af10726ffc0ab4e4d5943c5f107807c8d16e271e171e3e872701fa7a"
+        }
+      ],
+      "recovery_item": {
+        "lines": 77,
+        "last": 1410,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "0986c88f7fc682a0d53f46934ee7bbbcdc79d74a4b1bceb5e141cebc20aada50"
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "b",
+        "order": "16",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LOGIC CIRCUIT SIMULATOR SAVE 3; 77 lines",
+        "capture": "tape15b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "source_start_s": "1394.924",
+        "recovered_bytes": "4235",
+        "source_file": "tapes/recovered/tape15b/best/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3.ASC",
+        "wav": "tapes/tape15b.wav",
+        "folder": "tapes/recovered/tape15b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape15b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape15b",
+      "save": 17,
+      "archive_raw": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.BAS",
+          "archive_path": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.BAS",
+          "bytes": 4930,
+          "sha256": "f4bad7b14c7509744387f158aae6bc955ebd0fb519fc8c3888f07adb79d8034f"
+        },
+        {
+          "path": "versions/v04/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.ASC",
+          "archive_path": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.ASC",
+          "bytes": 5837,
+          "sha256": "596a404f3b53012853f36e09550514b6149e21ba925e1841e6cc83ac5feaebc3"
+        }
+      ],
+      "recovery_item": {
+        "lines": 95,
+        "last": 1630,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "f4bad7b14c7509744387f158aae6bc955ebd0fb519fc8c3888f07adb79d8034f"
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "b",
+        "order": "17",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LOGIC CIRCUIT SIMULATOR SAVE 4; 95 lines",
+        "capture": "tape15b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "source_start_s": "1472.361",
+        "recovered_bytes": "4930",
+        "source_file": "tapes/recovered/tape15b/best/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4.ASC",
+        "wav": "tapes/tape15b.wav",
+        "folder": "tapes/recovered/tape15b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape15b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape15b",
+      "save": 18,
+      "archive_raw": "tapes/recovered/tape15b/best/18-LOGIC-CIRCUIT-SIMULATOR-SAVE-5.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/18-LOGIC-CIRCUIT-SIMULATOR-SAVE-5.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/18-LOGIC-CIRCUIT-SIMULATOR-SAVE-5.BAS",
+          "archive_path": "tapes/recovered/tape15b/best/18-LOGIC-CIRCUIT-SIMULATOR-SAVE-5.BAS",
+          "bytes": 5690,
+          "sha256": "676a2d506b0a35608639196603e3d73122dd12d455fa8e8027038d4d0b8373d1"
+        },
+        {
+          "path": "versions/v05/18-LOGIC-CIRCUIT-SIMULATOR-SAVE-5.ASC",
+          "archive_path": "tapes/recovered/tape15b/best/18-LOGIC-CIRCUIT-SIMULATOR-SAVE-5.ASC",
+          "bytes": 6814,
+          "sha256": "71f98caf9176487b1676b6728ade237b0ea42493c6ec82f6367d5131be65783f"
+        }
+      ],
+      "recovery_item": {
+        "lines": 116,
+        "last": 1850,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "676a2d506b0a35608639196603e3d73122dd12d455fa8e8027038d4d0b8373d1"
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "b",
+        "order": "18",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LOGIC CIRCUIT SIMULATOR SAVE 5; 116 lines",
+        "capture": "tape15b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "source_start_s": "1558.402",
+        "recovered_bytes": "5690",
+        "source_file": "tapes/recovered/tape15b/best/18-LOGIC-CIRCUIT-SIMULATOR-SAVE-5.ASC",
+        "wav": "tapes/tape15b.wav",
+        "folder": "tapes/recovered/tape15b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape15b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_date": null,
+    "contextual_source_lines": [
+      "tape15b saves 6 and 7: 10 REM CHEMISTRY BANENCER II   COPYRIGHT 1981 C. KADIE",
+      "tape15b saves 8\u201310: 10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+    ],
+    "caution": "Same-side copyright context only; no direct simulator date or save date is established. No readable BASIC listing on the opposite tape15a side was available in best/."
+  },
+  "artwork": {
+    "path": "app/assets/logic-gallery.svg",
+    "sha256": "a006dd4167503275189b28caa9cc17033a612cc757f54e2a12a73b36032b7e3e",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
+    "kind": "Original emulator canvas screenshot",
+    "path": "app/assets/logic-screen.png",
+    "sha256": "8d50401ae44b7cafc6b4627efc41c7db4f7d1fca3db6e7695cf11b302128b9cc",
+    "reference": "v05",
+    "method": "CAPTURE_GALLERY_ART=1 with tests/browser/experiments.spec.js; native canvas aspect ratio, Model III font and cobalt palette."
+  }
+}

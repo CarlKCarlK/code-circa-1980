@@ -1,8 +1,8 @@
 {
   "id": "blast-off-countdown",
   "title": "Blast Off Countdown",
-  "description": "Blast Off Countdown. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 10,
       "raw": "versions/v01/10-BLAST-OFF.BAS",
       "listing": "versions/v01/10-BLAST-OFF.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/10-BLAST-OFF.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "3 CLS\n5 LET X=10\n10 PRINT X\n13 FOR A=1 TO 500:NEXT A\n15 LET X=X-1\n18 IF X=0 THEN  PRINT \"BLAST OFF\" :END\n20 GOTO 10",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

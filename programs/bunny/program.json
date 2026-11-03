@@ -1,14 +1,14 @@
 {
   "id": "bunny",
   "title": "Bunny",
-  "description": "Bunny. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/03-BUNNY.ASC",
@@ -42,10 +41,9 @@
       "save": 4,
       "raw": "versions/v02/04-BUNNY-SAVE2.BAS",
       "listing": "versions/v02/04-BUNNY-SAVE2.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/04-BUNNY-SAVE2.ASC",
@@ -57,8 +55,20 @@
         }
       ],
       "startupSource": "5 POKE16553,255:CLS:PRINT:PRINT:PRINT\n10 PRINTTAB(28);\"BUNNY\"\n20 PRINTTAB(10);\"CREATIVE COMPUTING MORRISTOWN, NEW JERSEY\"\n30 FORR=1TO40:PRINT@RND(643)+320,\"BUNNY\";:NEXT\n35 RESTORE\n120 FORI=0TO4:READB(I):NEXTI\n130 GOSUB260\n140 L=64\n160 X=0:Y1=Y1+1:IFY1>47THENC1=ABS(C1-55):Y1=0:Y=0:GOTO35\n170 READX:IFX<0THEN160\n175 IFX>128THEN240\n180 READY:FORX1=XTOY",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Adapted from Bunny, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=35"
+  },
+  "upstreamDownloads": [
+    {
+      "path": "upstream/BUNNY.ASC",
+      "label": "Published comparison listing",
+      "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/bunny.bas"
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "id": "hi-mom-print-loop",
   "title": "Hi Mom Print Loop",
-  "description": "Hi Mom Print Loop. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 1,
       "raw": "versions/v01/01-HI-MOM.BAS",
       "listing": "versions/v01/01-HI-MOM.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/01-HI-MOM.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 PRINT\"HI MOM\"\n20 GOTO10",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

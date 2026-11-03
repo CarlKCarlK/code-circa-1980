@@ -1,8 +1,8 @@
 {
   "id": "interactive-room-and-world-builder-inferred",
   "title": "Room and World Builder",
-  "description": "Room and World Builder. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-ROOM-WORLD-BUILDER.BAS",
       "listing": "versions/v01/04-ROOM-WORLD-BUILDER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-ROOM-WORLD-BUILDER.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 CLEAR 10000\n20 CLS:PRINT:PRINT:PRINT\n100 DIM   N$(50),D$(50),L(50,5),W$(5),S$(2)\n110 R=1\n115 R3=1\n120 FOR X=0TO5\n130 READ W$(X)\n140 NEXT X\n150 DATA N,E,U,D,W,S\n160 FOR X=0TO2\n170 READ S$(X)\n180 NEXT X",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

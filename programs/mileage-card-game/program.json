@@ -1,14 +1,14 @@
 {
   "id": "mileage-card-game",
   "title": "Mileage Card Game",
-  "description": "Mileage Card Game. 3 recovered saves.",
-  "kind": "Archive",
+  "description": "3 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. 163 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.ASC",
@@ -49,7 +48,6 @@
       "playable": false,
       "note": "damaged captured save; validated prefix; runtime untested. Interrupted mid-line 330; first 26 ordered records through line 320 / 740 untouched bytes agree left/right; consistent pointer base 22204; no added end marker",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.ASC",
@@ -80,10 +78,9 @@
       "save": 7,
       "raw": "versions/v03/07-MILEAGE-CARD-GAME-SAVE07.BAS",
       "listing": "versions/v03/07-MILEAGE-CARD-GAME-SAVE07.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. 174 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v03/07-MILEAGE-CARD-GAME-SAVE07.ASC",
@@ -100,8 +97,12 @@
         "1610 IF INKEY$<>\"D\" THEN 1610 ",
         "10050 IF INKEY$=\"\" THEN 10050",
         "10190 B$=INKEY$:IF B$=\"B\" THEN PRINT:GOTO 20   ELSE 10190"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Based on the Mille Bornes card game. The source of the program code and the extent of any borrowed implementation have not been established."
+  }
 }

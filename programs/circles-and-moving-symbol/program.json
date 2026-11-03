@@ -1,8 +1,8 @@
 {
   "id": "circles-and-moving-symbol",
   "title": "Circles And Moving Symbol",
-  "description": "Circles And Moving Symbol. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-CIRCLES-AND-MOVING-SYMBOL.BAS",
       "listing": "versions/v01/04-CIRCLES-AND-MOVING-SYMBOL.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-CIRCLES-AND-MOVING-SYMBOL.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 POKE16553,255\n10 CLS:FORR=2TO44STEP4:FORA=-RTOR:Y=SQR(R*R-A*A):Y=Y/2:SET(A+60,23+Y):SET(A+60,23-Y):SET(A+61,23+Y):SET(A+61,23-Y):NEXTA:NEXTR\n20 S$=CHR$(93)+CHR$(94)\n30 L$=INKEY$:IFL$=\"\"THENL$=O$\n35 GOTO100\n40 PRINT @ W,\"  \";\n45 IF(L<0)OR(L>1020)THENL=O\n50 PRINT @ L,S$;:W=L\n70 GOTO30\n100 IFL$=\"1\"THENL=L-64\n110 IFL$=\"2\"THENL=L+64\n120 IFL$=\"3\"THENL=L-1",
       "controlSource": [
         "30 L$=INKEY$:IFL$=\"\"THENL$=O$"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

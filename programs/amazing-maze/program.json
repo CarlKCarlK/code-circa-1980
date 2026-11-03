@@ -1,14 +1,14 @@
 {
   "id": "amazing-maze",
   "title": "Amazing Maze",
-  "description": "Amazing Maze. 5 recovered saves.",
-  "kind": "Archive",
+  "description": "5 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v05",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/14-AMAZING-PROGRAM-MAZE.ASC",
@@ -47,7 +46,6 @@
       "playable": false,
       "note": "damaged maze-program recording. Exact 792-byte readable prefix matches three variants; full stream damaged",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC",
@@ -75,7 +73,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v03/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
@@ -101,7 +98,6 @@
       "playable": false,
       "note": "damaged maze-program recording. Exact 1438-byte readable prefix matches three variants; full stream damaged",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v04/17-AMAZING-PROGRAM-FRAGMENT.ASC",
@@ -122,10 +118,9 @@
       "save": 2,
       "raw": "versions/v05/02-AMAZING-MAZE.BAS",
       "listing": "versions/v05/02-AMAZING-MAZE.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v05/02-AMAZING-MAZE.ASC",
@@ -139,8 +134,20 @@
       "startupSource": "5 XS=0:YS=3\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n40 FORX=0TO127:SET(X,3):NEXT\n90 PRINT@704,\"\";\n100 INPUT\"WHAT ARE YOUR WIDTH AND LENGTH\";H,V\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
       "controlSource": [
         "2000 A$=INKEY$"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Adapted from Jack Hauber\u2019s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
+  },
+  "upstreamDownloads": [
+    {
+      "path": "upstream/AMAZING.ASC",
+      "label": "Published comparison listing",
+      "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas"
+    }
+  ]
 }

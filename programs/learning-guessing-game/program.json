@@ -1,8 +1,8 @@
 {
   "id": "learning-guessing-game",
   "title": "Learning Guessing Game",
-  "description": "Learning Guessing Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 BASIC; extensions may be needed",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 10,
       "raw": "versions/v01/10-LEARNING-GUESSING-GAME.BAS",
       "listing": "versions/v01/10-LEARNING-GUESSING-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated source; runtime untested. Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/10-LEARNING-GUESSING-GAME.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 CLEAR 10000\n10 DEFINT A-Z\n20 DIM Q$(200),Y(200),N(200)\n30  C=2\n40 Q$(0)=\"IS IT A GAME\"\n50 Q$(1)=\"IS IT POKER\"\n60 Y(0)=1\n70  N(0)=2\n80 Q$(2)=\"IS IT A PUPPY DOG\"\n90 CC=0\n100 CLS\n110 PRINTQ$(CC);:INPUT A$",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

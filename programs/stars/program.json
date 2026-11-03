@@ -1,14 +1,14 @@
 {
   "id": "stars",
   "title": "Stars",
-  "description": "Stars. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/15-STARS-SAVE01.ASC",
@@ -42,10 +41,9 @@
       "save": 16,
       "raw": "versions/v02/16-STARS-SAVE02.BAS",
       "listing": "versions/v02/16-STARS-SAVE02.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/16-STARS-SAVE02.ASC",
@@ -57,8 +55,20 @@
         }
       ],
       "startupSource": "120 PRINT\"WELCOME TO MY GALAXY. i'M IN CHARGE OF THE STARS HERE.\"\n130 PRINT\"PLAY MY GAME *STARS* AND GET SOOME STARS FOR YOURSELF!\"\n140 PRINT\n150 PRINT\"WANT TO KNOW HOW TO PLAY\";\n160 INPUTB$\n170 IFB$=\"Y\"THEN280\n190 PRINT\n200 PRINT\"I WILL THINK OF A WHOLE NUMBER FROM 1 TO 100.\"\n210 PRINT\"TRY TO GUESS MY NUMBER. ATTER YOU GUESS, I\"\n220 PRINT\"WILL TYPE ONE OR MORE STARS ( * ).  THE CLOSER\"\n230 PRINT\"YOU ARE TO MY NUMBER, THE MORE STARS WILL I TYPE.\"\n240 PRINT\"OONE STAR ( * ) MEANS YYOOU ARE FAR AWAY FROOM MY\"",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Adapted from Stars, credited to the People\u2019s Computer Center in the Creative Computing comparison listing. Published in BASIC Computer Games; the exact intermediate edition is unverified.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=153"
+  },
+  "upstreamDownloads": [
+    {
+      "path": "upstream/STARS.ASC",
+      "label": "Published comparison listing",
+      "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/stars.bas"
+    }
+  ]
 }

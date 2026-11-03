@@ -1,14 +1,14 @@
 {
   "id": "equationer-timed-algebra-exercise",
   "title": "Equationer Timed Algebra Exercise",
-  "description": "Equationer Timed Algebra Exercise. 3 recovered saves.",
-  "kind": "Archive",
+  "description": "3 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/02-EQUATIONER.ASC",
@@ -48,7 +47,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v02/05-SQUARE-ROOT.ASC",
@@ -72,10 +70,9 @@
       "save": 6,
       "raw": "versions/v03/06-EQUATIONER.BAS",
       "listing": "versions/v03/06-EQUATIONER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v03/06-EQUATIONER.ASC",
@@ -90,8 +87,12 @@
       "controlSource": [
         "110 IF INKEY$=\"\"THEN110",
         "145 A$=INKEY$:PRINT@50,STRING$(LEN(Q$),\"\u0019\");A$;:T=T+1:PRINT@55,INT(AT-T+1);:IFT>AT THEN 200  ELSEIFA$=\"\"THEN145ELSEIFA$=CHR$(13)THEN150ELSEQ$=Q$+A$:GOTO145"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

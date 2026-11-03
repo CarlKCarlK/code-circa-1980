@@ -1,14 +1,14 @@
 {
   "id": "room-maze-generator",
   "title": "Room Maze Generator",
-  "description": "Room Maze Generator. 4 recovered saves.",
-  "kind": "Archive",
+  "description": "4 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v04",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/07-ROOM-MAZE-GENERATOR-SAVE01.ASC",
@@ -45,7 +44,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v02/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
@@ -71,7 +69,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v03/09-ROOM-MAZE-GENERATOR-SAVE03.ASC",
@@ -92,10 +89,9 @@
       "save": 10,
       "raw": "versions/v04/10-ROOM-MAZE-GENERATOR-SAVE04.BAS",
       "listing": "versions/v04/10-ROOM-MAZE-GENERATOR-SAVE04.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v04/10-ROOM-MAZE-GENERATOR-SAVE04.ASC",
@@ -107,8 +103,12 @@
         }
       ],
       "startupSource": "10 CLEAR 50:DEFINT A-Z\n20 XM=41:YM=21:PN= (XM/2)*(YM/2):DN=XM*YM:CM=XM*YM/2\n40 DIM B(XM,YM),PS(PN),PE(PN),DP(DN),DX(DN),DY(DN),CX(CM),CY(CM),C1(CM),C2(CM)\n50 RM = XM*YM/21\n55 B$(1)=\"S\"+CHR$(191)+\"S\":B$(0)=CHR$(140)+\"S\"+CHR$(140):B$(3)=\" \"+CHR$(191)+\" \":B$(2)=STRING$(3,CHR$(140)):B$(4)=CHR$(149)+\" \"+CHR$(170):B$(5)=STRING$(3,CHR$(176)):B$(6)=STRING$(3,CHR$(191)):B$(8)=\"   \"\n60 'CLS\n70 FOR RC=1TO RM\n80 XD=RND(5)*2-1:YD=RND(5)*2-1\n90 XS= RND(  (XM-XD-2+1)/2)*2:YS=RND( (YM-YD-2+1)/2)*2\n100 FOR XC=XS+1 TO XS+XD:FOR YC=YS+1 TO YS+YD:B(XC,YC)=0:NEXTYC,XC\n110 FOR XC=XS TO XS+XD+1:B( XC,YS)=-1:B(XC,YS+YD+1)=-1:NEXTXC\n120 FOR YC=YS TO YS+YD+1:B( XS,YC)=-1:B(XS+XD+1,YC)=-1:NEXTYC",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

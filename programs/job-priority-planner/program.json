@@ -1,8 +1,8 @@
 {
   "id": "job-priority-planner",
   "title": "Job Priority Planner",
-  "description": "Job Priority Planner. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 BASIC; extensions may be required",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-JOB-PRIORITY-PLANNER.BAS",
       "listing": "versions/v01/04-JOB-PRIORITY-PLANNER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-JOB-PRIORITY-PLANNER.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "2 CLEAR 1000\n5 CLS:PRINT:PRINT:PRINT:PRINT\n10 INPUT\"HOW MANY JOBS TO YOU HAVE\";NJ\n15 DIM J$(NJ),P(NJ),TP(NJ)\n20 FOR C=1TONJ\n30 PRINT\"WHAT IS JOB NUMBER\"C;\n40 INPUT J$(C)\n50 INPUT \"WHAT PRIORITY IS IT\";P(C)\n60 NEXT C\n70 CLS\n80 FOR C=1TO NJ\n90 FOR I=1TO NJ",
       "controlSource": [
         "170 IFINKEY$=\"\"THEN170"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,14 +1,14 @@
 {
   "id": "starr-wars",
   "title": "Starr Wars",
-  "description": "Starr Wars. 3 recovered saves.",
-  "kind": "Archive",
+  "description": "3 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/04-STAR-WAY-REPEAT.ASC",
@@ -48,7 +47,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v02/08-STARR-WARS.ASC",
@@ -72,10 +70,9 @@
       "save": 9,
       "raw": "versions/v03/09-STARR-WARS-REPEAT.BAS",
       "listing": "versions/v03/09-STARR-WARS-REPEAT.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v03/09-STARR-WARS-REPEAT.ASC",
@@ -90,8 +87,12 @@
       "controlSource": [
         "205 A$=INKEY$:IFA$=\"D\"THENXX=1:YY=0ELSEIFA$=\"F\"THENXX=-1:YY=0ELSEIFA$=\"A\"THENXX=0:YY=1ELSEIFA$=\"S\"THENXX=0:YY=-1ELSEIFA$=\"G\"THENXX=0:YY=0",
         "2000 IFINKEY$=\"\"THEN2000ELSECLS:GOTO1000"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "The recovered source credits Carl Kadie. Any earlier published sources have not been established."
+  }
 }

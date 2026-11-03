@@ -1,8 +1,8 @@
 {
   "id": "milk-and-doughnut-cost-calculator",
   "title": "Milk And Doughnut Cost Calculator",
-  "description": "Milk And Doughnut Cost Calculator. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 14,
       "raw": "versions/v01/14-MILK-AND-DOUGHNUTS.BAS",
       "listing": "versions/v01/14-MILK-AND-DOUGHNUTS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/14-MILK-AND-DOUGHNUTS.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 S=35\n20 D=30\n25 PRINT \"HOW MANY MILKS,DOUGHNUTS\";\n27 INPUT SN,DN\n30 TC=SN*S+DN*D\n40 TD=TC/100\n50 PRINT USING \"$$##.##\";TD",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,14 +1,14 @@
 {
   "id": "terrain-lander-2",
   "title": "Terrain Lander 2",
-  "description": "Terrain Lander 2. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 BASIC; extensions may be required",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "damaged terrain/lander recording. Exact 208-byte readable prefix matches three variants; remainder damaged",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/01-TERRAIN-LANDER-FRAGMENT-1.ASC",
@@ -45,7 +44,6 @@
       "playable": false,
       "note": "damaged terrain/lander recording. Exact 173-byte readable prefix matches three variants; remainder damaged",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/02-TERRAIN-LANDER-FRAGMENT-2.ASC",
@@ -60,5 +58,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

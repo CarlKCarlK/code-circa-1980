@@ -1,8 +1,8 @@
 {
   "id": "liers-poker",
   "title": "Liers Poker",
-  "description": "Liers Poker. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-LIERS-POKER.BAS",
       "listing": "versions/v01/04-LIERS-POKER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload. 24 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, left-hp1600; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-LIERS-POKER.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 CLS:DC=20:DH=20\n10 PRINT \"LIER'S POKER\"\n15 I=INT((RND(0)[3)*10000+1):Q=RND(0):IFRND(2)=1THENQ=1/Q\n17 R=0:QQ=RND(0)/Q*10000\n20 PRINT:PRINT:PRINT\n30 CN=RND(10000):HN=RND(10000)\n40 PRINT\"YOUR NUMBER IS :\"HN\n50 IF RND(2)=1THEN200\n100 PRINT:PRINT\"TYPE  'CALL' OR YOUR RAISE\"\n110 INPUT H$\n120 IF H$<>\"CALL\"THEN 160\n130 PRINT:PRINT:PRINT\"MY NUMBER IS: \"CN",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

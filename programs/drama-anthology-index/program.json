@@ -1,8 +1,8 @@
 {
   "id": "drama-anthology-index",
   "title": "Drama Anthology Index",
-  "description": "Drama Anthology Index. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC family",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 13,
       "raw": "versions/v01/13-DRAMA-ANTHOLOGY-INDEX.BAS",
       "listing": "versions/v01/13-DRAMA-ANTHOLOGY-INDEX.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/13-DRAMA-ANTHOLOGY-INDEX.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "10 CLEAR 1000\n20 'FORMAT B* BOOK TITLE,A* AUTHOR,PLAY TITLE\n30 CLS\n40 PRINT\"DO YOU WISH TO SEARCH BY\"\n50 PRINT\n60 PRINT\"AUTHOR\"\n70 PRINT\"BOOK TITLE\"\n80 PRINT\"PLAY TITLE\"\n90 PRINT\n100 INPUT\"CHOICE\";C$\n110 PRINT\"WHAT IS \"C$\"'S NAME\";:INPUT N$\n120 L$=LEFT$(C$,1)",
       "controlSource": [
         "460 IF INKEY$=\"\"THEN460  ELSERUN"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,14 +1,14 @@
 {
   "id": "graphics-demo-10-x-10",
   "title": "10 \u00d7 10 Graphics and Maze Experiments",
-  "description": "10 \u00d7 10 Graphics and Maze Experiments. 4 recovered saves.",
-  "kind": "Archive",
+  "description": "4 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v04",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/03-MAZE-GENERATOR.ASC",
@@ -47,7 +46,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v02/04-MAZE-FIRST-PERSON-VARIANT.ASC",
@@ -71,7 +69,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v03/03-MAZE-GENERATOR.ASC",
@@ -94,10 +91,9 @@
       "save": 4,
       "raw": "versions/v04/04-MAZE-FIRST-PERSON-VARIANT.BAS",
       "listing": "versions/v04/04-MAZE-FIRST-PERSON-VARIANT.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v04/04-MAZE-FIRST-PERSON-VARIANT.ASC",
@@ -109,8 +105,12 @@
         }
       ],
       "startupSource": "2 CLS\n3 W=10:L=10\n4 MB=10\n5 DEFINT C:DIM C(1,MB)\n6 PRINT@400,\"\";\n10 T=RND(MB/3):B=RND(MB/3):MP=RND(MB/3):IFINT(MB/9*2)<>0THENLL=RND(MB/9*2):R=RND(MB/9*2)\n15 FORAA=0TOW:SET(AA,0):SET(AA,L):NEXTAA:FORAA=0TOL:SET(0,AA):SET(W,AA):NEXTAA\n20 E=T+B+LL+R+MP\n22 IF E>MB THEN GOSUB 6000:GOTO 20\n25 FOR AA=1TO4:FORBB=0TO1:READ H(BB,AA):NEXTBB,AA\n26 DATA 1,0,-1,0,0,1,0,-1\n30 FOR TC=1TOT:C(0,TC)=RND(W-1):C(1,TC)=1:NEXT TC",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

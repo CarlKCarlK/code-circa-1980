@@ -1,8 +1,8 @@
 {
   "id": "text-editor-tape14b",
   "title": "Text Editor",
-  "description": "Text Editor. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-TEXT-EDITOR.BAS",
       "listing": "versions/v01/05-TEXT-EDITOR.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-TEXT-EDITOR.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "1 CLS\n2 DIM T(100,1)\n3 CLEAR6000\n5 X=0:Y=0:DEFSTRT\n10 A$=INKEY$:IFA$=\"@\"THEN200ELSEPRINTA$;:GOSUB100:GOTO10\n100 IF(LEN(T(X,Y))>56ANDA$=\" \")ORA$=CHR$(13)THEN150ELSET(X,Y)=T(X,Y)+A$\n110 IFLEN(T(X,Y))>61THENT(X,Y)=T(X,Y)+\"-\":GOTO150\n130 GOTO160\n150 X=X+1\n160 RETURN\n200 PRINT:PRINT\"YOU MAY (PRINT) OR (RELINE) OR (CRUISE)\"\n210 INPUT\"WHICH SHALL IT BE (FIRST LETTER)\";A$",
       "controlSource": [
         "10 A$=INKEY$:IFA$=\"@\"THEN200ELSEPRINTA$;:GOSUB100:GOTO10"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

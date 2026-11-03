@@ -1,8 +1,8 @@
 {
   "id": "golf",
   "title": "Golf",
-  "description": "Golf. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-GOLF.BAS",
       "listing": "versions/v01/05-GOLF.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-GOLF.ASC",
@@ -33,8 +32,20 @@
         }
       ],
       "startupSource": "140 PRINT\"WELCOME TO THE COURSE\":PRINT\"IT IS EIGHTEEN HOLES LONG\":Z9=0.7:Z8=2.1:Z=18:INPUT\"HANDICAP\";H:PRINT:PRINT\"WHICH IS YOUR WORST\":INPUT\"0=HOOK, 1=SLICE, 2=POOR DISTANCE, 4=TRAP SHOTS, 5=PUTTING\";D:IFD>5ORD<0ORD=3THEN140\n490 PRINT:PRINT:H1=1:S=S2=S3=S8=P9=0:D1=361:P=4\n730 PRINT:PRINT:PRINT\"YOU ARE ON HOLE\"H1\"DISTANCE\"D1\" YARDS, PAR\"P:IFH1>1THEN790ELSEA1$=\"ADJACENT FAIRWAY.\":A2$=\" ROUGH.\":\n790 PRINT\"ON YOUR LEFT IS \"A1$:PRINT\"AND ON THE RIGHT IS\"A2$:PRINT:INPUT\"WHAT CLUB DO YOU CHOSE\";C:\n840 IFC<1THEN930\n850 IFD1<100THEN910\n860 IFC>19THEN930\n870 IFC>4THEN890\n880 GOTO1060\n890 IFC<13THEN930\n900 GOTO1110\n910 IFC=20THEN960",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Adapted from Golf, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=71"
+  },
+  "upstreamDownloads": [
+    {
+      "path": "upstream/GOLF.ASC",
+      "label": "Published comparison listing",
+      "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/golf.bas"
+    }
+  ]
 }

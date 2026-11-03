@@ -34,6 +34,10 @@
       "unavailableReason": null
     }
   ],
-  "website": false,
-  "websiteRemoval": "Removed at the user\u2019s request on November 2, 2026. Recovered sources and retired web v1 remain archived."
+  "websiteRemoval": "Removed at the user\u2019s request on November 2, 2026. Recovered sources and retired web v1 remain archived.",
+  "websiteRestoration": "Restored November 3, 2026, at the user\u2019s request to include derivative programs with prominent attribution.",
+  "attribution": {
+    "text": "Space-themed adaptation of James A. Storer\u2019s King / Pollution Game. The authorship of the space adaptation is not established.",
+    "url": "https://www.cs.brandeis.edu/~storer/LunarLander/PollutionGame/King-101BasicComputerGames.pdf"
+  }
 }

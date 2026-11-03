@@ -1,8 +1,8 @@
 {
   "id": "tic-tac-toe-experiment",
   "title": "Tic Tac Toe Experiment",
-  "description": "Tic Tac Toe Experiment. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 6,
       "raw": "versions/v01/06-TIC-TAC-TOE-EXPERIMENT.BAS",
       "listing": "versions/v01/06-TIC-TAC-TOE-EXPERIMENT.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/06-TIC-TAC-TOE-EXPERIMENT.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "1 LOOK AT 120\n10 CLS:CLEAR50:DEFINT A-Z:DIMB(2,2),R(600,10):F(0)=600:C$=\".XO\":G=0\n20 G=G+1:T=0:FORX=0TO2:FORY=0TO2:B(X,Y)=0:NEXTY,X:FORI=0TO9:T(I,0)=0:T(I,1)=0:NEXTI\n30 T=T+1:IFT=10THEN****ELSEIFT=1THENR=0:GOTO50ELSERESTORE:R=30000:FORI=1TO4:READSO,SI:N1=0:N2=0:FOROU=SOTO2-SOSTEPSGN(1-SO):FORIN=SITO2-SISTEPSGN(1-SI):N1=B(IN,OU)+N1*3:N2=B(OU,IN)+N2*3:NEXTIN,OU:IFN1<RORN2<RTHENR=N1:IFN2<N1THENR=N2\n31 DATA0,0,0,2,2,0,2,2,0\n50 N2=R:FORY=0TO2:FORX=0TO2:I=Y*3+X:N1=INT(N2/INT(3[(8-I)+.5)):N2=N2-N1*INT(3[(8-I)+.5):B(X,Y)=N1:PRINT@X*4+Y*64,MID$(C$,N1+1,1);:NEXTX,Y\n60 IFP(T,0)=0 THEN P(T,0)=ND+1:I=0:GOTO80ELSEI=D(P(T,0),9):GOTO80\n70 I=D(I,9)\n80 IFI<>0THEN100ELSEND=ND+1:D(ND,10)=R:I=ND:D(P(T,0),9)=ND:D(ND,9)=0:P(T,1)=ND:FORX=0TO2:FORY=0TO2:B=B(X,Y):IFB(X,Y)=0THENB=INT(T/2+.5)ELSEB=-1\n90 D(ND,Y*3+X)=B:NEXTY,X\n100 IFD(I,10)<>RTHEN70ELSEIFF(1)=1THEN200ELSEFORJ=0TO8:IFD(I,0)>0THENR1=R1+D(I,0)\n110 NEXTJ:IFR1=0THENGOSUB400R1=RND(R1):J=-1",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

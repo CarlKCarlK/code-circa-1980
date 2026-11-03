@@ -1,8 +1,8 @@
 {
   "id": "two-player-trail-crash-game",
   "title": "Two Player Trail Crash Game",
-  "description": "Two Player Trail Crash Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.BAS",
       "listing": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "1 CLS:INPUT\"SPEED\";S:S=S+1:S=S*10:FOR PO =1TO PP:S=S-1:CLS\n2 CLS:FORE=0TO127:SET(E,0):SET(E,47):NEXT:FORE=0TO47:SET(0,E):SET(127,E):NEXT\n4 Z2=1\n5 A1=20:A2=30:B1=50:B2=60\n6 GOTO18\n7 POKE16553,255\n10 FORC=1TOS:NEXT:A$=INKEY$:IFA$=\"\"THEN25\n18 IF(VAL(A$)>5)AND(VAL(A$)<10)THEN750\n20 FORX=1TOVAL(A$):READZ,Y:NEXTX\n25 A=A1:B=B1:GOSUB110\n26 B1=B:A1=A:GOSUB150\n28 GOTO10",
       "controlSource": [
         "10 FORC=1TOS:NEXT:A$=INKEY$:IFA$=\"\"THEN25"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

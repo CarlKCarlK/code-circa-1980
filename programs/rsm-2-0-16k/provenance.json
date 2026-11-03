@@ -81,5 +81,11 @@
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
   "dating": {
     "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "RSM 2.0, 16K: Small System Software, copyright 1978. This is a third-party machine-code utility; the displayed disassembly is derived."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
   }
 }

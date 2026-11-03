@@ -1,8 +1,8 @@
 {
   "id": "modular-arithmetic-chart",
   "title": "Modular Arithmetic Chart",
-  "description": "Modular Arithmetic Chart. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC family",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 1,
       "raw": "versions/v01/01-MODULAR-ARITHMETIC-CHART.BAS",
       "listing": "versions/v01/01-MODULAR-ARITHMETIC-CHART.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/01-MODULAR-ARITHMETIC-CHART.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 CLS\n10 INPUT\"MOD\";M\n15 INPUT \"+ OR * \";F$\n18 CLS:PRINT\"CHART FOR MOD\"M\"AND THE OPERATION OF\";:IFF$=\"+\"THENPRINT\" ADDITION.\";ELSEPRINT\" MULTIPLCATION.\";\n20 FORX=0TOM-1\n30 FORY=0TOM-1\n40 IF F$=\"+\"THENA=X+YELSE A=X*Y\n50 B=INT(((A/M)-INT(A/M))*M+.5)\n60 PRINT@Y*4+X*64+64,B;\n70 NEXTY\n80 PRINT\n90 NEXTX",
       "controlSource": [
         "100 IFINKEY$<>\"\"THENENDELSE100"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

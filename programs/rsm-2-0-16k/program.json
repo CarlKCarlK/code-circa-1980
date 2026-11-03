@@ -1,8 +1,8 @@
 {
   "id": "rsm-2-0-16k",
   "title": "Rsm 2.0 16K",
-  "description": "Rsm 2.0 16K. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I Z80",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated captured payload; runtime untested. Exact independent left/right bytes; 19 block checksums valid; full framing and transfer address; exact EOF",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/03-RSM-2.0-16K-MEMORY.BIN",
@@ -48,5 +47,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "RSM 2.0, 16K: Small System Software, copyright 1978. This is a third-party machine-code utility; the displayed disassembly is derived."
+  }
 }

@@ -130,5 +130,22 @@
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
   "dating": {
     "caution": "Source notices are not save dates. No inferred historical dates are assigned."
-  }
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Adapted from 3-D Plot, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+      "url": "https://www.atariarchives.org/basicgames/showpage.php?page=167"
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "upstream": [
+    {
+      "file": "docs/research/published-basic/3dplot.bas",
+      "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/3dplot.bas",
+      "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=167",
+      "sha256": "aa404552261c0ad1d5ec8c62be1054a66c4921e203066fb33d3b83e51ab0edbc",
+      "bytes": 386,
+      "note": "Complete electronic transcription from the Vintage BASIC mirror, preserved unchanged. Matching source statements establish the comparison; exact parent edition and print transcription are not verified. Not a recovered cassette or an execution-tested program."
+    }
+  ]
 }

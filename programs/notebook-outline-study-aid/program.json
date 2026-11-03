@@ -1,8 +1,8 @@
 {
   "id": "notebook-outline-study-aid",
   "title": "Notebook Outline Study Aid",
-  "description": "Notebook Outline Study Aid. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 1,
       "raw": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.BAS",
       "listing": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 POKE16553,255\n7 CLEAR300\n10 CLS:PRINT:PRINT:PRINT\"                                  NOTEBOOK\"\n20 PRINT:PRINT:    PRINT\"                        A  C.A.I.  USING AN OUTLINE\":PRINT:PRINT:PRINT:PRINT\"PRESS <SPACE>\"\n30 A$=INKEY$:IFA$=\"\"THEN30ELSECLS\n40 INPUT\"HOW MANY LEVELS WOULD YOU LIKE TO PENITRATE\";L\n50 INPUT\"WHERE SHOULD I START AND WHERE SHOULD I END (LINE,LINE) TYPE 0,0 IF ALL.\";S,E\n60 CLS:RESTORE\n65 READO$:IFO$=\"DONE\"THEN999ELSEPRINTTAB(25) O$:PRINT\n70 READ O$:IFO$=\"DONE\"THEN999\n80 IFLEN(STR$(VAL(O$)))<L+3 AND((VAL(O$)<E AND VAL(O$)>=S)ORE=0)THEN90ELSE300\n90 PRINTTAB(LEN(STR$(VAL(O$)))*2) O$",
       "controlSource": [
         "30 A$=INKEY$:IFA$=\"\"THEN30ELSECLS"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

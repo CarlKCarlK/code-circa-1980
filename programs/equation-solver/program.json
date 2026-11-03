@@ -1,8 +1,8 @@
 {
   "id": "equation-solver",
   "title": "Equation Solver",
-  "description": "Equation Solver. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 BASIC; extensions may be required",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 12,
       "raw": "versions/v01/12-EQUATION-SOLVER.BAS",
       "listing": "versions/v01/12-EQUATION-SOLVER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/12-EQUATION-SOLVER.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "100 REM EQUATION SOLVER\n200 S=1:SR=100:L=2:LR=-100\n210 T=S/2+L/2\n220 X=16*T[2\n230 X1=16*(T-1)[2+60*(T-1)\n240 D=X-X1\n250 IF D>0 THEN S=T:SR=DELSE L=T:LR=D\n280 PRINT 16*T[2\n285 IF D=0 THEN STOP\n290 GOTO 210",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "market",
   "title": "Market",
-  "description": "Market. 4 recovered saves.",
-  "kind": "Archive",
+  "description": "4 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-MARKET.BAS",
       "listing": "versions/v01/03-MARKET.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-MARKET.ASC",
@@ -35,7 +34,8 @@
       "startupSource": "10 CLEAR300\n50 CLS:PRINT:PRINT:PRINT\"                       WELCOME TO MARKET\"\n60 PRINT:PRINT\"           THIS A SIMULATION BEWEEN TWO COMPANIES\"\n70 PRINT:PRINT:PRINT:PRINT\n130 DIMC(2),I(2),T(2),A(2),L(2),D(2),P(2),V(2),W(2),B(2),E(5)\n135 PRINT\"DO YOU WHAT INSTRUCTIONS\";\n140 INPUTH$\n145 READK2,N,K,K3,C(1),C(2),I(1),I(2),F,U,R,G1,G2,G3,M1,K4\n150 Q=0\n151 W2=0\n152 W4=0\n153 W3=0",
       "controlSource": [
         "196 A$=INKEY$:IFA$=\"\"THEN196ELSEPRINT"
-      ]
+      ],
+      "slug": "basic"
     },
     {
       "id": "v02",
@@ -47,7 +47,6 @@
       "playable": false,
       "note": "damaged MARKET recording. 109-line exact 2375-byte prefix through 690; matching earlier save and three raw decodes; remainder structurally damaged",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/04-MARKET-DAMAGED-RECORDING.ASC",
@@ -73,7 +72,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested; raw trailer preserved after BASIC end",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/07-MARKET-V2.ASC",
@@ -99,7 +97,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested; raw trailer preserved after BASIC end",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v04/08-MARKET-V2-SAVE2.ASC",
@@ -116,5 +113,8 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

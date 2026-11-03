@@ -1,14 +1,14 @@
 {
   "id": "how-to-interpreter",
   "title": "How To Interpreter",
-  "description": "How To Interpreter. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/04-HOW-TO-INTERPRETER-SAVE01.ASC",
@@ -42,10 +41,9 @@
       "save": 5,
       "raw": "versions/v02/05-HOW-TO-INTERPRETER-SAVE02.BAS",
       "listing": "versions/v02/05-HOW-TO-INTERPRETER-SAVE02.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/05-HOW-TO-INTERPRETER-SAVE02.ASC",
@@ -57,8 +55,12 @@
         }
       ],
       "startupSource": "5 CLEAR 5000:CLS\n10 IN=0:RN=0:CN=0:LN=0:MN=1:VN=0\n15 TC$=\"PLEASE CONTINUE EXPLAINING \"\n20 DIM P$(70),MT$(20),VT$(40)\n100 PRINT\"WHAT ARE YOU GOING TO TELL ME HOW TO DO?\":PRINT\"HOW TO \";:GOSUB 950:T=0:MT$(0)=\"NULL1\"+T$:PRINT:T1=1:T$(0)=T$:GOTO 220\n150 PRINT CHR$(94);:GOSUB 950\n160 IF T$=\"THAT'S ALL\"OR T$=\"THATS ALL\" OR T$=\"THAT IS ALL\" THEN   200 ELSE IF LEFT$(T$,4)=\"MAKE\"THEN 300 ELSE IF LEFT$(T$,7)=\"COMPUTE\" THEN 400 ELSE IF LEFT$(T$,3)=\"NOW\"THEN500 ELSE IF LEFT$(T$,2)=\"IF\"THEN 600 ELSE IF LEFT$(T$,5)=\"WHILE\" THEN 700\n170 IF LEFT$(T$,4)=\"LIST\"THEN 800 ELSE IF LEFT$(T$,6)=\"DELETE\" THEN 900ELSEIFLEFT$(T$,5)=\"ERROR\"THEN 1300\n180 PRINT:PRINT\"I DON'T UNDERSTAND, PLEASE SAY:\nTHAT'S ALL    DELETE    LIST    ERROR\nMAKE   NOW   COMPUTE    WHILE-THEN   IF-THEN-ELSE\":PRINT:GOTO150\n200 PRINT:PRINT\"OK\":PRINT",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

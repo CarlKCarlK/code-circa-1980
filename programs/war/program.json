@@ -1,14 +1,14 @@
 {
   "id": "war",
   "title": "War",
-  "description": "War. 3 recovered saves.",
-  "kind": "Archive",
+  "description": "3 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "damaged; runtime untested. 996-byte checksum-backed ordered prefix; 29 lines through 330; exact left/right agreement; raw TAP mapping retained; no synthetic EOF",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
@@ -53,7 +52,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. PC-121x header and 147 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/06-WAR-SAVE02.ASC",
@@ -81,7 +79,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. PC-121x header and 156 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v03/07-WAR-SAVE03.ASC",
@@ -100,5 +97,10 @@
       "controlSource": []
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

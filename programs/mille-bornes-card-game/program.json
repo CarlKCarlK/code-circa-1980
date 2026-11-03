@@ -1,8 +1,8 @@
 {
   "id": "mille-bornes-card-game",
   "title": "Mille Bornes Card Game",
-  "description": "Mille Bornes Card Game. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-MILLE-BORNES-CARD-GAME.BAS",
       "listing": "versions/v01/05-MILLE-BORNES-CARD-GAME.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-MILLE-BORNES-CARD-GAME.ASC",
@@ -38,8 +37,12 @@
         "1140 IF INKEY$<>\"D\" THEN 1140 ",
         "1590 IF INKEY$=\"\" THEN 1590 ",
         "1720 B$=INKEY$:IF B$=\"B\" THEN PRINT:GOTO 30   ELSE 1720 "
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Based on the Mille Bornes card game. The source of the program code and the extent of any borrowed implementation have not been established."
+  }
 }

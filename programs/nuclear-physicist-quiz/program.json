@@ -1,8 +1,8 @@
 {
   "id": "nuclear-physicist-quiz",
   "title": "Nuclear Physicist Quiz",
-  "description": "Nuclear Physicist Quiz. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 11,
       "raw": "versions/v01/11-NUCLEAR-PHYSICIST-QUIZ.BAS",
       "listing": "versions/v01/11-NUCLEAR-PHYSICIST-QUIZ.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/11-NUCLEAR-PHYSICIST-QUIZ.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 CLS\n20 PRINT:PRINT:PRINT\"              FAMOUS NUCLAR PHYSIST QUIZ\"\n30 PRINT:PRINT:PRINT:PRINT:PRINT:PRINT:INPUT\"ARE YOU READY TO START\";A$\n35 CLS\n40 PRINT\"THOMSON\",\"PLANCK\",\"EINSTEIN\",\"BECQUEREL\",\"CURIE\",\"RUTHERFORD\",\"BOHR\",\"JOLIET\",\"HAHN-STROSSMANN      \",\"WEIZADER-BOTHE\"\n50 R=RND(15)\n60 RESTORE:FORX=1TOR:READQ$,A$:NEXT\n70 PRINT:PRINT:PRINT:PRINT\"WHO \";Q$:INPUTE$\n80 IFE$=A$THENPRINT\"VERY GOOD\"ELSEPRINT\"WRONG, THE CORRECT ANSWER IS\":PRINTA$\n90 PRINT:PRINT\n100 INPUT\"ARE YOR READY TO START\";A$\n110 GOTO35",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

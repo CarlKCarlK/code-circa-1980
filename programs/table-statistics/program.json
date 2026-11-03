@@ -1,8 +1,8 @@
 {
   "id": "table-statistics",
   "title": "Table Statistics",
-  "description": "Table Statistics. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 8,
       "raw": "versions/v01/08-TABLE-STATISTICS.BAS",
       "listing": "versions/v01/08-TABLE-STATISTICS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/08-TABLE-STATISTICS.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10     DIM A(5,6)\n20     DIM R(5)\n30     DIM S(6)\n40     FOR I=1TO5\n50     PRINT \"COLUMN \";I\n55     FOR J=1TO6\n60     PRINT \"INPUT NUMBER\";J\n70 A(I,J)=RND(10000):GOTO85\n80     INPUT A(I,J)\n85 REM\n90     NEXT J\n100    NEXT I",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

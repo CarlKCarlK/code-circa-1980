@@ -1,8 +1,8 @@
 {
   "id": "factoring-polynomials",
   "title": "Factoring Polynomials",
-  "description": "Factoring Polynomials. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 22,
       "raw": "versions/v01/22-FACTORING-POLYNOMIALS.BAS",
       "listing": "versions/v01/22-FACTORING-POLYNOMIALS.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/22-FACTORING-POLYNOMIALS.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "10 ' FRACTORING POLYNOMIALS          BY C.M. KADIE\n90 PRINT:PRINT\n100 INPUT\"WHAT ARE THE VALUES OF A,B,&C IN AX[2 + BX + C\";A,B,C\n110 FORA1=ATO-(A)STEP-1*SGN(A)\n115 IFA1=0THENNEXT\n120 A2=A/A1\n130 IFINT(A2)<>A2THENNEXT\n140 FORC1=-(C)TOCSTEPSGN(C)\n145 IFC1=0THEN NEXT\n150 C2=C/C1\n160 IFC2<>INT(C2)THEN190\n180 IF B =(A1*C2)+(A2*C1) THEN250",
       "controlSource": [
         "280 A$=INKEY$:IFA$=\"\"THEN280ELSE10"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

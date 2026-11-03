@@ -1,8 +1,8 @@
 {
   "id": "scheduler",
   "title": "Scheduler",
-  "description": "Scheduler. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-SCHEDULER.BAS",
       "listing": "versions/v01/05-SCHEDULER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-SCHEDULER.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 DEFINT  A-Z\n10 CLS\n20 PRINT\"SCHEDULER\"\n30 N=0\n40 DIM PT(40,40),L(40)\n100  IF N<>0 THEN INPUT\"SAME JOBS\";A$:IFA$=\"N\"  OR A$=\"NO\"THEN200\n110  JB=RND(20):JB=10\n111  FOR JJ=1TOJB:FORII=1TOJB:PT(JJ,II)=0:NEXTII:PT(JJ,JJ)=1:NEXTJJ\n120  FOR J=1TOJB:L(J)=1+RND(5)*(-LOG(RND(0))):NEXTJ\n130  CN=RND(JB):CN=20\n140  FOR C=1TOCN\n150    LO=RND(JB):HI=RND(JB)",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

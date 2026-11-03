@@ -1,8 +1,8 @@
 {
   "id": "grid-marker-demo",
   "title": "Grid Marker Demo",
-  "description": "Grid Marker Demo. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-GRID-MARKER-DEMO.BAS",
       "listing": "versions/v01/04-GRID-MARKER-DEMO.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-GRID-MARKER-DEMO.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "10 C$(0)=\".\":C$(1)=\"O\":C$(2)=\"X\"\n20 DIM L(15,15)\n30 CLS:GOSUB1000\n40 PRINT@R1*64+C1*4,CHR$(143);:PRINT@R1*64+C1*4,C$(L(R1,C1));\n50 A$=INKEY$:IFA$=\"\"THEN60 ELSEIFA$=\"1\"THEN R1=R1-1ELSEIFA$=\"2\"THENR1=R1+1ELSEIFA$=\"3\"THENC1=C1-1ELSEIFA$=\"4\"THENC1=C1+1ELSEIFA$=\" \"THEN 70ELSEIFA$=\"5\"THENR1=R1-1:C1=C1+1ELSEIFA$=\"6\"THENR1=R1+1:C1=C1-1\n55 IF R1=-1THENR1=15ELSEIFR1=16THENR1=0ELSEIFC1=-1THENC1=15ELSEIFC1=16THENC1=0ELSEGOTO60\n56 GOTO 55\n60 GOTO 40\n70 IF L(R1,C1)<>0 THEN 40 ELSE L(R1,C1)=2:PRINT@R1*64+C1*4,C$(L(R1,C1));\n80 GOTO 40\n1000 FOR R=0TO15:FORC=0TO15:PRINT@ R*64+C*4,C$(L(R,C));:NEXTC,R:RETURN",
       "controlSource": [
         "50 A$=INKEY$:IFA$=\"\"THEN60 ELSEIFA$=\"1\"THEN R1=R1-1ELSEIFA$=\"2\"THENR1=R1+1ELSEIFA$=\"3\"THENC1=C1-1ELSEIFA$=\"4\"THENC1=C1+1ELSEIFA$=\" \"THEN 70ELSEIFA$=\"5\"THENR1=R1-1:C1=C1+1ELSEIFA$=\"6\"THENR1=R1+1:C1=C1-1"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

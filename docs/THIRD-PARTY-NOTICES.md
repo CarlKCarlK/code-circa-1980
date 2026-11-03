@@ -101,3 +101,26 @@ The early JAB maze forms derive from Jack Hauber’s Amazing in BASIC Computer G
 Jim Storer’s 1969 Lunar Lander FOCAL listing is preserved from his own archive’s transcription credited to Matthew House. The published BASIC Lunar electronic transcription retains its Creative Computing heading and source text. Source URLs, exact file hashes, and transcription limits are in programs/ll/upstream/. These historical comparison sources have their own authorship; the collection’s general license does not assign new rights to them. TUTAC’s teaching-machine design is credited to Theodore G. Scott’s Basic Computer Programming; no modern Python simulator is incorporated or labeled a historical ancestor.
 
 Visible More-page credits additionally identify Hauber’s Amazing in Ricky Rat’s maze generation, Conway’s LIFE rules, Lichello’s investing methods, Gardner’s cited worm discussion, the book-code notice in Cipher, and John Hartman’s joint authorship for John’s Circle. These credits distinguish code, rules/design, inspiration, and collaboration; they do not assert newly discovered published code where none was identified.
+
+## Comprehensive recovered-program archive
+
+The More archive includes third-party listings and adaptations, with visible
+credits and source notices preserved per program. Unknown authorship is labeled
+explicitly. The collection’s MIT/Apache license covers Carl Kadie’s code and does
+not replace rights in published listings or unidentified third-party material.
+
+Complete electronic BASIC Computer Games comparison transcriptions from the
+GReaperEx/bcg mirror of Vintage BASIC are retained in docs/research/published-basic/
+and selected programs/upstream/. Their original bytes, Creative Computing
+headings, retrieval URLs, and hashes are preserved; exact print transcription
+and intermediate source editions are unverified. New canonical histories begin
+with the relevant comparison before the recovered saves. Poker and Space Colony
+append a comparison and canonical replay, preserving all existing history.
+
+SARGON II is credited to Dan and Kathe Spracklen, copyright 1979 Hayden. RSM 2.0
+is credited to Small System Software, copyright 1978. Starfleet Orion retains
+Automated Simulations’ 1979 credit. These are third-party programs, not claimed
+as Carl Kadie originals. SARGON/RSM static disassembly is a recovery derivative,
+not historical assembly source. Quest retains Roger Chaffee’s BYTE provenance;
+D&D reference material and the Mille Bornes/Monopoly designs are credited
+separately from the uncertain origin of their program implementations.

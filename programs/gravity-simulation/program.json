@@ -1,14 +1,14 @@
 {
   "id": "gravity-simulation",
   "title": "Gravity Simulation",
-  "description": "Gravity Simulation. 4 recovered saves.",
-  "kind": "Archive",
+  "description": "4 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v04",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/12-GRAVITY-SIMULATION-SAVE01.ASC",
@@ -47,7 +46,6 @@
       "playable": false,
       "note": "damaged; valid prefix only; runtime untested. Damaged; untouched valid prefix [0,10); 1 lines; pointer base 17125; cross-channel confirmed [0,10); no synthetic end marker",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-PREFIX.ASC",
@@ -79,7 +77,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v03/14-GRAVITY-SIMULATION-SAVE03.ASC",
@@ -102,10 +99,9 @@
       "save": 15,
       "raw": "versions/v04/15-GRAVITY-SIMULATION-SAVE04.BAS",
       "listing": "versions/v04/15-GRAVITY-SIMULATION-SAVE04.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v04/15-GRAVITY-SIMULATION-SAVE04.ASC",
@@ -119,8 +115,12 @@
       "startupSource": "5 CLS\n6 Z=1-1:T=5+5\n7 PX=-.5:PY=-.5\n11 INPUT \"HOW MANY OBJECTS\";N\n21 DIM M(N),A(N,2),S(N+1,2),V(N,2),LP(N),LQ(N)\n31 TIM=1-1\n41 G=6.67E-11\n51 FOR I=1 TO N\n61 PRINT\"MASS OF NUMBER\"I;\n71 INPUT VL$:GOSUB 1111:M(I)=VL\n81 INPUT\"POSITION (X,Y)\";VL$,TP$\n91 GOSUB 1111:S(I,1)=VL:VL$=TP$:GOSUB 1111:S(I,2)=VL",
       "controlSource": [
         "611 A$=INKEY$:IFA$=\"\"THENRETURNELSEIFA$=\"[\"THENSX=SX/2:PX=PX*2:SY=SY/2:PY=PY*2:CLSELSEIFA$=CHR$(T)THENSX=SX*2:PX=PX/2:SY=SY*2:PY=PY/2:CLSELSEIFA$=CHR$(8)THENDT=DT/2ELSEIFA$=CHR$(9)THENDT=DT+DTELSEIFVAL(A$)>=1THENCLS:RF=VAL(A$):PY=-.5:PX=-.5:IFRF>NTHENRF="
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

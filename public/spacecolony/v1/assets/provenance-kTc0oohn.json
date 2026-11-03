@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape21b",
+  "save": 13,
+  "archive_raw": "tapes/recovered/tape21b/best/13-JOHNS-CIRCLE.BAS",
+  "archive_listing": "tapes/recovered/tape21b/best/13-JOHNS-CIRCLE.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/13-JOHNS-CIRCLE.BAS",
+      "archive_path": "tapes/recovered/tape21b/best/13-JOHNS-CIRCLE.BAS",
+      "bytes": 198,
+      "sha256": "e0d6110dbf69b643d68789071e6d96d4d68635dd9c7c1b409e919d0d5598a4bf"
+    },
+    {
+      "path": "versions/v01/13-JOHNS-CIRCLE.ASC",
+      "archive_path": "tapes/recovered/tape21b/best/13-JOHNS-CIRCLE.ASC",
+      "bytes": 217,
+      "sha256": "7246b92c4bd976dd43e6b09045954568ec52750a49f75ca2edce117617188b11"
+    }
+  ],
+  "recovery_item": {
+    "lines": 10,
+    "last": 140,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "e0d6110dbf69b643d68789071e6d96d4d68635dd9c7c1b409e919d0d5598a4bf"
+  },
+  "inventory_row": {
+    "tape": "21",
+    "side": "b",
+    "order": "13",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "JOHNS CIRCLE",
+    "capture": "tape21b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "411.933",
+    "recovered_bytes": "198",
+    "source_file": "tapes/recovered/tape21b/best/13-JOHNS-CIRCLE.ASC",
+    "wav": "tapes/tape21b.wav",
+    "folder": "tapes/recovered/tape21b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
+  "execution_tested": false
+}

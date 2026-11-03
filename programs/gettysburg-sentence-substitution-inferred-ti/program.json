@@ -1,8 +1,8 @@
 {
   "id": "gettysburg-sentence-substitution-inferred-ti",
   "title": "Gettysburg Sentence Substitution",
-  "description": "Gettysburg Sentence Substitution. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 12,
       "raw": "versions/v01/12-GETTYSBURG-SENTENCE.BAS",
       "listing": "versions/v01/12-GETTYSBURG-SENTENCE.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/12-GETTYSBURG-SENTENCE.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 INPUT A$,B$,C$,D$\n50 PRINT\"FOUR \" A$ \" AND \" B$ \" YEARS AGO, OUR \" C$ \" SET FORTH A NEW \" D$ \".\"\n60 PRINT : PRINT\n70 GOTO 5",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

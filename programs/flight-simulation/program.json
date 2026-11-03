@@ -1,8 +1,8 @@
 {
   "id": "flight-simulation",
   "title": "Flight Simulation",
-  "description": "Flight Simulation. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-FLIGHT-SIMULATION.BAS",
       "listing": "versions/v01/05-FLIGHT-SIMULATION.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-FLIGHT-SIMULATION.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "30 DIM D(100),V(100)\n40 PI=3.14159:T=1:E=5\n50 CLS:FORI=13TO45:SET(0,I):SET(4,I):NEXTI:FOR I=0TO4:SET(I,13):SET(I,45):NEXTI:FOR I=1000TO10000STEP1000:PRINT@(10000-I)*.0641+3+384-64,I;:NEXTI\n60 PRINT@55+64,\"N\";:PRINT@55+128+64,\"S\";:PRINT@51+64+64,\"W\";:PRINT@59+64+64,\"E\";:FORI=99TO121:SET(I,12):SET(I,2):NEXTI:FORI=2TO12:SET(99,I):SET(121,I):NEXTI\n70 PRINT@18+384,\"SAND\";:PRINT@18+448,\"HE  \";:PRINT@18+640,\"tIME\";:PRINT@45+256+64,\"AIR SPEED\";:PRINT@640+18,\"V SPD\";:PRINT@704+18,\"V ACL\";:PRINT@768+18,\"ALTD\";\n100 FOR A=1TO100\n110 D(A)=RND(0)*2*PI\n115 V(A)=ABS(ABS(RND(0)-RND(0))-ABS(RND(0)-RND(0)))*50\n120 NEXTA\n130 X=0:Y=0\n140 H=2000:S=1000:G=1000\n200 A$=INKEY$:IFA$=\"\"THEN210ELSEIFA$=\"[\"THEN SS=-1 ELSEIFA$=CHR$(10) THEN HH=-1ELSEIFA$=\" \"THENSS=0:HH=0ELSEIFVAL(A$)<>0THEN E=VAL(A$):PRINT@832+18,\"DIS R   \";E;",
       "controlSource": [
         "200 A$=INKEY$:IFA$=\"\"THEN210ELSEIFA$=\"[\"THEN SS=-1 ELSEIFA$=CHR$(10) THEN HH=-1ELSEIFA$=\" \"THENSS=0:HH=0ELSEIFVAL(A$)<>0THEN E=VAL(A$):PRINT@832+18,\"DIS R   \";E;"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

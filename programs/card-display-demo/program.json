@@ -1,14 +1,14 @@
 {
   "id": "card-display-demo",
   "title": "Card Display Demo",
-  "description": "Card Display Demo. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/02-CARD-DISPLAY-DEMO.ASC",
@@ -42,10 +41,9 @@
       "save": 3,
       "raw": "versions/v02/03-CARD-DISPLAY-DEMO-V2.BAS",
       "listing": "versions/v02/03-CARD-DISPLAY-DEMO-V2.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/03-CARD-DISPLAY-DEMO-V2.ASC",
@@ -57,8 +55,12 @@
         }
       ],
       "startupSource": "1 CLS\n5 DIM D(52)\n10 C$(1)=CHR$(140)+CHR$(191)+CHR$(157)+CHR$(132):C$(5)=\" \"+CHR$(138)+\"  \"\n20 C$(2)=CHR$(160)+CHR$(190)+CHR$(180):C$(6)=\" \"+CHR$(139)+CHR$(129)\n30 C$(3)=CHR$(191)+CHR$(190)+CHR$(149):C$(7)=CHR$(130)+CHR$(135)+\" \"\n40 C$(4)=C$(2):C$(8)=CHR$(130)+CHR$(138)+CHR$(130)\n1000 S=INT(D/13)+1:V=D-(S-1)*13+1:IFV=1THENP$=\"ACE\"ELSEIFV<11THENP$=STR$(V)ELSEIFV=11THENP$=\"JACK\"ELSEIFV=12THENP$=\"QUEEN\"ELSEIFV=13THENP$=\"KING\"\n1005 PRINT@400,D;\n1010 PRINT@L,CHR$(156);STRING$(1+LEN(C$(S))+LEN(P$),CHR$(140));CHR$(172);:PRINT@L+64,CHR$(149);P$;\" \"C$(S);CHR$(170);:PRINT@L+128,CHR$(149);P$;\" \"C$(S+4);CHR$(170);:PRINT@L+192,STRING$(3+LEN(C$(S))+LEN(P$),CHR$(131));\n2000 RETURN\n10000 FORX=121TO191:PRINTX;CHR$(X),,,:NEXT",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

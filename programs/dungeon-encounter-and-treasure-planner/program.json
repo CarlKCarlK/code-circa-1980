@@ -1,8 +1,8 @@
 {
   "id": "dungeon-encounter-and-treasure-planner",
   "title": "Dungeon Encounter And Treasure Planner",
-  "description": "Dungeon Encounter And Treasure Planner. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 21,
       "raw": "versions/v01/21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.BAS",
       "listing": "versions/v01/21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "2 CLEAR 300\n3 DIM R(30)\n5 DIM D$(2,60)\n10 READ D$\n20 IF D$=\"TREASURES\"THEN 100\n30 C=C+1:D$(1,C)=STR$(C):D$(2,C)=D$\n40 GOTO 10\n100 B=ASC(\"A\")-1\n110 READ D$:IFD$=\"DONE\"THEN 200\n120 C=C+1:B=B+1:IF B>ASC(\"A\")+25 THEN H=-3:GOTO 100\n130 D$(1,C)=CHR$(B):IFH=-3THEN D$(1,C)=D$(1,C)+CHR$(B)\n140 D$(2,C)=D$",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Uses Dungeons & Dragons rules and reference material. The precise rulebook editions and origins of the program code have not been established."
+  }
 }

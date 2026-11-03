@@ -1,14 +1,14 @@
 {
   "id": "cryptogram",
   "title": "Cryptogram",
-  "description": "Cryptogram. 2 recovered saves.",
-  "kind": "Archive",
+  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v01/07-CRYPTOGRAM-V1.ASC",
@@ -42,10 +41,9 @@
       "save": 8,
       "raw": "versions/v02/08-CRYPTOGRAM-V2.BAS",
       "listing": "versions/v02/08-CRYPTOGRAM-V2.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v02/08-CRYPTOGRAM-V2.ASC",
@@ -57,8 +55,12 @@
         }
       ],
       "startupSource": "5 CLEAR 5000:CLS:J9=9\n7 DIM E(26),F(26):READ C$:FORI=1TO26:E(I)=ASC( MID$(C$,I,1) )-64 :F(I)=E(I):NEXT I\n10 READ C$\n15 DIM C(26),D(26)\n20 FOR T=ASC(\"A\") TO ASC(\"Z\")\n25 Z$=\" \"+CHR$(T)+\" \"\n30 FOR I=1TOLEN(C$)\n40 IF MID$(C$,I,1)=CHR$(T) THEN C(T-64)=C(T-64)+1\n45 PRINT@I,MID$(C$,I,1);Z$;\n50 NEXT I\n65 D(T-64)=T-64:PRINTC(T-64);\n70 NEXT T",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

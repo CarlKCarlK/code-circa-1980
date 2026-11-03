@@ -1,8 +1,8 @@
 {
   "id": "formula-lookup",
   "title": "Formula Lookup",
-  "description": "Formula Lookup. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 BASIC; extended features",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 5,
       "raw": "versions/v01/05-FORMULA-LOOKUP.BAS",
       "listing": "versions/v01/05-FORMULA-LOOKUP.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. 18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/05-FORMULA-LOOKUP.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "90 POKE16553,255\n100 LINE INPUT\"WHAT SHOULD I SEARCH FOR ?\";S$\n110 READF$:IFF$=\"DONE\"THEN1000ELSEIF INSTR(F$,S$)<>0THENPRINTF$\n120 GOTO110\n1000 PRINT\"<<<<DONE>>>>\":RESTORE:PRINT:GOTO100\n10010 DATA\"DENSITY=MASS/VOLUME\",\"PRESSURE=FORCE/AREA\",\"PRESSURE=DENSITY*HEIGHT(OR DEPTH)\",\"FORCE1/FORCE2=AREA1/AREA2\",\"WORK=FORCE*DISTANCE\",\"FORCE1*DISTANCE1=FORCE2=DISTANCE2\",\"KINETIC ENERGY=1/2*MASS*VELOCITY[2\"\n10020 DATA\"PRESSURE1*VOLUME1/TEMPURTURE2=PRESSURE2*VOLUME2/TEMPERTURE1\",\"PRESSURE*VOLUME=NUMBER OF MOLES*UNIVERSAL GAS CONSTANT*TEMPERTURE\"\n10030 DATA\"COEFFICIENT OF FRICTION=FORCE OF FRICTION/NORMAL FORCE TO SURFACE\",\"AVERAGE VELOCITY=DISTANCE/TIME\",\"ACCELERATION=FINAL VELOCITY-INITIAL VELOCITY) /TIME\",\"FORCE=MASS*ACCELERATION\",\"PENDULUM: PERIOD=2*PI*SQR(LENGTH/ACCELERATION OF GRAVITY)\"\n10040 DATA\"ENERGY=MASS*VELOCITY OF LIGHT[2\",\"SINE=OPPOSITE/HYPOTHENUSE\",\"COSINE=ADJACENT/HYPOTHENUSE\",\"TANGENT=OPPOSITE/ADJACENT\"\n10050 DATA\"SPECIFIC GRAVITY OF H2O(WATER)=1.00\",\"CM[3=1 ML\",\"1 L OF AIR(S.T.P.)=1.293 G\",\"1034G/CM[3=1ATM=76CM=760TORR\",\"UNIVERSAL GAS CONSTANT=0.0821 L ATM MOLE[-1 K[-1\",\"0 CENTIGRADE (CELUSES)=273 KELVIN\"\n10060 DATA\"ENERGY IS NEITHER CREATED OR DESTROYED\",\"POTENTIAL ENERGY=MASS*ACCELEERATION OF GRAVITY * VERTICAL DISTANCE(HEIGHT)\",\"POWER=WORK/TIME\",\"1 HP(HORSE POWER)=746 WATTS\",\"WORK=COSINE(A)*FORCE*DISTANCE\",\"WORK=KINETIC ENERGY\"\n10070 DATA\"1 HORSEPOWER(HP)=550 FOOT*POUNDS/SECOND(FT-LB/SEC)\",\"IDEAL MECHANICAL ADVANTAGE=DISTANCE FORCE MOVES/DISTANCE LOADMOVES\",\"ACTUAL MACHANICAL ADVANTAGE=FORCE EXERTED BY MACHINE/FORCE USED TO OPERATE MACHINE\"",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,14 +1,14 @@
 {
   "id": "fraction-worksheets-later",
   "title": "Fraction Worksheets",
-  "description": "Fraction Worksheets. 4 recovered saves.",
-  "kind": "Archive",
+  "description": "4 captured saves. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC family",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v04",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "damaged; verified prefix only; runtime untested. Conflicting bytes in line 177 despite valid record structure; verified cross-channel prefix [0,339), 18 lines through 175; no synthetic end marker; full listing uncertain",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.ASC",
@@ -53,7 +52,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v02/03-FRACTION-WORKSHEETS-REVISED-SAVE.ASC",
@@ -77,7 +75,6 @@
       "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
       "exports": [
         {
           "path": "versions/v03/04-FRACTION-WORKSHEETS-LATER-SAVE01.ASC",
@@ -98,10 +95,9 @@
       "save": 5,
       "raw": "versions/v04/05-FRACTION-WORKSHEETS-LATER-SAVE02.BAS",
       "listing": "versions/v04/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v04/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
@@ -113,8 +109,12 @@
         }
       ],
       "startupSource": "20 CLEAR1000\n30 INPUT\"HOW MANY SETS OF PROBLEMS\";SP\n40 INPUT\"AND HOW MANY PROBLEMS PER SET\";PS\n50 CLS:'CALL PRINTER\n60 FOR SE=1TOSP\n65 PRINT\"PROBLEM SET\";SE:PRINT:PRINT\n70 FOR PR=1TOPS\n75 PRINT\"(\"PR\")  FIND :\"\n80 I1=RND(RND(90))\n90 I2=RND(RND(90))\n100 D=RND(RND(RND(100)))\n110 N=RND(RND(100))",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

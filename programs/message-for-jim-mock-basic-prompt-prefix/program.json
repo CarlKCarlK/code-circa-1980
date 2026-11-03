@@ -1,8 +1,8 @@
 {
   "id": "message-for-jim-mock-basic-prompt-prefix",
   "title": "Message for Jim \u2014 mock BASIC prompt",
-  "description": "Message for Jim \u2014 mock BASIC prompt. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
+  "kind": "Source archive",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -21,7 +21,6 @@
       "playable": false,
       "note": "damaged captured payload; runtime untested. Captured clock ~530 baud; exact left/right prefix agreement; 33 ordered records through 549; consistent pointer base 17125; 1366 exact prefix bytes; no normal end marker; uncertain raw tail retained",
       "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
-      "loadable": false,
       "exports": [
         {
           "path": "versions/v01/02-MESSAGE-FOR-JIM-MOCK-BASIC-PROMPT-PREFIX.ASC",
@@ -49,5 +48,10 @@
       ]
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "sourceOnly": true,
+  "actionVerb": "View source",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

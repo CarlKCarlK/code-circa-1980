@@ -1,8 +1,8 @@
 {
   "id": "keyboard-hex-converter",
   "title": "Keyboard Hex Converter",
-  "description": "Keyboard Hex Converter. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 9,
       "raw": "versions/v01/09-KEYBOARD-HEX-CONVERTER.BAS",
       "listing": "versions/v01/09-KEYBOARD-HEX-CONVERTER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/09-KEYBOARD-HEX-CONVERTER.ASC",
@@ -36,8 +35,12 @@
       "controlSource": [
         "90 B$=INKEY$:IFB$=\"\"THEN90",
         "100 A$=INKEY$:IFA$=\"\"THEN100"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "laser-interferometer-demo",
   "title": "Laser Interferometer Demo",
-  "description": "Laser Interferometer Demo. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 6,
       "raw": "versions/v01/06-LASER-INTERFEROMETER-DEMO.BAS",
       "listing": "versions/v01/06-LASER-INTERFEROMETER-DEMO.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/06-LASER-INTERFEROMETER-DEMO.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "1 CLEAR2000\n5 SS=2:MN=1\n10 L$=CHR$(191)+CHR$(191)+CHR$(191)+CHR$(191)+CHR$(140)\n15 CLS\n20 M$=CHR$(140)\n25 S$=CHR$(176)+CHR$(140)+CHR$(131)\n30 F$=STRING$(5,CHR$(176))\n40 PRINT@64,L$;TAB(12)S$TAB(37)CHR$(140);\n45 FORX=0TO66:SET(X,14):NEXT:FORY=14TO47:SET(66,Y):NEXT\n50 PRINT@32,\"ROTATING MIRROR\";:PRINT@128,\"LASER\";TAB(15)\"SPLITER\"\n60 PRINT@11+192,F$;\"   GRATING\";:PRINT@35+384,F$;\"   LENS\";:PRINT@35+896,F$;\"   MIRROR\";\n90 X=10:Y=4:A=0:RA=2*3.14159:RESTORE",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

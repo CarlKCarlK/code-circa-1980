@@ -1,8 +1,8 @@
 {
   "id": "animated-graphics-draft",
   "title": "Animated Graphics Draft",
-  "description": "Animated Graphics Draft. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 13,
       "raw": "versions/v01/13-ANIMATED-GRAPHICS-DRAFT.BAS",
       "listing": "versions/v01/13-ANIMATED-GRAPHICS-DRAFT.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/13-ANIMATED-GRAPHICS-DRAFT.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 CLEAR1000\n10 B1$=STRING$(64,CHR$(176))\n20 B$=CHR$(191)\n900 CLS\n950 PRINT@128,B1$\n990 S=.1\n1000 FORX!=1TO13:IFX*S1+32>63THEN1100ELSEL3=64*X+S1*X+160.5:L4=64*X-S1*X+159.5:PRINT@L4,\" \";:PRINT@L3,\" \";\n1100 IFX*S+32>63THEN1200ELSEL=64*X+S*X+160.5:L2=64*X-S*X+159.5:PRINT@L,B$;:PRINT@L2,B$;\n1200 NEXT:S1=S:S=S*:GOTO1000",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

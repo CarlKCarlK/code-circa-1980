@@ -1,8 +1,8 @@
 {
   "id": "air-traffic-controler-simulation",
   "title": "Air Traffic Controller Simulation",
-  "description": "Air Traffic Controller Simulation. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 7,
       "raw": "versions/v01/07-AIR-TRAFFIC-CONTROLER-SIMULATION.BAS",
       "listing": "versions/v01/07-AIR-TRAFFIC-CONTROLER-SIMULATION.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/07-AIR-TRAFFIC-CONTROLER-SIMULATION.ASC",
@@ -36,8 +35,12 @@
       "controlSource": [
         "1000 PRINT@960+20,\"PRESS ANY BUTTON\";:A$=INKEY$+INKEY$:A$=\"\"",
         "1010 IFINKEY$=\"\"THEN1010ELSECLS:RETURN"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "polynomial-multiplication",
   "title": "Polynomial Multiplication",
-  "description": "Polynomial Multiplication. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 2,
       "raw": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.BAS",
       "listing": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "5 CLS\n10 PRINT\"THS PROGRAM MULTIPLYS 2 VARIABLES\"\n20 PRINT\"POLYNOMIALS.\"\n30 PRINT\n40 INPUT\"IN THE FIRST POLYNOMIAL WHAT IS THE HIGHEST POWER OF X\";FX\n50 INPUT\"IN THE FIRST POLYNOMIAL WHAT IS THE HIGHEST POWER OF H\";FH\n60 PRINT\n70 INPUT\"IN THE SECOND POLYNOMIAL WHAT IS THE HIGHEST POWERR OF X\";SX\n80 INPUT\"IN THE SECOND POLYNOMIAL WHAT IS THE HIGHEST POWER OF H\";SH\n90 DIM F(FX,FH),S(SX,SH),A(SX+FX,FH+SH)\n95 PRINT\n100 FOR PX=FXTO0 STEP-1",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

@@ -1,8 +1,8 @@
 {
   "id": "linear-equation-solver",
   "title": "Linear Equation Solver",
-  "description": "Linear Equation Solver. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 BASIC; extensions may be needed",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 8,
       "raw": "versions/v01/08-LINEAR-EQUATION-SOLVER.BAS",
       "listing": "versions/v01/08-LINEAR-EQUATION-SOLVER.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated source; runtime untested. Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/08-LINEAR-EQUATION-SOLVER.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "1 '\n10 CLS\n100 INPUT\"WHAT ORDER (N,M)\";N,D\n110 DIMA(N,D+1)\n120 FORX=1TON:FORY=1TOD\n130 PRINT\"WHAT IS A(\"X\",\"Y\")    ('F' TO FIX MISTAKE)\";:INPUTA$:IFA$=\"H\"THEN4000ELSEA(X,Y)=VAL(A$)\n140 NEXT\n160 NEXT\n170 FORR=1TOD\n180 GOSUB3000:PRINT\n200  INPUT\"YOUR COMMAND  (  R1<>R2 ,  R2=3R1-2R2, R3=3R3)\n\";C$",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

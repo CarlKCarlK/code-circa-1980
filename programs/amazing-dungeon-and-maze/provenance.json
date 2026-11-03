@@ -70,5 +70,22 @@
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
   "dating": {
     "caution": "Source notices are not save dates. No inferred historical dates are assigned."
-  }
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Adapted from Jack Hauber\u2019s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+      "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "upstream": [
+    {
+      "file": "docs/research/published-basic/amazing.bas",
+      "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas",
+      "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=3",
+      "sha256": "0638d75685bd0d474b9c625698287165ef297c979a9841597e33ca088e35417d",
+      "bytes": 3094,
+      "note": "Complete electronic transcription from the Vintage BASIC mirror, preserved unchanged. Matching source statements establish the comparison; exact parent edition and print transcription are not verified. Not a recovered cassette or an execution-tested program."
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "id": "shooting-demo",
   "title": "Shooting Demo",
-  "description": "Shooting Demo. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-SHOOTING-DEMO.BAS",
       "listing": "versions/v01/04-SHOOTING-DEMO.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/04-SHOOTING-DEMO.ASC",
@@ -35,8 +34,12 @@
       "startupSource": "5 CLEAR200\n10 CLS\n20 FORX=3TO60 STEP 10\n30 PRINT@X,\"*\";\n35 L=L+1:L(L)=X\n40 NEXT\n50 B=L (RND(6))\n60 A$=INKEY$\n65 OUT255,1:OUT255,2:OUT255,3\n70 IF A$=\"\" THEN 100\n80 IF VAL(A$) <>0THENS=960+L(VAL(A$)):PRINT@960,STRING$(62,\" \");:PRINT@S,\">=<\";\n90 IF A$=\"L\"THEN GOSUB1000ELSE IF A$=\"S\"THEN GOSUB2000",
       "controlSource": [
         "60 A$=INKEY$"
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

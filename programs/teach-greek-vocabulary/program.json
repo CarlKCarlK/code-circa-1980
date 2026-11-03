@@ -1,8 +1,8 @@
 {
   "id": "teach-greek-vocabulary",
   "title": "Teach Greek Vocabulary",
-  "description": "Teach Greek Vocabulary. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 2,
       "raw": "versions/v01/02-TEACH-GREEK-VOCABULARY.BAS",
       "listing": "versions/v01/02-TEACH-GREEK-VOCABULARY.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/02-TEACH-GREEK-VOCABULARY.ASC",
@@ -39,8 +38,12 @@
         "410 IF QICK=\"YES\" AND INKEY$=\"\"THEN400ELSEPRINT:PRINT\"THAT'S RIGHT!!!DAS RICHTIG ANWART IST\":PRINTANSWER:PRINT:PRINT\"(PRESS 'X' IF WRONG.... '/' IF RIGHT)",
         "420 IFQICK=\"YES\" THEN A$=INKEY$:IFA$<>\"X\"ANDA$<>\"/\"THEN420  ELSEIFA$=\"X\"THENPRINT\"DAS TUT MEIR LEIT.\":WR=WR+1:WO(WR)=WO(TURN)ELSEPRINT\"GUT!\":RI=RI+1",
         "530 IF INKEY$=\"\"THEN530  "
-      ]
+      ],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }

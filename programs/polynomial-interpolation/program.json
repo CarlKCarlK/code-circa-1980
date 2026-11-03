@@ -1,8 +1,8 @@
 {
   "id": "polynomial-interpolation",
   "title": "Polynomial Interpolation",
-  "description": "Polynomial Interpolation. 1 recovered save.",
-  "kind": "Archive",
+  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
@@ -18,10 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-POLYNOMIAL-INTERPOLATION.BAS",
       "listing": "versions/v01/03-POLYNOMIAL-INTERPOLATION.ASC",
-      "playable": false,
+      "playable": true,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": "Another recovered save; the site offers one selected player.",
-      "loadable": true,
+      "unavailableReason": null,
       "exports": [
         {
           "path": "versions/v01/03-POLYNOMIAL-INTERPOLATION.ASC",
@@ -33,8 +32,12 @@
         }
       ],
       "startupSource": "10 INPUT\"HOW MANY POINTS\";P\n20 IF P<0 THEN P=-P:RN=1ELSERN=0\n30 R=P\n40 DIM A(P+1,P+1),P(P+1,1)\n50 LX=-1:LY=-1:HX=-1:HY=-1\n60 FOR I=1TOP\n70 PRINT\" POINT #\"I\" (X,Y) \";\n80 INPUT P(I,0),P(I,1)\n90 IF P(I,0)<LX OR LX=-1 THEN LX=P(I,0)\n100 IF P(I,0)>HX OR HX=-1 THEN HX=P(I,0)\n110 IF P(I,1)<LY OR LY=-1 THEN LY=P(I,1)\n120 IF P(I,1)>HY OR HY=-1 THEN HY=P(I,1)",
-      "controlSource": []
+      "controlSource": [],
+      "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing"
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  }
 }
