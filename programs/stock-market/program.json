@@ -1,0 +1,40 @@
+{
+  "id": "stock-market",
+  "title": "Stock Market",
+  "description": "Stock Market. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "STOCK MARKET",
+      "capture": "tape4b",
+      "save": 3,
+      "raw": "versions/v01/03-STOCK-MARKET.BAS",
+      "listing": "versions/v01/03-STOCK-MARKET.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 38 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-STOCK-MARKET.ASC",
+          "label": "03-STOCK-MARKET.ASC"
+        },
+        {
+          "path": "versions/v01/03-STOCK-MARKET.BAS",
+          "label": "03-STOCK-MARKET.BAS"
+        }
+      ],
+      "startupSource": "10 CLS:PRINTTAB(20);\"STOCK MARKET\"\n20 PRINTTAB(5)\"CREATIVE COMPUTING MORRISTOWN, NEW JERSEY\"\n30 PRINT:PRINT:PRINT\n110 DIMS(5),P(5),Z(5),C(5)\n115 X=0:A=INT((RND(X)/10)*100+.5)/10:T5=0:X9=0:N1=0:N2=0:E1=0:E2=0\n120 INPUT\"DO YOU WANT INSTRUCTIONS\";A$:IFA$=\"YES\"THEN200\n125 PRINT:PRINT:PRINT\"    THIS PROGRAM PLAYS THE STOCK MARKET.  YOU WILL BE GIVEN\"\n128 PRINT\"$10,000 AND MAY BUY OR SELL STOCKS.  HTE STOCK PRICES WILL\"\n130 PRINT\"BE GENERATER RANDOMLY AND THEREEFORE THIS MODEL DOES NOT\"\n132 PRINT\"REPRESENT EXACTLY WHAT HAPPENS ON THE EXCHANGE.  A TABLE\n134 PRINT\"OF AVAILABLE STOCKS, THEIR PRICES, AND THE NUMBER OF SHARES\"\n136 PRINT\"IN YOUR PORTFOLIO WILL BE PRINTED.  FOLLOWING THIS, THE",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
