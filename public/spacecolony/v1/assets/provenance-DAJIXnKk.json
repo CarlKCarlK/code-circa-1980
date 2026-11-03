@@ -1,0 +1,151 @@
+{
+  "official_title": "Unfinished Tank Game",
+  "title_authority": "Official display title supplied by the user on November 3, 2026; recovered Tank Game titles and filenames remain provenance.",
+  "short_name": "tank",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "One validated captured design draft, with an earlier uncertain tape1a candidate preserved separately. Its 1980 Carl Kadie notice is a source credit, not a save date. No runnable captured edition exists.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape16a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape16a/best/04-TANK-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/04-TANK-GAME.BAS",
+          "archive_path": "tapes/recovered/tape16a/best/04-TANK-GAME.BAS",
+          "bytes": 6910,
+          "sha256": "7943588118b46d8d033626505731195df48f7a2eab860ec317135aad59a1cb3e"
+        },
+        {
+          "path": "versions/v01/04-TANK-GAME.ASC",
+          "archive_path": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+          "bytes": 7595,
+          "sha256": "b2fe21ff0ba9f5c9071951c6039675d3ca4da310cac4f84499f5fa1da99eb75f"
+        }
+      ],
+      "recovery_item": {
+        "lines": 171,
+        "last": 20000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "7943588118b46d8d033626505731195df48f7a2eab860ec317135aad59a1cb3e"
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "a",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Tank Game; copyright 1980 Carl Kadie",
+        "capture": "tape16a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "443.497",
+        "recovered_bytes": "6910",
+        "source_file": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+        "wav": "tapes/tape16a.wav",
+        "folder": "tapes/recovered/tape16a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Direct source notices and nearby saves provide context, not tape-save dates. Same-side context is stronger than opposite-side context. Tape numbers do not establish chronology.",
+    "neighbor_context": [
+      {
+        "capture": "tape16a",
+        "save": "4",
+        "archive_listing": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+        "line": "20 'COPYRIGHT 1980  CARL KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "7",
+        "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "7",
+        "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT  KADIE 1981\":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": "8",
+        "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "8",
+        "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT  KADIE 1981\":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": "9",
+        "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "9",
+        "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": "10",
+        "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "10",
+        "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": "11",
+        "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": "11",
+        "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      }
+    ]
+  },
+  "source_research": {
+    "date": "2026-11-03",
+    "finding": "The recovered source explicitly credits COPYRIGHT 1980 CARL KADIE. No prior published source listing was identified. It is a design draft with pseudocode and missing routines, not a finished game.",
+    "sources": []
+  },
+  "website_execution": {
+    "date": "2026-11-03",
+    "execution_tested": false,
+    "test": "app/tests/browser/history-five.spec.js",
+    "checks_and_limits": "Source-only browser entry verified: no emulator or playable-version self-link, working original listing/payload downloads and earlier-prefix links. No Tank program execution is claimed. The validated captured payload contains unfinished syntax, pseudocode, and missing behavior."
+  },
+  "artwork": {
+    "path": "app/assets/tank-gallery.svg",
+    "sha256": "ec794c99787d7fe89609491bbab1a87f111fcb4d1d2d66bc9825bdcc1fdb9fa0",
+    "description": "Modern illustrative SVG, not execution evidence."
+  }
+}

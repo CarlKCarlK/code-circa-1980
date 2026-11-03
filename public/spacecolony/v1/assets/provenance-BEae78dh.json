@@ -1,0 +1,265 @@
+{
+  "official_title": "Swords",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Swords",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape23a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape23a/best/03-SWORDS.BAS",
+      "archive_listing": "tapes/recovered/tape23a/best/03-SWORDS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-SWORDS.ASC",
+          "archive_path": "tapes/recovered/tape23a/best/03-SWORDS.ASC",
+          "bytes": 2340,
+          "sha256": "5e4c58dba5bc5b05013715e86ada9332e569c33a768ce3a58473b985d8ed9232"
+        },
+        {
+          "path": "versions/v01/03-SWORDS.BAS",
+          "archive_path": "tapes/recovered/tape23a/best/03-SWORDS.BAS",
+          "bytes": 1901,
+          "sha256": "d43aabf1c409f67c9a9d85684adaf4ec93e3d9c892a2dda46e0ea4716fb9b8a1"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "d43aabf1c409f67c9a9d85684adaf4ec93e3d9c892a2dda46e0ea4716fb9b8a1",
+        "bytes": 1901,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 42,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1899,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SWORDS",
+        "capture": "tape23a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "92.225",
+        "recovered_bytes": "1901",
+        "source_file": "tapes/recovered/tape23a/best/03-SWORDS.ASC",
+        "wav": "tapes/tape23a.wav",
+        "folder": "tapes/recovered/tape23a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape23b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape23b/partial/03-SWORDS-DAMAGED-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape23b/partial/03-SWORDS-DAMAGED-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/03-SWORDS-DAMAGED-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape23b/partial/03-SWORDS-DAMAGED-PREFIX.ASC",
+          "bytes": 78,
+          "sha256": "4c4ec36e3355e332728e67829722dc831cc132e2f471f5afaf1794c621d6d620"
+        },
+        {
+          "path": "versions/v02/03-SWORDS-DAMAGED-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape23b/partial/03-SWORDS-DAMAGED-PREFIX.BIN",
+          "bytes": 64,
+          "sha256": "991c86acf77414f0877fc7a5860c5a9e9e85363ddfc0a9834d826de6ca119121"
+        },
+        {
+          "path": "versions/v02/03-SWORDS-DAMAGED-RAW.BAS",
+          "archive_path": "tapes/recovered/tape23b/partial/03-SWORDS-DAMAGED-RAW.BAS",
+          "bytes": 82,
+          "sha256": "9608304277fc867e5a8cc17615fc07aec044114e45869c2d7c689130c703ca99"
+        },
+        {
+          "path": "versions/v02/03-SWORDS-DAMAGED-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape23b/partial/03-SWORDS-DAMAGED-UNCERTAIN.ASC",
+          "bytes": 104,
+          "sha256": "9e6d46d70b3655955c408976a14d84bc3f79710352d9234af27b890365c5d840"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "991c86acf77414f0877fc7a5860c5a9e9e85363ddfc0a9834d826de6ca119121",
+        "bytes": 64,
+        "archive_validation": "Damaged; untouched valid prefix [0,64); 4 lines; pointer base 17125; cross-channel confirmed [0,64); no synthetic end marker",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "b",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "SWORDS DAMAGED",
+        "capture": "tape23b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged; valid prefix only; runtime untested",
+        "validation": "Damaged; untouched valid prefix [0,64); 4 lines; pointer base 17125; cross-channel confirmed [0,64); no synthetic end marker",
+        "source_start_s": "367.555",
+        "recovered_bytes": "82",
+        "source_file": "tapes/recovered/tape23b/partial/03-SWORDS-DAMAGED-PREFIX.ASC",
+        "wav": "tapes/tape23b.wav",
+        "folder": "tapes/recovered/tape23b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Optional separate recapture around 6:05\u20138:12; see report"
+      },
+      "recovery_inventory": "tapes/recovered/tape23b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape23b",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape23b/best/12-SWORDS-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape23b/best/12-SWORDS-SAVE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/12-SWORDS-SAVE01.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/12-SWORDS-SAVE01.ASC",
+          "bytes": 1973,
+          "sha256": "8e8ca0c2a14ce1e82bea105d87600211d909feb49c74e8f10c4898df5bfcd3d2"
+        },
+        {
+          "path": "versions/v03/12-SWORDS-SAVE01.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/12-SWORDS-SAVE01.BAS",
+          "bytes": 1628,
+          "sha256": "629fc2f960bcc1dfd44a1abd9eb459e4aac8997428289dc890f720384a99c724"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "629fc2f960bcc1dfd44a1abd9eb459e4aac8997428289dc890f720384a99c724",
+        "bytes": 1628,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 38,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1626,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "b",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SWORDS SAVE01",
+        "capture": "tape23b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "817.722",
+        "recovered_bytes": "1628",
+        "source_file": "tapes/recovered/tape23b/best/12-SWORDS-SAVE01.ASC",
+        "wav": "tapes/tape23b.wav",
+        "folder": "tapes/recovered/tape23b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape23b",
+      "save": 13,
+      "archive_raw": "tapes/recovered/tape23b/best/13-SWORDS-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape23b/best/13-SWORDS-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/13-SWORDS-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/13-SWORDS-SAVE02.ASC",
+          "bytes": 1973,
+          "sha256": "8e8ca0c2a14ce1e82bea105d87600211d909feb49c74e8f10c4898df5bfcd3d2"
+        },
+        {
+          "path": "versions/v04/13-SWORDS-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/13-SWORDS-SAVE02.BAS",
+          "bytes": 1628,
+          "sha256": "629fc2f960bcc1dfd44a1abd9eb459e4aac8997428289dc890f720384a99c724"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "629fc2f960bcc1dfd44a1abd9eb459e4aac8997428289dc890f720384a99c724",
+        "bytes": 1628,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 38,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1626,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "b",
+        "order": "13",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SWORDS SAVE02",
+        "capture": "tape23b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "850.690",
+        "recovered_bytes": "1628",
+        "source_file": "tapes/recovered/tape23b/best/13-SWORDS-SAVE02.ASC",
+        "wav": "tapes/tape23b.wav",
+        "folder": "tapes/recovered/tape23b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

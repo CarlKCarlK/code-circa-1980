@@ -1,0 +1,80 @@
+{
+  "official_title": "Football",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "football_p182",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape20a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape20a/best/01-FOOTBALL.BAS",
+      "archive_listing": "tapes/recovered/tape20a/best/01-FOOTBALL.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-FOOTBALL.ASC",
+          "archive_path": "tapes/recovered/tape20a/best/01-FOOTBALL.ASC",
+          "bytes": 6476,
+          "sha256": "582deb48f6ff1c0b74ced3411311950cd5524e3c1d725ced2ab585ed062b002d"
+        },
+        {
+          "path": "versions/v01/01-FOOTBALL.BAS",
+          "archive_path": "tapes/recovered/tape20a/best/01-FOOTBALL.BAS",
+          "bytes": 5324,
+          "sha256": "97c098b43a17430b48547793af7e560a6041d1ab34f807753506caf96dba8887"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "97c098b43a17430b48547793af7e560a6041d1ab34f807753506caf96dba8887",
+        "bytes": 5324,
+        "archive_validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 297,
+        "last": 3180,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 5322,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "a",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "FOOTBALL",
+        "capture": "tape20a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "6.803",
+        "recovered_bytes": "5324",
+        "source_file": "tapes/recovered/tape20a/best/01-FOOTBALL.ASC",
+        "wav": "tapes/tape20a.wav",
+        "folder": "tapes/recovered/tape20a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

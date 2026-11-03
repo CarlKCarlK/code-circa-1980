@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape22a",
+  "save": 13,
+  "archive_raw": "tapes/recovered/tape22a/best/13-MASS-FIELD-CURVE.BAS",
+  "archive_listing": "tapes/recovered/tape22a/best/13-MASS-FIELD-CURVE.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/13-MASS-FIELD-CURVE.ASC",
+      "archive_path": "tapes/recovered/tape22a/best/13-MASS-FIELD-CURVE.ASC",
+      "bytes": 435,
+      "sha256": "5e92b92bb127986113236f45379cbeb5bad35313e89bb3641e752b42b57992c5"
+    },
+    {
+      "path": "versions/v01/13-MASS-FIELD-CURVE.BAS",
+      "archive_path": "tapes/recovered/tape22a/best/13-MASS-FIELD-CURVE.BAS",
+      "bytes": 371,
+      "sha256": "e7a79d7a045e9c30efdfb1929e4b6be27a983a15254a69f025e806fe366662a8"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "e7a79d7a045e9c30efdfb1929e4b6be27a983a15254a69f025e806fe366662a8",
+    "bytes": 371,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 19,
+    "last": 500,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 369,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "22",
+    "side": "a",
+    "order": "13",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "MASS FIELD CURVE",
+    "capture": "tape22a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "443.597",
+    "recovered_bytes": "371",
+    "source_file": "tapes/recovered/tape22a/best/13-MASS-FIELD-CURVE.ASC",
+    "wav": "tapes/tape22a.wav",
+    "folder": "tapes/recovered/tape22a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape22a/inventory.json",
+  "execution_tested": false
+}
