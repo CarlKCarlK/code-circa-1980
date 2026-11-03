@@ -111,6 +111,77 @@
       },
       "recovery_inventory": "tapes/recovered/tape2a/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape2a",
+      "save": 13,
+      "archive_raw": "tapes/recovered/tape2a/partial/13-T-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a/partial/13-T-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/13-T-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/13-T-BASIC-PREFIX.ASC",
+          "bytes": 1803,
+          "sha256": "5aecf29a19f187f18363dbdcf0a54485fcda3d244fedac20f38a2cb5751500fa"
+        },
+        {
+          "path": "versions/v03/13-T-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/13-T-BASIC-PREFIX.BIN",
+          "bytes": 1742,
+          "sha256": "9438d44ad62d4e96d95744d2a568719f3411f82366ae623397ddb79e62f5ee10"
+        },
+        {
+          "path": "versions/v03/13-T-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/13-T-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "1c6f80d1c8b1be1bcefe5f449ccfbc74b48925c55f0ecb7d7f39328f7ffccb25"
+        },
+        {
+          "path": "versions/v03/13-T-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/13-T-RAW.BIN",
+          "bytes": 1742,
+          "sha256": "9438d44ad62d4e96d95744d2a568719f3411f82366ae623397ddb79e62f5ee10"
+        },
+        {
+          "path": "versions/v03/13-T-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/13-T-UNCERTAIN.ASC",
+          "bytes": 1803,
+          "sha256": "5aecf29a19f187f18363dbdcf0a54485fcda3d244fedac20f38a2cb5751500fa"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "9438d44ad62d4e96d95744d2a568719f3411f82366ae623397ddb79e62f5ee10",
+        "bytes": 1742,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 55 lines through 600; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "13",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name T; 53 ordered lines in best candidate; damaged captured save",
+        "capture": "tape2a",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 55 lines through 600; exact left/right prefix agreement",
+        "source_start_s": "451.543",
+        "recovered_bytes": "1742",
+        "source_file": "tapes/recovered/tape2a/partial/13-T-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a.wav",
+        "folder": "tapes/recovered/tape2a/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a/left-sweep/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
