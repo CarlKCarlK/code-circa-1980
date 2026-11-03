@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape21a",
+  "save": 20,
+  "archive_raw": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.BAS",
+  "archive_listing": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/20-3D-PERSPECTIVE-SAVE01.ASC",
+      "archive_path": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.ASC",
+      "bytes": 424,
+      "sha256": "8c957d140d54c19e17c561f2aeaece85b7155b71d368db64099d46d202084c40"
+    },
+    {
+      "path": "versions/v01/20-3D-PERSPECTIVE-SAVE01.BAS",
+      "archive_path": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.BAS",
+      "bytes": 382,
+      "sha256": "5a3f8f2bacfe4d9801287fbc609715f1d88641331cf601eb12b79c35bb1f05f2"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "5a3f8f2bacfe4d9801287fbc609715f1d88641331cf601eb12b79c35bb1f05f2",
+    "bytes": 382,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 20,
+    "last": 10000,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 380,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "21",
+    "side": "a",
+    "order": "20",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "3D PERSPECTIVE SAVE01",
+    "capture": "tape21a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "522.447",
+    "recovered_bytes": "382",
+    "source_file": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.ASC",
+    "wav": "tapes/tape21a.wav",
+    "folder": "tapes/recovered/tape21a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+  "execution_tested": false
+}
