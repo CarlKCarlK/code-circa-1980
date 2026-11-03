@@ -39,6 +39,41 @@
         "360 A$=INKEY$:IFA$=\"\"THEN360ELSE10",
         "530 A$=INKEY$:IFA$=\"\"THEN530ELSEGOTO10"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "COMPUTER TEACH HELP",
+      "capture": "tape22a",
+      "save": 3,
+      "raw": "versions/v02/03-COMPUTER-TEACH-HELP-PREFIX.BIN",
+      "listing": "versions/v02/03-COMPUTER-TEACH-HELP-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged; valid prefix only; runtime untested. Damaged; untouched valid prefix [0,830); 27 lines; pointer base 17125; cross-channel confirmed [0,673); no synthetic end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/03-COMPUTER-TEACH-HELP-PREFIX.ASC",
+          "label": "03-COMPUTER-TEACH-HELP-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v02/03-COMPUTER-TEACH-HELP-PREFIX.BIN",
+          "label": "03-COMPUTER-TEACH-HELP-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v02/03-COMPUTER-TEACH-HELP-RAW.BAS",
+          "label": "03-COMPUTER-TEACH-HELP-RAW.BAS"
+        },
+        {
+          "path": "versions/v02/03-COMPUTER-TEACH-HELP-UNCERTAIN.ASC",
+          "label": "03-COMPUTER-TEACH-HELP-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 CLS:' COMPUTER TEACH HELP\n20 INPUT\"WHAT PART NOW\"; C\n25 C=INT(C*10)\n30 IFC=1THEN100\n40 IFC=2THEN200\n50 IFC=3THEN300\n60 IFC=12THEN500\n70 PRINT\"SORRY THAT PART NOT HERE\"\n80 GOTO20\n100 CLS:PRINTCHR$(23)\n110 PRINT\"HELLO, I AM A COMPUTER.  A COM- PUTER IS A PROGRAMABLE TRUTH    TABLE, THAT CAN PREFORM SIMPLE  ALGEBRIC PROBLEMS A GREAT SPEED.  iT IS NOT MAGIC, ANY MORE THANAN AIRPLANE IS MAGIC. IT FOLLOWSDIRECTIONS WITHOUT QUESTION,\";\n120 PRINT\" UN-LESS IT IS UNABLE IT COMPLETE   THE TASK, IN WHICH CASE IT IS   PROGRAMED TO STOP AND TELL WHY.\"",
+      "controlSource": [
+        "130 A$=INKEY$:IFA$=\"\"THEN130ELSE10",
+        "240 A$=INKEY$:IFA$=\"\"THEN240"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
