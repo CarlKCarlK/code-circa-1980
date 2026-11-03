@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape12b",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape12b/best/02-CARD-DISPLAY-DEMO.BAS",
+  "archive_listing": "tapes/recovered/tape12b/best/02-CARD-DISPLAY-DEMO.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/02-CARD-DISPLAY-DEMO.ASC",
+      "archive_path": "tapes/recovered/tape12b/best/02-CARD-DISPLAY-DEMO.ASC",
+      "bytes": 534,
+      "sha256": "c38a4bb7062cdf1c6a815deaf1b5735793a27691f3e5c804ed433aa9c75410a6"
+    },
+    {
+      "path": "versions/v01/02-CARD-DISPLAY-DEMO.BAS",
+      "archive_path": "tapes/recovered/tape12b/best/02-CARD-DISPLAY-DEMO.BAS",
+      "bytes": 419,
+      "sha256": "fbaaaed34053accc9929185b11168b606aa1326c482f7467c700d3aaa335856e"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "fbaaaed34053accc9929185b11168b606aa1326c482f7467c700d3aaa335856e",
+    "bytes": 419,
+    "archive_validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 13,
+    "last": 10000,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 417,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "12",
+    "side": "b",
+    "order": "2",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "CARD DISPLAY DEMO; 13 lines",
+    "capture": "tape12b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+    "source_start_s": "50.794",
+    "recovered_bytes": "419",
+    "source_file": "tapes/recovered/tape12b/best/02-CARD-DISPLAY-DEMO.ASC",
+    "wav": "tapes/tape12b.wav",
+    "folder": "tapes/recovered/tape12b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
+  "execution_tested": false
+}

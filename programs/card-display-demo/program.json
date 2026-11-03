@@ -1,0 +1,40 @@
+{
+  "id": "card-display-demo",
+  "title": "Card Display Demo",
+  "description": "Card Display Demo. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CARD DISPLAY DEMO",
+      "capture": "tape12b",
+      "save": 2,
+      "raw": "versions/v01/02-CARD-DISPLAY-DEMO.BAS",
+      "listing": "versions/v01/02-CARD-DISPLAY-DEMO.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-CARD-DISPLAY-DEMO.ASC",
+          "label": "02-CARD-DISPLAY-DEMO.ASC"
+        },
+        {
+          "path": "versions/v01/02-CARD-DISPLAY-DEMO.BAS",
+          "label": "02-CARD-DISPLAY-DEMO.BAS"
+        }
+      ],
+      "startupSource": "1 CLS\n10 C$(1)=CHR$(140)+CHR$(191)+CHR$(157)+CHR$(132):C$(5)=\" \"+CHR$(138)\n20 C$(2)=CHR$(160)+CHR$(190)+CHR$(180):C$(6)=\" \"+CHR$(139)+CHR$(129)\n30 C$(3)=CHR$(191)+CHR$(190)+CHR$(149):C$(7)=CHR$(130)+CHR$(135)\n40 C$(4)=C$(2):C$(8)=C$(5)\n200 V=RND(13):S=RND(4):GOSUB1000\n205 INPUT\"LOC\";L\n210 GOTO200\n300 GOTO300\n1000 IFV=1THENP$=\"ACE\"ELSEIFV<11THENP$=STR$(V)ELSEIFV=11THENP$=\"JACK\"ELSEIFV=12THENP$=\"QUEEN\"ELSEIFV=13THENP$=\"KING\"\n1010 PRINT@L,P$;\" \"C$(S);:PRINT@L+64,P$;\" \"C$(S+4);\n2000 RETURN",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
