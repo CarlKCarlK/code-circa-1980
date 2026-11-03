@@ -1,0 +1,40 @@
+{
+  "id": "sound-subroutines",
+  "title": "Sound Subroutines",
+  "description": "Sound Subroutines. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SOUND SUBROUTINES",
+      "capture": "file8b",
+      "save": 5,
+      "raw": "versions/v01/05-SOUND-SUBROUTINES.BAS",
+      "listing": "versions/v01/05-SOUND-SUBROUTINES.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/05-SOUND-SUBROUTINES.ASC",
+          "label": "05-SOUND-SUBROUTINES.ASC"
+        },
+        {
+          "path": "versions/v01/05-SOUND-SUBROUTINES.BAS",
+          "label": "05-SOUND-SUBROUTINES.BAS"
+        }
+      ],
+      "startupSource": "10000 REM SUBROUTINE FOR SOUND    DS: DUATION OF SOUND  TS: TYPE OF SOUND\n10010 ON TS GOTO 10020,10030, 10040, 10050, 10060, 10070, 10080,10090\n10020 FORTS=1TODS:OUT255,0:OUT255,1:NEXT:GOTO 10200\n10030 FORTS=1TODS:OUT255,1:OUT255,2:NEXT:GOTO 10200\n10040 FORTS=1TODS:OUT255,1:OUT255,2:OUT255,3:NEXT:GOTO 10200\n10050 FORTS=1TODS:OUT255,1:OUT255,2:OUT255,0:NEXT:GOTO 10200\n10060 FORTS=1TODS:OUT255,1:OUT255,2:OUT255,1:OUT255,2:NEXT:GOTO 10200\n10070 FORTS=1TODS:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,0:OUT255,2:OUT255,1:OUT255,2:NEXT:GOTO 10200\n10080 FORTS=1TODS:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:NEXT:GOTO 10200\n10090 FOR TS=1TODS:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,2:OUT255,1:OUT255,2:NEXT:GOTO 10200\n10200 RETURN",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

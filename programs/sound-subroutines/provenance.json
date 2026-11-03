@@ -1,0 +1,74 @@
+{
+  "official_title": "Sound Subroutines",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "sound_subroutines_p86",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "file8b",
+      "save": 5,
+      "archive_raw": "tapes/recovered/file8b/best/05-SOUND-SUBROUTINES.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/05-SOUND-SUBROUTINES.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-SOUND-SUBROUTINES.ASC",
+          "archive_path": "tapes/recovered/file8b/best/05-SOUND-SUBROUTINES.ASC",
+          "bytes": 862,
+          "sha256": "c2a02ed5d9345ce8899f94ed0fa9876b73936c9cb83463d83d35bc8a22a7f987"
+        },
+        {
+          "path": "versions/v01/05-SOUND-SUBROUTINES.BAS",
+          "archive_path": "tapes/recovered/file8b/best/05-SOUND-SUBROUTINES.BAS",
+          "bytes": 667,
+          "sha256": "4bc67965d85d6a3456e9f00cfe6a2dbce2e6ffb9b9e22ef2227d5a55d8f89c58"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "4bc67965d85d6a3456e9f00cfe6a2dbce2e6ffb9b9e22ef2227d5a55d8f89c58",
+        "bytes": 667,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 11,
+        "last": 10200,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 665,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SOUND SUBROUTINES; 11 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "135.134",
+        "recovered_bytes": "667",
+        "source_file": "tapes/recovered/file8b/best/05-SOUND-SUBROUTINES.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
