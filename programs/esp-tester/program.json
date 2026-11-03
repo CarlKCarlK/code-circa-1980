@@ -1,0 +1,40 @@
+{
+  "id": "esp-tester",
+  "title": "Esp Tester",
+  "description": "Esp Tester. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ESP TESTER",
+      "capture": "tape9b",
+      "save": 10,
+      "raw": "versions/v01/10-ESP-TESTER.BAS",
+      "listing": "versions/v01/10-ESP-TESTER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/10-ESP-TESTER.ASC",
+          "label": "10-ESP-TESTER.ASC"
+        },
+        {
+          "path": "versions/v01/10-ESP-TESTER.BAS",
+          "label": "10-ESP-TESTER.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 PRINT:PRINT:PRINT\"E.S.P. AND CLARVOIVENCE  TESTER\"\n18 GOTO25\n19 IFD=1THENPRINT\"VERY LOW\"ELSEIFD=2THENPRINT\"LOW\"ELSEIFD=3THENPRINT\"AVERAGE\"ELSEIFD=4THENPRINT\"HIGH\"ELSEIFD=5THENPRINT\"VERY HIGH\"ELSEIFD=6THENPRINT\"YOU MUST BE PHYIC!\"\n20 RETURN\n25 PRINT:PRINT\"YOU WILL TAKE FIRST A ESP TEST THEN A CLARVOILENCE TEST.\n30 PRINT:PRINT\"THEN YOU WILL BE GRADED VERY LOW,LOW,AVERGE,HIGH,OR VERY HIGH.\n40 PRINT:PRINT\"ON EACH TEST OF FIFTY QUESTION, YOU SHOULD REPLY WITH A'1' OR'2'\n50 PRINT:INPUT\"PRESS <ENTER> TO START\";C$\n100 RANDOM\n110 FORC =1TO50\n120 X=RND(2)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
