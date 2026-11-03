@@ -36,6 +36,38 @@
       "controlSource": [
         "611 A$=INKEY$:IFA$=\"\"THEN RETURN ELSE IF A$=\"[\"THEN SX=SX/2:SY=SY/2:CLSELSE IF A$=CHR$(5+5)THEN SX=SX*2:SY=SY*2:CLSELSEIFA$=CHR$(8)THENDT=DT/2ELSEIFA$=CHR$(9)THENDT=DT+DTELSE IF VAL(A$)>=1 THEN CLS:RF=VAL(A$):IFRF>N THEN RF=Z"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "GRAVITY SIMULATION SAVE02",
+      "capture": "tape24a",
+      "save": 13,
+      "raw": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-PREFIX.BIN",
+      "listing": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged; valid prefix only; runtime untested. Damaged; untouched valid prefix [0,10); 1 lines; pointer base 17125; cross-channel confirmed [0,10); no synthetic end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-PREFIX.ASC",
+          "label": "13-GRAVITY-SIMULATION-SAVE02-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-PREFIX.BIN",
+          "label": "13-GRAVITY-SIMULATION-SAVE02-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-RAW.BAS",
+          "label": "13-GRAVITY-SIMULATION-SAVE02-RAW.BAS"
+        },
+        {
+          "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-UNCERTAIN.ASC",
+          "label": "13-GRAVITY-SIMULATION-SAVE02-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "4133 CLS",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
