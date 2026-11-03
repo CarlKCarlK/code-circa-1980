@@ -1,0 +1,42 @@
+{
+  "id": "motorcycle-ramp-jump",
+  "title": "Motorcycle Ramp Jump",
+  "description": "Motorcycle Ramp Jump. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MOTORCYCLE RAMP JUMP",
+      "capture": "tape14a",
+      "save": 7,
+      "raw": "versions/v01/07-MOTORCYCLE-RAMP-JUMP.BAS",
+      "listing": "versions/v01/07-MOTORCYCLE-RAMP-JUMP.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/07-MOTORCYCLE-RAMP-JUMP.ASC",
+          "label": "07-MOTORCYCLE-RAMP-JUMP.ASC"
+        },
+        {
+          "path": "versions/v01/07-MOTORCYCLE-RAMP-JUMP.BAS",
+          "label": "07-MOTORCYCLE-RAMP-JUMP.BAS"
+        }
+      ],
+      "startupSource": "10 CLS:M$=CHR$(160)+CHR$(156)+CHR$(140)+CHR$(181)\n20 INPUT\"ANGLE OF RAMP\";A:INPUT\"DISTANCE\";D\n21 '\n25 A=A/180*3.14159\n30 LR$=CHR$(176)+CHR$(188)+CHR$(191):RR$=CHR$(191)+CHR$(188)+CHR$(176)\n40 CLS:FORX=0TO127:SET(X,9):SET(X,18):NEXT\n45 PRINT@857,D\"FEET\";\n49 Y=12:X=0\n50 FORX=0TO14:FORY=12TO14:PRINT@X+Y*64,CHR$(191);:PRINT@X+49+Y*64,CHR$(191);:NEXTY:NEXTX\n60 PRINT@704+12,LR$;:PRINT@704+12+37,RR$;\n65 GOTO80\n70 FORX=1000TO0STEP-1:PRINT@0,INT(X/100);:NEXT",
+      "controlSource": [
+        "110 A$=INKEY$:PRINT@OX,\"    \";:PRINT@YY,M$;:OX=YY:IFA$=\",\"THENSS=-1ELSEIFA$=\".\"THENSS=0ELSEIFA$=\"/\"THENSS=1"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
