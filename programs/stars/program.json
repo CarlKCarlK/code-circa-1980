@@ -34,6 +34,30 @@
       ],
       "startupSource": "120 PRINT\"WELCOME TO MY GALAXY. i'M IN CHARGE OF THE STARS HERE.\"\n130 PRINT\"PLAY MY GAME *STARS* AND GET SOOME STARS FOR YOURSELF!\"\n140 PRINT\n150 PRINT\"WANT TO KNOW HOW TO PLAY\";\n160 INPUTB$\n170 IFB$=\"Y\"THEN280\n190 PRINT\n200 PRINT\"I WILL THINK OF A WHOLE NUMBER FROM 1 TO 100.\"\n210 PRINT\"TRY TO GUESS MY NUMBER. ATTER YOU GUESS, I\"\n220 PRINT\"WILL TYPE ONE OR MORE STARS ( * ).  THE CLOSER\"\n230 PRINT\"YOU ARE TO MY NUMBER, THE MORE STARS WILL I TYPE.\"\n240 PRINT\"OONE STAR ( * ) MEANS YYOOU ARE FAR AWAY FROOM MY\"",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "STARS SAVE02",
+      "capture": "tape21a",
+      "save": 16,
+      "raw": "versions/v02/16-STARS-SAVE02.BAS",
+      "listing": "versions/v02/16-STARS-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/16-STARS-SAVE02.ASC",
+          "label": "16-STARS-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v02/16-STARS-SAVE02.BAS",
+          "label": "16-STARS-SAVE02.BAS"
+        }
+      ],
+      "startupSource": "120 PRINT\"WELCOME TO MY GALAXY. i'M IN CHARGE OF THE STARS HERE.\"\n130 PRINT\"PLAY MY GAME *STARS* AND GET SOOME STARS FOR YOURSELF!\"\n140 PRINT\n150 PRINT\"WANT TO KNOW HOW TO PLAY\";\n160 INPUTB$\n170 IFB$=\"Y\"THEN280\n190 PRINT\n200 PRINT\"I WILL THINK OF A WHOLE NUMBER FROM 1 TO 100.\"\n210 PRINT\"TRY TO GUESS MY NUMBER. ATTER YOU GUESS, I\"\n220 PRINT\"WILL TYPE ONE OR MORE STARS ( * ).  THE CLOSER\"\n230 PRINT\"YOU ARE TO MY NUMBER, THE MORE STARS WILL I TYPE.\"\n240 PRINT\"OONE STAR ( * ) MEANS YYOOU ARE FAR AWAY FROOM MY\"",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
