@@ -58,6 +58,30 @@
       ],
       "startupSource": "5 CLS\n10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225\n240 IFEN=0 THEN ER=4:GOTO2000ELSECN=1:FOR I=1TO LEN (EQ$):TT$=MID$(EQ$,I,1):IFTT$=\"+\"ORTT$=\"=\"THEN CN=CN+1",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "CHEMISTRY BALENCER II V2",
+      "capture": "tape7b",
+      "save": 21,
+      "raw": "versions/v03/21-CHEMISTRY-BALENCER-II-V2.BAS",
+      "listing": "versions/v03/21-CHEMISTRY-BALENCER-II-V2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 157 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+      "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v03/21-CHEMISTRY-BALENCER-II-V2.ASC",
+          "label": "21-CHEMISTRY-BALENCER-II-V2.ASC"
+        },
+        {
+          "path": "versions/v03/21-CHEMISTRY-BALENCER-II-V2.BAS",
+          "label": "21-CHEMISTRY-BALENCER-II-V2.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n99 EQ$=\"A.B.C + D.E.F + G.H.I = A.E.I + D.H.C + G.B.F\":PRINTEQ$\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

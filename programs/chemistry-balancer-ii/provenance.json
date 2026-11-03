@@ -129,6 +129,68 @@
       },
       "recovery_inventory": "tapes/recovered/tape7b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape7b",
+      "save": 21,
+      "archive_raw": "tapes/recovered/tape7b/best/21-CHEMISTRY-BALENCER-II-V2.BAS",
+      "archive_listing": "tapes/recovered/tape7b/best/21-CHEMISTRY-BALENCER-II-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/21-CHEMISTRY-BALENCER-II-V2.ASC",
+          "archive_path": "tapes/recovered/tape7b/best/21-CHEMISTRY-BALENCER-II-V2.ASC",
+          "bytes": 6879,
+          "sha256": "367799acddeddf2d607cb577505c193600ce0ebb2d29669161af7b070eec2f22"
+        },
+        {
+          "path": "versions/v03/21-CHEMISTRY-BALENCER-II-V2.BAS",
+          "archive_path": "tapes/recovered/tape7b/best/21-CHEMISTRY-BALENCER-II-V2.BAS",
+          "bytes": 5687,
+          "sha256": "533cb001b60e44263dadda522b2a75b6aa4de36aef76d71cc654b230dac39e93"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "533cb001b60e44263dadda522b2a75b6aa4de36aef76d71cc654b230dac39e93",
+        "bytes": 5687,
+        "archive_validation": "157 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 157,
+        "last": 3790,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 5685,
+        "source_notice_lines": [
+          "10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE"
+        ]
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "b",
+        "order": "21",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "CHEMISTRY BALENCER II V2; 157 readable line records",
+        "capture": "tape7b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "157 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "5687",
+        "source_file": "tapes/recovered/tape7b/best/21-CHEMISTRY-BALENCER-II-V2.ASC",
+        "wav": "tapes/tape7b.wav",
+        "folder": "tapes/recovered/tape7b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; keep printer output for index programs"
+      },
+      "recovery_inventory": "tapes/recovered/tape7b/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
