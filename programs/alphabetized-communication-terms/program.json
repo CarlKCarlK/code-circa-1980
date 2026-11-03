@@ -1,0 +1,42 @@
+{
+  "id": "alphabetized-communication-terms",
+  "title": "Alphabetized Communication Terms",
+  "description": "Alphabetized Communication Terms. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ALPHABETIZED COMMUNICATION TERMS",
+      "capture": "tape25a",
+      "save": 1,
+      "raw": "versions/v01/01-ALPHABETIZED-COMMUNICATION-TERMS.BAS",
+      "listing": "versions/v01/01-ALPHABETIZED-COMMUNICATION-TERMS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-ALPHABETIZED-COMMUNICATION-TERMS.ASC",
+          "label": "01-ALPHABETIZED-COMMUNICATION-TERMS.ASC"
+        },
+        {
+          "path": "versions/v01/01-ALPHABETIZED-COMMUNICATION-TERMS.BAS",
+          "label": "01-ALPHABETIZED-COMMUNICATION-TERMS.BAS"
+        }
+      ],
+      "startupSource": "1 CLS:PRINT\"THIS PROGRAM  ALPHABETIZES THE WORD IN DATA AND DESPLAYS THEM ONE AT A TIME ON SCREEN ON THE PUSH OF ANY BUTTON.\"\n2 INPUT\"PRESS ENTER\";A$\n4 CLS\n5 CLEAR1000:DIMW$(70)\n6 R$=\"ZZZZZ\"\n10 READ W$\n20 IFW$=\"DONE\"THEN100\n30 A=A+1:W$(A)=W$\n40 GOTO10\n100 FORX=1TOA\n110 FORY=1TOA\n120 IFW$(Y)<R$THENR$=W$(Y):S=Y",
+      "controlSource": [
+        "143 IFINKEY$=\"\"THEN143ELSECLS:PRINT@6*64,\"\";"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
