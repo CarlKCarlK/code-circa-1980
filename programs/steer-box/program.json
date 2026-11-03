@@ -1,0 +1,43 @@
+{
+  "id": "steer-box",
+  "title": "Steer Box",
+  "description": "Steer Box. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extended features",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "STEER BOX",
+      "capture": "tape4b",
+      "save": 9,
+      "raw": "versions/v01/09-STEER-BOX.BAS",
+      "listing": "versions/v01/09-STEER-BOX.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 17 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/09-STEER-BOX.ASC",
+          "label": "09-STEER-BOX.ASC"
+        },
+        {
+          "path": "versions/v01/09-STEER-BOX.BAS",
+          "label": "09-STEER-BOX.BAS"
+        }
+      ],
+      "startupSource": "10 PRINT\"USE \"CHR$(92)\" AND \"CHR$(91)\" TO STEER BOX\"\n20 PRINT\"PRESS ANY BUTTON\"\n30 IFINKEY$=\"\"THEN30   \n40 CLS\n50 FORZ=1TO5:XX=RND(120):YY=RND(43):LINE(XX,YY)-(XX+7,YY+4),SET,BF:NEXT\n60 LINE(0,0)-(127,47),SET,B\n70 AA=.01\n80 X=60:Y=20\n90 PI=3.14159\n100 A$=INKEY$:IFA$=\"\"THEN110  ELSEIFASC(A$)=10ANDAA=.01THENA=A+PI:AA=-.25ELSEIFASC(A$)=91ANDAA=-.25THENAA=.01:A=A+PIELSEIFA$=\"4\"THENQ=1ELSEIFA$=\"5\"THENQ=0\n110 A=A+AA\n120 X=X+COS(A)*2:Y=Y+SIN(A)",
+      "controlSource": [
+        "30 IFINKEY$=\"\"THEN30   ",
+        "100 A$=INKEY$:IFA$=\"\"THEN110  ELSEIFASC(A$)=10ANDAA=.01THENA=A+PI:AA=-.25ELSEIFASC(A$)=91ANDAA=-.25THENAA=.01:A=A+PIELSEIFA$=\"4\"THENQ=1ELSEIFA$=\"5\"THENQ=0"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
