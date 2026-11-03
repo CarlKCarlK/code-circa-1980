@@ -1,0 +1,26 @@
+{
+  "id": "wordsearch",
+  "title": "Word Search",
+  "description": "Generate a word-search puzzle from the original stored word lists.",
+  "kind": "Puzzle",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "One complete captured source containing a generator, editor routines, and two stored word lists. No author/date is established by a source credit.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "WORD SEARCH",
+      "capture": "tape4a",
+      "save": 7,
+      "raw": "versions/v01/07-WORD-SEARCH.BAS",
+      "listing": "versions/v01/07-WORD-SEARCH.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. 56 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+      "unavailableReason": null
+    }
+  ]
+}
