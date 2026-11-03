@@ -34,6 +34,30 @@
       ],
       "startupSource": "10 FORX=32000TO32303:READ A:POKE X,A:NEXTX:POKE16527,125\n20 DATA14,8,6,192,205,27,126,197,16,254,193,16,247,13,121,254\n40 DATA0,32,239,201,14,16,33,32,0,205,27,126,6,160,16,254\n50 DATA43,124,181,32,244,33,0,10,43,124,181,32,251,13,121,254\n60 DATA0,32,227,201,14,100,6,48,205,27,126,197,6,255,16,254\n70 DATA193,16,245,6,80,205,27,126,197,6,96,16,254,193,15,245\n80 DATA13,121,254,0,32,224,201,6,64,205,27,126,197,6,192,16\n90 DATA254,193,16,245,6,128,205,27,126,197,6,80,16,254,193,16\n100 DATA245,6,255,205,27,126,197,6,48,16,254,103,16,245,6,176\n110 DATA205,27,126,196,5,176,16,254,193,16,254,6,255,205,27,126\n120 DATA197,6,32,16,254,193,16,245,14,16,6,16,205,27,126,197\n130 DATA6,255,16,254,193,16,245,13,121,254,0,40,10,33,0,10",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "SOUND EFFECTS V2",
+      "capture": "tape19b",
+      "save": 6,
+      "raw": "versions/v02/06-SOUND-EFFECTS-V2.BAS",
+      "listing": "versions/v02/06-SOUND-EFFECTS-V2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/06-SOUND-EFFECTS-V2.ASC",
+          "label": "06-SOUND-EFFECTS-V2.ASC"
+        },
+        {
+          "path": "versions/v02/06-SOUND-EFFECTS-V2.BAS",
+          "label": "06-SOUND-EFFECTS-V2.BAS"
+        }
+      ],
+      "startupSource": "10 FORX=32000TO 32303:READA:POKEX,A:NEXTX:POKE 16527,125\n20 DATA14,8,6,192,205,27,126,197,16,254,193,16,247,13,121,254\n40 DATA0,32,239,201,14,16,33,32,0,205,27,126,6,160,16,254\n50 DATA43,124,181,32,244,33,0,10,43,124,181,32,251,13,121,254\n60 DATA0,32,227,201,14,10,6,48,205,27,126,197,6,255,16,254\n70 DATA193,16,245,6,80,205,27,126,197,6,96,16,254,193,16,245\n80 DATA13,121,254,0,32,224,201,6,64,205,27,126,197,6,192,16\n90 DATA254,193,16,245,6,128,205,27,126,197,6,80,16,254,193,16\n100 DATA245,6,255,205,27,126,197,6,48,16,254,193,16,245,6,176\n110 DATA205,27,126,197,6,176,16,254,193,16,254,6,255,205,27,126\n120 DATA197,6,32,16,254,193,16,245,14,16,6,16,205,27,126,197\n130 DATA6,255,16,254,193,16,245,13,121,254,0,40,10,33,0,10",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
