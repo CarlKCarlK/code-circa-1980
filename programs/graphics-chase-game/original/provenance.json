@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape11b",
+  "save": 9,
+  "archive_raw": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.BAS",
+  "archive_listing": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
+      "archive_path": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
+      "bytes": 659,
+      "sha256": "e48263487f15063d111fcf9e8994d2f1015a31ccb7d4aca9d6408968b034066e"
+    },
+    {
+      "path": "versions/v01/09-GRAPHICS-CHASE-GAME-EARLY.BAS",
+      "archive_path": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.BAS",
+      "bytes": 549,
+      "sha256": "cdd52be991e820785a1e4a855a4f7f14e27afb59a9a14d8ca68986e3e82b6dd2"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "cdd52be991e820785a1e4a855a4f7f14e27afb59a9a14d8ca68986e3e82b6dd2",
+    "bytes": 549,
+    "archive_validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 14,
+    "last": 1010,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 547,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "11",
+    "side": "b",
+    "order": "9",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "GRAPHICS CHASE GAME EARLY; 14 lines",
+    "capture": "tape11b",
+    "capture_scope": "possible skipped program (tangled tape)",
+    "baud": "500",
+    "platform": "TRS-80 BASIC; extensions may be required",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+    "source_start_s": "382.658",
+    "recovered_bytes": "549",
+    "source_file": "tapes/recovered/tape11b/best/09-GRAPHICS-CHASE-GAME-EARLY.ASC",
+    "wav": "tapes/tape11b.wav",
+    "folder": "tapes/recovered/tape11b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime; capture may omit another program"
+  },
+  "recovery_inventory": "tapes/recovered/tape11b/best/inventory.json",
+  "execution_tested": false
+}
