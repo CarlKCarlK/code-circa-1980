@@ -34,6 +34,30 @@
       ],
       "startupSource": "1  REM STAR TREK REVISED BY ANTHONY D'AGOSTA FOR THE TRS-80\n2 DIMA(14)\n4 PRINT@25,\"STAR TRAK\":PRINT:PRINT:INPUT\"ARE YOU STARTING OR CONT\";A$:IFA$=\"CONT\"THEN5000\n5  PRINT\"THE PLAYER, AS CAPTAIN OF THE ENTERPRISE ALTERNATES\"\n10  PRINT\"MOVES WITH THE KLINGON BATTLE CRUISER. AFTER A READOUT\"\n15  PRINT\"OF THE RANGE AND BEARING TO THE ENEMY VESSEL, THE PLAY-\"\n20  PRINT\"ER IS QUIERIED FOR HIS COMMAND.\":PRINT\" \"\n25  PRINT\"PHASORS HAVE RANGE FROM 0 TO 5 MILLION KILOMETERS\"\n26  PRINT\"(5E+06 KM). PHOTON TORPEDOES MAY BE USED FOR RANGES\"\n27  PRINT\"2E+06 KM AND GREATER.\":PRINT\" \"\n30  PRINT\"FOWARD PHASORS AND PHOTON TORPEDOES MAY BE USED FOR \"\n35  PRINT\"BEARINGS 0 THRU 90 DEGREES. REAR PHASORS MAY BE USED\"",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "STAR TREK SHORTER",
+      "capture": "tape6b",
+      "save": 2,
+      "raw": "versions/v02/02-STAR-TREK-SHORTER.BAS",
+      "listing": "versions/v02/02-STAR-TREK-SHORTER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 98 consistent pointers; end marker; matches original and 3 audio variants; not execution-tested",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/02-STAR-TREK-SHORTER.ASC",
+          "label": "02-STAR-TREK-SHORTER.ASC"
+        },
+        {
+          "path": "versions/v02/02-STAR-TREK-SHORTER.BAS",
+          "label": "02-STAR-TREK-SHORTER.BAS"
+        }
+      ],
+      "startupSource": "1  REM STAR TREK REVISED BY ANTHONY D'AGOSTA FOR THE TRS-80\n2 DIMA(14)\n5  PRINT\"THE PLAYER, AS CAPTAIN OF THE ENTERPRISE ALTERNATES\"\n10  PRINT\"MOVES WITH THE KLINGON BATTLE CRUISER. AFTER A READOUT\"\n15  PRINT\"OF THE RANGE AND BEARING TO THE ENEMY VESSEL, THE PLAY-\"\n20  PRINT\"ER IS QUIERIED FOR HIS COMMAND.\":PRINT\" \"\n25  PRINT\"PHASORS HAVE RANGE FROM 0 TO 5 MILLION KILOMETERS\"\n26  PRINT\"(5E+06 KM). PHOTON TORPEDOES MAY BE USED FOR RANGES\"\n27  PRINT\"2E+06 KM AND GREATER.\":PRINT\" \"\n30  PRINT\"FOWARD PHASORS AND PHOTON TORPEDOES MAY BE USED FOR \"\n35  PRINT\"BEARINGS 0 THRU 90 DEGREES. REAR PHASORS MAY BE USED\"\n40  PRINT\"FOR BEARINGS 90 THRU 180 DEGREES.\":PRINT\" \":PRINT\" \"",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

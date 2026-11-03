@@ -67,6 +67,68 @@
       },
       "recovery_inventory": "tapes/recovered/tape6b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape6b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape6b/best/02-STAR-TREK-SHORTER.BAS",
+      "archive_listing": "tapes/recovered/tape6b/best/02-STAR-TREK-SHORTER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/02-STAR-TREK-SHORTER.ASC",
+          "archive_path": "tapes/recovered/tape6b/best/02-STAR-TREK-SHORTER.ASC",
+          "bytes": 4019,
+          "sha256": "f349a8a070bc7091ee6acb6e223a2ef4aebfaaf5402b50f73476b21e7e2d6dd4"
+        },
+        {
+          "path": "versions/v02/02-STAR-TREK-SHORTER.BAS",
+          "archive_path": "tapes/recovered/tape6b/best/02-STAR-TREK-SHORTER.BAS",
+          "bytes": 3449,
+          "sha256": "83335c56c848fbb8a8c663b2c3da9445fccf1961a07ce26f9298f87ff247f628"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "83335c56c848fbb8a8c663b2c3da9445fccf1961a07ce26f9298f87ff247f628",
+        "bytes": 3449,
+        "archive_validation": "98 consistent pointers; end marker; matches original and 3 audio variants; not execution-tested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 98,
+        "last": 2020,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": false,
+        "parsed_bytes": 3446,
+        "source_notice_lines": [
+          "1  REM STAR TREK REVISED BY ANTHONY D'AGOSTA FOR THE TRS-80"
+        ]
+      },
+      "inventory_row": {
+        "tape": "6",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "STAR TREK SHORTER; 98 lines",
+        "capture": "tape6b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "98 consistent pointers; end marker; matches original and 3 audio variants; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "3449",
+        "source_file": "tapes/recovered/tape6b/best/02-STAR-TREK-SHORTER.ASC",
+        "wav": "tapes/tape6b.wav",
+        "folder": "tapes/recovered/tape6b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; validate save/load support"
+      },
+      "recovery_inventory": "tapes/recovered/tape6b/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
