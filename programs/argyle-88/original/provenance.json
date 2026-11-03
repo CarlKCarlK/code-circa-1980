@@ -1,19 +1,19 @@
 {
-  "version": "v01",
-  "capture": "tape22a",
-  "save": 15,
-  "archive_raw": "tapes/recovered/tape22a/best/15-ARGYLE-88.BAS",
-  "archive_listing": "tapes/recovered/tape22a/best/15-ARGYLE-88.ASC",
+  "version": "v02",
+  "capture": "tape22b",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape22b/best/01-ARGYLE-88.BAS",
+  "archive_listing": "tapes/recovered/tape22b/best/01-ARGYLE-88.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/15-ARGYLE-88.ASC",
-      "archive_path": "tapes/recovered/tape22a/best/15-ARGYLE-88.ASC",
+      "path": "versions/v02/01-ARGYLE-88.ASC",
+      "archive_path": "tapes/recovered/tape22b/best/01-ARGYLE-88.ASC",
       "bytes": 4271,
       "sha256": "a48ce7a04a68df3e50d5b370ac3d6871ed95a93d5e731ab02d1fb75a6d6de1c3"
     },
     {
-      "path": "versions/v01/15-ARGYLE-88.BAS",
-      "archive_path": "tapes/recovered/tape22a/best/15-ARGYLE-88.BAS",
+      "path": "versions/v02/01-ARGYLE-88.BAS",
+      "archive_path": "tapes/recovered/tape22b/best/01-ARGYLE-88.BAS",
       "bytes": 3613,
       "sha256": "1f4d3730088e788d29d3d54c0a6c5583828144c8aacd5f079f552cf4d182c90a"
     }
@@ -35,26 +35,26 @@
   },
   "inventory_row": {
     "tape": "22",
-    "side": "a",
-    "order": "15",
+    "side": "b",
+    "order": "1",
     "type": "BASIC",
     "recovery%": "100",
     "summary": "ARGYLE 88",
-    "capture": "tape22a",
+    "capture": "tape22b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "487.474",
+    "source_start_s": "13.803",
     "recovered_bytes": "3613",
-    "source_file": "tapes/recovered/tape22a/best/15-ARGYLE-88.ASC",
-    "wav": "tapes/tape22a.wav",
-    "folder": "tapes/recovered/tape22a",
+    "source_file": "tapes/recovered/tape22b/best/01-ARGYLE-88.ASC",
+    "wav": "tapes/tape22b.wav",
+    "folder": "tapes/recovered/tape22b",
     "recovery_date": "2026-10-28",
     "recorder_volume": "",
     "next_action": "Runtime testing only if requested"
   },
-  "recovery_inventory": "tapes/recovered/tape22a/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape22b/inventory.json",
   "execution_tested": false
 }
