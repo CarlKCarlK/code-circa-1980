@@ -1,0 +1,42 @@
+{
+  "id": "notebook-outline-study-aid",
+  "title": "Notebook Outline Study Aid",
+  "description": "Notebook Outline Study Aid. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "NOTEBOOK OUTLINE STUDY AID",
+      "capture": "tape12b",
+      "save": 1,
+      "raw": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.BAS",
+      "listing": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.ASC",
+          "label": "01-NOTEBOOK-OUTLINE-STUDY-AID.ASC"
+        },
+        {
+          "path": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.BAS",
+          "label": "01-NOTEBOOK-OUTLINE-STUDY-AID.BAS"
+        }
+      ],
+      "startupSource": "5 POKE16553,255\n7 CLEAR300\n10 CLS:PRINT:PRINT:PRINT\"                                  NOTEBOOK\"\n20 PRINT:PRINT:    PRINT\"                        A  C.A.I.  USING AN OUTLINE\":PRINT:PRINT:PRINT:PRINT\"PRESS <SPACE>\"\n30 A$=INKEY$:IFA$=\"\"THEN30ELSECLS\n40 INPUT\"HOW MANY LEVELS WOULD YOU LIKE TO PENITRATE\";L\n50 INPUT\"WHERE SHOULD I START AND WHERE SHOULD I END (LINE,LINE) TYPE 0,0 IF ALL.\";S,E\n60 CLS:RESTORE\n65 READO$:IFO$=\"DONE\"THEN999ELSEPRINTTAB(25) O$:PRINT\n70 READ O$:IFO$=\"DONE\"THEN999\n80 IFLEN(STR$(VAL(O$)))<L+3 AND((VAL(O$)<E AND VAL(O$)>=S)ORE=0)THEN90ELSE300\n90 PRINTTAB(LEN(STR$(VAL(O$)))*2) O$",
+      "controlSource": [
+        "30 A$=INKEY$:IFA$=\"\"THEN30ELSECLS"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
