@@ -1,0 +1,44 @@
+{
+  "id": "mileage-card-game",
+  "title": "Mileage Card Game",
+  "description": "Mileage Card Game. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Mileage card game",
+      "capture": "tape17b",
+      "save": 5,
+      "raw": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.BAS",
+      "listing": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 163 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+          "label": "05-MILEAGE-CARD-GAME-SAVE05.ASC"
+        },
+        {
+          "path": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.BAS",
+          "label": "05-MILEAGE-CARD-GAME-SAVE05.BAS"
+        }
+      ],
+      "startupSource": "10 DIMD(105),PH(7),CH(7)\n20 PRINT\"SETTING UP DECK  ......  WAIT\"\n30 CS(0)=0:PS(0)=0:FC(0)=0:FP(0)=0:FP(1)=0:PM=0:DA=0:RP=0:P2=0:PL=0:CL=0:\n40 FOR X=0TO105\n50 S=RND(X+1)-1\n60 D(X)=D(S)\n70 D(S)=X\n80 NEXTX\n85 HC=1:CH$=\"0NEEDS A ROLL\":HP=1:PH$=\"0NEEDS A ROLL\"\n90 PH(0)=6:CH(0)=6\n100 FOR P=0TO5:PH(P+1)=D(P):NEXTP\n110 FOR C=6TO11:CH(C-5)=D(C):NEXTC",
+      "controlSource": [
+        "155 M$=INKEY$",
+        "1330 IF INKEY$<>\"D\" THEN 1330 ",
+        "9180 B$=INKEY$:IF B$=\"B\" THEN PRINT:GOTO 20 ELSE 9180"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

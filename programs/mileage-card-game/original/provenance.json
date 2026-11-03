@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape17b",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.BAS",
+  "archive_listing": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+      "archive_path": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+      "bytes": 7566,
+      "sha256": "8c8a08066f3b988c7205308ccf2a3245f6dcc761a818ee3dc578a4e12290e591"
+    },
+    {
+      "path": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.BAS",
+      "archive_path": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.BAS",
+      "bytes": 6446,
+      "sha256": "023ea2c3232a27a86d3271b0b8fc457ab4d5b0e4b346fca610d0c6daf5108b5a"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "023ea2c3232a27a86d3271b0b8fc457ab4d5b0e4b346fca610d0c6daf5108b5a",
+    "bytes": 6446,
+    "archive_validation": "163 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 163,
+    "last": 10010,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 6444,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "17",
+    "side": "b",
+    "order": "5",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "Mileage card game; player/computer arrays (inferred title)",
+    "capture": "tape17b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "163 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "605.768",
+    "recovered_bytes": "6446",
+    "source_file": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+    "wav": "tapes/tape17b.wav",
+    "folder": "tapes/recovered/tape17b",
+    "recovery_date": "2026-10-29",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape17b/inventory.json",
+  "execution_tested": false
+}
