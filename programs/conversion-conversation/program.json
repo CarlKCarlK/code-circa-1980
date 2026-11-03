@@ -1,0 +1,40 @@
+{
+  "id": "conversion-conversation",
+  "title": "Conversion Conversation",
+  "description": "Conversion Conversation. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CONVERSION CONVERSATION",
+      "capture": "tape20b",
+      "save": 6,
+      "raw": "versions/v01/06-CONVERSION-CONVERSATION.BAS",
+      "listing": "versions/v01/06-CONVERSION-CONVERSATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-CONVERSION-CONVERSATION.ASC",
+          "label": "06-CONVERSION-CONVERSATION.ASC"
+        },
+        {
+          "path": "versions/v01/06-CONVERSION-CONVERSATION.BAS",
+          "label": "06-CONVERSION-CONVERSATION.BAS"
+        }
+      ],
+      "startupSource": "2 CLEAR300\n5 CLS\n10 REM           CONVERSION\n15 T=17\n20 PRINT\"HELLO, I AM A COMPUTER AND I WOULD LIKE TO TAKE WITH YOU.\"\n30 PRINT\n40 PRINT\"WHAT WOULD YOU LIKE TO TAKE ABOUT?\";\n50 LINE INPUT H$\n60 R=-999\n62 H$=H$+\" \"\n65 RESTORE\n70 FOR S=1TOT",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
