@@ -1,0 +1,40 @@
+{
+  "id": "acceleration-from-data",
+  "title": "Acceleration From Data",
+  "description": "Acceleration From Data. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extensions may be required",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ACCELERATION FROM DATA",
+      "capture": "tape11b",
+      "save": 3,
+      "raw": "versions/v01/03-ACCELERATION-FROM-DATA.BAS",
+      "listing": "versions/v01/03-ACCELERATION-FROM-DATA.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-ACCELERATION-FROM-DATA.ASC",
+          "label": "03-ACCELERATION-FROM-DATA.ASC"
+        },
+        {
+          "path": "versions/v01/03-ACCELERATION-FROM-DATA.BAS",
+          "label": "03-ACCELERATION-FROM-DATA.BAS"
+        }
+      ],
+      "startupSource": "10 READ D:IF D>=0THEN N=N+1:GOTO10\n20 RESTORE\n30 FOR C=1TO N\n40 READ D\n50 T=C/3000\n60 A=2*D/T[2\n70 AV=A/N\n80 NEXT C\n90 PRINT\"AVERAGE ACELLERATION\";AV\"FT/SEC\n100 RESTORE\n110 FORC=1TON\n120 READ D",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
