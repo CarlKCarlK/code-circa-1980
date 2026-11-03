@@ -34,6 +34,30 @@
       ],
       "startupSource": "10 CLEAR200\n20 DEFINTU:DIMU(100)\n30 R$=\"ZZZZZ\"\n100 READA$:L=LEN(A$):V=VAL(A$):IFL<>1ANDV=0THEN140ELSEIFV<>0ANDV<1000THENPP=VELSEIFV<>0ANDV>=1000THENDD=VELSEIFA$=\"U\"THENM$=\"U.S. NEWS\"ELSEIFA$=\"N\"THENM$=\"NEWSWEEK\"ELSEIFA$=\"T\"THENM$=\"TIME\"ELSEIFA$=\"D\"THEN200ELSE140\n110 GOTO100\n140 X=X+1:C$=A$+STR$(130000-D)+LEFT$(M$,1)+STR$(P):IFU(X)=0ANDC$<R$THENR$=C$:T$=A$:D=DD:MM$=M$:P=PP:U=X:GOTO100:ELSE100\n200 IFR$=\"ZZZZZ\"THENSTOPELSEM=INT(D/10000):DY=INT((D-M*10000)/100):Y=1900+INT(D-DY*100-M*10000):PRINTT$\",\";TAB(10);MM$;M\"-\"DY\"-\"Y\", PAGE\";P:R$=\"ZZZZZ\":RESTORE:U(U)=1:X=0:GOTO100\n1000 DATAU,10779,23,NIXON OUR BEST PRESIDENT?,ILLEAL ALLIANS,MEXICO,24,TAXES,BROWN,N,123079,56,HELL NO WE WON'T GO,DRAFT,MILITARY\n2000 DATAMEXICO,13,MEXICO,T,34,MEXICO\n10000 DATA\"D\"",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "EXTEMP ARTICLE INDEX SAVE02",
+      "capture": "tape22b",
+      "save": 4,
+      "raw": "versions/v02/04-EXTEMP-ARTICLE-INDEX-SAVE02.BAS",
+      "listing": "versions/v02/04-EXTEMP-ARTICLE-INDEX-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/04-EXTEMP-ARTICLE-INDEX-SAVE02.ASC",
+          "label": "04-EXTEMP-ARTICLE-INDEX-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v02/04-EXTEMP-ARTICLE-INDEX-SAVE02.BAS",
+          "label": "04-EXTEMP-ARTICLE-INDEX-SAVE02.BAS"
+        }
+      ],
+      "startupSource": "10 INPUT\"DD\";DD\n20 DIMC$(DD)\n30 R$=\"ZZZZZ\"\n100 READA$:L=LEN(A$):V=VAL(A$):IFL<>1ANDV=0THEN140ELSEIFV<>0ANDV<1000THENP=VELSEIFV<>0ANDV>=1000THEND=VELSEIFA$=\"U\"THENM$=\"U.S. NEWS\"ELSEIFA$=\"N\"THENM$=\"NEWSWEEK\"ELSEIFA$=\"T\"THENM$=\"TIME\"ELSEIFA$=\"D\"THENFORI=XTODD:C$(I)=CHR$(RND(70)+32):NEXT:X=DD:GOTO10000\n110 GOTO100\n140 X=X+1:C$(X)=A$+STR$(130000-D)+LEFT$(M$,1)+STR$(P)\n150 GOTO100\n200 FORK=1TON:PRINTC$(K):NEXT:STOP:M=INT(D/10000):DY=INT((D-M*10000)/100):Y=1900+INT(D-DY*100-M*10000):PRINTT$\",\";TAB(10);MM$;M\"-\"DY\"-\"Y\", PAGE\";P:R$=\"ZZZZZ\":RESTORE:U(U)=1:X=0:GOTO100\n1000 DATAU,10779,23,NIXON OUR BEST PRESIDENT?,ILLEAL ALLIANS,MEXICO,24,TAXES,BROWN,N,123079,56,HELL NO WE WON'T GO,DRAFT,MILITARY\n2000 DATAMEXICO,13,MEXICO,T,34,MEXICO\n9999 DATA\"D\"\n10000 PRINT\"GO!\"",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
