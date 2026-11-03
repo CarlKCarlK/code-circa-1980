@@ -36,6 +36,32 @@
       "controlSource": [
         "100 A$=INKEY$:IFA$=\"\"THEN120ELSEIFA$=\"E\"THEN P=13ELSEIFA$=\"R\" THEN THEN P=14ELSEIFA$=\"T\"THEN P=15ELSEIFA$=\"Q\"THEN P=11ELSEIFA$=\"W\"THENP=12ELSEIFA$=\"0\"THENP=10ELSEIFVAL(A$)<>0THENP=VAL(A$)"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "Body/joint data and graphics, 18 points",
+      "capture": "tape1b2",
+      "save": 7,
+      "raw": "versions/v02/07-BODY-JOINTS-18-POINTS.BAS",
+      "listing": "versions/v02/07-BODY-JOINTS-18-POINTS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/07-BODY-JOINTS-18-POINTS.ASC",
+          "label": "07-BODY-JOINTS-18-POINTS.ASC"
+        },
+        {
+          "path": "versions/v02/07-BODY-JOINTS-18-POINTS.BAS",
+          "label": "07-BODY-JOINTS-18-POINTS.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n15 P=1\n20 BP=18\n30 DIM B$(BP),A(BP),X(BP),Y(BP),C(BP,3),P(BP),N(BP)\n40 FOR X=1TOBP: READ B$(X): NEXT X\n50 FOR Z=1TO4:READ Z(Z):NEXTZ\n60 DATA RIGHT TOE,RIGHT ANKEL, RIGHT KNEE,RIGHT HOP,LEFT HIP,LEFT KNEE,LEFT ANKLE,LEFT SHOULDER,LEFT ELBOW, LEFT HAND,RIGHT SHOULDER,RIGHT ALBOW,RIGHT HAND,CHEST,NECK,RIGHT EAR,LEFT EAR,LEFT TOE,0,1,0,-1\n70 FORX=1TOBP:READ C(X,2),C(X,3):C(X,1)=C(X,3):C(X,2)=C(X,2)/2:NEXT\n80 C(16,1)=60:C(17,1)=60\n100 A$=INKEY$:IFA$=\"\"THEN120ELSEIFA$=\"E\"THEN P=13ELSEIFA$=\"R\" THEN THEN P=14ELSEIFA$=\"T\"THEN P=15ELSEIFA$=\"Q\"THEN P=11ELSEIFA$=\"W\"THENP=12ELSEIFA$=\"0\"THENP=10ELSEIFVAL(A$)<>0THENP=VAL(A$)\n120 PRINT@960,B$(P);\"             \";\n130 IF A$=\" \"THEN Z=Z+1:IFZ>4THENZ=1",
+      "controlSource": [
+        "100 A$=INKEY$:IFA$=\"\"THEN120ELSEIFA$=\"E\"THEN P=13ELSEIFA$=\"R\" THEN THEN P=14ELSEIFA$=\"T\"THEN P=15ELSEIFA$=\"Q\"THEN P=11ELSEIFA$=\"W\"THENP=12ELSEIFA$=\"0\"THENP=10ELSEIFVAL(A$)<>0THENP=VAL(A$)"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"

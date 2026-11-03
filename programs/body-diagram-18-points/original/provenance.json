@@ -1,19 +1,19 @@
 {
-  "version": "v01",
-  "capture": "tape1b",
+  "version": "v02",
+  "capture": "tape1b2",
   "save": 7,
-  "archive_raw": "tapes/recovered/tape1b/best/07-BODY-JOINTS-18-POINTS.BAS",
-  "archive_listing": "tapes/recovered/tape1b/best/07-BODY-JOINTS-18-POINTS.ASC",
+  "archive_raw": "tapes/recovered/tape1b2/best/07-BODY-JOINTS-18-POINTS.BAS",
+  "archive_listing": "tapes/recovered/tape1b2/best/07-BODY-JOINTS-18-POINTS.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/07-BODY-JOINTS-18-POINTS.ASC",
-      "archive_path": "tapes/recovered/tape1b/best/07-BODY-JOINTS-18-POINTS.ASC",
+      "path": "versions/v02/07-BODY-JOINTS-18-POINTS.ASC",
+      "archive_path": "tapes/recovered/tape1b2/best/07-BODY-JOINTS-18-POINTS.ASC",
       "bytes": 1115,
       "sha256": "6810ed7bb125e89f51b5adc6996bcb584097f4691541f38bb4da1a5b14ac2e72"
     },
     {
-      "path": "versions/v01/07-BODY-JOINTS-18-POINTS.BAS",
-      "archive_path": "tapes/recovered/tape1b/best/07-BODY-JOINTS-18-POINTS.BAS",
+      "path": "versions/v02/07-BODY-JOINTS-18-POINTS.BAS",
+      "archive_path": "tapes/recovered/tape1b2/best/07-BODY-JOINTS-18-POINTS.BAS",
       "bytes": 976,
       "sha256": "07f4d7a6c11f26f26ca586e3a70efe7b06425c90984daafe3ca59fd03c6770b5"
     }
@@ -40,21 +40,21 @@
     "type": "BASIC",
     "recovery%": "100",
     "summary": "Body/joint data and graphics, 18 points",
-    "capture": "tape1b",
+    "capture": "tape1b2",
     "capture_scope": "full",
     "baud": "500",
-    "platform": "TRS-80 Model I/III BASIC",
+    "platform": "undetermined",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
-    "source_start_s": "416.978",
+    "source_start_s": "415.738",
     "recovered_bytes": "976",
-    "source_file": "tapes/recovered/tape1b/best/07-BODY-JOINTS-18-POINTS.ASC",
-    "wav": "tapes/tape1b.wav",
-    "folder": "tapes/recovered/tape1b",
+    "source_file": "tapes/recovered/tape1b2/best/07-BODY-JOINTS-18-POINTS.ASC",
+    "wav": "tapes/tape1b2.wav",
+    "folder": "tapes/recovered/tape1b2",
     "recovery_date": "2026-10-28",
     "recorder_volume": "",
     "next_action": "Runtime testing only if requested"
   },
-  "recovery_inventory": "tapes/recovered/tape1b/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape1b2/inventory.json",
   "execution_tested": false
 }
