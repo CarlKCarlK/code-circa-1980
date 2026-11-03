@@ -62,6 +62,42 @@
       "controlSource": [
         "10557 IF INKEY$=\"\" THEN 10557"
       ]
+    },
+    {
+      "id": "v03",
+      "label": "Stable-matching program \u2014 earlier damaged save (descriptive title)",
+      "capture": "tape32a",
+      "save": 6,
+      "raw": "versions/v03/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.BAS",
+      "listing": "versions/v03/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged; validated prefix only. Conflicting pulse/timing candidates despite complete-looking structure; exact left/right 15-byte prefix through line 10; no synthetic terminator",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v03/06-STABLE-MATCHING-SAVE01-NOTES.txt",
+          "label": "06-STABLE-MATCHING-SAVE01-NOTES.txt"
+        },
+        {
+          "path": "versions/v03/06-STABLE-MATCHING-SAVE01-RAW-CANDIDATE.BAS",
+          "label": "06-STABLE-MATCHING-SAVE01-RAW-CANDIDATE.BAS"
+        },
+        {
+          "path": "versions/v03/06-STABLE-MATCHING-SAVE01-UNCERTAIN.ASC",
+          "label": "06-STABLE-MATCHING-SAVE01-UNCERTAIN.ASC"
+        },
+        {
+          "path": "versions/v03/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.ASC",
+          "label": "06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v03/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.BAS",
+          "label": "06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 2000",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

@@ -1,60 +1,78 @@
 {
-  "version": "v02",
-  "capture": "tape24a",
-  "save": 7,
-  "archive_raw": "tapes/recovered/tape24a/best/07-STABLE-MATCHING-SAVE02.BAS",
-  "archive_listing": "tapes/recovered/tape24a/best/07-STABLE-MATCHING-SAVE02.ASC",
+  "version": "v03",
+  "capture": "tape32a",
+  "save": 6,
+  "archive_raw": "tapes/recovered/tape32a/partial/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.BAS",
+  "archive_listing": "tapes/recovered/tape32a/partial/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/07-STABLE-MATCHING-SAVE02.ASC",
-      "archive_path": "tapes/recovered/tape24a/best/07-STABLE-MATCHING-SAVE02.ASC",
-      "bytes": 1820,
-      "sha256": "7c2f58d77ad4f2801f4083eb3cecc04cbdc639122d135d620805bbab33773abf"
+      "path": "versions/v03/06-STABLE-MATCHING-SAVE01-NOTES.txt",
+      "archive_path": "tapes/recovered/tape32a/partial/06-STABLE-MATCHING-SAVE01-NOTES.txt",
+      "bytes": 477,
+      "sha256": "cd476d265f8f5720cd41c8977c4cd19a4a4ccce7bcd9002f306320d91c28abcf"
     },
     {
-      "path": "versions/v02/07-STABLE-MATCHING-SAVE02.BAS",
-      "archive_path": "tapes/recovered/tape24a/best/07-STABLE-MATCHING-SAVE02.BAS",
-      "bytes": 1520,
-      "sha256": "96dce96ae4cebe2f55a74a2b132a282943caa07ad8b49deddd611826c210fd98"
+      "path": "versions/v03/06-STABLE-MATCHING-SAVE01-RAW-CANDIDATE.BAS",
+      "archive_path": "tapes/recovered/tape32a/partial/06-STABLE-MATCHING-SAVE01-RAW-CANDIDATE.BAS",
+      "bytes": 2964,
+      "sha256": "10da28168a2ee673c0237e597c6d562699875b78cccaee596ad3510a2773ae63"
+    },
+    {
+      "path": "versions/v03/06-STABLE-MATCHING-SAVE01-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape32a/partial/06-STABLE-MATCHING-SAVE01-UNCERTAIN.ASC",
+      "bytes": 3577,
+      "sha256": "34206e36ef4db9473cf35a86171abcab1badebbda3188bd2236c97202b2cd858"
+    },
+    {
+      "path": "versions/v03/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape32a/partial/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.ASC",
+      "bytes": 14,
+      "sha256": "c34aaf05d5677d14a9449a2f2ae46dda5226818e7793aa41f701a21260d6110d"
+    },
+    {
+      "path": "versions/v03/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.BAS",
+      "archive_path": "tapes/recovered/tape32a/partial/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.BAS",
+      "bytes": 15,
+      "sha256": "24d27634d4371ac44731260af640ce91ba4dd8592dfee5b5d401a1e9d82e90a8"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "96dce96ae4cebe2f55a74a2b132a282943caa07ad8b49deddd611826c210fd98",
-    "bytes": 1520,
-    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "sha256": "24d27634d4371ac44731260af640ce91ba4dd8592dfee5b5d401a1e9d82e90a8",
+    "bytes": 15,
+    "archive_validation": "Conflicting pulse/timing candidates despite complete-looking structure; exact left/right 15-byte prefix through line 10; no synthetic terminator",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 47,
-    "last": 10560,
+    "lines": 1,
+    "last": 10,
     "pointer_bases": [
-      17125
+      27202
     ],
-    "normal_end_marker": true,
-    "parsed_bytes": 1518,
+    "normal_end_marker": false,
+    "parsed_bytes": 15,
     "source_notice_lines": []
   },
   "inventory_row": {
-    "tape": "24",
+    "tape": "32",
     "side": "a",
-    "order": "7",
+    "order": "6",
     "type": "BASIC",
-    "recovery%": "100",
-    "summary": "STABLE MATCHING SAVE02",
-    "capture": "tape24a",
+    "recovery%": "",
+    "summary": "Stable-matching program \u2014 earlier damaged save (descriptive title)",
+    "capture": "tape32a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
-    "status": "validated payload; runtime untested",
-    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "225.477",
-    "recovered_bytes": "1520",
-    "source_file": "tapes/recovered/tape24a/best/07-STABLE-MATCHING-SAVE02.ASC",
-    "wav": "tapes/tape24a.wav",
-    "folder": "tapes/recovered/tape24a",
-    "recovery_date": "2026-10-28",
+    "status": "damaged; validated prefix only",
+    "validation": "Conflicting pulse/timing candidates despite complete-looking structure; exact left/right 15-byte prefix through line 10; no synthetic terminator",
+    "source_start_s": "355.219",
+    "recovered_bytes": "2964",
+    "source_file": "tapes/recovered/tape32a/partial/06-STABLE-MATCHING-SAVE01-VALIDATED-PREFIX.ASC",
+    "wav": "tapes/tape32a.wav",
+    "folder": "tapes/recovered/tape32a",
+    "recovery_date": "2026-10-29",
     "recorder_volume": "",
-    "next_action": "Runtime testing only if requested"
+    "next_action": "Unresolved byte conflicts retained"
   },
-  "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape32a/inventory.json",
   "execution_tested": false
 }
