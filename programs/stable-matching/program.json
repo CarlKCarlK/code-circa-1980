@@ -98,6 +98,32 @@
       ],
       "startupSource": "10 CLEAR 2000",
       "controlSource": []
+    },
+    {
+      "id": "v04",
+      "label": "Stable-matching program \u2014 later save (descriptive title)",
+      "capture": "tape32a",
+      "save": 7,
+      "raw": "versions/v04/07-STABLE-MATCHING-SAVE02.BAS",
+      "listing": "versions/v04/07-STABLE-MATCHING-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Exact independent left/right payload; 79 ordered lines; pointer base 27202; end marker; exact EOF",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v04/07-STABLE-MATCHING-SAVE02.ASC",
+          "label": "07-STABLE-MATCHING-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v04/07-STABLE-MATCHING-SAVE02.BAS",
+          "label": "07-STABLE-MATCHING-SAVE02.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 2000\n20 PRINT\"RUNNING\nDATA SHOULD BE OF FORM....\n#QUESTIONS,#MALES,#FEMALES,A1M1,A2M2,...A1MM,A2MM..ANMM,A1F1...\n25 READ QU,ML,FM:N=ML:IF FM>NTHEN N=FM\n30 DIM P(N,N,1),PP(N),RJ(N),A(N,QU,1),N$(N,1)\n35 PRINT\n40 PRINT\"NOW SOMEONE MUST (SECRETLY) TELL ME WHO EVERYONE IS\"\n50 FORI=1TOFM:PRINT\"WHO IS FEMALE #\"I;:INPUT N$(I,1):NEXTI\n60 FORI=1TOML:PRINT\"WHO IS MALE #\"I;:INPUT N$(I,0):NEXTI\n70  INPUT\"HOW MANY CORRECTIONS (0 FOR NONE)\";C\n80 IF C<>0 THENFOR C1=1TOC:INPUT\"SEX (0=MALE,1=FEMALE),NUMBER,CORRECT NAME\";S,I,N$(I,S):NEXTC1:GOTO70",
+      "controlSource": [
+        "10557 IF INKEY$=\"\" THEN 10557"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
