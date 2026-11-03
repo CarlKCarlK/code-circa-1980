@@ -1,0 +1,45 @@
+{
+  "id": "equation-balance-and-ordered-pairs",
+  "title": "Equation Balance And Ordered Pairs",
+  "description": "Equation Balance And Ordered Pairs. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "EQUATION SCALE",
+      "capture": "tape19a",
+      "save": 2,
+      "raw": "versions/v01/02-EQUATION-SCALE.BAS",
+      "listing": "versions/v01/02-EQUATION-SCALE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-EQUATION-SCALE.ASC",
+          "label": "02-EQUATION-SCALE.ASC"
+        },
+        {
+          "path": "versions/v01/02-EQUATION-SCALE.BAS",
+          "label": "02-EQUATION-SCALE.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 NC=-1\n100 FOR X=1TO40:SET(X+10,24):SET(X+80,24):NEXTX\n110 FORX=30TO100:SET(X,32):SET(X,31):NEXTX\n120 FOR Y=25TO30:SET(30,Y):SET(100,Y):NEXTY\n130 FOR X=62TO68:FORY=33TO35:SET(X,Y):NEXTY,X\n140 FOR Y=35 TO 45:SET(45,Y):SET(85,Y):NEXTY\n150 FOR X=45 TO85:SET(X,35):SET(X,45):NEXTX\n160 PRINT@32+832-64,\"=\";\n170 PRINT@26+768+64,\">\";\n180 PRINT@38+832,\"<\";\n190 A$=\"EQUATION SCALE\":PRINT@32-LEN(A$)/2,A$;",
+      "controlSource": [
+        "580 A$=INKEY$:IFA$=\"\"THEN580ELSEPRINTA$;",
+        "590 B$=INKEY$:IFB$=\"\"THEN590ELSEPRINTB$;",
+        "600 C$=INKEY$:IFC$=\"\"THEN600ELSEPRINTC$;",
+        "610 IFA$=\" \"ORB$=\" \"ORC$=\" \"THEN A$=INKEY$:GOTO 570"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
