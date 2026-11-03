@@ -1,54 +1,54 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape4a",
-  "save": 3,
-  "archive_raw": "tapes/recovered/tape4a/best/03-CHEMISTRY-CALCULATIONS.BAS",
-  "archive_listing": "tapes/recovered/tape4a/best/03-CHEMISTRY-CALCULATIONS.ASC",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape4a/best/05-CHEMISTRY-CALCULATIONS-V2.BAS",
+  "archive_listing": "tapes/recovered/tape4a/best/05-CHEMISTRY-CALCULATIONS-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/03-CHEMISTRY-CALCULATIONS.ASC",
-      "archive_path": "tapes/recovered/tape4a/best/03-CHEMISTRY-CALCULATIONS.ASC",
-      "bytes": 471,
-      "sha256": "b3e31004cecd4d697bde5d095dfd3a3add1162bf2717af9331cbe28f9dfe6db6"
+      "path": "versions/v02/05-CHEMISTRY-CALCULATIONS-V2.ASC",
+      "archive_path": "tapes/recovered/tape4a/best/05-CHEMISTRY-CALCULATIONS-V2.ASC",
+      "bytes": 688,
+      "sha256": "c727269b010b7b2135b089c6e2ac933a1f57a4000fbe43822995cf06fbf36188"
     },
     {
-      "path": "versions/v01/03-CHEMISTRY-CALCULATIONS.BAS",
-      "archive_path": "tapes/recovered/tape4a/best/03-CHEMISTRY-CALCULATIONS.BAS",
-      "bytes": 434,
-      "sha256": "ad13233a5da1d2122ded41676f769c633e1af3ead6b3d0a992b0d4e5ec1330d9"
+      "path": "versions/v02/05-CHEMISTRY-CALCULATIONS-V2.BAS",
+      "archive_path": "tapes/recovered/tape4a/best/05-CHEMISTRY-CALCULATIONS-V2.BAS",
+      "bytes": 643,
+      "sha256": "c1c6dec11fbdaf67accbefb64cffd82b064075ec8ef83fec8b27a99c474e88f2"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "ad13233a5da1d2122ded41676f769c633e1af3ead6b3d0a992b0d4e5ec1330d9",
-    "bytes": 434,
-    "archive_validation": "21 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+    "sha256": "c1c6dec11fbdaf67accbefb64cffd82b064075ec8ef83fec8b27a99c474e88f2",
+    "bytes": 643,
+    "archive_validation": "17 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 21,
-    "last": 1000,
+    "lines": 17,
+    "last": 1020,
     "pointer_bases": [
       17125
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 432,
+    "parsed_bytes": 641,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "4",
     "side": "a",
-    "order": "3",
+    "order": "5",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "CHEMISTRY CALCULATIONS; 21 lines",
+    "summary": "CHEMISTRY CALCULATIONS V2; 17 lines",
     "capture": "tape4a",
     "capture_scope": "full",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload",
-    "validation": "21 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+    "validation": "17 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
     "source_start_s": "",
-    "recovered_bytes": "434",
-    "source_file": "tapes/recovered/tape4a/best/03-CHEMISTRY-CALCULATIONS.ASC",
+    "recovered_bytes": "643",
+    "source_file": "tapes/recovered/tape4a/best/05-CHEMISTRY-CALCULATIONS-V2.ASC",
     "wav": "tapes/tape4a.wav",
     "folder": "tapes/recovered/tape4a/best",
     "recovery_date": "2026-10-25",
