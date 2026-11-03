@@ -1,0 +1,74 @@
+{
+  "official_title": "Eight Direction Trail Game",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "eight_direction_trail_game_p208",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21b",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape21b/best/09-EIGHT-DIRECTION-TRAIL-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape21b/best/09-EIGHT-DIRECTION-TRAIL-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/09-EIGHT-DIRECTION-TRAIL-GAME.ASC",
+          "archive_path": "tapes/recovered/tape21b/best/09-EIGHT-DIRECTION-TRAIL-GAME.ASC",
+          "bytes": 432,
+          "sha256": "e21ed54216a074e06bf29f0387969914635f8913f0ed80194a47c0c4d910c436"
+        },
+        {
+          "path": "versions/v01/09-EIGHT-DIRECTION-TRAIL-GAME.BAS",
+          "archive_path": "tapes/recovered/tape21b/best/09-EIGHT-DIRECTION-TRAIL-GAME.BAS",
+          "bytes": 341,
+          "sha256": "0eee36f90b02ae604f6186f14161a8cf6437873383403f32779fbfff96af5679"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "0eee36f90b02ae604f6186f14161a8cf6437873383403f32779fbfff96af5679",
+        "bytes": 341,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 13,
+        "last": 750,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 339,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "b",
+        "order": "9",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "EIGHT DIRECTION TRAIL GAME",
+        "capture": "tape21b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "315.969",
+        "recovered_bytes": "341",
+        "source_file": "tapes/recovered/tape21b/best/09-EIGHT-DIRECTION-TRAIL-GAME.ASC",
+        "wav": "tapes/tape21b.wav",
+        "folder": "tapes/recovered/tape21b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
