@@ -1,0 +1,74 @@
+{
+  "official_title": "Pronoun Transformer",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Pronoun Transformer",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape23b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape23b/best/06-PRONOUN-TRANSFORMER.BAS",
+      "archive_listing": "tapes/recovered/tape23b/best/06-PRONOUN-TRANSFORMER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/06-PRONOUN-TRANSFORMER.ASC",
+          "archive_path": "tapes/recovered/tape23b/best/06-PRONOUN-TRANSFORMER.ASC",
+          "bytes": 1648,
+          "sha256": "fc58fd2617d412920d935e1f47f8dccb3d36e618ecd38a7d24f5c7d827425ebf"
+        },
+        {
+          "path": "versions/v01/06-PRONOUN-TRANSFORMER.BAS",
+          "archive_path": "tapes/recovered/tape23b/best/06-PRONOUN-TRANSFORMER.BAS",
+          "bytes": 1362,
+          "sha256": "30e7d32879b927b79173712bd04bcac3a188db95004818ea36d59ac71ca0c07c"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "30e7d32879b927b79173712bd04bcac3a188db95004818ea36d59ac71ca0c07c",
+        "bytes": 1362,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 30,
+        "last": 1000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1360,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "b",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PRONOUN TRANSFORMER",
+        "capture": "tape23b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "565.282",
+        "recovered_bytes": "1362",
+        "source_file": "tapes/recovered/tape23b/best/06-PRONOUN-TRANSFORMER.ASC",
+        "wav": "tapes/tape23b.wav",
+        "folder": "tapes/recovered/tape23b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

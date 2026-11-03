@@ -1,0 +1,40 @@
+{
+  "id": "pronoun-transformer",
+  "title": "Pronoun Transformer",
+  "description": "Pronoun Transformer. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PRONOUN TRANSFORMER",
+      "capture": "tape23b",
+      "save": 6,
+      "raw": "versions/v01/06-PRONOUN-TRANSFORMER.BAS",
+      "listing": "versions/v01/06-PRONOUN-TRANSFORMER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-PRONOUN-TRANSFORMER.ASC",
+          "label": "06-PRONOUN-TRANSFORMER.ASC"
+        },
+        {
+          "path": "versions/v01/06-PRONOUN-TRANSFORMER.BAS",
+          "label": "06-PRONOUN-TRANSFORMER.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 500:CLS\n20 INPUT A$\n25 A$=A$+\".\":B$=\"\":C$=\"\":C=0:OC=0:WN=0:WC=0:E$=\"***\":D$=\"***\":SC=0\n30 \n                    REM GET RID OF PUNUATIONI\n\n40 B$=A$:A$=\"\":FORI=1TOLEN(B$):C=ASC(MID$(B$,I,1)):IFC<64 THEN C$=\" \":IF OC=1 THEN C$=\"\"ELSEOC=1ELSEIF C>95 THEN OC=0:C$=CHR$(C-32)ELSEOC=0:C$=CHR$(C)\n45 IF C$=\" \"THEN WN=WN+1\n50 A$=A$+C$:NEXTI:C$=\"\":OC=0\n60                       REM GO THOUGH WORD BY WORD\n\n70 WC=WC+1:GOSUB 990:IF B$=\"***\"THEN 200",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
