@@ -118,6 +118,30 @@
       ],
       "startupSource": "0 EN\n5 DEFSNG A-Z\n10 MP% = 2 :'#define number_of_programs\n20 TL% = 100:'#define transaction_limit\n21 TT% = 200:'#define timeout\n22 HM  = 1000:'#high mean\n23 HS  = 500 :'#high std dev\n24 IN  = 1E6 :'#infinity\n26 DIM \tMN(1),SD(1),VA(1),CN(1,TT%):'\t\tmean,std dev,value,conversation\n27 DIM  TM%(MP),BL(MP):'time,balance\n28 DIM  NI%(1):'index to program number\n30 'main",
       "controlSource": []
+    },
+    {
+      "id": "v05",
+      "label": "Cassette name T",
+      "capture": "tape2a2",
+      "save": 12,
+      "raw": "versions/v05/12-T-BASIC-TAPE-BLOCK.BIN",
+      "listing": "versions/v05/12-T.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v05/12-T-BASIC-TAPE-BLOCK.BIN",
+          "label": "12-T-BASIC-TAPE-BLOCK.BIN"
+        },
+        {
+          "path": "versions/v05/12-T.ASC",
+          "label": "12-T.ASC"
+        }
+      ],
+      "startupSource": "0 EN\n5 DEFSNG A-Z\n10 MP% = 2 :'#define number_of_programs\n20 TL% = 100:'#define transaction_limit\n21 TT% = 200:'#define timeout\n22 HM  = 1000:'#high mean\n23 HS  = 500 :'#high std dev\n24 IN  = 1E6 :'#infinity\n26 DIM \tMN(1),SD(1),VA(1),CN(1,TT%):'\t\tmean,std dev,value,conversation\n27 DIM  TM%(MP),BL(MP):'time,balance\n28 DIM  NI%(1):'index to program number\n30 'main",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
