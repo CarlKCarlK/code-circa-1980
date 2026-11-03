@@ -1,0 +1,42 @@
+{
+  "id": "graphics-crane",
+  "title": "Graphics Crane",
+  "description": "Graphics Crane. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC with graphics extensions",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GRAPHICS CRANE EARLY",
+      "capture": "tape8a",
+      "save": 9,
+      "raw": "versions/v01/09-GRAPHICS-CRANE-EARLY.BAS",
+      "listing": "versions/v01/09-GRAPHICS-CRANE-EARLY.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/09-GRAPHICS-CRANE-EARLY.ASC",
+          "label": "09-GRAPHICS-CRANE-EARLY.ASC"
+        },
+        {
+          "path": "versions/v01/09-GRAPHICS-CRANE-EARLY.BAS",
+          "label": "09-GRAPHICS-CRANE-EARLY.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 LINE(30,12)-(31,47),SET,BF:LINE(20,42)-(41,47),SET,BF\n20 LINE(14,17)-(71,17),SET:LINE(71,17)-(71,26),SET\n30 LINE(63,27)-(79,27),SET:SET(63,28):SET(63,29):SET(79,28):SET(79,29)\n40 DIM A%(100),B%(100),C%(100)\n44 RUN\n50 AL=62:BL=26\n100 A$= INKEY$\n110 IF ABS(AF)+ABS(CF)+ABS(BF)=0 AND A$=\"\"THEN100\n120 IF A$=\"\"THEN 200\n125 IF VAL(A$)<3.5 THEN GET@(AL,17)-(AL+34,47),G,A% ELSE IF VAL(A$)<6.5 THEN GET @(AL,BL)-(AL+20,BL+4),G,B% ELSE IF\n130 IF A$=\"1\" THEN AF=-1ELSEIFA$=\"2\" THEN AF=0 ELSE IF A$=\"3\" THEN AF=1ELSE IFA$=\"4\" THEN BF=-1ELSEIFA$=\"5\" THEN BF=0 ELSE IF A$=\"6\" THEN BF=1ELSE IF A$=\"7\"THENCF=-1ELSEIFA$=\"8\"THENCF=0ELSEIFA$=\"9\"THENCF=1 ELSE A$=\"\" :GOTO120",
+      "controlSource": [
+        "100 A$= INKEY$"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
