@@ -1,0 +1,137 @@
+{
+  "source": "versions/v10/07-SPEECH-TEAM-COACH-GAME.BAS",
+  "source_sha256": "0281a95ac124b0e7a93faff2203ed32dc14c69cb66f8cf40b5fd6de421bf8b1e",
+  "sha256": "348629cfa4a26653b14a1985df094e0775b0c7a6e0dad6c4770b68a85c60dfad",
+  "bytes": 6429,
+  "listing_sha256": "35c95c7457298a20bda98290f408b6215c0146530d0b6c4b5dfad06ee47b89cf",
+  "changes": [
+    {
+      "line": 130,
+      "from": "PARTICAPATE",
+      "to": "PARTICIPATE"
+    },
+    {
+      "line": 160,
+      "from": "GO THOUGH ALL",
+      "to": "GO THROUGH ALL"
+    },
+    {
+      "line": 160,
+      "from": "THE SCHOOL    NAME",
+      "to": "THE SCHOOL   NAME",
+      "layout": "THROUGH is one letter longer, so one fewer pad keeps NAME at the start of the next row"
+    },
+    {
+      "line": 160,
+      "from": "COACHES NAME",
+      "to": "COACH'S NAME"
+    },
+    {
+      "line": 160,
+      "from": "(MAKE'EM  UP",
+      "to": "(MAKE 'EM UP"
+    },
+    {
+      "line": 270,
+      "from": "EXTEMPORANCE",
+      "to": "EXTEMPORANEOUS"
+    },
+    {
+      "line": 270,
+      "from": "ORGINAL",
+      "to": "ORIGINAL"
+    },
+    {
+      "line": 270,
+      "from": "ORITORICAL",
+      "to": "ORATORICAL"
+    },
+    {
+      "line": 470,
+      "from": "GO THOUGH THE",
+      "to": "GO THROUGH THE"
+    },
+    {
+      "line": 502,
+      "from": "QUILITY",
+      "to": "QUALITY"
+    },
+    {
+      "line": 530,
+      "from": "VOCAL QUAILITY     ",
+      "to": "VOCAL QUALITY      ",
+      "layout": "One more pad keeps the field's length"
+    },
+    {
+      "line": 860,
+      "from": "MODERATLY",
+      "to": "MODERATELY"
+    },
+    {
+      "line": 880,
+      "from": "ALL MOST",
+      "to": "ALMOST"
+    },
+    {
+      "line": 1090,
+      "from": "POTENCIAL",
+      "to": "POTENTIAL"
+    },
+    {
+      "line": 1220,
+      "from": "TOUNOMENTS",
+      "to": "TOURNAMENTS"
+    },
+    {
+      "line": 1220,
+      "from": "DISTICT",
+      "to": "DISTRICT"
+    },
+    {
+      "line": 1240,
+      "from": "TOUNOMENT",
+      "to": "TOURNAMENT"
+    },
+    {
+      "line": 1240,
+      "from": "PRICTICE",
+      "to": "PRACTICE"
+    },
+    {
+      "line": 1410,
+      "from": "NOT TO LATE",
+      "to": "NOT TOO LATE"
+    },
+    {
+      "line": 1410,
+      "from": "LAST   WEEKS",
+      "to": "LAST  WEEK'S",
+      "layout": "TOO is one letter longer, so one fewer pad keeps WEEK'S at the start of the next row"
+    },
+    {
+      "line": 1500,
+      "from": "PALUA",
+      "to": "PAULA"
+    },
+    {
+      "line": 1640,
+      "from": "AUDUTORIUM WILL WE TABLUATE",
+      "to": "AUDITORIUM WHILE WE TABULATE"
+    },
+    {
+      "line": 1800,
+      "from": "FORTH",
+      "to": "FOURTH"
+    },
+    {
+      "line": 2080,
+      "from": "SEASONS",
+      "to": "SEASON'S"
+    },
+    {
+      "line": 2150,
+      "from": "REHERSAL",
+      "to": "REHEARSAL"
+    }
+  ]
+}

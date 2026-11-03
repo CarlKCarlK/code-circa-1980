@@ -1,6 +1,6 @@
 {
   "source": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
-  "rule": "Spelling only, and only inside quoted strings the game prints. Tokens, line numbers, logic, REM comments and spacing are unchanged, except two line-specific layout fixes where a corrected line would otherwise exceed 63 columns (a 64-column line leaves a blank line; 65 wraps). Line pointers are recomputed for the new lengths with the original memory base.",
+  "rule": "Spelling only, and only inside quoted strings the game prints. Tokens, remaining line numbers, logic, REM comments and spacing are unchanged, except two line-specific layout fixes where a corrected line would otherwise exceed 63 columns (a 64-column line leaves a blank line; 65 wraps). One false instruction line is deleted (see deletions). Line pointers are recomputed for the new lengths with the original memory base.",
   "replacements": [
     [
       "JUCTIONOS",
@@ -79,6 +79,13 @@
       "from": "  CLOSING A JUNCTION:",
       "to": "CLOSING A JUNCTION:",
       "reason": "Corrected spelling makes this line 65 columns, which wraps YOU onto its own line"
+    }
+  ],
+  "deletions": [
+    {
+      "line": 1200,
+      "text": "IF YOU RUN INTO HIM YOU HAVE ONE CHANCE TO FLEE, AFTER THAT,",
+      "reason": "Requested 2026-11-03. Line 4180 ends the game at once, so there is no chance to flee; line 1210 stays and is true on its own."
     }
   ]
 }

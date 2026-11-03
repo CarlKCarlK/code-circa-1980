@@ -21,8 +21,13 @@ test('Alien corrected edition rebuilds exactly and changes only printed strings'
   assert.equal(evidence.derived_editions[0].sha256, sha(bytes));
   const before = parseBasic(original), after = parseBasic(bytes);
   assert.equal(after.base, before.base);
-  assert.deepEqual(after.records.map(r => r.line), before.records.map(r => r.line));
-  before.records.forEach((r, i) => assert.deepEqual(code(after.records[i].body), code(r.body), `line ${r.line}`));
+  // Only the false "one chance to flee" line is gone; every other line keeps its code.
+  const kept = before.records.filter(r => r.line !== 1200);
+  assert.equal(before.records.length - kept.length, 1);
+  assert.deepEqual(after.records.map(r => r.line), kept.map(r => r.line));
+  kept.forEach((r, i) => assert.deepEqual(code(after.records[i].body), code(r.body), `line ${r.line}`));
+  assert.doesNotMatch(listing, /CHANCE TO FLEE/);
+  assert.match(listing, /1210 PRINT"IF HE IS WHERE YOU ARE HE EATS YOU\."/);
   // Pointer chain is consistent and the program ends exactly.
   let offset = 4; for (const r of after.records) { offset += 4 + r.body.length + 1; }
   assert.equal(offset + 2, bytes.length);

@@ -9,8 +9,11 @@ unchanged and downloadable as source.
 
 Rules, from [corrections.json](corrections.json):
 
-- Only bytes inside quoted strings change. Tokens, line numbers, program logic,
-  REM comments and spacing are unchanged.
+- Only bytes inside quoted strings change. Tokens, program logic, REM comments
+  and spacing are unchanged.
+- Line 1200 (`IF YOU RUN INTO HIM YOU HAVE ONE CHANCE TO FLEE, AFTER THAT,`) is
+  deleted at my request on 2026-11-03, because line 4180 ends the game at once.
+  Line 1210 stays and is true on its own.
 - Two line-specific layout fixes keep corrected lines within 63 columns: on the
   TRS-80 a 64-column line leaves a blank line and a 65-column line wraps.
 - Line pointers are recomputed for the new lengths using the original memory base.
@@ -18,7 +21,7 @@ Rules, from [corrections.json](corrections.json):
 Regenerate with `node scripts/build-alien-corrected.mjs` from `app/`.
 `npm test` rebuilds it and checks it against these files.
 
-Result: 7571 bytes (v02: 7560), SHA-256 `eea9e3638c75a0d4322ce7fe0e0b2e5bc2ae4dc7632d9a1c331de6f18fbcda21`.
+Result: 7503 bytes (v02: 7560), SHA-256 `59cbf7dd18dbc1d59e43bbee8067a11c78064fc3786f9c1317c58a4233d12481`.
 
 | Line | Original | Corrected | Times | Why |
 |---|---|---|---|---|

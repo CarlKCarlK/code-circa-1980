@@ -32,6 +32,9 @@ the library default (Model III, Level II BASIC, as on the site), typing at each 
 
 ## Corrected-spelling edition (`tests/alien-corrected.test.mjs`)
 
+On 2026-11-03 the false line 1200 was deleted from this edition; the test checks
+that every other line keeps its code.
+
 `npm test` rebuilds `corrected/ALIEN.BAS` from v02 with `corrections.json` and
 checks that it matches the committed file and `changes.json`; that line numbers,
 the memory base and every byte outside quoted strings equal v02; that the pointer

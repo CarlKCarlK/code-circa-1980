@@ -582,5 +582,23 @@
   "dating": {
     "direct_date": null,
     "context": "Olympics has a direct 1980 copyright. X-wing shares tape23b with Chemistry Balancer II, whose line 10 says COPYRIGHT 1981 C. KADIE. Speech has no confirmed date in these listings. These do not establish save dates."
-  }
+  },
+  "derived_editions": [
+    {
+      "id": "corrected",
+      "description": "v10 with printed spelling corrected; not a recovered artifact",
+      "source_version": "v10",
+      "source_sha256": "0281a95ac124b0e7a93faff2203ed32dc14c69cb66f8cf40b5fd6de421bf8b1e",
+      "raw": "corrected/SPEECH.BAS",
+      "listing": "corrected/SPEECH.ASC",
+      "sha256": "348629cfa4a26653b14a1985df094e0775b0c7a6e0dad6c4770b68a85c60dfad",
+      "bytes": 6429,
+      "listing_sha256": "35c95c7457298a20bda98290f408b6215c0146530d0b6c4b5dfad06ee47b89cf",
+      "corrections": "corrected/corrections.json",
+      "changes": "corrected/changes.json",
+      "build": "app/scripts/build-speech-corrected.mjs",
+      "created": "2026-11-03",
+      "requested_by": "user"
+    }
+  ]
 }

@@ -55,10 +55,15 @@ The full list is at the bottom.
 
 The alien moves only at these moments:
 
-- At the start of each game, including SAME SET-UP: half the time it tries one
-  move. Overall it moves 3 times in 8.
-- After a spray that misses: it moves 3 times in 4.
-- After you close a junction: it moves 3 times in 4.
+- When you move: never (0%).
+- After a spray that misses: 3 in 4 (75%).
+- After you close a junction: 3 in 4 (75%).
+- At the start of each game, including SAME SET-UP: 3 in 8 (37.5%). Half the time
+  it gets a turn, and that turn moves it 3 in 4.
+
+Those odds assume all three of its vents are open. A roll that picks a closed vent
+is rolled again, so a turn moves it 3 in 4 with three open vents, 2 in 3 with two,
+and 1 in 2 with one. It picks among its open vents equally.
 
 A move takes it through one open vent to a neighboring junction, chosen at random.
 It ignores vacuum chambers and booby traps, never enters a closed junction, and
@@ -137,7 +142,8 @@ reading the source.
 
 ### Where the instructions and code disagree
 
-- "One chance to flee" the alien: walking into it kills you at once.
+- "One chance to flee" the alien: walking into it kills you at once. The site's
+  edition deletes that sentence (line 1200); the recovered files keep it.
 - The alien "often moves": only at the moments listed above.
 - Computer failure "switches the junction's numbers": it moves you to a random
   junction, like Yob's super bats.

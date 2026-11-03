@@ -48,6 +48,8 @@ export function buildCorrected() {
   const {header, records, base} = parseBasic(original);
   const changes = [], parts = [header]; let offset = 4;
   for (const {line, body} of records) {
+    const deletion = spec.deletions.find(item => item.line === line);
+    if (deletion) { changes.push({line, deleted: deletion.text, reason: deletion.reason}); continue; }
     const fixed = correctBody(body, changes, line);
     const next = offset + 4 + fixed.length + 1;
     const link = Buffer.alloc(4); link.writeUInt16LE(base + next, 0); link.writeUInt16LE(line, 2);
@@ -63,5 +65,5 @@ if (process.argv[1] === new URL(import.meta.url).pathname) {
   fs.writeFileSync(new URL('corrected/ALIEN.BAS', folder), bytes);
   fs.writeFileSync(new URL('corrected/ALIEN.ASC', folder), listing);
   fs.writeFileSync(new URL('corrected/changes.json', folder), JSON.stringify({source: spec.source, source_sha256: sha(original), sha256: sha(bytes), bytes: bytes.length, listing_sha256: sha(Buffer.from(listing)), changes}, null, 2) + '\n');
-  console.log(`${changes.reduce((n, c) => n + c.count, 0)} corrections on ${new Set(changes.map(c => c.line)).size} lines; ${original.length} -> ${bytes.length} bytes`);
+  console.log(`${changes.reduce((n, c) => n + (c.count ?? 1), 0)} corrections on ${new Set(changes.map(c => c.line)).size} lines; ${original.length} -> ${bytes.length} bytes`);
 }

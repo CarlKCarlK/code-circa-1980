@@ -21,11 +21,11 @@ for(const id of ['speech','olympics','starwars81'])test(`${id}: frozen v1 opens 
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(`/${id}/v1/?test`);
  await expect(page.locator('#display canvas')).toHaveCount(1);
- await expect(page.locator('#status')).toContainText('Running original BASIC');
+ await expect(page.locator('#status')).toContainText(id==='speech'?'Running corrected BASIC':'Running original BASIC');
  expect(new URL(page.url()).pathname).toBe(`/${id}/v1/`);
  expect(new URL(page.url()).hash).toBe('');
  await expect(page.locator('.player-header').getByRole('link',{name:'Collection',exact:true})).toHaveAttribute('href',/#\/more$/);
- await expect(page.getByRole('link',{name:'Download original payload'})).toBeVisible();
+ await expect(page.getByRole('link',{name:id==='speech'?'Download BASIC payload':'Download original payload'})).toBeVisible();
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
  await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
  expect(errors).toEqual([]);
