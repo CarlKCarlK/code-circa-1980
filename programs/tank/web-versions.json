@@ -5,7 +5,7 @@
       "path": "tank/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "aa63d6bdb3b8bb98b5208389a6e78a01c5ba9555",
+      "sourceCommit": "af840c0df439cf192fdef415c1bd46401b513a13",
       "files": [
         {
           "path": "assets/01-AMAZING-PROGRAM-MAZE-Bxvk1jjV.ASC",
@@ -1783,9 +1783,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-20P006sQ.js",
+          "path": "assets/emulator-C5S503xv.js",
           "bytes": 286228,
-          "sha256": "db13f14d8bb1d2d3dbeb9a356f0999fbd8e3059a8d4bd2d0229a243a6dd30eb2"
+          "sha256": "558491a5782de3c3567295f64e4df239a877872cf067216cd8dde299aced1c9f"
         },
         {
           "path": "assets/GERMAN-b4Vu0Tmp.BAS",
@@ -1813,9 +1813,9 @@
           "sha256": "60e6c890e811aa6f967f597bf5c7f494dc5ceeb47a32505b18ca232493aab770"
         },
         {
-          "path": "assets/index--54_2RH2.js",
-          "bytes": 2502404,
-          "sha256": "0790c2ef007a300b8f0664e400b6104c8aa9ba6b0b3323b3e1b22f3f4c1d0cbf"
+          "path": "assets/index-BUc0U_eC.js",
+          "bytes": 2844371,
+          "sha256": "9c566928cae45dafcff006ab2a088b0964c72056da95d159a92e5db7387f805c"
         },
         {
           "path": "assets/index-DQ0iy3N9.css",
@@ -2098,19 +2098,19 @@
           "sha256": "e4dcd4e5a6443ea360e5ecf182eb077e431d8ce47f4760934d6d984a763b6344"
         },
         {
-          "path": "assets/player-D9tvFKJK.js",
+          "path": "assets/player-CpPJVqOB.js",
+          "bytes": 5576,
+          "sha256": "b8b9250a7e2f26512895ff22684a10229f86d89d959fb8471ed7ded8e4f5f97b"
+        },
+        {
+          "path": "assets/player-D72E7fDT.js",
           "bytes": 12370,
-          "sha256": "27e409d30c3f3edf03bcaebc54f6217e6e47add8b78baa3ecb1418a07181213d"
+          "sha256": "eb5b29e24612c4feb23a9a5f81350d8d3fb06973574812e3f7fa6772865c82d2"
         },
         {
           "path": "assets/player-DG3vU3-j.js",
           "bytes": 32072,
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
-        },
-        {
-          "path": "assets/player-Dm87QA3h.js",
-          "bytes": 5576,
-          "sha256": "da0d7fd85aabc6a5ab8514a7bfa60ba1f132f0487b7414873da19d9a2f909842"
         },
         {
           "path": "assets/PLOT3D-CmRZnxul.ASC",
@@ -2343,11 +2343,6 @@
           "sha256": "603dc1e6f26a108c552b0f552317f90b313e7a484d878f2193cd7cd90819dce9"
         },
         {
-          "path": "assets/provenance-CkaoP2Q0.json",
-          "bytes": 6713,
-          "sha256": "0852b9300f95e1a472c9552b8ea2d345237ca9fa4784e01cee9731cb9683688b"
-        },
-        {
           "path": "assets/provenance-CkbBLRyn.json",
           "bytes": 1793,
           "sha256": "3d37df448d952661fb2bb7b7072dd23f530f83491dfec273285ab502785a6f4b"
@@ -2431,6 +2426,11 @@
           "path": "assets/provenance-D99NHHGx.json",
           "bytes": 1793,
           "sha256": "ce2a3c7da5d05a8ede2d4943c0fc4071c6014fe651cc7ee38d76c2f5b375dba5"
+        },
+        {
+          "path": "assets/provenance-DAJIXnKk.json",
+          "bytes": 6758,
+          "sha256": "3a8517fbdef0ab0763832b7a7c9e7bf7a4da80606c3c9c9c2ce0c889dfb453b4"
         },
         {
           "path": "assets/provenance-DDmImPqe.json",
@@ -2758,9 +2758,9 @@
           "sha256": "7943588118b46d8d033626505731195df48f7a2eab860ec317135aad59a1cb3e"
         },
         {
-          "path": "assets/tank-gallery-CGnLmvyT.svg",
-          "bytes": 580,
-          "sha256": "3fb43f6eb0b01662674b0b80eae891254a023c597839c1b4640390b90c2b8604"
+          "path": "assets/tank-gallery-BNLPAWVJ.svg",
+          "bytes": 591,
+          "sha256": "ec794c99787d7fe89609491bbab1a87f111fcb4d1d2d66bc9825bdcc1fdb9fa0"
         },
         {
           "path": "assets/TEACHVI-D8UEq4cN.BAS",
@@ -2875,7 +2875,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "d0dba2a4005d6e16affef91e09337ec3e1dda046862110f06460454c0432c267"
+          "sha256": "21a86fed4cb3ec08cc2adfa9ecca0ddaecbd4b3704040e79b5f70b9b5eb8dd01"
         },
         {
           "path": "licenses.txt",
