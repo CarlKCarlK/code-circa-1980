@@ -1,0 +1,40 @@
+{
+  "id": "two-player-graphics-demo",
+  "title": "Two Player Graphics Demo",
+  "description": "Two Player Graphics Demo. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extensions may be needed",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TWO PLAYER GRAPHICS DEMO",
+      "capture": "tape10b",
+      "save": 13,
+      "raw": "versions/v01/13-TWO-PLAYER-GRAPHICS-DEMO.BAS",
+      "listing": "versions/v01/13-TWO-PLAYER-GRAPHICS-DEMO.ASC",
+      "playable": false,
+      "note": "validated source; runtime untested. Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/13-TWO-PLAYER-GRAPHICS-DEMO.ASC",
+          "label": "13-TWO-PLAYER-GRAPHICS-DEMO.ASC"
+        },
+        {
+          "path": "versions/v01/13-TWO-PLAYER-GRAPHICS-DEMO.BAS",
+          "label": "13-TWO-PLAYER-GRAPHICS-DEMO.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n15 DIM X(1),Y(1),XD(1)\n20 LINE(0,47)-(127,5),SET,BF\n30 'FORI=1TO20:Y=RND(46):LINE(0,Y)-(127,Y),SET:NEXTI\n40 X(0)=30:X(1)=97:XD(1)=-1:XD(0)=1\n50 FOR P=0TO1:SET(X(P),0):NEXTP:P=1\n90 P=1-P:IF NOTPOINT(X(P),Y(P)) THEN 500 ELSECM=PEEK(14400):NX=X(P)+XD(P):NY=Y(P)+1:IFNY>47THENNY=0\n100 IFNX>127THENNX=0ELSEIFNX<0THENNX=127\n105 PT=POINT(X(P),NY):IFPTHENIF8ANDCMTHENPT=-1ELSEIF16ANDCMTHENPT=0ELSE ELSEIF1ANDCMTHENPT=-1ELSEIF2ANDCMTHENPT=0\n110 RESET(X(P),Y(P)):IFPTTHENSET(NX,Y(P)):SET(X(P),NY):X(P)=NX ELSESET(X(P),NY):Y(P)=NY:GOTO130\n115 IF PEEK(14337)AND2THENXD(1)=-XD(1)\n116 IF CM AND 96 THEN XD(0)=-XD(0)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
