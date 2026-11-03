@@ -162,6 +162,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape20b",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape20b/best/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.BAS",
+      "archive_listing": "tapes/recovered/tape20b/best/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.BAS",
+          "archive_path": "tapes/recovered/tape20b/best/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.BAS",
+          "bytes": 3061,
+          "sha256": "4ab7efb57a2eeeee8a784c99e353c74917bb359faa2f644ea8935c856340f858"
+        },
+        {
+          "path": "versions/v04/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.ASC",
+          "archive_path": "tapes/recovered/tape20b/best/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.ASC",
+          "bytes": 3229,
+          "sha256": "76fc13e3a3c1ad07c9dde46ec6703f88a446304b5ca7c59dd86d3e6114c0aabb"
+        }
+      ],
+      "recovery_item": {
+        "lines": 88,
+        "last": 1040,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "4ab7efb57a2eeeee8a784c99e353c74917bb359faa2f644ea8935c856340f858"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "b",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "AUTOMATIC INVESTMENT MANAGEMENT SAVE03",
+        "capture": "tape20b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "566.230",
+        "recovered_bytes": "3061",
+        "source_file": "tapes/recovered/tape20b/best/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.ASC",
+        "wav": "tapes/tape20b.wav",
+        "folder": "tapes/recovered/tape20b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
