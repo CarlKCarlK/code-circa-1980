@@ -1,0 +1,53 @@
+{
+  "status": "Damaged; raw candidates, validated prefixes, and uncertain full listings remain separate. No bytes synthesized. Not playable.",
+  "files": [
+    {
+      "path": "15-RICKY-RAT-FRAGMENT-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape18b/partial/15-RICKY-RAT-FRAGMENT-PREFIX.ASC",
+      "bytes": 69,
+      "sha256": "e9417c31207fcdd71bef1e4d4f75b88a00ee3cb907dd714bd25de209faff22c8"
+    },
+    {
+      "path": "15-RICKY-RAT-FRAGMENT-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape18b/partial/15-RICKY-RAT-FRAGMENT-PREFIX.BIN",
+      "bytes": 59,
+      "sha256": "c6a313c2f67a4440dc5d1d548f0d473eb042329f55a88de12a50919ac4b1e7f6"
+    },
+    {
+      "path": "15-RICKY-RAT-FRAGMENT-RAW.BAS",
+      "archive_path": "tapes/recovered/tape18b/partial/15-RICKY-RAT-FRAGMENT-RAW.BAS",
+      "bytes": 109,
+      "sha256": "aa11998cd39f6ee6c12bf3ef169b547910e4e912f64ad99a5fd81ddd2b366c5e"
+    },
+    {
+      "path": "15-RICKY-RAT-FRAGMENT-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape18b/partial/15-RICKY-RAT-FRAGMENT-UNCERTAIN.ASC",
+      "bytes": 163,
+      "sha256": "8b5d13ab5e6a301731cf7e16950118d984f0faf7d7728e06bcc26a42cdc2b0c7"
+    },
+    {
+      "path": "19-RICKY-RAT-V15-DAMAGED-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape18b/partial/19-RICKY-RAT-V15-DAMAGED-PREFIX.ASC",
+      "bytes": 7727,
+      "sha256": "1130c1ab82b12b33318de6af7500649fc852d402f87cd862700a161282b0a9c9"
+    },
+    {
+      "path": "19-RICKY-RAT-V15-DAMAGED-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape18b/partial/19-RICKY-RAT-V15-DAMAGED-PREFIX.BIN",
+      "bytes": 6461,
+      "sha256": "aa619a20587f298a0989294166cb65be2443f5404344a99e44cf233a7f3eba59"
+    },
+    {
+      "path": "19-RICKY-RAT-V15-DAMAGED-RAW.BAS",
+      "archive_path": "tapes/recovered/tape18b/partial/19-RICKY-RAT-V15-DAMAGED-RAW.BAS",
+      "bytes": 7750,
+      "sha256": "aedb5ca5615ed523432cd98ec86d2b5a88739cf32857f0019c75c9dbbee562eb"
+    },
+    {
+      "path": "19-RICKY-RAT-V15-DAMAGED-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape18b/partial/19-RICKY-RAT-V15-DAMAGED-UNCERTAIN.ASC",
+      "bytes": 10821,
+      "sha256": "2b18ae56735208c18c4495c3c05bc9d35a49ae5c640e58c9632109bcf56ff2fb"
+    }
+  ]
+}

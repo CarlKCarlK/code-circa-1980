@@ -1,0 +1,597 @@
+{
+  "official_title": "Magazine Index",
+  "title_authority": "Descriptive title inferred from index behavior",
+  "short_name": "magazine",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred from source changes: empty templates precede data-bearing forms, and tape7a V2 through V6 expand formatting and article data. Cross-tape template order is uncertain. V6 is the selected complete index.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape7a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape7a/best/01-MAGAZINE-ARTICLE-INDEX-V1.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/01-MAGAZINE-ARTICLE-INDEX-V1.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-MAGAZINE-ARTICLE-INDEX-V1.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/01-MAGAZINE-ARTICLE-INDEX-V1.BAS",
+          "bytes": 665,
+          "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+        },
+        {
+          "path": "versions/v01/01-MAGAZINE-ARTICLE-INDEX-V1.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/01-MAGAZINE-ARTICLE-INDEX-V1.ASC",
+          "bytes": 868,
+          "sha256": "f4981b90a5988884188ac2d107dfc1f6e7af62e26a922e0e3d20860f0b3500b9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 10,
+        "last": 999,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V1; 10 lines",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "10 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "665",
+        "source_file": "tapes/recovered/tape7a/best/01-MAGAZINE-ARTICLE-INDEX-V1.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape7a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.BAS",
+          "bytes": 665,
+          "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+        },
+        {
+          "path": "versions/v02/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.ASC",
+          "bytes": 868,
+          "sha256": "f4981b90a5988884188ac2d107dfc1f6e7af62e26a922e0e3d20860f0b3500b9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 10,
+        "last": 999,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V1; 10 lines; duplicate of save 1",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "10 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "665",
+        "source_file": "tapes/recovered/tape7a/best/02-MAGAZINE-ARTICLE-INDEX-V1-SAVE2.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape11a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.BAS",
+      "archive_listing": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/03-MAGAZINE-SUBJECT-INDEX.BAS",
+          "archive_path": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.BAS",
+          "bytes": 665,
+          "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+        },
+        {
+          "path": "versions/v03/03-MAGAZINE-SUBJECT-INDEX.ASC",
+          "archive_path": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.ASC",
+          "bytes": 868,
+          "sha256": "f4981b90a5988884188ac2d107dfc1f6e7af62e26a922e0e3d20860f0b3500b9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 10,
+        "last": 999,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MAGAZINE SUBJECT INDEX; 10 lines",
+        "capture": "tape11a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+        "source_start_s": "91.707",
+        "recovered_bytes": "665",
+        "source_file": "tapes/recovered/tape11a/best/03-MAGAZINE-SUBJECT-INDEX.ASC",
+        "wav": "tapes/tape11a.wav",
+        "folder": "tapes/recovered/tape11a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape11a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape7b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.BAS",
+      "archive_listing": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/01-MAGAZINE-INDEX.BAS",
+          "archive_path": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.BAS",
+          "bytes": 703,
+          "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
+        },
+        {
+          "path": "versions/v04/01-MAGAZINE-INDEX.ASC",
+          "archive_path": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.ASC",
+          "bytes": 906,
+          "sha256": "ae30841e92bbb04075e905d25b1c5fbaf7a5927bd7dfd740782bc6d21f1da128"
+        }
+      ],
+      "recovery_item": {
+        "lines": 10,
+        "last": 999,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MAGAZINE INDEX; 10 readable line records",
+        "capture": "tape7b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "10 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "703",
+        "source_file": "tapes/recovered/tape7b/best/01-MAGAZINE-INDEX.ASC",
+        "wav": "tapes/tape7b.wav",
+        "folder": "tapes/recovered/tape7b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; keep printer output for index programs"
+      },
+      "recovery_inventory": "tapes/recovered/tape7b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape7b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/02-MAGAZINE-INDEX-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.BAS",
+          "bytes": 703,
+          "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
+        },
+        {
+          "path": "versions/v05/02-MAGAZINE-INDEX-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.ASC",
+          "bytes": 906,
+          "sha256": "ae30841e92bbb04075e905d25b1c5fbaf7a5927bd7dfd740782bc6d21f1da128"
+        }
+      ],
+      "recovery_item": {
+        "lines": 10,
+        "last": 999,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MAGAZINE INDEX SAVE2; 10 readable line records",
+        "capture": "tape7b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "10 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "703",
+        "source_file": "tapes/recovered/tape7b/best/02-MAGAZINE-INDEX-SAVE2.ASC",
+        "wav": "tapes/tape7b.wav",
+        "folder": "tapes/recovered/tape7b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; keep printer output for index programs"
+      },
+      "recovery_inventory": "tapes/recovered/tape7b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v06",
+      "capture": "tape7a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v06/03-MAGAZINE-ARTICLE-INDEX-V2.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.BAS",
+          "bytes": 1158,
+          "sha256": "a244980827444bebceedec341925b6ada9533afbb9369850afc201d215911fb7"
+        },
+        {
+          "path": "versions/v06/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
+          "bytes": 1376,
+          "sha256": "9f4b469150ef20f33b2de2dd24b3aebfe7fea2638afe19aa7fc8d797647dcf3e"
+        }
+      ],
+      "recovery_item": {
+        "lines": 13,
+        "last": 999,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "a244980827444bebceedec341925b6ada9533afbb9369850afc201d215911fb7"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V2; 13 lines",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "13 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "1158",
+        "source_file": "tapes/recovered/tape7a/best/03-MAGAZINE-ARTICLE-INDEX-V2.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v07",
+      "capture": "tape7a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v07/04-MAGAZINE-ARTICLE-INDEX-V3.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.BAS",
+          "bytes": 1200,
+          "sha256": "fa55c0ca20d8c32602d234da1fdc0ebe61bb618787c59363e23c0f1808b95555"
+        },
+        {
+          "path": "versions/v07/04-MAGAZINE-ARTICLE-INDEX-V3.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.ASC",
+          "bytes": 1440,
+          "sha256": "ec37d550025777eb5897eb8dcde31d1785a1e2f56d10cad9623e72ddf73e800f"
+        }
+      ],
+      "recovery_item": {
+        "lines": 13,
+        "last": 999,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "fa55c0ca20d8c32602d234da1fdc0ebe61bb618787c59363e23c0f1808b95555"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V3; 13 lines",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "13 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "1200",
+        "source_file": "tapes/recovered/tape7a/best/04-MAGAZINE-ARTICLE-INDEX-V3.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v08",
+      "capture": "tape7a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v08/05-MAGAZINE-ARTICLE-INDEX-V4.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.BAS",
+          "bytes": 1960,
+          "sha256": "a13921fac281d622843c5353b8f9f2012618fc16fbbb0266695f0385e829989f"
+        },
+        {
+          "path": "versions/v08/05-MAGAZINE-ARTICLE-INDEX-V4.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.ASC",
+          "bytes": 2246,
+          "sha256": "f97360e5619c0699e828fb61d18041a60c5c11f997cac03a50afbaf4f893a5e7"
+        }
+      ],
+      "recovery_item": {
+        "lines": 17,
+        "last": 1000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "a13921fac281d622843c5353b8f9f2012618fc16fbbb0266695f0385e829989f"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V4; 17 lines",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "17 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "1960",
+        "source_file": "tapes/recovered/tape7a/best/05-MAGAZINE-ARTICLE-INDEX-V4.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v09",
+      "capture": "tape7a",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v09/06-MAGAZINE-ARTICLE-INDEX-V5.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.BAS",
+          "bytes": 1960,
+          "sha256": "7fc4d26fc92961f277b0bc9b6eaef963f89453d54544ef32b18cf5ad6597d055"
+        },
+        {
+          "path": "versions/v09/06-MAGAZINE-ARTICLE-INDEX-V5.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.ASC",
+          "bytes": 2246,
+          "sha256": "f97360e5619c0699e828fb61d18041a60c5c11f997cac03a50afbaf4f893a5e7"
+        }
+      ],
+      "recovery_item": {
+        "lines": 17,
+        "last": 1000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "7fc4d26fc92961f277b0bc9b6eaef963f89453d54544ef32b18cf5ad6597d055"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V5; 17 lines",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "17 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "1960",
+        "source_file": "tapes/recovered/tape7a/best/06-MAGAZINE-ARTICLE-INDEX-V5.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v10",
+      "capture": "tape7a",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v10/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.BAS",
+          "bytes": 4080,
+          "sha256": "2500a5792ba842e4b7a47573cfd21ba8f3cffcfd0ddde486db0a198ee6f5baae"
+        },
+        {
+          "path": "versions/v10/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+          "bytes": 4399,
+          "sha256": "cb1c08adefe4b12c0a1a3c0ada82ea35a088d5110311da3a76efdd61e39c980d"
+        }
+      ],
+      "recovery_item": {
+        "lines": 26,
+        "last": 1000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "2500a5792ba842e4b7a47573cfd21ba8f3cffcfd0ddde486db0a198ee6f5baae"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "7",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V6; 26 lines",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "26 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "4080",
+        "source_file": "tapes/recovered/tape7a/best/07-MAGAZINE-ARTICLE-INDEX-V6.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v11",
+      "capture": "tape7a",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v11/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.BAS",
+          "bytes": 4080,
+          "sha256": "2500a5792ba842e4b7a47573cfd21ba8f3cffcfd0ddde486db0a198ee6f5baae"
+        },
+        {
+          "path": "versions/v11/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.ASC",
+          "bytes": 4399,
+          "sha256": "cb1c08adefe4b12c0a1a3c0ada82ea35a088d5110311da3a76efdd61e39c980d"
+        }
+      ],
+      "recovery_item": {
+        "lines": 26,
+        "last": 1000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "2500a5792ba842e4b7a47573cfd21ba8f3cffcfd0ddde486db0a198ee6f5baae"
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "a",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Magazine article subject index V6; 26 lines; duplicate of save 7",
+        "capture": "tape7a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "26 consistent pointers; normal end marker; byte-identical matching variants/repeated saves; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "4080",
+        "source_file": "tapes/recovered/tape7a/best/08-MAGAZINE-ARTICLE-INDEX-V6-SAVE2.ASC",
+        "wav": "tapes/tape7a.wav",
+        "folder": "tapes/recovered/tape7a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with printer output capture; review stored article references"
+      },
+      "recovery_inventory": "tapes/recovered/tape7a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_date": null,
+    "caution": "No save date is established. Neighboring copyright/source dates provide context only."
+  },
+  "artwork": {
+    "path": "app/assets/magazine-gallery.svg",
+    "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
+    "path": "app/assets/magazine-screen.png",
+    "sha256": "80c9607ca20ac6211d6173e6bfb51f9bdca25a30b139e09e476ed75962f87e93",
+    "method": "Captured from original emulator printer output; original aspect ratio retained."
+  }
+}

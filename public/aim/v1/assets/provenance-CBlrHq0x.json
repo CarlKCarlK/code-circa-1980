@@ -1,0 +1,52 @@
+{
+  "version": "v02",
+  "capture": "tape22a",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.BAS",
+  "archive_listing": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/04-TRIGECTIOR-PROJECTILE.BAS",
+      "archive_path": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.BAS",
+      "bytes": 646,
+      "sha256": "4fb432136ebdf5c594886925e5160a74b8918234847da29c34dea189e0fe84fc"
+    },
+    {
+      "path": "versions/v02/04-TRIGECTIOR-PROJECTILE.ASC",
+      "archive_path": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.ASC",
+      "bytes": 726,
+      "sha256": "d783890ec3f58182074263c3c331f2a6385b84d059fc347b5fd72af8ef5361fb"
+    }
+  ],
+  "recovery_item": {
+    "lines": 22,
+    "last": 1030,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "4fb432136ebdf5c594886925e5160a74b8918234847da29c34dea189e0fe84fc"
+  },
+  "inventory_row": {
+    "tape": "22",
+    "side": "a",
+    "order": "4",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "TRIGECTIOR PROJECTILE",
+    "capture": "tape22a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "91.149",
+    "recovered_bytes": "646",
+    "source_file": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.ASC",
+    "wav": "tapes/tape22a.wav",
+    "folder": "tapes/recovered/tape22a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape22a/inventory.json",
+  "execution_tested": false
+}

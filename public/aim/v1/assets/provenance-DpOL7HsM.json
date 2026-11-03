@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape4a",
+  "save": 7,
+  "archive_raw": "tapes/recovered/tape4a/best/07-WORD-SEARCH.BAS",
+  "archive_listing": "tapes/recovered/tape4a/best/07-WORD-SEARCH.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/07-WORD-SEARCH.BAS",
+      "archive_path": "tapes/recovered/tape4a/best/07-WORD-SEARCH.BAS",
+      "bytes": 2741,
+      "sha256": "10a7c263f658033c90ea1a2e1dc906d7dd5d56eebef275eff4d63c4ba1378609"
+    },
+    {
+      "path": "versions/v01/07-WORD-SEARCH.ASC",
+      "archive_path": "tapes/recovered/tape4a/best/07-WORD-SEARCH.ASC",
+      "bytes": 3176,
+      "sha256": "d2dd001fe4cd5d84d1558809440969dcb9b56a5e5d03f181bd03ea0cdbaba080"
+    }
+  ],
+  "recovery_item": {
+    "lines": 56,
+    "last": 3010,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "10a7c263f658033c90ea1a2e1dc906d7dd5d56eebef275eff4d63c4ba1378609"
+  },
+  "inventory_row": {
+    "tape": "4",
+    "side": "a",
+    "order": "7",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "WORD SEARCH; 56 lines",
+    "capture": "tape4a",
+    "capture_scope": "full",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload",
+    "validation": "56 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+    "source_start_s": "",
+    "recovered_bytes": "2741",
+    "source_file": "tapes/recovered/tape4a/best/07-WORD-SEARCH.ASC",
+    "wav": "tapes/tape4a.wav",
+    "folder": "tapes/recovered/tape4a/best",
+    "recovery_date": "2026-10-25",
+    "recorder_volume": "",
+    "next_action": "Execution-test; original source may contain bugs"
+  },
+  "recovery_inventory": "tapes/recovered/tape4a/inventory.json",
+  "execution_tested": false
+}

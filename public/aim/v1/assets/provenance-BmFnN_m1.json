@@ -1,0 +1,191 @@
+{
+  "files": [
+    {
+      "path": "01-SPACE-COLONY-DAMAGED-SAVE-ALTERNATE-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape14a/partial/01-SPACE-COLONY-DAMAGED-SAVE-ALTERNATE-UNCERTAIN.ASC",
+      "bytes": 7934,
+      "sha256": "57a32a13c7def93e1314c6a13af25ac4897223f52fe694b5e7cce86b0d0ee72b"
+    },
+    {
+      "path": "01-SPACE-COLONY-DAMAGED-SAVE-PREFIX.BAS",
+      "archive_path": "tapes/recovered/tape14a/partial/01-SPACE-COLONY-DAMAGED-SAVE-PREFIX.BAS",
+      "bytes": 2668,
+      "sha256": "1d8b2bfa85ad17851c79cb20d0cf61165dbdd9e5f30db1cf6dfac81c00e698e3"
+    },
+    {
+      "path": "01-SPACE-COLONY-DAMAGED-SAVE-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape14a/partial/01-SPACE-COLONY-DAMAGED-SAVE-UNCERTAIN.ASC",
+      "bytes": 11770,
+      "sha256": "f7aa54a00b8dd270edbd7f22df69feced7be57f59a4e59b17538c31b08263e24"
+    },
+    {
+      "path": "01-SPACE-COLONY-DAMAGED-SAVE.ASC",
+      "archive_path": "tapes/recovered/tape14a/partial/01-SPACE-COLONY-DAMAGED-SAVE.ASC",
+      "bytes": 3112,
+      "sha256": "0712a5ab197fa3f1055df0f08e262210dd868bcb7813bb21effb44f51cdc4a7b"
+    },
+    {
+      "path": "01-SPACE-COLONY-DAMAGED-SAVE.BAS",
+      "archive_path": "tapes/recovered/tape14a/partial/01-SPACE-COLONY-DAMAGED-SAVE.BAS",
+      "bytes": 6799,
+      "sha256": "826e8c1dfd381b879f7ba0fae2fac963dc68346271bfa7993a03ce7f56a91c22"
+    },
+    {
+      "path": "11-SPACE-COLONY-DAMAGED-SAVE-PREFIX.BAS",
+      "archive_path": "tapes/recovered/tape14b/partial/11-SPACE-COLONY-DAMAGED-SAVE-PREFIX.BAS",
+      "bytes": 6094,
+      "sha256": "987ef141a85a9c2fbb17cc90a4cd8941e43180b636bb7a70fb8f9e3c8113af6c"
+    },
+    {
+      "path": "11-SPACE-COLONY-DAMAGED-SAVE-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape14b/partial/11-SPACE-COLONY-DAMAGED-SAVE-UNCERTAIN.ASC",
+      "bytes": 8143,
+      "sha256": "fee4eda1ccd16d0aab00cc461d431cd9cbc271372f60da7342b45dabb3405068"
+    },
+    {
+      "path": "11-SPACE-COLONY-DAMAGED-SAVE.ASC",
+      "archive_path": "tapes/recovered/tape14b/partial/11-SPACE-COLONY-DAMAGED-SAVE.ASC",
+      "bytes": 7141,
+      "sha256": "e7c2fa49232b60509b59617c4746998bedebfb753e4f82430e2582a8cab7ea28"
+    },
+    {
+      "path": "11-SPACE-COLONY-DAMAGED-SAVE.BAS",
+      "archive_path": "tapes/recovered/tape14b/partial/11-SPACE-COLONY-DAMAGED-SAVE.BAS",
+      "bytes": 6819,
+      "sha256": "48db1ba0d7389eed138231a821b2165ac7733368b799bf59b74b6c347efa1861"
+    },
+    {
+      "path": "12-SPACE-COLONY-DAMAGED-SAVE-2-PREFIX.BAS",
+      "archive_path": "tapes/recovered/tape14b/partial/12-SPACE-COLONY-DAMAGED-SAVE-2-PREFIX.BAS",
+      "bytes": 4496,
+      "sha256": "f11d72c4c6e0b58927b6b4ac5b2a204d44b3121198c3951b413984996a883f5b"
+    },
+    {
+      "path": "12-SPACE-COLONY-DAMAGED-SAVE-2-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape14b/partial/12-SPACE-COLONY-DAMAGED-SAVE-2-UNCERTAIN.ASC",
+      "bytes": 8652,
+      "sha256": "9a39b3ab57c9800b893877759325ea4182ac048ef5533e388e6a7001587963f5"
+    },
+    {
+      "path": "12-SPACE-COLONY-DAMAGED-SAVE-2.ASC",
+      "archive_path": "tapes/recovered/tape14b/partial/12-SPACE-COLONY-DAMAGED-SAVE-2.ASC",
+      "bytes": 5220,
+      "sha256": "6e6a3c4c795a0fe6d8e3b25d05343bd804b6830a3177d2299df4a9216cc4d811"
+    },
+    {
+      "path": "12-SPACE-COLONY-DAMAGED-SAVE-2.BAS",
+      "archive_path": "tapes/recovered/tape14b/partial/12-SPACE-COLONY-DAMAGED-SAVE-2.BAS",
+      "bytes": 6819,
+      "sha256": "eb1d8f18b1ecef45231951cee8344b37c2b3bf47687428526e8b621139e49a8e"
+    }
+  ],
+  "records": [
+    {
+      "capture": "tape14a",
+      "save": 1,
+      "raw": "01-SPACE-COLONY-DAMAGED-SAVE.BAS",
+      "prefix": "01-SPACE-COLONY-DAMAGED-SAVE-PREFIX.BAS",
+      "byte_range": [
+        0,
+        2668
+      ],
+      "prefix_sha256": "1d8b2bfa85ad17851c79cb20d0cf61165dbdd9e5f30db1cf6dfac81c00e698e3",
+      "lines": 75,
+      "last_line": 450,
+      "pointer_base": 17125,
+      "synthetic_end_marker": false,
+      "verified_matching_candidates": [
+        {
+          "archive_path": "tapes/recovered/tape14a/timing-refinement/T1-left-hp1200-3e13878c1895.BAS",
+          "sha256": "3e13878c189549bd76f90938c4bab561ed24bd02e26ff5c29b37993fe897814f"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14a/timing-refinement/T1-left-hp1200-826e8c1dfd38.BAS",
+          "sha256": "826e8c1dfd381b879f7ba0fae2fac963dc68346271bfa7993a03ce7f56a91c22"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14a/timing-refinement/T1-right-boosted-68c854d66372.BAS",
+          "sha256": "68c854d6637225034eabd44072883e431c85a524e713e6c65758a4bb14b91665"
+        }
+      ],
+      "execution_tested": false
+    },
+    {
+      "capture": "tape14b",
+      "save": 11,
+      "raw": "11-SPACE-COLONY-DAMAGED-SAVE.BAS",
+      "prefix": "11-SPACE-COLONY-DAMAGED-SAVE-PREFIX.BAS",
+      "byte_range": [
+        0,
+        6094
+      ],
+      "prefix_sha256": "987ef141a85a9c2fbb17cc90a4cd8941e43180b636bb7a70fb8f9e3c8113af6c",
+      "lines": 220,
+      "last_line": 1807,
+      "pointer_base": 17125,
+      "synthetic_end_marker": false,
+      "verified_matching_candidates": [
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T10-left-hp1200-48db1ba0d738.BAS",
+          "sha256": "48db1ba0d7389eed138231a821b2165ac7733368b799bf59b74b6c347efa1861"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T10-left-hp1200-8168788f2fc6.BAS",
+          "sha256": "8168788f2fc6e41110f506a9c6c108313a79345107c6da9406acfdc07570ec8e"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T10-left-hp800-48db1ba0d738.BAS",
+          "sha256": "48db1ba0d7389eed138231a821b2165ac7733368b799bf59b74b6c347efa1861"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T10-left-hp800-8168788f2fc6.BAS",
+          "sha256": "8168788f2fc6e41110f506a9c6c108313a79345107c6da9406acfdc07570ec8e"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T10-right-boosted-48db1ba0d738.BAS",
+          "sha256": "48db1ba0d7389eed138231a821b2165ac7733368b799bf59b74b6c347efa1861"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T10-right-boosted-8168788f2fc6.BAS",
+          "sha256": "8168788f2fc6e41110f506a9c6c108313a79345107c6da9406acfdc07570ec8e"
+        }
+      ],
+      "execution_tested": false
+    },
+    {
+      "capture": "tape14b",
+      "save": 12,
+      "raw": "12-SPACE-COLONY-DAMAGED-SAVE-2.BAS",
+      "prefix": "12-SPACE-COLONY-DAMAGED-SAVE-2-PREFIX.BAS",
+      "byte_range": [
+        0,
+        4496
+      ],
+      "prefix_sha256": "f11d72c4c6e0b58927b6b4ac5b2a204d44b3121198c3951b413984996a883f5b",
+      "lines": 157,
+      "last_line": 1405,
+      "pointer_base": 17125,
+      "synthetic_end_marker": false,
+      "verified_matching_candidates": [
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T11-left-hp1200-4de138405bb4.BAS",
+          "sha256": "4de138405bb42c1d93822b12971d6d14b14802e3013289497e2d3f07619c6153"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T11-left-hp1200-eb1d8f18b1ec.BAS",
+          "sha256": "eb1d8f18b1ecef45231951cee8344b37c2b3bf47687428526e8b621139e49a8e"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T11-left-hp800-eb1d8f18b1ec.BAS",
+          "sha256": "eb1d8f18b1ecef45231951cee8344b37c2b3bf47687428526e8b621139e49a8e"
+        },
+        {
+          "archive_path": "tapes/recovered/tape14b/timing-refinement/T11-right-boosted-eb1d8f18b1ec.BAS",
+          "sha256": "eb1d8f18b1ecef45231951cee8344b37c2b3bf47687428526e8b621139e49a8e"
+        }
+      ],
+      "execution_tested": false
+    }
+  ],
+  "note": "All exports copied unchanged; damaged candidates and prefixes are source only, and no bytes are filled from complete saves."
+}
