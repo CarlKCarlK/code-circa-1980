@@ -1,0 +1,40 @@
+{
+  "id": "statistics",
+  "title": "Statistics",
+  "description": "Statistics. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "STATISTICS SAVE01",
+      "capture": "tape25a",
+      "save": 11,
+      "raw": "versions/v01/11-STATISTICS-SAVE01.BAS",
+      "listing": "versions/v01/11-STATISTICS-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/11-STATISTICS-SAVE01.ASC",
+          "label": "11-STATISTICS-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/11-STATISTICS-SAVE01.BAS",
+          "label": "11-STATISTICS-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 PRINT\"WELCOME TO STATS\"\n30 PRINT\"ANALISIS OF DATA\"\n40 INPUT\"HOW MANY PIECES OF DATA DO YOU HAVE (IF NOT SURE THEN OVER GUESS\";NE\n50 DIMX(NE)\n60 PRINT\"WHEN FINISHED ANSWER 'D'.\"\n70 FOR C=1TONE\n80 PRINT\"WHAT IS ENTERY NO.\";C;:INPUTA$\n90 IFA$=\"D\"THEN120  ELSEX(C)=VAL(A$)\n100 NEXT C\n110 PRINT:PRINT\"THE DATA I HAVE RECORDED IS THIS:\":PRINT\n120 N=C-1",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
