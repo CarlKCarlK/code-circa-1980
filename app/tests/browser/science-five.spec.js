@@ -39,7 +39,7 @@ test('More has twenty-three cards with readable artwork and direct new player li
  await page.getByRole('link',{name:'Play John’s Circle →'}).click();await expect(page.locator('#display canvas')).toHaveCount(1);await expect(page.locator('.player-help')).toBeHidden();await expect(page.locator('.instructions-start')).toHaveCount(0);
 });
 for(const id of ids)test(`${id}: frozen v1 starts directly, downloads its payload, and returns to More`,async({page})=>{
- test.setTimeout(60000);await page.goto(`/${id}/v1/?test`);await expect(page.locator('#display canvas')).toHaveCount(1);await expect(page.locator('#status')).toContainText('Running original BASIC');expect(new URL(page.url()).hash).toBe('');
+ test.setTimeout(60000);await page.goto(`/${id}/v1/?test`);await expect(page.locator('#display canvas')).toHaveCount(1);await expect(page.locator('#status')).toContainText('Running original BASIC');expect(new URL(page.url()).hash).toBe('');if(id==='trigectior')await expect(page.locator('.player-header h1')).toHaveText('Trajectory');
  const prompt={trigectior:'SPEED',relativity:'PRESS ENTER',reflex:'WHAT IS YOUR PLEASURE',nuclear:'TYPE PROBLEM',johnscircle:'?'}[id];await expect.poll(()=>screen(page),{timeout:20000}).toContain(prompt);await noError(page);
  const link=page.getByRole('link',{name:'Download original payload',exact:true});expect((await page.request.get(await link.getAttribute('href'))).ok()).toBe(true);
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(23);

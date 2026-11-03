@@ -63,3 +63,8 @@ http://127.0.0.1:5317/#/more. The shared VS Code workspace remains
 Title clarification: the user requested correcting the apparent spelling
 TRIGECTIOR. The website displays Trajectory; historical labels, source files,
 and the existing internal ID trigectior remain for provenance.
+
+The corrected Trajectory title was verified in both gallery layouts, the
+ordered More gallery, and the refreshed frozen v1 header (three targeted
+browser checks). Reflex’s two identical source saves both retain CATALOGUE
+in the original line-5000 prompt, as confirmed from the recovery archive.
