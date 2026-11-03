@@ -1,0 +1,43 @@
+{
+  "id": "pythagorean-timed-exercise",
+  "title": "Pythagorean Timed Exercise",
+  "description": "Pythagorean Timed Exercise. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Pythagorean timed exercise",
+      "capture": "tape16b",
+      "save": 7,
+      "raw": "versions/v01/07-PYTHAGOREAN.BAS",
+      "listing": "versions/v01/07-PYTHAGOREAN.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/07-PYTHAGOREAN.ASC",
+          "label": "07-PYTHAGOREAN.ASC"
+        },
+        {
+          "path": "versions/v01/07-PYTHAGOREAN.BAS",
+          "label": "07-PYTHAGOREAN.BAS"
+        }
+      ],
+      "startupSource": "2 AT=100000\n5 CLS:G(1)=2:G(2)=1\n7 GOSUB 20000\n10 READ X1,Y1,X2,Y2:IFX1=-1 THEN X1=OX:Y1=OY\n15 IF X1=-999 THEN 100\n30 OX=X2:OY=Y2\n40 GOSUB1000\n50 GOTO 10\n100 PRINT@448+25+128+64,\"PYTHAGOREAN\";\n110 IF INKEY$=\"\"THEN110\n120 CLS\n130  S(1)=RND(10):S(2)=RND(10):M=RND(3):S(3)=RND(15-S(G(M)))+S(G(M)):IFM=3THENX=S(1)[2+S(2)[2ELSEX=S(3)[2-S(G(M))[2",
+      "controlSource": [
+        "110 IF INKEY$=\"\"THEN110",
+        "145 A$=INKEY$:PRINT@50,STRING$(LEN(Q$),\"\u0019\");A$;:T=T+1:PRINT@55,INT(AT-T+1);:IFT>AT THEN 200  ELSEIFA$=\"\"THEN145ELSEIFA$=CHR$(13)THEN147ELSEQ$=Q$+A$:GOTO145"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
