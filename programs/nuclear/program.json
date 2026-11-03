@@ -1,0 +1,26 @@
+{
+  "id": "nuclear",
+  "title": "Nuclear Equation Completer",
+  "description": "Use historical BASIC to find a missing isotope or particle.",
+  "kind": "Science",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "One complete captured source; a separately preserved damaged tape22a recording is not promoted to a complete version. Their relative chronology is unknown.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "NUCLEAR EQUATION SOLVER",
+      "capture": "tape14a",
+      "save": 8,
+      "raw": "versions/v01/08-NUCLEAR-EQUATION-SOLVER.BAS",
+      "listing": "versions/v01/08-NUCLEAR-EQUATION-SOLVER.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+      "unavailableReason": null
+    }
+  ]
+}
