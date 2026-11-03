@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-03",
+  "inventory_rows": 716,
+  "new_collections": 241,
+  "captured_items": 405,
+  "inventory_complete": 368,
+  "partial_or_uncertain": 37,
+  "copied_files": 946,
+  "new_players": 175,
+  "new_source_only": 66,
+  "more_cards": 277,
+  "unit_archive_test_files": 19,
+  "browser_checks_passed": 372,
+  "active_web_releases": 293,
+  "archive_and_canonical_hash_verification": "passed",
+  "production_build": "passed",
+  "frozen_main_and_life_changes": [],
+  "more_basic_gameplay_tested": false,
+  "publication": "local only",
+  "commands": [
+    "python3 app/scripts/verify-remaining.py /path/to/trs80",
+    "cd app && npm test",
+    "cd app && npm run build",
+    "cd app && npm run verify:web-versions",
+    "cd app && PLAYWRIGHT_BASE_URL=http://127.0.0.1:5294 PLAYWRIGHT_WORKERS=3 npm run test:browser"
+  ]
+}

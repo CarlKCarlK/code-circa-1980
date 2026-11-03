@@ -5,7 +5,7 @@ and Space Colony follow them, then 241 additional source collections. The main
 six-program gallery stays curated. A search field filters More by title,
 language, description, and category.
 
-The new collections preserve 405 captured items in 946 untouched files. They
+The new collections preserve 405 captured items in 946 untouched files. The inventory marks 368 complete and 37 partial/uncertain. They
 include repeated saves, drafts, damaged fragments, assembly, Model 100, pocket
 computer, and Commodore material. Each has permanent snapshots, per-capture
 canonical Git commits/tags, a source credit or explicit unknown-authorship notice,
@@ -82,3 +82,23 @@ All prior main-gallery and LIFE frozen builds remain unchanged.
 
 Local run: `just show`, then follow **More uncurated programs →**, or open
 `http://localhost:5281/#/more` when the existing local server is running.
+
+## Recorded results — November 3, 2026
+
+All 19 unit/archive test files passed, along with the TypeScript/production build.
+The archive verifier checked all 716 inventory dispositions, 405 captured items,
+946 unchanged imported files, canonical Git tag blobs, upstream comparison
+hashes, and the preserved withdrawn snapshots. The release checker verified
+293 active frozen releases. Git comparison against the pre-import commit
+`d7d1a1f` confirms no changes to any frozen main-gallery or LIFE release.
+
+All 372 Playwright checks passed against an isolated production preview in
+1.4 minutes. The 243 new-archive checks cover every one of the 241 new frozen
+entries plus search/order and shared player controls. Poker and Space Colony’s
+restored attribution checks passed too. Separate visual inspection confirmed
+the desktop gallery and phone search layout. No new More BASIC gameplay test
+was performed, and these results do not establish correctness of its historical
+programs.
+
+The work is committed locally with per-save tags and per-program web-v1 tags.
+No remote publication was performed as part of this local archive pass.
