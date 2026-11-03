@@ -1,0 +1,25 @@
+{
+  "id": "computamatch",
+  "title": "Computa-Match",
+  "description": "Explore the Woodruff student-council questionnaire-matching program.",
+  "kind": "Experiment",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v04",
+  "versionOrder": "Four consecutive saves progress from data validation to matching and formatted result reports. Earlier drafts and the repeated early form remain separate. The latest source credit says January 6, 1980; this is not a tape-save date.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "COMPUTER MATCH UP EARLY",
+      "capture": "file8b",
+      "save": 13,
+      "raw": "versions/v01/13-COMPUTER-MATCH-UP-EARLY.BAS",
+      "listing": "versions/v01/13-COMPUTER-MATCH-UP-EARLY.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
