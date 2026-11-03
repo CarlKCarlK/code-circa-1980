@@ -1,0 +1,74 @@
+{
+  "official_title": "Extemp Article Index",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "extemp_article_index_p224; extemp_article_index_p225",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape22b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape22b/best/03-EXTEMP-ARTICLE-INDEX-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape22b/best/03-EXTEMP-ARTICLE-INDEX-SAVE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-EXTEMP-ARTICLE-INDEX-SAVE01.ASC",
+          "archive_path": "tapes/recovered/tape22b/best/03-EXTEMP-ARTICLE-INDEX-SAVE01.ASC",
+          "bytes": 755,
+          "sha256": "d7d051861db718e293fb0c0e0947508d5226a9d14bd0766af87a2052cd750c7a"
+        },
+        {
+          "path": "versions/v01/03-EXTEMP-ARTICLE-INDEX-SAVE01.BAS",
+          "archive_path": "tapes/recovered/tape22b/best/03-EXTEMP-ARTICLE-INDEX-SAVE01.BAS",
+          "bytes": 630,
+          "sha256": "af7e222194dee8a3dd480f1f4324e13fa48f133a2628e71fa52433c1f7499f62"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "af7e222194dee8a3dd480f1f4324e13fa48f133a2628e71fa52433c1f7499f62",
+        "bytes": 630,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 10,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 628,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "22",
+        "side": "b",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "EXTEMP ARTICLE INDEX SAVE01",
+        "capture": "tape22b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "105.874",
+        "recovered_bytes": "630",
+        "source_file": "tapes/recovered/tape22b/best/03-EXTEMP-ARTICLE-INDEX-SAVE01.ASC",
+        "wav": "tapes/tape22b.wav",
+        "folder": "tapes/recovered/tape22b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape22b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
