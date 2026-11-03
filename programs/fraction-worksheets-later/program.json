@@ -66,6 +66,30 @@
       ],
       "startupSource": "20 CLEAR1000\n30 INPUT\"HOW MANY SETS OF PROBLEMS\";SP\n40 INPUT\"AND HOW MANY PROBLEMS PER SET\";PS\n50 CLS:'CALL PRINTER\n60 FOR SE=1TOSP\n65 PRINT\"PROBLEM SET\";SE:PRINT:PRINT\n70 FOR PR=1TOPS\n75 PRINT\"(\"PR\")  FIND :\"\n80 I1=RND(RND(90))\n90 I2=RND(RND(90))\n100 D=RND(RND(RND(100)))\n110 N=RND(RND(100))",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "FRACTION WORKSHEETS LATER SAVE01",
+      "capture": "tape27a",
+      "save": 4,
+      "raw": "versions/v03/04-FRACTION-WORKSHEETS-LATER-SAVE01.BAS",
+      "listing": "versions/v03/04-FRACTION-WORKSHEETS-LATER-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v03/04-FRACTION-WORKSHEETS-LATER-SAVE01.ASC",
+          "label": "04-FRACTION-WORKSHEETS-LATER-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v03/04-FRACTION-WORKSHEETS-LATER-SAVE01.BAS",
+          "label": "04-FRACTION-WORKSHEETS-LATER-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "20 CLEAR1000\n30 INPUT\"HOW MANY SETS OF PROBLEMS\";SP\n40 INPUT\"AND HOW MANY PROBLEMS PER SET\";PS\n50 CLS:'CALL PRINTER\n60 FOR SE=1TOSP\n65 PRINT\"PROBLEM SET\";SE:PRINT:PRINT\n70 FOR PR=1TOPS\n75 PRINT\"(\"PR\")  FIND :\"\n80 I1=RND(RND(90))\n90 I2=RND(RND(90))\n100 D=RND(RND(RND(100)))\n110 N=RND(RND(100))",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
