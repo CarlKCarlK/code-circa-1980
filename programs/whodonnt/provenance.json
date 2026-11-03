@@ -58,6 +58,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape12a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape12a",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape12a/best/09-WHO-DONNT-V2.BAS",
+      "archive_listing": "tapes/recovered/tape12a/best/09-WHO-DONNT-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/09-WHO-DONNT-V2.BAS",
+          "archive_path": "tapes/recovered/tape12a/best/09-WHO-DONNT-V2.BAS",
+          "bytes": 1608,
+          "sha256": "23873616016af3dcf227ed632669de7864dcdf64afc7c85da6843bc0831ccf1b"
+        },
+        {
+          "path": "versions/v02/09-WHO-DONNT-V2.ASC",
+          "archive_path": "tapes/recovered/tape12a/best/09-WHO-DONNT-V2.ASC",
+          "bytes": 1993,
+          "sha256": "1d9fb2994b080390efe4f9d04117697c63b1c315a509998f0c625dfd95e77d86"
+        }
+      ],
+      "recovery_item": {
+        "lines": 60,
+        "last": 3060,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "23873616016af3dcf227ed632669de7864dcdf64afc7c85da6843bc0831ccf1b"
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "a",
+        "order": "9",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "WHO DONNT V2; 60 lines",
+        "capture": "tape12a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+        "source_start_s": "667.587",
+        "recovered_bytes": "1608",
+        "source_file": "tapes/recovered/tape12a/best/09-WHO-DONNT-V2.ASC",
+        "wav": "tapes/tape12a.wav",
+        "folder": "tapes/recovered/tape12a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
