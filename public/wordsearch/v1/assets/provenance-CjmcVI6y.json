@@ -1,0 +1,1035 @@
+{
+  "official_title": "3-D Plot",
+  "title_authority": "Source title printed by v03: \"3-D PLOT   (C) 1979   CARL KADIE\"; user request wording \"the 3d plot programs\", 2026-10-30.",
+  "import_date": "2026-10-30",
+  "order_inferred": true,
+  "order_evidence": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC; most likely from Microsoft's cassette Level III BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420. Carl Kadie's recollection (2026-10-31, tentative): he probably dropped LINE so that more people, most of whom had only Level II, could run the program and see the picture; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
+  "dating": {
+    "estimate": "1979",
+    "direct_date_in_program": "v03 line 70: PRINT\"3-D PLOT   (C) 1979   CARL KADIE\"",
+    "evidence": [
+      "v03 prints (C) 1979 (tape5a saves 1-2; tape23a save 11; tape25a save 18; tape29a save 1)",
+      "tape19b save 17 CHEMICAL EQUATION BALANCER V2: \"' REM COPYRIGHT 1979 CARL KADIE\" (same side as v01 and v02)"
+    ],
+    "caution": "A copyright year is not a save date; old programs were sometimes saved again later (tape23a, tape25a and tape29a hold other saves of v03)."
+  },
+  "execution_testing": "Recovery archive records no execution tests. Website emulator checks are recorded separately in VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "label": "Draft · Surface with LINE",
+      "capture": "tape19b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape19b/best/02-3D-SURFACE-PLOT-V1.BAS",
+      "archive_listing": "tapes/recovered/tape19b/best/02-3D-SURFACE-PLOT-V1.ASC",
+      "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+      "bytes": 486,
+      "listing_sha256": "f80dbce3a85d1de83a26cae406541b193949b7399e6fee9c459120f05cc4aa40",
+      "listing_lines": 21,
+      "recovery_evidence": "tapes/recovered/tape19b/inventory.json",
+      "inventory_row": {
+        "summary": "3D SURFACE PLOT V1",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 2,
+        "detected_group": 2,
+        "title": "3D SURFACE PLOT V1",
+        "title_note": "Descriptive titles and sequential V labels inferred from content and capture order.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 66.87385416666666,
+        "source_end_s": 78.3551875,
+        "selected_source": {
+          "variant": "original",
+          "index": 2,
+          "start": 66.87385416666666,
+          "end": 78.35504166666666,
+          "file": "original/T02-4cd3078b47d9.BAS",
+          "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+          "assessment": {
+            "good": true,
+            "lines": 21,
+            "last": 230,
+            "normal": true,
+            "parsed": 486,
+            "bytes": 486,
+            "bases": [
+              22204
+            ]
+          }
+        },
+        "raw_file": "best/02-3D-SURFACE-PLOT-V1.BAS",
+        "listing": "best/02-3D-SURFACE-PLOT-V1.ASC",
+        "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+        "bytes": 486,
+        "validation": {
+          "good": true,
+          "lines": 21,
+          "last": 230,
+          "normal": true,
+          "parsed": 486,
+          "bytes": 486,
+          "bases": [
+            22204
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "original",
+            "index": 2,
+            "start": 66.87385416666666,
+            "end": 78.35504166666666,
+            "file": "original/T02-4cd3078b47d9.BAS",
+            "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+            "assessment": {
+              "good": true,
+              "lines": 21,
+              "last": 230,
+              "normal": true,
+              "parsed": 486,
+              "bytes": 486,
+              "bases": [
+                22204
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 2,
+            "start": 66.87395833333333,
+            "end": 78.35516666666666,
+            "file": "right-boosted/T02-4cd3078b47d9.BAS",
+            "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+            "assessment": {
+              "good": true,
+              "lines": 21,
+              "last": 230,
+              "normal": true,
+              "parsed": 486,
+              "bytes": 486,
+              "bases": [
+                22204
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 2,
+            "start": 66.87397916666667,
+            "end": 78.35516666666666,
+            "file": "left-hp1200/T02-4cd3078b47d9.BAS",
+            "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+            "assessment": {
+              "good": true,
+              "lines": 21,
+              "last": 230,
+              "normal": true,
+              "parsed": 486,
+              "bytes": 486,
+              "bases": [
+                22204
+              ]
+            }
+          },
+          {
+            "variant": "left-hp800",
+            "index": 2,
+            "start": 66.87397916666667,
+            "end": 78.3551875,
+            "file": "left-hp800/T02-4cd3078b47d9.BAS",
+            "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+            "assessment": {
+              "good": true,
+              "lines": 21,
+              "last": 230,
+              "normal": true,
+              "parsed": 486,
+              "bytes": 486,
+              "bases": [
+                22204
+              ]
+            }
+          },
+          {
+            "track": 2,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T02-4cd3078b47d9.BAS",
+            "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+            "assessment": {
+              "good": true,
+              "lines": 21,
+              "last": 230,
+              "normal": true,
+              "parsed": 486,
+              "bytes": 486,
+              "bases": [
+                22204
+              ]
+            },
+            "crop_start": 66.57385416666666,
+            "crop_end": 78.75520833333333,
+            "start": 66.8700625,
+            "end": 78.35516666666666,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 2,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T02-4cd3078b47d9.BAS",
+            "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+            "assessment": {
+              "good": true,
+              "lines": 21,
+              "last": 230,
+              "normal": true,
+              "parsed": 486,
+              "bytes": 486,
+              "bases": [
+                22204
+              ]
+            },
+            "crop_start": 66.57385416666666,
+            "crop_end": 78.75520833333333,
+            "start": 66.8700625,
+            "end": 78.3551875,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 2,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T02-4cd3078b47d9.BAS",
+            "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91",
+            "assessment": {
+              "good": true,
+              "lines": 21,
+              "last": 230,
+              "normal": true,
+              "parsed": 486,
+              "bytes": 486,
+              "bases": [
+                22204
+              ]
+            },
+            "crop_start": 66.57385416666666,
+            "crop_end": 78.75520833333333,
+            "start": 66.87004166666667,
+            "end": 78.35516666666666,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v01/02-3D-SURFACE-PLOT-V1.BAS",
+      "snapshot_listing": "versions/v01/02-3D-SURFACE-PLOT-V1.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-3D-SURFACE-PLOT-V1.BAS",
+          "bytes": 486,
+          "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91"
+        },
+        {
+          "path": "versions/v01/02-3D-SURFACE-PLOT-V1.ASC",
+          "bytes": 565,
+          "sha256": "f80dbce3a85d1de83a26cae406541b193949b7399e6fee9c459120f05cc4aa40"
+        }
+      ]
+    },
+    {
+      "version": "v02",
+      "label": "Draft · Own line drawing, flat test grid",
+      "capture": "tape19b",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape19b/best/10-3D-SURFACE-PLOT-V2.BAS",
+      "archive_listing": "tapes/recovered/tape19b/best/10-3D-SURFACE-PLOT-V2.ASC",
+      "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+      "bytes": 574,
+      "listing_sha256": "d8223cde4d09a67057aa42a6e3451945e61f27ef21e6071293b6241c15faab54",
+      "listing_lines": 28,
+      "recovery_evidence": "tapes/recovered/tape19b/inventory.json",
+      "inventory_row": {
+        "summary": "3D SURFACE PLOT V2",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 10,
+        "detected_group": 10,
+        "title": "3D SURFACE PLOT V2",
+        "title_note": "Descriptive titles and sequential V labels inferred from content and capture order.",
+        "completeness": "complete",
+        "execution_tested": false,
+        "source_start_s": 309.09872916666666,
+        "source_end_s": 322.0096875,
+        "selected_source": {
+          "variant": "left-hp800",
+          "index": 10,
+          "start": 309.09872916666666,
+          "end": 322.0096875,
+          "file": "left-hp800/T10-864f008b1712.BAS",
+          "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+          "assessment": {
+            "good": true,
+            "lines": 28,
+            "last": 1040,
+            "normal": true,
+            "parsed": 574,
+            "bytes": 574,
+            "bases": [
+              17125
+            ]
+          }
+        },
+        "raw_file": "best/10-3D-SURFACE-PLOT-V2.BAS",
+        "listing": "best/10-3D-SURFACE-PLOT-V2.ASC",
+        "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+        "bytes": 574,
+        "validation": {
+          "good": true,
+          "lines": 28,
+          "last": 1040,
+          "normal": true,
+          "parsed": 574,
+          "bytes": 574,
+          "bases": [
+            17125
+          ]
+        },
+        "matching_sources": [
+          {
+            "variant": "left-hp800",
+            "index": 10,
+            "start": 309.09872916666666,
+            "end": 322.0096875,
+            "file": "left-hp800/T10-864f008b1712.BAS",
+            "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+            "assessment": {
+              "good": true,
+              "lines": 28,
+              "last": 1040,
+              "normal": true,
+              "parsed": 574,
+              "bytes": 574,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "original",
+            "index": 10,
+            "start": 309.1005625,
+            "end": 322.0095416666667,
+            "file": "original/T10-864f008b1712.BAS",
+            "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+            "assessment": {
+              "good": true,
+              "lines": 28,
+              "last": 1040,
+              "normal": true,
+              "parsed": 574,
+              "bytes": 574,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "right-boosted",
+            "index": 10,
+            "start": 309.1006875,
+            "end": 322.00966666666665,
+            "file": "right-boosted/T10-864f008b1712.BAS",
+            "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+            "assessment": {
+              "good": true,
+              "lines": 28,
+              "last": 1040,
+              "normal": true,
+              "parsed": 574,
+              "bytes": 574,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "variant": "left-hp1200",
+            "index": 10,
+            "start": 309.10070833333333,
+            "end": 322.0096875,
+            "file": "left-hp1200/T10-864f008b1712.BAS",
+            "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+            "assessment": {
+              "good": true,
+              "lines": 28,
+              "last": 1040,
+              "normal": true,
+              "parsed": 574,
+              "bytes": 574,
+              "bases": [
+                17125
+              ]
+            }
+          },
+          {
+            "track": 10,
+            "variant": "left-hp1200",
+            "file": "timing-refinement/T10-864f008b1712.BAS",
+            "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+            "assessment": {
+              "good": true,
+              "lines": 28,
+              "last": 1040,
+              "normal": true,
+              "parsed": 574,
+              "bytes": 574,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 308.7987083333333,
+            "crop_end": 322.4096875,
+            "start": 309.0926666666666,
+            "end": 322.0096875,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 10,
+            "variant": "left-hp800",
+            "file": "timing-refinement/T10-864f008b1712.BAS",
+            "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+            "assessment": {
+              "good": true,
+              "lines": 28,
+              "last": 1040,
+              "normal": true,
+              "parsed": 574,
+              "bytes": 574,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 308.7987083333333,
+            "crop_end": 322.4096875,
+            "start": 309.09268749999995,
+            "end": 322.0096875,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          },
+          {
+            "track": 10,
+            "variant": "right-boosted",
+            "file": "timing-refinement/T10-864f008b1712.BAS",
+            "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0",
+            "assessment": {
+              "good": true,
+              "lines": 28,
+              "last": 1040,
+              "normal": true,
+              "parsed": 574,
+              "bytes": 574,
+              "bases": [
+                17125
+              ]
+            },
+            "crop_start": 308.7987083333333,
+            "crop_end": 322.4096875,
+            "start": 309.09264583333334,
+            "end": 322.00966666666665,
+            "settings": [
+              {
+                "period": 94,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 94,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 95,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 96,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 97,
+                "radius": 0.3,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.12,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.2,
+                "late": true
+              },
+              {
+                "period": 98,
+                "radius": 0.3,
+                "late": true
+              }
+            ]
+          }
+        ],
+        "prefix": null,
+        "alternate_structurally_valid_candidates": []
+      },
+      "other_saves": [],
+      "snapshot_raw": "versions/v02/10-3D-SURFACE-PLOT-V2.BAS",
+      "snapshot_listing": "versions/v02/10-3D-SURFACE-PLOT-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/10-3D-SURFACE-PLOT-V2.BAS",
+          "bytes": 574,
+          "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0"
+        },
+        {
+          "path": "versions/v02/10-3D-SURFACE-PLOT-V2.ASC",
+          "bytes": 678,
+          "sha256": "d8223cde4d09a67057aa42a6e3451945e61f27ef21e6071293b6241c15faab54"
+        }
+      ]
+    },
+    {
+      "version": "v03",
+      "label": "3-D PLOT (C) 1979 · Prompts",
+      "capture": "tape5a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape5a/best/01-3D-PLOT-1979.BAS",
+      "archive_listing": "tapes/recovered/tape5a/best/01-3D-PLOT-1979.ASC",
+      "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03",
+      "bytes": 1056,
+      "listing_sha256": "28388f6afe64220d79dbcc694e42bebf2a96047e49cdc5f93b2c29a443f26302",
+      "listing_lines": 42,
+      "recovery_evidence": "tapes/recovered/tape5a/inventory.json",
+      "inventory_row": {
+        "summary": "3-D PLOT (C) 1979 CARL KADIE; 42 lines",
+        "status": "validated payload; runtime untested",
+        "validation": "42 consistent pointers; normal end marker; original and 3 variants byte-identical; two tape saves identical",
+        "recovery%": "100"
+      },
+      "recovery_item": {
+        "order": 1,
+        "title": "3-D PLOT (C) 1979 CARL KADIE",
+        "lines": 42,
+        "first_line": 10,
+        "last_line": 420,
+        "bytes": 1056,
+        "source": "tapes/recovered/tape5a/original/T1-C1.BAS",
+        "listing": "tapes/recovered/tape5a/best/01-3D-PLOT-1979.ASC",
+        "binary": "tapes/recovered/tape5a/best/01-3D-PLOT-1979.BAS",
+        "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03",
+        "consistent_line_pointers": true,
+        "normal_end_marker": true,
+        "matching_variants": [
+          "left-hp1200",
+          "left-hp800",
+          "right-boosted"
+        ],
+        "identical_to_order": null,
+        "execution_tested": false
+      },
+      "other_saves": [
+        {
+          "capture": "tape5a",
+          "save": 2,
+          "relation": "identical",
+          "archive_raw": "tapes/recovered/tape5a/best/02-3D-PLOT-1979-SAVE2.BAS",
+          "archive_listing": "tapes/recovered/tape5a/best/02-3D-PLOT-1979-SAVE2.ASC",
+          "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03",
+          "inventory_row": {
+            "summary": "3-D PLOT (C) 1979 CARL KADIE; 42 lines; identical second save",
+            "status": "validated payload; runtime untested",
+            "validation": "42 consistent pointers; normal end marker; original and 3 variants byte-identical; two tape saves identical",
+            "recovery%": "100"
+          }
+        },
+        {
+          "capture": "tape23a",
+          "save": 11,
+          "relation": "identical",
+          "archive_raw": "tapes/recovered/tape23a/best/11-3D-PLOT.BAS",
+          "archive_listing": "tapes/recovered/tape23a/best/11-3D-PLOT.ASC",
+          "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03",
+          "inventory_row": {
+            "summary": "3D PLOT",
+            "status": "validated payload; runtime untested",
+            "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+            "recovery%": "100"
+          }
+        },
+        {
+          "capture": "tape25a",
+          "save": 18,
+          "relation": "same program bytes; only the one-character cassette name differs (G, as on the tape19b drafts, instead of P)",
+          "archive_raw": "tapes/recovered/tape25a/best/18-THREE-D-PLOT.BAS",
+          "archive_listing": "tapes/recovered/tape25a/best/18-THREE-D-PLOT.ASC",
+          "sha256": "aec42b876ce9b6f39c0fb83ecf9fe88746f44e8f62be35dde6cd7572e2a7a519",
+          "inventory_row": {
+            "summary": "THREE D PLOT",
+            "status": "validated payload; runtime untested",
+            "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+            "recovery%": "100"
+          }
+        },
+        {
+          "capture": "tape29a",
+          "save": 1,
+          "relation": "damaged save of the same program: its validated 17-line prefix (lines 10-170) has the same text as v03, but pointer base 22204 instead of 17125, so it was saved from a different BASIC environment; the rest was not recovered",
+          "archive_raw": "tapes/recovered/tape29a/partial/01-3-D-PLOT-CARL-KADIE-PREFIX.BAS",
+          "archive_listing": "tapes/recovered/tape29a/partial/01-3-D-PLOT-CARL-KADIE-PREFIX.ASC",
+          "sha256": "6c76f42de234466d395fa97316bd8c578b59616c30e06ed9a56785503a005f0a",
+          "inventory_row": {
+            "summary": "3 D PLOT CARL KADIE — damaged save, validated prefix",
+            "status": "damaged captured payload; runtime untested",
+            "validation": "Captured clock ~530 baud; exact left/right prefix agreement; 17 ordered records through 170; consistent pointer base 22204; 454 exact prefix bytes; no normal end marker; uncertain raw tail retained",
+            "recovery%": ""
+          }
+        }
+      ],
+      "snapshot_raw": "versions/v03/01-3D-PLOT-1979.BAS",
+      "snapshot_listing": "versions/v03/01-3D-PLOT-1979.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/01-3D-PLOT-1979.BAS",
+          "bytes": 1056,
+          "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03"
+        },
+        {
+          "path": "versions/v03/01-3D-PLOT-1979.ASC",
+          "bytes": 1220,
+          "sha256": "28388f6afe64220d79dbcc694e42bebf2a96047e49cdc5f93b2c29a443f26302"
+        }
+      ]
+    }
+  ]
+}

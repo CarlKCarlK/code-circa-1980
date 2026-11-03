@@ -1,0 +1,17 @@
+{
+  "status": "Untouched incomplete recovery; source only, not repaired or executable. See the archive recovery report.",
+  "files": [
+    {
+      "path": "07-GERMAN-TUTOR-FRAGMENT.ASC",
+      "archive_path": "tapes/recovered/tape11a/partial/07-GERMAN-TUTOR-FRAGMENT.ASC",
+      "bytes": 75,
+      "sha256": "392b1d14be1f88d3373bcf49807d0d0477f6bfe0194aba52c6e42430abad0f68"
+    },
+    {
+      "path": "07-GERMAN-TUTOR-FRAGMENT.BAS",
+      "archive_path": "tapes/recovered/tape11a/partial/07-GERMAN-TUTOR-FRAGMENT.BAS",
+      "bytes": 98,
+      "sha256": "c76eee292ec8c9d581954edce1d8f74025e68b91a57a718a9c1ef7e6ea4bc9c6"
+    }
+  ]
+}
