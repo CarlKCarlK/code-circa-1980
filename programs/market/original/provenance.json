@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape12a",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape12a/best/03-MARKET.BAS",
+  "archive_listing": "tapes/recovered/tape12a/best/03-MARKET.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/03-MARKET.ASC",
+      "archive_path": "tapes/recovered/tape12a/best/03-MARKET.ASC",
+      "bytes": 6655,
+      "sha256": "bc36522b02d80b1bce753a4acf9c70b3c3ba2cfd42baa331840ace30045cce39"
+    },
+    {
+      "path": "versions/v01/03-MARKET.BAS",
+      "archive_path": "tapes/recovered/tape12a/best/03-MARKET.BAS",
+      "bytes": 5597,
+      "sha256": "7b7d7560e5d7f1318c7615271d1be524a4fe4eb902e15e7ba6f6e083129002c8"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "7b7d7560e5d7f1318c7615271d1be524a4fe4eb902e15e7ba6f6e083129002c8",
+    "bytes": 5597,
+    "archive_validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 270,
+    "last": 1510,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 5595,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "12",
+    "side": "a",
+    "order": "3",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "MARKET; 270 lines",
+    "capture": "tape12a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+    "source_start_s": "112.321",
+    "recovered_bytes": "5597",
+    "source_file": "tapes/recovered/tape12a/best/03-MARKET.ASC",
+    "wav": "tapes/tape12a.wav",
+    "folder": "tapes/recovered/tape12a/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape12a/best/inventory.json",
+  "execution_tested": false
+}
