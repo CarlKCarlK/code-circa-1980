@@ -1,0 +1,40 @@
+{
+  "id": "age-and-sleep-time-in-hours",
+  "title": "Age And Sleep Time In Hours",
+  "description": "Age And Sleep Time In Hours. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Age and sleep time in hours",
+      "capture": "tape16b",
+      "save": 4,
+      "raw": "versions/v01/04-AGE-IN-HOURS.BAS",
+      "listing": "versions/v01/04-AGE-IN-HOURS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-AGE-IN-HOURS.ASC",
+          "label": "04-AGE-IN-HOURS.ASC"
+        },
+        {
+          "path": "versions/v01/04-AGE-IN-HOURS.BAS",
+          "label": "04-AGE-IN-HOURS.BAS"
+        }
+      ],
+      "startupSource": "5 PRINT\"HOW MANY YEARS OLD ARE YOU\"\n10 INPUTY\n20 H=Y*365*24\n30 PRINTH\n35 PRINT\"IS HOW MANY HOURS YOU HAVE LIVED\"\n40 PRINTH/3\n45 PRINT\"IS HOW MANY HOURS YOU HAVE SLEPT\"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

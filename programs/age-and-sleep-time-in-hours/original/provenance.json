@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape16b",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape16b/best/04-AGE-IN-HOURS.BAS",
+  "archive_listing": "tapes/recovered/tape16b/best/04-AGE-IN-HOURS.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/04-AGE-IN-HOURS.ASC",
+      "archive_path": "tapes/recovered/tape16b/best/04-AGE-IN-HOURS.ASC",
+      "bytes": 168,
+      "sha256": "0e6fe3827a81e16ddde7e7cafe2660dc819b2013e4ea4f27c14d1cb9fd10ba72"
+    },
+    {
+      "path": "versions/v01/04-AGE-IN-HOURS.BAS",
+      "archive_path": "tapes/recovered/tape16b/best/04-AGE-IN-HOURS.BAS",
+      "bytes": 158,
+      "sha256": "3156d000d16d65a9f2d0e7941b7d66f0de1df0c0984ba8498524622bf07f7950"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "3156d000d16d65a9f2d0e7941b7d66f0de1df0c0984ba8498524622bf07f7950",
+    "bytes": 158,
+    "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 7,
+    "last": 45,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 156,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "16",
+    "side": "b",
+    "order": "4",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "Age and sleep time in hours",
+    "capture": "tape16b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "53.330",
+    "recovered_bytes": "158",
+    "source_file": "tapes/recovered/tape16b/best/04-AGE-IN-HOURS.ASC",
+    "wav": "tapes/tape16b.wav",
+    "folder": "tapes/recovered/tape16b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "7/10",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+  "execution_tested": false
+}
