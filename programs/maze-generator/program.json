@@ -82,6 +82,30 @@
       ],
       "startupSource": "5 XS=0:YS=1\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n90 PRINT@404,\"\";\n100 GOSUB 7000\n101 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
       "controlSource": []
+    },
+    {
+      "id": "v04",
+      "label": "AMAZING PROGRAM, maze generator",
+      "capture": "tape1b2",
+      "save": 5,
+      "raw": "versions/v04/05-AMAZING-PROGRAM.BAS",
+      "listing": "versions/v04/05-AMAZING-PROGRAM.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v04/05-AMAZING-PROGRAM.ASC",
+          "label": "05-AMAZING-PROGRAM.ASC"
+        },
+        {
+          "path": "versions/v04/05-AMAZING-PROGRAM.BAS",
+          "label": "05-AMAZING-PROGRAM.BAS"
+        }
+      ],
+      "startupSource": "5 XS=0:YS=1\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n90 PRINT@404,\"\";\n100 GOSUB 7000\n101 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
