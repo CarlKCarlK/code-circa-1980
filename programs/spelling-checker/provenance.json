@@ -1,0 +1,74 @@
+{
+  "official_title": "Spelling Checker",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "spelling_checker_p275; spelling_checker_early_p274",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape9a",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape9a/best/06-SPELLING-CHECKER-EARLY.BAS",
+      "archive_listing": "tapes/recovered/tape9a/best/06-SPELLING-CHECKER-EARLY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/06-SPELLING-CHECKER-EARLY.ASC",
+          "archive_path": "tapes/recovered/tape9a/best/06-SPELLING-CHECKER-EARLY.ASC",
+          "bytes": 973,
+          "sha256": "5f3a8fdbd088ccbe6f6d89ae52a4021ed162846ee0e44e1dcd71322a0c9b261c"
+        },
+        {
+          "path": "versions/v01/06-SPELLING-CHECKER-EARLY.BAS",
+          "archive_path": "tapes/recovered/tape9a/best/06-SPELLING-CHECKER-EARLY.BAS",
+          "bytes": 877,
+          "sha256": "b513f3bf262fdf3555d2c1dd726fa87729933c34292faf723486447cd6e9c156"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "b513f3bf262fdf3555d2c1dd726fa87729933c34292faf723486447cd6e9c156",
+        "bytes": 877,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 11,
+        "last": 11000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 875,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "a",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SPELLING CHECKER EARLY; 11 lines",
+        "capture": "tape9a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "source_start_s": "194.089",
+        "recovered_bytes": "877",
+        "source_file": "tapes/recovered/tape9a/best/06-SPELLING-CHECKER-EARLY.ASC",
+        "wav": "tapes/tape9a.wav",
+        "folder": "tapes/recovered/tape9a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; historical source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

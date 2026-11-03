@@ -1,0 +1,40 @@
+{
+  "id": "spelling-checker",
+  "title": "Spelling Checker",
+  "description": "Spelling Checker. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SPELLING CHECKER EARLY",
+      "capture": "tape9a",
+      "save": 6,
+      "raw": "versions/v01/06-SPELLING-CHECKER-EARLY.BAS",
+      "listing": "versions/v01/06-SPELLING-CHECKER-EARLY.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-SPELLING-CHECKER-EARLY.ASC",
+          "label": "06-SPELLING-CHECKER-EARLY.ASC"
+        },
+        {
+          "path": "versions/v01/06-SPELLING-CHECKER-EARLY.BAS",
+          "label": "06-SPELLING-CHECKER-EARLY.BAS"
+        }
+      ],
+      "startupSource": "90 POKE16553,255\n100 INPUT\"HOW IS IT SPELLED\";S$:S1$=S$:S$=LEFT$(S$,3):L=LEN(S$)\n110 READF$:LF=LEN(F$):IFF$=\"DONE\"THEN1000ELSEIFLEFT$(F$,3)=S$THEN1000\n120 GOTO110\n1000 READA$:IFF$=S1$ORS1$=A$THENPRINT\"THAT'S CORRECT!\"ELSEIFF$=\"DONE\"THENPRINT\"NOT IN MY DICTIONARY\"ELSEPRINT\"SORRY IT IS SPELLED \"F$\n1010 RESTORE:PRINT:GOTO100\n10000 DATA\"ACQUAINTANCE\",\"AFFLENT\",\"AMENDMENT\",\"ANALYZE\",\"ANTICIPATE\",\"APPREHENSIVE\",\"ARTIFICAL\",\"BEHAVIOR\",\"CAMPAIGN\",\"CATALOG(UE)\",\"CHRISTIAN\",\"CLICHE'\",\"COLLOQUIAL\",\"COMMUNICATE\",\"COMPEL\",\"CONGRATULATE\"\n10010 DATA\"CONSCIENTIOUS\",\"COONSTITUTION\",\"CRITICISM\",\"DECENT\",\"DISTRIBUTE\",\"ECONOMICAL\",\"ESSENTIAL\",\"FIGURATIVE\",\"FRAUDULENT\",\"GUARANTEE\",\"INVITATION\",\"INDIGENT\",\"INFALLIBLE\",\"INQUIRY\",\"INTELLIGENCE\",\"MORTGAGE\",\"PARADOX\",\"PARTIAL\"\n10020 DATA\"PLAINTIFF\",\"PREPARATION\",\"PREVALENT\",\"QUANTITY\",\"RECIPIENT\",\"RECOLLECT\",\"SACRIFICE\",\"SENSIBLE\",\"SOLILOQUUY\",\"SUBSIDIZE\",\"SYMPATHIZE\",\"THOROUGHTLY\",\"ULTERIOR\"\n10100 DATA\"DONE\",\"DONE1\"\n11000 DATA\"DONE\"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
