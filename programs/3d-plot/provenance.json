@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape9b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape9b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape9b/best/06-3D-PLOT-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/06-3D-PLOT-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/06-3D-PLOT-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/06-3D-PLOT-SAVE2.ASC",
+          "bytes": 368,
+          "sha256": "df00de7fdc6ce874f5a1f7cf38a18e403713fa02e67972a69cdf8598c14ae0b6"
+        },
+        {
+          "path": "versions/v02/06-3D-PLOT-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/06-3D-PLOT-SAVE2.BAS",
+          "bytes": 315,
+          "sha256": "c4bc83d91d7cb310d08a1d7a733873e32aca647c779566ef9d76b643aee20540"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "c4bc83d91d7cb310d08a1d7a733873e32aca647c779566ef9d76b643aee20540",
+        "bytes": 315,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 18,
+        "last": 10010,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 313,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "3D PLOT SAVE2; 18 lines; identical to save 5",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "166.396",
+        "recovered_bytes": "315",
+        "source_file": "tapes/recovered/tape9b/best/06-3D-PLOT-SAVE2.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
