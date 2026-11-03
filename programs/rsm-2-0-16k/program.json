@@ -1,0 +1,52 @@
+{
+  "id": "rsm-2-0-16k",
+  "title": "Rsm 2.0 16K",
+  "description": "Rsm 2.0 16K. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I Z80",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "RSM-2.0 16K \u2014 Small System Software, copyright 1978",
+      "capture": "tape28b",
+      "save": 3,
+      "raw": "versions/v01/03-RSM-2.0-16K.BIN",
+      "listing": "versions/v01/03-RSM-2.0-16K-STRINGS.TXT",
+      "playable": false,
+      "note": "validated captured payload; runtime untested. Exact independent left/right bytes; 19 block checksums valid; full framing and transfer address; exact EOF",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/03-RSM-2.0-16K-MEMORY.BIN",
+          "label": "03-RSM-2.0-16K-MEMORY.BIN"
+        },
+        {
+          "path": "versions/v01/03-RSM-2.0-16K-STRINGS.TXT",
+          "label": "03-RSM-2.0-16K-STRINGS.TXT"
+        },
+        {
+          "path": "versions/v01/03-RSM-2.0-16K.ASM",
+          "label": "03-RSM-2.0-16K.ASM"
+        },
+        {
+          "path": "versions/v01/03-RSM-2.0-16K-RECORDS.TXT",
+          "label": "03-RSM-2.0-16K-RECORDS.TXT"
+        },
+        {
+          "path": "versions/v01/03-RSM-2.0-16K.BIN",
+          "label": "03-RSM-2.0-16K.BIN"
+        }
+      ],
+      "startupSource": "Derived memory strings; addresses from original block load addresses. No runtime test.\n6C18: ,RSM-2.0  16K (C) 1978\n6C2F: SMALL SYSTEM SOFTWARE\n6CA4: ?GOW/7\n6D45: >*2><\n6D6C: CHECKSUM ERROR  \n6F4D: pB2qC\n6F59: qF1rGsrH1rIurK\n6F71: rP!vQ\n6F8F: uZWu@bu$\n6FF3: COMMAND?\n7017:  8*w#",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
