@@ -241,6 +241,65 @@
       },
       "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape18a",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.ASM",
+          "bytes": 1889,
+          "sha256": "0598b2c96af7f1e167b5cc99f2d0be63758d565c9d404ece5dfb7120cb83abbe"
+        },
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.TXT",
+          "bytes": 1881,
+          "sha256": "80715ed00e6b3ffbedcbbc4cac4b060f916aa477bc017ff6f58fffca434c887a"
+        },
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.Z80",
+          "bytes": 1371,
+          "sha256": "1741de3224b24e2251fb7f7a9486a36a79f8f7d308ee531391e981d89d151949"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "0598b2c96af7f1e167b5cc99f2d0be63758d565c9d404ece5dfb7120cb83abbe",
+        "bytes": 1889,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "9",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "INCH SUBROUTINE",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "260.097",
+        "recovered_bytes": "1889",
+        "source_file": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",

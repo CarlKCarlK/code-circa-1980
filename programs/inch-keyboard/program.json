@@ -122,6 +122,34 @@
       ],
       "startupSource": "00100 KEYSCN\tLD\tC,0\t\t;FOR FIRST ROW\n00110 \tLD\tA,(3801H)\t;FIRST ROW ADDRESS\n00120 \tOR\tA\t\t;TEST ZERO OR NON-ZERO\n00130 \tJP\tNZ,KEY10\t;GO IF KEY PRESSED\n00140 \tLD\tC,8\t\t;REPEAT FOR OTHER ROWS\n00150 \tLD\tA,(3802H)\n00160 \tOR\tA\n00170 \tJP\tNZ,KEY10\n00180 \tLD\tC,16\n00190 \tLD\tA,(3804H)\n00200 \tOR\tA\n00210 \tJP\tNZ,KEY10",
       "controlSource": []
+    },
+    {
+      "id": "v05",
+      "label": "INCH SUBROUTINE",
+      "capture": "tape18a",
+      "save": 9,
+      "raw": "versions/v05/09-INCH-SUBROUTINE.ASM",
+      "listing": "versions/v05/09-INCH-SUBROUTINE.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.ASM",
+          "label": "09-INCH-SUBROUTINE.ASM"
+        },
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.TXT",
+          "label": "09-INCH-SUBROUTINE.TXT"
+        },
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.Z80",
+          "label": "09-INCH-SUBROUTINE.Z80"
+        }
+      ],
+      "startupSource": "00100 INCH\tPUSH\tBC\t; NEXT GROUP SETS FOR SUBROUTINE\n00110 \tPUSH\tDE\n00120 \tPUSH\tHL\n00130 \tPUSH\tIX\n00140 \tPUSH\tIY\n00150 KEYSCN\tLD\tC,0\t\t;FOR FIRST ROW\n00160 \tLD\tA,(3801H)\t;FIRST ROW ADDRESS\n00170 \tOR\tA\t\t;TEST ZERO OR NON-ZERO\n00180 \tJP\tNZ,KEY10\t;GO IF KEY PRESSED\n00190 \tLD\tC,8\t\t;REPEAT FOR OTHER ROWS\n00200 \tLD\tA,(3802H)\n00210 \tOR\tA",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
