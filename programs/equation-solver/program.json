@@ -1,0 +1,40 @@
+{
+  "id": "equation-solver",
+  "title": "Equation Solver",
+  "description": "Equation Solver. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extensions may be required",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "EQUATION SOLVER",
+      "capture": "tape11b",
+      "save": 12,
+      "raw": "versions/v01/12-EQUATION-SOLVER.BAS",
+      "listing": "versions/v01/12-EQUATION-SOLVER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/12-EQUATION-SOLVER.ASC",
+          "label": "12-EQUATION-SOLVER.ASC"
+        },
+        {
+          "path": "versions/v01/12-EQUATION-SOLVER.BAS",
+          "label": "12-EQUATION-SOLVER.BAS"
+        }
+      ],
+      "startupSource": "100 REM EQUATION SOLVER\n200 S=1:SR=100:L=2:LR=-100\n210 T=S/2+L/2\n220 X=16*T[2\n230 X1=16*(T-1)[2+60*(T-1)\n240 D=X-X1\n250 IF D>0 THEN S=T:SR=DELSE L=T:LR=D\n280 PRINT 16*T[2\n285 IF D=0 THEN STOP\n290 GOTO 210",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
