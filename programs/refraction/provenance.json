@@ -130,6 +130,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape25a",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape25a/best/06-REFRACTION-SAVE03.BAS",
+      "archive_listing": "tapes/recovered/tape25a/best/06-REFRACTION-SAVE03.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/06-REFRACTION-SAVE03.ASC",
+          "archive_path": "tapes/recovered/tape25a/best/06-REFRACTION-SAVE03.ASC",
+          "bytes": 1700,
+          "sha256": "a29331d6a74c75d6d49208d36f8284b524010927c4122772e1545f751eafcf38"
+        },
+        {
+          "path": "versions/v03/06-REFRACTION-SAVE03.BAS",
+          "archive_path": "tapes/recovered/tape25a/best/06-REFRACTION-SAVE03.BAS",
+          "bytes": 1487,
+          "sha256": "1d6cf88f81fd8748b0c89819afc2de802edc1076704c0d7948fe2f967b33a540"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "1d6cf88f81fd8748b0c89819afc2de802edc1076704c0d7948fe2f967b33a540",
+        "bytes": 1487,
+        "archive_validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 42,
+        "last": 420,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1485,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "25",
+        "side": "a",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "REFRACTION SAVE03",
+        "capture": "tape25a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC family",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "140.613",
+        "recovered_bytes": "1487",
+        "source_file": "tapes/recovered/tape25a/best/06-REFRACTION-SAVE03.ASC",
+        "wav": "tapes/tape25a.wav",
+        "folder": "tapes/recovered/tape25a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
