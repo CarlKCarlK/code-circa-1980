@@ -1,0 +1,48 @@
+{
+  "id": "fall-interrupted-capture-2",
+  "title": "FALL \u2014 interrupted recording",
+  "description": "FALL \u2014 interrupted recording. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Z80 / EDTASM",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "FALL INTERRUPTED CAPTURE 2",
+      "capture": "tape18a",
+      "save": 19,
+      "raw": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.BIN",
+      "listing": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.TXT",
+      "playable": false,
+      "note": "interrupted capture. Untouched 461-byte prefix: 20 complete EDTASM records with exact left/right agreement; no added end marker; capture stop/rewind/restart reported by user",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.BIN",
+          "label": "19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.TXT",
+          "label": "19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.TXT"
+        },
+        {
+          "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-RAW.ASM",
+          "label": "19-FALL-INTERRUPTED-CAPTURE-2-RAW.ASM"
+        },
+        {
+          "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-UNCERTAIN.TXT",
+          "label": "19-FALL-INTERRUPTED-CAPTURE-2-UNCERTAIN.TXT"
+        }
+      ],
+      "startupSource": "00010 \tORG\t32267\n00100 PRCES\tLD\tA,(TST)\n00110 \tLD\tE,127\n00120 \tLD\tD,A\n00140 LUP\tCALL\tFALL\n00150 \tDEC\tE\n00160 \tJP\tP,LUP\n00170 \tDEC\tD\n00180 \tLD\tE,127\n00190 \tJP\tP,LUP\n00200 \tRET\t\t; ALL DONE -- BACK TO BASIC\n00210 FALL\tPUSH\tDE",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

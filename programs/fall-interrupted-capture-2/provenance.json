@@ -1,0 +1,79 @@
+{
+  "official_title": "FALL \u2014 interrupted recording",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "fall_interrupted_capture_2_p158",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape18a",
+      "save": 19,
+      "archive_raw": "tapes/recovered/tape18a/partial/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape18a/partial/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape18a/partial/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.BIN",
+          "bytes": 461,
+          "sha256": "75490410adb6cc5cf3d179feac44f01f64a24abf9d63ca8b4bf6a4ef4e486837"
+        },
+        {
+          "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.TXT",
+          "archive_path": "tapes/recovered/tape18a/partial/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.TXT",
+          "bytes": 454,
+          "sha256": "93ae3db24df91529dfb7cbfe26791ca39a85bdf8d451c2224a5e26b682de4d8b"
+        },
+        {
+          "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-RAW.ASM",
+          "archive_path": "tapes/recovered/tape18a/partial/19-FALL-INTERRUPTED-CAPTURE-2-RAW.ASM",
+          "bytes": 483,
+          "sha256": "4ae34edcbf9d048b7d87d630dd443a4bcf0213ec4edd3209c71c9165dac0fe2e"
+        },
+        {
+          "path": "versions/v01/19-FALL-INTERRUPTED-CAPTURE-2-UNCERTAIN.TXT",
+          "archive_path": "tapes/recovered/tape18a/partial/19-FALL-INTERRUPTED-CAPTURE-2-UNCERTAIN.TXT",
+          "bytes": 801,
+          "sha256": "f3764fff912c9ebbb2b387a84a719d1f2238c33d192ebb954f17b02994590cb6"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "75490410adb6cc5cf3d179feac44f01f64a24abf9d63ca8b4bf6a4ef4e486837",
+        "bytes": 461,
+        "archive_validation": "Untouched 461-byte prefix: 20 complete EDTASM records with exact left/right agreement; no added end marker; capture stop/rewind/restart reported by user",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "19",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "",
+        "summary": "FALL INTERRUPTED CAPTURE 2",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "interrupted capture",
+        "validation": "Untouched 461-byte prefix: 20 complete EDTASM records with exact left/right agreement; no added end marker; capture stop/rewind/restart reported by user",
+        "source_start_s": "773.097",
+        "recovered_bytes": "461",
+        "source_file": "tapes/recovered/tape18a/partial/19-FALL-INTERRUPTED-CAPTURE-2-PREFIX.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Capture interruption documented; retain separate fragments"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
