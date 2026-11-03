@@ -1,54 +1,54 @@
 {
-  "version": "v03",
+  "version": "v04",
   "capture": "tape1b2",
-  "save": 3,
-  "archive_raw": "tapes/recovered/tape1b2/best/03-MAZE-GENERATOR.BAS",
-  "archive_listing": "tapes/recovered/tape1b2/best/03-MAZE-GENERATOR.ASC",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape1b2/best/04-MAZE-FIRST-PERSON-VARIANT.BAS",
+  "archive_listing": "tapes/recovered/tape1b2/best/04-MAZE-FIRST-PERSON-VARIANT.ASC",
   "imported_files": [
     {
-      "path": "versions/v03/03-MAZE-GENERATOR.ASC",
-      "archive_path": "tapes/recovered/tape1b2/best/03-MAZE-GENERATOR.ASC",
-      "bytes": 2378,
-      "sha256": "88196ee85a02ff0882ed7755398898c5c7d107c4fb691abd0295ce3cf404f292"
+      "path": "versions/v04/04-MAZE-FIRST-PERSON-VARIANT.ASC",
+      "archive_path": "tapes/recovered/tape1b2/best/04-MAZE-FIRST-PERSON-VARIANT.ASC",
+      "bytes": 2954,
+      "sha256": "7d19ce8bfa8ea765f11f15ceb5966242a5d8e23b23c32cf755bad7498cd3b943"
     },
     {
-      "path": "versions/v03/03-MAZE-GENERATOR.BAS",
-      "archive_path": "tapes/recovered/tape1b2/best/03-MAZE-GENERATOR.BAS",
-      "bytes": 2010,
-      "sha256": "8c464fb6f1cf9e07889c8771b9c65adddae6ee8341c1a1223a25448f031a083e"
+      "path": "versions/v04/04-MAZE-FIRST-PERSON-VARIANT.BAS",
+      "archive_path": "tapes/recovered/tape1b2/best/04-MAZE-FIRST-PERSON-VARIANT.BAS",
+      "bytes": 2490,
+      "sha256": "424d0adae6260366dec74b9117977e69081826489a042272ea65322609fdbc86"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "8c464fb6f1cf9e07889c8771b9c65adddae6ee8341c1a1223a25448f031a083e",
-    "bytes": 2010,
+    "sha256": "424d0adae6260366dec74b9117977e69081826489a042272ea65322609fdbc86",
+    "bytes": 2490,
     "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 58,
+    "lines": 73,
     "last": 6040,
     "pointer_bases": [
       17125
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 2008,
+    "parsed_bytes": 2488,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "1",
     "side": "b",
-    "order": "3",
+    "order": "4",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "Maze generator, W=127 L=47 (descriptive identification)",
+    "summary": "Maze / first-person view, W=10 L=10 (descriptive identification)",
     "capture": "tape1b2",
     "capture_scope": "full",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-    "source_start_s": "224.062",
-    "recovered_bytes": "2010",
-    "source_file": "tapes/recovered/tape1b2/best/03-MAZE-GENERATOR.ASC",
+    "source_start_s": "261.758",
+    "recovered_bytes": "2490",
+    "source_file": "tapes/recovered/tape1b2/best/04-MAZE-FIRST-PERSON-VARIANT.ASC",
     "wav": "tapes/tape1b2.wav",
     "folder": "tapes/recovered/tape1b2",
     "recovery_date": "2026-10-28",
