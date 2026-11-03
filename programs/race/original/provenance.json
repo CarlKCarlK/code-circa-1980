@@ -1,19 +1,19 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape10b",
-  "save": 15,
-  "archive_raw": "tapes/recovered/tape10b/best/15-RACE.BAS",
-  "archive_listing": "tapes/recovered/tape10b/best/15-RACE.ASC",
+  "save": 16,
+  "archive_raw": "tapes/recovered/tape10b/best/16-RACE-SAVE2.BAS",
+  "archive_listing": "tapes/recovered/tape10b/best/16-RACE-SAVE2.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/15-RACE.ASC",
-      "archive_path": "tapes/recovered/tape10b/best/15-RACE.ASC",
+      "path": "versions/v03/16-RACE-SAVE2.ASC",
+      "archive_path": "tapes/recovered/tape10b/best/16-RACE-SAVE2.ASC",
       "bytes": 3178,
       "sha256": "011cd591d5137132dfea5f1470c8209aba902c09dddff60bd724bde9f0792470"
     },
     {
-      "path": "versions/v02/15-RACE.BAS",
-      "archive_path": "tapes/recovered/tape10b/best/15-RACE.BAS",
+      "path": "versions/v03/16-RACE-SAVE2.BAS",
+      "archive_path": "tapes/recovered/tape10b/best/16-RACE-SAVE2.BAS",
       "bytes": 2626,
       "sha256": "8e444dccda3e2e653e89674c30f063e533c59d4ba5c051b1e79eb51d40e9a034"
     }
@@ -36,19 +36,19 @@
   "inventory_row": {
     "tape": "10",
     "side": "b",
-    "order": "15",
+    "order": "16",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "RACE; 65 lines",
+    "summary": "RACE SAVE2; 65 lines",
     "capture": "tape10b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 BASIC; extensions may be needed",
     "status": "validated source; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
-    "source_start_s": "649.515",
+    "source_start_s": "698.909",
     "recovered_bytes": "2626",
-    "source_file": "tapes/recovered/tape10b/best/15-RACE.ASC",
+    "source_file": "tapes/recovered/tape10b/best/16-RACE-SAVE2.ASC",
     "wav": "tapes/tape10b.wav",
     "folder": "tapes/recovered/tape10b/best",
     "recovery_date": "2026-10-27",
