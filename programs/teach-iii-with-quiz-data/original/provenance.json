@@ -1,19 +1,19 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape21a",
-  "save": 7,
-  "archive_raw": "tapes/recovered/tape21a/best/07-TEACH-III-SAVE01.BAS",
-  "archive_listing": "tapes/recovered/tape21a/best/07-TEACH-III-SAVE01.ASC",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape21a/best/08-TEACH-III-SAVE02.BAS",
+  "archive_listing": "tapes/recovered/tape21a/best/08-TEACH-III-SAVE02.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/07-TEACH-III-SAVE01.ASC",
-      "archive_path": "tapes/recovered/tape21a/best/07-TEACH-III-SAVE01.ASC",
+      "path": "versions/v02/08-TEACH-III-SAVE02.ASC",
+      "archive_path": "tapes/recovered/tape21a/best/08-TEACH-III-SAVE02.ASC",
       "bytes": 886,
       "sha256": "7f9fa4642e5f7035c285c803b01041b6b7eeaa1fb6bd9b9fe75001280b850d91"
     },
     {
-      "path": "versions/v01/07-TEACH-III-SAVE01.BAS",
-      "archive_path": "tapes/recovered/tape21a/best/07-TEACH-III-SAVE01.BAS",
+      "path": "versions/v02/08-TEACH-III-SAVE02.BAS",
+      "archive_path": "tapes/recovered/tape21a/best/08-TEACH-III-SAVE02.BAS",
       "bytes": 722,
       "sha256": "655699eec46ba1adb2ee9e51688ad3c8a230846ea890156e42be120d3e835b0f"
     }
@@ -38,19 +38,19 @@
   "inventory_row": {
     "tape": "21",
     "side": "a",
-    "order": "7",
+    "order": "8",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "TEACH III SAVE01",
+    "summary": "TEACH III SAVE02",
     "capture": "tape21a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "176.454",
+    "source_start_s": "194.465",
     "recovered_bytes": "722",
-    "source_file": "tapes/recovered/tape21a/best/07-TEACH-III-SAVE01.ASC",
+    "source_file": "tapes/recovered/tape21a/best/08-TEACH-III-SAVE02.ASC",
     "wav": "tapes/tape21a.wav",
     "folder": "tapes/recovered/tape21a",
     "recovery_date": "2026-10-28",
