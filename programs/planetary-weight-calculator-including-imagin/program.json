@@ -1,0 +1,40 @@
+{
+  "id": "planetary-weight-calculator-including-imagin",
+  "title": "Planetary Weight Calculator",
+  "description": "Planetary Weight Calculator. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Planetary weight calculator, including imaginary planets",
+      "capture": "tape16b",
+      "save": 13,
+      "raw": "versions/v01/13-PLANETARY-WEIGHTS.BAS",
+      "listing": "versions/v01/13-PLANETARY-WEIGHTS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/13-PLANETARY-WEIGHTS.ASC",
+          "label": "13-PLANETARY-WEIGHTS.ASC"
+        },
+        {
+          "path": "versions/v01/13-PLANETARY-WEIGHTS.BAS",
+          "label": "13-PLANETARY-WEIGHTS.BAS"
+        }
+      ],
+      "startupSource": "10 PRINT \"WHAT IS YOUR EARTH WEIGHT ?\"\n20 INPUT WE\n25 GE=980\n30 READ P$,G2\n40 IF P$=\"DONE\" THEN 200\n50 W2=G2/GE*WE\n55 W2=INT(W2+.5)\n60 PRINT \"YOUR WEIGHT ON \" P$ \" IS \" W2 \".\"\n70 GOTO 30\n200 PRINT:PRINT \"ALL DONE\"\n980 DATA EIDAK,-9999999\n990 DATA NIZBOT,56987",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
