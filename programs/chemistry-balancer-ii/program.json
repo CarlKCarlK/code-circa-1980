@@ -154,6 +154,30 @@
       ],
       "startupSource": "5 CLS\n10 REM CHEMISTRY BANENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225\n240 IFEN=0 THEN ER=4:GOTO2000ELSECN=1:FOR I=1TO LEN (EQ$):TT$=MID$(EQ$,I,1):IFTT$=\"+\"ORTT$=\"=\"THEN CN=CN+1",
       "controlSource": []
+    },
+    {
+      "id": "v07",
+      "label": "CHEMISTRY BALENCER II TRUNCATED",
+      "capture": "tape7b",
+      "save": 25,
+      "raw": "versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS",
+      "listing": "versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+      "playable": false,
+      "note": "damaged / partial BASIC. 139 consistent BASIC record pointers; No decoded end-of-program marker before WAV ends; Listing contains only 139 complete prefix records; raw candidate retains the remainder",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+          "label": "25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC"
+        },
+        {
+          "path": "versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS",
+          "label": "25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BANENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)ELSE IFNOT(TT$=\" \"ORTT$=\"(\"ORTT$=\")\"ORTT$=\"+\"ORTT$=\".\"OR(TT$>=\"0\"ANDTT$<=\"9\")ORTT$=\"=\"OR(TT$>=\"A\"ANDTT$<=\"Z\"))THENER=8:GOTO2000\n212 IFTT$=\")\"ORTT$=\"(\" THEN P8=1\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

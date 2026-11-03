@@ -371,6 +371,62 @@
       },
       "recovery_inventory": "tapes/recovered/tape7b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v07",
+      "capture": "tape7b",
+      "save": 25,
+      "archive_raw": "tapes/recovered/tape7b/partial/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS",
+      "archive_listing": "tapes/recovered/tape7b/partial/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+          "archive_path": "tapes/recovered/tape7b/partial/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+          "bytes": 6217,
+          "sha256": "bf4e9c9817666f4b98d4cbcb23771f7506848e41573f768e10b390f23fe6ef72"
+        },
+        {
+          "path": "versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS",
+          "archive_path": "tapes/recovered/tape7b/partial/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS",
+          "bytes": 6323,
+          "sha256": "7f32eafa9d1af3d68bbe30de3839199167b7222c295fa72d7c64ed9f7eea7c64"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "7f32eafa9d1af3d68bbe30de3839199167b7222c295fa72d7c64ed9f7eea7c64",
+        "bytes": 6323,
+        "archive_validation": "139 consistent BASIC record pointers; No decoded end-of-program marker before WAV ends; Listing contains only 139 complete prefix records; raw candidate retains the remainder",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "structure_conflict": true,
+        "source_notice_lines": [
+          "10 REM CHEMISTRY BANENCER II   COPYRIGHT 1981 C. KADIE"
+        ]
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "b",
+        "order": "25",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "CHEMISTRY BALENCER II TRUNCATED; 139 readable line records",
+        "capture": "tape7b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged / partial BASIC",
+        "validation": "139 consistent BASIC record pointers; No decoded end-of-program marker before WAV ends; Listing contains only 139 complete prefix records; raw candidate retains the remainder",
+        "source_start_s": "",
+        "recovered_bytes": "6323",
+        "source_file": "tapes/recovered/tape7b/partial/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+        "wav": "tapes/tape7b.wav",
+        "folder": "tapes/recovered/tape7b/partial",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Rerecord later chemistry saves, including full ending"
+      },
+      "recovery_inventory": "tapes/recovered/tape7b/partial/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
