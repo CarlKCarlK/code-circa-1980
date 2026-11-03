@@ -1,0 +1,40 @@
+{
+  "id": "absolute-value-range-plot",
+  "title": "Absolute Value Range Plot",
+  "description": "Absolute Value Range Plot. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ABSOLUTE VALUE RANGE PLOT",
+      "capture": "tape9a",
+      "save": 14,
+      "raw": "versions/v01/14-ABSOLUTE-VALUE-RANGE-PLOT.BAS",
+      "listing": "versions/v01/14-ABSOLUTE-VALUE-RANGE-PLOT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/14-ABSOLUTE-VALUE-RANGE-PLOT.ASC",
+          "label": "14-ABSOLUTE-VALUE-RANGE-PLOT.ASC"
+        },
+        {
+          "path": "versions/v01/14-ABSOLUTE-VALUE-RANGE-PLOT.BAS",
+          "label": "14-ABSOLUTE-VALUE-RANGE-PLOT.BAS"
+        }
+      ],
+      "startupSource": "100 INPUT\"RANGE\";R1\n105 CLS:X=0\n110 FORR=-(R1)TOR1STEP R1/63\n120 IF ABS(R) < 2 THEN 200 ELSE 300\n130 SET(X,0):SET(X,4):IFABS(R)<.02THENPRINT@128+X/2,0;\n140 NEXT\n150 PRINT@384,\"\";:GOTO100\n200 X=X+1:SET(X,2):IFT=-1THENPRINT@128+X/2,R;\n210 T=1:GOTO130\n300 X=X+1:IFT=1THENPRINT@128+X/2,R;\n310 T=-1:GOTO130",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
