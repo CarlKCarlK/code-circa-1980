@@ -1,0 +1,40 @@
+{
+  "id": "number-guessing-1-to-100",
+  "title": "Number Guessing 1 To 100",
+  "description": "Number Guessing 1 To 100. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Number guessing, 1 to 100",
+      "capture": "tape16b",
+      "save": 2,
+      "raw": "versions/v01/02-NUMBER-GUESSING-1-100.BAS",
+      "listing": "versions/v01/02-NUMBER-GUESSING-1-100.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-NUMBER-GUESSING-1-100.ASC",
+          "label": "02-NUMBER-GUESSING-1-100.ASC"
+        },
+        {
+          "path": "versions/v01/02-NUMBER-GUESSING-1-100.BAS",
+          "label": "02-NUMBER-GUESSING-1-100.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 X=RND(100)\n30 INPUT\"WHAT IS YOUR NUMBER\";G\n40 IFG<XTHENPRINT\"TOO SMALL\"\n50 IFG>XTHENPRINT\"TOO LARGE\"\n60 IF G=X THEN 200\n70 GOTO 30\n200 PRINT\"YES\"\n205 GOTO200",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
