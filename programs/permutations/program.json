@@ -1,0 +1,42 @@
+{
+  "id": "permutations",
+  "title": "Permutations",
+  "description": "Permutations. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PERMUTATIONS",
+      "capture": "tape24a",
+      "save": 1,
+      "raw": "versions/v01/01-PERMUTATIONS.BAS",
+      "listing": "versions/v01/01-PERMUTATIONS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-PERMUTATIONS.ASC",
+          "label": "01-PERMUTATIONS.ASC"
+        },
+        {
+          "path": "versions/v01/01-PERMUTATIONS.BAS",
+          "label": "01-PERMUTATIONS.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR 5000:DIM O$(100)\n10 INPUT \"HOW MANY OBJECTS\";FF\n15 F!=1\n20 PRINT\"THE LIST WILL BE \";:FOR I=2TOFF:F!=F!*I:NEXTI\n30 PRINTF!;\" LONG.\"\n40 FOR I=1TOFF\n50 PRINT\"WHAT IS OBJECT #\"I;:INPUT O$(I)\n60 NEXTI\n70 PRINT\n89 A$=\"NO\"\n90  INPUT\"WOULD YOU LIKE TO FIX OR CHANGE ANY OBJECTS\";A$\n100 IF A$=\"N\" ORA$=\"NO\"THEN 140",
+      "controlSource": [
+        "310 IF INKEY$=\"\"THEN310 ELSE RUN"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

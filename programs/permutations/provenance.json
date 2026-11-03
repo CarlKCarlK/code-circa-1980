@@ -1,0 +1,74 @@
+{
+  "official_title": "Permutations",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Permutations",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape24a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape24a/best/01-PERMUTATIONS.BAS",
+      "archive_listing": "tapes/recovered/tape24a/best/01-PERMUTATIONS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-PERMUTATIONS.ASC",
+          "archive_path": "tapes/recovered/tape24a/best/01-PERMUTATIONS.ASC",
+          "bytes": 1285,
+          "sha256": "96258ecd5a5a22f987c2005fb52c0e8b322200576d287fca15da3738e16de2de"
+        },
+        {
+          "path": "versions/v01/01-PERMUTATIONS.BAS",
+          "archive_path": "tapes/recovered/tape24a/best/01-PERMUTATIONS.BAS",
+          "bytes": 1100,
+          "sha256": "0c10c2218903eb86aaf89a062dceac05ab4a6e8069da8331c09512f30051b2a9"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "0c10c2218903eb86aaf89a062dceac05ab4a6e8069da8331c09512f30051b2a9",
+        "bytes": 1100,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 36,
+        "last": 550,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1098,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "24",
+        "side": "a",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PERMUTATIONS",
+        "capture": "tape24a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "11.400",
+        "recovered_bytes": "1100",
+        "source_file": "tapes/recovered/tape24a/best/01-PERMUTATIONS.ASC",
+        "wav": "tapes/tape24a.wav",
+        "folder": "tapes/recovered/tape24a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
