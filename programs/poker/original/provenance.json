@@ -1,51 +1,51 @@
 {
-  "version": "v06",
+  "version": "v01",
   "capture": "tape4b",
-  "save": 16,
-  "archive_raw": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.BAS",
-  "archive_listing": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.ASC",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape4b/best/02-POKER.BAS",
+  "archive_listing": "tapes/recovered/tape4b/best/02-POKER.ASC",
   "imported_files": [
     {
-      "path": "versions/v06/16-POKER-V3-SAVE2.BAS",
-      "archive_path": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.BAS",
-      "bytes": 7895,
-      "sha256": "ccadd6f01b3a059d821d6d39750914adc8676b88b6e8d6fba649d21090689523"
+      "path": "versions/v01/02-POKER.BAS",
+      "archive_path": "tapes/recovered/tape4b/best/02-POKER.BAS",
+      "bytes": 6005,
+      "sha256": "3356568954dc9b5c7ff6e59847daed19217e9637a722bcd3c6add3eca184ca89"
     },
     {
-      "path": "versions/v06/16-POKER-V3-SAVE2.ASC",
-      "archive_path": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.ASC",
-      "bytes": 10048,
-      "sha256": "58e81c9e7e0dc5be9bfdfa48e9ae16fe90aca814b9a6d2970ad61289322dc615"
+      "path": "versions/v01/02-POKER.ASC",
+      "archive_path": "tapes/recovered/tape4b/best/02-POKER.ASC",
+      "bytes": 7499,
+      "sha256": "cd742ad77d28be5343c0798e8415d322d9e98c8e4e2a4f07488e62bde9b05ab7"
     }
   ],
   "recovery_item": {
-    "lines": 406,
-    "last": 9010,
-    "pointer_base": 22204,
+    "lines": 412,
+    "last": 6000,
+    "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "ccadd6f01b3a059d821d6d39750914adc8676b88b6e8d6fba649d21090689523"
+    "sha256": "3356568954dc9b5c7ff6e59847daed19217e9637a722bcd3c6add3eca184ca89"
   },
   "inventory_row": {
     "tape": "4",
     "side": "b",
-    "order": "16",
+    "order": "2",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "POKER V3 SAVE2; 406 lines; T13-C1",
+    "summary": "POKER; 412 lines; T1-C2",
     "capture": "tape4b",
     "capture_scope": "full",
     "baud": "500",
-    "platform": "TRS-80 BASIC; extended features",
+    "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
-    "validation": "406 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+    "validation": "412 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
     "source_start_s": "",
-    "recovered_bytes": "7895",
-    "source_file": "tapes/recovered/tape4b/best/16-POKER-V3-SAVE2.ASC",
+    "recovered_bytes": "6005",
+    "source_file": "tapes/recovered/tape4b/best/02-POKER.ASC",
     "wav": "tapes/tape4b.wav",
     "folder": "tapes/recovered/tape4b/best",
     "recovery_date": "2026-10-26",
     "recorder_volume": "",
-    "next_action": "Identify compatible extended BASIC for DEF FN, LINE graphics, GET graphics, PUT graphics"
+    "next_action": "Execution-test"
   },
   "recovery_inventory": "tapes/recovered/tape4b/inventory.json",
   "execution_tested": false
