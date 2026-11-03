@@ -46,6 +46,74 @@
       ],
       "startupSource": "10 REM life backwards april 27, 1985\n90 DEFINT A-Z\n100 DX=20:DY=20\n110 DIM T6(4,4)\n280 PRINT\"Setting up\"\n290 DIM CN(380,1)\n300 FOR I = 0 TO 511:IZ=I:TZ=0:\t\t\tFOR J=0 TO 8:\t\t\t\t  CZ(J)=IZ MOD 2:TZ=TZ+CZ(J):\t\t  IZ= IZ/2:\t\t\t\t  NEXT J\n310 MZ= -((CZ(4)=1 AND (TZ=3 OR TZ=4)) OR(CZ(4)=0 AND TZ=3)):CN(TZ(MZ),MZ)=I:TZ(MZ)=TZ(MZ)+1:NEXTI\n320 FOR MZ=0TO1:CN(TZ(MZ),MZ)=-1:NEXTMZ\n330 CLS\n500 'main program\n510 GOSUB 1000:'\"egin",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "Cassette name L",
+      "capture": "tape2a",
+      "save": 21,
+      "raw": "versions/v02/21-L-BASIC-PREFIX.BIN",
+      "listing": "versions/v02/21-L-BASIC-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 8 lines through 310; exact left/right prefix agreement",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/21-L-BASIC-PREFIX.ASC",
+          "label": "21-L-BASIC-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v02/21-L-BASIC-PREFIX.BIN",
+          "label": "21-L-BASIC-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v02/21-L-HEADER.BIN",
+          "label": "21-L-HEADER.BIN"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.ASC",
+          "label": "21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.ASC"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.BIN",
+          "label": "21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.BIN"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.ASC",
+          "label": "21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.ASC"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.BIN",
+          "label": "21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.BIN"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.ASC",
+          "label": "21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.ASC"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.BIN",
+          "label": "21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.BIN"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.ASC",
+          "label": "21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.ASC"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.BIN",
+          "label": "21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.BIN"
+        },
+        {
+          "path": "versions/v02/21-L-RAW.BIN",
+          "label": "21-L-RAW.BIN"
+        },
+        {
+          "path": "versions/v02/21-L-UNCERTAIN.ASC",
+          "label": "21-L-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 REM life backwards april 27, 1985\n90 DEFINT A-Z\n100 DX=20:DY=20\n110 DIM T6(4,4)\n280 PRINT\"Setting up\"\n290 DIM CN(380,1)\n300 FOR I = 0 TO 511:IZ=I:TZ=0:\t\t\tFOR J=0 TO 8:\t\t\t\t  CZ(J)=IZ MOD 2:TZ=TZ+CZ(J):\t\t  IZ= IZ/2:\t\t\t\t  NEXT J\n310 MZ= -((CZ(4)=1 AND (TZ=3 OR TZ=4)) OR(CZ(4)=0 AND TZ:fRRtREADMERGEPCLOADPSETPCLOSEPSETRXCLOSEPSETRMENULINEtCLOADPSETPCLOSEPSETRMENUCLOADPSETPCLOSEPSETRLPRINTbt\\x04LINE",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
