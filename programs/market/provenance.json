@@ -179,6 +179,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape12a/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape12a",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape12a/best/08-MARKET-V2-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape12a/best/08-MARKET-V2-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/08-MARKET-V2-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape12a/best/08-MARKET-V2-SAVE2.ASC",
+          "bytes": 6663,
+          "sha256": "64df30c50e545b0e63742fcb1e1f40b00175afae772eb40eff9d4def116bf136"
+        },
+        {
+          "path": "versions/v04/08-MARKET-V2-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape12a/best/08-MARKET-V2-SAVE2.BAS",
+          "bytes": 5828,
+          "sha256": "1cb5d7fd334f1c7e00b855d93076cae1bccd696df50d175d8326ef17e21ff013"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "1cb5d7fd334f1c7e00b855d93076cae1bccd696df50d175d8326ef17e21ff013",
+        "bytes": 5828,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested; raw trailer preserved after BASIC end",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 271,
+        "last": 1510,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": false,
+        "parsed_bytes": 5597,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "a",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MARKET V2 SAVE2; 271 lines; identical to save 7",
+        "capture": "tape12a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested; raw trailer preserved after BASIC end",
+        "source_start_s": "564.721",
+        "recovered_bytes": "5828",
+        "source_file": "tapes/recovered/tape12a/best/08-MARKET-V2-SAVE2.ASC",
+        "wav": "tapes/tape12a.wav",
+        "folder": "tapes/recovered/tape12a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12a/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
