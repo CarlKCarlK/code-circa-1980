@@ -1,0 +1,42 @@
+{
+  "id": "teach-iii-with-quiz-data",
+  "title": "Teach Iii With Quiz Data",
+  "description": "Teach Iii With Quiz Data. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TEACH III SAVE01",
+      "capture": "tape21a",
+      "save": 7,
+      "raw": "versions/v01/07-TEACH-III-SAVE01.BAS",
+      "listing": "versions/v01/07-TEACH-III-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/07-TEACH-III-SAVE01.ASC",
+          "label": "07-TEACH-III-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/07-TEACH-III-SAVE01.BAS",
+          "label": "07-TEACH-III-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978\n110 DIMM(36):POKE16553,255:FORX=1TO33:M(X)=X:NEXT:CLS\n200 Q=Q+1:RESTORE:PRINT:PRINT:FORX=1TOM(Q)*2-1:READQ$:IFQ$=\"@\"ORM(Q=0)THEN1000ELSENEXT:PRINT\"QUESTION #\";Q:PRINTQ$;:INPUTAH$:READAC$:IFAH$=AC$THENPRINT\"VERY GOOD, THAT WAS CORRECT\":C=C+1:GOTO230\n210 PRINT\"I'M SORRY, THAT IS NOT THE CORRECT ANSWER, THE RIGHT ANSWER IS : \":PRINTAC$:I=I+1:M(I)=Q\n230 C$=INKEY$:IFC$=\"\"THEN230ELSECLS:GOTO200\n1000 PE=C*100/(Q-1):PRINT\"THAT'S ALL OF THIS QUIZ, BUT OUT OF\"Q-1\"QUESTIONS YOU GOT\"C\"RIGHT OR \";:PRINTUSING\"##\";PE;:PRINT\"% CORRECT OF THE TOTAL. IF YOU WERE TAKING THIS AT SCHOOL, YOUR GRADE WOULD BE: \";\n1010 IFPE>92THENPRINT\"A\";ELSEIFPE>84THENPRINT\"B\";ELSEIFPE>72THENPRINT\"C\";ELSEIFPE>69THENPRINT\"D\";ELSEPRINT\"F\";\n1020 PRINT:INPUT\"DO YOU WANT TO TRY AGIAN\";G$:IFG$<>\"NO\"THEN M(I+1)=0:I=0:Q=0:C=0:CLS:GOTO200\n10000 'PLACE DATA HERE",
+      "controlSource": [
+        "230 C$=INKEY$:IFC$=\"\"THEN230ELSECLS:GOTO200"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
