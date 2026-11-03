@@ -31,7 +31,7 @@ test('John’s Circle draws a circle and a second ellipse',async({page})=>{
  test.setTimeout(70000);await boot(page,'johnscircle');await answer(page,'?','40,20');await expect.poll(()=>graphics(page),{timeout:15000}).toBeGreaterThan(20);await page.waitForTimeout(2500);const before=await snapshot(page);await tap(page,'Enter');await answer(page,'?','50,10');await page.waitForTimeout(2500);expect(await snapshot(page)).not.toEqual(before);await capture(page,'johnscircle');await noError(page);await restart(page,'?');
 });
 
-test('More has twenty-seven cards with readable artwork and direct new player links',async({page})=>{
+test('More has twenty-nine cards with readable artwork and direct new player links',async({page})=>{
  await page.goto('/#/more');await expect(page.locator('.program-card')).toHaveCount(29);
  for(const title of ['Trajectory','Relativity','Reflex Tests','Nuclear Equation Completer','John’s Circle'])await expect(page.getByRole('heading',{name:title,exact:true})).toHaveCount(1);
  expect(await page.locator('.program-card img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0))).toBe(true);
