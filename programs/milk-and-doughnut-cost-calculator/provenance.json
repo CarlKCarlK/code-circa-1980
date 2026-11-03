@@ -1,0 +1,74 @@
+{
+  "official_title": "Milk And Doughnut Cost Calculator",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "milk_and_doughnut_cost_calculator_p153",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape16b",
+      "save": 14,
+      "archive_raw": "tapes/recovered/tape16b/best/14-MILK-AND-DOUGHNUTS.BAS",
+      "archive_listing": "tapes/recovered/tape16b/best/14-MILK-AND-DOUGHNUTS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/14-MILK-AND-DOUGHNUTS.ASC",
+          "archive_path": "tapes/recovered/tape16b/best/14-MILK-AND-DOUGHNUTS.ASC",
+          "bytes": 125,
+          "sha256": "b44ff8528e11aa52e9a5b207e75f2df23914c8cac248e6a3da7aaf8c8fa424a0"
+        },
+        {
+          "path": "versions/v01/14-MILK-AND-DOUGHNUTS.BAS",
+          "archive_path": "tapes/recovered/tape16b/best/14-MILK-AND-DOUGHNUTS.BAS",
+          "bytes": 122,
+          "sha256": "910e71e681d4681b75beadea5d7e6b93f66fb3325e515bb3559dee1efc2494dc"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "910e71e681d4681b75beadea5d7e6b93f66fb3325e515bb3559dee1efc2494dc",
+        "bytes": 122,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 7,
+        "last": 50,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 120,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "b",
+        "order": "14",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Milk and doughnut cost calculator",
+        "capture": "tape16b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "250.746",
+        "recovered_bytes": "122",
+        "source_file": "tapes/recovered/tape16b/best/14-MILK-AND-DOUGHNUTS.ASC",
+        "wav": "tapes/tape16b.wav",
+        "folder": "tapes/recovered/tape16b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

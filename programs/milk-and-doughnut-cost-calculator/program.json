@@ -1,0 +1,40 @@
+{
+  "id": "milk-and-doughnut-cost-calculator",
+  "title": "Milk And Doughnut Cost Calculator",
+  "description": "Milk And Doughnut Cost Calculator. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Milk and doughnut cost calculator",
+      "capture": "tape16b",
+      "save": 14,
+      "raw": "versions/v01/14-MILK-AND-DOUGHNUTS.BAS",
+      "listing": "versions/v01/14-MILK-AND-DOUGHNUTS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/14-MILK-AND-DOUGHNUTS.ASC",
+          "label": "14-MILK-AND-DOUGHNUTS.ASC"
+        },
+        {
+          "path": "versions/v01/14-MILK-AND-DOUGHNUTS.BAS",
+          "label": "14-MILK-AND-DOUGHNUTS.BAS"
+        }
+      ],
+      "startupSource": "10 S=35\n20 D=30\n25 PRINT \"HOW MANY MILKS,DOUGHNUTS\";\n27 INPUT SN,DN\n30 TC=SN*S+DN*D\n40 TD=TC/100\n50 PRINT USING \"$$##.##\";TD",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
