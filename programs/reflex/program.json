@@ -20,6 +20,18 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "REFLEX TESTS SAVE2",
+      "capture": "tape9b",
+      "save": 8,
+      "raw": "versions/v02/08-REFLEX-TESTS-SAVE2.BAS",
+      "listing": "versions/v02/08-REFLEX-TESTS-SAVE2.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": null
     }
   ]
 }
