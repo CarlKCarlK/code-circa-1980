@@ -1,0 +1,43 @@
+{
+  "id": "keyboard-hex-converter",
+  "title": "Keyboard Hex Converter",
+  "description": "Keyboard Hex Converter. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "KEYBOARD HEX CONVERTER",
+      "capture": "tape12b",
+      "save": 9,
+      "raw": "versions/v01/09-KEYBOARD-HEX-CONVERTER.BAS",
+      "listing": "versions/v01/09-KEYBOARD-HEX-CONVERTER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/09-KEYBOARD-HEX-CONVERTER.ASC",
+          "label": "09-KEYBOARD-HEX-CONVERTER.ASC"
+        },
+        {
+          "path": "versions/v01/09-KEYBOARD-HEX-CONVERTER.BAS",
+          "label": "09-KEYBOARD-HEX-CONVERTER.BAS"
+        }
+      ],
+      "startupSource": "1 POKE16553,255\n2 F=-1\n5 RESTORE\n10 DIM I(2,40)\n90 B$=INKEY$:IFB$=\"\"THEN90\n100 A$=INKEY$:IFA$=\"\"THEN100\n130 IFA$=\"1\"THENC=0:IFB$=\".\"THENC=C+100\n140 IFA$=\"2\"THENC=10:IFB$=\".\"THENC=C+100\n150 IFA$=\"3\"THENC=11:IFB$=\".\"THENC=111\n160 IFA$=\"4\"THENC=1:IFB$=\".\"THENC=101\n170 F=F+1:IFF>2THENF=0:S=S+1\n175 IFB$=\"D\"ANDA$<>\"A\"THEN300",
+      "controlSource": [
+        "90 B$=INKEY$:IFB$=\"\"THEN90",
+        "100 A$=INKEY$:IFA$=\"\"THEN100"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
