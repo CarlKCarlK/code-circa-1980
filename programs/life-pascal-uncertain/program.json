@@ -1,0 +1,52 @@
+{
+  "id": "life-pascal-uncertain",
+  "title": "LIFE \u2014 Pascal draft",
+  "description": "LIFE \u2014 Pascal draft. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80; Pascal-like source; exact dialect unverified",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LIFE cellular automaton",
+      "capture": "tape15a",
+      "save": 1,
+      "raw": "versions/v01/01-LIFE-PASCAL-DAMAGED.3BN",
+      "listing": "versions/v01/01-LIFE-PASCAL-UNCERTAIN.TXT",
+      "playable": false,
+      "note": "damaged source; runtime untested. 4/6 block checksums valid; blocks 3-6 exact left/right data and address matches; first two blocks conflict; 78 ending lacks SYSTEM entry address",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-DAMAGED.3BN",
+          "label": "01-LIFE-PASCAL-DAMAGED.3BN"
+        },
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-UNCERTAIN.SRC",
+          "label": "01-LIFE-PASCAL-UNCERTAIN.SRC"
+        },
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-UNCERTAIN.TXT",
+          "label": "01-LIFE-PASCAL-UNCERTAIN.TXT"
+        },
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-VERIFIED-SUFFIX.BIN",
+          "label": "01-LIFE-PASCAL-VERIFIED-SUFFIX.BIN"
+        },
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-VERIFIED-SUFFIX.TXT",
+          "label": "01-LIFE-PASCAL-VERIFIED-SUFFIX.TXT"
+        }
+      ],
+      "startupSource": "(* GO FOR LIFE... OK    HERE WE GO kj\\x18\\x18*)\\x18\\x18\\x18\nVAR CELLS:INTEGER;\nPROC INI\\xFF;\nVAR X,Y,CURS\n\t\t\t\t:INTEGER;\nBEGIN\n   X:=32;Y:=24;\n   REPEAT \n\t  CURS:=POINT(X*2,Y);\n\t  PLOT(X*2,Y,1-CURS); PLOT(X*2+1,Y,1-CURS);\n\t  PLOT(X*2,Y,CURS);   PLOT(X*2+1,Y,CURS);\n     CASE MEM(14400) OF ",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
