@@ -1,54 +1,54 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape13a",
-  "save": 7,
-  "archive_raw": "tapes/recovered/tape13a/best/07-LUNAR-LANDING.BAS",
-  "archive_listing": "tapes/recovered/tape13a/best/07-LUNAR-LANDING.ASC",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape13a/best/08-LUNAR-LANDING-V2.BAS",
+  "archive_listing": "tapes/recovered/tape13a/best/08-LUNAR-LANDING-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/07-LUNAR-LANDING.ASC",
-      "archive_path": "tapes/recovered/tape13a/best/07-LUNAR-LANDING.ASC",
-      "bytes": 829,
-      "sha256": "b09ca88faa49f50a6016b49d69eecd64a79f3c1d6d90f4ed42b4a79147ceee18"
+      "path": "versions/v02/08-LUNAR-LANDING-V2.ASC",
+      "archive_path": "tapes/recovered/tape13a/best/08-LUNAR-LANDING-V2.ASC",
+      "bytes": 2226,
+      "sha256": "fe448c56589cd47d7f121c0a2d96ab18bdb66cf78cc91936c4d702a49424edb4"
     },
     {
-      "path": "versions/v01/07-LUNAR-LANDING.BAS",
-      "archive_path": "tapes/recovered/tape13a/best/07-LUNAR-LANDING.BAS",
-      "bytes": 703,
-      "sha256": "5660872a337a92cc1e456bb39d75951fa7218fc1f475b68ac6816178c0c06da7"
+      "path": "versions/v02/08-LUNAR-LANDING-V2.BAS",
+      "archive_path": "tapes/recovered/tape13a/best/08-LUNAR-LANDING-V2.BAS",
+      "bytes": 1837,
+      "sha256": "55bb2b87615b660b0aa8211b45de0f7fc47b87988699dc8b0ea3abbdd422f418"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "5660872a337a92cc1e456bb39d75951fa7218fc1f475b68ac6816178c0c06da7",
-    "bytes": 703,
+    "sha256": "55bb2b87615b660b0aa8211b45de0f7fc47b87988699dc8b0ea3abbdd422f418",
+    "bytes": 1837,
     "archive_validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 19,
-    "last": 1100,
+    "lines": 34,
+    "last": 5000,
     "pointer_bases": [
       22204
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 701,
+    "parsed_bytes": 1835,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "13",
     "side": "a",
-    "order": "7",
+    "order": "8",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "LUNAR LANDING; 19 lines",
+    "summary": "LUNAR LANDING V2; 34 lines",
     "capture": "tape13a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
-    "source_start_s": "270.523",
-    "recovered_bytes": "703",
-    "source_file": "tapes/recovered/tape13a/best/07-LUNAR-LANDING.ASC",
+    "source_start_s": "291.367",
+    "recovered_bytes": "1837",
+    "source_file": "tapes/recovered/tape13a/best/08-LUNAR-LANDING-V2.ASC",
     "wav": "tapes/tape13a.wav",
     "folder": "tapes/recovered/tape13a/best",
     "recovery_date": "2026-10-27",

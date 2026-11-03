@@ -34,6 +34,30 @@
       ],
       "startupSource": "90 PI=3.14159\n100 CLS:LINE(1,0)-(3,0),SET:SET(0,1):SET(4,1)\n110 DIM M%(12):GET@(0,0)-(4,1),G,M%\n120 GOSUB1000:'DRAW MOONSCAPE\n130 X=1:OX=0:HV=-1:Y=0:OY=0:A=PI/2\n200 C=PEEK(14400):IFC<128THENT=0ELSET=T-.2:C=C-128\n205 IFC=32THENA=A+.2ELSEIFC=64THENA=A-.2\n210 X=X+HS+COS(A)*T*.1:HS=X-OX:Y=Y+VS+SIN(A)*T*.1+.05:VS=Y-OY:LINE(A1,B1)-(C1,D1),RESET:A1=X+2:B1=Y+2:C1=A1-COS(A)*T:D1=B1+SIN(A+PI)*T:PUT@(OX,OY)-(OX+4,OY+1),XOR,M%:LINE(A1,B1)-(C1,D1),SET:PUT@(X,Y)-(X+4,Y+1),XOR,M%:OX=X:OY=Y\n220 IF X<=127 AND X>=0 THEN200 ELSE END\n230 GOTO 200\n999 GOTO 999\n1000 CLS:REM LUNER SURFACE",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "LUNAR LANDING V2",
+      "capture": "tape13a",
+      "save": 8,
+      "raw": "versions/v02/08-LUNAR-LANDING-V2.BAS",
+      "listing": "versions/v02/08-LUNAR-LANDING-V2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/08-LUNAR-LANDING-V2.ASC",
+          "label": "08-LUNAR-LANDING-V2.ASC"
+        },
+        {
+          "path": "versions/v02/08-LUNAR-LANDING-V2.BAS",
+          "label": "08-LUNAR-LANDING-V2.BAS"
+        }
+      ],
+      "startupSource": "30 DIM I%(45):CLS:LINE(8,10)-(12,11),SET,BF:SET(7,12):SET(7,13):SET(13,12):SET(13,13):SET(8,12):SET(12,12):GET@(7,10)-(13,13),G,I%\n70 DIM A(127)\n80 DEF FNX(X,HS,A,T)=X+HS+COS(A)*T*.1:DEF FNY(Y,VS,A,T)=Y+VS+SIN(A)*T*.1+.05:DEF FNA(X,SS)=(X-SS)*2:DEF FNB(Y)=47-((47-Y)*2)\n90 PI=3.14159:TL=-2.0:XZ=-7:YZ=-6\n100 CLS:LINE(4,3)-(6,3),SET:SET(3,4):SET(7,4)\n110 DIM M%(26):GET@(0,0)-(10,7),G,M%\n120 GOSUB1000:'DRAW MOONSCAPE\n130 X=1:OX=0:HV=-1:Y=0:OY=0:A=PI/2\n200 C=PEEK(14400):IFC=16THENT=0ELSEIFC=>128 THEN T=T-.2:F=F-T:C=C-128:IFT<TLTHENT=TL\n205 IFC=32THENA=A+.2ELSEIFC=64THENA=A-.2ELSEIFC=1THENA=PI/2\n210 X=FNX(X,HS,A,T):Y=FNY(Y,VS,A,T):HS=X-OX:VS=Y-OY:A1=X+5:B1=Y+5:C1=A1-COS(A)*(T*2):D1=B1+SIN(A+PI)*(T):IFI=0THENPUT@(X,Y)-(X+10,Y+7),SET,M%:LINE(A1,B1)-(C1,D1),SET:OX=X:OY=YELSE3000\n219 PRINT@0,T;\"  \";",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
