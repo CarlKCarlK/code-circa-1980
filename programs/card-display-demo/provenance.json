@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape12b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape12b/best/03-CARD-DISPLAY-DEMO-V2.BAS",
+      "archive_listing": "tapes/recovered/tape12b/best/03-CARD-DISPLAY-DEMO-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/03-CARD-DISPLAY-DEMO-V2.ASC",
+          "archive_path": "tapes/recovered/tape12b/best/03-CARD-DISPLAY-DEMO-V2.ASC",
+          "bytes": 718,
+          "sha256": "1d2c22967477c84f75efb30d430050244e60e5ed2d1764f058c8826b6c5229a1"
+        },
+        {
+          "path": "versions/v02/03-CARD-DISPLAY-DEMO-V2.BAS",
+          "archive_path": "tapes/recovered/tape12b/best/03-CARD-DISPLAY-DEMO-V2.BAS",
+          "bytes": 553,
+          "sha256": "ed4fde82dc6af249067bd1937c3a6f2bedcd3427c1eb66f532d96520d36fe886"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "ed4fde82dc6af249067bd1937c3a6f2bedcd3427c1eb66f532d96520d36fe886",
+        "bytes": 553,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 11,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 551,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "CARD DISPLAY DEMO V2; 11 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "source_start_s": "67.962",
+        "recovered_bytes": "553",
+        "source_file": "tapes/recovered/tape12b/best/03-CARD-DISPLAY-DEMO-V2.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
