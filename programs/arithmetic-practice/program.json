@@ -1,0 +1,40 @@
+{
+  "id": "arithmetic-practice",
+  "title": "Arithmetic Practice",
+  "description": "Arithmetic Practice. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "undetermined",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Arithmetic practice",
+      "capture": "tape1b",
+      "save": 2,
+      "raw": "versions/v01/02-ARITHMETIC-PRACTICE.BAS",
+      "listing": "versions/v01/02-ARITHMETIC-PRACTICE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-ARITHMETIC-PRACTICE.ASC",
+          "label": "02-ARITHMETIC-PRACTICE.ASC"
+        },
+        {
+          "path": "versions/v01/02-ARITHMETIC-PRACTICE.BAS",
+          "label": "02-ARITHMETIC-PRACTICE.BAS"
+        }
+      ],
+      "startupSource": "10 L=5\n100 N1=RND(L):N2=RND(L)\n105 P=P+1\n110 CLS:PRINTCHR$(23)\n120 PRINT:PRINT\"WHAT IS THE ANSWER TO\":PRINT:PRINTN1\" + \";N2\" = \";\n130 INPUT A\n140 PRINT:PRINT\n145 IF N1+N2=A AND N=0 THEN L=L+1\n150 IF N1+N2=A THEN N=0:GOSUB 1000\n155 IF N1+N2<>A AND N=0 THEN M=M+1:L=L-1\n160 IF N1+N2<>A THEN N=1:GOSUB2000:FORX=1TO1000:NEXT:GOTO 110\n190 CLS:PRINTCHR$(23)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
