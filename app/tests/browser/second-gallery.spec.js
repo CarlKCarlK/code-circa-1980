@@ -3,11 +3,13 @@ const text=page=>page.evaluate(()=>window.__circaPlayer?String.fromCharCode(...w
 const tap=async(page,k)=>{await page.keyboard.down(k);await page.waitForTimeout(100);await page.keyboard.up(k);await page.waitForTimeout(100);};
 const type=async(page,s)=>{for(const k of s)await tap(page,k);await tap(page,'Enter');};
 
-test('second gallery is separate and unlinked; cards launch players directly',async({page})=>{
+test('second gallery is separate, reached by one small link; cards launch players directly',async({page})=>{
  await page.goto('/');
  await expect(page.locator('.program-card')).toHaveCount(6);
- await expect(page.locator('a[href*="more"],a[href*="speech"],a[href*="olympics"],a[href*="starwars81"]')).toHaveCount(0);
- await page.goto('/#/more');
+ await expect(page.locator('a[href*="speech"],a[href*="olympics"],a[href*="starwars81"]')).toHaveCount(0);
+ await expect(page.locator('a[href*="more"]')).toHaveCount(1);
+ await page.getByRole('link',{name:'More uncurated programs →'}).click();
+ await expect(page).toHaveURL(/#\/more$/);
  await expect(page.getByRole('heading',{level:1})).toContainText('the tapes.');
  await expect(page.locator('.program-card')).toHaveCount(29);
  await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','Star Wars cockpit','Ricky Rat','Pinball','Logic circuit simulator','Orbit simulator','Skinner Box','German tutor','Magazine Index','TEACH VI','LIFE','Worm One','Peoria Grand Prix','Pendulum','Sentence Generator','Learning Tic-Tac-Toe','Superpower Investing','Trajectory','Relativity','Reflex Tests','Nuclear Equation Completer','John’s Circle','Keyword Cipher','Word Search','Computa-Match']);
