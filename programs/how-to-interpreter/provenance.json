@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape23a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape23a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape23a/best/05-HOW-TO-INTERPRETER-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape23a/best/05-HOW-TO-INTERPRETER-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/05-HOW-TO-INTERPRETER-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape23a/best/05-HOW-TO-INTERPRETER-SAVE02.ASC",
+          "bytes": 5559,
+          "sha256": "22e95acfc1788976de166fcb09b755a5c0b92dbe5922c1a46b45c491cec97638"
+        },
+        {
+          "path": "versions/v02/05-HOW-TO-INTERPRETER-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape23a/best/05-HOW-TO-INTERPRETER-SAVE02.BAS",
+          "bytes": 4574,
+          "sha256": "ea3be076ec22067759fab2b179bf8c477a9a1454490e7e9768063a9a43dde32b"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "ea3be076ec22067759fab2b179bf8c477a9a1454490e7e9768063a9a43dde32b",
+        "bytes": 4574,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 55,
+        "last": 2300,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 4572,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "a",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "HOW TO INTERPRETER SAVE02",
+        "capture": "tape23a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "187.127",
+        "recovered_bytes": "4574",
+        "source_file": "tapes/recovered/tape23a/best/05-HOW-TO-INTERPRETER-SAVE02.ASC",
+        "wav": "tapes/tape23a.wav",
+        "folder": "tapes/recovered/tape23a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
