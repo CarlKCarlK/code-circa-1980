@@ -1,0 +1,42 @@
+{
+  "id": "two-player-trail-game",
+  "title": "Two Player Trail Game",
+  "description": "Two Player Trail Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TWO PLAYER TRAIL GAME",
+      "capture": "tape15b",
+      "save": 3,
+      "raw": "versions/v01/03-TWO-PLAYER-TRAIL-GAME.BAS",
+      "listing": "versions/v01/03-TWO-PLAYER-TRAIL-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match; disputed bit examined in both channels",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-TWO-PLAYER-TRAIL-GAME.ASC",
+          "label": "03-TWO-PLAYER-TRAIL-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/03-TWO-PLAYER-TRAIL-GAME.BAS",
+          "label": "03-TWO-PLAYER-TRAIL-GAME.BAS"
+        }
+      ],
+      "startupSource": "0 CLS\n1 INPUT \"RANDOM\";S\n2 FORE=2TO124:SET(E,1):SET(E,46):NEXT:FORE=1TO46:SET(2,E):SET(124,E):NEXT\n4 Z2=1\n5 A1=20:A2=30:B1=50:B2=60:A3=A1:B3=B1:A4=A2:B4=B2\n6 GOTO18\n7 POKE16553,255\n10 A$=INKEY$:IFA$=\"\"THEN25\n11 IF A$=CH$THEN   A6=A1:A1=A2:A2=A6   :A6=A4:A4=A3:A3=A6:       B6=B1:B1=B2:B2=B6:   B6=B4:B4=B3:B3=B6: B6=Z:Z=Z2:Z2=B6: B6=Y:Y=Y2:Y2=B6:GOTO25\n12 RESTORE:IFA$=\"P\"ORA$=\"Q\"THENCH$=\"5\"ELSEIFA$=\"A\"ORA$=\";\"THENCH$=\"0\":'\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018 RESTORE                                                     \n13 IF A$=\" \" THEN CH$=\"\"\n18 IF(VAL(A$)>5)AND(VAL(A$)<10)THEN750",
+      "controlSource": [
+        "10 A$=INKEY$:IFA$=\"\"THEN25"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
