@@ -1,0 +1,74 @@
+{
+  "official_title": "Linear Equation Solver",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "linear_equation_solver_p92",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape10b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape10b/best/08-LINEAR-EQUATION-SOLVER.BAS",
+      "archive_listing": "tapes/recovered/tape10b/best/08-LINEAR-EQUATION-SOLVER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/08-LINEAR-EQUATION-SOLVER.ASC",
+          "archive_path": "tapes/recovered/tape10b/best/08-LINEAR-EQUATION-SOLVER.ASC",
+          "bytes": 934,
+          "sha256": "d1f982cdef1d13f05a5b5fa4862b73d78c00dfb720fb0894954d3561eb7642e1"
+        },
+        {
+          "path": "versions/v01/08-LINEAR-EQUATION-SOLVER.BAS",
+          "archive_path": "tapes/recovered/tape10b/best/08-LINEAR-EQUATION-SOLVER.BAS",
+          "bytes": 746,
+          "sha256": "a89a2fb8ee1118f8e92e57974bc607ed94630868336964d258160c1c733b8122"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "a89a2fb8ee1118f8e92e57974bc607ed94630868336964d258160c1c733b8122",
+        "bytes": 746,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 25,
+        "last": 4000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 744,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "10",
+        "side": "b",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LINEAR EQUATION SOLVER; 25 lines",
+        "capture": "tape10b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be needed",
+        "status": "validated source; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+        "source_start_s": "425.167",
+        "recovered_bytes": "746",
+        "source_file": "tapes/recovered/tape10b/best/08-LINEAR-EQUATION-SOLVER.ASC",
+        "wav": "tapes/tape10b.wav",
+        "folder": "tapes/recovered/tape10b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

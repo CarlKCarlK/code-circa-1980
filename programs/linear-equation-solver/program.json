@@ -1,0 +1,40 @@
+{
+  "id": "linear-equation-solver",
+  "title": "Linear Equation Solver",
+  "description": "Linear Equation Solver. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extensions may be needed",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LINEAR EQUATION SOLVER",
+      "capture": "tape10b",
+      "save": 8,
+      "raw": "versions/v01/08-LINEAR-EQUATION-SOLVER.BAS",
+      "listing": "versions/v01/08-LINEAR-EQUATION-SOLVER.ASC",
+      "playable": false,
+      "note": "validated source; runtime untested. Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/08-LINEAR-EQUATION-SOLVER.ASC",
+          "label": "08-LINEAR-EQUATION-SOLVER.ASC"
+        },
+        {
+          "path": "versions/v01/08-LINEAR-EQUATION-SOLVER.BAS",
+          "label": "08-LINEAR-EQUATION-SOLVER.BAS"
+        }
+      ],
+      "startupSource": "1 '\n10 CLS\n100 INPUT\"WHAT ORDER (N,M)\";N,D\n110 DIMA(N,D+1)\n120 FORX=1TON:FORY=1TOD\n130 PRINT\"WHAT IS A(\"X\",\"Y\")    ('F' TO FIX MISTAKE)\";:INPUTA$:IFA$=\"H\"THEN4000ELSEA(X,Y)=VAL(A$)\n140 NEXT\n160 NEXT\n170 FORR=1TOD\n180 GOSUB3000:PRINT\n200  INPUT\"YOUR COMMAND  (  R1<>R2 ,  R2=3R1-2R2, R3=3R3)\n\";C$",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
