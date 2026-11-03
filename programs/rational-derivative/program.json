@@ -58,6 +58,33 @@
       ],
       "startupSource": "10 CLEAR 150:CLS\n20 PRINT:PRINT\"THIS FINDS THE DERIVATIVE OF A FUNCTION OF THE FORM : \"\n25 PRINT\n30 PRINT\"        3X[4+ 0X[3 +2X[2+ -6X[1 +5X[0\n40 PRINT\"F(X)=  -------------------------------------\"\n50 PRINT\"      6X[3+ -8X[2 + 0X[2+ 1X[1 +4X[0\n60 PRINT\n65 NP=2:DP=1\n70 INPUT\"WHAT IS THE HIGHEST POWER OF THE VARIABLE IN THE TOP\";NP\n80 INPUT\"WHAT IS THE HIGHEST POWER OF THE VARIABLE IN THE BOTTON\";DP\n90 PRINT\n94 GP=NP:IF DP>GP THEN GP=DP",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "Derivative program, third save (formerly unrecognized)",
+      "capture": "tape1a",
+      "save": 4,
+      "raw": "versions/v03/04-DERIVATIVE-THIRD-SAVE.BAS",
+      "listing": "versions/v03/04-DERIVATIVE-THIRD-SAVE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v03/04-DERIVATIVE-THIRD-SAVE.ASC",
+          "label": "04-DERIVATIVE-THIRD-SAVE.ASC"
+        },
+        {
+          "path": "versions/v03/04-DERIVATIVE-THIRD-SAVE.BAS",
+          "label": "04-DERIVATIVE-THIRD-SAVE.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 150:CLS\n20 PRINT:PRINT\"THIS FINDS THE DERIVATIVE OF A FUNCTION OF THE FORM : \"\n25 PRINT\n30 PRINT\"        3X[4+ 0X[3 +2X[2+ -6X[1 +5X[0\n40 PRINT\"F(X)=  -------------------------------------\"\n50 PRINT\"      6X[3+ -8X[2 + 0X[2+ 1X[1 +4X[0\n60 PRINT\n70 INPUT\"WHAT IS THE HIGHEST POWER OF THE VARIABLE IN THE TOP\";NP\n80 INPUT\"WHAT IS THE HIGHEST POWER OF THE VARIABLE IN THE BOTTON\";DP\n90 PRINT\n94 GP=NP:IF DP>GP THEN GP=DP\n95 DIM N(NP),D(DP),F(GP,GP),S(GP,GP),T(2*GP,2*GP),A(NP,NP),C(NP,NP),E(DP,DP),B(DP,DP),G(2*GP,2*GP+1),H(NP+DP,DP+NP),J(2*GP,GP*2)",
+      "controlSource": [
+        "3000 A$=INKEY$:PRINT:PRINT\"     (PRESS ANY BUTTON TO CONTINE)\";",
+        "3010 IF INKEY$=\"\"THEN3010"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"

@@ -125,6 +125,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape1a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape1a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.BAS",
+      "archive_listing": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/04-DERIVATIVE-THIRD-SAVE.ASC",
+          "archive_path": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.ASC",
+          "bytes": 7328,
+          "sha256": "7ce983b0664e9d10505273b859c0acbe9f02d4f2a2eb6533149aca206d2062c5"
+        },
+        {
+          "path": "versions/v03/04-DERIVATIVE-THIRD-SAVE.BAS",
+          "archive_path": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.BAS",
+          "bytes": 5912,
+          "sha256": "11f99ad1819685d6fc0e6f087b92add61f477a8d8ce76fa94eb285aa43965ee9"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "11f99ad1819685d6fc0e6f087b92add61f477a8d8ce76fa94eb285aa43965ee9",
+        "bytes": 5912,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 175,
+        "last": 3020,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 5910,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "1",
+        "side": "a",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Derivative program, third save (formerly unrecognized)",
+        "capture": "tape1a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "undetermined",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "156.855",
+        "recovered_bytes": "5912",
+        "source_file": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.ASC",
+        "wav": "tapes/tape1a.wav",
+        "folder": "tapes/recovered/tape1a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape1a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
