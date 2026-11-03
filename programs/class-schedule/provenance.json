@@ -1,0 +1,74 @@
+{
+  "official_title": "Class Schedule",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "class_schedule_p231",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape3a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape3a/best/03-CLASS-SCHEDULE.BAS",
+      "archive_listing": "tapes/recovered/tape3a/best/03-CLASS-SCHEDULE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-CLASS-SCHEDULE.ASC",
+          "archive_path": "tapes/recovered/tape3a/best/03-CLASS-SCHEDULE.ASC",
+          "bytes": 791,
+          "sha256": "b94158fbfd5e281516cbd147cbc3159afcf453a8b713a3d431310c49c23158e8"
+        },
+        {
+          "path": "versions/v01/03-CLASS-SCHEDULE.BAS",
+          "archive_path": "tapes/recovered/tape3a/best/03-CLASS-SCHEDULE.BAS",
+          "bytes": 685,
+          "sha256": "dd928a253034bf8a1cdba657366c6fe95a643abd5a34e48d0a6250ee5150ff18"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "dd928a253034bf8a1cdba657366c6fe95a643abd5a34e48d0a6250ee5150ff18",
+        "bytes": 685,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact end marker and payload length; exact independently processed left/right byte agreement after timing refinement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 25,
+        "last": 4100,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 683,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "3",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "CLASS SCHEDULE; 25 lines",
+        "capture": "tape3a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact end marker and payload length; exact independently processed left/right byte agreement after timing refinement",
+        "source_start_s": "260.069",
+        "recovered_bytes": "685",
+        "source_file": "tapes/recovered/tape3a/best/03-CLASS-SCHEDULE.ASC",
+        "wav": "tapes/tape3a.wav",
+        "folder": "tapes/recovered/tape3a/best",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "5/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape3a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

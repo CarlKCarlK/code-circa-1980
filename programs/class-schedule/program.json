@@ -1,0 +1,40 @@
+{
+  "id": "class-schedule",
+  "title": "Class Schedule",
+  "description": "Class Schedule. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CLASS SCHEDULE",
+      "capture": "tape3a",
+      "save": 3,
+      "raw": "versions/v01/03-CLASS-SCHEDULE.BAS",
+      "listing": "versions/v01/03-CLASS-SCHEDULE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact end marker and payload length; exact independently processed left/right byte agreement after timing refinement",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-CLASS-SCHEDULE.ASC",
+          "label": "03-CLASS-SCHEDULE.ASC"
+        },
+        {
+          "path": "versions/v01/03-CLASS-SCHEDULE.BAS",
+          "label": "03-CLASS-SCHEDULE.BAS"
+        }
+      ],
+      "startupSource": "10 DIM D(10,5,2),D$(10)\n20 FOR C=1TO7\n30 READ D$(C)\n35 READ TM,DY$\n40 FOR D=1TO5\n50 IF VAL(LEFT$(DY$,1))<>(D) THEN 80 ELSE DY$=RIGHT$(DY$,LEN(DY$)-1)\n60 D(C,D,1)=TM\n75 IFC<>2THEND(C,D,2)=D(C,D,1)+1ELSE D(C,D,2)=D(C,D,1)+3\n77 IF D(C,D,2)>15 THEN D(C,D,2)=15\n80 NEXTD,C\n90 CLS\n100 PRINT\"         MONDAY    TUESDAY   WENSDAY   THURSDAY  FRIDAY\";",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
