@@ -1,0 +1,40 @@
+{
+  "id": "star-trek-with",
+  "title": "Star Trek With",
+  "description": "Star Trek With. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "STAR TREK WITH SAVE",
+      "capture": "tape6b",
+      "save": 1,
+      "raw": "versions/v01/01-STAR-TREK-WITH-SAVE.BAS",
+      "listing": "versions/v01/01-STAR-TREK-WITH-SAVE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 105 consistent pointers; end marker; matches original and 3 audio variants; not execution-tested",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-STAR-TREK-WITH-SAVE.ASC",
+          "label": "01-STAR-TREK-WITH-SAVE.ASC"
+        },
+        {
+          "path": "versions/v01/01-STAR-TREK-WITH-SAVE.BAS",
+          "label": "01-STAR-TREK-WITH-SAVE.BAS"
+        }
+      ],
+      "startupSource": "1  REM STAR TREK REVISED BY ANTHONY D'AGOSTA FOR THE TRS-80\n2 DIMA(14)\n4 PRINT@25,\"STAR TRAK\":PRINT:PRINT:INPUT\"ARE YOU STARTING OR CONT\";A$:IFA$=\"CONT\"THEN5000\n5  PRINT\"THE PLAYER, AS CAPTAIN OF THE ENTERPRISE ALTERNATES\"\n10  PRINT\"MOVES WITH THE KLINGON BATTLE CRUISER. AFTER A READOUT\"\n15  PRINT\"OF THE RANGE AND BEARING TO THE ENEMY VESSEL, THE PLAY-\"\n20  PRINT\"ER IS QUIERIED FOR HIS COMMAND.\":PRINT\" \"\n25  PRINT\"PHASORS HAVE RANGE FROM 0 TO 5 MILLION KILOMETERS\"\n26  PRINT\"(5E+06 KM). PHOTON TORPEDOES MAY BE USED FOR RANGES\"\n27  PRINT\"2E+06 KM AND GREATER.\":PRINT\" \"\n30  PRINT\"FOWARD PHASORS AND PHOTON TORPEDOES MAY BE USED FOR \"\n35  PRINT\"BEARINGS 0 THRU 90 DEGREES. REAR PHASORS MAY BE USED\"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
