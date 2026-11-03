@@ -1,0 +1,80 @@
+{
+  "official_title": "Flight And Gravity Game",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "flight_and_gravity_game_p189",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape21a/best/02-FLIGHT-AND-GRAVITY-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape21a/best/02-FLIGHT-AND-GRAVITY-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.ASC",
+          "archive_path": "tapes/recovered/tape21a/best/02-FLIGHT-AND-GRAVITY-GAME.ASC",
+          "bytes": 487,
+          "sha256": "b17d0898bf4509154b54a8070b8b36b8ba0b2f0f124b96855b4566c0cd7129cb"
+        },
+        {
+          "path": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.BAS",
+          "archive_path": "tapes/recovered/tape21a/best/02-FLIGHT-AND-GRAVITY-GAME.BAS",
+          "bytes": 388,
+          "sha256": "00d75421905810ea643cfe80d2fffc830bbfa3936439f0cedcfeba7abf5f3c0a"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "00d75421905810ea643cfe80d2fffc830bbfa3936439f0cedcfeba7abf5f3c0a",
+        "bytes": 388,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 11,
+        "last": 510,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 386,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "FLIGHT AND GRAVITY GAME",
+        "capture": "tape21a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "53.079",
+        "recovered_bytes": "388",
+        "source_file": "tapes/recovered/tape21a/best/02-FLIGHT-AND-GRAVITY-GAME.ASC",
+        "wav": "tapes/tape21a.wav",
+        "folder": "tapes/recovered/tape21a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

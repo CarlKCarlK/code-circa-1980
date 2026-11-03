@@ -1,0 +1,313 @@
+{
+  "versions": [
+    {
+      "id": "v1",
+      "path": "fall-assembly/v1/",
+      "label": "Original cassette archive",
+      "released": "2026-11-03",
+      "sourceCommit": "b28a4b990f2a300f358e70c4955d3f9a87394e30",
+      "files": [
+        {
+          "path": "assets/12-FALL-ASSEMBLY-V1-BeNQuPrk.Z80",
+          "bytes": 1867,
+          "sha256": "2b397db1c12963b8b28c21aba4164c9573c5664d85f9230355ad8ca69ecb1900"
+        },
+        {
+          "path": "assets/12-FALL-ASSEMBLY-V1-BfXhvUTF.ASM",
+          "bytes": 2637,
+          "sha256": "d3f01fd5629266cad3031d08136d03f058dcfe84abb0b752f251828ada5b6084"
+        },
+        {
+          "path": "assets/12-FALL-ASSEMBLY-V1-wCjYzPFf.TXT",
+          "bytes": 2629,
+          "sha256": "73e278baa2bda49bd2ea3977467f8cc65d02a38d0ac40a444fec38900d2a51e5"
+        },
+        {
+          "path": "assets/15-FALL-ASSEMBLY-V2-BgwFAkbj.ASM",
+          "bytes": 2729,
+          "sha256": "8debaee48807c5c30ab7d051ee62276ab1ac7b74d9d2fe08879b9540cbccba47"
+        },
+        {
+          "path": "assets/15-FALL-ASSEMBLY-V2-D8UdVjPQ.TXT",
+          "bytes": 2721,
+          "sha256": "d440f6c36c310ce5bad703484b1989613da2aa8275e5a8579bb461cc0ca100f9"
+        },
+        {
+          "path": "assets/15-FALL-ASSEMBLY-V2-DyF6RVv2.Z80",
+          "bytes": 1923,
+          "sha256": "867b08ae5d0848dcddd7173c10f25135db695c467976f232aac590c3c1b6e752"
+        },
+        {
+          "path": "assets/16-FALL-ASSEMBLY-V3-BdOyWm9D.TXT",
+          "bytes": 2756,
+          "sha256": "290149fd21f19b9f9d9a05c664d1098556d0dfa1848cb94428daaa1c73b2a7c7"
+        },
+        {
+          "path": "assets/16-FALL-ASSEMBLY-V3-DCE3Gov6.ASM",
+          "bytes": 2764,
+          "sha256": "249f363d1c924af71328e3d08f07e6d53bdb472761f34fb52178a66c7e1047ab"
+        },
+        {
+          "path": "assets/16-FALL-ASSEMBLY-V3-nAmbL1la.Z80",
+          "bytes": 1934,
+          "sha256": "1a2fe73c8a8001cd277dcb42ae21467d7cdd3c1546e71e2983b32b900dda0d36"
+        },
+        {
+          "path": "assets/17-FALL-ASSEMBLY-V4-BMIOva3Z.Z80",
+          "bytes": 1950,
+          "sha256": "fd62bb747d660c0d6dcd7652992e14685322d126bd6670ae9015118ce8072607"
+        },
+        {
+          "path": "assets/17-FALL-ASSEMBLY-V4-BpV82sOH.TXT",
+          "bytes": 2778,
+          "sha256": "6a23e6e2534fe261c69fd9771f8c0acef1125c1585018d9b143a83878dfa44c3"
+        },
+        {
+          "path": "assets/17-FALL-ASSEMBLY-V4-DhqxlSTS.ASM",
+          "bytes": 2786,
+          "sha256": "f007f5c60f7addcf194555e7315c174f7de5d1fcb88eb994adbdfa032b5fca46"
+        },
+        {
+          "path": "assets/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX-CPD59JxI.BIN",
+          "bytes": 2542,
+          "sha256": "b4bcc773b38769bb5d60f97533c4f96283a95d2f9e1a1c833b80b711e6cdd8a4"
+        },
+        {
+          "path": "assets/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX-Dy1C6hiD.TXT",
+          "bytes": 2535,
+          "sha256": "1845d31a038eb2a1c1446c39589607f94e0860d8ea2536c5daa1331436199bd2"
+        },
+        {
+          "path": "assets/18-FALL-INTERRUPTED-CAPTURE-1-RAW-BktchD_Y.ASM",
+          "bytes": 2556,
+          "sha256": "eb8b804152c80a2bab3d34aab9dba533a1232a99f4f6ffd4db7f64c728c138b6"
+        },
+        {
+          "path": "assets/18-FALL-INTERRUPTED-CAPTURE-1-UNCERTAIN-f1Puw5X2.TXT",
+          "bytes": 4404,
+          "sha256": "218f11c81844ae72a8c5850e959a80dea99f043a5839d15abe1873b55d4c8141"
+        },
+        {
+          "path": "assets/20-FALL-ASSEMBLY-V5-BU5G_wNd.Z80",
+          "bytes": 1819,
+          "sha256": "86a73810539bfe83fb59df0185845f789633eeb75902cfef58617cf832797191"
+        },
+        {
+          "path": "assets/aim-gallery-CIYaCeGM.svg",
+          "bytes": 327,
+          "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
+        },
+        {
+          "path": "assets/archive-gallery-Cr0q0rfj.svg",
+          "bytes": 547,
+          "sha256": "0c02294b84355a66fb22c7f3a14d9fd2bcaba28513e95a25c19147c8bdb7beeb"
+        },
+        {
+          "path": "assets/cave-gallery-CUdWAr_1.svg",
+          "bytes": 680,
+          "sha256": "49eba2ce8c8aee3317b2a9ef9a0da0d385cadd417bd8b2825a756a88ed7a1ce5"
+        },
+        {
+          "path": "assets/cipher-gallery-6P_rBzDq.svg",
+          "bytes": 407,
+          "sha256": "7cd57d882e809678611fec6639dedb32e67b067ef027fa64428ccf4423f7ac3a"
+        },
+        {
+          "path": "assets/computamatch-gallery-O8o3rjeX.svg",
+          "bytes": 490,
+          "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
+        },
+        {
+          "path": "assets/dungeon-gallery-iVVwbTI4.svg",
+          "bytes": 557,
+          "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
+        },
+        {
+          "path": "assets/emulator-CGCsbXtC.js",
+          "bytes": 286265,
+          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+        },
+        {
+          "path": "assets/FALL-ASSEMBLY-CGSrngfy.TXT",
+          "bytes": 2563,
+          "sha256": "98f1d2d216d99122e90c374dd84a62bd46226f1ad86da8a704a8e0a8e25bae15"
+        },
+        {
+          "path": "assets/FALL-ASSEMBLY-DaUS4Z3Z.ASM",
+          "bytes": 2571,
+          "sha256": "4cae4dd0f725803ce8fb228ced25c31583e61387ee738f9c0db5a4dc8afe24f5"
+        },
+        {
+          "path": "assets/german-gallery-CWDD-jTQ.svg",
+          "bytes": 546,
+          "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
+        },
+        {
+          "path": "assets/index-D8nrEYPM.js",
+          "bytes": 36986,
+          "sha256": "cf56d9ff6d844837164f3dba79caadc5ad572b2a89a3eaff549e69607624981f"
+        },
+        {
+          "path": "assets/index-DKrV230I.css",
+          "bytes": 25510,
+          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+        },
+        {
+          "path": "assets/jab-gallery-C0tK8hbO.svg",
+          "bytes": 673,
+          "sha256": "f0bb26fb766c87997f4a6dc9ac92558097293eee75b5961a89892642b5d56245"
+        },
+        {
+          "path": "assets/jaberwocky-gallery-DFPFyEy6.svg",
+          "bytes": 686,
+          "sha256": "dfb2726417b8ecb835e6d6838ad9abbac845ff4e1c4122f85d4b4b986d3d92b3"
+        },
+        {
+          "path": "assets/johnscircle-gallery-B8gqmWJP.svg",
+          "bytes": 341,
+          "sha256": "98c088a2120392c22b7ee72e9a9c4cab253c1478578dedfaba544ad1c20db07b"
+        },
+        {
+          "path": "assets/learningttt-gallery-eEINQE3h.svg",
+          "bytes": 465,
+          "sha256": "bef009af5a65b7886190c3dea67133b2ea324606bc7baea31e6bcafcb039231a"
+        },
+        {
+          "path": "assets/life-gallery-Ac-6fOCC.svg",
+          "bytes": 8810,
+          "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/ll-gallery-DNJKCGEm.svg",
+          "bytes": 596,
+          "sha256": "f57f40ffcd289892eca959f4933f9e05d7e10bb5dc00fbde26356db1391a39cc"
+        },
+        {
+          "path": "assets/logic-gallery-DKKs_rQt.svg",
+          "bytes": 864,
+          "sha256": "a006dd4167503275189b28caa9cc17033a612cc757f54e2a12a73b36032b7e3e"
+        },
+        {
+          "path": "assets/magazine-gallery-Bh2eMosB.svg",
+          "bytes": 665,
+          "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed"
+        },
+        {
+          "path": "assets/nuclear-gallery-CvCXKMfj.svg",
+          "bytes": 469,
+          "sha256": "3921df0fcf62d50302b03e125781513e33208615c0870accff80ca73a9e9bd34"
+        },
+        {
+          "path": "assets/orbit-gallery-DhVteEzX.svg",
+          "bytes": 703,
+          "sha256": "bb16a767d6ba42aea73a5bc71337848cccaf0d2075179f2c731531908940629e"
+        },
+        {
+          "path": "assets/pendulum-gallery-Dgb2ErKS.svg",
+          "bytes": 396,
+          "sha256": "3a4aadaa695755128ecf7b6978c05e63c0309076426d4d854a330c27e21e36e7"
+        },
+        {
+          "path": "assets/peoria-gallery-BDwAMQGE.svg",
+          "bytes": 456,
+          "sha256": "f86e5e116874bffc51e7bfd1020aac1696da178eb6bf166d8f8ff17ab3fb9deb"
+        },
+        {
+          "path": "assets/pinball-gallery-CU-z_mCd.svg",
+          "bytes": 753,
+          "sha256": "d0f495586fb93b6fa8062540e94631a2ba147468c2220399693342bf5798715a"
+        },
+        {
+          "path": "assets/poker-gallery--9Ry1O6q.svg",
+          "bytes": 1868,
+          "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
+        },
+        {
+          "path": "assets/provenance-Ck33t_4_.json",
+          "bytes": 17422,
+          "sha256": "6353718c0e09e2de1792bec9db064fdb61104942d043a131e2371a1e46ef98bb"
+        },
+        {
+          "path": "assets/reflex-gallery-BUrqLdyE.svg",
+          "bytes": 521,
+          "sha256": "5b3966ba047dafdef68ab5a4699de68f612b133b4f35caecc1aa69e0c446e7cc"
+        },
+        {
+          "path": "assets/relativity-gallery-ByRHkSjk.svg",
+          "bytes": 502,
+          "sha256": "39a3207cae69f3f7b4fefa330daa2c077e3c389debfec2315af5bea0e90f041a"
+        },
+        {
+          "path": "assets/rickyrat-gallery-CBHHI8bU.svg",
+          "bytes": 654,
+          "sha256": "52be9a88c33b2ec64e7f1954b15aed41b3b1c7519b357d21dd1060d208b2eaf6"
+        },
+        {
+          "path": "assets/sentences-gallery-Bn2m-Q9e.svg",
+          "bytes": 375,
+          "sha256": "f8f9ab057757af10a50b586695ccd7616f185fba393144bf46681d2dfe173721"
+        },
+        {
+          "path": "assets/skinner-gallery-DStNp5-W.svg",
+          "bytes": 717,
+          "sha256": "cf3000c5efe6b6c042f7a11728a8c4f40c3cb59c79ee7703ece0444e95785b41"
+        },
+        {
+          "path": "assets/spacecolony-gallery-Dub2fmuk.svg",
+          "bytes": 474,
+          "sha256": "cdf999374dcb80673733a9249ec43ec235a1f504b9380085dcb23c2cad6aeb61"
+        },
+        {
+          "path": "assets/spi-gallery-Bfa-394o.svg",
+          "bytes": 467,
+          "sha256": "e04278e20645be62c425e87a4fea812ff80576249ddf6ab8fa9d75f92fbc90a2"
+        },
+        {
+          "path": "assets/tank-gallery-BNLPAWVJ.svg",
+          "bytes": 591,
+          "sha256": "ec794c99787d7fe89609491bbab1a87f111fcb4d1d2d66bc9825bdcc1fdb9fa0"
+        },
+        {
+          "path": "assets/teachvi-gallery-mWSeuKIv.svg",
+          "bytes": 699,
+          "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
+        },
+        {
+          "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
+          "bytes": 409,
+          "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
+        },
+        {
+          "path": "assets/tutac-gallery-DEjQnkj5.svg",
+          "bytes": 581,
+          "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
+        },
+        {
+          "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
+          "bytes": 545,
+          "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
+        },
+        {
+          "path": "assets/wordsearch-gallery-DichyXHl.svg",
+          "bytes": 491,
+          "sha256": "b5f62ba44c50eb14360b18fa031ffaffc678aa3f2745a96bb9b40ebd4171af2b"
+        },
+        {
+          "path": "assets/worm-gallery-CRUdNvma.svg",
+          "bytes": 322,
+          "sha256": "a355c305e0f7cb2a2b6b2b206db7ddf19d1c25c42b5d37fabd72b78600ecb26d"
+        },
+        {
+          "path": "index.html",
+          "bytes": 2351,
+          "sha256": "1ff24e00e797eba0297742beec0146926ea0bc62a0427c6a1953c88997580092"
+        },
+        {
+          "path": "licenses.txt",
+          "bytes": 17049,
+          "sha256": "e2d6660e33328a842ede04e5917febf31ea4fb7a714470c95c3f35eda265ad6c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,762 @@
+{
+  "official_title": "Model 100 LIFE Backwards",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Model 100 LIFE backwards",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape2a",
+      "save": 20,
+      "archive_raw": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/20-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.ASC",
+          "bytes": 640,
+          "sha256": "012da7513b3b895ec8f2bbd9eb90b830f97a3bf6c9e51876ce3a01c876c8190a"
+        },
+        {
+          "path": "versions/v01/20-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.BIN",
+          "bytes": 515,
+          "sha256": "d01551412f6435eb71f87732c87e72c0a73af92730d214b3b0ed6e099ed4af60"
+        },
+        {
+          "path": "versions/v01/20-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "9b30bbb15684651344c3403ccff29a9eccbb934fbd89824a9624359dd34ebca4"
+        },
+        {
+          "path": "versions/v01/20-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-RAW.BIN",
+          "bytes": 1480,
+          "sha256": "890b5255a2d44de99158ef4132c751edb7d1b05ed15de90e4806799bc3087313"
+        },
+        {
+          "path": "versions/v01/20-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/20-L-UNCERTAIN.ASC",
+          "bytes": 640,
+          "sha256": "012da7513b3b895ec8f2bbd9eb90b830f97a3bf6c9e51876ce3a01c876c8190a"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "d01551412f6435eb71f87732c87e72c0a73af92730d214b3b0ed6e099ed4af60",
+        "bytes": 515,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "20",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; LIFE backwards, April 27 1985; damaged captured save",
+        "capture": "tape2a",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+        "source_start_s": "567.650",
+        "recovered_bytes": "1480",
+        "source_file": "tapes/recovered/tape2a/partial/20-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a.wav",
+        "folder": "tapes/recovered/tape2a/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a/left-sweep/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape2a",
+      "save": 21,
+      "archive_raw": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/21-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.ASC",
+          "bytes": 401,
+          "sha256": "e4b8184c1711a4274b854fd087caf3e4b0ce9337eb7a6f9678e6c12cd77d0ca5"
+        },
+        {
+          "path": "versions/v02/21-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.BIN",
+          "bytes": 297,
+          "sha256": "ce20ad4643a6c5fdb10f58673988f9cf0e319f6180db4f2efd266b901b06babd"
+        },
+        {
+          "path": "versions/v02/21-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "9b30bbb15684651344c3403ccff29a9eccbb934fbd89824a9624359dd34ebca4"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.ASC",
+          "bytes": 3728,
+          "sha256": "1b8a8376ea8054ff307119e010d11935da89226344fd1e4f8d6cb8de69edbcd8"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-44dcb87de3d9.BIN",
+          "bytes": 3229,
+          "sha256": "44dcb87de3d9f491d8a8c5b0cc493795f0ed93ed0587b13f0c51dc050e6e12c1"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.ASC",
+          "bytes": 3728,
+          "sha256": "389d5813d958b1d4efb09b118776785dbb46d19663b4ad5d90a87c2070460282"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-84363014b14c.BIN",
+          "bytes": 3229,
+          "sha256": "84363014b14cbfb1cf75b14276817323fe931810023c907f452f442ef58894b2"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.ASC",
+          "bytes": 3743,
+          "sha256": "e95569a199f3cfd3742399903011778638f66da927b79cf0b0543cdfb2167b6a"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-949d25001554.BIN",
+          "bytes": 3229,
+          "sha256": "949d25001554e7575f29c4ef2147da83b746180b0abe319445d8d91fa51a1f47"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.ASC",
+          "bytes": 3743,
+          "sha256": "0deca157b153989e864565ce6d742e7d284e85ed65bbe0be4e4aff55792552b6"
+        },
+        {
+          "path": "versions/v02/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-LONGEST-STRUCTURAL-PREFIX-fcb3da25b6bc.BIN",
+          "bytes": 3229,
+          "sha256": "fcb3da25b6bc31e5d6096709dc804366509c5aaf0472db9186ac17d5b05651e7"
+        },
+        {
+          "path": "versions/v02/21-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-RAW.BIN",
+          "bytes": 3249,
+          "sha256": "e8742a9de9057708c768f01abb2a4033cb9f2d53d0cf70e490f73ca43b97b125"
+        },
+        {
+          "path": "versions/v02/21-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/21-L-UNCERTAIN.ASC",
+          "bytes": 401,
+          "sha256": "e4b8184c1711a4274b854fd087caf3e4b0ce9337eb7a6f9678e6c12cd77d0ca5"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "ce20ad4643a6c5fdb10f58673988f9cf0e319f6180db4f2efd266b901b06babd",
+        "bytes": 297,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 8 lines through 310; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "21",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; LIFE backwards, April 27 1985; damaged captured save",
+        "capture": "tape2a",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 8 lines through 310; exact left/right prefix agreement",
+        "source_start_s": "593.985",
+        "recovered_bytes": "3249",
+        "source_file": "tapes/recovered/tape2a/partial/21-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a.wav",
+        "folder": "tapes/recovered/tape2a/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a/left-sweep/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape2a",
+      "save": 22,
+      "archive_raw": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/22-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.ASC",
+          "bytes": 8,
+          "sha256": "40d24ef7be3aa34c78c1b79ea89d65753891ca9bf9077f90aa930e8267ef38d4"
+        },
+        {
+          "path": "versions/v03/22-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.BIN",
+          "bytes": 8,
+          "sha256": "21314479adcd3663345e8a803ba3beba2d7bd2c7d718077b8f61d42a51e9f839"
+        },
+        {
+          "path": "versions/v03/22-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "eeaa57bf54401e10531b49fd285bbcf217eb47813884d7a824f7238b5fe70085"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-0d7e927f416b.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-0d7e927f416b.ASC",
+          "bytes": 112,
+          "sha256": "d6b3cadbd6d0c4e9ee0f904d4bbf734a90218552d63b3456d60150207ec46db5"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-0d7e927f416b.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-0d7e927f416b.BIN",
+          "bytes": 52,
+          "sha256": "0d7e927f416bbbd7c5067852e99d8568f204445fe3ad01836e0bdc027b1a3b0e"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-2209656332d0.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-2209656332d0.ASC",
+          "bytes": 94,
+          "sha256": "126de2b6902221ecc2dda5357ba531a6d5cd2c9f24f19fddbc994ea60dcb35a2"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-2209656332d0.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-2209656332d0.BIN",
+          "bytes": 52,
+          "sha256": "2209656332d09488fc40d4bd726e9c392756e58c3727896018f2922cbe3318f0"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-aa35dfad740d.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-aa35dfad740d.ASC",
+          "bytes": 98,
+          "sha256": "f319277d75a368a03a0ef07805bfe59f6cfada9064f4e53b7949c32eee5cc74a"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-aa35dfad740d.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-aa35dfad740d.BIN",
+          "bytes": 52,
+          "sha256": "aa35dfad740d012de2db98e6d914104de060ac47082ad22c1b0b4c660531a5cb"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-d023a96cf83d.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-d023a96cf83d.ASC",
+          "bytes": 109,
+          "sha256": "7eb5f14de7f8ed7c3236ae81cb099f6cd6743556a7a763f9dbf80d293385720a"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-d023a96cf83d.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-d023a96cf83d.BIN",
+          "bytes": 52,
+          "sha256": "d023a96cf83d24950e4e0fc85f76f39b53f7fef3b222ba1453335aae37535b8c"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-e4818eb7b9db.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-e4818eb7b9db.ASC",
+          "bytes": 106,
+          "sha256": "5fd9e58a6057ab14d2696cbeb7f8da3d4bee09f31cad700efcfaf03a47f95721"
+        },
+        {
+          "path": "versions/v03/22-L-LONGEST-STRUCTURAL-PREFIX-e4818eb7b9db.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-LONGEST-STRUCTURAL-PREFIX-e4818eb7b9db.BIN",
+          "bytes": 52,
+          "sha256": "e4818eb7b9db359d9e7bdc076abb030aff4b78d4f4dc691c0d9ff5d0d8e04a53"
+        },
+        {
+          "path": "versions/v03/22-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-RAW.BIN",
+          "bytes": 4966,
+          "sha256": "0ac143dc6a25f1325cb6f6c2063c8ad89337f4aacf7f20465ae264a5fd6d60da"
+        },
+        {
+          "path": "versions/v03/22-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/22-L-UNCERTAIN.ASC",
+          "bytes": 8,
+          "sha256": "40d24ef7be3aa34c78c1b79ea89d65753891ca9bf9077f90aa930e8267ef38d4"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "21314479adcd3663345e8a803ba3beba2d7bd2c7d718077b8f61d42a51e9f839",
+        "bytes": 8,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 1 lines through 10; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "22",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; late LIFE backwards variant (descriptive identification); damaged captured save",
+        "capture": "tape2a",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 1 lines through 10; exact left/right prefix agreement",
+        "source_start_s": "730.629",
+        "recovered_bytes": "4966",
+        "source_file": "tapes/recovered/tape2a/partial/22-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a.wav",
+        "folder": "tapes/recovered/tape2a/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a/left-sweep/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape2a",
+      "save": 23,
+      "archive_raw": "tapes/recovered/tape2a/partial/23-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a/partial/23-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/23-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/23-L-BASIC-PREFIX.ASC",
+          "bytes": 297,
+          "sha256": "ddfb437fe5b51067f33030ce844226ca552d0bd466282a96d51ca2a90a7728b1"
+        },
+        {
+          "path": "versions/v04/23-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/23-L-BASIC-PREFIX.BIN",
+          "bytes": 257,
+          "sha256": "6f97f314dae97feb9d073f7dc69bfaed3d3f5029256633baae381779c86cc770"
+        },
+        {
+          "path": "versions/v04/23-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/23-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "eeaa57bf54401e10531b49fd285bbcf217eb47813884d7a824f7238b5fe70085"
+        },
+        {
+          "path": "versions/v04/23-L-LONGEST-STRUCTURAL-PREFIX-a45ddfc65515.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/23-L-LONGEST-STRUCTURAL-PREFIX-a45ddfc65515.ASC",
+          "bytes": 3801,
+          "sha256": "907c56e47fe8471e76a2cc3118fdb4675b8aba19336b85e2a07cd85295b09be4"
+        },
+        {
+          "path": "versions/v04/23-L-LONGEST-STRUCTURAL-PREFIX-a45ddfc65515.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/23-L-LONGEST-STRUCTURAL-PREFIX-a45ddfc65515.BIN",
+          "bytes": 3204,
+          "sha256": "a45ddfc655158ec59da73f35a4f26b51e7b070290b35e5a46012a06cadabaec3"
+        },
+        {
+          "path": "versions/v04/23-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a/partial/23-L-RAW.BIN",
+          "bytes": 4994,
+          "sha256": "e5779c6253a7e5cc5851f9d1c02e6a672b130a69fe49a771fb1a4760245b0937"
+        },
+        {
+          "path": "versions/v04/23-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a/partial/23-L-UNCERTAIN.ASC",
+          "bytes": 3801,
+          "sha256": "907c56e47fe8471e76a2cc3118fdb4675b8aba19336b85e2a07cd85295b09be4"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "6f97f314dae97feb9d073f7dc69bfaed3d3f5029256633baae381779c86cc770",
+        "bytes": 257,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 10 lines through 500; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "23",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; late LIFE backwards variant (descriptive identification); damaged captured save",
+        "capture": "tape2a",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 10 lines through 500; exact left/right prefix agreement",
+        "source_start_s": "770.529",
+        "recovered_bytes": "4994",
+        "source_file": "tapes/recovered/tape2a/partial/23-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a.wav",
+        "folder": "tapes/recovered/tape2a/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a/left-sweep/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape2a2",
+      "save": 20,
+      "archive_raw": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/20-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.ASC",
+          "bytes": 640,
+          "sha256": "d9a0b6c5c5b2b7342baa1622342c31ad7f0b34d9c1a4810962ad631b3273d4e5"
+        },
+        {
+          "path": "versions/v05/20-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.BIN",
+          "bytes": 515,
+          "sha256": "455e699172c81d352063464ee1b185c3252a56813b3fbbeba8b5b42c1e265b4f"
+        },
+        {
+          "path": "versions/v05/20-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "9b30bbb15684651344c3403ccff29a9eccbb934fbd89824a9624359dd34ebca4"
+        },
+        {
+          "path": "versions/v05/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.ASC",
+          "bytes": 968,
+          "sha256": "0a0dcae4114e7304be264af4b1739b292e74da5fb556284714df008d44727666"
+        },
+        {
+          "path": "versions/v05/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-LONGEST-STRUCTURAL-PREFIX-cdf7b21969c6.BIN",
+          "bytes": 839,
+          "sha256": "cdf7b21969c6ce99a241b43596e13a8b6fff7648104c8d11b2bcf4c613ae7215"
+        },
+        {
+          "path": "versions/v05/20-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-RAW.BIN",
+          "bytes": 2253,
+          "sha256": "188103ca9b76f6c9ab146c2d8469aae7803ae07892ce0480f8f2d4cf717450b3"
+        },
+        {
+          "path": "versions/v05/20-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/20-L-UNCERTAIN.ASC",
+          "bytes": 640,
+          "sha256": "d9a0b6c5c5b2b7342baa1622342c31ad7f0b34d9c1a4810962ad631b3273d4e5"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "455e699172c81d352063464ee1b185c3252a56813b3fbbeba8b5b42c1e265b4f",
+        "bytes": 515,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "20",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; LIFE backwards, April 27 1985; damaged captured save",
+        "capture": "tape2a2",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
+        "source_start_s": "563.109",
+        "recovered_bytes": "2253",
+        "source_file": "tapes/recovered/tape2a2/partial/20-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a2.wav",
+        "folder": "tapes/recovered/tape2a2/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a2/left-sweep/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v06",
+      "capture": "tape2a2",
+      "save": 21,
+      "archive_raw": "tapes/recovered/tape2a2/best/21-L-BASIC-TAPE-BLOCK.BIN",
+      "archive_listing": "tapes/recovered/tape2a2/best/21-L.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v06/21-L-BASIC-TAPE-BLOCK.BIN",
+          "archive_path": "tapes/recovered/tape2a2/best/21-L-BASIC-TAPE-BLOCK.BIN",
+          "bytes": 3250,
+          "sha256": "47b268c08e3c6b26da97732c796a4f6b2ee0995b003a75a0e9c38ac29ff02e13"
+        },
+        {
+          "path": "versions/v06/21-L.ASC",
+          "archive_path": "tapes/recovered/tape2a2/best/21-L.ASC",
+          "bytes": 3728,
+          "sha256": "4066a52c28cfad10bce89dc90af85393a515c3f0dabf4791d9cca2c19c605e36"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "47b268c08e3c6b26da97732c796a4f6b2ee0995b003a75a0e9c38ac29ff02e13",
+        "bytes": 3250,
+        "archive_validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "21",
+        "type": "Model 100 BASIC",
+        "recovery%": "100",
+        "summary": "Cassette name L; LIFE backwards, April 27 1985; 95 validated lines",
+        "capture": "tape2a2",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "validated payload; runtime untested",
+        "validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
+        "source_start_s": "589.228",
+        "recovered_bytes": "3250",
+        "source_file": "tapes/recovered/tape2a2/best/21-L.ASC",
+        "wav": "tapes/tape2a2.wav",
+        "folder": "tapes/recovered/tape2a2/best",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a2/best/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v07",
+      "capture": "tape2a2",
+      "save": 22,
+      "archive_raw": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v07/22-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.ASC",
+          "bytes": 335,
+          "sha256": "6e7197242eb2cb9f820a71f42ebb2f917e527f95df784b18230b31fdf360800a"
+        },
+        {
+          "path": "versions/v07/22-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.BIN",
+          "bytes": 236,
+          "sha256": "2a7b913760548958ccdb85793dfd2d6f62f69a6968662c64193a530cc7efbbca"
+        },
+        {
+          "path": "versions/v07/22-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/22-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "eeaa57bf54401e10531b49fd285bbcf217eb47813884d7a824f7238b5fe70085"
+        },
+        {
+          "path": "versions/v07/22-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/22-L-RAW.BIN",
+          "bytes": 4987,
+          "sha256": "ef23a1743c8c6691c3da3b79950faab6c0b2bfbc15d2f2a3c948d5302d46c30f"
+        },
+        {
+          "path": "versions/v07/22-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/22-L-UNCERTAIN.ASC",
+          "bytes": 335,
+          "sha256": "6e7197242eb2cb9f820a71f42ebb2f917e527f95df784b18230b31fdf360800a"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "2a7b913760548958ccdb85793dfd2d6f62f69a6968662c64193a530cc7efbbca",
+        "bytes": 236,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 9 lines through 370; no cross-channel prefix match",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "22",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; late LIFE backwards variant (descriptive identification); damaged captured save",
+        "capture": "tape2a2",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 9 lines through 370; no cross-channel prefix match",
+        "source_start_s": "724.888",
+        "recovered_bytes": "4987",
+        "source_file": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a2.wav",
+        "folder": "tapes/recovered/tape2a2/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a2/left-sweep/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v08",
+      "capture": "tape2a2",
+      "save": 23,
+      "archive_raw": "tapes/recovered/tape2a2/partial/23-L-BASIC-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape2a2/partial/23-L-BASIC-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v08/23-L-BASIC-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-BASIC-PREFIX.ASC",
+          "bytes": 319,
+          "sha256": "c94662959a7af3a5ed0e545d503da82777062d0c047a776f3ea14db1803c8367"
+        },
+        {
+          "path": "versions/v08/23-L-BASIC-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-BASIC-PREFIX.BIN",
+          "bytes": 277,
+          "sha256": "a8b4ee1c44257011584c4e55ee36c6be68a12b0808d7dafbb2182543f02e9a3f"
+        },
+        {
+          "path": "versions/v08/23-L-HEADER.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-HEADER.BIN",
+          "bytes": 38,
+          "sha256": "eeaa57bf54401e10531b49fd285bbcf217eb47813884d7a824f7238b5fe70085"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-2d2060f5c320.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-2d2060f5c320.ASC",
+          "bytes": 2680,
+          "sha256": "15338807bb05ed09724bcbc8d33c47da821c3aa2a2be8c387711be6b87948ee5"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-2d2060f5c320.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-2d2060f5c320.BIN",
+          "bytes": 2266,
+          "sha256": "2d2060f5c320f3ec7b939a86136f0a113d53181ca791af27e80ba0972d92b848"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-4a3e5f31ac92.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-4a3e5f31ac92.ASC",
+          "bytes": 2680,
+          "sha256": "d10e386490b256c7cba57155beb971e00d5c34220f49a9726fb5ee3cdb1431f0"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-4a3e5f31ac92.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-4a3e5f31ac92.BIN",
+          "bytes": 2266,
+          "sha256": "4a3e5f31ac92b905044f78daddf0b54d5645e236d6e31cad42b61035d05bfe14"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-7906b4d3e9d6.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-7906b4d3e9d6.ASC",
+          "bytes": 2680,
+          "sha256": "50a89642303256eeec8b668c968907c2751585a90cb60837c8c31d0ec1c00f62"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-7906b4d3e9d6.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-7906b4d3e9d6.BIN",
+          "bytes": 2266,
+          "sha256": "7906b4d3e9d665ecc6c2c14099d8efda0b76087a9d140e89b016a13a5ad788a6"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-85d878d68fd0.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-85d878d68fd0.ASC",
+          "bytes": 2677,
+          "sha256": "2c9d2d3be90f39e31a707dd8c0f16bd5740132b864d44fbaee20d6c3c05b2812"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-85d878d68fd0.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-85d878d68fd0.BIN",
+          "bytes": 2266,
+          "sha256": "85d878d68fd02df23f2f2f3e20b115522af2a3bd6a8eecff741e5087aceb9479"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-fb4ca0993187.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-fb4ca0993187.ASC",
+          "bytes": 2680,
+          "sha256": "12aeb09b99468f923aef45b7620e4361dab4c131e0d191d140059ca0db897ed8"
+        },
+        {
+          "path": "versions/v08/23-L-LONGEST-STRUCTURAL-PREFIX-fb4ca0993187.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-LONGEST-STRUCTURAL-PREFIX-fb4ca0993187.BIN",
+          "bytes": 2266,
+          "sha256": "fb4ca09931872f44346666dc774a6ad498fa57dccb71968a77ba471d3c13b4a8"
+        },
+        {
+          "path": "versions/v08/23-L-RAW.BIN",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-RAW.BIN",
+          "bytes": 2269,
+          "sha256": "e2d09c396736bc44aa700d5170916510dc4e83a69fd871b155231cc4ce77cccc"
+        },
+        {
+          "path": "versions/v08/23-L-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape2a2/partial/23-L-UNCERTAIN.ASC",
+          "bytes": 2680,
+          "sha256": "50a89642303256eeec8b668c968907c2751585a90cb60837c8c31d0ec1c00f62"
+        }
+      ],
+      "recovery_item": {
+        "format": "Model 100 BASIC",
+        "sha256": "a8b4ee1c44257011584c4e55ee36c6be68a12b0808d7dafbb2182543f02e9a3f",
+        "bytes": 277,
+        "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 11 lines through 510; exact left/right prefix agreement",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "2",
+        "side": "a",
+        "order": "23",
+        "type": "Model 100 BASIC",
+        "recovery%": "",
+        "summary": "Cassette name L; late LIFE backwards variant (descriptive identification); damaged captured save",
+        "capture": "tape2a2",
+        "capture_scope": "full",
+        "baud": "1500",
+        "platform": "Model 100",
+        "status": "damaged / partial Model 100 BASIC",
+        "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 11 lines through 510; exact left/right prefix agreement",
+        "source_start_s": "764.391",
+        "recovered_bytes": "2269",
+        "source_file": "tapes/recovered/tape2a2/partial/23-L-BASIC-PREFIX.ASC",
+        "wav": "tapes/tape2a2.wav",
+        "folder": "tapes/recovered/tape2a2/left-sweep",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "3/10",
+        "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
+      },
+      "recovery_inventory": "tapes/recovered/tape2a2/left-sweep/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

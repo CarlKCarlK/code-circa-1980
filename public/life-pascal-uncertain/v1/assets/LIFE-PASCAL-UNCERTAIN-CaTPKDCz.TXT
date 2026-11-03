@@ -1,0 +1,74 @@
+(* GO FOR LIFE... OK    HERE WE GO kj\x18\x18*)\x18\x18\x18
+VAR CELLS:INTEGER;
+PROC INI\xFF;
+VAR X,Y,CURS
+				:INTEGER;
+BEGIN
+   X:=32;Y:=24;
+   REPEAT 
+	  CURS:=POINT(X*2,Y);
+	  PLOT(X*2,Y,1-CURS); PLOT(X*2+1,Y,1-CURS);
+	  PLOT(X*2,Y,CURS);   PLOT(X*2+1,Y,CURS);
+     CASE MEM(14400) OF 
+		8:Y:=Y-1;
+		16:Y:=Y+1;
+		32:X:=X-1;
+		64?~:=X+1;
+		128:BEGIN	PLOT(X*2,Y,1); PLOT(X*2+1,Y,1) END;
+		2:	BEGIN PLOT(X*2,Y,0); PLOT(X*2+1,Y,0) END
+      END;
+		X:=X MOD 64; Y:=Y MOD 48;
+		UNTIL MEM(14400) = 1
+		END;
+PROC LIFE;
+	VAR X,Y,CURS  
+                   :INTEGER;
+	FUNC NAYB(X,Y);
+		VAR A,B,NAY:INTEGER;
+		BEGIN
+			NAY:=0;
+			FOR A:=X-1 TO X+1 DO FOR B:=Y-1 TO Y+1 DO
+					NAY:=NAY-(POINT(A MOD 64,B MOD 48) AND
+					((A<>X) OR (B<>Y)));
+					NAYB:=NAY
+			END;
+		FUNC PNT(X,Y);
+			CONST ALT=31743;
+			VAR BIT,LOC,M:INTEGER;
+			BEGIN
+				BIT:=Y MOD 3;
+				LOC:=ALT + X + (Y DIV 3);
+				M:=MEM(LOC) SHR (BIT + BIT);
+				PNT:= (M AND 1)=1
+				END;
+		PROC PLT(X,Y,C);
+			CONST ALT=31743;
+			VAR BIT,LOC,MASK:INTEGER;
+			BEGIN
+				MASK:=3;
+				BIT:=Y MOD 3;
+				LOC:=ALT + X + (Y DIV 3);
+				MASK:=MASK SHL (BIT+BIT);
+				MEM(LOC):=MEM(LOC) AND (1-MASK) AND 63 + 128;
+				IF C THEN BEGIN
+					CELLS:=CELLS+1;
+					MEM(LOC):=MEM(LOC) OR MASK
+					END
+				END;
+	BEGIN
+		CELLS:=0;
+		FOR X:=0 TO 63 DO FOR Y:=0 TO 47 DO BEGIN 
+			CASE NAYB(X,Y) OF 
+				0,1:PLT(X,Y,0);
+				2:PLT(X,Y,POINT(X,Y));
+				3:PLT(X,Y,1);
+				4,5,6,7,8:PLT(X,Y,0)
+				END
+			END;
+		MOVE(31743,15360,1024)
+		END;
+BEGIN 
+  INIT;
+  REPEAT LIFE UNTIL CELLS=0;
+  END.
+\xFF
