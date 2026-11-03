@@ -1,0 +1,42 @@
+{
+  "id": "matrix-workspace",
+  "title": "Matrix Workspace",
+  "description": "Matrix Workspace. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MATRIX WORKSPACE SAVE01",
+      "capture": "tape24a",
+      "save": 16,
+      "raw": "versions/v01/16-MATRIX-WORKSPACE-SAVE01.BAS",
+      "listing": "versions/v01/16-MATRIX-WORKSPACE-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/16-MATRIX-WORKSPACE-SAVE01.ASC",
+          "label": "16-MATRIX-WORKSPACE-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/16-MATRIX-WORKSPACE-SAVE01.BAS",
+          "label": "16-MATRIX-WORKSPACE-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "11 DIM A(78)\n21 PRINT \"(WAITING FOR SELECTION)\"\n31 A$=INKEY$:IFA$=\"\"THEN 31\n41 IF A$=\"N\" THEN GOSUB 221:'NEW\n43 IF A$=\"C\" THEN GOSUB 311:'CREATE\n45 IF A$=\"V\" THEN GOSUB 411:'VALUES IN\n47 IF A$=\"D\" THEN GOSUB 511:'DISPLAY\n49 IF A$=\"=\" THEN GOSUB 611:'ASSIGNMENT\n51 IFA$=\"S\" THEN GOSUB 711:'SET A\n61 IF A$=\"K\" THEN GOSUB811 ELSE IF A$=\"L\" THEN GOSUB821 ELSE IF A$=\"H\" THEN GOSUB831 ELSE IF A$=\"J\"  THEN GOSUB841 ELSE IF A$=\" \" THEN GOSUB851\n99 GOTO 31\n221 INPUT\"ARE YOU SURE (Y)\";A$",
+      "controlSource": [
+        "31 A$=INKEY$:IFA$=\"\"THEN 31"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
