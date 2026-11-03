@@ -64,11 +64,42 @@
     "direct_source_lines": [
       "1 'JOHN'S CIRCLE     BY JOHN HARTMAN & CARL KADIE"
     ],
-    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings.",
+    "neighbor_context": [
+      {
+        "archive_listing": "tapes/recovered/tape21a/best/12-TEACH-III-WITH-QUIZ-DATA.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      },
+      {
+        "archive_listing": "tapes/recovered/tape21a/best/13-TRIGECTIOR-PROJECTILE.ASC",
+        "line": "10 'TRIGECTIOR           BY CARL KADIE   OCT. 24, 1978 A.D."
+      }
+    ],
+    "neighbor_context_note": "Opposite-side tape21a source notices provide context only. No date is assigned to undated John\u2019s Circle."
   },
   "artwork": {
     "path": "app/assets/johnscircle-gallery.svg",
     "sha256": "98c088a2120392c22b7ee72e9a9c4cab253c1478578dedfaba544ad1c20db07b",
     "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "test": "app/tests/browser/science-five.spec.js",
+    "checks": "Input 40,20 draws a circle; 50,10 draws a second ellipse; changed graphic output, pause/resume and restart pass.",
+    "limits": "No exhaustive radii or out-of-bounds inputs; original floating-point behavior and existing-drawing behavior remain.",
+    "note": "New website evidence; original recovery-inventory execution flags remain unchanged.",
+    "reference": {
+      "version": "v01",
+      "capture": "tape21b",
+      "save": 13,
+      "payload": "versions/v01/13-JOHNS-CIRCLE.BAS",
+      "sha256": "e0d6110dbf69b643d68789071e6d96d4d68635dd9c7c1b409e919d0d5598a4bf"
+    }
+  },
+  "emulator_capture": {
+    "path": "programs/johnscircle/verification/screen.png",
+    "sha256": "d4c7cda973cef7ff053785a5a806e2331ea17dd4b094f3107c8482e0d306298c",
+    "description": "Actual original-ROM browser-emulator capture, separate from the modern gallery illustration."
   }
 }
