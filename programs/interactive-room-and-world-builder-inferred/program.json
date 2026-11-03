@@ -1,0 +1,40 @@
+{
+  "id": "interactive-room-and-world-builder-inferred",
+  "title": "Room and World Builder",
+  "description": "Room and World Builder. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Interactive room and world builder (inferred title)",
+      "capture": "tape17a",
+      "save": 4,
+      "raw": "versions/v01/04-ROOM-WORLD-BUILDER.BAS",
+      "listing": "versions/v01/04-ROOM-WORLD-BUILDER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-ROOM-WORLD-BUILDER.ASC",
+          "label": "04-ROOM-WORLD-BUILDER.ASC"
+        },
+        {
+          "path": "versions/v01/04-ROOM-WORLD-BUILDER.BAS",
+          "label": "04-ROOM-WORLD-BUILDER.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 10000\n20 CLS:PRINT:PRINT:PRINT\n100 DIM   N$(50),D$(50),L(50,5),W$(5),S$(2)\n110 R=1\n115 R3=1\n120 FOR X=0TO5\n130 READ W$(X)\n140 NEXT X\n150 DATA N,E,U,D,W,S\n160 FOR X=0TO2\n170 READ S$(X)\n180 NEXT X",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
