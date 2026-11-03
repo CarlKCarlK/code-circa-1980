@@ -1,0 +1,44 @@
+{
+  "id": "test-one",
+  "title": "Test One",
+  "description": "Test One. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TEST ONE DAMAGED",
+      "capture": "tape18b",
+      "save": 9,
+      "raw": "versions/v01/09-TEST-ONE-DAMAGED-RAW.BAS",
+      "listing": "versions/v01/09-TEST-ONE-DAMAGED.TXT",
+      "playable": false,
+      "note": "damaged. Corrupt BASIC test record; no cross-channel validated complete lines; FFFF pointer/line fields; raw and UNCERTAIN listing retained",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/09-TEST-ONE-DAMAGED-RAW.BAS",
+          "label": "09-TEST-ONE-DAMAGED-RAW.BAS"
+        },
+        {
+          "path": "versions/v01/09-TEST-ONE-DAMAGED-UNCERTAIN.ASC",
+          "label": "09-TEST-ONE-DAMAGED-UNCERTAIN.ASC"
+        },
+        {
+          "path": "versions/v01/09-TEST-ONE-DAMAGED.TXT",
+          "label": "09-TEST-ONE-DAMAGED.TXT"
+        }
+      ],
+      "startupSource": "Damaged BASIC test recording. No complete BASIC line has validated across the channels. Readable text includes TEST ONE; other bytes and line/pointer fields are corrupted. The raw payload and an UNCERTAIN listing are preserved alongside this note. No source bytes repaired.",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
