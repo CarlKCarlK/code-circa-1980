@@ -1,0 +1,43 @@
+{
+  "id": "go-draft",
+  "title": "Go Draft",
+  "description": "Go Draft. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GO DRAFT",
+      "capture": "tape23a",
+      "save": 6,
+      "raw": "versions/v01/06-GO-DRAFT.BAS",
+      "listing": "versions/v01/06-GO-DRAFT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/06-GO-DRAFT.ASC",
+          "label": "06-GO-DRAFT.ASC"
+        },
+        {
+          "path": "versions/v01/06-GO-DRAFT.BAS",
+          "label": "06-GO-DRAFT.BAS"
+        }
+      ],
+      "startupSource": "10 REM GO\n20 GOSUB 200:'PRINT INTRO\n30 GOSUB 300:'ASK ABOUT INITIAL STUFF\n40 GOSUB 400:'PRINT BOARD\n50 GOSUB 1700:IF T$=\"COMPUTER\" THEN GOSUB 500 ELSE GOSUB 1000:'\n    LOOK AT BOARD       COMUPUTERS TURN AND USERS TURN\n60 IF G$=\"OVER\" THEN 80\n65 GOSUB 400\n70 IF T$=\"COMPUTER\"THEN T$=\"USER\"ELSET$=\"COMPUTER\"\n75 GOTO 50\n80 GOSUB 1300:'DECIDE POINTS\n90 GOSUB 1400:'CONCLUSION",
+      "controlSource": [
+        "1510 A$=INKEY$+INKEY$",
+        "1530 IF INKEY$=\"\"THEN1530 ELSE RETURN"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
