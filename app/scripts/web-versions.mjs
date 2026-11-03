@@ -21,7 +21,7 @@ export async function snapshotFiles(folder,prefix='') {
 export async function verifyWebVersions({root=projectRoot,against,allowUnreleased=false}={}) {
   if(against&&/^0+$/.test(against))against=undefined;
   if(against)execFileSync('git',['rev-parse','--verify',`${against}^{commit}`],{cwd:root,stdio:'pipe'});
-  let count=0;const retired=new Set();
+  let count=0;const retired=new Set(),unshared=new Set();
   for(const entry of await fs.readdir(path.join(root,'programs'),{withFileTypes:true})) {
     if(!entry.isDirectory())continue;
     const programPath=path.join(root,'programs',entry.name);
@@ -30,6 +30,8 @@ export async function verifyWebVersions({root=projectRoot,against,allowUnrelease
       retired.add(entry.name);
       try {await fs.access(path.join(root,'public',entry.name));throw Error(`Removed program still has public files: ${entry.name}`);}catch(error){if(error.code!=='ENOENT')throw error;}
     }
+    // More programs marked unshared may refresh v1 in place; see "Extra-program release policy" in AGENTS.md.
+    if(metadata.gallery==='more'&&metadata.unsharedWebV1===true)unshared.add(entry.name);
     const relative=`programs/${entry.name}/web-versions.json`;
     let catalog;
     try {catalog=JSON.parse(await fs.readFile(path.join(root,relative),'utf8'));}
@@ -50,13 +52,16 @@ export async function verifyWebVersions({root=projectRoot,against,allowUnrelease
       catch(error){
         if(execFileSync('git',['ls-tree','--name-only',against,'--',relative],{cwd:root,encoding:'utf8'}).trim())throw error;
       }
-      for(const version of previous?.versions??[])if(JSON.stringify(version)!==JSON.stringify(catalog.versions.find(v=>v.id===version.id)))throw Error(`Published release was changed or removed: ${entry.name}/${version.id}`);
+      for(const version of previous?.versions??[]){
+        if(unshared.has(entry.name)&&version.id==='v1'&&catalog.versions.some(v=>v.id==='v1'))continue;
+        if(JSON.stringify(version)!==JSON.stringify(catalog.versions.find(v=>v.id===version.id)))throw Error(`Published release was changed or removed: ${entry.name}/${version.id}`);
+      }
     }
   }
   if(against){
     const removedCatalogs=execFileSync('git',['diff','--name-only','--diff-filter=DR',against,'HEAD','--','programs'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(file=>file.endsWith('/web-versions.json'));
     if(removedCatalogs.length)throw Error(`Published release catalogs cannot be removed: ${removedCatalogs.join(', ')}`);
-    const changes=execFileSync('git',['diff','--name-status','--diff-filter=MDR',against,'HEAD','--','public'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(line=>{const match=line.match(/\tpublic\/(?:experiences\/)?([^/]+)\/v\d+\//);return match&&!retired.has(match[1]);}).join('\n');
+    const changes=execFileSync('git',['diff','--name-status','--diff-filter=MDR',against,'HEAD','--','public'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(line=>{const match=line.match(/\tpublic\/(?:experiences\/)?([^/]+)\/(v\d+)\//);return match&&!retired.has(match[1])&&!(unshared.has(match[1])&&match[2]==='v1');}).join('\n');
     if(changes)throw Error(`Published snapshot files cannot change or be removed:\n${changes}`);
   }
   return count;

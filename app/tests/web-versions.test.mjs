@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
+import {execFileSync} from 'node:child_process';
 import {snapshotFiles,verifyWebVersions} from '../scripts/web-versions.mjs';
 import {routeParts,editionSearch,releaseSearch,releasePath} from '../site/routes.js';
 
@@ -71,5 +72,19 @@ test('withdrawn programs retain verified snapshots outside public output',async(
   assert.equal(await verifyWebVersions({root}),0);
   await fs.mkdir(path.join(root,'public','example'));await assert.rejects(verifyWebVersions({root}),/still has public files/);await fs.rmdir(path.join(root,'public','example'));
   await fs.writeFile(path.join(snapshot,'index.html'),'Changed archive');await assert.rejects(verifyWebVersions({root}),/Snapshot integrity failure/);
+ }finally{await fs.rm(root,{recursive:true,force:true});}
+});
+
+test('only unshared More programs may refresh a previously published v1',async()=>{
+ const root=await fs.mkdtemp(path.join(os.tmpdir(),'web-versions-against-'));
+ const git=(...args)=>execFileSync('git',['-c','user.name=test','-c','user.email=test@example.com',...args],{cwd:root,stdio:'pipe',encoding:'utf8'});
+ const write=async(id,body)=>{const folder=path.join(root,'public',id,'v1');await fs.mkdir(folder,{recursive:true});await fs.writeFile(path.join(folder,'index.html'),body);await fs.writeFile(path.join(folder,'licenses.txt'),'licenses');await fs.writeFile(path.join(root,'programs',id,'web-versions.json'),JSON.stringify({versions:[{id:'v1',path:`${id}/v1/`,sourceCommit:'a'.repeat(40),released:'2026-11-03',label:'v1',files:await snapshotFiles(folder)}]}));};
+ try{
+  for(const [id,metadata] of [['extra',{gallery:'more',unsharedWebV1:true}],['main',{}]]){await fs.mkdir(path.join(root,'programs',id),{recursive:true});await fs.writeFile(path.join(root,'programs',id,'program.json'),JSON.stringify({id,...metadata}));await write(id,'First');}
+  git('init','-q');git('add','.');git('commit','-qm','Publish');const published=git('rev-parse','HEAD').trim();
+  await write('extra','Refreshed');git('add','.');git('commit','-qm','Refresh unshared');
+  assert.equal(await verifyWebVersions({root,against:published}),2);
+  await write('main','Refreshed');git('add','.');git('commit','-qm','Change published');
+  await assert.rejects(verifyWebVersions({root,against:published}),/Published release was changed or removed: main\/v1/);
  }finally{await fs.rm(root,{recursive:true,force:true});}
 });

@@ -204,6 +204,11 @@ This does not change testing for the main gallery.
 
 ## Extra-program release policy
 
+On November 3, 2026, the user confirmed the only URLs ever shared are Bomb v1 and
+v2; those two must never change. The release check lets More programs marked
+`unsharedWebV1` refresh v1 in place, even after a push has made it public, and
+still rejects changes to every other published release.
+
 On November 2, 2026, the user confirmed no extra-program URLs had been shared
 and authorized resetting Speech, Olympics, and starwars81 to unshared web v1.
 Keep these extra programs at web v1 until the user says to advance them; local
