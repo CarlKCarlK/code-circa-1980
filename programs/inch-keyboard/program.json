@@ -1,0 +1,44 @@
+{
+  "id": "inch-keyboard",
+  "title": "KEYSCN and INCH \u2014 keyboard routines",
+  "description": "KEYSCN and INCH \u2014 keyboard routines. 5 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Z80 / EDTASM",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "KEYSCN TWO ROWS",
+      "capture": "tape18a",
+      "save": 5,
+      "raw": "versions/v01/05-KEYSCN-TWO-ROWS.ASM",
+      "listing": "versions/v01/05-KEYSCN-TWO-ROWS.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.ASM",
+          "label": "05-KEYSCN-TWO-ROWS.ASM"
+        },
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.TXT",
+          "label": "05-KEYSCN-TWO-ROWS.TXT"
+        },
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.Z80",
+          "label": "05-KEYSCN-TWO-ROWS.Z80"
+        }
+      ],
+      "startupSource": "00130 KEYSCN\tLD\tC,0\t;FOR FIRST ROW\n00140 \tLD\tA,(3801H)\t;FIRST ROW ADDRESS\n00150 \tOR\tA\t; TEST ZERO OR NON-ZERO\n00160 \tJP\tNZ,KEY10\t;GO IF KEY PRESSED\n00170 \tLD\tA,(3802H)\t; SECOND ROW ADDRESS\n00180 \tOR\tA\t; TEST ZERO OR NON-ZERO\n00190 \tJP\tZ,KEYSCN\t;GO IF NO KEY PRESSED\n00200 \tLD\tC,8\t;FOR 2ND ROW\n00210 KEY10\tLD\tB,0FFH\t; INDEX\n00220 KEY20\tINC\tB\t; DECREMENT (?) INDEX\n00230 \tSRL\tA\t; SHIFT 'TIL NON-ZERO\n00240 \tJP\tNZ,KEY20\t; GO IF NOT ZERO",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

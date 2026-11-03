@@ -1,0 +1,73 @@
+{
+  "official_title": "KEYSCN and INCH \u2014 keyboard routines",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "inch_keyboard_p14",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape18a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.ASM",
+          "bytes": 904,
+          "sha256": "96f1caf8f824872112ee55ab566a4250312ef9c118637903fc9d87c25c724e67"
+        },
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
+          "bytes": 896,
+          "sha256": "eb3443b876bfc504876c81f13a46214b500f8c12d5e4f197ad25c11a3559859e"
+        },
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.Z80",
+          "bytes": 728,
+          "sha256": "99adee5fba03f45650e1328bcb022b4426dfeca591362b9d5341916261fd4041"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "96f1caf8f824872112ee55ab566a4250312ef9c118637903fc9d87c25c724e67",
+        "bytes": 904,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "5",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "KEYSCN TWO ROWS",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "140.114",
+        "recovered_bytes": "904",
+        "source_file": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
