@@ -1,0 +1,44 @@
+{
+  "id": "football-chase",
+  "title": "Football Chase",
+  "description": "Football Chase. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "FOOTBALL CHASE",
+      "capture": "tape6a",
+      "save": 4,
+      "raw": "versions/v01/04-FOOTBALL-CHASE.BAS",
+      "listing": "versions/v01/04-FOOTBALL-CHASE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 29 consistent pointers; normal end marker; matches 6 decoding variants; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-FOOTBALL-CHASE.ASC",
+          "label": "04-FOOTBALL-CHASE.ASC"
+        },
+        {
+          "path": "versions/v01/04-FOOTBALL-CHASE.BAS",
+          "label": "04-FOOTBALL-CHASE.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n7 PL=5:'   # OF OTHERS\n15 Y=5:X=5:OX=5:OY=5\n20 CLS:PRINT:PRINT\"====================================\"\n23 PRINT@Y*64+X,\"O\";\n25 FOR P=1TOPL:Y(P)=RND(5)+1:X(P)=RND(10)*2+15:PRINT@Y(P)*64+X(P),\"X\";:NEXTP\n26 FORP=1TO7\n30 FORP=1TO7:PRINT@(P+1)*64,\"!\";:PRINT@35+(P+1)*64,\"!\";:NEXT\n35 PRINT\n40            PRINT\"====================================\"\n50 PRINT@704,\"YARDS    \"INT(FT/3+.5)\n80 A$=INKEY$:IFA$=\"\"THEN80ELSE100",
+      "controlSource": [
+        "80 A$=INKEY$:IFA$=\"\"THEN80ELSE100",
+        "90 A$=INKEY$",
+        "610 FORP=1TO1000:NEXT:A$=INKEY$:X=5:Y=5:OX=5:OY=5:GOTO 20"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
