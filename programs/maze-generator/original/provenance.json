@@ -1,54 +1,54 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape19a",
-  "save": 3,
-  "archive_raw": "tapes/recovered/tape19a/best/03-AMAZING-MAZE-V1.BAS",
-  "archive_listing": "tapes/recovered/tape19a/best/03-AMAZING-MAZE-V1.ASC",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape19a/best/04-AMAZING-MAZE-V2.BAS",
+  "archive_listing": "tapes/recovered/tape19a/best/04-AMAZING-MAZE-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/03-AMAZING-MAZE-V1.ASC",
-      "archive_path": "tapes/recovered/tape19a/best/03-AMAZING-MAZE-V1.ASC",
-      "bytes": 4740,
-      "sha256": "97b4f09157538fff51805b40dbbee5f43f132610ec2c99fc4401ec47b70a1384"
+      "path": "versions/v02/04-AMAZING-MAZE-V2.ASC",
+      "archive_path": "tapes/recovered/tape19a/best/04-AMAZING-MAZE-V2.ASC",
+      "bytes": 5037,
+      "sha256": "eefbcbb3e6d4f05c7b6f83f883e55b4db48477c9225dc0d59bd91e302e85863b"
     },
     {
-      "path": "versions/v01/03-AMAZING-MAZE-V1.BAS",
-      "archive_path": "tapes/recovered/tape19a/best/03-AMAZING-MAZE-V1.BAS",
-      "bytes": 3878,
-      "sha256": "eb5d5a929f6ca18df105ef5adb7ad0fdb36811f6577aa2c7eef612af43547086"
+      "path": "versions/v02/04-AMAZING-MAZE-V2.BAS",
+      "archive_path": "tapes/recovered/tape19a/best/04-AMAZING-MAZE-V2.BAS",
+      "bytes": 4142,
+      "sha256": "412a9c9b4d37348ac5891eb4f6e9ecd45b41cd38b78d44e04fd0277b4b1c6455"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "eb5d5a929f6ca18df105ef5adb7ad0fdb36811f6577aa2c7eef612af43547086",
-    "bytes": 3878,
-    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "sha256": "412a9c9b4d37348ac5891eb4f6e9ecd45b41cd38b78d44e04fd0277b4b1c6455",
+    "bytes": 4142,
+    "archive_validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 181,
-    "last": 7000,
+    "lines": 182,
+    "last": 1820,
     "pointer_bases": [
-      17125
+      22204
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 3876,
+    "parsed_bytes": 4140,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "19",
     "side": "a",
-    "order": "3",
+    "order": "4",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "AMAZING MAZE V1",
+    "summary": "AMAZING MAZE V2",
     "capture": "tape19a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
-    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "96.200",
-    "recovered_bytes": "3878",
-    "source_file": "tapes/recovered/tape19a/best/03-AMAZING-MAZE-V1.ASC",
+    "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "165.281",
+    "recovered_bytes": "4142",
+    "source_file": "tapes/recovered/tape19a/best/04-AMAZING-MAZE-V2.ASC",
     "wav": "tapes/tape19a.wav",
     "folder": "tapes/recovered/tape19a",
     "recovery_date": "2026-10-28",

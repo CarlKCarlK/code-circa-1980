@@ -34,6 +34,30 @@
       ],
       "startupSource": "5 XS=0:YS=1\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n90 PRINT@404,\"\";\n100 GOSUB 7000\n101 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "AMAZING MAZE V2",
+      "capture": "tape19a",
+      "save": 4,
+      "raw": "versions/v02/04-AMAZING-MAZE-V2.BAS",
+      "listing": "versions/v02/04-AMAZING-MAZE-V2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/04-AMAZING-MAZE-V2.ASC",
+          "label": "04-AMAZING-MAZE-V2.ASC"
+        },
+        {
+          "path": "versions/v02/04-AMAZING-MAZE-V2.BAS",
+          "label": "04-AMAZING-MAZE-V2.BAS"
+        }
+      ],
+      "startupSource": "10 XS=0:YS=1\n20 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n40 PRINT@404,\"\";\n50 GOSUB 1820 \n60 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n70 IFH<>1ANDV<>1THEN90   \n80 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO50   \n90 DIM W(H,V),V(H,V)\n100 H1=H:V1=V\n110 PRINT\n120 PRINT",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
