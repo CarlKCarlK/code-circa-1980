@@ -113,7 +113,14 @@
     }
   ],
   "dating": {
-    "direct_source_lines": [],
+    "direct_source_lines": [
+      "10 'TRIGECTIOR           BY CARL KADIE A.D.  OCT. 24, 1978"
+    ],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/trigectior-gallery.svg",
+    "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729",
+    "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
   }
 }

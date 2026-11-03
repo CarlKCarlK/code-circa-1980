@@ -61,7 +61,14 @@
     }
   ],
   "dating": {
-    "direct_source_lines": [],
+    "direct_source_lines": [
+      "1 'JOHN'S CIRCLE     BY JOHN HARTMAN & CARL KADIE"
+    ],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/johnscircle-gallery.svg",
+    "sha256": "98c088a2120392c22b7ee72e9a9c4cab253c1478578dedfaba544ad1c20db07b",
+    "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
   }
 }

@@ -63,5 +63,18 @@
   "dating": {
     "direct_source_lines": [],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/nuclear-gallery.svg",
+    "sha256": "3921df0fcf62d50302b03e125781513e33208615c0870accff80ca73a9e9bd34",
+    "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
+  },
+  "damaged_recording": {
+    "capture": "tape22a",
+    "save": 6,
+    "path": "partial/",
+    "manifest": "partial/provenance.json",
+    "completeness": "damaged; not playable",
+    "execution_tested": false
   }
 }

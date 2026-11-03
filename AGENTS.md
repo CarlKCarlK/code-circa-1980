@@ -291,3 +291,27 @@ in programs/worm/history/scientific-american.md. Its Speed selector offers
 original 1× (default) and nominal 20× through the shared emulator; changing speed
 keeps the current path, survives Restart, and respects Pause/Help. Keep its
 unshared web experience at v1 and preserve every recovered payload byte.
+
+## Five further More programs
+
+The user requested all five on November 2, 2026: Trigectior (`trigectior`),
+Relativity (`relativity`), Reflex Tests (`reflex`), Nuclear Equation Completer
+(`nuclear`), and John’s Circle (`johnscircle`). Preserve their seven complete
+captures with snapshots and canonical per-save tags. Keep one selected player
+each and unshared web v1. User-approved display titles may normalize source
+title spelling; recovered listings and bytes remain unchanged.
+
+Trigectior v02 is tape22a save 4; its explicit source credit is October 24, 1978.
+Relativity is tape22a save 10, credited May 9, 1979. John’s Circle, tape21b save
+13, credits John Hartman and Carl Kadie jointly. These are source notices, not
+save dates. Reflex and the nuclear source do not establish an author/date.
+Relativity offers optional 20× pacing for its slow graph; Reflex stays at 1×.
+Preserve original clock labels, timing estimates, and other historical quirks.
+
+Nuclear’s complete reference is tape14a save 8. Keep the separate damaged
+tape22a save 6 in partial/: 1294 prefix bytes, 32 records through 4010, no added
+end marker, independent-channel confirmation. Run
+`python3 app/scripts/verify-science-five.py /path/to/trs80` to verify archive,
+prefix structure, and channel provenance. Do not splice the two recordings.
+The separately titled feet-per-second Projectile Trajectory on tape21b is not
+assumed to be a Trigectior revision. Browser checks live in science-five.spec.js.

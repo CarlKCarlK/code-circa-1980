@@ -115,5 +115,10 @@
   "dating": {
     "direct_source_lines": [],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/reflex-gallery.svg",
+    "sha256": "5b3966ba047dafdef68ab5a4699de68f612b133b4f35caecc1aa69e0c446e7cc",
+    "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
   }
 }

@@ -96,7 +96,7 @@ for(const [id,title] of [['rickyrat','Ricky Rat'],['pinball','Pinball'],['logic'
  const raw=await page.getByRole('link',{name:'Download original payload',exact:true}).getAttribute('href');
  const response=await page.request.get(raw);expect(response.ok()).toBe(true);
  await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
- await expect(page.locator('.program-card')).toHaveCount(18);
+ await expect(page.locator('.program-card')).toHaveCount(23);
  await expect(page.locator('.version-picker')).toHaveCount(0);
  expect(errors).toEqual([]);
 });

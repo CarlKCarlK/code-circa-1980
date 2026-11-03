@@ -92,3 +92,11 @@ and Superpower Investing add six entries, bringing the active gallery to 18.
 They preserve 21 additional complete captures with canonical version tags.
 See [the import and history notes](next-six-programs.md), including the uncertain
 SPI/BOND professional chronology and the Tic-Tac-Toe stock-ROM adaptation.
+
+## Five science/game additions
+
+Trigectior, Relativity, Reflex Tests, Nuclear Equation Completer, and John’s
+Circle bring the active More gallery to 23 programs. Seven complete captured
+saves and the separate damaged nuclear recording are preserved. See
+[five-science-programs.md](five-science-programs.md) for selections, dates,
+source-history uncertainty, and execution verification limits.

@@ -61,7 +61,14 @@
     }
   ],
   "dating": {
-    "direct_source_lines": [],
+    "direct_source_lines": [
+      "1 ' RELITIVITY                A QUICKY PROGAM BY CARL KADIE         WRITTEN ON A.D. MAY NINTH NINETEEN SEVENTY-NINE (5-9-79)"
+    ],
     "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/relativity-gallery.svg",
+    "sha256": "39a3207cae69f3f7b4fefa330daa2c077e3c389debfec2315af5bea0e90f041a",
+    "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
   }
 }
