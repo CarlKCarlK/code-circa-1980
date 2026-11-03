@@ -1,0 +1,42 @@
+{
+  "id": "shooting-demo",
+  "title": "Shooting Demo",
+  "description": "Shooting Demo. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SHOOTING DEMO",
+      "capture": "file8b",
+      "save": 4,
+      "raw": "versions/v01/04-SHOOTING-DEMO.BAS",
+      "listing": "versions/v01/04-SHOOTING-DEMO.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-SHOOTING-DEMO.ASC",
+          "label": "04-SHOOTING-DEMO.ASC"
+        },
+        {
+          "path": "versions/v01/04-SHOOTING-DEMO.BAS",
+          "label": "04-SHOOTING-DEMO.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR200\n10 CLS\n20 FORX=3TO60 STEP 10\n30 PRINT@X,\"*\";\n35 L=L+1:L(L)=X\n40 NEXT\n50 B=L (RND(6))\n60 A$=INKEY$\n65 OUT255,1:OUT255,2:OUT255,3\n70 IF A$=\"\" THEN 100\n80 IF VAL(A$) <>0THENS=960+L(VAL(A$)):PRINT@960,STRING$(62,\" \");:PRINT@S,\">=<\";\n90 IF A$=\"L\"THEN GOSUB1000ELSE IF A$=\"S\"THEN GOSUB2000",
+      "controlSource": [
+        "60 A$=INKEY$"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
