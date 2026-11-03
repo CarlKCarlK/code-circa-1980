@@ -31,6 +31,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
       "unavailableReason": "Source only: earlier prototype, debugging stops, or unavailable graphics extension. The site offers one selected self-contained reference."
+    },
+    {
+      "id": "v03",
+      "label": "WHO DONNT V3",
+      "capture": "tape12a",
+      "save": 10,
+      "raw": "versions/v03/10-WHO-DONNT-V3.BAS",
+      "listing": "versions/v03/10-WHO-DONNT-V3.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+      "unavailableReason": "Source only: earlier prototype, debugging stops, or unavailable graphics extension. The site offers one selected self-contained reference."
     }
   ]
 }
