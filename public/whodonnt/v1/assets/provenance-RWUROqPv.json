@@ -1,0 +1,669 @@
+{
+  "files": [
+    {
+      "path": "06-TANK-GAME-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape1a/partial/06-TANK-GAME-PREFIX.ASC",
+      "bytes": 1293,
+      "sha256": "d0233349e3f7a64dad576127dbc67ebaaf337a33579b5658c86b6ee885e3ac63"
+    },
+    {
+      "path": "06-TANK-GAME-PREFIX.BAS",
+      "archive_path": "tapes/recovered/tape1a/partial/06-TANK-GAME-PREFIX.BAS",
+      "bytes": 1274,
+      "sha256": "4cb03e0f9ed334536a52ec746c2dfe251ed0046e32c9d34335cd89c51664a40d"
+    },
+    {
+      "path": "06-TANK-GAME-RAW.BAS",
+      "archive_path": "tapes/recovered/tape1a/partial/06-TANK-GAME-RAW.BAS",
+      "bytes": 4355,
+      "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d"
+    },
+    {
+      "path": "06-TANK-GAME-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape1a/partial/06-TANK-GAME-UNCERTAIN.ASC",
+      "bytes": 4816,
+      "sha256": "5793b43147ec4ce294db131b81c7fe3f66b804add4b8e4415df404671deda4d4"
+    }
+  ],
+  "recovery_item": {
+    "order": 6,
+    "title": "TANK GAME, copyright 1980 Carl Kadie; two comment bytes unresolved",
+    "name_inferred": false,
+    "complete": false,
+    "execution_tested": false,
+    "raw": "tapes/recovered/tape1a/partial/06-TANK-GAME-RAW.BAS",
+    "listing": "tapes/recovered/tape1a/partial/06-TANK-GAME-UNCERTAIN.ASC",
+    "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d",
+    "bytes": 4355,
+    "line_count": 126,
+    "last_line": 20000,
+    "memory_base": 17125,
+    "end_marker": true,
+    "parsed_bytes": 4355,
+    "source_start_s": 320.78489583333334,
+    "source_end_s": 390.75289583333335,
+    "selected_source": {
+      "capture": "tape1a",
+      "index": 6,
+      "variant": "left-hp1200",
+      "period": 94,
+      "radius": 0.2,
+      "late": true,
+      "cropStart": 320.586625,
+      "cropEnd": 391.25289583333335,
+      "start": 320.78489583333334,
+      "end": 390.75289583333335,
+      "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d",
+      "assessment": {
+        "good": true,
+        "lines": 126,
+        "last": 20000,
+        "base": 17125,
+        "normal": true,
+        "parsed": 4355,
+        "prefixEnd": 4353,
+        "bytes": 4355,
+        "reason": "valid"
+      },
+      "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-79e5b9e46154d8b9.BAS"
+    },
+    "matching_sources": [
+      {
+        "capture": "tape1a",
+        "index": 6,
+        "variant": "left-hp1200",
+        "period": 94,
+        "radius": 0.2,
+        "late": true,
+        "cropStart": 320.586625,
+        "cropEnd": 391.25289583333335,
+        "start": 320.78489583333334,
+        "end": 390.75289583333335,
+        "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d",
+        "assessment": {
+          "good": true,
+          "lines": 126,
+          "last": 20000,
+          "base": 17125,
+          "normal": true,
+          "parsed": 4355,
+          "prefixEnd": 4353,
+          "bytes": 4355,
+          "reason": "valid"
+        },
+        "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-79e5b9e46154d8b9.BAS"
+      },
+      {
+        "capture": "tape1a",
+        "index": 6,
+        "variant": "right-hp1200",
+        "period": 92,
+        "radius": 0.3,
+        "late": true,
+        "polarity": 1,
+        "gain": 32.78688524590164,
+        "initialThreshold": 100,
+        "cropStart": 320.436625,
+        "cropEnd": 391.40289583333333,
+        "start": 320.72391666666664,
+        "end": 390.75308333333334,
+        "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d",
+        "assessment": {
+          "good": true,
+          "lines": 126,
+          "last": 20000,
+          "base": 17125,
+          "normal": true,
+          "parsed": 4355,
+          "prefixEnd": 4353,
+          "bytes": 4355,
+          "reason": "valid"
+        },
+        "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-79e5b9e46154d8b9.BAS"
+      },
+      {
+        "capture": "tape1a",
+        "index": 6,
+        "variant": "left-hp1600",
+        "period": 90,
+        "radius": 0.12,
+        "dataRadius": 0.1,
+        "late": true,
+        "initialThreshold": 100,
+        "cropStart": 320.436625,
+        "cropEnd": 391.35291666666666,
+        "start": 320.71999999999997,
+        "end": 390.752875,
+        "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d",
+        "assessment": {
+          "good": true,
+          "lines": 126,
+          "last": 20000,
+          "base": 17125,
+          "normal": true,
+          "parsed": 4355,
+          "prefixEnd": 4353,
+          "bytes": 4355,
+          "reason": "valid"
+        },
+        "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-79e5b9e46154d8b9.BAS"
+      },
+      {
+        "capture": "tape1a",
+        "index": 6,
+        "variant": "left-hp2000",
+        "period": 90,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "late": true,
+        "initialThreshold": 100,
+        "cropStart": 320.436625,
+        "cropEnd": 391.35291666666666,
+        "start": 320.7201875,
+        "end": 390.7531041666667,
+        "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d",
+        "assessment": {
+          "good": true,
+          "lines": 126,
+          "last": 20000,
+          "base": 17125,
+          "normal": true,
+          "parsed": 4355,
+          "prefixEnd": 4353,
+          "bytes": 4355,
+          "reason": "valid"
+        },
+        "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-79e5b9e46154d8b9.BAS"
+      }
+    ],
+    "matching_other_captures": [],
+    "prefix": {
+      "raw": "tapes/recovered/tape1a/partial/06-TANK-GAME-PREFIX.BAS",
+      "listing": "tapes/recovered/tape1a/partial/06-TANK-GAME-PREFIX.ASC",
+      "byte_range": [
+        0,
+        1274
+      ],
+      "sha256": "4cb03e0f9ed334536a52ec746c2dfe251ed0046e32c9d34335cd89c51664a40d",
+      "bytes": 1274,
+      "line_count": 34,
+      "last_line": 320,
+      "memory_base": 17125,
+      "synthetic_end_marker": false,
+      "matching_sources": [
+        {
+          "file": "tapes/recovered/tape1a/left-hp1200/T06.BAS",
+          "variant": "left-hp1200",
+          "sha256": "379ed6a66d463120c2c28f1d29b522df2c06b59fc8a7cfcb3d63b7aad0ea57a5"
+        },
+        {
+          "file": "tapes/recovered/tape1a/left-hp800/T06.BAS",
+          "variant": "left-hp800",
+          "sha256": "225d118d39a510f5dbb0c4990fd6d4a699d1cf1d57f5d63972231fbfd38d034f"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-aee2d0a18afcb4e3.BAS",
+          "variant": "left-hp1200",
+          "sha256": "aee2d0a18afcb4e3a2f1abee4ab0a85201860744e579293f9f96593eb6b9d5cb"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-79e5b9e46154d8b9.BAS",
+          "variant": "left-hp1200",
+          "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-8fc486ac0098ed16.BAS",
+          "variant": "left-hp1200",
+          "sha256": "8fc486ac0098ed16762e273585b4fd4079d6800c3eeb041b4b86d2193774c6e5"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-8763c0dbcaeef447.BAS",
+          "variant": "left-hp1200",
+          "sha256": "8763c0dbcaeef447984863efa927d3749bc7bfdacfcc91ac3a398d2206746f97"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-379ed6a66d463120.BAS",
+          "variant": "left-hp1200",
+          "sha256": "379ed6a66d463120c2c28f1d29b522df2c06b59fc8a7cfcb3d63b7aad0ea57a5"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-d7255f1894dfbdb6.BAS",
+          "variant": "left-hp1200",
+          "sha256": "d7255f1894dfbdb62eab02133f33274cd6456603e5cf0f9841c5a2278728c33d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-c829d62336cd5331.BAS",
+          "variant": "left-hp1200",
+          "sha256": "c829d62336cd53317583aa9335a3eef0ddaf020a82497a454de60eb8f171a4ec"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-22549a270c255467.BAS",
+          "variant": "left-hp1200",
+          "sha256": "22549a270c255467f78c7978e4e5c36d43ae8859fb1deba3e577677a55d27de3"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/T06-left-hp1200-d4535140e7d0b777.BAS",
+          "variant": "left-hp1200",
+          "sha256": "d4535140e7d0b777f125cdaf135adb453ee0aac1b3411982aaeca25b9fae820e"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-80c4d3d4fe5e0cc2.BAS",
+          "variant": "left-hp800",
+          "sha256": "80c4d3d4fe5e0cc2001b5e741971acdc17b3361c3e23b82644644158ef04f8d4"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-b38f8b41ed9f246a.BAS",
+          "variant": "left-hp800",
+          "sha256": "b38f8b41ed9f246a28a898edc5fd44154d5b2c7c66a5d21f4443e64664714f7d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-89ad285327415246.BAS",
+          "variant": "left-hp800",
+          "sha256": "89ad28532741524616e20ea14cfd070a62ad2ee13237406d7349a6a31cd9f628"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-31453bdad5120816.BAS",
+          "variant": "left-hp800",
+          "sha256": "31453bdad5120816afb090e62b1f58a179f0564fad839d35c0c5f67cbf113183"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-8650c6a3093df6cd.BAS",
+          "variant": "left-hp800",
+          "sha256": "8650c6a3093df6cdcafd7bbf466f64a0f2c791331682dd26e681403a9978da70"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-09edd3e85830cc5a.BAS",
+          "variant": "left-hp800",
+          "sha256": "09edd3e85830cc5a51f13ee3bc7bebd61778f3c0795a91db2aaac12d0cc17795"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-583bcaa3acd63775.BAS",
+          "variant": "left-hp800",
+          "sha256": "583bcaa3acd637758596ab71ae3cbe3733ce48de07c20b4ae25a9989b41063c9"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-225d118d39a510f5.BAS",
+          "variant": "left-hp800",
+          "sha256": "225d118d39a510f5dbb0c4990fd6d4a699d1cf1d57f5d63972231fbfd38d034f"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-b3442f31762e6242.BAS",
+          "variant": "left-hp800",
+          "sha256": "b3442f31762e62427e73838ebcc664482204219bfdd577bfd57029ecd3c4d3f3"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-7d9e37aae110028c.BAS",
+          "variant": "left-hp800",
+          "sha256": "7d9e37aae110028c8eefcb56f2af6ccbe9fd1527d0eeec2be1c345b41538c594"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-b76e5f09ff3c29fa.BAS",
+          "variant": "left-hp800",
+          "sha256": "b76e5f09ff3c29fad354d8514352288c42dcd8870bd04cf40e878030008084ff"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-left-hp800-8df81d839e3367b0.BAS",
+          "variant": "left-hp800",
+          "sha256": "8df81d839e3367b05e00065f6f397763a304d47dff986a3207ea3b0ed1151670"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-a738971dff0b9fa8.BAS",
+          "variant": "right-hp1200",
+          "sha256": "a738971dff0b9fa83028bca3ae752aef58547d8d13b546e48ed5972686ab5bfb"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-d934d318a71de910.BAS",
+          "variant": "right-hp1200",
+          "sha256": "d934d318a71de910583d727805b06640a46990a7c104efee4f97d6f655619a7e"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-0b0de9929b6e172b.BAS",
+          "variant": "right-hp1200",
+          "sha256": "0b0de9929b6e172b07931edec0b11c6330a1138bbeb0c1a4f346ad7425f65e75"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-65f9e17e1ba64f4b.BAS",
+          "variant": "right-hp1200",
+          "sha256": "65f9e17e1ba64f4bb7e9bcea0fa7063126bab382d031719010eb4af1195bef1d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-79e5b9e46154d8b9.BAS",
+          "variant": "right-hp1200",
+          "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-abe3d518fec8b466.BAS",
+          "variant": "right-hp1200",
+          "sha256": "abe3d518fec8b466d4c7c81b2e51d0190000b7ab83a9276110a80547b24a1848"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-a14950ea7c81a202.BAS",
+          "variant": "right-hp1200",
+          "sha256": "a14950ea7c81a202b5d69674baa2143f6b361df45ba61838e246ded64d33dee7"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-3f70f4701ec47280.BAS",
+          "variant": "right-hp1200",
+          "sha256": "3f70f4701ec472805594c4c5f77f45874884ae9810667b2a3a1f3252c4ca6c58"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp1200-381471213ecf0178.BAS",
+          "variant": "right-hp1200",
+          "sha256": "381471213ecf01783dbd7ffb3f3efce0d23eaa0e0972733ec50cfc3e23343cb6"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp800-dc527a58b83654b1.BAS",
+          "variant": "right-hp800",
+          "sha256": "dc527a58b83654b15dc23731b0c671952d2accbc648823d28b0f0351d9f86be3"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp800-aee2d0a18afcb4e3.BAS",
+          "variant": "right-hp800",
+          "sha256": "aee2d0a18afcb4e3a2f1abee4ab0a85201860744e579293f9f96593eb6b9d5cb"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp800-27ccd6ea7d8c9b0a.BAS",
+          "variant": "right-hp800",
+          "sha256": "27ccd6ea7d8c9b0a7cc4d311515b513f24111effc6505429a509d6bed65c8707"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp800-80c4d3d4fe5e0cc2.BAS",
+          "variant": "right-hp800",
+          "sha256": "80c4d3d4fe5e0cc2001b5e741971acdc17b3361c3e23b82644644158ef04f8d4"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp800-e7fd7bff267f3d4a.BAS",
+          "variant": "right-hp800",
+          "sha256": "e7fd7bff267f3d4a0ed56d7a2e3e5863e42828d9958919157eefd1faee243ff0"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp800-0f92be72afd8f03d.BAS",
+          "variant": "right-hp800",
+          "sha256": "0f92be72afd8f03d059704e420589d5b578c6c8053a4bcec951a8d8c19dbed75"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp800-cc9ca8af4e59a560.BAS",
+          "variant": "right-hp800",
+          "sha256": "cc9ca8af4e59a56095c57448f85f5c4338a35bbd053499aec71a9c634158b812"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/W06-right-hp800-dcb166d3e529cdd6.BAS",
+          "variant": "right-hp800",
+          "sha256": "dcb166d3e529cdd678bcbc2efef18753467db00c1618dbb403bc57bc4c3c1de7"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-79e5b9e46154d8b9.BAS",
+          "variant": "left-hp1600",
+          "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-c21b6f51b5d9d56b.BAS",
+          "variant": "left-hp1600",
+          "sha256": "c21b6f51b5d9d56b8539bba7d3e10fecc566d5d38a9ed1e939c0eb3aeef9a4cf"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-dc527a58b83654b1.BAS",
+          "variant": "left-hp1600",
+          "sha256": "dc527a58b83654b15dc23731b0c671952d2accbc648823d28b0f0351d9f86be3"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-b3573c4d06d55f31.BAS",
+          "variant": "left-hp1600",
+          "sha256": "b3573c4d06d55f31d34b7fb77b55078b1907955ba303db31e64bad87ee845ad7"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-aee2d0a18afcb4e3.BAS",
+          "variant": "left-hp1600",
+          "sha256": "aee2d0a18afcb4e3a2f1abee4ab0a85201860744e579293f9f96593eb6b9d5cb"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-e8707271886ead89.BAS",
+          "variant": "left-hp1600",
+          "sha256": "e8707271886ead89f79d64c7f6f783e955699c654809efe52af0baab90fe7dc1"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-20033790e622fb40.BAS",
+          "variant": "left-hp1600",
+          "sha256": "20033790e622fb40146532add78b59b6bb31d29b980d1e1f9a716b88feca83ac"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-d62d48251c5ebb0c.BAS",
+          "variant": "left-hp1600",
+          "sha256": "d62d48251c5ebb0c9913cfc43523938d547ed685ae326d12f55c7b6fd5f5de86"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-a738971dff0b9fa8.BAS",
+          "variant": "left-hp1600",
+          "sha256": "a738971dff0b9fa83028bca3ae752aef58547d8d13b546e48ed5972686ab5bfb"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-a778d39a04ce96ed.BAS",
+          "variant": "left-hp1600",
+          "sha256": "a778d39a04ce96ed1699cf37857bc7a4c2704062e2d3b9b3255b152279ce8260"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-707ebc035a0f1cd3.BAS",
+          "variant": "left-hp1600",
+          "sha256": "707ebc035a0f1cd3e78aac1cefc9967a647cfe2bc6d1cae99ba49030b0961968"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-5a6829cf71526896.BAS",
+          "variant": "left-hp1600",
+          "sha256": "5a6829cf715268962dc77550652548870289eb338109b46cdc0361a54228fa99"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp1600-94dec777d8c50b12.BAS",
+          "variant": "left-hp1600",
+          "sha256": "94dec777d8c50b12dcdba21b23338d42deb6b31be6e1d736a2ae290fcba19c66"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-b77709eaf63e3e71.BAS",
+          "variant": "left-hp2000",
+          "sha256": "b77709eaf63e3e7111c23e2d3141045e0e66edc5f519bbfb013ed55ea4316350"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-79e5b9e46154d8b9.BAS",
+          "variant": "left-hp2000",
+          "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-c21b6f51b5d9d56b.BAS",
+          "variant": "left-hp2000",
+          "sha256": "c21b6f51b5d9d56b8539bba7d3e10fecc566d5d38a9ed1e939c0eb3aeef9a4cf"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-80c4d3d4fe5e0cc2.BAS",
+          "variant": "left-hp2000",
+          "sha256": "80c4d3d4fe5e0cc2001b5e741971acdc17b3361c3e23b82644644158ef04f8d4"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-aee2d0a18afcb4e3.BAS",
+          "variant": "left-hp2000",
+          "sha256": "aee2d0a18afcb4e3a2f1abee4ab0a85201860744e579293f9f96593eb6b9d5cb"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-8bbdfcb9ac615ba7.BAS",
+          "variant": "left-hp2000",
+          "sha256": "8bbdfcb9ac615ba74ed89d75cf93a156fcb32f3d23d1cd5ad244fd6b4bdd8656"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-5a6829cf71526896.BAS",
+          "variant": "left-hp2000",
+          "sha256": "5a6829cf715268962dc77550652548870289eb338109b46cdc0361a54228fa99"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-09edd3e85830cc5a.BAS",
+          "variant": "left-hp2000",
+          "sha256": "09edd3e85830cc5a51f13ee3bc7bebd61778f3c0795a91db2aaac12d0cc17795"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-65f9e17e1ba64f4b.BAS",
+          "variant": "left-hp2000",
+          "sha256": "65f9e17e1ba64f4bb7e9bcea0fa7063126bab382d031719010eb4af1195bef1d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-a778d39a04ce96ed.BAS",
+          "variant": "left-hp2000",
+          "sha256": "a778d39a04ce96ed1699cf37857bc7a4c2704062e2d3b9b3255b152279ce8260"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-9b76b6cb6a5e11b6.BAS",
+          "variant": "left-hp2000",
+          "sha256": "9b76b6cb6a5e11b6907eb8139a7a563b7651533dac0b55942bac34c535e3e2d7"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-left-hp2000-94dec777d8c50b12.BAS",
+          "variant": "left-hp2000",
+          "sha256": "94dec777d8c50b12dcdba21b23338d42deb6b31be6e1d736a2ae290fcba19c66"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-ab67b19ad1c3bd1e.BAS",
+          "variant": "right-hp1600",
+          "sha256": "ab67b19ad1c3bd1e58f6d982782b5c5836818049db9477041eb2921299c3cac4"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-65f9e17e1ba64f4b.BAS",
+          "variant": "right-hp1600",
+          "sha256": "65f9e17e1ba64f4bb7e9bcea0fa7063126bab382d031719010eb4af1195bef1d"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-abe3d518fec8b466.BAS",
+          "variant": "right-hp1600",
+          "sha256": "abe3d518fec8b466d4c7c81b2e51d0190000b7ab83a9276110a80547b24a1848"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-cee67d830c38c01f.BAS",
+          "variant": "right-hp1600",
+          "sha256": "cee67d830c38c01f19d9ec121e987181ae2ab639a8a89d3f37c3e7c677c6b38c"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-379ed6a66d463120.BAS",
+          "variant": "right-hp1600",
+          "sha256": "379ed6a66d463120c2c28f1d29b522df2c06b59fc8a7cfcb3d63b7aad0ea57a5"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-b0f4d74fd7114558.BAS",
+          "variant": "right-hp1600",
+          "sha256": "b0f4d74fd711455863397b03a8708f8133d3a80365889263fa37d3f1f754ea5f"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-27fe309e251d4426.BAS",
+          "variant": "right-hp1600",
+          "sha256": "27fe309e251d4426b68866c9e7bbed232200ed8b201c975ccb7096a1d12a9933"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-ff9b4e3b840775ac.BAS",
+          "variant": "right-hp1600",
+          "sha256": "ff9b4e3b840775ac7cb03f27d9c3efc35c24b60801ce485d14f0d0401a1cf3e4"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-32ae6c8f8cd8d210.BAS",
+          "variant": "right-hp1600",
+          "sha256": "32ae6c8f8cd8d210ba78a8b824da7921e071d6883ffe83a616ae5344c92cc657"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-a14950ea7c81a202.BAS",
+          "variant": "right-hp1600",
+          "sha256": "a14950ea7c81a202b5d69674baa2143f6b361df45ba61838e246ded64d33dee7"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-16fda8d7f2bba32a.BAS",
+          "variant": "right-hp1600",
+          "sha256": "16fda8d7f2bba32a29945c067a6678e3e8b40b69f64b1b5ac962d710f9fdfdf6"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-a023c5c744f6b6cb.BAS",
+          "variant": "right-hp1600",
+          "sha256": "a023c5c744f6b6cbee410dd274daa0effe63aa49343490aaceb08ec6d3eba3e3"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp1600-b17197ec1b272f49.BAS",
+          "variant": "right-hp1600",
+          "sha256": "b17197ec1b272f49610b358d259c99a1c6ac5b3f251b0b4ca6e56287f918b25b"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-9d0e4ec92d35b615.BAS",
+          "variant": "right-hp2000",
+          "sha256": "9d0e4ec92d35b615a41cd3f2198636527d2c0c65c4f988eef233749049d06bbb"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-abe3d518fec8b466.BAS",
+          "variant": "right-hp2000",
+          "sha256": "abe3d518fec8b466d4c7c81b2e51d0190000b7ab83a9276110a80547b24a1848"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-b395994fd8b35140.BAS",
+          "variant": "right-hp2000",
+          "sha256": "b395994fd8b3514051727f396f7ac6db2102fdae47161d170059a1f714419773"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-a252cb4d5e46e922.BAS",
+          "variant": "right-hp2000",
+          "sha256": "a252cb4d5e46e92235d66ca03f03bf17eab38f2527973183777c5e4b1c7bcbdb"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-37d5e1ac91a25db0.BAS",
+          "variant": "right-hp2000",
+          "sha256": "37d5e1ac91a25db0d5f593dfa362354720454e276fcd6ceb6c5359592ff039a0"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-01b7cd6b9087f4fd.BAS",
+          "variant": "right-hp2000",
+          "sha256": "01b7cd6b9087f4fd20a16c3af5cfcff95f972b3eb7b30bea9af46d6b620cd95a"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-4823b05620ed0531.BAS",
+          "variant": "right-hp2000",
+          "sha256": "4823b05620ed05319943c85e29b45ca6be8eaa7c8c4e2cab45337548584d69f2"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-27fe309e251d4426.BAS",
+          "variant": "right-hp2000",
+          "sha256": "27fe309e251d4426b68866c9e7bbed232200ed8b201c975ccb7096a1d12a9933"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-eab812570e8463a9.BAS",
+          "variant": "right-hp2000",
+          "sha256": "eab812570e8463a935d6c23fdc71c4edfcb950b7ecb9cf7fcffe0167a587b84c"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-2af067b88c7d6139.BAS",
+          "variant": "right-hp2000",
+          "sha256": "2af067b88c7d613936f2814d2bcaa0e0e1418fda7b3df98f7a3b554ba4867e88"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-4ba7305f78233e8e.BAS",
+          "variant": "right-hp2000",
+          "sha256": "4ba7305f78233e8ed934c6abfb24c3aadaa1c5b9385beb8012e190d0f7ac1f05"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-8892fd3ae2351c2c.BAS",
+          "variant": "right-hp2000",
+          "sha256": "8892fd3ae2351c2c87d2d7db8d1ef91eae8b6aac25b363569dae6e5fb1c8f509"
+        },
+        {
+          "file": "tapes/recovered/tape1a/timing-refinement/F06-tank-right-hp2000-f282227280bf9442.BAS",
+          "variant": "right-hp2000",
+          "sha256": "f282227280bf944299e0b33bde78fc47989c49a1e9479f26cc440d566466b0ac"
+        }
+      ]
+    },
+    "unresolved": "Conflicting bytes at zero-based payload offsets 1282, 1283, 1457, 1458, 1554, 1730, 1796, 1810, 1812, 2032, 2033, 2920 in comment line 370. Full candidate is structurally complete but byte identity remains unresolved; no spelling or source bugs repaired.",
+    "uncertain_byte_offsets": [
+      1282,
+      1283,
+      1457,
+      1458,
+      1554,
+      1730,
+      1796,
+      1810,
+      1812,
+      2032,
+      2033,
+      2920
+    ]
+  },
+  "execution_tested": false,
+  "note": "Untouched archive exports. Suspect candidates are not promoted to validated complete versions and no prefix gains a synthetic terminator."
+}
