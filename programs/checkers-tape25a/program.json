@@ -1,0 +1,43 @@
+{
+  "id": "checkers-tape25a",
+  "title": "Checkers",
+  "description": "Checkers. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CHECKERS",
+      "capture": "tape25a",
+      "save": 16,
+      "raw": "versions/v01/16-CHECKERS.BAS",
+      "listing": "versions/v01/16-CHECKERS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/16-CHECKERS.ASC",
+          "label": "16-CHECKERS.ASC"
+        },
+        {
+          "path": "versions/v01/16-CHECKERS.BAS",
+          "label": "16-CHECKERS.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 LINE(5,1)-(7,4),SET,BF:LINE(3,2)-(9,3),SET,BF:RESET(4,3):RESET(8,3):RESET(6,4)\n25 DIM R%(15),K%(15),A%(15),B%(15)\n30 GET@(0,0)-(11,5),G,R%\n40 CLS\n50 LINE(4,1)-(8,3),SET,BF:LINE(2,2)-(10,3),SET,BF:SET(4,4):SET(8,4):RESET(4,1):RESET(8,1):RESET(3,3):RESET(9,3)\n60 GET@(0,0)-(11,5),G,K%\n70 CLS\n75 LINE(0,0)-(11,5),SET,BF\n80 GET@(0,0)-(11,5),G,B%\n1000 CLS:POKE16553,255\n1010 DIM R(4),S(7,7):G=-1:R(0)=-99",
+      "controlSource": [
+        "3005 A$=INKEY$:IFA$=\"\"THEN3005",
+        "10000 A$=INKEY$:IFA$=\"\"THEN10000ELSEPRINTASC(A$):GOTO10000"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
