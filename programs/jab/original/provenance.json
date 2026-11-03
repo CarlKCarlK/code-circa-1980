@@ -1,46 +1,46 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape16a",
-  "save": 2,
-  "archive_raw": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.BAS",
-  "archive_listing": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+  "archive_listing": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
   "imported_files": [
     {
-      "path": "versions/v02/02-AMAZING-PROGRAM-AND-MONSTER-GAME.BAS",
-      "archive_path": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.BAS",
-      "bytes": 9704,
-      "sha256": "654245b44e2a1e2dc2b91dda05546e3ddcbcd0554e339e9146a8c82615585856"
+      "path": "versions/v03/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+      "archive_path": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+      "bytes": 8385,
+      "sha256": "1db15217c712789ae331dedf27cb4e2f0738b43758694ff5eea5c97aaa32b1bd"
     },
     {
-      "path": "versions/v02/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
-      "archive_path": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
-      "bytes": 11831,
-      "sha256": "b6a431e05a7afc997c7b3cc74d4753947a5b16f8f258b823a83cb718f0e4bfb8"
+      "path": "versions/v03/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+      "archive_path": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+      "bytes": 10276,
+      "sha256": "e5fce8786b90e383f4b7ce21932912e2fdade770c6e3b10f4682eeee5ee657a2"
     }
   ],
   "recovery_item": {
-    "lines": 286,
-    "last": 10000,
+    "lines": 183,
+    "last": 31000,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "654245b44e2a1e2dc2b91dda05546e3ddcbcd0554e339e9146a8c82615585856"
+    "sha256": "1db15217c712789ae331dedf27cb4e2f0738b43758694ff5eea5c97aaa32b1bd"
   },
   "inventory_row": {
     "tape": "16",
     "side": "a",
-    "order": "2",
+    "order": "3",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "Amazing Program and monster game; combined save (inferred title)",
+    "summary": "The Best of the Monster Games; source credit JAB",
     "capture": "tape16a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-    "source_start_s": "137.725",
-    "recovered_bytes": "9704",
-    "source_file": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
+    "source_start_s": "298.577",
+    "recovered_bytes": "8385",
+    "source_file": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
     "wav": "tapes/tape16a.wav",
     "folder": "tapes/recovered/tape16a",
     "recovery_date": "2026-10-28",

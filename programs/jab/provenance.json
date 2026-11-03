@@ -110,6 +110,58 @@
       },
       "recovery_inventory": "tapes/recovered/tape16a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape16a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+      "archive_listing": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+          "archive_path": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+          "bytes": 8385,
+          "sha256": "1db15217c712789ae331dedf27cb4e2f0738b43758694ff5eea5c97aaa32b1bd"
+        },
+        {
+          "path": "versions/v03/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+          "archive_path": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+          "bytes": 10276,
+          "sha256": "e5fce8786b90e383f4b7ce21932912e2fdade770c6e3b10f4682eeee5ee657a2"
+        }
+      ],
+      "recovery_item": {
+        "lines": 183,
+        "last": 31000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "1db15217c712789ae331dedf27cb4e2f0738b43758694ff5eea5c97aaa32b1bd"
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "The Best of the Monster Games; source credit JAB",
+        "capture": "tape16a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "298.577",
+        "recovered_bytes": "8385",
+        "source_file": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+        "wav": "tapes/tape16a.wav",
+        "folder": "tapes/recovered/tape16a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16a/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
