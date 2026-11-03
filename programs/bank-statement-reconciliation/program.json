@@ -1,0 +1,40 @@
+{
+  "id": "bank-statement-reconciliation",
+  "title": "Bank Statement Reconciliation",
+  "description": "Bank Statement Reconciliation. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BANK STATEMENT RECONCILIATION",
+      "capture": "tape15b",
+      "save": 13,
+      "raw": "versions/v01/13-BANK-STATEMENT-RECONCILIATION.BAS",
+      "listing": "versions/v01/13-BANK-STATEMENT-RECONCILIATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/13-BANK-STATEMENT-RECONCILIATION.ASC",
+          "label": "13-BANK-STATEMENT-RECONCILIATION.ASC"
+        },
+        {
+          "path": "versions/v01/13-BANK-STATEMENT-RECONCILIATION.BAS",
+          "label": "13-BANK-STATEMENT-RECONCILIATION.BAS"
+        }
+      ],
+      "startupSource": "2 INPUT\"CODE\";C$:IF C$<>\"558\"THENNEW:'\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018RUN\t\t\t\u0019\u0019\u0019\u0019\u0019RUN\u0019\u0019MAKE SURE\n5 CLS\n7 CLEAR 400\n10 REM CHECK THAT DATES INCREASE AND THAT ALL SYMBOLS ARE LEGAL        AND THAT -X SYMBOLS ONLY HAVE - IN NUMBER AND THAT EBS\n        RECONCILE\n20 DATA   \"+I\",-I,+P,-M,-R,+S,-C,EB\n30 DATA INTEREST,BANK CHARGES,PAY,MISC. WITHDRAW,RENT,STARTING DEPOSIT,CASH WITHDRAW,ENDING BALANCE\n32 DIM M(12):M(8)=31:M(9)=30:M(10)=31:M(11)=30:M(12)=31\n34 FOR M=1TO12:M(M)=M(M)+M(M-1):NEXTM\n40 FOR I=1TO8:READ C1IST$(I):NEXTI:FORI=1TO8:READ C2IST$(I):NEXTI\n50 PRINT\"WHAT DO YOU WANT:  STMT   CHRT  NONE\n60 INPUT A$",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
