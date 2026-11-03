@@ -20,6 +20,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "COMPUTER MATCH UP V2",
+      "capture": "file8b",
+      "save": 14,
+      "raw": "versions/v02/14-COMPUTER-MATCH-UP-V2.BAS",
+      "listing": "versions/v02/14-COMPUTER-MATCH-UP-V2.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }

@@ -1,21 +1,21 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "file8b",
-  "save": 13,
-  "archive_raw": "tapes/recovered/file8b/best/13-COMPUTER-MATCH-UP-EARLY.BAS",
-  "archive_listing": "tapes/recovered/file8b/best/13-COMPUTER-MATCH-UP-EARLY.ASC",
+  "save": 14,
+  "archive_raw": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.BAS",
+  "archive_listing": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/13-COMPUTER-MATCH-UP-EARLY.BAS",
-      "archive_path": "tapes/recovered/file8b/best/13-COMPUTER-MATCH-UP-EARLY.BAS",
+      "path": "versions/v02/14-COMPUTER-MATCH-UP-V2.BAS",
+      "archive_path": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.BAS",
       "bytes": 1131,
-      "sha256": "46667993649cab5b8d96358c1577f88427ab2bd76e91ab478c323789b58d9772"
+      "sha256": "c79760772f4e5de65a6ef4819ac09776d362d70990d8345273e370c23005c4b4"
     },
     {
-      "path": "versions/v01/13-COMPUTER-MATCH-UP-EARLY.ASC",
-      "archive_path": "tapes/recovered/file8b/best/13-COMPUTER-MATCH-UP-EARLY.ASC",
-      "bytes": 1265,
-      "sha256": "b7b32604b992e68b27f8450fbd936fb886cb9cf367df680a7cb92d0a4d4be8fc"
+      "path": "versions/v02/14-COMPUTER-MATCH-UP-V2.ASC",
+      "archive_path": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.ASC",
+      "bytes": 1263,
+      "sha256": "7a7cd4016b4f208b6d27aa9460e747f0b0b91ad34b0172765d3962cd9990aaec"
     }
   ],
   "recovery_item": {
@@ -23,24 +23,24 @@
     "last": 2040,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "46667993649cab5b8d96358c1577f88427ab2bd76e91ab478c323789b58d9772"
+    "sha256": "c79760772f4e5de65a6ef4819ac09776d362d70990d8345273e370c23005c4b4"
   },
   "inventory_row": {
     "tape": "8",
     "side": "b",
-    "order": "13",
+    "order": "14",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "COMPUTER MATCH UP EARLY; 38 lines",
+    "summary": "COMPUTER MATCH UP V2; 38 lines",
     "capture": "file8b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
-    "source_start_s": "464.936",
+    "source_start_s": "500.856",
     "recovered_bytes": "1131",
-    "source_file": "tapes/recovered/file8b/best/13-COMPUTER-MATCH-UP-EARLY.ASC",
+    "source_file": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.ASC",
     "wav": "tapes/file8b.wav",
     "folder": "tapes/recovered/file8b/best",
     "recovery_date": "2026-10-26",

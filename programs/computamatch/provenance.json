@@ -58,6 +58,58 @@
       },
       "recovery_inventory": "tapes/recovered/file8b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "file8b",
+      "save": 14,
+      "archive_raw": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/14-COMPUTER-MATCH-UP-V2.BAS",
+          "archive_path": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.BAS",
+          "bytes": 1131,
+          "sha256": "c79760772f4e5de65a6ef4819ac09776d362d70990d8345273e370c23005c4b4"
+        },
+        {
+          "path": "versions/v02/14-COMPUTER-MATCH-UP-V2.ASC",
+          "archive_path": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.ASC",
+          "bytes": 1263,
+          "sha256": "7a7cd4016b4f208b6d27aa9460e747f0b0b91ad34b0172765d3962cd9990aaec"
+        }
+      ],
+      "recovery_item": {
+        "lines": 38,
+        "last": 2040,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "c79760772f4e5de65a6ef4819ac09776d362d70990d8345273e370c23005c4b4"
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "14",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "COMPUTER MATCH UP V2; 38 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "500.856",
+        "recovered_bytes": "1131",
+        "source_file": "tapes/recovered/file8b/best/14-COMPUTER-MATCH-UP-V2.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
