@@ -1,0 +1,44 @@
+{
+  "id": "fall-assembly",
+  "title": "FALL \u2014 assembly development",
+  "description": "FALL \u2014 assembly development. 6 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Z80 / EDTASM",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "FALL ASSEMBLY V1",
+      "capture": "tape18a",
+      "save": 12,
+      "raw": "versions/v01/12-FALL-ASSEMBLY-V1.ASM",
+      "listing": "versions/v01/12-FALL-ASSEMBLY-V1.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/12-FALL-ASSEMBLY-V1.ASM",
+          "label": "12-FALL-ASSEMBLY-V1.ASM"
+        },
+        {
+          "path": "versions/v01/12-FALL-ASSEMBLY-V1.TXT",
+          "label": "12-FALL-ASSEMBLY-V1.TXT"
+        },
+        {
+          "path": "versions/v01/12-FALL-ASSEMBLY-V1.Z80",
+          "label": "12-FALL-ASSEMBLY-V1.Z80"
+        }
+      ],
+      "startupSource": "00010 \tORG\t7EFFH\n00110 PRCES\tLD\tA,(TST)\n00120 \tLD\tE,127\n00130 \tLD\tD,A\n00140 LUP\tCALL\tFALL\n00150 \tDEC\tE\n00160 \tJP\tP,LUP\n00170 \tDEC\tD\n00180 \tLD\tE,127\n00190 \tJP\tP,LUP\n00200 \tRET\t\t; ALL DONE -- BACK TO BASIC\n00210 FALL\tPUSH\tDE",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

@@ -1,0 +1,73 @@
+{
+  "official_title": "FALL \u2014 assembly development",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "fall_assembly_p9",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape18a",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape18a/best/12-FALL-ASSEMBLY-V1.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/12-FALL-ASSEMBLY-V1.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v01/12-FALL-ASSEMBLY-V1.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/12-FALL-ASSEMBLY-V1.ASM",
+          "bytes": 2637,
+          "sha256": "d3f01fd5629266cad3031d08136d03f058dcfe84abb0b752f251828ada5b6084"
+        },
+        {
+          "path": "versions/v01/12-FALL-ASSEMBLY-V1.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/12-FALL-ASSEMBLY-V1.TXT",
+          "bytes": 2629,
+          "sha256": "73e278baa2bda49bd2ea3977467f8cc65d02a38d0ac40a444fec38900d2a51e5"
+        },
+        {
+          "path": "versions/v01/12-FALL-ASSEMBLY-V1.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/12-FALL-ASSEMBLY-V1.Z80",
+          "bytes": 1867,
+          "sha256": "2b397db1c12963b8b28c21aba4164c9573c5664d85f9230355ad8ca69ecb1900"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "d3f01fd5629266cad3031d08136d03f058dcfe84abb0b752f251828ada5b6084",
+        "bytes": 2637,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "12",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "FALL ASSEMBLY V1",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "412.955",
+        "recovered_bytes": "2637",
+        "source_file": "tapes/recovered/tape18a/best/12-FALL-ASSEMBLY-V1.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
