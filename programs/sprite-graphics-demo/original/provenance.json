@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape11b",
+  "save": 18,
+  "archive_raw": "tapes/recovered/tape11b/best/18-SPRITE-GRAPHICS-DEMO.BAS",
+  "archive_listing": "tapes/recovered/tape11b/best/18-SPRITE-GRAPHICS-DEMO.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/18-SPRITE-GRAPHICS-DEMO.ASC",
+      "archive_path": "tapes/recovered/tape11b/best/18-SPRITE-GRAPHICS-DEMO.ASC",
+      "bytes": 1251,
+      "sha256": "998df2cca9c7d3cf66c6b5507464c24640d71d9be036bc0341b4a01cae1e1cb4"
+    },
+    {
+      "path": "versions/v01/18-SPRITE-GRAPHICS-DEMO.BAS",
+      "archive_path": "tapes/recovered/tape11b/best/18-SPRITE-GRAPHICS-DEMO.BAS",
+      "bytes": 1100,
+      "sha256": "730109205d3affd8b1d871dbddf61ecb28de10771aba0a1b0d319e0ec94cbf54"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "730109205d3affd8b1d871dbddf61ecb28de10771aba0a1b0d319e0ec94cbf54",
+    "bytes": 1100,
+    "archive_validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 35,
+    "last": 700,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1098,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "11",
+    "side": "b",
+    "order": "18",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "SPRITE GRAPHICS DEMO; 35 lines",
+    "capture": "tape11b",
+    "capture_scope": "possible skipped program (tangled tape)",
+    "baud": "500",
+    "platform": "TRS-80 BASIC; extensions may be required",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+    "source_start_s": "700.130",
+    "recovered_bytes": "1100",
+    "source_file": "tapes/recovered/tape11b/best/18-SPRITE-GRAPHICS-DEMO.ASC",
+    "wav": "tapes/tape11b.wav",
+    "folder": "tapes/recovered/tape11b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime; capture may omit another program"
+  },
+  "recovery_inventory": "tapes/recovered/tape11b/best/inventory.json",
+  "execution_tested": false
+}

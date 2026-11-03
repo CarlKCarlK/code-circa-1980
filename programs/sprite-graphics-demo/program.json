@@ -1,0 +1,42 @@
+{
+  "id": "sprite-graphics-demo",
+  "title": "Sprite Graphics Demo",
+  "description": "Sprite Graphics Demo. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extensions may be required",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SPRITE GRAPHICS DEMO",
+      "capture": "tape11b",
+      "save": 18,
+      "raw": "versions/v01/18-SPRITE-GRAPHICS-DEMO.BAS",
+      "listing": "versions/v01/18-SPRITE-GRAPHICS-DEMO.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/18-SPRITE-GRAPHICS-DEMO.ASC",
+          "label": "18-SPRITE-GRAPHICS-DEMO.ASC"
+        },
+        {
+          "path": "versions/v01/18-SPRITE-GRAPHICS-DEMO.BAS",
+          "label": "18-SPRITE-GRAPHICS-DEMO.BAS"
+        }
+      ],
+      "startupSource": "30 CLS\n40 LINE(6,0)-(18,2),SET,BF\n50 RESET(6,2):RESET(7,2):RESET(14,0):RESET(17,0):RESET(18,0):RESET(18,2):LINE(10,2)-(15,2),RESET\n55 DIM T%(30),A%(30),B%(30),C%(30),D%(30),E%(30)\n60 GET@(0,0)-(18,2),G,T%\n100 CLS\n105 INPUT\"SET TIME :\";TM\n107 CLS\n110 LINE(0,15)-(35,25),SET,BF\n120 LINE(127,15)-(82,25),SET,BF\n130 LINE(35,15)-(82,15),SET:'CROSS\n140 LINE(51,15)-(52,25),SET,B:'LEFT SUPPORT",
+      "controlSource": [
+        "200 A$=INKEY$:IFA$=\"B\"THEN 500"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
