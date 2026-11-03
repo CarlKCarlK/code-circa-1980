@@ -1,0 +1,40 @@
+{
+  "id": "cryptogram",
+  "title": "Cryptogram",
+  "description": "Cryptogram. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CRYPTOGRAM V1",
+      "capture": "tape19a",
+      "save": 7,
+      "raw": "versions/v01/07-CRYPTOGRAM-V1.BAS",
+      "listing": "versions/v01/07-CRYPTOGRAM-V1.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/07-CRYPTOGRAM-V1.ASC",
+          "label": "07-CRYPTOGRAM-V1.ASC"
+        },
+        {
+          "path": "versions/v01/07-CRYPTOGRAM-V1.BAS",
+          "label": "07-CRYPTOGRAM-V1.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR 5000:CLS\n7 DIM E(26):READ C$:FORI=1TO26:E(I)=ASC( MID$(C$,I,1) )-64 :NEXT I\n10 READ C$\n15 DIM C(26),D(26)\n20 FOR T=ASC(\"A\") TO ASC(\"Z\")\n25 Z$=\" \"+CHR$(T)+\" \"\n30 FOR I=1TOLEN(C$)\n40 IF MID$(C$,I,1)=CHR$(T) THEN C(T-64)=C(T-64)+1\n45 PRINT@I,MID$(C$,I,1);Z$;\n50 NEXT I\n65 D(T-64)=T-64:PRINTC(T-64);\n70 NEXT T",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
