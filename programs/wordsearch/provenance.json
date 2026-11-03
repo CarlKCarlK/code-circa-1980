@@ -109,8 +109,14 @@
     "verification": "verification/corrected-full-rom-run.json",
     "browser_capture": {
       "path": "programs/wordsearch/verification/corrected-screen.png",
-      "sha256": "249a9d960f4c028a70dbe664d94c013bf7c255bd4d4c8109b914e72dfa1c2b50",
+      "sha256": "6e6812aa588d3149a76005962347545bbd8cc6d970bcd05cb72b13794b2fad47",
       "description": "Corrected payload in the real-ROM browser player; the original execution capture is retained separately."
-    }
+    },
+    "checks": [
+      "Reproducible bytes and exactly four changed record bodies",
+      "Actual-ROM long-to-short word field clearing preserves counter and grid",
+      "Browser observes HOWIE followed by 35 spaces",
+      "Full corrected-ROM generation, corrected word list, and identical-grid redraw"
+    ]
   }
 }

@@ -31,7 +31,7 @@ The original full-ROM run above remains evidence for the unmodified payload.
 The corrected full-ROM result is recorded separately in
 verification/corrected-full-rom-run.json.
 
-The corrected payload completed in 15,883.98 emulated seconds (226.34 wall
+The final corrected payload completed in 15,923.36 emulated seconds (230.19 wall
 seconds in the direct-ROM harness). Its included-word display contains
 DISCUSSION and no DISSCUSSION, the redraw prompt says REPRINT, and a second
 Space redraws the identical 225-letter grid. This measures the harness run,
@@ -46,3 +46,9 @@ previous words. The actual-ROM regression prints PARTICIPATE, ARTIST, then FILM
 and verifies all 36 trailing positions are spaces, the position counter at
 column 40 is unchanged, and the grid is untouched. The browser regression checks
 HOWIE followed by 35 spaces during the real generator.
+
+Final verification: all 123 browser cases passed (5.7 minutes), including the
+shorter-word field, frozen Word Search v1, and Space Colony’s absent gallery,
+route, and build output. All 19 unit-test files, production build, and 41 active
+release manifests pass. All 133 recovered snapshots and five damaged-recording
+exports/prefixes remain verified. Changes are local and unpublished.

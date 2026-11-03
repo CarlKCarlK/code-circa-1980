@@ -3,14 +3,14 @@
 Requested November 2, 2026. AIM joins SPI under one investing gallery entry.
 Their separate original algorithms, source histories, default captures, and
 canonical tags remain intact. AIM has no second gallery card; the player selector
-opens either program directly. More has 27 entries; the main gallery stays at six.
+opens either program directly. More now has 26 entries after Space Colony’s withdrawal; the main gallery stays at six.
 
 | Source collection | Complete captures | Selected source |
 |---|---:|---|
 | AIM | 4 | tape20b save 12 (v04) |
 | Keyword Cipher | 1 | tape21b save 2, separately corrected derivative |
 | Word Search | 1 | tape4a save 7, full original generator/list |
-| Space Colony | 2 | tape14a save 3 (v02); recovered King remains source only |
+| Space Colony (withdrawn) | 2 | Source archive only; retired player retained outside public/ |
 | Computa-Match | 4 | file8b save 16 (v04) |
 
 Two damaged AIM fragments and three damaged Space Colony captures remain source
@@ -53,10 +53,31 @@ files, including ROM cipher round trips and the SPI/AIM relationship invariant.
 Production build and all 42 active release hash manifests pass.
 
 Source defaults: AIM tape20b save 12; Cipher tape21b save 2 with five documented
-record changes; Word Search tape4a save 7 unmodified; Space Colony tape14a save 3;
+record changes; Word Search tape4a save 7 with a separate corrected playable copy; retired Space Colony tape14a save 3;
 Computa-Match file8b save 16 unmodified. Old sample data is retained as historical
 sample data. No quarantined source was imported and no inventory was rewritten.
 
 The full browser suite passed all 124 cases in 5.7 minutes, including the
 SPI/AIM selector in development and frozen v1, the four new players, direct
 release navigation, mobile gallery layout, pause, and restart.
+
+
+## Subsequent corrections and withdrawal
+
+Word Search’s playable copy corrects DISCUSSION, REPRINT, and SOLVENT (in the
+unused chemistry list). A fourth record change pads the current-word status
+field to 40 columns so shorter words erase previous suffixes while preserving
+the position counter. Recovered source bytes remain unchanged. The actual-ROM
+regression checks successive long-to-short labels, untouched counter/grid,
+and a browser check observes HOWIE followed by 35 spaces. It remains web v1.
+
+Space Colony was withdrawn at the user’s request because it adapts a published
+game. Its sources, credits, and retired unshared v1 remain archived; the current
+site has no gallery card, playable route, public release, or source download for
+it. More now has 26 cards and 41 active release manifests.
+
+Final verification: all 123 browser cases passed (5.7 minutes), including the
+shorter-word field, frozen Word Search v1, and Space Colony’s absent gallery,
+route, and build output. All 19 unit-test files, production build, and 41 active
+release manifests pass. All 133 recovered snapshots and five damaged-recording
+exports/prefixes remain verified. Changes are local and unpublished.

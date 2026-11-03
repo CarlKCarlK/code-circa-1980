@@ -98,5 +98,19 @@
       "Space displays the included words, including UNITONE",
       "A second Space redraws the exact same grid"
     ]
+  },
+  "playable_derivative": {
+    "source": "versions/v01/07-WORD-SEARCH.BAS",
+    "payload": "corrected/WORDSEARCH.BAS",
+    "sha256": "a86ab7c19ba6fbb967c197604b03e951634298c0dcb07e491795a1310190e9d2",
+    "manifest": "corrected/changes.json",
+    "method": "app/scripts/build-wordsearch-corrected.mjs",
+    "scope": "Three spelling corrections plus current-word field padding in lines 1065, 1330, 2000, 3000. Recovered originals unchanged.",
+    "verification": "verification/corrected-full-rom-run.json",
+    "browser_capture": {
+      "path": "programs/wordsearch/verification/corrected-screen.png",
+      "sha256": "249a9d960f4c028a70dbe664d94c013bf7c255bd4d4c8109b914e72dfa1c2b50",
+      "description": "Corrected payload in the real-ROM browser player; the original execution capture is retained separately."
+    }
   }
 }
