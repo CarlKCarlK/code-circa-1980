@@ -1,0 +1,51 @@
+{
+  "id": "baseball",
+  "title": "Baseball",
+  "description": "Baseball. 5 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BASEBALL DAMAGED SAVE",
+      "capture": "tape25b",
+      "save": 7,
+      "raw": "versions/v01/07-BASEBALL-DAMAGED-SAVE-PREFIX.BIN",
+      "listing": "versions/v01/07-BASEBALL-DAMAGED-SAVE-PREFIX.ASC",
+      "playable": false,
+      "note": "truncated; valid prefix only; runtime untested. Truncated; untouched valid prefix [0,2883); 69 lines; pointer base 22204; cross-channel confirmed [0,2883); no synthetic end marker",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-PREFIX.ASC",
+          "label": "07-BASEBALL-DAMAGED-SAVE-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-PREFIX.BIN",
+          "label": "07-BASEBALL-DAMAGED-SAVE-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-RAW.BAS",
+          "label": "07-BASEBALL-DAMAGED-SAVE-RAW.BAS"
+        },
+        {
+          "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-UNCERTAIN.ASC",
+          "label": "07-BASEBALL-DAMAGED-SAVE-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 'BASEBALL\n15 PI=-3.14159\n16 IN=1:QW=1\n17 TT=1\n18 BA=PI+PI/2\n20 CLS\n25 R=-7\n26 RX=64:RY=31:RO=64:RN=31\n30 LINE(3,1)-(5,4),SET,BF:LINE(1,2)-(7,3),SET,BF:RESET(2,3):RESET(6,3):RESET(4,4)\n40 DIMP%(20)\n42 GET@(0,0)-(8,5),G,P%\n45 RESET(7,3):SET(7,1):DIMO%(15):GET@(0,0)-(8,5),G,O%",
+      "controlSource": [
+        "200 A$=INKEY$",
+        "2015 A$=INKEY$:IFA$=\"\"THEN2020ELSEIFA$=\"@\"THENO=-1ELSEIFA$=CHR$(8)THENO=0ELSEIFA$=CHR$(9)THENO=1"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

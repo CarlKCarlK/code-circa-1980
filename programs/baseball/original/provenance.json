@@ -1,0 +1,65 @@
+{
+  "version": "v01",
+  "capture": "tape25b",
+  "save": 7,
+  "archive_raw": "tapes/recovered/tape25b/partial/07-BASEBALL-DAMAGED-SAVE-PREFIX.BIN",
+  "archive_listing": "tapes/recovered/tape25b/partial/07-BASEBALL-DAMAGED-SAVE-PREFIX.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape25b/partial/07-BASEBALL-DAMAGED-SAVE-PREFIX.ASC",
+      "bytes": 3450,
+      "sha256": "2ddbfa6ade78dc7401e77950b776bfd0e974d822e6f5345b042205778b389920"
+    },
+    {
+      "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape25b/partial/07-BASEBALL-DAMAGED-SAVE-PREFIX.BIN",
+      "bytes": 2883,
+      "sha256": "d80909a9eb81813466157306c14d2358a93602cbd5c4f719f307ff0c392bc127"
+    },
+    {
+      "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-RAW.BAS",
+      "archive_path": "tapes/recovered/tape25b/partial/07-BASEBALL-DAMAGED-SAVE-RAW.BAS",
+      "bytes": 2969,
+      "sha256": "8dc938ff10270bb362d2ada60ef2c6ab582b7be9b483af23f085425ffbb1e425"
+    },
+    {
+      "path": "versions/v01/07-BASEBALL-DAMAGED-SAVE-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape25b/partial/07-BASEBALL-DAMAGED-SAVE-UNCERTAIN.ASC",
+      "bytes": 3608,
+      "sha256": "744ac6e51e21dfd079679a48e89146a8f97eec6cb6502b78021abc08d33bfebd"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "d80909a9eb81813466157306c14d2358a93602cbd5c4f719f307ff0c392bc127",
+    "bytes": 2883,
+    "archive_validation": "Truncated; untouched valid prefix [0,2883); 69 lines; pointer base 22204; cross-channel confirmed [0,2883); no synthetic end marker",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "25",
+    "side": "b",
+    "order": "7",
+    "type": "BASIC",
+    "recovery%": "",
+    "summary": "BASEBALL DAMAGED SAVE",
+    "capture": "tape25b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC family",
+    "status": "truncated; valid prefix only; runtime untested",
+    "validation": "Truncated; untouched valid prefix [0,2883); 69 lines; pointer base 22204; cross-channel confirmed [0,2883); no synthetic end marker",
+    "source_start_s": "830.595",
+    "recovered_bytes": "2969",
+    "source_file": "tapes/recovered/tape25b/partial/07-BASEBALL-DAMAGED-SAVE-PREFIX.ASC",
+    "wav": "tapes/tape25b.wav",
+    "folder": "tapes/recovered/tape25b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Better capture/source may improve truncated stream; see report"
+  },
+  "recovery_inventory": "tapes/recovered/tape25b/inventory.json",
+  "execution_tested": false
+}
