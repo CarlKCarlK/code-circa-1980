@@ -1,0 +1,74 @@
+{
+  "official_title": "Hi Mom Print Loop",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "hi_mom_print_loop_p142",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape16b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape16b/best/01-HI-MOM.BAS",
+      "archive_listing": "tapes/recovered/tape16b/best/01-HI-MOM.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-HI-MOM.ASC",
+          "archive_path": "tapes/recovered/tape16b/best/01-HI-MOM.ASC",
+          "bytes": 27,
+          "sha256": "cc223d2dc5b6d430e6980246d4598bb6b1f5532a20647fb34921e23bba383ed9"
+        },
+        {
+          "path": "versions/v01/01-HI-MOM.BAS",
+          "archive_path": "tapes/recovered/tape16b/best/01-HI-MOM.BAS",
+          "bytes": 28,
+          "sha256": "6ace281d9d9c172e4edf77e76f77d825c6f8858883b5c37272d0b59fb12ab001"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "6ace281d9d9c172e4edf77e76f77d825c6f8858883b5c37272d0b59fb12ab001",
+        "bytes": 28,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 2,
+        "last": 20,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 26,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "HI MOM print loop",
+        "capture": "tape16b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "14.501",
+        "recovered_bytes": "28",
+        "source_file": "tapes/recovered/tape16b/best/01-HI-MOM.ASC",
+        "wav": "tapes/tape16b.wav",
+        "folder": "tapes/recovered/tape16b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
