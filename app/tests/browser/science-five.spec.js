@@ -28,7 +28,7 @@ test('Nuclear Equation Completer handles syntax help and missing helium',async({
  test.setTimeout(70000);await boot(page,'nuclear');await answer(page,'TYPE PROBLEM','H!');await expect.poll(()=>screen(page)).toContain('SPECIAL SYSMBLES');await answer(page,'TYPE PROBLEM','U238=TH234+');await expect.poll(()=>screen(page)).toMatch(/2\s*:\s*HE\s*:\s*4/);await capture(page,'nuclear');await noError(page);await expect(page.getByRole('link',{name:'Damaged save: verified prefix listing',exact:true})).toBeVisible();await restart(page,'TYPE PROBLEM');
 });
 test('John’s Circle draws a circle and a second ellipse',async({page})=>{
- test.setTimeout(70000);await boot(page,'johnscircle');await answer(page,'?','40,20');await expect.poll(()=>graphics(page),{timeout:15000}).toBeGreaterThan(20);await page.waitForTimeout(2500);const before=await snapshot(page);await tap(page,'Enter');await answer(page,'?','50,10');await page.waitForTimeout(2500);expect(await snapshot(page)).not.toEqual(before);await capture(page,'johnscircle');await noError(page);await restart(page,'?');
+ test.setTimeout(70000);await boot(page,'johnscircle');await expect.poll(()=>screen(page),{timeout:20000}).toMatch(/^\?/);await answer(page,'?','40,20');await expect.poll(()=>graphics(page),{timeout:15000}).toBeGreaterThan(20);await page.waitForTimeout(2500);const before=await snapshot(page);await tap(page,'Enter');await answer(page,'?','50,10');await page.waitForTimeout(2500);expect(await snapshot(page)).not.toEqual(before);await capture(page,'johnscircle');await noError(page);await restart(page,'?');
 });
 
 test('More has thirty-four cards with readable artwork and direct new player links',async({page})=>{
