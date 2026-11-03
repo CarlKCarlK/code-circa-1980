@@ -1,0 +1,40 @@
+{
+  "id": "chemistry-calculations",
+  "title": "Chemistry Calculations",
+  "description": "Chemistry Calculations. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CHEMISTRY CALCULATIONS",
+      "capture": "tape4a",
+      "save": 3,
+      "raw": "versions/v01/03-CHEMISTRY-CALCULATIONS.BAS",
+      "listing": "versions/v01/03-CHEMISTRY-CALCULATIONS.ASC",
+      "playable": false,
+      "note": "validated payload. 21 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-CHEMISTRY-CALCULATIONS.ASC",
+          "label": "03-CHEMISTRY-CALCULATIONS.ASC"
+        },
+        {
+          "path": "versions/v01/03-CHEMISTRY-CALCULATIONS.BAS",
+          "label": "03-CHEMISTRY-CALCULATIONS.BAS"
+        }
+      ],
+      "startupSource": "0 GOTO 10\n1 S(1)=S(1)+2D-16\n2 PRINTS(1),\n3 GOTO 1\n10 DEFDBL A-H,J-Z\n20 FOR I=1TO2:READ C(I),CM(I),CP(I):NEXTI\n30 FOR I=1TO2\n40 M(I)=CM(I)-C(I)\n50 S(I)=CP(I)-CM(I)\n60 SW=32.06\n70 SM(I)=S(I)/SW\n80 MG(I)=M(I)/SM(I)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
