@@ -1,0 +1,74 @@
+{
+  "official_title": "Coordinate Graphics",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "coordinate_graphics_p249",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape4b",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape4b/best/04-COORDINATE-GRAPHICS.BAS",
+      "archive_listing": "tapes/recovered/tape4b/best/04-COORDINATE-GRAPHICS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/04-COORDINATE-GRAPHICS.ASC",
+          "archive_path": "tapes/recovered/tape4b/best/04-COORDINATE-GRAPHICS.ASC",
+          "bytes": 704,
+          "sha256": "3f90d28471f13e73e33bf67a41ac80e18a207be0647d72f789b3996c5e9448a9"
+        },
+        {
+          "path": "versions/v01/04-COORDINATE-GRAPHICS.BAS",
+          "archive_path": "tapes/recovered/tape4b/best/04-COORDINATE-GRAPHICS.BAS",
+          "bytes": 612,
+          "sha256": "53a9e99217220526c5cfdd47f2e7994b94c12c9862340b92d226f884b8dd33f7"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "53a9e99217220526c5cfdd47f2e7994b94c12c9862340b92d226f884b8dd33f7",
+        "bytes": 612,
+        "archive_validation": "18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 18,
+        "last": 180,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 610,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "4",
+        "side": "b",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "COORDINATE GRAPHICS; 18 lines; T3-C1",
+        "capture": "tape4b",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extended features",
+        "status": "validated payload; runtime untested",
+        "validation": "18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "612",
+        "source_file": "tapes/recovered/tape4b/best/04-COORDINATE-GRAPHICS.ASC",
+        "wav": "tapes/tape4b.wav",
+        "folder": "tapes/recovered/tape4b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Identify compatible extended BASIC for DEF FN, LINE graphics"
+      },
+      "recovery_inventory": "tapes/recovered/tape4b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

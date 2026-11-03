@@ -1,0 +1,42 @@
+{
+  "id": "coordinate-graphics",
+  "title": "Coordinate Graphics",
+  "description": "Coordinate Graphics. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extended features",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "COORDINATE GRAPHICS",
+      "capture": "tape4b",
+      "save": 4,
+      "raw": "versions/v01/04-COORDINATE-GRAPHICS.BAS",
+      "listing": "versions/v01/04-COORDINATE-GRAPHICS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/04-COORDINATE-GRAPHICS.ASC",
+          "label": "04-COORDINATE-GRAPHICS.ASC"
+        },
+        {
+          "path": "versions/v01/04-COORDINATE-GRAPHICS.BAS",
+          "label": "04-COORDINATE-GRAPHICS.BAS"
+        }
+      ],
+      "startupSource": "10 DEFFNO(M,Y)=SGN(M/2-ABS(M/2-Y))\n20 DEFFNX(S,Y,L)=Y/S-L/2/S+L/2\n30 DEF FNY(S,X,Y)=S*X-S*Y/2+Y/2\n40 DEFFNS(X1,Y1,X2,Y2)=(Y1-Y2)/(X1-X2)\n50 CLS\n60 YY=24:XX=20\n70 YL=45\n80 XR=2\n90 FORC=1TO4:READF,H:X(C)=YL*F:Y(C)=YL*H:NEXT\n100 DATA1,0,0,0,0,1,1,1\n110 A$=INKEY$:IFA$=\"Z\"THENAA=-1ELSEIFA$=\"X\"THENAA=0ELSEIFA$=\"C\"THENAA=1ELSEIFA$=\",\"THENBB=-1ELSEIFA$=\".\"THENBB=0ELSEIFA$=\"/\"THENBB=1\n120 XX=XX+AA/100*YL:YY=YY+BB/100*YL",
+      "controlSource": [
+        "110 A$=INKEY$:IFA$=\"Z\"THENAA=-1ELSEIFA$=\"X\"THENAA=0ELSEIFA$=\"C\"THENAA=1ELSEIFA$=\",\"THENBB=-1ELSEIFA$=\".\"THENBB=0ELSEIFA$=\"/\"THENBB=1"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
