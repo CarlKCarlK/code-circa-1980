@@ -1,6 +1,91 @@
 Derived memory strings; addresses from original block load addresses. No runtime test.
-4401: SARGON
-440B: SARGON
-441F: >*2><2?<
-447D: >*2><
-44AA: >*2><
+4C32: P*,P:5P
+4C3F: J",P:0P
+4D0B: 2hP:gP2iP:6P
+4D18: KN:SP
+4D36: w:SP!6P
+4E06: "QP"TP"
+4E0E: P!pP"VP
+4E23: T"*P"$P
+4E3B: a**P"
+4E64: (/*TP
+4ED7: R"TP:%P
+4EE1: *&P"$P*$P*$P"
+4EF2: P"*P:fP
+500A: vvAQAQ=QNQ
+5028: _TdT&J
+50D5: U6UlV%W
+50F2: E7-E5
+5302: " "!"
+5310: Q\TRTST_]TV`^WXaWUXaSUL
+5328: _]VU`^UWX```````````XW`
+5390: [[\]]^^^^____`bb`abb^^^^^^____``bbbbbbbabbaaaaa
+53E8: UUU_UUUU_MMJM@^LLL^^LIJ+
+609C: (!!2P
+613F: P_:4P
+6158: w+w"(P
+61B6: *(P**P"(P
+61C6: w#w#:
+61CC: Pw#s#
+61D2: w#"*P
+61E4: P##s#r#"
+6331: (`g:2P
+635C: !OP~5
+6383: !PP~4!
+65A8: !PPF!
+662D: *QP#|
+663C: !;Pw,
+6647: "d:OP
+6670: _:2P!1P
+667A: { !!>P
+66A4: ~s!@P
+66C1: 2@P:8P
+66CC: Qg:@P!>P
+66FD: Gg:CP
+6703: Gg:DP
+6885: ^gy2HP
+69B1: tGJ:NPW
+69CF: G:EP!MP
+6A05: * P##~2
+6A5A: /j!MP
+6A69: /j* P
+6A74: j* P##~2
+6AD8: zj*QP
+6AE7: *&P"$P
+6B28: D!EPG
+6B4D: `iN#Fr+s
+6B80: ck:1P!MP
+6B9E: 2DP2:P!
+6BB7: &M^#Vz
+6BD7: k:7P!6P
+6BE0: gl!1P>
+6C06: ""P!7P4
+6C0E: 2:P*VP##"VP
+6C31: l:7P_
+6C68: .m:7P!SP
+6C84: [<P!:P
+6D09: C$P^#V
+6D29: :6P!S:6P!SP
+6D35: 0(:EP
+6D64: S<P:1P
+6D7C: 28P2EP2FP
+6DE7: !5P5*"P++""P!7P5*
+6DF9: P+V+^
+6DFF: S*P+V+^"
+6E0A: S P*VP++"VP
+6E26: :SP!6P
+6E73: u*$P:hP2fP:iP2gP
+6ECA: ****** SARGON-II ******SELECT OPTIONSNEW GAME OR CHANGE BOARD? (G,C):(G,C,X):YOUR COLOR? (B,W):LEVEL OF PLAY? (0-6):COLOR TO MOVE NEXT? (B,W):MOVE NUMBER? (NN): SARGON PLAYER                2   
+6F99:  CHECKMATEIN 2STALEMATEKQRBNP O-O O-O-OPXPEPINVALID MOVETRY AGAIN1
+6FEA: -v:1P!0P
+7022: jo!qo:0P
+70B7: 21P29P<25P
+70E2: ou!SP6
+7105: $u*$P" P
+7121: -f:=P
+7170: ^r:1P
+724B: -f:=P
+725E: :0P!MP
+74DE: o:5PW
+7524: :EP!0P
+7698: NpBY DAN AND KATHE SPRACKLENCOPYRIGHT (C) 1979, HAYDEN BOOK COMPANY, INC.

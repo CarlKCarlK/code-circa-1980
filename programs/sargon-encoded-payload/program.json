@@ -46,6 +46,42 @@
       ],
       "startupSource": "Derived memory strings; addresses from original block load addresses. No runtime test.\n4401: SARGON\n440B: SARGON\n441F: >*2><2?<\n447D: >*2><\n44AA: >*2><",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "SARGON II \u2014 encoded chess program, Hayden, 1979",
+      "capture": "tape28b",
+      "save": 2,
+      "raw": "versions/v02/02-SARGON-ENCODED-PAYLOAD.BIN",
+      "listing": "versions/v02/02-SARGON-ENCODED-PAYLOAD-STRINGS.TXT",
+      "playable": false,
+      "note": "validated captured payload; runtime untested. Exact independent left/right bytes; 45 block checksums valid; full framing and transfer address; A5 sync and trailing zero explicitly retained; loader-derived XOR interpretation",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/02-SARGON-ENCODED-PAYLOAD-MEMORY.BIN",
+          "label": "02-SARGON-ENCODED-PAYLOAD-MEMORY.BIN"
+        },
+        {
+          "path": "versions/v02/02-SARGON-ENCODED-PAYLOAD-STRINGS.TXT",
+          "label": "02-SARGON-ENCODED-PAYLOAD-STRINGS.TXT"
+        },
+        {
+          "path": "versions/v02/02-SARGON-ENCODED-PAYLOAD.ASM",
+          "label": "02-SARGON-ENCODED-PAYLOAD.ASM"
+        },
+        {
+          "path": "versions/v02/02-SARGON-ENCODED-PAYLOAD-RECORDS.TXT",
+          "label": "02-SARGON-ENCODED-PAYLOAD-RECORDS.TXT"
+        },
+        {
+          "path": "versions/v02/02-SARGON-ENCODED-PAYLOAD.BIN",
+          "label": "02-SARGON-ENCODED-PAYLOAD.BIN"
+        }
+      ],
+      "startupSource": "Derived memory strings; addresses from original block load addresses. No runtime test.\n4C32: P*,P:5P\n4C3F: J\",P:0P\n4D0B: 2hP:gP2iP:6P\n4D18: KN:SP\n4D36: w:SP!6P\n4E06: \"QP\"TP\"\n4E0E: P!pP\"VP\n4E23: T\"*P\"$P\n4E3B: a**P\"\n4E64: (/*TP\n4ED7: R\"TP:%P",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
