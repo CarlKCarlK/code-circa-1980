@@ -1,0 +1,43 @@
+{
+  "id": "starr-wars",
+  "title": "Starr Wars",
+  "description": "Starr Wars. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "STAR WAY REPEAT",
+      "capture": "tape14a",
+      "save": 4,
+      "raw": "versions/v01/04-STAR-WAY-REPEAT.BAS",
+      "listing": "versions/v01/04-STAR-WAY-REPEAT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-STAR-WAY-REPEAT.ASC",
+          "label": "04-STAR-WAY-REPEAT.ASC"
+        },
+        {
+          "path": "versions/v01/04-STAR-WAY-REPEAT.BAS",
+          "label": "04-STAR-WAY-REPEAT.BAS"
+        }
+      ],
+      "startupSource": "1 'STAR WAY         BY CARL KADIE (C) 1979\n5 CLEAR1000\n7 CLS:GOTO1000\n8 '\n10 S$=CHR$(183)+\" \"+CHR$(140)+\" \"+CHR$(187)\n15 D$=\"<=O=>\"\n20 CLS\n30 EX=.9:EY=2\n40 XG=EX:YG=EY\n50 PRINT@967,\"ESCAPED  0\";\n60 ET=50000:PRINT@1003,\"ENERGY \";ET;:PRINT@980,\"DESTROYED  0\";\n70 F=1",
+      "controlSource": [
+        "205 A$=INKEY$:IFA$=\"D\"ORA$=\"L\"THENXX=1:YY=0ELSEIFA$=\"F\"ORA$=\";\"THENXX=-1:YY=0ELSEIFA$=\"A\"ORA$=\"J\"THENXX=0:YY=1ELSEIFA$=\"S\"ORA$=\"K\"THENXX=0:YY=-1ELSEIFA$=\"G\"ORA$=\"H\"THENXX=0:YY=0",
+        "2000 IFINKEY$=\"\"THEN2000ELSECLS:GOTO1000"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
