@@ -64,6 +64,65 @@
       },
       "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape18a",
+      "save": 15,
+      "archive_raw": "tapes/recovered/tape18a/best/15-FALL-ASSEMBLY-V2.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/15-FALL-ASSEMBLY-V2.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v02/15-FALL-ASSEMBLY-V2.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/15-FALL-ASSEMBLY-V2.ASM",
+          "bytes": 2729,
+          "sha256": "8debaee48807c5c30ab7d051ee62276ab1ac7b74d9d2fe08879b9540cbccba47"
+        },
+        {
+          "path": "versions/v02/15-FALL-ASSEMBLY-V2.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/15-FALL-ASSEMBLY-V2.TXT",
+          "bytes": 2721,
+          "sha256": "d440f6c36c310ce5bad703484b1989613da2aa8275e5a8579bb461cc0ca100f9"
+        },
+        {
+          "path": "versions/v02/15-FALL-ASSEMBLY-V2.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/15-FALL-ASSEMBLY-V2.Z80",
+          "bytes": 1923,
+          "sha256": "867b08ae5d0848dcddd7173c10f25135db695c467976f232aac590c3c1b6e752"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "8debaee48807c5c30ab7d051ee62276ab1ac7b74d9d2fe08879b9540cbccba47",
+        "bytes": 2729,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "15",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "FALL ASSEMBLY V2",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "541.336",
+        "recovered_bytes": "2729",
+        "source_file": "tapes/recovered/tape18a/best/15-FALL-ASSEMBLY-V2.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
