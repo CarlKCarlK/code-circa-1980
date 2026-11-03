@@ -1,0 +1,67 @@
+{
+  "official_title": "Keyword Cipher",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "cipher",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "One complete captured source. The source credits code from BASIC PROGRAMMING modified by C.M. Kadie for the TRS-80; the exact book edition and date are not established.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape21b/best/02-KEYWORD-CIPHER.BAS",
+      "archive_listing": "tapes/recovered/tape21b/best/02-KEYWORD-CIPHER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-KEYWORD-CIPHER.BAS",
+          "archive_path": "tapes/recovered/tape21b/best/02-KEYWORD-CIPHER.BAS",
+          "bytes": 704,
+          "sha256": "77c0c604cfd071fd4c6c2ca7e9979a5375c1758ad60a521102e7bb717e5b41f0"
+        },
+        {
+          "path": "versions/v01/02-KEYWORD-CIPHER.ASC",
+          "archive_path": "tapes/recovered/tape21b/best/02-KEYWORD-CIPHER.ASC",
+          "bytes": 839,
+          "sha256": "a20d002aa6d1aca079ad648467c1ad2e5ecb50127835e652d98adbb94c16ce8b"
+        }
+      ],
+      "recovery_item": {
+        "lines": 43,
+        "last": 5100,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "77c0c604cfd071fd4c6c2ca7e9979a5375c1758ad60a521102e7bb717e5b41f0"
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "KEYWORD CIPHER",
+        "capture": "tape21b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "20.800",
+        "recovered_bytes": "704",
+        "source_file": "tapes/recovered/tape21b/best/02-KEYWORD-CIPHER.ASC",
+        "wav": "tapes/tape21b.wav",
+        "folder": "tapes/recovered/tape21b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  }
+}

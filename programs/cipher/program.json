@@ -1,0 +1,26 @@
+{
+  "id": "cipher",
+  "title": "Keyword Cipher",
+  "description": "Encode and decode messages with a keyword in a historical book-code adaptation.",
+  "kind": "Puzzle",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "One complete captured source. The source credits code from BASIC PROGRAMMING modified by C.M. Kadie for the TRS-80; the exact book edition and date are not established.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "KEYWORD CIPHER",
+      "capture": "tape21b",
+      "save": 2,
+      "raw": "versions/v01/02-KEYWORD-CIPHER.BAS",
+      "listing": "versions/v01/02-KEYWORD-CIPHER.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": null
+    }
+  ]
+}
