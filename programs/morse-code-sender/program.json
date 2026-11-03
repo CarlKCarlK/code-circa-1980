@@ -1,0 +1,43 @@
+{
+  "id": "morse-code-sender",
+  "title": "Morse Code Sender",
+  "description": "Morse Code Sender. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MORSE CODE SENDER",
+      "capture": "tape6a",
+      "save": 6,
+      "raw": "versions/v01/06-MORSE-CODE-SENDER.BAS",
+      "listing": "versions/v01/06-MORSE-CODE-SENDER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 36 consistent pointers; normal end marker; matches 5 decoding variants; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-MORSE-CODE-SENDER.ASC",
+          "label": "06-MORSE-CODE-SENDER.ASC"
+        },
+        {
+          "path": "versions/v01/06-MORSE-CODE-SENDER.BAS",
+          "label": "06-MORSE-CODE-SENDER.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR1000\n6 GOSUB2000\n10 CLS\n20 PRINT\"THIS IS A MORSE CODE SENDER\"\n30 PRINT:INPUT\"HOW FAST DO YOU WANT IT (0=SUPER FAST - 100 VERY SLOW)\";SP\n40 INPUT\"DO YOU WANT IT TO SEND ONE LETTER AT A TIME\";A$\n50 IFA$=\"YES\"THEN 200\n60 CLS:INPUT\"WHAT IS YOUR MESSAGE\";M$\n70 FORX1=1TOLEN(M$):A$=MID$(M$,X1,1)\n75 FOR R3=1TOSP\n80 GOSUB1000\n90 NEXTX1",
+      "controlSource": [
+        "100 FORX=1TO200:NEXT:IFINKEY$=\"\"THEN 70ELSE30",
+        "210 A$=INKEY$"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
