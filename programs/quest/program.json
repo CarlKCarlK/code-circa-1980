@@ -130,6 +130,32 @@
       ],
       "startupSource": "10     ' QUEST           A TINY ADVENTURE FROM BYTE JULY 1979 \n20 '                    VOL 4   #7\n100 DEFINT A-Z\n110 CLS\n120 PRINTTAB(20),\"QUEST\"\n130 PRINT\n140 PRINT\"YOU WERE WALKING THROUGH THE\"\n150 PRINT\"WOODS, AND YOU CAME ACROSS THE ENTRANCE\"\n160 PRINT\"OF A CAVE, COVERED WITH BRUSH.\"\n170 PRINT\n180 PRINT\"PEOPLE SAY THAT MANY YEARS AGO A\"\n190 PRINT\"PIRATE HID HIS TREASURE IN THESE\"",
       "controlSource": []
+    },
+    {
+      "id": "v06",
+      "label": "QUEST SAVE06",
+      "capture": "tape25b",
+      "save": 6,
+      "raw": "versions/v06/06-QUEST-SAVE06.BAS",
+      "listing": "versions/v06/06-QUEST-SAVE06.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v06/06-QUEST-SAVE06.ASC",
+          "label": "06-QUEST-SAVE06.ASC"
+        },
+        {
+          "path": "versions/v06/06-QUEST-SAVE06.BAS",
+          "label": "06-QUEST-SAVE06.BAS"
+        }
+      ],
+      "startupSource": "10     ' QUEST           A TINY ADVENTURE FROM BYTE JULY 1979 \n20 '                    VOL 4   #7\n100 DEFINT A-Z\n110 CLS\n120 PRINTTAB(20),\"QUEST\"\n130 PRINT\n140 PRINT\"YOU WERE WALKING THROUGH THE\"\n150 PRINT\"WOODS, AND YOU CAME ACROSS THE ENTRANCE\"\n160 PRINT\"OF A CAVE, COVERED WITH BRUSH.\"\n170 PRINT\n180 PRINT\"PEOPLE SAY THAT MANY YEARS AGO A\"\n190 PRINT\"PIRATE HID HIS TREASURE IN THESE\"",
+      "controlSource": [
+        "10025 IF INKEY$=\"\"THEN10025ELSEPRINT"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
