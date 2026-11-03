@@ -1,0 +1,74 @@
+{
+  "official_title": "Temperature Pressure Analysis",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "temperature_pressure_analysis_p279",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape9a",
+      "save": 16,
+      "archive_raw": "tapes/recovered/tape9a/best/16-TEMPERATURE-PRESSURE-ANALYSIS.BAS",
+      "archive_listing": "tapes/recovered/tape9a/best/16-TEMPERATURE-PRESSURE-ANALYSIS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/16-TEMPERATURE-PRESSURE-ANALYSIS.ASC",
+          "archive_path": "tapes/recovered/tape9a/best/16-TEMPERATURE-PRESSURE-ANALYSIS.ASC",
+          "bytes": 456,
+          "sha256": "e446246dbf239d5e5ddbb59223e8d29420767e4f3ea89f18e61a0fa8f4950bf3"
+        },
+        {
+          "path": "versions/v01/16-TEMPERATURE-PRESSURE-ANALYSIS.BAS",
+          "archive_path": "tapes/recovered/tape9a/best/16-TEMPERATURE-PRESSURE-ANALYSIS.BAS",
+          "bytes": 405,
+          "sha256": "e3fccdad32cb858aec8208e1ce61ebc21f8a7fe202aae5f754657e87fb1a5797"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "e3fccdad32cb858aec8208e1ce61ebc21f8a7fe202aae5f754657e87fb1a5797",
+        "bytes": 405,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 9,
+        "last": 20000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 403,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "a",
+        "order": "16",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TEMPERATURE PRESSURE ANALYSIS; 9 lines",
+        "capture": "tape9a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "source_start_s": "573.720",
+        "recovered_bytes": "405",
+        "source_file": "tapes/recovered/tape9a/best/16-TEMPERATURE-PRESSURE-ANALYSIS.ASC",
+        "wav": "tapes/tape9a.wav",
+        "folder": "tapes/recovered/tape9a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; historical source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
