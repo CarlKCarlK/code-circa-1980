@@ -1,19 +1,19 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape9a",
-  "save": 14,
-  "archive_raw": "tapes/recovered/tape9a/best/14-ABSOLUTE-VALUE-RANGE-PLOT.BAS",
-  "archive_listing": "tapes/recovered/tape9a/best/14-ABSOLUTE-VALUE-RANGE-PLOT.ASC",
+  "save": 15,
+  "archive_raw": "tapes/recovered/tape9a/best/15-ABSOLUTE-VALUE-RANGE-PLOT-SAVE2.BAS",
+  "archive_listing": "tapes/recovered/tape9a/best/15-ABSOLUTE-VALUE-RANGE-PLOT-SAVE2.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/14-ABSOLUTE-VALUE-RANGE-PLOT.ASC",
-      "archive_path": "tapes/recovered/tape9a/best/14-ABSOLUTE-VALUE-RANGE-PLOT.ASC",
+      "path": "versions/v02/15-ABSOLUTE-VALUE-RANGE-PLOT-SAVE2.ASC",
+      "archive_path": "tapes/recovered/tape9a/best/15-ABSOLUTE-VALUE-RANGE-PLOT-SAVE2.ASC",
       "bytes": 302,
       "sha256": "73bf3560936656c5ee31a9f36b019d110af56716695c6a48d877abc09d9d13f9"
     },
     {
-      "path": "versions/v01/14-ABSOLUTE-VALUE-RANGE-PLOT.BAS",
-      "archive_path": "tapes/recovered/tape9a/best/14-ABSOLUTE-VALUE-RANGE-PLOT.BAS",
+      "path": "versions/v02/15-ABSOLUTE-VALUE-RANGE-PLOT-SAVE2.BAS",
+      "archive_path": "tapes/recovered/tape9a/best/15-ABSOLUTE-VALUE-RANGE-PLOT-SAVE2.BAS",
       "bytes": 240,
       "sha256": "21fe517f9c6dd927ccadc821464b0f19a446c3af34f4b03487bf6394af01c556"
     }
@@ -36,19 +36,19 @@
   "inventory_row": {
     "tape": "9",
     "side": "a",
-    "order": "14",
+    "order": "15",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "ABSOLUTE VALUE RANGE PLOT; 11 lines",
+    "summary": "ABSOLUTE VALUE RANGE PLOT SAVE2; 11 lines; identical to save 14",
     "capture": "tape9a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
-    "source_start_s": "531.421",
+    "source_start_s": "547.437",
     "recovered_bytes": "240",
-    "source_file": "tapes/recovered/tape9a/best/14-ABSOLUTE-VALUE-RANGE-PLOT.ASC",
+    "source_file": "tapes/recovered/tape9a/best/15-ABSOLUTE-VALUE-RANGE-PLOT-SAVE2.ASC",
     "wav": "tapes/tape9a.wav",
     "folder": "tapes/recovered/tape9a/best",
     "recovery_date": "2026-10-26",
