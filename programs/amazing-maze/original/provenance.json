@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape12b",
+  "save": 14,
+  "archive_raw": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.BAS",
+  "archive_listing": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/14-AMAZING-PROGRAM-MAZE.ASC",
+      "archive_path": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.ASC",
+      "bytes": 3413,
+      "sha256": "e93c34546b400da75db75a84447760713b37ca8277741d36cd3513c0d53ee0ae"
+    },
+    {
+      "path": "versions/v01/14-AMAZING-PROGRAM-MAZE.BAS",
+      "archive_path": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.BAS",
+      "bytes": 2768,
+      "sha256": "ea1dac48f6bfde4a94196ebc6a2d4fbd2ca5b82df9b277df3031227389b35a77"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "ea1dac48f6bfde4a94196ebc6a2d4fbd2ca5b82df9b277df3031227389b35a77",
+    "bytes": 2768,
+    "archive_validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 156,
+    "last": 4020,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 2766,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "12",
+    "side": "b",
+    "order": "14",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "AMAZING PROGRAM MAZE; 156 lines",
+    "capture": "tape12b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+    "source_start_s": "675.246",
+    "recovered_bytes": "2768",
+    "source_file": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.ASC",
+    "wav": "tapes/tape12b.wav",
+    "folder": "tapes/recovered/tape12b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
+  "execution_tested": false
+}
