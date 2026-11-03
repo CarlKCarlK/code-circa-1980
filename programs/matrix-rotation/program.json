@@ -1,0 +1,40 @@
+{
+  "id": "matrix-rotation",
+  "title": "Matrix Rotation",
+  "description": "Matrix Rotation. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MATRIX ROTATION",
+      "capture": "tape8a",
+      "save": 5,
+      "raw": "versions/v01/05-MATRIX-ROTATION.BAS",
+      "listing": "versions/v01/05-MATRIX-ROTATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/05-MATRIX-ROTATION.ASC",
+          "label": "05-MATRIX-ROTATION.ASC"
+        },
+        {
+          "path": "versions/v01/05-MATRIX-ROTATION.BAS",
+          "label": "05-MATRIX-ROTATION.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 GOSUB 4000\n30 CLS\n40 GOSUB 5000\n50 INPUTC$\n60 IF C$=\"R\"THENINPUT R:GOSUB 3000:GOTO100\n70 IF C$=\"X\" THEN GOSUB1000:GOTO100\n80 IF C$=\"Y\"THEN GOSUB2000:GOTO100\n90 GOTO50\n100 GOTO40\n1000 'FLIP ON X-AXIS\n1010 FOR A=1TO3",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
