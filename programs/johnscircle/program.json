@@ -1,0 +1,26 @@
+{
+  "id": "johnscircle",
+  "title": "John\u2019s Circle",
+  "description": "Draw circles and ellipses with two adjustable radii.",
+  "kind": "Graphics",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "One complete captured source credited jointly to John Hartman and Carl Kadie. No source or tape-save date is established.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "JOHNS CIRCLE",
+      "capture": "tape21b",
+      "save": 13,
+      "raw": "versions/v01/13-JOHNS-CIRCLE.BAS",
+      "listing": "versions/v01/13-JOHNS-CIRCLE.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": null
+    }
+  ]
+}
