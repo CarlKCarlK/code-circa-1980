@@ -20,6 +20,17 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "Amazing Program and monster game",
+      "capture": "tape16a",
+      "save": 2,
+      "raw": "versions/v02/02-AMAZING-PROGRAM-AND-MONSTER-GAME.BAS",
+      "listing": "versions/v02/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
