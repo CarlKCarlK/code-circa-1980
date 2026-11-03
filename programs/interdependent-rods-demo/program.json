@@ -1,0 +1,40 @@
+{
+  "id": "interdependent-rods-demo",
+  "title": "Interdependent Rods Demo",
+  "description": "Interdependent Rods Demo. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "INTERDEPENDENT RODS DEMO",
+      "capture": "tape13a",
+      "save": 3,
+      "raw": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.BAS",
+      "listing": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.ASC",
+          "label": "03-INTERDEPENDENT-RODS-DEMO.ASC"
+        },
+        {
+          "path": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.BAS",
+          "label": "03-INTERDEPENDENT-RODS-DEMO.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 FOR R=1TO10\n20 R(R)=RND(40)\n30 NEXT R\n35 FORR=1TO10:O(R)=R:NEXTR:FORR=1TO10:RN=RND(10):H=O(R):O(R)=O(RN):O(RN)=H:NEXTR\n40 GOSUB1000\n50 FOR R=1TO10\n60 W(R)=RND(10):H(R)=RND(0):IF RND(2)=1THEN H(R)=1/H(R)\n70 NEXT R\n75 FORQ=1TO10:R=O(Q):IF R<>S THEN LETR(R)=H(R)*R(W(R))\n76 NEXTQ\n80 GOSUB1000",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
