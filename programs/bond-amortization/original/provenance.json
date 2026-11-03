@@ -1,25 +1,25 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape31a",
-  "save": 1,
-  "archive_raw": "tapes/recovered/tape31a/best/01-BOND-AMORTIZATION-SAVE01.BIN",
-  "archive_listing": "tapes/recovered/tape31a/best/01-BOND-AMORTIZATION-SAVE01.ASC",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape31a/best/02-BOND-AMORTIZATION-SAVE02.BIN",
+  "archive_listing": "tapes/recovered/tape31a/best/02-BOND-AMORTIZATION-SAVE02.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/01-BOND-AMORTIZATION-SAVE01.ASC",
-      "archive_path": "tapes/recovered/tape31a/best/01-BOND-AMORTIZATION-SAVE01.ASC",
+      "path": "versions/v02/02-BOND-AMORTIZATION-SAVE02.ASC",
+      "archive_path": "tapes/recovered/tape31a/best/02-BOND-AMORTIZATION-SAVE02.ASC",
       "bytes": 3266,
       "sha256": "fb4951cf408bab1357f6df0faf3d796a8ce815d7f886122e15c5f4eddc5e692c"
     },
     {
-      "path": "versions/v01/01-BOND-AMORTIZATION-SAVE01.BIN",
-      "archive_path": "tapes/recovered/tape31a/best/01-BOND-AMORTIZATION-SAVE01.BIN",
+      "path": "versions/v02/02-BOND-AMORTIZATION-SAVE02.BIN",
+      "archive_path": "tapes/recovered/tape31a/best/02-BOND-AMORTIZATION-SAVE02.BIN",
       "bytes": 2061,
       "sha256": "4e42eb0d0aaf9ebe621a8e9a59813d715363e2a4cd3b453144b06f7fc32dcac2"
     },
     {
-      "path": "versions/v01/01-BOND-AMORTIZATION-SAVE01.PRG",
-      "archive_path": "tapes/recovered/tape31a/best/01-BOND-AMORTIZATION-SAVE01.PRG",
+      "path": "versions/v02/02-BOND-AMORTIZATION-SAVE02.PRG",
+      "archive_path": "tapes/recovered/tape31a/best/02-BOND-AMORTIZATION-SAVE02.PRG",
       "bytes": 2062,
       "sha256": "12d501995563e8e3555bea60efd52458c747e723a065f9f9feae024a395d855c"
     }
@@ -35,19 +35,19 @@
   "inventory_row": {
     "tape": "31",
     "side": "a",
-    "order": "1",
+    "order": "2",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "BOND \u2014 Bond amortization",
+    "summary": "BOND \u2014 Bond amortization (repeated save)",
     "capture": "tape31a",
     "capture_scope": "unknown",
     "baud": "",
     "platform": "Commodore BASIC; likely PET/CBM ($0401), exact machine unverified",
     "status": "validated payload; runtime untested",
     "validation": "Exact left/right and repeated blocks; odd parity; XOR checksum; end-of-block marker; 83 ordered BASIC lines; pointers at $0401; end marker; one preserved trailing 01 byte",
-    "source_start_s": "11.079",
+    "source_start_s": "61.352",
     "recovered_bytes": "2061",
-    "source_file": "tapes/recovered/tape31a/best/01-BOND-AMORTIZATION-SAVE01.ASC",
+    "source_file": "tapes/recovered/tape31a/best/02-BOND-AMORTIZATION-SAVE02.ASC",
     "wav": "tapes/tape31a.wav",
     "folder": "tapes/recovered/tape31a",
     "recovery_date": "2026-10-29",
