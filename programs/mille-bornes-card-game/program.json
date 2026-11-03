@@ -1,0 +1,45 @@
+{
+  "id": "mille-bornes-card-game",
+  "title": "Mille Bornes Card Game",
+  "description": "Mille Bornes Card Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MILLE BORNES CARD GAME",
+      "capture": "tape15b",
+      "save": 5,
+      "raw": "versions/v01/05-MILLE-BORNES-CARD-GAME.BAS",
+      "listing": "versions/v01/05-MILLE-BORNES-CARD-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/05-MILLE-BORNES-CARD-GAME.ASC",
+          "label": "05-MILLE-BORNES-CARD-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/05-MILLE-BORNES-CARD-GAME.BAS",
+          "label": "05-MILLE-BORNES-CARD-GAME.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR50\n20 DIMD(105),C(7,1),S(4,1),M(1),H$(1),H(1),L(1),FP(4,1),R(1),PM(20)\n30 PRINT\"SETTING UP DECK  ......  WAIT\"\n40 FOR C=0TO4:FORP=0TO1:S(C,P)=0:F(C,P)=0:NEXT P,C:  FOR H=0TO1:M(H)=0:T(H)=0:R(H)=0:L(H)=0:CO(H)=0:NEXTH\n50 FOR X=0TO105\n60 S=RND(X+1)-1\n70 D(X)=D(S):D(S)=X:NEXTX\n80 PC=0\n90 FOR X=0 TO 1:H(X)=1:H$(X)=\"0NEEDS A ROLL\":NEXTX\n100 FORX=0TO1:C(0,X)=6:NEXTX\n110 FOR Y=0 TO 5:FOR X=0 TO 1\n120 C(Y+1,X)=D(X+Y*2)",
+      "controlSource": [
+        "170 M$=INKEY$:IF M$=\" \" THEN C7=0:GOTO 190  ELSE IF M$=\"C\" THEN 710   ELSE 170  ",
+        "1140 IF INKEY$<>\"D\" THEN 1140 ",
+        "1590 IF INKEY$=\"\" THEN 1590 ",
+        "1720 B$=INKEY$:IF B$=\"B\" THEN PRINT:GOTO 30   ELSE 1720 "
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
