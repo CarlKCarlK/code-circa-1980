@@ -1,0 +1,71 @@
+{
+  "version": "v01",
+  "capture": "tape28b",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape28b/best/01-SARGON-LOADER.BIN",
+  "archive_listing": "tapes/recovered/tape28b/derived/01-SARGON-LOADER-STRINGS.TXT",
+  "imported_files": [
+    {
+      "path": "versions/v01/01-SARGON-LOADER-MEMORY.BIN",
+      "archive_path": "tapes/recovered/tape28b/derived/01-SARGON-LOADER-MEMORY.BIN",
+      "bytes": 256,
+      "sha256": "ddf009e48539aad4d96ff1d50c28a4374b925e3e52b534702cb6feb3b11bbb42"
+    },
+    {
+      "path": "versions/v01/01-SARGON-LOADER-STRINGS.TXT",
+      "archive_path": "tapes/recovered/tape28b/derived/01-SARGON-LOADER-STRINGS.TXT",
+      "bytes": 152,
+      "sha256": "cf1988abeccab884238aabf21fcd55e880180cffb3257d7dad578ee12f1677ba"
+    },
+    {
+      "path": "versions/v01/01-SARGON-LOADER.ASM",
+      "archive_path": "tapes/recovered/tape28b/derived/01-SARGON-LOADER.ASM",
+      "bytes": 4362,
+      "sha256": "9f7d3dfb57af3dd796105a0e49524a7c675db8fefb4881ffc6731e3ff3f670ea"
+    },
+    {
+      "path": "versions/v01/01-SARGON-LOADER-RECORDS.TXT",
+      "archive_path": "tapes/recovered/tape28b/best/01-SARGON-LOADER-RECORDS.TXT",
+      "bytes": 1969,
+      "sha256": "7f88ac0b0bf132ab6c1a31d5344927b8d033b0e5bf01cd63f096f82ddcb62fd2"
+    },
+    {
+      "path": "versions/v01/01-SARGON-LOADER.BIN",
+      "archive_path": "tapes/recovered/tape28b/best/01-SARGON-LOADER.BIN",
+      "bytes": 272,
+      "sha256": "2e252194f0fdf15f00f204a935a66c9186f79c3c8caa89b71090aacc2c2ddafa"
+    }
+  ],
+  "recovery_item": {
+    "format": "machine code",
+    "sha256": "2e252194f0fdf15f00f204a935a66c9186f79c3c8caa89b71090aacc2c2ddafa",
+    "bytes": 272,
+    "archive_validation": "Exact independent left/right bytes; 1 block checksums valid; full framing and transfer address; exact framed EOF; initial A5 sync retained",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "28",
+    "side": "b",
+    "order": "1",
+    "type": "machine code",
+    "recovery%": "100",
+    "summary": "SARGON loader \u2014 standard SYSTEM stage",
+    "capture": "tape28b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I Z80",
+    "status": "validated captured payload; runtime untested",
+    "validation": "Exact independent left/right bytes; 1 block checksums valid; full framing and transfer address; exact framed EOF; initial A5 sync retained",
+    "source_start_s": "9.204",
+    "recovered_bytes": "272",
+    "source_file": "tapes/recovered/tape28b/derived/01-SARGON-LOADER.ASM",
+    "wav": "tapes/tape28b.wav",
+    "folder": "tapes/recovered/tape28b",
+    "recovery_date": "2026-10-29",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape28b/inventory.json",
+  "execution_tested": false
+}
