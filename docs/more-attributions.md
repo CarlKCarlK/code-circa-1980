@@ -7,3 +7,5 @@ Attributions cover Amazing in Ricky Rat/JAB, Quest in Jaberwocky, the explicitly
 Other active More entries were reviewed against existing provenance, notes, and source credits. No specific published code ancestor was established for them; generic game types, physical laws, film themes, and similar titles alone are not treated as proven code derivation. Unknown sources remain unknown. This review does not assert that uncited programs have no influences. Withdrawn Poker and Space Colony stay withdrawn.
 
 The affected extra-program players refresh their authorized unshared v1 snapshots. LIFE’s immutable v1 and v2 remain byte-for-byte intact; the new attribution appears in v3. Historical recovered payloads and source-history tags are unchanged.
+
+Verification on November 3, 2026: all 22 editable/frozen attribution checks and the source-only historical-version check passed as part of the 164-scenario production browser suite. Checks confirm that the attribution is the element between the title header and screen workspace, remains readable at phone width, and matches the documented metadata. LIFE v1/v2 and all recovered version snapshots remain unchanged.

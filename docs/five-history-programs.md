@@ -13,3 +13,9 @@ Original-ROM checks verify Who Donnt?’s suspect/weapon lists and interview, Du
 Reproduce archive/history verification from the root with `python3 app/scripts/verify-five-history.py /path/to/trs80`. From app/, run `npm test`, `npm run build`, and `npm run test:browser`. Targeted cases live in history-five.spec.js; attribution positioning is checked in more-attributions.spec.js. The inherited shared keyboard, pause/restart, Help, and responsive layout are retained.
 
 Use `just show whodonnt`, `just show dungeon`, `just show tutac`, `just show tank`, or `just show ll`. The existing tools/ workspace keeps both repositories together.
+
+## Final verification
+
+On November 3, 2026, the complete production browser suite passed all 164 scenarios. The unit/archive suite, production build, twelve-snapshot canonical-history verifier, matching-source/prefix checks, and integrity verification for 50 active web releases passed. The five entries are appended at the end of More; the official source-only title is Unfinished Tank Game.
+
+Both editable and frozen pages passed the attribution placement checks. LIFE v3 contains the new credit; Git comparison confirms public/life/v1 and public/life/v2 are unchanged. Historical recovered snapshots are unchanged. The separate existing candidate/review qualifications remain in force, and no exhaustive gameplay or physics claim is made.
