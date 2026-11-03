@@ -1,0 +1,40 @@
+{
+  "id": "terrain-lander-2",
+  "title": "Terrain Lander 2",
+  "description": "Terrain Lander 2. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extensions may be required",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TERRAIN LANDER FRAGMENT 1",
+      "capture": "tape11b",
+      "save": 1,
+      "raw": "versions/v01/01-TERRAIN-LANDER-FRAGMENT-1.BAS",
+      "listing": "versions/v01/01-TERRAIN-LANDER-FRAGMENT-1.ASC",
+      "playable": false,
+      "note": "damaged terrain/lander recording. Exact 208-byte readable prefix matches three variants; remainder damaged",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-TERRAIN-LANDER-FRAGMENT-1.ASC",
+          "label": "01-TERRAIN-LANDER-FRAGMENT-1.ASC"
+        },
+        {
+          "path": "versions/v01/01-TERRAIN-LANDER-FRAGMENT-1.BAS",
+          "label": "01-TERRAIN-LANDER-FRAGMENT-1.BAS"
+        }
+      ],
+      "startupSource": "5 DIM M(127)\n10 PI=3.14159\n20 A=PI/2\n30 CLS\n40 OY=47-RND(20)\n50 FORX=0TO127\n60 Y=47-RND(20)\n70 IF RND(3)=1THEN Y=OY:GOTO 90   \n80 IF ABS(Y-OY)>4THEN60   \n90 LINE(X,47)-(X,Y),SET\n95 M(X)=Y\n100 OY=Y",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
