@@ -1,0 +1,74 @@
+{
+  "official_title": "Table Statistics",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "table_statistics_p172",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape19b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape19b/best/08-TABLE-STATISTICS.BAS",
+      "archive_listing": "tapes/recovered/tape19b/best/08-TABLE-STATISTICS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/08-TABLE-STATISTICS.ASC",
+          "archive_path": "tapes/recovered/tape19b/best/08-TABLE-STATISTICS.ASC",
+          "bytes": 1412,
+          "sha256": "3549b9c4e8c489bbc192c65cdf8be3a7a851387b74e0ad9f02ab04363420b505"
+        },
+        {
+          "path": "versions/v01/08-TABLE-STATISTICS.BAS",
+          "archive_path": "tapes/recovered/tape19b/best/08-TABLE-STATISTICS.BAS",
+          "bytes": 1273,
+          "sha256": "0822b32b937fc76702275a38c771c0497420319c54a9bb0e3cabf50ea7cc8388"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "0822b32b937fc76702275a38c771c0497420319c54a9bb0e3cabf50ea7cc8388",
+        "bytes": 1273,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 59,
+        "last": 570,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1271,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "19",
+        "side": "b",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TABLE STATISTICS",
+        "capture": "tape19b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "253.584",
+        "recovered_bytes": "1273",
+        "source_file": "tapes/recovered/tape19b/best/08-TABLE-STATISTICS.ASC",
+        "wav": "tapes/tape19b.wav",
+        "folder": "tapes/recovered/tape19b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape19b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

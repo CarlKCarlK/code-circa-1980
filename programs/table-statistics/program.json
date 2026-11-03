@@ -1,0 +1,40 @@
+{
+  "id": "table-statistics",
+  "title": "Table Statistics",
+  "description": "Table Statistics. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TABLE STATISTICS",
+      "capture": "tape19b",
+      "save": 8,
+      "raw": "versions/v01/08-TABLE-STATISTICS.BAS",
+      "listing": "versions/v01/08-TABLE-STATISTICS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/08-TABLE-STATISTICS.ASC",
+          "label": "08-TABLE-STATISTICS.ASC"
+        },
+        {
+          "path": "versions/v01/08-TABLE-STATISTICS.BAS",
+          "label": "08-TABLE-STATISTICS.BAS"
+        }
+      ],
+      "startupSource": "10     DIM A(5,6)\n20     DIM R(5)\n30     DIM S(6)\n40     FOR I=1TO5\n50     PRINT \"COLUMN \";I\n55     FOR J=1TO6\n60     PRINT \"INPUT NUMBER\";J\n70 A(I,J)=RND(10000):GOTO85\n80     INPUT A(I,J)\n85 REM\n90     NEXT J\n100    NEXT I",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
