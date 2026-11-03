@@ -1,0 +1,48 @@
+{
+  "id": "fraction-worksheets-later",
+  "title": "Fraction Worksheets",
+  "description": "Fraction Worksheets. 4 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "FRACTION WORKSHEETS EARLY SAVE",
+      "capture": "tape27a",
+      "save": 2,
+      "raw": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.BIN",
+      "listing": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged; verified prefix only; runtime untested. Conflicting bytes in line 177 despite valid record structure; verified cross-channel prefix [0,339), 18 lines through 175; no synthetic end marker; full listing uncertain",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.ASC",
+          "label": "02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.BIN",
+          "label": "02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-RAW.BAS",
+          "label": "02-FRACTION-WORKSHEETS-EARLY-SAVE-RAW.BAS"
+        },
+        {
+          "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-UNCERTAIN.ASC",
+          "label": "02-FRACTION-WORKSHEETS-EARLY-SAVE-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "20 CLEAR1000\n30 INPUT\"HOW MANY SETS OF PROBLEMS\";SP\n40 INPUT\"AND HOW MANY PROBLEMS PER SET\";PS\n50 CLS:'CALL PRINTER\n60 FOR SE=1TOSP\n65 PRINT\"PROBLEM SET\";SE:PRINT:PRINT\n70 FOR PR=1TOPS\n75 PRINT\"(\"PR\")  FIND :\"\n80 I1=RND(RND(90))\n90 I2=RND(RND(90))\n100 D=RND(RND(RND(100)))\n110 N=RND(RND(100))",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
