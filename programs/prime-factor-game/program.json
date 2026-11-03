@@ -1,0 +1,40 @@
+{
+  "id": "prime-factor-game",
+  "title": "Prime Factor Game",
+  "description": "Prime Factor Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PRIME FACTOR GAME",
+      "capture": "tape19b",
+      "save": 4,
+      "raw": "versions/v01/04-PRIME-FACTOR-GAME.BAS",
+      "listing": "versions/v01/04-PRIME-FACTOR-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-PRIME-FACTOR-GAME.ASC",
+          "label": "04-PRIME-FACTOR-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/04-PRIME-FACTOR-GAME.BAS",
+          "label": "04-PRIME-FACTOR-GAME.BAS"
+        }
+      ],
+      "startupSource": "2 CLS:PRINT\"I'M GETTING READY\"\n5 DIM P(25)\n7 P=1:P(P)=2\n10 FOR I=2TO100\n20 FOR N=2 TO SQR(I)\n30 IF INT(I/N)<>I/N AND N<>I THEN NEXT N:P=P+1:P(P)=I\n40 NEXTI\n50 CLS\n60 INPUT\"GIVE ME A NUMBER\";N\n65 GOSUB2000\n70 IF N=1 THEN 60\n75 GOSUB2000",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
