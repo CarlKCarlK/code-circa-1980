@@ -1,0 +1,80 @@
+{
+  "official_title": "Trig Function Plotter",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "trig_function_plotter_p223",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape22b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape22b/best/02-TRIG-FUNCTION-PLOTTER.BAS",
+      "archive_listing": "tapes/recovered/tape22b/best/02-TRIG-FUNCTION-PLOTTER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-TRIG-FUNCTION-PLOTTER.ASC",
+          "archive_path": "tapes/recovered/tape22b/best/02-TRIG-FUNCTION-PLOTTER.ASC",
+          "bytes": 1252,
+          "sha256": "5c7d676f59357f4baf2100c4fc84c4183b825c8c0d3f97fd53e6e612099cb9bb"
+        },
+        {
+          "path": "versions/v01/02-TRIG-FUNCTION-PLOTTER.BAS",
+          "archive_path": "tapes/recovered/tape22b/best/02-TRIG-FUNCTION-PLOTTER.BAS",
+          "bytes": 1011,
+          "sha256": "6f199b9d2fe3b27e201e065de3a6506b05645e3031c376e24184ea2129928f48"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "6f199b9d2fe3b27e201e065de3a6506b05645e3031c376e24184ea2129928f48",
+        "bytes": 1011,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 44,
+        "last": 2070,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1009,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "22",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TRIG FUNCTION PLOTTER",
+        "capture": "tape22b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "80.658",
+        "recovered_bytes": "1011",
+        "source_file": "tapes/recovered/tape22b/best/02-TRIG-FUNCTION-PLOTTER.ASC",
+        "wav": "tapes/tape22b.wav",
+        "folder": "tapes/recovered/tape22b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape22b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

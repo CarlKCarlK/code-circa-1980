@@ -1,0 +1,200 @@
+{
+  "official_title": "Rational and Polynomial Derivatives",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "rational_derivative_p178; derivative_program_third_formerly_unre_p57",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape1a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape1a/best/01-DERIVATIVE.BAS",
+      "archive_listing": "tapes/recovered/tape1a/best/01-DERIVATIVE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-DERIVATIVE.ASC",
+          "archive_path": "tapes/recovered/tape1a/best/01-DERIVATIVE.ASC",
+          "bytes": 1429,
+          "sha256": "d2e87a0bc5101930c027c02caf38bda1d81fdb77115c58b8a53971678b85384c"
+        },
+        {
+          "path": "versions/v01/01-DERIVATIVE.BAS",
+          "archive_path": "tapes/recovered/tape1a/best/01-DERIVATIVE.BAS",
+          "bytes": 1168,
+          "sha256": "9e8f5aa7f09e2e7e97c07d083ea725b682705c7369b168adb274092a29db3235"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "9e8f5aa7f09e2e7e97c07d083ea725b682705c7369b168adb274092a29db3235",
+        "bytes": 1168,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 45,
+        "last": 400,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1166,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "1",
+        "side": "a",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Derivative of a rational/polynomial function",
+        "capture": "tape1a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "10.502",
+        "recovered_bytes": "1168",
+        "source_file": "tapes/recovered/tape1a/best/01-DERIVATIVE.ASC",
+        "wav": "tapes/tape1a.wav",
+        "folder": "tapes/recovered/tape1a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape1a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape1a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape1a/best/03-DERIVATIVE-SECOND-SAVE.BAS",
+      "archive_listing": "tapes/recovered/tape1a/best/03-DERIVATIVE-SECOND-SAVE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/03-DERIVATIVE-SECOND-SAVE.ASC",
+          "archive_path": "tapes/recovered/tape1a/best/03-DERIVATIVE-SECOND-SAVE.ASC",
+          "bytes": 5509,
+          "sha256": "3d2b7b9638a2802e7e7aa3e243f75c3e23fccf033c1c8b459b13f59eef75fac9"
+        },
+        {
+          "path": "versions/v02/03-DERIVATIVE-SECOND-SAVE.BAS",
+          "archive_path": "tapes/recovered/tape1a/best/03-DERIVATIVE-SECOND-SAVE.BAS",
+          "bytes": 4489,
+          "sha256": "d32e72062449b7aea65ca953d64e9a4a4182a9e101cc939b7f278d26717fcabf"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "d32e72062449b7aea65ca953d64e9a4a4182a9e101cc939b7f278d26717fcabf",
+        "bytes": 4489,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 144,
+        "last": 2110,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 4487,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "1",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Derivative program, second save",
+        "capture": "tape1a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "74.770",
+        "recovered_bytes": "4489",
+        "source_file": "tapes/recovered/tape1a/best/03-DERIVATIVE-SECOND-SAVE.ASC",
+        "wav": "tapes/tape1a.wav",
+        "folder": "tapes/recovered/tape1a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape1a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape1a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.BAS",
+      "archive_listing": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/04-DERIVATIVE-THIRD-SAVE.ASC",
+          "archive_path": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.ASC",
+          "bytes": 7328,
+          "sha256": "7ce983b0664e9d10505273b859c0acbe9f02d4f2a2eb6533149aca206d2062c5"
+        },
+        {
+          "path": "versions/v03/04-DERIVATIVE-THIRD-SAVE.BAS",
+          "archive_path": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.BAS",
+          "bytes": 5912,
+          "sha256": "11f99ad1819685d6fc0e6f087b92add61f477a8d8ce76fa94eb285aa43965ee9"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "11f99ad1819685d6fc0e6f087b92add61f477a8d8ce76fa94eb285aa43965ee9",
+        "bytes": 5912,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 175,
+        "last": 3020,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 5910,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "1",
+        "side": "a",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Derivative program, third save (formerly unrecognized)",
+        "capture": "tape1a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "undetermined",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "156.855",
+        "recovered_bytes": "5912",
+        "source_file": "tapes/recovered/tape1a/best/04-DERIVATIVE-THIRD-SAVE.ASC",
+        "wav": "tapes/tape1a.wav",
+        "folder": "tapes/recovered/tape1a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape1a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

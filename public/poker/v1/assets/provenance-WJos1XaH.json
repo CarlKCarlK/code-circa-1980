@@ -1,0 +1,60 @@
+{
+  "version": "v04",
+  "capture": "tape27a",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.BAS",
+  "archive_listing": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v04/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
+      "archive_path": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
+      "bytes": 2674,
+      "sha256": "1c3b72c0032162d47bc5f8e9a46bebc720017d9aa5a1b2494147ea16523a3bde"
+    },
+    {
+      "path": "versions/v04/05-FRACTION-WORKSHEETS-LATER-SAVE02.BAS",
+      "archive_path": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.BAS",
+      "bytes": 2219,
+      "sha256": "12333be4f3f02ea5f78bb82a93b06b4a4e26d32e7586a0d1846fc1198b997596"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "12333be4f3f02ea5f78bb82a93b06b4a4e26d32e7586a0d1846fc1198b997596",
+    "bytes": 2219,
+    "archive_validation": "Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 121,
+    "last": 2020,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 2217,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "27",
+    "side": "a",
+    "order": "5",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "FRACTION WORKSHEETS LATER SAVE02",
+    "capture": "tape27a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC family",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "161.769",
+    "recovered_bytes": "2219",
+    "source_file": "tapes/recovered/tape27a/best/05-FRACTION-WORKSHEETS-LATER-SAVE02.ASC",
+    "wav": "tapes/tape27a.wav",
+    "folder": "tapes/recovered/tape27a",
+    "recovery_date": "2026-10-29",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape27a/inventory.json",
+  "execution_tested": false
+}

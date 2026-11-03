@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape1a",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape1a/best/02-POLYNOMIAL-MULTIPLICATION.BAS",
+  "archive_listing": "tapes/recovered/tape1a/best/02-POLYNOMIAL-MULTIPLICATION.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.ASC",
+      "archive_path": "tapes/recovered/tape1a/best/02-POLYNOMIAL-MULTIPLICATION.ASC",
+      "bytes": 1219,
+      "sha256": "8e54f5ab1dc93ce9290a95650a7c6afa4f98179fdc70937b04c3d0b6f2980ff2"
+    },
+    {
+      "path": "versions/v01/02-POLYNOMIAL-MULTIPLICATION.BAS",
+      "archive_path": "tapes/recovered/tape1a/best/02-POLYNOMIAL-MULTIPLICATION.BAS",
+      "bytes": 1039,
+      "sha256": "2e3c77eab7f2d75bb6ccb0bce2437d69880a2c6770c6e2d048435245c1078ca4"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "2e3c77eab7f2d75bb6ccb0bce2437d69880a2c6770c6e2d048435245c1078ca4",
+    "bytes": 1039,
+    "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 35,
+    "last": 280,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1037,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "1",
+    "side": "a",
+    "order": "2",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "Polynomial multiplication",
+    "capture": "tape1a",
+    "capture_scope": "full",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "39.143",
+    "recovered_bytes": "1039",
+    "source_file": "tapes/recovered/tape1a/best/02-POLYNOMIAL-MULTIPLICATION.ASC",
+    "wav": "tapes/tape1a.wav",
+    "folder": "tapes/recovered/tape1a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape1a/inventory.json",
+  "execution_tested": false
+}

@@ -1,0 +1,91 @@
+{
+  "official_title": "Rsm 2.0 16K",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Rsm 2.0 16K",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape28b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape28b/best/03-RSM-2.0-16K.BIN",
+      "archive_listing": "tapes/recovered/tape28b/derived/03-RSM-2.0-16K-STRINGS.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-RSM-2.0-16K-MEMORY.BIN",
+          "archive_path": "tapes/recovered/tape28b/derived/03-RSM-2.0-16K-MEMORY.BIN",
+          "bytes": 4864,
+          "sha256": "bd4151099df158c45e93aeb865582a9455b754c37c94fb7882e8caf5030ca156"
+        },
+        {
+          "path": "versions/v01/03-RSM-2.0-16K-STRINGS.TXT",
+          "archive_path": "tapes/recovered/tape28b/derived/03-RSM-2.0-16K-STRINGS.TXT",
+          "bytes": 700,
+          "sha256": "fe8b48922b8b572a864c9b113e1e2753effbbdbc34d14ac08369bbb5a40497bb"
+        },
+        {
+          "path": "versions/v01/03-RSM-2.0-16K.ASM",
+          "archive_path": "tapes/recovered/tape28b/derived/03-RSM-2.0-16K.ASM",
+          "bytes": 52245,
+          "sha256": "2fa21365a1395957f3fd5dd650841d0d42e2afb643e6639a6b67b172e44d80e4"
+        },
+        {
+          "path": "versions/v01/03-RSM-2.0-16K-RECORDS.TXT",
+          "archive_path": "tapes/recovered/tape28b/best/03-RSM-2.0-16K-RECORDS.TXT",
+          "bytes": 27140,
+          "sha256": "559baa40b61c5c02755ee17b97cd7db8b9421e2b5aea5d88ab0ab4a701d79f99"
+        },
+        {
+          "path": "versions/v01/03-RSM-2.0-16K.BIN",
+          "archive_path": "tapes/recovered/tape28b/best/03-RSM-2.0-16K.BIN",
+          "bytes": 4969,
+          "sha256": "f6305fd120aadb06eaa78bf06fd0fce5eeef5ab51c833425c4aa537b03486326"
+        }
+      ],
+      "recovery_item": {
+        "format": "machine code",
+        "sha256": "f6305fd120aadb06eaa78bf06fd0fce5eeef5ab51c833425c4aa537b03486326",
+        "bytes": 4969,
+        "archive_validation": "Exact independent left/right bytes; 19 block checksums valid; full framing and transfer address; exact EOF",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "28",
+        "side": "b",
+        "order": "3",
+        "type": "machine code",
+        "recovery%": "100",
+        "summary": "RSM-2.0 16K \u2014 Small System Software, copyright 1978",
+        "capture": "tape28b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I Z80",
+        "status": "validated captured payload; runtime untested",
+        "validation": "Exact independent left/right bytes; 19 block checksums valid; full framing and transfer address; exact EOF",
+        "source_start_s": "203.399",
+        "recovered_bytes": "4969",
+        "source_file": "tapes/recovered/tape28b/derived/03-RSM-2.0-16K.ASM",
+        "wav": "tapes/tape28b.wav",
+        "folder": "tapes/recovered/tape28b",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape28b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "RSM 2.0, 16K: Small System Software, copyright 1978. This is a third-party machine-code utility; the displayed disassembly is derived."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

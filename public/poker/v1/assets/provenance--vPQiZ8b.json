@@ -1,0 +1,60 @@
+{
+  "version": "v02",
+  "capture": "tape9a",
+  "save": 2,
+  "archive_raw": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.BAS",
+  "archive_listing": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/02-HORSEPOWER-CALCULATOR.ASC",
+      "archive_path": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.ASC",
+      "bytes": 640,
+      "sha256": "3e7b80152355177db4ddfd6f82a0539e2debc775f36d4ac97221e482068bd0fe"
+    },
+    {
+      "path": "versions/v02/02-HORSEPOWER-CALCULATOR.BAS",
+      "archive_path": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.BAS",
+      "bytes": 575,
+      "sha256": "c147fc7d1622a5900148f7948f9291d49ed51c692ce8b92738491960d6ccd12f"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "c147fc7d1622a5900148f7948f9291d49ed51c692ce8b92738491960d6ccd12f",
+    "bytes": 575,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 23,
+    "last": 245,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 573,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "9",
+    "side": "a",
+    "order": "2",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "HORSEPOWER CALCULATOR; 23 lines",
+    "capture": "tape9a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+    "source_start_s": "34.940",
+    "recovered_bytes": "575",
+    "source_file": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.ASC",
+    "wav": "tapes/tape9a.wav",
+    "folder": "tapes/recovered/tape9a/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test; historical source may be unfinished"
+  },
+  "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
+  "execution_tested": false
+}

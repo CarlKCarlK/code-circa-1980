@@ -310,3 +310,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Recovered third-party programs and comparison listings retain their historical
+credits and rights. The collection license does not relicense those sources.
+See each program’s provenance and visible attribution. The archive includes
+Creative Computing listings, Roger Chaffee’s Quest, Starfleet Orion (Automated
+Simulations, 1979), SARGON II (Dan and Kathe Spracklen / Hayden, 1979), and RSM
+2.0 (Small System Software, 1978). Unknown authorship is explicitly identified.

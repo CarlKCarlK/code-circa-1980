@@ -1,0 +1,60 @@
+{
+  "version": "v02",
+  "capture": "tape3a",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape3a/best/10-CHEMISTRY-QUIZ-V2.BAS",
+  "archive_listing": "tapes/recovered/tape3a/best/10-CHEMISTRY-QUIZ-V2.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/10-CHEMISTRY-QUIZ-V2.ASC",
+      "archive_path": "tapes/recovered/tape3a/best/10-CHEMISTRY-QUIZ-V2.ASC",
+      "bytes": 1071,
+      "sha256": "ec93c66b4996f860c10a00096857b9add8949076ca4bfb8b4138a8344524f9a1"
+    },
+    {
+      "path": "versions/v02/10-CHEMISTRY-QUIZ-V2.BAS",
+      "archive_path": "tapes/recovered/tape3a/best/10-CHEMISTRY-QUIZ-V2.BAS",
+      "bytes": 928,
+      "sha256": "74692b9fb84d811f1843dbb60d513ebe1fdcc9e4c78fe4e911929ce97eae5241"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "74692b9fb84d811f1843dbb60d513ebe1fdcc9e4c78fe4e911929ce97eae5241",
+    "bytes": 928,
+    "archive_validation": "25 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 25,
+    "last": 3010,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 926,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "3",
+    "side": "a",
+    "order": "10",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "CHEMISTRY QUIZ V2; 25 lines",
+    "capture": "tape3a",
+    "capture_scope": "full",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload",
+    "validation": "25 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+    "source_start_s": "",
+    "recovered_bytes": "928",
+    "source_file": "tapes/recovered/tape3a/best/10-CHEMISTRY-QUIZ-V2.ASC",
+    "wav": "tapes/tape3a.wav",
+    "folder": "tapes/recovered/tape3a/best",
+    "recovery_date": "2026-10-25",
+    "recorder_volume": "5/10",
+    "next_action": "Execution-test"
+  },
+  "recovery_inventory": "tapes/recovered/tape3a/best/inventory.json",
+  "execution_tested": false
+}
