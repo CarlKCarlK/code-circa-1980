@@ -1,0 +1,42 @@
+{
+  "id": "russian-roulette",
+  "title": "Russian Roulette",
+  "description": "Russian Roulette. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "RUSSIAN ROULETTE",
+      "capture": "tape14b",
+      "save": 6,
+      "raw": "versions/v01/06-RUSSIAN-ROULETTE.BAS",
+      "listing": "versions/v01/06-RUSSIAN-ROULETTE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-RUSSIAN-ROULETTE.ASC",
+          "label": "06-RUSSIAN-ROULETTE.ASC"
+        },
+        {
+          "path": "versions/v01/06-RUSSIAN-ROULETTE.BAS",
+          "label": "06-RUSSIAN-ROULETTE.BAS"
+        }
+      ],
+      "startupSource": "10 '\n20 T$=\"AIR\"\n90 CLS\n100 PRINT\"THIS IS RUSSIAN RULLETTE\":PRINT\n110 INPUT\"DO YOU KNOW HOW TO PLAY RUSSIAN RULLETTE\";A$\n120 IFA$=\"YES\" THEN300\n125 CLS\n130 PRINT\"YOU PLAY RUSSIAN RULLETTE THIS WAY\"\n135 PRINT\n140 PRINT\"YOU <TAKE> GUN - <LOAD> BULLETS - <SPIN> CHAMBER - <COCK> GUN - <AIM> AT YOUR HEAD - <FIRE> TRIGGER - IF YOU LIVE, YOU <PLACE>  GUN ON TABLE.\n150 GOTO310\n300 CLS",
+      "controlSource": [
+        "1040 IFINKEY$=\"\"THEN1040"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
