@@ -1,0 +1,40 @@
+{
+  "id": "three-dimensional-tic-tac-toe",
+  "title": "Three Dimensional Tic Tac Toe",
+  "description": "Three Dimensional Tic Tac Toe. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "THREE DIMENSIONAL TIC TAC TOE",
+      "capture": "tape25a",
+      "save": 17,
+      "raw": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.BAS",
+      "listing": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC",
+          "label": "17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC"
+        },
+        {
+          "path": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.BAS",
+          "label": "17-THREE-DIMENSIONAL-TIC-TAC-TOE.BAS"
+        }
+      ],
+      "startupSource": "99 CLS\n100 PRINT TAB(33);\"TIC TAC TOE\"\n110 PRINT TAB(15);\"CREATIVE COMPUTING  MORRISTOWN, NJ\"\n120 PRINT:PRINT:PRINT\n210 PRINT \"DO YOU WANT INSTRUCTIONS\";\n220 INPUT C$\n230 IF C$=\"NO\" THEN 315\n240 IF C$=\"YES\" THEN 265\n250 PRINT \"INCORRECT ANSWER.  PLEASE TYPE 'YES' OR 'NO'\";\n260 GOTO220\n265 PRINT\n270 PRINT\"THE GAME IS TIC-TAC-TOE IN A 4X4X4 CUBE.\"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
