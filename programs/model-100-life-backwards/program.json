@@ -190,6 +190,50 @@
       ],
       "startupSource": "10 REM ",
       "controlSource": []
+    },
+    {
+      "id": "v04",
+      "label": "Cassette name L",
+      "capture": "tape2a",
+      "save": 23,
+      "raw": "versions/v04/23-L-BASIC-PREFIX.BIN",
+      "listing": "versions/v04/23-L-BASIC-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 10 lines through 500; exact left/right prefix agreement",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v04/23-L-BASIC-PREFIX.ASC",
+          "label": "23-L-BASIC-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v04/23-L-BASIC-PREFIX.BIN",
+          "label": "23-L-BASIC-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v04/23-L-HEADER.BIN",
+          "label": "23-L-HEADER.BIN"
+        },
+        {
+          "path": "versions/v04/23-L-LONGEST-STRUCTURAL-PREFIX-a45ddfc65515.ASC",
+          "label": "23-L-LONGEST-STRUCTURAL-PREFIX-a45ddfc65515.ASC"
+        },
+        {
+          "path": "versions/v04/23-L-LONGEST-STRUCTURAL-PREFIX-a45ddfc65515.BIN",
+          "label": "23-L-LONGEST-STRUCTURAL-PREFIX-a45ddfc65515.BIN"
+        },
+        {
+          "path": "versions/v04/23-L-RAW.BIN",
+          "label": "23-L-RAW.BIN"
+        },
+        {
+          "path": "versions/v04/23-L-UNCERTAIN.ASC",
+          "label": "23-L-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 REM life backwards april 27, 1985\n90 DEFINT A-Z\n100 DX=20:DY=20\n110 DIM CN(375,1),NW(DX,DY),OD(DX,DY)\n330 CLS\n340 OPEN \"lifed.do\" FOR INPUT AS #1\n350 FOR I=0TO1:TZ=0\n360 INPUT #1,CN(TZ,I):IF CN(TZ,I)=-1 THEN NEXT I :ELSE TZ=TZ+1:GOTO 360\n370 FOR I=1 TO 9:MK(I)=2^(I-1):NEXT I\n500 'main program",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
