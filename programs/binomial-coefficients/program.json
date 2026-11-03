@@ -1,0 +1,40 @@
+{
+  "id": "binomial-coefficients",
+  "title": "Binomial Coefficients",
+  "description": "Binomial Coefficients. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BINOMIAL COEFFICIENTS",
+      "capture": "tape6a",
+      "save": 1,
+      "raw": "versions/v01/01-BINOMIAL-COEFFICIENTS.BAS",
+      "listing": "versions/v01/01-BINOMIAL-COEFFICIENTS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 19 consistent pointers; normal end marker; matches 6 decoding variants; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-BINOMIAL-COEFFICIENTS.ASC",
+          "label": "01-BINOMIAL-COEFFICIENTS.ASC"
+        },
+        {
+          "path": "versions/v01/01-BINOMIAL-COEFFICIENTS.BAS",
+          "label": "01-BINOMIAL-COEFFICIENTS.BAS"
+        }
+      ],
+      "startupSource": "1 CLS\n2 REM  BINOMAL COEFFECINENTS      CMKADIEADDEC1980\n5 DEFDBL A-Z\n10 INPUT\"WHICH ROW, COLLUM\";R,C\n20 IF C>R THEN PRINT\"TRY AGAIN....\":GOTO 10\n25 A=1\n26 PRINTCHR$(151)\"    \"R\"    \"CHR$(171):PRINT CHR$(149) TAB(10+LEN(STR$(R))) CHR$(170 ):PRINT CHR$(181)\"    \"C TAB(10+LEN(STR$(R)))   CHR$(186)CHR$(27)\"  >>>----\t\"CHR$(94)\" \";\n30 D=R-C:IF D>C THEN H=C:C=D:D=H\n32 Y=D+1\n35 X=R-D\n40 X=X+1\n50 Y=Y-1",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
