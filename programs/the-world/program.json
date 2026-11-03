@@ -1,0 +1,40 @@
+{
+  "id": "the-world",
+  "title": "The World",
+  "description": "The World. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "THE WORLD",
+      "capture": "tape4a",
+      "save": 1,
+      "raw": "versions/v01/01-THE-WORLD.BAS",
+      "listing": "versions/v01/01-THE-WORLD.ASC",
+      "playable": false,
+      "note": "validated payload; needs Disk BASIC. Payload byte-identical across 4 variants; stock Model I and III ROM tests stop with L3 error at INSTR in line 70",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-THE-WORLD.ASC",
+          "label": "01-THE-WORLD.ASC"
+        },
+        {
+          "path": "versions/v01/01-THE-WORLD.BAS",
+          "label": "01-THE-WORLD.BAS"
+        }
+      ],
+      "startupSource": "10 ' THE WORLD\n20 CLEAR 500\n30 L=RND(8):FORX=1TOL:W$=CHR$(RND(26)+64)+W$:NEXT\n40 CLS\n50 PRINT:PRINT:PRINT:PRINT\"WELCOME TO THE PLANET OF\";W$:L$=\"ARGON'S CITY GATES\":GOTO70   \n60 CLS:RESTORE\n70 READD$:IFD$=\"DONE\"THEN100  ELSEIF INSTR(D$,L$)=0OR INSTR(D$,\"*\")<>0THEN70   \n80 IFRIGHT$(D$,1)=\"&\"THENPRINTLEFT$(D$,LEN(D$)-1);:READD$:GOTO80   ELSEPRINTD$\n90 GOTO110  \n100 PRINT:PRINT:PRINT:PRINT\"I'M SORRY BUT AT THE PRESENT TIME \";L$;\" IS OFF LIMITS TO YOU.\"\n110 PRINT:INPUT\"WHAT ARE YOUR ORDERS\";O$\n120 IFO$=\"HELP\"THEN270  ",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
