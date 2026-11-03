@@ -1,0 +1,40 @@
+{
+  "id": "red-or-blue-guessing-game",
+  "title": "Red Or Blue Guessing Game",
+  "description": "Red Or Blue Guessing Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "RED OR BLUE GUESSING GAME",
+      "capture": "tape9b",
+      "save": 9,
+      "raw": "versions/v01/09-RED-OR-BLUE-GUESSING-GAME.BAS",
+      "listing": "versions/v01/09-RED-OR-BLUE-GUESSING-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/09-RED-OR-BLUE-GUESSING-GAME.ASC",
+          "label": "09-RED-OR-BLUE-GUESSING-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/09-RED-OR-BLUE-GUESSING-GAME.BAS",
+          "label": "09-RED-OR-BLUE-GUESSING-GAME.BAS"
+        }
+      ],
+      "startupSource": "2 GOTO500\n5 PRINT\"                   ,-------*-------,\n10 PRINT\",--------------    '----   -------'\n20 PRINT\" '---------  --'        /  /        A WINNER\"\"\n30 PRINT\"     ,----'  '---------/  /--,\"\n40 PRINT\"      '---------------------'\n50 RETURN\n100 PRINT\"        -##-\n110 PRINT\"     <-( OO )->\n120 PRINT\"        V--V\n130 PRINT\"         !!\n140 PRINT\"     *===!!===*          YOU LOSE",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
