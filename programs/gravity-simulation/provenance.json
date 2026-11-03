@@ -130,6 +130,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape24a",
+      "save": 14,
+      "archive_raw": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.BAS",
+      "archive_listing": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/14-GRAVITY-SIMULATION-SAVE03.ASC",
+          "archive_path": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.ASC",
+          "bytes": 1839,
+          "sha256": "781a0051c1bddaf75547e8c9c1c1614f5bd7ad45df41d4b21045cb722f14631e"
+        },
+        {
+          "path": "versions/v03/14-GRAVITY-SIMULATION-SAVE03.BAS",
+          "archive_path": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.BAS",
+          "bytes": 1577,
+          "sha256": "e979ed78ce14cd92516e8c681e876c5224f966eb63c716866baaf5c3b41aa89f"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "e979ed78ce14cd92516e8c681e876c5224f966eb63c716866baaf5c3b41aa89f",
+        "bytes": 1577,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 49,
+        "last": 1121,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1575,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "24",
+        "side": "a",
+        "order": "14",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GRAVITY SIMULATION SAVE03",
+        "capture": "tape24a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "541.266",
+        "recovered_bytes": "1577",
+        "source_file": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.ASC",
+        "wav": "tapes/tape24a.wav",
+        "folder": "tapes/recovered/tape24a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
