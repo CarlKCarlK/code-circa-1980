@@ -1,0 +1,40 @@
+{
+  "id": "quadratic-roots",
+  "title": "Quadratic Roots",
+  "description": "Quadratic Roots. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "QUADRATIC ROOTS",
+      "capture": "tape4a",
+      "save": 4,
+      "raw": "versions/v01/04-QUADRATIC-ROOTS.BAS",
+      "listing": "versions/v01/04-QUADRATIC-ROOTS.ASC",
+      "playable": false,
+      "note": "validated payload. 47 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-QUADRATIC-ROOTS.ASC",
+          "label": "04-QUADRATIC-ROOTS.ASC"
+        },
+        {
+          "path": "versions/v01/04-QUADRATIC-ROOTS.BAS",
+          "label": "04-QUADRATIC-ROOTS.BAS"
+        }
+      ],
+      "startupSource": "0 GOTO 1990 \n10 FOR G=-100TO100 STEP 10\n30 X=G:GOSUB1000\n40 IF Y1=0 THEN CLS:GOTO100 ELSE G=OG-Y/Y1\n50 IF OG=G THEN PRINT:PRINT\"****** \" G\"*******\":GOTO 100\n60 OG=G:PRINTG;:GOTO30\n100 NEXT G:PRINT \"DONE\":END\n500 CLS\n505 FOR X=1 TO 125:NEXT X\n510 PRINT:PRINT:PRINT:PRINT \"                 *******************\":PRINT:PRINT:PRINT\"             I DID IT, CARL------RICH L.\":PRINT:PRINT:PRINT:PRINT\"                ********************\"\n515 FOR X=1 TO 500:NEXT X\n520 GOTO 500",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
