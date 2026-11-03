@@ -32,6 +32,17 @@
       "slug": "basic",
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
       "unavailableReason": null
+    },
+    {
+      "id": "v03",
+      "label": "DUNGEON TRAINER",
+      "capture": "tape3a",
+      "save": 15,
+      "raw": "versions/v03/15-DUNGEON-TRAINER.BAS",
+      "listing": "versions/v03/15-DUNGEON-TRAINER.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. 68 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+      "unavailableReason": "Source only: earlier prototype, debugging stops, or unavailable graphics extension. The site offers one selected self-contained reference."
     }
   ]
 }
