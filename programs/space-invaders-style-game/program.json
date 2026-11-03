@@ -1,0 +1,43 @@
+{
+  "id": "space-invaders-style-game",
+  "title": "Space Invaders Style Game",
+  "description": "Space Invaders Style Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; graphics extensions required",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SPACE INVADERS STYLE GAME",
+      "capture": "tape11a",
+      "save": 10,
+      "raw": "versions/v01/10-SPACE-INVADERS-STYLE-GAME.BAS",
+      "listing": "versions/v01/10-SPACE-INVADERS-STYLE-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker; exact both-channel matches; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/10-SPACE-INVADERS-STYLE-GAME.ASC",
+          "label": "10-SPACE-INVADERS-STYLE-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/10-SPACE-INVADERS-STYLE-GAME.BAS",
+          "label": "10-SPACE-INVADERS-STYLE-GAME.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 DIMA%(250):IY=-1:QF=20\n30 LINE(3,1)-(10,5),SET,B:LINE(2,2)-(11,2),SET:LINE(1,3)-(12,3),SET:RESET(4,2):RESET(5,2):RESET(8,2):RESET(9,2)\n40 DIM F%(200):GET@(0,0)-(6,5),F%\n50 CLS:FORX=1TO63STEP9:PUT@(X,0)-(X+6,5),F%:NEXTX\n60 GET@(0,0)-(63,5),F%\n70 CLS\n80 LINE(1,3)-(22,5),SET,BF:LINE(3,2)-(20,2),SET:LINE(5,1)-(18,1),SET\n90 DIMB%(80):GET@(0,0)-(11,1),B%\n100 CLS\n110 LINE(3,5)-(16,5),SET:LINE(3,4)-(16,4),SET:LINE(9,3)-(11,4),SET,BF\n120 DIM H%(40):GET@(0,0)-(9,1),H%",
+      "controlSource": [
+        "170 A$=INKEY$:IFA$<>\"\"THENCLS:GOTO190  ",
+        "260 A$=INKEY$:IFA$=\"\"THEN270  ELSEIFA$=\",\"THENAN=-1ELSEIFA$=\".\"THENAN=0ELSEIFA$=\"/\"THENAN=1ELSEIFA$=\"Z\"THENCX=-1ELSEIFA$=\"X\"THENCX=0ELSEIFA$=\"C\"THENCX=1ELSEIFA$=\" \"ANDS=0THENS=1:SA=A:SX=COS(A)*9+(HX*2+10):SY=SIN(A)*5+47"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
