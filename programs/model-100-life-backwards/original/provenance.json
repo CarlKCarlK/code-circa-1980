@@ -1,53 +1,71 @@
 {
-  "version": "v06",
+  "version": "v07",
   "capture": "tape2a2",
-  "save": 21,
-  "archive_raw": "tapes/recovered/tape2a2/best/21-L-BASIC-TAPE-BLOCK.BIN",
-  "archive_listing": "tapes/recovered/tape2a2/best/21-L.ASC",
+  "save": 22,
+  "archive_raw": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.BIN",
+  "archive_listing": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.ASC",
   "imported_files": [
     {
-      "path": "versions/v06/21-L-BASIC-TAPE-BLOCK.BIN",
-      "archive_path": "tapes/recovered/tape2a2/best/21-L-BASIC-TAPE-BLOCK.BIN",
-      "bytes": 3250,
-      "sha256": "47b268c08e3c6b26da97732c796a4f6b2ee0995b003a75a0e9c38ac29ff02e13"
+      "path": "versions/v07/22-L-BASIC-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.ASC",
+      "bytes": 335,
+      "sha256": "6e7197242eb2cb9f820a71f42ebb2f917e527f95df784b18230b31fdf360800a"
     },
     {
-      "path": "versions/v06/21-L.ASC",
-      "archive_path": "tapes/recovered/tape2a2/best/21-L.ASC",
-      "bytes": 3728,
-      "sha256": "4066a52c28cfad10bce89dc90af85393a515c3f0dabf4791d9cca2c19c605e36"
+      "path": "versions/v07/22-L-BASIC-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.BIN",
+      "bytes": 236,
+      "sha256": "2a7b913760548958ccdb85793dfd2d6f62f69a6968662c64193a530cc7efbbca"
+    },
+    {
+      "path": "versions/v07/22-L-HEADER.BIN",
+      "archive_path": "tapes/recovered/tape2a2/partial/22-L-HEADER.BIN",
+      "bytes": 38,
+      "sha256": "eeaa57bf54401e10531b49fd285bbcf217eb47813884d7a824f7238b5fe70085"
+    },
+    {
+      "path": "versions/v07/22-L-RAW.BIN",
+      "archive_path": "tapes/recovered/tape2a2/partial/22-L-RAW.BIN",
+      "bytes": 4987,
+      "sha256": "ef23a1743c8c6691c3da3b79950faab6c0b2bfbc15d2f2a3c948d5302d46c30f"
+    },
+    {
+      "path": "versions/v07/22-L-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape2a2/partial/22-L-UNCERTAIN.ASC",
+      "bytes": 335,
+      "sha256": "6e7197242eb2cb9f820a71f42ebb2f917e527f95df784b18230b31fdf360800a"
     }
   ],
   "recovery_item": {
     "format": "Model 100 BASIC",
-    "sha256": "47b268c08e3c6b26da97732c796a4f6b2ee0995b003a75a0e9c38ac29ff02e13",
-    "bytes": 3250,
-    "archive_validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
+    "sha256": "2a7b913760548958ccdb85793dfd2d6f62f69a6968662c64193a530cc7efbbca",
+    "bytes": 236,
+    "archive_validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 9 lines through 370; no cross-channel prefix match",
     "import_validation": "Exact file hashes; format-specific checks below.",
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "2",
     "side": "a",
-    "order": "21",
+    "order": "22",
     "type": "Model 100 BASIC",
-    "recovery%": "100",
-    "summary": "Cassette name L; LIFE backwards, April 27 1985; 95 validated lines",
+    "recovery%": "",
+    "summary": "Cassette name L; late LIFE backwards variant (descriptive identification); damaged captured save",
     "capture": "tape2a2",
     "capture_scope": "full",
     "baud": "1500",
     "platform": "Model 100",
-    "status": "validated payload; runtime untested",
-    "validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
-    "source_start_s": "589.228",
-    "recovered_bytes": "3250",
-    "source_file": "tapes/recovered/tape2a2/best/21-L.ASC",
+    "status": "damaged / partial Model 100 BASIC",
+    "validation": "Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 9 lines through 370; no cross-channel prefix match",
+    "source_start_s": "724.888",
+    "recovered_bytes": "4987",
+    "source_file": "tapes/recovered/tape2a2/partial/22-L-BASIC-PREFIX.ASC",
     "wav": "tapes/tape2a2.wav",
-    "folder": "tapes/recovered/tape2a2/best",
+    "folder": "tapes/recovered/tape2a2/left-sweep",
     "recovery_date": "2026-10-28",
     "recorder_volume": "3/10",
-    "next_action": "Runtime testing only if requested"
+    "next_action": "Retain validated blocks/prefixes and unresolved candidates; further recovery may need a new capture"
   },
-  "recovery_inventory": "tapes/recovered/tape2a2/best/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape2a2/left-sweep/inventory.json",
   "execution_tested": false
 }
