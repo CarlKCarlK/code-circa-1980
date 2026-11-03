@@ -26,3 +26,8 @@ from the original recovery-inventory evidence.
 Unit tests, production build, all 114 canonical/snapshot checks, and preservation
 of all 32 active web releases pass. The final browser-suite result is recorded
 in docs/next-six-programs.md.
+
+November 2, 2026: SPI’s unshared v1 now offers AIM through an Investing program
+selector. Both development and frozen players switch to AIM and back directly;
+the selected control remains correct when a cached SPI session is restored.
+SPI’s existing default payload/history remain unchanged; AIM has separate tags.

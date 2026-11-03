@@ -232,5 +232,25 @@
   "collection_group": {
     "parent": "spi",
     "note": "Distinct algorithm and history, selected through SPI\u2019s one investing gallery entry."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "reference": {
+      "capture": "tape20b",
+      "save": 12,
+      "version": "v04",
+      "payload": "versions/v04/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.BAS",
+      "sha256": "4ab7efb57a2eeeee8a784c99e353c74917bb359faa2f644ea8935c856340f858"
+    },
+    "checks": "SPI/AIM selection in both development and frozen v1; AIM reaches its PROFIT result and READY; pause/resume, restart, and returning to SPI.",
+    "limits": "Historical stored data only; no independent financial-formula audit. AIM remains a distinct algorithm/history grouped under SPI.",
+    "test": "app/tests/browser/related-more.spec.js",
+    "note": "Separate from preserved recovery-stage execution flags."
+  },
+  "emulator_capture": {
+    "path": "programs/aim/verification/screen.png",
+    "sha256": "8cedcfba85c1a56c308af0030670489e6dd01b28e792a47a0d7e1a8a191b0f6f",
+    "description": "Original-ROM browser execution capture; separate from the modern gallery SVG."
   }
 }
