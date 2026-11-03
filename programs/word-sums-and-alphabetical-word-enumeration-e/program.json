@@ -1,0 +1,44 @@
+{
+  "id": "word-sums-and-alphabetical-word-enumeration-e",
+  "title": "Word Sums and Enumeration",
+  "description": "Word Sums and Enumeration. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Word sums and alphabetical word enumeration experiments (inferred)",
+      "capture": "tape16a",
+      "save": 12,
+      "raw": "versions/v01/12-WORD-SUM-EXPERIMENTS.BAS",
+      "listing": "versions/v01/12-WORD-SUM-EXPERIMENTS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/12-WORD-SUM-EXPERIMENTS.ASC",
+          "label": "12-WORD-SUM-EXPERIMENTS.ASC"
+        },
+        {
+          "path": "versions/v01/12-WORD-SUM-EXPERIMENTS.BAS",
+          "label": "12-WORD-SUM-EXPERIMENTS.BAS"
+        }
+      ],
+      "startupSource": "0 'GOTO 8100\n1 'LIST  8100-8999\n3 'GOTO 2990\n5 GOTO 1000\n10 REM 'PROGRAM TO SUM WORDS TO S\n15 CLEAR 500\n20 AC=ASC(\"A\")\n30 REM A=65 SO SUB 64 TO GET VALUE\n40 V=98\n100 W$=\"UZZZ\" +STRING$(41,\" \")\n110 I=1\n120 CH$=MID$(W$,I,1)",
+      "controlSource": [
+        "1037 M$=INKEY$:IFM$<>\"\" THEN IF ASC(M$)=112 THEN CLS:QQ=INT(Z/64):FOR QC=0TOQQ:FOR U=0TO62:PRINTRW$(QC*63+U),:NEXTU:GOSUB 1380:CLS:NEXTQC",
+        "1380 M$=INKEY$:IFM$=\"\"THEN 1380 ELSE RETURN",
+        "10000 M$=INKEY$:IFM$=\"\"THEN10000 ELSE PRINTASC(M$)"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
