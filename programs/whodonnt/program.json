@@ -1,0 +1,25 @@
+{
+  "id": "whodonnt",
+  "title": "Who Donnt?",
+  "description": "Question suspects, inspect weapons, and investigate a household murder.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v04",
+  "versionOrder": "Consecutive tape12a saves progressively add weapons, interrogation, and courtroom code. v04 is the most developed captured draft; its courtroom ending is unfinished.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "WHO DONNT EARLY",
+      "capture": "tape12a",
+      "save": 6,
+      "raw": "versions/v01/06-WHO-DONNT-EARLY.BAS",
+      "listing": "versions/v01/06-WHO-DONNT-EARLY.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+      "unavailableReason": "Source only: earlier prototype, debugging stops, or unavailable graphics extension. The site offers one selected self-contained reference."
+    }
+  ]
+}
