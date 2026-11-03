@@ -5,3 +5,15 @@ test('Cipher derivative reproduces exactly and changes only five record bodies',
 function translate(message,key,mode){const b=buildCorrected();let text=b.listing.replace(/^40 .*$/m,`40 M$="${message}"`).replace(/^70 .*$/m,`70 K$="${key}"`).replace(/^95 .*$/m,`95 A$="${mode}"`).replace(/^450 .*$/m,'450 POKE28672,LEN(M$):FOR C=1TOLEN(M$):POKE28672+C,ASC(MID$(M$,C,1)):NEXTC:POKE32256,42:END');const m=runBasic(text,8);return String.fromCharCode(...Array.from({length:m.readMemory(28672)},(_,i)=>m.readMemory(28673+i)));}
 for(const [input,key,encoded] of [['HELLO','KEY','SJJWT'],['ABC','B','CDE'],[' ','A','A'],['A','Z',' ']])test(`Actual-ROM cipher vector ${JSON.stringify(input)} with ${key} and reverse`,()=>{assert.equal(translate(input,key,'ENCODE'),encoded);assert.equal(translate(encoded,key,'DECODE'),input);});
 test('AIM is grouped with SPI while retaining a separate selected reference',()=>{const root=new URL('../../programs/',import.meta.url),aim=JSON.parse(fs.readFileSync(new URL('aim/program.json',root))),spi=JSON.parse(fs.readFileSync(new URL('spi/program.json',root)));assert.equal(aim.parentProgram,spi.id);assert.equal(aim.galleryHidden,true);assert.ok(spi.relatedPrograms.includes(aim.id));assert.equal(aim.versions.filter(v=>v.playable).length,1);assert.equal(spi.versions.filter(v=>v.playable).length,1);});
+
+test('Word Search spelling derivative reproduces and preserves every other record body',async()=>{
+ const {buildCorrected:buildWordSearch}=await import('../scripts/build-wordsearch-corrected.mjs');
+ const root=new URL('../../programs/wordsearch/',import.meta.url),b=buildWordSearch();
+ assert.deepEqual(b.bytes,fs.readFileSync(new URL('corrected/WORDSEARCH.BAS',root)));
+ assert.equal(b.listing,fs.readFileSync(new URL('corrected/WORDSEARCH.ASC',root),'utf8'));
+ assert.deepEqual(b.record,JSON.parse(fs.readFileSync(new URL('corrected/changes.json',root))));
+ const before=parseBasic(fs.readFileSync(new URL(b.record.source,root))),after=parseBasic(b.bytes);
+ assert.equal(before.base,after.base);assert.equal(before.records.length,after.records.length);
+ assert.deepEqual(after.records.filter((r,i)=>!r.body.equals(before.records[i].body)).map(r=>r.line),[1330,2000,3000]);
+ assert.match(b.listing,/WAFR,DISCUSSION,SKILLS/);assert.match(b.listing,/SOLUTE,SOLVENT,SOLUTION/);assert.match(b.listing,/TO REPRINT THE PUZZLE/);
+});

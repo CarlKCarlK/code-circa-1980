@@ -20,3 +20,11 @@ hashes, structure, and recovery evidence separately from new emulator testing.
 See VERIFICATION.md for execution checks and limits. The experience stays at
 unshared web v1. From app/ run `npm run dev` and open
 `/?development=1#/program/wordsearch` directly.
+
+## Spelling corrections
+
+The playable copy uses corrected/WORDSEARCH.BAS: DISCUSSION replaces DISSCUSSION,
+REPRINT replaces RERRINT, and SOLVENT replaces SOLVEN in the unused chemistry
+list. Recovered sources remain unchanged; corrected/changes.json lists the exact
+edits. Reproduce with `npm run build:wordsearch-corrected` from app/.
+The search algorithm is unchanged, though corrected word lengths affect placement.

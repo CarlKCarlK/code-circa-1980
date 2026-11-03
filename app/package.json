@@ -26,7 +26,8 @@
     "build:life": "node scripts/build-life.mjs",
     "build:poker-corrected": "node scripts/build-poker-corrected.mjs",
     "build:learningttt-runtime": "node scripts/build-learningttt-runtime.mjs",
-    "build:cipher-corrected": "node scripts/build-cipher-corrected.mjs"
+    "build:cipher-corrected": "node scripts/build-cipher-corrected.mjs",
+    "build:wordsearch-corrected": "node scripts/build-wordsearch-corrected.mjs"
   },
   "dependencies": {
     "trs80-base": "2.3.1",

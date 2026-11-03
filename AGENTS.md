@@ -350,3 +350,10 @@ game. Computa-Match retains its original sample names/phone-like fields; the
 runtime provenance explains the sample status. Do not include the quarantined
 file8b sentence item. Group/derivative fixtures are in related-more.test.mjs;
 browser scenarios are in related-more.spec.js.
+
+Word Search now plays a separate spelling-only derivative of tape4a save 7.
+Reproduce with `npm run build:wordsearch-corrected`: DISCUSSION, REPRINT, and
+SOLVENT (unused list) correct three record bodies. Keep names/abbreviations and
+all recovered originals unchanged. Its full-ROM verification accepts --corrected
+and writes a separate report without replacing the original-run evidence.
+Continue refreshing its unshared web v1 for local iterations.
