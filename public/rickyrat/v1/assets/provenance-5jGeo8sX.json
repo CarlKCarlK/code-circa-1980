@@ -1,0 +1,138 @@
+{
+  "official_title": "Sentence Generator",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "sentences",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Two consecutive tape10b saves. The later form adds prepositional phrases and clauses and disables adjective/adverb text. The quarantined file8b item is excluded.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape10b",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape10b/best/11-SENTENCE-GENERATOR.BAS",
+      "archive_listing": "tapes/recovered/tape10b/best/11-SENTENCE-GENERATOR.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/11-SENTENCE-GENERATOR.BAS",
+          "archive_path": "tapes/recovered/tape10b/best/11-SENTENCE-GENERATOR.BAS",
+          "bytes": 1550,
+          "sha256": "9af11b1443f59273534006b82e0cdb4e9b5d0d13fa44623f6ca60738571d3252"
+        },
+        {
+          "path": "versions/v01/11-SENTENCE-GENERATOR.ASC",
+          "archive_path": "tapes/recovered/tape10b/best/11-SENTENCE-GENERATOR.ASC",
+          "bytes": 1780,
+          "sha256": "ca5e137bd4face6ae1fe0562d2c3dfaae66e3cb1a6bf1b716b4746113ec969c9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 45,
+        "last": 1010,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "9af11b1443f59273534006b82e0cdb4e9b5d0d13fa44623f6ca60738571d3252"
+      },
+      "inventory_row": {
+        "tape": "10",
+        "side": "b",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SENTENCE GENERATOR; 45 lines",
+        "capture": "tape10b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be needed",
+        "status": "validated source; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+        "source_start_s": "520.626",
+        "recovered_bytes": "1550",
+        "source_file": "tapes/recovered/tape10b/best/11-SENTENCE-GENERATOR.ASC",
+        "wav": "tapes/tape10b.wav",
+        "folder": "tapes/recovered/tape10b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape10b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape10b",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape10b/best/12-SENTENCE-GENERATOR-V2.BAS",
+      "archive_listing": "tapes/recovered/tape10b/best/12-SENTENCE-GENERATOR-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/12-SENTENCE-GENERATOR-V2.BAS",
+          "archive_path": "tapes/recovered/tape10b/best/12-SENTENCE-GENERATOR-V2.BAS",
+          "bytes": 1761,
+          "sha256": "46321aced5037401b401dfc8184e867c03138020c7391b2259dde5634ad2fd06"
+        },
+        {
+          "path": "versions/v02/12-SENTENCE-GENERATOR-V2.ASC",
+          "archive_path": "tapes/recovered/tape10b/best/12-SENTENCE-GENERATOR-V2.ASC",
+          "bytes": 2170,
+          "sha256": "ea848c32a9451d66699c4e48c4eda641d95e2a2582aacf10c8074787d8175051"
+        }
+      ],
+      "recovery_item": {
+        "lines": 56,
+        "last": 10060,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "46321aced5037401b401dfc8184e867c03138020c7391b2259dde5634ad2fd06"
+      },
+      "inventory_row": {
+        "tape": "10",
+        "side": "b",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SENTENCE GENERATOR V2; 56 lines",
+        "capture": "tape10b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be needed",
+        "status": "validated source; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+        "source_start_s": "556.689",
+        "recovered_bytes": "1761",
+        "source_file": "tapes/recovered/tape10b/best/12-SENTENCE-GENERATOR-V2.ASC",
+        "wav": "tapes/tape10b.wav",
+        "folder": "tapes/recovered/tape10b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape10b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source notices and book years do not establish tape-save dates or cross-program chronology."
+  },
+  "artwork": {
+    "path": "app/assets/sentences-gallery.svg",
+    "sha256": "f8f9ab057757af10a50b586695ccd7616f185fba393144bf46681d2dfe173721",
+    "description": "Modern illustrative SVG; not an emulator screenshot or execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "edition": "Original v02",
+    "execution_tested": true,
+    "test": "app/tests/browser/next-six.spec.js",
+    "checks": "Automatic output containing names and common words, pause/resume and restart verified.",
+    "limits": "Short-run sampling only; no exhaustive random sentence or long-session test.",
+    "note": "This website evidence is separate from the preserved recovery-inventory execution_tested flags."
+  },
+  "emulator_capture": {
+    "path": "programs/sentences/verification/screen.png",
+    "sha256": "35f18eb4aca3c37518e2af596364e3371d14dd384aad180af88d0f6d815e531e",
+    "description": "Actual browser emulator capture from the representative runtime check; separate from gallery illustration."
+  }
+}
