@@ -1,0 +1,40 @@
+{
+  "id": "rope-tension-and-angles",
+  "title": "Rope Tension And Angles",
+  "description": "Rope Tension And Angles. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ROPE TENSION AND ANGLES",
+      "capture": "tape8a",
+      "save": 14,
+      "raw": "versions/v01/14-ROPE-TENSION-AND-ANGLES.BAS",
+      "listing": "versions/v01/14-ROPE-TENSION-AND-ANGLES.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/14-ROPE-TENSION-AND-ANGLES.ASC",
+          "label": "14-ROPE-TENSION-AND-ANGLES.ASC"
+        },
+        {
+          "path": "versions/v01/14-ROPE-TENSION-AND-ANGLES.BAS",
+          "label": "14-ROPE-TENSION-AND-ANGLES.BAS"
+        }
+      ],
+      "startupSource": "1 GOTO1000\n40 PI=3.14159\n50 INPUT\"WEIGHT OF BODY\";C\n60 INPUT\"ANGLE A AND B\";S,T\n80 S=S/180*PI:T=T/180*PI\n90 A=SIN(S):B=SIN(T)\n100 D=COS(S):E=COS(T)\n110 BB=C/(A+B*D/-E)\n120 AA=-D/E*BB\n130 PRINT\"TENSION ON ROPE A=\";BB\n140 PRINT\"TENSION ON ROPE B=\";AA\n150 END",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
