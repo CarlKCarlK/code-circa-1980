@@ -34,6 +34,30 @@
       ],
       "startupSource": "10 PRINT\"DO YOU WANT METRIC (1) OR ENGLISH (2) HORSEPOWER\";\n20 INPUTD\n25 IFD=1THEN35\n30 IFD=2THEN100\n35 PRINT\"FOR METIC H.P., ENTER IN THIS ORDER: HEIGHT(M), WEIGHT(NT),TIME(SEC);\n50 INPUTM,N,T\n60 H=(N*M)/(T*542.476)\n70 GOTO200\n100 PRINT\"FOR ENGLISH H.P. ENTER IN THIS ORDER: HEIGHT(FT), WEIGHT(LBS.), TIME (SEC).\";\n110 INPUTF,L,S\n120 H=L*M/(S*550)\n200 PRINT\"YOUR HORSEPOWER IS\";H",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "HORSEPOWER CALCULATOR",
+      "capture": "tape9a",
+      "save": 2,
+      "raw": "versions/v02/02-HORSEPOWER-CALCULATOR.BAS",
+      "listing": "versions/v02/02-HORSEPOWER-CALCULATOR.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/02-HORSEPOWER-CALCULATOR.ASC",
+          "label": "02-HORSEPOWER-CALCULATOR.ASC"
+        },
+        {
+          "path": "versions/v02/02-HORSEPOWER-CALCULATOR.BAS",
+          "label": "02-HORSEPOWER-CALCULATOR.BAS"
+        }
+      ],
+      "startupSource": "10 PRINT\"DO YOU WANT METRIC (1) OR ENGLISH (2) HORSEPOWER\";\n20 INPUTD\n25 IFD=1THEN35\n30 IFD=2THEN100\n35 PRINT\"FOR METIC H.P., ENTER IN THIS ORDER: HEIGHT(M), WEIGHT(NT),TIME(SEC)\";\n50 INPUTM,N,T\n55 IFM*N*T <=0 THEN35\n60 H=(N*M)/(T*542.476)\n70 GOTO200\n100 PRINT\"FOR ENGLISH H.P. ENTER IN THIS ORDER: HEIGHT(FT), WEIGHT(LBS.), TIME (SEC).\";\n110 INPUTF,L,S\n115 IFF*L*S <=0 THEN 100 ",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
