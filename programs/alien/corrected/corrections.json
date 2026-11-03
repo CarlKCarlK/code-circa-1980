@@ -1,6 +1,6 @@
 {
   "source": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
-  "rule": "Spelling only, and only inside quoted strings the game prints. Tokens, remaining line numbers, logic, REM comments and spacing are unchanged, except two line-specific layout fixes where a corrected line would otherwise exceed 63 columns (a 64-column line leaves a blank line; 65 wraps). One false instruction line is deleted (see deletions). Line pointers are recomputed for the new lengths with the original memory base.",
+  "rule": "Printed text is corrected in spelling and, where the instructions contradict the code, in meaning. Three logic bugs are fixed by the listed rewrites. Every other line keeps its recovered tokens and spacing. Corrected lines stay within 63 columns (a 64-column line leaves a blank line; 65 wraps). Line pointers are recomputed for the new lengths with the original memory base.",
   "replacements": [
     [
       "JUCTIONOS",
@@ -79,6 +79,36 @@
       "from": "  CLOSING A JUNCTION:",
       "to": "CLOSING A JUNCTION:",
       "reason": "Corrected spelling makes this line 65 columns, which wraps YOU onto its own line"
+    },
+    {
+      "line": 1120,
+      "from": "BY SWITCHING",
+      "to": "BY MOVING YOU",
+      "reason": "Requested 2026-11-03: the instructions contradicted the code. A computer failure moves you to a random junction."
+    },
+    {
+      "line": 1125,
+      "from": "THE JUNCTION'S NUMBERS AROUND.",
+      "to": "TO A RANDOM JUNCTION.",
+      "reason": "Requested 2026-11-03: the instructions contradicted the code. A computer failure moves you to a random junction."
+    },
+    {
+      "line": 1170,
+      "from": "HE IS HIDING, BUT IS VERY RESTLESS, AND OFTEN MOVES.",
+      "to": "HE IS HIDING. WHEN YOU SPRAY OR CLOSE A JUNCTION HE WILL",
+      "reason": "Requested 2026-11-03: the instructions contradicted the code. He gets a turn only after a missed spray, a close, or at the start of a game."
+    },
+    {
+      "line": 1180,
+      "from": "IF HE IS BOTHERED THE CHANCE OF HIM MOVING IS EVEN GREATER.",
+      "to": "PROBABLY MOVE. HE STAYS PUT WHILE YOU MOVE.",
+      "reason": "Requested 2026-11-03: the instructions contradicted the code. His odds never rise, and he never moves when you move."
+    },
+    {
+      "line": 1210,
+      "from": "IF HE IS WHERE YOU ARE HE EATS YOU.",
+      "to": "IF YOU RUN INTO HIM, OR HE FINDS YOU, HE EATS YOU.",
+      "reason": "Requested 2026-11-03: the instructions contradicted the code. Replaces the deleted line 1200."
     }
   ],
   "deletions": [
@@ -86,6 +116,43 @@
       "line": 1200,
       "text": "IF YOU RUN INTO HIM YOU HAVE ONE CHANCE TO FLEE, AFTER THAT,",
       "reason": "Requested 2026-11-03. Line 4180 ends the game at once, so there is no chance to flee; line 1210 stays and is true on its own."
+    },
+    {
+      "line": 3395,
+      "text": "THE ALIEN IS TRAPPED. YOU HAVE WON!",
+      "reason": "Moved to line 3380, ahead of the roll, so a trapped alien is noticed at once."
+    }
+  ],
+  "rewrites": [
+    {
+      "line": 385,
+      "from": "385 IFRND(2)=1THENGOSUB3380",
+      "to": "385 F=0:IFRND(2)=1THENGOSUB3380:IFF<>0THEN500",
+      "reason": "If the opening move landed on you, the game printed the slime message and carried on. It now ends the game. F=0 clears the last game's result."
+    },
+    {
+      "line": 3240,
+      "from": "3240 GOSUB3370",
+      "to": "3240 L=L(1):GOSUB3370",
+      "reason": "After a missed spray L still held the room where the gas stopped, so the alien was checked against that room instead of yours, and a following close closed that room. Yob reset this."
+    },
+    {
+      "line": 3380,
+      "from": "3380 K=RND(4)",
+      "to": "3380 FORG=1TO3:IFS(L(2),G)=-1THENNEXT:PRINT\"THE ALIEN IS TRAPPED. YOU HAVE WON!\":F=1:RETURN",
+      "reason": "The trapped check ran after the stay-put roll, so 1 turn in 4 missed the win, and rolling again could print the message repeatedly."
+    },
+    {
+      "line": 3390,
+      "from": "3390 IFK=4THEN3440",
+      "to": "3390 K=RND(4):IFK=4THEN3440",
+      "reason": "The roll now follows the trapped check."
+    },
+    {
+      "line": 3398,
+      "from": "3398 IFS(L(2),K)=-1THEN3380",
+      "to": "3398 IFS(L(2),K)=-1THEN3390",
+      "reason": "Roll again without repeating the trapped check."
     }
   ]
 }

@@ -1,4 +1,4 @@
-# Alien — corrected spelling (derived)
+# Alien — corrected (derived)
 
 `ALIEN.BAS` and `ALIEN.ASC` are **not** recovered files. They are Alien v02
 (`../versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS`, SHA-256
@@ -9,11 +9,15 @@ unchanged and downloadable as source.
 
 Rules, from [corrections.json](corrections.json):
 
-- Only bytes inside quoted strings change. Tokens, program logic, REM comments
-  and spacing are unchanged.
-- Line 1200 (`IF YOU RUN INTO HIM YOU HAVE ONE CHANCE TO FLEE, AFTER THAT,`) is
-  deleted at my request on 2026-11-03, because line 4180 ends the game at once.
-  Line 1210 stays and is true on its own.
+- Spelling is corrected inside quoted strings.
+- At my request on 2026-11-03, instructions that contradict the code are rewritten
+  (lines 1120, 1125, 1170, 1180, 1210), and line 1200 (`IF YOU RUN INTO HIM YOU HAVE
+  ONE CHANCE TO FLEE, AFTER THAT,`) is deleted.
+- Also at my request, three logic bugs are fixed by rewriting lines 385, 3240, 3380,
+  3390 and 3398 and deleting 3395: a missed spray checked the alien against the
+  wrong room, an opening move onto you did not end the game, and a trapped alien
+  could be missed or announced repeatedly. `changes.json` gives each reason.
+- Every other line keeps its recovered tokens, REM comments and spacing.
 - Two line-specific layout fixes keep corrected lines within 63 columns: on the
   TRS-80 a 64-column line leaves a blank line and a 65-column line wraps.
 - Line pointers are recomputed for the new lengths using the original memory base.
@@ -21,7 +25,7 @@ Rules, from [corrections.json](corrections.json):
 Regenerate with `node scripts/build-alien-corrected.mjs` from `app/`.
 `npm test` rebuilds it and checks it against these files.
 
-Result: 7503 bytes (v02: 7560), SHA-256 `59cbf7dd18dbc1d59e43bbee8067a11c78064fc3786f9c1317c58a4233d12481`.
+Result: 7517 bytes (v02: 7560), SHA-256 `1e438c34d7a5b6c3bc15bf642290492aa4bcb2432e0ebd0e1b4686a6c3db0e2a`.
 
 | Line | Original | Corrected | Times | Why |
 |---|---|---|---|---|

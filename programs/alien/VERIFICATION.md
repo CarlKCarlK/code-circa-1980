@@ -32,12 +32,14 @@ the library default (Model III, Level II BASIC, as on the site), typing at each 
 
 ## Corrected-spelling edition (`tests/alien-corrected.test.mjs`)
 
-On 2026-11-03 the false line 1200 was deleted from this edition; the test checks
-that every other line keeps its code.
+On 2026-11-03 this edition's false instructions were rewritten and three logic bugs
+fixed (`corrected/README.md`). The test checks that every unlisted line keeps its code,
+and it runs each affected routine in the ROM from both the recovered lines and the
+fixed ones, showing the bug in the first and its absence in the second.
 
 `npm test` rebuilds `corrected/ALIEN.BAS` from v02 with `corrections.json` and
-checks that it matches the committed file and `changes.json`; that line numbers,
-the memory base and every byte outside quoted strings equal v02; that the pointer
+checks that it matches the committed file and `changes.json`; that the memory
+base and every byte outside quoted strings of unlisted lines equal v02; that the pointer
 chain ends exactly; and that no printed string keeps the listed misspellings.
 In the headless emulator it played the same opening as v02 (same world, same
 responses and emulated timings for move, close and spray) with corrected text, and

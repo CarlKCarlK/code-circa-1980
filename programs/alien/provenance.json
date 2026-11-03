@@ -974,14 +974,14 @@
   "derived_editions": [
     {
       "id": "corrected",
-      "description": "v02 with printed spelling corrected and false line 1200 deleted; not a recovered artifact",
+      "description": "v02 with corrected text and three logic bugs fixed; not a recovered artifact",
       "source_version": "v02",
       "source_sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
       "raw": "corrected/ALIEN.BAS",
       "listing": "corrected/ALIEN.ASC",
-      "sha256": "59cbf7dd18dbc1d59e43bbee8067a11c78064fc3786f9c1317c58a4233d12481",
-      "bytes": 7503,
-      "listing_sha256": "a5909d381d9e50ab921d5b521d8e990de46fef4a44f2f2149219301d60db326f",
+      "sha256": "1e438c34d7a5b6c3bc15bf642290492aa4bcb2432e0ebd0e1b4686a6c3db0e2a",
+      "bytes": 7517,
+      "listing_sha256": "7dcaa3c19c4b16c944650ae231aaed516e3000031095248083edf06b13aaca99",
       "corrections": "corrected/corrections.json",
       "changes": "corrected/changes.json",
       "build": "app/scripts/build-alien-corrected.mjs",

@@ -1,9 +1,9 @@
-// Derives Alien's spelling-corrected edition from the recovered v02 payload.
-// Only bytes inside quoted strings change; see programs/alien/corrected/corrections.json.
+// Derives Alien's corrected edition from the recovered v02 payload: printed text, plus the
+// few logic fixes listed as rewrites; see programs/alien/corrected/corrections.json.
 // Line-specific layout fixes apply after spelling, so they match corrected text.
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
-import {decodeBasicProgram} from 'trs80-base';
+import {decodeBasicProgram, parseBasicText} from 'trs80-base';
 
 const folder = new URL('../../programs/alien/', import.meta.url);
 const spec = JSON.parse(fs.readFileSync(new URL('corrected/corrections.json', folder)));
@@ -43,6 +43,9 @@ function correctBody(body, changes, line) {
   return Buffer.from(out);
 }
 
+// Tokenizes one line of BASIC text into its record body.
+const tokenize = text => parseBasic(Buffer.from(decodeBasicProgram(parseBasicText(`${text}\n`)).asCassetteBinary())).records[0].body;
+
 export function buildCorrected() {
   const original = fs.readFileSync(new URL(spec.source, folder));
   const {header, records, base} = parseBasic(original);
@@ -50,7 +53,10 @@ export function buildCorrected() {
   for (const {line, body} of records) {
     const deletion = spec.deletions.find(item => item.line === line);
     if (deletion) { changes.push({line, deleted: deletion.text, reason: deletion.reason}); continue; }
-    const fixed = correctBody(body, changes, line);
+    const rewrite = spec.rewrites.find(item => item.line === line);
+    if (rewrite && !tokenize(rewrite.from).equals(body)) throw Error(`Line ${line} does not re-tokenize to its recovered bytes`);
+    if (rewrite) changes.push({line, from: rewrite.from, to: rewrite.to, reason: rewrite.reason});
+    const fixed = rewrite ? tokenize(rewrite.to) : correctBody(body, changes, line);
     const next = offset + 4 + fixed.length + 1;
     const link = Buffer.alloc(4); link.writeUInt16LE(base + next, 0); link.writeUInt16LE(line, 2);
     parts.push(link, fixed, Buffer.from([0])); offset = next;

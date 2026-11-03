@@ -131,25 +131,29 @@ reading the source.
 - Closed junctions and the junction numbering carry over to later games, even
   new set-ups, until the program is run again.
 - No check against gas paths that double back (Yob: "ARROWS AREN'T THAT CROOKED").
-- After a missed spray, the alien's move is checked against the room where the
-  gas stopped instead of your room (Yob reset this). The alien can kill you
-  from elsewhere, or move into your junction harmlessly until you walk into it.
   A close right after a miss closes the gas's last room.
 - Entering your own junction at `WHERE TO` asks again; Yob lets you stay put.
 - `SAME SET-UP` needs `YES` (Yob: `Y`); any answer except `NO` shows the
   instructions (Yob: except `N`).
 - No `RANDOM`: every start of the program replays the same worlds (above).
 
-### Where the instructions and code disagree
+### Fixed in the edition the site plays
 
-- "One chance to flee" the alien: walking into it kills you at once. The site's
-  edition deletes that sentence (line 1200); the recovered files keep it.
-- The alien "often moves": only at the moments listed above.
-- Computer failure "switches the junction's numbers": it moves you to a random
-  junction, like Yob's super bats.
-- If the alien's starting move lands on you, the game prints the slime message
-  and then carries on.
-- "THE ALIEN IS TRAPPED. YOU HAVE WON!" can print more than once.
+The recovered files keep all of these.
+
+- The instructions promised "one chance to flee", but walking into the alien kills
+  you at once. They also said it "often moves" and moves more when "bothered", but
+  it moves only at the moments listed above and its odds never rise.
+- They said a computer failure "switches the junction's numbers", but it moves you
+  to a random junction, like Yob's super bats.
+- After a missed spray, the alien's move was checked against the room where the gas
+  stopped instead of your room (Yob reset this). It could kill you from elsewhere,
+  or move into your junction harmlessly until you walked into it, and a close right
+  after a miss closed the gas's last room.
+- If the alien's starting move landed on you, the game printed the slime message
+  and then carried on. Now it ends the game.
+- "THE ALIEN IS TRAPPED. YOU HAVE WON!" could print more than once, and 1 turn in 4
+  the win went unnoticed until the alien's next turn.
 - The original spells ALEIN, JUCTION, VACUM, BOOBIE-TRAPPED, YOUR ARE, TO LATE
   and more. The site corrects the printed spelling; the
   recovered files are unchanged.
