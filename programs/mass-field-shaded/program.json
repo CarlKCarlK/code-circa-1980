@@ -1,0 +1,40 @@
+{
+  "id": "mass-field-shaded",
+  "title": "Mass Field Shaded",
+  "description": "Mass Field Shaded. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MASS FIELD SHADED",
+      "capture": "tape22a",
+      "save": 14,
+      "raw": "versions/v01/14-MASS-FIELD-SHADED.BAS",
+      "listing": "versions/v01/14-MASS-FIELD-SHADED.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/14-MASS-FIELD-SHADED.ASC",
+          "label": "14-MASS-FIELD-SHADED.ASC"
+        },
+        {
+          "path": "versions/v01/14-MASS-FIELD-SHADED.BAS",
+          "label": "14-MASS-FIELD-SHADED.BAS"
+        }
+      ],
+      "startupSource": "5 S=1\n10 INPUT\"HOW MANY SOUCES\";N\n20 FORI=1TON\n30 INPUT\"X OF SOUCE\";X(I)\n40 INPUT\"RELITIVE MASS OF SAME\";M(I)\n50 NEXT\n60 CLS\n70 X=X+1:IFX>127THEN500\n75 A=0\n80 FORI=1TON\n85 IFX=X(I)THENA=2:GOTO100\n90 A=A+(M(I)/(X-X(I))[2)*SGN(X-X(I))",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
