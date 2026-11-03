@@ -66,6 +66,34 @@
       ],
       "startupSource": "00010 TEST\tLD\tB,40\n00020 NEXT\tINC\tB\n00030 \tCALL\tOUTCH\n00040 \tJP\tNZ,NEXT\n00050 STOP\tJP\tTEST\n01000 OUTCH\tJP\tSKIPP\t;SUBROUTINE TO PRINT ON SCREEN\n01100 \t\t\t; INPUT  A,ZERO   B,CHARACTER\n01200 CURS\tDEFW\t$\t;LOCATION OF SCREEN\n01300 SCREEN\tEQU\t15360\t;BEGINING OF SCREEN MEM\n01400 SKIPP\tPUSH\tHL\t;SAVE HL\n01500 \tLD\tHL,(CURS) ; PUT LOCATION IN HL\n01600 \tPUSH\tDE\t;SAVE DE",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "OUTCH TEST V2",
+      "capture": "tape18a",
+      "save": 3,
+      "raw": "versions/v03/03-OUTCH-TEST-V2.ASM",
+      "listing": "versions/v03/03-OUTCH-TEST-V2.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v03/03-OUTCH-TEST-V2.ASM",
+          "label": "03-OUTCH-TEST-V2.ASM"
+        },
+        {
+          "path": "versions/v03/03-OUTCH-TEST-V2.TXT",
+          "label": "03-OUTCH-TEST-V2.TXT"
+        },
+        {
+          "path": "versions/v03/03-OUTCH-TEST-V2.Z80",
+          "label": "03-OUTCH-TEST-V2.Z80"
+        }
+      ],
+      "startupSource": "00010 TEST\tLD\tB,40\n00030 NEXT\tCALL\tOUTCH\n00035 \tINC\tB\n00040 \tJP\tNZ,NEXT\n00050 STOP\tJP\tTEST\n01000 OUTCH\tJP\tSKIPP\t;SUBROUTINE TO PRINT ON SCREEN\n01100 \t\t\t; INPUT  A,ZERO   B,CHARACTER\n01200 CURS\tDEFW\t$\t;LOCATION OF SCREEN\n01300 SCREEN\tEQU\t15360\t;BEGINING OF SCREEN MEM\n01400 SKIPP\tPUSH\tHL\t;SAVE HL\n01500 \tLD\tHL,(CURS) ; PUT LOCATION IN HL\n01600 \tPUSH\tDE\t;SAVE DE",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

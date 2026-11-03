@@ -1,33 +1,33 @@
 {
-  "version": "v02",
+  "version": "v03",
   "capture": "tape18a",
-  "save": 2,
-  "archive_raw": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.ASM",
-  "archive_listing": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.TXT",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.ASM",
+  "archive_listing": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.TXT",
   "imported_files": [
     {
-      "path": "versions/v02/02-OUTCH-TEST-V1.ASM",
-      "archive_path": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.ASM",
-      "bytes": 1103,
-      "sha256": "edb92f1e32bead01ba59e41a0c2534a5ca007d24d5bda366aed821f8e88c7b46"
+      "path": "versions/v03/03-OUTCH-TEST-V2.ASM",
+      "archive_path": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.ASM",
+      "bytes": 1090,
+      "sha256": "a1818ce24e1cb777c06f2822a7dd694f42e631917e44d4590f74d9db6376e484"
     },
     {
-      "path": "versions/v02/02-OUTCH-TEST-V1.TXT",
-      "archive_path": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.TXT",
-      "bytes": 1095,
-      "sha256": "9fc09cad760e7661ccc39ea301d731571185233df3a5e855c80c9e5753b29099"
+      "path": "versions/v03/03-OUTCH-TEST-V2.TXT",
+      "archive_path": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.TXT",
+      "bytes": 1082,
+      "sha256": "0b1e908bf44ae61d89c4baf160dde00f5adba4fa51f348adb0d110cdb5f58de5"
     },
     {
-      "path": "versions/v02/02-OUTCH-TEST-V1.Z80",
-      "archive_path": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.Z80",
-      "bytes": 813,
-      "sha256": "d250ce5cc019140b47350ed7c41ca92394a0514a339425ed4ee00655a183eb40"
+      "path": "versions/v03/03-OUTCH-TEST-V2.Z80",
+      "archive_path": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.Z80",
+      "bytes": 806,
+      "sha256": "f830e4bbeebd3bffeb67bcffaf6aa6cfc501f7f3907fdafc6d932f94fc23b35e"
     }
   ],
   "recovery_item": {
     "format": "assembly source (EDTASM)",
-    "sha256": "edb92f1e32bead01ba59e41a0c2534a5ca007d24d5bda366aed821f8e88c7b46",
-    "bytes": 1103,
+    "sha256": "a1818ce24e1cb777c06f2822a7dd694f42e631917e44d4590f74d9db6376e484",
+    "bytes": 1090,
     "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
     "import_validation": "Exact file hashes; format-specific checks below.",
     "source_notice_lines": []
@@ -35,19 +35,19 @@
   "inventory_row": {
     "tape": "18",
     "side": "a",
-    "order": "2",
+    "order": "3",
     "type": "assembly source (EDTASM)",
     "recovery%": "100",
-    "summary": "OUTCH TEST V1",
+    "summary": "OUTCH TEST V2",
     "capture": "tape18a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Z80 / EDTASM",
     "status": "validated payload; runtime untested",
     "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
-    "source_start_s": "55.118",
-    "recovered_bytes": "1103",
-    "source_file": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.TXT",
+    "source_start_s": "79.162",
+    "recovered_bytes": "1090",
+    "source_file": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.TXT",
     "wav": "tapes/tape18a.wav",
     "folder": "tapes/recovered/tape18a",
     "recovery_date": "2026-10-28",
