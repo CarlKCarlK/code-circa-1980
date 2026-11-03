@@ -34,6 +34,30 @@
       ],
       "startupSource": "10 PRINT\"SIMULTANEOUS EQUATIONS\"\n20 PRINT\n30 DIM A(20,21)\n50 INPUT\"NUMBER OF EQUATIONS\";R\n60 PRINT\"COEFFIICIENT MATRIX....\"\n70 FORJ=1TOR\n80 PRINT\"EQUATION\";J\n90   FORI=1TOR+1\n100     IF I=R+1 THEN 130\n110     PRINT\"  COEFFICIENT\";I;\n120     GOTO 140\n130     PRINT\" CONSTANT\";",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "SIMULTANEOUS EQUATIONS SAVE02",
+      "capture": "tape24a",
+      "save": 4,
+      "raw": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.BAS",
+      "listing": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC",
+          "label": "04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.BAS",
+          "label": "04-SIMULTANEOUS-EQUATIONS-SAVE02.BAS"
+        }
+      ],
+      "startupSource": "10 PRINT\"SIMULTANEOUS EQUATIONS\"\n20 PRINT\n30 DIM A(20,21)\n50 INPUT\"NUMBER OF EQUATIONS\";R\n60 PRINT\"COEFFIICIENT MATRIX....\"\n70 FORJ=1TOR\n80 PRINT\"EQUATION\";J\n90   FORI=1TOR+1\n100     IF I=R+1 THEN 130\n110     PRINT\"  COEFFICIENT\";I;\n120     GOTO 140\n130     PRINT\" CONSTANT\";",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
