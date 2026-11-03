@@ -1,0 +1,74 @@
+{
+  "official_title": "Swords",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Swords",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape23a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape23a/best/03-SWORDS.BAS",
+      "archive_listing": "tapes/recovered/tape23a/best/03-SWORDS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-SWORDS.ASC",
+          "archive_path": "tapes/recovered/tape23a/best/03-SWORDS.ASC",
+          "bytes": 2340,
+          "sha256": "5e4c58dba5bc5b05013715e86ada9332e569c33a768ce3a58473b985d8ed9232"
+        },
+        {
+          "path": "versions/v01/03-SWORDS.BAS",
+          "archive_path": "tapes/recovered/tape23a/best/03-SWORDS.BAS",
+          "bytes": 1901,
+          "sha256": "d43aabf1c409f67c9a9d85684adaf4ec93e3d9c892a2dda46e0ea4716fb9b8a1"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "d43aabf1c409f67c9a9d85684adaf4ec93e3d9c892a2dda46e0ea4716fb9b8a1",
+        "bytes": 1901,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 42,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1899,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SWORDS",
+        "capture": "tape23a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "92.225",
+        "recovered_bytes": "1901",
+        "source_file": "tapes/recovered/tape23a/best/03-SWORDS.ASC",
+        "wav": "tapes/tape23a.wav",
+        "folder": "tapes/recovered/tape23a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
