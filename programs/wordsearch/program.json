@@ -15,14 +15,12 @@
       "label": "WORD SEARCH",
       "capture": "tape4a",
       "save": 7,
-      "raw": "corrected/WORDSEARCH.BAS",
-      "listing": "corrected/WORDSEARCH.ASC",
+      "raw": "versions/v01/07-WORD-SEARCH.BAS",
+      "listing": "versions/v01/07-WORD-SEARCH.ASC",
       "playable": true,
       "slug": "basic",
-      "note": "Spelling-corrected derivative of tape4a save 7; recovered source preserved unchanged. Three record bodies corrected; see corrected/changes.json.",
-      "unavailableReason": null,
-      "derived": true,
-      "running": "Running corrected BASIC"
+      "note": "Untouched recovered save. 56 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+      "unavailableReason": null
     }
   ]
 }
