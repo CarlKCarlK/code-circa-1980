@@ -1,0 +1,42 @@
+{
+  "id": "refraction",
+  "title": "Refraction",
+  "description": "Refraction. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "REFRACTION SAVE01",
+      "capture": "tape25a",
+      "save": 4,
+      "raw": "versions/v01/04-REFRACTION-SAVE01.BAS",
+      "listing": "versions/v01/04-REFRACTION-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/04-REFRACTION-SAVE01.ASC",
+          "label": "04-REFRACTION-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/04-REFRACTION-SAVE01.BAS",
+          "label": "04-REFRACTION-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 'REFRACTION\n30 PRINT:PRINT:PRINT:PRINT\n40 PRINT\"WELCOME, THIS IS A SIMULATION OF LIGHT THOUGH TWO MEDIUMS.\"\n50 PRINT\"THEN 'N' TO THE RIGHT OF EACH MEDIUM IS IT'S INDEX OF\"\n60 PRINT\"REFRACTION. USING THESE NUMBERS YOU SHOULD BE ABLE HIT THE\"\n70 PRINT\"TARGET.  THE BLANK SPOT ON THE BOTTOM IS WHERE YOUR LIGHT\"\n80 PRINT\"BEAM WILL START, THE BLANK SPOT ON TOP IS THE TARGET.\"\n90 PRINT\"THE MEDIUM WITH THE INDEX OF 1.00029 IS AIR. THE OTHER\"\n100 PRINT\"VARIES FROM ONE TO THREE (SPACE HAS INDEX OF ONE, DIAMONDS HAVE AN INDEX OF 2.4195).  YOU SHOULD BE ABLE TO GET ANY TARGET\"\n110 PRINT\"IN THREE TRIES. GOOD LUCK. (PRESS ANY BUTTON)\n120 IFINKEY$=\"\"THEN120  ELSECLS",
+      "controlSource": [
+        "120 IFINKEY$=\"\"THEN120  ELSECLS"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
