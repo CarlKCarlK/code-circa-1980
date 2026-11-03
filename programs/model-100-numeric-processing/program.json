@@ -34,6 +34,30 @@
       ],
       "startupSource": "5 DEFDBL L:DEFINT A-K,M-Z\n10 SZ=31\n20 DIM L(100,2),TB(3,SZ)\n30 G=0\n40 P=20\n45 BL=P\n50 READ LS\n51 MF=2\n60 IF LS=-999 THEN 100 :ELSE IF LS<0 THEN P=P+(-LS)+1 :ELSE P=P+1:L(P,G)=LS:BH=P\n70 GOTO 50\n100 NL=BH+2:NH=BL-2\n110 FOR P=BL-1 TO BH+1",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "Cassette name L",
+      "capture": "tape2a",
+      "save": 15,
+      "raw": "versions/v02/15-L-BASIC-TAPE-BLOCK.BIN",
+      "listing": "versions/v02/15-L.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/15-L-BASIC-TAPE-BLOCK.BIN",
+          "label": "15-L-BASIC-TAPE-BLOCK.BIN"
+        },
+        {
+          "path": "versions/v02/15-L.ASC",
+          "label": "15-L.ASC"
+        }
+      ],
+      "startupSource": "5 DEFDBL L:DEFINT A-K,M-Z\n10 SZ=31\n20 DIM L(100,2),TB(3,SZ)\n30 G=0\n40 P=20\n45 BL=P\n50 READ LS\n51 MF=2\n60 IF LS=-999 THEN 100 :ELSE IF LS<0 THEN P=P+(-LS)+1 :ELSE P=P+1:L(P,G)=LS:BH=P\n70 GOTO 50\n100 NL=BH+2:NH=BL-2\n110 FOR P=BL-1 TO BH+1",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

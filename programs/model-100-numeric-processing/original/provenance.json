@@ -1,19 +1,19 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape2a",
-  "save": 14,
-  "archive_raw": "tapes/recovered/tape2a/best/14-L-BASIC-TAPE-BLOCK.BIN",
-  "archive_listing": "tapes/recovered/tape2a/best/14-L.ASC",
+  "save": 15,
+  "archive_raw": "tapes/recovered/tape2a/best/15-L-BASIC-TAPE-BLOCK.BIN",
+  "archive_listing": "tapes/recovered/tape2a/best/15-L.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/14-L-BASIC-TAPE-BLOCK.BIN",
-      "archive_path": "tapes/recovered/tape2a/best/14-L-BASIC-TAPE-BLOCK.BIN",
+      "path": "versions/v02/15-L-BASIC-TAPE-BLOCK.BIN",
+      "archive_path": "tapes/recovered/tape2a/best/15-L-BASIC-TAPE-BLOCK.BIN",
       "bytes": 1137,
       "sha256": "823ba78afaa3555af3ae16c2c085b55c24588b07bc20638449c519fca385cd2c"
     },
     {
-      "path": "versions/v01/14-L.ASC",
-      "archive_path": "tapes/recovered/tape2a/best/14-L.ASC",
+      "path": "versions/v02/15-L.ASC",
+      "archive_path": "tapes/recovered/tape2a/best/15-L.ASC",
       "bytes": 1264,
       "sha256": "7abd492e624192f58b54387471028e87615fac70d897ff49de0eacb7cfe87334"
     }
@@ -29,7 +29,7 @@
   "inventory_row": {
     "tape": "2",
     "side": "a",
-    "order": "14",
+    "order": "15",
     "type": "Model 100 BASIC",
     "recovery%": "100",
     "summary": "Cassette name L; Numeric/list processing program; 38 validated lines",
@@ -39,9 +39,9 @@
     "platform": "Model 100",
     "status": "validated payload; runtime untested",
     "validation": "Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-    "source_start_s": "483.413",
+    "source_start_s": "496.973",
     "recovered_bytes": "1137",
-    "source_file": "tapes/recovered/tape2a/best/14-L.ASC",
+    "source_file": "tapes/recovered/tape2a/best/15-L.ASC",
     "wav": "tapes/tape2a.wav",
     "folder": "tapes/recovered/tape2a/best",
     "recovery_date": "2026-10-28",
