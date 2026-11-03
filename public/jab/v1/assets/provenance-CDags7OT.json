@@ -1,0 +1,164 @@
+{
+  "official_title": "Jaberwocky",
+  "title_authority": "Recovered title or descriptive title from the recovered behavior; archive labels retained.",
+  "short_name": "jaberwocky",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "One complete captured save. Its room dispatcher and descriptions borrow from Roger Chaffee\u2019s Quest. No direct source date or relative order with Alien is established.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape20a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape20a/best/03-JABERWOCKY.BAS",
+      "archive_listing": "tapes/recovered/tape20a/best/03-JABERWOCKY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-JABERWOCKY.BAS",
+          "archive_path": "tapes/recovered/tape20a/best/03-JABERWOCKY.BAS",
+          "bytes": 7123,
+          "sha256": "ab0298f1e56b73f44ec6a3baa1b726300da164b873600d4b9e2ab7e379a7a9eb"
+        },
+        {
+          "path": "versions/v01/03-JABERWOCKY.ASC",
+          "archive_path": "tapes/recovered/tape20a/best/03-JABERWOCKY.ASC",
+          "bytes": 8230,
+          "sha256": "acc14a7d562cc0eb4bdeda0cc37988ca5decc39bac512c0fae718e2bf3920873"
+        }
+      ],
+      "recovery_item": {
+        "lines": 255,
+        "last": 9999,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "ab0298f1e56b73f44ec6a3baa1b726300da164b873600d4b9e2ab7e379a7a9eb"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "JABERWOCKY",
+        "capture": "tape20a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "130.156",
+        "recovered_bytes": "7123",
+        "source_file": "tapes/recovered/tape20a/best/03-JABERWOCKY.ASC",
+        "wav": "tapes/tape20a.wav",
+        "folder": "tapes/recovered/tape20a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence.",
+    "neighbor_context": [
+      {
+        "capture": "tape20b",
+        "save": 1,
+        "archive_listing": "tapes/recovered/tape20b/best/01-SUPERPOWER-INVESTING-SAVE01.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1974"
+      },
+      {
+        "capture": "tape20b",
+        "save": 2,
+        "archive_listing": "tapes/recovered/tape20b/best/02-SUPERPOWER-INVESTING-TEMPLATE01.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1974"
+      },
+      {
+        "capture": "tape20b",
+        "save": 3,
+        "archive_listing": "tapes/recovered/tape20b/best/03-SUPERPOWER-INVESTING-SAVE02.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1974"
+      },
+      {
+        "capture": "tape20b",
+        "save": 4,
+        "archive_listing": "tapes/recovered/tape20b/best/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1977"
+      },
+      {
+        "capture": "tape20b",
+        "save": 5,
+        "archive_listing": "tapes/recovered/tape20b/best/05-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE02.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1977"
+      },
+      {
+        "capture": "tape20b",
+        "save": 7,
+        "archive_listing": "tapes/recovered/tape20b/best/07-SUPERPOWER-INVESTING-TEMPLATE02.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1974"
+      },
+      {
+        "capture": "tape20b",
+        "save": 8,
+        "archive_listing": "tapes/recovered/tape20b/best/08-SUPERPOWER-INVESTING-SAVE03.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1974"
+      },
+      {
+        "capture": "tape20b",
+        "save": 9,
+        "archive_listing": "tapes/recovered/tape20b/partial/09-AUTOMATIC-INVESTMENT-MANAGEMENT-FRAGMENT01-PREFIX.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1977"
+      },
+      {
+        "capture": "tape20b",
+        "save": 10,
+        "archive_listing": "tapes/recovered/tape20b/best/10-AUTOMATIC-INVESTMENT-MANAGEMENT-TEMPLATE.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1977"
+      },
+      {
+        "capture": "tape20b",
+        "save": 12,
+        "archive_listing": "tapes/recovered/tape20b/best/12-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE03.ASC",
+        "line": "40 REM            COPYRIGHT (C) 1977"
+      }
+    ],
+    "note": "Direct quoted source notices only; same-side context is stronger, but neither notices nor tape numbers date these saves."
+  },
+  "upstream": {
+    "author": "Roger Chaffee",
+    "source_url": "https://www.worldradiohistory.com/Archive-Byte/70s/Byte-1979-07.pdf",
+    "publication_url": "https://www.worldradiohistory.com/Archive-Byte/70s/Byte-1979-07.pdf",
+    "artifact": "QUEST-EXCERPT.ASC",
+    "bytes": 853,
+    "sha256": "a74dea99008ba259dafa435cb610072610810b572b6d32c30162ededd443e7a1",
+    "note": "Roger Chaffee, Quest, BYTE July 1979, pp. 176\u2013186. Selected dispatcher/room records from Listing 2 only. This is an intentionally incomplete comparison excerpt, not a complete ancestor or executable. ASCII punctuation and keyword spacing transcribed from the published listing; spacing is not archival byte evidence. Other Quest records are omitted, not reconstructed from Jaberwocky. The available IF Archive GW-BASIC port was not used as an exact original: its numbering, text, and trailer differ.",
+    "execution_tested": false
+  },
+  "artwork": {
+    "path": "app/assets/jaberwocky-gallery.svg",
+    "sha256": "dfb2726417b8ecb835e6d6838ad9abbac845ff4e1c4122f85d4b4b986d3d92b3",
+    "description": "Modern illustrative SVG, not emulator execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "test": "app/tests/browser/monster-games.spec.js",
+    "checks": "Original-ROM browser execution: startup, MOVE/NORTH, SHOOT/NORTH (solid-wall death and the historical ?UL Error in 720), arming dynamite, pause/resume, and restart. No fix was applied to the missing line 1000. Full graph exploration, all terminal branches, and exhaustive random layouts were not tested.",
+    "reference": {
+      "version": "v01",
+      "capture": "tape20a",
+      "save": 3,
+      "payload": "versions/v01/03-JABERWOCKY.BAS",
+      "sha256": "ab0298f1e56b73f44ec6a3baa1b726300da164b873600d4b9e2ab7e379a7a9eb"
+    },
+    "note": "New execution evidence; recovery archive execution flags and historical bytes remain unchanged."
+  },
+  "emulator_capture": {
+    "path": "programs/jaberwocky/verification/screen.png",
+    "sha256": "a8460c7eda182aa1a33c9a954067420e70e8ebf96aa34795abe087124686ff8e",
+    "description": "Actual original-ROM emulator screenshot; separate from illustrative gallery artwork."
+  }
+}
