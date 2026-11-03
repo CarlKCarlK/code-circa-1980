@@ -1,0 +1,40 @@
+{
+  "id": "chemistry-quiz",
+  "title": "Chemistry Quiz",
+  "description": "Chemistry Quiz. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CHEMISTRY QUIZ",
+      "capture": "tape3a",
+      "save": 6,
+      "raw": "versions/v01/06-CHEMISTRY-QUIZ.BAS",
+      "listing": "versions/v01/06-CHEMISTRY-QUIZ.ASC",
+      "playable": false,
+      "note": "validated payload. 17 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-CHEMISTRY-QUIZ.ASC",
+          "label": "06-CHEMISTRY-QUIZ.ASC"
+        },
+        {
+          "path": "versions/v01/06-CHEMISTRY-QUIZ.BAS",
+          "label": "06-CHEMISTRY-QUIZ.BAS"
+        }
+      ],
+      "startupSource": "5 DIM C$(6,3),V$(4,3)\n10 FOR S=1TO6:FOR N=1TO 3:READ C$(S,N):NEXTN,S\n20 FOR V=1TO4:FORE=1TO3:READ V$(V,E):NEXTE,V\n30 GOTO 2000\n1000 DATA HYDROGEN OXIDE,WATER,H2O,  HYDROGEN CHLORIDE,HYDROCLORIC ACID,H.CL,  HYRDOGEN SULFATE,SULFURIC ACID,H2(S.O4),        HYDROGEN ACETATE,ACETIC ACID, H(C2H3O2),  HYDROGEN NITRATE, NITRIC ACID,H(N.O3),HYDROGEN PHOSPHATE\n1010 DATA PHOSPHORIC ACID,H3(P.O4)\n1020 ' OTHER STUFF\n1030 DATA NA.BR , K.CL, AG(N.O3)\n1040 DATA CA.F2 ,CU(N.O3)2, BA(S.O4)\n1050 DATA AL.CL3, BI(N.O3)3,FE(P.O4)\n1060 DATA TI.CL4,C.H4,SI.F4\n2000 CLS:PRINT\"NAME TO FORUMLA\"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
