@@ -20,6 +20,18 @@
       "playable": false,
       "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v02",
+      "label": "CAVE GAME",
+      "capture": "tape9a",
+      "save": 11,
+      "raw": "versions/v02/11-CAVE-GAME.BAS",
+      "listing": "versions/v02/11-CAVE-GAME.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+      "unavailableReason": null
     }
   ]
 }

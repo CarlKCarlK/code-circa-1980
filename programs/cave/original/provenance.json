@@ -1,46 +1,46 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape9a",
-  "save": 10,
-  "archive_raw": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.BAS",
-  "archive_listing": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.ASC",
+  "save": 11,
+  "archive_raw": "tapes/recovered/tape9a/best/11-CAVE-GAME.BAS",
+  "archive_listing": "tapes/recovered/tape9a/best/11-CAVE-GAME.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/10-CAVE-GAME-EARLY.BAS",
-      "archive_path": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.BAS",
-      "bytes": 762,
-      "sha256": "17c033e9057857ee181040373459574f74afb77e0afb943b3a6c13864a198898"
+      "path": "versions/v02/11-CAVE-GAME.BAS",
+      "archive_path": "tapes/recovered/tape9a/best/11-CAVE-GAME.BAS",
+      "bytes": 2160,
+      "sha256": "24f5f14fafb0e553f5fc2b330cd781086108e84e9b48211007933037d42989d9"
     },
     {
-      "path": "versions/v01/10-CAVE-GAME-EARLY.ASC",
-      "archive_path": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.ASC",
-      "bytes": 901,
-      "sha256": "99d3a707f70bb98ba2c43b4432283c8e05f1ece7c4c423c4973f9893d02ffc18"
+      "path": "versions/v02/11-CAVE-GAME.ASC",
+      "archive_path": "tapes/recovered/tape9a/best/11-CAVE-GAME.ASC",
+      "bytes": 2448,
+      "sha256": "427597b2afbf558f052c1eec74303c11ec36e59f03cab46e5c28e8fae2267049"
     }
   ],
   "recovery_item": {
-    "lines": 16,
+    "lines": 27,
     "last": 10000,
     "pointer_base": 17125,
     "normal_end_marker": true,
-    "sha256": "17c033e9057857ee181040373459574f74afb77e0afb943b3a6c13864a198898"
+    "sha256": "24f5f14fafb0e553f5fc2b330cd781086108e84e9b48211007933037d42989d9"
   },
   "inventory_row": {
     "tape": "9",
     "side": "a",
-    "order": "10",
+    "order": "11",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "CAVE GAME EARLY; 16 lines",
+    "summary": "CAVE GAME; 27 lines",
     "capture": "tape9a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
-    "source_start_s": "355.358",
-    "recovered_bytes": "762",
-    "source_file": "tapes/recovered/tape9a/best/10-CAVE-GAME-EARLY.ASC",
+    "source_start_s": "379.562",
+    "recovered_bytes": "2160",
+    "source_file": "tapes/recovered/tape9a/best/11-CAVE-GAME.ASC",
     "wav": "tapes/tape9a.wav",
     "folder": "tapes/recovered/tape9a/best",
     "recovery_date": "2026-10-26",
