@@ -1,0 +1,126 @@
+{
+  "official_title": "Trigectior",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "trigectior",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred from the added screen-scale input, wrapping logic, and flight summary. Both sources credit October 24, 1978; exact save dates and cross-tape chronology are unknown.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21a",
+      "save": 13,
+      "archive_raw": "tapes/recovered/tape21a/best/13-TRIGECTIOR-PROJECTILE.BAS",
+      "archive_listing": "tapes/recovered/tape21a/best/13-TRIGECTIOR-PROJECTILE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/13-TRIGECTIOR-PROJECTILE.BAS",
+          "archive_path": "tapes/recovered/tape21a/best/13-TRIGECTIOR-PROJECTILE.BAS",
+          "bytes": 361,
+          "sha256": "88ef1a7abaea20cdd42ebdc087b83262fa857b5555b8798fd8c20f460c96f15e"
+        },
+        {
+          "path": "versions/v01/13-TRIGECTIOR-PROJECTILE.ASC",
+          "archive_path": "tapes/recovered/tape21a/best/13-TRIGECTIOR-PROJECTILE.ASC",
+          "bytes": 396,
+          "sha256": "be7e30acad03092b7074ea3b79a518900eff96182e557fc7dcaa358211736e12"
+        }
+      ],
+      "recovery_item": {
+        "lines": 15,
+        "last": 220,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "88ef1a7abaea20cdd42ebdc087b83262fa857b5555b8798fd8c20f460c96f15e"
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "a",
+        "order": "13",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TRIGECTIOR PROJECTILE",
+        "capture": "tape21a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "332.926",
+        "recovered_bytes": "361",
+        "source_file": "tapes/recovered/tape21a/best/13-TRIGECTIOR-PROJECTILE.ASC",
+        "wav": "tapes/tape21a.wav",
+        "folder": "tapes/recovered/tape21a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape22a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.BAS",
+      "archive_listing": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/04-TRIGECTIOR-PROJECTILE.BAS",
+          "archive_path": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.BAS",
+          "bytes": 646,
+          "sha256": "4fb432136ebdf5c594886925e5160a74b8918234847da29c34dea189e0fe84fc"
+        },
+        {
+          "path": "versions/v02/04-TRIGECTIOR-PROJECTILE.ASC",
+          "archive_path": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.ASC",
+          "bytes": 726,
+          "sha256": "d783890ec3f58182074263c3c331f2a6385b84d059fc347b5fd72af8ef5361fb"
+        }
+      ],
+      "recovery_item": {
+        "lines": 22,
+        "last": 1030,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "4fb432136ebdf5c594886925e5160a74b8918234847da29c34dea189e0fe84fc"
+      },
+      "inventory_row": {
+        "tape": "22",
+        "side": "a",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TRIGECTIOR PROJECTILE",
+        "capture": "tape22a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "91.149",
+        "recovered_bytes": "646",
+        "source_file": "tapes/recovered/tape22a/best/04-TRIGECTIOR-PROJECTILE.ASC",
+        "wav": "tapes/tape22a.wav",
+        "folder": "tapes/recovered/tape22a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape22a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [
+      "10 'TRIGECTIOR           BY CARL KADIE A.D.  OCT. 24, 1978"
+    ],
+    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/trigectior-gallery.svg",
+    "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729",
+    "description": "Modern illustrative SVG, not an emulator screenshot or execution evidence."
+  }
+}
