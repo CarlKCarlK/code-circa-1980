@@ -1,0 +1,42 @@
+{
+  "id": "contest-evaluation-methods",
+  "title": "Contest Evaluation Methods",
+  "description": "Contest Evaluation Methods. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CONTEST EVALUATION METHODS",
+      "capture": "tape15b",
+      "save": 1,
+      "raw": "versions/v01/01-CONTEST-EVALUATION-METHODS.BAS",
+      "listing": "versions/v01/01-CONTEST-EVALUATION-METHODS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-CONTEST-EVALUATION-METHODS.ASC",
+          "label": "01-CONTEST-EVALUATION-METHODS.ASC"
+        },
+        {
+          "path": "versions/v01/01-CONTEST-EVALUATION-METHODS.BAS",
+          "label": "01-CONTEST-EVALUATION-METHODS.BAS"
+        }
+      ],
+      "startupSource": "5 DEFINT A-Z\n10 CLS\n20 PRINT\"TESTING OF VARIOUS METHODS OF EVALUATION\"\n30 INPUT\"HOW MANY CONTESTANTS\";NC\n40 INPUT\"HOW MANY SECTIONS   \";NS\n50 INPUT\"HOW MANY ROUNDS     \";NR\n60 INPUT\"HOW MANY IN FINAL ROUND\";NF\n70 DIM R(NC), S(NS,-INT(-NC/NS)),F(NC),P(6)\n80 '\n90 FOR RD=1TO NR\n95 C=0\n100 FOR M=1TO -INT(-NC/NS)",
+      "controlSource": [
+        "320 IF INKEY$=\"\"THEN90"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
