@@ -1,0 +1,43 @@
+{
+  "id": "map-navigation",
+  "title": "Map Navigation",
+  "description": "Map Navigation. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC with graphics extensions",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MAP NAVIGATION",
+      "capture": "file8b",
+      "save": 11,
+      "raw": "versions/v01/11-MAP-NAVIGATION.BAS",
+      "listing": "versions/v01/11-MAP-NAVIGATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/11-MAP-NAVIGATION.ASC",
+          "label": "11-MAP-NAVIGATION.ASC"
+        },
+        {
+          "path": "versions/v01/11-MAP-NAVIGATION.BAS",
+          "label": "11-MAP-NAVIGATION.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 X=15:Y=2\n30 DIM M%(10)\n40 GET@(X,Y)-(X+1,Y+1),G,M%\n100 READ X1,Y1,X2,Y2:IFX1=0 THEN 300\n110 LINE(X1*3,Y1*2)-(X2*3,Y2*2),SET\n120 GOTO 100\n300 A$=INKEY$:IFA$=\"\"THEN400\n310 IFA$=CHR$(8) THEN XC=-1:YC=0ELSEIFA$=CHR$(9)THENXC=1:YC=0ELSEIFA$=CHR$(91)THENYC=-1:XC=0ELSEIFA$=CHR$(10)THEN YC=1:XC=0\n400 PRINT@60,POINT(X+XC*3,Y+YC*3);:FORZ=1TO20:NEXT:IF NOT(POINT(X+XC*3,Y+YC*3))THENXC=0:YC=0:GOTO 300\n410 X=X+XC*3:Y=Y+YC*3:PUT@(OX,OY)-(OX+1,OY+1),SET,M%:GET@(X,Y)-(X+1,Y+1),G,M%:LINE(X,Y)-(X+1,Y+1),SET,BF:OX=X:OY=Y\n420 GOTO 300",
+      "controlSource": [
+        "300 A$=INKEY$:IFA$=\"\"THEN400",
+        "10000 A$=INKEY$:IFA$<>\"\"THENPRINTASC(A$);:GOTO10000ELSE10000"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
