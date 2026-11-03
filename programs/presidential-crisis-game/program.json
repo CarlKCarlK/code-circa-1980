@@ -1,0 +1,40 @@
+{
+  "id": "presidential-crisis-game",
+  "title": "Presidential Crisis Game",
+  "description": "Presidential Crisis Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PRESIDENTIAL CRISIS GAME",
+      "capture": "tape12a",
+      "save": 1,
+      "raw": "versions/v01/01-PRESIDENTIAL-CRISIS-GAME.BAS",
+      "listing": "versions/v01/01-PRESIDENTIAL-CRISIS-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested; raw trailer preserved after BASIC end",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-PRESIDENTIAL-CRISIS-GAME.ASC",
+          "label": "01-PRESIDENTIAL-CRISIS-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/01-PRESIDENTIAL-CRISIS-GAME.BAS",
+          "label": "01-PRESIDENTIAL-CRISIS-GAME.BAS"
+        }
+      ],
+      "startupSource": "80  E=0:M=0:W=1\n90  CLS:Y=1:U=0:B=0\n100  PRINT\"WECOME TO THE WHITE HOUSE, MR.VICE PRES...UH,\"\n110  PRINT\"I MEAN, MR. PRESIDENT. I'M SORRY SIR, BUT WITH\"\n120  PRINT\"RUSSIAN TREAT OF NUCLUAR WAR AND THE FORMER PRESIDENT'S\"\n130  PRINT\"SUICIDE, I'M NOT JUST NOT MYSELF. WHO AM I?  WHY SIR\"\n140  PRINT\"YOU REMEMBER, I WAS THE PRESIDENT'[ RIGHT HAND MAN.\"\n150  PRINT\"WHAT THAT?.  WELL I'M SURE YOU COULD HAVE DONE A BETTER\"\n160  PRINT\"JOB THAN ME, BUT YOUR NOT WHO THE PRESIDENT PICKED.\"\n164  PRINT\"      (PRESS ENTER TO CONTINUE)\"\n167  INPUTA$\n170  PRINT:PRINT\"SIR, WITH THE RUSSIAN THREAT I SUGGEST THAT WE DO\"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
