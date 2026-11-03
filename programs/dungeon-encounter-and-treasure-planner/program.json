@@ -1,0 +1,40 @@
+{
+  "id": "dungeon-encounter-and-treasure-planner",
+  "title": "Dungeon Encounter And Treasure Planner",
+  "description": "Dungeon Encounter And Treasure Planner. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "DUNGEON ENCOUNTER AND TREASURE PLANNER",
+      "capture": "file8b",
+      "save": 21,
+      "raw": "versions/v01/21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.BAS",
+      "listing": "versions/v01/21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.ASC",
+          "label": "21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.ASC"
+        },
+        {
+          "path": "versions/v01/21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.BAS",
+          "label": "21-DUNGEON-ENCOUNTER-AND-TREASURE-PLANNER.BAS"
+        }
+      ],
+      "startupSource": "2 CLEAR 300\n3 DIM R(30)\n5 DIM D$(2,60)\n10 READ D$\n20 IF D$=\"TREASURES\"THEN 100\n30 C=C+1:D$(1,C)=STR$(C):D$(2,C)=D$\n40 GOTO 10\n100 B=ASC(\"A\")-1\n110 READ D$:IFD$=\"DONE\"THEN 200\n120 C=C+1:B=B+1:IF B>ASC(\"A\")+25 THEN H=-3:GOTO 100\n130 D$(1,C)=CHR$(B):IFH=-3THEN D$(1,C)=D$(1,C)+CHR$(B)\n140 D$(2,C)=D$",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
