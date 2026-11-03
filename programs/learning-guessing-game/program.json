@@ -1,0 +1,40 @@
+{
+  "id": "learning-guessing-game",
+  "title": "Learning Guessing Game",
+  "description": "Learning Guessing Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extensions may be needed",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LEARNING GUESSING GAME",
+      "capture": "tape10b",
+      "save": 10,
+      "raw": "versions/v01/10-LEARNING-GUESSING-GAME.BAS",
+      "listing": "versions/v01/10-LEARNING-GUESSING-GAME.ASC",
+      "playable": false,
+      "note": "validated source; runtime untested. Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/10-LEARNING-GUESSING-GAME.ASC",
+          "label": "10-LEARNING-GUESSING-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/10-LEARNING-GUESSING-GAME.BAS",
+          "label": "10-LEARNING-GUESSING-GAME.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR 10000\n10 DEFINT A-Z\n20 DIM Q$(200),Y(200),N(200)\n30  C=2\n40 Q$(0)=\"IS IT A GAME\"\n50 Q$(1)=\"IS IT POKER\"\n60 Y(0)=1\n70  N(0)=2\n80 Q$(2)=\"IS IT A PUPPY DOG\"\n90 CC=0\n100 CLS\n110 PRINTQ$(CC);:INPUT A$",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
