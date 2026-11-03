@@ -1,19 +1,19 @@
 {
-  "version": "v01",
-  "capture": "tape1b",
+  "version": "v02",
+  "capture": "tape1b2",
   "save": 1,
-  "archive_raw": "tapes/recovered/tape1b/best/01-ORION.BAS",
-  "archive_listing": "tapes/recovered/tape1b/best/01-ORION.ASC",
+  "archive_raw": "tapes/recovered/tape1b2/best/01-ORION.BAS",
+  "archive_listing": "tapes/recovered/tape1b2/best/01-ORION.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/01-ORION.ASC",
-      "archive_path": "tapes/recovered/tape1b/best/01-ORION.ASC",
+      "path": "versions/v02/01-ORION.ASC",
+      "archive_path": "tapes/recovered/tape1b2/best/01-ORION.ASC",
       "bytes": 13146,
       "sha256": "749a84a337d761914e6014035e4a22d1ae2564691631f3041c4cc94105c4caf0"
     },
     {
-      "path": "versions/v01/01-ORION.BAS",
-      "archive_path": "tapes/recovered/tape1b/best/01-ORION.BAS",
+      "path": "versions/v02/01-ORION.BAS",
+      "archive_path": "tapes/recovered/tape1b2/best/01-ORION.BAS",
       "bytes": 10930,
       "sha256": "c5c4d7f0e647d18ff305fdc714858004519b39745de51c289f5280fd3d0b3a5c"
     }
@@ -43,21 +43,21 @@
     "type": "BASIC",
     "recovery%": "100",
     "summary": "ORION, Automated Simulations, 1979",
-    "capture": "tape1b",
+    "capture": "tape1b2",
     "capture_scope": "full",
     "baud": "500",
-    "platform": "TRS-80 Model I/III BASIC",
+    "platform": "undetermined",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-    "source_start_s": "11.240",
+    "source_start_s": "10.528",
     "recovered_bytes": "10930",
-    "source_file": "tapes/recovered/tape1b/best/01-ORION.ASC",
-    "wav": "tapes/tape1b.wav",
-    "folder": "tapes/recovered/tape1b",
+    "source_file": "tapes/recovered/tape1b2/best/01-ORION.ASC",
+    "wav": "tapes/tape1b2.wav",
+    "folder": "tapes/recovered/tape1b2",
     "recovery_date": "2026-10-28",
     "recorder_volume": "",
     "next_action": "Runtime testing only if requested"
   },
-  "recovery_inventory": "tapes/recovered/tape1b/inventory.json",
+  "recovery_inventory": "tapes/recovered/tape1b2/inventory.json",
   "execution_tested": false
 }
