@@ -1,54 +1,54 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape21a",
-  "save": 20,
-  "archive_raw": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.BAS",
-  "archive_listing": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.ASC",
+  "save": 21,
+  "archive_raw": "tapes/recovered/tape21a/best/21-3D-PERSPECTIVE-SAVE02.BAS",
+  "archive_listing": "tapes/recovered/tape21a/best/21-3D-PERSPECTIVE-SAVE02.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/20-3D-PERSPECTIVE-SAVE01.ASC",
-      "archive_path": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.ASC",
-      "bytes": 424,
-      "sha256": "8c957d140d54c19e17c561f2aeaece85b7155b71d368db64099d46d202084c40"
+      "path": "versions/v02/21-3D-PERSPECTIVE-SAVE02.ASC",
+      "archive_path": "tapes/recovered/tape21a/best/21-3D-PERSPECTIVE-SAVE02.ASC",
+      "bytes": 748,
+      "sha256": "7bba27a221601042c6b0c82834b0004034ef94bdc76dbbf820e10461f27b1d59"
     },
     {
-      "path": "versions/v01/20-3D-PERSPECTIVE-SAVE01.BAS",
-      "archive_path": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.BAS",
-      "bytes": 382,
-      "sha256": "5a3f8f2bacfe4d9801287fbc609715f1d88641331cf601eb12b79c35bb1f05f2"
+      "path": "versions/v02/21-3D-PERSPECTIVE-SAVE02.BAS",
+      "archive_path": "tapes/recovered/tape21a/best/21-3D-PERSPECTIVE-SAVE02.BAS",
+      "bytes": 669,
+      "sha256": "14da3a013064683410b6c17b4cadc1a99bf3d87a6f03dc412a88cafa38ecc6c4"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "5a3f8f2bacfe4d9801287fbc609715f1d88641331cf601eb12b79c35bb1f05f2",
-    "bytes": 382,
+    "sha256": "14da3a013064683410b6c17b4cadc1a99bf3d87a6f03dc412a88cafa38ecc6c4",
+    "bytes": 669,
     "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 20,
-    "last": 10000,
+    "lines": 28,
+    "last": 10020,
     "pointer_bases": [
       17125
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 380,
+    "parsed_bytes": 667,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "21",
     "side": "a",
-    "order": "20",
+    "order": "21",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "3D PERSPECTIVE SAVE01",
+    "summary": "3D PERSPECTIVE SAVE02",
     "capture": "tape21a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "522.447",
-    "recovered_bytes": "382",
-    "source_file": "tapes/recovered/tape21a/best/20-3D-PERSPECTIVE-SAVE01.ASC",
+    "source_start_s": "540.440",
+    "recovered_bytes": "669",
+    "source_file": "tapes/recovered/tape21a/best/21-3D-PERSPECTIVE-SAVE02.ASC",
     "wav": "tapes/tape21a.wav",
     "folder": "tapes/recovered/tape21a",
     "recovery_date": "2026-10-28",
