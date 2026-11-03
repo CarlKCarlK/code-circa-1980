@@ -1,0 +1,40 @@
+{
+  "id": "basic-f-fragment-uncertain",
+  "title": "Basic F Fragment Uncertain",
+  "description": "Basic F Fragment Uncertain. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BASIC F fragment",
+      "capture": "tape26a",
+      "save": 1,
+      "raw": "versions/v01/01-BASIC-F-FRAGMENT-RAW.BAS",
+      "listing": "versions/v01/01-BASIC-F-FRAGMENT-UNCERTAIN.ASC",
+      "playable": false,
+      "note": "damaged; runtime untested. 13-byte header/fragment agrees left/right; zero validated lines; missing line terminator and program EOF; listing UNCERTAIN",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-BASIC-F-FRAGMENT-RAW.BAS",
+          "label": "01-BASIC-F-FRAGMENT-RAW.BAS"
+        },
+        {
+          "path": "versions/v01/01-BASIC-F-FRAGMENT-UNCERTAIN.ASC",
+          "label": "01-BASIC-F-FRAGMENT-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "5 MM=20",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
