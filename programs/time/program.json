@@ -1,0 +1,42 @@
+{
+  "id": "time",
+  "title": "Time",
+  "description": "Time. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extended features",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TIME",
+      "capture": "tape4b",
+      "save": 6,
+      "raw": "versions/v01/06-TIME.BAS",
+      "listing": "versions/v01/06-TIME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 15 consistent pointers; normal end marker; matches left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/06-TIME.ASC",
+          "label": "06-TIME.ASC"
+        },
+        {
+          "path": "versions/v01/06-TIME.BAS",
+          "label": "06-TIME.BAS"
+        }
+      ],
+      "startupSource": "10 '    TIME\n20 PI=3.14159\n30 CLS\n40 INPUT\"WHAT IS THE NEXT MAJOR TIME (HH:MM:SS)\";HZ,MZ,SZ\n50 H=HZ/6*PI-PI/2:M=MZ/30*PI-PI/2:S=SZ/30*PI-PI/2\n60 G=64:HH=24\n70 SE=3.14159/60\n80 Q=.0345\n90 PRINT\"PRESS ANY BUTTON TO START CLOCK\"\n100 IFINKEY$=\"\" THEN100  \n110 CLS\n120 XS=COS(S)*40:YS=SIN(S)*20:XM=COS(M)*30:YM=SIN(M)*15:XH=COS(H)*20:YH=SIN(H)*10",
+      "controlSource": [
+        "100 IFINKEY$=\"\" THEN100  "
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
