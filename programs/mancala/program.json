@@ -34,6 +34,30 @@
       ],
       "startupSource": "5 CLS\n10 DATA 0\n15 DIM B(13),G(13),F(50):READ M\n20 PRINT:PRINT:E=0\n25 FOR I=0TO12:B(I)=3:NEXT I\n30 C=0:F(N)=0:B(13)=0:B(6)=0\n35 GOSUB500\n40 PRINT\"YOUR MOVE\";:GOSUB 110\n45 IF E=0 THEN 80\n50 IF M=H THEN GOSUB100\n55 IF E=0 THEN 80\n60 PRINT\"MY MOVE IS \";:GOSUB800",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "MANCALA",
+      "capture": "tape8a",
+      "save": 17,
+      "raw": "versions/v02/17-MANCALA.BAS",
+      "listing": "versions/v02/17-MANCALA.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/17-MANCALA.ASC",
+          "label": "17-MANCALA.ASC"
+        },
+        {
+          "path": "versions/v02/17-MANCALA.BAS",
+          "label": "17-MANCALA.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 DATA 0\n15 DIM B(13),G(13),F(50):READ M\n20 PRINT:PRINT:E=0\n25 FOR I=0TO12:B(I)=3:NEXT I\n30 C=0:F(N)=0:B(13)=0:B(6)=0\n35 GOSUB500\n40 PRINT\"YOUR MOVE\";:GOSUB 110\n45 IF E=0 THEN 80\n50 IF M=H THEN GOSUB100\n55 IF E=0 THEN 80\n60 PRINT\"MY MOVE IS \";:GOSUB800",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
