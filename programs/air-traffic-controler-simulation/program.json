@@ -1,0 +1,43 @@
+{
+  "id": "air-traffic-controler-simulation",
+  "title": "Air Traffic Controller Simulation",
+  "description": "Air Traffic Controller Simulation. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "AIR TRAFFIC CONTROLER SIMULATION",
+      "capture": "tape23b",
+      "save": 7,
+      "raw": "versions/v01/07-AIR-TRAFFIC-CONTROLER-SIMULATION.BAS",
+      "listing": "versions/v01/07-AIR-TRAFFIC-CONTROLER-SIMULATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/07-AIR-TRAFFIC-CONTROLER-SIMULATION.ASC",
+          "label": "07-AIR-TRAFFIC-CONTROLER-SIMULATION.ASC"
+        },
+        {
+          "path": "versions/v01/07-AIR-TRAFFIC-CONTROLER-SIMULATION.BAS",
+          "label": "07-AIR-TRAFFIC-CONTROLER-SIMULATION.BAS"
+        }
+      ],
+      "startupSource": "10 CLS:DEFINTA-Z\n15 G$=CHR$(34)\n20 PRINT\"\n\n\nAIR TRAFFIC CONTROLER SIMULATION\"\n30 PRINT\"\n\nIN THIS GAME YOU WILL SIMULATE THE JOB OF AN AIR TRAFFIC\nCONTROLLER.  YOUR FOUR DIRECTIONARIES ARE THE ARROW BUTTONS;\nAS LONG AS YOU HOLD THEM DOWN THEY WILL TRANSMIT THE\nINSTRUCTIONS. THE SHIFT WILL OVERRIDE THE STANDARD CIRCULAR",
+      "controlSource": [
+        "1000 PRINT@960+20,\"PRESS ANY BUTTON\";:A$=INKEY$+INKEY$:A$=\"\"",
+        "1010 IFINKEY$=\"\"THEN1010ELSECLS:RETURN"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
