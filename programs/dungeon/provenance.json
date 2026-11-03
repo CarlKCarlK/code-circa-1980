@@ -58,6 +58,58 @@
       },
       "recovery_inventory": "tapes/recovered/file8b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "file8b",
+      "save": 9,
+      "archive_raw": "tapes/recovered/file8b/best/09-DUNGEON-TRAINER.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/09-DUNGEON-TRAINER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/09-DUNGEON-TRAINER.BAS",
+          "archive_path": "tapes/recovered/file8b/best/09-DUNGEON-TRAINER.BAS",
+          "bytes": 2100,
+          "sha256": "0dfe59c4a1d26d116d34d28a023d5314533604109e11fbdb8c4f6637fd85f70f"
+        },
+        {
+          "path": "versions/v02/09-DUNGEON-TRAINER.ASC",
+          "archive_path": "tapes/recovered/file8b/best/09-DUNGEON-TRAINER.ASC",
+          "bytes": 2510,
+          "sha256": "f7e5dd6ad5cb1efbd8eb26958831d5c76eafc90de0c28e6d2a146c391f887f67"
+        }
+      ],
+      "recovery_item": {
+        "lines": 57,
+        "last": 4000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "0dfe59c4a1d26d116d34d28a023d5314533604109e11fbdb8c4f6637fd85f70f"
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "9",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "DUNGEON TRAINER; 57 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "306.660",
+        "recovered_bytes": "2100",
+        "source_file": "tapes/recovered/file8b/best/09-DUNGEON-TRAINER.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/inventory.json",
+      "execution_tested": false
     }
   ],
   "dating": {
