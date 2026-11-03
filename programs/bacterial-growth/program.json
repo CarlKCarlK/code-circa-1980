@@ -1,0 +1,40 @@
+{
+  "id": "bacterial-growth",
+  "title": "Bacterial Growth",
+  "description": "Bacterial Growth. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BACTERIAL GROWTH",
+      "capture": "tape4a",
+      "save": 2,
+      "raw": "versions/v01/02-BACTERIAL-GROWTH.BAS",
+      "listing": "versions/v01/02-BACTERIAL-GROWTH.ASC",
+      "playable": false,
+      "note": "validated payload. 27 consistent pointers; normal end marker; original and 3 audio variants byte-identical; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-BACTERIAL-GROWTH.ASC",
+          "label": "02-BACTERIAL-GROWTH.ASC"
+        },
+        {
+          "path": "versions/v01/02-BACTERIAL-GROWTH.BAS",
+          "label": "02-BACTERIAL-GROWTH.BAS"
+        }
+      ],
+      "startupSource": "10 PRINT\"COMPUTER SIMULATION OF BACTERIAL GROWTH\"\n20 READ X,NUT,WASTE\n25 SAM=SAM+1\n30 IF X=-1 AND NUT=-1 AND WASTE=-1 THEN 600\n40 DAY=0\n60 RATE =0\n65 PRINT:PRINT\"SIMULATION \";SAM\n70 PRINT\"INITIAL BACTERIA COUNT (MILLIONS)\",X\n80 PRINT\"INITIAL NUTRIENT CONCENTRATION (PERCENT)\",NUT\n90 PRINT\"INITIAL WASTE CONSENTRATION (PERCENT)\",WASTE\n100 RATE = (NUT/10)-(WASTE/10)+1\n110 IF RATE < 1 THEN 160 ELSE DAYS=DAYS +1",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
