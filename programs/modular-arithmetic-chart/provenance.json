@@ -1,0 +1,74 @@
+{
+  "official_title": "Modular Arithmetic Chart",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Modular Arithmetic Chart",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape27b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape27b/best/01-MODULAR-ARITHMETIC-CHART.BAS",
+      "archive_listing": "tapes/recovered/tape27b/best/01-MODULAR-ARITHMETIC-CHART.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-MODULAR-ARITHMETIC-CHART.ASC",
+          "archive_path": "tapes/recovered/tape27b/best/01-MODULAR-ARITHMETIC-CHART.ASC",
+          "bytes": 330,
+          "sha256": "9764e597725bdce87aef3f231fc5fe480df5b21dadda36e401c54b40fbcf9e62"
+        },
+        {
+          "path": "versions/v01/01-MODULAR-ARITHMETIC-CHART.BAS",
+          "archive_path": "tapes/recovered/tape27b/best/01-MODULAR-ARITHMETIC-CHART.BAS",
+          "bytes": 276,
+          "sha256": "d1e0fd6416db4eb788ff572594e7e3ba18a2f8e433ad2a88325c1fb7025dbeb7"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "d1e0fd6416db4eb788ff572594e7e3ba18a2f8e433ad2a88325c1fb7025dbeb7",
+        "bytes": 276,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 13,
+        "last": 100,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 274,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "27",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MODULAR ARITHMETIC CHART",
+        "capture": "tape27b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC family",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "19.903",
+        "recovered_bytes": "276",
+        "source_file": "tapes/recovered/tape27b/best/01-MODULAR-ARITHMETIC-CHART.ASC",
+        "wav": "tapes/tape27b.wav",
+        "folder": "tapes/recovered/tape27b",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape27b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
