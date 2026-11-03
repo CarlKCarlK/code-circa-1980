@@ -1,0 +1,74 @@
+{
+  "official_title": "LIFE Expectancy Questionnaire",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "life_expectancy_questionnaire_p282",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape9b",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape9b/best/11-LIFE-EXPECTANCY-QUESTIONNAIRE.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC",
+          "bytes": 1753,
+          "sha256": "546f99e1033b1629083fa39e1c06567a47b3ebd6f0dba5d3504edc7d59caaa22"
+        },
+        {
+          "path": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/11-LIFE-EXPECTANCY-QUESTIONNAIRE.BAS",
+          "bytes": 1513,
+          "sha256": "ae4e8a5d6612fa0e958be1732c20e310e1d81f7e8c3e168f89e0d94706e67231"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "ae4e8a5d6612fa0e958be1732c20e310e1d81f7e8c3e168f89e0d94706e67231",
+        "bytes": 1513,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 30,
+        "last": 20000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1511,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LIFE EXPECTANCY QUESTIONNAIRE; 30 lines",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "304.743",
+        "recovered_bytes": "1513",
+        "source_file": "tapes/recovered/tape9b/best/11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "life-expectancy-questionnaire",
+  "title": "LIFE Expectancy Questionnaire",
+  "description": "LIFE Expectancy Questionnaire. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LIFE EXPECTANCY QUESTIONNAIRE",
+      "capture": "tape9b",
+      "save": 11,
+      "raw": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.BAS",
+      "listing": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC",
+          "label": "11-LIFE-EXPECTANCY-QUESTIONNAIRE.ASC"
+        },
+        {
+          "path": "versions/v01/11-LIFE-EXPECTANCY-QUESTIONNAIRE.BAS",
+          "label": "11-LIFE-EXPECTANCY-QUESTIONNAIRE.BAS"
+        }
+      ],
+      "startupSource": "40 GOTO90\n50 CLS:PRINT@384,\"\";:RETURN\n90 '\n950 LE=72\n1000 CLS:PRINT@384,\"ARE YOU  <MALE>  OR  <FEMALE>\";:INPUTA$\n1010 IFA$=\"MALE\"THENLE=LE-3ELSEIFA$=\"FEMALE\"THENLE=LE+4ELSEGOTO1000\n1050 GOSUB50:INPUT\"WHAT IS THE APPROXITATE POPULATION OF YOUR COMMUNITY\";A\n1060 IFA>=2E+6THENLE=LE-2ELSEIFA<=10000THENLE=LE+2\n2000 GOSUB50:INPUT\"DO YOU WORK AT A <DESK>, AT A JOB THAT REQUIRES REGULAR HEAVY   PHYSICAL <LABOR>,  OR AT <NEITHER>\";A$\n2010 IFA$=\"DESK\"THENLE=LE-3ELSEIFA$=\"LABOR\"THENLE=LE+3ELSEIFA$<>\"NEITHER\"THEN2000\n2050 GOSUB50:INPUT\"HOW MANY DAYS A WEEK DO YOU EXERCISE STRENUOUSLY (TENNIS,RUNNINGSWIMMING, ETC.) \";A\n2060 IFA>=5THENINPUT\"HOW MINUNTES A SESSION\";A",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
