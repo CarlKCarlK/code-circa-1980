@@ -1,19 +1,19 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape9b",
-  "save": 3,
-  "archive_raw": "tapes/recovered/tape9b/best/03-BUNNY.BAS",
-  "archive_listing": "tapes/recovered/tape9b/best/03-BUNNY.ASC",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape9b/best/04-BUNNY-SAVE2.BAS",
+  "archive_listing": "tapes/recovered/tape9b/best/04-BUNNY-SAVE2.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/03-BUNNY.ASC",
-      "archive_path": "tapes/recovered/tape9b/best/03-BUNNY.ASC",
+      "path": "versions/v02/04-BUNNY-SAVE2.ASC",
+      "archive_path": "tapes/recovered/tape9b/best/04-BUNNY-SAVE2.ASC",
       "bytes": 1356,
       "sha256": "087e7da1ddd95cc791688f2191c356665cdf5e10d1711ce9c9fe28c98f0dc0e3"
     },
     {
-      "path": "versions/v01/03-BUNNY.BAS",
-      "archive_path": "tapes/recovered/tape9b/best/03-BUNNY.BAS",
+      "path": "versions/v02/04-BUNNY-SAVE2.BAS",
+      "archive_path": "tapes/recovered/tape9b/best/04-BUNNY-SAVE2.BAS",
       "bytes": 1165,
       "sha256": "91069e3f933309ed3c552a939a992d5d5ab960a407233e38783e9012fbb5b261"
     }
@@ -38,19 +38,19 @@
   "inventory_row": {
     "tape": "9",
     "side": "b",
-    "order": "3",
+    "order": "4",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "BUNNY; 34 lines",
+    "summary": "BUNNY SAVE2; 34 lines; identical to save 3",
     "capture": "tape9b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
-    "source_start_s": "96.785",
+    "source_start_s": "123.472",
     "recovered_bytes": "1165",
-    "source_file": "tapes/recovered/tape9b/best/03-BUNNY.ASC",
+    "source_file": "tapes/recovered/tape9b/best/04-BUNNY-SAVE2.ASC",
     "wav": "tapes/tape9b.wav",
     "folder": "tapes/recovered/tape9b/best",
     "recovery_date": "2026-10-26",

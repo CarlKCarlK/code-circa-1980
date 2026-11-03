@@ -34,6 +34,30 @@
       ],
       "startupSource": "5 POKE16553,255:CLS:PRINT:PRINT:PRINT\n10 PRINTTAB(28);\"BUNNY\"\n20 PRINTTAB(10);\"CREATIVE COMPUTING MORRISTOWN, NEW JERSEY\"\n30 FORR=1TO40:PRINT@RND(643)+320,\"BUNNY\";:NEXT\n35 RESTORE\n120 FORI=0TO4:READB(I):NEXTI\n130 GOSUB260\n140 L=64\n160 X=0:Y1=Y1+1:IFY1>47THENC1=ABS(C1-55):Y1=0:Y=0:GOTO35\n170 READX:IFX<0THEN160\n175 IFX>128THEN240\n180 READY:FORX1=XTOY",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "BUNNY SAVE2",
+      "capture": "tape9b",
+      "save": 4,
+      "raw": "versions/v02/04-BUNNY-SAVE2.BAS",
+      "listing": "versions/v02/04-BUNNY-SAVE2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/04-BUNNY-SAVE2.ASC",
+          "label": "04-BUNNY-SAVE2.ASC"
+        },
+        {
+          "path": "versions/v02/04-BUNNY-SAVE2.BAS",
+          "label": "04-BUNNY-SAVE2.BAS"
+        }
+      ],
+      "startupSource": "5 POKE16553,255:CLS:PRINT:PRINT:PRINT\n10 PRINTTAB(28);\"BUNNY\"\n20 PRINTTAB(10);\"CREATIVE COMPUTING MORRISTOWN, NEW JERSEY\"\n30 FORR=1TO40:PRINT@RND(643)+320,\"BUNNY\";:NEXT\n35 RESTORE\n120 FORI=0TO4:READB(I):NEXTI\n130 GOSUB260\n140 L=64\n160 X=0:Y1=Y1+1:IFY1>47THENC1=ABS(C1-55):Y1=0:Y=0:GOTO35\n170 READX:IFX<0THEN160\n175 IFX>128THEN240\n180 READY:FORX1=XTOY",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
