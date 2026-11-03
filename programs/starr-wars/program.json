@@ -64,6 +64,33 @@
         "205 A$=INKEY$:IFA$=\"D\"THENXX=1:YY=0ELSEIFA$=\"F\"THENXX=-1:YY=0ELSEIFA$=\"A\"THENXX=0:YY=1ELSEIFA$=\"S\"THENXX=0:YY=-1ELSEIFA$=\"G\"THENXX=0:YY=0",
         "2000 IFINKEY$=\"\"THEN2000ELSECLS:GOTO1000"
       ]
+    },
+    {
+      "id": "v03",
+      "label": "STARR WARS REPEAT",
+      "capture": "tape14b",
+      "save": 9,
+      "raw": "versions/v03/09-STARR-WARS-REPEAT.BAS",
+      "listing": "versions/v03/09-STARR-WARS-REPEAT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v03/09-STARR-WARS-REPEAT.ASC",
+          "label": "09-STARR-WARS-REPEAT.ASC"
+        },
+        {
+          "path": "versions/v03/09-STARR-WARS-REPEAT.BAS",
+          "label": "09-STARR-WARS-REPEAT.BAS"
+        }
+      ],
+      "startupSource": "5 CLEAR1000\n7 CLS:GOTO1000\n8 '\n10 D$=CHR$(183)+\" \"+CHR$(140)+\" \"+CHR$(187)\n15 S$=CHR$(166)+\" \"+CHR$(140)+\" \"+CHR$(153)\n20 CLS\n30 EX=.9:EY=2\n40 XG=EX:YG=EY\n50 PRINT@967,\"ESCAPED  0\";\n60 ET=50000:PRINT@1003,\"ENERGY \";ET;:PRINT@980,\"DESTROYED  0\";\n70 F=1\n90 FORG=1TO9:X=RND(29)+15:Y=RND(7)+3:IFG=9THENS$=D$:F=2",
+      "controlSource": [
+        "205 A$=INKEY$:IFA$=\"D\"THENXX=1:YY=0ELSEIFA$=\"F\"THENXX=-1:YY=0ELSEIFA$=\"A\"THENXX=0:YY=1ELSEIFA$=\"S\"THENXX=0:YY=-1ELSEIFA$=\"G\"THENXX=0:YY=0",
+        "2000 IFINKEY$=\"\"THEN2000ELSECLS:GOTO1000"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
