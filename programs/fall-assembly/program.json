@@ -122,6 +122,38 @@
       ],
       "startupSource": "00100 PRCES\tLD\tA,(TST)\n00110 \tCALL\tSPECL\n00120 \tLD\tE,127\n00130 \tLD\tD,A\n00140 \tLD\tD,40\n00150 LUP\tCALL\tFALL\n00160 \tDEC\tE\n00170 \tJP\tP,LUP\n00180 \tDEC\tD\n00190 \tLD\tE,127\n00200 \tJP\tP,LUP\n00210 \tRET\t\t; ALL DONE -- BACK TO BASIC",
       "controlSource": []
+    },
+    {
+      "id": "v05",
+      "label": "FALL INTERRUPTED CAPTURE 1",
+      "capture": "tape18a",
+      "save": 18,
+      "raw": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.BIN",
+      "listing": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.TXT",
+      "playable": false,
+      "note": "interrupted capture. Untouched 2542-byte prefix: 122 complete EDTASM records with exact left/right agreement; no added end marker; capture stop/rewind/restart reported by user",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.BIN",
+          "label": "18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.TXT",
+          "label": "18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.TXT"
+        },
+        {
+          "path": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-RAW.ASM",
+          "label": "18-FALL-INTERRUPTED-CAPTURE-1-RAW.ASM"
+        },
+        {
+          "path": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-UNCERTAIN.TXT",
+          "label": "18-FALL-INTERRUPTED-CAPTURE-1-UNCERTAIN.TXT"
+        }
+      ],
+      "startupSource": "00010 \tORG\t32267\n00100 PRCES\tLD\tA,(TST)\n00110 \tLD\tE,127\n00120 \tLD\tD,A\n00140 LUP\tCALL\tFALL\n00150 \tDEC\tE\n00160 \tJP\tP,LUP\n00170 \tDEC\tD\n00180 \tLD\tE,127\n00190 \tJP\tP,LUP\n00200 \tRET\t\t; ALL DONE -- BACK TO BASIC\n00210 FALL\tPUSH\tDE",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
