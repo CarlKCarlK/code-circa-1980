@@ -278,6 +278,30 @@
       ],
       "startupSource": "10 REM life backwards april 27, 1985\n90 DEFINT A-Z\n100 DX=20:DY=20\n110 DIM T6(4,4)\n280 PRINT\"Setting up\"\n290 DIM CN(380,1)\n300 FOR I = 0 TO 511:IZ=I:TZ=0:\t\t\tFOR J=0 TO 8:\t\t\t\t  CZ(J)=IZ MOD 2:TZ=TZ+CZ(J):\t\t  IZ= IZ/2:\t\t\t\t  NEXT J\n310 MZ= -((CZ(4)=1 AND (TZ=3 OR TZ=4)) OR(CZ(4)=0 AND TZ=3)):CN(TZ(MZ),MZ)=I:TZ(MZ)=TZ(MZ)+1:NEXTI\n320 FOR MZ=0TO1:CN(TZ(MZ),MZ)=-1:NEXTMZ\n330 CLS\n500 'main program\n510 GOSUB 1000:'begin",
       "controlSource": []
+    },
+    {
+      "id": "v06",
+      "label": "Cassette name L",
+      "capture": "tape2a2",
+      "save": 21,
+      "raw": "versions/v06/21-L-BASIC-TAPE-BLOCK.BIN",
+      "listing": "versions/v06/21-L.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v06/21-L-BASIC-TAPE-BLOCK.BIN",
+          "label": "21-L-BASIC-TAPE-BLOCK.BIN"
+        },
+        {
+          "path": "versions/v06/21-L.ASC",
+          "label": "21-L.ASC"
+        }
+      ],
+      "startupSource": "10 REM life backwards april 27, 1985\n90 DEFINT A-Z\n100 DX=20:DY=20\n110 DIM T6(4,4)\n280 PRINT\"Setting up\"\n290 DIM CN(380,1)\n300 FOR I = 0 TO 511:IZ=I:TZ=0:\t\t\tFOR J=0 TO 8:\t\t\t\t  CZ(J)=IZ MOD 2:TZ=TZ+CZ(J):\t\t  IZ= IZ/2:\t\t\t\t  NEXT J\n310 MZ= -((CZ(4)=1 AND (TZ=3 OR TZ=4)) OR(CZ(4)=0 AND TZ=3)):CN(TZ(MZ),MZ)=I:TZ(MZ)=TZ(MZ)+1:NEXTI\n320 FOR MZ=0TO1:CN(TZ(MZ),MZ)=-1:NEXTMZ\n330 CLS\n500 'main program\n510 GOSUB 1000:'begin",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
