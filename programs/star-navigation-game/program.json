@@ -1,0 +1,44 @@
+{
+  "id": "star-navigation-game",
+  "title": "Star Navigation Game",
+  "description": "Star Navigation Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC with graphics extensions",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "STAR NAVIGATION GAME",
+      "capture": "file8b",
+      "save": 1,
+      "raw": "versions/v01/01-STAR-NAVIGATION-GAME.BAS",
+      "listing": "versions/v01/01-STAR-NAVIGATION-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/01-STAR-NAVIGATION-GAME.ASC",
+          "label": "01-STAR-NAVIGATION-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/01-STAR-NAVIGATION-GAME.BAS",
+          "label": "01-STAR-NAVIGATION-GAME.BAS"
+        }
+      ],
+      "startupSource": "1 REM\n10 CLS\n20 DIM A%(1000)\n100 FORX=1TO100:PRINT@RND(1000),\"*\";:NEXT\n200 A$=INKEY$:IFA$=\"1\"THENYF=1ELSEIFA$=\"2\"THENYF=0ELSEIFA$=\"3\"THENYF=-1ELSEIFA$=\"8\"THENXF=-1ELSEIFA$=\"9\"THENXF=0ELSEIFA$=\"0\"THENXF=1\n210 IFXF=1:GET@(1,0)-(63,15),A%:PUT@(0,0)-(62,15),A%:LINE@(63,0)-(63,15),\" \":FORC=1TORND(3):R=RND(16)-1:LINE@(63,R)-(63,R),\"*\":NEXTC\n220 IF XF=-1:GET@(0,0)-(62,15),A%:PUT@(1,0)-(63,15),A%:LINE@(0,0)-(0,15),\" \":FORC=1TORND(3):R=RND(16)-1:LINE@(0,R)-(0,R),\"*\":NEXTC\n230 IF YF=1THENGET@(0,0)-(63,14),A%:PUT@(0,1)-(63,15),A%:LINE@(0,0)-(63,0),\" \":FORC=1TORND(9):R=RND(64)-1:LINE@(R,0)-(R,0),\"*\":NEXTC\n240 IF YF=-1THENGET@(0,1)-(63,15),A%:PUT@(0,0)-(63,14),A%:LINE@(0,15)-(63,15),\" \":FORC=1TORND(9):R=RND(64)-1:LINE@(R,15)-(R,15),\"*\":NEXTC\n250 IF PEEK (480+15360)=ASC(\"*\") THEN E=1\n270 IF PEEK(480+15360)=ASC(\"$\") THEN 2000\n300 PRINT@ 480+64*YF-XF,\" \";:PRINT@480,\"#\";",
+      "controlSource": [
+        "200 A$=INKEY$:IFA$=\"1\"THENYF=1ELSEIFA$=\"2\"THENYF=0ELSEIFA$=\"3\"THENYF=-1ELSEIFA$=\"8\"THENXF=-1ELSEIFA$=\"9\"THENXF=0ELSEIFA$=\"0\"THENXF=1",
+        "2105 A$=INKEY$",
+        "2120 A$=INKEY$:IFA$=\"\"THEN2120 ELSEIFA$=\"N\"THENENDELSERUN1"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
