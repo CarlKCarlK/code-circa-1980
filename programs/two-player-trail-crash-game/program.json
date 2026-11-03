@@ -1,0 +1,42 @@
+{
+  "id": "two-player-trail-crash-game",
+  "title": "Two Player Trail Crash Game",
+  "description": "Two Player Trail Crash Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TWO PLAYER TRAIL CRASH GAME",
+      "capture": "tape21b",
+      "save": 3,
+      "raw": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.BAS",
+      "listing": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC",
+          "label": "03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.BAS",
+          "label": "03-TWO-PLAYER-TRAIL-CRASH-GAME.BAS"
+        }
+      ],
+      "startupSource": "1 CLS:INPUT\"SPEED\";S:S=S+1:S=S*10:FOR PO =1TO PP:S=S-1:CLS\n2 CLS:FORE=0TO127:SET(E,0):SET(E,47):NEXT:FORE=0TO47:SET(0,E):SET(127,E):NEXT\n4 Z2=1\n5 A1=20:A2=30:B1=50:B2=60\n6 GOTO18\n7 POKE16553,255\n10 FORC=1TOS:NEXT:A$=INKEY$:IFA$=\"\"THEN25\n18 IF(VAL(A$)>5)AND(VAL(A$)<10)THEN750\n20 FORX=1TOVAL(A$):READZ,Y:NEXTX\n25 A=A1:B=B1:GOSUB110\n26 B1=B:A1=A:GOSUB150\n28 GOTO10",
+      "controlSource": [
+        "10 FORC=1TOS:NEXT:A$=INKEY$:IFA$=\"\"THEN25"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

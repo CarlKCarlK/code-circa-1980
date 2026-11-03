@@ -1,0 +1,74 @@
+{
+  "official_title": "Two Player Trail Crash Game",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "two_player_trail_crash_game_p204",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21b",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape21b/best/03-TWO-PLAYER-TRAIL-CRASH-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape21b/best/03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC",
+          "archive_path": "tapes/recovered/tape21b/best/03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC",
+          "bytes": 986,
+          "sha256": "c566c05548a7f623135886cbff739aaa5ea30c4e1926f8ba6ca240cd18231fa8"
+        },
+        {
+          "path": "versions/v01/03-TWO-PLAYER-TRAIL-CRASH-GAME.BAS",
+          "archive_path": "tapes/recovered/tape21b/best/03-TWO-PLAYER-TRAIL-CRASH-GAME.BAS",
+          "bytes": 783,
+          "sha256": "f3a01a85c6a27456ce21c4bfaac933d16b6de154672d2750b30aaf05c7151919"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "f3a01a85c6a27456ce21c4bfaac933d16b6de154672d2750b30aaf05c7151919",
+        "bytes": 783,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 29,
+        "last": 790,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 781,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "b",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TWO PLAYER TRAIL CRASH GAME",
+        "capture": "tape21b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "40.262",
+        "recovered_bytes": "783",
+        "source_file": "tapes/recovered/tape21b/best/03-TWO-PLAYER-TRAIL-CRASH-GAME.ASC",
+        "wav": "tapes/tape21b.wav",
+        "folder": "tapes/recovered/tape21b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
