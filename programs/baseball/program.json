@@ -45,6 +45,33 @@
         "200 A$=INKEY$",
         "2015 A$=INKEY$:IFA$=\"\"THEN2020ELSEIFA$=\"@\"THENO=-1ELSEIFA$=CHR$(8)THENO=0ELSEIFA$=CHR$(9)THENO=1"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "BASEBALL",
+      "capture": "tape8a",
+      "save": 1,
+      "raw": "versions/v02/01-BASEBALL.BAS",
+      "listing": "versions/v02/01-BASEBALL.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/01-BASEBALL.ASC",
+          "label": "01-BASEBALL.ASC"
+        },
+        {
+          "path": "versions/v02/01-BASEBALL.BAS",
+          "label": "01-BASEBALL.BAS"
+        }
+      ],
+      "startupSource": "10 'BASEBALL\n15 PI=-3.14159\n16 IN=1:QW=1\n17 TT=1\n18 BA=PI+PI/2\n20 CLS\n25 R=-7\n26 RX=64:RY=31:RO=64:RN=31\n30 LINE(3,1)-(5,4),SET,BF:LINE(1,2)-(7,3),SET,BF:RESET(2,3):RESET(6,3):RESET(4,4)\n40 DIMP%(20)\n42 GET@(0,0)-(8,5),G,P%\n45 RESET(7,3):SET(7,1):DIMO%(15):GET@(0,0)-(8,5),G,O%",
+      "controlSource": [
+        "200 A$=INKEY$",
+        "2015 A$=INKEY$:IFA$=\"\"THEN2020ELSEIFA$=\"@\"THENO=-1ELSEIFA$=CHR$(8)THENO=0ELSEIFA$=CHR$(9)THENO=1"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
