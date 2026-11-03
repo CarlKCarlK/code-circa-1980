@@ -1,0 +1,40 @@
+{
+  "id": "liers-poker",
+  "title": "Liers Poker",
+  "description": "Liers Poker. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LIERS POKER",
+      "capture": "tape3a",
+      "save": 4,
+      "raw": "versions/v01/04-LIERS-POKER.BAS",
+      "listing": "versions/v01/04-LIERS-POKER.ASC",
+      "playable": false,
+      "note": "validated payload. 24 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, left-hp1600; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/04-LIERS-POKER.ASC",
+          "label": "04-LIERS-POKER.ASC"
+        },
+        {
+          "path": "versions/v01/04-LIERS-POKER.BAS",
+          "label": "04-LIERS-POKER.BAS"
+        }
+      ],
+      "startupSource": "5 CLS:DC=20:DH=20\n10 PRINT \"LIER'S POKER\"\n15 I=INT((RND(0)[3)*10000+1):Q=RND(0):IFRND(2)=1THENQ=1/Q\n17 R=0:QQ=RND(0)/Q*10000\n20 PRINT:PRINT:PRINT\n30 CN=RND(10000):HN=RND(10000)\n40 PRINT\"YOUR NUMBER IS :\"HN\n50 IF RND(2)=1THEN200\n100 PRINT:PRINT\"TYPE  'CALL' OR YOUR RAISE\"\n110 INPUT H$\n120 IF H$<>\"CALL\"THEN 160\n130 PRINT:PRINT:PRINT\"MY NUMBER IS: \"CN",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
