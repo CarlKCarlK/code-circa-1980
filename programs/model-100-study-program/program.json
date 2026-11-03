@@ -34,6 +34,30 @@
       ],
       "startupSource": "5 MAXFILES=2\n10 DEFINT A-Z\n15 DIM M(400)\n20 CLS\n25 FILES\n30 INPUT \"Lesson (.do assumed)\";F$\n35 CLS\n40 INPUT \"How many to skip \";R:IF R>0 THEN FOR I=1TOR:M(I)=-1:NEXTI\n50 Q=1:A=0:NA=0\n60 OPEN F$+\".do\" FOR INPUT AS 1\n65 OPEN \"note.do\" FOR APPEND AS 2\n70 IF EOF(1) THEN L$=\"q:\" :ELSE LINEINPUT#1,L$",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "Cassette name T",
+      "capture": "tape2a2",
+      "save": 7,
+      "raw": "versions/v02/07-T-BASIC-TAPE-BLOCK.BIN",
+      "listing": "versions/v02/07-T.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/07-T-BASIC-TAPE-BLOCK.BIN",
+          "label": "07-T-BASIC-TAPE-BLOCK.BIN"
+        },
+        {
+          "path": "versions/v02/07-T.ASC",
+          "label": "07-T.ASC"
+        }
+      ],
+      "startupSource": "5 MAXFILES=2\n10 DEFINT A-Z\n15 DIM M(400)\n20 CLS\n25 FILES\n30 INPUT \"Lesson (.do assumed)\";F$\n35 CLS\n40 INPUT \"How many to skip \";R:IF R>0 THEN FOR I=1TOR:M(I)=-1:NEXTI\n50 Q=1:A=0:NA=0\n60 OPEN F$+\".do\" FOR INPUT AS 1\n65 OPEN \"note.do\" FOR APPEND AS 2\n70 IF EOF(1) THEN L$=\"q:\" :ELSE LINEINPUT#1,L$",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
