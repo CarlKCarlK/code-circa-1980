@@ -1,0 +1,74 @@
+{
+  "official_title": "Simultaneous Equations",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Simultaneous Equations",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape24a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape24a/best/03-SIMULTANEOUS-EQUATIONS-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape24a/best/03-SIMULTANEOUS-EQUATIONS-SAVE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-SIMULTANEOUS-EQUATIONS-SAVE01.ASC",
+          "archive_path": "tapes/recovered/tape24a/best/03-SIMULTANEOUS-EQUATIONS-SAVE01.ASC",
+          "bytes": 464,
+          "sha256": "5df65f8992216eea39f72dc630ee85b20a0a9f2bf80945e5bb91500ce9303816"
+        },
+        {
+          "path": "versions/v01/03-SIMULTANEOUS-EQUATIONS-SAVE01.BAS",
+          "archive_path": "tapes/recovered/tape24a/best/03-SIMULTANEOUS-EQUATIONS-SAVE01.BAS",
+          "bytes": 400,
+          "sha256": "179180142d4dc3178101fa1c8a286e56df370971301d8598bec4187477c8d5c6"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "179180142d4dc3178101fa1c8a286e56df370971301d8598bec4187477c8d5c6",
+        "bytes": 400,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 19,
+        "last": 166,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 398,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "24",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SIMULTANEOUS EQUATIONS SAVE01",
+        "capture": "tape24a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "125.838",
+        "recovered_bytes": "400",
+        "source_file": "tapes/recovered/tape24a/best/03-SIMULTANEOUS-EQUATIONS-SAVE01.ASC",
+        "wav": "tapes/tape24a.wav",
+        "folder": "tapes/recovered/tape24a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
