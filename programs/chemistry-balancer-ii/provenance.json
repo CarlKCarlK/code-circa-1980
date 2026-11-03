@@ -1,0 +1,76 @@
+{
+  "official_title": "Chemistry Balancer II \u2014 earlier experiments",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "chemistry_balancer_ii_p1; chemistry_balancer_ii_early_p263",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape7b",
+      "save": 19,
+      "archive_raw": "tapes/recovered/tape7b/best/19-CHEMISTRY-BALENCER-II-EARLY.BAS",
+      "archive_listing": "tapes/recovered/tape7b/best/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+          "archive_path": "tapes/recovered/tape7b/best/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+          "bytes": 2354,
+          "sha256": "95650074d97e45ce3bbd2b61612e2a570971f8a98d200edd91e05008b5a3bcad"
+        },
+        {
+          "path": "versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.BAS",
+          "archive_path": "tapes/recovered/tape7b/best/19-CHEMISTRY-BALENCER-II-EARLY.BAS",
+          "bytes": 1895,
+          "sha256": "3c62666ff4b06ca7126d35e0e129aa87772a616d0fab3280a89f618767f07387"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "3c62666ff4b06ca7126d35e0e129aa87772a616d0fab3280a89f618767f07387",
+        "bytes": 1895,
+        "archive_validation": "53 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 53,
+        "last": 2000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1893,
+        "source_notice_lines": [
+          "10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE"
+        ]
+      },
+      "inventory_row": {
+        "tape": "7",
+        "side": "b",
+        "order": "19",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "CHEMISTRY BALENCER II EARLY; 53 readable line records",
+        "capture": "tape7b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "53 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "1895",
+        "source_file": "tapes/recovered/tape7b/best/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+        "wav": "tapes/tape7b.wav",
+        "folder": "tapes/recovered/tape7b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; keep printer output for index programs"
+      },
+      "recovery_inventory": "tapes/recovered/tape7b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}

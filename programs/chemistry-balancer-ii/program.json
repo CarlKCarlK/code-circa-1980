@@ -1,0 +1,40 @@
+{
+  "id": "chemistry-balancer-ii",
+  "title": "Chemistry Balancer II \u2014 earlier experiments",
+  "description": "Chemistry Balancer II \u2014 earlier experiments. 7 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "CHEMISTRY BALENCER II EARLY",
+      "capture": "tape7b",
+      "save": 19,
+      "raw": "versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.BAS",
+      "listing": "versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 53 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+      "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+          "label": "19-CHEMISTRY-BALENCER-II-EARLY.ASC"
+        },
+        {
+          "path": "versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.BAS",
+          "label": "19-CHEMISTRY-BALENCER-II-EARLY.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n110 EQ$=\"I(I3(I5(I7)2)4)6=H.H.H.H.H(H)3\":PRINTEQ$\n200 ' REM  DECIPHER EQUATION\n210 ' HOW MANY ELEMENTS?\n220  E1$=EQ$:M1=1:T$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSEIFLEN(R1$)=1THEN R1$=R1$+\" \"\n230 FOR I=1TO LEN(T$)STEP2:IFMID$(T$,I,2)<>R1$THENNEXTI:EN=EN+1:T$=T$+R1$\n235 GOTO 225\n240 CN=1:FOR I=1TO LEN (EQ$):TT$=MID$(EQ$,I,1):IFTT$=\"+\"ORTT$=\"=\"THEN CN=CN+1",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
