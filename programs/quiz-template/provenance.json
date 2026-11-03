@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape21b",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
+          "bytes": 689,
+          "sha256": "3bc6b4d49d56399e6f23c7600d22d54d303e12297d1c2beb5995da06dfc6d4f8"
+        },
+        {
+          "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.BAS",
+          "bytes": 624,
+          "sha256": "c5b4c8e7e1a5c532f1be49371af7c9f5f0c877df494c3337a6057818d70517af"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "c5b4c8e7e1a5c532f1be49371af7c9f5f0c877df494c3337a6057818d70517af",
+        "bytes": 624,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 37,
+        "last": 1000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 622,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "b",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "QUIZ TEMPLATE SAVE02",
+        "capture": "tape21b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "288.303",
+        "recovered_bytes": "624",
+        "source_file": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
+        "wav": "tapes/tape21b.wav",
+        "folder": "tapes/recovered/tape21b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",

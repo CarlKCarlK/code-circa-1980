@@ -34,6 +34,30 @@
       ],
       "startupSource": "10 L=36\n30 DIMA$(100)\n40 RESTORE\n50 Q=Q-1\n60 Q=Q*4\n70 S=S*2\n80 CLEAR(1000)\n90 POKE16553,255\n95 'PLACE NUMBER QUESTION *2 HERE\n100 FORI=1TOL\n110 READA$(I)\n120 NEXTI",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "QUIZ TEMPLATE SAVE02",
+      "capture": "tape21b",
+      "save": 8,
+      "raw": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.BAS",
+      "listing": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.ASC",
+          "label": "08-QUIZ-TEMPLATE-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.BAS",
+          "label": "08-QUIZ-TEMPLATE-SAVE02.BAS"
+        }
+      ],
+      "startupSource": "10 L=36\n30 DIMA$(100)\n40 RESTORE\n50 Q=Q-1\n60 Q=Q*4\n70 S=S*2\n80 CLEAR(1000)\n90 POKE16553,255\n95 'PLACE NUMBER QUESTION *2 HERE\n100 FORI=1TOL\n110 READA$(I)\n120 NEXTI",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

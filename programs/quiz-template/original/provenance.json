@@ -1,19 +1,19 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape21b",
-  "save": 7,
-  "archive_raw": "tapes/recovered/tape21b/best/07-QUIZ-TEMPLATE-SAVE01.BAS",
-  "archive_listing": "tapes/recovered/tape21b/best/07-QUIZ-TEMPLATE-SAVE01.ASC",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.BAS",
+  "archive_listing": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/07-QUIZ-TEMPLATE-SAVE01.ASC",
-      "archive_path": "tapes/recovered/tape21b/best/07-QUIZ-TEMPLATE-SAVE01.ASC",
+      "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.ASC",
+      "archive_path": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
       "bytes": 689,
       "sha256": "3bc6b4d49d56399e6f23c7600d22d54d303e12297d1c2beb5995da06dfc6d4f8"
     },
     {
-      "path": "versions/v01/07-QUIZ-TEMPLATE-SAVE01.BAS",
-      "archive_path": "tapes/recovered/tape21b/best/07-QUIZ-TEMPLATE-SAVE01.BAS",
+      "path": "versions/v02/08-QUIZ-TEMPLATE-SAVE02.BAS",
+      "archive_path": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.BAS",
       "bytes": 624,
       "sha256": "c5b4c8e7e1a5c532f1be49371af7c9f5f0c877df494c3337a6057818d70517af"
     }
@@ -36,19 +36,19 @@
   "inventory_row": {
     "tape": "21",
     "side": "b",
-    "order": "7",
+    "order": "8",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "QUIZ TEMPLATE SAVE01",
+    "summary": "QUIZ TEMPLATE SAVE02",
     "capture": "tape21b",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "261.532",
+    "source_start_s": "288.303",
     "recovered_bytes": "624",
-    "source_file": "tapes/recovered/tape21b/best/07-QUIZ-TEMPLATE-SAVE01.ASC",
+    "source_file": "tapes/recovered/tape21b/best/08-QUIZ-TEMPLATE-SAVE02.ASC",
     "wav": "tapes/tape21b.wav",
     "folder": "tapes/recovered/tape21b",
     "recovery_date": "2026-10-28",
