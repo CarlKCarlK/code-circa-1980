@@ -110,6 +110,50 @@
       ],
       "startupSource": "10 'traveling salesman\n14  DEFSNG A\n15 DEFINT B-Z\n16 FC!=.9\n20 INPUT \"How many cites\";C\n30 DIM C(1,C)\n40 INPUT\"random sequence\";R:FORI=1TOR:C(0,0)=RND(1):NEXTI\n45 CLS\n50 FORJ=0TO1:FORI=1TOC:C(J,I)=RND(1)*63:NEXTI,J\n60 DIM N(C),R(C),A(C):FORI=1TOC:N(I)=I+1:NEXT I:N(C)=1\n70 GOSUB 1000:AR=C*100\n100 IF A(0) < AR THEN AR=A(0):FOR I=1TO C:R(I)=N(I):NEXTI:LINE(0,0)-(63,63),0,BF:II=1:FORI=1TOC:LINE(C(0,II),C(1,II))-(C(0,N(II)),C(1,N(II))),1:II=N(II):NEXTI:PRINT@280,INT(AR);",
       "controlSource": []
+    },
+    {
+      "id": "v04",
+      "label": "Cassette name T",
+      "capture": "tape2a2",
+      "save": 10,
+      "raw": "versions/v04/10-T-BASIC-PREFIX.BIN",
+      "listing": "versions/v04/10-T-BASIC-PREFIX.ASC",
+      "playable": false,
+      "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 6 lines through 30; exact left/right prefix agreement",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v04/10-T-BASIC-PREFIX.ASC",
+          "label": "10-T-BASIC-PREFIX.ASC"
+        },
+        {
+          "path": "versions/v04/10-T-BASIC-PREFIX.BIN",
+          "label": "10-T-BASIC-PREFIX.BIN"
+        },
+        {
+          "path": "versions/v04/10-T-HEADER.BIN",
+          "label": "10-T-HEADER.BIN"
+        },
+        {
+          "path": "versions/v04/10-T-LONGEST-STRUCTURAL-PREFIX-f916d75121ad.ASC",
+          "label": "10-T-LONGEST-STRUCTURAL-PREFIX-f916d75121ad.ASC"
+        },
+        {
+          "path": "versions/v04/10-T-LONGEST-STRUCTURAL-PREFIX-f916d75121ad.BIN",
+          "label": "10-T-LONGEST-STRUCTURAL-PREFIX-f916d75121ad.BIN"
+        },
+        {
+          "path": "versions/v04/10-T-RAW.BIN",
+          "label": "10-T-RAW.BIN"
+        },
+        {
+          "path": "versions/v04/10-T-UNCERTAIN.ASC",
+          "label": "10-T-UNCERTAIN.ASC"
+        }
+      ],
+      "startupSource": "10 'traveling salesman\n14  DEFSNG A\n15 DEFINT B-Z\n16 FC!=.9\n20 INPUT \"How many cites\";C\n30 DIM C(1,C)",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
