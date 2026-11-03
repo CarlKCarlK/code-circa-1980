@@ -1,0 +1,42 @@
+{
+  "id": "monoputer-monopoly-draft",
+  "title": "Monoputer Monopoly Draft",
+  "description": "Monoputer Monopoly Draft. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "MONOPUTER MONOPOLY DRAFT",
+      "capture": "tape20a",
+      "save": 2,
+      "raw": "versions/v01/02-MONOPUTER-MONOPOLY-DRAFT.BAS",
+      "listing": "versions/v01/02-MONOPUTER-MONOPOLY-DRAFT.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/02-MONOPUTER-MONOPOLY-DRAFT.ASC",
+          "label": "02-MONOPUTER-MONOPOLY-DRAFT.ASC"
+        },
+        {
+          "path": "versions/v01/02-MONOPUTER-MONOPOLY-DRAFT.BAS",
+          "label": "02-MONOPUTER-MONOPOLY-DRAFT.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 PRINT\"HELLO, PEOPLE!\"\n25 PRINT\"MY NAME IS MONOPUTER\"\n30 PRINT\n40 PRINT\n50 INPUT\"HOW MANY WILL BE PLAYING (INCLUDING ME)\";NP\n60 CLS\n70 PRINT\"NOW LETS SEE WHO GOES FIRST, SOMEONE PLEASE ROLL THE\"\n80 PRINT\"DIE FOR ME.  (PRESS ANYTHING WHEN THOUGH)\"\n90 IF INKEY$=\"\"THEN 90\n95 CLS:PRINT:PRINT\n100 FOR I=1TO NP",
+      "controlSource": [
+        "90 IF INKEY$=\"\"THEN 90"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
