@@ -1,0 +1,326 @@
+{
+  "official_title": "JAB \u2014 The Best of the Monster Games",
+  "title_authority": "Recovered title or descriptive title from the recovered behavior; archive labels retained.",
+  "short_name": "jab",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred development sequence: Amazing-based maze/monster forms, then the replacement maze generator on tape16a, then the closely related tape30a save with revised controls and random routine. Tape numbers alone do not establish chronology. The damaged tape16a save 5 is preserved separately and is not filled from any complete save.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape16a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape16a/best/01-AMAZING-PROGRAM-MAZE.BAS",
+      "archive_listing": "tapes/recovered/tape16a/best/01-AMAZING-PROGRAM-MAZE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-AMAZING-PROGRAM-MAZE.BAS",
+          "archive_path": "tapes/recovered/tape16a/best/01-AMAZING-PROGRAM-MAZE.BAS",
+          "bytes": 7275,
+          "sha256": "8d784cb5695252a47e4bbeca1461cdd12e85e6e133ae43533e1a564c78dd416c"
+        },
+        {
+          "path": "versions/v01/01-AMAZING-PROGRAM-MAZE.ASC",
+          "archive_path": "tapes/recovered/tape16a/best/01-AMAZING-PROGRAM-MAZE.ASC",
+          "bytes": 8906,
+          "sha256": "a7581d0bfa5352fad9ecb70f487c2379dc1a595a1229e45424580f3f25a04758"
+        }
+      ],
+      "recovery_item": {
+        "lines": 250,
+        "last": 10020,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "8d784cb5695252a47e4bbeca1461cdd12e85e6e133ae43533e1a564c78dd416c"
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "a",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Amazing Program maze generator",
+        "capture": "tape16a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "14.801",
+        "recovered_bytes": "7275",
+        "source_file": "tapes/recovered/tape16a/best/01-AMAZING-PROGRAM-MAZE.ASC",
+        "wav": "tapes/tape16a.wav",
+        "folder": "tapes/recovered/tape16a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape16a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/02-AMAZING-PROGRAM-AND-MONSTER-GAME.BAS",
+          "archive_path": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.BAS",
+          "bytes": 9704,
+          "sha256": "654245b44e2a1e2dc2b91dda05546e3ddcbcd0554e339e9146a8c82615585856"
+        },
+        {
+          "path": "versions/v02/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
+          "archive_path": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
+          "bytes": 11831,
+          "sha256": "b6a431e05a7afc997c7b3cc74d4753947a5b16f8f258b823a83cb718f0e4bfb8"
+        }
+      ],
+      "recovery_item": {
+        "lines": 286,
+        "last": 10000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "654245b44e2a1e2dc2b91dda05546e3ddcbcd0554e339e9146a8c82615585856"
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Amazing Program and monster game; combined save (inferred title)",
+        "capture": "tape16a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "137.725",
+        "recovered_bytes": "9704",
+        "source_file": "tapes/recovered/tape16a/best/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
+        "wav": "tapes/tape16a.wav",
+        "folder": "tapes/recovered/tape16a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape16a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+      "archive_listing": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+          "archive_path": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.BAS",
+          "bytes": 8385,
+          "sha256": "1db15217c712789ae331dedf27cb4e2f0738b43758694ff5eea5c97aaa32b1bd"
+        },
+        {
+          "path": "versions/v03/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+          "archive_path": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+          "bytes": 10276,
+          "sha256": "e5fce8786b90e383f4b7ce21932912e2fdade770c6e3b10f4682eeee5ee657a2"
+        }
+      ],
+      "recovery_item": {
+        "lines": 183,
+        "last": 31000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "1db15217c712789ae331dedf27cb4e2f0738b43758694ff5eea5c97aaa32b1bd"
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "The Best of the Monster Games; source credit JAB",
+        "capture": "tape16a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "298.577",
+        "recovered_bytes": "8385",
+        "source_file": "tapes/recovered/tape16a/best/03-BEST-OF-THE-MONSTER-GAMES.ASC",
+        "wav": "tapes/tape16a.wav",
+        "folder": "tapes/recovered/tape16a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape30a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape30a/best/01-JAB-JABBERWOCKIES.BAS",
+      "archive_listing": "tapes/recovered/tape30a/best/01-JAB-JABBERWOCKIES.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/01-JAB-JABBERWOCKIES.BAS",
+          "archive_path": "tapes/recovered/tape30a/best/01-JAB-JABBERWOCKIES.BAS",
+          "bytes": 8473,
+          "sha256": "9b40f2c2650f11d90cc38de5dd88702de8be1de0cde993adc5c90e0e452dd756"
+        },
+        {
+          "path": "versions/v04/01-JAB-JABBERWOCKIES.ASC",
+          "archive_path": "tapes/recovered/tape30a/best/01-JAB-JABBERWOCKIES.ASC",
+          "bytes": 10402,
+          "sha256": "566670f8a8cc0f31ce974764a9d816052bd41289dc6839c85f9112cd6b176199"
+        }
+      ],
+      "recovery_item": {
+        "lines": 183,
+        "last": 31000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "9b40f2c2650f11d90cc38de5dd88702de8be1de0cde993adc5c90e0e452dd756"
+      },
+      "inventory_row": {
+        "tape": "30",
+        "side": "a",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "JAB \u2014 The Best of the Monster Games",
+        "capture": "tape30a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Exact left/right payload; 183 ordered lines; consistent pointer base 17125; end marker; exact EOF",
+        "source_start_s": "5.913",
+        "recovered_bytes": "8473",
+        "source_file": "tapes/recovered/tape30a/best/01-JAB-JABBERWOCKIES.ASC",
+        "wav": "tapes/tape30a.wav",
+        "folder": "tapes/recovered/tape30a",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape30a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source/publication dates do not establish tape-save dates. See history/README.md for direct and contextual evidence.",
+    "neighbor_context": [
+      {
+        "capture": "tape16a",
+        "save": 4,
+        "archive_listing": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+        "line": "20 'COPYRIGHT 1980  CARL KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 7,
+        "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 7,
+        "archive_listing": "tapes/recovered/tape16a/best/07-CHEMISTRY-BALANCER-II-SAVE1.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT  KADIE 1981\":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": 8,
+        "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 8,
+        "archive_listing": "tapes/recovered/tape16a/best/08-CHEMISTRY-BALANCER-II-SAVE2.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT  KADIE 1981\":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": 9,
+        "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 9,
+        "archive_listing": "tapes/recovered/tape16a/best/09-CHEMISTRY-BALANCER-II-SAVE3.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": 10,
+        "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 10,
+        "archive_listing": "tapes/recovered/tape16a/best/10-CHEMISTRY-BALANCER-II-SAVE4.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      },
+      {
+        "capture": "tape16a",
+        "save": 11,
+        "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "line": "10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE"
+      },
+      {
+        "capture": "tape16a",
+        "save": 11,
+        "archive_listing": "tapes/recovered/tape16a/best/11-CHEMISTRY-BALANCER-II-TEST-VERSION.ASC",
+        "line": "10000 CLS:PRINT@3*64,\"CHEMISTRY EQUATION BALANCER II\":PRINT\"KADIE SOFTWARE\":PRINT\"COPYRIGHT 1981 CARL KADIE \":RETURN"
+      }
+    ],
+    "note": "Direct quoted source notices only; same-side context is stronger, but neither notices nor tape numbers date these saves."
+  },
+  "upstream": {
+    "author": "Jack Hauber",
+    "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas",
+    "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=3",
+    "artifact": "AMAZING.ASC",
+    "bytes": 3094,
+    "sha256": "0638d75685bd0d474b9c625698287165ef297c979a9841597e33ca088e35417d",
+    "note": "Jack Hauber, Amazing, BASIC Computer Games (1978), pp. 2\u20133. Complete electronic transcription obtained from the GReaperEx/bcg mirror of Vintage BASIC. Not a recovered cassette or verified byte-for-byte transcription of the print edition. Published source attribution and the maze-generation algorithm match the early tape16a forms; numbered records are reorganized there. The later JAB forms replace the generator. No claim that the complete JAB game came from this book.",
+    "execution_tested": false
+  },
+  "artwork": {
+    "path": "app/assets/jab-gallery.svg",
+    "sha256": "f0bb26fb766c87997f4a6dc9ac92558097293eee75b5961a89892642b5d56245",
+    "description": "Modern illustrative SVG, not emulator execution evidence."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "test": "app/tests/browser/monster-games.spec.js",
+    "checks": "Original-ROM browser execution: generate maze, select one monster, arrow-key movement, 0 explosive prompt (a second 0 after an unfinished movement burst), 2,3 drops/timer input reducing flask to 998 ML, a subsequent move, pause/resume, and restart. No full maze clear, all enemy states, or exhaustive explosion geometry was tested.",
+    "reference": {
+      "version": "v04",
+      "capture": "tape30a",
+      "save": 1,
+      "payload": "versions/v04/01-JAB-JABBERWOCKIES.BAS",
+      "sha256": "9b40f2c2650f11d90cc38de5dd88702de8be1de0cde993adc5c90e0e452dd756"
+    },
+    "note": "New execution evidence; recovery archive execution flags and historical bytes remain unchanged."
+  },
+  "emulator_capture": {
+    "path": "programs/jab/verification/screen.png",
+    "sha256": "ff0a0bbd9eb54fec78e94b8e81712f84716b4883ac17afe6a55a5d294f8f973b",
+    "description": "Actual original-ROM emulator screenshot; separate from illustrative gallery artwork."
+  }
+}
