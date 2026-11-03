@@ -1,54 +1,54 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape23a",
-  "save": 7,
-  "archive_raw": "tapes/recovered/tape23a/best/07-ROOM-MAZE-GENERATOR-SAVE01.BAS",
-  "archive_listing": "tapes/recovered/tape23a/best/07-ROOM-MAZE-GENERATOR-SAVE01.ASC",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.BAS",
+  "archive_listing": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/07-ROOM-MAZE-GENERATOR-SAVE01.ASC",
-      "archive_path": "tapes/recovered/tape23a/best/07-ROOM-MAZE-GENERATOR-SAVE01.ASC",
-      "bytes": 2744,
-      "sha256": "25c6bd056ebc11ea4edb5a71f9a673d8550ef5394c5a25b1268b1ab0cd34ad76"
+      "path": "versions/v02/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
+      "archive_path": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
+      "bytes": 3184,
+      "sha256": "05ada873b6b67c191300f935d7d5ada2d159268acad5eafb7a5278dc38d24db2"
     },
     {
-      "path": "versions/v01/07-ROOM-MAZE-GENERATOR-SAVE01.BAS",
-      "archive_path": "tapes/recovered/tape23a/best/07-ROOM-MAZE-GENERATOR-SAVE01.BAS",
-      "bytes": 2415,
-      "sha256": "639744da4bb46aeae880d358ba44712fb0be0875f15a28dcb29902f40dbbec6f"
+      "path": "versions/v02/08-ROOM-MAZE-GENERATOR-SAVE02.BAS",
+      "archive_path": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.BAS",
+      "bytes": 2777,
+      "sha256": "347ab3addf9afc0ee5822ec34edd78f3e3da98ea293cc002f724db2999a70dfe"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "639744da4bb46aeae880d358ba44712fb0be0875f15a28dcb29902f40dbbec6f",
-    "bytes": 2415,
+    "sha256": "347ab3addf9afc0ee5822ec34edd78f3e3da98ea293cc002f724db2999a70dfe",
+    "bytes": 2777,
     "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 47,
-    "last": 2010,
+    "lines": 54,
+    "last": 3010,
     "pointer_bases": [
       17125
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 2413,
+    "parsed_bytes": 2775,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "23",
     "side": "a",
-    "order": "7",
+    "order": "8",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "ROOM MAZE GENERATOR SAVE01",
+    "summary": "ROOM MAZE GENERATOR SAVE02",
     "capture": "tape23a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
     "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "314.925",
-    "recovered_bytes": "2415",
-    "source_file": "tapes/recovered/tape23a/best/07-ROOM-MAZE-GENERATOR-SAVE01.ASC",
+    "source_start_s": "365.104",
+    "recovered_bytes": "2777",
+    "source_file": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
     "wav": "tapes/tape23a.wav",
     "folder": "tapes/recovered/tape23a",
     "recovery_date": "2026-10-28",

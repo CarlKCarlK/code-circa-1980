@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape23a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape23a",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
+          "bytes": 3184,
+          "sha256": "05ada873b6b67c191300f935d7d5ada2d159268acad5eafb7a5278dc38d24db2"
+        },
+        {
+          "path": "versions/v02/08-ROOM-MAZE-GENERATOR-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.BAS",
+          "bytes": 2777,
+          "sha256": "347ab3addf9afc0ee5822ec34edd78f3e3da98ea293cc002f724db2999a70dfe"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "347ab3addf9afc0ee5822ec34edd78f3e3da98ea293cc002f724db2999a70dfe",
+        "bytes": 2777,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 54,
+        "last": 3010,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2775,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "a",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "ROOM MAZE GENERATOR SAVE02",
+        "capture": "tape23a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "365.104",
+        "recovered_bytes": "2777",
+        "source_file": "tapes/recovered/tape23a/best/08-ROOM-MAZE-GENERATOR-SAVE02.ASC",
+        "wav": "tapes/tape23a.wav",
+        "folder": "tapes/recovered/tape23a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23a/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
