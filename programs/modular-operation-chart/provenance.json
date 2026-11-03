@@ -1,0 +1,74 @@
+{
+  "official_title": "Modular Operation Chart",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "modular_operation_chart_p207; modular_operation_chart_p213",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape21b/best/06-MODULAR-OPERATION-CHART.BAS",
+      "archive_listing": "tapes/recovered/tape21b/best/06-MODULAR-OPERATION-CHART.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/06-MODULAR-OPERATION-CHART.ASC",
+          "archive_path": "tapes/recovered/tape21b/best/06-MODULAR-OPERATION-CHART.ASC",
+          "bytes": 188,
+          "sha256": "c7beecd8a759abcc055ee03c3903216ce1a5f86ef1e081eb256737b7b8ea6936"
+        },
+        {
+          "path": "versions/v01/06-MODULAR-OPERATION-CHART.BAS",
+          "archive_path": "tapes/recovered/tape21b/best/06-MODULAR-OPERATION-CHART.BAS",
+          "bytes": 164,
+          "sha256": "64969a337af23ccf21305dc983e6c192acccba4f36f7a22107c5df498622c54e"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "64969a337af23ccf21305dc983e6c192acccba4f36f7a22107c5df498622c54e",
+        "bytes": 164,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 12,
+        "last": 100,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 162,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "b",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MODULAR OPERATION CHART",
+        "capture": "tape21b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "208.370",
+        "recovered_bytes": "164",
+        "source_file": "tapes/recovered/tape21b/best/06-MODULAR-OPERATION-CHART.ASC",
+        "wav": "tapes/tape21b.wav",
+        "folder": "tapes/recovered/tape21b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
