@@ -1,64 +1,58 @@
 {
-  "version": "v05",
+  "version": "v06",
   "capture": "tape18a",
-  "save": 18,
-  "archive_raw": "tapes/recovered/tape18a/partial/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.BIN",
-  "archive_listing": "tapes/recovered/tape18a/partial/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.TXT",
+  "save": 20,
+  "archive_raw": "tapes/recovered/tape18a/best/20-FALL-ASSEMBLY-V5.ASM",
+  "archive_listing": "tapes/recovered/tape18a/best/20-FALL-ASSEMBLY-V5.TXT",
   "imported_files": [
     {
-      "path": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.BIN",
-      "archive_path": "tapes/recovered/tape18a/partial/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.BIN",
-      "bytes": 2542,
-      "sha256": "b4bcc773b38769bb5d60f97533c4f96283a95d2f9e1a1c833b80b711e6cdd8a4"
+      "path": "versions/v06/20-FALL-ASSEMBLY-V5.ASM",
+      "archive_path": "tapes/recovered/tape18a/best/20-FALL-ASSEMBLY-V5.ASM",
+      "bytes": 2571,
+      "sha256": "4cae4dd0f725803ce8fb228ced25c31583e61387ee738f9c0db5a4dc8afe24f5"
     },
     {
-      "path": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.TXT",
-      "archive_path": "tapes/recovered/tape18a/partial/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.TXT",
-      "bytes": 2535,
-      "sha256": "1845d31a038eb2a1c1446c39589607f94e0860d8ea2536c5daa1331436199bd2"
+      "path": "versions/v06/20-FALL-ASSEMBLY-V5.TXT",
+      "archive_path": "tapes/recovered/tape18a/best/20-FALL-ASSEMBLY-V5.TXT",
+      "bytes": 2563,
+      "sha256": "98f1d2d216d99122e90c374dd84a62bd46226f1ad86da8a704a8e0a8e25bae15"
     },
     {
-      "path": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-RAW.ASM",
-      "archive_path": "tapes/recovered/tape18a/partial/18-FALL-INTERRUPTED-CAPTURE-1-RAW.ASM",
-      "bytes": 2556,
-      "sha256": "eb8b804152c80a2bab3d34aab9dba533a1232a99f4f6ffd4db7f64c728c138b6"
-    },
-    {
-      "path": "versions/v05/18-FALL-INTERRUPTED-CAPTURE-1-UNCERTAIN.TXT",
-      "archive_path": "tapes/recovered/tape18a/partial/18-FALL-INTERRUPTED-CAPTURE-1-UNCERTAIN.TXT",
-      "bytes": 4404,
-      "sha256": "218f11c81844ae72a8c5850e959a80dea99f043a5839d15abe1873b55d4c8141"
+      "path": "versions/v06/20-FALL-ASSEMBLY-V5.Z80",
+      "archive_path": "tapes/recovered/tape18a/best/20-FALL-ASSEMBLY-V5.Z80",
+      "bytes": 1819,
+      "sha256": "86a73810539bfe83fb59df0185845f789633eeb75902cfef58617cf832797191"
     }
   ],
   "recovery_item": {
     "format": "assembly source (EDTASM)",
-    "sha256": "b4bcc773b38769bb5d60f97533c4f96283a95d2f9e1a1c833b80b711e6cdd8a4",
-    "bytes": 2542,
-    "archive_validation": "Untouched 2542-byte prefix: 122 complete EDTASM records with exact left/right agreement; no added end marker; capture stop/rewind/restart reported by user",
+    "sha256": "4cae4dd0f725803ce8fb228ced25c31583e61387ee738f9c0db5a4dc8afe24f5",
+    "bytes": 2571,
+    "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
     "import_validation": "Exact file hashes; format-specific checks below.",
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "18",
     "side": "a",
-    "order": "18",
+    "order": "20",
     "type": "assembly source (EDTASM)",
-    "recovery%": "",
-    "summary": "FALL INTERRUPTED CAPTURE 1",
+    "recovery%": "100",
+    "summary": "FALL ASSEMBLY V5",
     "capture": "tape18a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Z80 / EDTASM",
-    "status": "interrupted capture",
-    "validation": "Untouched 2542-byte prefix: 122 complete EDTASM records with exact left/right agreement; no added end marker; capture stop/rewind/restart reported by user",
-    "source_start_s": "704.700",
-    "recovered_bytes": "2542",
-    "source_file": "tapes/recovered/tape18a/partial/18-FALL-INTERRUPTED-CAPTURE-1-PREFIX.TXT",
+    "status": "validated payload; runtime untested",
+    "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+    "source_start_s": "798.052",
+    "recovered_bytes": "2571",
+    "source_file": "tapes/recovered/tape18a/best/20-FALL-ASSEMBLY-V5.TXT",
     "wav": "tapes/tape18a.wav",
     "folder": "tapes/recovered/tape18a",
     "recovery_date": "2026-10-28",
     "recorder_volume": "",
-    "next_action": "Capture interruption documented; retain separate fragments"
+    "next_action": "Assemble or execution-test only if requested"
   },
   "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
   "execution_tested": false
