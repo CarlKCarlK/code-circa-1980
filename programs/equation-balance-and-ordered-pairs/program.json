@@ -39,6 +39,36 @@
         "600 C$=INKEY$:IFC$=\"\"THEN600ELSEPRINTC$;",
         "610 IFA$=\" \"ORB$=\" \"ORC$=\" \"THEN A$=INKEY$:GOTO 570"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "EQUATION BALANCE AND ORDERED PAIRS",
+      "capture": "tape19b",
+      "save": 1,
+      "raw": "versions/v02/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.BAS",
+      "listing": "versions/v02/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.ASC",
+          "label": "01-EQUATION-BALANCE-AND-ORDERED-PAIRS.ASC"
+        },
+        {
+          "path": "versions/v02/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.BAS",
+          "label": "01-EQUATION-BALANCE-AND-ORDERED-PAIRS.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 INPUT\"DO YOU WHAT   1) EQUATION BALANCE\n              2) ORDERED PAIRS\n              \";C\n30 CLS\n40 IF C=2 THEN 5000 ELSEIFC=1THEN90 ELSE PRINT\"TYPE EITHER   1   OR  2 \":GOTO20\n80  REM EQUATION BALANCE\n90 NC=-1\n100 FOR X=1TO40:SET(X+10,24):SET(X+80,24):NEXTX\n110 FORX=30TO100:SET(X,32):SET(X,31):NEXTX\n120 FOR Y=25TO30:SET(30,Y):SET(100,Y):NEXTY\n130 FOR X=62TO68:FORY=33TO35:SET(X,Y):NEXTY,X",
+      "controlSource": [
+        "580 A$=INKEY$:IFA$=\"\"THEN580ELSEPRINTA$;",
+        "590 B$=INKEY$:IFB$=\"\"THEN590ELSEPRINTB$;",
+        "600 C$=INKEY$:IFC$=\"\"THEN600ELSEPRINTC$;",
+        "610 IFA$=\" \"ORB$=\" \"ORC$=\" \"THEN A$=INKEY$:GOTO 570",
+        "4000  A$=INKEY$:IFA$=\"\"THEN4000ELSEPRINTASC(A$):GOTO4000"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"

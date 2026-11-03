@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape19a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape19b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape19b/best/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.BAS",
+      "archive_listing": "tapes/recovered/tape19b/best/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.ASC",
+          "archive_path": "tapes/recovered/tape19b/best/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.ASC",
+          "bytes": 3719,
+          "sha256": "3cb4f1c5907f9842b36da05c88768d8fa5d01d447d7a35be3acbcfff44d5e540"
+        },
+        {
+          "path": "versions/v02/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.BAS",
+          "archive_path": "tapes/recovered/tape19b/best/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.BAS",
+          "bytes": 2994,
+          "sha256": "3674ef3482f9a85cc79703e95654ebd64f27459a553b213996b04000d052e7ae"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "3674ef3482f9a85cc79703e95654ebd64f27459a553b213996b04000d052e7ae",
+        "bytes": 2994,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 84,
+        "last": 5220,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2992,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "19",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "EQUATION BALANCE AND ORDERED PAIRS",
+        "capture": "tape19b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "5.501",
+        "recovered_bytes": "2994",
+        "source_file": "tapes/recovered/tape19b/best/01-EQUATION-BALANCE-AND-ORDERED-PAIRS.ASC",
+        "wav": "tapes/tape19b.wav",
+        "folder": "tapes/recovered/tape19b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape19b/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
