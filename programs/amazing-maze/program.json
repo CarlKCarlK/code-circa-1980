@@ -36,6 +36,34 @@
       "controlSource": [
         "2000 A$=INKEY$"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "AMAZING PROGRAM DAMAGED COPY",
+      "capture": "tape12b",
+      "save": 15,
+      "raw": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
+      "listing": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+      "playable": false,
+      "note": "damaged maze-program recording. Exact 792-byte readable prefix matches three variants; full stream damaged",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC",
+          "label": "15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC"
+        },
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+          "label": "15-AMAZING-PROGRAM-DAMAGED-COPY.ASC"
+        },
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
+          "label": "15-AMAZING-PROGRAM-DAMAGED-COPY.BAS"
+        }
+      ],
+      "startupSource": "5 P$=CHR$(191):D$=CHR$(140):I$=CHR$(191)\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n100 INPUT\"WHAT ARE YOUR WIDTH AND LENGTH\";H,V\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT\n150 PRINT\n160 Q=0:Z=0:X=INT(RND(0)*H+1)",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"

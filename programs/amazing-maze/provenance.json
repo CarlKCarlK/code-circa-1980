@@ -65,6 +65,66 @@
       },
       "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape12b",
+      "save": 15,
+      "archive_raw": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
+      "archive_listing": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC",
+          "bytes": 4770,
+          "sha256": "de4e871159625f7bf6de61bfadbf374ff8150f0caf89ff3c0238c897fd99e493"
+        },
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+          "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+          "bytes": 958,
+          "sha256": "08958f656832dae09dc9dd12bec7816e3059dc418c478489b0b812372116328d"
+        },
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
+          "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
+          "bytes": 2733,
+          "sha256": "4bf3ad63c52f5eb3585520d76ec12c62d9dd1ae30cfac44cae23463daf571e04"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "4bf3ad63c52f5eb3585520d76ec12c62d9dd1ae30cfac44cae23463daf571e04",
+        "bytes": 2733,
+        "archive_validation": "Exact 792-byte readable prefix matches three variants; full stream damaged",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "structure_conflict": true,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "15",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "AMAZING PROGRAM DAMAGED COPY; 45 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged maze-program recording",
+        "validation": "Exact 792-byte readable prefix matches three variants; full stream damaged",
+        "source_start_s": "729.878",
+        "recovered_bytes": "2733",
+        "source_file": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/partial",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Consider another capture if needed; two full maze versions recovered"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/partial/inventory.json",
+      "execution_tested": false
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
