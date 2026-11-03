@@ -1,0 +1,43 @@
+{
+  "id": "sprite-animation",
+  "title": "Sprite Animation",
+  "description": "Sprite Animation. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extended features",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SPRITE ANIMATION",
+      "capture": "tape4b",
+      "save": 10,
+      "raw": "versions/v01/10-SPRITE-ANIMATION.BAS",
+      "listing": "versions/v01/10-SPRITE-ANIMATION.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. 42 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/10-SPRITE-ANIMATION.ASC",
+          "label": "10-SPRITE-ANIMATION.ASC"
+        },
+        {
+          "path": "versions/v01/10-SPRITE-ANIMATION.BAS",
+          "label": "10-SPRITE-ANIMATION.BAS"
+        }
+      ],
+      "startupSource": "10 A=1\n20 DIMF%(20)\n30 DIMA%(30)\n40 MX=64:MY=13\n50 LINE(0,6)-(12,11),SET,BF:LINE(3,11)-(9,14),SET,BF:LINE(2,0)-(10,4),SET,BF:LINE(10,8)-(10,11),RESET:LINE(2,8)-(2,11),RESET:LINE(6,11)-(6,14),RESET:LINE(3,5)-(9,5),SET\n60 RESET(11,11):RESET(1,11):LINE(0,1)-(12,1),SET\n70 GET@(0,0)-(13,13),G,A%\n80 GET@(0,0)-(13,6),G,F%\n90 CLS\n100 PUT@(MX,MY)-(13+MX,MY+13),SET,A%\n110 PUT@(MX,MY)-(13+MX,MY+6),SET,F%\n120 LINE(5+FX+MX,4+FY+MY)-(7+FX+MX,4+FY+MY),RESET:RESET(4+FX+MX,2+FY+MY):RESET(8+FX+MX,2+FY+MY)",
+      "controlSource": [
+        "140 A$=INKEY$:IFA$=\",\"THENFX=FX-1ELSEIFA$=\".\"THENFX=FX+1ELSEIFA$=\"A\"THENFY=FY+1ELSEIFA$=\"Q\"THENFY=FY-1ELSEIFA$=\" \"THENA=-A:LINE(MX-8,MY+6)-(MX+1,MY+6),RESET:PUT@(MX,MY)-(13+MX,13+MY),SET,A%ELSE 140  ",
+        "210 A$=INKEY$:IFA$=\"\"THEN210  ELSEN=VAL(A$)"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
