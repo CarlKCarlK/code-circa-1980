@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape10b",
+  "save": 14,
+  "archive_raw": "tapes/recovered/tape10b/best/14-RACE-EARLY.BAS",
+  "archive_listing": "tapes/recovered/tape10b/best/14-RACE-EARLY.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/14-RACE-EARLY.ASC",
+      "archive_path": "tapes/recovered/tape10b/best/14-RACE-EARLY.ASC",
+      "bytes": 1826,
+      "sha256": "a707d9b4b315aa8a2a9b9f12542b9fee94786fc1b916104f933a73f19853219d"
+    },
+    {
+      "path": "versions/v01/14-RACE-EARLY.BAS",
+      "archive_path": "tapes/recovered/tape10b/best/14-RACE-EARLY.BAS",
+      "bytes": 1465,
+      "sha256": "bb1cb840e01589ba0574a31ad505da94d9973c68b49967d69a213720547b92c4"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "bb1cb840e01589ba0574a31ad505da94d9973c68b49967d69a213720547b92c4",
+    "bytes": 1465,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 38,
+    "last": 1100,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1463,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "10",
+    "side": "b",
+    "order": "14",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "RACE EARLY; 38 lines",
+    "capture": "tape10b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 BASIC; extensions may be needed",
+    "status": "validated source; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+    "source_start_s": "614.597",
+    "recovered_bytes": "1465",
+    "source_file": "tapes/recovered/tape10b/best/14-RACE-EARLY.ASC",
+    "wav": "tapes/tape10b.wav",
+    "folder": "tapes/recovered/tape10b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
+  "execution_tested": false
+}

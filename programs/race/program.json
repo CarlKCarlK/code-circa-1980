@@ -1,0 +1,40 @@
+{
+  "id": "race",
+  "title": "Race",
+  "description": "Race. 3 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 BASIC; extensions may be needed",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "RACE EARLY",
+      "capture": "tape10b",
+      "save": 14,
+      "raw": "versions/v01/14-RACE-EARLY.BAS",
+      "listing": "versions/v01/14-RACE-EARLY.ASC",
+      "playable": false,
+      "note": "validated source; runtime untested. Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/14-RACE-EARLY.ASC",
+          "label": "14-RACE-EARLY.ASC"
+        },
+        {
+          "path": "versions/v01/14-RACE-EARLY.BAS",
+          "label": "14-RACE-EARLY.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 FOR X=0 TO127:SET(X,3):SET(X,47):NEXTX:FORY=3TO47:SET(0,Y):SET(127,Y):NEXTY\n25 DEFINT A-Y\n26 GOTO 200\n30 LL=.0001\n50 P=0\n60 X=5:Y=10\n65 ON ERROR GOTO 1000\n70 M=PEEK(14400):IF MAND128THENP=0ELSEIF MAND1THENP=1ELSEIFMAND2THENP=2ELSE IF PEEK(14464) THEN 500\n80 IF MAND8THENY=Y-1ELSEIFMAND16THENY=Y+1\n90 IF MAND32THENX=X-1ELSEIFMAND64THENX=X+1\n95 X=XAND127:IFY<0THENY=0ELSEIFY>47THENY=47",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
