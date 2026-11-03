@@ -1,0 +1,42 @@
+{
+  "id": "biorhythm-chart",
+  "title": "Biorhythm Chart",
+  "description": "Biorhythm Chart. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BIORHYTHM CHART",
+      "capture": "tape9b",
+      "save": 22,
+      "raw": "versions/v01/22-BIORHYTHM-CHART.BAS",
+      "listing": "versions/v01/22-BIORHYTHM-CHART.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested; trailing CR preserved after BASIC end",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/22-BIORHYTHM-CHART.ASC",
+          "label": "22-BIORHYTHM-CHART.ASC"
+        },
+        {
+          "path": "versions/v01/22-BIORHYTHM-CHART.BAS",
+          "label": "22-BIORHYTHM-CHART.BAS"
+        }
+      ],
+      "startupSource": "1 CLS\n5 I=7:O=4:P=1962:J=1:K=7:L=1979\n10 INPUT\"WHAT IS BIRTH DAY (M,DD,YYYY)\";I,O,P\n20 INPUT\"WHEN SHOULD I START CHART\";J,K,L\n30 PI=3.14159\n40 CLS\n70 M=I:D=O:Y=P\n100  GOSUB230\n110 N=A\n120 M=J:D=K:Y=L\n150 GOSUB230\n160 N=A-N",
+      "controlSource": [
+        "1110 A$=INKEY$:IFA$=\"\"THEN1110ELSE1"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
