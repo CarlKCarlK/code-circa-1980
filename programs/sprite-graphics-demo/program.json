@@ -36,6 +36,32 @@
       "controlSource": [
         "200 A$=INKEY$:IFA$=\"B\"THEN 500"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "SPRITE GRAPHICS DEMO V2",
+      "capture": "tape11b",
+      "save": 19,
+      "raw": "versions/v02/19-SPRITE-GRAPHICS-DEMO-V2.BAS",
+      "listing": "versions/v02/19-SPRITE-GRAPHICS-DEMO-V2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/19-SPRITE-GRAPHICS-DEMO-V2.ASC",
+          "label": "19-SPRITE-GRAPHICS-DEMO-V2.ASC"
+        },
+        {
+          "path": "versions/v02/19-SPRITE-GRAPHICS-DEMO-V2.BAS",
+          "label": "19-SPRITE-GRAPHICS-DEMO-V2.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 LINE(6,0)-(18,2),SET,BF\n30 RESET(6,2):RESET(7,2):RESET(14,0):RESET(17,0):RESET(18,0):RESET(18,2):LINE(10,2)-(15,2),RESET\n40 DIM T%(30),A%(30),B%(30),C%(30),D%(30),E%(30)\n50 GET@(0,0)-(18,2),G,T%\n60 CLS\n70 TM=53\n75 DA=0:RN=RND(20)\n80 CLS\n90 LINE(0,15)-(35,25),SET,BF\n100 LINE(127,15)-(82,25),SET,BF\n110 LINE(35,15)-(82,15),SET:'CROSS",
+      "controlSource": [
+        "140 A$=INKEY$:IFA$=\"\"THEN 1000 "
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
