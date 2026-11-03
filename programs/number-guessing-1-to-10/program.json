@@ -1,0 +1,40 @@
+{
+  "id": "number-guessing-1-to-10",
+  "title": "Number Guessing 1 To 10",
+  "description": "Number Guessing 1 To 10. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Number guessing, 1 to 10",
+      "capture": "tape16b",
+      "save": 9,
+      "raw": "versions/v01/09-NUMBER-GUESSING-1-10.BAS",
+      "listing": "versions/v01/09-NUMBER-GUESSING-1-10.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/09-NUMBER-GUESSING-1-10.ASC",
+          "label": "09-NUMBER-GUESSING-1-10.ASC"
+        },
+        {
+          "path": "versions/v01/09-NUMBER-GUESSING-1-10.BAS",
+          "label": "09-NUMBER-GUESSING-1-10.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 X=RND(10)\n15 PRINT \"PICK A NUMBER  BETWEEN 1 & 10\"\n20 INPUT Y\n23 Z=Z+1\n25 CLS\n40 IF X<>Y THEN PRINT \"GUESS AGAIN\":GOTO 20\n50 PRINT \"NUMBER OF GUESSES\";Z",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

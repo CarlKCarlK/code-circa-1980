@@ -1,0 +1,74 @@
+{
+  "official_title": "Number Guessing 1 To 10",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "number_guessing_1_to_10_p148",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape16b",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape16b/best/09-NUMBER-GUESSING-1-10.BAS",
+      "archive_listing": "tapes/recovered/tape16b/best/09-NUMBER-GUESSING-1-10.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/09-NUMBER-GUESSING-1-10.ASC",
+          "archive_path": "tapes/recovered/tape16b/best/09-NUMBER-GUESSING-1-10.ASC",
+          "bytes": 162,
+          "sha256": "0b90a850971fc4da407589cad22b6053c55b17067ddee050d3315618247d5b6f"
+        },
+        {
+          "path": "versions/v01/09-NUMBER-GUESSING-1-10.BAS",
+          "archive_path": "tapes/recovered/tape16b/best/09-NUMBER-GUESSING-1-10.BAS",
+          "bytes": 148,
+          "sha256": "0572ee30224aa8be8b35a19eda8f5b4cd08d0bbfc11c4684e4f75c2444810e7d"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "0572ee30224aa8be8b35a19eda8f5b4cd08d0bbfc11c4684e4f75c2444810e7d",
+        "bytes": 148,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 8,
+        "last": 50,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 146,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "16",
+        "side": "b",
+        "order": "9",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Number guessing, 1 to 10",
+        "capture": "tape16b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "175.782",
+        "recovered_bytes": "148",
+        "source_file": "tapes/recovered/tape16b/best/09-NUMBER-GUESSING-1-10.ASC",
+        "wav": "tapes/tape16b.wav",
+        "folder": "tapes/recovered/tape16b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "7/10",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
