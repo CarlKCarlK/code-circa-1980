@@ -1,0 +1,40 @@
+{
+  "id": "scheduler",
+  "title": "Scheduler",
+  "description": "Scheduler. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "SCHEDULER",
+      "capture": "tape24a",
+      "save": 5,
+      "raw": "versions/v01/05-SCHEDULER.BAS",
+      "listing": "versions/v01/05-SCHEDULER.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/05-SCHEDULER.ASC",
+          "label": "05-SCHEDULER.ASC"
+        },
+        {
+          "path": "versions/v01/05-SCHEDULER.BAS",
+          "label": "05-SCHEDULER.BAS"
+        }
+      ],
+      "startupSource": "5 DEFINT  A-Z\n10 CLS\n20 PRINT\"SCHEDULER\"\n30 N=0\n40 DIM PT(40,40),L(40)\n100  IF N<>0 THEN INPUT\"SAME JOBS\";A$:IFA$=\"N\"  OR A$=\"NO\"THEN200\n110  JB=RND(20):JB=10\n111  FOR JJ=1TOJB:FORII=1TOJB:PT(JJ,II)=0:NEXTII:PT(JJ,JJ)=1:NEXTJJ\n120  FOR J=1TOJB:L(J)=1+RND(5)*(-LOG(RND(0))):NEXTJ\n130  CN=RND(JB):CN=20\n140  FOR C=1TOCN\n150    LO=RND(JB):HI=RND(JB)",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
