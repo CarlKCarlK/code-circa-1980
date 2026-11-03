@@ -1,0 +1,43 @@
+{
+  "id": "paddle-catch-game",
+  "title": "Paddle Catch Game",
+  "description": "Paddle Catch Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PADDLE CATCH GAME",
+      "capture": "tape21a",
+      "save": 6,
+      "raw": "versions/v01/06-PADDLE-CATCH-GAME.BAS",
+      "listing": "versions/v01/06-PADDLE-CATCH-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/06-PADDLE-CATCH-GAME.ASC",
+          "label": "06-PADDLE-CATCH-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/06-PADDLE-CATCH-GAME.BAS",
+          "label": "06-PADDLE-CATCH-GAME.BAS"
+        }
+      ],
+      "startupSource": "5 CLS:B=34\n10 B$=CHR$(141)+CHR$(191)+CHR$(142):L$=CHR$(150)+\" \"+CHR$(169)\n20 FORX=1TO9:READP:P$=P$+CHR$(P):NEXT:C$=CHR$(173)+CHR$(143)+CHR$(158):S$=CHR$(137)+CHR$(177)+CHR$(134)\n40 P=992\n50 A$=INKEY$:IFA$=\",\"THENP=P-1ELSEIFA$=\".\"THENP=P+1\n60 IFP<960THENP=960ELSEIFP>1014THENP=1014\n70 PRINT@OP,STRING$(9,\" \");:PRINT@P,P$;:OP=P\n80 IFB<63THENI=64ELSEIFB>=P-129ANDB<P-120THENI=-64:C=RND(0)*2-1\n85 IFB<191THENFORX=1TO100:NEXT\n90 IFB>895THEN500\n95 V=INT(64*(INT(B/64)-B/64)):IFV=-1ORV=-60THENC=C*-1\n100 B=B+I+C:PRINT@OB,\"   \";:PRINT@OB+64,\"   \";:PRINT@B,B$;:PRINT@B+64,L$;:OB=B",
+      "controlSource": [
+        "50 A$=INKEY$:IFA$=\",\"THENP=P-1ELSEIFA$=\".\"THENP=P+1",
+        "510 A$=INKEY$:IFA$<>\"\"THENCLS:GOTO40ELSE510"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
