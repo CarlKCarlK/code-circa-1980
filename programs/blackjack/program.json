@@ -1,0 +1,43 @@
+{
+  "id": "blackjack",
+  "title": "Blackjack",
+  "description": "Blackjack. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "BLACKJACK",
+      "capture": "tape3a",
+      "save": 5,
+      "raw": "versions/v01/05-BLACKJACK.BAS",
+      "listing": "versions/v01/05-BLACKJACK.ASC",
+      "playable": false,
+      "note": "validated payload. 48 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/05-BLACKJACK.ASC",
+          "label": "05-BLACKJACK.ASC"
+        },
+        {
+          "path": "versions/v01/05-BLACKJACK.BAS",
+          "label": "05-BLACKJACK.BAS"
+        }
+      ],
+      "startupSource": "3 CLS\n5 DEFINT R\n10 DIM R(21,21),C(13)\n11 FOR I=1TO13:C(I)=I:NEXTI:C(1)=11:C(11)=10:C(12)=10:C(13)=10\n20 FOR P=1TO10:FORH=1TO21:R(P,H)=100:NEXTH,P:PRINT\"DONE\"\n100 FOR H=1TO11\n110 FOR P=11 TO 21\n115 PP=P:HH=H\n120 DD=R(PP,HH):IFDD=0THENDD=SGN(RND(2)-1.5)\n121 IF PP=P AND HH=H THEN D=DD\n130 IF DD<0 THEN 200\n135 HH=H",
+      "controlSource": [
+        "605 A$=INKEY$:IFA$=\" \"THEN1000ELSE IFA$=\"S\"THEN2000",
+        "2050 A$=INKEY$:IFA$=\"\"THEN2050ELSECLS:GOTO610"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
