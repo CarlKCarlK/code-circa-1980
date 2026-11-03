@@ -12,7 +12,7 @@ test('second gallery is separate, reached by one small link; cards launch player
  await expect(page).toHaveURL(/#\/more$/);
  await expect(page.getByRole('heading',{level:1})).toContainText('the tapes.');
  await expect(page.locator('.program-card')).toHaveCount(34);
- await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','Star Wars cockpit','Ricky Rat','Pinball','Logic circuit simulator','Orbit simulator','Skinner Box','German tutor','Magazine Index','TEACH VI','LIFE','Worm One','Peoria Grand Prix','Pendulum','Sentence Generator','Learning Tic-Tac-Toe','Superpower Investing','Trajectory','Relativity','Reflex Tests','Nuclear Equation Completer','John’s Circle','Keyword Cipher','Word Search','Computa-Match','Jaberwocky','Cave Game','JAB — The Best of the Monster Games','Who Donnt?','Dungeon Trainer','TUTAC Computer','Tank Game','Lunar Lander']);
+ await expect(page.locator('.program-card h2')).toHaveText(['Speech','Olympics','Star Wars cockpit','Ricky Rat','Pinball','Logic circuit simulator','Orbit simulator','Skinner Box','German tutor','Magazine Index','TEACH VI','LIFE','Worm One','Peoria Grand Prix','Pendulum','Sentence Generator','Learning Tic-Tac-Toe','Superpower Investing','Trajectory','Relativity','Reflex Tests','Nuclear Equation Completer','John’s Circle','Keyword Cipher','Word Search','Computa-Match','Jaberwocky','Cave Game','JAB — The Best of the Monster Games','Who Donnt?','Dungeon Trainer','TUTAC Computer','Unfinished Tank Game','Lunar Lander']);
  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content','noindex, nofollow');
  await page.getByRole('link',{name:'Play Speech →'}).click();
  await expect(page.locator('#display')).toBeVisible();

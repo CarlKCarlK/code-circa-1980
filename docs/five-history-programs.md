@@ -1,6 +1,6 @@
 # Five more historical programs
 
-Requested November 3, 2026, appended after JAB in More: Who Donnt? (`whodonnt`), Dungeon Trainer (`dungeon`), TUTAC Computer (`tutac`), Tank Game (`tank`), and Lunar Lander (`ll`). More now has 34 entries. Four have one selected real-ROM player; Tank is an explicitly source-only design draft.
+Requested November 3, 2026, appended after JAB in More: Who Donnt? (`whodonnt`), Dungeon Trainer (`dungeon`), TUTAC Computer (`tutac`), Unfinished Tank Game (`tank`), and Lunar Lander (`ll`). More now has 34 entries. Four have one selected real-ROM player; Tank is an explicitly source-only design draft.
 
 Twelve complete captured payloads and listings retain unchanged snapshots and per-save canonical tagged commits: four Who Donnt?, four Dungeon Trainer, two TUTAC, one Tank, and one Lunar Lander. Complete captured framing does not imply finished or executable program code. Tank’s earlier uncertain tape1a candidate and its 1274-byte prefix (34 ordered records through 320, no added terminator) are separate from the validated tape16a draft. TUTAC’s suspect third candidate stays in review/. No tape recovery or inventory rewrite was performed.
 

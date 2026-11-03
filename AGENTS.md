@@ -417,3 +417,5 @@ inspiration, and joint authorship; do not invent published ancestors from
 generic similarity. More now has 34 cards. New extras stay at unshared web v1.
 LIFE’s attribution change creates immutable web v3; retain v1 and v2 unchanged.
 See docs/more-attributions.md and more-attributions.spec.js.
+
+The user’s official display title is **Unfinished Tank Game** (November 3, 2026). Keep `tank` as the ID and retain historical Tank Game source titles, filenames, and tags.

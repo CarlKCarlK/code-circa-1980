@@ -1,6 +1,6 @@
 {
-  "official_title": "Tank Game",
-  "title_authority": "Recovered title or descriptive title from the recovered behavior; archive labels retained.",
+  "official_title": "Unfinished Tank Game",
+  "title_authority": "Official display title supplied by the user on November 3, 2026; recovered Tank Game titles and filenames remain provenance.",
   "short_name": "tank",
   "import_date": "2026-11-03",
   "order_inferred": true,
@@ -145,7 +145,7 @@
   },
   "artwork": {
     "path": "app/assets/tank-gallery.svg",
-    "sha256": "3fb43f6eb0b01662674b0b80eae891254a023c597839c1b4640390b90c2b8604",
+    "sha256": "ec794c99787d7fe89609491bbab1a87f111fcb4d1d2d66bc9825bdcc1fdb9fa0",
     "description": "Modern illustrative SVG, not execution evidence."
   }
 }
