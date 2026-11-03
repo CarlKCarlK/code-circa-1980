@@ -1,0 +1,44 @@
+{
+  "id": "io-character-input-output",
+  "title": "I/O \u2014 character routines",
+  "description": "I/O \u2014 character routines. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Z80 / EDTASM",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "IO CHARACTER INPUT OUTPUT V1",
+      "capture": "tape18a",
+      "save": 10,
+      "raw": "versions/v01/10-IO-CHARACTER-INPUT-OUTPUT-V1.ASM",
+      "listing": "versions/v01/10-IO-CHARACTER-INPUT-OUTPUT-V1.TXT",
+      "playable": false,
+      "note": "validated payload; runtime untested. Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. Source/development material; no self-contained stock Level II player is supplied.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/10-IO-CHARACTER-INPUT-OUTPUT-V1.ASM",
+          "label": "10-IO-CHARACTER-INPUT-OUTPUT-V1.ASM"
+        },
+        {
+          "path": "versions/v01/10-IO-CHARACTER-INPUT-OUTPUT-V1.TXT",
+          "label": "10-IO-CHARACTER-INPUT-OUTPUT-V1.TXT"
+        },
+        {
+          "path": "versions/v01/10-IO-CHARACTER-INPUT-OUTPUT-V1.Z80",
+          "label": "10-IO-CHARACTER-INPUT-OUTPUT-V1.Z80"
+        }
+      ],
+      "startupSource": "00010 START\tCALL\tINCH\n00020 \tLD\tB,A\n00030 \tCALL\tOUTCH\n00040 \tJP\tSTART\n01000 OUTCH\tJP\tSKIP1\t;SUBROUTINE TO PRINT ON SCREE1\n01010 \t\t\t; INPUT  A,ZERO   B,CHARACTER\n01020 CURS1\tDEFW\t$\t;LOCATION OF SCREE1\n01030 SCREE1\tEQU\t15360\t;BEGINING OF SCREE1 MEM\n01040 SKIP1\tPUSH\tHL\t;SAVE HL\n01050 \tLD\tHL,(CURS1) ; PUT LOCATION IN HL\n01060 \tPUSH\tDE\t;SAVE DE\n01070 \tPUSH\tBC",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}

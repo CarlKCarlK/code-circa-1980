@@ -1,0 +1,59 @@
+{
+  "version": "v01",
+  "capture": "tape18a",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape18a/best/10-IO-CHARACTER-INPUT-OUTPUT-V1.ASM",
+  "archive_listing": "tapes/recovered/tape18a/best/10-IO-CHARACTER-INPUT-OUTPUT-V1.TXT",
+  "imported_files": [
+    {
+      "path": "versions/v01/10-IO-CHARACTER-INPUT-OUTPUT-V1.ASM",
+      "archive_path": "tapes/recovered/tape18a/best/10-IO-CHARACTER-INPUT-OUTPUT-V1.ASM",
+      "bytes": 2829,
+      "sha256": "72d45acb1ca892403e1633b5b96ad3182a01eeade0f3fea6d31504e26eef16e5"
+    },
+    {
+      "path": "versions/v01/10-IO-CHARACTER-INPUT-OUTPUT-V1.TXT",
+      "archive_path": "tapes/recovered/tape18a/best/10-IO-CHARACTER-INPUT-OUTPUT-V1.TXT",
+      "bytes": 2821,
+      "sha256": "3b10e7eae61edd28c73b60f9bd2530a5eadc6838ac53faacc67f7c6b84ec2a72"
+    },
+    {
+      "path": "versions/v01/10-IO-CHARACTER-INPUT-OUTPUT-V1.Z80",
+      "archive_path": "tapes/recovered/tape18a/best/10-IO-CHARACTER-INPUT-OUTPUT-V1.Z80",
+      "bytes": 2077,
+      "sha256": "1062074587a41d3781466e026e5cc204fb223a12c5706cfce73bed6f6e93f039"
+    }
+  ],
+  "recovery_item": {
+    "format": "assembly source (EDTASM)",
+    "sha256": "72d45acb1ca892403e1633b5b96ad3182a01eeade0f3fea6d31504e26eef16e5",
+    "bytes": 2829,
+    "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "18",
+    "side": "a",
+    "order": "10",
+    "type": "assembly source (EDTASM)",
+    "recovery%": "100",
+    "summary": "IO CHARACTER INPUT OUTPUT V1",
+    "capture": "tape18a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Z80 / EDTASM",
+    "status": "validated payload; runtime untested",
+    "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+    "source_start_s": "302.491",
+    "recovered_bytes": "2829",
+    "source_file": "tapes/recovered/tape18a/best/10-IO-CHARACTER-INPUT-OUTPUT-V1.TXT",
+    "wav": "tapes/tape18a.wav",
+    "folder": "tapes/recovered/tape18a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Assemble or execution-test only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+  "execution_tested": false
+}
