@@ -1,54 +1,54 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape19a",
-  "save": 9,
-  "archive_raw": "tapes/recovered/tape19a/best/09-DND-REFERENCE-V1.BAS",
-  "archive_listing": "tapes/recovered/tape19a/best/09-DND-REFERENCE-V1.ASC",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape19a/best/10-DND-REFERENCE-V2.BAS",
+  "archive_listing": "tapes/recovered/tape19a/best/10-DND-REFERENCE-V2.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/09-DND-REFERENCE-V1.ASC",
-      "archive_path": "tapes/recovered/tape19a/best/09-DND-REFERENCE-V1.ASC",
-      "bytes": 6317,
-      "sha256": "62ac6e92909e18b99129ac51664ea09b4eace05d4f69714b8600435e7848712c"
+      "path": "versions/v02/10-DND-REFERENCE-V2.ASC",
+      "archive_path": "tapes/recovered/tape19a/best/10-DND-REFERENCE-V2.ASC",
+      "bytes": 8735,
+      "sha256": "2f3caacf7eb253d03610d7b680076af71edc999bfec94c40a26acf3319e0e279"
     },
     {
-      "path": "versions/v01/09-DND-REFERENCE-V1.BAS",
-      "archive_path": "tapes/recovered/tape19a/best/09-DND-REFERENCE-V1.BAS",
-      "bytes": 6116,
-      "sha256": "d5d0297046ab40d521a86fa41b7f20ea0020c0f09d976cae546eb5bf9fb5c98f"
+      "path": "versions/v02/10-DND-REFERENCE-V2.BAS",
+      "archive_path": "tapes/recovered/tape19a/best/10-DND-REFERENCE-V2.BAS",
+      "bytes": 8152,
+      "sha256": "a9c24650258d92899c4b174e7b36b0b10877008c61c41ce81540d3aa3976c317"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "d5d0297046ab40d521a86fa41b7f20ea0020c0f09d976cae546eb5bf9fb5c98f",
-    "bytes": 6116,
-    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "sha256": "a9c24650258d92899c4b174e7b36b0b10877008c61c41ce81540d3aa3976c317",
+    "bytes": 8152,
+    "archive_validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 48,
-    "last": 2300,
+    "lines": 88,
+    "last": 32000,
     "pointer_bases": [
-      17125
+      22204
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 6114,
+    "parsed_bytes": 8150,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "19",
     "side": "a",
-    "order": "9",
+    "order": "10",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "DND REFERENCE V1",
+    "summary": "DND REFERENCE V2",
     "capture": "tape19a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC",
     "status": "validated payload; runtime untested",
-    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "389.702",
-    "recovered_bytes": "6116",
-    "source_file": "tapes/recovered/tape19a/best/09-DND-REFERENCE-V1.ASC",
+    "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "497.472",
+    "recovered_bytes": "8152",
+    "source_file": "tapes/recovered/tape19a/best/10-DND-REFERENCE-V2.ASC",
     "wav": "tapes/tape19a.wav",
     "folder": "tapes/recovered/tape19a",
     "recovery_date": "2026-10-28",

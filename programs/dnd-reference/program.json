@@ -34,6 +34,36 @@
       ],
       "startupSource": "5 CLEAR 700\n10 INPUT A$\n20 READ B$\n25 PRINTB$\n30 FOR I=1TOLEN(B$)-LEN(A$)\n40 IF MID$(B$,I,LEN(A$))=A$ THENPRINTB$ELSE NEXTI\n50 GOTO 20\n1000 DATA\"@SELECTING CHARACTORS\nTOTAL THE ROLL OF 3 6-SIDED DICE FOR EACH OF THE FOLLOWING\",STRENGTH,INTELLIGENCE,WISDOM,CONSTITUTION,DEXTERITY,CHARISMA\n1010 DATA@DECIDE CLASS,FIGHTERS - STRENTH OF 9 -12 AVERAGE 13+ VERY GOOD,MAGIC USERS - INTELLIGENCE OF 13+,CLERICS - WISDOM 13+,THIEVES - DEXTERITY 13+\n1020 DATA@DECIDE RACE,HALFINGS DEXTERITY 9+ OR COSTITUTION 9+,DWARFS COSTITUTION 9+\n1030 DATA@YOU CAN AJUST YOUR ABILITY SCORES (BUT NEVER BELOW 9),MAGIC USERS & CLERICS -- ADD 1 TO (INTELLIGENCE / WISDOM )FOR",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "DND REFERENCE V2",
+      "capture": "tape19a",
+      "save": 10,
+      "raw": "versions/v02/10-DND-REFERENCE-V2.BAS",
+      "listing": "versions/v02/10-DND-REFERENCE-V2.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/10-DND-REFERENCE-V2.ASC",
+          "label": "10-DND-REFERENCE-V2.ASC"
+        },
+        {
+          "path": "versions/v02/10-DND-REFERENCE-V2.BAS",
+          "label": "10-DND-REFERENCE-V2.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 700\n15 LSET RESET\n20 CLS:LINE INPUT\"COMMAND (H FOR HELP): \";A$\n21 IF LEFT$(A$,1)=\"[\"THEN3000ELSEIFA$=\"H\"THEN4000\n25 J=1:I=1\n30 J=INSTR(J+1,A$,\" \"):IF J<>0 THEN I=I+1:GOTO30\n40 DIM W$(I)\n50 L=1:A$=A$+\" \":FOR J=1TOI\n60 K=INSTR(K+1,A$,\" \"):W$(J)=MID$(A$,L,K-L):L=K+1:NEXTJ\n64 FOR J=1TOI\n65 IF LEFT$(W$(J),1) <CHR$(96) THEN C9=C9+1:W$(C9)=W$(J)\n66 NEXT J:I=C9",
+      "controlSource": [
+        "160 IFINKEY$=\"\"THEN160ELSECLS:LG=0",
+        "210 IF INKEY$=\"\"THEN210ELSE10",
+        "3040 IFINKEY$=\"\"THEN3040 ELSE RUN",
+        "4026 IF INKEY$=\"\"THEN4026ELSECLS",
+        "4050 IF INKEY$=\"\"THEN4050 ELSE RUN"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
