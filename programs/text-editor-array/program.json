@@ -1,0 +1,43 @@
+{
+  "id": "text-editor-array",
+  "title": "Text Editor Array",
+  "description": "Text Editor Array. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TEXT EDITOR ARRAY",
+      "capture": "tape19b",
+      "save": 9,
+      "raw": "versions/v01/09-TEXT-EDITOR-ARRAY.BAS",
+      "listing": "versions/v01/09-TEXT-EDITOR-ARRAY.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/09-TEXT-EDITOR-ARRAY.ASC",
+          "label": "09-TEXT-EDITOR-ARRAY.ASC"
+        },
+        {
+          "path": "versions/v01/09-TEXT-EDITOR-ARRAY.BAS",
+          "label": "09-TEXT-EDITOR-ARRAY.BAS"
+        }
+      ],
+      "startupSource": "10 CLEAR 1000\n20 DIM W$(1000)\n30 CLS:PRINTCHR$(14);\"     \";\n100 A$=INKEY$:IFA$=\"\"THEN100\n150 IF (A$>=CHR$(47) AND A$<=CHR$(57) ) OR( A$>=\"A\" AND A$<=\"Z\") THEN W$(CW)=W$(CW)+A$:PRINTA$;ELSE200\n160 GOTO 100\n200 IFA$>=\"!\" AND A$<=\"Z\" THEN CW=CW+1:W$(CW)=W$(CW)+A$ :PRINTA$;ELSE 300\n210 GOTO 100\n300 IF A$=CHR$(13) THEN CW=CW+1:W$(CW)=CHR$(13):PRINT\"\n\n     \";ELSE 400\n310 GOTO 100",
+      "controlSource": [
+        "100 A$=INKEY$:IFA$=\"\"THEN100",
+        "710 A$=INKEY$:IFA$=\"\"THEN710ELSEIFA$=CHR$(27)THEN PRINT\"<<END EDITING>>\":GOTO100"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
