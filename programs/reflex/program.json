@@ -1,0 +1,25 @@
+{
+  "id": "reflex",
+  "title": "Reflex Tests",
+  "description": "Try hand-eye reaction, interval estimation, and a keyboard gunfight.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v02",
+  "versionOrder": "Two consecutive, byte-identical saves retained separately in capture order. No development difference or save date is inferred.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "REFLEX TESTS",
+      "capture": "tape9b",
+      "save": 7,
+      "raw": "versions/v01/07-REFLEX-TESTS.BAS",
+      "listing": "versions/v01/07-REFLEX-TESTS.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}
