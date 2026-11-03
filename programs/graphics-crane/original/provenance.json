@@ -1,54 +1,54 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape8a",
-  "save": 9,
-  "archive_raw": "tapes/recovered/tape8a/best/09-GRAPHICS-CRANE-EARLY.BAS",
-  "archive_listing": "tapes/recovered/tape8a/best/09-GRAPHICS-CRANE-EARLY.ASC",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape8a/best/10-GRAPHICS-CRANE.BAS",
+  "archive_listing": "tapes/recovered/tape8a/best/10-GRAPHICS-CRANE.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/09-GRAPHICS-CRANE-EARLY.ASC",
-      "archive_path": "tapes/recovered/tape8a/best/09-GRAPHICS-CRANE-EARLY.ASC",
-      "bytes": 905,
-      "sha256": "cd9ec414fb6fa10c26dbe1cdaafdbfdd4cc6ad17a9def58312e1aa383413ca34"
+      "path": "versions/v02/10-GRAPHICS-CRANE.ASC",
+      "archive_path": "tapes/recovered/tape8a/best/10-GRAPHICS-CRANE.ASC",
+      "bytes": 1162,
+      "sha256": "3e5e14e7508d008ed94674bb5977493ac2aebdb413ea9a69371f35595e7c9dac"
     },
     {
-      "path": "versions/v01/09-GRAPHICS-CRANE-EARLY.BAS",
-      "archive_path": "tapes/recovered/tape8a/best/09-GRAPHICS-CRANE-EARLY.BAS",
-      "bytes": 743,
-      "sha256": "48c7032074730c9115271e7ae809d717a04c5b89fd4e72b00f443e83ad8235f7"
+      "path": "versions/v02/10-GRAPHICS-CRANE.BAS",
+      "archive_path": "tapes/recovered/tape8a/best/10-GRAPHICS-CRANE.BAS",
+      "bytes": 957,
+      "sha256": "a4d8574f9701c571b761e410db2cb82bb4788350763b39c775383dea69fbf675"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "48c7032074730c9115271e7ae809d717a04c5b89fd4e72b00f443e83ad8235f7",
-    "bytes": 743,
+    "sha256": "a4d8574f9701c571b761e410db2cb82bb4788350763b39c775383dea69fbf675",
+    "bytes": 957,
     "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
     "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 20,
+    "lines": 19,
     "last": 999,
     "pointer_bases": [
       22204
     ],
     "normal_end_marker": true,
-    "parsed_bytes": 741,
+    "parsed_bytes": 955,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "8",
     "side": "a",
-    "order": "9",
+    "order": "10",
     "type": "BASIC",
     "recovery%": "100",
-    "summary": "GRAPHICS CRANE EARLY; 20 lines",
+    "summary": "GRAPHICS CRANE; 19 lines",
     "capture": "tape8a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 BASIC with graphics extensions",
     "status": "validated payload; runtime untested",
     "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
-    "source_start_s": "390.745",
-    "recovered_bytes": "743",
-    "source_file": "tapes/recovered/tape8a/best/09-GRAPHICS-CRANE-EARLY.ASC",
+    "source_start_s": "411.508",
+    "recovered_bytes": "957",
+    "source_file": "tapes/recovered/tape8a/best/10-GRAPHICS-CRANE.ASC",
     "wav": "tapes/tape8a.wav",
     "folder": "tapes/recovered/tape8a/best",
     "recovery_date": "2026-10-26",

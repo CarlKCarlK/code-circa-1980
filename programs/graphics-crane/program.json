@@ -36,6 +36,32 @@
       "controlSource": [
         "100 A$= INKEY$"
       ]
+    },
+    {
+      "id": "v02",
+      "label": "GRAPHICS CRANE",
+      "capture": "tape8a",
+      "save": 10,
+      "raw": "versions/v02/10-GRAPHICS-CRANE.BAS",
+      "listing": "versions/v02/10-GRAPHICS-CRANE.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v02/10-GRAPHICS-CRANE.ASC",
+          "label": "10-GRAPHICS-CRANE.ASC"
+        },
+        {
+          "path": "versions/v02/10-GRAPHICS-CRANE.BAS",
+          "label": "10-GRAPHICS-CRANE.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 LINE(30,12)-(31,47),SET,BF:LINE(20,42)-(41,47),SET,BF\n20 LINE(14,17)-(71,17),SET:LINE(71,17)-(71,26),SET\n30 LINE(61,27)-(80,27),SET:SET(61,28):SET(61,29):SET(80,28):SET(80,29)\n40 DIM A%(100),B%(100),C%(100)\n50 AL=60:BL=26\n100 A$= INKEY$\n110 IF ABS(AF)+ABS(CF)+ABS(BF)=0 AND A$=\"\"THEN100\n120 IF A$=\"\"THEN 200\n125 IF VAL(A$)<3.5 THEN GET@(AL,17)-(AL+34,47),G,A% ELSE IF VAL(A$)<6.5 THEN GET @(AL,BL)-(AL+20,BL+4),G,B% \n130 IF A$=\"1\" THEN AF=-1ELSEIFA$=\"2\" THEN AF=0 ELSE IF A$=\"3\" THEN AF=1ELSE IFA$=\"4\" THEN BF=-1ELSEIFA$=\"5\" THEN BF=0 ELSE IF A$=\"6\" THEN BF=1ELSE IF A$=\"7\"THENCF=-1ELSEIFA$=\"8\"THENCF=0ELSEIFA$=\"9\"THENCF=1 ELSE A$=\"\" :GOTO120\n140 A$=\"\":GOTO 110",
+      "controlSource": [
+        "100 A$= INKEY$"
+      ]
     }
   ],
   "listingLabel": "Download recovered listing"
