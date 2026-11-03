@@ -1,0 +1,25 @@
+{
+  "id": "aim",
+  "title": "Automatic Investment Management",
+  "description": "A related Lichello-based investing program, grouped with SPI.",
+  "kind": "Finance",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v04",
+  "versionOrder": "Within-side save order, with expanded sample data and a separate empty-data template. AIM remains distinct from SPI; they are related programs, not successive versions of one algorithm.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "AUTOMATIC INVESTMENT MANAGEMENT SAVE01",
+      "capture": "tape20b",
+      "save": 4,
+      "raw": "versions/v01/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.BAS",
+      "listing": "versions/v01/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    }
+  ]
+}

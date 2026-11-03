@@ -1,0 +1,67 @@
+{
+  "official_title": "Automatic Investment Management",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "aim",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Within-side save order, with expanded sample data and a separate empty-data template. AIM remains distinct from SPI; they are related programs, not successive versions of one algorithm.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape20b",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape20b/best/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape20b/best/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.BAS",
+          "archive_path": "tapes/recovered/tape20b/best/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.BAS",
+          "bytes": 3480,
+          "sha256": "aa1019eba2f1a60d9cad76d810fdb496c6a7c7b318d7c0a9422656588ce1cdf9"
+        },
+        {
+          "path": "versions/v01/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.ASC",
+          "archive_path": "tapes/recovered/tape20b/best/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.ASC",
+          "bytes": 3726,
+          "sha256": "708a7498ca6cf90152c9554071e65f79ec8d021c8901470fb194265145c04a1d"
+        }
+      ],
+      "recovery_item": {
+        "lines": 104,
+        "last": 20140,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "aa1019eba2f1a60d9cad76d810fdb496c6a7c7b318d7c0a9422656588ce1cdf9"
+      },
+      "inventory_row": {
+        "tape": "20",
+        "side": "b",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "AUTOMATIC INVESTMENT MANAGEMENT SAVE01",
+        "capture": "tape20b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "192.499",
+        "recovered_bytes": "3480",
+        "source_file": "tapes/recovered/tape20b/best/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01.ASC",
+        "wav": "tapes/tape20b.wav",
+        "folder": "tapes/recovered/tape20b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape20b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  }
+}
