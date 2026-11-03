@@ -1,0 +1,12 @@
+{
+  "author": "Jim Storer",
+  "original_language": "FOCAL",
+  "historical_date": "1969",
+  "source_url": "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander/LunarLanderListingText.txt",
+  "context_url": "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander.html",
+  "file": "LUNAR-1969.FOC",
+  "bytes": 2033,
+  "sha256": "1fc49b2a6eb24b0fdb628614eff779d1cd37f388c92364d50446540c07c882b1",
+  "note": "Downloaded unchanged from Storer\u2019s historical archive, which credits transcription to Matthew House. This is a transcription of the original FOCAL listing, not recovered tape bytes and not a TRS-80 executable. Terminal prompt/header lines are preserved. No historical date is assigned to this modern Git commit.",
+  "execution_tested": false
+}
