@@ -1,64 +1,59 @@
 {
-  "version": "v01",
+  "version": "v02",
   "capture": "tape27a",
-  "save": 2,
-  "archive_raw": "tapes/recovered/tape27a/partial/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.BIN",
-  "archive_listing": "tapes/recovered/tape27a/partial/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.ASC",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape27a/best/03-FRACTION-WORKSHEETS-REVISED-SAVE.BAS",
+  "archive_listing": "tapes/recovered/tape27a/best/03-FRACTION-WORKSHEETS-REVISED-SAVE.ASC",
   "imported_files": [
     {
-      "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.ASC",
-      "archive_path": "tapes/recovered/tape27a/partial/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.ASC",
-      "bytes": 387,
-      "sha256": "9117e899e188ff0476e6e070a1bdfa27daaabab81c3a7a57aac98e6ec874a9bf"
+      "path": "versions/v02/03-FRACTION-WORKSHEETS-REVISED-SAVE.ASC",
+      "archive_path": "tapes/recovered/tape27a/best/03-FRACTION-WORKSHEETS-REVISED-SAVE.ASC",
+      "bytes": 2562,
+      "sha256": "26f9fab459141d7f29b3389c1fbcb5b99be37f51a4ccae4f5f4efe5d76a2e786"
     },
     {
-      "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.BIN",
-      "archive_path": "tapes/recovered/tape27a/partial/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.BIN",
-      "bytes": 339,
-      "sha256": "231e986ae71545db12a113419b4ab678827726c387df6922b82216b13c5184b0"
-    },
-    {
-      "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-RAW.BAS",
-      "archive_path": "tapes/recovered/tape27a/partial/02-FRACTION-WORKSHEETS-EARLY-SAVE-RAW.BAS",
+      "path": "versions/v02/03-FRACTION-WORKSHEETS-REVISED-SAVE.BAS",
+      "archive_path": "tapes/recovered/tape27a/best/03-FRACTION-WORKSHEETS-REVISED-SAVE.BAS",
       "bytes": 2132,
-      "sha256": "ecd196b5984f984e400b44f572e6c79bf25b39e7bc4a8dd2e804143be28e3bc4"
-    },
-    {
-      "path": "versions/v01/02-FRACTION-WORKSHEETS-EARLY-SAVE-UNCERTAIN.ASC",
-      "archive_path": "tapes/recovered/tape27a/partial/02-FRACTION-WORKSHEETS-EARLY-SAVE-UNCERTAIN.ASC",
-      "bytes": 2563,
-      "sha256": "59e75b187767f3f44bc3a63169ab55be459fc62dfeec18090fbe17e4f16ce566"
+      "sha256": "e868427f9c5fa06d266714ccda76abf9278b0331f0681ae8fd9eee9d9e0d3dd7"
     }
   ],
   "recovery_item": {
     "format": "BASIC",
-    "sha256": "231e986ae71545db12a113419b4ab678827726c387df6922b82216b13c5184b0",
-    "bytes": 339,
-    "archive_validation": "Conflicting bytes in line 177 despite valid record structure; verified cross-channel prefix [0,339), 18 lines through 175; no synthetic end marker; full listing uncertain",
+    "sha256": "e868427f9c5fa06d266714ccda76abf9278b0331f0681ae8fd9eee9d9e0d3dd7",
+    "bytes": 2132,
+    "archive_validation": "Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
     "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 116,
+    "last": 2020,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 2130,
     "source_notice_lines": []
   },
   "inventory_row": {
     "tape": "27",
     "side": "a",
-    "order": "2",
+    "order": "3",
     "type": "BASIC",
-    "recovery%": "",
-    "summary": "FRACTION WORKSHEETS EARLY SAVE",
+    "recovery%": "100",
+    "summary": "FRACTION WORKSHEETS REVISED SAVE",
     "capture": "tape27a",
     "capture_scope": "unknown",
     "baud": "500",
     "platform": "TRS-80 Model I/III BASIC family",
-    "status": "damaged; verified prefix only; runtime untested",
-    "validation": "Conflicting bytes in line 177 despite valid record structure; verified cross-channel prefix [0,339), 18 lines through 175; no synthetic end marker; full listing uncertain",
-    "source_start_s": "21.730",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "72.072",
     "recovered_bytes": "2132",
-    "source_file": "tapes/recovered/tape27a/partial/02-FRACTION-WORKSHEETS-EARLY-SAVE-PREFIX.ASC",
+    "source_file": "tapes/recovered/tape27a/best/03-FRACTION-WORKSHEETS-REVISED-SAVE.ASC",
     "wav": "tapes/tape27a.wav",
     "folder": "tapes/recovered/tape27a",
     "recovery_date": "2026-10-29",
     "recorder_volume": "",
-    "next_action": "Better capture may resolve damaged line 177; see report"
+    "next_action": "Runtime testing only if requested"
   },
   "recovery_inventory": "tapes/recovered/tape27a/inventory.json",
   "execution_tested": false
