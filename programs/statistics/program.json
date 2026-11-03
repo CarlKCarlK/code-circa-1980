@@ -34,6 +34,30 @@
       ],
       "startupSource": "10 CLS\n20 PRINT\"WELCOME TO STATS\"\n30 PRINT\"ANALISIS OF DATA\"\n40 INPUT\"HOW MANY PIECES OF DATA DO YOU HAVE (IF NOT SURE THEN OVER GUESS\";NE\n50 DIMX(NE)\n60 PRINT\"WHEN FINISHED ANSWER 'D'.\"\n70 FOR C=1TONE\n80 PRINT\"WHAT IS ENTERY NO.\";C;:INPUTA$\n90 IFA$=\"D\"THEN120  ELSEX(C)=VAL(A$)\n100 NEXT C\n110 PRINT:PRINT\"THE DATA I HAVE RECORDED IS THIS:\":PRINT\n120 N=C-1",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "STATISTICS SAVE02",
+      "capture": "tape25a",
+      "save": 12,
+      "raw": "versions/v02/12-STATISTICS-SAVE02.BAS",
+      "listing": "versions/v02/12-STATISTICS-SAVE02.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v02/12-STATISTICS-SAVE02.ASC",
+          "label": "12-STATISTICS-SAVE02.ASC"
+        },
+        {
+          "path": "versions/v02/12-STATISTICS-SAVE02.BAS",
+          "label": "12-STATISTICS-SAVE02.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 PRINT\"WELCOME TO STATS\"\n30 PRINT\"ANALISIS OF DATA\"\n40 INPUT\"HOW MANY PIECES OF DATA DO YOU HAVE (IF NOT SURE THEN OVER GUESS\";NE\n50 DIMX(NE)\n60 PRINT\"WHEN FINISHED ANSWER 'D'.\"\n70 FOR C=1TONE\n80 PRINT\"WHAT IS ENTERY NO.\";C;:INPUTA$\n90 IFA$=\"D\"THEN120  ELSEX(C)=VAL(A$)\n100 NEXT C\n110 PRINT:PRINT\"THE DATA I HAVE RECORDED IS THIS:\":PRINT\n120 N=C-1",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing"
