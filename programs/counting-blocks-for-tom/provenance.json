@@ -1,0 +1,74 @@
+{
+  "official_title": "Counting Blocks For Tom",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Counting Blocks For Tom",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape25a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape25a/best/03-COUNTING-BLOCKS-FOR-TOM.BAS",
+      "archive_listing": "tapes/recovered/tape25a/best/03-COUNTING-BLOCKS-FOR-TOM.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-COUNTING-BLOCKS-FOR-TOM.ASC",
+          "archive_path": "tapes/recovered/tape25a/best/03-COUNTING-BLOCKS-FOR-TOM.ASC",
+          "bytes": 265,
+          "sha256": "49bfb39c75b055d54d6d0f11cdde2da135414b8106aec36cfa1411a70b962d92"
+        },
+        {
+          "path": "versions/v01/03-COUNTING-BLOCKS-FOR-TOM.BAS",
+          "archive_path": "tapes/recovered/tape25a/best/03-COUNTING-BLOCKS-FOR-TOM.BAS",
+          "bytes": 205,
+          "sha256": "983c2e557e84824097ddf6e7850f4b42e7e19eb59d19c997d45bd153c2f71e3b"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "983c2e557e84824097ddf6e7850f4b42e7e19eb59d19c997d45bd153c2f71e3b",
+        "bytes": 205,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 13,
+        "last": 260,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 203,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "25",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "COUNTING BLOCKS FOR TOM",
+        "capture": "tape25a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC family",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "54.812",
+        "recovered_bytes": "205",
+        "source_file": "tapes/recovered/tape25a/best/03-COUNTING-BLOCKS-FOR-TOM.ASC",
+        "wav": "tapes/tape25a.wav",
+        "folder": "tapes/recovered/tape25a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  }
+}
