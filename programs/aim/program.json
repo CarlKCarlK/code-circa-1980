@@ -31,6 +31,17 @@
       "playable": false,
       "note": "Untouched recovered save. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
       "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
+    },
+    {
+      "id": "v03",
+      "label": "AUTOMATIC INVESTMENT MANAGEMENT TEMPLATE",
+      "capture": "tape20b",
+      "save": 10,
+      "raw": "versions/v03/10-AUTOMATIC-INVESTMENT-MANAGEMENT-TEMPLATE.BAS",
+      "listing": "versions/v03/10-AUTOMATIC-INVESTMENT-MANAGEMENT-TEMPLATE.ASC",
+      "playable": false,
+      "note": "Untouched recovered save. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
     }
   ]
 }
