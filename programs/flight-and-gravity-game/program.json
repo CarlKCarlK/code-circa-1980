@@ -1,0 +1,43 @@
+{
+  "id": "flight-and-gravity-game",
+  "title": "Flight And Gravity Game",
+  "description": "Flight And Gravity Game. 1 recovered save.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "FLIGHT AND GRAVITY GAME",
+      "capture": "tape21a",
+      "save": 2,
+      "raw": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.BAS",
+      "listing": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.ASC",
+          "label": "02-FLIGHT-AND-GRAVITY-GAME.ASC"
+        },
+        {
+          "path": "versions/v01/02-FLIGHT-AND-GRAVITY-GAME.BAS",
+          "label": "02-FLIGHT-AND-GRAVITY-GAME.BAS"
+        }
+      ],
+      "startupSource": "90 CLS:FORX=0TO127:SET(X,47):NEXT:SET(9,46):SET(9,45):FORX=9TO15:SET(X,44):NEXT:X=6:Y=46:FORQ=0TO47:SET(0,Q):SET(127,Q):NEXT:B=46\n100 A$=INKEY$\n120 IFA$=\"L\"THENS=S+.2\n130 IFA$=\"K\"THENS=S-.2\n140 IFA$=\"P\"THENA=A+.2\n150 IFA$=\";\"THENA=A-.2\n180 X=X+COS(A)*S:Y=Y+SIN(A)*S\n185 Y=Y+.25:IF Y>B AND X<25 THENY=B\n190 X=X*2:RESET(OX,OY):RESET(OX+1,OY):IF POINT(X,Y)THEN500 ELSESET(X,Y):SET(X+1,Y):OX=X:OY=Y:X=X/2:GOTO100\n500 PRINT@400,CHR$(23);\"BANG\":X=6:Y=46:S=0\n510 B$=INKEY$:IFB$=\"\"THEN510ELSE90",
+      "controlSource": [
+        "100 A$=INKEY$",
+        "510 B$=INKEY$:IFB$=\"\"THEN510ELSE90"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
