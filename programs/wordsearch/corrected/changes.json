@@ -1,8 +1,14 @@
 {
   "source": "versions/v01/07-WORD-SEARCH.BAS",
   "source_sha256": "10a7c263f658033c90ea1a2e1dc906d7dd5d56eebef275eff4d63c4ba1378609",
-  "sha256": "2e5a24544d1e981b24641da83c0d8ed2390d44448e48151fb5544817f7c325c5",
+  "sha256": "a86ab7c19ba6fbb967c197604b03e951634298c0dcb07e491795a1310190e9d2",
   "changes": [
+    {
+      "line": 1065,
+      "before": "1065 PRINT@960,D$;",
+      "after": "1065 PRINT@960,LEFT$(D$+STRING$(40,32),40);",
+      "reason": "Pad the current-word field through column 39 to erase old letters without overwriting the position counter."
+    },
     {
       "line": 1330,
       "before": "1330 PRINT:PRINT\"PRESS (SPACE BAR) TO RERRINT THE PUZZLE\"",
@@ -22,5 +28,5 @@
       "reason": "Correct a word in the unused chemistry list."
     }
   ],
-  "limits": "Spelling only: three record bodies. Names, abbreviations, placement rules, and all other recovered content remain unchanged."
+  "limits": "Three spelling corrections and one padded current-word field (four record bodies). Names, abbreviations, placement rules, and all other recovered content remain unchanged."
 }

@@ -1,9 +1,11 @@
-# Spelling-corrected playable copy
+# Corrected playable copy
 
 Derived from tape4a save 7, historical v01. Reproduce from app/ with
 `npm run build:wordsearch-corrected`. changes.json records source/output hashes
-and every changed line. Only three record bodies change:
+and every changed line. Four record bodies change:
 
+- Line 1065: pad the current word to 40 columns to erase the previous word,
+  preserving the position counter at column 40.
 - Line 1330: RERRINT → REPRINT in the redraw prompt.
 - Line 2000: DISSCUSSION → DISCUSSION in the active word list.
 - Line 3000: SOLVEN → SOLVENT in the unused chemistry word list.

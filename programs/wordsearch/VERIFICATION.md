@@ -22,10 +22,10 @@ docs/related-more-programs.md.
 
 The player now selects the separate corrected derivative of tape4a save 7.
 Reproduction checks verify its bytes, listing, change manifest, record count, and
-original pointer base. Exactly records 1330, 2000, and 3000 change; every other
+original pointer base. Exactly records 1065, 1330, 2000, and 3000 change; every other
 record body is byte-identical. The canonical originals and snapshots still pass
 the 133-snapshot archive check. All 19 unit-test files, the production build,
-and all 42 release manifests pass. The local unshared experience remains v1.
+and all active release manifests pass. The local unshared experience remains v1.
 
 The original full-ROM run above remains evidence for the unmodified payload.
 The corrected full-ROM result is recorded separately in
@@ -37,3 +37,12 @@ DISCUSSION and no DISSCUSSION, the redraw prompt says REPRINT, and a second
 Space redraws the identical 225-letter grid. This measures the harness run,
 not a browser speed guarantee. SOLVENT is in the unused list and is verified
 in the derivative bytes rather than the default runtime path.
+
+
+## Current-word status field
+
+Line 1065 now prints a 40-column padded word field, clearing suffixes from
+previous words. The actual-ROM regression prints PARTICIPATE, ARTIST, then FILM
+and verifies all 36 trailing positions are spaces, the position counter at
+column 40 is unchanged, and the grid is untouched. The browser regression checks
+HOWIE followed by 35 spaces during the real generator.

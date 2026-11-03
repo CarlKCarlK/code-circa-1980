@@ -20,3 +20,9 @@ hashes, structure, and recovery evidence separately from new emulator testing.
 See VERIFICATION.md for execution checks and limits. The experience stays at
 unshared web v1. From app/ run `npm run dev` and open
 `/?development=1#/program/spacecolony` directly.
+
+## Website withdrawal
+
+Removed from the website at my request on November 2, 2026. The recovered
+program is an adaptation of Storer’s King / Pollution Game. Sources and the
+retired unshared v1 remain archived; there is no active gallery card or player.

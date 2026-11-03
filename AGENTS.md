@@ -357,3 +357,14 @@ SOLVENT (unused list) correct three record bodies. Keep names/abbreviations and
 all recovered originals unchanged. Its full-ROM verification accepts --corrected
 and writes a separate report without replacing the original-run evidence.
 Continue refreshing its unshared web v1 for local iterations.
+
+On November 2, 2026, the user withdrew Space Colony because it is an adaptation
+of a published game. Keep website:false, its sources and website-archive/v1;
+do not restore a card, active route, or public snapshot without a new request.
+More now has 26 cards.
+
+Word Search’s corrected derivative additionally pads line 1065’s current-word
+field to 40 columns. It erases old suffixes without touching the position
+counter at column 40. The ROM regression runs long-to-short labels and verifies
+the counter/grid remain intact; the browser checks HOWIE followed by blanks.
+There are now four changed record bodies including the three spelling edits.

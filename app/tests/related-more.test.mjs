@@ -6,7 +6,7 @@ function translate(message,key,mode){const b=buildCorrected();let text=b.listing
 for(const [input,key,encoded] of [['HELLO','KEY','SJJWT'],['ABC','B','CDE'],[' ','A','A'],['A','Z',' ']])test(`Actual-ROM cipher vector ${JSON.stringify(input)} with ${key} and reverse`,()=>{assert.equal(translate(input,key,'ENCODE'),encoded);assert.equal(translate(encoded,key,'DECODE'),input);});
 test('AIM is grouped with SPI while retaining a separate selected reference',()=>{const root=new URL('../../programs/',import.meta.url),aim=JSON.parse(fs.readFileSync(new URL('aim/program.json',root))),spi=JSON.parse(fs.readFileSync(new URL('spi/program.json',root)));assert.equal(aim.parentProgram,spi.id);assert.equal(aim.galleryHidden,true);assert.ok(spi.relatedPrograms.includes(aim.id));assert.equal(aim.versions.filter(v=>v.playable).length,1);assert.equal(spi.versions.filter(v=>v.playable).length,1);});
 
-test('Word Search spelling derivative reproduces and preserves every other record body',async()=>{
+test('Word Search corrected derivative reproduces and preserves every other record body',async()=>{
  const {buildCorrected:buildWordSearch}=await import('../scripts/build-wordsearch-corrected.mjs');
  const root=new URL('../../programs/wordsearch/',import.meta.url),b=buildWordSearch();
  assert.deepEqual(b.bytes,fs.readFileSync(new URL('corrected/WORDSEARCH.BAS',root)));
@@ -14,6 +14,15 @@ test('Word Search spelling derivative reproduces and preserves every other recor
  assert.deepEqual(b.record,JSON.parse(fs.readFileSync(new URL('corrected/changes.json',root))));
  const before=parseBasic(fs.readFileSync(new URL(b.record.source,root))),after=parseBasic(b.bytes);
  assert.equal(before.base,after.base);assert.equal(before.records.length,after.records.length);
- assert.deepEqual(after.records.filter((r,i)=>!r.body.equals(before.records[i].body)).map(r=>r.line),[1330,2000,3000]);
+ assert.deepEqual(after.records.filter((r,i)=>!r.body.equals(before.records[i].body)).map(r=>r.line),[1065,1330,2000,3000]);
  assert.match(b.listing,/WAFR,DISCUSSION,SKILLS/);assert.match(b.listing,/SOLUTE,SOLVENT,SOLUTION/);assert.match(b.listing,/TO REPRINT THE PUZZLE/);
+});
+
+
+test('Actual-ROM current-word field clears longer words without overwriting the counter or grid',async()=>{
+ const {buildCorrected:buildWordSearch}=await import('../scripts/build-wordsearch-corrected.mjs');
+ const line=buildWordSearch().listing.split('\n').find(l=>l.startsWith('1065 '));
+ const m=runBasic('0 CLEAR2000:CLS:PRINT@0,"GRID";:PRINT@1000,"123";\n10 D$="PARTICIPATE":GOSUB1065:D$="ARTIST":GOSUB1065:D$="FILM":GOSUB1065:POKE32256,42:END\n'+line+'\n1070 RETURN\n');
+ const text=Array.from({length:1024},(_,i)=>String.fromCharCode(m.readMemory(0x3c00+i))).join('');
+ assert.equal(text.slice(960,1000),'FILM'+' '.repeat(36));assert.equal(text.slice(1000,1003),'123');assert.equal(text.slice(0,4),'GRID');
 });

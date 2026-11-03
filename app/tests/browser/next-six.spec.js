@@ -27,7 +27,7 @@ test('Superpower Investing calculates its historical sample and prints final pro
 });
 
 test('More contains twenty-seven readable cards and all six new direct player links',async({page})=>{
- await page.goto('/#/more');await expect(page.locator('.program-card')).toHaveCount(27);
+ await page.goto('/#/more');await expect(page.locator('.program-card')).toHaveCount(26);
  expect(await page.locator('.program-card img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0))).toBe(true);
  for(const title of ['Worm One','Peoria Grand Prix','Pendulum','Sentence Generator','Learning Tic-Tac-Toe','Superpower Investing'])await expect(page.getByRole('heading',{name:title,exact:true})).toHaveCount(1);
  for(const width of [1280,390]){await page.setViewportSize({width,height:960});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
@@ -37,7 +37,7 @@ for(const id of ['worm','peoria','pendulum','sentences','learningttt','spi'])tes
  test.setTimeout(60000);await page.goto(`/${id}/v1/?test`);await expect(page.locator('#display canvas')).toHaveCount(1);expect(new URL(page.url()).hash).toBe('');await expect(page.locator('#status')).toContainText(id==='learningttt'?'Running adapted BASIC':'Running original BASIC');
  const prompt={worm:'WHICH PATTERN',peoria:'SKILL LEVEL',pendulum:'HOW MANY TIMES',sentences:'',learningttt:'DO YOU WISH',spi:'REAL PROFIT'}[id];if(prompt)await expect.poll(()=>screen(page),{timeout:40000}).toContain(prompt);
  const link=page.getByRole('link',{name:id==='learningttt'?'Download BASIC payload':'Download original payload',exact:true});expect((await page.request.get(await link.getAttribute('href'))).ok()).toBe(true);await noError(page);
- await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(27);
+ await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(26);
 });
 
 for(const release of [false,true])test(`Worm One ${release?'web v1':'development'}: article links and optional 20× pacing preserve pause and restart`,async({page})=>{

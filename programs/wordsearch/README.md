@@ -28,3 +28,6 @@ REPRINT replaces RERRINT, and SOLVENT replaces SOLVEN in the unused chemistry
 list. Recovered sources remain unchanged; corrected/changes.json lists the exact
 edits. Reproduce with `npm run build:wordsearch-corrected` from app/.
 The search algorithm is unchanged, though corrected word lengths affect placement.
+
+The current-word field at the bottom is padded to 40 columns so a shorter word
+clears leftover letters without erasing the separate position counter.

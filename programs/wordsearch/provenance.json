@@ -102,10 +102,10 @@
   "playable_derivative": {
     "source": "versions/v01/07-WORD-SEARCH.BAS",
     "payload": "corrected/WORDSEARCH.BAS",
-    "sha256": "2e5a24544d1e981b24641da83c0d8ed2390d44448e48151fb5544817f7c325c5",
+    "sha256": "a86ab7c19ba6fbb967c197604b03e951634298c0dcb07e491795a1310190e9d2",
     "manifest": "corrected/changes.json",
     "method": "app/scripts/build-wordsearch-corrected.mjs",
-    "scope": "Spelling corrections only in lines 1330, 2000, 3000. Recovered originals unchanged.",
+    "scope": "Three spelling corrections plus current-word field padding in lines 1065, 1330, 2000, 3000. Recovered originals unchanged.",
     "verification": "verification/corrected-full-rom-run.json",
     "browser_capture": {
       "path": "programs/wordsearch/verification/corrected-screen.png",

@@ -33,5 +33,7 @@
       "note": "Untouched recovered save. Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
       "unavailableReason": null
     }
-  ]
+  ],
+  "website": false,
+  "websiteRemoval": "Removed at the user\u2019s request on November 2, 2026. Recovered sources and retired web v1 remain archived."
 }
