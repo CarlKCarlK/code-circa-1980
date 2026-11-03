@@ -1,0 +1,26 @@
+{
+  "id": "ll",
+  "title": "Lunar Lander",
+  "description": "Land a lunar capsule by choosing rocket burn rate and duration.",
+  "kind": "Game",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Comparison history starts with Jim Storer\u2019s 1969 FOCAL listing, then an electronic transcription of the published BASIC Lunar. The recovered BASIC adaptation adds plotting and adjustable duration; its exact intermediate source edition and save date are unknown.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "LUNAR LANDER",
+      "capture": "tape9a",
+      "save": 9,
+      "raw": "versions/v01/09-LUNAR-LANDER.BAS",
+      "listing": "versions/v01/09-LUNAR-LANDER.ASC",
+      "playable": true,
+      "slug": "basic",
+      "note": "Untouched recovered save. Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+      "unavailableReason": null
+    }
+  ]
+}
