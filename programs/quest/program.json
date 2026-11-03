@@ -1,0 +1,40 @@
+{
+  "id": "quest",
+  "title": "Quest",
+  "description": "Quest. 6 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC family",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "QUEST EARLY DRAFT SAVE01",
+      "capture": "tape25b",
+      "save": 1,
+      "raw": "versions/v01/01-QUEST-EARLY-DRAFT-SAVE01.BAS",
+      "listing": "versions/v01/01-QUEST-EARLY-DRAFT-SAVE01.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "loadable": true,
+      "exports": [
+        {
+          "path": "versions/v01/01-QUEST-EARLY-DRAFT-SAVE01.ASC",
+          "label": "01-QUEST-EARLY-DRAFT-SAVE01.ASC"
+        },
+        {
+          "path": "versions/v01/01-QUEST-EARLY-DRAFT-SAVE01.BAS",
+          "label": "01-QUEST-EARLY-DRAFT-SAVE01.BAS"
+        }
+      ],
+      "startupSource": "10     ' QUEST           A TINY ADVENTURE FROM BYTE JULY 1979 \n20 '                    VOL 4   #7\n100 REM\n110 REM\n120 PRINTTAB(20),\"QUEST\"\n130 PRINT\n140 PRINT\"YOU WERE WALKING THROUGH THE\"\n150 PRINT\"WOODS, AND YOU CAME ACROSS THE ENTRANCE\"\n160 PRINT\"OF A CAVE, COVERED WITH BRUSH.\"\n170 PRINT\n180 PRINT\"PEOPLE SAT THAT MANY YEARS AGO A\"\n190 PRINT\"PIRATE HID HIS TREASURE IN THESE\"",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
