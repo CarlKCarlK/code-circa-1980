@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape1b",
+  "save": 6,
+  "archive_raw": "tapes/recovered/tape1b/best/06-BODY-JOINTS-11-POINTS.BAS",
+  "archive_listing": "tapes/recovered/tape1b/best/06-BODY-JOINTS-11-POINTS.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/06-BODY-JOINTS-11-POINTS.ASC",
+      "archive_path": "tapes/recovered/tape1b/best/06-BODY-JOINTS-11-POINTS.ASC",
+      "bytes": 753,
+      "sha256": "f5179554318492ec665e7499783065657f6dd41e85af4753e0f3858559dede99"
+    },
+    {
+      "path": "versions/v01/06-BODY-JOINTS-11-POINTS.BAS",
+      "archive_path": "tapes/recovered/tape1b/best/06-BODY-JOINTS-11-POINTS.BAS",
+      "bytes": 660,
+      "sha256": "9e0642f6803b1b0a5b92d21209b2e1aaf4309e7e6c9840b923732d645e535525"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "9e0642f6803b1b0a5b92d21209b2e1aaf4309e7e6c9840b923732d645e535525",
+    "bytes": 660,
+    "archive_validation": "Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 15,
+    "last": 240,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 658,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "1",
+    "side": "b",
+    "order": "6",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "Body/joint data and graphics, 11 points",
+    "capture": "tape1b",
+    "capture_scope": "full",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "392.220",
+    "recovered_bytes": "660",
+    "source_file": "tapes/recovered/tape1b/best/06-BODY-JOINTS-11-POINTS.ASC",
+    "wav": "tapes/tape1b.wav",
+    "folder": "tapes/recovered/tape1b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape1b/inventory.json",
+  "execution_tested": false
+}

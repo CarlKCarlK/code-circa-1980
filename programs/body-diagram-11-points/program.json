@@ -1,0 +1,42 @@
+{
+  "id": "body-diagram-11-points",
+  "title": "Body Diagram 11 Points",
+  "description": "Body Diagram 11 Points. 2 recovered saves.",
+  "kind": "Archive",
+  "language": "TRS-80 Model I/III BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Body/joint data and graphics, 11 points",
+      "capture": "tape1b",
+      "save": 6,
+      "raw": "versions/v01/06-BODY-JOINTS-11-POINTS.BAS",
+      "listing": "versions/v01/06-BODY-JOINTS-11-POINTS.ASC",
+      "playable": false,
+      "note": "validated payload; runtime untested. Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "loadable": false,
+      "exports": [
+        {
+          "path": "versions/v01/06-BODY-JOINTS-11-POINTS.ASC",
+          "label": "06-BODY-JOINTS-11-POINTS.ASC"
+        },
+        {
+          "path": "versions/v01/06-BODY-JOINTS-11-POINTS.BAS",
+          "label": "06-BODY-JOINTS-11-POINTS.BAS"
+        }
+      ],
+      "startupSource": "10 CLS\n20 BP=11\n30 DIM B$(BP),A(BP),X(BP+3),Y(BP+3),C(BP)\n50 FOR X=1TO BP:READ B$(X):NEXT X:FORZ=1TO4:READZ(Z):NEXTZ\n60 DATARIGHT TOE,RIGHT ANKLE,RIGHT KNEE,RIGHT HIP,LEFT HIP,LEFT KNEE,LEFT ANKLE,LEFT SHOULDER,LEFT ELBOW,LEFT HAND,RIGHT SHOULDER,RIGHT ELBOW,RIGHT HAND,CHEST,NECK,RIGHT EAR,LEFT EAR\n100 A$=INKEY$:IFA$=\"\"THEN120ELSEIFA$=\"Q\"THEN P=11ELSEIFA$=\"W\"THENP=12ELSEIFA$=\"0\"THENP=10ELSEIFVAL(A$)<>0THENP=VAL(A$)\n120 PRINT@960,B$(P);\"             \";\n130 IF A$=\" \"THEN Z=Z+1:IFZ>4THENZ=1\n140 IF A$=\" \"THEN C(P)=Z(Z)\n150 A(P)=A(P)+C(P)\n160 PRINT@P*3+384,A(P);\n200 X=64:Y=44",
+      "controlSource": [
+        "100 A$=INKEY$:IFA$=\"\"THEN120ELSEIFA$=\"Q\"THEN P=11ELSEIFA$=\"W\"THENP=12ELSEIFA$=\"0\"THENP=10ELSEIFVAL(A$)<>0THENP=VAL(A$)"
+      ]
+    }
+  ],
+  "listingLabel": "Download recovered listing"
+}
