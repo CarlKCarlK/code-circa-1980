@@ -18,7 +18,7 @@ const tag=(html,property)=>html.match(new RegExp(`<meta property="og:${property}
 test('every program maps to a 1200x630 PNG of its gallery thumbnail',()=>{
   const manifest=JSON.parse(fs.readFileSync(path.join(projectRoot,'app/assets/og/manifest.json'),'utf8'));
   assert.ok(active.length>0);
-  for(const id of active)assert.ok(manifest[id],id);
+  for(const id of active)assert.ok(manifest[JSON.parse(fs.readFileSync(path.join(programs,id,'program.json'),'utf8')).urlName??id],id);
   for(const file of new Set(Object.values(manifest))){
     const png=fs.readFileSync(path.join(projectRoot,'app/assets/og',file));
     assert.equal(png.toString('latin1',1,4),'PNG',file);
@@ -33,19 +33,25 @@ test('every stable program page previews as that program',()=>{
     assert.ok(html,id);
     assert.match(tag(html,'image'),/^https:\/\/carlkcarlk\.github\.io\/code-circa-1980\/og\/[-\w]+\.png$/,id);
     assert.ok(files.has(tag(html,'image').replace('https://carlkcarlk.github.io/code-circa-1980/','')),id);
-    assert.equal(tag(html,'url'),`https://carlkcarlk.github.io/code-circa-1980/${id}/`);
     assert.ok(tag(html,'title').length&&tag(html,'title')!=='Code, circa 1980. Running again.',id);
+    assert.equal(tag(html,'url'),`https://carlkcarlk.github.io/code-circa-1980/${metadata.urlName??id}/`);
     assert.ok(tag(html,'description').length,id);
     assert.ok(html.includes('twitter:card'),id);
     // Crawlers follow a meta refresh and would read the frozen release's generic tags instead.
     assert.ok(!/http-equiv="refresh"/.test(html),id);
   }
 });
+test('a renamed program is reachable at both its new and old stable URLs',()=>{
+  const files=generated();
+  assert.equal(tag(files.get('defuse/index.html'),'title'),'Defuse');
+  assert.equal(tag(files.get('bomb/index.html'),'url'),'https://carlkcarlk.github.io/code-circa-1980/defuse/');
+  assert.doesNotMatch(tag(files.get('bomb/index.html'),'image'),/bomb/);
+});
 test('a release build swaps the generic tags for its program',()=>{
   const plugin=latestReleases();
   plugin.configResolved({publicDir:false,command:'build',define:{'import.meta.env.VITE_WEB_PROGRAM':'"bomb"'}});
   const html=plugin.transformIndexHtml(fs.readFileSync(path.join(projectRoot,'app/index.html'),'utf8'));
-  assert.equal(tag(html,'title'),'Bomb');
-  assert.equal(tag(html,'image'),'https://carlkcarlk.github.io/code-circa-1980/og/bomb-wires.png');
+  assert.equal(tag(html,'title'),'Defuse');
+  assert.equal(tag(html,'image'),'https://carlkcarlk.github.io/code-circa-1980/og/defuse-wires.png');
   assert.equal((html.match(/og:title/g)??[]).length,1);
 });

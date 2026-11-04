@@ -23,9 +23,9 @@ const prompts=[/FIRST WIRE\? *_? *$/m,/SECOND WIRE\? *_? *$/m,/THIRD WIRE\? *_? 
 test('collection and program links open the Bomb player directly; v01 is source only',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/?development=1');
- const card=page.locator('.program-card',{hasText:'Bomb'});
+ const card=page.locator('.program-card',{hasText:'Defuse'});
  await expect(card).toContainText('06 / Game');
- await expect(card.getByRole('link',{name:'Play Bomb →'})).toHaveAttribute('href',/#\/program\/bomb\/basic\/play$/);
+ await expect(card.getByRole('link',{name:'Play Defuse →'})).toHaveAttribute('href',/#\/program\/bomb\/basic\/play$/);
  await page.goto('/?development=1#/program/bomb');
  await expect(page).toHaveURL(/#\/program\/bomb\/basic\/play$/);
  await expect(page.locator('.implementations')).toHaveCount(0);

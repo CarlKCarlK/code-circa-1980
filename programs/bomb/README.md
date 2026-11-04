@@ -1,4 +1,4 @@
-# Bomb
+# Defuse (formerly Bomb)
 
 Co-designed by Rich Losey, my roommate, and me.
 

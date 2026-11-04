@@ -21,7 +21,7 @@ const catalogPath=path.join(programPath,'web-versions.json');
 let catalog;
 try {catalog=JSON.parse(await fs.readFile(catalogPath,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;catalog={versions:[]};}
 const {version,replace}=planRelease(metadata,catalog,{refreshUnshared});
-const releasePath=`${program}/${version}/`;
+const releasePath=`${metadata.urlName??program}/${version}/`;
 const destination=path.join(projectRoot,'public',releasePath);
 try {await fs.access(destination);if(!replace)throw Error(`Refusing to overwrite ${destination}`);}catch(error){if(error.code!=='ENOENT')throw error;}
 const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:projectRoot,encoding:'utf8'}).trim();

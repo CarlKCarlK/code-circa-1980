@@ -1,7 +1,8 @@
 {
   "id": "bomb",
-  "title": "Bomb",
-  "description": "Defuse a bomb by typing back its wire colors, in order and spelled right, before time runs out. Each bomb gets faster.",
+  "title": "Defuse",
+  "urlName": "defuse",
+  "description": "Remember the wires, then type back their colors, in order and spelled right, before time runs out. Each round gets faster.",
   "kind": "Game",
   "language": "Level II BASIC",
   "defaultVersion": "v02",
@@ -9,7 +10,7 @@
   "versions": [
     {
       "id": "v01",
-      "label": "Menu \u00b7 Bomb with radio intersection and binary search",
+      "label": "Menu · Bomb with radio intersection and binary search",
       "capture": "tape17a",
       "save": 1,
       "raw": "versions/v01/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.BAS",

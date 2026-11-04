@@ -6,7 +6,7 @@ I wrote and adapted programs in the early days of personal computing; this colle
 
 **[See the gallery of playable programs](https://carlkcarlk.github.io/code-circa-1980/)**
 
-The main collection: Castles, Chemical Equation Balancer, Alien, 3-D Plot, CISAB Chess, and Bomb. The More gallery has hundreds of additional programs in BASIC, Forth, Assembly, and Lisp.
+The main collection: Castles, Chemical Equation Balancer, Alien, 3-D Plot, CISAB Chess, and Defuse. The More gallery has hundreds of additional programs in BASIC, Forth, Assembly, and Lisp.
 
 ## About this project
 

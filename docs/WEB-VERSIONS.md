@@ -97,7 +97,7 @@ tags, pointing at the same image.
 
 Previews are 1200x630 PNG copies of the thumbnails, because these sites do not
 accept SVG. Programs sharing a thumbnail share one file in `app/assets/og/`, and
-`manifest.json` there maps programs to files. AIM uses SPI's, since they share a
+`manifest.json` there maps public names to files. AIM uses SPI's, since they share a
 gallery entry. After adding a program or changing a thumbnail, run
 `npm run render:previews` against `npm run preview -- --port 5297`. The build fails
 if a program has no preview.

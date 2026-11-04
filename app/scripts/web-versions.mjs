@@ -40,7 +40,7 @@ export async function verifyWebVersions({root=projectRoot,against,allowUnrelease
     for(const [index,version] of catalog.versions.entries()) {
       if(version.id!==`v${index+1}`)throw Error(`Web versions must start at v1 and increase in order: ${relative}`);
       if(!/^[0-9a-f]{40}$/.test(version.sourceCommit)||!/^\d{4}-\d{2}-\d{2}$/.test(version.released)||!version.label)throw Error(`Incomplete release metadata: ${entry.name}/${version.id}`);
-      if(version.path!==undefined&&version.path!==`${entry.name}/${version.id}/`)throw Error(`Invalid release path: ${entry.name}/${version.id}`);
+      if(version.path!==undefined&&version.path!==`${entry.name}/${version.id}/`&&version.path!==`${metadata.urlName}/${version.id}/`)throw Error(`Invalid release path: ${entry.name}/${version.id}`);
       const actual=await snapshotFiles(metadata.website===false?path.join(programPath,'website-archive',version.id):path.join(root,'public',releasePath(entry.name,version)));
       if(JSON.stringify(actual)!==JSON.stringify(version.files))throw Error(`Snapshot integrity failure: ${entry.name}/${version.id}`);
       if(!actual.some(file=>file.path==='index.html')||!actual.some(file=>file.path==='licenses.txt'))throw Error(`Snapshot lacks its entry point or licenses: ${entry.name}/${version.id}`);

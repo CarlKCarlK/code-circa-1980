@@ -6,10 +6,11 @@ const site='https://carlkcarlk.github.io/code-circa-1980/';
 const escape=text=>String(text).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
 // Crawlers do not run JavaScript, so these tags on the stable /<program>/ page are what a shared link previews.
 const previews=JSON.parse(fs.readFileSync(fileURLToPath(new URL('../assets/og/manifest.json',import.meta.url)),'utf8'));
-const socialTags=(id,metadata)=>`<meta property="og:type" content="website"><meta property="og:site_name" content="Code Circa 1980"><meta property="og:title" content="${escape(metadata.title)}"><meta property="og:description" content="${escape(metadata.description)}"><meta property="og:url" content="${site}${id}/"><meta property="og:image" content="${site}og/${previews[id]}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Gallery artwork for ${escape(metadata.title)}"><meta name="twitter:card" content="summary_large_image">`;
+// A renamed program's urlName is its public name; its folder and old release URLs stay.
+const socialTags=(id,metadata,name=metadata.urlName??id)=>`<meta property="og:type" content="website"><meta property="og:site_name" content="Code Circa 1980"><meta property="og:title" content="${escape(metadata.title)}"><meta property="og:description" content="${escape(metadata.description)}"><meta property="og:url" content="${site}${name}/"><meta property="og:image" content="${site}og/${previews[name]}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Gallery artwork for ${escape(metadata.title)}"><meta name="twitter:card" content="summary_large_image">`;
 const page=(id,path,metadata)=>`<!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>${escape(metadata.title)} · Code Circa 1980</title><meta name="description" content="${escape(metadata.description)}"><link rel="canonical" href="${site}${id}/">${socialTags(id,metadata)}
+<head><meta charset="UTF-8"><title>${escape(metadata.title)} · Code Circa 1980</title><meta name="description" content="${escape(metadata.description)}"><link rel="canonical" href="${site}${metadata.urlName??id}/">${socialTags(id,metadata)}
 <script>location.replace(location.pathname.replace(/[^/]*[/]?$/,'')+'${path}'+location.search+location.hash)</script></head>
 <body><p><a href="../${path}">Open the latest release</a>.</p></body>
 </html>
@@ -39,7 +40,8 @@ export default function latestReleases(){
         const latest=JSON.parse(fs.readFileSync(catalog,'utf8')).versions.at(-1);
         if(!latest?.path)continue;
         this.emitFile({type:'asset',fileName:`${id}/index.html`,source:page(id,latest.path,metadata)});
-        if(!previews[id])this.error(`No link preview for ${id}: run npm run render:previews`);
+        if(metadata.urlName)this.emitFile({type:'asset',fileName:`${metadata.urlName}/index.html`,source:page(id,latest.path,metadata)});
+        if(!previews[metadata.urlName??id])this.error(`No link preview for ${id}: run npm run render:previews`);
       }
       for(const file of new Set(Object.values(previews)))this.emitFile({type:'asset',fileName:`og/${file}`,source:fs.readFileSync(fileURLToPath(new URL(`../assets/og/${file}`,import.meta.url)))});
     }};

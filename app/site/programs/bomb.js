@@ -1,9 +1,9 @@
-// Bomb instructions and controls; shared navigation remains generic.
+// Defuse (internal ID bomb) instructions and controls; shared navigation remains generic.
 import {scoresPanel} from './bomb-scores.js';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const key = text => `<kbd>${escape(text)}</kbd>`;
 const code = text => `<code>${escape(text)}</code>`;
-export const art = {src:new URL('../../assets/bomb-wires.svg',import.meta.url).href, alt:'Bomb on a TRS-80 screen: HERE ARE THE WIRES, the color TURQUOISE in a box, WHAT IS THE FIRST WIRE?'};
+export const art = {src:new URL('../../assets/defuse-wires.svg',import.meta.url).href, alt:'Defuse on a TRS-80 screen: HERE ARE THE WIRES, the color TURQUOISE in a box, WHAT IS THE FIRST WIRE?'};
 export const aboutOpen = true;
 // A stock Model I, as in 1981: its ROM shows shifted letters (yOU, mR. TNT) as capitals.
 export const model = 'MODEL1';
@@ -21,16 +21,16 @@ const quirks = [
   'The program never uses RANDOM. The attract screen draws with random numbers, so the first bomb’s wires depend on when you press a key.',
   'Line 875 reads IF TN>RN(9) PRINT, with no THEN; Level II BASIC runs it.',
   'The game’s own rankings live only in memory: Restart clears them. The site separately saves the scores you post, under “World top ten” and “Your top ten”.',
-  'The source has yOU, kEEP and mR. TNT: Shift held for a capital stores a lowercase letter. A stock Model I shows them as capitals, so this site runs Bomb on one, drawn in the same Model III font as the other programs.'
+  'The source has yOU, kEEP and mR. TNT: Shift held for a capital stores a lowercase letter. A stock Model I shows them as capitals, so this site runs Defuse on one, drawn in the same Model III font as the other programs.'
 ];
 
 // Describes v02 as played on this site; v01 is listed under Source.
 export function instructions() {
-  const history = `<section class="program-history"><h2>Probably 1981: a spelling test with a fuse</h2><p>I designed Bomb with my roommate, Rich Losey. It shows you the wires to cut, one color at a time, and then makes you type them back, in order and spelled right, while the bomb ticks. Each bomb you defuse flashes the next one’s wires faster and gives you less time to answer.</p><p>The color list has both GREY and GRAY, and you have to type the one shown. Rich and I thought that was very funny.</p><p>Backspacing always kills you. The program adds every key except Enter to your answer, so a backspace erases the letter on the screen but stays in the answer, which can never match. Press Enter and the bomb goes off.</p><p>I’m a poor speller, but thanks to this game I learned to spell AZURE.</p></section>`;
+  const history = `<section class="program-history"><h2>Probably 1981: a spelling test with a fuse</h2><p>I designed this game with my roommate, Rich Losey. Its 1981 title screen calls it BOMB. It shows you the wires to cut, one color at a time, and then makes you type them back, in order and spelled right, while the bomb ticks. Each bomb you defuse flashes the next one’s wires faster and gives you less time to answer.</p><p>The color list has both GREY and GRAY, and you have to type the one shown. Rich and I thought that was very funny.</p><p>Backspacing always kills you. The program adds every key except Enter to your answer, so a backspace erases the letter on the screen but stays in the answer, which can never match. Press Enter and the bomb goes off.</p><p>I’m a poor speller, but thanks to this game I learned to spell AZURE.</p></section>`;
   const play = `<section><h2>Remember the wires. Spell them right.</h2><h3>Your first minute</h3><ol><li>Click the screen so it gets your keys.</li><li>At ${code('TO PLAY DEPOSIT $.25 IN BOX, THEN PRESS ANY BUTTON')} press any key (no quarter needed).</li><li>Press ${key('Enter')} on each of the two instruction pages.</li><li>Watch the box: three to five colors appear one after another, about two seconds each.</li><li>At ${code('WHAT IS THE FIRST WIRE?')} type the first color and press ${key('Enter')}. Then the second, and so on.</li></ol></section>`;
   const rules = `<section><h2>How it plays</h2><ul class="tips"><li>A bomb has 3 wires 3 times in 10, 4 wires half the time, and 5 wires 2 times in 10.</li><li>At first you have about 23 seconds to type each wire, typing included. Run out and the bomb goes off.</li><li>Type each color exactly as shown. There is no fixing a typo: a backspace is counted as part of the answer.</li><li>After a defused bomb, ${code('DO YOU WANT TO RETIRE?')}: ${code('YES')} ends the game; anything else brings the next bomb, with the wires shown and the time to answer both cut to three quarters.</li><li>Your score is the number of wires you have cut. If it makes the top ten, type your initials; a score set by blowing up is marked P (posthumous).</li><li>After each game it returns to the title screen and shows the rankings. Press any key to play again.</li></ul></section>`;
   const list = `<section><h2>The 38 colors</h2><p>${colors.map(code).join(' ')}</p><p class="small">Both GREY and GRAY are wires, and a bomb can use both.</p></section>`;
-  const note = `<section><h2>This version</h2><p>v02, the standalone Nefarious Nick version, unchanged in the emulator on a stock Model I with Level II BASIC, as in 1981. The menu version (v01) is kept as source: its Bomb has 35 colors, MR. XX and one high score.</p></section>`;
+  const note = `<section><h2>This version</h2><p>v02, the standalone Nefarious Nick version, unchanged in the emulator on a stock Model I with Level II BASIC, as in 1981. The menu version (v01) is kept as source: its game has 35 colors, MR. XX and one high score.</p></section>`;
   const odd = `<section class="program-differences"><h2>Quirks kept from the original</h2><p class="small">From reading the source; VERIFICATION.md records what was run.</p><ul class="tips">${quirks.map(q => `<li>${escape(q)}</li>`).join('')}</ul></section>`;
   return `${history}<div class="instruction-grid">${play}${rules}${list}${note}</div>${odd}`;
 }

@@ -84,7 +84,7 @@ test('previously shared collection links resolve to the clean latest release',as
  await expect(page).toHaveURL(new RegExp(`/castles/${latest}/$`));
  await expect(page.locator('#status')).toContainText('Building');
  await page.goto('/?program=bomb');
- await expect(page).toHaveURL(new RegExp(`/bomb/${releases('bomb').at(-1).id}/$`));
+ await expect(page).toHaveURL(new RegExp(`/defuse/${releases('bomb').at(-1).id}/$`));
  await expect(page.locator('#status')).toContainText('Running');
 });
 

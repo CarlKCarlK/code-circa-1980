@@ -489,6 +489,14 @@ Security rule set, and commercial programs out unless the user asks. Pages with
 disk saves thank Ira Goldklang, who transferred the diskettes (`diskThanks`). GPS's two
 reconstructed functions are typed at startup; never add them to recovered bytes.
 
+### Defuse, formerly Bomb (November 4, 2026)
+
+The user renamed Bomb to **Defuse**, being nervous about the old name. Everything a
+visitor reads says Defuse, and its public URLs are `/defuse/` and `/defuse/vN/`
+(`urlName` in program.json). The BASIC is unchanged and still prints BOMB, as do its
+recovered filenames, labels, and tags. The internal ID and folder stay `bomb`, and
+`/bomb/` redirects. Frozen `/bomb/v1`–`v4` stay, since v1 and v2 were shared.
+
 ### Bomb scores (November 3, 2026)
 
 The user requested saved and shared Bomb scores. From web v4 a panel beside the player
