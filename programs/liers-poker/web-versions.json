@@ -5,7 +5,7 @@
       "path": "liers-poker/v1/",
       "label": "Web experience v1",
       "released": "2026-11-04",
-      "sourceCommit": "bbd912fe216de9d2b47027be7425aeb24d6787e5",
+      "sourceCommit": "38cbc615fcfe8fdf7510430139483e2d01f99b12",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BcV2RWY4.js",
+          "path": "assets/emulator-DESfQ8UQ.js",
           "bytes": 316994,
-          "sha256": "77037c4c4ac6df06a2f57d2d86e5ed99fd3904361fa0610349f0ae52d9d7a4ea"
+          "sha256": "25854e599611c464a6455af8b053203dab1df199689594961f3e6cb605340faa"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -58,9 +58,9 @@
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-DEnhnaWQ.js",
-          "bytes": 37790,
-          "sha256": "358fd266ecd7a1ffc084b535ddfd56df8bb2a195e1d3fbfad209325409d5fec1"
+          "path": "assets/index-D9bP0cGY.js",
+          "bytes": 37784,
+          "sha256": "a4e001c9e23031901d6340f3aa12348440fe81c6c1982eac5894949e69957722"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -255,7 +255,7 @@
         {
           "path": "index.html",
           "bytes": 2299,
-          "sha256": "8ed506d623d4c07b65ad959bf58c2c64245c97a87ab5e5150508f145546095ee"
+          "sha256": "3b504c8c318206f4516b02277b28e96d802610475e15dc26764d1933cb1fd808"
         },
         {
           "path": "licenses.txt",
