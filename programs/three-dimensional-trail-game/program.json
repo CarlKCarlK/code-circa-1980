@@ -1,14 +1,14 @@
 {
   "id": "three-dimensional-trail-game",
-  "title": "Three Dimensional Trail Game",
-  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "title": "Blockade in 3-D",
+  "description": "A VIDEO GAME FOR TWO IN A CUBE, in the disk menu's words. 2 recovered forms; the disk form plays.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -18,9 +18,9 @@
       "save": 4,
       "raw": "versions/v01/04-THREE-DIMENSIONAL-TRAIL-GAME.BAS",
       "listing": "versions/v01/04-THREE-DIMENSIONAL-TRAIL-GAME.ASC",
-      "playable": true,
+      "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
-      "unavailableReason": null,
+      "unavailableReason": "Earlier save, kept as source. The site plays the later form from the Games Diskette (v02).",
       "exports": [
         {
           "path": "versions/v01/04-THREE-DIMENSIONAL-TRAIL-GAME.ASC",
@@ -36,7 +36,43 @@
         "1200 M$=\"\":FOR I=1TOTM:M$=INKEY$+M$+INKEY$+INKEY$+INKEY$:NEXTI:IFM$=\"\"THEN1300ELSE FOR II=1TOLEN(M$):A$=MID$(M$,II,1):IFVAL(A$)<>0THEN VL=VAL(A$)ELSEIFA$=\"0\"THENVL=10ELSEIFA$=\":\"THENVL=11ELSEIFA$=\"-\"THENVL=12",
         "1420 PRINT@960,\"PLAYER \";MT\" CRASHED.\";:S(3-MT)=S(3-MT)+1:S(3)=S(0):FORX=0TO42STEP21:PRINT@X,\"PLAYER \"X/21+1\"= \"S(X/21+1);:NEXTX:P$=INKEY$+INKEY$+INKEY$",
         "1430 IF INKEY$=\"\"THEN1430 ELSE POKE 16380,S(1)+33:POKE 16381,S(2)+33:POKE 16382,S(3)+33:CLEAR:S(1)=PEEK(16380):S(2)=PEEK(16381):S(3)=PEEK(16382):FORI=1TO3:S(I)=S(I)-33:NEXTI:GOTO 1000"
+      ]
+    },
+    {
+      "id": "v02",
+      "label": "Blockade in 3-D (Games Diskette)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v02/BLOCK3D.BAS",
+      "listing": "versions/v02/BLOCK3D.ASC",
+      "playable": true,
+      "note": "Complete disk file BLOCK3D.BAS (directory size, ordered records, consistent pointers, end marker). Runs under NEWDOS/80 Disk BASIC from the original disk image; the disk's menu starts it, and it can return there. Runtime limited to the startup check.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v02/BLOCK3D.BAS",
+          "label": "BLOCK3D.BAS"
+        },
+        {
+          "path": "versions/v02/BLOCK3D.ASC",
+          "label": "BLOCK3D.ASC"
+        }
       ],
+      "startupSource": "10   CLS\n15  PRINT\"BLOCKADE  3-D\nPLAYING ON A   10 BY 10 BY 10 CUBE\nCONTROLS 1-2-3-4-5-6  7-8-9-0-:--  ARE UP-DOWN-LEFT-RIGHT-IN-OUT\nGOOD-LUCK\"\n20 PRINT\"\n                (PRESS  ANY KEY TO START)\n30 IF INKEY$=\"\"THEN30\n1000 DEFINT P\n1010 DIMP(11,11,11)\n1020 DIM XD(6),YD(6),ZD(6)\n1025 PY=2:TM=30:    ' PY IS # OF PLAYERS  (1 OR 2) TM IS SPEED",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/games-diskette.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "SELECT A LETTER"
+          },
+          {
+            "press": "i"
+          }
+        ]
+      },
+      "running": "Running from the original disk",
       "slug": "basic"
     }
   ],
