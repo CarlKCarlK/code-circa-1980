@@ -1,29 +1,29 @@
 {
-  "version": "v08",
-  "disk": "MMSFORTH New Program Backup",
-  "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Program Backup [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
-  "disk_image_sha256": "26f30bda9f6e6d90dad41dbba7b5c81aa4aee4c1546ff6aa3711e593a5a4dbca",
-  "source": "blocks 41-42",
+  "version": "v09",
+  "disk": "MMSFORTH New Programs",
+  "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+  "source": "blocks 55-55",
   "imported_files": [
     {
-      "path": "versions/v08/CIPHER.bin",
-      "archive_path": "blocks 41-42",
-      "bytes": 2048,
-      "sha256": "7363c9f4f359e3fe20d53cfe7f2ce631fd990e4da40e5bb6f26d158eb8df4030"
+      "path": "versions/v09/DECODER.bin",
+      "archive_path": "blocks 55-55",
+      "bytes": 1024,
+      "sha256": "aa06e47e15fbdf986c45ad8813eb43c2834323d4bd1e525717e767ce525daf07"
     },
     {
-      "path": "versions/v08/CIPHER.txt",
+      "path": "versions/v09/DECODER.txt",
       "archive_path": "derived listing",
-      "bytes": 1086,
-      "sha256": "eb69b35886e17245e09eef2a5252543a78ed9cf8f02dbba410acccd03d6336d2"
+      "bytes": 483,
+      "sha256": "aa8e8ec31e4c9f21c623d0e8c2882aef4f41493732a0739bb8abf99d197cf70f"
     }
   ],
   "recovery_item": {
     "format": "MMSFORTH blocks",
-    "sha256": "7363c9f4f359e3fe20d53cfe7f2ce631fd990e4da40e5bb6f26d158eb8df4030",
-    "bytes": 2048,
+    "sha256": "aa06e47e15fbdf986c45ad8813eb43c2834323d4bd1e525717e767ce525daf07",
+    "bytes": 1024,
     "import_date": "2026-11-03",
-    "first_block": 41,
-    "last_block": 42
+    "first_block": 55,
+    "last_block": 55
   }
 }

@@ -186,6 +186,28 @@
       ],
       "startupSource": "==== Block 41 ====\n 0 ( CIF  , DCIF 1 OR   2  )\n 1 \n 2  VARIABLE BAD\n 3 : BOND 7 0 0  . .  .   1 BAD  ! ;\n 4 : FIRST  .\" KEY ? \" 5 0 DO KEY LOOP ;\n 5 : SECOND  .\" REPEAT \" 5 0 DO KEY DUP 7 ROLL <> IF\n 6    BOND   THEN  LOOP ;\n 7 : GETKEY FIRST 6 ROLL 1 DO SECOND LOOP\n 8          BAD @ IF  5 0 DO DROP LOOP EXIT  THEN ;\n 9   VARIABLE BUFB VARIABLE BUFA\n10  VARIABLE ZERO1  0 , 0 ,",
       "controlSource": []
+    },
+    {
+      "id": "v09",
+      "label": "Decoder (blocks 55-55)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v09/DECODER.bin",
+      "listing": "versions/v09/DECODER.txt",
+      "playable": false,
+      "note": "ROT-13 decoder initialed RWL, dated Nov 11, 1982. The Forth System disk holds a slightly different form.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v09/DECODER.bin",
+          "label": "DECODER.bin"
+        },
+        {
+          "path": "versions/v09/DECODER.txt",
+          "label": "DECODER.txt"
+        }
+      ],
+      "startupSource": "==== Block 55 ====\n 0 ( NOV 11,1982     DECODER PAGE 1 OF 1       RWL     )\n 1 \n 2 : TASK ;\n 3 \n 4 : LODE      PAGE  CR .\" IS STRINGS LOADED IN \" Y/N\n 5          IF CR  .\" PUT IN SYSTEM DISK \" ENTER STRINGS\n 6    CR .\" PUT IN PROGRAMS DISK \" ENTER THEN ;\n 7 \n 8 : FIGURE    KEY DUP DUP 28 = IF CR DROP ELSE DUP 64 > IF\n 9             13 -  DUP 65 < IF 26 + THEN   THEN CHR$ $.  THEN  ;\n10 ",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
