@@ -1,0 +1,165 @@
+{
+  "official_title": "Space Colony",
+  "title_authority": "User-approved title, supported by the recovered listing or its behavior.",
+  "short_name": "spacecolony",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred from source comparison: recovered King precedes its space-themed adaptation. The exact cross-tape chronology is unknown. Three damaged Space Colony recordings remain source only.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape12a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape12a/best/05-KING.BAS",
+      "archive_listing": "tapes/recovered/tape12a/best/05-KING.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-KING.BAS",
+          "archive_path": "tapes/recovered/tape12a/best/05-KING.BAS",
+          "bytes": 6490,
+          "sha256": "47bd22cec28eb8caa9d33406c52d9b82caea182b063513bde4d25e3042694d8e"
+        },
+        {
+          "path": "versions/v01/05-KING.ASC",
+          "archive_path": "tapes/recovered/tape12a/best/05-KING.ASC",
+          "bytes": 7505,
+          "sha256": "e72782bf894a7014bba6ad98161053fbc5662e30d1cfa7ca0a0e4ce632400938"
+        }
+      ],
+      "recovery_item": {
+        "lines": 234,
+        "last": 2046,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "47bd22cec28eb8caa9d33406c52d9b82caea182b063513bde4d25e3042694d8e"
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "a",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "KING; 234 lines",
+        "capture": "tape12a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+        "source_start_s": "305.001",
+        "recovered_bytes": "6490",
+        "source_file": "tapes/recovered/tape12a/best/05-KING.ASC",
+        "wav": "tapes/tape12a.wav",
+        "folder": "tapes/recovered/tape12a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape14a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape14a/best/03-SPACE-COLONY.BAS",
+      "archive_listing": "tapes/recovered/tape14a/best/03-SPACE-COLONY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/03-SPACE-COLONY.BAS",
+          "archive_path": "tapes/recovered/tape14a/best/03-SPACE-COLONY.BAS",
+          "bytes": 6800,
+          "sha256": "3493c195607de350ef6f6ec8382d8988075a90711135df45ed402165834266cc"
+        },
+        {
+          "path": "versions/v02/03-SPACE-COLONY.ASC",
+          "archive_path": "tapes/recovered/tape14a/best/03-SPACE-COLONY.ASC",
+          "bytes": 7933,
+          "sha256": "60491b39bb5f40b49f3e8d85ebadc286808a6b1ab13bcd638889a93692b47c61"
+        }
+      ],
+      "recovery_item": {
+        "lines": 239,
+        "last": 2046,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "3493c195607de350ef6f6ec8382d8988075a90711135df45ed402165834266cc"
+      },
+      "inventory_row": {
+        "tape": "14",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SPACE COLONY; 239 lines",
+        "capture": "tape14a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+        "source_start_s": "216.944",
+        "recovered_bytes": "6800",
+        "source_file": "tapes/recovered/tape14a/best/03-SPACE-COLONY.ASC",
+        "wav": "tapes/tape14a.wav",
+        "folder": "tapes/recovered/tape14a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape14a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Source dates do not establish tape-save dates. Attribution is preserved in the listings."
+  },
+  "artwork": {
+    "path": "app/assets/spacecolony-gallery.svg",
+    "sha256": "cdf999374dcb80673733a9249ec43ec235a1f504b9380085dcb23c2cad6aeb61",
+    "description": "Modern illustrative SVG, separate from execution evidence."
+  },
+  "origin": {
+    "original_program": "King / Pollution Game",
+    "original_author": "James A. Storer",
+    "primary_source": "https://www.cs.brandeis.edu/~storer/LunarLander/PollutionGame/King-101BasicComputerGames.pdf",
+    "evidence": "Published Setats Detinu / Rallods instructions match recovered King. Space Colony reuses the resource-budget structure with a solar-colony theme.",
+    "adaptation_authorship": "Not established by direct source credit."
+  },
+  "website_execution": {
+    "date": "2026-11-02",
+    "execution_tested": true,
+    "reference": {
+      "capture": "tape14a",
+      "save": 3,
+      "version": "v02",
+      "payload": "versions/v02/03-SPACE-COLONY.BAS",
+      "sha256": "3493c195607de350ef6f6ec8382d8988075a90711135df45ed402165834266cc"
+    },
+    "checks": "NO instructions choice, continuation key, complete first-year budget 0/50000/500/0, report/continuation, pause/resume, and restart.",
+    "limits": "One representative year, not a complete eight-year winning campaign or exhaustive budget/boundary audit. Original King lineage is explicitly credited; damaged captures are not playable.",
+    "test": "app/tests/browser/related-more.spec.js",
+    "note": "Separate from preserved recovery-stage execution flags."
+  },
+  "emulator_capture": {
+    "path": "programs/spacecolony/verification/screen.png",
+    "sha256": "2309a43b56d1a7ea93a2c379b495fbf7a84f8663b65ae068b458699de0eb4440",
+    "description": "Original-ROM browser execution capture; separate from the modern gallery SVG."
+  },
+  "restored_comparison_source": {
+    "title": "King / Pollution Game",
+    "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/king.bas",
+    "publication_url": "https://www.cs.brandeis.edu/~storer/LunarLander/PollutionGame/King-101BasicComputerGames.pdf",
+    "bytes": 8938,
+    "sha256": "93969f466d15613c02c3017bc2f22331a2ffe47339fe6a9fbecea286fb90ac3d",
+    "note": "Complete electronic anthology transcription. Not a byte-verified print transcription, exact intermediate parent, or recovered cassette. Existing history is preserved; this comparison and canonical replay are appended."
+  },
+  "also_on_disk": {
+    "disk": "BASIC Programs Games",
+    "file": "KING.BAS",
+    "sha256": "2d459939af4a2ad202002039f4be1ead0f72fa2d7fc2dfaa6d757a8631e8b048",
+    "relation": "all lines identical to tapes/recovered/tape12a/best/05-KING.BAS"
+  }
+}

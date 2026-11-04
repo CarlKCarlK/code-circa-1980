@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape6a",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape6a/best/05-COMBINATION-LOCK.BAS",
+  "archive_listing": "tapes/recovered/tape6a/best/05-COMBINATION-LOCK.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/05-COMBINATION-LOCK.ASC",
+      "archive_path": "tapes/recovered/tape6a/best/05-COMBINATION-LOCK.ASC",
+      "bytes": 584,
+      "sha256": "852e88f3ae52a86a2bd8b78ab28d834506ff09eee673282054f94b5672ddb713"
+    },
+    {
+      "path": "versions/v01/05-COMBINATION-LOCK.BAS",
+      "archive_path": "tapes/recovered/tape6a/best/05-COMBINATION-LOCK.BAS",
+      "bytes": 451,
+      "sha256": "142a0d889e8694da65614a519bf5a1a7bc96919de36234a64fbb75e671c5ae80"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "142a0d889e8694da65614a519bf5a1a7bc96919de36234a64fbb75e671c5ae80",
+    "bytes": 451,
+    "archive_validation": "14 consistent pointers; normal end marker; matches 4 decoding variants; not execution-tested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 14,
+    "last": 700,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 449,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "6",
+    "side": "a",
+    "order": "5",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "COMBINATION LOCK; 14 lines",
+    "capture": "tape6a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "14 consistent pointers; normal end marker; matches 4 decoding variants; not execution-tested",
+    "source_start_s": "",
+    "recovered_bytes": "451",
+    "source_file": "tapes/recovered/tape6a/best/05-COMBINATION-LOCK.ASC",
+    "wav": "tapes/tape6a.wav",
+    "folder": "tapes/recovered/tape6a/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test"
+  },
+  "recovery_inventory": "tapes/recovered/tape6a/best/inventory.json",
+  "execution_tested": false
+}

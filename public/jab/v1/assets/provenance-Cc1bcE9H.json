@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape22a",
+  "save": 11,
+  "archive_raw": "tapes/recovered/tape22a/best/11-NUCLEAR-PHYSICIST-QUIZ.BAS",
+  "archive_listing": "tapes/recovered/tape22a/best/11-NUCLEAR-PHYSICIST-QUIZ.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/11-NUCLEAR-PHYSICIST-QUIZ.ASC",
+      "archive_path": "tapes/recovered/tape22a/best/11-NUCLEAR-PHYSICIST-QUIZ.ASC",
+      "bytes": 1323,
+      "sha256": "cd5495ed6063dde72d41a6dbe3e665724537f2552ebb80929ef0c984eee5017d"
+    },
+    {
+      "path": "versions/v01/11-NUCLEAR-PHYSICIST-QUIZ.BAS",
+      "archive_path": "tapes/recovered/tape22a/best/11-NUCLEAR-PHYSICIST-QUIZ.BAS",
+      "bytes": 1165,
+      "sha256": "b33cc22887a3865f511e0000587348ab3986dbd5bdbd4f578752044252a24d13"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "b33cc22887a3865f511e0000587348ab3986dbd5bdbd4f578752044252a24d13",
+    "bytes": 1165,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 26,
+    "last": 1140,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1163,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "22",
+    "side": "a",
+    "order": "11",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "NUCLEAR PHYSICIST QUIZ",
+    "capture": "tape22a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "397.126",
+    "recovered_bytes": "1165",
+    "source_file": "tapes/recovered/tape22a/best/11-NUCLEAR-PHYSICIST-QUIZ.ASC",
+    "wav": "tapes/tape22a.wav",
+    "folder": "tapes/recovered/tape22a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape22a/inventory.json",
+  "execution_tested": false
+}

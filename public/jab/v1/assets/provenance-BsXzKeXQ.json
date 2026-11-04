@@ -1,0 +1,80 @@
+{
+  "official_title": "Star Trek Draft",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "star_trek_draft_p276",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape9a",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape9a/best/08-STAR-TREK-DRAFT.BAS",
+      "archive_listing": "tapes/recovered/tape9a/best/08-STAR-TREK-DRAFT.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/08-STAR-TREK-DRAFT.ASC",
+          "archive_path": "tapes/recovered/tape9a/best/08-STAR-TREK-DRAFT.ASC",
+          "bytes": 561,
+          "sha256": "c7aa18d1f73216b323c85182e0d365fbf45b2067b08af83a6809832b6bf96f56"
+        },
+        {
+          "path": "versions/v01/08-STAR-TREK-DRAFT.BAS",
+          "archive_path": "tapes/recovered/tape9a/best/08-STAR-TREK-DRAFT.BAS",
+          "bytes": 489,
+          "sha256": "5d387eaa003b4112a855f08701b41d4b3c8b1d1303a20cec743c6b2b008f6890"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "5d387eaa003b4112a855f08701b41d4b3c8b1d1303a20cec743c6b2b008f6890",
+        "bytes": 489,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 6,
+        "last": 10000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 487,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "a",
+        "order": "8",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "STAR TREK DRAFT; 6 lines",
+        "capture": "tape9a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "source_start_s": "243.552",
+        "recovered_bytes": "489",
+        "source_file": "tapes/recovered/tape9a/best/08-STAR-TREK-DRAFT.ASC",
+        "wav": "tapes/tape9a.wav",
+        "folder": "tapes/recovered/tape9a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; historical source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "official_title": "Turtle Graphics",
+  "title_authority": "Title from the recovered source or a descriptive display title; recovered text is unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "saves": [
+    {
+      "version": "v01",
+      "disk": "MMSFORTH New Programs",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+      "source": "blocks 16-19",
+      "imported_files": [
+        {
+          "path": "versions/v01/TURTLE.bin",
+          "archive_path": "blocks 16-19",
+          "bytes": 4096,
+          "sha256": "7d930fb1f0652cffade4db509495124c129896a3f5d48fc022151744d225dae3"
+        },
+        {
+          "path": "versions/v01/TURTLE.txt",
+          "archive_path": "derived listing",
+          "bytes": 2664,
+          "sha256": "845b43bfb4c2a638f849c6cd18df66717f06a52b99a531e177826ebba0de94b1"
+        },
+        {
+          "path": "disks/forth-system.dmk",
+          "archive_path": "disks/Miller Microcomputer Services MMSFORTH System Disk - Forth System [Special Format][MMSForth v2.0][Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "86f612b2359c2b04d355e6932ca853ada57fdb4f2e4c59dd02579cce37cb52a3"
+        },
+        {
+          "path": "disks/new-programs.dmk",
+          "archive_path": "disks/Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23"
+        },
+        {
+          "path": "disks/mmsforth-utilities.dmk",
+          "archive_path": "disks/From the TRS80 Archive - MMSForth System Package v2.0 (1981)(Miller Microcomputer Services)[M1][Original][3 Disk Set][Special Format][Set 2][Disk 3][Utilities v1.3 for 32K Disk].dmk",
+          "bytes": 261136,
+          "sha256": "366412ae5fde2d516091d30bf0ce59dc79d6dfbeca67a3fc21f918bb60aa7269"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "7d930fb1f0652cffade4db509495124c129896a3f5d48fc022151744d225dae3",
+        "bytes": 4096,
+        "import_date": "2026-11-03",
+        "first_block": 16,
+        "last_block": 19
+      }
+    }
+  ],
+  "credit_authority": "User instruction, November 3, 2026: credit Rich Losey on anything that mentions Rich or RWL, and note that he may have contributed to the other Forth programs. The user identified RWL as Rich Losey."
+}

@@ -1,0 +1,91 @@
+{
+  "official_title": "LIFE \u2014 Pascal draft",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Life Pascal Uncertain",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape15a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape15a/partial/01-LIFE-PASCAL-DAMAGED.3BN",
+      "archive_listing": "tapes/recovered/tape15a/partial/01-LIFE-PASCAL-UNCERTAIN.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-DAMAGED.3BN",
+          "archive_path": "tapes/recovered/tape15a/partial/01-LIFE-PASCAL-DAMAGED.3BN",
+          "bytes": 1545,
+          "sha256": "27b8fdf57736a8f764fc9be27cb51bd44b21bb4acfab647f7cb687b2203a27fc"
+        },
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-UNCERTAIN.SRC",
+          "archive_path": "tapes/recovered/tape15a/partial/01-LIFE-PASCAL-UNCERTAIN.SRC",
+          "bytes": 1507,
+          "sha256": "a2382de3859499eab79d9a5f2da0c9dba22c72fe8df1e6e1dfbf66951e0da981"
+        },
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-UNCERTAIN.TXT",
+          "archive_path": "tapes/recovered/tape15a/partial/01-LIFE-PASCAL-UNCERTAIN.TXT",
+          "bytes": 1528,
+          "sha256": "e50eefd93a1fe93085b16b2092c6deab29df04b53d3eb470bb09b9108ba7a9bd"
+        },
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-VERIFIED-SUFFIX.BIN",
+          "archive_path": "tapes/recovered/tape15a/partial/01-LIFE-PASCAL-VERIFIED-SUFFIX.BIN",
+          "bytes": 995,
+          "sha256": "401b89511683f3c3b4abe72e339c0b9d57ff33849414ad2e0a862ae11aed05a4"
+        },
+        {
+          "path": "versions/v01/01-LIFE-PASCAL-VERIFIED-SUFFIX.TXT",
+          "archive_path": "tapes/recovered/tape15a/partial/01-LIFE-PASCAL-VERIFIED-SUFFIX.TXT",
+          "bytes": 998,
+          "sha256": "9fea23186669d5ecc7da57e1eba0a870f87845b52af7eec3caa75e231b464e2f"
+        }
+      ],
+      "recovery_item": {
+        "format": "Pascal-like source",
+        "sha256": "27b8fdf57736a8f764fc9be27cb51bd44b21bb4acfab647f7cb687b2203a27fc",
+        "bytes": 1545,
+        "archive_validation": "4/6 block checksums valid; blocks 3-6 exact left/right data and address matches; first two blocks conflict; 78 ending lacks SYSTEM entry address",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "a",
+        "order": "1",
+        "type": "Pascal-like source",
+        "recovery%": "",
+        "summary": "LIFE cellular automaton; damaged first two blocks; 995 verified suffix bytes",
+        "capture": "tape15a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80; Pascal-like source; exact dialect unverified",
+        "status": "damaged source; runtime untested",
+        "validation": "4/6 block checksums valid; blocks 3-6 exact left/right data and address matches; first two blocks conflict; 78 ending lacks SYSTEM entry address",
+        "source_start_s": "4.082",
+        "recovered_bytes": "1545",
+        "source_file": "tapes/recovered/tape15a/partial/01-LIFE-PASCAL-UNCERTAIN.TXT",
+        "wav": "tapes/tape15a.wav",
+        "folder": "tapes/recovered/tape15a",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Rerecord first digital item if possible; identify source editor/dialect and shortened ending"
+      },
+      "recovery_inventory": "tapes/recovered/tape15a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

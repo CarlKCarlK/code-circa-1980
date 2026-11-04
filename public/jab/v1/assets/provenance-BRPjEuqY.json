@@ -1,0 +1,80 @@
+{
+  "official_title": "Rope Tension And Angles",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "rope_tension_and_angles_p271",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape8a",
+      "save": 14,
+      "archive_raw": "tapes/recovered/tape8a/best/14-ROPE-TENSION-AND-ANGLES.BAS",
+      "archive_listing": "tapes/recovered/tape8a/best/14-ROPE-TENSION-AND-ANGLES.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/14-ROPE-TENSION-AND-ANGLES.ASC",
+          "archive_path": "tapes/recovered/tape8a/best/14-ROPE-TENSION-AND-ANGLES.ASC",
+          "bytes": 672,
+          "sha256": "9520d60e21e7a86c36afe09cdaca62876ca9fc875268a706790b6bf7dcec1d53"
+        },
+        {
+          "path": "versions/v01/14-ROPE-TENSION-AND-ANGLES.BAS",
+          "archive_path": "tapes/recovered/tape8a/best/14-ROPE-TENSION-AND-ANGLES.BAS",
+          "bytes": 604,
+          "sha256": "b40bd1ab90da2d92b8110bf380d9730e109e512ab413101e30b1f75a7f738e2d"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "b40bd1ab90da2d92b8110bf380d9730e109e512ab413101e30b1f75a7f738e2d",
+        "bytes": 604,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 24,
+        "last": 1090,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 602,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "a",
+        "order": "14",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "ROPE TENSION AND ANGLES; 24 lines",
+        "capture": "tape8a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+        "source_start_s": "520.676",
+        "recovered_bytes": "604",
+        "source_file": "tapes/recovered/tape8a/best/14-ROPE-TENSION-AND-ANGLES.ASC",
+        "wav": "tapes/tape8a.wav",
+        "folder": "tapes/recovered/tape8a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with required BASIC extensions; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape8a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

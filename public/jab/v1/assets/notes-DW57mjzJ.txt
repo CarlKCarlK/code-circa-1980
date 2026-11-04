@@ -1,0 +1,1 @@
+Damaged recording 7: raw candidate and exact 1493-byte prefix match both channels. Main ASC has 38 prefix records through 310; UNCERTAIN.ASC contains later corrupt/unvalidated output. No end marker or missing bytes were added.

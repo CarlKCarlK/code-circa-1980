@@ -1,0 +1,32 @@
+{
+  "version": "v02",
+  "disk": "More Voice",
+  "disk_image": "More Voice [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "f3d63ff73891368ba0381bd301d8bf447800aea3ae51e624883210cad1a21b6d",
+  "source": "files/SPELL.BAS",
+  "imported_files": [
+    {
+      "path": "versions/v02/SPELL.BAS",
+      "archive_path": "files/SPELL.BAS",
+      "bytes": 3059,
+      "sha256": "d8cb932ee3c29864871c2bad401425de926385c3f533d9beb986ec250a84f57b"
+    },
+    {
+      "path": "versions/v02/SPELL.ASC",
+      "archive_path": "derived listing",
+      "bytes": 3741,
+      "sha256": "d70e572843d406bf80c6d98da5bbec53ac261a24654f7933d23c25017440574d"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC disk file",
+    "sha256": "d8cb932ee3c29864871c2bad401425de926385c3f533d9beb986ec250a84f57b",
+    "bytes": 3059,
+    "import_date": "2026-11-03",
+    "lines": 72,
+    "last": 7120,
+    "normal_end_marker": true,
+    "memory_base": 27205,
+    "tape_relation": "1/72 lines shared with tapes/recovered/tape6a/best/02-SPEECH-TREK.BAS (240 lines)"
+  }
+}
