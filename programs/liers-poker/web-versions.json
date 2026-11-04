@@ -4,8 +4,8 @@
       "id": "v1",
       "path": "liers-poker/v1/",
       "label": "Web experience v1",
-      "released": "2026-11-03",
-      "sourceCommit": "24419dcc48e0bcf74e5ba85f678efc22550ba850",
+      "released": "2026-11-04",
+      "sourceCommit": "f402c47c38c4cc06d3fd3bf5ff7bad6c5c8bc518",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -13,9 +13,9 @@
           "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
         },
         {
-          "path": "assets/archive-gallery-Cr0q0rfj.svg",
-          "bytes": 547,
-          "sha256": "0c02294b84355a66fb22c7f3a14d9fd2bcaba28513e95a25c19147c8bdb7beeb"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
           "path": "assets/cave-gallery-CUdWAr_1.svg",
@@ -33,14 +33,19 @@
           "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
         },
         {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
+        },
+        {
           "path": "assets/dungeon-gallery-iVVwbTI4.svg",
           "bytes": 557,
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CGCsbXtC.js",
-          "bytes": 286265,
-          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+          "path": "assets/emulator-BmKPaufH.js",
+          "bytes": 316923,
+          "sha256": "66eb89d27dbe0497705acf1a6ad2b451c375cbd691345d798b21762cc3932bb6"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -48,14 +53,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-DKrV230I.css",
-          "bytes": 25510,
-          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+          "path": "assets/index-CoYMzIsy.js",
+          "bytes": 34821,
+          "sha256": "60791b19f6f40af6591468cacec6c240001677838c73bd9ee67bbb2eb003cc86"
         },
         {
-          "path": "assets/index-Tf1L0N9v.js",
-          "bytes": 28203,
-          "sha256": "d8bbd4e021cd7ffa02e654153b3e6ec32151cb0fd70af855ffe08f8320a00e6f"
+          "path": "assets/index-Dz8uMYQd.css",
+          "bytes": 26140,
+          "sha256": "9d2366f912ef17a5cf93fc6fad8840dea36ab841117aeee638f31d34e5fad97e"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -76,6 +81,16 @@
           "path": "assets/learningttt-gallery-eEINQE3h.svg",
           "bytes": 465,
           "sha256": "bef009af5a65b7886190c3dea67133b2ea324606bc7baea31e6bcafcb039231a"
+        },
+        {
+          "path": "assets/LIARS-POKER-8kQqLHLl.ASC",
+          "bytes": 1060,
+          "sha256": "1304ce10e9cda7c81905047226ce4fe9f226f585b1062fc623cb1c04ecaee557"
+        },
+        {
+          "path": "assets/LIARS-POKER-C1X-3cV5.BAS",
+          "bytes": 865,
+          "sha256": "10e1cdd1122532f6bdf8532025ad7fcb44f407c210af155dba2f445b392493ea"
         },
         {
           "path": "assets/LIERS-POKER-DjzjecX9.ASC",
@@ -108,6 +123,11 @@
           "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed"
         },
         {
+          "path": "assets/model100-CYWvsCgB.js",
+          "bytes": 8058,
+          "sha256": "50cc804541fed57cebb7cbaf88862c9f79c81621642d4610797055e355b0d314"
+        },
+        {
           "path": "assets/nuclear-gallery-CvCXKMfj.svg",
           "bytes": 469,
           "sha256": "3921df0fcf62d50302b03e125781513e33208615c0870accff80ca73a9e9bd34"
@@ -138,9 +158,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-iWqZF7e4.json",
-          "bytes": 3442,
-          "sha256": "187cadebf79d6895228a7707b71bfa57bdeb663d4edbd1db6729ac22dc43f62a"
+          "path": "assets/provenance-DEZH5s4B.json",
+          "bytes": 3781,
+          "sha256": "fb42c89345c74f893d1e6a43aad38fc56289c999e303e0ff411c480dc8f31a5e"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -188,6 +208,11 @@
           "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
         },
         {
+          "path": "assets/tones-gallery-DPAQ7avY.svg",
+          "bytes": 1017,
+          "sha256": "795a4c694830b961fdcc0d148fedb3e20e194d7b9d9e75d491960602b7fd3e0a"
+        },
+        {
           "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
           "bytes": 409,
           "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
@@ -196,6 +221,21 @@
           "path": "assets/tutac-gallery-DEjQnkj5.svg",
           "bytes": 581,
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
+        },
+        {
+          "path": "assets/virtualt-AiL3Ufaf.wasm",
+          "bytes": 1104816,
+          "sha256": "93fe58680b79d708032dbcda0aa5c622b1ad61c5ec1fbcf98331e290af1434b7"
+        },
+        {
+          "path": "assets/virtualt-CHiBXa60.js",
+          "bytes": 247020,
+          "sha256": "c177ff4cd602f79e5ded24bfb755973d320b51c2294831e69d86de06cb89cef1"
+        },
+        {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
         },
         {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
@@ -214,13 +254,13 @@
         },
         {
           "path": "index.html",
-          "bytes": 2351,
-          "sha256": "bb5ae0788b0689fc670e7d35f9733905e282611b6ae9e25a6941a4a5e82de2cf"
+          "bytes": 2290,
+          "sha256": "5d3009d76dc65c92202ef5f85138b8d18789020dff4a0b91a4adf3cfc2025d6d"
         },
         {
           "path": "licenses.txt",
-          "bytes": 17049,
-          "sha256": "e2d6660e33328a842ede04e5917febf31ea4fb7a714470c95c3f35eda265ad6c"
+          "bytes": 19163,
+          "sha256": "a74fe6d95486f70e2356be36bf5fcad38455cfac38234f9a94ee4808a8a6cf4d"
         }
       ]
     }

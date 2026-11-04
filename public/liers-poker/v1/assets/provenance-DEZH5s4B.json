@@ -76,5 +76,14 @@
       "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
     },
     "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
-  }
+  },
+  "derived_editions": [
+    {
+      "path": "corrected/LIARS-POKER.BAS",
+      "source": "versions/v01/04-LIERS-POKER.BAS",
+      "sha256": "10e1cdd1122532f6bdf8532025ad7fcb44f407c210af155dba2f445b392493ea",
+      "changes": "corrected/changes.json",
+      "status": "Modern spelling correction, not recovered historical bytes"
+    }
+  ]
 }
