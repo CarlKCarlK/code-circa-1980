@@ -54,6 +54,28 @@
       ],
       "startupSource": "10 '            GETDISK\n20 '            -------\n30 'PROGRAM TO COPY DISK FILES TO CASSETTE\n40 '\n50 CLEAR 1000\n60 DEFSTR D-F: DEFINT I: DIM D(4)\n70 CLS\n80 FV=\"\"\n90 FOR I=24003 TO 24005: FV=FV+CHR$(PEEK(I)):NEXT\n100 IF FV=\"1.1\" THEN IV=26228 ELSE IV=0\n110 PRINT@6*64,\"THIS PROGRAM COPIES A DISK FILE TO CASSETTE.\"\n120 LINEINPUT\"WHAT IS THE NAME OF THE DISK FILE? \";F",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "GETTAPE.BAS (Talker)",
+      "capture": "disk: Talker",
+      "raw": "versions/v03/GETTAPE.BAS",
+      "listing": "versions/v03/GETTAPE.ASC",
+      "playable": false,
+      "note": "Copies tape files back to disk.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v03/GETTAPE.BAS",
+          "label": "GETTAPE.BAS"
+        },
+        {
+          "path": "versions/v03/GETTAPE.ASC",
+          "label": "GETTAPE.ASC"
+        }
+      ],
+      "startupSource": "10 '            GETTAPE\n20 '            -------\n30 'PROGRAM TO COPY TAPE FILES BACK ONTO DISK\n40 '\n50 CLEAR 1500\n60 DEFSTR D-F: DEFINT I: DIM D(4)\n70 CLS\n80 FV=\"\"\n90 FOR I=24003 TO 24005: FV=FV+CHR$(PEEK(I)):NEXT\n100 IF FV=\"1.1\" THEN IV=26228 ELSE IV=0\n110 PRINT@6*64,\"THIS PROGRAM COPIES A TAPE DATA FILE TO DISK.\n120 PRINT\"THE TAPE MUST BE CREATED BY THE 'GETDISK' PROGRAM.",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
