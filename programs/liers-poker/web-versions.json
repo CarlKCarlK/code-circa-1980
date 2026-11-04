@@ -5,7 +5,7 @@
       "path": "liers-poker/v1/",
       "label": "Web experience v1",
       "released": "2026-11-04",
-      "sourceCommit": "f402c47c38c4cc06d3fd3bf5ff7bad6c5c8bc518",
+      "sourceCommit": "6f3e380f7565381df118163bce70f39ef508a17b",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BmKPaufH.js",
-          "bytes": 316923,
-          "sha256": "66eb89d27dbe0497705acf1a6ad2b451c375cbd691345d798b21762cc3932bb6"
+          "path": "assets/emulator-TygZEaLn.js",
+          "bytes": 316994,
+          "sha256": "cd3ee6f80743f1c5cdc0543904aefb59ab3b1b2bfb34ade71bd7b976d68cdf96"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -53,9 +53,9 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-CoYMzIsy.js",
-          "bytes": 34821,
-          "sha256": "60791b19f6f40af6591468cacec6c240001677838c73bd9ee67bbb2eb003cc86"
+          "path": "assets/index-BEIzwnab.js",
+          "bytes": 37774,
+          "sha256": "fd7c03c2a2db3f71c075bdecd9ffcc0eaae3e107337d451910dc1df185a5dbaf"
         },
         {
           "path": "assets/index-Dz8uMYQd.css",
@@ -83,14 +83,14 @@
           "sha256": "bef009af5a65b7886190c3dea67133b2ea324606bc7baea31e6bcafcb039231a"
         },
         {
-          "path": "assets/LIARS-POKER-8kQqLHLl.ASC",
-          "bytes": 1060,
-          "sha256": "1304ce10e9cda7c81905047226ce4fe9f226f585b1062fc623cb1c04ecaee557"
+          "path": "assets/LIARS-POKER-Bv1zhkJm.BAS",
+          "bytes": 867,
+          "sha256": "03114588fc9bde32add665ff4470d3c3debb72524309ccadb0e56a25b29c366c"
         },
         {
-          "path": "assets/LIARS-POKER-C1X-3cV5.BAS",
-          "bytes": 865,
-          "sha256": "10e1cdd1122532f6bdf8532025ad7fcb44f407c210af155dba2f445b392493ea"
+          "path": "assets/LIARS-POKER-DFYzFYOL.ASC",
+          "bytes": 1067,
+          "sha256": "c3ebba09f798a60fc1076439756e923f8d1cc094a15a2b0a078d8affcfdef044"
         },
         {
           "path": "assets/LIERS-POKER-DjzjecX9.ASC",
@@ -158,9 +158,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-DEZH5s4B.json",
-          "bytes": 3781,
-          "sha256": "fb42c89345c74f893d1e6a43aad38fc56289c999e303e0ff411c480dc8f31a5e"
+          "path": "assets/provenance-BFLaoVFZ.json",
+          "bytes": 3799,
+          "sha256": "6c4204a1d603d8ebbf3c524d9bebdce79afb918ee3c37d4d0c8df18254a1e304"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -254,8 +254,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2290,
-          "sha256": "5d3009d76dc65c92202ef5f85138b8d18789020dff4a0b91a4adf3cfc2025d6d"
+          "bytes": 2299,
+          "sha256": "b039831f8b9fd333e5a82bec642ea3eca84ef98e456575666ca5b21f064e4e98"
         },
         {
           "path": "licenses.txt",
