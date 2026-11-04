@@ -90,6 +90,35 @@
         "first_block": 21,
         "last_block": 21
       }
+    },
+    {
+      "version": "v04",
+      "disk": "MMSFORTH New Programs",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+      "source": "blocks 43-43",
+      "imported_files": [
+        {
+          "path": "versions/v04/MIU.bin",
+          "archive_path": "blocks 43-43",
+          "bytes": 1024,
+          "sha256": "fa012345e4637e3ea053a7aa628be431c4099b6a3be270eb0918a8206b107ffd"
+        },
+        {
+          "path": "versions/v04/MIU.txt",
+          "archive_path": "derived listing",
+          "bytes": 536,
+          "sha256": "b71705d94d1ae9f6e9b16d970d1eb02cd948fa5a0e0f35942e7b0748d6f4ccc6"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "fa012345e4637e3ea053a7aa628be431c4099b6a3be270eb0918a8206b107ffd",
+        "bytes": 1024,
+        "import_date": "2026-11-03",
+        "first_block": 43,
+        "last_block": 43
+      }
     }
   ]
 }

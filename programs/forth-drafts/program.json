@@ -76,6 +76,28 @@
       ],
       "startupSource": "==== Block 21 ====\n 0 ( STRING PLAY                      ) z TASK ;\n 1 255 $VARIABLE THOL\n 2    1 CONSTANT MATH'EXPRESSION ;\n 3    2 CONSTANT UNARY'OP ;\n 4 z DUPp DUP IF DUP THEN ;\n 5 z IS? DUP\n 6 ( OLD REQUIRED'LENGTH START FUNCTION -> OLD LENGTH )\n 7 MATH'EXPRESSION = IF  p SWAP UNARY'OP MYSELF\n 8 \n 9 \n10 THEN THEN THEN THEN   <                  ;",
       "controlSource": []
+    },
+    {
+      "id": "v04",
+      "label": "MIU System (blocks 43-43)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v04/MIU.bin",
+      "listing": "versions/v04/MIU.txt",
+      "playable": false,
+      "note": "Hofstadter’s MIU formal system: rules I to III and a display word.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v04/MIU.bin",
+          "label": "MIU.bin"
+        },
+        {
+          "path": "versions/v04/MIU.txt",
+          "label": "MIU.txt"
+        }
+      ],
+      "startupSource": "==== Block 43 ====\n 0 ( MI )                      : TSK ;\n 1 255 $VARIABLE SENTENCE    255 $VARIABLE TEMP  VARIABLE P\n 2  $\" MIU\" SENTENCE $!\n 3 73 CONSTANT I        77 CONSTANT M   85 CONSTANT U\n 4 : ?? SENTENCE $.  ;\n 5 \n 6 : RULEI SENTENCE 1 RIGHT$ ASC I = IF SENTENCE $\" U\" $+\n 7   SENTENCE $! THEN ;\n 8 \n 9 : RULEII SENTENCE SENTENCE 1 RIGHT$  $+ SENTENCE $! ;\n10 ",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
