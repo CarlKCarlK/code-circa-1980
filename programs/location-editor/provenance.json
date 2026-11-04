@@ -1,6 +1,6 @@
 {
-  "official_title": "Location Editor",
-  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "official_title": "Illiad",
+  "title_authority": "Title from the Games Diskette menu (HELP.BAS). Earlier recovery label: Location Editor.",
   "import_date": "2026-11-03",
   "order_inferred": true,
   "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
@@ -76,5 +76,11 @@
       "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
     },
     "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "also_on_disk": {
+    "disk": "BASIC Programs Games",
+    "file": "ILLIAD.BAS",
+    "sha256": "51d49e851e0c6864108348ad871adfcebcb85cf6ccdd8c038861e65afc2383f9",
+    "relation": "all lines identical to tapes/recovered/tape6a/best/03-LOCATION-EDITOR.BAS"
   }
 }

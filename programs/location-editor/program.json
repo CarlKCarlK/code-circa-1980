@@ -1,7 +1,7 @@
 {
   "id": "location-editor",
-  "title": "Location Editor",
-  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "title": "Illiad",
+  "description": "The Illni Adventure Game, in the disk menu’s words. This is its 25-line location editor, not a finished game.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
