@@ -31,6 +31,13 @@ for(const id of ['speech','olympics','starwars81'])test(`${id}: frozen v1 opens 
  expect(errors).toEqual([]);
 });
 
+test('More gallery links back to the main gallery near the top',async({page})=>{
+ await page.goto('/#/more');
+ await page.locator('.intro').getByRole('link',{name:'← Main gallery'}).click();
+ await expect(page).toHaveURL(/#\/$/);
+ await expect(page.locator('h1')).toContainText('Code, circa 1980.');
+});
+
 test('starwars81 is the URL name while the cockpit has a descriptive display title',async({page})=>{
  await page.goto('/#/more');
  await page.getByRole('link',{name:'Play Star Wars cockpit →'}).click();

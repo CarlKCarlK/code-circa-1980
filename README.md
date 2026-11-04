@@ -4,9 +4,9 @@ I wrote and adapted programs in the early days of personal computing; this colle
 
 [![An arch and a tower in Castles, partly knocked down by cannon fire](app/assets/castles-game.svg)](https://carlkcarlk.github.io/code-circa-1980/)
 
-**[Play them in your browser](https://carlkcarlk.github.io/code-circa-1980/)**: no installation required.
+**[See the gallery of playable programs](https://carlkcarlk.github.io/code-circa-1980/)**
 
-The main collection: Castles, Chemical Equation Balancer, Alien, 3-D Plot, CISAB Chess, and Bomb. The More gallery preserves 277 additional entries, including adaptations and third-party listings with source credits. Unsupported or damaged programs are source only. See [archive coverage and verification](docs/comprehensive-more.md).
+The main collection: Castles, Chemical Equation Balancer, Alien, 3-D Plot, CISAB Chess, and Bomb. The More gallery has hundreds of additional programs in BASIC, Forth, Assembly, and Lisp.
 
 ## About this project
 

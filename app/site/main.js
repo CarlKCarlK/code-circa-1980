@@ -60,7 +60,7 @@ async function render() {
   }
   if(more){
     document.title='More from the tapes · Code Circa 1980';
-    app.innerHTML=`<section class="intro"><p class="eyebrow">Another shelf of the time capsule</p><h1>More from<br><em>the tapes.</em></h1><p class="lede">Programs and experiments recovered from cassette, including adaptations and third-party listings.<br>Credits and recovery limits are recorded with each entry.</p></section><label class="archive-search">Find a program <input id="archive-search" type="search" placeholder="Title, language, or description"></label><p id="archive-count" class="small">${morePrograms.length} entries</p>${galleryCards(morePrograms,{playUrl,versionPicker,actionVerb})}`;
+    app.innerHTML=`<section class="intro"><p class="eyebrow">Another shelf of the time capsule</p><h1>More from<br><em>the tapes.</em></h1><p class="lede">Programs and experiments recovered from cassette, including adaptations and third-party listings.<br>Credits and recovery limits are recorded with each entry.</p><p class="intro-links"><a href="${collectionHref()}">← Main gallery</a></p></section><label class="archive-search">Find a program <input id="archive-search" type="search" placeholder="Title, language, or description"></label><p id="archive-count" class="small">${morePrograms.length} entries</p>${galleryCards(morePrograms,{playUrl,versionPicker,actionVerb})}`;
     app.querySelector('#archive-search').oninput=event=>{
       const query=event.target.value.trim().toLocaleLowerCase();let count=0;
       app.querySelectorAll('.program-card').forEach((card,i)=>{const p=morePrograms[i];card.hidden=!`${p.title} ${p.description} ${p.language} ${p.kind}`.toLocaleLowerCase().includes(query);if(!card.hidden)count++;});
