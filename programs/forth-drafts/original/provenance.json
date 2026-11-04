@@ -1,29 +1,29 @@
 {
-  "version": "v06",
-  "disk": "MMSFORTH New Programs",
-  "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
-  "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
-  "source": "blocks 73-73",
+  "version": "v07",
+  "disk": "MMSFORTH New Program Backup",
+  "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Program Backup [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "26f30bda9f6e6d90dad41dbba7b5c81aa4aee4c1546ff6aa3711e593a5a4dbca",
+  "source": "blocks 63-65",
   "imported_files": [
     {
-      "path": "versions/v06/SMALLEST-WAY.bin",
-      "archive_path": "blocks 73-73",
-      "bytes": 1024,
-      "sha256": "bd2c1eb62547b41223a6e05e04e2c985d1283e1493b71d1810414facfe1db17e"
+      "path": "versions/v07/BUS-SCHEDULE.bin",
+      "archive_path": "blocks 63-65",
+      "bytes": 3072,
+      "sha256": "f3f8063ee16553f5349ac3bea0ea72fdf0978a60ec3632b2934306a67b363a5c"
     },
     {
-      "path": "versions/v06/SMALLEST-WAY.txt",
+      "path": "versions/v07/BUS-SCHEDULE.txt",
       "archive_path": "derived listing",
-      "bytes": 355,
-      "sha256": "bc926498395e295c49018dce76fcc21c8cf87875dc52e36e1a5a0191a90bf909"
+      "bytes": 1552,
+      "sha256": "5eec1bfd530fea56f9ec2c357df333fe534ea050db8eebed952a4acf7d5e6814"
     }
   ],
   "recovery_item": {
     "format": "MMSFORTH blocks",
-    "sha256": "bd2c1eb62547b41223a6e05e04e2c985d1283e1493b71d1810414facfe1db17e",
-    "bytes": 1024,
+    "sha256": "f3f8063ee16553f5349ac3bea0ea72fdf0978a60ec3632b2934306a67b363a5c",
+    "bytes": 3072,
     "import_date": "2026-11-03",
-    "first_block": 73,
-    "last_block": 73
+    "first_block": 63,
+    "last_block": 65
   }
 }

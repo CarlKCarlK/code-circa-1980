@@ -142,6 +142,28 @@
       ],
       "startupSource": "==== Block 73 ====\n 0 ( 10-20-82  SMALLEST  WAY  PAGE  1  OF     )  : TASK ;\n 1 \n 2 : MAKE DUP 2DUP  2ARRAY DIST ;\n 3 \n 4 : ASK      .\" WHAT IS THE DISTANCE FROM\" 1+ . .\" -\" 1+ . .\" ? \"\n 5            KEY  64 - ;\n 6 \n 7 \n 8 \n 9 \n10 ",
       "controlSource": []
+    },
+    {
+      "id": "v07",
+      "label": "Bus Schedule (blocks 63-65)",
+      "capture": "disk: MMSFORTH New Program Backup",
+      "raw": "versions/v07/BUS-SCHEDULE.bin",
+      "listing": "versions/v07/BUS-SCHEDULE.txt",
+      "playable": false,
+      "note": "Dated 11-20-82, with its timetable data. BUS calls words that were never written.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v07/BUS-SCHEDULE.bin",
+          "label": "BUS-SCHEDULE.bin"
+        },
+        {
+          "path": "versions/v07/BUS-SCHEDULE.txt",
+          "label": "BUS-SCHEDULE.txt"
+        }
+      ],
+      "startupSource": "==== Block 63 ====\n 0 ( PROGRAM PAGE 11-20-82         1 OF 2 )      : JOB  ;\n 1 \n 2 65 BLOCK 64 + CONSTANT  BUFADDR\n 3 \n 4 : GETNUM   0 BEGIN  SWAP DUP ROT SWAP C@ DUP DUP 47 >\n 5            SWAP 58 < AND WHILE  48 - SWAP 10 * +  SWAP 1+ SWAP\n 6            REPEAT DROP ;        ( ADDR - NUM  ON STACK )\n 7 \n 8 : BLNKBURN   BEGIN DUP C@ 32 = WHILE 1+ REPEAT ; ( ADDR STACK )\n 9 : TIMES   PAGE .\" HERE ARE THE  TIMES \"  CR CR  BUFADDR GETNUM\n10           . CR BLNKBURN GETNUM . CR BLNKBURN  GETNUM  . CR  BLNK",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
