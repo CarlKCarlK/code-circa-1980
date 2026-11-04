@@ -1,6 +1,6 @@
 {
-  "official_title": "Two Player Trail Game",
-  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "official_title": "Blockade Robot",
+  "title_authority": "Title from the Games Diskette menu (HELP.BAS). Earlier recovery label: Two Player Trail Game. Recovered text and filenames are unchanged.",
   "import_date": "2026-11-03",
   "order_inferred": true,
   "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
@@ -65,6 +65,44 @@
       },
       "recovery_inventory": "tapes/recovered/tape15b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "disk": "BASIC Programs Games",
+      "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+      "source": "files/BLOCKRB.BAS",
+      "imported_files": [
+        {
+          "path": "versions/v02/BLOCKRB.BAS",
+          "archive_path": "files/BLOCKRB.BAS",
+          "bytes": 1886,
+          "sha256": "9f59764f203e06e5b9d4d5a92f85a93384900cf70f9a739da52d2e4e69fd0620"
+        },
+        {
+          "path": "versions/v02/BLOCKRB.ASC",
+          "archive_path": "derived listing",
+          "bytes": 2246,
+          "sha256": "7b79826649031a28576b72ecdbde1ad9667b2cbb44b7d63cc7085ab90d2af775"
+        },
+        {
+          "path": "disks/games-diskette.dmk",
+          "archive_path": "disks/BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "9f59764f203e06e5b9d4d5a92f85a93384900cf70f9a739da52d2e4e69fd0620",
+        "bytes": 1886,
+        "import_date": "2026-11-03",
+        "lines": 41,
+        "last": 1010,
+        "normal_end_marker": true,
+        "memory_base": 27205,
+        "tape_relation": "37/41 lines shared with tapes/recovered/tape15b/best/03-TWO-PLAYER-TRAIL-GAME.BAS (41 lines)"
+      }
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
