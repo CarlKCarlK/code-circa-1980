@@ -1,0 +1,76 @@
+{
+  "id": "screenfun",
+  "title": "Screen Fun",
+  "description": "A graphics drawing program, dated 10-12-82.",
+  "kind": "MMSFORTH",
+  "language": "MMSFORTH V2.0, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Screen Fun (blocks 70-71)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v01/SCREENFUN.bin",
+      "listing": "versions/v01/SCREENFUN.txt",
+      "playable": true,
+      "note": "Source blocks copied unchanged from the New Programs disk. The player boots the Forth System disk and loads them with the original commands. Checked to its first screen only.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v01/SCREENFUN.bin",
+          "label": "SCREENFUN.bin"
+        },
+        {
+          "path": "versions/v01/SCREENFUN.txt",
+          "label": "SCREENFUN.txt"
+        }
+      ],
+      "startupSource": "==== Block 70 ====\n 0 ( 10-12-82     SCREEN FUN ---   1  OF  2      )  : TASK ;\n 1 : GRPHCS  .\" IS GRAPHICS LOADED IN \" Y/N  IF 20 LOAD THEN  ;\n 2 PAGE GRPHCS  : PAU 1000 0 DO DUP DROP  LOOP  ;\n 3 VARIABLE PEN   77 PEN !  VARIABLE X 64 X ! VARIABLE Y 24 Y !\n 4 : ROW    128 0 DO DUP I ESET LOOP ; ( ONE   PARAMETER   )\n 5 : BLCK   SWAP DO I ROW LOOP  ;  ( TWO PARAMETERS         )\n 6 : MARK   PEN @ 68 = IF Y @ X @ ESET ELSE PEN @ 69 =\n 7          IF Y @ X @ ECLR THEN       THEN    ;\n 8 : DRAW 68 PEN ! 68 CURSOR ! ; : IRASE 69 PEN ! 69 CURSOR ! ;\n 9 : SX 128 + 128 MOD X !  MARK ;   : SY 48 + 48 MOD Y ! MARK ;\n10 : DOWN   Y @ 1+ SY ;  : UP Y @ 1- SY ;  : LEFT    X @ 1- SX ;",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/forth-system.dmk",
+          "disks/new-programs.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "HI CARL"
+          },
+          {
+            "swap": 1
+          },
+          {
+            "type": "EMPTY-BUFFERS\n"
+          },
+          {
+            "wait": "^EMPTY-BUFFERS[ ]+OK"
+          },
+          {
+            "type": "70 LOAD\n"
+          },
+          {
+            "wait": "GRAPHICS LOADED"
+          },
+          {
+            "type": "n"
+          }
+        ]
+      },
+      "running": "Running MMSFORTH from the original disks",
+      "slug": "basic"
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+  },
+  "howTo": [
+    "Read its help page and press Enter. D draws, E erases, and M moves without drawing. The arrow keys move the cursor, / Z and 1 move diagonally, C clears the screen, W fills it, H shows help, and Q quits."
+  ],
+  "quickHelp": "D draw, E erase, M move, arrow keys steer, H help, Q quit."
+}
