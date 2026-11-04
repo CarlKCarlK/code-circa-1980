@@ -1,0 +1,49 @@
+{
+  "official_title": "Growth",
+  "title_authority": "Title from the recovered source or a descriptive display title; recovered text is unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "saves": [
+    {
+      "version": "v01",
+      "disk": "MMSFORTH New Programs",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+      "source": "blocks 34-40",
+      "imported_files": [
+        {
+          "path": "versions/v01/GROWTH.bin",
+          "archive_path": "blocks 34-40",
+          "bytes": 7168,
+          "sha256": "9e590f3eb7d6b0aaa9dad3cbd424215cef0358edfe0a880bf8b289beb81b109d"
+        },
+        {
+          "path": "versions/v01/GROWTH.txt",
+          "archive_path": "derived listing",
+          "bytes": 4873,
+          "sha256": "ed38aaeb018f4fda373174f051ec55051eb3727e0b69805e410172aa9024e487"
+        },
+        {
+          "path": "disks/forth-system.dmk",
+          "archive_path": "disks/Miller Microcomputer Services MMSFORTH System Disk - Forth System [Special Format][MMSForth v2.0][Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "86f612b2359c2b04d355e6932ca853ada57fdb4f2e4c59dd02579cce37cb52a3"
+        },
+        {
+          "path": "disks/new-programs.dmk",
+          "archive_path": "disks/Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "9e590f3eb7d6b0aaa9dad3cbd424215cef0358edfe0a880bf8b289beb81b109d",
+        "bytes": 7168,
+        "import_date": "2026-11-03",
+        "first_block": 34,
+        "last_block": 40
+      }
+    }
+  ]
+}

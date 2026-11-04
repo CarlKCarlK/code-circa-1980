@@ -1,0 +1,76 @@
+{
+  "id": "growth",
+  "title": "Growth",
+  "description": "A two-player board game: dice rolls and chosen strategies grow X and O until the board holds 64 pieces.",
+  "kind": "MMSFORTH",
+  "language": "MMSFORTH V2.0, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Growth (blocks 34-40)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v01/GROWTH.bin",
+      "listing": "versions/v01/GROWTH.txt",
+      "playable": true,
+      "note": "Source blocks copied unchanged from the New Programs disk. The player boots the Forth System disk and loads them with the original commands. Checked to its first screen only.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v01/GROWTH.bin",
+          "label": "GROWTH.bin"
+        },
+        {
+          "path": "versions/v01/GROWTH.txt",
+          "label": "GROWTH.txt"
+        }
+      ],
+      "startupSource": "==== Block 34 ====\n 0 ( \"GROWTH\"  ---  TWO PLAYER GAME  PAGE 1  OF 7  )\n 1 \n 2 : LDRND  CR .\" IS RANDOM LOADED \" Y/N IF 53 LOAD THEN ;   LDRND\n 3     15360  CONSTANT SKREEN               VARIABLE  STRAT\n 4          VARIABLE NUMBR           VARIABLE PIECE\n 5            0 NUMBR !                 0 PIECE !\n 6 \n 7 : ROLL-DICE     8 RND   8 RND   ;\n 8 : BPOS-MLOC     3 +   64 *   SWAP 4 *   10 +  + SKREEN +  ;\n 9 : RMLOC         ROLL-DICE   BPOS-MLOC    ;\n10 ",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/forth-system.dmk",
+          "disks/new-programs.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "HI CARL"
+          },
+          {
+            "swap": 1
+          },
+          {
+            "type": "EMPTY-BUFFERS\n"
+          },
+          {
+            "wait": "^EMPTY-BUFFERS[ ]+OK"
+          },
+          {
+            "type": "34 LOAD\n"
+          },
+          {
+            "wait": "IS RANDOM LOADED"
+          },
+          {
+            "type": "n"
+          }
+        ]
+      },
+      "running": "Running MMSFORTH from the original disks",
+      "slug": "basic"
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+  },
+  "howTo": [
+    "At WHICH STRATEGY each player picks a number from the choices shown, then press Enter to keep the current value. Higher numbers grow faster but carry their own risks. The pieces then grow by themselves; press the keys the game shows to change strategy."
+  ],
+  "quickHelp": "Pick a strategy number when asked; the board then grows by itself."
+}
