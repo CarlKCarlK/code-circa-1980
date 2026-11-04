@@ -3,29 +3,29 @@
     {
       "id": "v1",
       "path": "argyle-88/v1/",
-      "label": "Original cassette archive",
+      "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "b28a4b990f2a300f358e70c4955d3f9a87394e30",
+      "sourceCommit": "0633c47c122e1f096e5f0c00ac52caaecc2d48fd",
       "files": [
+        {
+          "path": "assets/01-ARGYLE-88-DDdoUfaA.BAS",
+          "bytes": 3613,
+          "sha256": "1f4d3730088e788d29d3d54c0a6c5583828144c8aacd5f079f552cf4d182c90a"
+        },
+        {
+          "path": "assets/01-ARGYLE-88-gKwz4SiV.ASC",
+          "bytes": 4271,
+          "sha256": "a48ce7a04a68df3e50d5b370ac3d6871ed95a93d5e731ab02d1fb75a6d6de1c3"
+        },
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
           "bytes": 327,
           "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
         },
         {
-          "path": "assets/archive-gallery-Cr0q0rfj.svg",
-          "bytes": 547,
-          "sha256": "0c02294b84355a66fb22c7f3a14d9fd2bcaba28513e95a25c19147c8bdb7beeb"
-        },
-        {
-          "path": "assets/ARGYLE-88-DDdoUfaA.BAS",
-          "bytes": 3613,
-          "sha256": "1f4d3730088e788d29d3d54c0a6c5583828144c8aacd5f079f552cf4d182c90a"
-        },
-        {
-          "path": "assets/ARGYLE-88-gKwz4SiV.ASC",
-          "bytes": 4271,
-          "sha256": "a48ce7a04a68df3e50d5b370ac3d6871ed95a93d5e731ab02d1fb75a6d6de1c3"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
           "path": "assets/cave-gallery-CUdWAr_1.svg",
@@ -43,14 +43,24 @@
           "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
         },
         {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
+        },
+        {
           "path": "assets/dungeon-gallery-iVVwbTI4.svg",
           "bytes": 557,
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CGCsbXtC.js",
-          "bytes": 286265,
-          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+          "path": "assets/emulator-jrauqViQ.js",
+          "bytes": 316923,
+          "sha256": "ce02ad85e5e97a11c7efbf8177a122fd59a2176605935f5a166ffe234e561fc9"
+        },
+        {
+          "path": "assets/games-diskette-GBfXwjGC.dmk",
+          "bytes": 228496,
+          "sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -58,14 +68,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-DKrV230I.css",
-          "bytes": 25510,
-          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+          "path": "assets/index-BHExd-TG.css",
+          "bytes": 25791,
+          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
         },
         {
-          "path": "assets/index-QIh9IRFd.js",
-          "bytes": 29464,
-          "sha256": "bd5b78bbfcf58db20202b4232f1a4a9e9a6afbba77063ccc4fbdd83e4db1b0d8"
+          "path": "assets/index-DlpK6F81.js",
+          "bytes": 31631,
+          "sha256": "f1ce3c5ca29a96dd98d26c9ac4b9baf0c1ad81c6f6ddff3b552805e3ee9ff30e"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -138,9 +148,19 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-BCrYrui-.json",
-          "bytes": 5758,
-          "sha256": "bfa79b6f56e448b497f4a7e96d9e996d7bef58037b3379c1e87f8d4b3a68adf8"
+          "path": "assets/provenance-CufSQ_VA.json",
+          "bytes": 7377,
+          "sha256": "66d17ce925165fd42037e8482a79d9c91167753161d226532d9de7f4fd6185a7"
+        },
+        {
+          "path": "assets/QUORUM-DLGr7xKq.BAS",
+          "bytes": 3660,
+          "sha256": "31c5a202a3106038604b3c998f5ea4b43ac1ac590148eff4a5bf74fcf7753114"
+        },
+        {
+          "path": "assets/QUORUM-DumMEuCl.ASC",
+          "bytes": 4327,
+          "sha256": "503f00323c001504a38b2356bd811f428791a2a8ed78774fe7b7ff7fd94c6695"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -198,6 +218,11 @@
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
         },
         {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
+        },
+        {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
           "bytes": 545,
           "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
@@ -215,7 +240,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "860c1cde83dab29ee5e4536614c14efb0256a3073f856ba9ca548534c815d60c"
+          "sha256": "b6994a8943b3103e94a39ca31401d2fecc4ab5d2e6c13eef85f8e030347f67b4"
         },
         {
           "path": "licenses.txt",
