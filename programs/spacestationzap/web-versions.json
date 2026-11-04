@@ -5,7 +5,7 @@
       "path": "spacestationzap/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "a949caf5f4f28927871363ab730e1d873c78423d",
+      "sourceCommit": "20f3bc28dc7df53a2068992b38b0f40adfece1d4",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-bCuEZ7QE.js",
+          "path": "assets/emulator-B0qWPa-h.js",
           "bytes": 316923,
-          "sha256": "96afb8d59de2c8afc83faee3c5a3334cf513ff9ba6fc871afdd582b9af19c16a"
+          "sha256": "f670c1a59b2d5772a32aca9b173f36d42646d9a0d69bd2e9a1732f1f0a95e51a"
         },
         {
           "path": "assets/forth-system-DLZLKAFv.dmk",
@@ -58,14 +58,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-741RNXu7.js",
+          "bytes": 30379,
+          "sha256": "0ae48aed7336b2a3482321e07fd9a2aff8835cee86bab65de2fdb5da018068e7"
         },
         {
-          "path": "assets/index-BTilSNZm.js",
-          "bytes": 30173,
-          "sha256": "d1c9b817edbaef9310cad57722dce418946260ddb987646a41f944253a3331ed"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -235,7 +235,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "aa335dd8df0691603a69b0e5037fa65e24edf247fe87376f761c6ac979c07334"
+          "sha256": "6fe7a5d50ae2a5dd5946e3adca8ccfd57bc94fec82251e76dfeadaea913ef30a"
         },
         {
           "path": "licenses.txt",
