@@ -58,7 +58,7 @@ test('cancelling clears and saves preserves layout; named PNG downloads',async({
  page.once('dialog',dialog=>dialog.accept('my bridge.png'));const download=page.waitForEvent('download');await page.getByRole('button',{name:'Save as image',exact:true}).click();expect((await download).suggestedFilename()).toBe('my bridge.png');expect(await snapshot(page)).toEqual(before);
  page.once('dialog',dialog=>dialog.accept());await page.getByLabel('Starting scene').selectOption('blank');
  const after=await snapshot(page);expect(after).not.toEqual(before);
- await page.getByRole('link',{name:'Collection',exact:true}).click();await page.goBack();
+ await page.getByRole('link',{name:'Gallery',exact:true}).click();await page.goBack();
  await expect(page.locator('#status')).toContainText('Building');expect(await snapshot(page)).toEqual(after);
 });
 test('full screen retains Help, phase action, pause and exit in both implementations',async({page})=>{

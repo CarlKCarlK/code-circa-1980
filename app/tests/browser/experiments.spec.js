@@ -10,7 +10,7 @@ for(const [id,title] of [['rickyrat','Ricky Rat'],['pinball','Pinball'],['logic'
  await expect(page.locator('.version-picker,.web-version-nav')).toHaveCount(0);
  const raw=await page.getByRole('link',{name:'Download original payload',exact:true}).getAttribute('href');
  const response=await page.request.get(raw);expect(response.ok()).toBe(true);
- await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();
+ await page.locator('.player-header').getByRole('link',{name:'Gallery',exact:true}).click();
  await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
  await expect(page.locator('.version-picker')).toHaveCount(0);
  expect(errors).toEqual([]);

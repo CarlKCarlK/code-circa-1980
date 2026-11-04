@@ -490,6 +490,14 @@ Security rule set, and commercial programs out unless the user asks. Pages with
 disk saves thank Ira Goldklang, who transferred the diskettes (`diskThanks`). GPS's two
 reconstructed functions are typed at startup; never add them to recovered bytes.
 
+### Gallery link and site-wide releases (November 4, 2026)
+
+The player's back link now says Gallery. `node app/scripts/release-all.mjs` froze this
+across the site: More v1s refreshed in place, and LIFE and the main gallery got new
+versions. Older frozen versions still say Collection. A release now bundles only its own
+sources, and VirtualT only for Model 100, in `app/config/archive-release.js`. SPI and
+AIM also bundle each other's release lists, because their selector links them.
+
 ### Defuse, formerly Bomb (November 4, 2026)
 
 The user renamed Bomb to **Defuse**, being nervous about the old name. Everything a

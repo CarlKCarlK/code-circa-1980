@@ -10,7 +10,7 @@ test('More contains twenty-seven readable cards and all six new direct player li
 for(const id of ['worm','peoria','pendulum','sentences','learningttt','spi'])test(`${id}: frozen web v1 starts directly with source downloads and returns to More`,async({page})=>{
  test.setTimeout(60000);await page.goto(`/${id}/v1/?test`);await expect(page.locator('#display canvas')).toHaveCount(1);expect(new URL(page.url()).hash).toBe('');await expect(page.locator('#status')).toContainText(id==='learningttt'?'Running adapted BASIC':'Running original BASIC');
  const link=page.getByRole('link',{name:id==='learningttt'?'Download BASIC payload':'Download original payload',exact:true});expect((await page.request.get(await link.getAttribute('href'))).ok()).toBe(true);
- await page.locator('.player-header').getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
+ await page.locator('.player-header').getByRole('link',{name:'Gallery',exact:true}).click();await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
 });
 
 for(const release of [false,true])test(`Worm One ${release?'web v1':'development'}: article links and optional 20× pacing preserve pause and restart`,async({page})=>{

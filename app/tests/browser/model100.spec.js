@@ -51,5 +51,5 @@ for(const [id,prompt]of [['jab','layout?'],['life-backwards','Setting up'],['str
 test('Model 100 player fits a narrow screen and navigation stops the machine',async({page})=>{
  await page.setViewportSize({width:390,height:900});await open(page,'jab');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
- await page.getByRole('link',{name:'Collection',exact:true}).click();await expect(page.locator('iframe')).toHaveCount(0);
+ await page.getByRole('link',{name:'Gallery',exact:true}).click();await expect(page.locator('iframe')).toHaveCount(0);
 });

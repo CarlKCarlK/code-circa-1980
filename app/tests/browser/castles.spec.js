@@ -63,7 +63,7 @@ test('original v05 builds a tower, fires, pauses, releases keys and restarts',as
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().held)).toEqual([]);
  await page.keyboard.up('1');
  // Navigation outside the focused display must not be captured by the emulator.
- await page.getByRole('link',{name:'Collection',exact:true}).click();
+ await page.getByRole('link',{name:'Gallery',exact:true}).click();
  await expect(page.locator('canvas')).toHaveCount(0);
  expect(await page.evaluate(()=>window.__circaPlayer)).toBeUndefined();
  expect(errors).toEqual([]);
@@ -142,6 +142,6 @@ test('TypeScript follows the instructions, builds, bombards, pauses and restarts
  expect(await page.evaluate(()=>window.__circaPlayer.diagnostics().held)).toEqual([]);await page.keyboard.up('1');
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
- await page.getByRole('link',{name:'Collection',exact:true}).click();
+ await page.getByRole('link',{name:'Gallery',exact:true}).click();
  await expect(page.locator('canvas')).toHaveCount(0);expect(errors).toEqual([]);
 });
