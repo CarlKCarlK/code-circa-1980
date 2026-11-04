@@ -97,7 +97,7 @@
       ]
     },
     {
-      "heading": "Quirks in the 1970s code",
+      "heading": "Quirks in the code",
       "items": [
         "A bid equal to the current one is accepted, even though the game asks for a raise.",
         "If you call before any bid, you lose: the computer’s number is always above 0.",
