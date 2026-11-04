@@ -61,6 +61,35 @@
         "first_block": 30,
         "last_block": 36
       }
+    },
+    {
+      "version": "v03",
+      "disk": "MMSFORTH Knowledge Base",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - Knowledge Base [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "6753aa138f22fc86922f1a869abc7c1c9f2e60eeab0a7795f1bd3460c06780d0",
+      "source": "blocks 40-43",
+      "imported_files": [
+        {
+          "path": "versions/v03/TIC-TAC-TOE.bin",
+          "archive_path": "blocks 40-43",
+          "bytes": 4096,
+          "sha256": "415368471d5db7e26aa0cf7ba7670208abe1fdceeea9a285d489c1b9fcc1aad5"
+        },
+        {
+          "path": "versions/v03/TIC-TAC-TOE.txt",
+          "archive_path": "derived listing",
+          "bytes": 1316,
+          "sha256": "8bf1de3b0407c7ac3d5ade08ff7a681034a8dde0810b9bae96a0646bfbaa4386"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "415368471d5db7e26aa0cf7ba7670208abe1fdceeea9a285d489c1b9fcc1aad5",
+        "bytes": 4096,
+        "import_date": "2026-11-03",
+        "first_block": 40,
+        "last_block": 43
+      }
     }
   ]
 }

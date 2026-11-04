@@ -54,6 +54,28 @@
       ],
       "startupSource": "==== Block 30 ====\n 0 : TASK ;\n 1 RULES\n 2 ( RULE 1)\n 3 IF YOURSELF\n 4 THENHYP YOU\n 5 \n 6 IF L.C.A. YOUR PARENT\n 7 AND L.C.A. REL'S PARENT\n 8 ANDNOT YOU\n 9 THEN SIBILING\n10 ",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "Tic-Tac-Toe (blocks 40-43)",
+      "capture": "disk: MMSFORTH Knowledge Base",
+      "raw": "versions/v03/TIC-TAC-TOE.bin",
+      "listing": "versions/v03/TIC-TAC-TOE.txt",
+      "playable": false,
+      "note": "Move-choice rules.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v03/TIC-TAC-TOE.bin",
+          "label": "TIC-TAC-TOE.bin"
+        },
+        {
+          "path": "versions/v03/TIC-TAC-TOE.txt",
+          "label": "TIC-TAC-TOE.txt"
+        }
+      ],
+      "startupSource": "==== Block 40 ====\n 0 : TASK ; ( TIC-TAC-TOE)\n 1 RULES\n 2 IF BOARD IS EMPTY\n 3 ANDNOT SOMEONE CAN WIN\n 4 THENHYP MOVE TO CENTER\n 5 ANDTHEN MADE GOOD MOVE\n 6 \n 7 IF SOMEONE CAN WIN\n 8 AND I CAN WIN\n 9 THENHYP MOVE TO WIN\n10 ANDTHEN MADE GOOD MOVE",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
