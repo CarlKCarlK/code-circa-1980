@@ -5,7 +5,7 @@
       "path": "football-chase/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "53cfe5d2bc7ba3cb0feb28686b9b460bbbf8522d",
+      "sourceCommit": "e3a0818d085ed7477a903c14aebd691512185189",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-aEbFLiwI.js",
+          "path": "assets/emulator-YDpiUQ5e.js",
           "bytes": 316923,
-          "sha256": "79c5f0924eade501f5643ca5253ee3b29f5e51630298820b5a24d52a2040ecfa"
+          "sha256": "684f6eb34f2f5959436f31ef8869a1a0a4b16ea47d36ce191ed3f587fe349272"
         },
         {
           "path": "assets/FOOTBALL-CHASE-B-CMy7BY.BAS",
@@ -63,14 +63,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-CpJtnAbe.js",
+          "bytes": 29167,
+          "sha256": "9d14174a10e0f40a88cf850398eb90f667789e0a7bcd993c198ce169e1d6779a"
         },
         {
-          "path": "assets/index-CZVj-oiU.js",
-          "bytes": 28961,
-          "sha256": "13bc59c3e7dd460f9736eb3c2512ba1c6233c677463b70873d1b985619fd2864"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -225,7 +225,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "15453e1f6a569543ba739fca5587cd572b3928de3af085e726f4a350acc01dda"
+          "sha256": "4c88a1ab0655dbe1ba52debc9bef24568ca79a841411f25b3d3142a3c1cbe3bb"
         },
         {
           "path": "licenses.txt",
