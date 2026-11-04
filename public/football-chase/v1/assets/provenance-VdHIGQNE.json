@@ -1,6 +1,6 @@
 {
-  "official_title": "Football Chase",
-  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "official_title": "Football",
+  "title_authority": "Title from the Games Diskette menu (HELP.BAS). Earlier recovery label: Football Chase.",
   "import_date": "2026-11-03",
   "order_inferred": true,
   "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
@@ -76,5 +76,11 @@
       "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
     },
     "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "also_on_disk": {
+    "disk": "BASIC Programs Games",
+    "file": "FOOTBALL.BAS",
+    "sha256": "cda1069afa3053ace0b799abe78c6a916b2daeb3e8f71e08505920216ba6a021",
+    "relation": "all lines identical to tapes/recovered/tape6a/best/04-FOOTBALL-CHASE.BAS"
   }
 }
