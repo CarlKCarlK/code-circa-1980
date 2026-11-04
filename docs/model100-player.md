@@ -99,3 +99,15 @@ The eight previously unshared web v1 experiences are refreshed using the
 repository's explicit `--refresh-unshared-v1` policy, after committing source.
 Other programs' frozen releases remain unchanged. The worktree is prepared for
 review; it has not been merged into the main checkout.
+
+### Recorded verification result
+
+On November 3, 2026, all 1,015 unit checks passed, the production build passed,
+and release verification against starting commit `e68d30f` accepted all 296
+releases. The complete browser run passed 374 of 382 cases; the eight failures
+were download checks that assumed the source panel was expanded. After changing
+those tests to open the panel, all eight passed on rerun. No production player
+change was needed for that correction. All 382 cases are therefore accounted
+for across the full run and targeted rerun. The nine dedicated Model 100 cases
+passed, and an additional frozen Traveling Salesman startup check reached
+`How many cites?` with no JavaScript errors.

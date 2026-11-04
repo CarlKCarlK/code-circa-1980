@@ -6,7 +6,10 @@ for(const id of REMAINING_IDS){
  test(`${id}: frozen archive opens with credit and downloadable originals`,async({page})=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(`/${id}/v1/?test`);
   await expect(page.locator('h1')).toContainText(meta.title);await expect(page.locator('.program-attribution')).toContainText(meta.attribution.text);
-  if(meta.model==='MODEL100')await expect(page.locator('#display iframe')).toHaveCount(1);
+  if(meta.model==='MODEL100'){
+   await expect(page.locator('#display iframe')).toHaveCount(1);
+   await page.locator('.source-details > summary').click();
+  }
   else await expect(page.locator('#display canvas')).toHaveCount(meta.sourceOnly?0:1);
   const source=page.getByRole('link',{name:'Download recovered listing',exact:true});expect((await page.request.get(await source.getAttribute('href'))).ok()).toBe(true);
   const raw=page.getByRole('link',{name:'Download original payload',exact:true});expect((await page.request.get(await raw.getAttribute('href'))).ok()).toBe(true);
