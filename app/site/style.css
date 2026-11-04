@@ -84,3 +84,5 @@
 .score-panel ol{margin:0;padding-left:1.75rem}
 .score-panel li span{display:inline-block;min-width:3.5rem}
 .score-panel li span+span{font-variant-numeric:tabular-nums;text-align:right}
+
+.model100-frame{border:0;width:100%;aspect-ratio:240/64;min-width:0;background:#8fb89a;display:block}.model100-notices{grid-column:1/-1;color:#e7e7e7;font-size:12px}.model100-notices pre{white-space:pre-wrap;max-height:200px;overflow:auto}

@@ -1,0 +1,19 @@
+{
+  "project": "VirtualT headless WebAssembly port from GenX-DOS",
+  "upstream": "https://github.com/Retro-Jack/GenX-DOS",
+  "commit": "44e7aa5e3e91a99a16a302877b05abab8e5cb51d",
+  "virtualt_source": "https://git.code.sf.net/p/virtualt/code",
+  "note": "Unchanged prebuilt emulator with embedded Model 100 firmware. Headless source and build recipe retained. Core upstream revision and compiler version of the prebuilt artifact are not recorded by its publisher. Collection adapter gates JS sleep continuation to pause execution; no BASIC rewrite. Sound/printer/serial are stubbed in this upstream build.",
+  "files": {
+    "src/BUILDING-WASM.md": "7ee24dd6f59d5a379ce3e7167e4814775fba6dc85a633fe43cbed7f014083570",
+    "src/LICENSE": "948fc8f790c827cbc2fc3c7fe7e0cec49f4653c5717afc3e14d130204a14bc55",
+    "src/build.sh": "d1d2e4dfa56f119a07a3cf04c3410c3e6cb6481aea56c080dbcce055b7e65633",
+    "src/clock_headless.c": "1720cd8ea72c06fcb70c98e1bec07afa70c2070eea6dacbfc44ebe927ad5dc52",
+    "src/display_headless.c": "deafab0556d506f3b0ec47388ba1699f203f4141d8d0de5d0a2761952277e132",
+    "src/file_headless.c": "b1f96e77c86869f229edeb68b27130640da214df5931806e461decf4f1b0fcc0",
+    "src/frontend_sdl.c": "889e8ec3c39320a6fdef8aed51da8925620473e0f16ae1bef78c6356132d2233",
+    "src/stubs.c": "07358dc1f0e0e7a14f9c0803554f9cd543897006414d3baba578fbf5845fddee",
+    "virtualt.js": "c177ff4cd602f79e5ded24bfb755973d320b51c2294831e69d86de06cb89cef1",
+    "virtualt.wasm": "93fe58680b79d708032dbcda0aa5c622b1ad61c5ec1fbcf98331e290af1434b7"
+  }
+}

@@ -1,14 +1,14 @@
 {
   "id": "model-100-traveling-salesman",
   "title": "Model 100 Traveling Salesman",
-  "description": "4 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
-  "kind": "Source archive",
+  "description": "4 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v04",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -20,7 +20,7 @@
       "listing": "versions/v01/09-T.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v01/09-T-BASIC-TAPE-BLOCK.BIN",
@@ -43,7 +43,7 @@
       "listing": "versions/v02/10-T-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 12 lines through 100; exact left/right prefix agreement",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v02/10-T-BASIC-PREFIX.ASC",
@@ -92,9 +92,8 @@
       "save": 9,
       "raw": "versions/v03/09-T-BASIC-TAPE-BLOCK.BIN",
       "listing": "versions/v03/09-T.ASC",
-      "playable": false,
-      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "playable": true,
+      "note": "Recovery evidence (recorded before website runtime checks): validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes Website runtime check: The original accepts 6 cities and random sequence 1 and draws route diagrams. No optimality or exhaustive algorithm test.",
       "exports": [
         {
           "path": "versions/v03/09-T-BASIC-TAPE-BLOCK.BIN",
@@ -117,7 +116,7 @@
       "listing": "versions/v04/10-T-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 6 lines through 30; exact left/right prefix agreement",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v04/10-T-BASIC-PREFIX.ASC",
@@ -153,9 +152,11 @@
     }
   ],
   "listingLabel": "Download recovered listing",
-  "sourceOnly": true,
+  "sourceOnly": false,
   "actionVerb": "View source",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
-  }
+  },
+  "model": "MODEL100",
+  "runtimeVerification": "docs/model100-player.md"
 }

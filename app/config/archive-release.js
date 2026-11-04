@@ -10,7 +10,8 @@ export default function archiveRelease(){let program;return {
  transform(code,id){if(!program||id!==path.join(root,'app/site/catalog.js'))return;
  return `import metadata from '../../programs/${program}/program.json';
 import {archiveView} from './programs/archive.js';
-const p={...metadata,...archiveView(metadata),webVersions:[]};
+import {model100View} from './programs/model100.js';
+const p={...metadata,...(metadata.model==='MODEL100'?model100View(metadata):archiveView(metadata)),webVersions:[]};
 export const allPrograms=[p];export const programs=[];export const morePrograms=[p];
 const files=import.meta.glob('../../programs/${program}/**/*.{BAS,ASC,bin,BIN,ASM,TXT,Z80,SRC,3BN,PRG,IMG,TAP,txt}',{query:'?url',import:'default',eager:true});
 const provenance=import.meta.glob('../../programs/${program}/provenance.json',{query:'?url',import:'default',eager:true});

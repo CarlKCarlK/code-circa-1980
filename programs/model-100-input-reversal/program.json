@@ -1,8 +1,8 @@
 {
   "id": "model-100-input-reversal",
   "title": "Model 100 Input Reversal",
-  "description": "8 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
-  "kind": "Source archive",
+  "description": "8 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",
   "archiveImport": true,
@@ -20,7 +20,7 @@
       "listing": "versions/v01/16-L.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v01/16-L-BASIC-TAPE-BLOCK.BIN",
@@ -43,7 +43,7 @@
       "listing": "versions/v02/17-L.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v02/17-L-BASIC-TAPE-BLOCK.BIN",
@@ -66,7 +66,7 @@
       "listing": "versions/v03/18-L.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v03/18-L-BASIC-TAPE-BLOCK.BIN",
@@ -89,7 +89,7 @@
       "listing": "versions/v04/19-L.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v04/19-L-BASIC-TAPE-BLOCK.BIN",
@@ -112,7 +112,7 @@
       "listing": "versions/v05/16-L.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v05/16-L-BASIC-TAPE-BLOCK.BIN",
@@ -135,7 +135,7 @@
       "listing": "versions/v06/17-L.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v06/17-L-BASIC-TAPE-BLOCK.BIN",
@@ -158,7 +158,7 @@
       "listing": "versions/v07/18-L.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v07/18-L-BASIC-TAPE-BLOCK.BIN",
@@ -179,9 +179,8 @@
       "save": 19,
       "raw": "versions/v08/19-L-BASIC-TAPE-BLOCK.BIN",
       "listing": "versions/v08/19-L.ASC",
-      "playable": false,
-      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "playable": true,
+      "note": "Recovery evidence (recorded before website runtime checks): validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes Website runtime check: The original accepts .X and Enter and prints reversed bits 1 0 and numeric value 2. Pause, Help, focus isolation, key release, and restart were checked.",
       "exports": [
         {
           "path": "versions/v08/19-L-BASIC-TAPE-BLOCK.BIN",
@@ -197,9 +196,11 @@
     }
   ],
   "listingLabel": "Download recovered listing",
-  "sourceOnly": true,
+  "sourceOnly": false,
   "actionVerb": "View source",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
-  }
+  },
+  "model": "MODEL100",
+  "runtimeVerification": "docs/model100-player.md"
 }

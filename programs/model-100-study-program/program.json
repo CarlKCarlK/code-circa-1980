@@ -1,8 +1,8 @@
 {
   "id": "model-100-study-program",
   "title": "Model 100 Study Program",
-  "description": "2 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
-  "kind": "Source archive",
+  "description": "2 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",
   "archiveImport": true,
@@ -20,7 +20,7 @@
       "listing": "versions/v01/07-T.ASC",
       "playable": false,
       "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v01/07-T-BASIC-TAPE-BLOCK.BIN",
@@ -41,9 +41,8 @@
       "save": 7,
       "raw": "versions/v02/07-T-BASIC-TAPE-BLOCK.BIN",
       "listing": "versions/v02/07-T.ASC",
-      "playable": false,
-      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "playable": true,
+      "note": "Recovery evidence (recorded before website runtime checks): validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; exact left/right bytes Website runtime check: Setup reaches the lesson prompt. No matching complete lesson document is installed, so a study session is not available.",
       "exports": [
         {
           "path": "versions/v02/07-T-BASIC-TAPE-BLOCK.BIN",
@@ -59,9 +58,11 @@
     }
   ],
   "listingLabel": "Download recovered listing",
-  "sourceOnly": true,
+  "sourceOnly": false,
   "actionVerb": "View source",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
-  }
+  },
+  "model": "MODEL100",
+  "runtimeVerification": "docs/model100-player.md"
 }

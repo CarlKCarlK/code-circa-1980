@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {decodeBasicProgram} from 'trs80-base';
+import {model100Payload} from '../site/model100-payload.js';
 
 const root=new URL('../../programs/',import.meta.url);
 for(const name of fs.readdirSync(root)){
@@ -45,7 +46,11 @@ for(const name of fs.readdirSync(root)){
         const listing=fs.readFileSync(new URL(version.listing,folder),'utf8');
         assert.equal(decodeBasicProgram(bytes).asAscii().replaceAll('\r\n','\n').trimEnd(),listing.replaceAll('\r\n','\n').trimEnd());
       }
-      if(version.playable){assert.ok(save.recovery_item.normal_end_marker);assert.equal(save.inventory_row['recovery%'],'100');assert.doesNotMatch(save.inventory_row.platform,/Model 100|Commodore|Pocket/);}
+      if(version.playable){
+        assert.equal(save.inventory_row['recovery%'],'100');
+        if(metadata.model==='MODEL100'){assert.match(save.inventory_row.platform,/Model 100/);model100Payload(bytes);}
+        else{assert.ok(save.recovery_item.normal_end_marker);assert.doesNotMatch(save.inventory_row.platform,/Model 100|Commodore|Pocket/);}
+      }
       else assert.ok(version.unavailableReason);
       return;
     }
