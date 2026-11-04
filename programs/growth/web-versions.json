@@ -5,7 +5,7 @@
       "path": "growth/v1/",
       "label": "Web experience v1",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-IkIjxXbX.js",
+          "path": "assets/emulator-BYkN_qgI.js",
           "bytes": 316994,
-          "sha256": "b6919be482b4413bbb0a828116aaead8de35e2352336d0632fb1c3f348f7cdda"
+          "sha256": "ebf4a986144d3009ab3ba6ba2d369909de09256177ccec50460e5ba1e7e8612d"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/forth-system-DLZLKAFv.dmk",
@@ -78,14 +83,14 @@
           "sha256": "ed38aaeb018f4fda373174f051ec55051eb3727e0b69805e410172aa9024e487"
         },
         {
+          "path": "assets/index-C0YQKbh-.js",
+          "bytes": 38680,
+          "sha256": "b9295508ac1d96baed31425029aa0375155d0f28e729112ee0db2771bbe5fed7"
+        },
+        {
           "path": "assets/index-ClZaHYYP.css",
           "bytes": 26158,
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
-        },
-        {
-          "path": "assets/index-DVJr-qcj.js",
-          "bytes": 36596,
-          "sha256": "6b51ec54484267bc27e02d97100f70cd2e773f8d9b0214c9de4c65f92d030069"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -111,6 +116,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -249,8 +259,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2275,
-          "sha256": "0c4bbd08f6c2269062042c91c9189a1baf3880f35068a290be4ba16cc57900a2"
+          "bytes": 2290,
+          "sha256": "71da1eafd3def7c592b78f61c5ebf0affef23c24201a479c0f6923636e805ec0"
         },
         {
           "path": "licenses.txt",

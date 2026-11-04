@@ -5,7 +5,7 @@
       "path": "three-dimensional-trail-game/v1/",
       "label": "Web experience v1",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/04-THREE-DIMENSIONAL-TRAIL-GAME-KcAeEh_h.ASC",
@@ -63,9 +63,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BZXoNS6n.js",
+          "path": "assets/emulator-DCqhOpBX.js",
           "bytes": 316994,
-          "sha256": "bef98ef12579483e59e8e285ca1cd2c3d38210d642ffcbb64e1beefa6e80457d"
+          "sha256": "a63e8042aef7e4b5ddc13fb138051299f6f87b8c6dc1f4b3440ad6987bdd0bb2"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -78,9 +83,9 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BPh9FxE6.js",
-          "bytes": 37253,
-          "sha256": "fc8b3104be245b9ed941eaa709e749a366e0a63618214715a16f98db2d0ad0e7"
+          "path": "assets/index-B4MG2BvI.js",
+          "bytes": 39337,
+          "sha256": "25bcdd0d742dec5bbb8110f9bad4468b401b31fe43b1bf144f7674b73ef56fd6"
         },
         {
           "path": "assets/index-ClZaHYYP.css",
@@ -111,6 +116,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -244,8 +254,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2312,
-          "sha256": "08209f6a126da08a5e42116c2680aca1702bc5604b1cf564f00db84d20de4a2f"
+          "bytes": 2323,
+          "sha256": "dfb52c00a42dffbd46b26a1bd9a5d68d2e24ac9dc8ac5eab228296e0ccd0f6aa"
         },
         {
           "path": "licenses.txt",

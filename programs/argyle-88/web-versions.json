@@ -5,7 +5,7 @@
       "path": "argyle-88/v1/",
       "label": "Web experience v1",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/01-ARGYLE-88-DDdoUfaA.BAS",
@@ -53,9 +53,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-DjUcLoL3.js",
+          "path": "assets/emulator-WyHjNRgI.js",
           "bytes": 316994,
-          "sha256": "af0ba90d5f95cd3f5f89d840892677bf8d37d4ec1ce0b651f5fc9f87b685f14e"
+          "sha256": "5bc08c515ad96b6c5e14413cfd7a579dfa42b84444579cf06f39379afd051641"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -68,9 +73,9 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BdjAlnbm.js",
-          "bytes": 37243,
-          "sha256": "eeb963c6651db2186057e50c29bf3dbca0a1b1f96fa13a0e22d901a7077e6809"
+          "path": "assets/index-BAmVDzVj.js",
+          "bytes": 39327,
+          "sha256": "e70f02def723ad46b9aa8753f61d5f94b249f2499da90d4e3146655d17993495"
         },
         {
           "path": "assets/index-ClZaHYYP.css",
@@ -101,6 +106,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -244,8 +254,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2309,
-          "sha256": "37b453dc9004a4017a5dbaf9a9eaa9817f0e43c0dc4179ce3e9cdbe00547dc39"
+          "bytes": 2320,
+          "sha256": "78c8d42b241d3f9bc74759497866dec09cd622475d9471146ab9168f66acb6a3"
         },
         {
           "path": "licenses.txt",

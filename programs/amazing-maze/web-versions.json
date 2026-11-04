@@ -5,7 +5,7 @@
       "path": "amazing-maze/v1/",
       "label": "Web experience v1",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/02-AMAZING-MAZE-B4e7pzcy.ASC",
@@ -16,6 +16,46 @@
           "path": "assets/02-AMAZING-MAZE-C6zsLhW4.BAS",
           "bytes": 2944,
           "sha256": "83d375d80fc2a3b60dd9978f9c62cc35411436cd38674a2195d9bd503066a780"
+        },
+        {
+          "path": "assets/03-AMAZING-MAZE-V1-BUR_iVT_.ASC",
+          "bytes": 4740,
+          "sha256": "97b4f09157538fff51805b40dbbee5f43f132610ec2c99fc4401ec47b70a1384"
+        },
+        {
+          "path": "assets/03-AMAZING-MAZE-V1-BwuJHP9m.BAS",
+          "bytes": 3878,
+          "sha256": "eb5d5a929f6ca18df105ef5adb7ad0fdb36811f6577aa2c7eef612af43547086"
+        },
+        {
+          "path": "assets/04-AMAZING-MAZE-V2-C4gX86rT.BAS",
+          "bytes": 4142,
+          "sha256": "412a9c9b4d37348ac5891eb4f6e9ecd45b41cd38b78d44e04fd0277b4b1c6455"
+        },
+        {
+          "path": "assets/04-AMAZING-MAZE-V2-Ci2hzfKt.ASC",
+          "bytes": 5037,
+          "sha256": "eefbcbb3e6d4f05c7b6f83f883e55b4db48477c9225dc0d59bd91e302e85863b"
+        },
+        {
+          "path": "assets/05-AMAZING-PROGRAM-Bs5WA_0u.BAS",
+          "bytes": 3619,
+          "sha256": "6fb58cdb7df130515979fcaeb91fac90a8705b707948a7ef56d113fabf8102a6"
+        },
+        {
+          "path": "assets/05-AMAZING-PROGRAM-DF5CN1dT.ASC",
+          "bytes": 4441,
+          "sha256": "ac1365ed106681f39bb33722b2bc307563608d95db5299dce69e7da33b542499"
+        },
+        {
+          "path": "assets/06-AMAZING-DUNGEON-AND-MAZE-B2UuNPhD.BAS",
+          "bytes": 2769,
+          "sha256": "9c1f5c347474be1f4e54d2ffa63600dc3ec1434094a4273354d98ac152f97d31"
+        },
+        {
+          "path": "assets/06-AMAZING-DUNGEON-AND-MAZE-Cnx2r7RQ.ASC",
+          "bytes": 3372,
+          "sha256": "f81a291ca881c86fa44925b236f4a6496b1858ddac6075c2c5561ab806823d52"
         },
         {
           "path": "assets/14-AMAZING-PROGRAM-MAZE-DOfdiM9o.ASC",
@@ -98,9 +138,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-ORA6sE6w.js",
+          "path": "assets/emulator-DUzv4EBy.js",
           "bytes": 316994,
-          "sha256": "3bd423dc0998bc12e52a231dc0316d5b713d5a8dda8bcf22dcc9d9bf18a590d5"
+          "sha256": "33426c578976bb4dc0bdfd884ed3e3d42ee83f6a8ff9e0fa88ed3419b2d2b895"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -113,14 +158,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
+          "path": "assets/index-aIslVcMt.js",
+          "bytes": 51847,
+          "sha256": "9afe3767cf73e8cf5bd77baddc9033dc644dd663c004210573780580ba4a1630"
+        },
+        {
           "path": "assets/index-ClZaHYYP.css",
           "bytes": 26158,
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
-        },
-        {
-          "path": "assets/index-DnwPmrzl.js",
-          "bytes": 42764,
-          "sha256": "75ef89cc4ca8c230a9cc2e8f2132c2ba27c7695cc5bc930695cdb399ff7fbd6b"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -146,6 +191,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -213,9 +263,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-C1jcDcvq.json",
-          "bytes": 17045,
-          "sha256": "210553cf277e54bfee52c04dfd8e0b0a3f319915104376e2066c7829b84cb45f"
+          "path": "assets/provenance-Bix286jC.json",
+          "bytes": 20493,
+          "sha256": "3e5daa1b586d8478b2c8a5fed7c3347c74607da08698f0330fb76ba5f2a04598"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -299,8 +349,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2281,
-          "sha256": "87ba9cf6b362bab3849cfcc5d343c9ac37cc9a102e3e983da275072268314caa"
+          "bytes": 2372,
+          "sha256": "da41033fc856b2128c36ca4763a82797dea296162d958660892f218ef06279f0"
         },
         {
           "path": "licenses.txt",

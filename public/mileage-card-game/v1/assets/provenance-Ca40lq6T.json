@@ -1,0 +1,224 @@
+{
+  "official_title": "Mille Bornes Card Game",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Mileage Card Game",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape17b",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.BAS",
+      "archive_listing": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+          "archive_path": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+          "bytes": 7566,
+          "sha256": "8c8a08066f3b988c7205308ccf2a3245f6dcc761a818ee3dc578a4e12290e591"
+        },
+        {
+          "path": "versions/v01/05-MILEAGE-CARD-GAME-SAVE05.BAS",
+          "archive_path": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.BAS",
+          "bytes": 6446,
+          "sha256": "023ea2c3232a27a86d3271b0b8fc457ab4d5b0e4b346fca610d0c6daf5108b5a"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "023ea2c3232a27a86d3271b0b8fc457ab4d5b0e4b346fca610d0c6daf5108b5a",
+        "bytes": 6446,
+        "archive_validation": "163 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 163,
+        "last": 10010,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 6444,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "17",
+        "side": "b",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Mileage card game; player/computer arrays (inferred title)",
+        "capture": "tape17b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "163 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "605.768",
+        "recovered_bytes": "6446",
+        "source_file": "tapes/recovered/tape17b/best/05-MILEAGE-CARD-GAME-SAVE05.ASC",
+        "wav": "tapes/tape17b.wav",
+        "folder": "tapes/recovered/tape17b",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape17b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape17b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape17b/partial/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape17b/partial/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape17b/partial/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.ASC",
+          "bytes": 845,
+          "sha256": "7dc2a674f215293c24d89970afd357831976d9f44dd4864fb3b10c48b66ed16e"
+        },
+        {
+          "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape17b/partial/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.BIN",
+          "bytes": 740,
+          "sha256": "280d7044ebe7d653a95ddfc480ab7c10c8f0e61bb2901380aa26174b31d705e9"
+        },
+        {
+          "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-RAW.BAS",
+          "archive_path": "tapes/recovered/tape17b/partial/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-RAW.BAS",
+          "bytes": 771,
+          "sha256": "ecd1718f8a006469cbfe511e02e2a282d4b7791ac2a7a8f5752f04b025daf117"
+        },
+        {
+          "path": "versions/v02/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape17b/partial/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-UNCERTAIN.ASC",
+          "bytes": 887,
+          "sha256": "3eef186a00f3031ca82493f9973b34d6559104f81fdf3676c53f92522232dfeb"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "280d7044ebe7d653a95ddfc480ab7c10c8f0e61bb2901380aa26174b31d705e9",
+        "bytes": 740,
+        "archive_validation": "Interrupted mid-line 330; first 26 ordered records through line 320 / 740 untouched bytes agree left/right; consistent pointer base 22204; no added end marker",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "17",
+        "side": "b",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "Mileage card game; interrupted save of revised arrays (inferred title)",
+        "capture": "tape17b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged captured save; validated prefix; runtime untested",
+        "validation": "Interrupted mid-line 330; first 26 ordered records through line 320 / 740 untouched bytes agree left/right; consistent pointer base 22204; no added end marker",
+        "source_start_s": "710.909",
+        "recovered_bytes": "740",
+        "source_file": "tapes/recovered/tape17b/partial/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX.ASC",
+        "wav": "tapes/tape17b.wav",
+        "folder": "tapes/recovered/tape17b",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Better capture needed to recover missing tail"
+      },
+      "recovery_inventory": "tapes/recovered/tape17b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape17b",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape17b/best/07-MILEAGE-CARD-GAME-SAVE07.BAS",
+      "archive_listing": "tapes/recovered/tape17b/best/07-MILEAGE-CARD-GAME-SAVE07.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/07-MILEAGE-CARD-GAME-SAVE07.ASC",
+          "archive_path": "tapes/recovered/tape17b/best/07-MILEAGE-CARD-GAME-SAVE07.ASC",
+          "bytes": 9414,
+          "sha256": "563c492fad2a96c945a43d3f199585780deffb94e238b5962687fcb019cd5571"
+        },
+        {
+          "path": "versions/v03/07-MILEAGE-CARD-GAME-SAVE07.BAS",
+          "archive_path": "tapes/recovered/tape17b/best/07-MILEAGE-CARD-GAME-SAVE07.BAS",
+          "bytes": 7781,
+          "sha256": "73a4b8adbe0d2a1e66e210e04c35380091b554df03e0ae8a2eb6990d11aca217"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "73a4b8adbe0d2a1e66e210e04c35380091b554df03e0ae8a2eb6990d11aca217",
+        "bytes": 7781,
+        "archive_validation": "174 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 174,
+        "last": 10210,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 7779,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "17",
+        "side": "b",
+        "order": "7",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Mileage card game; revised arrays and scoring (inferred title)",
+        "capture": "tape17b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "174 ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "732.082",
+        "recovered_bytes": "7781",
+        "source_file": "tapes/recovered/tape17b/best/07-MILEAGE-CARD-GAME-SAVE07.ASC",
+        "wav": "tapes/tape17b.wav",
+        "folder": "tapes/recovered/tape17b",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape17b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Based on the Mille Bornes card game. The source of the program code and the extent of any borrowed implementation have not been established."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "merged_programs": [
+    {
+      "program": "mille-bornes-card-game",
+      "version": "v01",
+      "merged_version": "v04",
+      "files": {
+        "versions/mille-bornes-card-game-v01/05-MILLE-BORNES-CARD-GAME.BAS": {
+          "source": "programs/mille-bornes-card-game/versions/v01/05-MILLE-BORNES-CARD-GAME.BAS",
+          "sha256": "6d1c8b1213dccf411989700810d9a70b5aee23407c1ec9e828ce2729bde78193",
+          "bytes": 7847
+        },
+        "versions/mille-bornes-card-game-v01/05-MILLE-BORNES-CARD-GAME.ASC": {
+          "source": "programs/mille-bornes-card-game/versions/v01/05-MILLE-BORNES-CARD-GAME.ASC",
+          "sha256": "82e50d25d2601275d61ebe40d6261ec31c2a51a27605833a14c51ec60f9c095b",
+          "bytes": 9430
+        }
+      }
+    }
+  ]
+}

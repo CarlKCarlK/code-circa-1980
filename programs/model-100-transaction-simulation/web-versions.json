@@ -5,7 +5,7 @@
       "path": "model-100-transaction-simulation/v1/",
       "label": "Original Model 100 emulator",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/11-T-BASIC-TAPE-BLOCK-vxs_dzlW.BIN",
@@ -68,9 +68,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CrFkzmaR.js",
+          "path": "assets/emulator-ClkUMdQq.js",
           "bytes": 316994,
-          "sha256": "15b4cd81db0119d1c06f61e17e3600a229517d4462f78bfad5cf8f34bd4b9c7c"
+          "sha256": "dcf6080a1342853ac7e914f20204e174293ed66f1b7451701856f2344209e4bb"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -78,14 +83,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
+          "path": "assets/index-CBV8ciNH.js",
+          "bytes": 44738,
+          "sha256": "311e70e140aa973c6a3b9ba0b8b786528a62eafe82a9de648218ac403bfe1810"
+        },
+        {
           "path": "assets/index-ClZaHYYP.css",
           "bytes": 26158,
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
-        },
-        {
-          "path": "assets/index-iNXAdVwB.js",
-          "bytes": 42644,
-          "sha256": "a19917b5aa7c82c189599f4345e97c46dea98c13769e1256ed2ed6fde7983cc5"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -111,6 +116,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -259,8 +269,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2365,
-          "sha256": "809402f83b56a87480cb6c0c2e22d11b400e82e36a4fd40aeaf92783f93b2689"
+          "bytes": 2389,
+          "sha256": "8dff923b6fc7843e95c3b427a57aa0f0bf6cab7689a577b7e985205f2dddbbd9"
         },
         {
           "path": "licenses.txt",

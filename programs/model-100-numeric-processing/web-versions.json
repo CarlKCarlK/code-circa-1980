@@ -5,7 +5,7 @@
       "path": "model-100-numeric-processing/v1/",
       "label": "Original Model 100 emulator",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/14-L-BASIC-TAPE-BLOCK-DotfXBf7.BIN",
@@ -53,9 +53,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-D226mTbm.js",
+          "path": "assets/emulator-BW6oZhkP.js",
           "bytes": 316994,
-          "sha256": "58f7245814e24cf925b197e16c6e6f7854213ea6c0324c50eca6504e9d7a7cbe"
+          "sha256": "3dcff9a783df6828dedf3a51671f60a32d5094ba5a20f2a42830f4c6c9f9922e"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -68,9 +73,9 @@
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-Dz1a_egx.js",
-          "bytes": 38593,
-          "sha256": "fe7deb650a5a4601cae3e23ec788cabc9decfd56b6d62e7ac214b48f654c9428"
+          "path": "assets/index-CYdWNMXm.js",
+          "bytes": 40664,
+          "sha256": "88facb2fcdb417ba74305f3867c3b49c40c76077c8376b8261e3cec156de9538"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -96,6 +101,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -244,8 +254,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2353,
-          "sha256": "0c5c6fcf04395631a9d3db3d8432088d798b2895c0164055fa8708a1ec886fe9"
+          "bytes": 2354,
+          "sha256": "726951b47019ea597ac975b27ec0558099ece5ec65486bd6d888defa3d545ae8"
         },
         {
           "path": "licenses.txt",

@@ -5,7 +5,7 @@
       "path": "mileage-card-game/v1/",
       "label": "Original cassette archive",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/05-MILEAGE-CARD-GAME-SAVE05-BKRlPOKH.BAS",
@@ -16,6 +16,16 @@
           "path": "assets/05-MILEAGE-CARD-GAME-SAVE05-BQJ-XYkd.ASC",
           "bytes": 7566,
           "sha256": "8c8a08066f3b988c7205308ccf2a3245f6dcc761a818ee3dc578a4e12290e591"
+        },
+        {
+          "path": "assets/05-MILLE-BORNES-CARD-GAME-CZGMTXAi.ASC",
+          "bytes": 9430,
+          "sha256": "82e50d25d2601275d61ebe40d6261ec31c2a51a27605833a14c51ec60f9c095b"
+        },
+        {
+          "path": "assets/05-MILLE-BORNES-CARD-GAME-D1uvnBfS.BAS",
+          "bytes": 7847,
+          "sha256": "6d1c8b1213dccf411989700810d9a70b5aee23407c1ec9e828ce2729bde78193"
         },
         {
           "path": "assets/06-MILEAGE-CARD-GAME-SAVE06-PARTIAL-PREFIX-5r0IAjMQ.ASC",
@@ -73,9 +83,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BEgEVL3b.js",
+          "path": "assets/emulator-BL0muf9E.js",
           "bytes": 316994,
-          "sha256": "d2827ecfed30aaf9444ff088766898fa37bc61e6d3900b86f522cc0489494d62"
+          "sha256": "72137d33eb742c6d3b4965fb054ae28ee607524d5df8fbe3f8798fd210a7a30f"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -83,14 +98,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-CH_jUswO.js",
-          "bytes": 38678,
-          "sha256": "2881f01b9ea9d68791ca5aaac0187ef12d4c9814492f6b46aca17dc3f775875c"
-        },
-        {
           "path": "assets/index-ClZaHYYP.css",
           "bytes": 26158,
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
+        },
+        {
+          "path": "assets/index-M3K9pq6k.js",
+          "bytes": 42700,
+          "sha256": "258a3e1c10a85e54a8d49b18bdb5ab76f8e22a3111a1ff93bfd9eef3d7996171"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -116,6 +131,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -173,9 +193,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-0QxRWGMt.json",
-          "bytes": 9384,
-          "sha256": "26d0332c4adf8efb6894bb9f3a2337a61e92e2e6773879043025c77da68d18e6"
+          "path": "assets/provenance-Ca40lq6T.json",
+          "bytes": 10151,
+          "sha256": "816d6989286016fb4a00d43d273d46016c3d9f4cb0efdcf5274e2c470dae4619"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -259,8 +279,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2276,
-          "sha256": "0787abf1d60d4b992f3fdc4bdbe33699134462cdc318c39e307dac7914d31e69"
+          "bytes": 2358,
+          "sha256": "b790d602620e49dfebe1f40e2c95ca04c36343ae81ddac873bf6d1d85687f662"
         },
         {
           "path": "licenses.txt",

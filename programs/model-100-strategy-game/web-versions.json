@@ -5,7 +5,7 @@
       "path": "model-100-strategy-game/v1/",
       "label": "Original Model 100 emulator",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/06-S-BAiIeS1g.ASC",
@@ -53,9 +53,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-DJzPPF9l.js",
+          "path": "assets/emulator-DxQn2ZOw.js",
           "bytes": 316994,
-          "sha256": "76aae05ae59da949f848900f220235a4b0f60809fff299039972ab44ce376e3d"
+          "sha256": "6de16c3a984766c9c550306c94d66cd1d1b2ad08d6c6bcbe58541436c139f0c8"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -63,14 +68,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
+          "path": "assets/index-3ttV5HJS.js",
+          "bytes": 38479,
+          "sha256": "3e5a24ce7e056d91530117b00e96f22a24a615b381d2c634deec37424196bbd2"
+        },
+        {
           "path": "assets/index-ClZaHYYP.css",
           "bytes": 26158,
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
-        },
-        {
-          "path": "assets/index-csIBZNXp.js",
-          "bytes": 36387,
-          "sha256": "9f2777eaaf3d6348d2badd71aa585e079bae2739ca5caf6a73635202885571ec"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -96,6 +101,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -244,8 +254,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2338,
-          "sha256": "5bed01b8368d4ca84ba11aeb0d8b96f226d4bcf5f434fdb015eef0e240b2062f"
+          "bytes": 2360,
+          "sha256": "d5330405ba72dfb26a7fec4dc373477b824a54bb2bed074bdf7b5a8570dea3f5"
         },
         {
           "path": "licenses.txt",

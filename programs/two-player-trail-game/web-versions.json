@@ -5,7 +5,7 @@
       "path": "two-player-trail-game/v1/",
       "label": "Web experience v1",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/03-TWO-PLAYER-TRAIL-GAME-BKB6zzlO.BAS",
@@ -16,6 +16,16 @@
           "path": "assets/03-TWO-PLAYER-TRAIL-GAME-CLHnEv7G.ASC",
           "bytes": 2019,
           "sha256": "a5119a54eac3dbd816ff65db58425e61724125c12bbfbe9a2dcabb13b3c9d893"
+        },
+        {
+          "path": "assets/04-TWO-PLAYER-TRAIL-GAME-B3R9bsnt.BAS",
+          "bytes": 1665,
+          "sha256": "8495e1bd2207c501edb954861d9c1dec02a198f4a1656e26eecbdfe06e3612ec"
+        },
+        {
+          "path": "assets/04-TWO-PLAYER-TRAIL-GAME-Bdhsu1qd.ASC",
+          "bytes": 2013,
+          "sha256": "23e9f482a493d213469be7903ee85cee35b33ca72840dce2f9602a83a3f31fca"
         },
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -63,9 +73,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CKeld32z.js",
+          "path": "assets/emulator-aPjIcmuF.js",
           "bytes": 316994,
-          "sha256": "d79fa9911944ae159f712af5bb7c6fc5b8970ae1246ed528e4e413b205871487"
+          "sha256": "fe623e18c28081b43661c68000a3c188f0480b9e7f478b4ded6e9508e50de281"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -78,9 +93,9 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHOxf4VC.js",
-          "bytes": 36544,
-          "sha256": "fb48af679252a2ffc0271418220275c2ec40158707fe40860eff6284ee649474"
+          "path": "assets/index-BKd_rujB.js",
+          "bytes": 40632,
+          "sha256": "4179951ca6429813bad00040f91962cab45e60c973114e6f5c5d0877ced8e241"
         },
         {
           "path": "assets/index-ClZaHYYP.css",
@@ -111,6 +126,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -158,9 +178,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-B8L96mDp.json",
-          "bytes": 5288,
-          "sha256": "2a2b677983ac26792d804552bbfc1a2d14706923cd92755eb571e6ad9cbdb9e2"
+          "path": "assets/provenance-Br-RPdoI.json",
+          "bytes": 6081,
+          "sha256": "ff9cd9f56479d37c39189a4010cba7cbe5fb696b669474606d180ec823a7ce16"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -244,8 +264,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2299,
-          "sha256": "3465c70052de319db3c0cf983fbacbcae6ed6a03c7533ce28c8bf0cb00539f7a"
+          "bytes": 2367,
+          "sha256": "94cf7579f565caf0afabcb965f7d7ca621195bea175b9a5b9a5400583f107499"
         },
         {
           "path": "licenses.txt",

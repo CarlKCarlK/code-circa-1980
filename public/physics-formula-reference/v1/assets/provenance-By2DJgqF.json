@@ -1,0 +1,159 @@
+{
+  "official_title": "Physics Formula Reference",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "physics_formula_reference_p72",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape9a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape9a/best/03-PHYSICS-FORMULA-REFERENCE.BAS",
+      "archive_listing": "tapes/recovered/tape9a/best/03-PHYSICS-FORMULA-REFERENCE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-PHYSICS-FORMULA-REFERENCE.ASC",
+          "archive_path": "tapes/recovered/tape9a/best/03-PHYSICS-FORMULA-REFERENCE.ASC",
+          "bytes": 2569,
+          "sha256": "c9145b3282fa0d71331911abb74b44dd8ceb95a89e120edcbc6e0f9c7bc1a745"
+        },
+        {
+          "path": "versions/v01/03-PHYSICS-FORMULA-REFERENCE.BAS",
+          "archive_path": "tapes/recovered/tape9a/best/03-PHYSICS-FORMULA-REFERENCE.BAS",
+          "bytes": 2450,
+          "sha256": "83e850e6eab5cce4df949650fa980ff3d7b14b0b4ea02408cd64b121fa8d779c"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "83e850e6eab5cce4df949650fa980ff3d7b14b0b4ea02408cd64b121fa8d779c",
+        "bytes": 2450,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 18,
+        "last": 11000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2448,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PHYSICS FORMULA REFERENCE; 18 lines",
+        "capture": "tape9a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "source_start_s": "70.736",
+        "recovered_bytes": "2450",
+        "source_file": "tapes/recovered/tape9a/best/03-PHYSICS-FORMULA-REFERENCE.ASC",
+        "wav": "tapes/tape9a.wav",
+        "folder": "tapes/recovered/tape9a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; historical source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape9a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/04-PHYSICS-FORMULA-REFERENCE-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.ASC",
+          "bytes": 2569,
+          "sha256": "c9145b3282fa0d71331911abb74b44dd8ceb95a89e120edcbc6e0f9c7bc1a745"
+        },
+        {
+          "path": "versions/v02/04-PHYSICS-FORMULA-REFERENCE-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.BAS",
+          "bytes": 2450,
+          "sha256": "83e850e6eab5cce4df949650fa980ff3d7b14b0b4ea02408cd64b121fa8d779c"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "83e850e6eab5cce4df949650fa980ff3d7b14b0b4ea02408cd64b121fa8d779c",
+        "bytes": 2450,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 18,
+        "last": 11000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2448,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "a",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PHYSICS FORMULA REFERENCE SAVE2; 18 lines; identical to save 3",
+        "capture": "tape9a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "source_start_s": "112.329",
+        "recovered_bytes": "2450",
+        "source_file": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.ASC",
+        "wav": "tapes/tape9a.wav",
+        "folder": "tapes/recovered/tape9a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; historical source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "merged_programs": [
+    {
+      "program": "formula-lookup",
+      "version": "v01",
+      "merged_version": "v03",
+      "files": {
+        "versions/formula-lookup-v01/05-FORMULA-LOOKUP.BAS": {
+          "source": "programs/formula-lookup/versions/v01/05-FORMULA-LOOKUP.BAS",
+          "sha256": "dfdeb6d8d647f27a2ff524bc98854a2c7070e7e77e1b5de9943fa383e921fcb1",
+          "bytes": 2420
+        },
+        "versions/formula-lookup-v01/05-FORMULA-LOOKUP.ASC": {
+          "source": "programs/formula-lookup/versions/v01/05-FORMULA-LOOKUP.ASC",
+          "sha256": "9595af1bb4a7bee1e2fcea008ae4eeef6f3aea5ffff39c3de1fb7efa862bb82b",
+          "bytes": 2530
+        }
+      }
+    }
+  ]
+}

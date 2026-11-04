@@ -5,7 +5,7 @@
       "path": "model-100-study-program/v1/",
       "label": "Original Model 100 emulator",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/07-T-B5dYD8zw.ASC",
@@ -53,9 +53,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CppAshz5.js",
+          "path": "assets/emulator-CpILPAL3.js",
           "bytes": 316994,
-          "sha256": "82946aa029095829367d75295e9ecff32033f474b6538818abdccc5fdeed9e40"
+          "sha256": "326b819a4f2e99b2eda74f8b918b925adc15705b8abffc12cfe5d296b0540129"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -68,9 +73,9 @@
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-CRXrUwrX.js",
-          "bytes": 36136,
-          "sha256": "aef4d1961e8ef8a27c158a51a889e97e2be2809d80cae2bba96e727886d866e5"
+          "path": "assets/index-Vk_n36Or.js",
+          "bytes": 38217,
+          "sha256": "815a38e703153159d847173320a106a112f755b63b7d70ef330478d48b61533e"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -96,6 +101,11 @@
           "path": "assets/life-gallery-Ac-6fOCC.svg",
           "bytes": 8810,
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -244,8 +254,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2338,
-          "sha256": "3611cb1e66d6dce3cd6882f0a3beaf28c25c326f06dc6a75acf51a963927cab8"
+          "bytes": 2349,
+          "sha256": "b06d1000de51864a597696b6c5f0eb5a14b7243a853abb1564fdcecefbd8b0f2"
         },
         {
           "path": "licenses.txt",

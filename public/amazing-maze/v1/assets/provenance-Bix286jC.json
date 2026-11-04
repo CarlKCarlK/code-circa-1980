@@ -1,0 +1,482 @@
+{
+  "official_title": "Amazing Maze",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "amazing_maze_p27; maze_generator_p48",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape12b",
+      "save": 14,
+      "archive_raw": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.BAS",
+      "archive_listing": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/14-AMAZING-PROGRAM-MAZE.ASC",
+          "archive_path": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.ASC",
+          "bytes": 3413,
+          "sha256": "e93c34546b400da75db75a84447760713b37ca8277741d36cd3513c0d53ee0ae"
+        },
+        {
+          "path": "versions/v01/14-AMAZING-PROGRAM-MAZE.BAS",
+          "archive_path": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.BAS",
+          "bytes": 2768,
+          "sha256": "ea1dac48f6bfde4a94196ebc6a2d4fbd2ca5b82df9b277df3031227389b35a77"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "ea1dac48f6bfde4a94196ebc6a2d4fbd2ca5b82df9b277df3031227389b35a77",
+        "bytes": 2768,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 156,
+        "last": 4020,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2766,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "14",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "AMAZING PROGRAM MAZE; 156 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "source_start_s": "675.246",
+        "recovered_bytes": "2768",
+        "source_file": "tapes/recovered/tape12b/best/14-AMAZING-PROGRAM-MAZE.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape12b",
+      "save": 15,
+      "archive_raw": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
+      "archive_listing": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY-UNCERTAIN.ASC",
+          "bytes": 4770,
+          "sha256": "de4e871159625f7bf6de61bfadbf374ff8150f0caf89ff3c0238c897fd99e493"
+        },
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+          "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+          "bytes": 958,
+          "sha256": "08958f656832dae09dc9dd12bec7816e3059dc418c478489b0b812372116328d"
+        },
+        {
+          "path": "versions/v02/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
+          "archive_path": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.BAS",
+          "bytes": 2733,
+          "sha256": "4bf3ad63c52f5eb3585520d76ec12c62d9dd1ae30cfac44cae23463daf571e04"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "4bf3ad63c52f5eb3585520d76ec12c62d9dd1ae30cfac44cae23463daf571e04",
+        "bytes": 2733,
+        "archive_validation": "Exact 792-byte readable prefix matches three variants; full stream damaged",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "structure_conflict": true,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "15",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "AMAZING PROGRAM DAMAGED COPY; 45 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged maze-program recording",
+        "validation": "Exact 792-byte readable prefix matches three variants; full stream damaged",
+        "source_start_s": "729.878",
+        "recovered_bytes": "2733",
+        "source_file": "tapes/recovered/tape12b/partial/15-AMAZING-PROGRAM-DAMAGED-COPY.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/partial",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Consider another capture if needed; two full maze versions recovered"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/partial/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape12b",
+      "save": 16,
+      "archive_raw": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.BAS",
+      "archive_listing": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
+          "archive_path": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
+          "bytes": 3580,
+          "sha256": "fd1b68d5afd5b7bba73c6ec3d4502456289e6e844ff70912fec84c342f14ec58"
+        },
+        {
+          "path": "versions/v03/16-AMAZING-PROGRAM-GRAPHICS-V2.BAS",
+          "archive_path": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.BAS",
+          "bytes": 2944,
+          "sha256": "4c1a66962c5e20c2da05b37bf1951b38c525dcb20140b430f6721bf9a78db1b1"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "4c1a66962c5e20c2da05b37bf1951b38c525dcb20140b430f6721bf9a78db1b1",
+        "bytes": 2944,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 158,
+        "last": 4020,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2942,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "16",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "AMAZING PROGRAM GRAPHICS V2; 158 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "source_start_s": "790.597",
+        "recovered_bytes": "2944",
+        "source_file": "tapes/recovered/tape12b/best/16-AMAZING-PROGRAM-GRAPHICS-V2.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape12b",
+      "save": 17,
+      "archive_raw": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.BAS",
+      "archive_listing": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/17-AMAZING-PROGRAM-FRAGMENT.ASC",
+          "archive_path": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.ASC",
+          "bytes": 1739,
+          "sha256": "38f2ba3228e0539f8a6090f08acdd110a58a7bacb9565406e3c6dd80d1c68424"
+        },
+        {
+          "path": "versions/v04/17-AMAZING-PROGRAM-FRAGMENT.BAS",
+          "archive_path": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.BAS",
+          "bytes": 1505,
+          "sha256": "c91a8c4cf3d8651612a9a141819dbb001bb222a1f875afa1e70719c1f84c187b"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "c91a8c4cf3d8651612a9a141819dbb001bb222a1f875afa1e70719c1f84c187b",
+        "bytes": 1505,
+        "archive_validation": "Exact 1438-byte readable prefix matches three variants; full stream damaged",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "structure_conflict": true,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "17",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "AMAZING PROGRAM FRAGMENT; 81 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged maze-program recording",
+        "validation": "Exact 1438-byte readable prefix matches three variants; full stream damaged",
+        "source_start_s": "849.075",
+        "recovered_bytes": "1505",
+        "source_file": "tapes/recovered/tape12b/partial/17-AMAZING-PROGRAM-FRAGMENT.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/partial",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Consider another capture if needed; two full maze versions recovered"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/partial/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape14b",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.BAS",
+      "archive_listing": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/02-AMAZING-MAZE.ASC",
+          "archive_path": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.ASC",
+          "bytes": 3580,
+          "sha256": "fd1b68d5afd5b7bba73c6ec3d4502456289e6e844ff70912fec84c342f14ec58"
+        },
+        {
+          "path": "versions/v05/02-AMAZING-MAZE.BAS",
+          "archive_path": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.BAS",
+          "bytes": 2944,
+          "sha256": "83d375d80fc2a3b60dd9978f9c62cc35411436cd38674a2195d9bd503066a780"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "83d375d80fc2a3b60dd9978f9c62cc35411436cd38674a2195d9bd503066a780",
+        "bytes": 2944,
+        "archive_validation": "Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 158,
+        "last": 4020,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2942,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "14",
+        "side": "b",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "AMAZING MAZE; 158 lines",
+        "capture": "tape14b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
+        "source_start_s": "126.130",
+        "recovered_bytes": "2944",
+        "source_file": "tapes/recovered/tape14b/best/02-AMAZING-MAZE.ASC",
+        "wav": "tapes/tape14b.wav",
+        "folder": "tapes/recovered/tape14b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape14b/best/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v06",
+      "disk": "BASIC Programs Games",
+      "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+      "source": "files/MAZE.BAS",
+      "imported_files": [
+        {
+          "path": "versions/v06/MAZE.BAS",
+          "archive_path": "files/MAZE.BAS",
+          "bytes": 3651,
+          "sha256": "7fd119069fde7117a70bbe239d994611c91d6684537a5020d036f8e5b18f67f1"
+        },
+        {
+          "path": "versions/v06/MAZE.ASC",
+          "archive_path": "derived listing",
+          "bytes": 4366,
+          "sha256": "408b39dd9e2ef028c99ad7618434956ed86e13891bd337b1ac33d0c06ec09c6b"
+        },
+        {
+          "path": "disks/games-diskette.dmk",
+          "archive_path": "disks/BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "7fd119069fde7117a70bbe239d994611c91d6684537a5020d036f8e5b18f67f1",
+        "bytes": 3651,
+        "import_date": "2026-11-03",
+        "lines": 166,
+        "last": 4020,
+        "normal_end_marker": true,
+        "memory_base": 27205,
+        "tape_relation": "146/166 lines shared with tapes/recovered/tape14b/best/02-AMAZING-MAZE.BAS (158 lines)"
+      }
+    },
+    {
+      "version": "v07",
+      "disk": "More Voice",
+      "disk_image": "More Voice [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "f3d63ff73891368ba0381bd301d8bf447800aea3ae51e624883210cad1a21b6d",
+      "source": "files/MAZE.BAS",
+      "imported_files": [
+        {
+          "path": "versions/v07/MAZE.BAS",
+          "archive_path": "files/MAZE.BAS",
+          "bytes": 3881,
+          "sha256": "01c250695c0846b522a143de1abdad7cbfbba2510b13199e5e6c9df058f195bd"
+        },
+        {
+          "path": "versions/v07/MAZE.ASC",
+          "archive_path": "derived listing",
+          "bytes": 4672,
+          "sha256": "5a32dda1e533a229241ef5772ee136bb339a6b1a723bc00f3078d3bd6fb53c15"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "01c250695c0846b522a143de1abdad7cbfbba2510b13199e5e6c9df058f195bd",
+        "bytes": 3881,
+        "import_date": "2026-11-03",
+        "lines": 171,
+        "last": 20700,
+        "normal_end_marker": true,
+        "memory_base": 27205,
+        "tape_relation": "144/171 lines shared with tapes/recovered/tape14b/best/02-AMAZING-MAZE.BAS (158 lines)"
+      }
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Adapted from Jack Hauber’s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+      "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "upstream": [
+    {
+      "file": "docs/research/published-basic/amazing.bas",
+      "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas",
+      "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=3",
+      "sha256": "0638d75685bd0d474b9c625698287165ef297c979a9841597e33ca088e35417d",
+      "bytes": 3094,
+      "note": "Complete electronic transcription from the Vintage BASIC mirror, preserved unchanged. Matching source statements establish the comparison; exact parent edition and print transcription are not verified. Not a recovered cassette or an execution-tested program."
+    }
+  ],
+  "merged_programs": [
+    {
+      "program": "maze-generator",
+      "version": "v01",
+      "merged_version": "v08",
+      "files": {
+        "versions/maze-generator-v01/03-AMAZING-MAZE-V1.BAS": {
+          "source": "programs/maze-generator/versions/v01/03-AMAZING-MAZE-V1.BAS",
+          "sha256": "eb5d5a929f6ca18df105ef5adb7ad0fdb36811f6577aa2c7eef612af43547086",
+          "bytes": 3878
+        },
+        "versions/maze-generator-v01/03-AMAZING-MAZE-V1.ASC": {
+          "source": "programs/maze-generator/versions/v01/03-AMAZING-MAZE-V1.ASC",
+          "sha256": "97b4f09157538fff51805b40dbbee5f43f132610ec2c99fc4401ec47b70a1384",
+          "bytes": 4740
+        }
+      }
+    },
+    {
+      "program": "maze-generator",
+      "version": "v02",
+      "merged_version": "v09",
+      "files": {
+        "versions/maze-generator-v02/04-AMAZING-MAZE-V2.BAS": {
+          "source": "programs/maze-generator/versions/v02/04-AMAZING-MAZE-V2.BAS",
+          "sha256": "412a9c9b4d37348ac5891eb4f6e9ecd45b41cd38b78d44e04fd0277b4b1c6455",
+          "bytes": 4142
+        },
+        "versions/maze-generator-v02/04-AMAZING-MAZE-V2.ASC": {
+          "source": "programs/maze-generator/versions/v02/04-AMAZING-MAZE-V2.ASC",
+          "sha256": "eefbcbb3e6d4f05c7b6f83f883e55b4db48477c9225dc0d59bd91e302e85863b",
+          "bytes": 5037
+        }
+      }
+    },
+    {
+      "program": "maze-generator",
+      "version": "v03",
+      "merged_version": "v10",
+      "files": {
+        "versions/maze-generator-v03/05-AMAZING-PROGRAM.BAS": {
+          "source": "programs/maze-generator/versions/v03/05-AMAZING-PROGRAM.BAS",
+          "sha256": "6fb58cdb7df130515979fcaeb91fac90a8705b707948a7ef56d113fabf8102a6",
+          "bytes": 3619
+        },
+        "versions/maze-generator-v03/05-AMAZING-PROGRAM.ASC": {
+          "source": "programs/maze-generator/versions/v03/05-AMAZING-PROGRAM.ASC",
+          "sha256": "ac1365ed106681f39bb33722b2bc307563608d95db5299dce69e7da33b542499",
+          "bytes": 4441
+        }
+      }
+    },
+    {
+      "program": "maze-generator",
+      "version": "v04",
+      "merged_version": "v11",
+      "files": {
+        "versions/maze-generator-v04/05-AMAZING-PROGRAM.BAS": {
+          "source": "programs/maze-generator/versions/v04/05-AMAZING-PROGRAM.BAS",
+          "sha256": "6fb58cdb7df130515979fcaeb91fac90a8705b707948a7ef56d113fabf8102a6",
+          "bytes": 3619
+        },
+        "versions/maze-generator-v04/05-AMAZING-PROGRAM.ASC": {
+          "source": "programs/maze-generator/versions/v04/05-AMAZING-PROGRAM.ASC",
+          "sha256": "ac1365ed106681f39bb33722b2bc307563608d95db5299dce69e7da33b542499",
+          "bytes": 4441
+        }
+      }
+    },
+    {
+      "program": "amazing-dungeon-and-maze",
+      "version": "v01",
+      "merged_version": "v12",
+      "files": {
+        "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.BAS": {
+          "source": "programs/amazing-dungeon-and-maze/versions/v01/06-AMAZING-DUNGEON-AND-MAZE.BAS",
+          "sha256": "9c1f5c347474be1f4e54d2ffa63600dc3ec1434094a4273354d98ac152f97d31",
+          "bytes": 2769
+        },
+        "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.ASC": {
+          "source": "programs/amazing-dungeon-and-maze/versions/v01/06-AMAZING-DUNGEON-AND-MAZE.ASC",
+          "sha256": "f81a291ca881c86fa44925b236f4a6496b1858ddac6075c2c5561ab806823d52",
+          "bytes": 3372
+        }
+      }
+    }
+  ]
+}

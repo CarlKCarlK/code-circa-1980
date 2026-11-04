@@ -5,7 +5,7 @@
       "path": "gps/v1/",
       "label": "Web experience v1",
       "released": "2026-11-04",
-      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "sourceCommit": "75fa76e4c15014665f7460a5626cb483caa44e99",
       "files": [
         {
           "path": "assets/ADD-CXQOZiZz.LSP",
@@ -123,14 +123,19 @@
           "sha256": "99b850270177a1e04c703ccbd14aeb82a1a6208ffdf2443e47aca324fe7cd571"
         },
         {
-          "path": "assets/emulator-C1wQKl2q.js",
+          "path": "assets/emulator-BYHMB8PL.js",
           "bytes": 316994,
-          "sha256": "845d94bf7bed0f782cf632a4adbba134e0217745d279bb3e1b2bfbb458dee4c8"
+          "sha256": "eb40b2d7c2a6c4f52511e4e7a6a105d3fa49e9d3d626241641a4ebf9aec74bcd"
         },
         {
           "path": "assets/EQFRONTI-YfxItvcK.LSP",
           "bytes": 384,
           "sha256": "96824af09d5e4a0acc189d11ab475407d3f9d8d16417904d247c4e94b656b8d3"
+        },
+        {
+          "path": "assets/forth-gallery-DV3ZafQA.svg",
+          "bytes": 740,
+          "sha256": "974be1fefe2f9259339fcb85926325ecec20cfb97b8773d9dceb840f45809162"
         },
         {
           "path": "assets/FRONTIER-Dhqc6iDT.LSP",
@@ -168,14 +173,14 @@
           "sha256": "a561342c9284c8378281f57f3bd15d15d98b5b8398d132f93ab5b77330f7aeb1"
         },
         {
-          "path": "assets/index-C4shOWyu.js",
-          "bytes": 43487,
-          "sha256": "1e6f5abf8e08377527c7b1f1d406ac5350d7ddb38e9561e5da7ed1bfa0cdd398"
-        },
-        {
           "path": "assets/index-ClZaHYYP.css",
           "bytes": 26158,
           "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
+        },
+        {
+          "path": "assets/index-DUZ5NGkA.js",
+          "bytes": 45571,
+          "sha256": "2fe69da20b2d7b480de991e19882903188e4510ca34d1e78da05e6e6b7b71843"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -216,6 +221,11 @@
           "path": "assets/lisp-dos-CyK8pgSx.dmk",
           "bytes": 228496,
           "sha256": "e15e31b2810e0489e194d9279d1039e1526ce29c2e0aafbedab46d1c589f3ae8"
+        },
+        {
+          "path": "assets/lisp-gallery-D9AzRFS9.svg",
+          "bytes": 694,
+          "sha256": "43bb2c10151ddb39da6a023eaf8161b970e04560d280a6dd8bc141bc945b4fde"
         },
         {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
@@ -439,8 +449,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2387,
-          "sha256": "265d68aab219a8bb028e1ce999546f51d046cc261ddd1dbdfbfd8277828a2051"
+          "bytes": 2401,
+          "sha256": "c65db378f2a04f53203f273cc1b3170ff1c07e29e6d2596c2a2ba7bf4fda1d04"
         },
         {
           "path": "licenses.txt",
