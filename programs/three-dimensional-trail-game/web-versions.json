@@ -5,7 +5,7 @@
       "path": "three-dimensional-trail-game/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "49fecb3d94b25c78776fecb0975c1093c0dc6ffa",
+      "sourceCommit": "44a49b58286dc30e3da91e2afa5fa0b85eab2d74",
       "files": [
         {
           "path": "assets/04-THREE-DIMENSIONAL-TRAIL-GAME-KcAeEh_h.ASC",
@@ -63,9 +63,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BK-BXpwF.js",
+          "path": "assets/emulator-BZ0pelxE.js",
           "bytes": 316923,
-          "sha256": "7cc750bf9967c95f37248ea8fc9993b3280c6044d514dfff435479d06ed9f590"
+          "sha256": "59574f4d188f2d541617bf98ae3c524495763a09e7291de655209b2dcd770fe9"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -78,14 +78,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-Dh4WPTmX.js",
+          "bytes": 31847,
+          "sha256": "08382045e7bc0087d59108e4160dbb0005b5e02a34eab29dbfb8170499ee7620"
         },
         {
-          "path": "assets/index-C026NpD5.js",
-          "bytes": 31641,
-          "sha256": "614de463acee5d851db970438e38d1610955f33bdf6712322928e1157fe373f4"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -240,7 +240,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "3100c227f1383603b0cbd68e8d0aedf52f04061f3dbf7f3f74f4de775d822cac"
+          "sha256": "08305dc0eed6ee1b86677dce42fe144dd83cdbd96ee480e0f7d3a950d76a82fa"
         },
         {
           "path": "licenses.txt",
