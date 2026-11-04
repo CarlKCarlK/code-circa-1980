@@ -5,7 +5,7 @@
       "path": "disk-tools/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "81ba78e361ea735688cad105eee23f01d2e2aa65",
+      "sourceCommit": "e357b94c9adcbf3c5f53ee3d85ddc3b3e1b6597a",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -73,9 +73,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-DAhwMb33.js",
+          "path": "assets/emulator-D9k2OSxI.js",
           "bytes": 316923,
-          "sha256": "9c5e88495ebaa4ade98c42a84d24f8fdb2529aac487a11f45d3f861c293c3ce2"
+          "sha256": "be30a0ea04210cc844a0e14b0a8bd72e80ca3e16b80c057048473be47a3e61e5"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -113,14 +113,14 @@
           "sha256": "e6ddfb6c3d47284abffe18b4375991402ae35a6809ffcbcd75732b7f17b07e9d"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-D0EzFnUP.js",
+          "bytes": 34390,
+          "sha256": "12b1a2d88582292b1075235ad16d45fc9edf2463c17c1743ae878346a255d62c"
         },
         {
-          "path": "assets/index-DSt643hB.js",
-          "bytes": 34184,
-          "sha256": "b85c295b0f6085ecb8ba991de359914fae310cc944b51fc079f85c331de8bb7f"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -285,7 +285,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "abd32e4745ef29d1ae58eea1ff90fe2ea3c2affad8723a71e75ae3ce668c11cb"
+          "sha256": "2b4b7086d3b8ec3dd17dbbec6fc8bc2b3d4a9155b49c0d7159eb3f1f951ac400"
         },
         {
           "path": "licenses.txt",
