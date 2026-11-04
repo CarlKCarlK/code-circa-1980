@@ -1,0 +1,98 @@
+{
+  "id": "turtle",
+  "title": "Turtle Graphics",
+  "description": "Logo-style turtle drawing on the TRS-80 graphics screen, dated October 1982.",
+  "kind": "MMSFORTH",
+  "language": "MMSFORTH V2.0, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Turtle Graphics (blocks 16-19)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v01/TURTLE.bin",
+      "listing": "versions/v01/TURTLE.txt",
+      "playable": true,
+      "note": "Source blocks copied unchanged from the New Programs disk. The player boots the Forth System disk and loads them with the original commands. Checked to its first screen only.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v01/TURTLE.bin",
+          "label": "TURTLE.bin"
+        },
+        {
+          "path": "versions/v01/TURTLE.txt",
+          "label": "TURTLE.txt"
+        }
+      ],
+      "startupSource": "==== Block 16 ====\n 0 ( 10/07/82 TURTLE GRAPHICS 1  OF  4 )\n 1 : TSTART  CR  .\" IS FLOATING POINT IN \" Y/N\n 2 IF  CR  .\" PUT THE UTILITIES DISK IN (ENTER)\" KEY DROP\n 3 17 11 LOADS CR  .\" PUT TURTLE DISK BACK IN (ENTER)\" KEY   DROP\n 4 THEN ;  TSTART    : TURTLE ;    :  .. : ;    20 LOAD\n 5 \n 6 2VARIABLE  X % 32 X 2!\n 7 2VARIABLE  Y % 24 Y 2!\n 8 2VARIABLE  HEADING % 0 HEADING 2!\n 9 VARIABLE   VEL 10 VEL !\n10 VARIABLE   PENSTAT 1 PENSTAT !",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/forth-system.dmk",
+          "disks/new-programs.dmk",
+          "disks/mmsforth-utilities.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "HI CARL"
+          },
+          {
+            "swap": 1
+          },
+          {
+            "type": "EMPTY-BUFFERS\n"
+          },
+          {
+            "wait": "^EMPTY-BUFFERS[ ]+OK"
+          },
+          {
+            "type": "16 LOAD\n"
+          },
+          {
+            "wait": "IS FLOATING POINT IN"
+          },
+          {
+            "type": "n"
+          },
+          {
+            "wait": "PUT THE UTILITIES DISK IN"
+          },
+          {
+            "swap": 2
+          },
+          {
+            "press": "Enter"
+          },
+          {
+            "wait": "PUT TURTLE DISK BACK IN"
+          },
+          {
+            "swap": 1
+          },
+          {
+            "press": "Enter"
+          },
+          {
+            "wait": "DUP-NAME: L .*OK"
+          }
+        ]
+      },
+      "running": "Running MMSFORTH from the original disks",
+      "slug": "basic"
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+  },
+  "howTo": [
+    "At the OK prompt, type turtle commands and press Enter, for example: 10 F 90 R 10 F. F forward, B backward, R right, L left, D draw, PU pen up, C clear, P page, H home, S speed, ST straight, FF flash, SH show. HELP lists them. TO defines a new command."
+  ],
+  "quickHelp": "Try 10 F 90 R 10 F then Enter. HELP lists the commands."
+}
