@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape14a",
+  "save": 6,
+  "archive_raw": "tapes/recovered/tape14a/best/06-LASER-INTERFEROMETER-DEMO.BAS",
+  "archive_listing": "tapes/recovered/tape14a/best/06-LASER-INTERFEROMETER-DEMO.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/06-LASER-INTERFEROMETER-DEMO.ASC",
+      "archive_path": "tapes/recovered/tape14a/best/06-LASER-INTERFEROMETER-DEMO.ASC",
+      "bytes": 1719,
+      "sha256": "07010acf0489eccd661a5e93fcc8e9fd179531a088ef0d888406ec0c608f8c07"
+    },
+    {
+      "path": "versions/v01/06-LASER-INTERFEROMETER-DEMO.BAS",
+      "archive_path": "tapes/recovered/tape14a/best/06-LASER-INTERFEROMETER-DEMO.BAS",
+      "bytes": 1360,
+      "sha256": "62628291edf24b31fc1b479118085fabbf91ad49daf17275274458d45db1c794"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "62628291edf24b31fc1b479118085fabbf91ad49daf17275274458d45db1c794",
+    "bytes": 1360,
+    "archive_validation": "Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 34,
+    "last": 1010,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1358,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "14",
+    "side": "a",
+    "order": "6",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "LASER INTERFEROMETER DEMO; 34 lines",
+    "capture": "tape14a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered BASIC lines, consistent pointer base, exact-length normal end; exact left/right raw match; runtime untested",
+    "source_start_s": "426.996",
+    "recovered_bytes": "1360",
+    "source_file": "tapes/recovered/tape14a/best/06-LASER-INTERFEROMETER-DEMO.ASC",
+    "wav": "tapes/tape14a.wav",
+    "folder": "tapes/recovered/tape14a/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape14a/best/inventory.json",
+  "execution_tested": false
+}

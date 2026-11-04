@@ -1,0 +1,52 @@
+{
+  "version": "v01",
+  "capture": "tape16a",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape16a/best/04-TANK-GAME.BAS",
+  "archive_listing": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/04-TANK-GAME.BAS",
+      "archive_path": "tapes/recovered/tape16a/best/04-TANK-GAME.BAS",
+      "bytes": 6910,
+      "sha256": "7943588118b46d8d033626505731195df48f7a2eab860ec317135aad59a1cb3e"
+    },
+    {
+      "path": "versions/v01/04-TANK-GAME.ASC",
+      "archive_path": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+      "bytes": 7595,
+      "sha256": "b2fe21ff0ba9f5c9071951c6039675d3ca4da310cac4f84499f5fa1da99eb75f"
+    }
+  ],
+  "recovery_item": {
+    "lines": 171,
+    "last": 20000,
+    "pointer_base": 17125,
+    "normal_end_marker": true,
+    "sha256": "7943588118b46d8d033626505731195df48f7a2eab860ec317135aad59a1cb3e"
+  },
+  "inventory_row": {
+    "tape": "16",
+    "side": "a",
+    "order": "4",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "Tank Game; copyright 1980 Carl Kadie",
+    "capture": "tape16a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "443.497",
+    "recovered_bytes": "6910",
+    "source_file": "tapes/recovered/tape16a/best/04-TANK-GAME.ASC",
+    "wav": "tapes/tape16a.wav",
+    "folder": "tapes/recovered/tape16a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "7/10",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape16a/inventory.json",
+  "execution_tested": false
+}

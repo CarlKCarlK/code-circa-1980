@@ -1,0 +1,140 @@
+{
+  "official_title": "Map Navigation",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "map_navigation_p88; map_navigation_p89",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "file8b",
+      "save": 11,
+      "archive_raw": "tapes/recovered/file8b/best/11-MAP-NAVIGATION.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/11-MAP-NAVIGATION.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/11-MAP-NAVIGATION.ASC",
+          "archive_path": "tapes/recovered/file8b/best/11-MAP-NAVIGATION.ASC",
+          "bytes": 1403,
+          "sha256": "f9c4129c929c79f75d3be03d64966adf35d063bf1a513e6af2ee2aaa03647f86"
+        },
+        {
+          "path": "versions/v01/11-MAP-NAVIGATION.BAS",
+          "archive_path": "tapes/recovered/file8b/best/11-MAP-NAVIGATION.BAS",
+          "bytes": 1262,
+          "sha256": "4b860b158f705cf9d440d502c77054aa3a2f8eb88cd0f0b523d03d8773bafced"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "4b860b158f705cf9d440d502c77054aa3a2f8eb88cd0f0b523d03d8773bafced",
+        "bytes": 1262,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 19,
+        "last": 10000,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1260,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MAP NAVIGATION; 19 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC with graphics extensions",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "388.546",
+        "recovered_bytes": "1262",
+        "source_file": "tapes/recovered/file8b/best/11-MAP-NAVIGATION.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/best/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "file8b",
+      "save": 12,
+      "archive_raw": "tapes/recovered/file8b/best/12-MAP-NAVIGATION-V2.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/12-MAP-NAVIGATION-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/12-MAP-NAVIGATION-V2.ASC",
+          "archive_path": "tapes/recovered/file8b/best/12-MAP-NAVIGATION-V2.ASC",
+          "bytes": 1926,
+          "sha256": "54cb7140aeee4a85667eefa3f00ce3748740cf520022797717e7298506f45106"
+        },
+        {
+          "path": "versions/v02/12-MAP-NAVIGATION-V2.BAS",
+          "archive_path": "tapes/recovered/file8b/best/12-MAP-NAVIGATION-V2.BAS",
+          "bytes": 1780,
+          "sha256": "13ce672b0d466e96440ba602b109553daf8f86d78dd28c55f68de55bf019b523"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "13ce672b0d466e96440ba602b109553daf8f86d78dd28c55f68de55bf019b523",
+        "bytes": 1780,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 29,
+        "last": 10000,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1778,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "MAP NAVIGATION V2; 29 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC with graphics extensions",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "426.804",
+        "recovered_bytes": "1780",
+        "source_file": "tapes/recovered/file8b/best/12-MAP-NAVIGATION-V2.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

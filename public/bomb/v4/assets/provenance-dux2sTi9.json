@@ -1,0 +1,65 @@
+{
+  "version": "v02",
+  "capture": "tape22a",
+  "save": 3,
+  "archive_raw": "tapes/recovered/tape22a/partial/03-COMPUTER-TEACH-HELP-PREFIX.BIN",
+  "archive_listing": "tapes/recovered/tape22a/partial/03-COMPUTER-TEACH-HELP-PREFIX.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/03-COMPUTER-TEACH-HELP-PREFIX.ASC",
+      "archive_path": "tapes/recovered/tape22a/partial/03-COMPUTER-TEACH-HELP-PREFIX.ASC",
+      "bytes": 956,
+      "sha256": "54e81db617812811533797f7f4b635c6aeced5c6d6bd538dbe6ec967ae6c8044"
+    },
+    {
+      "path": "versions/v02/03-COMPUTER-TEACH-HELP-PREFIX.BIN",
+      "archive_path": "tapes/recovered/tape22a/partial/03-COMPUTER-TEACH-HELP-PREFIX.BIN",
+      "bytes": 830,
+      "sha256": "9d5e7a01b4692b4c346b75e27cc26a121ef25247646a0e3700120d7c23374e46"
+    },
+    {
+      "path": "versions/v02/03-COMPUTER-TEACH-HELP-RAW.BAS",
+      "archive_path": "tapes/recovered/tape22a/partial/03-COMPUTER-TEACH-HELP-RAW.BAS",
+      "bytes": 1084,
+      "sha256": "e797469faadb379cf3c34bed619fa907f6f50d6656a149c18bdbb552b5c785dc"
+    },
+    {
+      "path": "versions/v02/03-COMPUTER-TEACH-HELP-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape22a/partial/03-COMPUTER-TEACH-HELP-UNCERTAIN.ASC",
+      "bytes": 1332,
+      "sha256": "5df52e6cf1287abe8e92687bc1a453734e8220aa0105a91e147e4554875b6f14"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "9d5e7a01b4692b4c346b75e27cc26a121ef25247646a0e3700120d7c23374e46",
+    "bytes": 830,
+    "archive_validation": "Damaged; untouched valid prefix [0,830); 27 lines; pointer base 17125; cross-channel confirmed [0,673); no synthetic end marker",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "22",
+    "side": "a",
+    "order": "3",
+    "type": "BASIC",
+    "recovery%": "",
+    "summary": "COMPUTER TEACH HELP",
+    "capture": "tape22a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "damaged; valid prefix only; runtime untested",
+    "validation": "Damaged; untouched valid prefix [0,830); 27 lines; pointer base 17125; cross-channel confirmed [0,673); no synthetic end marker",
+    "source_start_s": "61.199",
+    "recovered_bytes": "1084",
+    "source_file": "tapes/recovered/tape22a/partial/03-COMPUTER-TEACH-HELP-PREFIX.ASC",
+    "wav": "tapes/tape22a.wav",
+    "folder": "tapes/recovered/tape22a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Better capture may improve damaged stream; see report"
+  },
+  "recovery_inventory": "tapes/recovered/tape22a/inventory.json",
+  "execution_tested": false
+}
