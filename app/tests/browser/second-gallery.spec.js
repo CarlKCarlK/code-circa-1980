@@ -65,3 +65,7 @@ test('extra programs offer one best player without web-version choices',async({p
  await page.getByRole('link',{name:'Play the playable version →'}).click();
  await expect(page.locator('#display')).toBeVisible();
 });
+test('main gallery links to the Medium articles above About this project',async({page})=>{
+ await page.goto('/');await expect(page.getByRole('link',{name:'follow me on Medium'})).toHaveAttribute('href','https://medium.com/@carlmkadie');
+ await expect(page.locator('.intro-writing + .intro-links')).toContainText('About this project');
+});
