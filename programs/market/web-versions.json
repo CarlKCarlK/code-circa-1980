@@ -5,7 +5,7 @@
       "path": "market/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "e60f24ff9bed7e38c8a782620f9de3567028dc67",
+      "sourceCommit": "1aafafc81fc7cf33e0bbc37ca0d3b3cb685b7bf9",
       "files": [
         {
           "path": "assets/04-MARKET-DAMAGED-RECORDING-7jOQAxBL.ASC",
@@ -63,9 +63,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-K2jyscGo.js",
+          "path": "assets/emulator-P5QU4rCs.js",
           "bytes": 316923,
-          "sha256": "b6ff71c60ab2c6b3a758fe3220fb784244bfc0606d88aa181fb1edd3e12924ae"
+          "sha256": "f4de222c9c1f85bc8722dbb2e4c3cabcfc9f8bbfa9e1468252741c2612b3d1a5"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -73,14 +73,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-CiCHVq8n.js",
+          "bytes": 33919,
+          "sha256": "e76dd6a549d21f5b18fb650e2d5c1993cff8491988bc68ac987d96507e601015"
         },
         {
-          "path": "assets/index-Dt7L8F5Z.js",
-          "bytes": 33713,
-          "sha256": "fc0e3b83e322496160d68c5b7f0ca14d5e7cd16a4ac362e0af390968bf7b9418"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -255,7 +255,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "a5e7ceff2cd3159261579764667a4cd590f247abb17bde68a9554342557d5222"
+          "sha256": "cc43e4c1ca2676baef38c630405db06c15b1661fc77e103af38f020cdb37c396"
         },
         {
           "path": "licenses.txt",
