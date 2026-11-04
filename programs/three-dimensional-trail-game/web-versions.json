@@ -3,19 +3,39 @@
     {
       "id": "v1",
       "path": "three-dimensional-trail-game/v1/",
-      "label": "Original cassette archive",
+      "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "b28a4b990f2a300f358e70c4955d3f9a87394e30",
+      "sourceCommit": "49fecb3d94b25c78776fecb0975c1093c0dc6ffa",
       "files": [
+        {
+          "path": "assets/04-THREE-DIMENSIONAL-TRAIL-GAME-KcAeEh_h.ASC",
+          "bytes": 1706,
+          "sha256": "6fe422d62925cfd2aa9ed394ebdcff7146c9a2ea2a76c4dc3db68cdb578c2ac9"
+        },
+        {
+          "path": "assets/04-THREE-DIMENSIONAL-TRAIL-GAME-yhsQCm7D.BAS",
+          "bytes": 1394,
+          "sha256": "bf52e7a6ee360a1f9869d53810aab4b7091d693c67d36fd4899669efbf18f75b"
+        },
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
           "bytes": 327,
           "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
         },
         {
-          "path": "assets/archive-gallery-Cr0q0rfj.svg",
-          "bytes": 547,
-          "sha256": "0c02294b84355a66fb22c7f3a14d9fd2bcaba28513e95a25c19147c8bdb7beeb"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
+        },
+        {
+          "path": "assets/BLOCK3D-CmgsaB8C.BAS",
+          "bytes": 1598,
+          "sha256": "dca883799ccbb83854938c83b3f5ac2ee95b68cc20c512c7f27527639129e8d3"
+        },
+        {
+          "path": "assets/BLOCK3D-QiHm6We9.ASC",
+          "bytes": 1928,
+          "sha256": "ae049bc7184f5837477ebe791e031a7ede61af11a211a94591514d94e77c3b7d"
         },
         {
           "path": "assets/cave-gallery-CUdWAr_1.svg",
@@ -33,14 +53,24 @@
           "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
         },
         {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
+        },
+        {
           "path": "assets/dungeon-gallery-iVVwbTI4.svg",
           "bytes": 557,
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CGCsbXtC.js",
-          "bytes": 286265,
-          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+          "path": "assets/emulator-BK-BXpwF.js",
+          "bytes": 316923,
+          "sha256": "7cc750bf9967c95f37248ea8fc9993b3280c6044d514dfff435479d06ed9f590"
+        },
+        {
+          "path": "assets/games-diskette-GBfXwjGC.dmk",
+          "bytes": 228496,
+          "sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -48,14 +78,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-DKrV230I.css",
-          "bytes": 25510,
-          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+          "path": "assets/index-BHExd-TG.css",
+          "bytes": 25791,
+          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
         },
         {
-          "path": "assets/index-Ng7MBhWd.js",
-          "bytes": 29571,
-          "sha256": "01bf571f52df0811e0b18e2e13d716b3fbdd97319b07ac9b783d04083cedbed4"
+          "path": "assets/index-C026NpD5.js",
+          "bytes": 31641,
+          "sha256": "614de463acee5d851db970438e38d1610955f33bdf6712322928e1157fe373f4"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -128,9 +158,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-DWEKS819.json",
-          "bytes": 3649,
-          "sha256": "764e1ea9fa0bd2e1fb8982bd8b464aff19fa2ff2071a45d2c5e913a92e39e1dc"
+          "path": "assets/provenance-Upx5lRP2.json",
+          "bytes": 5287,
+          "sha256": "cfa1f574bbfd7a52d8db3aa3b2520ac717d5d7e23e9b359ec9867f73442c5595"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -178,16 +208,6 @@
           "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
         },
         {
-          "path": "assets/THREE-DIMENSIONAL-TRAIL-GAME-KcAeEh_h.ASC",
-          "bytes": 1706,
-          "sha256": "6fe422d62925cfd2aa9ed394ebdcff7146c9a2ea2a76c4dc3db68cdb578c2ac9"
-        },
-        {
-          "path": "assets/THREE-DIMENSIONAL-TRAIL-GAME-yhsQCm7D.BAS",
-          "bytes": 1394,
-          "sha256": "bf52e7a6ee360a1f9869d53810aab4b7091d693c67d36fd4899669efbf18f75b"
-        },
-        {
           "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
           "bytes": 409,
           "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
@@ -196,6 +216,11 @@
           "path": "assets/tutac-gallery-DEjQnkj5.svg",
           "bytes": 581,
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
+        },
+        {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
         },
         {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
@@ -215,7 +240,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "cbcc15210b98b98a01ad6501062cb61d1c5b41c4d0156948cea91dc6e6b11b6b"
+          "sha256": "3100c227f1383603b0cbd68e8d0aedf52f04061f3dbf7f3f74f4de775d822cac"
         },
         {
           "path": "licenses.txt",
