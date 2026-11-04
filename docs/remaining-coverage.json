@@ -60,9 +60,10 @@
       "save": "1",
       "archive_source": "tapes/recovered/tape1b/best/01-ORION.ASC",
       "inventory_status": "validated payload; runtime untested",
-      "disposition": "new program",
+      "disposition": "removed",
       "family": "orion_p58",
-      "program": "orion"
+      "program": "orion",
+      "removed": "User, November 4, 2026: commercial software; its tape changes were not interesting enough to keep. Kept only in the private recovery archive."
     },
     {
       "capture": "tape1b",
@@ -150,9 +151,10 @@
       "save": "1",
       "archive_source": "tapes/recovered/tape1b2/best/01-ORION.ASC",
       "inventory_status": "validated payload; runtime untested",
-      "disposition": "new program",
+      "disposition": "removed",
       "family": "orion_p58",
-      "program": "orion"
+      "program": "orion",
+      "removed": "User, November 4, 2026: commercial software; its tape changes were not interesting enough to keep. Kept only in the private recovery archive."
     },
     {
       "capture": "tape1b2",

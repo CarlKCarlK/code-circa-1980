@@ -117,8 +117,7 @@ and intermediate source editions are unverified. New canonical histories begin
 with the relevant comparison before the recovered saves. Poker and Space Colony
 append a comparison and canonical replay, preserving all existing history.
 
-Starfleet Orion retains Automated Simulations’ 1979 credit. It is a third-party
-program, not claimed as a Carl Kadie original. Quest retains Roger Chaffee’s BYTE provenance;
+Quest retains Roger Chaffee’s BYTE provenance;
 D&D reference material and the Mille Bornes/Monopoly designs are credited
 separately from the uncertain origin of their program implementations.
 

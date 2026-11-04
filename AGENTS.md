@@ -516,12 +516,10 @@ recovery archive and in Git history. docs/remaining-coverage.json marks its two 
 `removed`. Do not restore it unless the user asks. The removal commit uses
 `[reset-web-versions]` because the release check otherwise forbids removing a release.
 
-## RSM removed and Orion kept (November 3, 2026)
+## RSM and Orion removed (November 3-4, 2026)
 
-The user asked to drop Orion and RSM 2.0 from More unless they had interesting customization.
-RSM showed none: contiguous standard blocks, no personal strings. It is removed like Sargon
-and stays in the recovery archive. Orion stays: compared with the listing printed in the 1979
-Starfleet Orion manual (archive.org `Starfleet_Orion_1979_Automated_Simulations`), the tape
-adds sound, printer output, a star field, title art, and single-key input. Who made those
-changes is not established; line 10's "REV 1" could be official. Do not credit them to the user
-without confirmation.
+RSM 2.0 and Orion are commercial and were removed from More like Sargon, including the copies
+bundled in older frozen releases; both stay in the recovery archive and in Git history. RSM
+showed no customization. Orion's tape differs from the listing printed in the 1979 Starfleet
+Orion manual (sound, printer, star field, title art, single-key input; authorship unknown), but
+the user judged those changes uninteresting. Do not restore either unless the user asks.

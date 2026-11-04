@@ -5493,16 +5493,6 @@
           "sha256": "53ef5486f0a390181e628b6abffc4f56e48108cf82ccbd1172313b1d1041e59b"
         },
         {
-          "path": "assets/ORION-Dv3ObcTc.ASC",
-          "bytes": 13146,
-          "sha256": "749a84a337d761914e6014035e4a22d1ae2564691631f3041c4cc94105c4caf0"
-        },
-        {
-          "path": "assets/ORION-Xqfe4zUK.BAS",
-          "bytes": 10930,
-          "sha256": "c5c4d7f0e647d18ff305fdc714858004519b39745de51c289f5280fd3d0b3a5c"
-        },
-        {
           "path": "assets/OUTCH-TEST-51Tn60KL.BIN",
           "bytes": 633,
           "sha256": "7f6fbaa2607a510ce929e38c74f7763327ee6ad0834785cd43c0d3922a13533c"

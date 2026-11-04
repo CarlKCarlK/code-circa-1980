@@ -22,8 +22,8 @@ verification. The older source-only Unfinished Tank Game remains source only.
 
 BOND is preserved as Commodore BASIC, likely PET/CBM with the exact machine
 unverified. Model 100 and pocket-computer programs do not run in the stock TRS-80
-player. SARGON II and RSM were later removed at the user’s request; they stay in the
-recovery archive. Orion still needs scenario cassette data.
+player. SARGON II, RSM, and Orion were later removed at the user’s request; they stay in
+the recovery archive.
 
 Documented published comparisons include Amazing, Bunny, Checkers, 3-D Plot,
 Golf, Reverse, Stars, Stock Market, and Qubic. Complete electronic anthology
