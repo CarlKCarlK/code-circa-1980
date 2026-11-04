@@ -63,6 +63,28 @@
       },
       "running": "Running MMSFORTH from the original disks",
       "slug": "basic"
+    },
+    {
+      "id": "v02",
+      "label": "Growth, 5-page form (New Program Backup)",
+      "capture": "disk: MMSFORTH New Program Backup",
+      "raw": "versions/v02/GROWTH-5PAGE.bin",
+      "listing": "versions/v02/GROWTH-5PAGE.txt",
+      "playable": false,
+      "note": "Shorter 5-page form. Its order relative to the 7-page form is inferred from length.",
+      "unavailableReason": "Shorter form, kept as source. The site plays the 7-page form.",
+      "exports": [
+        {
+          "path": "versions/v02/GROWTH-5PAGE.bin",
+          "label": "GROWTH-5PAGE.bin"
+        },
+        {
+          "path": "versions/v02/GROWTH-5PAGE.txt",
+          "label": "GROWTH-5PAGE.txt"
+        }
+      ],
+      "startupSource": "==== Block 36 ====\n 0 ( \"GROWTH\"  ---  TWO PLAYER GAME  PAGE 1  OF 5  ) : GROW ;\n 1 15360  CONSTANT SCREAN     15630 CONSTANT BOARD\n 2 VARIABLE  STRAT         VARIABLE NUMBR       0 NUMBR !\n 3 : LDRND  CR  .\" IS RANDOM LOADED \" Y/N IF 53 LOAD THEN ;\n 4 LDRND             : ROLL-DICE     8 RND   8 RND   ;\n 5 : BPOS-MLOC     3 +   64 *   SWAP 4 *   10 +  + SCREAN +  ;\n 6 : RMLOC         ROLL-DICE   BPOS-MLOC    ;\n 7 : UP    ROT ROT   6 +   8 MOD 1+      ROT ;\n 8 : DN    ROT ROT  8 MOD  1+      ROT ;\n 9 : LT    SWAP ROT 6 +    8 MOD 1+      SWAP ROT ;\n10 : RT    SWAP ROT 8 MOD  1+      SWAP ROT ;",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",

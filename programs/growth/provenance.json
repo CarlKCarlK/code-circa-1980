@@ -44,6 +44,35 @@
         "first_block": 34,
         "last_block": 40
       }
+    },
+    {
+      "version": "v02",
+      "disk": "MMSFORTH New Program Backup",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Program Backup [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "26f30bda9f6e6d90dad41dbba7b5c81aa4aee4c1546ff6aa3711e593a5a4dbca",
+      "source": "blocks 36-40",
+      "imported_files": [
+        {
+          "path": "versions/v02/GROWTH-5PAGE.bin",
+          "archive_path": "blocks 36-40",
+          "bytes": 5120,
+          "sha256": "da9c9ebbd9eacf8cc31f0dd6e1becdb95285f2beba137afbc4fe56cbaed6e34d"
+        },
+        {
+          "path": "versions/v02/GROWTH-5PAGE.txt",
+          "archive_path": "derived listing",
+          "bytes": 4126,
+          "sha256": "c3f035b90419aed0443f5007f0f57ba4ef45adb79d2df65155f6af4cb01436ee"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "da9c9ebbd9eacf8cc31f0dd6e1becdb95285f2beba137afbc4fe56cbaed6e34d",
+        "bytes": 5120,
+        "import_date": "2026-11-03",
+        "first_block": 36,
+        "last_block": 40
+      }
     }
   ]
 }
