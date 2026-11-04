@@ -166,5 +166,11 @@
   "dating": {
     "direct_date": "5 ' OLYMPICS  -    (C) 1980   CARL KADIE",
     "context": "Olympics has a direct 1980 copyright. X-wing shares tape23b with Chemistry Balancer II, whose line 10 says COPYRIGHT 1981 C. KADIE. Speech has no confirmed date in these listings. These do not establish save dates."
+  },
+  "also_on_disk": {
+    "disk": "BASIC Programs Games",
+    "file": "OLYMPICS.BAS",
+    "sha256": "d42b9673e645978d4f00306286f989d1eea9cdcf1d53f38ad162c41b3234a1a9",
+    "relation": "all lines identical to tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.BAS"
   }
 }
