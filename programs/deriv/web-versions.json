@@ -5,7 +5,7 @@
       "path": "deriv/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "a20d6cdd74d88d4ab6d68b1e8d938132918c43be",
+      "sourceCommit": "e6121054d17e61af1295cc2267c895ad5faf58b2",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -98,9 +98,9 @@
           "sha256": "8b8b2d23107c014b9a2f33d874c30f2328144e7ac4529c3056d4567a4b72d527"
         },
         {
-          "path": "assets/emulator-Hf9Y8p8R.js",
+          "path": "assets/emulator-aXfOMAsv.js",
           "bytes": 316923,
-          "sha256": "fc5027a988269d9a15121e5d108bd6fc7d785c12cf7f6b275e59c16165842d32"
+          "sha256": "9ef29bf0661045d5ae9b1bde5ad97109b290d6ed12aad14216a9a2ecf7a4a9c1"
         },
         {
           "path": "assets/EVAL2-DUbdWBNT.LSP",
@@ -128,14 +128,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-Cf3Xhg0V.js",
+          "bytes": 41244,
+          "sha256": "a696f744cdab583e21daa7bbe67660f9cab266e2652077319c17014703415610"
         },
         {
-          "path": "assets/index-BPgqsOxF.js",
-          "bytes": 41038,
-          "sha256": "5077b5d6b22a5f60293be6465a393db8d8a759317ecca2922af0afa83dfb6950"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/INTERSEC-FJlCwmon.LSP",
@@ -385,7 +385,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "1b1e4adb4114149f6805ac2cc6205124f268f335b459354ccd9f876f85216681"
+          "sha256": "7e55598911463a39165aa30466fe9d49c91b206868d71785d92d820b7df8a771"
         },
         {
           "path": "licenses.txt",
