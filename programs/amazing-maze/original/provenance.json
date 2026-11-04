@@ -1,23 +1,23 @@
 {
   "title": "Amazing Maze",
-  "version": "v11",
-  "label": "AMAZING PROGRAM, maze generator",
-  "capture": "tape1b2",
-  "save": 5,
+  "version": "v12",
+  "label": "AMAZING DUNGEON AND MAZE",
+  "capture": "tape19a",
+  "save": 6,
   "merged_from": {
-    "program": "maze-generator",
-    "version": "v04"
+    "program": "amazing-dungeon-and-maze",
+    "version": "v01"
   },
   "order_inferred": false,
   "order_note": "Appended after the published canonical history; this position does not claim development order.",
   "files": [
     {
       "canonical_path": "AMAZING-MAZE.ASC",
-      "snapshot_path": "versions/maze-generator-v04/05-AMAZING-PROGRAM.ASC"
+      "snapshot_path": "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.ASC"
     },
     {
       "canonical_path": "AMAZING-MAZE.BAS",
-      "snapshot_path": "versions/maze-generator-v04/05-AMAZING-PROGRAM.BAS"
+      "snapshot_path": "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.BAS"
     }
   ]
 }
