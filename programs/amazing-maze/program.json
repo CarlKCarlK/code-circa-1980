@@ -1,14 +1,14 @@
 {
   "id": "amazing-maze",
   "title": "Amazing Maze",
-  "description": "5 captured saves. One original BASIC player; historical bugs remain.",
+  "description": "A GAME FOR ONE OR TWO, in the disk menu's words. 6 recovered forms; the disk form plays.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v05",
+  "defaultVersion": "v06",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -118,9 +118,9 @@
       "save": 2,
       "raw": "versions/v05/02-AMAZING-MAZE.BAS",
       "listing": "versions/v05/02-AMAZING-MAZE.ASC",
-      "playable": true,
+      "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact-length zero end; exact left/right timing match; runtime untested",
-      "unavailableReason": null,
+      "unavailableReason": "Earlier save, kept as source. The site plays the later form from the Games Diskette (v06).",
       "exports": [
         {
           "path": "versions/v05/02-AMAZING-MAZE.ASC",
@@ -134,13 +134,49 @@
       "startupSource": "5 XS=0:YS=3\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n40 FORX=0TO127:SET(X,3):NEXT\n90 PRINT@704,\"\";\n100 INPUT\"WHAT ARE YOUR WIDTH AND LENGTH\";H,V\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
       "controlSource": [
         "2000 A$=INKEY$"
+      ]
+    },
+    {
+      "id": "v06",
+      "label": "Amazing Maze (Games Diskette)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v06/MAZE.BAS",
+      "listing": "versions/v06/MAZE.ASC",
+      "playable": true,
+      "note": "Complete disk file MAZE.BAS (directory size, ordered records, consistent pointers, end marker). Runs under NEWDOS/80 Disk BASIC from the original disk image; the disk's menu starts it, and it can return there. Runtime limited to the startup check.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v06/MAZE.BAS",
+          "label": "MAZE.BAS"
+        },
+        {
+          "path": "versions/v06/MAZE.ASC",
+          "label": "MAZE.ASC"
+        }
       ],
+      "startupSource": "5 XS=0:YS=3\n7 CLS\n10 PRINTTAB(20)\"A MAZING PROGRAM\"\n40 FORX=0TO127:SET(X,3):NEXT\n50 PRINT@128,\"THIS IS A MAZE PROGRAM. FIRST GIVE THE SIZE OF THE\"\n55 PRINT\"MAZE YOU WANT CUSTOM-MADE FOR YOU.  (TAKES 1 MINUTE TO MAKE\"\n60 PRINT\"A 10 BY 10 MAZE AND 15 MINUTES TO MAKE A 40 BY 20 )\n\"\n65 PRINT\"AFTER THE MAZE IS MADE, YOU AND A FRIEND MAY MOVE THE TWO\"\n70 PRINT\"LITTLE DOTS THOUGH THE MAZE. THE FIRST ONE OFF THE SCREEN\"\n75 PRINT\"WINS.\"\n80 PRINT\"TO STEER DOTS :",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/games-diskette.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "SELECT A LETTER"
+          },
+          {
+            "press": "j"
+          }
+        ]
+      },
+      "running": "Running from the original disk",
       "slug": "basic"
     }
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "Adapted from Jack Hauber\u2019s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "text": "Adapted from Jack Hauber’s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
     "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
   },
   "upstreamDownloads": [
