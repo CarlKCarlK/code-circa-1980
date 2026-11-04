@@ -111,6 +111,28 @@
       "controlSource": [
         "196 A$=INKEY$:IFA$=\"\"THEN196ELSEPRINT"
       ]
+    },
+    {
+      "id": "v05",
+      "label": "MARKET.BAS (BASIC Programs Games)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v05/MARKET.BAS",
+      "listing": "versions/v05/MARKET.ASC",
+      "playable": false,
+      "note": "Same as the last tape form except that it accepts N and returns to the disk menu.",
+      "unavailableReason": "Disk form, kept as source. It is not the selected player for this program.",
+      "exports": [
+        {
+          "path": "versions/v05/MARKET.BAS",
+          "label": "MARKET.BAS"
+        },
+        {
+          "path": "versions/v05/MARKET.ASC",
+          "label": "MARKET.ASC"
+        }
+      ],
+      "startupSource": "10 CLEAR300\n20 POKE16553,255\n50 CLS:PRINT:PRINT:PRINT\"                       WELCOME TO MARKET\"\n60 PRINT:PRINT\"           THIS A SIMULATION BEWEEN TWO COMPANIES\"\n70 PRINT:PRINT:PRINT:PRINT\n130 DIMC(2),I(2),T(2),A(2),L(2),D(2),P(2),V(2),W(2),B(2),E(5)\n135 PRINT\"DO YOU WHAT INSTRUCTIONS\";\n140 INPUTH$\n145 READK2,N,K,K3,C(1),C(2),I(1),I(2),F,U,R,G1,G2,G3,M1,K4\n150 Q=0\n151 W2=0\n152 W4=0",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
