@@ -1,29 +1,29 @@
 {
-  "version": "v01",
+  "version": "v02",
   "disk": "MMSFORTH Knowledge Base",
   "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - Knowledge Base [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
   "disk_image_sha256": "6753aa138f22fc86922f1a869abc7c1c9f2e60eeab0a7795f1bd3460c06780d0",
-  "source": "blocks 50-85",
+  "source": "blocks 30-36",
   "imported_files": [
     {
-      "path": "versions/v01/FORTH-WIZ.bin",
-      "archive_path": "blocks 50-85",
-      "bytes": 36864,
-      "sha256": "1cddfa22f04cb0304fdd460c4cbb1e080860abbebfb35e1a58af62456fff3efa"
+      "path": "versions/v02/FAMILY-RELATIONSHIPS.bin",
+      "archive_path": "blocks 30-36",
+      "bytes": 7168,
+      "sha256": "dc3a30e53b54ddf11f2b88fad8e03f2be600f4eacd4bd2dbfaa40a20c29d1327"
     },
     {
-      "path": "versions/v01/FORTH-WIZ.txt",
+      "path": "versions/v02/FAMILY-RELATIONSHIPS.txt",
       "archive_path": "derived listing",
-      "bytes": 16424,
-      "sha256": "7324ceef4e39f53ec75ff5709486f2e72e1d0fe82e2e7b2d3ba92d4514ebc9d9"
+      "bytes": 2319,
+      "sha256": "6b1832590535d2f6b8183f98d6246809d93e90de394e7b044350e7154d91b9ab"
     }
   ],
   "recovery_item": {
     "format": "MMSFORTH blocks",
-    "sha256": "1cddfa22f04cb0304fdd460c4cbb1e080860abbebfb35e1a58af62456fff3efa",
-    "bytes": 36864,
+    "sha256": "dc3a30e53b54ddf11f2b88fad8e03f2be600f4eacd4bd2dbfaa40a20c29d1327",
+    "bytes": 7168,
     "import_date": "2026-11-03",
-    "first_block": 50,
-    "last_block": 85
+    "first_block": 30,
+    "last_block": 36
   }
 }

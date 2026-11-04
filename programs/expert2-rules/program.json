@@ -32,6 +32,28 @@
       ],
       "startupSource": "==== Block 50 ====\n 0 ( FORTH WIZ )  : WTASK ;\n 1 255  $VARIABLE WISH\n 2 255  $VARIABLE ANSWER 255 $VARIABLE HOLD\n 3 255  $VARIABLE KEY\n 4 VARIABLE MATCH    VARIABLE CATAGORY\n 5 : CHECK1 KEY $\" @\" ANSWER $+ $\" @\" $+ INSTR 0 <>  ;\n 6 : CHECK 0 MATCH !\n 7   WISH $\"   \" $+ HOLD $! BEGIN HOLD $\"  \" INSTR DUP WHILE DUP\n 8  HOLD SWAP 1- LEFT$ ANSWER $!  MATCH @ CHECK1 OR MATCH !\n 9  HOLD LEN SWAP - HOLD SWAP RIGHT$ HOLD $! REPEAT DROP MATCH @ ;\n10 : TELL_WHAT_YOU_WANT PAGE CR  .\" WHAT DO YOU WANT THE COMMAND TO",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "Family Relationships (blocks 30-36)",
+      "capture": "disk: MMSFORTH Knowledge Base",
+      "raw": "versions/v02/FAMILY-RELATIONSHIPS.bin",
+      "listing": "versions/v02/FAMILY-RELATIONSHIPS.txt",
+      "playable": false,
+      "note": "Works out relationships through a lowest common ancestor.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v02/FAMILY-RELATIONSHIPS.bin",
+          "label": "FAMILY-RELATIONSHIPS.bin"
+        },
+        {
+          "path": "versions/v02/FAMILY-RELATIONSHIPS.txt",
+          "label": "FAMILY-RELATIONSHIPS.txt"
+        }
+      ],
+      "startupSource": "==== Block 30 ====\n 0 : TASK ;\n 1 RULES\n 2 ( RULE 1)\n 3 IF YOURSELF\n 4 THENHYP YOU\n 5 \n 6 IF L.C.A. YOUR PARENT\n 7 AND L.C.A. REL'S PARENT\n 8 ANDNOT YOU\n 9 THEN SIBILING\n10 ",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
