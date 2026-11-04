@@ -32,6 +32,28 @@
       ],
       "startupSource": "5 CLEAR 500\n6 DEFINT A-Z:DEF FNM(N,B)=N-INT(N/B)*B\n10 INPUT \"NUMBER OF OBJECTS\";T\n12 DIM TR(T),N$(T)\n15 FF=1:FOR I=1 TO T:PRINT\"NAME OF OBJECT #\";I;:INPUTN$(I):FF=FF*I:NEXTI:PRINT \"NUMBER OF PERMUTATIONS IS\";FF\n30 PRINT:INPUT\"WHICH PERMUTATION WOULD YOU LIKE (0 TO QUIT)\";II:IF II=0 THEN RUN ELSEGOSUB1000\n40 FOR N=1 TO T:IF N=1 THEN FX=1:GX=TELSE FX=FX*GX:GX=GX-1\n50 I= FNM(II-1,FF/FX)*GX*FX/FF+1:GOSUB 2000:PRINTN$(D);\" \";:NEXTN:PRINT\n60 GOTO 30\n1000 TA=1\n1010 IF TA>T THEN RETURN\n1020 FOR I=TA TO T STEP TA:TR(I)=TA:NEXTI",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "PERMLONG.BAS (More Voice)",
+      "capture": "disk: More Voice",
+      "raw": "versions/v02/PERMLONG.BAS",
+      "listing": "versions/v02/PERMLONG.ASC",
+      "playable": false,
+      "note": "Extended form.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v02/PERMLONG.BAS",
+          "label": "PERMLONG.BAS"
+        },
+        {
+          "path": "versions/v02/PERMLONG.ASC",
+          "label": "PERMLONG.ASC"
+        }
+      ],
+      "startupSource": "2 CLEAR 500\n5 DEFINTA-Z:DEF FNI#(E#)=VAL(LEFT$(STR$(E#),INSTR(STR$(E#)+\".\",\".\")))\n6 DEF FNM#(N#,B#)=N#-FNI#(N#/B#)*B#\n10 INPUT \"NUMBER OF OBJECTS\";T\n12 DIM TR(T),N$(T)\n15 FF#=1:FOR I=1 TO T:PRINT\"NAME OF OBJECT #\";I;:INPUTN$(I):FF#=FF#*I:NEXTI:PRINT \"NUMBER OF PERMUTATIONS IS\";FF#\n30 PRINT:INPUT\"WHICH PERMUTATION WOULD YOU LIKE (0 TO QUIT)\";II#:IF II#=0 THEN RUN ELSEGOSUB1000\n40 FOR N=1 TO T:IF N=1 THEN FX#=1:GX=TELSE FX#=FX#*GX:GX=GX-1\n45 'PRINT FX#,GX:STOP\n50 I= FNI#(FNM#(II#-1,FF#/FX#)*GX*FX#/FF#+1):GOSUB 2000:PRINTN$(D);\" \";:NEXTN:PRINT\n60 GOTO 30\n1000 TA=1",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
