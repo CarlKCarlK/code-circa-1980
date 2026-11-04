@@ -101,6 +101,13 @@ program uses them for bookkeeping: compound numbers, element groups, and the
 answer's coefficients. The Rust port uses `Vec<Vec<Fraction>>` and separate
 vectors for the bookkeeping.
 
+Formulas have parentheses, as in Ca(OH)₂, and BASIC gives you no stack to put data
+on. So the program makes one: an array `PR()` and an index `PN`. A `(` moves up a
+level. A `)` multiplies the level's total by the number that follows and adds it
+to the level below. Each level needs only one number, because the program rereads
+the formula once per element and counts just that element. 3-D Plot never had this
+problem: its formula was a line of BASIC, so the ROM did the parsing.
+
 ## Alien (1979): typing in teaches you the code
 
 Back then, you got someone else's program by typing it in from a book. I typed

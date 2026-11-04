@@ -516,8 +516,8 @@ code, so they stay as they are unless the user asks for a separate derived editi
 ### Original manuals (November 4, 2026)
 
 `programs/bal/manual/` and `programs/plot3d/manual/` hold the user's reviewed PDFs from the
-archive's `scans/processed/`, used unchanged. `manual` in program.json adds a link above the
-player and beside the source downloads. The Chem manual's two address redactions are intentional.
+archive's `scans/processed/`, used unchanged. `manual` in program.json adds a link just
+before the Source section; the user wants it low on the page, since the site gives its own directions. The Chem manual's two address redactions are intentional.
 
 ## Programs from recovered floppy disks (November 3, 2026)
 

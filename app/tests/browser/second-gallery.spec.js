@@ -71,6 +71,8 @@ test('main gallery links to the Medium articles between the cards and About this
 });
 for(const [id,name] of [['bal','ChemBalancer II manual (PDF)'],['plot3d','3-D Plot manual (PDF)']])test(`${id}: the original manual opens from the player`,async({page})=>{
  await page.goto(`/?development=1#/program/${id}`);
- const href=await page.getByRole('link',{name}).first().getAttribute('href');
+ await expect(page.locator('.how-to-play-note')).toHaveCount(0);
+ await expect(page.locator('.original-manual + .source-section')).toHaveCount(1);
+ const href=await page.locator('.original-manual a').getAttribute('href');await expect(page.locator('.original-manual a')).toHaveText(name);
  const response=await page.request.get(href);expect(response.ok()).toBe(true);expect(response.headers()['content-type']).toContain('pdf');
 });
