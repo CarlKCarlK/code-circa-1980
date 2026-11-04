@@ -5,7 +5,7 @@
       "path": "amazing-maze/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "e5d2f417d22390ee385316174147fa72b62fdcd8",
+      "sourceCommit": "d3f79ee5b13dedce76e669ab156148826ed3d19b",
       "files": [
         {
           "path": "assets/02-AMAZING-MAZE-B4e7pzcy.ASC",
@@ -98,9 +98,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CbL0I-Jk.js",
+          "path": "assets/emulator-BQTcIjtb.js",
           "bytes": 316923,
-          "sha256": "d8bfd44c1509d3d4b637e4f6797040e1604e18150390f4e526dc31b72e4c08b7"
+          "sha256": "133aef2e02e06f815195e001939b417b8a95591103939ced6dc547c8940dc7c4"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -113,14 +113,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-CTypS8IQ.js",
+          "bytes": 37358,
+          "sha256": "0a4300382a4d448d0d5ca201c29192fbcb5a8990300e9634ae4b943f81626e75"
         },
         {
-          "path": "assets/index-CAcfVwvk.js",
-          "bytes": 37152,
-          "sha256": "4080f24041e0ba54ae89974bce06a86dc55346ea1ca19f48056037b55ddcbaa6"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -295,7 +295,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "8267f8847626d2b6a4a65b837f8e9a95ab95d111117a13e7122ce104cdbe8ace"
+          "sha256": "cada08ec72a6eb9127ed3e071fad87f30c084f1c7c6dc6fe1fee4adcfe80f86d"
         },
         {
           "path": "licenses.txt",
