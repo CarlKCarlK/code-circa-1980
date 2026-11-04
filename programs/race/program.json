@@ -1,14 +1,14 @@
 {
   "id": "race",
   "title": "Race",
-  "description": "3 captured saves. One original BASIC player; historical bugs remain.",
+  "description": "A VIDEO GAME FOR TWO, in the disk menu's words. 4 recovered forms; the disk form plays.",
   "kind": "BASIC",
   "language": "TRS-80 BASIC; extensions may be needed",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v03",
+  "defaultVersion": "v04",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -67,9 +67,9 @@
       "save": 16,
       "raw": "versions/v03/16-RACE-SAVE2.BAS",
       "listing": "versions/v03/16-RACE-SAVE2.ASC",
-      "playable": true,
+      "playable": false,
       "note": "validated source; runtime untested. Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
-      "unavailableReason": null,
+      "unavailableReason": "Earlier save, kept as source. The site plays the later form from the Games Diskette (v04).",
       "exports": [
         {
           "path": "versions/v03/16-RACE-SAVE2.ASC",
@@ -84,7 +84,43 @@
       "controlSource": [
         "5140 A$=INKEY$+INKEY$",
         "5150 IF INKEY$=\"\"THEN5150 ELSE RETURN"
+      ]
+    },
+    {
+      "id": "v04",
+      "label": "Race (Games Diskette)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v04/RACE.BAS",
+      "listing": "versions/v04/RACE.ASC",
+      "playable": true,
+      "note": "Complete disk file RACE.BAS (directory size, ordered records, consistent pointers, end marker). Runs under NEWDOS/80 Disk BASIC from the original disk image; the disk's menu starts it, and it can return there. Runtime limited to the startup check.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v04/RACE.BAS",
+          "label": "RACE.BAS"
+        },
+        {
+          "path": "versions/v04/RACE.ASC",
+          "label": "RACE.ASC"
+        }
       ],
+      "startupSource": "2 GOSUB 5000\n5 CLS\n10 FOR X=0 TO127:SET(X,3):SET(X,47):NEXTX:FORY=3TO47:SET(0,Y):SET(127,Y):NEXTY\n25 DEFINT A-Y\n26 GOTO 190\n30 LL=.0001\n50 P=0\n60 X=5:Y=10\n70 M=PEEK(14400):IF MAND128THENP=0ELSEIF MAND1THENP=1ELSEIFMAND2THENP=2ELSE IF PEEK(14464) THEN 400\n80 IF MAND8THENY=Y-1ELSEIFMAND16THENY=Y+1\n90 IF MAND32THENX=X-1ELSEIFMAND64THENX=X+1\n94 IF X=127 THEN X=0",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/games-diskette.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "SELECT A LETTER"
+          },
+          {
+            "press": "f"
+          }
+        ]
+      },
+      "running": "Running from the original disk",
       "slug": "basic"
     }
   ],

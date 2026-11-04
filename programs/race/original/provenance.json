@@ -1,60 +1,32 @@
 {
-  "version": "v03",
-  "capture": "tape10b",
-  "save": 16,
-  "archive_raw": "tapes/recovered/tape10b/best/16-RACE-SAVE2.BAS",
-  "archive_listing": "tapes/recovered/tape10b/best/16-RACE-SAVE2.ASC",
+  "version": "v04",
+  "disk": "BASIC Programs Games",
+  "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+  "source": "files/RACE.BAS",
   "imported_files": [
     {
-      "path": "versions/v03/16-RACE-SAVE2.ASC",
-      "archive_path": "tapes/recovered/tape10b/best/16-RACE-SAVE2.ASC",
-      "bytes": 3178,
-      "sha256": "011cd591d5137132dfea5f1470c8209aba902c09dddff60bd724bde9f0792470"
+      "path": "versions/v04/RACE.BAS",
+      "archive_path": "files/RACE.BAS",
+      "bytes": 2689,
+      "sha256": "f5485fede3776029129d742aa88da1fb83855461974d5d43160e6112d257a818"
     },
     {
-      "path": "versions/v03/16-RACE-SAVE2.BAS",
-      "archive_path": "tapes/recovered/tape10b/best/16-RACE-SAVE2.BAS",
-      "bytes": 2626,
-      "sha256": "8e444dccda3e2e653e89674c30f063e533c59d4ba5c051b1e79eb51d40e9a034"
+      "path": "versions/v04/RACE.ASC",
+      "archive_path": "derived listing",
+      "bytes": 3262,
+      "sha256": "1e4b61fe79261ff8a3f8f948d6d2b5bedf706ffb4dbecb974d3da3d2b8999206"
     }
   ],
   "recovery_item": {
-    "format": "BASIC",
-    "sha256": "8e444dccda3e2e653e89674c30f063e533c59d4ba5c051b1e79eb51d40e9a034",
-    "bytes": 2626,
-    "archive_validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
-    "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 65,
+    "format": "BASIC disk file",
+    "sha256": "f5485fede3776029129d742aa88da1fb83855461974d5d43160e6112d257a818",
+    "bytes": 2689,
+    "import_date": "2026-11-03",
+    "lines": 69,
     "last": 5150,
-    "pointer_bases": [
-      17125
-    ],
     "normal_end_marker": true,
-    "parsed_bytes": 2624,
-    "source_notice_lines": []
-  },
-  "inventory_row": {
-    "tape": "10",
-    "side": "b",
-    "order": "16",
-    "type": "BASIC",
-    "recovery%": "100",
-    "summary": "RACE SAVE2; 65 lines",
-    "capture": "tape10b",
-    "capture_scope": "unknown",
-    "baud": "500",
-    "platform": "TRS-80 BASIC; extensions may be needed",
-    "status": "validated source; runtime untested",
-    "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
-    "source_start_s": "698.909",
-    "recovered_bytes": "2626",
-    "source_file": "tapes/recovered/tape10b/best/16-RACE-SAVE2.ASC",
-    "wav": "tapes/tape10b.wav",
-    "folder": "tapes/recovered/tape10b/best",
-    "recovery_date": "2026-10-27",
-    "recorder_volume": "",
-    "next_action": "Execution-test with compatible runtime"
-  },
-  "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
-  "execution_tested": false
+    "memory_base": 27205,
+    "tape_relation": "62/69 lines shared with tapes/recovered/tape10b/best/16-RACE-SAVE2.BAS (65 lines)"
+  }
 }
