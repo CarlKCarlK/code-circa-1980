@@ -172,6 +172,28 @@
       },
       "running": "Running from the original disk",
       "slug": "basic"
+    },
+    {
+      "id": "v07",
+      "label": "MAZE.BAS (More Voice)",
+      "capture": "disk: More Voice",
+      "raw": "versions/v07/MAZE.BAS",
+      "listing": "versions/v07/MAZE.ASC",
+      "playable": false,
+      "note": "Voice form: PRINT* calls the VS-100 speech synthesizer, which is not emulated.",
+      "unavailableReason": "Disk form, kept as source. It is not the selected player for this program.",
+      "exports": [
+        {
+          "path": "versions/v07/MAZE.BAS",
+          "label": "MAZE.BAS"
+        },
+        {
+          "path": "versions/v07/MAZE.ASC",
+          "label": "MAZE.ASC"
+        }
+      ],
+      "startupSource": "5 XS=0:YS=3\n7 CLS\n10 PRINTTAB(20)\"A MAZING PROGRAM\"\n40 FORX=0TO127:SET(X,3):NEXT\n50 PRINT@128,\"THIS IS A MAZE PROGRAM. FIRST GIVE THE SIZE OF THE\"\n55 PRINT\"MAZE YOU WANT CUSTOM-MADE FOR YOU.  (TAKES 1 MINUTE TO MAKE\"\n60 PRINT\"A 10 BY 10 MAZE AND 15 MINUTES TO MAKE A 40 BY 20 )\n\"\n65 PRINT\"AFTER THE MAZE IS MADE, YOU AND A FRIEND MAY MOVE THE TWO\"\n70 PRINT\"LITTLE DOTS THOUGH THE MAZE. THE FIRST ONE OFF THE SCREEN\"\n75 PRINT\"WINS.\"\n80 PRINT\"TO STEER DOTS :",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",

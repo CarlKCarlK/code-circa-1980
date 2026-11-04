@@ -1,32 +1,32 @@
 {
-  "version": "v06",
-  "disk": "BASIC Programs Games",
-  "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
-  "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+  "version": "v07",
+  "disk": "More Voice",
+  "disk_image": "More Voice [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "f3d63ff73891368ba0381bd301d8bf447800aea3ae51e624883210cad1a21b6d",
   "source": "files/MAZE.BAS",
   "imported_files": [
     {
-      "path": "versions/v06/MAZE.BAS",
+      "path": "versions/v07/MAZE.BAS",
       "archive_path": "files/MAZE.BAS",
-      "bytes": 3651,
-      "sha256": "7fd119069fde7117a70bbe239d994611c91d6684537a5020d036f8e5b18f67f1"
+      "bytes": 3881,
+      "sha256": "01c250695c0846b522a143de1abdad7cbfbba2510b13199e5e6c9df058f195bd"
     },
     {
-      "path": "versions/v06/MAZE.ASC",
+      "path": "versions/v07/MAZE.ASC",
       "archive_path": "derived listing",
-      "bytes": 4366,
-      "sha256": "408b39dd9e2ef028c99ad7618434956ed86e13891bd337b1ac33d0c06ec09c6b"
+      "bytes": 4672,
+      "sha256": "5a32dda1e533a229241ef5772ee136bb339a6b1a723bc00f3078d3bd6fb53c15"
     }
   ],
   "recovery_item": {
     "format": "BASIC disk file",
-    "sha256": "7fd119069fde7117a70bbe239d994611c91d6684537a5020d036f8e5b18f67f1",
-    "bytes": 3651,
+    "sha256": "01c250695c0846b522a143de1abdad7cbfbba2510b13199e5e6c9df058f195bd",
+    "bytes": 3881,
     "import_date": "2026-11-03",
-    "lines": 166,
-    "last": 4020,
+    "lines": 171,
+    "last": 20700,
     "normal_end_marker": true,
     "memory_base": 27205,
-    "tape_relation": "146/166 lines shared with tapes/recovered/tape14b/best/02-AMAZING-MAZE.BAS (158 lines)"
+    "tape_relation": "144/171 lines shared with tapes/recovered/tape14b/best/02-AMAZING-MAZE.BAS (158 lines)"
   }
 }
