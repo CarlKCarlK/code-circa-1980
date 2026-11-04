@@ -5,7 +5,7 @@
       "path": "jab/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "8490b85aa701756e99b6d6fe0c02dfcc83a88714",
+      "sourceCommit": "b859b14b5741e6d57da470b9db1d6f57078af19f",
       "files": [
         {
           "path": "assets/01-AMAZING-PROGRAM-MAZE-Bxvk1jjV.ASC",
@@ -4763,9 +4763,9 @@
           "sha256": "fcd52f34f4fe380f3b32e2895fca2c2308c710d6dc28c111503fad265c57ad63"
         },
         {
-          "path": "assets/emulator-c-Gmmo0w.js",
+          "path": "assets/emulator-DYKA5TNq.js",
           "bytes": 316848,
-          "sha256": "3e6dc712a3b1009f41fc4838dd7c2c10fe8906cb85410b9a1af39f6bbbf6a4ac"
+          "sha256": "3c103a07e92c1588206ef1dfd642ec9f61d0e2a2e80cabe9b86b2d79163d0206"
         },
         {
           "path": "assets/EQFRONTI-YfxItvcK.LSP",
@@ -5353,14 +5353,14 @@
           "sha256": "1d6de162b06840663b69ddb1aa64f97fa1b9cf8aac3c1e1aa9a0f8e07d3ac841"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-C9FgBd2A.js",
+          "bytes": 7271335,
+          "sha256": "100029ef8fe7638eea1814a4733686743d3c62f8cd32f845d79c5f8caa75f745"
         },
         {
-          "path": "assets/index-DuVaPtgb.js",
-          "bytes": 7064886,
-          "sha256": "c80ebeb6bcc2ea16d5a5b9f31ee33581a22f0f9f3bbba00a04099a69799910aa"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/INTERACTIVE-LIBRARY-DIRECTORY-Csqzz-rr.BAS",
@@ -6333,9 +6333,9 @@
           "sha256": "d0f495586fb93b6fa8062540e94631a2ba147468c2220399693342bf5798715a"
         },
         {
-          "path": "assets/player-BgUpGyfV.js",
+          "path": "assets/player-B3qzTDhY.js",
           "bytes": 12370,
-          "sha256": "c5bdecf6732ade36ea61168b2c88e67336eb7dcb9d2a3bb3b15a471e4c98ada7"
+          "sha256": "91c3a9b4f96ca3b07a2e928afbd30e46978b9672509bea23fdbdc03389338c8d"
         },
         {
           "path": "assets/player-Bs8GeNyd.js",
@@ -6343,9 +6343,9 @@
           "sha256": "e4dcd4e5a6443ea360e5ecf182eb077e431d8ce47f4760934d6d984a763b6344"
         },
         {
-          "path": "assets/player-D3vE9f34.js",
+          "path": "assets/player-D2e1ujCf.js",
           "bytes": 5576,
-          "sha256": "e0e8a3816055b0b153e07f81dd7a019f6c9077f402889f2e2fc82259aff17a73"
+          "sha256": "64ab1423f6842b72c4d329066bbb09fd2ba11ef1ffd3276f64c3b80ad3b7f5b3"
         },
         {
           "path": "assets/player-DG3vU3-j.js",
@@ -10760,7 +10760,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "40a4d252dce8ab53fc1278c20497644b53d031a42156aa509d5630025851fa7b"
+          "sha256": "493017bbe06eb1b213deff838aff795f249534edd3b7bbec9b7eb8c06f51c302"
         },
         {
           "path": "licenses.txt",
