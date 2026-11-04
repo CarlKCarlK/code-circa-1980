@@ -1,0 +1,43 @@
+{
+  "id": "forth-drafts",
+  "title": "Forth Drafts and Fragments",
+  "description": "Unfinished programs, experiments, and small tools from the 1982 MMSFORTH disks.",
+  "kind": "Source archive",
+  "language": "MMSFORTH V2.0, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Conquest (blocks 45-51)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v01/CONQUEST.bin",
+      "listing": "versions/v01/CONQUEST.txt",
+      "playable": false,
+      "note": "Space strategy game in progress. No start word; some characters are stored as z, j, and p.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v01/CONQUEST.bin",
+          "label": "CONQUEST.bin"
+        },
+        {
+          "path": "versions/v01/CONQUEST.txt",
+          "label": "CONQUEST.txt"
+        }
+      ],
+      "startupSource": "==== Block 45 ====\n 0 ( CONQUEST              PAGE 1 OF               )\n 1 30 CONSTANT SIZE\n 2 SIZE 2 j CONSTANT NO-OF-STARS\n 3 SIZE 3 j CONSTANT NO-OF-PLANETS\n 4 4 CONSTANT NO-OF-B-HOLES\n 5 200 CONSTANT W1       ( WEIGHT VALUE FOR PLANET SCORE )\n 6 5   CONSTANT W2       ( WEIGHT VALUE FOR SHIPS & TROOPS )\n 7 10  CONSTANT W3       ( \"       \"     \" COMPUTER TROOPS )\n 8 20000 CONSTANT SPEED  (  COMPUTER'S SPEED       )\n 9 \n10 VARIABLE  TEMP1   VARIABLE VTAX ( TAX COLLECTED )",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From 1982 MMSFORTH disks. Most source names no author; the decoder is initialed RWL. Preserved here for small-scale archival use."
+  },
+  "sourceOnly": true,
+  "actionVerb": "View source"
+}

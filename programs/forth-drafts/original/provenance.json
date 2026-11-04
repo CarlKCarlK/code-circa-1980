@@ -1,0 +1,29 @@
+{
+  "version": "v01",
+  "disk": "MMSFORTH New Programs",
+  "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+  "source": "blocks 45-51",
+  "imported_files": [
+    {
+      "path": "versions/v01/CONQUEST.bin",
+      "archive_path": "blocks 45-51",
+      "bytes": 7168,
+      "sha256": "9df2d099430918a258e3f8b99814f8e11fad847905c4f320346a866e6f93dd9f"
+    },
+    {
+      "path": "versions/v01/CONQUEST.txt",
+      "archive_path": "derived listing",
+      "bytes": 5345,
+      "sha256": "f4ffc78556c8206b41bdeb38f95f55f9efeb343dfd9685b1dc806fe53e12e2e9"
+    }
+  ],
+  "recovery_item": {
+    "format": "MMSFORTH blocks",
+    "sha256": "9df2d099430918a258e3f8b99814f8e11fad847905c4f320346a866e6f93dd9f",
+    "bytes": 7168,
+    "import_date": "2026-11-03",
+    "first_block": 45,
+    "last_block": 51
+  }
+}
