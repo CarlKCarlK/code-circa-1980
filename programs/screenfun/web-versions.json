@@ -5,7 +5,7 @@
       "path": "screenfun/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "49a8c6674e285d79ae1c73b36e9fb6639eb92c04",
+      "sourceCommit": "f9cc102be711c6c4185f11b7c87af4fc21de07de",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-Dz-bgaye.js",
+          "path": "assets/emulator-Du8N7Oie.js",
           "bytes": 316923,
-          "sha256": "b219758ebc9343314a300b2a534e26ecda6f72b2aa1bee660d9c98107ac20c70"
+          "sha256": "67c2938c59bcbd4b7491ee96ef9b2d1f62a555c7c772e6a2a5ba8b6f84d9319d"
         },
         {
           "path": "assets/forth-system-DLZLKAFv.dmk",
@@ -58,14 +58,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
-          "path": "assets/index-BZoEHyg4.js",
-          "bytes": 29797,
-          "sha256": "5604a49bf373b1c27016bbc54bbd58bf16021042ee37563568f4f6d2ff46828c"
+          "path": "assets/index-pjb-f6Iz.js",
+          "bytes": 30003,
+          "sha256": "8b14e8ae3c526c17c2bc9b6afeb2d75623713684d25079414e0b6821b30f2492"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -235,7 +235,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "528b5f880f4484334260a02986f23fb735f9c4323d709a82bb9d0b5fa5aba57c"
+          "sha256": "1e868c543fb7b4f135b07f2c35efd65c0969bbd7a6858bf4687098b659617261"
         },
         {
           "path": "licenses.txt",
