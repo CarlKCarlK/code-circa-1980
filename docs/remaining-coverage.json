@@ -6141,18 +6141,20 @@
       "save": "1",
       "archive_source": "tapes/recovered/tape28b/derived/01-SARGON-LOADER.ASM",
       "inventory_status": "validated captured payload; runtime untested",
-      "disposition": "new program",
+      "disposition": "removed",
       "family": "Sargon Loader",
-      "program": "sargon-encoded-payload"
+      "program": "sargon-encoded-payload",
+      "removed": "User, November 3, 2026: commercial software that does not need to be shared. Kept only in the private recovery archive."
     },
     {
       "capture": "tape28b",
       "save": "2",
       "archive_source": "tapes/recovered/tape28b/derived/02-SARGON-ENCODED-PAYLOAD.ASM",
       "inventory_status": "validated captured payload; runtime untested",
-      "disposition": "new program",
+      "disposition": "removed",
       "family": "Sargon Encoded Payload",
-      "program": "sargon-encoded-payload"
+      "program": "sargon-encoded-payload",
+      "removed": "User, November 3, 2026: commercial software that does not need to be shared. Kept only in the private recovery archive."
     },
     {
       "capture": "tape28b",

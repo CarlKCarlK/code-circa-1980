@@ -507,3 +507,11 @@ moving an iframe into a detached session cache destroys its browsing context.
 See docs/model100-player.md and model100.spec.js for actual execution limits,
 focus/pause/restart tests, and local commands. This work is isolated on branch
 `model100-player` under worktrees/model100-player pending integration.
+
+## Sargon II removed (November 3, 2026)
+
+The user decided Sargon II does not need to be shared because it is plainly commercial.
+Its program folder and public release were deleted from the current tree; it stays in the
+recovery archive and in Git history. docs/remaining-coverage.json marks its two rows
+`removed`. Do not restore it unless the user asks. The removal commit uses
+`[reset-web-versions]` because the release check otherwise forbids removing a release.
