@@ -164,6 +164,28 @@
       ],
       "startupSource": "==== Block 63 ====\n 0 ( PROGRAM PAGE 11-20-82         1 OF 2 )      : JOB  ;\n 1 \n 2 65 BLOCK 64 + CONSTANT  BUFADDR\n 3 \n 4 : GETNUM   0 BEGIN  SWAP DUP ROT SWAP C@ DUP DUP 47 >\n 5            SWAP 58 < AND WHILE  48 - SWAP 10 * +  SWAP 1+ SWAP\n 6            REPEAT DROP ;        ( ADDR - NUM  ON STACK )\n 7 \n 8 : BLNKBURN   BEGIN DUP C@ 32 = WHILE 1+ REPEAT ; ( ADDR STACK )\n 9 : TIMES   PAGE .\" HERE ARE THE  TIMES \"  CR CR  BUFADDR GETNUM\n10           . CR BLNKBURN GETNUM . CR BLNKBURN  GETNUM  . CR  BLNK",
       "controlSource": []
+    },
+    {
+      "id": "v08",
+      "label": "Cipher (blocks 41-42)",
+      "capture": "disk: MMSFORTH New Program Backup",
+      "raw": "versions/v08/CIPHER.bin",
+      "listing": "versions/v08/CIPHER.txt",
+      "playable": false,
+      "note": "Encrypts or decrypts a block buffer with a five-keystroke key. Dated December 1982.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v08/CIPHER.bin",
+          "label": "CIPHER.bin"
+        },
+        {
+          "path": "versions/v08/CIPHER.txt",
+          "label": "CIPHER.txt"
+        }
+      ],
+      "startupSource": "==== Block 41 ====\n 0 ( CIF  , DCIF 1 OR   2  )\n 1 \n 2  VARIABLE BAD\n 3 : BOND 7 0 0  . .  .   1 BAD  ! ;\n 4 : FIRST  .\" KEY ? \" 5 0 DO KEY LOOP ;\n 5 : SECOND  .\" REPEAT \" 5 0 DO KEY DUP 7 ROLL <> IF\n 6    BOND   THEN  LOOP ;\n 7 : GETKEY FIRST 6 ROLL 1 DO SECOND LOOP\n 8          BAD @ IF  5 0 DO DROP LOOP EXIT  THEN ;\n 9   VARIABLE BUFB VARIABLE BUFA\n10  VARIABLE ZERO1  0 , 0 ,",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
