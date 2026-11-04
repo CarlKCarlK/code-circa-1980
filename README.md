@@ -17,7 +17,7 @@ The least expensive complete system cost $599 (about $3,100 in 2026 dollars). I 
 
 The TRS-80 remained my personal computer through high school and college, until I graduated from the University of Illinois with a degree in computer science in 1985. At the time, most students entering computer science had never used a computer before. My undergraduate courses used PL/I, C, and Pascal, but on my own computer I mostly programmed in various versions of BASIC, along with some Forth and Z80 assembly language.
 
-Initially, the only storage was a cassette recorder. Over the years, I added a floppy-disk drive, a modem, and a small printer. When I started graduate school in 1985, I moved to an IBM AT running DOS and Microsoft's Xenix, a version of Unix that cost about $1,000.
+Initially, the only storage was a cassette recorder. Over the years, I added a floppy-disk drive, a modem, and a small printer. When I started graduate school in 1985, I moved to an IBM AT running DOS and Microsoft's Xenix, a version of Unix that cost about $1,000 (roughly $3,000 in 2026 dollars).
 
 The TRS-80 never acquired the prestige of the Apple II or Commodore PET, and BASIC eventually became associated with amateur programming. Both reputations obscure what these tools made possible. I could explore algorithms, write games, and solve interesting problems on a computer I owned, understood, and didn't have to share or wait to use. The programs preserved here are some of the results.
 

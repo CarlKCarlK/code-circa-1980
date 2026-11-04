@@ -1,7 +1,7 @@
 {
   "id": "model-100-transaction-simulation",
   "title": "Model 100 Transaction Simulation",
-  "description": "6 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "description": "An unfinished simulation of negotiating programs. The save stops with an error as soon as it runs, so it’s here to read.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",

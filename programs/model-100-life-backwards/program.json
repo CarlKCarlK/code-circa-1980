@@ -1,7 +1,7 @@
 {
   "id": "model-100-life-backwards",
   "title": "Model 100 LIFE Backwards",
-  "description": "8 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "description": "An unfinished April 1985 search for what came before a LIFE pattern. It stops at a missing line, so it’s here to read.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",

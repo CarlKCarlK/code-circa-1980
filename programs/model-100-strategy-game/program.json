@@ -1,7 +1,7 @@
 {
   "id": "model-100-strategy-game",
   "title": "Model 100 Strategy Game",
-  "description": "2 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "description": "The Secret War: two players at one keyboard, Germany against Russia, gamble and spy, then bluff about how much each has.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",

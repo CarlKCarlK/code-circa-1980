@@ -1,7 +1,7 @@
 {
   "id": "model-100-study-program",
   "title": "Model 100 Study Program",
-  "description": "2 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "description": "A flash-card study program that reads lessons from a text file. A short modern sample lesson lets you try it.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",

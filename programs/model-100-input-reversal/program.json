@@ -1,7 +1,7 @@
 {
   "id": "model-100-input-reversal",
   "title": "Model 100 Input Reversal",
-  "description": "8 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "description": "A five-line experiment: type periods and other characters, and it reads them back as reversed binary.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",

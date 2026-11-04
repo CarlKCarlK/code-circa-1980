@@ -53,3 +53,20 @@ test('Model 100 player fits a narrow screen and navigation stops the machine',as
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.getByRole('link',{name:'Gallery',exact:true}).click();await expect(page.locator('iframe')).toHaveCount(0);
 });
+test('Model 100 study program runs the modern sample lesson',async({page})=>{
+ test.setTimeout(120000);await open(page,'study-program');
+ await expect.poll(()=>screen(page),{timeout:20000}).toContain('Lesson (.do assumed)?');
+ await page.getByRole('button',{name:'Load a sample lesson'}).click();
+ await expect.poll(()=>screen(page),{timeout:60000}).toContain('DEMO  .DO');
+ await answer(page,'DEMO');await expect.poll(()=>screen(page),{timeout:15000}).toContain('How many to skip');
+ await answer(page,'0');await expect.poll(()=>screen(page),{timeout:15000}).toContain('Model 100 CPU?');
+ await answer(page,'');await expect.poll(()=>screen(page),{timeout:15000}).toContain('Intel 80C85');
+ await expect.poll(()=>screen(page),{timeout:15000}).toContain('Right?');
+});
+test('Model 100 J takes an order in its real-time loop',async({page})=>{
+ test.setTimeout(90000);await open(page,'jab');await answer(page,'1');await page.waitForTimeout(2000);
+ await page.locator('#display').focus();await page.keyboard.press(' ');
+ await expect.poll(()=>screen(page),{timeout:20000}).toContain('What do you wish');
+ await answer(page,'m');await expect.poll(()=>screen(page),{timeout:15000}).toContain('Which door');
+ await answer(page,'1');await expect.poll(()=>screen(page),{timeout:30000}).toContain('you are in room');
+});

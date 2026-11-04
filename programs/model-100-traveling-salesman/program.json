@@ -1,7 +1,7 @@
 {
   "id": "model-100-traveling-salesman",
   "title": "Model 100 Traveling Salesman",
-  "description": "4 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "description": "Pick a number of cities and watch it build and draw routes, trying to shorten the trip.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",

@@ -2,7 +2,7 @@
   "id": "model-100-jab",
   "urlName": "model-100-j",
   "title": "Model 100 J",
-  "description": "4 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "description": "Hunt a wandering Jab through 20 rooms in real time, with delayed orders and timed gas. This save has no ending: the program keeps running until you restart.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",

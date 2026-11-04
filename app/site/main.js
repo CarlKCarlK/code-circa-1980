@@ -70,7 +70,7 @@ async function render() {
   }
   if (!parts.length) {
     document.title = 'Code Circa 1980';
-    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes, updated with new controls.</p><p class="intro-links"><a href="#about-author">About this project ↓</a></p></section>${galleryCards(programs,{playUrl,versionPicker,actionVerb})}<p class="collection-note more-link"><a href="#/more">More uncurated programs →</a></p><section class="about-author" aria-labelledby="about-author"><h2 id="about-author">About this project</h2>${aboutAuthor.map(p=>`<p>${escape(p)}</p>`).join('')}</section>`;
+    app.innerHTML=`<section class="intro"><p class="eyebrow">A software time capsule</p><h1>Code, circa 1980.<br><em>Running again.</em></h1><p class="lede">Original programs from the early days of personal computing.<br>Recovered from cassette tapes and diskettes, updated with new controls.</p><p class="intro-links"><a href="#about-author">About this project ↓</a></p></section>${galleryCards(programs,{playUrl,versionPicker,actionVerb})}<p class="collection-note more-link"><a href="#/more">More uncurated programs →</a></p><section class="about-author" aria-labelledby="about-author"><h2 id="about-author">About this project</h2>${aboutAuthor.map(p=>`<p>${escape(p)}</p>`).join('')}</section>`;
     // The hash holds the route, so scroll to the bio instead of navigating.
     app.querySelector('.intro-links a').onclick=event=>{event.preventDefault();app.querySelector('.about-author').scrollIntoView({behavior:'smooth'});};
     return;

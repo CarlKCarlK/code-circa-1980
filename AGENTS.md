@@ -503,6 +503,16 @@ each keeps that credit in its note.
 Generic thumbnails choose by language, then medium: Forth, Lisp, the diskette for a program
 that plays from disk, otherwise the cassette.
 
+### Model 100 playability (November 4, 2026)
+
+The user asked to make the Model 100 programs playable. All eight already booted; what was
+missing was instructions, now in `site/programs/model100.js`, with honest descriptions. Model 100
+JAB is displayed as Model 100 J (`/model-100-j/`, web v2), since it's a 20-room game unrelated to
+JAB; its ID stays `model-100-jab`. Study's Load a sample lesson button types a modern, labeled
+lesson through BREAK and direct BASIC. J has no ending in this save. Transaction Simulation
+(`?SN Error in 0`) and LIFE Backwards (`?UL Error in 1005`) can't be played without writing new
+code, so they stay as they are unless the user asks for a separate derived edition.
+
 ## Programs from recovered floppy disks (November 3, 2026)
 
 Fourteen More players boot original disk images through `site/model1-disks.js` and

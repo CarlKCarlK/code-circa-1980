@@ -1,7 +1,7 @@
 {
   "id": "model-100-numeric-processing",
   "title": "Model 100 Numeric Processing",
-  "description": "4 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "description": "Conway’s LIFE stored as packed bits in numbers. It starts by itself and draws slowly; just watch.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",
