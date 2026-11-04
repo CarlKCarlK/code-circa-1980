@@ -252,6 +252,28 @@
       ],
       "startupSource": "==== Block 30 ====\n 0 (  ASSEMBLY CODE  FOR GOOD  MUSIC      PAGE 1 OF 2 )\n 1   95 CARRAY MUTAB\n 2 245 197 213 229 221 229 253 229 205 127  ( ASSUMED : CALL AS  )\n 3  10 229 221 225 221 110   2  38   0  41  (    FOLLOWS   :     )\n 4  41 221  94   0 221  86   1  25  17  95  (  FREQ DUR MUNOTE   )\n 5   0  25 229 253 225 253  94   0 253  86\n 6   1 253  78   2 253  70   3  33   0   0\n 7 221 126   3   9  61  32 252 229 221 225\n 8   1 255 255 107  98  62   1 211 255   9\n 9 218  69 127 107  98  62   2 211 255   9\n10  56 253 221   9  56 233 253 225 221 225",
       "controlSource": []
+    },
+    {
+      "id": "v12",
+      "label": "Logging (blocks 21-24)",
+      "capture": "disk: MMSFORTH Forth System",
+      "raw": "versions/v12/LOGGING.bin",
+      "listing": "versions/v12/LOGGING.txt",
+      "playable": false,
+      "note": "An unfinished screen-logging routine in Pascal-like pseudocode and Forth.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v12/LOGGING.bin",
+          "label": "LOGGING.bin"
+        },
+        {
+          "path": "versions/v12/LOGGING.txt",
+          "label": "LOGGING.txt"
+        }
+      ],
+      "startupSource": "==== Block 21 ====\n 0 (LOGGING)\n 1 (  PROCEDURE PRINT - INPUT CHAR ;\n 2      ADD TO BOTTOM OF SCREEN\n 3      IF LF OR CR\n 4        THEN\n 5          HOLD LINE\n 6          REPLACE HOLD\n 7          ADD LINE TO LOG\n 8        END    END )\n 9 :PRINT EMIT\n10      END'SCREEN  C@ 0 = NOT IF",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
