@@ -482,6 +482,9 @@ The user asked to correct the URL's spelling the same day. Its public URLs are n
 stays at unshared v1. The ID and folder stay `liers-poker`, `/liers-poker/` redirects, and
 frozen `/liers-poker/v1/` stays. Recovered filenames and labels keep the historical LIERS.
 
+At the user's request, More now lists Liar's Poker, Peoria Grand Prix, Word Search, and Illiad
+directly after Sound & Tones. That order is set in `app/site/catalog.js` and needs no new release.
+
 ## Programs from recovered floppy disks (November 3, 2026)
 
 Fourteen More players boot original disk images through `site/model1-disks.js` and

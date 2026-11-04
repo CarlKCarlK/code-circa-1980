@@ -18,7 +18,7 @@ for(const id of REMAINING_IDS){
 }
 test('More preserves its existing order, appends restored/archive entries, and searches',async({page})=>{
  await page.goto('/#/more');await expect(page.locator('.program-card')).toHaveCount(MORE_COUNT);
- const titles=await page.locator('.program-card h2').allTextContents();expect(titles.filter(title=>title!=='Sound & Tones').slice(29,36)).toEqual(['Who Donnt?','Dungeon Trainer','TUTAC Computer','Unfinished Tank Game','Lunar Lander','Poker','Space Colony']);
+ const titles=await page.locator('.program-card h2').allTextContents();expect(titles.filter(title=>!['Sound & Tones','Liar’s Poker','Illiad'].includes(title)).slice(29,36)).toEqual(['Who Donnt?','Dungeon Trainer','TUTAC Computer','Unfinished Tank Game','Lunar Lander','Poker','Space Colony']);
  await page.getByRole('searchbox',{name:'Find a program'}).fill('BOND');await expect(page.locator('.program-card:visible')).toHaveCount(1);await page.locator('.program-card:visible .card-link').click();await expect(page.locator('.source-only')).toContainText('BOND');
  await page.setViewportSize({width:390,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
