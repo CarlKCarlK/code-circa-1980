@@ -1,60 +1,23 @@
 {
-  "version": "v02",
-  "capture": "tape9a",
-  "save": 4,
-  "archive_raw": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.BAS",
-  "archive_listing": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.ASC",
-  "imported_files": [
+  "title": "Physics Formula Reference",
+  "version": "v03",
+  "label": "FORMULA LOOKUP",
+  "capture": "tape4b",
+  "save": 5,
+  "merged_from": {
+    "program": "formula-lookup",
+    "version": "v01"
+  },
+  "order_inferred": false,
+  "order_note": "Appended after the published canonical history; this position does not claim development order.",
+  "files": [
     {
-      "path": "versions/v02/04-PHYSICS-FORMULA-REFERENCE-SAVE2.ASC",
-      "archive_path": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.ASC",
-      "bytes": 2569,
-      "sha256": "c9145b3282fa0d71331911abb74b44dd8ceb95a89e120edcbc6e0f9c7bc1a745"
+      "canonical_path": "PHYSICS-FORMULA-REFERENCE.ASC",
+      "snapshot_path": "versions/formula-lookup-v01/05-FORMULA-LOOKUP.ASC"
     },
     {
-      "path": "versions/v02/04-PHYSICS-FORMULA-REFERENCE-SAVE2.BAS",
-      "archive_path": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.BAS",
-      "bytes": 2450,
-      "sha256": "83e850e6eab5cce4df949650fa980ff3d7b14b0b4ea02408cd64b121fa8d779c"
+      "canonical_path": "PHYSICS-FORMULA-REFERENCE.BAS",
+      "snapshot_path": "versions/formula-lookup-v01/05-FORMULA-LOOKUP.BAS"
     }
-  ],
-  "recovery_item": {
-    "format": "BASIC",
-    "sha256": "83e850e6eab5cce4df949650fa980ff3d7b14b0b4ea02408cd64b121fa8d779c",
-    "bytes": 2450,
-    "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
-    "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 18,
-    "last": 11000,
-    "pointer_bases": [
-      17125
-    ],
-    "normal_end_marker": true,
-    "parsed_bytes": 2448,
-    "source_notice_lines": []
-  },
-  "inventory_row": {
-    "tape": "9",
-    "side": "a",
-    "order": "4",
-    "type": "BASIC",
-    "recovery%": "100",
-    "summary": "PHYSICS FORMULA REFERENCE SAVE2; 18 lines; identical to save 3",
-    "capture": "tape9a",
-    "capture_scope": "unknown",
-    "baud": "500",
-    "platform": "TRS-80 Model I/III BASIC",
-    "status": "validated payload; runtime untested",
-    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
-    "source_start_s": "112.329",
-    "recovered_bytes": "2450",
-    "source_file": "tapes/recovered/tape9a/best/04-PHYSICS-FORMULA-REFERENCE-SAVE2.ASC",
-    "wav": "tapes/tape9a.wav",
-    "folder": "tapes/recovered/tape9a/best",
-    "recovery_date": "2026-10-26",
-    "recorder_volume": "",
-    "next_action": "Execution-test; historical source may be unfinished"
-  },
-  "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
-  "execution_tested": false
+  ]
 }
