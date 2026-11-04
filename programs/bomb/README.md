@@ -53,3 +53,11 @@ is a contextual estimate.
   version (tags `bomb-v01`, `bomb-v02`).
 - `provenance.json`: archive paths, hashes and recovery evidence.
 - `VERIFICATION.md`: what was run in the emulator, separately from recovery.
+
+## Saved and shared scores
+
+From web v4 the player keeps scores past the session, without changing the 1981 program.
+When the game shows its rankings, `app/site/programs/bomb-scores.js` reads them from the
+running program's memory, saves new ones in the browser, and posts them to the "World
+top ten", a Cloudflare Worker with a D1 database in `app/services/bomb-scores/`. Only
+initials, score and date are shared. The game plays normally if the list is unavailable.

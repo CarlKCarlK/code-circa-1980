@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape16b",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape16b/best/08-PYTHAGOREAN-CALCULATOR.BAS",
+  "archive_listing": "tapes/recovered/tape16b/best/08-PYTHAGOREAN-CALCULATOR.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/08-PYTHAGOREAN-CALCULATOR.ASC",
+      "archive_path": "tapes/recovered/tape16b/best/08-PYTHAGOREAN-CALCULATOR.ASC",
+      "bytes": 188,
+      "sha256": "a6c385abbca29682ff3f179b270863fe9a6e85d77a189c82d73388f235476d11"
+    },
+    {
+      "path": "versions/v01/08-PYTHAGOREAN-CALCULATOR.BAS",
+      "archive_path": "tapes/recovered/tape16b/best/08-PYTHAGOREAN-CALCULATOR.BAS",
+      "bytes": 164,
+      "sha256": "1837f2b83a9a3040bc98973a57b95f2f07261afc00f3a68e439efe1d63db1f91"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "1837f2b83a9a3040bc98973a57b95f2f07261afc00f3a68e439efe1d63db1f91",
+    "bytes": 164,
+    "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 8,
+    "last": 60,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 162,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "16",
+    "side": "b",
+    "order": "8",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "Pythagorean side calculator (inferred title)",
+    "capture": "tape16b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "162.425",
+    "recovered_bytes": "164",
+    "source_file": "tapes/recovered/tape16b/best/08-PYTHAGOREAN-CALCULATOR.ASC",
+    "wav": "tapes/tape16b.wav",
+    "folder": "tapes/recovered/tape16b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "7/10",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+  "execution_tested": false
+}

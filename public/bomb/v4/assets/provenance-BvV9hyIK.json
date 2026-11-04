@@ -1,0 +1,80 @@
+{
+  "official_title": "Two Player Trail Game",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Two Player Trail Game",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape30a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape30a/best/04-TWO-PLAYER-TRAIL-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape30a/best/04-TWO-PLAYER-TRAIL-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/04-TWO-PLAYER-TRAIL-GAME.ASC",
+          "archive_path": "tapes/recovered/tape30a/best/04-TWO-PLAYER-TRAIL-GAME.ASC",
+          "bytes": 2013,
+          "sha256": "23e9f482a493d213469be7903ee85cee35b33ca72840dce2f9602a83a3f31fca"
+        },
+        {
+          "path": "versions/v01/04-TWO-PLAYER-TRAIL-GAME.BAS",
+          "archive_path": "tapes/recovered/tape30a/best/04-TWO-PLAYER-TRAIL-GAME.BAS",
+          "bytes": 1665,
+          "sha256": "8495e1bd2207c501edb954861d9c1dec02a198f4a1656e26eecbdfe06e3612ec"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "8495e1bd2207c501edb954861d9c1dec02a198f4a1656e26eecbdfe06e3612ec",
+        "bytes": 1665,
+        "archive_validation": "Exact left/right payload; 41 ordered lines; consistent pointer base 17125; end marker; exact EOF",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 41,
+        "last": 1010,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1663,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "30",
+        "side": "a",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Two-player trail game (descriptive title)",
+        "capture": "tape30a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Exact left/right payload; 41 ordered lines; consistent pointer base 17125; end marker; exact EOF",
+        "source_start_s": "288.914",
+        "recovered_bytes": "1665",
+        "source_file": "tapes/recovered/tape30a/best/04-TWO-PLAYER-TRAIL-GAME.ASC",
+        "wav": "tapes/tape30a.wav",
+        "folder": "tapes/recovered/tape30a",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape30a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

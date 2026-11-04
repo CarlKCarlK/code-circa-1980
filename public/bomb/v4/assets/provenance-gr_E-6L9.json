@@ -1,0 +1,60 @@
+{
+  "version": "v04",
+  "capture": "tape24a",
+  "save": 15,
+  "archive_raw": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.BAS",
+  "archive_listing": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v04/15-GRAVITY-SIMULATION-SAVE04.ASC",
+      "archive_path": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.ASC",
+      "bytes": 2345,
+      "sha256": "08d1e440fc2b112b33e5ac866891e9746431fffde385469a04f8fc2e59aa3313"
+    },
+    {
+      "path": "versions/v04/15-GRAVITY-SIMULATION-SAVE04.BAS",
+      "archive_path": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.BAS",
+      "bytes": 1968,
+      "sha256": "e4726d89ba03ce133c6ec668de66b89b671270cbe7963bf7b26304af653e1181"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "e4726d89ba03ce133c6ec668de66b89b671270cbe7963bf7b26304af653e1181",
+    "bytes": 1968,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 58,
+    "last": 3111,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1966,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "24",
+    "side": "a",
+    "order": "15",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "GRAVITY SIMULATION SAVE04",
+    "capture": "tape24a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "592.183",
+    "recovered_bytes": "1968",
+    "source_file": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.ASC",
+    "wav": "tapes/tape24a.wav",
+    "folder": "tapes/recovered/tape24a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+  "execution_tested": false
+}

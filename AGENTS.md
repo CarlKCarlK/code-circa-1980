@@ -477,3 +477,13 @@ credits visible. The LISP programs are the user's. RWL is Rich Losey, who gets c
 Decoder; every other Forth program says he "may have contributed" (user, same day). Keep "Today's News," the
 Security rule set, and commercial programs out unless the user asks. GPS's two
 reconstructed functions are typed at startup; never add them to recovered bytes.
+
+### Bomb scores (November 3, 2026)
+
+The user requested saved and shared Bomb scores. From web v4 a panel beside the player
+keeps a top ten in localStorage and shows a shared "World top ten" from the Cloudflare
+Worker `bomb-scores` (https://bomb-scores.kadie-sites.workers.dev, D1 database
+`bomb-scores`, source in app/services/bomb-scores/). The 1981 program is unchanged; the
+panel only reads its memory. Deploy with `npx wrangler@4 deploy` from that folder. The
+user's Cloudflare account also holds unrelated domains and Workers: never touch them.
+Client-side scores can be faked; the Worker limits abuse and does not prove scores.

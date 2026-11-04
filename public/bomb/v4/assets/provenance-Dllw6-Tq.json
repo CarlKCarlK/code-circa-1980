@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape25a",
+  "save": 14,
+  "archive_raw": "tapes/recovered/tape25a/best/14-PROGRAMMABLE-CALCULATOR-DRAFT.BAS",
+  "archive_listing": "tapes/recovered/tape25a/best/14-PROGRAMMABLE-CALCULATOR-DRAFT.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/14-PROGRAMMABLE-CALCULATOR-DRAFT.ASC",
+      "archive_path": "tapes/recovered/tape25a/best/14-PROGRAMMABLE-CALCULATOR-DRAFT.ASC",
+      "bytes": 2043,
+      "sha256": "c83fd9f80658a2fa432bcb6bcbf4050415ce749e863a5ac2e915f1d8d06ff985"
+    },
+    {
+      "path": "versions/v01/14-PROGRAMMABLE-CALCULATOR-DRAFT.BAS",
+      "archive_path": "tapes/recovered/tape25a/best/14-PROGRAMMABLE-CALCULATOR-DRAFT.BAS",
+      "bytes": 1880,
+      "sha256": "1f0c3c8b2d9d0fdb1f6033726777711f9488c2bebe925f5b75c9d933ed8742ed"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "1f0c3c8b2d9d0fdb1f6033726777711f9488c2bebe925f5b75c9d933ed8742ed",
+    "bytes": 1880,
+    "archive_validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 47,
+    "last": 4060,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1878,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "25",
+    "side": "a",
+    "order": "14",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "PROGRAMMABLE CALCULATOR DRAFT",
+    "capture": "tape25a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC family",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "566.174",
+    "recovered_bytes": "1880",
+    "source_file": "tapes/recovered/tape25a/best/14-PROGRAMMABLE-CALCULATOR-DRAFT.ASC",
+    "wav": "tapes/tape25a.wav",
+    "folder": "tapes/recovered/tape25a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
+  "execution_tested": false
+}

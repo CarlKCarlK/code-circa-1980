@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape16b",
+  "save": 15,
+  "archive_raw": "tapes/recovered/tape16b/best/15-NIM.BAS",
+  "archive_listing": "tapes/recovered/tape16b/best/15-NIM.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/15-NIM.ASC",
+      "archive_path": "tapes/recovered/tape16b/best/15-NIM.ASC",
+      "bytes": 355,
+      "sha256": "ec65dc0b8b2bc9395f987244153474890772d0b2c79358d4b1d68d89a04e22a7"
+    },
+    {
+      "path": "versions/v01/15-NIM.BAS",
+      "archive_path": "tapes/recovered/tape16b/best/15-NIM.BAS",
+      "bytes": 291,
+      "sha256": "bf0c9129637537ed19c8311f1c3bc7935a2a7450237a73dc6d4841881317a3e5"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "bf0c9129637537ed19c8311f1c3bc7935a2a7450237a73dc6d4841881317a3e5",
+    "bytes": 291,
+    "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 20,
+    "last": 1010,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 289,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "16",
+    "side": "b",
+    "order": "15",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "Nim stone game",
+    "capture": "tape16b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "260.818",
+    "recovered_bytes": "291",
+    "source_file": "tapes/recovered/tape16b/best/15-NIM.ASC",
+    "wav": "tapes/tape16b.wav",
+    "folder": "tapes/recovered/tape16b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "7/10",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+  "execution_tested": false
+}

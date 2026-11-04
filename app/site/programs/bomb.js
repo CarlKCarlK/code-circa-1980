@@ -1,4 +1,5 @@
 // Bomb instructions and controls; shared navigation remains generic.
+import {scoresPanel} from './bomb-scores.js';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const key = text => `<kbd>${escape(text)}</kbd>`;
 const code = text => `<code>${escape(text)}</code>`;
@@ -6,7 +7,7 @@ export const art = {src:new URL('../../assets/bomb-wires.svg',import.meta.url).h
 export const aboutOpen = true;
 // A stock Model I, as in 1981: its ROM shows shifted letters (yOU, mR. TNT) as capitals.
 export const model = 'MODEL1';
-export const restartConfirm = () => 'Restart the program? The rankings will be lost.';
+export const restartConfirm = () => 'Restart the program? The game’s own rankings will be lost; your saved scores stay.';
 
 // v02's DATA lines 1000-1010, in order.
 const colors = 'WHITE BLACK GREY GRAY YELLOW GREEN ORANGE RED PINK BLUE PURPLE VIOLET INDIGO EBONY COBALT AQUA SAPPHIRE TURQUOISE SILVER GOLD EMERALD SCARLET CINNAMON CRIMSON LEMON CHROME AZURE BAY TAN AUBURN COPPER KHAKI OLIVE MAROON IVORY AMBER BEIGE BROWN'.split(' ');
@@ -19,7 +20,7 @@ const quirks = [
   'Only YES retires. Any other answer, even NO, brings the next bomb, faster.',
   'The program never uses RANDOM. The attract screen draws with random numbers, so the first bomb’s wires depend on when you press a key.',
   'Line 875 reads IF TN>RN(9) PRINT, with no THEN; Level II BASIC runs it.',
-  'Rankings live only in memory: Restart clears them.',
+  'The game’s own rankings live only in memory: Restart clears them. The site separately saves the scores you post, under “World top ten” and “Your top ten”.',
   'The source has yOU, kEEP and mR. TNT: Shift held for a capital stores a lowercase letter. A stock Model I shows them as capitals, so this site runs Bomb on one, drawn in the same Model III font as the other programs.'
 ];
 
@@ -55,6 +56,7 @@ export function decoratePlayer(instance, {dock}) {
   }
   dock.querySelector('.quick-controls').append(group);
   dock.querySelector('.quick-controls').append(phoneKeyboard(instance));
+  dock.append(scoresPanel(instance));
 }
 
 // Phones open their own keyboard only for a focused text field. A hidden field

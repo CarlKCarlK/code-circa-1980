@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape21a",
+  "save": 14,
+  "archive_raw": "tapes/recovered/tape21a/best/14-REVERSE-NUMBERS-GAME.BAS",
+  "archive_listing": "tapes/recovered/tape21a/best/14-REVERSE-NUMBERS-GAME.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/14-REVERSE-NUMBERS-GAME.ASC",
+      "archive_path": "tapes/recovered/tape21a/best/14-REVERSE-NUMBERS-GAME.ASC",
+      "bytes": 1136,
+      "sha256": "959d21e134d47a90dfac1f4886fa0bfa98df7c17a8ba0171921699cc7732345e"
+    },
+    {
+      "path": "versions/v01/14-REVERSE-NUMBERS-GAME.BAS",
+      "archive_path": "tapes/recovered/tape21a/best/14-REVERSE-NUMBERS-GAME.BAS",
+      "bytes": 933,
+      "sha256": "dd71658dfdb9bfc7c3ce79a9b93c82108817dc7b7ee12f042a0404db2cdfa9f6"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "dd71658dfdb9bfc7c3ce79a9b93c82108817dc7b7ee12f042a0404db2cdfa9f6",
+    "bytes": 933,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 7,
+    "last": 770,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 931,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "21",
+    "side": "a",
+    "order": "14",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "REVERSE NUMBERS GAME",
+    "capture": "tape21a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "352.087",
+    "recovered_bytes": "933",
+    "source_file": "tapes/recovered/tape21a/best/14-REVERSE-NUMBERS-GAME.ASC",
+    "wav": "tapes/tape21a.wav",
+    "folder": "tapes/recovered/tape21a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+  "execution_tested": false
+}

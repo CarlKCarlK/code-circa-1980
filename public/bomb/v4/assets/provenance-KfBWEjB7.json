@@ -1,0 +1,60 @@
+{
+  "version": "v02",
+  "capture": "tape9a",
+  "save": 7,
+  "archive_raw": "tapes/recovered/tape9a/best/07-SPELLING-CHECKER.BAS",
+  "archive_listing": "tapes/recovered/tape9a/best/07-SPELLING-CHECKER.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/07-SPELLING-CHECKER.ASC",
+      "archive_path": "tapes/recovered/tape9a/best/07-SPELLING-CHECKER.ASC",
+      "bytes": 1018,
+      "sha256": "61a18416d37d36eba25ac1d794c68cc789735576e4e2c883772f38617ff61097"
+    },
+    {
+      "path": "versions/v02/07-SPELLING-CHECKER.BAS",
+      "archive_path": "tapes/recovered/tape9a/best/07-SPELLING-CHECKER.BAS",
+      "bytes": 901,
+      "sha256": "e315e4fd883da73a8c8f5ac03fd9cc9b24af0d9535c23851018ae5d106726d3b"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "e315e4fd883da73a8c8f5ac03fd9cc9b24af0d9535c23851018ae5d106726d3b",
+    "bytes": 901,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 11,
+    "last": 11000,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 899,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "9",
+    "side": "a",
+    "order": "7",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "SPELLING CHECKER; 11 lines",
+    "capture": "tape9a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+    "source_start_s": "218.990",
+    "recovered_bytes": "901",
+    "source_file": "tapes/recovered/tape9a/best/07-SPELLING-CHECKER.ASC",
+    "wav": "tapes/tape9a.wav",
+    "folder": "tapes/recovered/tape9a/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test; historical source may be unfinished"
+  },
+  "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
+  "execution_tested": false
+}

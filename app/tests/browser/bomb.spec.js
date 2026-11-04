@@ -48,8 +48,18 @@ test('collection and program links open the Bomb player directly; v01 is source 
 test('Bomb runs: start from the title, defuse a bomb by typing its wires, retire, pause and restart',async({page})=>{
  test.setTimeout(120000);
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ // The shared list is faked here; tests/bomb-scores.test.mjs covers the Worker itself.
+ const posted=[];let world=[{initials:'RL',score:99,posthumous:false,date:'2026-11-01'}];
+ await page.route('**/scores',route=>{
+  const request=route.request(),headers={'Access-Control-Allow-Origin':'*','Access-Control-Allow-Headers':'Content-Type','Access-Control-Allow-Methods':'GET, POST, OPTIONS'};
+  if(request.method()==='OPTIONS')return route.fulfill({status:204,headers});
+  if(request.method()==='POST'){const entry=request.postDataJSON();posted.push(entry);world=[...world,{...entry,date:'2026-11-04'}];}
+  return route.fulfill({status:request.method()==='POST'?201:200,headers,contentType:'application/json',body:JSON.stringify({scores:world})});
+ });
  await page.goto('/?development=1&test#/program/bomb/basic/play');
  await expect(page.locator('#status')).toContainText('Running original BASIC');
+ await expect(page.locator('.world-scores')).toContainText('RL');
+ await expect(page.locator('.local-scores')).toContainText('None yet.');
  await page.locator('#display').click();
  await expect.poll(()=>screenText(page),{timeout:15000}).toContain('TO PLAY DEPOSIT $.25 IN BOX');
  await tap(page,' ');
@@ -73,11 +83,26 @@ test('Bomb runs: start from the title, defuse a bomb by typing its wires, retire
  await expect.poll(()=>screenText(page),{timeout:5000}).toContain('WHAT ARE YOUR INITIALS?');
  await type(page,'CMK');
  await expect.poll(()=>screenText(page),{timeout:5000}).toContain('C M K');
+ await expect(page.locator('.local-scores li')).toHaveText(new RegExp(`CMK\\s*${words.length}`));
+ await expect(page.locator('.world-scores')).toContainText('CMK');
+ await page.waitForTimeout(2500); // The rankings stay up; the score must post only once.
+ expect(posted).toEqual([{initials:'CMK',score:words.length,posthumous:false}]);
  await page.getByRole('button',{name:'Pause'}).click();
  await expect(page.locator('#status')).toHaveText('Paused');
  await page.getByRole('button',{name:'Resume'}).click();
  page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:'Restart'}).click();
  await expect.poll(()=>screenText(page),{timeout:10000}).not.toContain('C M K');
+ await expect(page.locator('.local-scores li')).toHaveCount(1);
+ await page.reload();
+ await expect(page.locator('.local-scores li')).toHaveText(new RegExp(`CMK\\s*${words.length}`));
+ expect(posted).toHaveLength(1);
  expect(errors).toEqual([]);
+});
+
+test('Bomb still plays when the shared scores are unavailable',async({page})=>{
+ await page.route('**/scores',route=>route.abort());
+ await page.goto('/?development=1&test#/program/bomb/basic/play');
+ await expect(page.locator('.world-scores')).toContainText('unavailable');
+ await expect(page.locator('#status')).toContainText('Running original BASIC');
 });

@@ -1,0 +1,60 @@
+{
+  "version": "v02",
+  "capture": "tape24a",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape24a/best/04-SIMULTANEOUS-EQUATIONS-SAVE02.BAS",
+  "archive_listing": "tapes/recovered/tape24a/best/04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC",
+      "archive_path": "tapes/recovered/tape24a/best/04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC",
+      "bytes": 1056,
+      "sha256": "1bf13add9ebd1d905165858d4433845020571a92297e45e519614a42ef9c5913"
+    },
+    {
+      "path": "versions/v02/04-SIMULTANEOUS-EQUATIONS-SAVE02.BAS",
+      "archive_path": "tapes/recovered/tape24a/best/04-SIMULTANEOUS-EQUATIONS-SAVE02.BAS",
+      "bytes": 883,
+      "sha256": "b67d4a09e54f6dae8bd912e941f3116196e7f0f0fd56165221c9acd890c81b7c"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "b67d4a09e54f6dae8bd912e941f3116196e7f0f0fd56165221c9acd890c81b7c",
+    "bytes": 883,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 49,
+    "last": 1010,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 881,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "24",
+    "side": "a",
+    "order": "4",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "SIMULTANEOUS EQUATIONS SAVE02",
+    "capture": "tape24a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "149.472",
+    "recovered_bytes": "883",
+    "source_file": "tapes/recovered/tape24a/best/04-SIMULTANEOUS-EQUATIONS-SAVE02.ASC",
+    "wav": "tapes/tape24a.wav",
+    "folder": "tapes/recovered/tape24a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+  "execution_tested": false
+}

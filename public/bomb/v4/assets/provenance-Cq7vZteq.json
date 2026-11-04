@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape15b",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape15b/best/05-MILLE-BORNES-CARD-GAME.BAS",
+  "archive_listing": "tapes/recovered/tape15b/best/05-MILLE-BORNES-CARD-GAME.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/05-MILLE-BORNES-CARD-GAME.ASC",
+      "archive_path": "tapes/recovered/tape15b/best/05-MILLE-BORNES-CARD-GAME.ASC",
+      "bytes": 9430,
+      "sha256": "82e50d25d2601275d61ebe40d6261ec31c2a51a27605833a14c51ec60f9c095b"
+    },
+    {
+      "path": "versions/v01/05-MILLE-BORNES-CARD-GAME.BAS",
+      "archive_path": "tapes/recovered/tape15b/best/05-MILLE-BORNES-CARD-GAME.BAS",
+      "bytes": 7847,
+      "sha256": "6d1c8b1213dccf411989700810d9a70b5aee23407c1ec9e828ce2729bde78193"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "6d1c8b1213dccf411989700810d9a70b5aee23407c1ec9e828ce2729bde78193",
+    "bytes": 7847,
+    "archive_validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 174,
+    "last": 1740,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 7845,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "15",
+    "side": "b",
+    "order": "5",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "MILLE BORNES CARD GAME; 174 lines",
+    "capture": "tape15b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+    "source_start_s": "140.242",
+    "recovered_bytes": "7847",
+    "source_file": "tapes/recovered/tape15b/best/05-MILLE-BORNES-CARD-GAME.ASC",
+    "wav": "tapes/tape15b.wav",
+    "folder": "tapes/recovered/tape15b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape15b/best/inventory.json",
+  "execution_tested": false
+}

@@ -189,9 +189,10 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     get typing() {return keyboard.keyQueue.length>0;},
     hasWork(){return Array.from({length:1024},(_,i)=>machine.readMemory(0x3c00+i)).some((code,i)=>code>=128&&code<192&&(code&(i<960?63:15))!==0);},
     get paused() {return paused;},
-    // Memory inspection supports reproducible browser smoke tests. It does not
+    // Memory inspection supports browser smoke tests and Bomb's score panel. It does not
     // modify the running program or expose a different gameplay implementation.
     snapshot() { return Array.from({length:1024}, (_,i) => machine.readMemory(0x3c00+i)); },
+    readMemory: address => machine.readMemory(address),
     diagnostics() {return {tStates:machine.tStateCount, pc:machine.z80.regs.pc, paused, held:[...held]};},
     dispose() {
       disposed = true; cancelSteps?.(); release(); machine.stop(); if (sound) soundPlayer.mute(); cancelAnimationFrame(fastHandle);

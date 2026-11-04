@@ -1,0 +1,80 @@
+{
+  "official_title": "Graphics Sprites Experiment",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Graphics Sprites Experiment",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape25a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape25a/best/02-GRAPHICS-SPRITES-EXPERIMENT.BAS",
+      "archive_listing": "tapes/recovered/tape25a/best/02-GRAPHICS-SPRITES-EXPERIMENT.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/02-GRAPHICS-SPRITES-EXPERIMENT.ASC",
+          "archive_path": "tapes/recovered/tape25a/best/02-GRAPHICS-SPRITES-EXPERIMENT.ASC",
+          "bytes": 725,
+          "sha256": "9b338587406ef260beb0420743692a176bbb450196efedfed982ce0abf89b6f9"
+        },
+        {
+          "path": "versions/v01/02-GRAPHICS-SPRITES-EXPERIMENT.BAS",
+          "archive_path": "tapes/recovered/tape25a/best/02-GRAPHICS-SPRITES-EXPERIMENT.BAS",
+          "bytes": 590,
+          "sha256": "39af11bfeb8a40a77ab9e2a767eef03c191d41eabe96a85d4d3aa4b033adb1cc"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "39af11bfeb8a40a77ab9e2a767eef03c191d41eabe96a85d4d3aa4b033adb1cc",
+        "bytes": 590,
+        "archive_validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 21,
+        "last": 1000,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 588,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "25",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GRAPHICS SPRITES EXPERIMENT",
+        "capture": "tape25a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC family",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "38.988",
+        "recovered_bytes": "590",
+        "source_file": "tapes/recovered/tape25a/best/02-GRAPHICS-SPRITES-EXPERIMENT.ASC",
+        "wav": "tapes/tape25a.wav",
+        "folder": "tapes/recovered/tape25a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}
