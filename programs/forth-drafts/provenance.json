@@ -148,6 +148,35 @@
         "first_block": 56,
         "last_block": 56
       }
+    },
+    {
+      "version": "v06",
+      "disk": "MMSFORTH New Programs",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+      "source": "blocks 73-73",
+      "imported_files": [
+        {
+          "path": "versions/v06/SMALLEST-WAY.bin",
+          "archive_path": "blocks 73-73",
+          "bytes": 1024,
+          "sha256": "bd2c1eb62547b41223a6e05e04e2c985d1283e1493b71d1810414facfe1db17e"
+        },
+        {
+          "path": "versions/v06/SMALLEST-WAY.txt",
+          "archive_path": "derived listing",
+          "bytes": 355,
+          "sha256": "bc926498395e295c49018dce76fcc21c8cf87875dc52e36e1a5a0191a90bf909"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "bd2c1eb62547b41223a6e05e04e2c985d1283e1493b71d1810414facfe1db17e",
+        "bytes": 1024,
+        "import_date": "2026-11-03",
+        "first_block": 73,
+        "last_block": 73
+      }
     }
   ]
 }
