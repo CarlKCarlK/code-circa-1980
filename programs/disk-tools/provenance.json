@@ -163,6 +163,38 @@
         "memory_base": 27171,
         "tape_relation": "no shared lines with any tape payload"
       }
+    },
+    {
+      "version": "v06",
+      "disk": "Talker",
+      "disk_image": "Talker [DOS Accessible][TRSDOS v2.1][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "c85a2d67c21552b1e27d9a6f06e5836f070b74b99f53c290b2a39f22b524966b",
+      "source": "files/SAVEFIX.BAS",
+      "imported_files": [
+        {
+          "path": "versions/v06/SAVEFIX.BAS",
+          "archive_path": "files/SAVEFIX.BAS",
+          "bytes": 263,
+          "sha256": "a72f16aa8c50050fe6654913691e23e200a58669f2da40b4dbf4840d21ea979a"
+        },
+        {
+          "path": "versions/v06/SAVEFIX.ASC",
+          "archive_path": "derived listing",
+          "bytes": 337,
+          "sha256": "bdba2bd109ec5652c122ee30f79eb660d01654273374570043187665731ac474"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "a72f16aa8c50050fe6654913691e23e200a58669f2da40b4dbf4840d21ea979a",
+        "bytes": 263,
+        "import_date": "2026-11-03",
+        "lines": 9,
+        "last": 90,
+        "normal_end_marker": true,
+        "memory_base": 27171,
+        "tape_relation": "no shared lines with any tape payload"
+      }
     }
   ]
 }

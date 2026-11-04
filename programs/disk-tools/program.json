@@ -120,6 +120,28 @@
       ],
       "startupSource": "10 CLS:CLEAR20000:DIM R$(500):R=0\n20 INPUT \"FILE\";F$\n30 OPEN \"I\",1,F$\n40 IF EOF(1) THEN 100 ELSE R=R+1:LINE INPUT #1,R$(R):GOTO40\n50 PRINT \"CONVERTING\"\n60 FOR I=1TOR:FORL=1TOR$(I):L$=MID$(R$(I),L,1):IF L$>=\"a\" AND L$<=\"z\" THEN MID$(R$(I),L,1)=CHR$(ASC(L$)-32)\n70 NEXT L,I\n80 CLOSE:OPEN\"O\",1,F$\n90 FORI=1TOR:PRINT#1,R$(I):NEXTI:CLOSE",
       "controlSource": []
+    },
+    {
+      "id": "v06",
+      "label": "SAVEFIX.BAS (Talker)",
+      "capture": "disk: Talker",
+      "raw": "versions/v06/SAVEFIX.BAS",
+      "listing": "versions/v06/SAVEFIX.ASC",
+      "playable": false,
+      "note": "The corrected CASEFIX.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v06/SAVEFIX.BAS",
+          "label": "SAVEFIX.BAS"
+        },
+        {
+          "path": "versions/v06/SAVEFIX.ASC",
+          "label": "SAVEFIX.ASC"
+        }
+      ],
+      "startupSource": "10 CLS:CLEAR20000:DIM R$(500):R=0\n20 INPUT \"FILE\";F$\n30 OPEN \"I\",1,F$\n40 IF EOF(1) THEN 50 ELSE R=R+1:LINE INPUT #1,R$(R):GOTO40\n50 PRINT \"CONVERTING\"\n60 FOR I=1TOR:FORL=1TOLEN(R$(I)):L$=MID$(R$(I),L,1):IF L$>=\"a\" AND L$<=\"z\" THEN MID$(R$(I),L,1)=CHR$(ASC(L$)-32)\n70 NEXT L,I\n80 CLOSE:OPEN\"O\",1,F$\n90 FORI=1TOR:PRINT#1,R$(I):NEXTI:CLOSE",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
