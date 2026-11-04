@@ -5,7 +5,7 @@
       "path": "argyle-88/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "0633c47c122e1f096e5f0c00ac52caaecc2d48fd",
+      "sourceCommit": "b13749070e101a1612270b500301ae105be461ab",
       "files": [
         {
           "path": "assets/01-ARGYLE-88-DDdoUfaA.BAS",
@@ -53,9 +53,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-jrauqViQ.js",
+          "path": "assets/emulator-C-_SknBW.js",
           "bytes": 316923,
-          "sha256": "ce02ad85e5e97a11c7efbf8177a122fd59a2176605935f5a166ffe234e561fc9"
+          "sha256": "7e457fa6c95a4beabe0194f6924b8c4a0f93767b6b6ea7f122d6ad61c83bf868"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -68,14 +68,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-BxkdEO2m.js",
+          "bytes": 31837,
+          "sha256": "9441ff2c9af751bf6cf7c786af165ee21d03dc3535e8a4070ef8b30780aa9d7d"
         },
         {
-          "path": "assets/index-DlpK6F81.js",
-          "bytes": 31631,
-          "sha256": "f1ce3c5ca29a96dd98d26c9ac4b9baf0c1ad81c6f6ddff3b552805e3ee9ff30e"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -240,7 +240,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "b6994a8943b3103e94a39ca31401d2fecc4ab5d2e6c13eef85f8e030347f67b4"
+          "sha256": "cc76216b37b35150019bed5b64950a8e8d027b154a72c160cac2f667767cf553"
         },
         {
           "path": "licenses.txt",
