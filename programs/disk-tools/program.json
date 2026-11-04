@@ -1,0 +1,43 @@
+{
+  "id": "disk-tools",
+  "title": "Disk Tools and Menu",
+  "description": "The Games Diskette menu and small utilities from the recovered disks.",
+  "kind": "Source archive",
+  "language": "TRS-80 Disk BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "HELP.BAS (BASIC Programs Games)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v01/HELP.BAS",
+      "listing": "versions/v01/HELP.ASC",
+      "playable": false,
+      "note": "The Games Diskette’s menu: BASIC GAMES DISKETTE ONE.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v01/HELP.BAS",
+          "label": "HELP.BAS"
+        },
+        {
+          "path": "versions/v01/HELP.ASC",
+          "label": "HELP.ASC"
+        }
+      ],
+      "startupSource": "5 DIM C$(11)\n10 CLS\n20 PRINT\"\n                BASIC GAMES DISKETTE ONE\n\"\n40 C=0\n50 C=C+1:READ N$,C$(C),D$\n55 IF N$=\"DONE\"THEN 300\n60 PRINT CHR$(C+ASC(\"A\")-1)\") \"N$\" - \"D$\n70 IF C<10 THEN 50\n80 PRINT\"\nSELECT A LETTER  OR  PRESS ENTER FOR MORE CHOICES \";",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a recovered disk; the source names no author. Preserved here for small-scale archival use."
+  },
+  "sourceOnly": true,
+  "actionVerb": "View source"
+}

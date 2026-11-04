@@ -1,0 +1,40 @@
+{
+  "official_title": "Disk Tools and Menu",
+  "title_authority": "Title from the recovered source or a descriptive display title; recovered text is unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "saves": [
+    {
+      "version": "v01",
+      "disk": "BASIC Programs Games",
+      "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+      "source": "files/HELP.BAS",
+      "imported_files": [
+        {
+          "path": "versions/v01/HELP.BAS",
+          "archive_path": "files/HELP.BAS",
+          "bytes": 1046,
+          "sha256": "1e53b24e1fa432bd013efb7c64d633360dd4db1eadc589f1e913c21092aa1503"
+        },
+        {
+          "path": "versions/v01/HELP.ASC",
+          "archive_path": "derived listing",
+          "bytes": 1168,
+          "sha256": "e6ddfb6c3d47284abffe18b4375991402ae35a6809ffcbcd75732b7f17b07e9d"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "1e53b24e1fa432bd013efb7c64d633360dd4db1eadc589f1e913c21092aa1503",
+        "bytes": 1046,
+        "import_date": "2026-11-03",
+        "lines": 22,
+        "last": 9999,
+        "normal_end_marker": true,
+        "memory_base": 27205,
+        "tape_relation": "1/22 lines shared with tapes/recovered/tape8a/best/05-MATRIX-ROTATION.BAS (42 lines)"
+      }
+    }
+  ]
+}
