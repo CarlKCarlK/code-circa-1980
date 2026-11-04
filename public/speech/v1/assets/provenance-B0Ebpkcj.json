@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape8a",
+  "save": 13,
+  "archive_raw": "tapes/recovered/tape8a/best/13-VECTOR-RESULTANTS.BAS",
+  "archive_listing": "tapes/recovered/tape8a/best/13-VECTOR-RESULTANTS.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/13-VECTOR-RESULTANTS.ASC",
+      "archive_path": "tapes/recovered/tape8a/best/13-VECTOR-RESULTANTS.ASC",
+      "bytes": 488,
+      "sha256": "627cd602fe4a0317c03f7c6ec6d2fe9a12b3734bbbb9186b9e404bd1e461c8da"
+    },
+    {
+      "path": "versions/v01/13-VECTOR-RESULTANTS.BAS",
+      "archive_path": "tapes/recovered/tape8a/best/13-VECTOR-RESULTANTS.BAS",
+      "bytes": 457,
+      "sha256": "110d89fa76aa1ffbe3c8718a3b7a41c4d4086c828a52cbb9ae275f9db464b2b5"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "110d89fa76aa1ffbe3c8718a3b7a41c4d4086c828a52cbb9ae275f9db464b2b5",
+    "bytes": 457,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 17,
+    "last": 1000,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 455,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "8",
+    "side": "a",
+    "order": "13",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "VECTOR RESULTANTS; 17 lines",
+    "capture": "tape8a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants/repeated saves; runtime untested",
+    "source_start_s": "501.241",
+    "recovered_bytes": "457",
+    "source_file": "tapes/recovered/tape8a/best/13-VECTOR-RESULTANTS.ASC",
+    "wav": "tapes/tape8a.wav",
+    "folder": "tapes/recovered/tape8a/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test with required BASIC extensions; source may be unfinished"
+  },
+  "recovery_inventory": "tapes/recovered/tape8a/best/inventory.json",
+  "execution_tested": false
+}

@@ -1,0 +1,60 @@
+{
+  "version": "v02",
+  "capture": "tape19a",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape19a/best/08-CRYPTOGRAM-V2.BAS",
+  "archive_listing": "tapes/recovered/tape19a/best/08-CRYPTOGRAM-V2.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/08-CRYPTOGRAM-V2.ASC",
+      "archive_path": "tapes/recovered/tape19a/best/08-CRYPTOGRAM-V2.ASC",
+      "bytes": 1870,
+      "sha256": "bf433857c4522fc32f74f9d5484ee0ef62daa99ba07c3c63d9a4f2d9306500d3"
+    },
+    {
+      "path": "versions/v02/08-CRYPTOGRAM-V2.BAS",
+      "archive_path": "tapes/recovered/tape19a/best/08-CRYPTOGRAM-V2.BAS",
+      "bytes": 1554,
+      "sha256": "0f558c9a719fa13da816c71386286fc9bd9badbe4de10a223e9131d702be30c3"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "0f558c9a719fa13da816c71386286fc9bd9badbe4de10a223e9131d702be30c3",
+    "bytes": 1554,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 48,
+    "last": 10020,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1552,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "19",
+    "side": "a",
+    "order": "8",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "CRYPTOGRAM V2",
+    "capture": "tape19a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "351.703",
+    "recovered_bytes": "1554",
+    "source_file": "tapes/recovered/tape19a/best/08-CRYPTOGRAM-V2.ASC",
+    "wav": "tapes/tape19a.wav",
+    "folder": "tapes/recovered/tape19a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape19a/inventory.json",
+  "execution_tested": false
+}

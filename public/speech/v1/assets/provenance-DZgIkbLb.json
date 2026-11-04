@@ -1,0 +1,315 @@
+{
+  "official_title": "KEYSCN and INCH \u2014 keyboard routines",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "inch_keyboard_p14",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape18a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.ASM",
+          "bytes": 904,
+          "sha256": "96f1caf8f824872112ee55ab566a4250312ef9c118637903fc9d87c25c724e67"
+        },
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
+          "bytes": 896,
+          "sha256": "eb3443b876bfc504876c81f13a46214b500f8c12d5e4f197ad25c11a3559859e"
+        },
+        {
+          "path": "versions/v01/05-KEYSCN-TWO-ROWS.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.Z80",
+          "bytes": 728,
+          "sha256": "99adee5fba03f45650e1328bcb022b4426dfeca591362b9d5341916261fd4041"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "96f1caf8f824872112ee55ab566a4250312ef9c118637903fc9d87c25c724e67",
+        "bytes": 904,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "5",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "KEYSCN TWO ROWS",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "140.114",
+        "recovered_bytes": "904",
+        "source_file": "tapes/recovered/tape18a/best/05-KEYSCN-TWO-ROWS.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape18a",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v02/06-KEYSCN-KEYBOARD.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.ASM",
+          "bytes": 1107,
+          "sha256": "2f6dffc0ad53b8b2fdb3b9e1a4efbeb7ba3eb7c5933053df7bfe7b645144ed06"
+        },
+        {
+          "path": "versions/v02/06-KEYSCN-KEYBOARD.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.TXT",
+          "bytes": 1099,
+          "sha256": "be2972ce5bedfa9d844756ff738cc18b6403c0f91ade783dc9493b82f2f2b9e7"
+        },
+        {
+          "path": "versions/v02/06-KEYSCN-KEYBOARD.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.Z80",
+          "bytes": 853,
+          "sha256": "5e09f9f6b137d05da884c0811b2fa3789cf5537cd1c01f17fb49fa30744222b9"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "2f6dffc0ad53b8b2fdb3b9e1a4efbeb7ba3eb7c5933053df7bfe7b645144ed06",
+        "bytes": 1107,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "6",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "KEYSCN KEYBOARD",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "164.530",
+        "recovered_bytes": "1107",
+        "source_file": "tapes/recovered/tape18a/best/06-KEYSCN-KEYBOARD.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape18a",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape18a/best/07-INCH-KEYBOARD-V1.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/07-INCH-KEYBOARD-V1.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v03/07-INCH-KEYBOARD-V1.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/07-INCH-KEYBOARD-V1.ASM",
+          "bytes": 1726,
+          "sha256": "6760ec32b76a3f4fa148b07298260b63b1bdd3290ec77f6656700bea6d8afa79"
+        },
+        {
+          "path": "versions/v03/07-INCH-KEYBOARD-V1.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/07-INCH-KEYBOARD-V1.TXT",
+          "bytes": 1718,
+          "sha256": "0993e642679b1c33266a935d883c0184be32f84d5b68b8834af2f82fba974e31"
+        },
+        {
+          "path": "versions/v03/07-INCH-KEYBOARD-V1.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/07-INCH-KEYBOARD-V1.Z80",
+          "bytes": 1256,
+          "sha256": "9bd55dfe40a902e0b39c4fc4cdbb15eb6349bad8216ec2c56ff294aa1f917860"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "6760ec32b76a3f4fa148b07298260b63b1bdd3290ec77f6656700bea6d8afa79",
+        "bytes": 1726,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "7",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "INCH KEYBOARD V1",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "190.409",
+        "recovered_bytes": "1726",
+        "source_file": "tapes/recovered/tape18a/best/07-INCH-KEYBOARD-V1.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape18a",
+      "save": 8,
+      "archive_raw": "tapes/recovered/tape18a/best/08-INCH-KEYBOARD-V2.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/08-INCH-KEYBOARD-V2.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v04/08-INCH-KEYBOARD-V2.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/08-INCH-KEYBOARD-V2.ASM",
+          "bytes": 1763,
+          "sha256": "da96e4c8f321c77b0be6655430f9fbed6a35c55b58867c6fe5700029205365f2"
+        },
+        {
+          "path": "versions/v04/08-INCH-KEYBOARD-V2.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/08-INCH-KEYBOARD-V2.TXT",
+          "bytes": 1755,
+          "sha256": "0c84d66725c1c47d86d91af7b8a3c726e8abe586596c8c67b5e7a588e672b67a"
+        },
+        {
+          "path": "versions/v04/08-INCH-KEYBOARD-V2.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/08-INCH-KEYBOARD-V2.Z80",
+          "bytes": 1293,
+          "sha256": "2a3bd8ebcfde243bec4f942ae69bbbcd832ff66fa0fadfc069d12a22d63ac7ce"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "da96e4c8f321c77b0be6655430f9fbed6a35c55b58867c6fe5700029205365f2",
+        "bytes": 1763,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "8",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "INCH KEYBOARD V2",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "223.925",
+        "recovered_bytes": "1763",
+        "source_file": "tapes/recovered/tape18a/best/08-INCH-KEYBOARD-V2.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape18a",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.ASM",
+          "bytes": 1889,
+          "sha256": "0598b2c96af7f1e167b5cc99f2d0be63758d565c9d404ece5dfb7120cb83abbe"
+        },
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.TXT",
+          "bytes": 1881,
+          "sha256": "80715ed00e6b3ffbedcbbc4cac4b060f916aa477bc017ff6f58fffca434c887a"
+        },
+        {
+          "path": "versions/v05/09-INCH-SUBROUTINE.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.Z80",
+          "bytes": 1371,
+          "sha256": "1741de3224b24e2251fb7f7a9486a36a79f8f7d308ee531391e981d89d151949"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "0598b2c96af7f1e167b5cc99f2d0be63758d565c9d404ece5dfb7120cb83abbe",
+        "bytes": 1889,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "9",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "INCH SUBROUTINE",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "260.097",
+        "recovered_bytes": "1889",
+        "source_file": "tapes/recovered/tape18a/best/09-INCH-SUBROUTINE.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

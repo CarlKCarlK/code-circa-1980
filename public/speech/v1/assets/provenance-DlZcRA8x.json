@@ -1,0 +1,140 @@
+{
+  "official_title": "Horsepower Calculator",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "horsepower_calculator_p66",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape21a",
+      "save": 24,
+      "archive_raw": "tapes/recovered/tape21a/best/24-HORSEPOWER.BAS",
+      "archive_listing": "tapes/recovered/tape21a/best/24-HORSEPOWER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/24-HORSEPOWER.ASC",
+          "archive_path": "tapes/recovered/tape21a/best/24-HORSEPOWER.ASC",
+          "bytes": 589,
+          "sha256": "401a20d395219c5545c7db3d027cdb5a94f63ee95bb17cffaf510e04d2bfbf9d"
+        },
+        {
+          "path": "versions/v01/24-HORSEPOWER.BAS",
+          "archive_path": "tapes/recovered/tape21a/best/24-HORSEPOWER.BAS",
+          "bytes": 531,
+          "sha256": "91b28f799b43d1756752fd4cf8f8491359e7bcc3a31027f37a875310a118d252"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "91b28f799b43d1756752fd4cf8f8491359e7bcc3a31027f37a875310a118d252",
+        "bytes": 531,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 21,
+        "last": 245,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 529,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "21",
+        "side": "a",
+        "order": "24",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "HORSEPOWER",
+        "capture": "tape21a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "613.724",
+        "recovered_bytes": "531",
+        "source_file": "tapes/recovered/tape21a/best/24-HORSEPOWER.ASC",
+        "wav": "tapes/tape21a.wav",
+        "folder": "tapes/recovered/tape21a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape9a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.BAS",
+      "archive_listing": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/02-HORSEPOWER-CALCULATOR.ASC",
+          "archive_path": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.ASC",
+          "bytes": 640,
+          "sha256": "3e7b80152355177db4ddfd6f82a0539e2debc775f36d4ac97221e482068bd0fe"
+        },
+        {
+          "path": "versions/v02/02-HORSEPOWER-CALCULATOR.BAS",
+          "archive_path": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.BAS",
+          "bytes": 575,
+          "sha256": "c147fc7d1622a5900148f7948f9291d49ed51c692ce8b92738491960d6ccd12f"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "c147fc7d1622a5900148f7948f9291d49ed51c692ce8b92738491960d6ccd12f",
+        "bytes": 575,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 23,
+        "last": 245,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 573,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "HORSEPOWER CALCULATOR; 23 lines",
+        "capture": "tape9a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "source_start_s": "34.940",
+        "recovered_bytes": "575",
+        "source_file": "tapes/recovered/tape9a/best/02-HORSEPOWER-CALCULATOR.ASC",
+        "wav": "tapes/tape9a.wav",
+        "folder": "tapes/recovered/tape9a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; historical source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape9a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

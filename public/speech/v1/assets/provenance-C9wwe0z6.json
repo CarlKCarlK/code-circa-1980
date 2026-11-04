@@ -1,0 +1,54 @@
+{
+  "version": "v01",
+  "capture": "tape26a",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape26a/partial/01-BASIC-F-FRAGMENT-RAW.BAS",
+  "archive_listing": "tapes/recovered/tape26a/partial/01-BASIC-F-FRAGMENT-UNCERTAIN.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/01-BASIC-F-FRAGMENT-RAW.BAS",
+      "archive_path": "tapes/recovered/tape26a/partial/01-BASIC-F-FRAGMENT-RAW.BAS",
+      "bytes": 13,
+      "sha256": "2e39dfa4ed26cb14479811c77d733cf77d587d5bf206b27e28c4d3a2813c1ba3"
+    },
+    {
+      "path": "versions/v01/01-BASIC-F-FRAGMENT-UNCERTAIN.ASC",
+      "archive_path": "tapes/recovered/tape26a/partial/01-BASIC-F-FRAGMENT-UNCERTAIN.ASC",
+      "bytes": 8,
+      "sha256": "a383fcb7db0c994a1cda4d78876388d511bd56ad1c7574bbfc6f6b5ff80ff326"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC fragment",
+    "sha256": "2e39dfa4ed26cb14479811c77d733cf77d587d5bf206b27e28c4d3a2813c1ba3",
+    "bytes": 13,
+    "archive_validation": "13-byte header/fragment agrees left/right; zero validated lines; missing line terminator and program EOF; listing UNCERTAIN",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "structure_conflict": true,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "26",
+    "side": "a",
+    "order": "1",
+    "type": "BASIC fragment",
+    "recovery%": "",
+    "summary": "BASIC F fragment",
+    "capture": "tape26a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "damaged; runtime untested",
+    "validation": "13-byte header/fragment agrees left/right; zero validated lines; missing line terminator and program EOF; listing UNCERTAIN",
+    "source_start_s": "8.800",
+    "recovered_bytes": "13",
+    "source_file": "tapes/recovered/tape26a/partial/01-BASIC-F-FRAGMENT-UNCERTAIN.ASC",
+    "wav": "tapes/tape26a.wav",
+    "folder": "tapes/recovered/tape26a",
+    "recovery_date": "2026-10-29",
+    "recorder_volume": "",
+    "next_action": "Better source/capture may improve recovery; see report"
+  },
+  "recovery_inventory": "tapes/recovered/tape26a/inventory.json",
+  "execution_tested": false
+}

@@ -1,0 +1,80 @@
+{
+  "official_title": "Formula Lookup",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "formula_lookup_p250",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape4b",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape4b/best/05-FORMULA-LOOKUP.BAS",
+      "archive_listing": "tapes/recovered/tape4b/best/05-FORMULA-LOOKUP.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-FORMULA-LOOKUP.ASC",
+          "archive_path": "tapes/recovered/tape4b/best/05-FORMULA-LOOKUP.ASC",
+          "bytes": 2530,
+          "sha256": "9595af1bb4a7bee1e2fcea008ae4eeef6f3aea5ffff39c3de1fb7efa862bb82b"
+        },
+        {
+          "path": "versions/v01/05-FORMULA-LOOKUP.BAS",
+          "archive_path": "tapes/recovered/tape4b/best/05-FORMULA-LOOKUP.BAS",
+          "bytes": 2420,
+          "sha256": "dfdeb6d8d647f27a2ff524bc98854a2c7070e7e77e1b5de9943fa383e921fcb1"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "dfdeb6d8d647f27a2ff524bc98854a2c7070e7e77e1b5de9943fa383e921fcb1",
+        "bytes": 2420,
+        "archive_validation": "18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 18,
+        "last": 11000,
+        "pointer_bases": [
+          22204
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2418,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "4",
+        "side": "b",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "FORMULA LOOKUP; 18 lines; T4-C1",
+        "capture": "tape4b",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extended features",
+        "status": "validated payload; runtime untested",
+        "validation": "18 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "2420",
+        "source_file": "tapes/recovered/tape4b/best/05-FORMULA-LOOKUP.ASC",
+        "wav": "tapes/tape4b.wav",
+        "folder": "tapes/recovered/tape4b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Identify compatible extended BASIC for LINE INPUT, INSTR"
+      },
+      "recovery_inventory": "tapes/recovered/tape4b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

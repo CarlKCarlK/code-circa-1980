@@ -1,0 +1,86 @@
+{
+  "official_title": "Test One",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "test_one_p160",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape18b",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape18b/partial/09-TEST-ONE-DAMAGED-RAW.BAS",
+      "archive_listing": "tapes/recovered/tape18b/partial/09-TEST-ONE-DAMAGED.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v01/09-TEST-ONE-DAMAGED-RAW.BAS",
+          "archive_path": "tapes/recovered/tape18b/partial/09-TEST-ONE-DAMAGED-RAW.BAS",
+          "bytes": 32,
+          "sha256": "d25d4b61734d83ff771d91fa6a6aa68496ac0f49925542c06f1dc484dbaf662c"
+        },
+        {
+          "path": "versions/v01/09-TEST-ONE-DAMAGED-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape18b/partial/09-TEST-ONE-DAMAGED-UNCERTAIN.ASC",
+          "bytes": 40,
+          "sha256": "0a0345bfc4255c0940f740fabacc8d2f65259e527656f1f1794a610a2d32c402"
+        },
+        {
+          "path": "versions/v01/09-TEST-ONE-DAMAGED.TXT",
+          "archive_path": "tapes/recovered/tape18b/partial/09-TEST-ONE-DAMAGED.TXT",
+          "bytes": 274,
+          "sha256": "3aeb1a014c234b52ca3883d373865999c73b15d6ba56b5960ff7f701d714164f"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC (partial)",
+        "sha256": "d25d4b61734d83ff771d91fa6a6aa68496ac0f49925542c06f1dc484dbaf662c",
+        "bytes": 32,
+        "archive_validation": "Corrupt BASIC test record; no cross-channel validated complete lines; FFFF pointer/line fields; raw and UNCERTAIN listing retained",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 1,
+        "last": 65535,
+        "pointer_bases": [
+          65488
+        ],
+        "normal_end_marker": false,
+        "parsed_bytes": 31,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "b",
+        "order": "9",
+        "type": "BASIC (partial)",
+        "recovery%": "",
+        "summary": "TEST ONE DAMAGED",
+        "capture": "tape18b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged",
+        "validation": "Corrupt BASIC test record; no cross-channel validated complete lines; FFFF pointer/line fields; raw and UNCERTAIN listing retained",
+        "source_start_s": "569.618",
+        "recovered_bytes": "32",
+        "source_file": "tapes/recovered/tape18b/partial/09-TEST-ONE-DAMAGED.TXT",
+        "wav": "tapes/tape18b.wav",
+        "folder": "tapes/recovered/tape18b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Retain raw/alternate candidates; stronger audio needed to resolve remainder"
+      },
+      "recovery_inventory": "tapes/recovered/tape18b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

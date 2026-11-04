@@ -1,0 +1,10 @@
+{
+  "author": "Jim Storer; BASIC version published by Creative Computing",
+  "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/lunar.bas",
+  "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=106",
+  "file": "LUNAR-1978.ASC",
+  "bytes": 2074,
+  "sha256": "744231549befd5eab29d8e792f14967e515fe5238fa76ad6f2a73a96356655f9",
+  "note": "Complete electronic BASIC Computer Games transcription from a Vintage BASIC mirror. Common state variables and polynomial physics establish the relationship; print transcription and exact intermediate edition are not verified. Preserves mirror text, including O in line 200 and printed spelling. Not a recovered cassette.",
+  "execution_tested": false
+}

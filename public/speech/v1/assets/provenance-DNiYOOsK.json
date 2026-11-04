@@ -1,0 +1,396 @@
+{
+  "official_title": "Pinball",
+  "title_authority": "Printed in recovered source",
+  "short_name": "pinball",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred from source changes: the three tape9b forms each have repeated saves; tape12a save 11 adds rounded display addresses and changed collision/miss handling. Cross-tape order is an inference from these edits, not tape numbering or an established date.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape9b",
+      "save": 16,
+      "archive_raw": "tapes/recovered/tape9b/best/16-PINBALL-EARLY.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/16-PINBALL-EARLY.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/16-PINBALL-EARLY.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/16-PINBALL-EARLY.BAS",
+          "bytes": 1196,
+          "sha256": "3d35154139ca7b62fcd1c857cc41a42a5d8349d8fef9b55b365978f05c33e64c"
+        },
+        {
+          "path": "versions/v01/16-PINBALL-EARLY.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/16-PINBALL-EARLY.ASC",
+          "bytes": 1573,
+          "sha256": "a61506af6c35cbc7dad859c48bcfa8b3318e4bd76e1206d975c9465e3a116cf9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 19,
+        "last": 200,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "3d35154139ca7b62fcd1c857cc41a42a5d8349d8fef9b55b365978f05c33e64c"
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "16",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL EARLY; 19 lines",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "452.559",
+        "recovered_bytes": "1196",
+        "source_file": "tapes/recovered/tape9b/best/16-PINBALL-EARLY.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape9b",
+      "save": 17,
+      "archive_raw": "tapes/recovered/tape9b/best/17-PINBALL-EARLY-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/17-PINBALL-EARLY-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/17-PINBALL-EARLY-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/17-PINBALL-EARLY-SAVE2.BAS",
+          "bytes": 1196,
+          "sha256": "3d35154139ca7b62fcd1c857cc41a42a5d8349d8fef9b55b365978f05c33e64c"
+        },
+        {
+          "path": "versions/v02/17-PINBALL-EARLY-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/17-PINBALL-EARLY-SAVE2.ASC",
+          "bytes": 1573,
+          "sha256": "a61506af6c35cbc7dad859c48bcfa8b3318e4bd76e1206d975c9465e3a116cf9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 19,
+        "last": 200,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "3d35154139ca7b62fcd1c857cc41a42a5d8349d8fef9b55b365978f05c33e64c"
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "17",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL EARLY SAVE2; 19 lines; identical to save 16",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "488.128",
+        "recovered_bytes": "1196",
+        "source_file": "tapes/recovered/tape9b/best/17-PINBALL-EARLY-SAVE2.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape9b",
+      "save": 18,
+      "archive_raw": "tapes/recovered/tape9b/best/18-PINBALL.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/18-PINBALL.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/18-PINBALL.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/18-PINBALL.BAS",
+          "bytes": 1813,
+          "sha256": "6e9a63b8a51455a4147655283cf3266221c65729d87086d10869bd03bdb8af5b"
+        },
+        {
+          "path": "versions/v03/18-PINBALL.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/18-PINBALL.ASC",
+          "bytes": 2338,
+          "sha256": "8de50c612d6bd5d9a589387410e03481c40c1574b0ecb09d38100cb15978dfcd"
+        }
+      ],
+      "recovery_item": {
+        "lines": 28,
+        "last": 200,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "6e9a63b8a51455a4147655283cf3266221c65729d87086d10869bd03bdb8af5b"
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "18",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL; 28 lines",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "525.306",
+        "recovered_bytes": "1813",
+        "source_file": "tapes/recovered/tape9b/best/18-PINBALL.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape9b",
+      "save": 19,
+      "archive_raw": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/19-PINBALL-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.BAS",
+          "bytes": 1813,
+          "sha256": "6e9a63b8a51455a4147655283cf3266221c65729d87086d10869bd03bdb8af5b"
+        },
+        {
+          "path": "versions/v04/19-PINBALL-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.ASC",
+          "bytes": 2338,
+          "sha256": "8de50c612d6bd5d9a589387410e03481c40c1574b0ecb09d38100cb15978dfcd"
+        }
+      ],
+      "recovery_item": {
+        "lines": 28,
+        "last": 200,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "6e9a63b8a51455a4147655283cf3266221c65729d87086d10869bd03bdb8af5b"
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "19",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL SAVE2; 28 lines; identical to save 18",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "562.460",
+        "recovered_bytes": "1813",
+        "source_file": "tapes/recovered/tape9b/best/19-PINBALL-SAVE2.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "capture": "tape9b",
+      "save": 20,
+      "archive_raw": "tapes/recovered/tape9b/best/20-PINBALL-V2.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/20-PINBALL-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v05/20-PINBALL-V2.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/20-PINBALL-V2.BAS",
+          "bytes": 2218,
+          "sha256": "7e5a3ac97695d0f49dfa0a8db99942ed9342473daf0e16b8f862aba76c0cb140"
+        },
+        {
+          "path": "versions/v05/20-PINBALL-V2.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/20-PINBALL-V2.ASC",
+          "bytes": 2842,
+          "sha256": "e05aa6a93fc4d3d6de534156b828d88531c433667746cda7f814e0c41598c4b1"
+        }
+      ],
+      "recovery_item": {
+        "lines": 32,
+        "last": 750,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "7e5a3ac97695d0f49dfa0a8db99942ed9342473daf0e16b8f862aba76c0cb140"
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "20",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL V2; 32 lines",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "603.764",
+        "recovered_bytes": "2218",
+        "source_file": "tapes/recovered/tape9b/best/20-PINBALL-V2.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v06",
+      "capture": "tape9b",
+      "save": 21,
+      "archive_raw": "tapes/recovered/tape9b/best/21-PINBALL-V2-SAVE2.BAS",
+      "archive_listing": "tapes/recovered/tape9b/best/21-PINBALL-V2-SAVE2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v06/21-PINBALL-V2-SAVE2.BAS",
+          "archive_path": "tapes/recovered/tape9b/best/21-PINBALL-V2-SAVE2.BAS",
+          "bytes": 2218,
+          "sha256": "7e5a3ac97695d0f49dfa0a8db99942ed9342473daf0e16b8f862aba76c0cb140"
+        },
+        {
+          "path": "versions/v06/21-PINBALL-V2-SAVE2.ASC",
+          "archive_path": "tapes/recovered/tape9b/best/21-PINBALL-V2-SAVE2.ASC",
+          "bytes": 2842,
+          "sha256": "e05aa6a93fc4d3d6de534156b828d88531c433667746cda7f814e0c41598c4b1"
+        }
+      ],
+      "recovery_item": {
+        "lines": 32,
+        "last": 750,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "7e5a3ac97695d0f49dfa0a8db99942ed9342473daf0e16b8f862aba76c0cb140"
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "b",
+        "order": "21",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL V2 SAVE2; 32 lines; identical to save 20",
+        "capture": "tape9b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+        "source_start_s": "649.801",
+        "recovered_bytes": "2218",
+        "source_file": "tapes/recovered/tape9b/best/21-PINBALL-V2-SAVE2.ASC",
+        "wav": "tapes/tape9b.wav",
+        "folder": "tapes/recovered/tape9b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+      },
+      "recovery_inventory": "tapes/recovered/tape9b/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v07",
+      "capture": "tape12a",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape12a/best/11-PINBALL.BAS",
+      "archive_listing": "tapes/recovered/tape12a/best/11-PINBALL.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v07/11-PINBALL.BAS",
+          "archive_path": "tapes/recovered/tape12a/best/11-PINBALL.BAS",
+          "bytes": 2239,
+          "sha256": "b98f04f9437b37f91bd65d30d3277322822f25c65fe96886e5f85c6a6b0f6122"
+        },
+        {
+          "path": "versions/v07/11-PINBALL.ASC",
+          "archive_path": "tapes/recovered/tape12a/best/11-PINBALL.ASC",
+          "bytes": 2867,
+          "sha256": "c0eda0c527dbc02b1e1a380d8a0058d849e6425a11202c0fa92628fa9252fccb"
+        }
+      ],
+      "recovery_item": {
+        "lines": 34,
+        "last": 750,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "b98f04f9437b37f91bd65d30d3277322822f25c65fe96886e5f85c6a6b0f6122"
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "a",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "PINBALL; 34 lines",
+        "capture": "tape12a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact matching variants; runtime untested",
+        "source_start_s": "760.490",
+        "recovered_bytes": "2239",
+        "source_file": "tapes/recovered/tape12a/best/11-PINBALL.ASC",
+        "wav": "tapes/tape12a.wav",
+        "folder": "tapes/recovered/tape12a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_date": null,
+    "contextual_source_lines": [
+      "tape12a save 2: 10 'TEACH VI                      BY CARL KADIE JAN. 11,1979",
+      "tape12b saves 4/7/8/13: same TEACH VI credit (opposite side)",
+      "tape9a saves 1/5/12: 10 'TEACH III            BY      CARL KADIE    OCT. 21,1978 (opposite side of earlier Pinball saves)"
+    ],
+    "caution": "Neighboring source dates are context, not a Pinball creation/save date."
+  },
+  "artwork": {
+    "path": "app/assets/pinball-gallery.svg",
+    "sha256": "d0f495586fb93b6fa8062540e94631a2ba147468c2220399693342bf5798715a",
+    "method": "Illustrative SVG for gallery readability, not an emulator screenshot. Original captured screen retained separately."
+  },
+  "emulator_capture": {
+    "kind": "Original emulator canvas screenshot",
+    "path": "app/assets/pinball-screen.png",
+    "sha256": "e23bf7df4721e26e073007f3f22cbeb6367c9bf6ee3f71d32d0a3ba527ee9986",
+    "reference": "v07",
+    "method": "CAPTURE_GALLERY_ART=1 with tests/browser/experiments.spec.js; native canvas aspect ratio, Model III font and cobalt palette."
+  }
+}

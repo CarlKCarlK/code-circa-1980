@@ -1,0 +1,10 @@
+{
+  "author": "Roger Chaffee",
+  "source_url": "https://www.worldradiohistory.com/Archive-Byte/70s/Byte-1979-07.pdf",
+  "publication_url": "https://www.worldradiohistory.com/Archive-Byte/70s/Byte-1979-07.pdf",
+  "artifact": "QUEST-EXCERPT.ASC",
+  "bytes": 853,
+  "sha256": "a74dea99008ba259dafa435cb610072610810b572b6d32c30162ededd443e7a1",
+  "note": "Roger Chaffee, Quest, BYTE July 1979, pp. 176\u2013186. Selected dispatcher/room records from Listing 2 only. This is an intentionally incomplete comparison excerpt, not a complete ancestor or executable. ASCII punctuation and keyword spacing transcribed from the published listing; spacing is not archival byte evidence. Other Quest records are omitted, not reconstructed from Jaberwocky. The available IF Archive GW-BASIC port was not used as an exact original: its numbering, text, and trailer differ.",
+  "execution_tested": false
+}
