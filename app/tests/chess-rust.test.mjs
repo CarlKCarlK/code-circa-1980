@@ -51,7 +51,7 @@ test('steps match the ROM running now',()=>{
 test('Rust engine matches corrected v14 running now through a searched move',()=>{
   const o=startOriginal('corrected/CHESS.BAS'),engine=new Engine();
   o.until(/COLOR ARE WE/,30);
-  for(const [line,prompt] of [['BLACK',/COLUMN\)\?/],['2,5,4,5',/^OK\?\?/],['IQ',/COLUMN\)\?/]]){
+  for(const [line,prompt] of [['BLACK',/COLUMN\)\?/],['2,5,4,5',/^OK\?/],['IQ',/COLUMN\)\?/]]){
     o.type(`${line}\n`);o.run(1);o.until(prompt,900);engine.input(line);
   }
   const s=JSON.parse(engine.snapshot());

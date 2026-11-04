@@ -61,7 +61,7 @@ screen, yours at the top.
    the screen, columns 1–8 from the left. As White, CISAB opens by moving the
    knight from row 8 column 2 to row 6 column 3; reply `2,5,4,5` to push your
    king's pawn two squares.
-4. CISAB shows your move and asks `OK?`. Type `OK` and `Enter`. Then it moves.
+4. CISAB shows your move and asks `OK? (Y/N, ENTER=Y)`. Press `Enter`. Then it moves.
 
 The first four replies come from its opening and take a few seconds. After
 that it thinks: 1–7 minutes a move on a real TRS-80 in my tests. The site
@@ -80,8 +80,8 @@ seen from Black's side.
 
 | Answer | What it does |
 |---|---|
-| `OK` | Makes your move; CISAB replies. |
-| anything else, or just `Enter` | Forgets the move and asks for it again (for typos). |
+| `Enter`, `Y` or `YES` | Makes your move; CISAB replies. |
+| `N` or `NO` | Forgets the move and asks for it again (for typos). Anything else asks `OK?` again. |
 | `ADD` | Makes your move, then asks `GIVE R,C,V`: a row, a column and a piece value to put on that square. `1` king, `2` queen, `3` bishop, `4` knight, `5` rook, `6` pawn; positive for your pieces, negative for CISAB's ("WE ARE NEG."), `0` to empty the square. It then asks `OK?` again, so you can type `ADD` again for another square. |
 | `IQ` | Makes your move and turns off CISAB's opening, so it starts thinking at once. |
 

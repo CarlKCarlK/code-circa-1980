@@ -21,7 +21,7 @@ test('CISAB corrected edition rebuilds exactly and changes only the listed lines
   const before = parseBasic(original), after = parseBasic(bytes);
   assert.equal(after.base, before.base);
   const edited = new Set(changes.map(c => c.line));
-  assert.deepEqual([...edited].sort((a, b) => a - b), [14, 80, 110, 111, 210, 335, 1005, 1300, 1330, 9500, 9510, 9520, 9530, 9540]);
+  assert.deepEqual([...edited].sort((a, b) => a - b), [14, 80, 107, 110, 111, 210, 335, 1005, 1300, 1330, 9500, 9510, 9520, 9530, 9540]);
   for (const r of after.records) {
     const old = before.records.find(o => o.line === r.line);
     if (!edited.has(r.line)) assert.deepEqual(r.body, old.body, `line ${r.line}`);

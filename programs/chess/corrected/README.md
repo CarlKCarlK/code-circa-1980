@@ -16,6 +16,7 @@ program was meant to do:
 | 9540 | New: `S$="":GOTO 210` | When no opening move fits, CISAB ends its opening and thinks. Before, it fell into line 10000 and stopped with `?RG Error in 10020`. |
 | 80 | `COLUMB`, `COULMB` → `COLUMN` | Spelling. |
 | 1005, 1330 | `i` → `I` | `I CAN'T MOVE`, `I WON`. |
+| 107 | `OK?` → `OK? (Y/N, ENTER=Y)` | Requested 2026-11-03. Only `OK` made the move, so answering `YES` or pressing Enter silently put the piece back. `Y`, `YES` and Enter now make the move, `N` and `NO` undo it, and anything else asks again. `OK`, `ADD` and `IQ` still work. |
 
 `app/scripts/build-chess-corrected.mjs` rebuilds `CHESS.BAS` and `CHESS.ASC`
 from v14 and `corrections.json`. It re-tokenizes only the edited lines, and

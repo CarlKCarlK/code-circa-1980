@@ -29,6 +29,8 @@ observations below held for the recovered v14 as well. It checks:
 - As Black, `ADD` makes the move and asks `GIVE R,C,V`; `5,4,2` puts a queen
   of yours on row 5, column 4, and `OK?` returns.
 - Moving a piece onto CISAB's king prints `DARN THEY BEAT YOU!` and ends at READY.
+- At the 2026-11-03 prompt, Enter, `Y` and `YES` make the move, `N` and `NO` undo it,
+  and anything else asks again.
 
 Scratch runs with the same helper also showed:
 

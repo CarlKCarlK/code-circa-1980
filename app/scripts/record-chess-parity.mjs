@@ -44,7 +44,7 @@ function status(m){
   if(/DARN THEY BEAT YOU!/.test(text)&&/READY/.test(text))return {prompt:'ended',end:'DARN THEY BEAT YOU!'};
   if(/STALEMATE/.test(text)&&/READY/.test(text))return {prompt:'ended',end:"I CAN'T MOVE.  STALEMATE"};
   if(/COLUMN\)\? *$/.test(last))return {prompt:'move',adjective:/THEIR (\w+) MOVE/.exec(last)[1]};
-  if(/^OK\?\? *$/.test(last))return {prompt:'ok'};
+  if(/^OK\? \(Y\/N, ENTER=Y\)\? *$/.test(last))return {prompt:'ok'};
   if(/^\? *$/.test(last))return {prompt:'add'};
   if(/COLOR ARE WE\? *$/.test(last))return {prompt:'color'};
   return null;

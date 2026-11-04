@@ -101,8 +101,8 @@ test('CISAB v14 plays: WHITE, its opening, a typed move confirmed with OK, pause
  await expect.poll(()=>screenText(page),{timeout:20000}).toMatch(movePrompt);
  expect(await square(page,6,3)).toBe('N *'); // Its first book move: the knight from row 8, column 2.
  await type(page,'2,5,4,5');
- await expect.poll(()=>screenText(page),{timeout:10000}).toMatch(/OK\?\? *.?\s*$/);
- await page.getByRole('button',{name:'Type OK and Enter'}).click();
+ await expect.poll(()=>screenText(page),{timeout:10000}).toMatch(/ENTER=Y\)\? *.?\s*$/);
+ await page.getByRole('button',{name:'Type YES and Enter'}).click();
  await expect.poll(()=>square(page,6,6),{timeout:20000}).toBe('N *'); // Its second book move.
  expect(await square(page,4,5)).toBe('P');
  await page.getByRole('button',{name:'Pause'}).click();
@@ -123,7 +123,7 @@ test('CISAB v14 thinks of its own move at Fast (×20) after IQ turns off its ope
  await page.getByRole('button',{name:'Type BLACK and Enter'}).click();
  await expect.poll(()=>screenText(page),{timeout:20000}).toMatch(movePrompt);
  await type(page,'2,5,4,5');
- await expect.poll(()=>screenText(page),{timeout:10000}).toMatch(/OK\?\? *.?\s*$/);
+ await expect.poll(()=>screenText(page),{timeout:10000}).toMatch(/ENTER=Y\)\? *.?\s*$/);
  const before=(await screenText(page)).split('\n').slice(4,8).join('\n');
  const start=Date.now();
  await page.getByRole('button',{name:'Type IQ and Enter'}).click();

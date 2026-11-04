@@ -1,9 +1,9 @@
 {
   "source": "versions/v14/08-CISAB-CHESS-V9.BAS",
   "source_sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7",
-  "sha256": "97399fe3f1ea881f1399f4f0687b0288b99e04ee4148783f6249d07e0bea64b4",
-  "bytes": 5098,
-  "listing_sha256": "fd7b585bc37e002eeab80a75296c9ab89da01422e80491f0ce6d0fd432afae9e",
+  "sha256": "686c1432943a45c0ad0b6c4a5f396441eb4b873153dc782bae21f71a662530d1",
+  "bytes": 5159,
+  "listing_sha256": "a3594ba200a0456b82c061321e573bfe4b5502673ccd1299ba2d58f6e5d7ba13",
   "changes": [
     {
       "line": 14,
@@ -98,6 +98,13 @@
       "line": 9540,
       "inserted": "9540 S$=\"\":GOTO 210",
       "kind": "bug"
+    },
+    {
+      "line": 107,
+      "from": "INPUT\"OK?\";A$:IFA$=\"ADD\"THEN 110ELSEIFLEFT$(A$,2)=\"IQ\"THENS$=\"\":GOTO110ELSEIFA$<>\"OK\"THENGOSUB10000:GOTO80",
+      "to": "INPUT\"OK? (Y/N, ENTER=Y)\";A$:IFA$=\"ADD\"THEN 110ELSEIFLEFT$(A$,2)=\"IQ\"THENS$=\"\":GOTO110ELSEIFA$=\"N\"ORA$=\"NO\"THENGOSUB10000:GOTO80ELSEIFA$<>\"\"ANDA$<>\"Y\"ANDA$<>\"YES\"ANDA$<>\"OK\"THEN107",
+      "count": 1,
+      "kind": "usability"
     }
   ]
 }
