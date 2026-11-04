@@ -5,7 +5,7 @@
       "path": "growth/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "ac169a8862a0a3dfe3f144ead1c88d5d6b9474d0",
+      "sourceCommit": "6a5ebcfc3ff188195422d7970e4f60f31eb447d6",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-othPEaSW.js",
+          "path": "assets/emulator-C9V_f9VT.js",
           "bytes": 316923,
-          "sha256": "a402962f575ff4b6a13c5a0364b494474d3a74f5fa282e2048716ea50711a6f0"
+          "sha256": "b09d3bfe9f86364e347d45d1a53d4b65f84b82bac609021cfa883618a818ef61"
         },
         {
           "path": "assets/forth-system-DLZLKAFv.dmk",
@@ -78,14 +78,14 @@
           "sha256": "ed38aaeb018f4fda373174f051ec55051eb3727e0b69805e410172aa9024e487"
         },
         {
-          "path": "assets/index-BCKYeKqa.js",
-          "bytes": 30984,
-          "sha256": "bd6b68b16782205b49e3399be26d982c8eb6897093e5da90c4b65b10253c60d3"
+          "path": "assets/index-BKtVNEOF.js",
+          "bytes": 31190,
+          "sha256": "98a3f429141877bac571e0fe02151e72c5fc758fc5f94bfcfb2b5ae00f042b70"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -245,7 +245,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "dfbea88db454c5b8ac67d9ae9fd02608f408045a9440b947b789dde4dc293320"
+          "sha256": "ba17105e64c16fc87164093c2def29b55c4f040fa75bfb667aefc80714c1a078"
         },
         {
           "path": "licenses.txt",
