@@ -1,6 +1,6 @@
 # Sound & Tones
 
-From my 1982 MMSFORTH disks. My friend and roommate Rich Losey may have contributed. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use.
+Rich Losey and I wrote this together; he is my friend and was my roommate. It runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use.
 
 Three playable keyboards that make tones through the cassette port, dated 10-14-82.
 

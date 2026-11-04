@@ -26,3 +26,14 @@ test('disk pages thank Ira Goldklang, on players and source pages',async({page})
   await expect(thanks.locator('a')).toHaveAttribute('href','https://www.trs-80.com/main-welcome.htm');
  }
 });
+test('the piano is high in More, credits Rich, and its key buttons set the key',async({page})=>{
+ await page.goto('/#/more');await expect(page.locator('.program-card').nth(3).locator('h2')).toHaveText('Sound & Tones');
+ await page.goto('/?development=1&test#/program/tones');
+ await expect(page.locator('.program-attribution')).toContainText('Rich Losey and I wrote this together');
+ await expect(page.locator('#status')).toContainText(/Running/,{timeout:120000});
+ await page.locator('#display').click();await page.keyboard.type('KEYBOARD',{delay:120});await page.keyboard.press('Enter',{delay:120});await page.waitForTimeout(1500);
+ await page.locator('.game-key[data-key="&"]').click();await page.waitForTimeout(500);
+ await page.locator('#display').focus();await page.keyboard.press('s',{delay:400});await page.waitForTimeout(500);
+ const text=await page.evaluate(()=>String.fromCharCode(...window.__circaPlayer.snapshot().map(c=>c<32?c+64:c>=128?32:c)));
+ expect(text).toMatch(/10\s*$/m);
+});

@@ -474,7 +474,8 @@ Fourteen More players boot original disk images through `site/model1-disks.js` a
 byte-identical in each program's `disks/`. On November 3, 2026 the user asserted that
 hosting MMSFORTH and LISP 3.72 for this small archive is fair use; keep their
 credits visible. The LISP programs are the user's. RWL is Rich Losey, who gets credit on the
-Decoder; every other Forth program says he "may have contributed" (user, same day). Keep "Today's News," the
+Decoder and joint credit on Sound & Tones, the key-signature piano that the user placed
+near the top of More; every other Forth program says he "may have contributed" (user, same day). Keep "Today's News," the
 Security rule set, and commercial programs out unless the user asks. Pages with
 disk saves thank Ira Goldklang, who transferred the diskettes (`diskThanks`). GPS's two
 reconstructed functions are typed at startup; never add them to recovered bytes.

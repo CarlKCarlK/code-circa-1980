@@ -10,5 +10,5 @@ test('Tank frozen v1 stays source only with working source downloads',async({pag
  await p.goto('/tank/v1/?test');await expect(p.locator('.source-only')).toContainText('No runnable recovered version');await expect(p.locator('#display')).toHaveCount(0);const link=p.getByRole('link',{name:'Download BASIC listing',exact:true});expect((await p.request.get(await link.getAttribute('href'))).ok()).toBe(true);
 });
 test('Five new entries are appended after the existing monster games',async({page:p})=>{
- await p.goto('/#/more');await expect(p.locator('.program-card')).toHaveCount(MORE_COUNT);expect((await p.locator('.program-card h2').allTextContents()).slice(29,34)).toEqual(['Who Donnt?','Dungeon Trainer','TUTAC Computer','Unfinished Tank Game','Lunar Lander']);await p.getByRole('link',{name:'View source Unfinished Tank Game →',exact:true}).click();await expect(p.locator('.source-only')).toBeVisible();
+ await p.goto('/#/more');await expect(p.locator('.program-card')).toHaveCount(MORE_COUNT);expect((await p.locator('.program-card h2').allTextContents()).filter(title=>title!=='Sound & Tones').slice(29,34)).toEqual(['Who Donnt?','Dungeon Trainer','TUTAC Computer','Unfinished Tank Game','Lunar Lander']);await p.getByRole('link',{name:'View source Unfinished Tank Game →',exact:true}).click();await expect(p.locator('.source-only')).toBeVisible();
 });

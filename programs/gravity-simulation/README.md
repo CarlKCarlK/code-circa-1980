@@ -1,6 +1,6 @@
 # Gravity Simulation
 
-Original author and any earlier published source have not been established. Preserved here as recovered cassette material.
+I wrote this.
 
 Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.
 

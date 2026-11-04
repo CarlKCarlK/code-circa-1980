@@ -34,7 +34,8 @@ Soccer, Talker, and the VS-100 programs.
 Thanks: pages for programs with disk saves set `diskThanks` and thank Ira Goldklang of
 trs-80.com, who transferred the diskettes.
 
-Credit: the Decoder is by Rich Losey (RWL). The other Forth programs say he may have
+Credit: the Decoder is by Rich Losey (RWL), and he and the user wrote Sound & Tones
+together. The other Forth programs say he may have
 contributed, on the user's instruction; "Today's News" is his only other named mention
 in the Forth blocks, and it is not imported.
 

@@ -1,7 +1,7 @@
 {
   "id": "tones",
   "title": "Sound & Tones",
-  "description": "Three playable keyboards that make tones through the cassette port, dated 10-14-82.",
+  "description": "A piano Rich Losey and I wrote that knows key signatures. Pick a key, and each letter key plays the note that key calls for. Dated 10-14-82.",
   "kind": "MMSFORTH",
   "language": "MMSFORTH V2.0, TRS-80 Model I",
   "gallery": "more",
@@ -19,7 +19,7 @@
       "raw": "versions/v01/TONES.bin",
       "listing": "versions/v01/TONES.txt",
       "playable": true,
-      "note": "Source blocks copied unchanged from the New Programs disk. The player boots the Forth System disk and loads them with the original commands. Checked to its first screen only.",
+      "note": "Source blocks copied unchanged from the New Programs disk. The player boots the Forth System disk and loads them with the original commands. Checked to its first screen only. Key signatures, accidentals, and the base-17 printout were checked in the emulator; pitch accuracy has not been judged by ear.",
       "unavailableReason": null,
       "exports": [
         {
@@ -72,11 +72,54 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "From my 1982 MMSFORTH disks. My friend and roommate Rich Losey may have contributed. Runs on MMSFORTH V2.0, \u00a9 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+    "text": "Rich Losey and I wrote this together; he is my friend and was my roommate. It runs on MMSFORTH V2.0, \u00a9 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
   },
   "howTo": [
-    "Click the screen, then type KEYBOARD and press Enter for a piano-like keyboard, OLDBOARD for the one used for demos, or DELTABOARD for an experimental one. Then play on the letter keys. Sound comes from the emulated cassette port."
+    "What this is: a piano that reads like sheet music. In the key of F, every B is B-flat, so you press the B key and hear B-flat, just as a musician does. The program holds a table of which notes each key makes sharp or flat, and it applies that table to every key you press.",
+    "To play: click the screen, type KEYBOARD, and press Enter. Then choose a key with a button below: A\u266d, B\u266d, C, D, E\u266d, F, G, or A. Choose one first. Until you do, the tables are empty and every key plays its sharp.",
+    "The letter rows are the piano. Each row runs A, B, C, D, E, F, G from the left, and keys past G continue into the next octave. The Z row is highest, then A, then Q. The number row is mostly a placeholder pitch. A note sounds only while you hold its key.",
+    "Accidentals: hold \u2191 or Enter with a note to sharpen it, or \u2193 or Space to flatten it. In the key of C, \u2191 with B gives C, and \u2193 with B gives B-flat.",
+    "The printout shows each note in base 17. An octave has 17 slots: the sharps first, then A through G in slots 10 to 16. Base 17 writes those slots as the digits A through G, so a natural note prints under its own name. 1C is C in octave 1, and 10 is the first slot in that octave, the one for B-flat and A-sharp.",
+    "How it makes sound: there is no sound chip. A short loop flips the cassette port on and off, and a table named TUNEFISH holds the delay for each note. Hold \u2190 or \u2192 with a note to retune it by ear; the program prints the note\u2019s new delay after IS NOW. The change lasts until you restart.",
+    "The other two keyboards: type DELTABOARD for an experiment where each key moves relative to the last note, or OLDBOARD for the simple board used for demos. KEYBOARD and DELTABOARD run until you press Restart."
   ],
-  "quickHelp": "Type KEYBOARD, OLDBOARD, or DELTABOARD, then Enter. Letters play notes.",
-  "diskThanks": true
+  "quickHelp": "Type KEYBOARD, press Enter, and choose a key below. Letter rows play notes while held. \u2191 sharpens, \u2193 flattens, and \u2190 \u2192 retune.",
+  "diskThanks": true,
+  "screenKeys": {
+    "label": "Key signature",
+    "keys": [
+      [
+        "!",
+        "A\u266d"
+      ],
+      [
+        "\"",
+        "B\u266d"
+      ],
+      [
+        "#",
+        "C"
+      ],
+      [
+        "$",
+        "D"
+      ],
+      [
+        "%",
+        "E\u266d"
+      ],
+      [
+        "&",
+        "F"
+      ],
+      [
+        "'",
+        "G"
+      ],
+      [
+        "(",
+        "A"
+      ]
+    ]
+  }
 }
