@@ -122,6 +122,28 @@
       },
       "running": "Running from the original disk",
       "slug": "basic"
+    },
+    {
+      "id": "v05",
+      "label": "RACE (TRSDOS Basic System)",
+      "capture": "disk: TRSDOS Basic System",
+      "raw": "versions/v05/RACE.BAS",
+      "listing": "versions/v05/RACE.ASC",
+      "playable": false,
+      "note": "62 records and no end marker. Preserved as found; the marker is not added.",
+      "unavailableReason": "Disk form, kept as source. It is not the selected player for this program.",
+      "exports": [
+        {
+          "path": "versions/v05/RACE.BAS",
+          "label": "RACE.BAS"
+        },
+        {
+          "path": "versions/v05/RACE.ASC",
+          "label": "RACE.ASC"
+        }
+      ],
+      "startupSource": "2 GOSUB 5000\n5 CLS\n10 FOR X=0 TO127:SET(X,3):SET(X,47):NEXTX:FORY=3TO47:SET(0,Y):SET(127,Y):NEXTY\n25 DEFINT A-Y\n26 GOTO 190\n30 LL=.0001\n50 P=0\n60 X=5:Y=10\n70 M=PEEK(14400):IF MAND128THENP=0ELSEIF MAND1THENP=1ELSEIFMAND2THENP=2ELSE IF PEEK(14464) THEN 400\n80 IF MAND8THENY=Y-1ELSEIFMAND16THENY=Y+1\n90 IF MAND32THENX=X-1ELSEIFMAND64THENX=X+1\n94 IF X=127 THEN X=0",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
