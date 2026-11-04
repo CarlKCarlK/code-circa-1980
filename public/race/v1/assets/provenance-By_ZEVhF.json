@@ -185,6 +185,76 @@
       },
       "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "disk": "BASIC Programs Games",
+      "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+      "source": "files/RACE.BAS",
+      "imported_files": [
+        {
+          "path": "versions/v04/RACE.BAS",
+          "archive_path": "files/RACE.BAS",
+          "bytes": 2689,
+          "sha256": "f5485fede3776029129d742aa88da1fb83855461974d5d43160e6112d257a818"
+        },
+        {
+          "path": "versions/v04/RACE.ASC",
+          "archive_path": "derived listing",
+          "bytes": 3262,
+          "sha256": "1e4b61fe79261ff8a3f8f948d6d2b5bedf706ffb4dbecb974d3da3d2b8999206"
+        },
+        {
+          "path": "disks/games-diskette.dmk",
+          "archive_path": "disks/BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "f5485fede3776029129d742aa88da1fb83855461974d5d43160e6112d257a818",
+        "bytes": 2689,
+        "import_date": "2026-11-03",
+        "lines": 69,
+        "last": 5150,
+        "normal_end_marker": true,
+        "memory_base": 27205,
+        "tape_relation": "62/69 lines shared with tapes/recovered/tape10b/best/16-RACE-SAVE2.BAS (65 lines)"
+      }
+    },
+    {
+      "version": "v05",
+      "disk": "TRSDOS Basic System",
+      "disk_image": "TRSDOS Basic System [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "fba98bdb62fc1affb7e8c83824708918f938167da58bbc87b7778ca826ac7b79",
+      "source": "files/RACE",
+      "imported_files": [
+        {
+          "path": "versions/v05/RACE.BAS",
+          "archive_path": "files/RACE",
+          "bytes": 2560,
+          "sha256": "bf343a496238870a17dec82d32be1838aee403dba24a83ba0b75ec06e3b17d79"
+        },
+        {
+          "path": "versions/v05/RACE.ASC",
+          "archive_path": "derived listing",
+          "bytes": 3080,
+          "sha256": "7f533525fbe956bf096376a949c15f46021f06d7f75e858caf40f8a685cf5d9d"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "bf343a496238870a17dec82d32be1838aee403dba24a83ba0b75ec06e3b17d79",
+        "bytes": 2560,
+        "import_date": "2026-11-03",
+        "lines": 62,
+        "last": 5120,
+        "normal_end_marker": false,
+        "memory_base": 27205,
+        "tape_relation": "62/62 lines shared with tapes/recovered/tape10b/best/16-RACE-SAVE2.BAS (65 lines)"
+      }
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
