@@ -391,5 +391,92 @@
       "bytes": 3094,
       "note": "Complete electronic transcription from the Vintage BASIC mirror, preserved unchanged. Matching source statements establish the comparison; exact parent edition and print transcription are not verified. Not a recovered cassette or an execution-tested program."
     }
+  ],
+  "merged_programs": [
+    {
+      "program": "maze-generator",
+      "version": "v01",
+      "merged_version": "v08",
+      "files": {
+        "versions/maze-generator-v01/03-AMAZING-MAZE-V1.BAS": {
+          "source": "programs/maze-generator/versions/v01/03-AMAZING-MAZE-V1.BAS",
+          "sha256": "eb5d5a929f6ca18df105ef5adb7ad0fdb36811f6577aa2c7eef612af43547086",
+          "bytes": 3878
+        },
+        "versions/maze-generator-v01/03-AMAZING-MAZE-V1.ASC": {
+          "source": "programs/maze-generator/versions/v01/03-AMAZING-MAZE-V1.ASC",
+          "sha256": "97b4f09157538fff51805b40dbbee5f43f132610ec2c99fc4401ec47b70a1384",
+          "bytes": 4740
+        }
+      }
+    },
+    {
+      "program": "maze-generator",
+      "version": "v02",
+      "merged_version": "v09",
+      "files": {
+        "versions/maze-generator-v02/04-AMAZING-MAZE-V2.BAS": {
+          "source": "programs/maze-generator/versions/v02/04-AMAZING-MAZE-V2.BAS",
+          "sha256": "412a9c9b4d37348ac5891eb4f6e9ecd45b41cd38b78d44e04fd0277b4b1c6455",
+          "bytes": 4142
+        },
+        "versions/maze-generator-v02/04-AMAZING-MAZE-V2.ASC": {
+          "source": "programs/maze-generator/versions/v02/04-AMAZING-MAZE-V2.ASC",
+          "sha256": "eefbcbb3e6d4f05c7b6f83f883e55b4db48477c9225dc0d59bd91e302e85863b",
+          "bytes": 5037
+        }
+      }
+    },
+    {
+      "program": "maze-generator",
+      "version": "v03",
+      "merged_version": "v10",
+      "files": {
+        "versions/maze-generator-v03/05-AMAZING-PROGRAM.BAS": {
+          "source": "programs/maze-generator/versions/v03/05-AMAZING-PROGRAM.BAS",
+          "sha256": "6fb58cdb7df130515979fcaeb91fac90a8705b707948a7ef56d113fabf8102a6",
+          "bytes": 3619
+        },
+        "versions/maze-generator-v03/05-AMAZING-PROGRAM.ASC": {
+          "source": "programs/maze-generator/versions/v03/05-AMAZING-PROGRAM.ASC",
+          "sha256": "ac1365ed106681f39bb33722b2bc307563608d95db5299dce69e7da33b542499",
+          "bytes": 4441
+        }
+      }
+    },
+    {
+      "program": "maze-generator",
+      "version": "v04",
+      "merged_version": "v11",
+      "files": {
+        "versions/maze-generator-v04/05-AMAZING-PROGRAM.BAS": {
+          "source": "programs/maze-generator/versions/v04/05-AMAZING-PROGRAM.BAS",
+          "sha256": "6fb58cdb7df130515979fcaeb91fac90a8705b707948a7ef56d113fabf8102a6",
+          "bytes": 3619
+        },
+        "versions/maze-generator-v04/05-AMAZING-PROGRAM.ASC": {
+          "source": "programs/maze-generator/versions/v04/05-AMAZING-PROGRAM.ASC",
+          "sha256": "ac1365ed106681f39bb33722b2bc307563608d95db5299dce69e7da33b542499",
+          "bytes": 4441
+        }
+      }
+    },
+    {
+      "program": "amazing-dungeon-and-maze",
+      "version": "v01",
+      "merged_version": "v12",
+      "files": {
+        "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.BAS": {
+          "source": "programs/amazing-dungeon-and-maze/versions/v01/06-AMAZING-DUNGEON-AND-MAZE.BAS",
+          "sha256": "9c1f5c347474be1f4e54d2ffa63600dc3ec1434094a4273354d98ac152f97d31",
+          "bytes": 2769
+        },
+        "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.ASC": {
+          "source": "programs/amazing-dungeon-and-maze/versions/v01/06-AMAZING-DUNGEON-AND-MAZE.ASC",
+          "sha256": "f81a291ca881c86fa44925b236f4a6496b1858ddac6075c2c5561ab806823d52",
+          "bytes": 3372
+        }
+      }
+    }
   ]
 }

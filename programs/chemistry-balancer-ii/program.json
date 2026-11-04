@@ -1,6 +1,6 @@
 {
   "id": "chemistry-balancer-ii",
-  "title": "Chemistry Balancer II \u2014 earlier experiments",
+  "title": "Chemistry Balancer II — earlier experiments",
   "description": "7 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
   "kind": "Source archive",
   "language": "TRS-80 Model I/III BASIC",
@@ -178,5 +178,7 @@
   "actionVerb": "View source",
   "attribution": {
     "text": "The recovered source credits Carl Kadie. Any earlier published sources have not been established."
-  }
+  },
+  "mergedInto": "bal",
+  "galleryHidden": true
 }

@@ -35,6 +35,13 @@ export default function latestReleases(){
         if(!fs.existsSync(metadataPath))continue;
         const metadata=JSON.parse(fs.readFileSync(metadataPath,'utf8'));
         if(metadata.website===false)continue;
+        // A merged program's stable URL goes to the card it joined; its own frozen releases stay.
+        if(metadata.mergedInto){
+          const target=JSON.parse(fs.readFileSync(`${programs}${metadata.mergedInto}/program.json`,'utf8'));
+          const latest=JSON.parse(fs.readFileSync(`${programs}${metadata.mergedInto}/web-versions.json`,'utf8')).versions.at(-1);
+          this.emitFile({type:'asset',fileName:`${id}/index.html`,source:page(metadata.mergedInto,latest.path,target)});
+          continue;
+        }
         const catalog=`${programs}${id}/web-versions.json`;
         if(!fs.existsSync(catalog))continue;
         const latest=JSON.parse(fs.readFileSync(catalog,'utf8')).versions.at(-1);

@@ -44,5 +44,7 @@
   "listingLabel": "Download recovered listing",
   "attribution": {
     "text": "Based on the Mille Bornes card game. The source of the program code and the extent of any borrowed implementation have not been established."
-  }
+  },
+  "mergedInto": "mileage-card-game",
+  "galleryHidden": true
 }

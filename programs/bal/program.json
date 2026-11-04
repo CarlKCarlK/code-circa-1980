@@ -11,7 +11,7 @@
   "versions": [
     {
       "id": "v01",
-      "label": "1979 \u00b7 First balancer",
+      "label": "1979 · First balancer",
       "family": "Chemical Equation Balancer (1979)",
       "capture": "tape14a",
       "save": 9,
@@ -23,7 +23,7 @@
     },
     {
       "id": "v02",
-      "label": "1979 \u00b7 Retry draft (test equation)",
+      "label": "1979 · Retry draft (test equation)",
       "family": "Chemical Equation Balancer (1979)",
       "capture": "tape27b",
       "save": 3,
@@ -35,7 +35,7 @@
     },
     {
       "id": "v03",
-      "label": "1979 \u00b7 Retry draft (debugging)",
+      "label": "1979 · Retry draft (debugging)",
       "family": "Chemical Equation Balancer (1979)",
       "capture": "tape27b",
       "save": 5,
@@ -47,7 +47,7 @@
     },
     {
       "id": "v04",
-      "label": "1979 \u00b7 Retry draft (cleaned)",
+      "label": "1979 · Retry draft (cleaned)",
       "family": "Chemical Equation Balancer (1979)",
       "capture": "tape27b",
       "save": 7,
@@ -59,7 +59,7 @@
     },
     {
       "id": "v05",
-      "label": "1979 \u00b7 Parentheses",
+      "label": "1979 · Parentheses",
       "family": "Chemical Equation Balancer (1979)",
       "capture": "tape14a",
       "save": 10,
@@ -71,7 +71,7 @@
     },
     {
       "id": "v06",
-      "label": "1979 \u00b7 Repeated elements",
+      "label": "1979 · Repeated elements",
       "family": "Chemical Equation Balancer (1979)",
       "capture": "tape14a",
       "save": 11,
@@ -83,7 +83,7 @@
     },
     {
       "id": "v07",
-      "label": "1979 \u00b7 Matrix-print experiment",
+      "label": "1979 · Matrix-print experiment",
       "family": "Chemical Equation Balancer (1979)",
       "capture": "tape19b",
       "save": 13,
@@ -95,7 +95,7 @@
     },
     {
       "id": "v08",
-      "label": "1979 \u00b7 Copyright 1979",
+      "label": "1979 · Copyright 1979",
       "family": "Chemical Equation Balancer (1979)",
       "capture": "tape19b",
       "save": 17,
@@ -107,7 +107,7 @@
     },
     {
       "id": "v09",
-      "label": "II \u00b7 Integer draft",
+      "label": "II · Integer draft",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape17a",
       "save": 2,
@@ -119,7 +119,7 @@
     },
     {
       "id": "v10",
-      "label": "II \u00b7 Mixed precision draft",
+      "label": "II · Mixed precision draft",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape17a",
       "save": 6,
@@ -131,7 +131,7 @@
     },
     {
       "id": "v11",
-      "label": "II \u00b7 Test routines",
+      "label": "II · Test routines",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape17b",
       "save": 1,
@@ -143,7 +143,7 @@
     },
     {
       "id": "v12",
-      "label": "II \u00b7 First complete Balancer II",
+      "label": "II · First complete Balancer II",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape17b",
       "save": 2,
@@ -155,7 +155,7 @@
     },
     {
       "id": "v13",
-      "label": "II \u00b7 Acid/base modes",
+      "label": "II · Acid/base modes",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape17b",
       "save": 3,
@@ -167,7 +167,7 @@
     },
     {
       "id": "v14",
-      "label": "II \u00b7 Equation echo",
+      "label": "II · Equation echo",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape15b",
       "save": 6,
@@ -179,7 +179,7 @@
     },
     {
       "id": "v15",
-      "label": "II \u00b7 Title screen",
+      "label": "II · Title screen",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape16a",
       "save": 7,
@@ -191,7 +191,7 @@
     },
     {
       "id": "v16",
-      "label": "II \u00b7 Raw equation",
+      "label": "II · Raw equation",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape16a",
       "save": 9,
@@ -203,7 +203,7 @@
     },
     {
       "id": "v17",
-      "label": "II \u00b7 Test version",
+      "label": "II · Test version",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape16a",
       "save": 11,
@@ -215,7 +215,7 @@
     },
     {
       "id": "v18",
-      "label": "II \u00b7 Elimination rework (debugging)",
+      "label": "II · Elimination rework (debugging)",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape15b",
       "save": 8,
@@ -227,7 +227,7 @@
     },
     {
       "id": "v19",
-      "label": "II \u00b7 Elimination rework",
+      "label": "II · Elimination rework",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape15b",
       "save": 10,
@@ -239,7 +239,7 @@
     },
     {
       "id": "v20",
-      "label": "II \u00b7 Latest Balancer II",
+      "label": "II · Latest Balancer II",
       "family": "Chemistry Balancer II (1981)",
       "capture": "tape23b",
       "save": 1,
@@ -249,6 +249,198 @@
       "note": "Latest recovered version: STOP removed and multiple-replacement check restored.",
       "unavailableReason": null,
       "slug": "basic"
+    },
+    {
+      "id": "v21",
+      "label": "CHEMISTRY BALENCER II EARLY",
+      "capture": "tape7b",
+      "save": 19,
+      "raw": "versions/chemistry-balancer-ii-v01/19-CHEMISTRY-BALENCER-II-EARLY.BAS",
+      "listing": "versions/chemistry-balancer-ii-v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Chemistry Balancer II — earlier experiments v01. The recovered source credits Carl Kadie. Any earlier published sources have not been established. validated payload; runtime untested. 53 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/chemistry-balancer-ii-v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+          "label": "19-CHEMISTRY-BALENCER-II-EARLY.ASC"
+        },
+        {
+          "path": "versions/chemistry-balancer-ii-v01/19-CHEMISTRY-BALENCER-II-EARLY.BAS",
+          "label": "19-CHEMISTRY-BALENCER-II-EARLY.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n110 EQ$=\"I(I3(I5(I7)2)4)6=H.H.H.H.H(H)3\":PRINTEQ$\n200 ' REM  DECIPHER EQUATION\n210 ' HOW MANY ELEMENTS?\n220  E1$=EQ$:M1=1:T$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSEIFLEN(R1$)=1THEN R1$=R1$+\" \"\n230 FOR I=1TO LEN(T$)STEP2:IFMID$(T$,I,2)<>R1$THENNEXTI:EN=EN+1:T$=T$+R1$\n235 GOTO 225\n240 CN=1:FOR I=1TO LEN (EQ$):TT$=MID$(EQ$,I,1):IFTT$=\"+\"ORTT$=\"=\"THEN CN=CN+1",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "chemistry-balancer-ii",
+        "version": "v01"
+      }
+    },
+    {
+      "id": "v22",
+      "label": "CHEMISTRY BALENCER II",
+      "capture": "tape7b",
+      "save": 20,
+      "raw": "versions/chemistry-balancer-ii-v02/20-CHEMISTRY-BALENCER-II.BAS",
+      "listing": "versions/chemistry-balancer-ii-v02/20-CHEMISTRY-BALENCER-II.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Chemistry Balancer II — earlier experiments v02. The recovered source credits Carl Kadie. Any earlier published sources have not been established. validated payload; runtime untested. 139 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/chemistry-balancer-ii-v02/20-CHEMISTRY-BALENCER-II.ASC",
+          "label": "20-CHEMISTRY-BALENCER-II.ASC"
+        },
+        {
+          "path": "versions/chemistry-balancer-ii-v02/20-CHEMISTRY-BALENCER-II.BAS",
+          "label": "20-CHEMISTRY-BALENCER-II.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225\n240 IFEN=0 THEN ER=4:GOTO2000ELSECN=1:FOR I=1TO LEN (EQ$):TT$=MID$(EQ$,I,1):IFTT$=\"+\"ORTT$=\"=\"THEN CN=CN+1",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "chemistry-balancer-ii",
+        "version": "v02"
+      }
+    },
+    {
+      "id": "v23",
+      "label": "CHEMISTRY BALENCER II V2",
+      "capture": "tape7b",
+      "save": 21,
+      "raw": "versions/chemistry-balancer-ii-v03/21-CHEMISTRY-BALENCER-II-V2.BAS",
+      "listing": "versions/chemistry-balancer-ii-v03/21-CHEMISTRY-BALENCER-II-V2.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Chemistry Balancer II — earlier experiments v03. The recovered source credits Carl Kadie. Any earlier published sources have not been established. validated payload; runtime untested. 157 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/chemistry-balancer-ii-v03/21-CHEMISTRY-BALENCER-II-V2.ASC",
+          "label": "21-CHEMISTRY-BALENCER-II-V2.ASC"
+        },
+        {
+          "path": "versions/chemistry-balancer-ii-v03/21-CHEMISTRY-BALENCER-II-V2.BAS",
+          "label": "21-CHEMISTRY-BALENCER-II-V2.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n99 EQ$=\"A.B.C + D.E.F + G.H.I = A.E.I + D.H.C + G.B.F\":PRINTEQ$\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "chemistry-balancer-ii",
+        "version": "v03"
+      }
+    },
+    {
+      "id": "v24",
+      "label": "CHEMISTRY BALENCER II DAMAGED LINES",
+      "capture": "tape7b",
+      "save": 22,
+      "raw": "versions/chemistry-balancer-ii-v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.BAS",
+      "listing": "versions/chemistry-balancer-ii-v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Chemistry Balancer II — earlier experiments v04. The recovered source credits Carl Kadie. Any earlier published sources have not been established. damaged / partial BASIC. 154 consistent BASIC record pointers; Out-of-order line number 13268 followed by 410; Other suspect source expressions remain; no manual repair",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/chemistry-balancer-ii-v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC",
+          "label": "22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC"
+        },
+        {
+          "path": "versions/chemistry-balancer-ii-v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.BAS",
+          "label": "22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n99 EQ$=\"A.B.C + D.E.F + G.H.I = A.E.I + D.H.C + G.B.F\":PRINTEQ$\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "chemistry-balancer-ii",
+        "version": "v04"
+      }
+    },
+    {
+      "id": "v25",
+      "label": "CHEMISTRY BALENCER II V3",
+      "capture": "tape7b",
+      "save": 23,
+      "raw": "versions/chemistry-balancer-ii-v05/23-CHEMISTRY-BALENCER-II-V3.BAS",
+      "listing": "versions/chemistry-balancer-ii-v05/23-CHEMISTRY-BALENCER-II-V3.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Chemistry Balancer II — earlier experiments v05. The recovered source credits Carl Kadie. Any earlier published sources have not been established. validated payload; runtime untested. 152 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/chemistry-balancer-ii-v05/23-CHEMISTRY-BALENCER-II-V3.ASC",
+          "label": "23-CHEMISTRY-BALENCER-II-V3.ASC"
+        },
+        {
+          "path": "versions/chemistry-balancer-ii-v05/23-CHEMISTRY-BALENCER-II-V3.BAS",
+          "label": "23-CHEMISTRY-BALENCER-II-V3.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BALENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n99 EQ$=\"A.B.C + D.E.F + G.H.I = A.E.I + D.H.C + G.B.F\":PRINTEQ$\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "chemistry-balancer-ii",
+        "version": "v05"
+      }
+    },
+    {
+      "id": "v26",
+      "label": "CHEMISTRY BALENCER II V4",
+      "capture": "tape7b",
+      "save": 24,
+      "raw": "versions/chemistry-balancer-ii-v06/24-CHEMISTRY-BALENCER-II-V4.BAS",
+      "listing": "versions/chemistry-balancer-ii-v06/24-CHEMISTRY-BALENCER-II-V4.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Chemistry Balancer II — earlier experiments v06. The recovered source credits Carl Kadie. Any earlier published sources have not been established. validated payload; runtime untested. 158 consistent BASIC record pointers; normal end marker; matching audio variants/timing decodes; not execution-tested",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/chemistry-balancer-ii-v06/24-CHEMISTRY-BALENCER-II-V4.ASC",
+          "label": "24-CHEMISTRY-BALENCER-II-V4.ASC"
+        },
+        {
+          "path": "versions/chemistry-balancer-ii-v06/24-CHEMISTRY-BALENCER-II-V4.BAS",
+          "label": "24-CHEMISTRY-BALENCER-II-V4.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BANENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225\n240 IFEN=0 THEN ER=4:GOTO2000ELSECN=1:FOR I=1TO LEN (EQ$):TT$=MID$(EQ$,I,1):IFTT$=\"+\"ORTT$=\"=\"THEN CN=CN+1",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "chemistry-balancer-ii",
+        "version": "v06"
+      }
+    },
+    {
+      "id": "v27",
+      "label": "CHEMISTRY BALENCER II TRUNCATED",
+      "capture": "tape7b",
+      "save": 25,
+      "raw": "versions/chemistry-balancer-ii-v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS",
+      "listing": "versions/chemistry-balancer-ii-v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Chemistry Balancer II — earlier experiments v07. The recovered source credits Carl Kadie. Any earlier published sources have not been established. damaged / partial BASIC. 139 consistent BASIC record pointers; No decoded end-of-program marker before WAV ends; Listing contains only 139 complete prefix records; raw candidate retains the remainder",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/chemistry-balancer-ii-v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+          "label": "25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC"
+        },
+        {
+          "path": "versions/chemistry-balancer-ii-v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS",
+          "label": "25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 REM CHEMISTRY BANENCER II   COPYRIGHT 1981 C. KADIE\n90 CLEAR 1000:DEFINT A-Z\n100 PRINT:PRINT:PRINT\"WHAT IS THE EQUATION\":INPUT EQ$\n200 ' REM  DECIPHER EQUATION\n210 T$=EQ$:EQ$=\"\":FORI=1TOLEN(T$):TT$=MID$(T$,I,1):IFTT$>=CHR$(96)ANDTT$<=CHR$(127)THENTT$=CHR$(ASC(TT$)-32)ELSE IFNOT(TT$=\" \"ORTT$=\"(\"ORTT$=\")\"ORTT$=\"+\"ORTT$=\".\"OR(TT$>=\"0\"ANDTT$<=\"9\")ORTT$=\"=\"OR(TT$>=\"A\"ANDTT$<=\"Z\"))THENER=8:GOTO2000\n212 IFTT$=\")\"ORTT$=\"(\" THEN P8=1\n215 EQ$=EQ$+TT$:NEXTI:T$=\"\":TT$=\"\"\n220  E1$=EQ$:M1=1:EL$=\"  \"\n225 GOSUB 1000:R1$=LEFT$(R1$,2):IFM1=7 THEN240 ELSER1$=LEFT$(R1$+\" \",2)\n230 FOR I=1TO LEN(EL$)STEP2:IFMID$(EL$,I,2)<>R1$THENNEXTI:EN=EN+1:EL$=EL$+R1$\n235 GOTO 225",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "chemistry-balancer-ii",
+        "version": "v07"
+      }
     }
+  ],
+  "mergedPrograms": [
+    "chemistry-balancer-ii"
   ]
 }

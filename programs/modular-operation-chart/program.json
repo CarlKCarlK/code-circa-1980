@@ -1,7 +1,7 @@
 {
   "id": "modular-operation-chart",
   "title": "Modular Operation Chart",
-  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "description": "3 captured saves. One original BASIC player; historical bugs remain. Includes the saves once listed as Modular Arithmetic Chart.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
@@ -59,10 +59,42 @@
         "100 IFINKEY$<>\"\"THENENDELSE100"
       ],
       "slug": "basic"
+    },
+    {
+      "id": "v03",
+      "label": "MODULAR ARITHMETIC CHART",
+      "capture": "tape27b",
+      "save": 1,
+      "raw": "versions/modular-arithmetic-chart-v01/01-MODULAR-ARITHMETIC-CHART.BAS",
+      "listing": "versions/modular-arithmetic-chart-v01/01-MODULAR-ARITHMETIC-CHART.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Modular Arithmetic Chart v01. validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/modular-arithmetic-chart-v01/01-MODULAR-ARITHMETIC-CHART.ASC",
+          "label": "01-MODULAR-ARITHMETIC-CHART.ASC"
+        },
+        {
+          "path": "versions/modular-arithmetic-chart-v01/01-MODULAR-ARITHMETIC-CHART.BAS",
+          "label": "01-MODULAR-ARITHMETIC-CHART.BAS"
+        }
+      ],
+      "startupSource": "5 CLS\n10 INPUT\"MOD\";M\n15 INPUT \"+ OR * \";F$\n18 CLS:PRINT\"CHART FOR MOD\"M\"AND THE OPERATION OF\";:IFF$=\"+\"THENPRINT\" ADDITION.\";ELSEPRINT\" MULTIPLCATION.\";\n20 FORX=0TOM-1\n30 FORY=0TOM-1\n40 IF F$=\"+\"THENA=X+YELSE A=X*Y\n50 B=INT(((A/M)-INT(A/M))*M+.5)\n60 PRINT@Y*4+X*64+64,B;\n70 NEXTY\n80 PRINT\n90 NEXTX",
+      "controlSource": [
+        "100 IFINKEY$<>\"\"THENENDELSE100"
+      ],
+      "mergedFrom": {
+        "program": "modular-arithmetic-chart",
+        "version": "v01"
+      }
     }
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
-  }
+  },
+  "mergedPrograms": [
+    "modular-arithmetic-chart"
+  ]
 }

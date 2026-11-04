@@ -18,7 +18,7 @@ const tag=(html,property)=>html.match(new RegExp(`<meta property="og:${property}
 test('every program maps to a 1200x630 PNG of its gallery thumbnail',()=>{
   const manifest=JSON.parse(fs.readFileSync(path.join(projectRoot,'app/assets/og/manifest.json'),'utf8'));
   assert.ok(active.length>0);
-  for(const id of active)assert.ok(manifest[JSON.parse(fs.readFileSync(path.join(programs,id,'program.json'),'utf8')).urlName??id],id);
+  for(const id of active){const metadata=JSON.parse(fs.readFileSync(path.join(programs,id,'program.json'),'utf8'));if(!metadata.mergedInto)assert.ok(manifest[metadata.urlName??id],id);}
   for(const file of new Set(Object.values(manifest))){
     const png=fs.readFileSync(path.join(projectRoot,'app/assets/og',file));
     assert.equal(png.toString('latin1',1,4),'PNG',file);
@@ -34,7 +34,7 @@ test('every stable program page previews as that program',()=>{
     assert.match(tag(html,'image'),/^https:\/\/carlkcarlk\.github\.io\/code-circa-1980\/og\/[-\w]+\.png$/,id);
     assert.ok(files.has(tag(html,'image').replace('https://carlkcarlk.github.io/code-circa-1980/','')),id);
     assert.ok(tag(html,'title').length&&tag(html,'title')!=='Code, circa 1980. Running again.',id);
-    assert.equal(tag(html,'url'),`https://carlkcarlk.github.io/code-circa-1980/${metadata.urlName??id}/`);
+    assert.equal(tag(html,'url'),`https://carlkcarlk.github.io/code-circa-1980/${metadata.urlName??metadata.mergedInto??id}/`);
     assert.ok(tag(html,'description').length,id);
     assert.ok(html.includes('twitter:card'),id);
     // Crawlers follow a meta refresh and would read the frozen release's generic tags instead.
@@ -46,6 +46,7 @@ test('a renamed program is reachable at both its new and old stable URLs',()=>{
   assert.equal(tag(files.get('defuse/index.html'),'title'),'Defuse');
   assert.equal(tag(files.get('bomb/index.html'),'url'),'https://carlkcarlk.github.io/code-circa-1980/defuse/');
   assert.equal(tag(files.get('liers-poker/index.html'),'url'),'https://carlkcarlk.github.io/code-circa-1980/liars-poker/');
+  assert.equal(tag(files.get('3d-plot/index.html'),'url'),'https://carlkcarlk.github.io/code-circa-1980/plot3d/');
   assert.doesNotMatch(tag(files.get('bomb/index.html'),'image'),/bomb/);
 });
 test('a release build swaps the generic tags for its program',()=>{

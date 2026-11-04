@@ -136,5 +136,24 @@
       "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
     },
     "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
-  }
+  },
+  "merged_programs": [
+    {
+      "program": "modular-arithmetic-chart",
+      "version": "v01",
+      "merged_version": "v03",
+      "files": {
+        "versions/modular-arithmetic-chart-v01/01-MODULAR-ARITHMETIC-CHART.BAS": {
+          "source": "programs/modular-arithmetic-chart/versions/v01/01-MODULAR-ARITHMETIC-CHART.BAS",
+          "sha256": "d1e0fd6416db4eb788ff572594e7e3ba18a2f8e433ad2a88325c1fb7025dbeb7",
+          "bytes": 276
+        },
+        "versions/modular-arithmetic-chart-v01/01-MODULAR-ARITHMETIC-CHART.ASC": {
+          "source": "programs/modular-arithmetic-chart/versions/v01/01-MODULAR-ARITHMETIC-CHART.ASC",
+          "sha256": "9764e597725bdce87aef3f231fc5fe480df5b21dadda36e401c54b40fbcf9e62",
+          "bytes": 330
+        }
+      }
+    }
+  ]
 }

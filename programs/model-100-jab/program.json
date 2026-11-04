@@ -1,13 +1,14 @@
 {
   "id": "model-100-jab",
-  "title": "Model 100 JAB",
+  "urlName": "model-100-j",
+  "title": "Model 100 J",
   "description": "4 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
   "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
-  "unsharedWebV1": true,
+  "unsharedWebV1": false,
   "defaultVersion": "v04",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [

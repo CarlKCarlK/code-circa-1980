@@ -18,7 +18,7 @@ for(const program of (await fs.readdir(path.join(projectRoot,'programs'))).sort(
   let metadata,catalog;
   try {metadata=JSON.parse(await fs.readFile(path.join(programPath,'program.json'),'utf8'));catalog=JSON.parse(await fs.readFile(path.join(programPath,'web-versions.json'),'utf8'));}
   catch(error){if(error.code==='ENOENT'||error.code==='ENOTDIR')continue;throw error;}
-  if(metadata.website===false)continue;
+  if(metadata.website===false||metadata.mergedInto)continue;
   const refreshUnshared=metadata.gallery==='more'&&metadata.unsharedWebV1===true;
   const {version,replace}=planRelease(metadata,catalog,{refreshUnshared});
   const releasePath=`${metadata.urlName??program}/${version}/`;

@@ -14,7 +14,7 @@ for config in plan['programs']:
  folder=root/'programs'/config['id'];e=json.loads((folder/'provenance.json').read_text());m=json.loads((folder/'program.json').read_text())
  # Later disk saves are outside this tape plan; docs/disk-programs.md covers them.
  tape_saves=[s for s in e['saves'] if not s.get('disk')]
- assert len(tape_saves)==len(config['items'])==len([v for v in m['versions'] if not v['capture'].startswith('disk:')]);assert m['attribution']['text']
+ assert len(tape_saves)==len(config['items'])==len([v for v in m['versions'] if not v['capture'].startswith('disk:') and not v.get('mergedFrom')]);assert m['attribution']['text']
  for s in tape_saves:
   saves+=1
   for f in s['imported_files']:

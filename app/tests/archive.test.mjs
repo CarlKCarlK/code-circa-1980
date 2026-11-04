@@ -17,10 +17,20 @@ for(const name of fs.readdirSync(root)){
    assert.ok(metadata.versions.find(v=>v.id===metadata.defaultVersion));
    if(metadata.sourceOnly)assert.ok(metadata.versions.every(v=>!v.playable&&v.unavailableReason));
    else assert.ok(metadata.versions.find(v=>v.id===metadata.defaultVersion)?.playable);
-   assert.equal(metadata.versions.length,evidence.saves.length);
+   assert.equal(metadata.versions.filter(v=>!v.mergedFrom).length,evidence.saves.length);
    if(metadata.gallery==='more')assert.equal(metadata.versions.filter(v=>v.playable).length,metadata.sourceOnly?0:1,'One selected player, or an explicitly source-only collection');
  });
+ if(metadata.mergedInto)test(`${metadata.title}: every save joined ${metadata.mergedInto} with the same bytes`,()=>{
+   assert.ok(metadata.galleryHidden);
+   const target=JSON.parse(fs.readFileSync(new URL(metadata.mergedInto+'/program.json',root)));
+   for(const version of metadata.versions){
+     const copy=target.versions.find(v=>v.mergedFrom?.program===name&&v.mergedFrom.version===version.id);assert.ok(copy,version.id);
+     assert.equal(copy.playable,false);
+     for(const field of ['raw','listing'])assert.deepEqual(fs.readFileSync(new URL(metadata.mergedInto+'/'+copy[field],root)),fs.readFileSync(new URL(version[field],folder)),field);
+   }
+ });
  for(const version of metadata.versions){
+  if(version.mergedFrom)continue;
   test(`${metadata.title} ${version.id}: unchanged bytes, BASIC structure, listing`,()=>{
     const save=evidence.saves.find(s=>s.version===version.id);assert.ok(save);
     for(const file of save.imported_files){

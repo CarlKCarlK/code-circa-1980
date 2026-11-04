@@ -482,8 +482,26 @@ The user asked to correct the URL's spelling the same day. Its public URLs are n
 stays at unshared v1. The ID and folder stay `liers-poker`, `/liers-poker/` redirects, and
 frozen `/liers-poker/v1/` stays. Recovered filenames and labels keep the historical LIERS.
 
-At the user's request, More now lists Liar's Poker, Peoria Grand Prix, Word Search, and Illiad
-directly after Sound & Tones. That order is set in `app/site/catalog.js` and needs no new release.
+At the user's request, More now lists Liar's Poker, Peoria Grand Prix, Word Search, Illiad, and
+JAB directly after Sound & Tones. That order is set in `app/site/catalog.js` and needs no new release.
+
+### Merged cards and generic art (November 4, 2026)
+
+The user merged cards that were the same program, via `app/scripts/merge-more-programs.mjs`:
+Modular Arithmetic Chart into Modular Operation Chart, Two Player Trail Game into Blockade
+Robot, Formula Lookup into Physics Formula Reference, Maze Generator and Amazing Dungeon And
+Maze into Amazing Maze, Mille Bornes into Mileage Card Game (now displayed as Mille Bornes Card
+Game), Chemistry Balancer II — earlier experiments into `bal`, and 3-D Plot — early screen
+edition into `plot3d`. A merged folder keeps its bytes, tags, and frozen v1, gets `mergedInto`
+and `galleryHidden`, and its stable URL redirects. Its saves are copied into the target as
+source-only versions with `mergedFrom`. The canonical `original/` history gained those saves
+as appended commits, tagged `<target>-vNN`, ending back on the selected save, because published
+history is not rewritten; their position there does not claim chronology. Those 3-D Plot saves
+adapt the published BASIC Computer Games program, unlike the user's own (C) 1979 3-D Plot, so
+each keeps that credit in its note.
+
+Generic thumbnails choose by language, then medium: Forth, Lisp, the diskette for a program
+that plays from disk, otherwise the cassette.
 
 ## Programs from recovered floppy disks (November 3, 2026)
 

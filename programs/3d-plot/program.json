@@ -1,6 +1,6 @@
 {
   "id": "3d-plot",
-  "title": "3-D Plot \u2014 early screen edition",
+  "title": "3-D Plot — early screen edition",
   "description": "2 captured saves. One original BASIC player; historical bugs remain.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
@@ -70,5 +70,7 @@
       "label": "Published comparison listing",
       "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/3dplot.bas"
     }
-  ]
+  ],
+  "mergedInto": "plot3d",
+  "galleryHidden": true
 }

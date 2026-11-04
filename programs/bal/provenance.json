@@ -7171,5 +7171,126 @@
         }
       ]
     }
+  ],
+  "merged_programs": [
+    {
+      "program": "chemistry-balancer-ii",
+      "version": "v01",
+      "merged_version": "v21",
+      "files": {
+        "versions/chemistry-balancer-ii-v01/19-CHEMISTRY-BALENCER-II-EARLY.BAS": {
+          "source": "programs/chemistry-balancer-ii/versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.BAS",
+          "sha256": "3c62666ff4b06ca7126d35e0e129aa87772a616d0fab3280a89f618767f07387",
+          "bytes": 1895
+        },
+        "versions/chemistry-balancer-ii-v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC": {
+          "source": "programs/chemistry-balancer-ii/versions/v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC",
+          "sha256": "95650074d97e45ce3bbd2b61612e2a570971f8a98d200edd91e05008b5a3bcad",
+          "bytes": 2354
+        }
+      }
+    },
+    {
+      "program": "chemistry-balancer-ii",
+      "version": "v02",
+      "merged_version": "v22",
+      "files": {
+        "versions/chemistry-balancer-ii-v02/20-CHEMISTRY-BALENCER-II.BAS": {
+          "source": "programs/chemistry-balancer-ii/versions/v02/20-CHEMISTRY-BALENCER-II.BAS",
+          "sha256": "c71f2157211d5d31b22385ed4a4e92a2b7528ee46b27f62322723ce138fe659b",
+          "bytes": 4733
+        },
+        "versions/chemistry-balancer-ii-v02/20-CHEMISTRY-BALENCER-II.ASC": {
+          "source": "programs/chemistry-balancer-ii/versions/v02/20-CHEMISTRY-BALENCER-II.ASC",
+          "sha256": "148ce2d7eec77e68a4cd02aa3e9a904263f4d569d56be6a6eb3ccdf76629ca83",
+          "bytes": 5757
+        }
+      }
+    },
+    {
+      "program": "chemistry-balancer-ii",
+      "version": "v03",
+      "merged_version": "v23",
+      "files": {
+        "versions/chemistry-balancer-ii-v03/21-CHEMISTRY-BALENCER-II-V2.BAS": {
+          "source": "programs/chemistry-balancer-ii/versions/v03/21-CHEMISTRY-BALENCER-II-V2.BAS",
+          "sha256": "533cb001b60e44263dadda522b2a75b6aa4de36aef76d71cc654b230dac39e93",
+          "bytes": 5687
+        },
+        "versions/chemistry-balancer-ii-v03/21-CHEMISTRY-BALENCER-II-V2.ASC": {
+          "source": "programs/chemistry-balancer-ii/versions/v03/21-CHEMISTRY-BALENCER-II-V2.ASC",
+          "sha256": "367799acddeddf2d607cb577505c193600ce0ebb2d29669161af7b070eec2f22",
+          "bytes": 6879
+        }
+      }
+    },
+    {
+      "program": "chemistry-balancer-ii",
+      "version": "v04",
+      "merged_version": "v24",
+      "files": {
+        "versions/chemistry-balancer-ii-v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.BAS": {
+          "source": "programs/chemistry-balancer-ii/versions/v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.BAS",
+          "sha256": "c04139305a83ca9157e508754a65cb11ed40bdea7080e1b092b366824c7cb96c",
+          "bytes": 5493
+        },
+        "versions/chemistry-balancer-ii-v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC": {
+          "source": "programs/chemistry-balancer-ii/versions/v04/22-CHEMISTRY-BALENCER-II-DAMAGED-LINES.ASC",
+          "sha256": "e8c812ffb204eec92b593fe0c76f421007f58bd90d84c7af35c7a4baabbb41d4",
+          "bytes": 6643
+        }
+      }
+    },
+    {
+      "program": "chemistry-balancer-ii",
+      "version": "v05",
+      "merged_version": "v25",
+      "files": {
+        "versions/chemistry-balancer-ii-v05/23-CHEMISTRY-BALENCER-II-V3.BAS": {
+          "source": "programs/chemistry-balancer-ii/versions/v05/23-CHEMISTRY-BALENCER-II-V3.BAS",
+          "sha256": "8ac7b0ee85bd726191afa3695d8339ae04df00ee450785391a959533eda19dbf",
+          "bytes": 5476
+        },
+        "versions/chemistry-balancer-ii-v05/23-CHEMISTRY-BALENCER-II-V3.ASC": {
+          "source": "programs/chemistry-balancer-ii/versions/v05/23-CHEMISTRY-BALENCER-II-V3.ASC",
+          "sha256": "e1a7dcf98cd6e3a0c07646207bc5df9bd184988687727a0970d6d391d6240b96",
+          "bytes": 6617
+        }
+      }
+    },
+    {
+      "program": "chemistry-balancer-ii",
+      "version": "v06",
+      "merged_version": "v26",
+      "files": {
+        "versions/chemistry-balancer-ii-v06/24-CHEMISTRY-BALENCER-II-V4.BAS": {
+          "source": "programs/chemistry-balancer-ii/versions/v06/24-CHEMISTRY-BALENCER-II-V4.BAS",
+          "sha256": "feb2486f98d7cc48546a4ad922faf4f8e282ce54aa6c85df26213c3e21252c64",
+          "bytes": 5827
+        },
+        "versions/chemistry-balancer-ii-v06/24-CHEMISTRY-BALENCER-II-V4.ASC": {
+          "source": "programs/chemistry-balancer-ii/versions/v06/24-CHEMISTRY-BALENCER-II-V4.ASC",
+          "sha256": "ceb9472ba491bd4eaa408dbcc38829c1145cf18379768239d3d01f12ec896d3f",
+          "bytes": 7065
+        }
+      }
+    },
+    {
+      "program": "chemistry-balancer-ii",
+      "version": "v07",
+      "merged_version": "v27",
+      "files": {
+        "versions/chemistry-balancer-ii-v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS": {
+          "source": "programs/chemistry-balancer-ii/versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.BAS",
+          "sha256": "7f32eafa9d1af3d68bbe30de3839199167b7222c295fa72d7c64ed9f7eea7c64",
+          "bytes": 6323
+        },
+        "versions/chemistry-balancer-ii-v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC": {
+          "source": "programs/chemistry-balancer-ii/versions/v07/25-CHEMISTRY-BALENCER-II-TRUNCATED.ASC",
+          "sha256": "bf4e9c9817666f4b98d4cbcb23771f7506848e41573f768e10b390f23fe6ef72",
+          "bytes": 6217
+        }
+      }
+    }
   ]
 }

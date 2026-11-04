@@ -1,7 +1,7 @@
 {
   "id": "amazing-maze",
   "title": "Amazing Maze",
-  "description": "A GAME FOR ONE OR TWO, in the disk menu's words. 6 recovered forms; the disk form plays.",
+  "description": "A GAME FOR ONE OR TWO, in the disk menu's words. 12 recovered forms; the disk form plays. Includes the saves once listed as Maze Generator and Amazing Dungeon And Maze.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
@@ -194,11 +194,146 @@
       ],
       "startupSource": "5 XS=0:YS=3\n7 CLS\n10 PRINTTAB(20)\"A MAZING PROGRAM\"\n40 FORX=0TO127:SET(X,3):NEXT\n50 PRINT@128,\"THIS IS A MAZE PROGRAM. FIRST GIVE THE SIZE OF THE\"\n55 PRINT\"MAZE YOU WANT CUSTOM-MADE FOR YOU.  (TAKES 1 MINUTE TO MAKE\"\n60 PRINT\"A 10 BY 10 MAZE AND 15 MINUTES TO MAKE A 40 BY 20 )\n\"\n65 PRINT\"AFTER THE MAZE IS MADE, YOU AND A FRIEND MAY MOVE THE TWO\"\n70 PRINT\"LITTLE DOTS THOUGH THE MAZE. THE FIRST ONE OFF THE SCREEN\"\n75 PRINT\"WINS.\"\n80 PRINT\"TO STEER DOTS :",
       "controlSource": []
+    },
+    {
+      "id": "v08",
+      "label": "AMAZING MAZE V1",
+      "capture": "tape19a",
+      "save": 3,
+      "raw": "versions/maze-generator-v01/03-AMAZING-MAZE-V1.BAS",
+      "listing": "versions/maze-generator-v01/03-AMAZING-MAZE-V1.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Maze Generator v01. validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/maze-generator-v01/03-AMAZING-MAZE-V1.ASC",
+          "label": "03-AMAZING-MAZE-V1.ASC"
+        },
+        {
+          "path": "versions/maze-generator-v01/03-AMAZING-MAZE-V1.BAS",
+          "label": "03-AMAZING-MAZE-V1.BAS"
+        }
+      ],
+      "startupSource": "5 XS=0:YS=1\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n90 PRINT@404,\"\";\n100 GOSUB 7000\n101 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "maze-generator",
+        "version": "v01"
+      }
+    },
+    {
+      "id": "v09",
+      "label": "AMAZING MAZE V2",
+      "capture": "tape19a",
+      "save": 4,
+      "raw": "versions/maze-generator-v02/04-AMAZING-MAZE-V2.BAS",
+      "listing": "versions/maze-generator-v02/04-AMAZING-MAZE-V2.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Maze Generator v02. validated payload; runtime untested. Increasing lines; common pointer base 22204; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/maze-generator-v02/04-AMAZING-MAZE-V2.ASC",
+          "label": "04-AMAZING-MAZE-V2.ASC"
+        },
+        {
+          "path": "versions/maze-generator-v02/04-AMAZING-MAZE-V2.BAS",
+          "label": "04-AMAZING-MAZE-V2.BAS"
+        }
+      ],
+      "startupSource": "10 XS=0:YS=1\n20 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n40 PRINT@404,\"\";\n50 GOSUB 1820 \n60 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n70 IFH<>1ANDV<>1THEN90   \n80 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO50   \n90 DIM W(H,V),V(H,V)\n100 H1=H:V1=V\n110 PRINT\n120 PRINT",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "maze-generator",
+        "version": "v02"
+      }
+    },
+    {
+      "id": "v10",
+      "label": "AMAZING PROGRAM, maze generator",
+      "capture": "tape1b",
+      "save": 5,
+      "raw": "versions/maze-generator-v03/05-AMAZING-PROGRAM.BAS",
+      "listing": "versions/maze-generator-v03/05-AMAZING-PROGRAM.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Maze Generator v03. validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/maze-generator-v03/05-AMAZING-PROGRAM.ASC",
+          "label": "05-AMAZING-PROGRAM.ASC"
+        },
+        {
+          "path": "versions/maze-generator-v03/05-AMAZING-PROGRAM.BAS",
+          "label": "05-AMAZING-PROGRAM.BAS"
+        }
+      ],
+      "startupSource": "5 XS=0:YS=1\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n90 PRINT@404,\"\";\n100 GOSUB 7000\n101 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "maze-generator",
+        "version": "v03"
+      }
+    },
+    {
+      "id": "v11",
+      "label": "AMAZING PROGRAM, maze generator",
+      "capture": "tape1b2",
+      "save": 5,
+      "raw": "versions/maze-generator-v04/05-AMAZING-PROGRAM.BAS",
+      "listing": "versions/maze-generator-v04/05-AMAZING-PROGRAM.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Maze Generator v04. validated payload; runtime untested. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/maze-generator-v04/05-AMAZING-PROGRAM.ASC",
+          "label": "05-AMAZING-PROGRAM.ASC"
+        },
+        {
+          "path": "versions/maze-generator-v04/05-AMAZING-PROGRAM.BAS",
+          "label": "05-AMAZING-PROGRAM.BAS"
+        }
+      ],
+      "startupSource": "5 XS=0:YS=1\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n90 PRINT@404,\"\";\n100 GOSUB 7000\n101 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n102 IFH<>1ANDV<>1THEN110\n104 PRINT\"MEANINGLESS DIMENSIONS.  TRY AGAIN.\":GOTO100\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n120 PRINT\n130 PRINT",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "maze-generator",
+        "version": "v04"
+      }
+    },
+    {
+      "id": "v12",
+      "label": "AMAZING DUNGEON AND MAZE",
+      "capture": "tape19a",
+      "save": 6,
+      "raw": "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.BAS",
+      "listing": "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Amazing Dungeon And Maze v01. validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.ASC",
+          "label": "06-AMAZING-DUNGEON-AND-MAZE.ASC"
+        },
+        {
+          "path": "versions/amazing-dungeon-and-maze-v01/06-AMAZING-DUNGEON-AND-MAZE.BAS",
+          "label": "06-AMAZING-DUNGEON-AND-MAZE.BAS"
+        }
+      ],
+      "startupSource": "5 XS=0:YS=1\n10 PRINTTAB(20)\"AMAZING PROGRAM\"\n30 CLS\n90 PRINT \"DIMENTIONS UP TO 63,21\";\n95 INPUT H,V\n100 PRINT@0,\"\";:INPUT\"DO YOU WANT A DUNJON OR A MAZE \";D$:CLS\n101 FORWN=00TOH*2:SET(WN,0):SET(WN,V*2+2):NEXTWN\n110 DIM W(H,V),V(H,V)\n115 H1=H:V1=V\n160 Q=0:Z=0:X=INT(RND(0)*H+1)\n165 FORI=1TOH\n170 IFI=XTHEN173",
+      "controlSource": [],
+      "mergedFrom": {
+        "program": "amazing-dungeon-and-maze",
+        "version": "v01"
+      }
     }
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "Adapted from Jack Hauber\u2019s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "text": "Adapted from Jack Hauber’s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
     "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
   },
   "upstreamDownloads": [
@@ -208,5 +343,9 @@
       "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas"
     }
   ],
-  "diskThanks": true
+  "diskThanks": true,
+  "mergedPrograms": [
+    "maze-generator",
+    "amazing-dungeon-and-maze"
+  ]
 }

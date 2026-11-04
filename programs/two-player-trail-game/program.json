@@ -1,7 +1,7 @@
 {
   "id": "two-player-trail-game",
   "title": "Blockade Robot",
-  "description": "CLASSIC VIDEO GAME FOR TWO, in the disk menu's words. 2 recovered forms; the disk form plays.",
+  "description": "CLASSIC VIDEO GAME FOR TWO, in the disk menu's words. 3 recovered forms; the disk form plays. Includes the saves once listed as Two Player Trail Game.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
@@ -72,11 +72,43 @@
       },
       "running": "Running from the original disk",
       "slug": "basic"
+    },
+    {
+      "id": "v03",
+      "label": "Two-player trail game (descriptive title)",
+      "capture": "tape30a",
+      "save": 4,
+      "raw": "versions/two-player-trail-game-tape30a-v01/04-TWO-PLAYER-TRAIL-GAME.BAS",
+      "listing": "versions/two-player-trail-game-tape30a-v01/04-TWO-PLAYER-TRAIL-GAME.ASC",
+      "playable": false,
+      "note": "Previously listed separately as Two Player Trail Game v01. validated payload; runtime untested. Exact left/right payload; 41 ordered lines; consistent pointer base 17125; end marker; exact EOF",
+      "unavailableReason": "Another recovered save; the site offers one selected player.",
+      "exports": [
+        {
+          "path": "versions/two-player-trail-game-tape30a-v01/04-TWO-PLAYER-TRAIL-GAME.ASC",
+          "label": "04-TWO-PLAYER-TRAIL-GAME.ASC"
+        },
+        {
+          "path": "versions/two-player-trail-game-tape30a-v01/04-TWO-PLAYER-TRAIL-GAME.BAS",
+          "label": "04-TWO-PLAYER-TRAIL-GAME.BAS"
+        }
+      ],
+      "startupSource": "0 CLS\n1 INPUT \"RANDOM\";S\n2 FORE=2TO124:SET(E,1):SET(E,46):NEXT:FORE=1TO46:SET(2,E):SET(124,E):NEXT\n4 Z2=1\n5 A1=20:A2=30:B1=50:B2=60:A3=A1:B3=B1:A4=A2:B4=B2\n6 GOTO18\n7 POKE16553,255\n10 A$=INKEY$:IFA$=\"\"THEN25\n11 IF A$=CH$THEN   A6=A1:A1=A2:A2=A6   :A6=A4:A4=A3:A3=A6:       B6=B1:B1=B2:B2=B6:   B6=B4:B4=B3:B3=B6: B6=Z:Z=Z2:Z2=B6: B6=Y:Y=Y2:Y2=B6:GOTO25\n12 RESTORE:IFA$=\"P\"ORA$=\"Q\"THENCH$=\"5\"ELSEIFA$=\"A\"ORA$=\";\"THENCH$=\"0\":'\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018 RESTORE                                                     \n13 IF A$=\" \" THEN CH$=\"\"\n18 IF(VAL(A$)>5)AND(VAL(A$)<10)THEN750",
+      "controlSource": [
+        "10 A$=INKEY$:IFA$=\"\"THEN25"
+      ],
+      "mergedFrom": {
+        "program": "two-player-trail-game-tape30a",
+        "version": "v01"
+      }
     }
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
   },
-  "diskThanks": true
+  "diskThanks": true,
+  "mergedPrograms": [
+    "two-player-trail-game-tape30a"
+  ]
 }

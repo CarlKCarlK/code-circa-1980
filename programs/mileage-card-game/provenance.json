@@ -1,5 +1,5 @@
 {
-  "official_title": "Mileage Card Game",
+  "official_title": "Mille Bornes Card Game",
   "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
   "import_date": "2026-11-03",
   "order_inferred": true,
@@ -201,5 +201,24 @@
       "text": "Based on the Mille Bornes card game. The source of the program code and the extent of any borrowed implementation have not been established."
     },
     "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
-  }
+  },
+  "merged_programs": [
+    {
+      "program": "mille-bornes-card-game",
+      "version": "v01",
+      "merged_version": "v04",
+      "files": {
+        "versions/mille-bornes-card-game-v01/05-MILLE-BORNES-CARD-GAME.BAS": {
+          "source": "programs/mille-bornes-card-game/versions/v01/05-MILLE-BORNES-CARD-GAME.BAS",
+          "sha256": "6d1c8b1213dccf411989700810d9a70b5aee23407c1ec9e828ce2729bde78193",
+          "bytes": 7847
+        },
+        "versions/mille-bornes-card-game-v01/05-MILLE-BORNES-CARD-GAME.ASC": {
+          "source": "programs/mille-bornes-card-game/versions/v01/05-MILLE-BORNES-CARD-GAME.ASC",
+          "sha256": "82e50d25d2601275d61ebe40d6261ec31c2a51a27605833a14c51ec60f9c095b",
+          "bytes": 9430
+        }
+      }
+    }
+  ]
 }

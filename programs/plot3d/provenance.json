@@ -1031,5 +1031,51 @@
         }
       ]
     }
+  ],
+  "merged_programs": [
+    {
+      "program": "3d-plot",
+      "version": "v01",
+      "merged_version": "v04",
+      "files": {
+        "versions/3d-plot-v01/05-3D-PLOT.BAS": {
+          "source": "programs/3d-plot/versions/v01/05-3D-PLOT.BAS",
+          "sha256": "c4bc83d91d7cb310d08a1d7a733873e32aca647c779566ef9d76b643aee20540",
+          "bytes": 315
+        },
+        "versions/3d-plot-v01/05-3D-PLOT.ASC": {
+          "source": "programs/3d-plot/versions/v01/05-3D-PLOT.ASC",
+          "sha256": "df00de7fdc6ce874f5a1f7cf38a18e403713fa02e67972a69cdf8598c14ae0b6",
+          "bytes": 368
+        },
+        "versions/3d-plot-v01/3DPLOT.ASC": {
+          "source": "programs/3d-plot/upstream/3DPLOT.ASC",
+          "sha256": "aa404552261c0ad1d5ec8c62be1054a66c4921e203066fb33d3b83e51ab0edbc",
+          "bytes": 386
+        }
+      }
+    },
+    {
+      "program": "3d-plot",
+      "version": "v02",
+      "merged_version": "v05",
+      "files": {
+        "versions/3d-plot-v02/06-3D-PLOT-SAVE2.BAS": {
+          "source": "programs/3d-plot/versions/v02/06-3D-PLOT-SAVE2.BAS",
+          "sha256": "c4bc83d91d7cb310d08a1d7a733873e32aca647c779566ef9d76b643aee20540",
+          "bytes": 315
+        },
+        "versions/3d-plot-v02/06-3D-PLOT-SAVE2.ASC": {
+          "source": "programs/3d-plot/versions/v02/06-3D-PLOT-SAVE2.ASC",
+          "sha256": "df00de7fdc6ce874f5a1f7cf38a18e403713fa02e67972a69cdf8598c14ae0b6",
+          "bytes": 368
+        },
+        "versions/3d-plot-v02/3DPLOT.ASC": {
+          "source": "programs/3d-plot/upstream/3DPLOT.ASC",
+          "sha256": "aa404552261c0ad1d5ec8c62be1054a66c4921e203066fb33d3b83e51ab0edbc",
+          "bytes": 386
+        }
+      }
+    }
   ]
 }

@@ -114,5 +114,24 @@
       "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
     },
     "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
-  }
+  },
+  "merged_programs": [
+    {
+      "program": "two-player-trail-game-tape30a",
+      "version": "v01",
+      "merged_version": "v03",
+      "files": {
+        "versions/two-player-trail-game-tape30a-v01/04-TWO-PLAYER-TRAIL-GAME.BAS": {
+          "source": "programs/two-player-trail-game-tape30a/versions/v01/04-TWO-PLAYER-TRAIL-GAME.BAS",
+          "sha256": "8495e1bd2207c501edb954861d9c1dec02a198f4a1656e26eecbdfe06e3612ec",
+          "bytes": 1665
+        },
+        "versions/two-player-trail-game-tape30a-v01/04-TWO-PLAYER-TRAIL-GAME.ASC": {
+          "source": "programs/two-player-trail-game-tape30a/versions/v01/04-TWO-PLAYER-TRAIL-GAME.ASC",
+          "sha256": "23e9f482a493d213469be7903ee85cee35b33ca72840dce2f9602a83a3f31fca",
+          "bytes": 2013
+        }
+      }
+    }
+  ]
 }
