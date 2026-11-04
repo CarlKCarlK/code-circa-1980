@@ -1,44 +1,32 @@
 {
-  "version": "v01",
+  "version": "v02",
   "disk": "More Voice",
   "disk_image": "More Voice [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
   "disk_image_sha256": "f3d63ff73891368ba0381bd301d8bf447800aea3ae51e624883210cad1a21b6d",
-  "source": "files/PROTO.BAS",
+  "source": "files/SPELL.BAS",
   "imported_files": [
     {
-      "path": "versions/v01/PROTO.BAS",
-      "archive_path": "files/PROTO.BAS",
-      "bytes": 459,
-      "sha256": "2bd6a0c06e36716992c6c495bfd071226f8ffc5944d244a770e627653eb014fb"
+      "path": "versions/v02/SPELL.BAS",
+      "archive_path": "files/SPELL.BAS",
+      "bytes": 3059,
+      "sha256": "d8cb932ee3c29864871c2bad401425de926385c3f533d9beb986ec250a84f57b"
     },
     {
-      "path": "versions/v01/PROTO.ASC",
+      "path": "versions/v02/SPELL.ASC",
       "archive_path": "derived listing",
-      "bytes": 528,
-      "sha256": "40c1f4206aa44eef95d485b6dd5c0b93f29d9d785b464579252c965b84c5814c"
-    },
-    {
-      "path": "versions/v01/WORDS.DAT.txt",
-      "archive_path": "files/WORDS.DAT",
-      "bytes": 2755,
-      "sha256": "d54012c97a68da97677f6b197b96d5c07f0e0fa43b385e49c84df553d5d23b65"
-    },
-    {
-      "path": "versions/v01/RECORD.DAT.txt",
-      "archive_path": "files/RECORD.DAT",
-      "bytes": 56,
-      "sha256": "cacc17d49085053f5c21dd5b5d152591aa8ea0860121d9464e245d28a65fc9ca"
+      "bytes": 3741,
+      "sha256": "d70e572843d406bf80c6d98da5bbec53ac261a24654f7933d23c25017440574d"
     }
   ],
   "recovery_item": {
     "format": "BASIC disk file",
-    "sha256": "2bd6a0c06e36716992c6c495bfd071226f8ffc5944d244a770e627653eb014fb",
-    "bytes": 459,
+    "sha256": "d8cb932ee3c29864871c2bad401425de926385c3f533d9beb986ec250a84f57b",
+    "bytes": 3059,
     "import_date": "2026-11-03",
-    "lines": 16,
-    "last": 1000,
+    "lines": 72,
+    "last": 7120,
     "normal_end_marker": true,
     "memory_base": 27205,
-    "tape_relation": "1/16 lines shared with tapes/recovered/tape9b/best/10-ESP-TESTER.BAS (27 lines)"
+    "tape_relation": "1/72 lines shared with tapes/recovered/tape6a/best/02-SPEECH-TREK.BAS (240 lines)"
   }
 }
