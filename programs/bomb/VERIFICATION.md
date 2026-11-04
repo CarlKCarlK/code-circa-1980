@@ -61,6 +61,14 @@ first page, the test reads the wires from the screen and types them with the
 keyboard, the bomb is defused, the YES button retires, initials appear in the
 rankings, and Pause, Resume and Restart work.
 
+## Saved and shared scores (2026-11-03)
+
+`tests/bomb-original.test.mjs` reads a real ranking from the running ROM's memory;
+`tests/bomb-scores.test.mjs` runs the Worker against SQLite: ranking, validation, other
+origins, rate limits and no stored addresses. `tests/browser/bomb.spec.js` plays a game
+into the panel with the shared list faked, checks that the score posts once and survives
+Restart and reload, and that the game plays when the list is unavailable.
+
 ## Not tested
 
 Long games near the fastest speeds, ten or more ranked players, the rankings

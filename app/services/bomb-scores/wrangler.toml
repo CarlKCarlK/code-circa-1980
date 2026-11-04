@@ -1,0 +1,8 @@
+name = "bomb-scores"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bomb-scores"
+database_id = "f6394f08-05a7-4f63-b789-f7e8b6a693c8"

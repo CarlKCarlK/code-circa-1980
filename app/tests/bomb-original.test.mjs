@@ -2,6 +2,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {startOriginal} from './helpers/bomb-reference.mjs';
+import {readRankings} from '../site/programs/bomb-scores.js';
 
 const v02='versions/v02/03-BOMB-NEFARIOUS-NICK.BAS', v01='versions/v01/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.BAS';
 // A Model I shows the cursor as _ after a prompt.
@@ -36,6 +37,8 @@ test('Bomb v02: defuse a bomb by typing the wires back, then retire into the ran
   p.until(/R +A +N +K +I +N +G +S/,5);
   // Double-width text (CHR$(23)) puts every character in every other column.
   assert.match(p.screen(),new RegExp(`^ +1 +${words.length} +C M K$`,"m"));
+  // The score panel reads the same table from the running program's memory.
+  assert.deepEqual(readRankings(address=>p.m.readMemory(address)),[{initials:'CMK',score:words.length,posthumous:false}]);
 });
 
 test('Bomb v02: a typo fixed with backspace still sets off the bomb',()=>{
