@@ -586,14 +586,14 @@
   "derived_editions": [
     {
       "id": "corrected",
-      "description": "v10 with printed spelling corrected; not a recovered artifact",
+      "description": "v10 with printed spelling and grammar corrected; not a recovered artifact",
       "source_version": "v10",
       "source_sha256": "0281a95ac124b0e7a93faff2203ed32dc14c69cb66f8cf40b5fd6de421bf8b1e",
       "raw": "corrected/SPEECH.BAS",
       "listing": "corrected/SPEECH.ASC",
-      "sha256": "348629cfa4a26653b14a1985df094e0775b0c7a6e0dad6c4770b68a85c60dfad",
-      "bytes": 6429,
-      "listing_sha256": "35c95c7457298a20bda98290f408b6215c0146530d0b6c4b5dfad06ee47b89cf",
+      "sha256": "b3b5eaa808a9029e2998a4973983abf6a007bb3387fa72c4f2afb8032f5830b9",
+      "bytes": 6445,
+      "listing_sha256": "4f79bdcbbf2ed7717d98914429f24b809cea9a166650cefffe3064507539ce75",
       "corrections": "corrected/corrections.json",
       "changes": "corrected/changes.json",
       "build": "app/scripts/build-speech-corrected.mjs",

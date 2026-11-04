@@ -1,10 +1,16 @@
 {
   "source": "versions/v10/07-SPEECH-TEAM-COACH-GAME.BAS",
   "source_sha256": "0281a95ac124b0e7a93faff2203ed32dc14c69cb66f8cf40b5fd6de421bf8b1e",
-  "sha256": "348629cfa4a26653b14a1985df094e0775b0c7a6e0dad6c4770b68a85c60dfad",
-  "bytes": 6429,
-  "listing_sha256": "35c95c7457298a20bda98290f408b6215c0146530d0b6c4b5dfad06ee47b89cf",
+  "sha256": "b3b5eaa808a9029e2998a4973983abf6a007bb3387fa72c4f2afb8032f5830b9",
+  "bytes": 6445,
+  "listing_sha256": "4f79bdcbbf2ed7717d98914429f24b809cea9a166650cefffe3064507539ce75",
   "changes": [
+    {
+      "line": 118,
+      "from": "WHO IS BEST COACH OF THE PLANET",
+      "to": "WHO IS THE BEST COACH ON PLANET",
+      "layout": "ON PLANET offsets the added THE, keeping the line at 63 columns"
+    },
     {
       "line": 130,
       "from": "PARTICAPATE",
@@ -12,14 +18,14 @@
     },
     {
       "line": 160,
-      "from": "GO THOUGH ALL",
-      "to": "GO THROUGH ALL"
+      "from": "GO THOUGH ALL THE TEAMS PLEASE",
+      "to": "GO THROUGH ALL THE TEAMS. PLEASE"
     },
     {
       "line": 160,
       "from": "THE SCHOOL    NAME",
-      "to": "THE SCHOOL   NAME",
-      "layout": "THROUGH is one letter longer, so one fewer pad keeps NAME at the start of the next row"
+      "to": "THE SCHOOL  NAME",
+      "layout": "THROUGH and the period add two columns, so two fewer pads keep NAME at the start of the next row"
     },
     {
       "line": 160,
@@ -48,8 +54,8 @@
     },
     {
       "line": 470,
-      "from": "GO THOUGH THE",
-      "to": "GO THROUGH THE"
+      "from": "NOW WILL GO THOUGH THE",
+      "to": "NOW WE WILL GO THROUGH THE"
     },
     {
       "line": 502,
@@ -71,6 +77,11 @@
       "line": 880,
       "from": "ALL MOST",
       "to": "ALMOST"
+    },
+    {
+      "line": 1025,
+      "from": "KENTH",
+      "to": "KENNETH"
     },
     {
       "line": 1090,
@@ -109,19 +120,40 @@
       "layout": "TOO is one letter longer, so one fewer pad keeps WEEK'S at the start of the next row"
     },
     {
+      "line": 1410,
+      "from": "CONTEST, IT'S",
+      "to": "CONTEST. IT'S"
+    },
+    {
+      "line": 1420,
+      "from": "THIS IS THIRD WEEK, AND THE LAST",
+      "to": "THIS IS THE THIRD WEEK, THE LAST",
+      "layout": "Dropping AND offsets the added THE; the longer line would be 64 columns, which prints a blank line"
+    },
+    {
       "line": 1500,
       "from": "PALUA",
       "to": "PAULA"
     },
     {
       "line": 1640,
-      "from": "AUDUTORIUM WILL WE TABLUATE",
-      "to": "AUDITORIUM WHILE WE TABULATE"
+      "from": "GO TO AUDUTORIUM WILL WE TABLUATE",
+      "to": "GO TO THE AUDITORIUM WHILE WE TABULATE"
+    },
+    {
+      "line": 1720,
+      "from": "READY START",
+      "to": "READY TO START"
     },
     {
       "line": 1800,
       "from": "FORTH",
       "to": "FOURTH"
+    },
+    {
+      "line": 1870,
+      "from": "TIME THE SWEEPSTAKES",
+      "to": "TIME FOR THE SWEEPSTAKES"
     },
     {
       "line": 2080,
