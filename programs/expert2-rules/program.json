@@ -1,10 +1,11 @@
 {
   "id": "expert2-rules",
   "title": "Expert-2 Rule Sets",
-  "description": "Knowledge bases written for Jack Park’s Expert-2 shell, dated 1984.",
+  "description": "Knowledge bases written for Jack Park\u2019s Expert-2 shell, dated 1984.",
   "kind": "Source archive",
   "language": "MMSFORTH V2.0, TRS-80 Model I",
   "gallery": "more",
+  "media": "disk",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
@@ -102,7 +103,7 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "Written for Expert-2, Jack Park’s rule-based shell in MMSFORTH (Dr. Dobb’s Journal, April 1984). The source names no author for these rule sets. Preserved here for small-scale archival use."
+    "text": "Written for Expert-2, Jack Park\u2019s rule-based shell in MMSFORTH (Dr. Dobb\u2019s Journal, April 1984). The source names no author for these rule sets. Preserved here for small-scale archival use."
   },
   "sourceOnly": true,
   "actionVerb": "View source"

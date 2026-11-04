@@ -5,6 +5,7 @@
   "kind": "Source archive",
   "language": "TRS-80 Disk BASIC",
   "gallery": "more",
+  "media": "disk",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
@@ -18,7 +19,7 @@
       "raw": "versions/v01/HELP.BAS",
       "listing": "versions/v01/HELP.ASC",
       "playable": false,
-      "note": "The Games Diskette’s menu: BASIC GAMES DISKETTE ONE.",
+      "note": "The Games Diskette\u2019s menu: BASIC GAMES DISKETTE ONE.",
       "unavailableReason": "Preserved as source. It is not offered as a player.",
       "exports": [
         {
@@ -84,7 +85,7 @@
       "raw": "versions/v04/DISKDUMP.BAS",
       "listing": "versions/v04/DISKDUMP.ASC",
       "playable": false,
-      "note": "SECTOR DUMP UTILITY 2.2: prints a file’s sectors in hex and text.",
+      "note": "SECTOR DUMP UTILITY 2.2: prints a file\u2019s sectors in hex and text.",
       "unavailableReason": "Preserved as source. It is not offered as a player.",
       "exports": [
         {
@@ -106,7 +107,7 @@
       "raw": "versions/v05/CASEFIX.BAS",
       "listing": "versions/v05/CASEFIX.ASC",
       "playable": false,
-      "note": "Converts a text file’s lowercase to uppercase. Has a bug at line 60.",
+      "note": "Converts a text file\u2019s lowercase to uppercase. Has a bug at line 60.",
       "unavailableReason": "Preserved as source. It is not offered as a player.",
       "exports": [
         {

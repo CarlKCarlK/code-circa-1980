@@ -5,6 +5,7 @@
   "kind": "Source archive",
   "language": "MMSFORTH V2.0, TRS-80 Model I",
   "gallery": "more",
+  "media": "disk",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
@@ -84,7 +85,7 @@
       "raw": "versions/v04/MIU.bin",
       "listing": "versions/v04/MIU.txt",
       "playable": false,
-      "note": "Hofstadter’s MIU formal system: rules I to III and a display word.",
+      "note": "Hofstadter\u2019s MIU formal system: rules I to III and a display word.",
       "unavailableReason": "Preserved as source. It is not offered as a player.",
       "exports": [
         {
@@ -216,7 +217,7 @@
       "raw": "versions/v10/DIGIT-RECORDING.bin",
       "listing": "versions/v10/DIGIT-RECORDING.txt",
       "playable": false,
-      "note": "Samples the cassette port into an array and plays it back. Needs PSE, defined only in the authors’ compiled system.",
+      "note": "Samples the cassette port into an array and plays it back. Needs PSE, defined only in the authors\u2019 compiled system.",
       "unavailableReason": "Preserved as source. It is not offered as a player.",
       "exports": [
         {

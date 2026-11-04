@@ -5,6 +5,7 @@
   "kind": "MMSFORTH",
   "language": "MMSFORTH V2.0, TRS-80 Model I",
   "gallery": "more",
+  "media": "disk",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,

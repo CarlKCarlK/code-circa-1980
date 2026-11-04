@@ -165,7 +165,7 @@ function newProgram({id,title,description,attribution,howTo,quickHelp,kind,langu
  const folder=path.join(repo,'programs',id);
  if(fs.existsSync(folder))throw Error(`Refusing to replace ${id}`);
  fs.mkdirSync(folder,{recursive:true});
- const meta={id,title,description,kind,language,gallery:'more',archiveImport:true,showWebVersions:false,unsharedWebV1:true,defaultVersion:'v01',
+ const meta={id,title,description,kind,language,gallery:'more',media:'disk',archiveImport:true,showWebVersions:false,unsharedWebV1:true,defaultVersion:'v01',
   versionOrder:'Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.',versions:[],listingLabel:'Download recovered listing',
   attribution:{text:attribution}};
  if(howTo)meta.howTo=howTo;if(quickHelp)meta.quickHelp=quickHelp;

@@ -5,6 +5,7 @@
   "kind": "Source archive",
   "language": "TRS-80 Disk BASIC",
   "gallery": "more",
+  "media": "disk",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
