@@ -293,6 +293,35 @@
         "first_block": 65,
         "last_block": 66
       }
+    },
+    {
+      "version": "v11",
+      "disk": "MMSFORTH New Programs",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+      "source": "blocks 30-31",
+      "imported_files": [
+        {
+          "path": "versions/v11/MUSIC-ASSEMBLY.bin",
+          "archive_path": "blocks 30-31",
+          "bytes": 2048,
+          "sha256": "c4c1f107c862d1b3e1b676916a919da2f2f382c1c252bd2bba41adcb64b79bc2"
+        },
+        {
+          "path": "versions/v11/MUSIC-ASSEMBLY.txt",
+          "archive_path": "derived listing",
+          "bytes": 1254,
+          "sha256": "856ad75942d1e1fbf3706fd5aa058f0c25fbb7b6e3ecf1fd33309cd859c5ecba"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "c4c1f107c862d1b3e1b676916a919da2f2f382c1c252bd2bba41adcb64b79bc2",
+        "bytes": 2048,
+        "import_date": "2026-11-03",
+        "first_block": 30,
+        "last_block": 31
+      }
     }
   ]
 }

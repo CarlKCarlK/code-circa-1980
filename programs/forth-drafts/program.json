@@ -230,6 +230,28 @@
       ],
       "startupSource": "==== Block 65 ====\n 0 ( DIGIT RECORDING )\n 1  2000 ARRAY RECORD\n 2   CODE :DI DI NEXT    CODE :EI EI  NEXT\n 3 : REC ( I RANGE - I+1 RANGE )  DUP ROT 1+ 2000 MOD DUP\n 4   ROT  ( RA I+ I+ RA ) SWAP RECORD ! SWAP  ;\n 5 \n 6 : RANGE ( I RANGE VAL - I RANGE )  255 = 2* 1- OVER * 0> IF\n 7   DUP 0> IF 1+ ELSE 1- THEN   ELSE  REC  0< 2* 1- THEN ;\n 8 (\n 9 : GRAPH < XPOS VAL  - XPOS+1 > 255 = SWAP 1+ 127 MOD SWAP\n10              IF DUP 14 SWAP ESET DUP 9 SWAP ECLR ELSE",
       "controlSource": []
+    },
+    {
+      "id": "v11",
+      "label": "Music Assembly Code (blocks 30-31)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v11/MUSIC-ASSEMBLY.bin",
+      "listing": "versions/v11/MUSIC-ASSEMBLY.txt",
+      "playable": false,
+      "note": "A Z80 tone routine as bytes and as assembler source.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v11/MUSIC-ASSEMBLY.bin",
+          "label": "MUSIC-ASSEMBLY.bin"
+        },
+        {
+          "path": "versions/v11/MUSIC-ASSEMBLY.txt",
+          "label": "MUSIC-ASSEMBLY.txt"
+        }
+      ],
+      "startupSource": "==== Block 30 ====\n 0 (  ASSEMBLY CODE  FOR GOOD  MUSIC      PAGE 1 OF 2 )\n 1   95 CARRAY MUTAB\n 2 245 197 213 229 221 229 253 229 205 127  ( ASSUMED : CALL AS  )\n 3  10 229 221 225 221 110   2  38   0  41  (    FOLLOWS   :     )\n 4  41 221  94   0 221  86   1  25  17  95  (  FREQ DUR MUNOTE   )\n 5   0  25 229 253 225 253  94   0 253  86\n 6   1 253  78   2 253  70   3  33   0   0\n 7 221 126   3   9  61  32 252 229 221 225\n 8   1 255 255 107  98  62   1 211 255   9\n 9 218  69 127 107  98  62   2 211 255   9\n10  56 253 221   9  56 233 253 225 221 225",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
