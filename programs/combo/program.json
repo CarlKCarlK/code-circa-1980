@@ -1,0 +1,43 @@
+{
+  "id": "combo",
+  "title": "Combination Lister",
+  "description": "Prints the Cth combination of U items taken N at a time, with an option to name a card deck.",
+  "kind": "Source archive",
+  "language": "TRS-80 Disk BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "COMBO.BAS (More Voice)",
+      "capture": "disk: More Voice",
+      "raw": "versions/v01/COMBO.BAS",
+      "listing": "versions/v01/COMBO.ASC",
+      "playable": false,
+      "note": "Its comments call the routines at 4110 and 4120 a speedup that needs work.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v01/COMBO.BAS",
+          "label": "COMBO.BAS"
+        },
+        {
+          "path": "versions/v01/COMBO.ASC",
+          "label": "COMBO.ASC"
+        }
+      ],
+      "startupSource": "1 ' PROGRAM TO PRINT THE C TH COMBINATION OF U CHOOSE N COMS.\n2 ' ROUTINES AT 4110 AND 4120 ARE A SPEED UP THAT NEED WORK\n3 ' DO GET CARD DECK NAMES SAY \"CARDS\"\n5 CLEAR 500:DEFINT A-Z\n10 INPUT\"HOW MANY ITEMS\";U\n20 INPUT\"HOW MANY IN A SET\";N\n30 A$=\"N\":INPUT\"WOULD YOU LIKE TO NAME THEM\";A$\n35 IF A$=\"CARDS\":DIM N$(52),S$(4),R$(13):FORI=1TO4:READ S$(I):NEXTI:FORI=1TO13:READ R$(I):NEXTI:I1=0:J1=0:FORI=1TO52:J1=J1-(I1=0):I1=I1+1:N$(I)=R$(J1)+S$(I1):J1=J1 AND (J1<13):I1=I1 AND (I1<4):NEXTI:A$=\"Y\":GOTO 50\n37 DATA \" C\",\" H\",\" D\",\" S\",2,3,4,5,6,7,8,9,10,J,Q,K,A\n40 IF A$=\"YES\"ORA$=\"Y\" THEN DIM N$(U):FORI=1TOU:PRINT\"#\"I;:INPUT N$(I):NEXTI:A$=\"Y\"\n50 F#=1:FORI=1TON:F#=F#*(U-I+1)/I:NEXTI\n55 IF N<19 THEN FB#=1:FORI=1TON:FB#=FB#*I:NEXTIELSEFB#=.5",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a recovered disk; the source names no author. Preserved here for small-scale archival use."
+  },
+  "sourceOnly": true,
+  "actionVerb": "View source"
+}
