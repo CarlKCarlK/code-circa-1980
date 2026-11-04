@@ -1,14 +1,14 @@
 {
   "id": "presidential-crisis-game",
-  "title": "Presidential Crisis Game",
-  "description": "1 captured save. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
-  "kind": "Source archive",
+  "title": "Coldwar",
+  "description": "A SIMULATION OF INTERNATIONAL TENSIONS, in the disk menu's words. 2 recovered forms; the disk form plays.",
+  "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -33,11 +33,46 @@
       ],
       "startupSource": "80  E=0:M=0:W=1\n90  CLS:Y=1:U=0:B=0\n100  PRINT\"WECOME TO THE WHITE HOUSE, MR.VICE PRES...UH,\"\n110  PRINT\"I MEAN, MR. PRESIDENT. I'M SORRY SIR, BUT WITH\"\n120  PRINT\"RUSSIAN TREAT OF NUCLUAR WAR AND THE FORMER PRESIDENT'S\"\n130  PRINT\"SUICIDE, I'M NOT JUST NOT MYSELF. WHO AM I?  WHY SIR\"\n140  PRINT\"YOU REMEMBER, I WAS THE PRESIDENT'[ RIGHT HAND MAN.\"\n150  PRINT\"WHAT THAT?.  WELL I'M SURE YOU COULD HAVE DONE A BETTER\"\n160  PRINT\"JOB THAN ME, BUT YOUR NOT WHO THE PRESIDENT PICKED.\"\n164  PRINT\"      (PRESS ENTER TO CONTINUE)\"\n167  INPUTA$\n170  PRINT:PRINT\"SIR, WITH THE RUSSIAN THREAT I SUGGEST THAT WE DO\"",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "Coldwar (Games Diskette)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v02/COLDWAR.BAS",
+      "listing": "versions/v02/COLDWAR.ASC",
+      "playable": true,
+      "note": "Complete disk file COLDWAR.BAS (directory size, ordered records, consistent pointers, end marker). Runs under NEWDOS/80 Disk BASIC from the original disk image; the disk's menu starts it, and it can return there. Runtime limited to the startup check.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v02/COLDWAR.BAS",
+          "label": "COLDWAR.BAS"
+        },
+        {
+          "path": "versions/v02/COLDWAR.ASC",
+          "label": "COLDWAR.ASC"
+        }
+      ],
+      "startupSource": "80  E=0:M=0:W=1\n90  CLS:Y=1:U=0:B=0\n99  PRINT\"\n\"\n100  PRINT\"WELCOME TO THE WHITE HOUSE, MR.VICE PRES...UH,\"\n110  PRINT\"I MEAN, MR. PRESIDENT. I'M SORRY SIR, BUT WITH\"\n120  PRINT\"RUSSIAN TREAT OF NUCLUAR WAR AND THE FORMER PRESIDENT'S\"\n130  PRINT\"SUICIDE, I'M NOT JUST NOT MYSELF. \":PRINT\"WHO AM I?  WHY SIR\"\n140  PRINT\"YOU REMEMBER, I WAS THE PRESIDENT'S RIGHT HAND MAN.\"\n150  PRINT\"NOW I WILL HELP YOU.\"\n160 PRINT\"\n\"",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/games-diskette.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "SELECT A LETTER"
+          },
+          {
+            "press": "b"
+          }
+        ]
+      },
+      "running": "Running from the original disk",
+      "slug": "basic"
     }
   ],
   "listingLabel": "Download recovered listing",
-  "sourceOnly": true,
-  "actionVerb": "View source",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
   }
