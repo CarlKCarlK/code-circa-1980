@@ -1,25 +1,23 @@
 {
   "title": "3-D Plot",
-  "version": "v03",
-  "label": "3-D PLOT (C) 1979 · Prompts",
-  "capture": "tape5a",
-  "save": 1,
-  "order_inferred": true,
-  "order_evidence": "Inferred development sequence, not established dates. v01 and v02 are tape19b saves 2 and 10, in that save order. v02 replaces v01's LINE statement (not in Level II BASIC; most likely from Microsoft's cassette Level III BASIC) with a line-drawing subroutine that v03 keeps verbatim at lines 360-420. Carl Kadie's recollection (2026-10-31, tentative): he probably dropped LINE so that more people, most of whom had only Level II, could run the program and see the picture; v03 restores v01's surface and adds the prompts and the 1979 credit. Tape numbers alone do not establish chronology.",
+  "version": "v04",
+  "label": "3D PLOT",
+  "capture": "tape9b",
+  "save": 5,
+  "merged_from": {
+    "program": "3d-plot",
+    "version": "v01"
+  },
+  "order_inferred": false,
+  "order_note": "Appended after the published canonical history; this position does not claim development order.",
   "files": [
     {
       "canonical_path": "PLOT3D.ASC",
-      "snapshot_path": "versions/v03/01-3D-PLOT-1979.ASC",
-      "archive_path": "tapes/recovered/tape5a/best/01-3D-PLOT-1979.ASC",
-      "sha256": "28388f6afe64220d79dbcc694e42bebf2a96047e49cdc5f93b2c29a443f26302",
-      "bytes": 1220
+      "snapshot_path": "versions/3d-plot-v01/05-3D-PLOT.ASC"
     },
     {
       "canonical_path": "PLOT3D.BAS",
-      "snapshot_path": "versions/v03/01-3D-PLOT-1979.BAS",
-      "archive_path": "tapes/recovered/tape5a/best/01-3D-PLOT-1979.BAS",
-      "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03",
-      "bytes": 1056
+      "snapshot_path": "versions/3d-plot-v01/05-3D-PLOT.BAS"
     }
   ]
 }
