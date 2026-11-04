@@ -5,7 +5,7 @@
       "path": "go/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "211531016729cdeb617d20c14cc1454f334453bf",
+      "sourceCommit": "4cfaf806e7080f98d418360544480aecc7cd8a10",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CuBsfmGz.js",
+          "path": "assets/emulator-DlJsVpNf.js",
           "bytes": 316923,
-          "sha256": "7f9b43c7d54513ae1c0073dc5b30215f46b832e1e26ca3ecbaa6aff82438ff22"
+          "sha256": "27c98693fdb7eb4fe7c56bfe4aa55d1dcd4010a610c8820a36ae2c64731e1da3"
         },
         {
           "path": "assets/forth-system-DLZLKAFv.dmk",
@@ -68,14 +68,14 @@
           "sha256": "2f62bbd83e57dbc184eb9dc9ae22ad9e04ab0ff25942e0f8c56fbb32411e925d"
         },
         {
-          "path": "assets/index-8QqjDe07.js",
-          "bytes": 29442,
-          "sha256": "21f610caec77362c3c3dbdba299257bc580d8200a74be5f908dd8fc032f2ad5d"
+          "path": "assets/index-BU4rkZm1.js",
+          "bytes": 29648,
+          "sha256": "f8b048f73e85ed8ad5f8ffc1671b4959c5311d4431a1431743d0ad68be750f87"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -235,7 +235,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "605d927901107057ad0270c43df4a00a11aa8535a018ba890596ec5ba4828c03"
+          "sha256": "17cbc67cff4cb67840b06b33cec4a6375a424da09d71941758b8d6917cae434c"
         },
         {
           "path": "licenses.txt",
