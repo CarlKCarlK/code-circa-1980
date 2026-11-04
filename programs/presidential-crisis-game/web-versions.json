@@ -3,19 +3,29 @@
     {
       "id": "v1",
       "path": "presidential-crisis-game/v1/",
-      "label": "Original cassette archive",
+      "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "b28a4b990f2a300f358e70c4955d3f9a87394e30",
+      "sourceCommit": "6845b4a50e46906b637d669656a03379c5af9a07",
       "files": [
+        {
+          "path": "assets/01-PRESIDENTIAL-CRISIS-GAME-0Dkj2FjU.ASC",
+          "bytes": 3785,
+          "sha256": "b382f74ec43cfdcd0eaeabac083691ef5de28f1f1f8f4884ffc30c8f78f26cb7"
+        },
+        {
+          "path": "assets/01-PRESIDENTIAL-CRISIS-GAME-BXewJpFn.BAS",
+          "bytes": 3398,
+          "sha256": "bee09d203afd57f8cbce5f80239ea2c7afb674ddca533f81ad4e51dfc2a992e4"
+        },
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
           "bytes": 327,
           "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
         },
         {
-          "path": "assets/archive-gallery-Cr0q0rfj.svg",
-          "bytes": 547,
-          "sha256": "0c02294b84355a66fb22c7f3a14d9fd2bcaba28513e95a25c19147c8bdb7beeb"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
           "path": "assets/cave-gallery-CUdWAr_1.svg",
@@ -28,9 +38,24 @@
           "sha256": "7cd57d882e809678611fec6639dedb32e67b067ef027fa64428ccf4423f7ac3a"
         },
         {
+          "path": "assets/COLDWAR-BjvvM9y8.ASC",
+          "bytes": 4797,
+          "sha256": "ab688c76c805ffd92731eb453b29f29e367efe5325ad55fb76c00621f383d65e"
+        },
+        {
+          "path": "assets/COLDWAR-M1u38VAP.BAS",
+          "bytes": 4211,
+          "sha256": "3a6d5d7203c74f5dec63460f8da7c60bdaf2cceefb281b4e733bb93966306be4"
+        },
+        {
           "path": "assets/computamatch-gallery-O8o3rjeX.svg",
           "bytes": 490,
           "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
+        },
+        {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
         },
         {
           "path": "assets/dungeon-gallery-iVVwbTI4.svg",
@@ -38,9 +63,14 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CGCsbXtC.js",
-          "bytes": 286265,
-          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+          "path": "assets/emulator-D98QuKuL.js",
+          "bytes": 316923,
+          "sha256": "08a73edbd1589abda35180dc2bc890df1b8848054743cdf3f13e5168cbd71192"
+        },
+        {
+          "path": "assets/games-diskette-GBfXwjGC.dmk",
+          "bytes": 228496,
+          "sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -48,14 +78,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-Dfg4gWva.js",
-          "bytes": 28932,
-          "sha256": "5307030c60ef7ed94b81796faad323c0654cc3f1d16af0e08089abfcbc5ba967"
+          "path": "assets/index-BHExd-TG.css",
+          "bytes": 25791,
+          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
         },
         {
-          "path": "assets/index-DKrV230I.css",
-          "bytes": 25510,
-          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+          "path": "assets/index-jhy8RT_D.js",
+          "bytes": 30915,
+          "sha256": "06ca4ba73ffd286ada1692e59cb97f466989c0b09ad7dfd44c16ff221007e471"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -128,19 +158,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/PRESIDENTIAL-CRISIS-GAME-0Dkj2FjU.ASC",
-          "bytes": 3785,
-          "sha256": "b382f74ec43cfdcd0eaeabac083691ef5de28f1f1f8f4884ffc30c8f78f26cb7"
-        },
-        {
-          "path": "assets/PRESIDENTIAL-CRISIS-GAME-BXewJpFn.BAS",
-          "bytes": 3398,
-          "sha256": "bee09d203afd57f8cbce5f80239ea2c7afb674ddca533f81ad4e51dfc2a992e4"
-        },
-        {
-          "path": "assets/provenance-CnuB2X9q.json",
-          "bytes": 3651,
-          "sha256": "60e0f844a86034a1a66d549d2e7761cd058c5a02b1805a8284ecc802254eaebc"
+          "path": "assets/provenance-U2nBpzmr.json",
+          "bytes": 5280,
+          "sha256": "544cacb4d68c6677ed5652f48d88f1cd3baf2aabb4e7b2272be1ef4adf9c0345"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -198,6 +218,11 @@
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
         },
         {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
+        },
+        {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
           "bytes": 545,
           "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
@@ -215,7 +240,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "12b87fdf04a5be812d8c01b450296881b0c618937b6f482f42694a9f9cc12a89"
+          "sha256": "3f3fa99657511dc71f5669f2d6c4d9d112710d42c253d6652b9ddd403becb5d3"
         },
         {
           "path": "licenses.txt",
