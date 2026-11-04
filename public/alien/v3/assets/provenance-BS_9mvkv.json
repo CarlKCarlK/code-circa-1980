@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape16b",
+  "save": 12,
+  "archive_raw": "tapes/recovered/tape16b/best/12-GETTYSBURG-SENTENCE.BAS",
+  "archive_listing": "tapes/recovered/tape16b/best/12-GETTYSBURG-SENTENCE.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/12-GETTYSBURG-SENTENCE.ASC",
+      "archive_path": "tapes/recovered/tape16b/best/12-GETTYSBURG-SENTENCE.ASC",
+      "bytes": 126,
+      "sha256": "15cb275521858eddf108749ec567c37ec16ff654db19fe399e111e63b96f5b95"
+    },
+    {
+      "path": "versions/v01/12-GETTYSBURG-SENTENCE.BAS",
+      "archive_path": "tapes/recovered/tape16b/best/12-GETTYSBURG-SENTENCE.BAS",
+      "bytes": 118,
+      "sha256": "da8c09eb936e3f61da4b684f2d3ffb442d0ad201678a6c1ff57c5850f673b4fb"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "da8c09eb936e3f61da4b684f2d3ffb442d0ad201678a6c1ff57c5850f673b4fb",
+    "bytes": 118,
+    "archive_validation": "Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 4,
+    "last": 70,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 116,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "16",
+    "side": "b",
+    "order": "12",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "Gettysburg sentence substitution (inferred title)",
+    "capture": "tape16b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines; consistent pointer base 22204; exact full length and end marker; byte-identical left/right recovery",
+    "source_start_s": "223.291",
+    "recovered_bytes": "118",
+    "source_file": "tapes/recovered/tape16b/best/12-GETTYSBURG-SENTENCE.ASC",
+    "wav": "tapes/tape16b.wav",
+    "folder": "tapes/recovered/tape16b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "7/10",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape16b/inventory.json",
+  "execution_tested": false
+}

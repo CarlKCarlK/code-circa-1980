@@ -1,0 +1,80 @@
+{
+  "official_title": "Mileage Card Game \u2014 early experiment",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "mileage_card_game_experiment_inferred_title_p156",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape17a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape17a/best/05-MILEAGE-CARD-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape17a/best/05-MILEAGE-CARD-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-MILEAGE-CARD-GAME.ASC",
+          "archive_path": "tapes/recovered/tape17a/best/05-MILEAGE-CARD-GAME.ASC",
+          "bytes": 2426,
+          "sha256": "63977dbf7d99e6b9cfad49e16f1f31fa50ddc5e3b1685e56733d6b72efa41e88"
+        },
+        {
+          "path": "versions/v01/05-MILEAGE-CARD-GAME.BAS",
+          "archive_path": "tapes/recovered/tape17a/best/05-MILEAGE-CARD-GAME.BAS",
+          "bytes": 2106,
+          "sha256": "d63b2fbf6c064622ba27274f326f1d6aad9d81ab38f1ae2268c7e8c75294030b"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "d63b2fbf6c064622ba27274f326f1d6aad9d81ab38f1ae2268c7e8c75294030b",
+        "bytes": 2106,
+        "archive_validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 77,
+        "last": 50010,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 2104,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "17",
+        "side": "a",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "Mileage card game experiment (inferred title; source has unfinished routines)",
+        "capture": "tape17a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
+        "source_start_s": "494.695",
+        "recovered_bytes": "2106",
+        "source_file": "tapes/recovered/tape17a/best/05-MILEAGE-CARD-GAME.ASC",
+        "wav": "tapes/tape17a.wav",
+        "folder": "tapes/recovered/tape17a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape17a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Based on the Mille Bornes card game. The source of the program code and the extent of any borrowed implementation have not been established."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

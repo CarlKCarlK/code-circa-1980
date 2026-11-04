@@ -1,0 +1,1302 @@
+{
+  "files": [
+    {
+      "path": "20-TUTAC-COMPUTER-V3-REVIEW.ASC",
+      "archive_path": "tapes/recovered/file8b/review/20-TUTAC-COMPUTER-V3-REVIEW.ASC",
+      "bytes": 2223,
+      "sha256": "91b5bfe9f5e690f405c2b09ed6e0212a9d835c954d061a76ea32b79cf2ec0d79"
+    },
+    {
+      "path": "20-TUTAC-COMPUTER-V3-REVIEW.BAS",
+      "archive_path": "tapes/recovered/file8b/review/20-TUTAC-COMPUTER-V3-REVIEW.BAS",
+      "bytes": 1842,
+      "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2"
+    }
+  ],
+  "recovery_item": {
+    "order": 20,
+    "title": "TUTAC-COMPUTER-V3-REVIEW",
+    "source": "tapes/recovered/file8b/timing-refinement/20-left-hp800-93-0.16-0.1.BAS",
+    "binary": "tapes/recovered/file8b/review/20-TUTAC-COMPUTER-V3-REVIEW.BAS",
+    "listing": "tapes/recovered/file8b/review/20-TUTAC-COMPUTER-V3-REVIEW.ASC",
+    "bytes": 1842,
+    "lines": 55,
+    "last_line": 20000,
+    "structurally_complete": true,
+    "recovery_validated": false,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+    "matching_sources": [
+      "tapes/recovered/file8b/right-boosted/T20-C1.BAS"
+    ],
+    "pulse_timing_crosschecks": [
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.2,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 96,
+        "radius": 0.2,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 93,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 93,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 93,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 93,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 93,
+        "radius": 0.32,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 94,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 94,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 94,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 94,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 94,
+        "radius": 0.32,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 95,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 95,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 95,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 95,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 95,
+        "radius": 0.32,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 96,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 96,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "left-hp800",
+        "period": 96,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 93,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 93,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 93,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 93,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 93,
+        "radius": 0.32,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 94,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 94,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 94,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 94,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 94,
+        "radius": 0.32,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.2,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.24,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.28,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.32,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 95,
+        "radius": 0.32,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 96,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 96,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 96,
+        "radius": 0.2,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 96,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 96,
+        "radius": 0.24,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 96,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 96,
+        "radius": 0.28,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 97,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 97,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 97,
+        "radius": 0.2,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 97,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 97,
+        "radius": 0.24,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 97,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 97,
+        "radius": 0.28,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 98,
+        "radius": 0.16,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 98,
+        "radius": 0.2,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 98,
+        "radius": 0.2,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 98,
+        "radius": 0.24,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 98,
+        "radius": 0.24,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 98,
+        "radius": 0.28,
+        "dataRadius": 0.1,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      },
+      {
+        "track": 20,
+        "variant": "right-boosted",
+        "period": 98,
+        "radius": 0.28,
+        "dataRadius": 0.15,
+        "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2",
+        "byte75": 44,
+        "assessment": {
+          "good": true,
+          "lines": 55,
+          "agree": 55,
+          "last": 20000,
+          "normal": true,
+          "parsedBytes": 1842,
+          "totalBytes": 1842,
+          "baseCounts": {
+            "17125": 55
+          }
+        }
+      }
+    ],
+    "source_start_s": 752.6256875,
+    "source_end_s": 784.0757708333333,
+    "execution_tested": false,
+    "review_reason": "Complete cross-variant candidate retains suspicious CLGAR and R -(RUNS display strings; original typo versus residual bit errors unresolved; no manual correction"
+  },
+  "execution_tested": false,
+  "note": "Untouched archive exports. Suspect candidates are not promoted to validated complete versions and no prefix gains a synthetic terminator."
+}

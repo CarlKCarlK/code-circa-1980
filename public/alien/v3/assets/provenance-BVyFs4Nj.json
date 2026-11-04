@@ -1,0 +1,80 @@
+{
+  "official_title": "Shooting Demo",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "shooting_demo_p85",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "file8b",
+      "save": 4,
+      "archive_raw": "tapes/recovered/file8b/best/04-SHOOTING-DEMO.BAS",
+      "archive_listing": "tapes/recovered/file8b/best/04-SHOOTING-DEMO.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/04-SHOOTING-DEMO.ASC",
+          "archive_path": "tapes/recovered/file8b/best/04-SHOOTING-DEMO.ASC",
+          "bytes": 733,
+          "sha256": "cf0c9dd11d4260c822c4f4996e1af2cd8683a59224354a82dc1969e506e87d2b"
+        },
+        {
+          "path": "versions/v01/04-SHOOTING-DEMO.BAS",
+          "archive_path": "tapes/recovered/file8b/best/04-SHOOTING-DEMO.BAS",
+          "bytes": 552,
+          "sha256": "92730f9569af3ac5b5e72e7437b45f55c41b5246db65a7eff2c3ea5f997d57e4"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "92730f9569af3ac5b5e72e7437b45f55c41b5246db65a7eff2c3ea5f997d57e4",
+        "bytes": 552,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 19,
+        "last": 2010,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 550,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "8",
+        "side": "b",
+        "order": "4",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "SHOOTING DEMO; 19 lines",
+        "capture": "file8b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+        "source_start_s": "113.325",
+        "recovered_bytes": "552",
+        "source_file": "tapes/recovered/file8b/best/04-SHOOTING-DEMO.ASC",
+        "wav": "tapes/file8b.wav",
+        "folder": "tapes/recovered/file8b/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/file8b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

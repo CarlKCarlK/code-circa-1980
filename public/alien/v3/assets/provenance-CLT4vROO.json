@@ -1,0 +1,60 @@
+{
+  "version": "v02",
+  "capture": "file8b",
+  "save": 7,
+  "archive_raw": "tapes/recovered/file8b/best/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.BAS",
+  "archive_listing": "tapes/recovered/file8b/best/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.ASC",
+      "archive_path": "tapes/recovered/file8b/best/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.ASC",
+      "bytes": 3459,
+      "sha256": "b1b4be413957dc4337c7c6fb1892466b2c52c4262e31103c17c6e974ad81537e"
+    },
+    {
+      "path": "versions/v02/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.BAS",
+      "archive_path": "tapes/recovered/file8b/best/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.BAS",
+      "bytes": 2836,
+      "sha256": "daaa7b6bf15c7c76edd3a46cfdcbd28e6d052509733e8c6410c68b5e3e9a1f13"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "daaa7b6bf15c7c76edd3a46cfdcbd28e6d052509733e8c6410c68b5e3e9a1f13",
+    "bytes": 2836,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 53,
+    "last": 20080,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 2834,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "8",
+    "side": "b",
+    "order": "7",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "INTERACTIVE LIBRARY DIRECTORY V2; 53 lines",
+    "capture": "file8b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical audio variants; runtime untested",
+    "source_start_s": "212.850",
+    "recovered_bytes": "2836",
+    "source_file": "tapes/recovered/file8b/best/07-INTERACTIVE-LIBRARY-DIRECTORY-V2.ASC",
+    "wav": "tapes/file8b.wav",
+    "folder": "tapes/recovered/file8b/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test with appropriate graphics, sound or printer support; source may be unfinished"
+  },
+  "recovery_inventory": "tapes/recovered/file8b/best/inventory.json",
+  "execution_tested": false
+}

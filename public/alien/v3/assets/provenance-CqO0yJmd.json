@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape19b",
+  "save": 9,
+  "archive_raw": "tapes/recovered/tape19b/best/09-TEXT-EDITOR-ARRAY.BAS",
+  "archive_listing": "tapes/recovered/tape19b/best/09-TEXT-EDITOR-ARRAY.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/09-TEXT-EDITOR-ARRAY.ASC",
+      "archive_path": "tapes/recovered/tape19b/best/09-TEXT-EDITOR-ARRAY.ASC",
+      "bytes": 851,
+      "sha256": "bcdedd1858adfd28fb0f2643f1dfd803c7a528f883c407c59032fb3356c1fc00"
+    },
+    {
+      "path": "versions/v01/09-TEXT-EDITOR-ARRAY.BAS",
+      "archive_path": "tapes/recovered/tape19b/best/09-TEXT-EDITOR-ARRAY.BAS",
+      "bytes": 658,
+      "sha256": "69fdefb015cd86c463724ac322335d3a3160c2cb0e6deaf88448d0d9ab8fdb20"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "69fdefb015cd86c463724ac322335d3a3160c2cb0e6deaf88448d0d9ab8fdb20",
+    "bytes": 658,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 20,
+    "last": 710,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 656,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "19",
+    "side": "b",
+    "order": "9",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "TEXT EDITOR ARRAY",
+    "capture": "tape19b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "286.872",
+    "recovered_bytes": "658",
+    "source_file": "tapes/recovered/tape19b/best/09-TEXT-EDITOR-ARRAY.ASC",
+    "wav": "tapes/tape19b.wav",
+    "folder": "tapes/recovered/tape19b",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape19b/inventory.json",
+  "execution_tested": false
+}

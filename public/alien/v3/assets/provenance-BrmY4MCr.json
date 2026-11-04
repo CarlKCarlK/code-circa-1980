@@ -1,0 +1,140 @@
+{
+  "official_title": "TRS-80 Presentation Adventure",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Trs80 Presentation Adventure",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape23a",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape23a/best/12-TRS80-PRESENTATION-ADVENTURE-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape23a/best/12-TRS80-PRESENTATION-ADVENTURE-SAVE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/12-TRS80-PRESENTATION-ADVENTURE-SAVE01.ASC",
+          "archive_path": "tapes/recovered/tape23a/best/12-TRS80-PRESENTATION-ADVENTURE-SAVE01.ASC",
+          "bytes": 6807,
+          "sha256": "135a6b6f67f10bbf3fd491583b28ce48b9806241626feaf42df62a95caaae2e8"
+        },
+        {
+          "path": "versions/v01/12-TRS80-PRESENTATION-ADVENTURE-SAVE01.BAS",
+          "archive_path": "tapes/recovered/tape23a/best/12-TRS80-PRESENTATION-ADVENTURE-SAVE01.BAS",
+          "bytes": 6026,
+          "sha256": "a43c9e41f04037d45ffd3829170f2e0fed714abe0bbde94da72dc7a2e00013ab"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "a43c9e41f04037d45ffd3829170f2e0fed714abe0bbde94da72dc7a2e00013ab",
+        "bytes": 6026,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 93,
+        "last": 2280,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 6024,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "a",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TRS80 PRESENTATION ADVENTURE SAVE01",
+        "capture": "tape23a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "574.844",
+        "recovered_bytes": "6026",
+        "source_file": "tapes/recovered/tape23a/best/12-TRS80-PRESENTATION-ADVENTURE-SAVE01.ASC",
+        "wav": "tapes/tape23a.wav",
+        "folder": "tapes/recovered/tape23a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape23a",
+      "save": 13,
+      "archive_raw": "tapes/recovered/tape23a/best/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.BAS",
+      "archive_listing": "tapes/recovered/tape23a/best/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape23a/best/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.ASC",
+          "bytes": 6807,
+          "sha256": "135a6b6f67f10bbf3fd491583b28ce48b9806241626feaf42df62a95caaae2e8"
+        },
+        {
+          "path": "versions/v02/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.BAS",
+          "archive_path": "tapes/recovered/tape23a/best/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.BAS",
+          "bytes": 6026,
+          "sha256": "a43c9e41f04037d45ffd3829170f2e0fed714abe0bbde94da72dc7a2e00013ab"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "a43c9e41f04037d45ffd3829170f2e0fed714abe0bbde94da72dc7a2e00013ab",
+        "bytes": 6026,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 93,
+        "last": 2280,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 6024,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "23",
+        "side": "a",
+        "order": "13",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TRS80 PRESENTATION ADVENTURE SAVE02",
+        "capture": "tape23a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "680.392",
+        "recovered_bytes": "6026",
+        "source_file": "tapes/recovered/tape23a/best/13-TRS80-PRESENTATION-ADVENTURE-SAVE02.ASC",
+        "wav": "tapes/tape23a.wav",
+        "folder": "tapes/recovered/tape23a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape23a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape3a",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape3a/best/05-BLACKJACK.BAS",
+  "archive_listing": "tapes/recovered/tape3a/best/05-BLACKJACK.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/05-BLACKJACK.ASC",
+      "archive_path": "tapes/recovered/tape3a/best/05-BLACKJACK.ASC",
+      "bytes": 1580,
+      "sha256": "3041a1f4fac4a4dbc98a6ae967deaae7e38afdcfd9c895e67527d2707c152e26"
+    },
+    {
+      "path": "versions/v01/05-BLACKJACK.BAS",
+      "archive_path": "tapes/recovered/tape3a/best/05-BLACKJACK.BAS",
+      "bytes": 1264,
+      "sha256": "b59c2b78b6b66b775de2a83020175722fab2afddc99245d91a704e74f0e38745"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "b59c2b78b6b66b775de2a83020175722fab2afddc99245d91a704e74f0e38745",
+    "bytes": 1264,
+    "archive_validation": "48 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 48,
+    "last": 2050,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1262,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "3",
+    "side": "a",
+    "order": "5",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "BLACKJACK; 48 lines",
+    "capture": "tape3a",
+    "capture_scope": "full",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload",
+    "validation": "48 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+    "source_start_s": "",
+    "recovered_bytes": "1264",
+    "source_file": "tapes/recovered/tape3a/best/05-BLACKJACK.ASC",
+    "wav": "tapes/tape3a.wav",
+    "folder": "tapes/recovered/tape3a/best",
+    "recovery_date": "2026-10-25",
+    "recorder_volume": "5/10",
+    "next_action": "Execution-test"
+  },
+  "recovery_inventory": "tapes/recovered/tape3a/best/inventory.json",
+  "execution_tested": false
+}

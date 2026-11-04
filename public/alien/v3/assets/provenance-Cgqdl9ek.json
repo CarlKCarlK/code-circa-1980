@@ -1,0 +1,135 @@
+{
+  "official_title": "Lunar Lander",
+  "title_authority": "Recovered title or descriptive title from the recovered behavior; archive labels retained.",
+  "short_name": "ll",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Comparison history starts with Jim Storer\u2019s 1969 FOCAL listing, then an electronic transcription of the published BASIC Lunar. The recovered BASIC adaptation adds plotting and adjustable duration; its exact intermediate source edition and save date are unknown.",
+  "execution_testing": "Recovery validation is separate from website emulator checks; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape9a",
+      "save": 9,
+      "archive_raw": "tapes/recovered/tape9a/best/09-LUNAR-LANDER.BAS",
+      "archive_listing": "tapes/recovered/tape9a/best/09-LUNAR-LANDER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/09-LUNAR-LANDER.BAS",
+          "archive_path": "tapes/recovered/tape9a/best/09-LUNAR-LANDER.BAS",
+          "bytes": 1189,
+          "sha256": "1adfbc5370ab3f1d3bcd6ebad949b4d8d5b5d25b2381436ca3bb21d1fc54193c"
+        },
+        {
+          "path": "versions/v01/09-LUNAR-LANDER.ASC",
+          "archive_path": "tapes/recovered/tape9a/best/09-LUNAR-LANDER.ASC",
+          "bytes": 1422,
+          "sha256": "c291a24235e94ba30029ab3fb8daba9c30f7b123b3c0d3d7b1bd227eaeaf0c4a"
+        }
+      ],
+      "recovery_item": {
+        "lines": 18,
+        "last": 2000,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "1adfbc5370ab3f1d3bcd6ebad949b4d8d5b5d25b2381436ca3bb21d1fc54193c"
+      },
+      "inventory_row": {
+        "tape": "9",
+        "side": "a",
+        "order": "9",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LUNAR LANDER; 18 lines",
+        "capture": "tape9a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical matching variants/repeated saves; runtime untested",
+        "source_start_s": "261.046",
+        "recovered_bytes": "1189",
+        "source_file": "tapes/recovered/tape9a/best/09-LUNAR-LANDER.ASC",
+        "wav": "tapes/tape9a.wav",
+        "folder": "tapes/recovered/tape9a/best",
+        "recovery_date": "2026-10-26",
+        "recorder_volume": "",
+        "next_action": "Execution-test; historical source may be unfinished"
+      },
+      "recovery_inventory": "tapes/recovered/tape9a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_source_lines": [],
+    "caution": "Direct source notices and nearby saves provide context, not tape-save dates. Same-side context is stronger than opposite-side context. Tape numbers do not establish chronology.",
+    "neighbor_context": [
+      {
+        "capture": "tape9a",
+        "save": "1",
+        "archive_listing": "tapes/recovered/tape9a/best/01-TEACH-III-TEST-DATA.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      },
+      {
+        "capture": "tape9a",
+        "save": "5",
+        "archive_listing": "tapes/recovered/tape9a/best/05-TEACH-III-VOCABULARY.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      },
+      {
+        "capture": "tape9a",
+        "save": "12",
+        "archive_listing": "tapes/recovered/tape9a/best/12-TEACH-III-VOCABULARY-V2.ASC",
+        "line": "10 'TEACH III            BY      CARL KADIE    OCT. 21,1978"
+      }
+    ]
+  },
+  "upstream": {
+    "author": "Jim Storer; BASIC version published by Creative Computing",
+    "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/lunar.bas",
+    "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=106",
+    "file": "LUNAR-1978.ASC",
+    "bytes": 2074,
+    "sha256": "744231549befd5eab29d8e792f14967e515fe5238fa76ad6f2a73a96356655f9",
+    "note": "Complete electronic BASIC Computer Games transcription from a Vintage BASIC mirror. Common state variables and polynomial physics establish the relationship; print transcription and exact intermediate edition are not verified. Preserves mirror text, including O in line 200 and printed spelling. Not a recovered cassette.",
+    "execution_tested": false
+  },
+  "source_research": {
+    "date": "2026-11-03",
+    "finding": "The full original FOCAL listing is downloaded unchanged from Jim Storer\u2019s own history archive, which credits Matthew House\u2019s transcription. This is the first canonical source commit, ll-storer1969. A complete electronic transcription of published BASIC Lunar follows as ll-basic1978, before untouched tape9a save 9 at ll-v01. The original FOCAL, published BASIC, and recovered adaptation share state variables and polynomial physics. The exact intermediate BASIC edition used by Carl is unknown. The recovered record 1710 omits the published branch\u2019s GOSUB physics call; the position polynomial also lacks the final Q^5 term. Do not claim numerical identity or repair those differences.",
+    "sources": [
+      "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander.html",
+      "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander/LunarLanderListingText.txt",
+      "https://www.atariarchives.org/basicgames/showpage.php?page=106",
+      "https://raw.githubusercontent.com/GReaperEx/bcg/master/lunar.bas"
+    ]
+  },
+  "website_execution": {
+    "date": "2026-11-03",
+    "execution_tested": true,
+    "test": "app/tests/browser/history-five.spec.js",
+    "checks_and_limits": "Original-ROM checks passed for tape9a save 9: NO at instructions; 0,10 advances the free fall and plotted point; 0,120 reaches impact at 113.553 seconds and 4008.79 mph; 75,10 after restart leaves 15750 pounds of fuel. Pause/resume and restart passed. No successful soft landing, upward-motion branch, or exhaustive physics parity is claimed. Upstream FOCAL and published BASIC baselines were not executed.",
+    "reference": {
+      "capture": "tape9a",
+      "save": 9,
+      "version": "v01",
+      "payload": "versions/v01/09-LUNAR-LANDER.BAS",
+      "sha256": "1adfbc5370ab3f1d3bcd6ebad949b4d8d5b5d25b2381436ca3bb21d1fc54193c"
+    }
+  },
+  "artwork": {
+    "path": "app/assets/ll-gallery.svg",
+    "sha256": "f57f40ffcd289892eca959f4933f9e05d7e10bb5dc00fbde26356db1391a39cc",
+    "description": "Modern illustrative SVG, not execution evidence."
+  },
+  "emulator_capture": {
+    "path": "programs/ll/verification/screen.png",
+    "sha256": "927a56abe41a2e78523f785524f83c2497e14fd9a57871c7f0752408f82273ee"
+  },
+  "attribution_review": {
+    "date": "2026-11-03",
+    "text": "A BASIC adaptation of Jim Storer\u2019s 1969 Lunar Lander.",
+    "evidence": "Full original FOCAL and published BASIC electronic transcription are retained in upstream/ and start canonical history.",
+    "url": "https://www.cs.brandeis.edu/~storer/LunarLander/LunarLander.html"
+  }
+}

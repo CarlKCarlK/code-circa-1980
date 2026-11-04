@@ -1,0 +1,203 @@
+{
+  "official_title": "War",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "War",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape26a",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+          "bytes": 1484,
+          "sha256": "9bf8b992a8eea4b1894f0b35f8a4209c8414fcb7b7e7ae7fdf6336f3e4ca647e"
+        },
+        {
+          "path": "versions/v01/05-WAR-SAVE01-DAMAGED-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.BIN",
+          "bytes": 996,
+          "sha256": "6be9d21ee0907523b4ec65da99e02e879de317b35133186953bf84d66a0b6f45"
+        },
+        {
+          "path": "versions/v01/05-WAR-SAVE01-DAMAGED-RAW.TAP",
+          "archive_path": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-RAW.TAP",
+          "bytes": 1589,
+          "sha256": "384d882242c37b27bc65600ea83f660bfa2e5470138041c374ad6cedce950345"
+        },
+        {
+          "path": "versions/v01/05-WAR-SAVE01-DAMAGED-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-UNCERTAIN.ASC",
+          "bytes": 2290,
+          "sha256": "730f027884f768c3231ebecbe48f6256077866a6db0f817feb14c2b0ca2d0e02"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "6be9d21ee0907523b4ec65da99e02e879de317b35133186953bf84d66a0b6f45",
+        "bytes": 996,
+        "archive_validation": "996-byte checksum-backed ordered prefix; 29 lines through 330; exact left/right agreement; raw TAP mapping retained; no synthetic EOF",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "26",
+        "side": "a",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "WAR game \u2014 damaged earlier save",
+        "capture": "tape26a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
+        "status": "damaged; runtime untested",
+        "validation": "996-byte checksum-backed ordered prefix; 29 lines through 330; exact left/right agreement; raw TAP mapping retained; no synthetic EOF",
+        "source_start_s": "315.923",
+        "recovered_bytes": "996",
+        "source_file": "tapes/recovered/tape26a/partial/05-WAR-SAVE01-DAMAGED-PREFIX.ASC",
+        "wav": "tapes/tape26a.wav",
+        "folder": "tapes/recovered/tape26a",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Better source/capture may improve recovery; see report"
+      },
+      "recovery_inventory": "tapes/recovered/tape26a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape26a",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape26a/best/06-WAR-SAVE02.IMG",
+      "archive_listing": "tapes/recovered/tape26a/best/06-WAR-SAVE02.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/06-WAR-SAVE02.ASC",
+          "archive_path": "tapes/recovered/tape26a/best/06-WAR-SAVE02.ASC",
+          "bytes": 1789,
+          "sha256": "68d15bf7c24ba62fc8601fd879a60e32c39a1a8e51d2c6550a380a50aa817893"
+        },
+        {
+          "path": "versions/v02/06-WAR-SAVE02.IMG",
+          "archive_path": "tapes/recovered/tape26a/best/06-WAR-SAVE02.IMG",
+          "bytes": 1182,
+          "sha256": "934f779f8770a3ef32b10fada28606e09b604a8349034afd18d73fef606fb2ca"
+        },
+        {
+          "path": "versions/v02/06-WAR-SAVE02.TAP",
+          "archive_path": "tapes/recovered/tape26a/best/06-WAR-SAVE02.TAP",
+          "bytes": 1340,
+          "sha256": "5b8ecd15016333dd8098498f4dd08f6dcbbf6ebedfefdfb7bfb8a6f2c3a64df2"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "934f779f8770a3ef32b10fada28606e09b604a8349034afd18d73fef606fb2ca",
+        "bytes": 1182,
+        "archive_validation": "PC-121x header and 147 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "26",
+        "side": "a",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "WAR game \u2014 save 2",
+        "capture": "tape26a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "PC-121x header and 147 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+        "source_start_s": "449.388",
+        "recovered_bytes": "1182",
+        "source_file": "tapes/recovered/tape26a/best/06-WAR-SAVE02.ASC",
+        "wav": "tapes/tape26a.wav",
+        "folder": "tapes/recovered/tape26a",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape26a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape26a",
+      "save": 7,
+      "archive_raw": "tapes/recovered/tape26a/best/07-WAR-SAVE03.IMG",
+      "archive_listing": "tapes/recovered/tape26a/best/07-WAR-SAVE03.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/07-WAR-SAVE03.ASC",
+          "archive_path": "tapes/recovered/tape26a/best/07-WAR-SAVE03.ASC",
+          "bytes": 1859,
+          "sha256": "22c753e752ba6bb2d6c6a569f30e7fc9b9586adf537657df379a7c4a3584902e"
+        },
+        {
+          "path": "versions/v03/07-WAR-SAVE03.IMG",
+          "archive_path": "tapes/recovered/tape26a/best/07-WAR-SAVE03.IMG",
+          "bytes": 1254,
+          "sha256": "6d8febd5374afb27031aa85df3520ccf6a54f8371fc0246bd20bda32b28a48e0"
+        },
+        {
+          "path": "versions/v03/07-WAR-SAVE03.TAP",
+          "archive_path": "tapes/recovered/tape26a/best/07-WAR-SAVE03.TAP",
+          "bytes": 1421,
+          "sha256": "00e7f631402e5f1457f524f7fd00fe8b0f5996481e29b5812fe357dcb8bd829f"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "6d8febd5374afb27031aa85df3520ccf6a54f8371fc0246bd20bda32b28a48e0",
+        "bytes": 1254,
+        "archive_validation": "PC-121x header and 156 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "26",
+        "side": "a",
+        "order": "7",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "WAR game \u2014 save 3",
+        "capture": "tape26a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Pocket Computer PC-1 / Sharp PC-121x BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "PC-121x header and 156 recorded checksums; ordered lines; terminators; actual F0 EOF; exact length; byte-identical left/right TAP",
+        "source_start_s": "562.738",
+        "recovered_bytes": "1254",
+        "source_file": "tapes/recovered/tape26a/best/07-WAR-SAVE03.ASC",
+        "wav": "tapes/tape26a.wav",
+        "folder": "tapes/recovered/tape26a",
+        "recovery_date": "2026-10-29",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape26a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}
