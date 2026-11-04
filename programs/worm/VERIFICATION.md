@@ -48,7 +48,7 @@ Help pausing/restoring the machine, retained 20× after Restart, and switching
 back to 1×. Both reference links appear in About and Help.
 
 Unit tests and production build pass; all 32 current release hash manifests
-validate. Comparison against 79c77ad confirms all recovered Worm One snapshots
+validate. Comparison against c5d08db confirms all recovered Worm One snapshots
 and canonical originals are unchanged and no other frozen player was modified.
 The authorized unshared v1 refresh is retained in Git history and tagged
 worm-web-v1-speed, without advancing the web version number.

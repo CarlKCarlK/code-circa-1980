@@ -35,6 +35,6 @@ for row,item in zip(rows,coverage['rows']):
 for slug in ['poker','spacecolony']:
  folder=root/'programs'/slug;u=json.loads((folder/'upstream/provenance.json').read_text());assert sha(next((folder/'upstream').glob('*.ASC')).read_bytes())==u['sha256']
  # The withdrawn snapshot remains byte-identical to its preserved pre-restoration catalog in Git.
- old=json.loads(subprocess.check_output(['git','show',f'd7d1a1f:programs/{slug}/web-versions.json'],cwd=root))
+ old=json.loads(subprocess.check_output(['git','show',f'a5eb978:programs/{slug}/web-versions.json'],cwd=root))
  for f in old['versions'][0]['files']:assert sha((folder/'website-archive/v1'/f['path']).read_bytes())==f['sha256']
 print(f'Checked {len(rows)} inventory dispositions, {len(plan["programs"])} collections, {saves} captured items, {files} untouched imported files, canonical tags, upstream sources, and withdrawn snapshots.')

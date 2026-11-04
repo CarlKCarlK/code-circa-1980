@@ -90,7 +90,7 @@ The archive verifier checked all 716 inventory dispositions, 405 captured items,
 946 unchanged imported files, canonical Git tag blobs, upstream comparison
 hashes, and the preserved withdrawn snapshots. The release checker verified
 293 active frozen releases. Git comparison against the pre-import commit
-`d7d1a1f` confirms no changes to any frozen main-gallery or LIFE release.
+`a5eb978` confirms no changes to any frozen main-gallery or LIFE release.
 
 All 372 Playwright checks passed against an isolated production preview in
 1.4 minutes. The 243 new-archive checks cover every one of the 241 new frozen

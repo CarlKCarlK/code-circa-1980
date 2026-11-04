@@ -51,6 +51,10 @@ frozen release builds under `public/` alone; rebuild them instead.
 Do not add AI co-author trailers (such as `Co-Authored-By: Claude …`) or other
 AI attribution lines to commit messages or pull request descriptions.
 
+History was rewritten on 2026-11-04 to remove such trailers, so `sourceCommit`
+values in frozen release manifests are pre-rewrite hashes. Leave them unchanged;
+docs/history-rewrite-2026-11-04.md explains how to map them to current commits.
+
 ## Commands
 
 From the root, `just show [program]` starts the dev server and opens a browser.

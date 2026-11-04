@@ -31,7 +31,7 @@ python3 app/scripts/verify-second-gallery.py
 cd app
 npm test
 npm run build
-npm run verify:web-versions -- --against e951413
+npm run verify:web-versions -- --against 9bd4798
 npm run preview -- --port 5187 --strictPort
 ```
 

@@ -58,7 +58,7 @@ node app/scripts/probe-starwars-controls.mjs
 cd app
 npm test
 npm run build
-npm run verify:web-versions -- --against e951413
+npm run verify:web-versions -- --against 9bd4798
 npm run preview -- --port 5187 --strictPort
 ```
 
@@ -90,7 +90,7 @@ validation and new website execution testing remain distinct in provenance.
 - All 49 complete extra-program snapshots, canonical tagged payload/listing
   blobs, partial-prefix ranges, and screenshot hashes passed verification.
 - All 14 current web snapshots passed release-integrity verification against
-  e951413: seven preexisting main-gallery experiences plus seven extras at v1.
+  9bd4798: seven preexisting main-gallery experiences plus seven extras at v1.
   The previously published main-gallery files are unchanged.
 - The full browser suite passed **71 tests**, with **one preexisting skipped
   test**. This includes meaningful original-program input/output, all four new

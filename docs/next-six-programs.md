@@ -43,7 +43,7 @@ test artifacts, not gallery illustrations. Gallery SVGs are modern illustrations
 - `npm test` passes all 18 test files, including the adaptation and actual-ROM
   arithmetic tests. `npm run build` passes.
 - All 32 active web releases pass hash/catalog verification against pre-import
-  commit 6b0e882; no existing release bytes were changed by this import.
+  commit 4ad0b6e; no existing release bytes were changed by this import.
 - The full 98-case browser run passed 97 cases. Its sole failure was a new test
   incorrectly expecting the hidden Help dialog to be absent from the DOM.
   That assertion was corrected to require the dialog to be hidden; the targeted

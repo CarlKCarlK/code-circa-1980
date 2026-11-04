@@ -53,7 +53,7 @@ illustrations do not claim to show exact emulator output.
 ## Verification commands
 
 From app/: `npm test`, `npm run build`, and
-`npm run verify:web-versions -- --against e951413`.
+`npm run verify:web-versions -- --against 9bd4798`.
 From the root: `python3 app/scripts/verify-second-gallery.py` checks all 93
 complete extra-program snapshots, their canonical tags, originals, artwork, and
 partial-file hashes. The release checker covers 20 web experiences and proves

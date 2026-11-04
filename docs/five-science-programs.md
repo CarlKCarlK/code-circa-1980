@@ -42,7 +42,7 @@ account for the interleaved spaces used by the ROM’s display mode.
   the exact untouched prefix range and 32-record structure, and agreement with
   71 unique archive candidates including independent left/right processing.
 - Unit tests (18 test files), the production build, and preservation of all 37
-  active release manifests against pre-import commit db1b218 pass.
+  active release manifests against pre-import commit ecbede5 pass.
 - The complete browser run passes all 112 cases (5.5 minutes). This includes six
   representative runtime scenarios across the five new programs, every new
   frozen v1 startup/download/return link, and the 23-card desktop/390px gallery.
