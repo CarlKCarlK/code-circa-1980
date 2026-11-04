@@ -1,0 +1,24 @@
+{
+  "source": "versions/v01/04-LIERS-POKER.BAS",
+  "source_sha256": "e1898227751385c0d06acd535e70398357d7afece07ea973825c20cb2d45401f",
+  "sha256": "10e1cdd1122532f6bdf8532025ad7fcb44f407c210af155dba2f445b392493ea",
+  "bytes": 865,
+  "listing_sha256": "1304ce10e9cda7c81905047226ce4fe9f226f585b1062fc623cb1c04ecaee557",
+  "changes": [
+    {
+      "line": 10,
+      "from": "LIER'S POKER",
+      "to": "LIAR'S POKER"
+    },
+    {
+      "line": 160,
+      "from": "DID'NT",
+      "to": "DIDN'T"
+    },
+    {
+      "line": 220,
+      "from": "THE TOP STANDS AT",
+      "to": "THE POT STANDS AT"
+    }
+  ]
+}

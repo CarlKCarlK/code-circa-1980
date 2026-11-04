@@ -36,7 +36,7 @@ function webVersionNavigation(program){
  return `<nav class="web-version-nav" aria-label="Web experience"><span>Web experience ${webVersion?escape(webVersion):'development'}</span>${program.webVersions.length+(webVersion&&!program.webVersions.some(v=>v.id===webVersion)?1:0)>1?versionPicker(program,webVersion):''}${webVersion?`<a href="${collectionUrl.href}?program=${program.id}">Latest version</a>`:''}</nav>`;
 }
 function versionList(program, selected) {
- return `<details class="versions"><summary>${program.versions.length} recovered ${program.gallery==='more'?'saves':'versions'} · development order is inferred</summary><p>${escape(program.versionOrder)}</p><ol>${program.versions.map(v=>`<li><a href="${route(program,v)}" ${selected.id===v.id?'aria-current="page"':''}>${escape(v.id.toUpperCase())} · ${escape(v.label)}</a><span class="small">${escape(v.capture)} / save ${v.save}${v.playable?'':' · source only'}</span><p>${escape(v.note)}</p></li>`).join('')}</ol></details>`;
+ return `<details class="versions"><summary>${program.versions.length} recovered ${program.gallery==='more'?'save':'version'}${program.versions.length===1?'':'s'} · development order is inferred</summary><p>${escape(program.versionOrder)}</p><ol>${program.versions.map(v=>`<li><a href="${route(program,v)}" ${selected.id===v.id?'aria-current="page"':''}>${escape(v.id.toUpperCase())} · ${escape(v.label)}</a><span class="small">${escape(v.capture)} / save ${v.save}${v.playable?'':' · source only'}</span><p>${escape(v.note)}</p></li>`).join('')}</ol></details>`;
 }
 async function render() {
   const thisNavigation = ++navigation;

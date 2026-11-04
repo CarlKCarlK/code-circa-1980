@@ -471,6 +471,11 @@ The user requested correcting the Liers Poker title on November 3, 2026: display
 Liar’s Poker. Keep the liers-poker ID, URL, and historical filenames; the recovered
 listing still prints LIER'S POKER.
 
+On November 4, 2026, the website's player moved to a spelling-corrected edition
+(LIAR'S, DIDN'T, and POT for TOP) in `programs/liers-poker/corrected/`, selected by
+`correctedEdition` in its program.json. Recovered files stay as they are. Rebuild
+with `npm run build:liars-poker-corrected`.
+
 ## Programs from recovered floppy disks (November 3, 2026)
 
 Fourteen More players boot original disk images through `site/model1-disks.js` and

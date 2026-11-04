@@ -1,0 +1,21 @@
+{
+  "source": "versions/v01/04-LIERS-POKER.BAS",
+  "rule": "Spelling in text the game prints, requested 2026-11-04. Includes one wrong word (TOP for POT). Logic, line numbers and spacing are unchanged.",
+  "changes": [
+    {
+      "line": 10,
+      "from": "LIER'S POKER",
+      "to": "LIAR'S POKER"
+    },
+    {
+      "line": 160,
+      "from": "DID'NT",
+      "to": "DIDN'T"
+    },
+    {
+      "line": 220,
+      "from": "THE TOP STANDS AT",
+      "to": "THE POT STANDS AT"
+    }
+  ]
+}

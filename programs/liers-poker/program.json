@@ -1,7 +1,7 @@
 {
   "id": "liers-poker",
   "title": "Liar’s Poker",
-  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "description": "1 captured save. One BASIC player with its printed spelling corrected; historical bugs remain.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
@@ -36,8 +36,16 @@
       "slug": "basic"
     }
   ],
-  "listingLabel": "Download recovered listing",
+  "listingLabel": "Download corrected listing",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+  },
+  "correctedEdition": {
+    "raw": "corrected/LIARS-POKER.BAS",
+    "listing": "corrected/LIARS-POKER.ASC",
+    "derived": true,
+    "running": "Running corrected BASIC",
+    "startupSource": "5 CLS:DC=20:DH=20\n10 PRINT \"LIAR'S POKER\"\n15 I=INT((RND(0)[3)*10000+1):Q=RND(0):IFRND(2)=1THENQ=1/Q\n17 R=0:QQ=RND(0)/Q*10000\n20 PRINT:PRINT:PRINT\n30 CN=RND(10000):HN=RND(10000)\n40 PRINT\"YOUR NUMBER IS :\"HN\n50 IF RND(2)=1THEN200\n100 PRINT:PRINT\"TYPE  'CALL' OR YOUR RAISE\"\n110 INPUT H$\n120 IF H$<>\"CALL\"THEN 160\n130 PRINT:PRINT:PRINT\"MY NUMBER IS: \"CN",
+    "note": "Liar’s Poker v01 with the spelling in its printed text corrected; every change is listed in corrected/changes.json, and the program logic is unchanged. The recovered v01 bytes are kept in versions/v01."
   }
 }

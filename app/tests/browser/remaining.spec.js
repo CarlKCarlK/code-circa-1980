@@ -11,8 +11,8 @@ for(const id of REMAINING_IDS){
    await page.locator('.source-details > summary').click();
   }
   else await expect(page.locator('#display canvas')).toHaveCount(meta.sourceOnly?0:1);
-  const source=page.getByRole('link',{name:'Download recovered listing',exact:true});expect((await page.request.get(await source.getAttribute('href'))).ok()).toBe(true);
-  const raw=page.getByRole('link',{name:'Download original payload',exact:true});expect((await page.request.get(await raw.getAttribute('href'))).ok()).toBe(true);
+  const source=page.getByRole('link',{name:meta.listingLabel,exact:true});expect((await page.request.get(await source.getAttribute('href'))).ok()).toBe(true);
+  const raw=page.getByRole('link',{name:id==='liers-poker'?'Download BASIC payload':'Download original payload',exact:true});expect((await page.request.get(await raw.getAttribute('href'))).ok()).toBe(true);
   expect(new URL(page.url()).hash).toBe('');expect(errors).toEqual([]);
  });
 }
