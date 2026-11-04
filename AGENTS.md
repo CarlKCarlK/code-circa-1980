@@ -468,7 +468,7 @@ behavior only, never the BASIC gameplay, as already requested. Keep all extras
 at unshared v1; preserve main-gallery and LIFE frozen releases.
 
 The user requested correcting the Liers Poker title on November 3, 2026: display
-Liar’s Poker. Keep the liers-poker ID, URL, and historical filenames; the recovered
+Liar’s Poker. Keep the liers-poker ID and historical filenames; the recovered
 listing still prints LIER'S POKER.
 
 On November 4, 2026, the website's player moved to a spelling-corrected edition
@@ -476,6 +476,11 @@ On November 4, 2026, the website's player moved to a spelling-corrected edition
 `programs/liers-poker/corrected/`, selected by `correctedEdition` in its program.json.
 A `howToPlay` field adds a rules section and a link to it above the screen. Recovered files stay as they are. Rebuild
 with `npm run build:liars-poker-corrected`.
+
+The user asked to correct the URL's spelling the same day. Its public URLs are now
+`/liars-poker/` and `/liars-poker/vN/` (`urlName`), starting at web v2, and it no longer
+stays at unshared v1. The ID and folder stay `liers-poker`, `/liers-poker/` redirects, and
+frozen `/liers-poker/v1/` stays. Recovered filenames and labels keep the historical LIERS.
 
 ## Programs from recovered floppy disks (November 3, 2026)
 

@@ -45,6 +45,7 @@ test('a renamed program is reachable at both its new and old stable URLs',()=>{
   const files=generated();
   assert.equal(tag(files.get('defuse/index.html'),'title'),'Defuse');
   assert.equal(tag(files.get('bomb/index.html'),'url'),'https://carlkcarlk.github.io/code-circa-1980/defuse/');
+  assert.equal(tag(files.get('liers-poker/index.html'),'url'),'https://carlkcarlk.github.io/code-circa-1980/liars-poker/');
   assert.doesNotMatch(tag(files.get('bomb/index.html'),'image'),/bomb/);
 });
 test('a release build swaps the generic tags for its program',()=>{

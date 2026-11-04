@@ -1,5 +1,6 @@
 {
   "id": "liers-poker",
+  "urlName": "liars-poker",
   "title": "Liar’s Poker",
   "description": "Bid on your hidden number, bluff, and call the computer’s bluffs. The two numbers are never compared.",
   "kind": "BASIC",
@@ -7,7 +8,7 @@
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
-  "unsharedWebV1": true,
+  "unsharedWebV1": false,
   "defaultVersion": "v01",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
