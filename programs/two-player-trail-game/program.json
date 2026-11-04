@@ -1,14 +1,14 @@
 {
   "id": "two-player-trail-game",
-  "title": "Two Player Trail Game",
-  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "title": "Blockade Robot",
+  "description": "CLASSIC VIDEO GAME FOR TWO, in the disk menu's words. 2 recovered forms; the disk form plays.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v01",
+  "defaultVersion": "v02",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -18,9 +18,9 @@
       "save": 3,
       "raw": "versions/v01/03-TWO-PLAYER-TRAIL-GAME.BAS",
       "listing": "versions/v01/03-TWO-PLAYER-TRAIL-GAME.ASC",
-      "playable": true,
+      "playable": false,
       "note": "validated payload; runtime untested. Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match; disputed bit examined in both channels",
-      "unavailableReason": null,
+      "unavailableReason": "Earlier save, kept as source. The site plays the later form from the Games Diskette (v02).",
       "exports": [
         {
           "path": "versions/v01/03-TWO-PLAYER-TRAIL-GAME.ASC",
@@ -34,7 +34,43 @@
       "startupSource": "0 CLS\n1 INPUT \"RANDOM\";S\n2 FORE=2TO124:SET(E,1):SET(E,46):NEXT:FORE=1TO46:SET(2,E):SET(124,E):NEXT\n4 Z2=1\n5 A1=20:A2=30:B1=50:B2=60:A3=A1:B3=B1:A4=A2:B4=B2\n6 GOTO18\n7 POKE16553,255\n10 A$=INKEY$:IFA$=\"\"THEN25\n11 IF A$=CH$THEN   A6=A1:A1=A2:A2=A6   :A6=A4:A4=A3:A3=A6:       B6=B1:B1=B2:B2=B6:   B6=B4:B4=B3:B3=B6: B6=Z:Z=Z2:Z2=B6: B6=Y:Y=Y2:Y2=B6:GOTO25\n12 RESTORE:IFA$=\"P\"ORA$=\"Q\"THENCH$=\"5\"ELSEIFA$=\"A\"ORA$=\";\"THENCH$=\"0\":'\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018\u0018 RESTORE                                                     \n13 IF A$=\" \" THEN CH$=\"\"\n18 IF(VAL(A$)>5)AND(VAL(A$)<10)THEN750",
       "controlSource": [
         "10 A$=INKEY$:IFA$=\"\"THEN25"
+      ]
+    },
+    {
+      "id": "v02",
+      "label": "Blockade Robot (Games Diskette)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v02/BLOCKRB.BAS",
+      "listing": "versions/v02/BLOCKRB.ASC",
+      "playable": true,
+      "note": "Complete disk file BLOCKRB.BAS (directory size, ordered records, consistent pointers, end marker). Runs under NEWDOS/80 Disk BASIC from the original disk image; the disk's menu starts it, and it can return there. Runtime limited to the startup check.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v02/BLOCKRB.BAS",
+          "label": "BLOCKRB.BAS"
+        },
+        {
+          "path": "versions/v02/BLOCKRB.ASC",
+          "label": "BLOCKRB.ASC"
+        }
       ],
+      "startupSource": "0 CLS:PRINT\"BLOCKADE ROBOT\nCONTROLS  1-2-3-4   6-7-8-9   ARE UP-DOWN-LEFT-RIGHT\nWIN BY NOT CRASHING BEFORE OTHER GUY\nIN TIGHT SITUATIONS YOUR R2-D2 UNIT WILL STEER YOU CLEAR\nRANDOM IS HOW UNPREDICABLE THE R2-D2 IS  (5 VERY,99 NOT AT ALL)\"\n1 INPUT \"RANDOM\";S:CLS\n2 FORE=2TO124:SET(E,1):SET(E,46):NEXT:FORE=1TO46:SET(2,E):SET(124,E):NEXT\n4 Z2=1\n5 A1=20:A2=30:B1=50:B2=60:A3=A1:B3=B1:A4=A2:B4=B2\n6 GOTO18\n7 POKE16553,255\n10 A$=INKEY$:IFA$=\"\"THEN25",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/games-diskette.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "SELECT A LETTER"
+          },
+          {
+            "press": "h"
+          }
+        ]
+      },
+      "running": "Running from the original disk",
       "slug": "basic"
     }
   ],
