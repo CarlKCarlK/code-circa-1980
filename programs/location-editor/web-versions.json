@@ -5,7 +5,7 @@
       "path": "location-editor/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "06c1837ffa75d4e74e24ce5ce7aa8f5438ae0dfd",
+      "sourceCommit": "951f9f4eaaec8a7da6c9c639e1ff32d7c7b2e4b7",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BsmS7RBY.js",
+          "path": "assets/emulator-Dz5pt-0G.js",
           "bytes": 316923,
-          "sha256": "b021075d811507898c1921356aa39beeb1db984ca27cc082943c538e6f577ca5"
+          "sha256": "7b67c4e853fe85f30803b24958d8f7c90d1f0fecebfa134af9d2c73142d9535c"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -53,14 +53,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-B-wRS_-F.js",
+          "bytes": 29162,
+          "sha256": "0e9819a6b3d9228b164ab01e1cb38ca0a3f56bfd62069607e2d1442d0c5acc1e"
         },
         {
-          "path": "assets/index-DF0ALFVd.js",
-          "bytes": 28956,
-          "sha256": "03d744be6ce2148f69620f7da9d16aedcb3e280357e7d44396fdf8bfe14e7484"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -225,7 +225,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "13caa0a68d5981ff87ed516e7aa0a9395dcf92dd37f81562bf608057207f37ea"
+          "sha256": "caa3c8a8a6b7432c92a6233cfe9ee573659108f356b963e4f3bb2b43b6df1eb1"
         },
         {
           "path": "licenses.txt",
