@@ -1,9 +1,10 @@
 import {archiveView} from './programs/archive.js';
 import remainingIds from './remaining-programs.json';
+import diskIds from './disk-programs.json';
 import poker from '../../programs/poker/program.json';
 import spacecolony from '../../programs/spacecolony/program.json';
 const remainingMetadata=import.meta.glob('../../programs/*/program.json',{eager:true,import:'default'});
-const remaining=remainingIds.map(id=>{const p=remainingMetadata[`../../programs/${id}/program.json`];return {...p,...archiveView(p)};});
+const remaining=[...remainingIds,...diskIds].map(id=>{const p=remainingMetadata[`../../programs/${id}/program.json`];return {...p,...archiveView(p)};});
 import {historyFiveViews} from './programs/history-five.js';
 import whodonnt from '../../programs/whodonnt/program.json';
 import dungeon from '../../programs/dungeon/program.json';
@@ -78,7 +79,7 @@ export const allPrograms = [{...castles, ...castlesView, modern, loadModernPlaye
   .map(program=>({...program,webVersions:webCatalogs[`../../programs/${program.id}/web-versions.json`]?.versions??[]}));
 export const programs = allPrograms.filter(program=>program.gallery!=='more');
 export const morePrograms = allPrograms.filter(program=>program.gallery==='more'&&!program.galleryHidden);
-const files = import.meta.glob(['../../programs/**/*.{BAS,ASC,bin,BIN,ASM,TXT,Z80,SRC,3BN,PRG,IMG,TAP,txt}','!../../programs/**/target/**','!../../programs/**/third_party/**'], {query:'?url', import:'default', eager:true});
+const files = import.meta.glob(['../../programs/**/*.{BAS,ASC,bin,BIN,ASM,TXT,Z80,SRC,3BN,PRG,IMG,TAP,txt,dmk,LSP}','!../../programs/**/target/**','!../../programs/**/third_party/**'], {query:'?url', import:'default', eager:true});
 const provenance = import.meta.glob(['../../programs/**/provenance.json'], {query:'?url', import:'default', eager:true});
 export function assetUrl(program, path) {
   const url = files[`../../programs/${program.id}/${path}`];

@@ -283,5 +283,13 @@
         "import_date": "2026-11-03"
       }
     }
-  ]
+  ],
+  "runtime_reconstruction": {
+    "functions": [
+      "PUSH-RIGHT",
+      "CLIMB-UP"
+    ],
+    "evidence": "Names and preconditions survive in SETPROP and SELECT; the disk files PUSH and CLIMB hold only PUSH-LEFT and CLIMB-DOWN; no definition found in unallocated sectors.",
+    "method": "Typed at startup as mirror images of the surviving partners. No disk bytes change."
+  }
 }

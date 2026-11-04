@@ -124,3 +124,11 @@ as Carl Kadie originals. SARGON/RSM static disassembly is a recovery derivative,
 not historical assembly source. Quest retains Roger Chaffee’s BYTE provenance;
 D&D reference material and the Mille Bornes/Monopoly designs are credited
 separately from the uncertain origin of their program implementations.
+
+## Software on recovered floppy disks
+
+The disk players boot unchanged images of the owner's disks. On those disks, and
+retained with their own notices: MMSFORTH V2.0 and its utilities, © 1981 Miller
+Microcomputer Services; LISP 3.72, © 1981 R. L. Nicol, distributed by SuperSoft;
+TRSDOS 2.3, © Tandy Corporation; and NEWDOS/80 2.0, Apparat, Inc. They are kept
+for small-scale archival use, and their rights stay with their holders.

@@ -1,7 +1,7 @@
 {
   "id": "gps",
   "title": "GPS Planner",
-  "description": "A General Problem Solver in LISP: it plans how to push a box, climb, and grasp by working on the largest difference between the current state and the goal.",
+  "description": "A General Problem Solver in LISP: it plans how to push a box, climb, and grasp by working on the largest difference between the current state and the goal. Two lost functions are reconstructed for the player.",
   "kind": "LISP",
   "language": "LISP 3.72, TRS-80 Model I",
   "gallery": "more",
@@ -18,7 +18,7 @@
       "raw": "versions/v01/GPS.LSP",
       "listing": "versions/v01/GPS.txt",
       "playable": true,
-      "note": "LISP source file copied unchanged, with the other function files from its disk. Each is exact directory bytes; files carry a .LSP suffix here for download. The readable view removes record padding and marks unrelated leftovers. EDIT prints its own credit to Ronald L. Nicol.",
+      "note": "LISP source file copied unchanged, with the other function files from its disk. Each is exact directory bytes; files carry a .LSP suffix here for download. The readable view removes record padding and marks unrelated leftovers. EDIT prints its own credit to Ronald L. Nicol. Two functions are reconstructed: the disk saved PUSH-LEFT and PUSH-RIGHT to one file, and CLIMB-UP and CLIMB-DOWN to another, because file names stopped at the hyphen, so PUSH-RIGHT and CLIMB-UP were lost. The player types mirror images of their partners at startup. The disk and source files are unchanged.",
       "unavailableReason": null,
       "exports": [
         {
@@ -208,7 +208,7 @@
             "type": "LISP\n"
           },
           {
-            "wait": "^-> _?$"
+            "wait": "^-> _? *$"
           },
           {
             "swap": 1
@@ -217,127 +217,97 @@
             "type": "(LOAD (QUOTE GPS))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE SELECT))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE PRECON))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE MAJOR))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE MATCH))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE COMBINE))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE CADDR))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE LOOKFOR))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE APPEND))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE SETPROP))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE CLIMB))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE PUSH))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE GRASP))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
-          },
-          {
-            "delay": 0.2
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE UNGRASP))\n"
           },
           {
-            "wait": "^NIL[ ]*\\n-> _?$"
+            "wait": "^-> _? *$"
           },
           {
-            "delay": 0.2
+            "type": "(PUTPROP (QUOTE PUSH-RIGHT) (QUOTE (LAMBDA (S) (COND ((EQ (CADDR S) (QUOTE DOOR)) (LIST (CAR S) (CADR S) (QUOTE MIDDLE))) (T (LIST (CAR S) (CADR S) (QUOTE WINDOW)))))) EXPR)\n"
+          },
+          {
+            "wait": "^-> _? *$"
+          },
+          {
+            "type": "(PUTPROP (QUOTE CLIMB-UP) (QUOTE (LAMBDA (S) (CONS (QUOTE ON) (CDR S)))) EXPR)\n"
+          },
+          {
+            "wait": "^-> _? *$"
           },
           {
             "type": "(SETPROP)\n"
@@ -356,11 +326,12 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "I wrote this in LISP. It runs on LISP 3.72, © 1981 Ronald L. Nicol, distributed by SuperSoft. Preserved here for small-scale archival use."
+    "text": "I wrote this in LISP. It runs on LISP 3.72, \u00a9 1981 Ronald L. Nicol, distributed by SuperSoft. Preserved here for small-scale archival use."
   },
   "howTo": [
     "A state is a height (ON or OFF), a hand (GRASP or UNGRASP), and a place (DOOR, MIDDLE, or WINDOW). The player runs one plan when it starts. Try your own at the -> prompt:",
     "(GPS (QUOTE (OFF UNGRASP DOOR)) (QUOTE (ON GRASP WINDOW)))",
+    "Two functions are reconstructed: the disk saved PUSH-LEFT and PUSH-RIGHT to one file, and CLIMB-UP and CLIMB-DOWN to another, because file names stopped at the hyphen, so PUSH-RIGHT and CLIMB-UP were lost. The player types mirror images of their partners at startup. The disk and source files are unchanged.",
     "LISP itself starts from the LISP disk, and then the disk holding these functions replaces it, as the two disks were used together."
   ],
   "quickHelp": "At the -> prompt, type (GPS (QUOTE start) (QUOTE goal))."

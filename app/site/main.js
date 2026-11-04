@@ -112,7 +112,7 @@ async function render() {
   try {
     const {createPlayer}=modern?await program.loadModernPlayer():await import('./emulator.js');
     if(thisNavigation!==navigation)return;
-    const instance=await createPlayer(host,assetUrl(program,version.runtimeRaw??version.raw),status,program.title,version.machineCode?{...version.machineCode,url:assetUrl(program,version.machineCode.file)}:undefined,{running:modern?undefined:version.running,model:modern?undefined:program.model,printer:!modern&&program.printer});
+    const instance=await createPlayer(host,assetUrl(program,version.runtimeRaw??version.raw),status,program.title,version.machineCode?{...version.machineCode,url:assetUrl(program,version.machineCode.file)}:undefined,{disk:version.disk&&{...version.disk,images:version.disk.images.map(path=>assetUrl(program,path))},sound:version.sound,running:modern?undefined:version.running,model:modern?undefined:program.model,printer:!modern&&program.printer});
     if(thisNavigation!==navigation){instance.dispose();return;}
     player=instance;activeRoute=sessionKey;
     host.querySelector('#control-dock').append(app.querySelector('.keyboard-help'));

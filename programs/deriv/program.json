@@ -171,13 +171,13 @@
             "type": "LISP\n"
           },
           {
-            "wait": "^-> _?$"
+            "wait": "^-> _? *$"
           },
           {
             "type": "(LOAD (QUOTE DERIV/LSP))\n"
           },
           {
-            "wait": "^NIL[ ]*$"
+            "wait": "^NIL *$"
           },
           {
             "delay": 0.2
@@ -186,7 +186,7 @@
             "type": "(DERIV)\n"
           },
           {
-            "wait": "^>_?$"
+            "wait": "^>_? *$"
           }
         ]
       },
@@ -196,7 +196,7 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "I wrote this in LISP. It runs on LISP 3.72, © 1981 Ronald L. Nicol, distributed by SuperSoft. Preserved here for small-scale archival use."
+    "text": "I wrote this in LISP. It runs on LISP 3.72, \u00a9 1981 Ronald L. Nicol, distributed by SuperSoft. Preserved here for small-scale archival use."
   },
   "howTo": [
     "At the > prompt, type an infix expression in parentheses and press Enter, then type the variable and press Enter. For example, (X * X) and then X. Use [ for a power, :+: for plus, :-: for minus, * and /, and functions such as (SIN X).",

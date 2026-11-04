@@ -69,7 +69,16 @@
             "wait": "^EMPTY-BUFFERS[ ]+OK"
           },
           {
+            "type": "PAGE\n"
+          },
+          {
+            "delay": 0.3
+          },
+          {
             "type": "74 LOAD\n"
+          },
+          {
+            "delay": 150
           }
         ]
       },
@@ -79,10 +88,10 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, \u00a9 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
   },
   "howTo": [
-    "It draws a new station when it starts and then returns to the prompt. There is no gameplay. Restart draws another."
+    "It builds and draws a new station while it starts, which took a few minutes on the real machine, so the player runs that part fast. Then it keeps working out doors, and a counter runs at the top of the screen. There is no gameplay. Restart draws another station."
   ],
   "quickHelp": "It draws a random station map. There is no gameplay."
 }

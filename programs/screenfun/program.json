@@ -58,6 +58,9 @@
           },
           {
             "type": "n"
+          },
+          {
+            "wait": "THERE ARE THREE MODES"
           }
         ]
       },
@@ -67,7 +70,7 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, \u00a9 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
   },
   "howTo": [
     "Read its help page and press Enter. D draws, E erases, and M moves without drawing. The arrow keys move the cursor, / Z and 1 move diagonally, C clears the screen, W fills it, H shows help, and Q quits."

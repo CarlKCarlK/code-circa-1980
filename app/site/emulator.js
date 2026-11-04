@@ -1,6 +1,8 @@
-import {Config, ModelType, BasicLevel, CGChip, Keyboard, Trs80, CassettePlayer, SilentSoundPlayer} from 'trs80-emulator';
+import {Config, ModelType, RamSize, BasicLevel, CGChip, Keyboard, Trs80, CassettePlayer, SilentSoundPlayer} from 'trs80-emulator';
 import {CanvasScreen} from 'trs80-emulator-web';
-import {decodeBasicProgram} from 'trs80-base';
+import {decodeBasicProgram, decodeTrs80File} from 'trs80-base';
+import {withModel1Disks} from './model1-disks.js';
+import {runDiskSteps} from './disk-session.js';
 
 // Match the TypeScript field (player.ts) instead of the library's gray-green AUTHENTIC_BACKGROUND.
 class CobaltScreen extends CanvasScreen {
@@ -25,24 +27,37 @@ class CollectionMachine extends Trs80 {
 // and every archived byte remain unchanged.
 // A program can ask for a stock Model I (`model: 'MODEL1'`): its ROM shows shifted
 // letters in capitals, as 1978 machines without the lowercase kit did.
-export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC', model, printer = false} = {}) {
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`Could not load original program (${response.status}).`);
-  const bytes = new Uint8Array(await response.arrayBuffer());
-  const program = decodeBasicProgram(bytes);
-  if (!program || program.error) throw new Error(program?.error || 'Invalid BASIC payload.');
+export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC', model, printer = false, disk, sound = false} = {}) {
+  let program, disks;
+  if (disk) {
+    disks = await Promise.all(disk.images.map(async image => {
+      const response = await fetch(image);
+      if (!response.ok) throw new Error(`Could not load original disk (${response.status}).`);
+      return decodeTrs80File(new Uint8Array(await response.arrayBuffer()), image.split('?')[0]);
+    }));
+  } else {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Could not load original program (${response.status}).`);
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    program = decodeBasicProgram(bytes);
+    if (!program || program.error) throw new Error(program?.error || 'Invalid BASIC payload.');
+  }
   let machineBytes;
   if (dependency) {
     const response=await fetch(dependency.url);
     if (!response.ok) throw Error('Could not load machine-code dependency');
     machineBytes=new Uint8Array(await response.arrayBuffer());
   }
-  const config = model === 'MODEL1'
+  const config = disk
+    ? Config.makeDefault().withModelType(ModelType.MODEL1).withBasicLevel(BasicLevel.LEVEL2).withCGChip(CGChip.ORIGINAL).withRamSize(RamSize.RAM_48_KB)
+    : model === 'MODEL1'
     ? Config.makeDefault().withModelType(ModelType.MODEL1).withBasicLevel(BasicLevel.LEVEL2).withCGChip(CGChip.ORIGINAL)
     : Config.makeDefault().withModelType(ModelType.MODEL3).withBasicLevel(BasicLevel.LEVEL2);
   const screen = new CobaltScreen(1);
   const keyboard = new Keyboard();
-  const machine = new CollectionMachine(config, screen, keyboard, new CassettePlayer(), new SilentSoundPlayer());
+  const soundPlayer = sound ? new (await import('trs80-emulator-web/dist/WebSoundPlayer.js')).WebSoundPlayer() : new SilentSoundPlayer();
+  const Machine = disk ? withModel1Disks(CollectionMachine) : CollectionMachine;
+  const machine = new Machine(config, screen, keyboard, new CassettePlayer(), soundPlayer);
   host.replaceChildren(screen.getNode());
   host.append(document.getElementById('control-dock'));
   let printout;
@@ -66,6 +81,8 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
   const release = () => { held.clear(); keyboard.keyQueue.length = 0; keyboard.clearKeyboard(); };
   const press = (key, down) => {
     if (paused || disposed) return;
+    // Browsers allow sound only after a gesture, so the first key turns it on.
+    if (sound && down) soundPlayer.unmute();
     // Lower-case physical letters avoid synthesizing a held Shift key; the ROM
     // returns upper-case INKEY$ letters. PEEK-based controls still see real keys.
     key = key.length === 1 ? key.toLowerCase() : key;
@@ -82,7 +99,7 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
   // Typed and pasted text goes through the ROM's keyboard routine, as if keyed in.
   // The library types capitals as Shift+letter, which a Model I stores as lowercase
   // (shown as capitals), so on a Model I letters go in unshifted, as keys do.
-  const type = text => { if (!paused && !disposed) keyboard.simulateKeyboardText((model === 'MODEL1' ? text.toLowerCase() : text).replace(/\r\n?/g, '\n')); };
+  const type = text => { if (!paused && !disposed) keyboard.simulateKeyboardText((model === 'MODEL1' || disk ? text.toLowerCase() : text).replace(/\r\n?/g, '\n')); };
   // Named keys in order, each pressed and released, for keys text cannot name (Escape is BREAK).
   const keys = names => { if (!paused && !disposed) for (const key of names) { keyboard.keyEvent(key, true); keyboard.keyEvent(key, false); } };
   const paste = event => {
@@ -112,13 +129,27 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     };
     machine.eventScheduler.add(undefined, machine.tStateCount + machine.clockHz * 0.05, check);
   }
+  // Boots the program's own disk and repeats the keystrokes that start it. The
+  // machine runs fast until then, because loading a program from disk took minutes.
+  let cancelSteps, chosenSpeed = 1;
+  function startFromDisk() {
+    if (sound) soundPlayer.mute();
+    machine.loadFloppyDisk(disks[0], 0);
+    machine.reset();
+    speed = 20; startFast();
+    status.textContent = 'Starting from the original disk…';
+    cancelSteps = runDiskSteps(machine, keyboard, disks, disk.steps, () => {
+      setSpeed(chosenSpeed); status.textContent = `${running} · click the screen to use the keys`;
+    });
+  }
   function restart() {
-    release(); machine.stop(); paused = false;
+    cancelSteps?.(); release(); machine.stop(); paused = false;
     if(printout)printout.textContent='';
-    if (model === 'MODEL1') runOnModel1(); else machine.runBasicProgram(program);
+    if (disk) startFromDisk();
+    else if (model === 'MODEL1') runOnModel1(); else machine.runBasicProgram(program);
     if (machineBytes) machine.eventScheduler.add(undefined, machine.tStateCount+machine.clockHz*0.31, () => machine.writeMemoryBlock(dependency.address,machineBytes));
     machine.start();
-    status.textContent = `${running} · click the screen to use the keys`;
+    if (!disk) status.textContent = `${running} · click the screen to use the keys`;
   }
   function togglePause() {
     release(); paused = !paused;
@@ -142,10 +173,14 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     lastFrame = time;
     fastHandle = requestAnimationFrame(fastFrame);
   }
-  function setSpeed(multiplier) {
-    speed = multiplier; lastFrame = 0;
+  function startFast() {
+    lastFrame = 0;
     cancelAnimationFrame(fastHandle); fastHandle = 0;
     if (speed > 1) fastHandle = requestAnimationFrame(fastFrame);
+  }
+  function setSpeed(multiplier) {
+    speed = multiplier; chosenSpeed = multiplier;
+    startFast();
   }
   restart();
   return {
@@ -159,7 +194,7 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     snapshot() { return Array.from({length:1024}, (_,i) => machine.readMemory(0x3c00+i)); },
     diagnostics() {return {tStates:machine.tStateCount, pc:machine.z80.regs.pc, paused, held:[...held]};},
     dispose() {
-      disposed = true; release(); machine.stop(); cancelAnimationFrame(fastHandle);
+      disposed = true; cancelSteps?.(); release(); machine.stop(); if (sound) soundPlayer.mute(); cancelAnimationFrame(fastHandle);
       document.removeEventListener('keydown', keydown); document.removeEventListener('keyup', keyup); document.removeEventListener('paste', paste);
       host.removeEventListener('blur', onBlur); window.removeEventListener('blur', onBlur);
       document.removeEventListener('visibilitychange', visibility);

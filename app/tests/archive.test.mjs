@@ -28,6 +28,24 @@ for(const name of fs.readdirSync(root)){
       assert.equal(bytes.length,file.bytes);
       assert.equal(createHash('sha256').update(bytes).digest('hex'),file.sha256);
     }
+    if(save.disk){
+      const bytes=fs.readFileSync(new URL(version.raw,folder));
+      assert.equal(createHash('sha256').update(bytes).digest('hex'),save.recovery_item.sha256);
+      assert.ok(save.imported_files.some(f=>f.path===version.listing));
+      for(const image of version.disk?.images??[])assert.ok(save.imported_files.some(f=>f.path===image));
+      if(!version.playable)assert.ok(version.unavailableReason);
+      if(save.recovery_item.format==='BASIC disk file'&&save.recovery_item.normal_end_marker){
+        assert.equal(bytes[0],0xff);
+        let offset=1,last=-1,lines=0;const bases=new Set();
+        while(offset+2<=bytes.length&&bytes.readUInt16LE(offset)!==0){
+          const line=bytes.readUInt16LE(offset+2);assert.ok(line>last);last=line;lines++;
+          const end=bytes.indexOf(0,offset+4);assert.ok(end>=offset+4);
+          bases.add(bytes.readUInt16LE(offset)-end-1);offset=end+1;
+        }
+        assert.equal(bases.size,1);assert.equal(lines,save.recovery_item.lines);assert.equal(last,save.recovery_item.last);
+      }
+      return;
+    }
     if(metadata.archiveImport){
       const bytes=fs.readFileSync(new URL(version.raw,folder));
       assert.equal(createHash('sha256').update(bytes).digest('hex'),save.recovery_item.sha256);

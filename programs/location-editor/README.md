@@ -1,4 +1,6 @@
-# Location Editor
+# Illiad
+
+Called Location Editor in earlier recovery labels; the Games Diskette menu gives the name above.
 
 Original author and any earlier published source have not been established. Preserved here as recovered cassette material.
 
