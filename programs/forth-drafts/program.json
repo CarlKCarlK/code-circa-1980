@@ -208,6 +208,28 @@
       ],
       "startupSource": "==== Block 55 ====\n 0 ( NOV 11,1982     DECODER PAGE 1 OF 1       RWL     )\n 1 \n 2 : TASK ;\n 3 \n 4 : LODE      PAGE  CR .\" IS STRINGS LOADED IN \" Y/N\n 5          IF CR  .\" PUT IN SYSTEM DISK \" ENTER STRINGS\n 6    CR .\" PUT IN PROGRAMS DISK \" ENTER THEN ;\n 7 \n 8 : FIGURE    KEY DUP DUP 28 = IF CR DROP ELSE DUP 64 > IF\n 9             13 -  DUP 65 < IF 26 + THEN   THEN CHR$ $.  THEN  ;\n10 ",
       "controlSource": []
+    },
+    {
+      "id": "v10",
+      "label": "Digit Recording (blocks 65-66)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v10/DIGIT-RECORDING.bin",
+      "listing": "versions/v10/DIGIT-RECORDING.txt",
+      "playable": false,
+      "note": "Samples the cassette port into an array and plays it back. Needs PSE, defined only in the authors’ compiled system.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v10/DIGIT-RECORDING.bin",
+          "label": "DIGIT-RECORDING.bin"
+        },
+        {
+          "path": "versions/v10/DIGIT-RECORDING.txt",
+          "label": "DIGIT-RECORDING.txt"
+        }
+      ],
+      "startupSource": "==== Block 65 ====\n 0 ( DIGIT RECORDING )\n 1  2000 ARRAY RECORD\n 2   CODE :DI DI NEXT    CODE :EI EI  NEXT\n 3 : REC ( I RANGE - I+1 RANGE )  DUP ROT 1+ 2000 MOD DUP\n 4   ROT  ( RA I+ I+ RA ) SWAP RECORD ! SWAP  ;\n 5 \n 6 : RANGE ( I RANGE VAL - I RANGE )  255 = 2* 1- OVER * 0> IF\n 7   DUP 0> IF 1+ ELSE 1- THEN   ELSE  REC  0< 2* 1- THEN ;\n 8 (\n 9 : GRAPH < XPOS VAL  - XPOS+1 > 255 = SWAP 1+ 127 MOD SWAP\n10              IF DUP 14 SWAP ESET DUP 9 SWAP ECLR ELSE",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",

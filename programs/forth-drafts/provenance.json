@@ -264,6 +264,35 @@
         "first_block": 55,
         "last_block": 55
       }
+    },
+    {
+      "version": "v10",
+      "disk": "MMSFORTH New Programs",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+      "source": "blocks 65-66",
+      "imported_files": [
+        {
+          "path": "versions/v10/DIGIT-RECORDING.bin",
+          "archive_path": "blocks 65-66",
+          "bytes": 2048,
+          "sha256": "d715d1e67639260b8527ae0062bd76840101335079b7e54f045f465620b20298"
+        },
+        {
+          "path": "versions/v10/DIGIT-RECORDING.txt",
+          "archive_path": "derived listing",
+          "bytes": 871,
+          "sha256": "75c94a5d12373a16cf40a08593b546cd13102cbcb80389e0a2ff90b3de2b76fa"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "d715d1e67639260b8527ae0062bd76840101335079b7e54f045f465620b20298",
+        "bytes": 2048,
+        "import_date": "2026-11-03",
+        "first_block": 65,
+        "last_block": 66
+      }
     }
   ]
 }
