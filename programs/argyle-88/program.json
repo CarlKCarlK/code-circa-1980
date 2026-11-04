@@ -1,14 +1,14 @@
 {
   "id": "argyle-88",
-  "title": "Argyle 88",
-  "description": "2 captured saves. One original BASIC player; historical bugs remain.",
+  "title": "Quorum in Space",
+  "description": "A SIMULATION OF HIGH-STAKES GOVERNMENT FOR ONE, in the disk menu's words. 3 recovered forms; the disk form plays.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v02",
+  "defaultVersion": "v03",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -43,9 +43,9 @@
       "save": 1,
       "raw": "versions/v02/01-ARGYLE-88.BAS",
       "listing": "versions/v02/01-ARGYLE-88.ASC",
-      "playable": true,
+      "playable": false,
       "note": "validated payload; runtime untested. Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-      "unavailableReason": null,
+      "unavailableReason": "Earlier save, kept as source. The site plays the later form from the Games Diskette (v03).",
       "exports": [
         {
           "path": "versions/v02/01-ARGYLE-88.ASC",
@@ -59,7 +59,43 @@
       "startupSource": "1 CLS:PRINT:PRINT:PRINT\n10 DEFINTM,C,F,N,Y,X,O,K\n20 DIMV(5),M(2),T(2),C(5),F(2)\n30 PRINT\"WELCOME TO ARGYLE 88!!\":PRINT\n40 PRINT\"YOU ARE ABOOUT TO JOIN THE ARGYLE 88 PLANETARY COUNCIL.\"\n50 PRINT\"THERE ARE FOUR OTHER MEMBERS - YOU ARE #5.\"\n60 RANDOM\n70 FORI=1TO5:V(I)=1000*RND(0)+50:NEXT\n80 M(1)=2:M(2)=2:N=0\n90 F(1)=1:F(2)=3:P2=.2:R2=.3\n100 T(1)=V(1)+V(2):T(2)=V(3)+V(4)\n110 C(1)=1:C(2)=1:C(3)=2:C(4)=2",
       "controlSource": [
         "2010 IFINKEY$=\"\"THEN2010ELSECLS:RETURN"
+      ]
+    },
+    {
+      "id": "v03",
+      "label": "Quorum in Space (Games Diskette)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v03/QUORUM.BAS",
+      "listing": "versions/v03/QUORUM.ASC",
+      "playable": true,
+      "note": "Complete disk file QUORUM.BAS (directory size, ordered records, consistent pointers, end marker). Runs under NEWDOS/80 Disk BASIC from the original disk image; the disk's menu starts it, and it can return there. Runtime limited to the startup check.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v03/QUORUM.BAS",
+          "label": "QUORUM.BAS"
+        },
+        {
+          "path": "versions/v03/QUORUM.ASC",
+          "label": "QUORUM.ASC"
+        }
       ],
+      "startupSource": "1 CLS:PRINTTAB(20)\"QUORUM IN SPACE\":PRINT:PRINT\n10 DEFINTM,C,F,N,Y,X,O,K\n20 DIMV(5),M(2),T(2),C(5),F(2)\n30 PRINT\"WELCOME TO ARGYLE 88!!\":PRINT\n40 PRINT\"YOU ARE ABOUT TO JOIN THE ARGYLE 88 PLANETARY COUNCIL.\"\n45 PRINT\"YOUR MISSION IS GAIN WEALTH\"\n50 PRINT\"THERE ARE FOUR OTHER MEMBERS - YOU ARE #5.\"\n60 RANDOM\n70 FORI=1TO5:V(I)=1000*RND(0)+50:NEXT\n80 M(1)=2:M(2)=2:N=0\n90 F(1)=1:F(2)=3:P2=.2:R2=.3\n100 T(1)=V(1)+V(2):T(2)=V(3)+V(4)",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/games-diskette.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "SELECT A LETTER"
+          },
+          {
+            "press": "e"
+          }
+        ]
+      },
+      "running": "Running from the original disk",
       "slug": "basic"
     }
   ],

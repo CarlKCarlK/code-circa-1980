@@ -1,60 +1,32 @@
 {
-  "version": "v02",
-  "capture": "tape22b",
-  "save": 1,
-  "archive_raw": "tapes/recovered/tape22b/best/01-ARGYLE-88.BAS",
-  "archive_listing": "tapes/recovered/tape22b/best/01-ARGYLE-88.ASC",
+  "version": "v03",
+  "disk": "BASIC Programs Games",
+  "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+  "source": "files/QUORUM.BAS",
   "imported_files": [
     {
-      "path": "versions/v02/01-ARGYLE-88.ASC",
-      "archive_path": "tapes/recovered/tape22b/best/01-ARGYLE-88.ASC",
-      "bytes": 4271,
-      "sha256": "a48ce7a04a68df3e50d5b370ac3d6871ed95a93d5e731ab02d1fb75a6d6de1c3"
+      "path": "versions/v03/QUORUM.BAS",
+      "archive_path": "files/QUORUM.BAS",
+      "bytes": 3660,
+      "sha256": "31c5a202a3106038604b3c998f5ea4b43ac1ac590148eff4a5bf74fcf7753114"
     },
     {
-      "path": "versions/v02/01-ARGYLE-88.BAS",
-      "archive_path": "tapes/recovered/tape22b/best/01-ARGYLE-88.BAS",
-      "bytes": 3613,
-      "sha256": "1f4d3730088e788d29d3d54c0a6c5583828144c8aacd5f079f552cf4d182c90a"
+      "path": "versions/v03/QUORUM.ASC",
+      "archive_path": "derived listing",
+      "bytes": 4327,
+      "sha256": "503f00323c001504a38b2356bd811f428791a2a8ed78774fe7b7ff7fd94c6695"
     }
   ],
   "recovery_item": {
-    "format": "BASIC",
-    "sha256": "1f4d3730088e788d29d3d54c0a6c5583828144c8aacd5f079f552cf4d182c90a",
-    "bytes": 3613,
-    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "import_validation": "Exact file hashes; format-specific checks below.",
-    "lines": 130,
+    "format": "BASIC disk file",
+    "sha256": "31c5a202a3106038604b3c998f5ea4b43ac1ac590148eff4a5bf74fcf7753114",
+    "bytes": 3660,
+    "import_date": "2026-11-03",
+    "lines": 131,
     "last": 2010,
-    "pointer_bases": [
-      17125
-    ],
     "normal_end_marker": true,
-    "parsed_bytes": 3611,
-    "source_notice_lines": []
-  },
-  "inventory_row": {
-    "tape": "22",
-    "side": "b",
-    "order": "1",
-    "type": "BASIC",
-    "recovery%": "100",
-    "summary": "ARGYLE 88",
-    "capture": "tape22b",
-    "capture_scope": "unknown",
-    "baud": "500",
-    "platform": "TRS-80 Model I/III BASIC",
-    "status": "validated payload; runtime untested",
-    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
-    "source_start_s": "13.803",
-    "recovered_bytes": "3613",
-    "source_file": "tapes/recovered/tape22b/best/01-ARGYLE-88.ASC",
-    "wav": "tapes/tape22b.wav",
-    "folder": "tapes/recovered/tape22b",
-    "recovery_date": "2026-10-28",
-    "recorder_volume": "",
-    "next_action": "Runtime testing only if requested"
-  },
-  "recovery_inventory": "tapes/recovered/tape22b/inventory.json",
-  "execution_tested": false
+    "memory_base": 27205,
+    "tape_relation": "123/131 lines shared with tapes/recovered/tape22b/best/01-ARGYLE-88.BAS (130 lines)"
+  }
 }
