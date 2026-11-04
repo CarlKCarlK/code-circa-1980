@@ -1,0 +1,80 @@
+{
+  "official_title": "Learning Guessing Game",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "learning_guessing_game_p93",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape10b",
+      "save": 10,
+      "archive_raw": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.BAS",
+      "archive_listing": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/10-LEARNING-GUESSING-GAME.ASC",
+          "archive_path": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.ASC",
+          "bytes": 868,
+          "sha256": "8b3b52bc466d19f0b82522b7b455113f63c0c3bc977d6daeed05de496ec90759"
+        },
+        {
+          "path": "versions/v01/10-LEARNING-GUESSING-GAME.BAS",
+          "archive_path": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.BAS",
+          "bytes": 757,
+          "sha256": "9b968d023540e5b5649a526318f0add7bae2187d54b91a893866b3e8dc94e7bb"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "9b968d023540e5b5649a526318f0add7bae2187d54b91a893866b3e8dc94e7bb",
+        "bytes": 757,
+        "archive_validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 27,
+        "last": 260,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 755,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "10",
+        "side": "b",
+        "order": "10",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "LEARNING GUESSING GAME; 27 lines",
+        "capture": "tape10b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be needed",
+        "status": "validated source; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+        "source_start_s": "491.742",
+        "recovered_bytes": "757",
+        "source_file": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.ASC",
+        "wav": "tapes/tape10b.wav",
+        "folder": "tapes/recovered/tape10b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

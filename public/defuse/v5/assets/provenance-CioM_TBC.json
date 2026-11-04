@@ -1,0 +1,266 @@
+{
+  "official_title": "Gravity Simulation",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Gravity Simulation",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape24a",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape24a/best/12-GRAVITY-SIMULATION-SAVE01.BAS",
+      "archive_listing": "tapes/recovered/tape24a/best/12-GRAVITY-SIMULATION-SAVE01.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/12-GRAVITY-SIMULATION-SAVE01.ASC",
+          "archive_path": "tapes/recovered/tape24a/best/12-GRAVITY-SIMULATION-SAVE01.ASC",
+          "bytes": 1841,
+          "sha256": "177a18d72ff5e6e93cc0d206d4f8a405ce6ed15c12a865cf48b3b2c47e4107a7"
+        },
+        {
+          "path": "versions/v01/12-GRAVITY-SIMULATION-SAVE01.BAS",
+          "archive_path": "tapes/recovered/tape24a/best/12-GRAVITY-SIMULATION-SAVE01.BAS",
+          "bytes": 1577,
+          "sha256": "1922ce71903b8a55b1328f9db82989a540dd21e2670f2173705ad410364111c2"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "1922ce71903b8a55b1328f9db82989a540dd21e2670f2173705ad410364111c2",
+        "bytes": 1577,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 49,
+        "last": 1121,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1575,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "24",
+        "side": "a",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GRAVITY SIMULATION SAVE01",
+        "capture": "tape24a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "442.304",
+        "recovered_bytes": "1577",
+        "source_file": "tapes/recovered/tape24a/best/12-GRAVITY-SIMULATION-SAVE01.ASC",
+        "wav": "tapes/tape24a.wav",
+        "folder": "tapes/recovered/tape24a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape24a",
+      "save": 13,
+      "archive_raw": "tapes/recovered/tape24a/partial/13-GRAVITY-SIMULATION-SAVE02-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape24a/partial/13-GRAVITY-SIMULATION-SAVE02-PREFIX.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-PREFIX.ASC",
+          "archive_path": "tapes/recovered/tape24a/partial/13-GRAVITY-SIMULATION-SAVE02-PREFIX.ASC",
+          "bytes": 9,
+          "sha256": "90221caada939077b021ff3d4364997aee1d6289e14acc139d66f604680500f4"
+        },
+        {
+          "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape24a/partial/13-GRAVITY-SIMULATION-SAVE02-PREFIX.BIN",
+          "bytes": 10,
+          "sha256": "7ff07b6e0905ba3c232372307744fb6a88806311ec066b132d5b36f38708503f"
+        },
+        {
+          "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-RAW.BAS",
+          "archive_path": "tapes/recovered/tape24a/partial/13-GRAVITY-SIMULATION-SAVE02-RAW.BAS",
+          "bytes": 1157,
+          "sha256": "58a539314ff4c4997097d1f4b045accb45d87c5ddb56511c543e509de369e49e"
+        },
+        {
+          "path": "versions/v02/13-GRAVITY-SIMULATION-SAVE02-UNCERTAIN.ASC",
+          "archive_path": "tapes/recovered/tape24a/partial/13-GRAVITY-SIMULATION-SAVE02-UNCERTAIN.ASC",
+          "bytes": 2167,
+          "sha256": "469cb3d54de89aca265b3e9a4852a908778423a660baf2b730904642ee9f98c1"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "7ff07b6e0905ba3c232372307744fb6a88806311ec066b132d5b36f38708503f",
+        "bytes": 10,
+        "archive_validation": "Damaged; untouched valid prefix [0,10); 1 lines; pointer base 17125; cross-channel confirmed [0,10); no synthetic end marker",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "24",
+        "side": "a",
+        "order": "13",
+        "type": "BASIC",
+        "recovery%": "",
+        "summary": "GRAVITY SIMULATION SAVE02",
+        "capture": "tape24a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "damaged; valid prefix only; runtime untested",
+        "validation": "Damaged; untouched valid prefix [0,10); 1 lines; pointer base 17125; cross-channel confirmed [0,10); no synthetic end marker",
+        "source_start_s": "485.207",
+        "recovered_bytes": "1157",
+        "source_file": "tapes/recovered/tape24a/partial/13-GRAVITY-SIMULATION-SAVE02-PREFIX.ASC",
+        "wav": "tapes/tape24a.wav",
+        "folder": "tapes/recovered/tape24a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Better capture may improve damaged stream; see report"
+      },
+      "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape24a",
+      "save": 14,
+      "archive_raw": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.BAS",
+      "archive_listing": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/14-GRAVITY-SIMULATION-SAVE03.ASC",
+          "archive_path": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.ASC",
+          "bytes": 1839,
+          "sha256": "781a0051c1bddaf75547e8c9c1c1614f5bd7ad45df41d4b21045cb722f14631e"
+        },
+        {
+          "path": "versions/v03/14-GRAVITY-SIMULATION-SAVE03.BAS",
+          "archive_path": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.BAS",
+          "bytes": 1577,
+          "sha256": "e979ed78ce14cd92516e8c681e876c5224f966eb63c716866baaf5c3b41aa89f"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "e979ed78ce14cd92516e8c681e876c5224f966eb63c716866baaf5c3b41aa89f",
+        "bytes": 1577,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 49,
+        "last": 1121,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1575,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "24",
+        "side": "a",
+        "order": "14",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GRAVITY SIMULATION SAVE03",
+        "capture": "tape24a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "541.266",
+        "recovered_bytes": "1577",
+        "source_file": "tapes/recovered/tape24a/best/14-GRAVITY-SIMULATION-SAVE03.ASC",
+        "wav": "tapes/tape24a.wav",
+        "folder": "tapes/recovered/tape24a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape24a",
+      "save": 15,
+      "archive_raw": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.BAS",
+      "archive_listing": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v04/15-GRAVITY-SIMULATION-SAVE04.ASC",
+          "archive_path": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.ASC",
+          "bytes": 2345,
+          "sha256": "08d1e440fc2b112b33e5ac866891e9746431fffde385469a04f8fc2e59aa3313"
+        },
+        {
+          "path": "versions/v04/15-GRAVITY-SIMULATION-SAVE04.BAS",
+          "archive_path": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.BAS",
+          "bytes": 1968,
+          "sha256": "e4726d89ba03ce133c6ec668de66b89b671270cbe7963bf7b26304af653e1181"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "e4726d89ba03ce133c6ec668de66b89b671270cbe7963bf7b26304af653e1181",
+        "bytes": 1968,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 58,
+        "last": 3111,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1966,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "24",
+        "side": "a",
+        "order": "15",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "GRAVITY SIMULATION SAVE04",
+        "capture": "tape24a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "592.183",
+        "recovered_bytes": "1968",
+        "source_file": "tapes/recovered/tape24a/best/15-GRAVITY-SIMULATION-SAVE04.ASC",
+        "wav": "tapes/tape24a.wav",
+        "folder": "tapes/recovered/tape24a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "credit_authority": "User, November 3, 2026: assume this program is the user\u2019s."
+}

@@ -1,0 +1,262 @@
+{
+  "official_title": "OUTCH \u2014 screen output routines",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "outch_test_p30; outch_screen_output_p157",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape18a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape18a/best/01-OUTCH-SCREEN-OUTPUT.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/01-OUTCH-SCREEN-OUTPUT.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-OUTCH-SCREEN-OUTPUT.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/01-OUTCH-SCREEN-OUTPUT.ASM",
+          "bytes": 1001,
+          "sha256": "5cafb887984dad6d865e17795110728d283443632e30ff7220cbc6fa3a8ed103"
+        },
+        {
+          "path": "versions/v01/01-OUTCH-SCREEN-OUTPUT.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/01-OUTCH-SCREEN-OUTPUT.TXT",
+          "bytes": 993,
+          "sha256": "648716cb3b6e05be118ca01e22de0468b5b71b91e994ab0d784981e774941678"
+        },
+        {
+          "path": "versions/v01/01-OUTCH-SCREEN-OUTPUT.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/01-OUTCH-SCREEN-OUTPUT.Z80",
+          "bytes": 747,
+          "sha256": "bd981fbb0c6f2ac80fb59f04f13288598cbec38093ab5f85c56423827bbe6987"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "5cafb887984dad6d865e17795110728d283443632e30ff7220cbc6fa3a8ed103",
+        "bytes": 1001,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "1",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "OUTCH SCREEN OUTPUT",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "23.101",
+        "recovered_bytes": "1001",
+        "source_file": "tapes/recovered/tape18a/best/01-OUTCH-SCREEN-OUTPUT.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape18a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v02/02-OUTCH-TEST-V1.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.ASM",
+          "bytes": 1103,
+          "sha256": "edb92f1e32bead01ba59e41a0c2534a5ca007d24d5bda366aed821f8e88c7b46"
+        },
+        {
+          "path": "versions/v02/02-OUTCH-TEST-V1.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.TXT",
+          "bytes": 1095,
+          "sha256": "9fc09cad760e7661ccc39ea301d731571185233df3a5e855c80c9e5753b29099"
+        },
+        {
+          "path": "versions/v02/02-OUTCH-TEST-V1.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.Z80",
+          "bytes": 813,
+          "sha256": "d250ce5cc019140b47350ed7c41ca92394a0514a339425ed4ee00655a183eb40"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "edb92f1e32bead01ba59e41a0c2534a5ca007d24d5bda366aed821f8e88c7b46",
+        "bytes": 1103,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "2",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "OUTCH TEST V1",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "55.118",
+        "recovered_bytes": "1103",
+        "source_file": "tapes/recovered/tape18a/best/02-OUTCH-TEST-V1.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape18a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.ASM",
+      "archive_listing": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v03/03-OUTCH-TEST-V2.ASM",
+          "archive_path": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.ASM",
+          "bytes": 1090,
+          "sha256": "a1818ce24e1cb777c06f2822a7dd694f42e631917e44d4590f74d9db6376e484"
+        },
+        {
+          "path": "versions/v03/03-OUTCH-TEST-V2.TXT",
+          "archive_path": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.TXT",
+          "bytes": 1082,
+          "sha256": "0b1e908bf44ae61d89c4baf160dde00f5adba4fa51f348adb0d110cdb5f58de5"
+        },
+        {
+          "path": "versions/v03/03-OUTCH-TEST-V2.Z80",
+          "archive_path": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.Z80",
+          "bytes": 806,
+          "sha256": "f830e4bbeebd3bffeb67bcffaf6aa6cfc501f7f3907fdafc6d932f94fc23b35e"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "a1818ce24e1cb777c06f2822a7dd694f42e631917e44d4590f74d9db6376e484",
+        "bytes": 1090,
+        "archive_validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "3",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "100",
+        "summary": "OUTCH TEST V2",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "validated payload; runtime untested",
+        "validation": "Complete EDTASM: D3/six-byte name; five high-bit decimal digits, printable source/tabs and CR per record; final 1A at exact EOF; exact left/right bytes",
+        "source_start_s": "79.162",
+        "recovered_bytes": "1090",
+        "source_file": "tapes/recovered/tape18a/best/03-OUTCH-TEST-V2.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Assemble or execution-test only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v04",
+      "capture": "tape18a",
+      "save": 4,
+      "archive_raw": "tapes/recovered/tape18a/partial/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.BIN",
+      "archive_listing": "tapes/recovered/tape18a/partial/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.TXT",
+      "imported_files": [
+        {
+          "path": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.BIN",
+          "archive_path": "tapes/recovered/tape18a/partial/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.BIN",
+          "bytes": 633,
+          "sha256": "7f6fbaa2607a510ce929e38c74f7763327ee6ad0834785cd43c0d3922a13533c"
+        },
+        {
+          "path": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.TXT",
+          "archive_path": "tapes/recovered/tape18a/partial/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.TXT",
+          "bytes": 626,
+          "sha256": "7eeb9b35a53fc5ccf2f778c21f85a0bcfe1bb5adf6bddba1b0a3738e0c8feeaa"
+        },
+        {
+          "path": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-RAW.ASM",
+          "archive_path": "tapes/recovered/tape18a/partial/04-OUTCH-SCREEN-OUTPUT-DAMAGED-RAW.ASM",
+          "bytes": 1005,
+          "sha256": "dbdcbc9a3a0585c42dbde78f6917c09320a9fe9ac4a58775ffbe94e288935d2c"
+        },
+        {
+          "path": "versions/v04/04-OUTCH-SCREEN-OUTPUT-DAMAGED-UNCERTAIN.TXT",
+          "archive_path": "tapes/recovered/tape18a/partial/04-OUTCH-SCREEN-OUTPUT-DAMAGED-UNCERTAIN.TXT",
+          "bytes": 2106,
+          "sha256": "05f9a372dfb6f45481f6db365eb6a191e85d9b0d0174324c6d7e2d1e0e253c9b"
+        }
+      ],
+      "recovery_item": {
+        "format": "assembly source (EDTASM)",
+        "sha256": "7f6fbaa2607a510ce929e38c74f7763327ee6ad0834785cd43c0d3922a13533c",
+        "bytes": 633,
+        "archive_validation": "Untouched 633-byte prefix: 22 complete EDTASM records with exact left/right agreement; no added end marker",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "18",
+        "side": "a",
+        "order": "4",
+        "type": "assembly source (EDTASM)",
+        "recovery%": "",
+        "summary": "OUTCH SCREEN OUTPUT DAMAGED",
+        "capture": "tape18a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Z80 / EDTASM",
+        "status": "damaged",
+        "validation": "Untouched 633-byte prefix: 22 complete EDTASM records with exact left/right agreement; no added end marker",
+        "source_start_s": "105.061",
+        "recovered_bytes": "633",
+        "source_file": "tapes/recovered/tape18a/partial/04-OUTCH-SCREEN-OUTPUT-DAMAGED-PREFIX.TXT",
+        "wav": "tapes/tape18a.wav",
+        "folder": "tapes/recovered/tape18a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Retain candidates; stronger audio needed to resolve remainder"
+      },
+      "recovery_inventory": "tapes/recovered/tape18a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

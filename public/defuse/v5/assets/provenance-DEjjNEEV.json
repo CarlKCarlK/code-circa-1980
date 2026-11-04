@@ -1,0 +1,80 @@
+{
+  "official_title": "Contest Evaluation Methods",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "contest_evaluation_methods_p132",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape15b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape15b/best/01-CONTEST-EVALUATION-METHODS.BAS",
+      "archive_listing": "tapes/recovered/tape15b/best/01-CONTEST-EVALUATION-METHODS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-CONTEST-EVALUATION-METHODS.ASC",
+          "archive_path": "tapes/recovered/tape15b/best/01-CONTEST-EVALUATION-METHODS.ASC",
+          "bytes": 1091,
+          "sha256": "1495c317aa334a1a946d066971b0cfcc29c1cace974c09427211705d09d81adf"
+        },
+        {
+          "path": "versions/v01/01-CONTEST-EVALUATION-METHODS.BAS",
+          "archive_path": "tapes/recovered/tape15b/best/01-CONTEST-EVALUATION-METHODS.BAS",
+          "bytes": 943,
+          "sha256": "038c5ab610a918cbbabadcdeca1d57d832a76e6731aba9dde306dae313782b08"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "038c5ab610a918cbbabadcdeca1d57d832a76e6731aba9dde306dae313782b08",
+        "bytes": 943,
+        "archive_validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 46,
+        "last": 360,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 941,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "15",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "CONTEST EVALUATION METHODS; 46 lines",
+        "capture": "tape15b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, exact length and end marker; exact independent left/right payload match",
+        "source_start_s": "10.700",
+        "recovered_bytes": "943",
+        "source_file": "tapes/recovered/tape15b/best/01-CONTEST-EVALUATION-METHODS.ASC",
+        "wav": "tapes/tape15b.wav",
+        "folder": "tapes/recovered/tape15b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape15b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

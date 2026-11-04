@@ -1,0 +1,176 @@
+{
+  "official_title": "Olympics",
+  "title_authority": "User request, 2026-11-02.",
+  "import_date": "2026-11-02",
+  "order_inferred": true,
+  "order_evidence": "Inferred: tape3apartial save 1 and tape3a save 1 are identical repeated captures of the earlier form; tape3a save 2 adds the 1980 copyright, revised event names and further checks. Capture order alone does not date the program.",
+  "execution_testing": "Recovery validation is separate from website execution tests; see VERIFICATION.md.",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape3apartial",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape3apartial/best/OLYMPICS.BAS",
+      "archive_listing": "tapes/recovered/tape3apartial/best/OLYMPICS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/OLYMPICS.BAS",
+          "archive_path": "tapes/recovered/tape3apartial/best/OLYMPICS.BAS",
+          "bytes": 7134,
+          "sha256": "fa2f8a759185f96b386f4da782e7951d707d67f6c082680d09be2cb45d8a4052"
+        },
+        {
+          "path": "versions/v01/OLYMPICS.ASC",
+          "archive_path": "tapes/recovered/tape3apartial/best/OLYMPICS.ASC",
+          "bytes": 8856,
+          "sha256": "3e6aa48a9ccc5c9a8bbbedcc78ea7b82afcdb6a9c72ed60899a10d5f2a2453df"
+        }
+      ],
+      "recovery_item": {
+        "lines": 229,
+        "last": 2290,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "fa2f8a759185f96b386f4da782e7951d707d67f6c082680d09be2cb45d8a4052"
+      },
+      "inventory_row": {
+        "tape": "3",
+        "side": "a",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "OLYMPICS; sports/coaching game; 229 lines",
+        "capture": "tape3apartial",
+        "capture_scope": "partial",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload",
+        "validation": "Filtered left and normalized right yield identical 7134 bytes; normal BASIC end marker; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "7134",
+        "source_file": "tapes/recovered/tape3apartial/best/OLYMPICS.ASC",
+        "wav": "tapes/tape3apartial.wav",
+        "folder": "tapes/recovered/tape3apartial/best",
+        "recovery_date": "2026-10-25",
+        "recorder_volume": "5/10",
+        "next_action": "Record full side; execution-test"
+      },
+      "recovery_inventory": "tapes/recovered/tape3apartial/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape3a",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape3a/best/01-OLYMPICS.BAS",
+      "archive_listing": "tapes/recovered/tape3a/best/01-OLYMPICS.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/01-OLYMPICS.BAS",
+          "archive_path": "tapes/recovered/tape3a/best/01-OLYMPICS.BAS",
+          "bytes": 7134,
+          "sha256": "fa2f8a759185f96b386f4da782e7951d707d67f6c082680d09be2cb45d8a4052"
+        },
+        {
+          "path": "versions/v02/01-OLYMPICS.ASC",
+          "archive_path": "tapes/recovered/tape3a/best/01-OLYMPICS.ASC",
+          "bytes": 8856,
+          "sha256": "3e6aa48a9ccc5c9a8bbbedcc78ea7b82afcdb6a9c72ed60899a10d5f2a2453df"
+        }
+      ],
+      "recovery_item": {
+        "lines": 229,
+        "last": 2290,
+        "pointer_base": 22204,
+        "normal_end_marker": true,
+        "sha256": "fa2f8a759185f96b386f4da782e7951d707d67f6c082680d09be2cb45d8a4052"
+      },
+      "inventory_row": {
+        "tape": "3",
+        "side": "a",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "OLYMPICS; 229 lines",
+        "capture": "tape3a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload",
+        "validation": "229 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, left-hp1600; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "7134",
+        "source_file": "tapes/recovered/tape3a/best/01-OLYMPICS.ASC",
+        "wav": "tapes/tape3a.wav",
+        "folder": "tapes/recovered/tape3a/best",
+        "recovery_date": "2026-10-25",
+        "recorder_volume": "5/10",
+        "next_action": "Execution-test"
+      },
+      "recovery_inventory": "tapes/recovered/tape3a/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v03",
+      "capture": "tape3a",
+      "save": 2,
+      "archive_raw": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.BAS",
+      "archive_listing": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v03/02-OLYMPICS-1980-CARL-KADIE.BAS",
+          "archive_path": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.BAS",
+          "bytes": 7485,
+          "sha256": "364c5a0ef5e8e95d18cf93310aa2f8e1accdfa6fcab86dea8d58250686a7df23"
+        },
+        {
+          "path": "versions/v03/02-OLYMPICS-1980-CARL-KADIE.ASC",
+          "archive_path": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.ASC",
+          "bytes": 9258,
+          "sha256": "419414424a049a44c967ea442087ac7e58eae411db9d5399826ad02a2087ecd9"
+        }
+      ],
+      "recovery_item": {
+        "lines": 232,
+        "last": 2290,
+        "pointer_base": 17125,
+        "normal_end_marker": true,
+        "sha256": "364c5a0ef5e8e95d18cf93310aa2f8e1accdfa6fcab86dea8d58250686a7df23"
+      },
+      "inventory_row": {
+        "tape": "3",
+        "side": "a",
+        "order": "2",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "OLYMPICS 1980 CARL KADIE; 232 lines",
+        "capture": "tape3a",
+        "capture_scope": "full",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload",
+        "validation": "232 consistent BASIC line pointers; normal end marker; byte-identical with left-hp800, right-boosted, left-hp1600; not execution-tested",
+        "source_start_s": "",
+        "recovered_bytes": "7485",
+        "source_file": "tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.ASC",
+        "wav": "tapes/tape3a.wav",
+        "folder": "tapes/recovered/tape3a/best",
+        "recovery_date": "2026-10-25",
+        "recorder_volume": "5/10",
+        "next_action": "Execution-test"
+      },
+      "recovery_inventory": "tapes/recovered/tape3a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "dating": {
+    "direct_date": "5 ' OLYMPICS  -    (C) 1980   CARL KADIE",
+    "context": "Olympics has a direct 1980 copyright. X-wing shares tape23b with Chemistry Balancer II, whose line 10 says COPYRIGHT 1981 C. KADIE. Speech has no confirmed date in these listings. These do not establish save dates."
+  },
+  "also_on_disk": {
+    "disk": "BASIC Programs Games",
+    "file": "OLYMPICS.BAS",
+    "sha256": "d42b9673e645978d4f00306286f989d1eea9cdcf1d53f38ad162c41b3234a1a9",
+    "relation": "all lines identical to tapes/recovered/tape3a/best/02-OLYMPICS-1980-CARL-KADIE.BAS"
+  }
+}

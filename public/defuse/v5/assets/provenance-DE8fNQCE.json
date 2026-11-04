@@ -1,0 +1,80 @@
+{
+  "official_title": "Notebook Outline Study Aid",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "notebook_outline_study_aid_p111",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape12b",
+      "save": 1,
+      "archive_raw": "tapes/recovered/tape12b/best/01-NOTEBOOK-OUTLINE-STUDY-AID.BAS",
+      "archive_listing": "tapes/recovered/tape12b/best/01-NOTEBOOK-OUTLINE-STUDY-AID.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.ASC",
+          "archive_path": "tapes/recovered/tape12b/best/01-NOTEBOOK-OUTLINE-STUDY-AID.ASC",
+          "bytes": 1078,
+          "sha256": "e2f0833700eee3a0a4e17edd501faba6528bf49b4b2e54fd91354b7611aba65e"
+        },
+        {
+          "path": "versions/v01/01-NOTEBOOK-OUTLINE-STUDY-AID.BAS",
+          "archive_path": "tapes/recovered/tape12b/best/01-NOTEBOOK-OUTLINE-STUDY-AID.BAS",
+          "bytes": 935,
+          "sha256": "126dd143a6bd3be523352817b44e5180e2c51d491483f933b597fdee6de8ed4b"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "126dd143a6bd3be523352817b44e5180e2c51d491483f933b597fdee6de8ed4b",
+        "bytes": 935,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 18,
+        "last": 32000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 933,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "12",
+        "side": "b",
+        "order": "1",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "NOTEBOOK OUTLINE STUDY AID; 18 lines",
+        "capture": "tape12b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact match across original and both-channel variants; runtime untested",
+        "source_start_s": "22.603",
+        "recovered_bytes": "935",
+        "source_file": "tapes/recovered/tape12b/best/01-NOTEBOOK-OUTLINE-STUDY-AID.ASC",
+        "wav": "tapes/tape12b.wav",
+        "folder": "tapes/recovered/tape12b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape12b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

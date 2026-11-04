@@ -1,0 +1,1 @@
+Damaged BASIC test recording. No complete BASIC line has validated across the channels. Readable text includes TEST ONE; other bytes and line/pointer fields are corrupted. The raw payload and an UNCERTAIN listing are preserved alongside this note. No source bytes repaired.

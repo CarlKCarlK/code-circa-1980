@@ -1,0 +1,80 @@
+{
+  "official_title": "Interdependent Rods Demo",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "interdependent_rods_demo_p117",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape13a",
+      "save": 3,
+      "archive_raw": "tapes/recovered/tape13a/best/03-INTERDEPENDENT-RODS-DEMO.BAS",
+      "archive_listing": "tapes/recovered/tape13a/best/03-INTERDEPENDENT-RODS-DEMO.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.ASC",
+          "archive_path": "tapes/recovered/tape13a/best/03-INTERDEPENDENT-RODS-DEMO.ASC",
+          "bytes": 575,
+          "sha256": "18ef613b4aab3b0366cdf4ef42f202c0e09b3d06c13af214478051813a08c963"
+        },
+        {
+          "path": "versions/v01/03-INTERDEPENDENT-RODS-DEMO.BAS",
+          "archive_path": "tapes/recovered/tape13a/best/03-INTERDEPENDENT-RODS-DEMO.BAS",
+          "bytes": 481,
+          "sha256": "3ff75363e4128886dd29c0dcb1a763715ff194e8808ae3bd4dd0019ed0e4384a"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "3ff75363e4128886dd29c0dcb1a763715ff194e8808ae3bd4dd0019ed0e4384a",
+        "bytes": 481,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 21,
+        "last": 1010,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 479,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "13",
+        "side": "a",
+        "order": "3",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "INTERDEPENDENT RODS DEMO; 21 lines",
+        "capture": "tape13a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; exact left/right timing decode match; runtime untested",
+        "source_start_s": "168.499",
+        "recovered_bytes": "481",
+        "source_file": "tapes/recovered/tape13a/best/03-INTERDEPENDENT-RODS-DEMO.ASC",
+        "wav": "tapes/tape13a.wav",
+        "folder": "tapes/recovered/tape13a/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime"
+      },
+      "recovery_inventory": "tapes/recovered/tape13a/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

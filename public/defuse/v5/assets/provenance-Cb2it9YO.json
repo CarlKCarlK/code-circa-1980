@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape6a",
+  "save": 1,
+  "archive_raw": "tapes/recovered/tape6a/best/01-BINOMIAL-COEFFICIENTS.BAS",
+  "archive_listing": "tapes/recovered/tape6a/best/01-BINOMIAL-COEFFICIENTS.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/01-BINOMIAL-COEFFICIENTS.ASC",
+      "archive_path": "tapes/recovered/tape6a/best/01-BINOMIAL-COEFFICIENTS.ASC",
+      "bytes": 733,
+      "sha256": "433ebcf6625326a9ef6403db05fd00b2fb966dd7e04b04457cf0897f399702bc"
+    },
+    {
+      "path": "versions/v01/01-BINOMIAL-COEFFICIENTS.BAS",
+      "archive_path": "tapes/recovered/tape6a/best/01-BINOMIAL-COEFFICIENTS.BAS",
+      "bytes": 574,
+      "sha256": "067db9e6100b4dcb34c10a440481b38f3df0bd5f0fba0f012dae5ef2f9aca078"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "067db9e6100b4dcb34c10a440481b38f3df0bd5f0fba0f012dae5ef2f9aca078",
+    "bytes": 574,
+    "archive_validation": "19 consistent pointers; normal end marker; matches 6 decoding variants; not execution-tested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 19,
+    "last": 1000,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 572,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "6",
+    "side": "a",
+    "order": "1",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "BINOMIAL COEFFICIENTS; 19 lines",
+    "capture": "tape6a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "19 consistent pointers; normal end marker; matches 6 decoding variants; not execution-tested",
+    "source_start_s": "",
+    "recovered_bytes": "574",
+    "source_file": "tapes/recovered/tape6a/best/01-BINOMIAL-COEFFICIENTS.ASC",
+    "wav": "tapes/tape6a.wav",
+    "folder": "tapes/recovered/tape6a/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test"
+  },
+  "recovery_inventory": "tapes/recovered/tape6a/best/inventory.json",
+  "execution_tested": false
+}

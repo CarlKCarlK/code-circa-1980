@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape10b",
+  "save": 13,
+  "archive_raw": "tapes/recovered/tape10b/best/13-TWO-PLAYER-GRAPHICS-DEMO.BAS",
+  "archive_listing": "tapes/recovered/tape10b/best/13-TWO-PLAYER-GRAPHICS-DEMO.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/13-TWO-PLAYER-GRAPHICS-DEMO.ASC",
+      "archive_path": "tapes/recovered/tape10b/best/13-TWO-PLAYER-GRAPHICS-DEMO.ASC",
+      "bytes": 721,
+      "sha256": "22d62a999876c9745321fd2043d74f0a157a8db6bef49b3ab5e57bd3084b674d"
+    },
+    {
+      "path": "versions/v01/13-TWO-PLAYER-GRAPHICS-DEMO.BAS",
+      "archive_path": "tapes/recovered/tape10b/best/13-TWO-PLAYER-GRAPHICS-DEMO.BAS",
+      "bytes": 590,
+      "sha256": "291419aa558095c6d32e0e43ed1bc1cd1fcb5861b7c2272496ec6c9d5a69e317"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "291419aa558095c6d32e0e43ed1bc1cd1fcb5861b7c2272496ec6c9d5a69e317",
+    "bytes": 590,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 17,
+    "last": 1000,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 588,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "10",
+    "side": "b",
+    "order": "13",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "TWO PLAYER GRAPHICS DEMO; 17 lines",
+    "capture": "tape10b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 BASIC; extensions may be needed",
+    "status": "validated source; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+    "source_start_s": "592.984",
+    "recovered_bytes": "590",
+    "source_file": "tapes/recovered/tape10b/best/13-TWO-PLAYER-GRAPHICS-DEMO.ASC",
+    "wav": "tapes/tape10b.wav",
+    "folder": "tapes/recovered/tape10b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
+  "execution_tested": false
+}

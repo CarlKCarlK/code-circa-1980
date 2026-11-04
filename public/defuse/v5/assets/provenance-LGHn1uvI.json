@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape24a",
+  "save": 18,
+  "archive_raw": "tapes/recovered/tape24a/best/18-OPAMP-CIRCUIT-SIMULATION.BAS",
+  "archive_listing": "tapes/recovered/tape24a/best/18-OPAMP-CIRCUIT-SIMULATION.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/18-OPAMP-CIRCUIT-SIMULATION.ASC",
+      "archive_path": "tapes/recovered/tape24a/best/18-OPAMP-CIRCUIT-SIMULATION.ASC",
+      "bytes": 533,
+      "sha256": "c1929e96f12c29d7c232b333228a2a252ba53debdf138c0b905de8f05817887f"
+    },
+    {
+      "path": "versions/v01/18-OPAMP-CIRCUIT-SIMULATION.BAS",
+      "archive_path": "tapes/recovered/tape24a/best/18-OPAMP-CIRCUIT-SIMULATION.BAS",
+      "bytes": 495,
+      "sha256": "430fdd2b866f0b3b7c77e8f7c5cb44017c37e45b617e7575a69db983d157d6cf"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "430fdd2b866f0b3b7c77e8f7c5cb44017c37e45b617e7575a69db983d157d6cf",
+    "bytes": 495,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 23,
+    "last": 150,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 493,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "24",
+    "side": "a",
+    "order": "18",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "OPAMP CIRCUIT SIMULATION",
+    "capture": "tape24a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "689.117",
+    "recovered_bytes": "495",
+    "source_file": "tapes/recovered/tape24a/best/18-OPAMP-CIRCUIT-SIMULATION.ASC",
+    "wav": "tapes/tape24a.wav",
+    "folder": "tapes/recovered/tape24a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+  "execution_tested": false
+}

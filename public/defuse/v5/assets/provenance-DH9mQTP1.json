@@ -1,0 +1,80 @@
+{
+  "official_title": "HP-41C Dispatch Draft",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "hp41c_dispatch_draft_p175",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape19b",
+      "save": 11,
+      "archive_raw": "tapes/recovered/tape19b/best/11-HP41C-DISPATCH-DRAFT.BAS",
+      "archive_listing": "tapes/recovered/tape19b/best/11-HP41C-DISPATCH-DRAFT.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/11-HP41C-DISPATCH-DRAFT.ASC",
+          "archive_path": "tapes/recovered/tape19b/best/11-HP41C-DISPATCH-DRAFT.ASC",
+          "bytes": 959,
+          "sha256": "4a03467b62153d9c8a4e1968f2cf00c3288d3e0bbb999f8d8d16a9446cb2930a"
+        },
+        {
+          "path": "versions/v01/11-HP41C-DISPATCH-DRAFT.BAS",
+          "archive_path": "tapes/recovered/tape19b/best/11-HP41C-DISPATCH-DRAFT.BAS",
+          "bytes": 908,
+          "sha256": "1d9ca07c290a3e33f7ba72d4c63316a01960edeeab593624833e35425e260a22"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "1d9ca07c290a3e33f7ba72d4c63316a01960edeeab593624833e35425e260a22",
+        "bytes": 908,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 10,
+        "last": 90,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 906,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "19",
+        "side": "b",
+        "order": "11",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "HP41C DISPATCH DRAFT",
+        "capture": "tape19b",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "340.420",
+        "recovered_bytes": "908",
+        "source_file": "tapes/recovered/tape19b/best/11-HP41C-DISPATCH-DRAFT.ASC",
+        "wav": "tapes/tape19b.wav",
+        "folder": "tapes/recovered/tape19b",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape19b/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

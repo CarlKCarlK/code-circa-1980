@@ -1,0 +1,140 @@
+{
+  "official_title": "Triangle Solver",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "triangle_solver_p44",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape11b",
+      "save": 5,
+      "archive_raw": "tapes/recovered/tape11b/best/05-TRIANGLE-SOLVER.BAS",
+      "archive_listing": "tapes/recovered/tape11b/best/05-TRIANGLE-SOLVER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/05-TRIANGLE-SOLVER.ASC",
+          "archive_path": "tapes/recovered/tape11b/best/05-TRIANGLE-SOLVER.ASC",
+          "bytes": 1991,
+          "sha256": "0180b3b05fec62efceec35dc010ed7106dc929cc20b8bba79c07693cd6fdbea5"
+        },
+        {
+          "path": "versions/v01/05-TRIANGLE-SOLVER.BAS",
+          "archive_path": "tapes/recovered/tape11b/best/05-TRIANGLE-SOLVER.BAS",
+          "bytes": 1713,
+          "sha256": "2a3d554d90bf3e4748590f7832b98875c3d91b4e040e026838adcc8a9d983fc3"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "2a3d554d90bf3e4748590f7832b98875c3d91b4e040e026838adcc8a9d983fc3",
+        "bytes": 1713,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 58,
+        "last": 4000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1711,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "b",
+        "order": "5",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TRIANGLE SOLVER; 58 lines",
+        "capture": "tape11b",
+        "capture_scope": "possible skipped program (tangled tape)",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be required",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "source_start_s": "89.703",
+        "recovered_bytes": "1713",
+        "source_file": "tapes/recovered/tape11b/best/05-TRIANGLE-SOLVER.ASC",
+        "wav": "tapes/tape11b.wav",
+        "folder": "tapes/recovered/tape11b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime; capture may omit another program"
+      },
+      "recovery_inventory": "tapes/recovered/tape11b/best/inventory.json",
+      "execution_tested": false
+    },
+    {
+      "version": "v02",
+      "capture": "tape11b",
+      "save": 6,
+      "archive_raw": "tapes/recovered/tape11b/best/06-TRIANGLE-SOLVER-V2.BAS",
+      "archive_listing": "tapes/recovered/tape11b/best/06-TRIANGLE-SOLVER-V2.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v02/06-TRIANGLE-SOLVER-V2.ASC",
+          "archive_path": "tapes/recovered/tape11b/best/06-TRIANGLE-SOLVER-V2.ASC",
+          "bytes": 1982,
+          "sha256": "6d89ab4f7e318cf2abb5dfab64922111ef856dd4174c5b3d0b2c1fa1f3ee57cd"
+        },
+        {
+          "path": "versions/v02/06-TRIANGLE-SOLVER-V2.BAS",
+          "archive_path": "tapes/recovered/tape11b/best/06-TRIANGLE-SOLVER-V2.BAS",
+          "bytes": 1705,
+          "sha256": "a46b99415562e3cf5a551fc053e36362326d52a55b67f7414ac61ee9ccf9e5f3"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "a46b99415562e3cf5a551fc053e36362326d52a55b67f7414ac61ee9ccf9e5f3",
+        "bytes": 1705,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 58,
+        "last": 4000,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 1703,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "b",
+        "order": "6",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "TRIANGLE SOLVER V2; 58 lines",
+        "capture": "tape11b",
+        "capture_scope": "possible skipped program (tangled tape)",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be required",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "source_start_s": "128.222",
+        "recovered_bytes": "1705",
+        "source_file": "tapes/recovered/tape11b/best/06-TRIANGLE-SOLVER-V2.ASC",
+        "wav": "tapes/tape11b.wav",
+        "folder": "tapes/recovered/tape11b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime; capture may omit another program"
+      },
+      "recovery_inventory": "tapes/recovered/tape11b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

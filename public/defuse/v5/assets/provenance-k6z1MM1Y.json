@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape9b",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape9b/best/10-ESP-TESTER.BAS",
+  "archive_listing": "tapes/recovered/tape9b/best/10-ESP-TESTER.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/10-ESP-TESTER.ASC",
+      "archive_path": "tapes/recovered/tape9b/best/10-ESP-TESTER.ASC",
+      "bytes": 1213,
+      "sha256": "a5aefc1373477fd01a80146c910c1d8b78f2a85640d61f2e3f87f357895388c8"
+    },
+    {
+      "path": "versions/v01/10-ESP-TESTER.BAS",
+      "archive_path": "tapes/recovered/tape9b/best/10-ESP-TESTER.BAS",
+      "bytes": 974,
+      "sha256": "8201419cad613a91f782b7b3aa15266eef78a1788d593b7e61414e226cc93666"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "8201419cad613a91f782b7b3aa15266eef78a1788d593b7e61414e226cc93666",
+    "bytes": 974,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 27,
+    "last": 270,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 972,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "9",
+    "side": "b",
+    "order": "10",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "ESP TESTER; 27 lines",
+    "capture": "tape9b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker, byte-identical both-channel recoveries; runtime untested",
+    "source_start_s": "279.585",
+    "recovered_bytes": "974",
+    "source_file": "tapes/recovered/tape9b/best/10-ESP-TESTER.ASC",
+    "wav": "tapes/tape9b.wav",
+    "folder": "tapes/recovered/tape9b/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible TRS-80 screen/memory support; original source may contain mistakes"
+  },
+  "recovery_inventory": "tapes/recovered/tape9b/best/inventory.json",
+  "execution_tested": false
+}

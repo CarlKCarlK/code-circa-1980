@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape10b",
+  "save": 10,
+  "archive_raw": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.BAS",
+  "archive_listing": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/10-LEARNING-GUESSING-GAME.ASC",
+      "archive_path": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.ASC",
+      "bytes": 868,
+      "sha256": "8b3b52bc466d19f0b82522b7b455113f63c0c3bc977d6daeed05de496ec90759"
+    },
+    {
+      "path": "versions/v01/10-LEARNING-GUESSING-GAME.BAS",
+      "archive_path": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.BAS",
+      "bytes": 757,
+      "sha256": "9b968d023540e5b5649a526318f0add7bae2187d54b91a893866b3e8dc94e7bb"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "9b968d023540e5b5649a526318f0add7bae2187d54b91a893866b3e8dc94e7bb",
+    "bytes": 757,
+    "archive_validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 27,
+    "last": 260,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 755,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "10",
+    "side": "b",
+    "order": "10",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "LEARNING GUESSING GAME; 27 lines",
+    "capture": "tape10b",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 BASIC; extensions may be needed",
+    "status": "validated source; runtime untested",
+    "validation": "Ordered lines, consistent pointers, normal end marker; matching variants/repeated saves; runtime untested",
+    "source_start_s": "491.742",
+    "recovered_bytes": "757",
+    "source_file": "tapes/recovered/tape10b/best/10-LEARNING-GUESSING-GAME.ASC",
+    "wav": "tapes/tape10b.wav",
+    "folder": "tapes/recovered/tape10b/best",
+    "recovery_date": "2026-10-27",
+    "recorder_volume": "",
+    "next_action": "Execution-test with compatible runtime"
+  },
+  "recovery_inventory": "tapes/recovered/tape10b/best/inventory.json",
+  "execution_tested": false
+}

@@ -1,0 +1,32 @@
+{
+  "version": "v02",
+  "disk": "BASIC Programs Games",
+  "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+  "source": "files/BLOCKRB.BAS",
+  "imported_files": [
+    {
+      "path": "versions/v02/BLOCKRB.BAS",
+      "archive_path": "files/BLOCKRB.BAS",
+      "bytes": 1886,
+      "sha256": "9f59764f203e06e5b9d4d5a92f85a93384900cf70f9a739da52d2e4e69fd0620"
+    },
+    {
+      "path": "versions/v02/BLOCKRB.ASC",
+      "archive_path": "derived listing",
+      "bytes": 2246,
+      "sha256": "7b79826649031a28576b72ecdbde1ad9667b2cbb44b7d63cc7085ab90d2af775"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC disk file",
+    "sha256": "9f59764f203e06e5b9d4d5a92f85a93384900cf70f9a739da52d2e4e69fd0620",
+    "bytes": 1886,
+    "import_date": "2026-11-03",
+    "lines": 41,
+    "last": 1010,
+    "normal_end_marker": true,
+    "memory_base": 27205,
+    "tape_relation": "37/41 lines shared with tapes/recovered/tape15b/best/03-TWO-PLAYER-TRAIL-GAME.BAS (41 lines)"
+  }
+}
