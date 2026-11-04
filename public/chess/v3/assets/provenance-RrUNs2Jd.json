@@ -1,0 +1,60 @@
+{
+  "version": "v02",
+  "capture": "tape21a",
+  "save": 4,
+  "archive_raw": "tapes/recovered/tape21a/best/04-EXILES-CONSTANT-READER-COMPARISON.BAS",
+  "archive_listing": "tapes/recovered/tape21a/best/04-EXILES-CONSTANT-READER-COMPARISON.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v02/04-EXILES-CONSTANT-READER-COMPARISON.ASC",
+      "archive_path": "tapes/recovered/tape21a/best/04-EXILES-CONSTANT-READER-COMPARISON.ASC",
+      "bytes": 1276,
+      "sha256": "cceabb1102b7aeb0de3e52619c6c668d8fd05b3c6ade0ddcff4741043d3672ab"
+    },
+    {
+      "path": "versions/v02/04-EXILES-CONSTANT-READER-COMPARISON.BAS",
+      "archive_path": "tapes/recovered/tape21a/best/04-EXILES-CONSTANT-READER-COMPARISON.BAS",
+      "bytes": 1259,
+      "sha256": "cda7d6fe6271654a90436b83ac6e37de3c120c4213cfc71f0381ee33a83ffaf0"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "cda7d6fe6271654a90436b83ac6e37de3c120c4213cfc71f0381ee33a83ffaf0",
+    "bytes": 1259,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 11,
+    "last": 110,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 1257,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "21",
+    "side": "a",
+    "order": "4",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "EXILES CONSTANT READER COMPARISON",
+    "capture": "tape21a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "97.977",
+    "recovered_bytes": "1259",
+    "source_file": "tapes/recovered/tape21a/best/04-EXILES-CONSTANT-READER-COMPARISON.ASC",
+    "wav": "tapes/tape21a.wav",
+    "folder": "tapes/recovered/tape21a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape21a/inventory.json",
+  "execution_tested": false
+}

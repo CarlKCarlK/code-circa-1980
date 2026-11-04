@@ -1,0 +1,93 @@
+{
+  "official_title": "Three Dimensional Tic Tac Toe",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "Three Dimensional Tic Tac Toe",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape25a",
+      "save": 17,
+      "archive_raw": "tapes/recovered/tape25a/best/17-THREE-DIMENSIONAL-TIC-TAC-TOE.BAS",
+      "archive_listing": "tapes/recovered/tape25a/best/17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC",
+          "archive_path": "tapes/recovered/tape25a/best/17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC",
+          "bytes": 6732,
+          "sha256": "acb295ebcb889d7e1ad7aacce4301aed7a8c7842e0dab14fa685c62b3cb44283"
+        },
+        {
+          "path": "versions/v01/17-THREE-DIMENSIONAL-TIC-TAC-TOE.BAS",
+          "archive_path": "tapes/recovered/tape25a/best/17-THREE-DIMENSIONAL-TIC-TAC-TOE.BAS",
+          "bytes": 5639,
+          "sha256": "a5cc9872edc3a3ddf10125166138d476412c0eab5ad0db28fd59099d75a74c14"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "a5cc9872edc3a3ddf10125166138d476412c0eab5ad0db28fd59099d75a74c14",
+        "bytes": 5639,
+        "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 276,
+        "last": 2770,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 5637,
+        "source_notice_lines": [
+          "110 PRINT TAB(15);\"CREATIVE COMPUTING  MORRISTOWN, NJ\""
+        ]
+      },
+      "inventory_row": {
+        "tape": "25",
+        "side": "a",
+        "order": "17",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "THREE DIMENSIONAL TIC TAC TOE",
+        "capture": "tape25a",
+        "capture_scope": "unknown",
+        "baud": "500",
+        "platform": "TRS-80 Model I/III BASIC family",
+        "status": "validated payload; runtime untested",
+        "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+        "source_start_s": "714.462",
+        "recovered_bytes": "5639",
+        "source_file": "tapes/recovered/tape25a/best/17-THREE-DIMENSIONAL-TIC-TAC-TOE.ASC",
+        "wav": "tapes/tape25a.wav",
+        "folder": "tapes/recovered/tape25a",
+        "recovery_date": "2026-10-28",
+        "recorder_volume": "",
+        "next_action": "Runtime testing only if requested"
+      },
+      "recovery_inventory": "tapes/recovered/tape25a/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Adapted from Qubic, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+      "url": "https://www.atariarchives.org/basicgames/showpage.php?page=168"
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "upstream": [
+    {
+      "file": "docs/research/published-basic/qubic.bas",
+      "source_url": "https://raw.githubusercontent.com/GReaperEx/bcg/master/qubic.bas",
+      "publication_url": "https://www.atariarchives.org/basicgames/showpage.php?page=168",
+      "sha256": "463f0b311f94ea5e6aadae094dc3f4adfd5847ec37b0d3fc1073adcaed2d20b5",
+      "bytes": 7288,
+      "note": "Complete electronic transcription from the Vintage BASIC mirror, preserved unchanged. Matching source statements establish the comparison; exact parent edition and print transcription are not verified. Not a recovered cassette or an execution-tested program."
+    }
+  ]
+}

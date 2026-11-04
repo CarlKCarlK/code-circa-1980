@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape4b",
+  "save": 8,
+  "archive_raw": "tapes/recovered/tape4b/best/08-MOVING-GRAPHICS-BLOCK.BAS",
+  "archive_listing": "tapes/recovered/tape4b/best/08-MOVING-GRAPHICS-BLOCK.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/08-MOVING-GRAPHICS-BLOCK.ASC",
+      "archive_path": "tapes/recovered/tape4b/best/08-MOVING-GRAPHICS-BLOCK.ASC",
+      "bytes": 330,
+      "sha256": "e2c0ea6fe44b6302476369b457fb97e08c382dda0dc768c6c3c40fc8525f6f8f"
+    },
+    {
+      "path": "versions/v01/08-MOVING-GRAPHICS-BLOCK.BAS",
+      "archive_path": "tapes/recovered/tape4b/best/08-MOVING-GRAPHICS-BLOCK.BAS",
+      "bytes": 278,
+      "sha256": "73e06b38b9b3ea22bd5e4062b094ff129d464b4e3761aa953c72b14dd636aada"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "73e06b38b9b3ea22bd5e4062b094ff129d464b4e3761aa953c72b14dd636aada",
+    "bytes": 278,
+    "archive_validation": "10 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 10,
+    "last": 80,
+    "pointer_bases": [
+      22204
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 276,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "4",
+    "side": "b",
+    "order": "8",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "MOVING GRAPHICS BLOCK; 10 lines; T6-C2",
+    "capture": "tape4b",
+    "capture_scope": "full",
+    "baud": "500",
+    "platform": "TRS-80 BASIC; extended features",
+    "status": "validated payload; runtime untested",
+    "validation": "10 consistent pointers; normal end marker; matches original, left-hp800, right-boosted; not execution-tested",
+    "source_start_s": "",
+    "recovered_bytes": "278",
+    "source_file": "tapes/recovered/tape4b/best/08-MOVING-GRAPHICS-BLOCK.ASC",
+    "wav": "tapes/tape4b.wav",
+    "folder": "tapes/recovered/tape4b/best",
+    "recovery_date": "2026-10-26",
+    "recorder_volume": "",
+    "next_action": "Identify compatible extended BASIC for GET graphics, PUT graphics"
+  },
+  "recovery_inventory": "tapes/recovered/tape4b/best/inventory.json",
+  "execution_tested": false
+}

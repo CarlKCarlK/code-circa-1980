@@ -1,0 +1,80 @@
+{
+  "official_title": "Equation Solver",
+  "title_authority": "Descriptive recovery/inventory title; original text remains unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "order_evidence": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
+  "cluster": "equation_solver_p107",
+  "saves": [
+    {
+      "version": "v01",
+      "capture": "tape11b",
+      "save": 12,
+      "archive_raw": "tapes/recovered/tape11b/best/12-EQUATION-SOLVER.BAS",
+      "archive_listing": "tapes/recovered/tape11b/best/12-EQUATION-SOLVER.ASC",
+      "imported_files": [
+        {
+          "path": "versions/v01/12-EQUATION-SOLVER.ASC",
+          "archive_path": "tapes/recovered/tape11b/best/12-EQUATION-SOLVER.ASC",
+          "bytes": 205,
+          "sha256": "c443f8fd37f39c68a9934703dd550d5665255833571c3ef5cb004a12e0372396"
+        },
+        {
+          "path": "versions/v01/12-EQUATION-SOLVER.BAS",
+          "archive_path": "tapes/recovered/tape11b/best/12-EQUATION-SOLVER.BAS",
+          "bytes": 189,
+          "sha256": "2e0c8f79c33d9f82592b813a52c3599e802651231b8e0db2abb0ca74790f2345"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC",
+        "sha256": "2e0c8f79c33d9f82592b813a52c3599e802651231b8e0db2abb0ca74790f2345",
+        "bytes": 189,
+        "archive_validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "import_validation": "Exact file hashes; format-specific checks below.",
+        "lines": 10,
+        "last": 290,
+        "pointer_bases": [
+          17125
+        ],
+        "normal_end_marker": true,
+        "parsed_bytes": 187,
+        "source_notice_lines": []
+      },
+      "inventory_row": {
+        "tape": "11",
+        "side": "b",
+        "order": "12",
+        "type": "BASIC",
+        "recovery%": "100",
+        "summary": "EQUATION SOLVER; 10 lines",
+        "capture": "tape11b",
+        "capture_scope": "possible skipped program (tangled tape)",
+        "baud": "500",
+        "platform": "TRS-80 BASIC; extensions may be required",
+        "status": "validated payload; runtime untested",
+        "validation": "Ordered lines, consistent pointers, normal end; matching variants/repeated saves; runtime untested",
+        "source_start_s": "469.135",
+        "recovered_bytes": "189",
+        "source_file": "tapes/recovered/tape11b/best/12-EQUATION-SOLVER.ASC",
+        "wav": "tapes/tape11b.wav",
+        "folder": "tapes/recovered/tape11b/best",
+        "recovery_date": "2026-10-27",
+        "recorder_volume": "",
+        "next_action": "Execution-test with compatible runtime; capture may omit another program"
+      },
+      "recovery_inventory": "tapes/recovered/tape11b/best/inventory.json",
+      "execution_tested": false
+    }
+  ],
+  "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
+  "dating": {
+    "caution": "Source notices are not save dates. No inferred historical dates are assigned."
+  },
+  "attribution_review": {
+    "visible_credit": {
+      "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
+    },
+    "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  }
+}

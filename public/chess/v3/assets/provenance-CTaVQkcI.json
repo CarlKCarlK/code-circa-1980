@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "capture": "tape24a",
+  "save": 5,
+  "archive_raw": "tapes/recovered/tape24a/best/05-SCHEDULER.BAS",
+  "archive_listing": "tapes/recovered/tape24a/best/05-SCHEDULER.ASC",
+  "imported_files": [
+    {
+      "path": "versions/v01/05-SCHEDULER.ASC",
+      "archive_path": "tapes/recovered/tape24a/best/05-SCHEDULER.ASC",
+      "bytes": 1157,
+      "sha256": "5a944bea64579872f69eeefd6c78cffa6c01f952487c492dd62b67e4fdb5a7ca"
+    },
+    {
+      "path": "versions/v01/05-SCHEDULER.BAS",
+      "archive_path": "tapes/recovered/tape24a/best/05-SCHEDULER.BAS",
+      "bytes": 927,
+      "sha256": "37b50c3c3dc2b30a1a19a0c6e0f9469144aa0f02760501dfde067ede092fe09a"
+    }
+  ],
+  "recovery_item": {
+    "format": "BASIC",
+    "sha256": "37b50c3c3dc2b30a1a19a0c6e0f9469144aa0f02760501dfde067ede092fe09a",
+    "bytes": 927,
+    "archive_validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "import_validation": "Exact file hashes; format-specific checks below.",
+    "lines": 31,
+    "last": 2010,
+    "pointer_bases": [
+      17125
+    ],
+    "normal_end_marker": true,
+    "parsed_bytes": 925,
+    "source_notice_lines": []
+  },
+  "inventory_row": {
+    "tape": "24",
+    "side": "a",
+    "order": "5",
+    "type": "BASIC",
+    "recovery%": "100",
+    "summary": "SCHEDULER",
+    "capture": "tape24a",
+    "capture_scope": "unknown",
+    "baud": "500",
+    "platform": "TRS-80 Model I/III BASIC",
+    "status": "validated payload; runtime untested",
+    "validation": "Increasing lines; common pointer base 17125; exact end marker/EOF; byte-identical left/right payload",
+    "source_start_s": "173.743",
+    "recovered_bytes": "927",
+    "source_file": "tapes/recovered/tape24a/best/05-SCHEDULER.ASC",
+    "wav": "tapes/tape24a.wav",
+    "folder": "tapes/recovered/tape24a",
+    "recovery_date": "2026-10-28",
+    "recorder_volume": "",
+    "next_action": "Runtime testing only if requested"
+  },
+  "recovery_inventory": "tapes/recovered/tape24a/inventory.json",
+  "execution_tested": false
+}
