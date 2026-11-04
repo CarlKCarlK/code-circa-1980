@@ -4,6 +4,6 @@ Original author and any earlier published source have not been established. Pres
 
 Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.
 
-Reference: v01. The player runs the recovered stock-BASIC payload with its printed spelling corrected (`corrected/`); the recovered files are unchanged. Historical bugs remain.
+Reference: v01. The player runs the recovered stock-BASIC payload with its printed spelling corrected and RANDOM added (`corrected/`); the recovered files are unchanged. Historical bugs remain.
 
 Permanent snapshots are in versions/; canonical files advance per save in Git with program-specific tags. All files and capture identities are in provenance.json.

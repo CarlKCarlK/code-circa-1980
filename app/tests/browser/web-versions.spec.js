@@ -7,7 +7,7 @@ const latest=releases('castles').at(-1).id;
 test('collection links point directly to clean, versioned releases',async({page})=>{
  await page.goto('/');
  for(const id of ids){
-  const path=`/${id}/${releases(id).at(-1).id}/`;
+  const path=`/${releases(id).at(-1).path}`;
   const card=page.locator('.program-card').nth(ids.indexOf(id));
   for(const link of await card.locator('a').all())await expect(link).toHaveAttribute('href',new RegExp(`${path}$`));
  }
@@ -20,7 +20,7 @@ test('collection links point directly to clean, versioned releases',async({page}
 
 for(const id of ids)test(`${id}: immutable release opens its default player without changing the URL`,async({page})=>{
  const errors=[];page.on('pageerror',error=>errors.push(error.message));
- const path=`/${id}/${releases(id).at(-1).id}/`;
+ const path=`/${releases(id).at(-1).path}`;
  await page.goto(path);
  await expect(page.locator('#display')).toBeVisible();
  await expect(page.locator('#status')).not.toContainText('Loading');
@@ -102,7 +102,7 @@ test('home page version dropdown opens the chosen frozen release',async({page})=
 test('unversioned program URLs open the latest release',async({page})=>{
  for(const id of ids){
   await page.goto(`/${id}/`);
-  await expect(page).toHaveURL(new RegExp(`/${id}/${releases(id).at(-1).id}/$`));
+  await expect(page).toHaveURL(new RegExp(`/${releases(id).at(-1).path}$`));
  }
  // The query carries over (BASIC is not Castles' default, so the release keeps it).
  await page.goto('/castles/?lang=basic');

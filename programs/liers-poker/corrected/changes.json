@@ -1,10 +1,16 @@
 {
   "source": "versions/v01/04-LIERS-POKER.BAS",
   "source_sha256": "e1898227751385c0d06acd535e70398357d7afece07ea973825c20cb2d45401f",
-  "sha256": "10e1cdd1122532f6bdf8532025ad7fcb44f407c210af155dba2f445b392493ea",
-  "bytes": 865,
-  "listing_sha256": "1304ce10e9cda7c81905047226ce4fe9f226f585b1062fc623cb1c04ecaee557",
+  "sha256": "03114588fc9bde32add665ff4470d3c3debb72524309ccadb0e56a25b29c366c",
+  "bytes": 867,
+  "listing_sha256": "c3ebba09f798a60fc1076439756e923f8d1cc094a15a2b0a078d8affcfdef044",
   "changes": [
+    {
+      "line": 5,
+      "from": ":",
+      "to": "::",
+      "reason": "Add RANDOM after CLS (tokens 0x84 and 0x86). Without it, every run deals the same numbers."
+    },
     {
       "line": 10,
       "from": "LIER'S POKER",

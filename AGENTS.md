@@ -472,8 +472,9 @@ Liar’s Poker. Keep the liers-poker ID, URL, and historical filenames; the reco
 listing still prints LIER'S POKER.
 
 On November 4, 2026, the website's player moved to a spelling-corrected edition
-(LIAR'S, DIDN'T, and POT for TOP) in `programs/liers-poker/corrected/`, selected by
-`correctedEdition` in its program.json. Recovered files stay as they are. Rebuild
+(LIAR'S, DIDN'T, and POT for TOP) with RANDOM added, in
+`programs/liers-poker/corrected/`, selected by `correctedEdition` in its program.json.
+A `howToPlay` field adds a rules section and a link to it above the screen. Recovered files stay as they are. Rebuild
 with `npm run build:liars-poker-corrected`.
 
 ## Programs from recovered floppy disks (November 3, 2026)

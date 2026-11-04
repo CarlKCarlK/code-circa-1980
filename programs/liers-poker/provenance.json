@@ -81,9 +81,9 @@
     {
       "path": "corrected/LIARS-POKER.BAS",
       "source": "versions/v01/04-LIERS-POKER.BAS",
-      "sha256": "10e1cdd1122532f6bdf8532025ad7fcb44f407c210af155dba2f445b392493ea",
+      "sha256": "03114588fc9bde32add665ff4470d3c3debb72524309ccadb0e56a25b29c366c",
       "changes": "corrected/changes.json",
-      "status": "Modern spelling correction, not recovered historical bytes"
+      "status": "Modern spelling correction with RANDOM added, not recovered historical bytes"
     }
   ]
 }

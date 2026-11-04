@@ -10,16 +10,17 @@ const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 // Bytes outside quoted strings: tokens, numbers and punctuation.
 const code = body => { let quoted = false; return [...body].filter(b => { if (b === 0x22) quoted = !quoted; return b === 0x22 || !quoted; }); };
 
-test('Liar\'s Poker corrected edition rebuilds exactly and changes only printed text', () => {
+test('Liar\'s Poker corrected edition rebuilds exactly and changes only printed text and adds RANDOM', () => {
   const {original, bytes, listing} = buildCorrected();
   assert.deepEqual(bytes, fs.readFileSync(new URL('corrected/LIARS-POKER.BAS', folder)));
   assert.equal(listing, fs.readFileSync(new URL('corrected/LIARS-POKER.ASC', folder), 'latin1'));
   const record = JSON.parse(fs.readFileSync(new URL('corrected/changes.json', folder)));
   assert.equal(record.sha256, sha(bytes)); assert.equal(record.source_sha256, sha(original));
-  assert.equal(bytes.length, original.length);
+  assert.equal(bytes.length, original.length + 2);
   const before = parseBasic(original), after = parseBasic(bytes);
   assert.deepEqual(after.records.map(r => r.line), before.records.map(r => r.line));
-  before.records.forEach((r, i) => assert.deepEqual(code(after.records[i].body), code(r.body), `line ${r.line}`));
+  before.records.forEach((r, i) => { if (r.line !== 5) assert.deepEqual(code(after.records[i].body), code(r.body), `line ${r.line}`); });
+  assert.match(listing, /^5 CLS:RANDOM:DC=20:DH=20\r?$/m);
   assert.match(listing, /LIAR'S POKER/); assert.match(listing, /DIDN'T/); assert.match(listing, /THE POT STANDS AT "R:IF INT\(HN/);
   assert.doesNotMatch(listing, /LIER|DID'NT|THE TOP/);
 });

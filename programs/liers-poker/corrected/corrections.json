@@ -1,7 +1,13 @@
 {
   "source": "versions/v01/04-LIERS-POKER.BAS",
-  "rule": "Spelling in text the game prints, requested 2026-11-04. Includes one wrong word (TOP for POT). Logic, line numbers and spacing are unchanged.",
+  "rule": "Spelling in text the game prints, including one wrong word (TOP for POT), requested 2026-11-04; plus RANDOM, requested the same day, so each game deals different numbers. Other logic and all line numbers are unchanged.",
   "changes": [
+    {
+      "line": 5,
+      "from": ":",
+      "to": "::",
+      "reason": "Add RANDOM after CLS (tokens 0x84 and 0x86). Without it, every run deals the same numbers."
+    },
     {
       "line": 10,
       "from": "LIER'S POKER",

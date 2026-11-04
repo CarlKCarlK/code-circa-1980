@@ -1,6 +1,6 @@
 {
-  "official_title": "Bomb",
-  "title_authority": "User request wording, 2026-10-31 (\"Bomb defusing / spelling game ... standalone Nefarious Nick version, plus a version in a combined menu\"); source titles \"B O M B\" and \"<<<  B O M B  >>>\".",
+  "official_title": "Defuse",
+  "title_authority": "User renamed the program Defuse, 2026-11-04. Earlier title: User request wording, 2026-10-31 (\"Bomb defusing / spelling game ... standalone Nefarious Nick version, plus a version in a combined menu\"); source titles \"B O M B\" and \"<<<  B O M B  >>>\".",
   "import_date": "2026-10-31",
   "order_inferred": true,
   "order_evidence": "Inferred development sequence, not established dates. Both versions are on tape17a: v01 (save 1) precedes v02 (save 3) in save order. v01 reads like a draft: a placeholder villain (MR. XX), commented-out alternative intro paragraphs, and one preset high score. v02 is Bomb on its own, rewritten with new line numbers, naming the villain Nefarious Nick and adding an attract screen and a top-ten ranking. The two share no code line for line, so the order is a judgment, not a derivation. Tape numbers alone do not establish chronology.",
@@ -26,7 +26,7 @@
   "saves": [
     {
       "version": "v01",
-      "label": "Menu \u00b7 Bomb with radio intersection and binary search",
+      "label": "Menu · Bomb with radio intersection and binary search",
       "capture": "tape17a",
       "save": 1,
       "archive_raw": "tapes/recovered/tape17a/best/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH.BAS",

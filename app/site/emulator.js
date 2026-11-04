@@ -27,7 +27,7 @@ class CollectionMachine extends Trs80 {
 // and every archived byte remain unchanged.
 // A program can ask for a stock Model I (`model: 'MODEL1'`): its ROM shows shifted
 // letters in capitals, as 1978 machines without the lowercase kit did.
-export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC', model, printer = false, disk, sound = false} = {}) {
+export async function createPlayer(host, url, status, title, dependency, {running = 'Running original BASIC', model, printer = false, disk, sound = false, randomStart = false} = {}) {
   let program, disks;
   if (disk) {
     disks = await Promise.all(disk.images.map(async image => {
@@ -147,6 +147,8 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
     if(printout)printout.textContent='';
     if (disk) startFromDisk();
     else if (model === 'MODEL1') runOnModel1(); else machine.runBasicProgram(program);
+    // RANDOM seeds from the R register. Emulated startup timing never varies, unlike a person typing RUN.
+    if (randomStart) machine.z80.regs.r = Math.floor(Math.random()*128);
     if (machineBytes) machine.eventScheduler.add(undefined, machine.tStateCount+machine.clockHz*0.31, () => machine.writeMemoryBlock(dependency.address,machineBytes));
     machine.start();
     if (!disk) status.textContent = `${running} · click the screen to use the keys`;

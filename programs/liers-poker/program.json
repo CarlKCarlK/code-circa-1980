@@ -1,7 +1,7 @@
 {
   "id": "liers-poker",
   "title": "Liar’s Poker",
-  "description": "1 captured save. One BASIC player with its printed spelling corrected; historical bugs remain.",
+  "description": "Bid on your hidden number, bluff, and call the computer’s bluffs. The two numbers are never compared.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
@@ -45,7 +45,64 @@
     "listing": "corrected/LIARS-POKER.ASC",
     "derived": true,
     "running": "Running corrected BASIC",
-    "startupSource": "5 CLS:DC=20:DH=20\n10 PRINT \"LIAR'S POKER\"\n15 I=INT((RND(0)[3)*10000+1):Q=RND(0):IFRND(2)=1THENQ=1/Q\n17 R=0:QQ=RND(0)/Q*10000\n20 PRINT:PRINT:PRINT\n30 CN=RND(10000):HN=RND(10000)\n40 PRINT\"YOUR NUMBER IS :\"HN\n50 IF RND(2)=1THEN200\n100 PRINT:PRINT\"TYPE  'CALL' OR YOUR RAISE\"\n110 INPUT H$\n120 IF H$<>\"CALL\"THEN 160\n130 PRINT:PRINT:PRINT\"MY NUMBER IS: \"CN",
-    "note": "Liar’s Poker v01 with the spelling in its printed text corrected; every change is listed in corrected/changes.json, and the program logic is unchanged. The recovered v01 bytes are kept in versions/v01."
-  }
+    "startupSource": "5 CLS:RANDOM:DC=20:DH=20\n10 PRINT \"LIAR'S POKER\"\n15 I=INT((RND(0)[3)*10000+1):Q=RND(0):IFRND(2)=1THENQ=1/Q\n17 R=0:QQ=RND(0)/Q*10000\n20 PRINT:PRINT:PRINT\n30 CN=RND(10000):HN=RND(10000)\n40 PRINT\"YOUR NUMBER IS :\"HN\n50 IF RND(2)=1THEN200\n100 PRINT:PRINT\"TYPE  'CALL' OR YOUR RAISE\"\n110 INPUT H$\n120 IF H$<>\"CALL\"THEN 160\n130 PRINT:PRINT:PRINT\"MY NUMBER IS: \"CN",
+    "note": "Liar’s Poker v01 with the spelling in its printed text corrected; every change is listed in corrected/changes.json, and the program logic is unchanged. The recovered v01 bytes are kept in versions/v01.",
+    "randomStart": true
+  },
+  "quickHelp": "Click the screen. You and the computer each hold a secret number. A bid claims “my number is above this.” Type a bid, or CALL to challenge the computer’s bid. Only the last bidder’s number is checked: above the bid, the bidder wins; otherwise the caller wins. See “How to play” for the rules.",
+  "howToPlay": [
+    {
+      "heading": "The idea",
+      "items": [
+        "Each hand, you and the computer each get a secret number from 1 to 10000. You see only yours.",
+        "A bid claims “my number is above this.” You may bluff. On screen, the current bid is called THE POT, and “raise” means bid. It starts at 0 each hand.",
+        "The two numbers are never compared with each other. You win by catching the other side bidding above its own number, or by being called when your number is above your bid."
+      ]
+    },
+    {
+      "heading": "Your turn",
+      "items": [
+        "At TYPE ‘CALL’ OR YOUR RAISE, type a higher number and press Enter to bid. Or type CALL, in capitals, to challenge the computer’s last bid.",
+        "Either side may go first, chosen at random each hand. The computer then bids (I RAISE IT TO …) or calls (I CALL)."
+      ]
+    },
+    {
+      "heading": "When someone calls",
+      "items": [
+        "Only the last bidder’s number is revealed and checked against the bid.",
+        "Number above the bid: the bidder wins.",
+        "Number at or below the bid: the caller wins, so a tie goes to the caller."
+      ]
+    },
+    {
+      "heading": "Example: you hold 3000, the computer holds 9000",
+      "items": [
+        "You bid 2000 and the computer calls: you win, because 3000 is above 2000. The computer’s higher number does not matter.",
+        "You bid 9500 and the computer calls: you lose, because 3000 is below 9500."
+      ]
+    },
+    {
+      "heading": "Score",
+      "items": [
+        "You both start with 20. Each hand moves 1 point from the loser to the winner.",
+        "The game never ends by itself, and scores can go negative. Use Restart for a new game."
+      ]
+    },
+    {
+      "heading": "How the computer plays",
+      "items": [
+        "It always raises when its number is above the current bid.",
+        "Otherwise it bluffs with another raise if the bid is below a hidden limit it picks each hand, and calls if not.",
+        "Each raise adds a random amount, up to a maximum chosen once per game."
+      ]
+    },
+    {
+      "heading": "Quirks in the 1970s code",
+      "items": [
+        "A bid equal to the current one is accepted, even though the game asks for a raise.",
+        "If you call before any bid, you lose: the computer’s number is always above 0.",
+        "A bid above 10000 is accepted, but if the computer then raises, the program stops with an error."
+      ]
+    }
+  ]
 }
