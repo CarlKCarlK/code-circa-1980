@@ -5,7 +5,7 @@
       "path": "two-player-trail-game/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "c1438b1c5ed6d33d0bd6ef5c209769e268b7dadd",
+      "sourceCommit": "82f41b58725bc8bae77ef903ab944afd1b292765",
       "files": [
         {
           "path": "assets/03-TWO-PLAYER-TRAIL-GAME-BKB6zzlO.BAS",
@@ -63,9 +63,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-COt7KSzp.js",
+          "path": "assets/emulator-CRfRu9vV.js",
           "bytes": 316923,
-          "sha256": "6409580d24842f4bac633949d2ed5c298bf1736fbd30b6df5fbc07e549a6bfc2"
+          "sha256": "7b302d48287662d92cc6c7cf2011e62f1719e2dbeb181eefed1007aa7a7d8f0f"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -78,14 +78,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-B8Bt_Myz.js",
-          "bytes": 30932,
-          "sha256": "68315655b866a581cd02f3563df76d64dac8bd90e30d68ef2a711bc2c6cfcd13"
+          "path": "assets/index-CLoKTtI1.js",
+          "bytes": 31138,
+          "sha256": "a79b69e811ab79203de1a235b16f2511ebf650a8880018bb3307d706223b66cc"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -240,7 +240,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "853b830828fe9e17c33f2f72cc94fa17b2ba50817b112010a5c8cdbe23be9546"
+          "sha256": "9bf43f11f2f4d3d290c48e897c3f347e635c3e150ab3399ca6bb20921a7aa505"
         },
         {
           "path": "licenses.txt",
