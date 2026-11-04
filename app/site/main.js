@@ -41,10 +41,13 @@ function versionList(program, selected) {
 async function render() {
   const thisNavigation = ++navigation;
   if(player && activeRoute){
+    if(player.cacheable===false)player.dispose();
+    else{
     const running=!player.paused;
     if(running)player.togglePause();
     const content=document.createDocumentFragment();content.append(...app.childNodes);
     sessions.set(activeRoute,{player,content,running});
+    }
   }
   player=null;activeRoute=null;delete window.__circaPlayer;
   const parts=routeParts(location.hash,webProgram,location.search);
@@ -111,7 +114,7 @@ async function render() {
   if (!playing) return;
   const host=document.querySelector('#display'), status=document.querySelector('#status');
   try {
-    const {createPlayer}=modern?await program.loadModernPlayer():await import('./emulator.js');
+    const {createPlayer}=modern?await program.loadModernPlayer():program.model==='MODEL100'?await import('./model100.js'):await import('./emulator.js');
     if(thisNavigation!==navigation)return;
     const instance=await createPlayer(host,assetUrl(program,version.runtimeRaw??version.raw),status,program.title,version.machineCode?{...version.machineCode,url:assetUrl(program,version.machineCode.file)}:undefined,{disk:version.disk&&{...version.disk,images:version.disk.images.map(path=>assetUrl(program,path))},sound:version.sound,running:modern?undefined:version.running,model:modern?undefined:program.model,printer:!modern&&program.printer});
     if(thisNavigation!==navigation){instance.dispose();return;}

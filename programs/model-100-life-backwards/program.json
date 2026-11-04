@@ -1,14 +1,14 @@
 {
   "id": "model-100-life-backwards",
   "title": "Model 100 LIFE Backwards",
-  "description": "8 captured saves. Source only; format, dependencies, or incomplete code prevent stock BASIC loading.",
-  "kind": "Source archive",
+  "description": "8 captured saves. Original BASIC runs in the Model 100 emulator; historical bugs and incomplete features remain.",
+  "kind": "Model 100 BASIC",
   "language": "Model 100",
   "gallery": "more",
   "archiveImport": true,
   "showWebVersions": false,
   "unsharedWebV1": true,
-  "defaultVersion": "v08",
+  "defaultVersion": "v06",
   "versionOrder": "Within each capture, save order is retained. Cross-capture ordering is a presentation guess; tape numbers do not establish development dates. Similarity clusters are provisional, and collected saves are not necessarily revisions of one program.",
   "versions": [
     {
@@ -20,7 +20,7 @@
       "listing": "versions/v01/20-L-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v01/20-L-BASIC-PREFIX.ASC",
@@ -55,7 +55,7 @@
       "listing": "versions/v02/21-L-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 8 lines through 310; exact left/right prefix agreement",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v02/21-L-BASIC-PREFIX.ASC",
@@ -122,7 +122,7 @@
       "listing": "versions/v03/22-L-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 1 lines through 10; exact left/right prefix agreement",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v03/22-L-BASIC-PREFIX.ASC",
@@ -197,7 +197,7 @@
       "listing": "versions/v04/23-L-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 10 lines through 500; exact left/right prefix agreement",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v04/23-L-BASIC-PREFIX.ASC",
@@ -240,7 +240,7 @@
       "listing": "versions/v05/20-L-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 15 lines through 550; exact left/right prefix agreement",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v05/20-L-BASIC-PREFIX.ASC",
@@ -281,9 +281,8 @@
       "save": 21,
       "raw": "versions/v06/21-L-BASIC-TAPE-BLOCK.BIN",
       "listing": "versions/v06/21-L.ASC",
-      "playable": false,
-      "note": "validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player.",
+      "playable": true,
+      "note": "Recovery evidence (recorded before website runtime checks): validated payload; runtime untested. Model 100 header/body framing and additive checksum; declared payload length; strictly increasing records; one consistent pointer base; exact record coverage of payload; single-channel full recovery; repeated-save/capture matches recorded; independent right confirmation absent Website runtime check: Startup reaches Setting up. The source contains calls to absent lines such as 1105; no completed reverse-LIFE search is claimed.",
       "exports": [
         {
           "path": "versions/v06/21-L-BASIC-TAPE-BLOCK.BIN",
@@ -306,7 +305,7 @@
       "listing": "versions/v07/22-L-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 9 lines through 370; no cross-channel prefix match",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v07/22-L-BASIC-PREFIX.ASC",
@@ -341,7 +340,7 @@
       "listing": "versions/v08/23-L-BASIC-PREFIX.ASC",
       "playable": false,
       "note": "damaged / partial Model 100 BASIC. Damaged Model 100 BASIC; header validated, full body fails framing/checksum/length/record validation; untouched prefix 11 lines through 510; exact left/right prefix agreement",
-      "unavailableReason": "Incomplete, uncertain, or nonstandard captured payload; see the recovery validation. This format or machine is not supported by the shared stock Level II BASIC player. The source refers to extensions, external cassette data, machine code, or functions unavailable in the stock player.",
+      "unavailableReason": "Preserved alternate or damaged save. Use the selected complete Model 100 version for execution; see recovery evidence for this save.",
       "exports": [
         {
           "path": "versions/v08/23-L-BASIC-PREFIX.ASC",
@@ -409,9 +408,11 @@
     }
   ],
   "listingLabel": "Download recovered listing",
-  "sourceOnly": true,
+  "sourceOnly": false,
   "actionVerb": "View source",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
-  }
+  },
+  "model": "MODEL100",
+  "runtimeVerification": "docs/model100-player.md"
 }

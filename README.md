@@ -31,3 +31,5 @@ copyright notices. Third-party dependencies retain their own terms; see
 ## Policy on AI-assisted development
 
 AI tools may be used to develop and contribute to this repository, but a person must review, edit, and validate everything contributed and remains responsible for its design, testing, and correctness. [AGENTS.md](AGENTS.md) contains the instructions given to those tools.
+
+Model 100 programs have a separate original-firmware player; see [execution notes and limits](docs/model100-player.md).

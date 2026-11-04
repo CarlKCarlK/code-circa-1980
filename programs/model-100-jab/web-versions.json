@@ -3,9 +3,9 @@
     {
       "id": "v1",
       "path": "model-100-jab/v1/",
-      "label": "Original cassette archive",
+      "label": "Original Model 100 emulator",
       "released": "2026-11-03",
-      "sourceCommit": "b28a4b990f2a300f358e70c4955d3f9a87394e30",
+      "sourceCommit": "66f90aec836211381673cc0b19cea3512fa12576",
       "files": [
         {
           "path": "assets/01-J-a9RVUCeO.ASC",
@@ -73,9 +73,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CGCsbXtC.js",
-          "bytes": 286265,
-          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+          "path": "assets/emulator-DyzAIFq3.js",
+          "bytes": 286295,
+          "sha256": "c04ac4db251d9959dfcc2573c3b7f1126e3af9e3ecc5cc2b911e149798595bab"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -83,14 +83,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-C-6XC9U2.js",
-          "bytes": 34390,
-          "sha256": "52dd86caa4b46a67adea97f38a450d17a16fde75d919a85ce2ae6fd075e45d32"
+          "path": "assets/index-DjuGj8bj.js",
+          "bytes": 38463,
+          "sha256": "e18a10bda44c2e2c04dcc0654ec520569bedd3345a45a50a1a8a04423ea6ed5a"
         },
         {
-          "path": "assets/index-DKrV230I.css",
-          "bytes": 25510,
-          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+          "path": "assets/index-DOd7hvLX.css",
+          "bytes": 26030,
+          "sha256": "01ae469601fecf80b308033f3a15643d8360a853f12cb494adf1c7913e5af28c"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -136,6 +136,11 @@
           "path": "assets/MODEL-100-JAB-DX5fea86.BIN",
           "bytes": 2396,
           "sha256": "6a0f488948827da72775387a7d0084e8c870f570098787afd37937e9f8730132"
+        },
+        {
+          "path": "assets/model100-CYWvsCgB.js",
+          "bytes": 8058,
+          "sha256": "50cc804541fed57cebb7cbaf88862c9f79c81621642d4610797055e355b0d314"
         },
         {
           "path": "assets/nuclear-gallery-CvCXKMfj.svg",
@@ -228,6 +233,16 @@
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
         },
         {
+          "path": "assets/virtualt-AiL3Ufaf.wasm",
+          "bytes": 1104816,
+          "sha256": "93fe58680b79d708032dbcda0aa5c622b1ad61c5ec1fbcf98331e290af1434b7"
+        },
+        {
+          "path": "assets/virtualt-CHiBXa60.js",
+          "bytes": 247020,
+          "sha256": "c177ff4cd602f79e5ded24bfb755973d320b51c2294831e69d86de06cb89cef1"
+        },
+        {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
           "bytes": 545,
           "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
@@ -245,12 +260,12 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "aadb03f4f152f606302dcb74544e257cf5e0c245f99b18d4976439a262cb65cc"
+          "sha256": "c18f4ec62fe592af0f5570772ece1d4df53d5d1f15a8819ef5d782e90ed871c4"
         },
         {
           "path": "licenses.txt",
-          "bytes": 17049,
-          "sha256": "e2d6660e33328a842ede04e5917febf31ea4fb7a714470c95c3f35eda265ad6c"
+          "bytes": 19163,
+          "sha256": "a74fe6d95486f70e2356be36bf5fcad38455cfac38234f9a94ee4808a8a6cf4d"
         }
       ]
     }

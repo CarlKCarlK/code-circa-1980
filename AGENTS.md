@@ -488,3 +488,21 @@ Worker `bomb-scores` (https://bomb-scores.kadie-sites.workers.dev, D1 database
 panel only reads its memory. Deploy with `npx wrangler@4 deploy` from that folder. The
 user's Cloudflare account also holds unrelated domains and Workers: never touch them.
 Client-side scores can be faked; the Worker limits abuse and does not prove scores.
+
+## Model 100 execution (November 3, 2026)
+
+The eight `model-100-*` collections now use `model: "MODEL100"` and the shared
+VirtualT player (`app/site/model100.js`), not the Level II Z80 player. Keep the
+pinned engine/WASM, headless sources, SHA-256 manifest, and BSD notices together
+in `app/vendor/virtualt/`. No historical bytes or cassette inventory changed.
+`model100-payload.js` removes complete cassette framing only in memory; its
+terminal pointer and VirtualT relocation are documented loading adaptations.
+Never run a damaged prefix through this loader. Select complete LIFE Backwards
+v06 and Traveling Salesman v03; retain their damaged later saves as source only.
+Study needs a separate lesson document; Transaction Simulation's `0 EN` produces
+an original syntax error. Do not silently fix either or call them fully playable.
+The iframe player has `cacheable:false`: dispose it on navigation, since
+moving an iframe into a detached session cache destroys its browsing context.
+See docs/model100-player.md and model100.spec.js for actual execution limits,
+focus/pause/restart tests, and local commands. This work is isolated on branch
+`model100-player` under worktrees/model100-player pending integration.

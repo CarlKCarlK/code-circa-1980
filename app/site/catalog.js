@@ -1,10 +1,11 @@
 import {archiveView} from './programs/archive.js';
+import {model100View} from './programs/model100.js';
 import remainingIds from './remaining-programs.json';
 import diskIds from './disk-programs.json';
 import poker from '../../programs/poker/program.json';
 import spacecolony from '../../programs/spacecolony/program.json';
 const remainingMetadata=import.meta.glob('../../programs/*/program.json',{eager:true,import:'default'});
-const remaining=[...remainingIds,...diskIds].map(id=>{const p=remainingMetadata[`../../programs/${id}/program.json`];return {...p,...archiveView(p)};});
+const remaining=[...remainingIds,...diskIds].map(id=>{const p=remainingMetadata[`../../programs/${id}/program.json`];return {...p,...(p.model==='MODEL100'?model100View(p):archiveView(p))};});
 import {historyFiveViews} from './programs/history-five.js';
 import whodonnt from '../../programs/whodonnt/program.json';
 import dungeon from '../../programs/dungeon/program.json';
