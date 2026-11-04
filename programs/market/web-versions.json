@@ -3,20 +3,10 @@
     {
       "id": "v1",
       "path": "market/v1/",
-      "label": "Original cassette archive",
+      "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "b28a4b990f2a300f358e70c4955d3f9a87394e30",
+      "sourceCommit": "e60f24ff9bed7e38c8a782620f9de3567028dc67",
       "files": [
-        {
-          "path": "assets/03-MARKET-CbNL5vmY.ASC",
-          "bytes": 6655,
-          "sha256": "bc36522b02d80b1bce753a4acf9c70b3c3ba2cfd42baa331840ace30045cce39"
-        },
-        {
-          "path": "assets/03-MARKET-DvrKPIn7.BAS",
-          "bytes": 5597,
-          "sha256": "7b7d7560e5d7f1318c7615271d1be524a4fe4eb902e15e7ba6f6e083129002c8"
-        },
         {
           "path": "assets/04-MARKET-DAMAGED-RECORDING-7jOQAxBL.ASC",
           "bytes": 2796,
@@ -28,14 +18,24 @@
           "sha256": "3b3d5d8d20d4dbcd619e5df87024665bd6dc02839cbb7fd22ef30ad6d179c178"
         },
         {
+          "path": "assets/07-MARKET-V2-DcEdeT3I.ASC",
+          "bytes": 6663,
+          "sha256": "64df30c50e545b0e63742fcb1e1f40b00175afae772eb40eff9d4def116bf136"
+        },
+        {
+          "path": "assets/07-MARKET-V2-DE_ZRSKW.BAS",
+          "bytes": 5828,
+          "sha256": "1cb5d7fd334f1c7e00b855d93076cae1bccd696df50d175d8326ef17e21ff013"
+        },
+        {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
           "bytes": 327,
           "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
         },
         {
-          "path": "assets/archive-gallery-Cr0q0rfj.svg",
-          "bytes": 547,
-          "sha256": "0c02294b84355a66fb22c7f3a14d9fd2bcaba28513e95a25c19147c8bdb7beeb"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
           "path": "assets/cave-gallery-CUdWAr_1.svg",
@@ -53,14 +53,19 @@
           "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
         },
         {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
+        },
+        {
           "path": "assets/dungeon-gallery-iVVwbTI4.svg",
           "bytes": 557,
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CGCsbXtC.js",
-          "bytes": 286265,
-          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+          "path": "assets/emulator-K2jyscGo.js",
+          "bytes": 316923,
+          "sha256": "b6ff71c60ab2c6b3a758fe3220fb784244bfc0606d88aa181fb1edd3e12924ae"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -68,14 +73,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-D_WjKHyY.js",
-          "bytes": 32067,
-          "sha256": "a3213c2daaf214815399c45cb9ec19f7d0c9146ec31c32b74522c79dd7ae19d5"
+          "path": "assets/index-BHExd-TG.css",
+          "bytes": 25791,
+          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
         },
         {
-          "path": "assets/index-DKrV230I.css",
-          "bytes": 25510,
-          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+          "path": "assets/index-Dt7L8F5Z.js",
+          "bytes": 33713,
+          "sha256": "fc0e3b83e322496160d68c5b7f0ca14d5e7cd16a4ac362e0af390968bf7b9418"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -118,14 +123,24 @@
           "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed"
         },
         {
-          "path": "assets/MARKET-DcEdeT3I.ASC",
-          "bytes": 6663,
-          "sha256": "64df30c50e545b0e63742fcb1e1f40b00175afae772eb40eff9d4def116bf136"
+          "path": "assets/MARKET-CbNL5vmY.ASC",
+          "bytes": 6655,
+          "sha256": "bc36522b02d80b1bce753a4acf9c70b3c3ba2cfd42baa331840ace30045cce39"
         },
         {
-          "path": "assets/MARKET-DE_ZRSKW.BAS",
-          "bytes": 5828,
-          "sha256": "1cb5d7fd334f1c7e00b855d93076cae1bccd696df50d175d8326ef17e21ff013"
+          "path": "assets/MARKET-Cha1iebN.BAS",
+          "bytes": 5613,
+          "sha256": "f2d451b4d557b9afcbd5be7bbeb24f4b1723db60d2eb9b02012f49b844476c00"
+        },
+        {
+          "path": "assets/MARKET-Cv8HL30B.ASC",
+          "bytes": 6681,
+          "sha256": "762763a449c60fc07d60bb2271bd04f692412fdf7caa8885c82e8c9a6d105789"
+        },
+        {
+          "path": "assets/MARKET-DvrKPIn7.BAS",
+          "bytes": 5597,
+          "sha256": "7b7d7560e5d7f1318c7615271d1be524a4fe4eb902e15e7ba6f6e083129002c8"
         },
         {
           "path": "assets/nuclear-gallery-CvCXKMfj.svg",
@@ -158,9 +173,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-Bcu1AYH6.json",
-          "bytes": 10710,
-          "sha256": "6a40b125fa956896851cc35ec0fc35a1254669b4290b0b495a68c6cf6881b68e"
+          "path": "assets/provenance-D1GHjlkx.json",
+          "bytes": 11960,
+          "sha256": "2c2896840159751fe696c2b0f789e0d912faae2d080f50c59a5e19c3eb0d9258"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -218,6 +233,11 @@
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
         },
         {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
+        },
+        {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
           "bytes": 545,
           "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
@@ -235,7 +255,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "c2a10107a12d821fb35baea4f307735624f077d4ff21981855852f208ca4d942"
+          "sha256": "a5e7ceff2cd3159261579764667a4cd590f247abb17bde68a9554342557d5222"
         },
         {
           "path": "licenses.txt",

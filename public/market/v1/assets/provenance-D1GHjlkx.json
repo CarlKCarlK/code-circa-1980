@@ -239,6 +239,38 @@
       },
       "recovery_inventory": "tapes/recovered/tape12a/best/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "disk": "BASIC Programs Games",
+      "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+      "source": "files/MARKET.BAS",
+      "imported_files": [
+        {
+          "path": "versions/v05/MARKET.BAS",
+          "archive_path": "files/MARKET.BAS",
+          "bytes": 5613,
+          "sha256": "f2d451b4d557b9afcbd5be7bbeb24f4b1723db60d2eb9b02012f49b844476c00"
+        },
+        {
+          "path": "versions/v05/MARKET.ASC",
+          "archive_path": "derived listing",
+          "bytes": 6681,
+          "sha256": "762763a449c60fc07d60bb2271bd04f692412fdf7caa8885c82e8c9a6d105789"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "f2d451b4d557b9afcbd5be7bbeb24f4b1723db60d2eb9b02012f49b844476c00",
+        "bytes": 5613,
+        "import_date": "2026-11-03",
+        "lines": 271,
+        "last": 1510,
+        "normal_end_marker": true,
+        "memory_base": 27205,
+        "tape_relation": "269/271 lines shared with tapes/recovered/tape12a/best/08-MARKET-V2-SAVE2.BAS (271 lines)"
+      }
     }
   ],
   "execution_testing": "No new BASIC gameplay testing. Website checks exercise JavaScript controls only.",
