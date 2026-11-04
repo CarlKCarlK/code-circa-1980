@@ -183,31 +183,6 @@
           "sha256": "665687fdaaa3d8e7b753a2760391ad69c75f2a848122606c126eb73a6a2553ee"
         },
         {
-          "path": "assets/01-SARGON-LOADER-BULDPsGb.ASM",
-          "bytes": 4362,
-          "sha256": "9f7d3dfb57af3dd796105a0e49524a7c675db8fefb4881ffc6731e3ff3f670ea"
-        },
-        {
-          "path": "assets/01-SARGON-LOADER-Dg1QYlAU.BIN",
-          "bytes": 272,
-          "sha256": "2e252194f0fdf15f00f204a935a66c9186f79c3c8caa89b71090aacc2c2ddafa"
-        },
-        {
-          "path": "assets/01-SARGON-LOADER-MEMORY-D3s14__e.BIN",
-          "bytes": 256,
-          "sha256": "ddf009e48539aad4d96ff1d50c28a4374b925e3e52b534702cb6feb3b11bbb42"
-        },
-        {
-          "path": "assets/01-SARGON-LOADER-RECORDS-CPFgRF96.TXT",
-          "bytes": 1969,
-          "sha256": "7f88ac0b0bf132ab6c1a31d5344927b8d033b0e5bf01cd63f096f82ddcb62fd2"
-        },
-        {
-          "path": "assets/01-SARGON-LOADER-STRINGS-BB6kiGGZ.TXT",
-          "bytes": 152,
-          "sha256": "cf1988abeccab884238aabf21fcd55e880180cffb3257d7dad578ee12f1677ba"
-        },
-        {
           "path": "assets/01-SKINNER-BOX-EARLY-Ctrs75lY.ASC",
           "bytes": 982,
           "sha256": "e0969277d9874efb4bbaf2c4619164cd69d0135caac7e63e8de454c26e920e4b"
@@ -476,21 +451,6 @@
           "path": "assets/02-RICKY-RAT-V1-SSjbDj7m.BAS",
           "bytes": 3425,
           "sha256": "bcaf33083ff2fdcb380ed8979165455150608f00993e863018b021fdec916581"
-        },
-        {
-          "path": "assets/02-SARGON-ENCODED-PAYLOAD-C-fBIeDC.ASM",
-          "bytes": 177627,
-          "sha256": "bd42aaf3d859db62a15765b439d9caea2089ebbfb3337f351abbf3e606f4f836"
-        },
-        {
-          "path": "assets/02-SARGON-ENCODED-PAYLOAD-MEMORY-AOWfGOT-.BIN",
-          "bytes": 11520,
-          "sha256": "7a0fa83c0668909ff55d111096d099f52ca8a7aa1e3eec4b171cc78ff7ab27e4"
-        },
-        {
-          "path": "assets/02-SARGON-ENCODED-PAYLOAD-RECORDS-hSTdMsU9.TXT",
-          "bytes": 63576,
-          "sha256": "326ab0be87c3ccea67dccf7f17b8b796915cf02549ba00befa3cfe744eb81a0f"
         },
         {
           "path": "assets/02-SKINNER-BOX-V2-B0Y6jiDX.BAS",
@@ -791,21 +751,6 @@
           "path": "assets/03-RATIOS-AND-PERCENTAGES-wpvgQlxC.ASC",
           "bytes": 837,
           "sha256": "ad4b77b9afe677e1d72f2d31876b83b0532a7843f75cc99c9ab43e79e2214ec2"
-        },
-        {
-          "path": "assets/03-RSM-2.0-16K-BMQ5FDOJ.ASM",
-          "bytes": 52245,
-          "sha256": "2fa21365a1395957f3fd5dd650841d0d42e2afb643e6639a6b67b172e44d80e4"
-        },
-        {
-          "path": "assets/03-RSM-2.0-16K-MEMORY-BDuKz5Hy.BIN",
-          "bytes": 4864,
-          "sha256": "bd4151099df158c45e93aeb865582a9455b754c37c94fb7882e8caf5030ca156"
-        },
-        {
-          "path": "assets/03-RSM-2.0-16K-RECORDS-BPKiYbxI.TXT",
-          "bytes": 27140,
-          "sha256": "559baa40b61c5c02755ee17b97cd7db8b9421e2b5aea5d88ab0ab4a701d79f99"
         },
         {
           "path": "assets/03-SIMULTANEOUS-EQUATIONS-SAVE01-BskqKENC.BAS",
@@ -8958,16 +8903,6 @@
           "sha256": "7d7a76f8f1e4fd96f0425deff5304b8cc88ea164917460c4716b92872a34c246"
         },
         {
-          "path": "assets/RSM-2-0-16K-CFI4M3Fe.BIN",
-          "bytes": 4969,
-          "sha256": "f6305fd120aadb06eaa78bf06fd0fce5eeef5ab51c833425c4aa537b03486326"
-        },
-        {
-          "path": "assets/RSM-2-0-16K-CP1dfsxy.TXT",
-          "bytes": 700,
-          "sha256": "fe8b48922b8b572a864c9b113e1e2753effbbdbc34d14ac08369bbb5a40497bb"
-        },
-        {
           "path": "assets/RUSSIAN-ROULETTE-BNM1IYuy.BAS",
           "bytes": 2207,
           "sha256": "728e18de9fc6f1f12debe11dceef0aeee1630706a9970fc6d35f1ead61b5ad44"
@@ -8976,16 +8911,6 @@
           "path": "assets/RUSSIAN-ROULETTE-DswwbzK_.ASC",
           "bytes": 2627,
           "sha256": "4728823a313ae50b34d4c75b07513635d959949b95d4d656c73d53ebdb734609"
-        },
-        {
-          "path": "assets/SARGON-ENCODED-PAYLOAD-BPcVJsN8.BIN",
-          "bytes": 11757,
-          "sha256": "a0b98ce18868514726e017aaf54c0d402279ab39303e1383cbc47499ee3745e6"
-        },
-        {
-          "path": "assets/SARGON-ENCODED-PAYLOAD-CyH8bS_G.TXT",
-          "bytes": 1735,
-          "sha256": "426ac2e4c6b9812525374c83c504e541c5a7dafcb3e4b8e12baff2b70c38b5a2"
         },
         {
           "path": "assets/SCHEDULER-AivgbHff.BAS",

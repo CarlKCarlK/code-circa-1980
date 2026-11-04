@@ -6161,9 +6161,10 @@
       "save": "3",
       "archive_source": "tapes/recovered/tape28b/derived/03-RSM-2.0-16K.ASM",
       "inventory_status": "validated captured payload; runtime untested",
-      "disposition": "new program",
+      "disposition": "removed",
       "family": "Rsm 2.0 16K",
-      "program": "rsm-2-0-16k"
+      "program": "rsm-2-0-16k",
+      "removed": "User, November 3, 2026: commercial software with no customization found. Kept only in the private recovery archive."
     },
     {
       "capture": "tape29a",

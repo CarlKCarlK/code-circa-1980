@@ -1,6 +1,0 @@
-Derived memory strings; addresses from original block load addresses. No runtime test.
-4401: SARGON
-440B: SARGON
-441F: >*2><2?<
-447D: >*2><
-44AA: >*2><

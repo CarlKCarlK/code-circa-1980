@@ -117,11 +117,8 @@ and intermediate source editions are unverified. New canonical histories begin
 with the relevant comparison before the recovered saves. Poker and Space Colony
 append a comparison and canonical replay, preserving all existing history.
 
-SARGON II is credited to Dan and Kathe Spracklen, copyright 1979 Hayden. RSM 2.0
-is credited to Small System Software, copyright 1978. Starfleet Orion retains
-Automated Simulations’ 1979 credit. These are third-party programs, not claimed
-as Carl Kadie originals. SARGON/RSM static disassembly is a recovery derivative,
-not historical assembly source. Quest retains Roger Chaffee’s BYTE provenance;
+Starfleet Orion retains Automated Simulations’ 1979 credit. It is a third-party
+program, not claimed as a Carl Kadie original. Quest retains Roger Chaffee’s BYTE provenance;
 D&D reference material and the Mille Bornes/Monopoly designs are credited
 separately from the uncertain origin of their program implementations.
 
