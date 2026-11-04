@@ -190,12 +190,12 @@
     },
     {
       "id": "v09",
-      "label": "Decoder (blocks 55-55)",
+      "label": "Decoder by Rich Losey (blocks 55-55)",
       "capture": "disk: MMSFORTH New Programs",
       "raw": "versions/v09/DECODER.bin",
       "listing": "versions/v09/DECODER.txt",
       "playable": false,
-      "note": "ROT-13 decoder initialed RWL, dated Nov 11, 1982. The Forth System disk holds a slightly different form.",
+      "note": "ROT-13 decoder by Rich Losey, initialed RWL and dated Nov 11, 1982. The Forth System disk holds a slightly different form.",
       "unavailableReason": "Preserved as source. It is not offered as a player.",
       "exports": [
         {
@@ -301,7 +301,7 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "From 1982 MMSFORTH disks. Most source names no author; the decoder is initialed RWL. Preserved here for small-scale archival use."
+    "text": "From my 1982 MMSFORTH disks. The Decoder is by Rich Losey, who initialed it RWL. My friend and roommate Rich Losey may have contributed to the others here. Preserved here for small-scale archival use."
   },
   "sourceOnly": true,
   "actionVerb": "View source"

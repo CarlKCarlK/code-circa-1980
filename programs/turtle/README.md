@@ -1,6 +1,6 @@
 # Turtle Graphics
 
-From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use.
+From my 1982 MMSFORTH disks. My friend and roommate Rich Losey may have contributed. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use.
 
 Logo-style turtle drawing on the TRS-80 graphics screen, dated October 1982.
 

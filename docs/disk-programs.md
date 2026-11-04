@@ -29,8 +29,11 @@ library's Web Audio player, unmuted by the first key.
 
 Left out at the user's request or by design: "Today's News," the Security rule set,
 Tedd Pierce's report, and commercial software, including Meteor, Eliminator, ZAP2,
-Soccer, Talker, and the VS-100 programs. Authors of the Forth programs are unconfirmed,
-so their credit stays neutral.
+Soccer, Talker, and the VS-100 programs.
+
+Credit: the Decoder is by Rich Losey (RWL). The other Forth programs say he may have
+contributed, on the user's instruction; "Today's News" is his only other named mention
+in the Forth blocks, and it is not imported.
 
 ## Known limits
 

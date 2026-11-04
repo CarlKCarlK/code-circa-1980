@@ -1,6 +1,6 @@
 # Screen Fun
 
-From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use.
+From my 1982 MMSFORTH disks. My friend and roommate Rich Losey may have contributed. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use.
 
 A graphics drawing program, dated 10-12-82.
 

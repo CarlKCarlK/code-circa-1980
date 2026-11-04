@@ -89,7 +89,7 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, \u00a9 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+    "text": "From my 1982 MMSFORTH disks. My friend and roommate Rich Losey may have contributed. Runs on MMSFORTH V2.0, \u00a9 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
   },
   "howTo": [
     "Black and white take turns. Move the cursor with the arrow keys or 1, 2, 3, 4 (up, down, left, right), then press Enter to place a stone. Captured stones are removed after each move.",

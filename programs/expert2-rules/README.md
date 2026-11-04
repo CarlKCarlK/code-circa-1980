@@ -1,6 +1,6 @@
 # Expert-2 Rule Sets
 
-Written for Expert-2, Jack Park’s rule-based shell in MMSFORTH (Dr. Dobb’s Journal, April 1984). The source names no author for these rule sets. Preserved here for small-scale archival use.
+From my 1984 MMSFORTH disk, written for Expert-2, Jack Park’s rule-based shell in MMSFORTH (Dr. Dobb’s Journal, April 1984). My friend and roommate Rich Losey may have contributed. Preserved here for small-scale archival use.
 
 Knowledge bases written for Jack Park’s Expert-2 shell, dated 1984.
 

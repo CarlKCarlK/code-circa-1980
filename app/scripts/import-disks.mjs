@@ -176,7 +176,7 @@ function newProgram({id,title,description,attribution,howTo,quickHelp,kind,langu
  fs.writeFileSync(path.join(folder,'VERIFICATION.md'),`# Verification\n\nFiles were copied byte for byte and SHA-256 checked against the disk manifest. app/scripts/check-disk-programs.mjs starts each playable program from its original disks through the real ROM and checks its first screen. This does not validate every routine or any historical gameplay claim.\n`);
  return {folder,meta,evidence};
 }
-const forthCredit='From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. '+COPYRIGHT;
+const forthCredit='From my 1982 MMSFORTH disks. My friend and roommate Rich Losey may have contributed. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. '+COPYRIGHT;
 const lispCredit='I wrote this in LISP. It runs on LISP 3.72, © 1981 Ronald L. Nicol, distributed by SuperSoft. '+COPYRIGHT;
 const NP='MMSFORTH New Programs',NB='MMSFORTH New Program Backup',FS='MMSFORTH Forth System',KB='MMSFORTH Knowledge Base';
 const boot=[{wait:'HI CARL'}];

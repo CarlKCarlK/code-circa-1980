@@ -1,6 +1,6 @@
 # Forth Drafts and Fragments
 
-From 1982 MMSFORTH disks. Most source names no author; the decoder is initialed RWL. Preserved here for small-scale archival use.
+From my 1982 MMSFORTH disks. The Decoder is by Rich Losey, who initialed it RWL. My friend and roommate Rich Losey may have contributed to the others here. Preserved here for small-scale archival use.
 
 Unfinished programs, experiments, and small tools from the 1982 MMSFORTH disks.
 

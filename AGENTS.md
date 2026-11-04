@@ -473,7 +473,7 @@ Fourteen More players boot original disk images through `site/model1-disks.js` a
 `site/disk-session.js`; see [disk-programs.md](docs/disk-programs.md). Keep images
 byte-identical in each program's `disks/`. On November 3, 2026 the user asserted that
 hosting MMSFORTH and LISP 3.72 for this small archive is fair use; keep their
-credits visible. The LISP programs are the user's; Forth authorship is unconfirmed,
-so do not credit those to the user without confirmation. Keep "Today's News," the
+credits visible. The LISP programs are the user's. RWL is Rich Losey, who gets credit on the
+Decoder; every other Forth program says he "may have contributed" (user, same day). Keep "Today's News," the
 Security rule set, and commercial programs out unless the user asks. GPS's two
 reconstructed functions are typed at startup; never add them to recovered bytes.

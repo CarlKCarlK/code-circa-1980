@@ -89,7 +89,7 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, \u00a9 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+    "text": "From my 1982 MMSFORTH disks. My friend and roommate Rich Losey may have contributed. Runs on MMSFORTH V2.0, \u00a9 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
   },
   "howTo": [
     "It builds and draws a new station while it starts, which took a few minutes on the real machine, so the player runs that part fast. Then it keeps working out doors, and a counter runs at the top of the screen. There is no gameplay. Restart draws another station."
