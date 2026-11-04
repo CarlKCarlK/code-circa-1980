@@ -98,6 +98,28 @@
       ],
       "startupSource": "100 CLEAR2000:CLS:PRINT:PRINTTAB(15)\"SECTOR DUMP UTILITY 2.2\":DEFINTI-N\n110 H$=\"0123456789ABCDEF\"\n120 LINEINPUT\"\nFILESPEC: \";FS$:IFFS$=\"END\"THENEND ELSE ONERRORGOTO290:OPEN\"I\",1,FS$\n130 ONERRORGOTO0:CLOSE:OPEN\"R\",1,FS$:SN=0\n140 FIELD1,255 AS D$,1 AS DD$\n150 LINEINPUT\"\nSECTOR NUMBER (OR 'ENTER' FOR NEXT SECTOR): \";S$\n160 IFPEEK(14312)>127THENPRINT\"LP NOT READY\":GOTO150\n170 IFS$=\"\"THENSN=SN+1ELSESN=VAL(S$):IFSN<1THENCLOSE:GOTO100\n180 GET1,SN\n190 LPRINT\" \":LPRINT\"FILESPEC: \"FS$;TAB(35)\"SECTOR: \"SN:LPRINT\" \"",
       "controlSource": []
+    },
+    {
+      "id": "v05",
+      "label": "CASEFIX.BAS (Talker)",
+      "capture": "disk: Talker",
+      "raw": "versions/v05/CASEFIX.BAS",
+      "listing": "versions/v05/CASEFIX.ASC",
+      "playable": false,
+      "note": "Converts a text file’s lowercase to uppercase. Has a bug at line 60.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v05/CASEFIX.BAS",
+          "label": "CASEFIX.BAS"
+        },
+        {
+          "path": "versions/v05/CASEFIX.ASC",
+          "label": "CASEFIX.ASC"
+        }
+      ],
+      "startupSource": "10 CLS:CLEAR20000:DIM R$(500):R=0\n20 INPUT \"FILE\";F$\n30 OPEN \"I\",1,F$\n40 IF EOF(1) THEN 100 ELSE R=R+1:LINE INPUT #1,R$(R):GOTO40\n50 PRINT \"CONVERTING\"\n60 FOR I=1TOR:FORL=1TOR$(I):L$=MID$(R$(I),L,1):IF L$>=\"a\" AND L$<=\"z\" THEN MID$(R$(I),L,1)=CHR$(ASC(L$)-32)\n70 NEXT L,I\n80 CLOSE:OPEN\"O\",1,F$\n90 FORI=1TOR:PRINT#1,R$(I):NEXTI:CLOSE",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
