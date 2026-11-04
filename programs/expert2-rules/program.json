@@ -76,6 +76,28 @@
       ],
       "startupSource": "==== Block 40 ====\n 0 : TASK ; ( TIC-TAC-TOE)\n 1 RULES\n 2 IF BOARD IS EMPTY\n 3 ANDNOT SOMEONE CAN WIN\n 4 THENHYP MOVE TO CENTER\n 5 ANDTHEN MADE GOOD MOVE\n 6 \n 7 IF SOMEONE CAN WIN\n 8 AND I CAN WIN\n 9 THENHYP MOVE TO WIN\n10 ANDTHEN MADE GOOD MOVE",
       "controlSource": []
+    },
+    {
+      "id": "v04",
+      "label": "Verify Support (blocks 46-49)",
+      "capture": "disk: MMSFORTH Knowledge Base",
+      "raw": "versions/v04/VERIFY-SUPPORT.bin",
+      "listing": "versions/v04/VERIFY-SUPPORT.txt",
+      "playable": false,
+      "note": "Replacement definitions for Expert-2 internals, dated 05/08/84.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v04/VERIFY-SUPPORT.bin",
+          "label": "VERIFY-SUPPORT.bin"
+        },
+        {
+          "path": "versions/v04/VERIFY-SUPPORT.txt",
+          "label": "VERIFY-SUPPORT.txt"
+        }
+      ],
+      "startupSource": "==== Block 46 ====\n 0 ( 05/08/84 EXPERT-2  VERIFY SUPPORT                            )\n 1 \n 2 : VERIFY       ( HYP^  ---  TF )\n 3    'VERIFY  @  EXECUTE ;\n 4 \n 5    \\ THIS IS A VECTORED IMPLEMENTATION OF VERIFY.  IT\n 6    \\ ALLOWS FORWARD REFERENCING OF THE ACTUAL DEFINITION TO\n 7    \\ THE PRIMITIVE <VERIFY> .\n 8    \\\n 9    \\ VERIFY CALLED FOR STRINGS, REPORTS TRUTH.  TESTIF+ THEN\n10    \\ CHECKS LOGIC FLAG.",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
