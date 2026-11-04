@@ -80,7 +80,7 @@ export const allPrograms = [{...castles, ...castlesView, modern, loadModernPlaye
   .map(program=>({...program,webVersions:webCatalogs[`../../programs/${program.id}/web-versions.json`]?.versions??[]}));
 export const programs = allPrograms.filter(program=>program.gallery!=='more');
 export const morePrograms = allPrograms.filter(program=>program.gallery==='more'&&!program.galleryHidden);
-const files = import.meta.glob(['../../programs/**/*.{BAS,ASC,bin,BIN,ASM,TXT,Z80,SRC,3BN,PRG,IMG,TAP,txt,dmk,LSP}','!../../programs/**/target/**','!../../programs/**/third_party/**'], {query:'?url', import:'default', eager:true});
+const files = import.meta.glob(['../../programs/**/*.{BAS,ASC,bin,BIN,ASM,TXT,Z80,SRC,3BN,PRG,IMG,TAP,txt,dmk,LSP,pdf}','!../../programs/**/target/**','!../../programs/**/third_party/**'], {query:'?url', import:'default', eager:true});
 const provenance = import.meta.glob(['../../programs/**/provenance.json'], {query:'?url', import:'default', eager:true});
 export function assetUrl(program, path) {
   const url = files[`../../programs/${program.id}/${path}`];

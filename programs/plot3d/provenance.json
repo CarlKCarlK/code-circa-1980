@@ -1077,5 +1077,13 @@
         }
       }
     }
-  ]
+  ],
+  "manual": {
+    "path": "manual/3-D-Graphics-manual.pdf",
+    "archive_path": "scans/processed/3-D-Graphics-manual.pdf",
+    "sha256": "8c04c3e01a9e6ef693281fd5db11cff55c97327bb4b78859a10b10f4aa93bb98",
+    "bytes": 2240400,
+    "note": "2 pages: instructions and examples, with handwritten notes.",
+    "processing": "scans/processed/processing-manifest.json in the recovery archive"
+  }
 }

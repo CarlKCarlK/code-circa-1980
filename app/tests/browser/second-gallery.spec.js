@@ -69,3 +69,8 @@ test('main gallery links to the Medium articles between the cards and About this
  await page.goto('/');await expect(page.getByRole('link',{name:'follow me on Medium'})).toHaveAttribute('href','https://medium.com/@carlmkadie');
  await expect(page.locator('.intro-writing + .about-author')).toContainText('About this project');await expect(page.locator('.intro .intro-writing')).toHaveCount(0);
 });
+for(const [id,name] of [['bal','ChemBalancer II manual (PDF)'],['plot3d','3-D Plot manual (PDF)']])test(`${id}: the original manual opens from the player`,async({page})=>{
+ await page.goto(`/?development=1#/program/${id}`);
+ const href=await page.getByRole('link',{name}).first().getAttribute('href');
+ const response=await page.request.get(href);expect(response.ok()).toBe(true);expect(response.headers()['content-type']).toContain('pdf');
+});

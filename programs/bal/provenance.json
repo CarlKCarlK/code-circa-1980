@@ -7292,5 +7292,13 @@
         }
       }
     }
-  ]
+  ],
+  "manual": {
+    "path": "manual/Chembalancer-II-manual.pdf",
+    "archive_path": "scans/processed/Chembalancer-II-manual.pdf",
+    "sha256": "9d9e411bcf76519bd036dd7844bf7ebd7dd4d5f5fed962c5b33dd11c1fa06262",
+    "bytes": 6408023,
+    "note": "17 pages: the cover, copyright, pages 3–13, an alternate page 3, and Appendix A. Pages 1 and 2 are missing and shown as placeholders. Two street-address occurrences are blacked out.",
+    "processing": "scans/processed/processing-manifest.json in the recovery archive"
+  }
 }

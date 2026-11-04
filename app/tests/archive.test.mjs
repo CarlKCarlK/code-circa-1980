@@ -20,6 +20,9 @@ for(const name of fs.readdirSync(root)){
    assert.equal(metadata.versions.filter(v=>!v.mergedFrom).length,evidence.saves.length);
    if(metadata.gallery==='more')assert.equal(metadata.versions.filter(v=>v.playable).length,metadata.sourceOnly?0:1,'One selected player, or an explicitly source-only collection');
  });
+ if(metadata.manual)test(`${metadata.title}: manual matches its recorded hash`,()=>{
+   assert.equal(createHash('sha256').update(fs.readFileSync(new URL(metadata.manual.path,folder))).digest('hex'),evidence.manual.sha256);
+ });
  if(metadata.mergedInto)test(`${metadata.title}: every save joined ${metadata.mergedInto} with the same bytes`,()=>{
    assert.ok(metadata.galleryHidden);
    const target=JSON.parse(fs.readFileSync(new URL(metadata.mergedInto+'/program.json',root)));

@@ -442,5 +442,9 @@
   ],
   "mergedPrograms": [
     "chemistry-balancer-ii"
-  ]
+  ],
+  "manual": {
+    "path": "manual/Chembalancer-II-manual.pdf",
+    "label": "ChemBalancer II manual (PDF)"
+  }
 }

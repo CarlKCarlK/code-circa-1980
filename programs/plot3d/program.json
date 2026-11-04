@@ -108,5 +108,9 @@
   ],
   "mergedPrograms": [
     "3d-plot"
-  ]
+  ],
+  "manual": {
+    "path": "manual/3-D-Graphics-manual.pdf",
+    "label": "3-D Plot manual (PDF)"
+  }
 }

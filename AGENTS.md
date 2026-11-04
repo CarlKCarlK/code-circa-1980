@@ -513,6 +513,12 @@ lesson through BREAK and direct BASIC. J has no ending in this save. Transaction
 (`?SN Error in 0`) and LIFE Backwards (`?UL Error in 1005`) can't be played without writing new
 code, so they stay as they are unless the user asks for a separate derived edition.
 
+### Original manuals (November 4, 2026)
+
+`programs/bal/manual/` and `programs/plot3d/manual/` hold the user's reviewed PDFs from the
+archive's `scans/processed/`, used unchanged. `manual` in program.json adds a link above the
+player and beside the source downloads. The Chem manual's two address redactions are intentional.
+
 ## Programs from recovered floppy disks (November 3, 2026)
 
 Fourteen More players boot original disk images through `site/model1-disks.js` and
