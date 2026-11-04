@@ -351,6 +351,35 @@
         "first_block": 21,
         "last_block": 24
       }
+    },
+    {
+      "version": "v13",
+      "disk": "MMSFORTH Forth System",
+      "disk_image": "Miller Microcomputer Services MMSFORTH System Disk - Forth System [Special Format][MMSForth v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "86f612b2359c2b04d355e6932ca853ada57fdb4f2e4c59dd02579cce37cb52a3",
+      "source": "blocks 73-73",
+      "imported_files": [
+        {
+          "path": "versions/v13/OTHER-DEFINITIONS.bin",
+          "archive_path": "blocks 73-73",
+          "bytes": 1024,
+          "sha256": "28f2eb57b164148b33198bb5e6f60ef3faad281c183fbb53781632717ae0d4b2"
+        },
+        {
+          "path": "versions/v13/OTHER-DEFINITIONS.txt",
+          "archive_path": "derived listing",
+          "bytes": 658,
+          "sha256": "208990065f0e87feefd7af19c756082dc9442aa9c64abfe1f64afabbbe98f98f"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "28f2eb57b164148b33198bb5e6f60ef3faad281c183fbb53781632717ae0d4b2",
+        "bytes": 1024,
+        "import_date": "2026-11-03",
+        "first_block": 73,
+        "last_block": 73
+      }
     }
   ]
 }

@@ -274,6 +274,28 @@
       ],
       "startupSource": "==== Block 21 ====\n 0 (LOGGING)\n 1 (  PROCEDURE PRINT - INPUT CHAR ;\n 2      ADD TO BOTTOM OF SCREEN\n 3      IF LF OR CR\n 4        THEN\n 5          HOLD LINE\n 6          REPLACE HOLD\n 7          ADD LINE TO LOG\n 8        END    END )\n 9 :PRINT EMIT\n10      END'SCREEN  C@ 0 = NOT IF",
       "controlSource": []
+    },
+    {
+      "id": "v13",
+      "label": "Other Definitions (blocks 73-73)",
+      "capture": "disk: MMSFORTH Forth System",
+      "raw": "versions/v13/OTHER-DEFINITIONS.bin",
+      "listing": "versions/v13/OTHER-DEFINITIONS.txt",
+      "playable": false,
+      "note": "Dated 10/07/82: EDIT guard, RINDEX, and RFIX.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v13/OTHER-DEFINITIONS.bin",
+          "label": "OTHER-DEFINITIONS.bin"
+        },
+        {
+          "path": "versions/v13/OTHER-DEFINITIONS.txt",
+          "label": "OTHER-DEFINITIONS.txt"
+        }
+      ],
+      "startupSource": "==== Block 73 ====\n 0 ( 10/07/82             OTHER  DEFINTIONS                 )\n 1 \n 2 ( : SGO              FLUSH LOAD ;           ( COMPILED )\n 3 ( : PSE   900 MIN 36 * 0 DO DUP DROP LOOP ; ( COMPILED)\n 4 ( NOTEPAD LOADED  COMPILED ONLY NO  SOURCE  )\n 5 ( : ICE    EDIT  ;     (  REDEFINING EDIT &  E  )\n 6 ( : IC   E  ;           )\n 7 ( : EDIT        NOTEPAD ;   ( NOW USE NOTEPAD EDITOR  )\n 8 ( : E     NP  ;   )\n 9 : EDIT DUP PBLK @ >= IF EDIT ELSE CR  .\" PROTECTED \" THEN ;\n10 : RINDEX  :R INDEX ;",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
