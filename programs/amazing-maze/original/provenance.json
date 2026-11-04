@@ -1,23 +1,23 @@
 {
   "title": "Amazing Maze",
-  "version": "v10",
+  "version": "v11",
   "label": "AMAZING PROGRAM, maze generator",
-  "capture": "tape1b",
+  "capture": "tape1b2",
   "save": 5,
   "merged_from": {
     "program": "maze-generator",
-    "version": "v03"
+    "version": "v04"
   },
   "order_inferred": false,
   "order_note": "Appended after the published canonical history; this position does not claim development order.",
   "files": [
     {
       "canonical_path": "AMAZING-MAZE.ASC",
-      "snapshot_path": "versions/maze-generator-v03/05-AMAZING-PROGRAM.ASC"
+      "snapshot_path": "versions/maze-generator-v04/05-AMAZING-PROGRAM.ASC"
     },
     {
       "canonical_path": "AMAZING-MAZE.BAS",
-      "snapshot_path": "versions/maze-generator-v03/05-AMAZING-PROGRAM.BAS"
+      "snapshot_path": "versions/maze-generator-v04/05-AMAZING-PROGRAM.BAS"
     }
   ]
 }
