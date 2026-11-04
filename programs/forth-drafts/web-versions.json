@@ -5,7 +5,7 @@
       "path": "forth-drafts/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "c3791941f8227baee7ac14969ac09293ff74d661",
+      "sourceCommit": "8d88e8b7623de602932255b8a952d85535164bcf",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -103,9 +103,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BpKLbhSD.js",
+          "path": "assets/emulator-CcmU6t_h.js",
           "bytes": 316923,
-          "sha256": "c9886939182c4f4f5e502f4b884d7073dbc1a9294b409f712bd041f9b32ed9f9"
+          "sha256": "7e1a30630b325b6912bbb688d017d8af24bc40c50258f512ac0ff729e8f65efb"
         },
         {
           "path": "assets/FORTH-DRAFTS-BdblyXgH.bin",
@@ -123,14 +123,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-B3OlLpjv.js",
-          "bytes": 42693,
-          "sha256": "a4a247fb2e1161a612e026b414f9b2c68e9da6b8a9a1b47297039e0d9405c51e"
+          "path": "assets/index-DO8bUEjq.js",
+          "bytes": 42899,
+          "sha256": "335b8ac446530981344b84208901e131986f43eea37987e05a78dd1e319df49f"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -345,7 +345,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "0ddfaa95b438b5aadcf88cde459d72dcc0ea35c11c9c9ea4e28ef5efd6802077"
+          "sha256": "c85cc408e15fbd8dadb3ba23c8ffa4f110cea96657ce52d3b177260c28d9e467"
         },
         {
           "path": "licenses.txt",
