@@ -32,6 +32,28 @@
       ],
       "startupSource": "==== Block 45 ====\n 0 ( CONQUEST              PAGE 1 OF               )\n 1 30 CONSTANT SIZE\n 2 SIZE 2 j CONSTANT NO-OF-STARS\n 3 SIZE 3 j CONSTANT NO-OF-PLANETS\n 4 4 CONSTANT NO-OF-B-HOLES\n 5 200 CONSTANT W1       ( WEIGHT VALUE FOR PLANET SCORE )\n 6 5   CONSTANT W2       ( WEIGHT VALUE FOR SHIPS & TROOPS )\n 7 10  CONSTANT W3       ( \"       \"     \" COMPUTER TROOPS )\n 8 20000 CONSTANT SPEED  (  COMPUTER'S SPEED       )\n 9 \n10 VARIABLE  TEMP1   VARIABLE VTAX ( TAX COLLECTED )",
       "controlSource": []
+    },
+    {
+      "id": "v02",
+      "label": "Block World (blocks 60-61)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v02/BLOCK-WORLD.bin",
+      "listing": "versions/v02/BLOCK-WORLD.txt",
+      "playable": false,
+      "note": "Falling-objects world. REFALL is used but never defined.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v02/BLOCK-WORLD.bin",
+          "label": "BLOCK-WORLD.bin"
+        },
+        {
+          "path": "versions/v02/BLOCK-WORLD.txt",
+          "label": "BLOCK-WORLD.txt"
+        }
+      ],
+      "startupSource": "==== Block 60 ====\n 0   ( BLOCK WORLD   1 OF   )    : TASK ;\n 1 ( OBJECTS AND CODES   AIR  0    VAPOR 1  BLOCK 2  SUPPORT 3   )\n 2 ( DOOR 4   MAN 5  CANNON 6    )\n 3 \n 4 47 127  2CARRAY WORLD\n 5 2 CARRAY X   2 CARRAY Y\n 6 : BSET 2DUP 5 PICK 0>  IF ESET ELSE ECLR THEN WORLD C! ;\n 7 \n 8 : HLINE SWAP 1+ SWAP  DO 2DUP I BSET LOOP ;\n 9 : BPAGE 48 0  DO 0 I 127 0 HLINE LOOP ;\n10 BPAGE      3  47 127 0 HLINE",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
