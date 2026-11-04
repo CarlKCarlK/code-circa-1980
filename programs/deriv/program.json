@@ -1,0 +1,206 @@
+{
+  "id": "deriv",
+  "title": "Deriv",
+  "description": "A symbolic differentiator in LISP. Give it an expression and a variable, and it prints the derivative.",
+  "kind": "LISP",
+  "language": "LISP 3.72, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Deriv (LISP disk)",
+      "capture": "disk: LISP",
+      "raw": "versions/v01/DERIV.LSP",
+      "listing": "versions/v01/DERIV.txt",
+      "playable": true,
+      "note": "LISP source file copied unchanged, with the other function files from its disk. Each is exact directory bytes; files carry a .LSP suffix here for download. The readable view removes record padding and marks unrelated leftovers. EDIT prints its own credit to Ronald L. Nicol.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v01/DERIV.LSP",
+          "label": "DERIV.LSP"
+        },
+        {
+          "path": "versions/v01/DERIV.txt",
+          "label": "DERIV.txt"
+        },
+        {
+          "path": "versions/v01/APPEND.LSP",
+          "label": "APPEND.LSP"
+        },
+        {
+          "path": "versions/v01/BOUNDP.LSP",
+          "label": "BOUNDP.LSP"
+        },
+        {
+          "path": "versions/v01/BREAK.LSP",
+          "label": "BREAK.LSP"
+        },
+        {
+          "path": "versions/v01/COPY.LSP",
+          "label": "COPY.LSP"
+        },
+        {
+          "path": "versions/v01/CSET.LSP",
+          "label": "CSET.LSP"
+        },
+        {
+          "path": "versions/v01/CSETQ.LSP",
+          "label": "CSETQ.LSP"
+        },
+        {
+          "path": "versions/v01/DEFPROP.LSP",
+          "label": "DEFPROP.LSP"
+        },
+        {
+          "path": "versions/v01/DELETE.LSP",
+          "label": "DELETE.LSP"
+        },
+        {
+          "path": "versions/v01/EDIT.LSP",
+          "label": "EDIT.LSP"
+        },
+        {
+          "path": "versions/v01/EVAL2.LSP",
+          "label": "EVAL2.LSP"
+        },
+        {
+          "path": "versions/v01/EVALQUOT.LSP",
+          "label": "EVALQUOT.LSP"
+        },
+        {
+          "path": "versions/v01/GCD.LSP",
+          "label": "GCD.LSP"
+        },
+        {
+          "path": "versions/v01/GENSYM.LSP",
+          "label": "GENSYM.LSP"
+        },
+        {
+          "path": "versions/v01/INTERSEC.LSP",
+          "label": "INTERSEC.LSP"
+        },
+        {
+          "path": "versions/v01/LAST.LSP",
+          "label": "LAST.LSP"
+        },
+        {
+          "path": "versions/v01/LENGTH.LSP",
+          "label": "LENGTH.LSP"
+        },
+        {
+          "path": "versions/v01/MAPCAR.LSP",
+          "label": "MAPCAR.LSP"
+        },
+        {
+          "path": "versions/v01/MATCH.LSP",
+          "label": "MATCH.LSP"
+        },
+        {
+          "path": "versions/v01/MEMBER.LSP",
+          "label": "MEMBER.LSP"
+        },
+        {
+          "path": "versions/v01/MOD.LSP",
+          "label": "MOD.LSP"
+        },
+        {
+          "path": "versions/v01/NCONC.LSP",
+          "label": "NCONC.LSP"
+        },
+        {
+          "path": "versions/v01/NILCAR.LSP",
+          "label": "NILCAR.LSP"
+        },
+        {
+          "path": "versions/v01/NILCDR.LSP",
+          "label": "NILCDR.LSP"
+        },
+        {
+          "path": "versions/v01/PLUS2.LSP",
+          "label": "PLUS2.LSP"
+        },
+        {
+          "path": "versions/v01/RADIX.LSP",
+          "label": "RADIX.LSP"
+        },
+        {
+          "path": "versions/v01/REVERSE.LSP",
+          "label": "REVERSE.LSP"
+        },
+        {
+          "path": "versions/v01/SAVFN.LSP",
+          "label": "SAVFN.LSP"
+        },
+        {
+          "path": "versions/v01/SAVFNS.LSP",
+          "label": "SAVFNS.LSP"
+        },
+        {
+          "path": "versions/v01/SUBST.LSP",
+          "label": "SUBST.LSP"
+        },
+        {
+          "path": "versions/v01/TAB.LSP",
+          "label": "TAB.LSP"
+        },
+        {
+          "path": "versions/v01/TRACE.LSP",
+          "label": "TRACE.LSP"
+        }
+      ],
+      "startupSource": "(PROG NIL (PUTPROP (QUOTE DERIV) (QUOTE (LAMBDA NIL (PROG NIL (SETUP) (CHR  28) (CHR  31) (PRINT (QUOTE (DERIV / A SYMBOLIC DIFFERENTIATOR))) (TERPRI) (TERPRI) LOOP (PRIN1 (QUOTE >)) (PRINT (INFIX (DIFF (PREF (READ)) (PREF (READ))))) (GO LOOP)))) (QUOTE EXPR)) (PUTPROP (QUOTE PREF) (QUOTE (LAMBDA (E) (COND ((ATOM E) E) ((NULL (CDR E)) (PREF (CAR E))) ((COND ((ATOM (CAR E)) (GET (CAR E) (QUOTE OP)))) (COND ((EQ (CAR E) (QUOTE :-:)) (LIST (QUOTE DIFFERENCE)  0 (PREF (CDR E)))) (T (LIST (GET (CAR E) (QUOTE OP)) (PREF (CDR E)))))) ((EQ (CADR E) (QUOTE !)) (LIST (QUOTE FAC) (PREF (CAR E)))) ((NULL (CDR (CDDR E))) (LIST (GET (CADR E) (QUOTE OP)) (PREF (CAR E)) (PREF (CDDR E)))) ((GREATERP (GET (CADR (CDDR E)) (QUOTE LB)) (GET (CADR E) (QUOTE RB))) (LIST (GET (CADR E) (QUOTE OP)) (PREF (CAR E)) (PREF (CDDR E)))) (T (LIST (GET (CADR (CDDR E)) (QUOTE OP)) (PREF (LIST (CAR E) (CADR E) (CAR (CDDR E)))) (PREF (CDDR (CDDR E)))))))) (QUOTE EXPR)) (PUTPROP (QUOTE TAYLOR) (QUOTE (LAMBDA NIL (PROG NIL (CHR  28) (CHR  31) (PRINT (QUOTE (TAYLOR / A TAYLOR SERIES GENERATOR))) (TERPRI) (TERPRI) LOOP (PRIN1 (QUOTE >)) (TS (PREF (READ)) (READ) (READ) (READ)) (GO LOOP)))) (QUOTE EXPR)) (PUTPROP (QUOTE AND) (QUOTE (LAMBDA (X Y) (COND ((EQ X Y) (COND ((EQ X T) T)))))) (QUOTE EXPR)) (PUTPROP (QUOTE OR) (QUOTE (LAMBDA (X Y) (COND ((EQ X T) T) ((EQ Y T) T)))) (QUOTE EXPR)) (PUTPROP (QUOTE SETUP) (QUOTE (LAMBDA NIL (PROG NIL (MAPCAR (QUOTE (([  90  100 EXPT) (*  60  80 TIMES) (/  50  70 DIV) (:+:  20  40 PLUS) (:-:  10  30 DIFFERENCE))) (QUOTE (LAMBDA (L) (PROG NIL (PUTPROP (CAR L) (CADR L) (QUOTE LB)) (PUTPROP (CAR L) (CAR (CDDR L)) (QUOTE RB)) (PUTPROP (CAR L) (CADR (CDDR L)) (QUOTE OP)))))) (PUTPROP (QUOTE COS) (QUOTE COS) (QUOTE OP)) (PUTPROP (QUOTE SIN) (QUOTE SIN) (QUOTE OP)) (PUTPROP (QUOTE EXP) (QUOTE EXP) (QUOTE OP)) (PUTPROP (QUOTE LOG) (QUOTE LOG) (QUOTE OP))))) (QUOTE EXPR)) (PUTPROP (QUOTE INFIX) (QUOTE (LAMBDA (E) (COND ((ATOM E) E) (T (PROG (FIRST SECOND) (SETQ FIRST (INFIX (CADR E))) (COND ((CDDR E) (SETQ SECOND (INFIX (CAR (CDDR E)))))) (RETURN (COND ((EQ (CAR E) (QUOTE PLUS)) (COND ((EQ FIRST  0) SECOND) ((EQ SECOND  0) FIRST) ((TWONUM) (EVAL E NIL)) ((EQUAL FIRST SECOND) (LIST  2 (QUOTE *) FIRST)) ((MATCH (LIST (QUOTE ?) (QUOTE *) FIRST) SECOND) (INFIX (LIST (QUOTE TIMES) (LIST (QUOTE PLUS) (CAR SECOND)  1) FIRST))) ((MATCH (LIST (QUOTE ?) (QUOTE *) SECOND) FIRST) (INFIX (LIST (QUOTE TIMES) (LIST (QUOTE PLUS) (CAR FIRST)  1) SECOND))) (T (LIST FIRST (QUOTE :+:) SECOND)))) ((EQ (CAR E) (QUOTE TIMES)) (COND ((EQ FIRST  1) SECOND) ((EQ SECOND  1) FIRST) ((EQ FIRST  0)  0) ((EQ SECOND  0)  0) ((EQ FIRST SECOND) (LIST FIRST (QUOTE [)  2)) ((TWONUM) (EVAL E NIL)) ((MATCH (LIST FIRST (QUOTE [) (QUOTE ?)) SECOND) (INFIX (LIST (QUOTE EXPT) FIRST (LIST (QUOTE PLUS) (CAR (CDDR SECOND))  1)))) ((MATCH (LIST SECOND (QUOTE [) (QUOTE ?)) FIRST) (INFIX (LIST (QUOTE EXPT) SECOND (LIST (QUOTE PLUS) (CAR (CDDR FIRST))  1)))) ((MATCH (LIST (QUOTE ?) (QUOTE *) FIRST) SECOND) (INFIX (LIST (QUOTE TIMES) (CAR SECOND) (LIST (QUOTE EXPT) FIRST  2)))) ((MATCH (LIST (QUOTE ?) (QUOTE *) SECOND) FIRST) (INFIX (LIST (QUOTE TIMES) (CAR FIRST) (LIST (QUOTE EXPT) SECOND  2)))) (T (LIST FIRST (QUOTE *) SECOND)))) ((EQ (CAR E) (QUOTE DIV)) (COND ((EQ SECOND  1) FIRST) ((EQUAL FIRST SECOND)  1) ((EQ FIRST  0)  0) ((TWONUM) (EVAL E NIL)) ((MATCH (LIST (QUOTE ?) (QUOTE *) SECOND) FIRST) (INFIX (LIST (QUOTE TIMES) (LIST (QUOTE DIFFERENCE) (CAR FIRST)  1) SECOND))) ((MATCH (LIST (QUOTE ?) (QUOTE *) FIRST) SECOND) (INFIX (LIST (QUOTE DIV)  1 (LIST (QUOTE TIMES) (LIST (QUOTE DIFFERENCE) (CAR SECOND)  1) FIRST)))) ((MATCH (LIST SECOND (QUOTE [) (QUOTE ?)) FIRST) (INFIX (LIST (QUOTE EXPT) SECOND (LIST (QUOTE DIFFERENCE) (CAR (CDDR FIRST))  1)))) ((MATCH (LIST FIRST (QUOTE [) (QUOTE ?)) SECOND) (INFIX (LIST (QUOTE DIV)  1 (LIST (QUOTE EXPT) FIRST (LIST (QUOTE DIFFERENCE) (CAR (CDDR SECOND))  1))))) (T (LIST FIRST (QUOTE /) SECOND)))) ((EQ (CAR E) (QUOTE EXPT)) (COND ((EQ SECOND  1) FIRST) ((EQ SECOND  0)  1) ((TWONUM) (EVAL E NIL)) (T (LIST FIRST (QUOTE [) SECOND)))) ((EQ (CAR E) (QUOTE DIFFERENCE)) (COND ((EQ SECOND  0) FIRST) ((EQ FIRST  0) (LIST (QUOTE :-:) SECOND)) ((TWONUM) (EVAL E NIL)) ((EQUAL FIRST SECOND)  0) (T (LIST FIRST (QUOTE :-:) SECOND)))) ((EQ (CAR E) (QUOTE LOG)) (COND ((EQ FIRST  1)  0) (T (LIST (QUOTE LOG) FIRST)))) ((EQ (CAR E) (QUOTE SIN)) (LIST (QUOTE SIN) FIRST)) ((EQ (CAR E) (QUOTE COS)) (LIST (QUOTE COS) FIRST)) ((EQ (CAR E) (QUOTE EXP)) (COND ((EQ FIRST  0)  1) (T (LIST (QUOTE EXP) FIRST)))) ((EQ (CAR E) (QUOTE FAC)) (COND ((EQ FIRST  1)  1) ((EQ FIRST  0)  1) (T (LIST FIRST (QUOTE !))))) (T E)))))))) (QUOTE EXPR)) (PUTPROP (QUOTE DIFF) (QUOTE (LAMBDA (E X) (COND ((ATOM E) (COND ((EQ E X)  1) (T  0))) ((EQ (CAR E) (QUOTE PLUS)) (LIST (QUOTE PLUS) (DIFF (CADR E) X) (DIFF (CAR (CDDR E)) X))) ((EQ (CAR E) (QUOTE TIMES)) (LIST (QUOTE PLUS) (LIST (QUOTE TIMES) (CADR E) (DIFF (CAR (CDDR E)) X)) (LIST (QUOTE TIMES) (CAR (CDDR E)) (DIFF (CADR E) X)))) ((EQ (CAR E) (QUOTE SIN)) (LIST (QUOTE TIMES) (LIST (QUOTE COS) (CADR E)) (DIFF (CADR E) X))) ((EQ (CAR E) (QUOTE COS)) (LIST (QUOTE TIMES) (LIST (QUOTE DIFFERENCE)  0 (LIST (QUOTE SIN) (CADR E))) (DIFF (CADR E) X))) ((EQ (CAR E) (QUOTE DIV)) (LIST (QUOTE DIV) (LIST (QUOTE DIFFERENCE) (LIST (QUOTE TIMES) (CAR (CDDR E)) (DIFF (CADR E) X)) (LIST (QUOTE TIMES) (CADR E) (DIFF (CAR (CDDR E)) X))) (LIST (QUOTE TIMES) (CAR (CDDR E)) (CAR (CDDR E))))) ((EQ (CAR E) (QUOTE DIFFERENCE)) (LIST (QUOTE DIFFERENCE) (DIFF (CADR E) X) (DIFF (CAR (CDDR E)) X))) ((EQ (CAR E) (QUOTE EXPT)) (LIST (QUOTE PLUS) (LIST (QUOTE TIMES) (DIFF (CADR E) X) (LIST (QUOTE TIMES) (CAR (CDDR E)) (LIST (QUOTE EXPT) (CADR E) (LIST (QUOTE DIFFERENCE) (CAR (CDDR E))  1)))) (LIST (QUOTE TIMES) (DIFF (CAR (CDDR E)) X) (LIST (QUOTE TIMES) (LIST (QUOTE LOG) (CADR E)) (LIST (QUOTE EXPT) (CADR E) (CAR (CDDR E))))))) ((EQ (CAR E) (QUOTE EXP)) (LIST (QUOTE TIMES) E (DIFF (CADR E) X))) ((EQ (CAR E) (QUOTE LOG)) (LIST (QUOTE TIMES) (LIST (QUOTE DIV)  1 (CADR E)) (DIFF (CADR E) X)))))) (QUOTE EXPR)) (PUTPROP (QUOTE MAPCAR) (QUOTE (LAMBDA (L FN) (COND ((NULL L) NIL) (T (CONS (FN (CAR L)) (MAPCAR (CDR L) FN)))))) (QUOTE EXPR)) (PUTPROP (QUOTE TWONUM) (QUOTE (LAMBDA NIL (COND ((NUMBERP FIRST) (NUMBERP SECOND))))) (QUOTE EXPR)) (PUTPROP (QUOTE MATCH) (QUOTE (LAMBDA (X Y) (COND ((EQ X (QUOTE ?)) T) ((AND (ATOM X) (EQ X Y)) T) ((OR (ATOM X) (ATOM Y)) NIL) (T (AND (MATCH (CAR X) (CAR Y)) (MATCH (CDR X) (CDR Y))))))) (QUOTE EXPR)) (PUTPROP (QUOTE TS) (QUOTE (LAMBDA (E X A J) (PROG (N) (SETQ N  0) LOOP (PRINT (INFIX (LIST (QUOTE DIV) (LIST (QUOTE TIMES) (EVAL E (LIST (CONS (QUOTE X) A))) (LIST (QUOTE EXPT) (LIST (QUOTE DIFFERENCE) X A) N)) (LIST (QUOTE FAC) N)))) (SETQ N (PLUS N  1)) (COND ((EQ N J) (RETURN (PRINT (QUOTE END))))) (SETQ E (PREF (INFIX (DIFF E X)))) (GO LOOP)))) (QUOTE EXPR)))\n[Unrelated leftover bytes after the form, not part of it:]\nQ N (PLUS N  1)) (COND ((EQ N J) (RETURN (PRINT (QUOTE END))))) (SETQ E (PREF (INFIX (DIFF E X)))) (GO LOOP)))) QUOTE EXPR)))Q N (PLUS N  1)) (COND ((EQ N J) (RETURN (PRINT (QUOTE END))))) (SETQ E (PREF (INFIX (DIFF E X)))) (GO LOOP)))) ",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/lisp.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "DOS READY"
+          },
+          {
+            "delay": 1
+          },
+          {
+            "type": "LISP\n"
+          },
+          {
+            "wait": "^-> _?$"
+          },
+          {
+            "type": "(LOAD (QUOTE DERIV/LSP))\n"
+          },
+          {
+            "wait": "^NIL[ ]*$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(DERIV)\n"
+          },
+          {
+            "wait": "^>_?$"
+          }
+        ]
+      },
+      "running": "Running LISP from the original disks",
+      "slug": "basic"
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "I wrote this in LISP. It runs on LISP 3.72, © 1981 Ronald L. Nicol, distributed by SuperSoft. Preserved here for small-scale archival use."
+  },
+  "howTo": [
+    "At the > prompt, type an infix expression in parentheses and press Enter, then type the variable and press Enter. For example, (X * X) and then X. Use [ for a power, :+: for plus, :-: for minus, * and /, and functions such as (SIN X).",
+    "Files cannot be saved: the disk is write-protected in this player. BREAK returns to the LISP prompt."
+  ],
+  "quickHelp": "Type (X * X), Enter, then X, Enter. [ is a power; :+: and :-: add and subtract."
+}

@@ -1,0 +1,213 @@
+{
+  "version": "v01",
+  "disk": "LISP",
+  "disk_image": "LISP [DOS Accessible][TRSDOS v2.1][Bootable][M1][35 Track][Single Density].dmk",
+  "disk_image_sha256": "b585e6a0cf33e63588d0fdd5b7cff2282ee6897d3fbc5ea2988f51699299f874",
+  "source": "files/DERIV.LSP",
+  "imported_files": [
+    {
+      "path": "versions/v01/DERIV.LSP",
+      "archive_path": "files/DERIV.LSP",
+      "bytes": 7168,
+      "sha256": "2d0a391e579af198df7edb27d5ff0e9ecaba422e62be66fc6660c7fdc36f3ab3"
+    },
+    {
+      "path": "versions/v01/DERIV.txt",
+      "archive_path": "derived listing",
+      "bytes": 7171,
+      "sha256": "7d3dd65392d85d28eba5e128c929a8865c5dbce307797cb0f698176a26da2e94"
+    },
+    {
+      "path": "versions/v01/APPEND.LSP",
+      "archive_path": "files/APPEND",
+      "bytes": 384,
+      "sha256": "a4be40c0636f225ae5bad36025eec29341f7b7ea7d1e33fd59843ed43e53cfc7"
+    },
+    {
+      "path": "versions/v01/BOUNDP.LSP",
+      "archive_path": "files/BOUNDP",
+      "bytes": 384,
+      "sha256": "04037695be793810e63800ba069432812a39dce04a9b0488ebdc4789db484f31"
+    },
+    {
+      "path": "versions/v01/BREAK.LSP",
+      "archive_path": "files/BREAK",
+      "bytes": 640,
+      "sha256": "18a23a4b98e8fb724197db1eadb6acf81d425f69a168c6d750b02dff00b23ca9"
+    },
+    {
+      "path": "versions/v01/COPY.LSP",
+      "archive_path": "files/COPY",
+      "bytes": 384,
+      "sha256": "a2a6ffacb51b937ac2d29d7680fa02f885fc5c00a789ccf0d17a933fefeedf62"
+    },
+    {
+      "path": "versions/v01/CSET.LSP",
+      "archive_path": "files/CSET",
+      "bytes": 256,
+      "sha256": "ef221637d296f4c97632638109061cbc2429343922d53b00f351159e948cdc1c"
+    },
+    {
+      "path": "versions/v01/CSETQ.LSP",
+      "archive_path": "files/CSETQ",
+      "bytes": 256,
+      "sha256": "54a6f344532e7286bdce4df1d900c5a95db20d824ece26befb426c64809d7886"
+    },
+    {
+      "path": "versions/v01/DEFPROP.LSP",
+      "archive_path": "files/DEFPROP",
+      "bytes": 256,
+      "sha256": "85c144acf11fed400f3872c4eb87a42e43888395040e24d670cf2814165f0be3"
+    },
+    {
+      "path": "versions/v01/DELETE.LSP",
+      "archive_path": "files/DELETE",
+      "bytes": 384,
+      "sha256": "33f04701940360d94610630e3691b261eaeeb4795264238ec07aaa0ac9c7b450"
+    },
+    {
+      "path": "versions/v01/EDIT.LSP",
+      "archive_path": "files/EDIT.LSP",
+      "bytes": 1920,
+      "sha256": "8b8b2d23107c014b9a2f33d874c30f2328144e7ac4529c3056d4567a4b72d527"
+    },
+    {
+      "path": "versions/v01/EVAL2.LSP",
+      "archive_path": "files/EVAL2",
+      "bytes": 256,
+      "sha256": "2e68d5d580312fbea453fd311611715f347b15e7eb330c4b78dd44fa1e834f2a"
+    },
+    {
+      "path": "versions/v01/EVALQUOT.LSP",
+      "archive_path": "files/EVALQUOT",
+      "bytes": 384,
+      "sha256": "2d52eb99e3958093a572d26ba36376298a1d1e047ff9e150a71c83a2373c6d74"
+    },
+    {
+      "path": "versions/v01/GCD.LSP",
+      "archive_path": "files/GCD",
+      "bytes": 384,
+      "sha256": "9152cdb047b79ef9db4449db70cd710153797d7bc7efa1084c1a36a086fb1fa5"
+    },
+    {
+      "path": "versions/v01/GENSYM.LSP",
+      "archive_path": "files/GENSYM",
+      "bytes": 1280,
+      "sha256": "322a941864ca38db9d45b82e9932985a2cadcedc02b9e6467f40b2fc2109b521"
+    },
+    {
+      "path": "versions/v01/INTERSEC.LSP",
+      "archive_path": "files/INTERSEC",
+      "bytes": 512,
+      "sha256": "b12931a4b467a8460f2f9f76fa81365123dec82e6883c08a6f701b7e7608cbd3"
+    },
+    {
+      "path": "versions/v01/LAST.LSP",
+      "archive_path": "files/LAST",
+      "bytes": 384,
+      "sha256": "102b1704401a5abada942aaa561d22bebc82e3de4a8953ad91b956c7e41d6372"
+    },
+    {
+      "path": "versions/v01/LENGTH.LSP",
+      "archive_path": "files/LENGTH",
+      "bytes": 256,
+      "sha256": "9e4df8bfcca6a2f92a7f49c590b159e3aec28ba71ad24932f9d5ef4867ba29c7"
+    },
+    {
+      "path": "versions/v01/MAPCAR.LSP",
+      "archive_path": "files/MAPCAR",
+      "bytes": 384,
+      "sha256": "c759b2ec997854eaf1a6a13b676f3c8fae955a96dcfa6bddd802cf92240e2336"
+    },
+    {
+      "path": "versions/v01/MATCH.LSP",
+      "archive_path": "files/MATCH",
+      "bytes": 640,
+      "sha256": "580beb2993c0ccdd6ab7d97e56d17c28dc1fe53b67bd050ef4f16ba064a05b41"
+    },
+    {
+      "path": "versions/v01/MEMBER.LSP",
+      "archive_path": "files/MEMBER",
+      "bytes": 384,
+      "sha256": "81f7ef33ec1b9a67b112b0036095635ae31033fa03f577bd4b9a1df1f1cb9364"
+    },
+    {
+      "path": "versions/v01/MOD.LSP",
+      "archive_path": "files/MOD",
+      "bytes": 384,
+      "sha256": "8aa4c2232aedf47fb01b1cf1746f57918eba69c6f7dde896ed48210921f83779"
+    },
+    {
+      "path": "versions/v01/NCONC.LSP",
+      "archive_path": "files/NCONC",
+      "bytes": 384,
+      "sha256": "3b5fb834bc727fba716f1f19d207f2245653d77fa53713276dd12a7b0d6a0f69"
+    },
+    {
+      "path": "versions/v01/NILCAR.LSP",
+      "archive_path": "files/NILCAR",
+      "bytes": 256,
+      "sha256": "32c6871c197b151a141d6e74287ef0a4d3fb1e6cadf329dbb35b596f55ce4378"
+    },
+    {
+      "path": "versions/v01/NILCDR.LSP",
+      "archive_path": "files/NILCDR",
+      "bytes": 256,
+      "sha256": "ec5394927f8fc504e5be42660c339ea05eb2c38f7f7901312363de933a04bc24"
+    },
+    {
+      "path": "versions/v01/PLUS2.LSP",
+      "archive_path": "files/PLUS2",
+      "bytes": 384,
+      "sha256": "372df4957f8f76f5b84748a2544b28d55dfb2f707d62135ab35b84f424b37802"
+    },
+    {
+      "path": "versions/v01/RADIX.LSP",
+      "archive_path": "files/RADIX",
+      "bytes": 384,
+      "sha256": "dce330f66c2ddb175d5cce478a53fc2f219940a11ab0e5ab06b1d144f930ae3f"
+    },
+    {
+      "path": "versions/v01/REVERSE.LSP",
+      "archive_path": "files/REVERSE",
+      "bytes": 512,
+      "sha256": "fe57f8058775544a17da0f7cb2e1473af1a5853cabeac9491c290dc550303478"
+    },
+    {
+      "path": "versions/v01/SAVFN.LSP",
+      "archive_path": "files/SAVFN",
+      "bytes": 512,
+      "sha256": "1762abf3fa4fb67d9dc5436334d1e67895d3b7ca5b1228d86f863dfddded52a1"
+    },
+    {
+      "path": "versions/v01/SAVFNS.LSP",
+      "archive_path": "files/SAVFNS",
+      "bytes": 768,
+      "sha256": "7ed54c4a15a069d9b93bd9eeb4dc634458629bb6aaa46d44ea54501d0df825f9"
+    },
+    {
+      "path": "versions/v01/SUBST.LSP",
+      "archive_path": "files/SUBST",
+      "bytes": 384,
+      "sha256": "beacbce0feb4356c5d6f1f167ae86cc204cc96a83443635b23ff02c2ec1e1987"
+    },
+    {
+      "path": "versions/v01/TAB.LSP",
+      "archive_path": "files/TAB",
+      "bytes": 256,
+      "sha256": "6b193316dc9f17cafeb8d40debcb2649dfae7a729fd9e561fa27851382c400c9"
+    },
+    {
+      "path": "versions/v01/TRACE.LSP",
+      "archive_path": "files/TRACE.LSP",
+      "bytes": 1920,
+      "sha256": "777829a3697cc74a90f6c30f6c83dd812c9db00534ff22694ee99d19e6ec5505"
+    }
+  ],
+  "recovery_item": {
+    "format": "LISP source",
+    "sha256": "2d0a391e579af198df7edb27d5ff0e9ecaba422e62be66fc6660c7fdc36f3ab3",
+    "bytes": 7168,
+    "import_date": "2026-11-03"
+  }
+}
