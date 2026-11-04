@@ -1,5 +1,5 @@
 {
-  "official_title": "JAB \u2014 The Best of the Monster Games",
+  "official_title": "JAB — The Best of the Monster Games",
   "title_authority": "Recovered title or descriptive title from the recovered behavior; archive labels retained.",
   "short_name": "jab",
   "import_date": "2026-11-02",
@@ -196,7 +196,7 @@
         "order": "1",
         "type": "BASIC",
         "recovery%": "100",
-        "summary": "JAB \u2014 The Best of the Monster Games",
+        "summary": "JAB — The Best of the Monster Games",
         "capture": "tape30a",
         "capture_scope": "unknown",
         "baud": "500",
@@ -214,6 +214,38 @@
       },
       "recovery_inventory": "tapes/recovered/tape30a/inventory.json",
       "execution_tested": false
+    },
+    {
+      "version": "v05",
+      "disk": "BASIC Programs Games",
+      "disk_image": "BASIC Programs Games [DOS Accessible][NEWDOS-80 v2.0][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "c779ed55ed8b8c2e6a0ada2125d32fa5fadef2220d6ab31ef7de3c6beb2197ca",
+      "source": "files/JAB.BAS",
+      "imported_files": [
+        {
+          "path": "versions/v05/JAB.BAS",
+          "archive_path": "files/JAB.BAS",
+          "bytes": 8566,
+          "sha256": "6d61fc1dafefea236a0d4351c7387992dc20cd773ffef5df5e5b686390f06896"
+        },
+        {
+          "path": "versions/v05/JAB.ASC",
+          "archive_path": "derived listing",
+          "bytes": 10494,
+          "sha256": "b008cf07b29791acfbfcd0ca3def68c5a9919f6e9fa48338a89ad646e6d3e825"
+        }
+      ],
+      "recovery_item": {
+        "format": "BASIC disk file",
+        "sha256": "6d61fc1dafefea236a0d4351c7387992dc20cd773ffef5df5e5b686390f06896",
+        "bytes": 8566,
+        "import_date": "2026-11-03",
+        "lines": 188,
+        "last": 31000,
+        "normal_end_marker": true,
+        "memory_base": 27205,
+        "tape_relation": "179/188 lines shared with tapes/recovered/tape30a/best/01-JAB-JABBERWOCKIES.BAS (183 lines)"
+      }
     }
   ],
   "dating": {
@@ -296,7 +328,7 @@
     "artifact": "AMAZING.ASC",
     "bytes": 3094,
     "sha256": "0638d75685bd0d474b9c625698287165ef297c979a9841597e33ca088e35417d",
-    "note": "Jack Hauber, Amazing, BASIC Computer Games (1978), pp. 2\u20133. Complete electronic transcription obtained from the GReaperEx/bcg mirror of Vintage BASIC. Not a recovered cassette or verified byte-for-byte transcription of the print edition. Published source attribution and the maze-generation algorithm match the early tape16a forms; numbered records are reorganized there. The later JAB forms replace the generator. No claim that the complete JAB game came from this book.",
+    "note": "Jack Hauber, Amazing, BASIC Computer Games (1978), pp. 2–3. Complete electronic transcription obtained from the GReaperEx/bcg mirror of Vintage BASIC. Not a recovered cassette or verified byte-for-byte transcription of the print edition. Published source attribution and the maze-generation algorithm match the early tape16a forms; numbered records are reorganized there. The later JAB forms replace the generator. No claim that the complete JAB game came from this book.",
     "execution_tested": false
   },
   "artwork": {
@@ -325,7 +357,7 @@
   },
   "attribution_review": {
     "date": "2026-11-03",
-    "text": "Early maze versions adapt Jack Hauber\u2019s Amazing; later JAB versions replace the maze generator.",
+    "text": "Early maze versions adapt Jack Hauber’s Amazing; later JAB versions replace the maze generator.",
     "evidence": "See programs/jab/upstream and canonical source comparisons; attribution distinguishes the earliest forms from the selected later generator.",
     "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
   }

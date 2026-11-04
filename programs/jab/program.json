@@ -1,6 +1,6 @@
 {
   "id": "jab",
-  "title": "JAB \u2014 The Best of the Monster Games",
+  "title": "JAB — The Best of the Monster Games",
   "description": "Explore a maze, evade Jabberwockies, and set timed explosive drops.",
   "kind": "Game",
   "language": "Level II BASIC",
@@ -45,7 +45,7 @@
     },
     {
       "id": "v04",
-      "label": "JAB \u2014 The Best of the Monster Games",
+      "label": "JAB — The Best of the Monster Games",
       "capture": "tape30a",
       "save": 1,
       "raw": "versions/v04/01-JAB-JABBERWOCKIES.BAS",
@@ -54,10 +54,32 @@
       "slug": "basic",
       "note": "Untouched recovered save. Exact left/right payload; 183 ordered lines; consistent pointer base 17125; end marker; exact EOF",
       "unavailableReason": null
+    },
+    {
+      "id": "v05",
+      "label": "JAB.BAS (BASIC Programs Games)",
+      "capture": "disk: BASIC Programs Games",
+      "raw": "versions/v05/JAB.BAS",
+      "listing": "versions/v05/JAB.ASC",
+      "playable": false,
+      "note": "Disk form with number-key input and debugging stubs. Not clearly better than the selected save.",
+      "unavailableReason": "Disk form, kept as source. It is not the selected player for this program.",
+      "exports": [
+        {
+          "path": "versions/v05/JAB.BAS",
+          "label": "JAB.BAS"
+        },
+        {
+          "path": "versions/v05/JAB.ASC",
+          "label": "JAB.ASC"
+        }
+      ],
+      "startupSource": "3 ON ERROR GOTO 10001\n5 REM THE BEST OF THE MONSTER GAMES ---- JAB\n10 CLEAR 100:DEFINT C,N\n20 CLS:PRINT\"WORKING\"\n30 W=70:L=40:Z2=.3\n40 IF W/2<>INT(W/2) THEN W=W-1\n50 IF L/2<>INT(L/2) THEN L=L-1\n60 DIM C(W,L),NS(30,3)\n70 FOR X=1 TO W-1 STEP 2:FOR Y=1 TO L-1 STEP 2:C(X,Y)=2:NEXTY,X\n71 GOSUB 1000:' ************\n80 X=RND(W-1):Y=RND(L/2-1)*2:IF X/2=INT(X/2) THEN Y=Y-1\n90 C(X,Y)=2:ZZ=ZZ+1:IFZZ/W/L<Z2 THEN 80",
+      "controlSource": []
     }
   ],
   "attribution": {
-    "text": "Early maze versions adapt Jack Hauber\u2019s Amazing; later JAB versions replace the maze generator.",
+    "text": "Early maze versions adapt Jack Hauber’s Amazing; later JAB versions replace the maze generator.",
     "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
   }
 }
