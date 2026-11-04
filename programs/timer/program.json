@@ -1,0 +1,43 @@
+{
+  "id": "timer",
+  "title": "Timer",
+  "description": "A list of timed reminders that announces them through the speech synthesizer.",
+  "kind": "Source archive",
+  "language": "TRS-80 Disk BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "TIMER.BAS (More Voice)",
+      "capture": "disk: More Voice",
+      "raw": "versions/v01/TIMER.BAS",
+      "listing": "versions/v01/TIMER.ASC",
+      "playable": false,
+      "note": "Uses the disk clock and PRINT* speech, which is not emulated.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v01/TIMER.BAS",
+          "label": "TIMER.BAS"
+        },
+        {
+          "path": "versions/v01/TIMER.ASC",
+          "label": "TIMER.ASC"
+        }
+      ],
+      "startupSource": "1 CLS\n2 CLEAR 999\n10 T=0\n100 PRINT@64,\"\";:IF T=0 THEN 200 ELSE FOR A=1 TO T\n110 IF TIME$>= T$(A) THEN PRINT @ 960,T$(A), ELSE 130\n115 PRINT*\"TIME TIME TIME TIME TIME\"\n120 PRINT*P$(A);\n121 PRINT P$(A);\n125 T$(A)=T$(T):P$(A)=P$(T):T=T-1\n130 PRINT T$(A),P$(A):IF T$(A)<T$(A-1) THEN T$=T$(A):T$(A)=T$(A-1):T$(A-1)=T$:T$=P$(A):P$(A)=P$(A-1):P$(A-1)=T$NEXT A\n145 NEXT A\n200 PRINT @0,TIME$",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a recovered disk; the source names no author. Preserved here for small-scale archival use."
+  },
+  "sourceOnly": true,
+  "actionVerb": "View source"
+}
