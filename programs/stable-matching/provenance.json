@@ -185,7 +185,7 @@
         "order": "6",
         "type": "BASIC",
         "recovery%": "",
-        "summary": "Stable-matching program \u2014 earlier damaged save (descriptive title)",
+        "summary": "Stable-matching program — earlier damaged save (descriptive title)",
         "capture": "tape32a",
         "capture_scope": "unknown",
         "baud": "500",
@@ -245,7 +245,7 @@
         "order": "7",
         "type": "BASIC",
         "recovery%": "100",
-        "summary": "Stable-matching program \u2014 later save (descriptive title)",
+        "summary": "Stable-matching program — later save (descriptive title)",
         "capture": "tape32a",
         "capture_scope": "unknown",
         "baud": "500",
@@ -274,5 +274,11 @@
       "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
     },
     "evidence": "Literal source notices are recorded per save; explicit comparison sources, when found, are in upstream/. Unknown authorship is not a claim of original work."
+  },
+  "also_on_disk": {
+    "disk": "BASIC Programs Games",
+    "file": "VAL.BAS",
+    "sha256": "9103d7fc42664c5915763066bf7dd03bc2c9520ff1f9189dddf6f3dbfb316c6b",
+    "relation": "all lines identical to tapes/recovered/tape32a/best/07-STABLE-MATCHING-SAVE02.BAS"
   }
 }
