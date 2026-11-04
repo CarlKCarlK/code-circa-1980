@@ -1,0 +1,43 @@
+{
+  "id": "expert2-rules",
+  "title": "Expert-2 Rule Sets",
+  "description": "Knowledge bases written for Jack Park’s Expert-2 shell, dated 1984.",
+  "kind": "Source archive",
+  "language": "MMSFORTH V2.0, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Forth Wiz (blocks 50-85)",
+      "capture": "disk: MMSFORTH Knowledge Base",
+      "raw": "versions/v01/FORTH-WIZ.bin",
+      "listing": "versions/v01/FORTH-WIZ.txt",
+      "playable": false,
+      "note": "A help system that recommends Forth words from a description.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v01/FORTH-WIZ.bin",
+          "label": "FORTH-WIZ.bin"
+        },
+        {
+          "path": "versions/v01/FORTH-WIZ.txt",
+          "label": "FORTH-WIZ.txt"
+        }
+      ],
+      "startupSource": "==== Block 50 ====\n 0 ( FORTH WIZ )  : WTASK ;\n 1 255  $VARIABLE WISH\n 2 255  $VARIABLE ANSWER 255 $VARIABLE HOLD\n 3 255  $VARIABLE KEY\n 4 VARIABLE MATCH    VARIABLE CATAGORY\n 5 : CHECK1 KEY $\" @\" ANSWER $+ $\" @\" $+ INSTR 0 <>  ;\n 6 : CHECK 0 MATCH !\n 7   WISH $\"   \" $+ HOLD $! BEGIN HOLD $\"  \" INSTR DUP WHILE DUP\n 8  HOLD SWAP 1- LEFT$ ANSWER $!  MATCH @ CHECK1 OR MATCH !\n 9  HOLD LEN SWAP - HOLD SWAP RIGHT$ HOLD $! REPEAT DROP MATCH @ ;\n10 : TELL_WHAT_YOU_WANT PAGE CR  .\" WHAT DO YOU WANT THE COMMAND TO",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "Written for Expert-2, Jack Park’s rule-based shell in MMSFORTH (Dr. Dobb’s Journal, April 1984). The source names no author for these rule sets. Preserved here for small-scale archival use."
+  },
+  "sourceOnly": true,
+  "actionVerb": "View source"
+}
