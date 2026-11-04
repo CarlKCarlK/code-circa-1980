@@ -1,0 +1,43 @@
+{
+  "id": "perm",
+  "title": "Permutation Lister",
+  "description": "Prints a chosen permutation of named objects without listing the others.",
+  "kind": "Source archive",
+  "language": "TRS-80 Disk BASIC",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "PERM.BAS (More Voice)",
+      "capture": "disk: More Voice",
+      "raw": "versions/v01/PERM.BAS",
+      "listing": "versions/v01/PERM.ASC",
+      "playable": false,
+      "note": "Different code from the separate Permutations program on tape.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v01/PERM.BAS",
+          "label": "PERM.BAS"
+        },
+        {
+          "path": "versions/v01/PERM.ASC",
+          "label": "PERM.ASC"
+        }
+      ],
+      "startupSource": "5 CLEAR 500\n6 DEFINT A-Z:DEF FNM(N,B)=N-INT(N/B)*B\n10 INPUT \"NUMBER OF OBJECTS\";T\n12 DIM TR(T),N$(T)\n15 FF=1:FOR I=1 TO T:PRINT\"NAME OF OBJECT #\";I;:INPUTN$(I):FF=FF*I:NEXTI:PRINT \"NUMBER OF PERMUTATIONS IS\";FF\n30 PRINT:INPUT\"WHICH PERMUTATION WOULD YOU LIKE (0 TO QUIT)\";II:IF II=0 THEN RUN ELSEGOSUB1000\n40 FOR N=1 TO T:IF N=1 THEN FX=1:GX=TELSE FX=FX*GX:GX=GX-1\n50 I= FNM(II-1,FF/FX)*GX*FX/FF+1:GOSUB 2000:PRINTN$(D);\" \";:NEXTN:PRINT\n60 GOTO 30\n1000 TA=1\n1010 IF TA>T THEN RETURN\n1020 FOR I=TA TO T STEP TA:TR(I)=TA:NEXTI",
+      "controlSource": []
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a recovered disk; the source names no author. Preserved here for small-scale archival use."
+  },
+  "sourceOnly": true,
+  "actionVerb": "View source"
+}
