@@ -1,32 +1,32 @@
 {
-  "version": "v03",
+  "version": "v04",
   "disk": "Talker",
   "disk_image": "Talker [DOS Accessible][TRSDOS v2.1][Bootable][M1][35 Track][Single Density].dmk",
   "disk_image_sha256": "c85a2d67c21552b1e27d9a6f06e5836f070b74b99f53c290b2a39f22b524966b",
-  "source": "files/GETTAPE.BAS",
+  "source": "files/DISKDUMP.BAS",
   "imported_files": [
     {
-      "path": "versions/v03/GETTAPE.BAS",
-      "archive_path": "files/GETTAPE.BAS",
-      "bytes": 1198,
-      "sha256": "5ff1099f52b751b9a980cf878305f7d360a96ed4490fc811f35aa705f16939ef"
+      "path": "versions/v04/DISKDUMP.BAS",
+      "archive_path": "files/DISKDUMP.BAS",
+      "bytes": 719,
+      "sha256": "68cc87048c8c828d3691d7c705c6835695e4cc305bf240aad0cd93bd62d48e67"
     },
     {
-      "path": "versions/v03/GETTAPE.ASC",
+      "path": "versions/v04/DISKDUMP.ASC",
       "archive_path": "derived listing",
-      "bytes": 1370,
-      "sha256": "3460ec6d52fc654e8225fdb991b53efd0ac6d7443dba7953729a4203213d46ac"
+      "bytes": 927,
+      "sha256": "0b668081fd1cedab7d7aafbe18e160bd62889df073162639ddc799da62919ddd"
     }
   ],
   "recovery_item": {
     "format": "BASIC disk file",
-    "sha256": "5ff1099f52b751b9a980cf878305f7d360a96ed4490fc811f35aa705f16939ef",
-    "bytes": 1198,
+    "sha256": "68cc87048c8c828d3691d7c705c6835695e4cc305bf240aad0cd93bd62d48e67",
+    "bytes": 719,
     "import_date": "2026-11-03",
-    "lines": 43,
-    "last": 430,
+    "lines": 20,
+    "last": 290,
     "normal_end_marker": true,
     "memory_base": 27788,
-    "tape_relation": "1/43 lines shared with tapes/recovered/tape3a/best/16-DUNGEON-TRAINER-V2.BAS (71 lines)"
+    "tape_relation": "no shared lines with any tape payload"
   }
 }

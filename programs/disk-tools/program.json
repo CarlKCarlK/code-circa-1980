@@ -76,6 +76,28 @@
       ],
       "startupSource": "10 '            GETTAPE\n20 '            -------\n30 'PROGRAM TO COPY TAPE FILES BACK ONTO DISK\n40 '\n50 CLEAR 1500\n60 DEFSTR D-F: DEFINT I: DIM D(4)\n70 CLS\n80 FV=\"\"\n90 FOR I=24003 TO 24005: FV=FV+CHR$(PEEK(I)):NEXT\n100 IF FV=\"1.1\" THEN IV=26228 ELSE IV=0\n110 PRINT@6*64,\"THIS PROGRAM COPIES A TAPE DATA FILE TO DISK.\n120 PRINT\"THE TAPE MUST BE CREATED BY THE 'GETDISK' PROGRAM.",
       "controlSource": []
+    },
+    {
+      "id": "v04",
+      "label": "DISKDUMP.BAS (Talker)",
+      "capture": "disk: Talker",
+      "raw": "versions/v04/DISKDUMP.BAS",
+      "listing": "versions/v04/DISKDUMP.ASC",
+      "playable": false,
+      "note": "SECTOR DUMP UTILITY 2.2: prints a file’s sectors in hex and text.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v04/DISKDUMP.BAS",
+          "label": "DISKDUMP.BAS"
+        },
+        {
+          "path": "versions/v04/DISKDUMP.ASC",
+          "label": "DISKDUMP.ASC"
+        }
+      ],
+      "startupSource": "100 CLEAR2000:CLS:PRINT:PRINTTAB(15)\"SECTOR DUMP UTILITY 2.2\":DEFINTI-N\n110 H$=\"0123456789ABCDEF\"\n120 LINEINPUT\"\nFILESPEC: \";FS$:IFFS$=\"END\"THENEND ELSE ONERRORGOTO290:OPEN\"I\",1,FS$\n130 ONERRORGOTO0:CLOSE:OPEN\"R\",1,FS$:SN=0\n140 FIELD1,255 AS D$,1 AS DD$\n150 LINEINPUT\"\nSECTOR NUMBER (OR 'ENTER' FOR NEXT SECTOR): \";S$\n160 IFPEEK(14312)>127THENPRINT\"LP NOT READY\":GOTO150\n170 IFS$=\"\"THENSN=SN+1ELSESN=VAL(S$):IFSN<1THENCLOSE:GOTO100\n180 GET1,SN\n190 LPRINT\" \":LPRINT\"FILESPEC: \"FS$;TAB(35)\"SECTOR: \"SN:LPRINT\" \"",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
