@@ -1,0 +1,88 @@
+{
+  "id": "spacestationzap",
+  "title": "Space Station Zap",
+  "description": "Builds and draws a random space-station map of rooms, walls, doors, and shields. The monsters, keys, and weapons its comments plan were not written.",
+  "kind": "MMSFORTH",
+  "language": "MMSFORTH V2.0, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Space Station Zap (blocks 74-78)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v01/SPACESTATIONZAP.bin",
+      "listing": "versions/v01/SPACESTATIONZAP.txt",
+      "playable": true,
+      "note": "Source blocks copied unchanged from the New Programs disk. The player boots the Forth System disk and loads them with the original commands. Checked to its first screen only.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v01/SPACESTATIONZAP.bin",
+          "label": "SPACESTATIONZAP.bin"
+        },
+        {
+          "path": "versions/v01/SPACESTATIONZAP.txt",
+          "label": "SPACESTATIONZAP.txt"
+        }
+      ],
+      "startupSource": "==== Block 74 ====\n 0 ( SPACESTATIONZAP 1 OF )   : TASK ;\n 1 ( ROOMS, PLAYER  MOVE, ADD GU11AND FIRING JAB TYPE MONSTERS )\n 2 ( SHOOTING MONSTERS WITH TRAKER  ADD BOMBS KEYS WEAPOINS NOISE )\n 3 ( SHEILDS AMMO STORTAGE SPACE SUIT ROBOT FACOTRES )\n 4  DECIMAL  100 100 2ARRAY BLUEPRINT  0 0 BLUEPRINT 20402 ERASE\n 5 : 2/ DUP 0< IF 32767 AND 2/ 16384 OR ELSE 2/ THEN  ;\n 6 : 16T DUP 0= IF DROP 1 ELSE 1 SWAP 2* 2* 0 DO 2* LOOP THEN ;\n 7 : H@ SWAP @ SWAP DUP IF 2* 2* 0 DO 2/ LOOP ELSE + THEN 15 AND ;\n 8 : H!  16T  DUP 15 * NEGATE 1- 3 PICK @  AND  SWAP 4 PICK  *\n 9   + SWAP ! DROP ;\n10 : SPY ( W X Y Z -> W X Y Z ) DUP 0= IF  4 PICK 4 PICK 4 PICK",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/forth-system.dmk",
+          "disks/new-programs.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "HI CARL"
+          },
+          {
+            "type": "49 LOAD\n"
+          },
+          {
+            "wait": "^49 LOAD[ ]+OK"
+          },
+          {
+            "type": "53 LOAD\n"
+          },
+          {
+            "wait": "^53 LOAD[ ]+OK"
+          },
+          {
+            "type": "54 LOAD\n"
+          },
+          {
+            "wait": "^54 LOAD[ ]+OK"
+          },
+          {
+            "swap": 1
+          },
+          {
+            "type": "EMPTY-BUFFERS\n"
+          },
+          {
+            "wait": "^EMPTY-BUFFERS[ ]+OK"
+          },
+          {
+            "type": "74 LOAD\n"
+          }
+        ]
+      },
+      "running": "Running MMSFORTH from the original disks",
+      "slug": "basic"
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+  },
+  "howTo": [
+    "It draws a new station when it starts and then returns to the prompt. There is no gameplay. Restart draws another."
+  ],
+  "quickHelp": "It draws a random station map. There is no gameplay."
+}
