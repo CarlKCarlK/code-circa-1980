@@ -4,8 +4,8 @@
       "id": "v1",
       "path": "screenfun/v1/",
       "label": "Web experience v1",
-      "released": "2026-11-03",
-      "sourceCommit": "f9cc102be711c6c4185f11b7c87af4fc21de07de",
+      "released": "2026-11-04",
+      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-Du8N7Oie.js",
-          "bytes": 316923,
-          "sha256": "67c2938c59bcbd4b7491ee96ef9b2d1f62a555c7c772e6a2a5ba8b6f84d9319d"
+          "path": "assets/emulator-CoidJUpE.js",
+          "bytes": 316994,
+          "sha256": "1900cb6c78671a840676a1b239dc9f161cc85c2aff4f0ebbc4ace246d069a6cb"
         },
         {
           "path": "assets/forth-system-DLZLKAFv.dmk",
@@ -58,14 +58,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-DRHo0Cm0.css",
-          "bytes": 25901,
-          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
+          "path": "assets/index-ClZaHYYP.css",
+          "bytes": 26158,
+          "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-pjb-f6Iz.js",
-          "bytes": 30003,
-          "sha256": "8b14e8ae3c526c17c2bc9b6afeb2d75623713684d25079414e0b6821b30f2492"
+          "path": "assets/index-CVDzq1Bu.js",
+          "bytes": 35409,
+          "sha256": "c96bd8a04c2bb8283db86c467edb63396a06b125f4f6299222e48fa0412b3d57"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -203,6 +203,11 @@
           "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
         },
         {
+          "path": "assets/tones-gallery-DPAQ7avY.svg",
+          "bytes": 1017,
+          "sha256": "795a4c694830b961fdcc0d148fedb3e20e194d7b9d9e75d491960602b7fd3e0a"
+        },
+        {
           "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
           "bytes": 409,
           "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
@@ -234,13 +239,13 @@
         },
         {
           "path": "index.html",
-          "bytes": 2351,
-          "sha256": "1e868c543fb7b4f135b07f2c35efd65c0969bbd7a6858bf4687098b659617261"
+          "bytes": 2226,
+          "sha256": "146d943ab5a21b372668b11947a554fcf79d6eb03028482cc82fc612cea20e7d"
         },
         {
           "path": "licenses.txt",
-          "bytes": 17049,
-          "sha256": "e2d6660e33328a842ede04e5917febf31ea4fb7a714470c95c3f35eda265ad6c"
+          "bytes": 19163,
+          "sha256": "a74fe6d95486f70e2356be36bf5fcad38455cfac38234f9a94ee4808a8a6cf4d"
         }
       ]
     }

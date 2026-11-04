@@ -4,8 +4,8 @@
       "id": "v1",
       "path": "war/v1/",
       "label": "Original cassette archive",
-      "released": "2026-11-03",
-      "sourceCommit": "b28a4b990f2a300f358e70c4955d3f9a87394e30",
+      "released": "2026-11-04",
+      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
       "files": [
         {
           "path": "assets/05-WAR-SAVE01-DAMAGED-PREFIX-BF4Zoqkq.BIN",
@@ -53,9 +53,9 @@
           "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
         },
         {
-          "path": "assets/archive-gallery-Cr0q0rfj.svg",
-          "bytes": 547,
-          "sha256": "0c02294b84355a66fb22c7f3a14d9fd2bcaba28513e95a25c19147c8bdb7beeb"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
           "path": "assets/cave-gallery-CUdWAr_1.svg",
@@ -73,14 +73,19 @@
           "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
         },
         {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
+        },
+        {
           "path": "assets/dungeon-gallery-iVVwbTI4.svg",
           "bytes": 557,
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CGCsbXtC.js",
-          "bytes": 286265,
-          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+          "path": "assets/emulator-Da3lYugQ.js",
+          "bytes": 316994,
+          "sha256": "753dca9011484b1822e24f40becb50631c01373fc8fcda4e132fd80de1161914"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -88,14 +93,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BxOyg6gg.js",
-          "bytes": 32956,
-          "sha256": "294f5a59303275c92ac15af8176d18c93214e5cc6eb5b25fe19ae1809c6a0b0d"
+          "path": "assets/index-ClZaHYYP.css",
+          "bytes": 26158,
+          "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-DKrV230I.css",
-          "bytes": 25510,
-          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+          "path": "assets/index-CyzOlf_I.js",
+          "bytes": 39088,
+          "sha256": "5a1cf23010d10348dc672cdceaf616a8919613d9009dea8e058659a49ea813a4"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -218,6 +223,11 @@
           "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
         },
         {
+          "path": "assets/tones-gallery-DPAQ7avY.svg",
+          "bytes": 1017,
+          "sha256": "795a4c694830b961fdcc0d148fedb3e20e194d7b9d9e75d491960602b7fd3e0a"
+        },
+        {
           "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
           "bytes": 409,
           "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
@@ -238,6 +248,11 @@
           "sha256": "22c753e752ba6bb2d6c6a569f30e7fc9b9586adf537657df379a7c4a3584902e"
         },
         {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
+        },
+        {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
           "bytes": 545,
           "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
@@ -254,13 +269,13 @@
         },
         {
           "path": "index.html",
-          "bytes": 2351,
-          "sha256": "3438c19ef28ec523f364e3442e33b816e10427589cadd290cf50a31e684674c9"
+          "bytes": 2266,
+          "sha256": "5a099c1e41622ec80f569d406aba3c8fb068439489960e8f838933d88f700aed"
         },
         {
           "path": "licenses.txt",
-          "bytes": 17049,
-          "sha256": "e2d6660e33328a842ede04e5917febf31ea4fb7a714470c95c3f35eda265ad6c"
+          "bytes": 19163,
+          "sha256": "a74fe6d95486f70e2356be36bf5fcad38455cfac38234f9a94ee4808a8a6cf4d"
         }
       ]
     }

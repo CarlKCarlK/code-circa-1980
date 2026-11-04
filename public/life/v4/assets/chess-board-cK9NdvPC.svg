@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 532 236" width="532" height="236">
+  <rect width="532" height="236" fill="#1e4b8f"/>
+  <g font-family="'Courier New', monospace" font-weight="700" font-size="16" fill="#f4f1e6">
+    <text x="24" y="34" xml:space="preserve">  R     N     B     Q     K     B      -    R</text>
+    <text x="24" y="56" xml:space="preserve">  P     P     P      -     -    P     P     P</text>
+    <text x="24" y="78" xml:space="preserve">   -     -     -     -     -    N      -     -</text>
+    <text x="24" y="100" xml:space="preserve">   -     -     -    P     P      -     -     -</text>
+    <text x="24" y="122" xml:space="preserve">   -     -    B      -    P      -     -     -</text>
+    <rect x="177.6" y="110" width="9.6" height="9"/>
+    <rect x="292.8" y="110" width="9.6" height="9"/>
+    <text x="24" y="144" xml:space="preserve">   -     -    N      -     -    N      -     -</text>
+    <rect x="177.6" y="132" width="9.6" height="9"/>
+    <rect x="350.4" y="132" width="9.6" height="9"/>
+    <text x="24" y="166" xml:space="preserve">  P     P     P     P      -    P     P     P</text>
+    <rect x="62.4" y="154" width="9.6" height="9"/>
+    <rect x="120.0" y="154" width="9.6" height="9"/>
+    <rect x="177.6" y="154" width="9.6" height="9"/>
+    <rect x="235.2" y="154" width="9.6" height="9"/>
+    <rect x="350.4" y="154" width="9.6" height="9"/>
+    <rect x="408.0" y="154" width="9.6" height="9"/>
+    <rect x="465.6" y="154" width="9.6" height="9"/>
+    <text x="24" y="188" xml:space="preserve">  R      -    B     Q     K      -     -    R</text>
+    <rect x="62.4" y="176" width="9.6" height="9"/>
+    <rect x="177.6" y="176" width="9.6" height="9"/>
+    <rect x="235.2" y="176" width="9.6" height="9"/>
+    <rect x="292.8" y="176" width="9.6" height="9"/>
+    <rect x="465.6" y="176" width="9.6" height="9"/>
+    <text x="24" y="222" font-size="13" opacity=".75">WHAT WAS THEIR FOOLISH MOVE (ROW,COLUMB,NEW ROW,COULMB)? _</text>
+  </g>
+</svg>

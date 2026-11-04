@@ -4,8 +4,8 @@
       "id": "v1",
       "path": "tones/v1/",
       "label": "Web experience v1",
-      "released": "2026-11-03",
-      "sourceCommit": "c56ee4593b2bced3c87535bb8890f8313fd04dd5",
+      "released": "2026-11-04",
+      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CfPaHNUp.js",
-          "bytes": 316923,
-          "sha256": "b4e870bf7d4f321c7c02f237b41c3b62a4221df37b9f29706616ee8b22b418b3"
+          "path": "assets/emulator-BxKlk91M.js",
+          "bytes": 316994,
+          "sha256": "0c7a03eca9b51e2787cc2beb4d7db0346ac7284b46edfe68358ac595425877ee"
         },
         {
           "path": "assets/forth-system-DLZLKAFv.dmk",
@@ -58,14 +58,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-Dz8uMYQd.css",
-          "bytes": 26140,
-          "sha256": "9d2366f912ef17a5cf93fc6fad8840dea36ab841117aeee638f31d34e5fad97e"
+          "path": "assets/index-ClZaHYYP.css",
+          "bytes": 26158,
+          "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-vLF7wQ8b.js",
-          "bytes": 36398,
-          "sha256": "5c89afbacdb34690a07e9dbfe94ddaf4855a1c04ea67f287af1dbb22e0cde23f"
+          "path": "assets/index-DZIyAAwB.js",
+          "bytes": 37067,
+          "sha256": "4246fcbbd176390fb5df90f71f481df823179fb3799d0e30fbece218657f3b9d"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -106,11 +106,6 @@
           "path": "assets/magazine-gallery-Bh2eMosB.svg",
           "bytes": 665,
           "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed"
-        },
-        {
-          "path": "assets/model100-CYWvsCgB.js",
-          "bytes": 8058,
-          "sha256": "50cc804541fed57cebb7cbaf88862c9f79c81621642d4610797055e355b0d314"
         },
         {
           "path": "assets/new-programs-Bv988KPz.dmk",
@@ -223,16 +218,6 @@
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
         },
         {
-          "path": "assets/virtualt-AiL3Ufaf.wasm",
-          "bytes": 1104816,
-          "sha256": "93fe58680b79d708032dbcda0aa5c622b1ad61c5ec1fbcf98331e290af1434b7"
-        },
-        {
-          "path": "assets/virtualt-CHiBXa60.js",
-          "bytes": 247020,
-          "sha256": "c177ff4cd602f79e5ded24bfb755973d320b51c2294831e69d86de06cb89cef1"
-        },
-        {
           "path": "assets/WebSoundPlayer-BHQ3vRck.js",
           "bytes": 5818,
           "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
@@ -254,8 +239,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2351,
-          "sha256": "c8b39c7a172e2957bfafd2cf45d1754ee97c825dc88236d10a9016420188a9da"
+          "bytes": 2334,
+          "sha256": "8909db8e70ee30a1c842cb34e041157f4c22cffe3a223d15e270bb3530e5f3ac"
         },
         {
           "path": "licenses.txt",

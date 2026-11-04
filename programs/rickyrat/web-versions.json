@@ -4,179 +4,9 @@
       "id": "v1",
       "path": "rickyrat/v1/",
       "label": "Web experience v1",
-      "released": "2026-11-03",
-      "sourceCommit": "750e04c0d2fd2c29012b18258198d3e0575cfae5",
+      "released": "2026-11-04",
+      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
       "files": [
-        {
-          "path": "assets/01-AMAZING-PROGRAM-MAZE-Bxvk1jjV.ASC",
-          "bytes": 8906,
-          "sha256": "a7581d0bfa5352fad9ecb70f487c2379dc1a595a1229e45424580f3f25a04758"
-        },
-        {
-          "path": "assets/01-AMAZING-PROGRAM-MAZE-ClHzOikJ.BAS",
-          "bytes": 7275,
-          "sha256": "8d784cb5695252a47e4bbeca1461cdd12e85e6e133ae43533e1a564c78dd416c"
-        },
-        {
-          "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Bm5Fk48R.BAS",
-          "bytes": 6783,
-          "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf"
-        },
-        {
-          "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Dfep4PH9.ASC",
-          "bytes": 7833,
-          "sha256": "4682176105d6af579272f9cc04afc5ef18eb656ad92baf637d3f816328a97e80"
-        },
-        {
-          "path": "assets/01-CHEMISTRY-BALANCER-II-SAVE01-Da_ahb0X.ASC",
-          "bytes": 10004,
-          "sha256": "fe0a4b0a1303b16c7a774cab3a4610db62a09729bde69119c32650a0e5c75f24"
-        },
-        {
-          "path": "assets/01-CHEMISTRY-BALANCER-II-SAVE01-ht9xoh_w.BAS",
-          "bytes": 8205,
-          "sha256": "95f52c0892746209621848ef2d5482ef20cbf32c807205cc4c70ffa8d490bebd"
-        },
-        {
-          "path": "assets/01-CISAB-CHESS-V3-C95bDHfu.ASC",
-          "bytes": 4963,
-          "sha256": "5f77fb8da1c4487d92f7e861c0c9cc24b5d202d110c35c63182b4e32f792dfad"
-        },
-        {
-          "path": "assets/01-CISAB-CHESS-V3-Dn1e3AdT.BAS",
-          "bytes": 4150,
-          "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5"
-        },
-        {
-          "path": "assets/01-LANGUAGE-GERMAN-VOCABULARY-aCN64M64.BAS",
-          "bytes": 3750,
-          "sha256": "499061aca514efea7cf1022ea3ab13824c4ba92398b576a8a0d457f013eee823"
-        },
-        {
-          "path": "assets/01-LANGUAGE-GERMAN-VOCABULARY-Br5v4WOy.ASC",
-          "bytes": 4397,
-          "sha256": "d5b8315b2c7c7751af760ab0c7728d9f3a6b6c6198dc1fcd2906f6c375b969fb"
-        },
-        {
-          "path": "assets/01-LIFE-ASSEMBLY-V1-B-X0TKTA.Z80",
-          "bytes": 2226,
-          "sha256": "9ccf4e1083bdf83b7ecbb5cdd7069364429ec4403fbcfd1de4f309b674c3da7b"
-        },
-        {
-          "path": "assets/01-LIFE-ASSEMBLY-V1-C9d9RJte.TXT",
-          "bytes": 3582,
-          "sha256": "c8064d544a5e5add8da7e9db6f1d9982f99a9d862ab152a17dd5a478a7f073e5"
-        },
-        {
-          "path": "assets/01-LIFE-ASSEMBLY-V1-Cn0DVlo-.ASM",
-          "bytes": 3590,
-          "sha256": "43a15aae17405304f0933325b57d23c214bd3851d9e68bf2aa432b013293983d"
-        },
-        {
-          "path": "assets/01-MAGAZINE-INDEX-BsV1Wdke.ASC",
-          "bytes": 906,
-          "sha256": "ae30841e92bbb04075e905d25b1c5fbaf7a5927bd7dfd740782bc6d21f1da128"
-        },
-        {
-          "path": "assets/01-MAGAZINE-INDEX-DcE7-oyP.BAS",
-          "bytes": 703,
-          "sha256": "5df77a1ba7d4b631a4f5bce53b15c850016a332b77193a260dc13d85c3af7717"
-        },
-        {
-          "path": "assets/01-SKINNER-BOX-EARLY-Ctrs75lY.ASC",
-          "bytes": 982,
-          "sha256": "e0969277d9874efb4bbaf2c4619164cd69d0135caac7e63e8de454c26e920e4b"
-        },
-        {
-          "path": "assets/01-SKINNER-BOX-EARLY-piA9Bx6B.BAS",
-          "bytes": 849,
-          "sha256": "c2f275afd45cafb7b6eb550bdc84eeb09797761645bf833699d46d4c871bbbb2"
-        },
-        {
-          "path": "assets/01-SUPERPOWER-INVESTING-SAVE01-BYPCWlUG.BAS",
-          "bytes": 3060,
-          "sha256": "265b99f2d3c65d1f19120be1e733bd0f093ab058d9492783b9bfbfd3f4177b11"
-        },
-        {
-          "path": "assets/01-SUPERPOWER-INVESTING-SAVE01-Zb96e9NZ.ASC",
-          "bytes": 3219,
-          "sha256": "dd2adf1a779fc460307a7f9c01a2b86c599a2224995d121cc92d1d838ecd5020"
-        },
-        {
-          "path": "assets/02-3D-SURFACE-PLOT-V1-D5kWIkFB.ASC",
-          "bytes": 565,
-          "sha256": "f80dbce3a85d1de83a26cae406541b193949b7399e6fee9c459120f05cc4aa40"
-        },
-        {
-          "path": "assets/02-3D-SURFACE-PLOT-V1-DzKnsQ3C.BAS",
-          "bytes": 486,
-          "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91"
-        },
-        {
-          "path": "assets/02-AMAZING-PROGRAM-AND-MONSTER-GAME-Do01r4ZS.BAS",
-          "bytes": 9704,
-          "sha256": "654245b44e2a1e2dc2b91dda05546e3ddcbcd0554e339e9146a8c82615585856"
-        },
-        {
-          "path": "assets/02-AMAZING-PROGRAM-AND-MONSTER-GAME-k0a9SL7s.ASC",
-          "bytes": 11831,
-          "sha256": "b6a431e05a7afc997c7b3cc74d4753947a5b16f8f258b823a83cb718f0e4bfb8"
-        },
-        {
-          "path": "assets/02-CHEMISTRY-BALANCER-II-INTEGER-BvCMn2W5.BAS",
-          "bytes": 6408,
-          "sha256": "06927532afe779d202773c33cecdc52d0e9ccd6252e9298b439c6083d986415a"
-        },
-        {
-          "path": "assets/02-CHEMISTRY-BALANCER-II-INTEGER-ToE8h75n.ASC",
-          "bytes": 7780,
-          "sha256": "5fecf5cd4df35054c5c5074769e5647662e569b95156fe60de09b6400d106575"
-        },
-        {
-          "path": "assets/02-CHEMISTRY-BALANCER-II-SAVE02-3JaZXaLP.ASC",
-          "bytes": 10706,
-          "sha256": "f396adec968741368df7927c478a85bffe09daf336f03c313830a1d3718c67a0"
-        },
-        {
-          "path": "assets/02-CHEMISTRY-BALANCER-II-SAVE02-CviBupe8.BAS",
-          "bytes": 8748,
-          "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd"
-        },
-        {
-          "path": "assets/02-CISAB-CHESS-V4-BDk1O1Ps.BAS",
-          "bytes": 4182,
-          "sha256": "1148980286284d202359c3d5c4819183c2b84a46d835d966426a8eac09626a75"
-        },
-        {
-          "path": "assets/02-CISAB-CHESS-V4-BDORHyqg.ASC",
-          "bytes": 5024,
-          "sha256": "27da75cafafb6b3a5d88a81373a3982f9a6c118d929cb4248a46c561b3dfd12b"
-        },
-        {
-          "path": "assets/02-LANGUAGE-GERMAN-VERBS-BkwqFT_W.BAS",
-          "bytes": 4314,
-          "sha256": "b2589ae0482067ee2e0e2dd7b79644c6ec47184d167ea0a871c73c96dabf3dd2"
-        },
-        {
-          "path": "assets/02-LANGUAGE-GERMAN-VERBS-zkSiaS5F.ASC",
-          "bytes": 4970,
-          "sha256": "02ccf03319034e92cb8d1c1abdbe492a5f4442395e3c9f20b9b2845a8579a51e"
-        },
-        {
-          "path": "assets/02-LIFE-ASSEMBLY-V2-B8D_9_sM.TXT",
-          "bytes": 3591,
-          "sha256": "3d5c91f3cff00161077fc5b2bbad33013f37d91c05efd0deb1df705c6aa16227"
-        },
-        {
-          "path": "assets/02-LIFE-ASSEMBLY-V2-Bakd7W-V.Z80",
-          "bytes": 2235,
-          "sha256": "b0f0ef38ed7784206c5ab1032b1ea1596c6d8507bcec3157ba196836db12ae7f"
-        },
-        {
-          "path": "assets/02-LIFE-ASSEMBLY-V2-FWcWQ6vl.ASM",
-          "bytes": 3599,
-          "sha256": "8a033c6baede65c4d707c2f5eab6a1d3e9aa302ddf2be8401c8b5e8b797d8568"
-        },
         {
           "path": "assets/02-RICKY-RAT-V1-D9MlvPah.ASC",
           "bytes": 4191,
@@ -186,166 +16,6 @@
           "path": "assets/02-RICKY-RAT-V1-SSjbDj7m.BAS",
           "bytes": 3425,
           "sha256": "bcaf33083ff2fdcb380ed8979165455150608f00993e863018b021fdec916581"
-        },
-        {
-          "path": "assets/02-SKINNER-BOX-V2-B0Y6jiDX.BAS",
-          "bytes": 1488,
-          "sha256": "c321b56c1e6791098a758b64b517947083502688a6b9ea9d72ac492b4dd261d2"
-        },
-        {
-          "path": "assets/02-SKINNER-BOX-V2-Cl83D-BL.ASC",
-          "bytes": 1737,
-          "sha256": "a6c648edead6204e4512d47c68a79f581d03b0b3aac035c653ae38065b4b755a"
-        },
-        {
-          "path": "assets/02-SUPERPOWER-INVESTING-TEMPLATE01-BSrp7X0r.ASC",
-          "bytes": 2983,
-          "sha256": "de81d2de67fbafa806197136de6f46f0694d97389871d5a88b696b2a8d72fd16"
-        },
-        {
-          "path": "assets/02-SUPERPOWER-INVESTING-TEMPLATE01-T8VlokQL.BAS",
-          "bytes": 2844,
-          "sha256": "9203f4c8f35e9f5fef4c504cf05368d665fa42570cc0c3b038cb5934f6f1c42a"
-        },
-        {
-          "path": "assets/02-TEACH-VI-CA94S50i.ASC",
-          "bytes": 1203,
-          "sha256": "395192dcbcc9d06f6d16f1f025ef519e8c7f77909cb97d790416a14ffb5acf5c"
-        },
-        {
-          "path": "assets/02-TEACH-VI-CugVwV6U.BAS",
-          "bytes": 993,
-          "sha256": "e6444d4f909a54174a7ac3696add9780b7eb596d33657f93bb2caac602cd271f"
-        },
-        {
-          "path": "assets/03-BEST-OF-THE-MONSTER-GAMES-BHKNuPZ4.BAS",
-          "bytes": 8385,
-          "sha256": "1db15217c712789ae331dedf27cb4e2f0738b43758694ff5eea5c97aaa32b1bd"
-        },
-        {
-          "path": "assets/03-BEST-OF-THE-MONSTER-GAMES-ehblEQsR.ASC",
-          "bytes": 10276,
-          "sha256": "e5fce8786b90e383f4b7ce21932912e2fdade770c6e3b10f4682eeee5ee657a2"
-        },
-        {
-          "path": "assets/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03-BRoI82gO.ASC",
-          "bytes": 11788,
-          "sha256": "7aa4604922017fea2a11c7249e6ab4629ce83e1ef6e5395e76878c77882f9633"
-        },
-        {
-          "path": "assets/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03-CPv6uGyK.BAS",
-          "bytes": 9601,
-          "sha256": "192a9efb5a104ed1add85a71450011b81ff6736a135b426421a5853275cdf3a1"
-        },
-        {
-          "path": "assets/03-CISAB-CHESS-V5-C0TsHcKX.BAS",
-          "bytes": 4428,
-          "sha256": "84c9d299c27f9120ea6e4bee492dbbda87eaa25e1bbb2424dabdf5b0c579dc61"
-        },
-        {
-          "path": "assets/03-CISAB-CHESS-V5-CpHREd5V.ASC",
-          "bytes": 5318,
-          "sha256": "8a61f0b1db78a5322c3e5aac1b079e5b07a5690b7fc57ab927a3b45273176cba"
-        },
-        {
-          "path": "assets/03-EQUATION-BALANCER-REV1-SAVE01-PLYMcWDk.BAS",
-          "bytes": 2267,
-          "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e"
-        },
-        {
-          "path": "assets/03-EQUATION-BALANCER-REV1-SAVE01-YD2NdSQ6.ASC",
-          "bytes": 2870,
-          "sha256": "8c99667dcf63535eb8656c7dbdb2406c3313b54eb856e55b52f33b7ff5a646fa"
-        },
-        {
-          "path": "assets/03-LIFE-ASSEMBLY-V3-BUIoDzB3.Z80",
-          "bytes": 2259,
-          "sha256": "99ebe64bdaf27ed63882baf0f7e3934bd97676be7d157c995337d1b7f0798a40"
-        },
-        {
-          "path": "assets/03-LIFE-ASSEMBLY-V3-DhU4TFam.ASM",
-          "bytes": 3635,
-          "sha256": "1bfe5ecc3c17bbebce1198a169fc735a6d253f69beb1fa3e78349ae222e34527"
-        },
-        {
-          "path": "assets/03-LIFE-ASSEMBLY-V3-k3TwYCPP.TXT",
-          "bytes": 3627,
-          "sha256": "f94f2368e9ba517df31605c8b107cb1790220746714786bb951800471b9d7aa1"
-        },
-        {
-          "path": "assets/03-MAGAZINE-ARTICLE-INDEX-V2-BeSlANgm.ASC",
-          "bytes": 1376,
-          "sha256": "9f4b469150ef20f33b2de2dd24b3aebfe7fea2638afe19aa7fc8d797647dcf3e"
-        },
-        {
-          "path": "assets/03-MAGAZINE-ARTICLE-INDEX-V2-Cf3N5Q02.BAS",
-          "bytes": 1158,
-          "sha256": "a244980827444bebceedec341925b6ada9533afbb9369850afc201d215911fb7"
-        },
-        {
-          "path": "assets/03-MAGAZINE-SUBJECT-INDEX-CVIxvXQ9.BAS",
-          "bytes": 665,
-          "sha256": "1189a50c4f472280377034db2641a566ea97464b44c89d2c7273560a0fd4bff9"
-        },
-        {
-          "path": "assets/03-MAGAZINE-SUBJECT-INDEX-DRvm5Wv0.ASC",
-          "bytes": 868,
-          "sha256": "f4981b90a5988884188ac2d107dfc1f6e7af62e26a922e0e3d20860f0b3500b9"
-        },
-        {
-          "path": "assets/03-SUPERPOWER-INVESTING-SAVE02-CXhPDpMN.BAS",
-          "bytes": 3509,
-          "sha256": "a8d3e0fcdb8a7e88c8f56c734cacaea2714269df33e5c09f844689c5a7f5996f"
-        },
-        {
-          "path": "assets/03-SUPERPOWER-INVESTING-SAVE02-ObbuS0dd.ASC",
-          "bytes": 3758,
-          "sha256": "425451a04579a32e60bd9b4f7102f3bd8420fb67579341b23b3539ed7e8a3b35"
-        },
-        {
-          "path": "assets/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01-IXgrb6mh.ASC",
-          "bytes": 3726,
-          "sha256": "708a7498ca6cf90152c9554071e65f79ec8d021c8901470fb194265145c04a1d"
-        },
-        {
-          "path": "assets/04-AUTOMATIC-INVESTMENT-MANAGEMENT-SAVE01-nUdk8nYq.BAS",
-          "bytes": 3480,
-          "sha256": "aa1019eba2f1a60d9cad76d810fdb496c6a7c7b318d7c0a9422656588ce1cdf9"
-        },
-        {
-          "path": "assets/04-CISAB-CHESS-V6-BXJv2GBw.BAS",
-          "bytes": 4678,
-          "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e"
-        },
-        {
-          "path": "assets/04-CISAB-CHESS-V6-oYOSMBBf.ASC",
-          "bytes": 5622,
-          "sha256": "4a4f8b216d9df8f7dc94ee779c5af579340c576083414b6743129522ffe6ffc3"
-        },
-        {
-          "path": "assets/04-LIFE-ASSEMBLY-V4-BlE-HszM.TXT",
-          "bytes": 3691,
-          "sha256": "ff8f1671f64a5081a08ef35b024d4a17e220bdf349837a626fa5216502e6f62b"
-        },
-        {
-          "path": "assets/04-LIFE-ASSEMBLY-V4-Dd6XXKbN.ASM",
-          "bytes": 3699,
-          "sha256": "bd6599eab0e53cf4f6dc33b82425590e6a63232012e645c90cfa86ad3e0c5fee"
-        },
-        {
-          "path": "assets/04-LIFE-ASSEMBLY-V4-nSpPZuvm.Z80",
-          "bytes": 2299,
-          "sha256": "a258448f5d46b860e672ccfb5c0550cb6a80820f706caf78182c06661f39d489"
-        },
-        {
-          "path": "assets/04-MAGAZINE-ARTICLE-INDEX-V3-C8NmB44Q.ASC",
-          "bytes": 1440,
-          "sha256": "ec37d550025777eb5897eb8dcde31d1785a1e2f56d10cad9623e72ddf73e800f"
-        },
-        {
-          "path": "assets/04-MAGAZINE-ARTICLE-INDEX-V3-n1nEmTz9.BAS",
-          "bytes": 1200,
-          "sha256": "fa55c0ca20d8c32602d234da1fdc0ebe61bb618787c59363e23c0f1808b95555"
         },
         {
           "path": "assets/04-RICKY-RAT-V2-D--Ib2LG.BAS",
@@ -358,104 +28,9 @@
           "sha256": "8deda145d79b99f4de4dbe1c886b3a8f8a5cd2fec80f1052d3a9e49f7ef6ef55"
         },
         {
-          "path": "assets/04-SPEECH-COACHING-DRAFT01-B_X-Jg9n.BAS",
-          "bytes": 1881,
-          "sha256": "b7b80045880a901d80543e09524828ebdf9de99487687c0d049c0988214c3dd8"
-        },
-        {
-          "path": "assets/04-SPEECH-COACHING-DRAFT01-Dq27NFRo.ASC",
-          "bytes": 2325,
-          "sha256": "a5bb3eff8f13125301d823169073a53d1a3f7c1b1fd803a23efb44a50ca99e8a"
-        },
-        {
-          "path": "assets/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-PREFIX-DrUgReRA.ASC",
-          "bytes": 1307,
-          "sha256": "a4bfe33cca16ed7df7dda6b69577d4b1bf9ad1d645eaacaaafe21df17fc3cd02"
-        },
-        {
-          "path": "assets/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-RAW-hgBxEFPx.BAS",
-          "bytes": 3139,
-          "sha256": "09ba0405ce09ab0a83a670e4da3845b1008e5ce59ebfd1aed83c06f43a7a77f6"
-        },
-        {
-          "path": "assets/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-UNCERTAIN-DrlDhLSl.ASC",
-          "bytes": 4639,
-          "sha256": "db8aa70562c87c0248171409dbb0a5a37dc417ea8f7bd8f66a2ee97bc2cdf532"
-        },
-        {
-          "path": "assets/04-TEACH-VI-BMuGnHEn.ASC",
-          "bytes": 2142,
-          "sha256": "010697a6491da718c53b4407ecb8a8a45f8ee425b69342a6d5be8dbd86a0e9ab"
-        },
-        {
-          "path": "assets/04-TEACH-VI-OPZS46Dm.BAS",
-          "bytes": 1907,
-          "sha256": "02a4e620e1eb9c9be2a720e454c37fb1b45a7cf2c0adbe2a45f015235dd966a7"
-        },
-        {
-          "path": "assets/05-CISAB-CHESS-V7-An7pJ_Ke.ASC",
-          "bytes": 5608,
-          "sha256": "59be11416498166a92d66dca9fc58efd795788ba2e55d7d3f780ed58b57f87ce"
-        },
-        {
-          "path": "assets/05-CISAB-CHESS-V7-Dnyvr-XM.BAS",
-          "bytes": 4661,
-          "sha256": "8d0b2fb25ea9885cb20085dc901d1b3d574e9692097e81b0200839fe9a9f32bf"
-        },
-        {
-          "path": "assets/05-EQUATION-BALANCER-REV2-SAVE01-dJDdrWGh.BAS",
-          "bytes": 2287,
-          "sha256": "359f9f4bf701ed78faa4b9c7c05b5502df2774ace217a537500a43b237569bba"
-        },
-        {
-          "path": "assets/05-EQUATION-BALANCER-REV2-SAVE01-DOhBpAJU.ASC",
-          "bytes": 2914,
-          "sha256": "3b2a975706d904eb99fe72df0a14ba70db98a02c1b57ad541a5a4c716f9ba34b"
-        },
-        {
-          "path": "assets/05-GERMAN-VOCABULARY-TUTOR-DbX2i0-l.BAS",
-          "bytes": 4119,
-          "sha256": "773a92d5b5a00da3c642b0f8dbf1752c51c4259c4e33ba144b15d66d10e1b5d5"
-        },
-        {
-          "path": "assets/05-GERMAN-VOCABULARY-TUTOR-t4TKcszK.ASC",
-          "bytes": 4733,
-          "sha256": "156940949f9362b7d2f8a8992b37f960c1b81268651df8878effe9543ec414bc"
-        },
-        {
-          "path": "assets/05-LIFE-ASSEMBLY-V5-AOZSkj4L.Z80",
-          "bytes": 2288,
-          "sha256": "e02f3e1f1bb8d9923e83ae8817050533636c1c88896566009ea3d191cf518036"
-        },
-        {
-          "path": "assets/05-LIFE-ASSEMBLY-V5-B02LlvPl.ASM",
-          "bytes": 3664,
-          "sha256": "b7d66d8fec617b5d8555c47ffdd03485c32f25ce12833e19cba37d6fc81a91a7"
-        },
-        {
-          "path": "assets/05-LIFE-ASSEMBLY-V5-Dc-p_BpG.TXT",
-          "bytes": 3656,
-          "sha256": "d73bb8e7c5f29f3c232f39a936abedb3b12bdaaa98f066eda19799d5f75a495e"
-        },
-        {
-          "path": "assets/05-MAGAZINE-ARTICLE-INDEX-V4-BnqeGG71.BAS",
-          "bytes": 1960,
-          "sha256": "a13921fac281d622843c5353b8f9f2012618fc16fbbb0266695f0385e829989f"
-        },
-        {
-          "path": "assets/05-MAGAZINE-ARTICLE-INDEX-V4-LUjpd1ZT.ASC",
-          "bytes": 2246,
-          "sha256": "f97360e5619c0699e828fb61d18041a60c5c11f997cac03a50afbaf4f893a5e7"
-        },
-        {
           "path": "assets/05-MONSTER-GAME-PARTIAL-PREFIX-BOXgx938.ASC",
           "bytes": 310,
           "sha256": "dd73d0821fabf231cd5398c9511c708e03d6617e3c3439964d862fd409d9f949"
-        },
-        {
-          "path": "assets/05-MONSTER-GAME-PARTIAL-UNCERTAIN-CZhrWYBn.ASC",
-          "bytes": 12118,
-          "sha256": "babf3e2b0167eb6344dcdf19849eed97154c8aaab8a82fb225320d4dd2c78a12"
         },
         {
           "path": "assets/05-MONSTER-GAME-RAW-CwknnpcA.BAS",
@@ -473,96 +48,6 @@
           "sha256": "bc6d67f0b8c183ec91285341f602c1bbb589e08d8efcf569fe27e22249d919ea"
         },
         {
-          "path": "assets/05-SPEECH-COACHING-DRAFT02-PREFIX-b_FYzvDw.ASC",
-          "bytes": 1030,
-          "sha256": "f5ecea2cd2b04500235d1494a336accaba2bd687265211f877ed46bfcd385181"
-        },
-        {
-          "path": "assets/05-SPEECH-COACHING-DRAFT02-RAW-CGpXlr3G.BAS",
-          "bytes": 1896,
-          "sha256": "9f2e186a25bc9d836f5f1f913fe4a6241054b8e15a1e2283c9d2428f0438885a"
-        },
-        {
-          "path": "assets/05-SPEECH-COACHING-DRAFT02-UNCERTAIN-B4OG8wgd.ASC",
-          "bytes": 2349,
-          "sha256": "b2dcdb39aa94f01ef918e5945fe99c2fe0b33f5f273b8d8514edc9012aaaa12d"
-        },
-        {
-          "path": "assets/05-STAR-WARS-COCKPIT-CXAF1Qj5.BAS",
-          "bytes": 3392,
-          "sha256": "d4ff7730ec29cc2b9334d85689b5b1c4ebab0003f487dcb7434597df17dcd8ff"
-        },
-        {
-          "path": "assets/05-STAR-WARS-COCKPIT-DVz7_Ofi.ASC",
-          "bytes": 4366,
-          "sha256": "0991144811fde1252a670c92007e157c05ae70c5dee1f5cac2fc2cee006a7475"
-        },
-        {
-          "path": "assets/05-TEACH-VI-GERMAN-C0hB4L81.ASC",
-          "bytes": 3205,
-          "sha256": "0b904013968ffa37599c8141e7a6e5275df6b92df87bcde21cf7738eb82a9d71"
-        },
-        {
-          "path": "assets/05-TEACH-VI-GERMAN-DbJoXN_E.BAS",
-          "bytes": 2947,
-          "sha256": "ebeb3debe777d60896ffb9903aadde2324baededb744ea2f519f96b47c885a87"
-        },
-        {
-          "path": "assets/06-ALIEN-HUNT-EARLY-SAVE01-CQYtL9i8.ASC",
-          "bytes": 6344,
-          "sha256": "c245ecbe957d5035658aaa487767724eb80d2ee1cbf3e3fd93308726f932142a"
-        },
-        {
-          "path": "assets/06-ALIEN-HUNT-EARLY-SAVE01-k3HNDoWK.BAS",
-          "bytes": 5514,
-          "sha256": "b8c95badc88c6d21720d07da0726c873cc815a1fc3f4057f34b9589b19fe5710"
-        },
-        {
-          "path": "assets/06-CHEMISTRY-BALANCER-II-SAVE-1-nZRt1BnC.ASC",
-          "bytes": 13030,
-          "sha256": "494b52931ad63f45c142a400db3f568d1dc5649282e4102e79ef610c1f7b1d87"
-        },
-        {
-          "path": "assets/06-CHEMISTRY-BALANCER-II-SAVE-1-ZdWNTYvy.BAS",
-          "bytes": 10528,
-          "sha256": "b33263f16114534c38b17b1c69e57cb7c1b17e2651ed6533fca4848719a0a462"
-        },
-        {
-          "path": "assets/06-CHEMISTRY-BALANCER-II-TEST-DObRy9jN.ASC",
-          "bytes": 8887,
-          "sha256": "988b599d05d2db4e84eb9c8707b26a821772405a63a1f5b3e6222b76919395c8"
-        },
-        {
-          "path": "assets/06-CHEMISTRY-BALANCER-II-TEST-VYD31VEK.BAS",
-          "bytes": 7303,
-          "sha256": "8fd666bfb28835a38e9e53b4fd6db280d6117401f692b767867852ad22422030"
-        },
-        {
-          "path": "assets/06-CISAB-CHESS-V8-DDgtMrd2.BAS",
-          "bytes": 4717,
-          "sha256": "bde86d5f1e150834de3cf5fb880a052e9d708c957e3c841a14736779ed5de9da"
-        },
-        {
-          "path": "assets/06-CISAB-CHESS-V8-DfiI1DzP.ASC",
-          "bytes": 5664,
-          "sha256": "0126e816867ae8936e138fd45af3147f7c5cfa7a408bb33c8cbc18ffb74d9e58"
-        },
-        {
-          "path": "assets/06-LEARNING-TIC-TAC-TOE-520k5K-9.BAS",
-          "bytes": 1891,
-          "sha256": "bb243ea344ab7e0410b56a6d4bf0b5584f95f9f0aa6033470df1b4238cd0b3be"
-        },
-        {
-          "path": "assets/06-LEARNING-TIC-TAC-TOE-M2VoYyzz.ASC",
-          "bytes": 2347,
-          "sha256": "532ee3c1146dae2331332f3fba766fba4bc389d77884430a0c570eb7e4c09d54"
-        },
-        {
-          "path": "assets/06-MAGAZINE-ARTICLE-INDEX-V5-BFwqDFN8.BAS",
-          "bytes": 1960,
-          "sha256": "7fc4d26fc92961f277b0bc9b6eaef963f89453d54544ef32b18cf5ad6597d055"
-        },
-        {
           "path": "assets/06-NUCLEAR-EQUATION-COMPLETER-PREFIX-WbLyfCZ-.ASC",
           "bytes": 1578,
           "sha256": "83e3d57c81d211f29fa957c976bb05c87e75f417f17d8dc74048d211ea4b7c8c"
@@ -571,11 +56,6 @@
           "path": "assets/06-NUCLEAR-EQUATION-COMPLETER-RAW-cIG3bjz9.BAS",
           "bytes": 1969,
           "sha256": "39b3a82cf17f42699d521b194fc02e3b2bf0180222cd80b8a4994b7f50893021"
-        },
-        {
-          "path": "assets/06-NUCLEAR-EQUATION-COMPLETER-UNCERTAIN-BP56KVCW.ASC",
-          "bytes": 2833,
-          "sha256": "5c6549cd7d41263dc06307541cfbd3e6c6b9489020317be44876a57d664f6986"
         },
         {
           "path": "assets/06-RICKY-RAT-V4-BefrIPjB.ASC",
@@ -588,111 +68,6 @@
           "sha256": "7cac6adbc8efd02780b042c28627341578add9baf50f2ba0510b22c0a5ce84f0"
         },
         {
-          "path": "assets/06-SPEECH-COACHING-DRAFT03-CfG2SV0l.BAS",
-          "bytes": 2143,
-          "sha256": "3503f783909fd322929233f758f3a375b56410888df5439acda6ab5a7bf8bb07"
-        },
-        {
-          "path": "assets/06-SPEECH-COACHING-DRAFT03-DmOF2r-m.ASC",
-          "bytes": 2617,
-          "sha256": "c62543e0102996bf7f4a35eb3fb7b5852b1d61981d047e9b8592b70dd2cc0744"
-        },
-        {
-          "path": "assets/06-TANK-GAME-PREFIX-BIleWD2l.BAS",
-          "bytes": 1274,
-          "sha256": "4cb03e0f9ed334536a52ec746c2dfe251ed0046e32c9d34335cd89c51664a40d"
-        },
-        {
-          "path": "assets/06-TANK-GAME-PREFIX-DxjUkV-s.ASC",
-          "bytes": 1293,
-          "sha256": "d0233349e3f7a64dad576127dbc67ebaaf337a33579b5658c86b6ee885e3ac63"
-        },
-        {
-          "path": "assets/06-TANK-GAME-RAW-cmJmViKl.BAS",
-          "bytes": 4355,
-          "sha256": "79e5b9e46154d8b9e2820b01c1a2b1af5258d241acba96a29b12fd1cc4058b5d"
-        },
-        {
-          "path": "assets/06-TANK-GAME-UNCERTAIN-oLbbLLOP.ASC",
-          "bytes": 4816,
-          "sha256": "5793b43147ec4ce294db131b81c7fe3f66b804add4b8e4415df404671deda4d4"
-        },
-        {
-          "path": "assets/06-WHO-DONNT-EARLY-CwH8NbpI.ASC",
-          "bytes": 1172,
-          "sha256": "d7eb2dc822ab78403cec6e0b66d9b9457212298345c29866d4152041d8cc6f3c"
-        },
-        {
-          "path": "assets/06-WHO-DONNT-EARLY-DXlCYymA.BAS",
-          "bytes": 945,
-          "sha256": "0a6d43828ba8e37a36921dd73e58bde7cabfaa209deb7e9663e2ba09e44e0ad2"
-        },
-        {
-          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE-2-6Vif54OX.BAS",
-          "bytes": 10528,
-          "sha256": "88061e7022a54e0f114956a4083289f5727d90121390190bd3415f61dd2c0494"
-        },
-        {
-          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE1-5KdK3haR.BAS",
-          "bytes": 10435,
-          "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62"
-        },
-        {
-          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE1-DZOP8eGy.ASC",
-          "bytes": 12912,
-          "sha256": "5d40e10dbd4340d57bdc4c389727ef96f01f8045f46ec0102d69267f9c0f05c4"
-        },
-        {
-          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-DFHjH5kT.ASC",
-          "bytes": 1744,
-          "sha256": "27eb7ba78bfcfeed7f7622aa0896c37a2f5176416d3ccc32db3397f1c0afa8fd"
-        },
-        {
-          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-DTiLj9i7.BAS",
-          "bytes": 4648,
-          "sha256": "8eeac2dafa3c39dbcc1d331c4bf2c7b4925f55402f62a0aa26b9d7c123032ded"
-        },
-        {
-          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX-CNXoKTE1.BAS",
-          "bytes": 1493,
-          "sha256": "cdb4ee1ebbb3083e5bccd98a155448c928b07d2604b916f29828c33c0b630cda"
-        },
-        {
-          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN-7aB-RTgq.ASC",
-          "bytes": 6842,
-          "sha256": "3a15b0bbde329dc2cf22d4062969cb48ef1b077caec085e0ec60af19e93aef46"
-        },
-        {
-          "path": "assets/07-EQUATION-BALANCER-REV3-SAVE01-C9OkHQGU.ASC",
-          "bytes": 2950,
-          "sha256": "5bfb927c542e93bfad6cc068c4796b16addc93695c1161744af7c886f42203d6"
-        },
-        {
-          "path": "assets/07-EQUATION-BALANCER-REV3-SAVE01-Mr_Ipr-J.BAS",
-          "bytes": 2318,
-          "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65"
-        },
-        {
-          "path": "assets/07-GERMAN-TUTOR-FRAGMENT-Cs36RlKn.ASC",
-          "bytes": 75,
-          "sha256": "392b1d14be1f88d3373bcf49807d0d0477f6bfe0194aba52c6e42430abad0f68"
-        },
-        {
-          "path": "assets/07-GERMAN-TUTOR-FRAGMENT-vWoMOOIp.BAS",
-          "bytes": 98,
-          "sha256": "c76eee292ec8c9d581954edce1d8f74025e68b91a57a718a9c1ef7e6ea4bc9c6"
-        },
-        {
-          "path": "assets/07-GERMAN-VOCABULARY-SAVE01-C2BJCcxD.BAS",
-          "bytes": 1826,
-          "sha256": "e373872226e8f31b0be3823bf3e5280b6b5ae4b160527541ed7467f926d3ee2c"
-        },
-        {
-          "path": "assets/07-GERMAN-VOCABULARY-SAVE01-ymGewqmR.ASC",
-          "bytes": 2113,
-          "sha256": "4e113281a6b7f59d48a786363d84911eece2938f22cae003c99807ab3cae5c51"
-        },
-        {
           "path": "assets/07-RICKY-RAT-V5-B3ASZQVe.BAS",
           "bytes": 4138,
           "sha256": "2abc987adba53edad3299c4ca8c79c96606fb075351874324173fa752804e124"
@@ -701,76 +76,6 @@
           "path": "assets/07-RICKY-RAT-V5-CdBbia9J.ASC",
           "bytes": 5001,
           "sha256": "d83dcc5d5e99b8f92380e9917a4aaf25796e5bcbe37d071d7c6e00dc0330f74e"
-        },
-        {
-          "path": "assets/07-SPEECH-COACHING-DRAFT04-Ct-DPjDd.ASC",
-          "bytes": 3051,
-          "sha256": "f754b90fdefa45a766edb81fd8033cb4a5afea78bbe62fdb1850b7d7456dfc32"
-        },
-        {
-          "path": "assets/07-SPEECH-COACHING-DRAFT04-DTvM5GQd.BAS",
-          "bytes": 2509,
-          "sha256": "04203fa6e534e0e4c821fafbc91e863006198d7fe60ee1f5d1e0988a35c83b9b"
-        },
-        {
-          "path": "assets/07-SUPERPOWER-INVESTING-TEMPLATE02-D7wrld5r.BAS",
-          "bytes": 3115,
-          "sha256": "f7c0bcad9e289264790d7c44091ba8e7884b20687ee3d3f37cc6e8e65e3281b3"
-        },
-        {
-          "path": "assets/07-SUPERPOWER-INVESTING-TEMPLATE02-DeI8EvMw.ASC",
-          "bytes": 3278,
-          "sha256": "fb2e2d9a3559da98f39f7fecc54edf563328598ae5b5d74090d7b13fa5e52f58"
-        },
-        {
-          "path": "assets/07-TEACH-VI-V2-C8Y3IAnO.BAS",
-          "bytes": 3106,
-          "sha256": "178f8343d12e198fa271bf7196b97867ea10f12c9bd446e96850fad93fab91f3"
-        },
-        {
-          "path": "assets/07-TEACH-VI-V2-D_uBc8WJ.ASC",
-          "bytes": 3376,
-          "sha256": "a7119fab2b0e6d2077ab8b3ad78dada498b17f86bdc61e0d7dd6079e16d32e23"
-        },
-        {
-          "path": "assets/08-CHEMISTRY-BALANCER-II-SAVE-3-BB_A_MdK.ASC",
-          "bytes": 13615,
-          "sha256": "b7e05326eb33c71bf949f68a4d900e6a9fc30520a027bf11b54842e352e5bc50"
-        },
-        {
-          "path": "assets/08-CHEMISTRY-BALANCER-II-SAVE-3-DUPeg57P.BAS",
-          "bytes": 11187,
-          "sha256": "ffc80376f5ad73e8bdaa3ccfb0145a1bb530b93de3e1aa0e4588f6bde4ab8b33"
-        },
-        {
-          "path": "assets/08-COMPUTER-CHESS-DaYmqqPM.BAS",
-          "bytes": 2829,
-          "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff"
-        },
-        {
-          "path": "assets/08-COMPUTER-CHESS-DDg0lF-L.ASC",
-          "bytes": 3279,
-          "sha256": "9bfa53c2912e658cfd30f00f1a44bc65da7efe39195d5cd4d61be09ed8b25b44"
-        },
-        {
-          "path": "assets/08-DUNGEON-TRAINER-EARLY-CyGYtXum.BAS",
-          "bytes": 1364,
-          "sha256": "55c754d7b39c57e2069acafb1fc518e9508fa03d0a6a5dc6617cae53c61e8733"
-        },
-        {
-          "path": "assets/08-DUNGEON-TRAINER-EARLY-uTq78wmh.ASC",
-          "bytes": 1573,
-          "sha256": "109c4070489baf27abfc4cb4934757454cd5c4047f2b11647d6d0ee75e1cde03"
-        },
-        {
-          "path": "assets/08-GERMAN-VOCABULARY-TUTOR-V2-BfT_lX6S.ASC",
-          "bytes": 4197,
-          "sha256": "ede5f4c69b7688727a91538c779ef856b28621262a78b6b1b3ca34614a276b30"
-        },
-        {
-          "path": "assets/08-GERMAN-VOCABULARY-TUTOR-V2-DRORE6Kt.BAS",
-          "bytes": 3592,
-          "sha256": "5e1d622b307713debe2058cc27f416e16c40eb9b20bf105bb9eb3e7f5013a24d"
         },
         {
           "path": "assets/08-RICKY-RAT-V6-BvrkTJcw.ASC",
@@ -783,241 +88,6 @@
           "sha256": "f1dcc545bd4392ddea2abc9ffab570c4169b3619320407c63c7d9306926b127c"
         },
         {
-          "path": "assets/08-SPEECH-COACHING-DRAFT05-BMEPUJTJ.ASC",
-          "bytes": 3360,
-          "sha256": "2104611130ec90496df0946ec5c4b65da45ec170fa5a64b5b7e89a62c21af5b6"
-        },
-        {
-          "path": "assets/08-SPEECH-COACHING-DRAFT05-Cr3oXmwt.BAS",
-          "bytes": 2734,
-          "sha256": "29fb71b5632f22e4c9d6bd8e50ec17a6abbd94c8aa5868ef2d80735603b6d418"
-        },
-        {
-          "path": "assets/09-ARTILLERY-DRAFT01-B-8gzmKS.ASC",
-          "bytes": 2089,
-          "sha256": "d1c130ae3efbfe61883ec398518e29dcbadc89e72dfe212c1bd41d6cd3a62077"
-        },
-        {
-          "path": "assets/09-ARTILLERY-DRAFT01-C3HW0eKP.BAS",
-          "bytes": 1634,
-          "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334"
-        },
-        {
-          "path": "assets/09-AUTOMATIC-INVESTMENT-MANAGEMENT-FRAGMENT01-PREFIX-DVyzm0b4.ASC",
-          "bytes": 165,
-          "sha256": "bc92d5d2a1458aeb2f95acb86ca84273a826a761e1a77fb44a01ce3152ad0add"
-        },
-        {
-          "path": "assets/09-AUTOMATIC-INVESTMENT-MANAGEMENT-FRAGMENT01-RAW-cIZiidA5.BAS",
-          "bytes": 212,
-          "sha256": "9f15d95696f44abc8d7e8e9a1956b4f7a48e68d544464474df30b0d1dfbf4198"
-        },
-        {
-          "path": "assets/09-AUTOMATIC-INVESTMENT-MANAGEMENT-FRAGMENT01-UNCERTAIN-JgTulFlS.ASC",
-          "bytes": 264,
-          "sha256": "7a13286e977984cc597ed992417dbd947fab013721b8af32a74935ca3f8b12bf"
-        },
-        {
-          "path": "assets/09-CHEMICAL-EQUATION-BALANCER-CKNeMBHG.BAS",
-          "bytes": 1873,
-          "sha256": "4c259793aa8d3ac1828f2c34c80ff5bb86bb627521efcc372cdf1d9d73e36668"
-        },
-        {
-          "path": "assets/09-CHEMICAL-EQUATION-BALANCER-uZYgykr4.ASC",
-          "bytes": 2357,
-          "sha256": "6778b3b33bc99f866744bcc6a3929c56ae0ec8b89451d1c35831b23a8c7e2b52"
-        },
-        {
-          "path": "assets/09-CHEMISTRY-BALANCER-II-SAVE3-D2qsVNeO.ASC",
-          "bytes": 12925,
-          "sha256": "9fa87b2c74c4f07a68e153da07a4fe9c674d9933add0d4892ec1b902179a0583"
-        },
-        {
-          "path": "assets/09-CHEMISTRY-BALANCER-II-SAVE3-DWuphxdf.BAS",
-          "bytes": 10448,
-          "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-CROt-_5u.ASC",
-          "bytes": 3682,
-          "sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-PREFIX-BpTE8Xjn.ASC",
-          "bytes": 2255,
-          "sha256": "a252075a752798682f1621b57d4b44343b646b4ca6b7459a42de887d5c1c2915"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-PREFIX-CjL-LylZ.BAS",
-          "bytes": 1981,
-          "sha256": "22612374d600c0c4bc7317bf49393f7779a57e623da8d12e1f034d49c2b6cead"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-RAW-BZACyHWQ.BAS",
-          "bytes": 2021,
-          "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-UNCERTAIN-ByhKYX2J.ASC",
-          "bytes": 2343,
-          "sha256": "3d5229cc1ff1ad03553068f148a64c150b18dd428763013f04ff79c0e58698ca"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-y6sSbyxQ.BAS",
-          "bytes": 3168,
-          "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a"
-        },
-        {
-          "path": "assets/09-DUNGEON-TRAINER-A6jp8pq5.BAS",
-          "bytes": 2100,
-          "sha256": "0dfe59c4a1d26d116d34d28a023d5314533604109e11fbdb8c4f6637fd85f70f"
-        },
-        {
-          "path": "assets/09-DUNGEON-TRAINER-LbjjNKoG.ASC",
-          "bytes": 2510,
-          "sha256": "f7e5dd6ad5cb1efbd8eb26958831d5c76eafc90de0c28e6d2a146c391f887f67"
-        },
-        {
-          "path": "assets/09-GERMAN-VOCABULARY-TEMPLATE-SAVE01-Cgjqpg7s.ASC",
-          "bytes": 3919,
-          "sha256": "8e4ae319a5b85378870e72d91d8bb846bbfc6f6d66ae45854d742eee7a379aa1"
-        },
-        {
-          "path": "assets/09-GERMAN-VOCABULARY-TEMPLATE-SAVE01-d_2CZHke.BAS",
-          "bytes": 3322,
-          "sha256": "bce30f57c84962c6af61457ced77682537fb8cbeedc6985689e3f3d07eaa8a59"
-        },
-        {
-          "path": "assets/09-GERMAN-VOCABULARY-TUTOR-V3-BCKBWILk.BAS",
-          "bytes": 3964,
-          "sha256": "11bec3b803529c725586ed9378527762b91a930e72a102c0c8a737603f16f6b1"
-        },
-        {
-          "path": "assets/09-GERMAN-VOCABULARY-TUTOR-V3-ZB_2FXkl.ASC",
-          "bytes": 4593,
-          "sha256": "d3177e7d2adc6c9e7351eea791e76d134633aedfd0646736da22bf408bda9a8f"
-        },
-        {
-          "path": "assets/09-PEORIA-TWO-MILE-RACE-CScofGUm.BAS",
-          "bytes": 724,
-          "sha256": "5978060b7e94434a6bf9a5e3c611433f8a2a921ec8ae3c3ae7b3462fcfc635ab"
-        },
-        {
-          "path": "assets/09-PEORIA-TWO-MILE-RACE-v5rvp1hE.ASC",
-          "bytes": 981,
-          "sha256": "4962970693235a3df7e76220b297147020c3e7e25b67a7e9f57554a514f563ba"
-        },
-        {
-          "path": "assets/09-SPEECH-COACHING-DRAFT06-CWGuiWx5.ASC",
-          "bytes": 3928,
-          "sha256": "c456390debd9f0297b74be33c92670f5bc12b1d93506bef053e57b3842f276b1"
-        },
-        {
-          "path": "assets/09-SPEECH-COACHING-DRAFT06-CyF3E3h_.BAS",
-          "bytes": 3213,
-          "sha256": "89ce323fe59affa76963b41e92d22c5dbd24ec5611d0f2540bcb385cb84adc60"
-        },
-        {
-          "path": "assets/09-WHO-DONNT-V2-Bb5BxG0O.ASC",
-          "bytes": 1993,
-          "sha256": "1d9fb2994b080390efe4f9d04117697c63b1c315a509998f0c625dfd95e77d86"
-        },
-        {
-          "path": "assets/09-WHO-DONNT-V2-Bl8Pxv2H.BAS",
-          "bytes": 1608,
-          "sha256": "23873616016af3dcf227ed632669de7864dcdf64afc7c85da6843bc0831ccf1b"
-        },
-        {
-          "path": "assets/10-3D-SURFACE-PLOT-V2-BidyU50h.BAS",
-          "bytes": 574,
-          "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0"
-        },
-        {
-          "path": "assets/10-3D-SURFACE-PLOT-V2-DRqMAmmJ.ASC",
-          "bytes": 678,
-          "sha256": "d8223cde4d09a67057aa42a6e3451945e61f27ef21e6071293b6241c15faab54"
-        },
-        {
-          "path": "assets/10-ARTILLERY-DRAFT02-6SsIC_zM.BAS",
-          "bytes": 1858,
-          "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0"
-        },
-        {
-          "path": "assets/10-ARTILLERY-DRAFT02-D2W_3xX5.ASC",
-          "bytes": 2393,
-          "sha256": "56a173b7a45f8c0da10fdecb59a62f736a44c3ab9f80e6d9cefcd6d5d995f295"
-        },
-        {
-          "path": "assets/10-AUTOMATIC-INVESTMENT-MANAGEMENT-TEMPLATE-Bw8OUysC.BAS",
-          "bytes": 3064,
-          "sha256": "6347b4fbb753b28339c57a792ede005a543703d19ae241b610ad9aa8edc7eb4c"
-        },
-        {
-          "path": "assets/10-AUTOMATIC-INVESTMENT-MANAGEMENT-TEMPLATE-Cs42KdH-.ASC",
-          "bytes": 3223,
-          "sha256": "a821ed9a4ab8c9570ece1ce981cbd35e2fc2efd5b88d85cdbea12628f9a1ab4d"
-        },
-        {
-          "path": "assets/10-CAVE-GAME-EARLY-BJQaJKLu.BAS",
-          "bytes": 762,
-          "sha256": "17c033e9057857ee181040373459574f74afb77e0afb943b3a6c13864a198898"
-        },
-        {
-          "path": "assets/10-CAVE-GAME-EARLY-Bo8JDKwp.ASC",
-          "bytes": 901,
-          "sha256": "99d3a707f70bb98ba2c43b4432283c8e05f1ece7c4c423c4973f9893d02ffc18"
-        },
-        {
-          "path": "assets/10-CHEMICAL-EQUATION-BALANCER-V2-BSxjgRa2.ASC",
-          "bytes": 3246,
-          "sha256": "8f9bef63f9c3e1ba9d3d5dc108a9a7f7dc7f66a8b275685891f0143a72eb6b87"
-        },
-        {
-          "path": "assets/10-CHEMICAL-EQUATION-BALANCER-V2-ClnMIdLx.BAS",
-          "bytes": 2552,
-          "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561"
-        },
-        {
-          "path": "assets/10-CHEMISTRY-BALANCER-II-SAVE-5-CNoiGI0S.BAS",
-          "bytes": 9956,
-          "sha256": "a05fc9094fb67882d6c087b9872328e87bff8946f76c19a3b9e4bb2144b65c87"
-        },
-        {
-          "path": "assets/10-CHEMISTRY-BALANCER-II-SAVE-5-cuTcEibc.ASC",
-          "bytes": 12295,
-          "sha256": "a4f2eb46f92ce025123ebe3f91915c4562eb3defa51a08ffe52067cb00c3e6d0"
-        },
-        {
-          "path": "assets/10-COMPUTER-CHESS-SELF-PLAY-CMshQopW.BAS",
-          "bytes": 2912,
-          "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674"
-        },
-        {
-          "path": "assets/10-COMPUTER-CHESS-SELF-PLAY-CmzLPw2f.ASC",
-          "bytes": 3372,
-          "sha256": "c47407e493b2e0cea106b13ba74dfcf5e7c3b875410b45b78fa7c354f7deefde"
-        },
-        {
-          "path": "assets/10-COMPUTER-CHESS-V2-bwDpi5lb.BAS",
-          "bytes": 3231,
-          "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340"
-        },
-        {
-          "path": "assets/10-COMPUTER-CHESS-V2-CufbBYXV.ASC",
-          "bytes": 3766,
-          "sha256": "236213f2c5c3c0678e16f3a819538913d535fa27218d240d735d98daed238dfc"
-        },
-        {
-          "path": "assets/10-PEORIA-RACE-TWO-PLAYER-HwzYeqJE.ASC",
-          "bytes": 1444,
-          "sha256": "b8054c7adfc078d128b9d8fb86190d694ebe3add42a595ad5f35169c79ddcd87"
-        },
-        {
-          "path": "assets/10-PEORIA-RACE-TWO-PLAYER-VZILyOty.BAS",
-          "bytes": 1123,
-          "sha256": "a0f968ba4b36806856dee5e5ea00dab124dd2b44f836f5fa716d293eb818e556"
-        },
-        {
           "path": "assets/10-RICKY-RAT-V7-DwLSPNdL.ASC",
           "bytes": 6580,
           "sha256": "0a85fc7c4bcda1a49e1313405341c73ad2a582834c999079ac8fd10560256c72"
@@ -1026,111 +96,6 @@
           "path": "assets/10-RICKY-RAT-V7-V29yGyi8.BAS",
           "bytes": 5498,
           "sha256": "630584cc812c65d5a89f06b433956418e87d2fee4508a826af5246222fb1e426"
-        },
-        {
-          "path": "assets/10-SPEECH-COACHING-DRAFT07-BAoU_3gr.BAS",
-          "bytes": 4242,
-          "sha256": "0c350d92f7780991182b07fc1b493a2578c337cfe19d8d044932b38f3ef33692"
-        },
-        {
-          "path": "assets/10-SPEECH-COACHING-DRAFT07-CiTGUBT3.ASC",
-          "bytes": 5187,
-          "sha256": "0a38eaa2640fef3a87ca68b7fbe86a7d83792919cc47a864249f6a983771a7e2"
-        },
-        {
-          "path": "assets/10-WHO-DONNT-V3-Dg5WJcH_.ASC",
-          "bytes": 2850,
-          "sha256": "8e69a82b3de67c899c713d74e969c7a406e93ad6b11fdfe050bafbb8f41b0326"
-        },
-        {
-          "path": "assets/10-WHO-DONNT-V3-mBcYbUbw.BAS",
-          "bytes": 2291,
-          "sha256": "e089b2f3b1c153957c8540c9935ba06080835c5ccc13ea2b77718c91ca670d50"
-        },
-        {
-          "path": "assets/11-ARTILLERY-DRAFT03-DDawzNZR.BAS",
-          "bytes": 2507,
-          "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c"
-        },
-        {
-          "path": "assets/11-ARTILLERY-DRAFT03-DvyEwrAf.ASC",
-          "bytes": 3157,
-          "sha256": "e60c2108734afe5248e55fcd4a6f530d3d4f6fdddc450605189865cf0dc89f2b"
-        },
-        {
-          "path": "assets/11-AUTOMATIC-INVESTMENT-MANAGEMENT-FRAGMENT02-PREFIX-CdK3SGQx.ASC",
-          "bytes": 50,
-          "sha256": "ac9e44680526e3d7205f24e30ffcbaa10b9535cbd26f49666c0f9ed115a77d35"
-        },
-        {
-          "path": "assets/11-AUTOMATIC-INVESTMENT-MANAGEMENT-FRAGMENT02-RAW-DHxEUm_z.BAS",
-          "bytes": 89,
-          "sha256": "27453579df0353360381069e903cee66aa417029951e611eb53c35a9dc1d6c2c"
-        },
-        {
-          "path": "assets/11-AUTOMATIC-INVESTMENT-MANAGEMENT-FRAGMENT02-UNCERTAIN-CdpJiWp7.ASC",
-          "bytes": 88,
-          "sha256": "4c1b8dea237061c109582593504e65ff1b88aff3df712d571c7fe8821f61b59f"
-        },
-        {
-          "path": "assets/11-CHEMICAL-EQUATION-BALANCER-V3-Di4DDcyG.ASC",
-          "bytes": 3266,
-          "sha256": "9cdc9667d3c0a53104529972f3ec700f01b5d6e44b8cd6719952e4614d6096e9"
-        },
-        {
-          "path": "assets/11-CHEMICAL-EQUATION-BALANCER-V3-DuNaXVAF.BAS",
-          "bytes": 2570,
-          "sha256": "6123fab3889045407644cd190539718be2557137514f33178790889578c37d50"
-        },
-        {
-          "path": "assets/11-CHEMISTRY-BALANCER-II-TEST-VERSION-DlmcxdRh.BAS",
-          "bytes": 10669,
-          "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918"
-        },
-        {
-          "path": "assets/11-CHEMISTRY-BALANCER-II-TEST-VERSION-IqBvLWH-.ASC",
-          "bytes": 13168,
-          "sha256": "42727e08fad0252d79099ac8e530b73de21897fbd9a065707b8ea81fc917a622"
-        },
-        {
-          "path": "assets/11-CISAB-CHESS-EARLY-BJHkXMk9.ASC",
-          "bytes": 4335,
-          "sha256": "1dab2c20d91a3f399cef102197febf4fe3a7e81c08d52d5aac6089a672b58754"
-        },
-        {
-          "path": "assets/11-CISAB-CHESS-EARLY-D2k5rnzF.BAS",
-          "bytes": 3709,
-          "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8"
-        },
-        {
-          "path": "assets/11-GERMAN-VOCABULARY-TUTOR-V4-Bf5HFTN5.ASC",
-          "bytes": 4715,
-          "sha256": "f0b65344dfc8912c4bdbf4a286ca7cfa728eb0aeeece5ce89e759e8b76d1fbe6"
-        },
-        {
-          "path": "assets/11-GERMAN-VOCABULARY-TUTOR-V4-wcjNar4S.BAS",
-          "bytes": 4076,
-          "sha256": "3414f48cf92aa78fe15d8e35e6588e6b9c5b5af3adab078f444a5efcb0f532dd"
-        },
-        {
-          "path": "assets/11-ORBIT-SIMULATOR-V1-B52AdZtP.BAS",
-          "bytes": 880,
-          "sha256": "d231c8ba50cbc7f16c6b989f1a2d5f29f21b82bce215c20cb8118ed1b0fd0cdb"
-        },
-        {
-          "path": "assets/11-ORBIT-SIMULATOR-V1-BsoDYQ8c.ASC",
-          "bytes": 1003,
-          "sha256": "fab215da84d5df9fc08b4d59404f6f3864fc83d5d39f52e44c6d2602a8dbca8f"
-        },
-        {
-          "path": "assets/11-PEORIA-TWO-MILE-RACE-2wSZhGOg.BAS",
-          "bytes": 1236,
-          "sha256": "1c1d902a32ff21f8655daa713141e6978be2febb8429ec66966d1325ac3b1c6a"
-        },
-        {
-          "path": "assets/11-PEORIA-TWO-MILE-RACE-TluLntAP.ASC",
-          "bytes": 1565,
-          "sha256": "f25f0e515ad4221435f633de05a348fa2d2054c89ebc00220b59353e1e55b44e"
         },
         {
           "path": "assets/11-RICKY-RAT-V8-DHckc3Li.BAS",
@@ -1143,56 +108,6 @@
           "sha256": "3ffa275f59ca973079a6dc6a6ba7dd960132afa5b8400f4932969bc02bf7934f"
         },
         {
-          "path": "assets/11-SENTENCE-GENERATOR-Bkepw74e.ASC",
-          "bytes": 1780,
-          "sha256": "ca5e137bd4face6ae1fe0562d2c3dfaae66e3cb1a6bf1b716b4746113ec969c9"
-        },
-        {
-          "path": "assets/11-SENTENCE-GENERATOR-CXcqRb-w.BAS",
-          "bytes": 1550,
-          "sha256": "9af11b1443f59273534006b82e0cdb4e9b5d0d13fa44623f6ca60738571d3252"
-        },
-        {
-          "path": "assets/11-SPEECH-COACHING-DRAFT08-BkB-je2l.ASC",
-          "bytes": 5238,
-          "sha256": "51dd0944cc3e0314483331faaa34a4a408aed7f8ebef7f0b922d6e03329c4883"
-        },
-        {
-          "path": "assets/11-SPEECH-COACHING-DRAFT08-mN-Ie8ML.BAS",
-          "bytes": 4291,
-          "sha256": "98d423c737a32f0b38bb19fdb682322ba4caa1541a7391a1b2a2dd17b1aa5b4d"
-        },
-        {
-          "path": "assets/11-WORM-ONE-5SVUTZPO.BAS",
-          "bytes": 850,
-          "sha256": "0832309e9dad643fe17736fa2ab5b1ae529c9a1c035ee7f38f145f3afbfb0e97"
-        },
-        {
-          "path": "assets/11-WORM-ONE-Gx4dk9o-.ASC",
-          "bytes": 1009,
-          "sha256": "54f172d4304407d3105252b396e9e63ea4b274f7d4db5e1f15d5206fb44d8668"
-        },
-        {
-          "path": "assets/12-CISAB-CHESS-BkMQjbt6.ASC",
-          "bytes": 4873,
-          "sha256": "ffbb3679e03d67a52cee951a725bc01b56378938ee47354a582e3b5d3c524e51"
-        },
-        {
-          "path": "assets/12-CISAB-CHESS-DGMRqIdx.BAS",
-          "bytes": 4125,
-          "sha256": "e1c7cda70e14658f74523e19d237492be6294fc549a4b54a5f73b27eba33ac46"
-        },
-        {
-          "path": "assets/12-LEARNING-TIC-TAC-TOE-BU9__lnH.ASC",
-          "bytes": 2129,
-          "sha256": "0dbd0e2a2b30bd5656ae0a264aec023244dd603d80e87e885fb1942fcf9b89cc"
-        },
-        {
-          "path": "assets/12-LEARNING-TIC-TAC-TOE-DTu7bXTe.BAS",
-          "bytes": 1657,
-          "sha256": "4ab3770091de3a49d0331e7e4e7d1d44269ffc55819aea9f4d98733a2f852742"
-        },
-        {
           "path": "assets/12-RICKY-RAT-V9-CCmI1Yep.ASC",
           "bytes": 7432,
           "sha256": "af9826079ce34d313109d96e5519223dcd80e9ca8b65f2e2dcf61df6afd2fc98"
@@ -1201,76 +116,6 @@
           "path": "assets/12-RICKY-RAT-V9-xDMCYviA.BAS",
           "bytes": 6201,
           "sha256": "ce3c0c70c3ebdb6a69f4d4d36ac76b1d27ad996444df0302eb4b250e09c8c33e"
-        },
-        {
-          "path": "assets/12-SPEECH-COACHING-DRAFT09-BfuAUz4F.BAS",
-          "bytes": 5823,
-          "sha256": "19b700211ddf7849f8abb2e55e2d257c0e269123daf9c19901e6c12222d2f98f"
-        },
-        {
-          "path": "assets/12-SPEECH-COACHING-DRAFT09-TElqIbmY.ASC",
-          "bytes": 7269,
-          "sha256": "47554b51cdc9ff44cfcd7cb86fefd104f963319ce2dac2f50bc050db727d192d"
-        },
-        {
-          "path": "assets/12-SPEECH-TEAM-COACH-GAME-BHjJjG0C.ASC",
-          "bytes": 7514,
-          "sha256": "533cb9739c2366dc106a529bac41fe3fe0efec0d08400d3ae86cb3457c5a2643"
-        },
-        {
-          "path": "assets/12-SPEECH-TEAM-COACH-GAME-LGMsYg18.BAS",
-          "bytes": 6035,
-          "sha256": "7fe0b9da95a05bf8af3cac081a0358821ef45db5f90a7b10a4a91ddf001f94ab"
-        },
-        {
-          "path": "assets/12-WORM-ONE-V2-CPDJq6Lr.BAS",
-          "bytes": 1262,
-          "sha256": "b5cb2619cc6059ad1807b1378d0fac69ed64b347008afcb2c7fa8213b4a708c2"
-        },
-        {
-          "path": "assets/12-WORM-ONE-V2-DYbG9cKm.ASC",
-          "bytes": 1457,
-          "sha256": "38b4e82675502f695785e9a17c1adf820844ae8cf2c2781e12c34c98de87063b"
-        },
-        {
-          "path": "assets/13-CHEMICAL-EQUATION-BALANCER-V1-DrhnS9UJ.BAS",
-          "bytes": 2473,
-          "sha256": "5cc30236ead0ae90168d5fe5cd843c04280edd060e5b9eb8d1f60ff0150f5d9a"
-        },
-        {
-          "path": "assets/13-CHEMICAL-EQUATION-BALANCER-V1-Nwp2CwQk.ASC",
-          "bytes": 3157,
-          "sha256": "69d64049e4f4e6c44fc76801c3a4d92e987b1b3fb682513084be39a8a621312d"
-        },
-        {
-          "path": "assets/13-CISAB-CHESS-V2-Bc_J4aCz.BAS",
-          "bytes": 3920,
-          "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f"
-        },
-        {
-          "path": "assets/13-CISAB-CHESS-V2-DPxum06O.ASC",
-          "bytes": 4697,
-          "sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853"
-        },
-        {
-          "path": "assets/13-COMPUTER-MATCH-UP-EARLY-CasDCZ6Y.ASC",
-          "bytes": 1265,
-          "sha256": "b7b32604b992e68b27f8450fbd936fb886cb9cf367df680a7cb92d0a4d4be8fc"
-        },
-        {
-          "path": "assets/13-COMPUTER-MATCH-UP-EARLY-CVS2Ghzj.BAS",
-          "bytes": 1131,
-          "sha256": "46667993649cab5b8d96358c1577f88427ab2bd76e91ab478c323789b58d9772"
-        },
-        {
-          "path": "assets/13-ORBIT-SIMULATOR-V2-BJcdPGaI.ASC",
-          "bytes": 1261,
-          "sha256": "ba1b0eb8e503d4d8efc1303568e8aedd9455cb838ade31004cc36f72ba54c88f"
-        },
-        {
-          "path": "assets/13-ORBIT-SIMULATOR-V2-wASuTNJ2.BAS",
-          "bytes": 1127,
-          "sha256": "404ddc412e25265dac4d63f947c9e80d338e7e37f911516f29b53f0f8df7a541"
         },
         {
           "path": "assets/13-RICKY-RAT-V10-CYAHpxfv.ASC",
@@ -1283,81 +128,6 @@
           "sha256": "7aa205e63a28f172458ba786e6ee467177e1b7ff3136a332bf77766c6a200241"
         },
         {
-          "path": "assets/13-SPEECH-COACHING-DRAFT10-PREFIX-Dwa_ENCU.ASC",
-          "bytes": 6017,
-          "sha256": "675395942b14b4021d5a8ebbdaa6a8c14988bda10f03976817bd51ffab9d5227"
-        },
-        {
-          "path": "assets/13-SPEECH-COACHING-DRAFT10-RAW-P5PgnCi3.BAS",
-          "bytes": 4947,
-          "sha256": "79584cc6ab4535ebf46f8e7e82cc3b76e9b283f86017d57a2784d01b57189dd4"
-        },
-        {
-          "path": "assets/13-SPEECH-COACHING-DRAFT10-UNCERTAIN-C0l1JToX.ASC",
-          "bytes": 6117,
-          "sha256": "12ed7c5f2fdbbfa9fa4a2fa1517eae415c3d1e0677af6eb0f93bdb7daae1b06c"
-        },
-        {
-          "path": "assets/13-TRIGECTIOR-PROJECTILE-BRz1uaT2.ASC",
-          "bytes": 396,
-          "sha256": "be7e30acad03092b7074ea3b79a518900eff96182e557fc7dcaa358211736e12"
-        },
-        {
-          "path": "assets/13-TRIGECTIOR-PROJECTILE-Ed_lAgja.BAS",
-          "bytes": 361,
-          "sha256": "88ef1a7abaea20cdd42ebdc087b83262fa857b5555b8798fd8c20f460c96f15e"
-        },
-        {
-          "path": "assets/13-WORM-ONE-V3-B_2JvHyP.ASC",
-          "bytes": 2135,
-          "sha256": "a182073c862a18da4a287086ab409a793d9daa41ad4b23b45afa5dfd4ed29ce6"
-        },
-        {
-          "path": "assets/13-WORM-ONE-V3-C1NqGlr7.BAS",
-          "bytes": 1814,
-          "sha256": "6c89b86a6cf67be7b14090fb5b3c01ea99e81c41276b860059ae14b83cc1bfe7"
-        },
-        {
-          "path": "assets/14-COMPUTER-MATCH-UP-V2-BlKX7K_H.ASC",
-          "bytes": 1263,
-          "sha256": "7a7cd4016b4f208b6d27aa9460e747f0b0b91ad34b0172765d3962cd9990aaec"
-        },
-        {
-          "path": "assets/14-COMPUTER-MATCH-UP-V2-DNXc5qWy.BAS",
-          "bytes": 1131,
-          "sha256": "c79760772f4e5de65a6ef4819ac09776d362d70990d8345273e370c23005c4b4"
-        },
-        {
-          "path": "assets/14-FALL-GRAPHICS-BASIC-V1-5VEboz5i.BAS",
-          "bytes": 2637,
-          "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d"
-        },
-        {
-          "path": "assets/14-FALL-GRAPHICS-BASIC-V1-BbzSSlDH.ASC",
-          "bytes": 3301,
-          "sha256": "44b37f9c2623a56e6b1726ba7be1bf70d09b1836464f8b57c618b8ef04547694"
-        },
-        {
-          "path": "assets/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1-DfpynMDR.BAS",
-          "bytes": 2676,
-          "sha256": "bcb2bf6867274132b7faa4ea10022cef3d2f6c66d12da3e490d630669e189ae0"
-        },
-        {
-          "path": "assets/14-LOGIC-CIRCUIT-SIMULATOR-SAVE-1-U-g6aMP8.ASC",
-          "bytes": 3111,
-          "sha256": "145a17065ae69fdde028f05505871974f6ee0238c7b8615f11211ad29a7186e8"
-        },
-        {
-          "path": "assets/14-ORBIT-SIMULATOR-V3-BWsjyDIe.ASC",
-          "bytes": 1270,
-          "sha256": "b1f4449d075e12fb614c5dff0aec63cc42b3231da4b04f747d7715c704e9282a"
-        },
-        {
-          "path": "assets/14-ORBIT-SIMULATOR-V3-DWiP8U22.BAS",
-          "bytes": 1130,
-          "sha256": "8c3dcde895c5baf2e8b7e8307e7e1f6d73366e97295e6bd96cddd0f64e80bd11"
-        },
-        {
           "path": "assets/14-RICKY-RAT-V11-BiFqMJUV.ASC",
           "bytes": 8167,
           "sha256": "c906b11ee675b562342b5474499300ca7a6d8233b11621d9c0e9f3a27e2a53ac"
@@ -1368,44 +138,9 @@
           "sha256": "8e881d95581d1216d3298c39045d7101bc52a66511ca26d912cb29bbc312698e"
         },
         {
-          "path": "assets/15-COMPUTER-MATCH-UP-V3-5x-PC1cN.ASC",
-          "bytes": 1865,
-          "sha256": "43d8a371a9ca5530f9680642fdb75a168c2c5e46fa12bc1e1c6c35436e608c71"
-        },
-        {
-          "path": "assets/15-COMPUTER-MATCH-UP-V3-ByU_KYRh.BAS",
-          "bytes": 1662,
-          "sha256": "3d18097d0813a8f2c17c5af60d2347c882ed97906832b2b02335f8908f6f46bc"
-        },
-        {
-          "path": "assets/15-DUNGEON-TRAINER-DC1d4897.BAS",
-          "bytes": 2895,
-          "sha256": "c6df5d1d83f26ee7267d3c6e10b0bc06bfdce87c36476aaa11542c59f8aba657"
-        },
-        {
-          "path": "assets/15-DUNGEON-TRAINER-F67cZAD1.ASC",
-          "bytes": 3514,
-          "sha256": "64fb38fb067bfe22d56f3bb3d8ec197a1083a903a2d0e243a14f64c7113c9fb6"
-        },
-        {
-          "path": "assets/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2-Bu922UZt.ASC",
-          "bytes": 4122,
-          "sha256": "71bbad13defada98fcfcaa365742d4cd022868521c67eb9007b5e1d9fa550dd7"
-        },
-        {
-          "path": "assets/15-LOGIC-CIRCUIT-SIMULATOR-SAVE-2-D3Fq55Et.BAS",
-          "bytes": 3474,
-          "sha256": "283e7027d9d9ce1fde8ac8fc0dfdfdf18fba0a9e732e9ed0326dd2510958ffed"
-        },
-        {
-          "path": "assets/15-ORBIT-SIMULATOR-V4-CJPEToyo.ASC",
-          "bytes": 1426,
-          "sha256": "be386a7915f30b0074ff7a670d0d8a81dacccbc02d188360f48370269377cbeb"
-        },
-        {
-          "path": "assets/15-ORBIT-SIMULATOR-V4-t89MWsNy.BAS",
-          "bytes": 1278,
-          "sha256": "985bfbda6266af2af96fa08748783c8ca91cb20a37ec5bda674f94ac0df4a495"
+          "path": "assets/15-RICKY-RAT-FRAGMENT-PREFIX-DySrcJtS.BIN",
+          "bytes": 59,
+          "sha256": "c6a313c2f67a4440dc5d1d548f0d473eb042329f55a88de12a50919ac4b1e7f6"
         },
         {
           "path": "assets/15-RICKY-RAT-FRAGMENT-PREFIX-OXzy0fNJ.ASC",
@@ -1423,36 +158,6 @@
           "sha256": "8b5d13ab5e6a301731cf7e16950118d984f0faf7d7728e06bcc26a42cdc2b0c7"
         },
         {
-          "path": "assets/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3-BIY57L4F.ASC",
-          "bytes": 4977,
-          "sha256": "e19d6016af10726ffc0ab4e4d5943c5f107807c8d16e271e171e3e872701fa7a"
-        },
-        {
-          "path": "assets/16-LOGIC-CIRCUIT-SIMULATOR-SAVE-3-BX8nuixG.BAS",
-          "bytes": 4235,
-          "sha256": "0986c88f7fc682a0d53f46934ee7bbbcdc79d74a4b1bceb5e141cebc20aada50"
-        },
-        {
-          "path": "assets/16-ORBIT-SIMULATOR-V5-CpCB-0rp.ASC",
-          "bytes": 2829,
-          "sha256": "7521bd28fc6124e3fa20a6066aa2db641445c227b4b2ab56c43e999ad65855e5"
-        },
-        {
-          "path": "assets/16-ORBIT-SIMULATOR-V5-DmF4Os8Z.BAS",
-          "bytes": 2529,
-          "sha256": "2d1b33bd57095751e6a327bf445b90a107ac2be90d7a5f659da89f698cbd1875"
-        },
-        {
-          "path": "assets/16-PINBALL-EARLY-Aif2fS7m.BAS",
-          "bytes": 1196,
-          "sha256": "3d35154139ca7b62fcd1c857cc41a42a5d8349d8fef9b55b365978f05c33e64c"
-        },
-        {
-          "path": "assets/16-PINBALL-EARLY-BtX4mLSa.ASC",
-          "bytes": 1573,
-          "sha256": "a61506af6c35cbc7dad859c48bcfa8b3318e4bd76e1206d975c9465e3a116cf9"
-        },
-        {
           "path": "assets/16-RICKY-RAT-V12-CXVON-T0.ASC",
           "bytes": 8288,
           "sha256": "cb4159a28edf4fe80135bf22b870fb5284b279edbcc247c784edc9225fcb64d6"
@@ -1461,36 +166,6 @@
           "path": "assets/16-RICKY-RAT-V12-yynmQhzP.BAS",
           "bytes": 6924,
           "sha256": "5680c0e8d3e0233c6916f899e52e95b8bf1d82e8fdf29382f5108f5228f54d17"
-        },
-        {
-          "path": "assets/17-CHEMICAL-EQUATION-BALANCER-V2-BOAj5gXO.BAS",
-          "bytes": 2543,
-          "sha256": "7fc596e7f296269ea4bb2a090ab78f165b179a7add07e7e8324756e3e7a2de8a"
-        },
-        {
-          "path": "assets/17-CHEMICAL-EQUATION-BALANCER-V2-Dv2v2Ln1.ASC",
-          "bytes": 3197,
-          "sha256": "5a0cf3fa59b6ba5c91e0c0eb814b5b20e537dca106b827348f908bf9aaa4cc93"
-        },
-        {
-          "path": "assets/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4-DqkvlJt9.ASC",
-          "bytes": 5837,
-          "sha256": "596a404f3b53012853f36e09550514b6149e21ba925e1841e6cc83ac5feaebc3"
-        },
-        {
-          "path": "assets/17-LOGIC-CIRCUIT-SIMULATOR-SAVE-4-FEqfcsiL.BAS",
-          "bytes": 4930,
-          "sha256": "f4bad7b14c7509744387f158aae6bc955ebd0fb519fc8c3888f07adb79d8034f"
-        },
-        {
-          "path": "assets/17-PENDULUM-DCh_Vwtm.BAS",
-          "bytes": 648,
-          "sha256": "8fcdfd409eb7aebe3f06fef2ecf8784e6b0aac1859c7abac85a980649e79ca37"
-        },
-        {
-          "path": "assets/17-PENDULUM-DpUd7ZiM.ASC",
-          "bytes": 728,
-          "sha256": "b59fadb13cf71f48c99ace20ccd797c3eea38111759460d3e8d9ae2e38825c28"
         },
         {
           "path": "assets/17-RICKY-RAT-V13-CJRqeJc1.ASC",
@@ -1503,24 +178,9 @@
           "sha256": "cd8ff93c1cf9b63a54976c46b333034aae2a46341399b2f79720619ec085bc7a"
         },
         {
-          "path": "assets/18-PINBALL-CfD4D2wu.ASC",
-          "bytes": 2338,
-          "sha256": "8de50c612d6bd5d9a589387410e03481c40c1574b0ecb09d38100cb15978dfcd"
-        },
-        {
-          "path": "assets/18-PINBALL-CRlqM_bK.BAS",
-          "bytes": 1813,
-          "sha256": "6e9a63b8a51455a4147655283cf3266221c65729d87086d10869bd03bdb8af5b"
-        },
-        {
-          "path": "assets/18-TUTAC-COMPUTER-Bqu8kNhN.ASC",
-          "bytes": 1515,
-          "sha256": "b0fcad1ac0dcace78dd76e507de2fe836493500fa1440f0b035a27a163e82458"
-        },
-        {
-          "path": "assets/18-TUTAC-COMPUTER-DoT2znel.BAS",
-          "bytes": 1269,
-          "sha256": "fd95be9b7a3ea5fff59673f1e616dfd5f0ff98ffdab9d809dd45fd5bd9f78589"
+          "path": "assets/19-RICKY-RAT-V15-DAMAGED-PREFIX-B883AzAM.BIN",
+          "bytes": 6461,
+          "sha256": "aa619a20587f298a0989294166cb65be2443f5404344a99e44cf233a7f3eba59"
         },
         {
           "path": "assets/19-RICKY-RAT-V15-DAMAGED-PREFIX-BJ22NZ1g.ASC",
@@ -1538,69 +198,9 @@
           "sha256": "2b18ae56735208c18c4495c3c05bc9d35a49ae5c640e58c9632109bcf56ff2fb"
         },
         {
-          "path": "assets/20-PINBALL-V2-BK88OuLR.ASC",
-          "bytes": 2842,
-          "sha256": "e05aa6a93fc4d3d6de534156b828d88531c433667746cda7f814e0c41598c4b1"
-        },
-        {
-          "path": "assets/20-PINBALL-V2-BS6ozoHO.BAS",
-          "bytes": 2218,
-          "sha256": "7e5a3ac97695d0f49dfa0a8db99942ed9342473daf0e16b8f862aba76c0cb140"
-        },
-        {
-          "path": "assets/20-TUTAC-COMPUTER-V3-REVIEW-B4dNsxqC.ASC",
-          "bytes": 2223,
-          "sha256": "91b5bfe9f5e690f405c2b09ed6e0212a9d835c954d061a76ea32b79cf2ec0d79"
-        },
-        {
-          "path": "assets/20-TUTAC-COMPUTER-V3-REVIEW-CIs3OOks.BAS",
-          "bytes": 1842,
-          "sha256": "d8b0ba8a07789f4789634b6e53f758923062fd8c552c3dc78b96cc20aefb6fd2"
-        },
-        {
-          "path": "assets/23-FALL-ASSEMBLY-V6-BQrzFgAK.ASM",
-          "bytes": 2543,
-          "sha256": "6ed9e17ffc00288e0cc2cd016d472d14d34a0cfca7f300aba531198b6cc4dc4b"
-        },
-        {
-          "path": "assets/23-FALL-ASSEMBLY-V6-C_dp1T0X.TXT",
-          "bytes": 2535,
-          "sha256": "37296f63a1570c725109408b68086a23ec4474cac7652661080cf59c88483cc0"
-        },
-        {
-          "path": "assets/AIM-D05HMg9Q.BAS",
-          "bytes": 3061,
-          "sha256": "4ab7efb57a2eeeee8a784c99e353c74917bb359faa2f644ea8935c856340f858"
-        },
-        {
-          "path": "assets/AIM-DJ_P1hbZ.ASC",
-          "bytes": 3229,
-          "sha256": "76fc13e3a3c1ad07c9dde46ec6703f88a446304b5ca7c59dd86d3e6114c0aabb"
-        },
-        {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
           "bytes": 327,
           "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
-        },
-        {
-          "path": "assets/ALIEN-b0SSbTKd.BAS",
-          "bytes": 7571,
-          "sha256": "eea9e3638c75a0d4322ce7fe0e0b2e5bc2ae4dc7632d9a1c331de6f18fbcda21"
-        },
-        {
-          "path": "assets/ALIEN-Bw5kHFdw.ASC",
-          "bytes": 8772,
-          "sha256": "a5821a67a2aa2c8dc51084f8560cc419d843155727bf4764139ba49038b3af7f"
-        },
-        {
-          "path": "assets/ALIEN-CWvdOez8.ASC",
-          "bytes": 8783,
-          "sha256": "71daaedfdf4702506c8defa88078b5d8f393aa1400fdd1a7cf7c94b2aa72a486"
-        },
-        {
-          "path": "assets/ALIEN-mk4m3E3S.BAS",
-          "bytes": 7560,
-          "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad"
         },
         {
           "path": "assets/alien-vents-Ba2Ravfz.svg",
@@ -1608,49 +208,14 @@
           "sha256": "4d8133cf0c84ba6d06f7d868b39027224b0facda740867b2712cafaf019e1a93"
         },
         {
-          "path": "assets/AMAZING-BPTG9RD3.ASC",
-          "bytes": 3094,
-          "sha256": "0638d75685bd0d474b9c625698287165ef297c979a9841597e33ca088e35417d"
-        },
-        {
-          "path": "assets/BALANCER-D-LR-bQq.ASC",
-          "bytes": 12307,
-          "sha256": "933ff5d7913a676a3361fa466d3bf1682c03f4224d3a2d43c1dc96a61a841889"
-        },
-        {
-          "path": "assets/BALANCER-DsZN7RV2.BAS",
-          "bytes": 9965,
-          "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
           "path": "assets/balancer-equation-BxrkCOHy.svg",
           "bytes": 539,
           "sha256": "0da58c002b3e49797f1875deade5cc76f2ee309699e6ee4db3acebf3b9457db8"
-        },
-        {
-          "path": "assets/BOMB-DcFsqWpX.ASC",
-          "bytes": 6092,
-          "sha256": "aa46286ecd291a992b5bf4d07daeb55ccf1bdc1fe394d9526d7ffe3ab5300c06"
-        },
-        {
-          "path": "assets/BOMB-lmNZk5JD.BAS",
-          "bytes": 5002,
-          "sha256": "db060072e075f604c06ce3aaa50f27487a57b55b1a563db4eccc853c185f984d"
-        },
-        {
-          "path": "assets/bomb-wires-DNPFEKL1.svg",
-          "bytes": 870,
-          "sha256": "047ae6008779bf4da3cd47802a384887d6706d1c226315ef27c0c0c760b9ce7e"
-        },
-        {
-          "path": "assets/CASTLES-BOCWVuoE.BAS",
-          "bytes": 2631,
-          "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd"
-        },
-        {
-          "path": "assets/CASTLES-D6fn4NUh.ASC",
-          "bytes": 3299,
-          "sha256": "8a67855ac5ef08c8b49832d854a08474cf127762737c2b906b4d1c2b2250df83"
         },
         {
           "path": "assets/castles-game-CJCfL7KS.svg",
@@ -1673,16 +238,6 @@
           "sha256": "3097e42854d8c50538eec288698317c1b78e3ce2c10dcb221afa3651090cc2da"
         },
         {
-          "path": "assets/CAVE-CPNiNr2m.BAS",
-          "bytes": 2160,
-          "sha256": "24f5f14fafb0e553f5fc2b330cd781086108e84e9b48211007933037d42989d9"
-        },
-        {
-          "path": "assets/CAVE-DiUtuZG0.ASC",
-          "bytes": 2448,
-          "sha256": "427597b2afbf558f052c1eec74303c11ec36e59f03cab46e5c28e8fae2267049"
-        },
-        {
           "path": "assets/cave-gallery-CUdWAr_1.svg",
           "bytes": 680,
           "sha256": "49eba2ce8c8aee3317b2a9ef9a0da0d385cadd417bd8b2825a756a88ed7a1ce5"
@@ -1698,46 +253,6 @@
           "sha256": "32324b881ae454fece1e2cdbb5dfbc08550d89bf344c2ff572f9db7b201b24fa"
         },
         {
-          "path": "assets/CHESS-BunQR6Jf.ASC",
-          "bytes": 6131,
-          "sha256": "fd7b585bc37e002eeab80a75296c9ab89da01422e80491f0ce6d0fd432afae9e"
-        },
-        {
-          "path": "assets/CHESS-C3Qon-Xl.BAS",
-          "bytes": 5098,
-          "sha256": "97399fe3f1ea881f1399f4f0687b0288b99e04ee4148783f6249d07e0bea64b4"
-        },
-        {
-          "path": "assets/CHESS-C9bSG-iT.ASC",
-          "bytes": 6011,
-          "sha256": "cb6c6a8a04316c8a91b2199f46b9f752620800e90de7559343ff35651aa4d7ba"
-        },
-        {
-          "path": "assets/CHESS-DewmwQis.BAS",
-          "bytes": 4997,
-          "sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7"
-        },
-        {
-          "path": "assets/CIPHER-BtGptll6.BAS",
-          "bytes": 704,
-          "sha256": "77c0c604cfd071fd4c6c2ca7e9979a5375c1758ad60a521102e7bb717e5b41f0"
-        },
-        {
-          "path": "assets/CIPHER-CccRBuau.ASC",
-          "bytes": 839,
-          "sha256": "a20d002aa6d1aca079ad648467c1ad2e5ecb50127835e652d98adbb94c16ce8b"
-        },
-        {
-          "path": "assets/CIPHER-ChcqCr6U.BAS",
-          "bytes": 707,
-          "sha256": "625defee0c63aa782d5d439b822625e93736ea4c2848fd549c12d5a5ab916427"
-        },
-        {
-          "path": "assets/CIPHER-DkayKWbK.ASC",
-          "bytes": 848,
-          "sha256": "4452b2f482d364c41aa710a4f9c73a83b06d4771d5dd4d206a5d1be3818406c8"
-        },
-        {
           "path": "assets/cipher-gallery-6P_rBzDq.svg",
           "bytes": 407,
           "sha256": "7cd57d882e809678611fec6639dedb32e67b067ef027fa64428ccf4423f7ac3a"
@@ -1748,34 +263,19 @@
           "sha256": "c3a00eb7f8022ac1947e23d9da0ff17fe83592a651b122fe0b8297ad8dacca9e"
         },
         {
-          "path": "assets/COMPUTAMATCH-DBCyEW_i.ASC",
-          "bytes": 2469,
-          "sha256": "845b3c7bf97c6143b738f363efb2cd37d9e52ea7744d5f708ef60882d9bdab87"
-        },
-        {
           "path": "assets/computamatch-gallery-O8o3rjeX.svg",
           "bytes": 490,
           "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
         },
         {
-          "path": "assets/COMPUTAMATCH-SKfmd5Le.BAS",
-          "bytes": 2180,
-          "sha256": "ba20961fdb778c40fcd680b8eff90dddfd6409c1d2763d654977263a360abb71"
+          "path": "assets/defuse-wires-DNPFEKL1.svg",
+          "bytes": 870,
+          "sha256": "047ae6008779bf4da3cd47802a384887d6706d1c226315ef27c0c0c760b9ce7e"
         },
         {
-          "path": "assets/derived-isEYttG3.bin",
-          "bytes": 214,
-          "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
-        },
-        {
-          "path": "assets/DUNGEON-DDyGJDtf.BAS",
-          "bytes": 3246,
-          "sha256": "804212db731613c2b10b5d3c7eed9ce1e9ec49d7186b71af6bbfaa87af2b118b"
-        },
-        {
-          "path": "assets/DUNGEON-DiNZ7s2-.ASC",
-          "bytes": 3944,
-          "sha256": "3abe32603044be6b0416bb9ce8cc98f559c0737abac4609625f50504712e9031"
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
         },
         {
           "path": "assets/dungeon-gallery-iVVwbTI4.svg",
@@ -1783,19 +283,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-Cf50hI7a.js",
-          "bytes": 286228,
-          "sha256": "ec056926d9d47d9e6bc4339202d46aee8b7ed709993f4dec027e931d8abe0e18"
-        },
-        {
-          "path": "assets/GERMAN-b4Vu0Tmp.BAS",
-          "bytes": 4504,
-          "sha256": "2c4d39bf1fbb63dff0fdb744da148923b215eaf08f7fafbf5db36646c4a103d9"
-        },
-        {
-          "path": "assets/GERMAN-C2R5CiTK.ASC",
-          "bytes": 5224,
-          "sha256": "4df3f6aa693e16a55c1a80889e5dd257410821f72ed80f09fd75ad3a4498a50e"
+          "path": "assets/emulator-7mc94tfV.js",
+          "bytes": 316919,
+          "sha256": "8e083cb62673f07bca4fce91dd8b90afac88441d2c884a91a972f4d9b28339c3"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -1813,19 +303,14 @@
           "sha256": "60e6c890e811aa6f967f597bf5c7f494dc5ceeb47a32505b18ca232493aab770"
         },
         {
-          "path": "assets/index-DpaGZ4Sx.js",
-          "bytes": 2655772,
-          "sha256": "0363253ac5e9ddf4d10344c5149ec123eabecd6c003d2ccb178c8bb816ac45a9"
+          "path": "assets/index-ClZaHYYP.css",
+          "bytes": 26158,
+          "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-DQ0iy3N9.css",
-          "bytes": 25217,
-          "sha256": "ca7137edabeb9f3da7720e3addb0303dcb6f3600f4524bb87d89bcd606f363f0"
-        },
-        {
-          "path": "assets/JAB-DeYrev_g.BAS",
-          "bytes": 8473,
-          "sha256": "9b40f2c2650f11d90cc38de5dd88702de8be1de0cde993adc5c90e0e452dd756"
+          "path": "assets/index-DY3SkgQk.js",
+          "bytes": 1099305,
+          "sha256": "a5953c501230d79f0a55989f6df06e9cf88dc3aac7236f75f87fc0d26c0c28f2"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -1833,34 +318,9 @@
           "sha256": "f0bb26fb766c87997f4a6dc9ac92558097293eee75b5961a89892642b5d56245"
         },
         {
-          "path": "assets/JAB-Hyt034tT.ASC",
-          "bytes": 10402,
-          "sha256": "566670f8a8cc0f31ce974764a9d816052bd41289dc6839c85f9112cd6b176199"
-        },
-        {
-          "path": "assets/JABERWOCKY-BjTLOO7R.BAS",
-          "bytes": 7123,
-          "sha256": "ab0298f1e56b73f44ec6a3baa1b726300da164b873600d4b9e2ab7e379a7a9eb"
-        },
-        {
-          "path": "assets/JABERWOCKY-DLwlcp0u.ASC",
-          "bytes": 8230,
-          "sha256": "acc14a7d562cc0eb4bdeda0cc37988ca5decc39bac512c0fae718e2bf3920873"
-        },
-        {
           "path": "assets/jaberwocky-gallery-DFPFyEy6.svg",
           "bytes": 686,
           "sha256": "dfb2726417b8ecb835e6d6838ad9abbac845ff4e1c4122f85d4b4b986d3d92b3"
-        },
-        {
-          "path": "assets/JOHNSCIRCLE-Cvtqz_o0.ASC",
-          "bytes": 217,
-          "sha256": "7246b92c4bd976dd43e6b09045954568ec52750a49f75ca2edce117617188b11"
-        },
-        {
-          "path": "assets/JOHNSCIRCLE-Dr8y2M8g.BAS",
-          "bytes": 198,
-          "sha256": "e0d6110dbf69b643d68789071e6d96d4d68635dd9c7c1b409e919d0d5598a4bf"
         },
         {
           "path": "assets/johnscircle-gallery-B8gqmWJP.svg",
@@ -1868,69 +328,9 @@
           "sha256": "98c088a2120392c22b7ee72e9a9c4cab253c1478578dedfaba544ad1c20db07b"
         },
         {
-          "path": "assets/LEARNINGTTT-Bg2vE5ps.BAS",
-          "bytes": 2667,
-          "sha256": "4b8920ce05f69cc22a8287f10650f9a4afaf504c1f8954ad82cecd7cbe1cce15"
-        },
-        {
-          "path": "assets/LEARNINGTTT-CuE1KAeO.ASC",
-          "bytes": 3244,
-          "sha256": "cdc23047965e9e022ed65fa457ecb0cfba837253379360281492c77dad3812f0"
-        },
-        {
-          "path": "assets/LEARNINGTTT-DVps8nAr.BAS",
-          "bytes": 2748,
-          "sha256": "e98bd526f1165250ccc94fc57e6a4c5435440dd15ff170a8226adcd82e7b863f"
-        },
-        {
-          "path": "assets/LEARNINGTTT-g8s41wSE.ASC",
-          "bytes": 3330,
-          "sha256": "7c7ebdd32f5deca933e64617267622d15b480b7c6b961ae92313b8365343c796"
-        },
-        {
           "path": "assets/learningttt-gallery-eEINQE3h.svg",
           "bytes": 465,
           "sha256": "bef009af5a65b7886190c3dea67133b2ea324606bc7baea31e6bcafcb039231a"
-        },
-        {
-          "path": "assets/LIFE-BdX5oyFl.ASM",
-          "bytes": 3713,
-          "sha256": "d60ff6d10b8f6a85b5b4f5581c1c5bbb269dbaf2d2d87670c41bba08f8e9d882"
-        },
-        {
-          "path": "assets/LIFE-BOOT-BCOHkbZ1.ASC",
-          "bytes": 53,
-          "sha256": "bde27058c5d4e9dede156cc53cf300a6a2482c203b46c8a3ab7e3cb865786e8c"
-        },
-        {
-          "path": "assets/LIFE-BOOT-CRK41Niq.BAS",
-          "bytes": 43,
-          "sha256": "dcac9e583acc9f8f3d0e4d4725f7fc81a982ad6fbf66e0ae4c1e262dec25500a"
-        },
-        {
-          "path": "assets/life-CD7HqhGz.bin",
-          "bytes": 495,
-          "sha256": "5782553cb830d8c70363e87e952af1db454f8f8f6cfcc71fcec51c2c44790ec7"
-        },
-        {
-          "path": "assets/LIFE-CIRfnHPZ.Z80",
-          "bytes": 2319,
-          "sha256": "a8e7791838358c99a8f0a1be04af00819a75cb84b51ee6f573bf11c05c5cca65"
-        },
-        {
-          "path": "assets/LIFE-CQV3Bx6S.Z80",
-          "bytes": 2319,
-          "sha256": "b99a951827668a3043b758af994e201f32c152aeb867d7e609567d41dcb169f0"
-        },
-        {
-          "path": "assets/LIFE-CZpuLdXY.TXT",
-          "bytes": 3705,
-          "sha256": "c549e214d26d98ed4e92171b514ea87768ec56e2a061fe7417ed51416afee940"
-        },
-        {
-          "path": "assets/life-Dqqtp-0c.bin",
-          "bytes": 495,
-          "sha256": "957cf51a782da8cfa5343cfcd378c40a7c1d65a812e86ce17a4dc3e8104225de"
         },
         {
           "path": "assets/life-gallery-Ac-6fOCC.svg",
@@ -1938,49 +338,14 @@
           "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
         },
         {
-          "path": "assets/LL-D3kgMqE_.ASC",
-          "bytes": 1422,
-          "sha256": "c291a24235e94ba30029ab3fb8daba9c30f7b123b3c0d3d7b1bd227eaeaf0c4a"
-        },
-        {
-          "path": "assets/LL-DMoaNDL3.BAS",
-          "bytes": 1189,
-          "sha256": "1adfbc5370ab3f1d3bcd6ebad949b4d8d5b5d25b2381436ca3bb21d1fc54193c"
-        },
-        {
           "path": "assets/ll-gallery-DNJKCGEm.svg",
           "bytes": 596,
           "sha256": "f57f40ffcd289892eca959f4933f9e05d7e10bb5dc00fbde26356db1391a39cc"
         },
         {
-          "path": "assets/LOGIC-BQEgi4Co.ASC",
-          "bytes": 6814,
-          "sha256": "71f98caf9176487b1676b6728ade237b0ea42493c6ec82f6367d5131be65783f"
-        },
-        {
-          "path": "assets/LOGIC-D-N-W2ym.BAS",
-          "bytes": 5690,
-          "sha256": "676a2d506b0a35608639196603e3d73122dd12d455fa8e8027038d4d0b8373d1"
-        },
-        {
           "path": "assets/logic-gallery-DKKs_rQt.svg",
           "bytes": 864,
           "sha256": "a006dd4167503275189b28caa9cc17033a612cc757f54e2a12a73b36032b7e3e"
-        },
-        {
-          "path": "assets/LUNAR-1978-B7D9wvkf.ASC",
-          "bytes": 2074,
-          "sha256": "744231549befd5eab29d8e792f14967e515fe5238fa76ad6f2a73a96356655f9"
-        },
-        {
-          "path": "assets/MAGAZINE-Bh29Dy-q.ASC",
-          "bytes": 4399,
-          "sha256": "cb1c08adefe4b12c0a1a3c0ada82ea35a088d5110311da3a76efdd61e39c980d"
-        },
-        {
-          "path": "assets/MAGAZINE-CNEHusZd.BAS",
-          "bytes": 4080,
-          "sha256": "2500a5792ba842e4b7a47573cfd21ba8f3cffcfd0ddde486db0a198ee6f5baae"
         },
         {
           "path": "assets/magazine-gallery-Bh2eMosB.svg",
@@ -1993,39 +358,9 @@
           "sha256": "719f3d1021bf98322f8e2fd70584aba371c791e73ef22ad4945820ab8b77cefc"
         },
         {
-          "path": "assets/NUCLEAR-C19im2Wa.BAS",
-          "bytes": 1970,
-          "sha256": "a52c382ce1406256bc90c8e446d5638ad324ef244ae87061c5ccdfc92a7a1653"
-        },
-        {
-          "path": "assets/NUCLEAR-C4hPvZi5.ASC",
-          "bytes": 2314,
-          "sha256": "f28af28a85b79e8e652848212063109127946401c4aaedab0b68fc79fcc44e07"
-        },
-        {
           "path": "assets/nuclear-gallery-CvCXKMfj.svg",
           "bytes": 469,
           "sha256": "3921df0fcf62d50302b03e125781513e33208615c0870accff80ca73a9e9bd34"
-        },
-        {
-          "path": "assets/OLYMPICS-CzbPN_Fc.ASC",
-          "bytes": 9258,
-          "sha256": "419414424a049a44c967ea442087ac7e58eae411db9d5399826ad02a2087ecd9"
-        },
-        {
-          "path": "assets/OLYMPICS-DmWLQwtm.ASC",
-          "bytes": 8856,
-          "sha256": "3e6aa48a9ccc5c9a8bbbedcc78ea7b82afcdb6a9c72ed60899a10d5f2a2453df"
-        },
-        {
-          "path": "assets/OLYMPICS-gfX0bads.BAS",
-          "bytes": 7485,
-          "sha256": "364c5a0ef5e8e95d18cf93310aa2f8e1accdfa6fcab86dea8d58250686a7df23"
-        },
-        {
-          "path": "assets/OLYMPICS-lb5lL88u.BAS",
-          "bytes": 7134,
-          "sha256": "fa2f8a759185f96b386f4da782e7951d707d67f6c082680d09be2cb45d8a4052"
         },
         {
           "path": "assets/olympics-screen-DNbSOH3K.svg",
@@ -2033,29 +368,9 @@
           "sha256": "4bd3e03ce25a522066e5c8818b0eb4d66d3c1d7a8cc1120c3846b60466546e6a"
         },
         {
-          "path": "assets/ORBIT-BEw3_NpO.BAS",
-          "bytes": 3008,
-          "sha256": "cda8b3e6f5612ca795640d972733c6c23e98df10f2bab229a904d4d4ea6402b9"
-        },
-        {
-          "path": "assets/ORBIT-CklAEEu0.ASC",
-          "bytes": 3371,
-          "sha256": "8a3477c20d918ed1c2558a22b9fcad8db1cfa04cbec51ef0e8d7c96451c31fd6"
-        },
-        {
           "path": "assets/orbit-gallery-DhVteEzX.svg",
           "bytes": 703,
           "sha256": "bb16a767d6ba42aea73a5bc71337848cccaf0d2075179f2c731531908940629e"
-        },
-        {
-          "path": "assets/PENDULUM-BMXIKX38.ASC",
-          "bytes": 995,
-          "sha256": "6ffbf086b587cbf4769acb63edd5504e783af2a2ffaf3b718b6d1a68cf6f332c"
-        },
-        {
-          "path": "assets/PENDULUM-CeLDu1kV.BAS",
-          "bytes": 874,
-          "sha256": "1c31f723580cb70d3f161094522dd89d40f749af846526d2dd6462fa623eaa50"
         },
         {
           "path": "assets/pendulum-gallery-Dgb2ErKS.svg",
@@ -2063,29 +378,9 @@
           "sha256": "3a4aadaa695755128ecf7b6978c05e63c0309076426d4d854a330c27e21e36e7"
         },
         {
-          "path": "assets/PEORIA-D_mDxHVe.BAS",
-          "bytes": 1934,
-          "sha256": "1442003889bcd62b894efd725dce889c4c92c3e35bb8d17affe1acde4b9e0604"
-        },
-        {
           "path": "assets/peoria-gallery-BDwAMQGE.svg",
           "bytes": 456,
           "sha256": "f86e5e116874bffc51e7bfd1020aac1696da178eb6bf166d8f8ff17ab3fb9deb"
-        },
-        {
-          "path": "assets/PEORIA-pBfHz2uo.ASC",
-          "bytes": 2285,
-          "sha256": "08a3050a72717a9ec7ccf569df235367ac148348bc3befe56a8c6d628699f870"
-        },
-        {
-          "path": "assets/PINBALL-Bc1ZLP12.BAS",
-          "bytes": 2239,
-          "sha256": "b98f04f9437b37f91bd65d30d3277322822f25c65fe96886e5f85c6a6b0f6122"
-        },
-        {
-          "path": "assets/PINBALL-Bwc0FBgx.ASC",
-          "bytes": 2867,
-          "sha256": "c0eda0c527dbc02b1e1a380d8a0058d849e6425a11202c0fa92628fa9252fccb"
         },
         {
           "path": "assets/pinball-gallery-CU-z_mCd.svg",
@@ -2093,9 +388,9 @@
           "sha256": "d0f495586fb93b6fa8062540e94631a2ba147468c2220399693342bf5798715a"
         },
         {
-          "path": "assets/player-B8pQwUVD.js",
-          "bytes": 5576,
-          "sha256": "0bbae62021e1876f8e5d0e8b8cc3f886788be5704511c8e3d9a8f3b99f241d99"
+          "path": "assets/player-B1OWv3ba.js",
+          "bytes": 12370,
+          "sha256": "4010d3d8b1e11a279ce6f4ee98139bc0acdd88a3dbe14117f0afce103f92a6cd"
         },
         {
           "path": "assets/player-Bs8GeNyd.js",
@@ -2108,24 +403,14 @@
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
         },
         {
-          "path": "assets/player-vWfvNOhM.js",
-          "bytes": 12370,
-          "sha256": "23aab42e0693636b8b883aa3c09cf42e465a615c57eab684aecd79fb8d5af5b7"
+          "path": "assets/player-qgpXACXW.js",
+          "bytes": 5576,
+          "sha256": "11ec2daecb926e7cdc94083f592e6a16a36f06455ba2ef42a0456fe407239f76"
         },
         {
-          "path": "assets/PLOT3D-CmRZnxul.ASC",
-          "bytes": 1220,
-          "sha256": "28388f6afe64220d79dbcc694e42bebf2a96047e49cdc5f93b2c29a443f26302"
-        },
-        {
-          "path": "assets/plot3d-funnel-D-_UFgPJ.svg",
-          "bytes": 9795,
-          "sha256": "c75d2a9b4685fb0baad92f161fe34b9888dfcd66dd27b444654f4d07f3ef7e3a"
-        },
-        {
-          "path": "assets/PLOT3D-GtK-rabh.BAS",
-          "bytes": 1056,
-          "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03"
+          "path": "assets/plot3d-funnel-Dq1ey0cB.svg",
+          "bytes": 9673,
+          "sha256": "cded45de03e03ca9f1a4b3d3027df4b83967299953a5e850b103e057cd910cf5"
         },
         {
           "path": "assets/poker-gallery--9Ry1O6q.svg",
@@ -2133,514 +418,14 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance--o0pMDMG.json",
-          "bytes": 1256,
-          "sha256": "64e9fcbca271e88c296408c1aea7936b2c09629fb17777819a2c4d99715f0410"
-        },
-        {
-          "path": "assets/provenance--PWkOR5h.json",
-          "bytes": 5660,
-          "sha256": "726c632b23646f7ddf1cdda1df5243fda98010abb4cfa9b3beb0d25943de6850"
-        },
-        {
-          "path": "assets/provenance-0s6Wg97I.json",
-          "bytes": 59264,
-          "sha256": "dc47b694c3a7353e081fe52bd7612d1dc5ec82db70253636b7ec66d3d0754529"
-        },
-        {
-          "path": "assets/provenance-1cl6ClDT.json",
-          "bytes": 6246,
-          "sha256": "69099e30b98aee88763cf37548f33291c29d11a9c3de041f89fc61833daac7d0"
-        },
-        {
-          "path": "assets/provenance-5jGeo8sX.json",
-          "bytes": 5897,
-          "sha256": "26b9caaff0760277e3b19ff6697c47586ec0d49197c37700b83a6362edbeaf57"
-        },
-        {
-          "path": "assets/provenance-B-iq77wn.json",
-          "bytes": 4641,
-          "sha256": "8794cfeb298208948325d1f774baa869dfbf4ac013459ab409541baaac11cf9e"
-        },
-        {
-          "path": "assets/provenance-B3CU-BNs.json",
-          "bytes": 1187,
-          "sha256": "26737385c33691ddbb55ef5b167446cbb06aa035f2e287d81ee235b9520a995c"
-        },
-        {
-          "path": "assets/provenance-B6BmeoXq.json",
-          "bytes": 1875,
-          "sha256": "e6bc8be09402c3d7e09183e7ebe3f6e3681dcf2edad32a0b992f78794c79b724"
-        },
-        {
-          "path": "assets/provenance-B7_F2_aN.json",
-          "bytes": 11801,
-          "sha256": "dbe24912956c821ac34f3a3911d31e43d7e85f1e148a9e50af61a65dc2fc4365"
-        },
-        {
-          "path": "assets/provenance-B7tw59uo.json",
-          "bytes": 1851,
-          "sha256": "88b49daeefed07b40646b426d421161dc52baabfe3a47f61bb2422eb323669b4"
-        },
-        {
-          "path": "assets/provenance-B9dl32Iw.json",
-          "bytes": 1309,
-          "sha256": "b6f5b1053ed6f0e07aab48ab4dcbd51a9edd6bb07e78112ce660a4c2fc021777"
-        },
-        {
-          "path": "assets/provenance-BaThWpUt.json",
-          "bytes": 2008,
-          "sha256": "272c049ebb424cdfee25b8b8c640e2ff5266ebded66710e0f6c9a6682f25cd7b"
-        },
-        {
-          "path": "assets/provenance-BBVyqrWO.json",
-          "bytes": 11331,
-          "sha256": "a5caea9f676df8d77a5b8297145ab40d476d423fc76aca4d454e02794bb8c25d"
-        },
-        {
-          "path": "assets/provenance-BF1ipw8l.json",
-          "bytes": 1905,
-          "sha256": "b2128dee9ed295b4c1d7a0bb66003d66e67e239d40c1c339c87d79ab1c08b12c"
-        },
-        {
-          "path": "assets/provenance-BHiFAtY5.json",
-          "bytes": 257808,
-          "sha256": "1552963d66146f976ee401027389c68d2b00489726da825b7012c84e4f020e21"
-        },
-        {
-          "path": "assets/provenance-BhLILt8z.json",
-          "bytes": 5698,
-          "sha256": "0115eb25e919041c81f19b46468f5c2415ee4bdda1ea5c49b8deba49b8ed3864"
-        },
-        {
-          "path": "assets/provenance-BHwsz6qP.json",
-          "bytes": 1767,
-          "sha256": "58f3a43c179b4f5000ea6e5e77505f332d8e0665c45c31a4ac1bfb2a5e45b6ed"
-        },
-        {
-          "path": "assets/provenance-BmpflL6K.json",
-          "bytes": 6867,
-          "sha256": "6765aaa91a5c585ceb60e5c48065b646c337cf0518ac3851fe4ccf6829036723"
-        },
-        {
-          "path": "assets/provenance-Bo093NFs.json",
-          "bytes": 10596,
-          "sha256": "9706cb790a2c60fec10ba558415f50d6a326e6e70e246b471e4c17bdcaf50f94"
-        },
-        {
-          "path": "assets/provenance-BOEuG_in.json",
-          "bytes": 7333,
-          "sha256": "a8c37a2622529915edf069d5ed1fdc2afaf930eb73d850889b898f599cd9a2c5"
-        },
-        {
-          "path": "assets/provenance-BPRRUU06.json",
-          "bytes": 8112,
-          "sha256": "01e320b28163e4ab44cb969e0be755e433bdb6ac57a540c17ad917ad7eda3e1c"
-        },
-        {
-          "path": "assets/provenance-BqKQSQJG.json",
-          "bytes": 2314,
-          "sha256": "b9d8fd5a5fb3e3b44d0430ebddd2eaff082562d71f46a8bb578dde47db02588f"
-        },
-        {
-          "path": "assets/provenance-BtPnxiaY.json",
-          "bytes": 5588,
-          "sha256": "7b8bdfcf701d9521b9b630f52ebe88482bfcd3cc21140c4ecffb30e78c684738"
-        },
-        {
-          "path": "assets/provenance-BuJkfTk3.json",
-          "bytes": 6879,
-          "sha256": "bb575481d91b13120aa5b03dc18eccf1ff99427c57b6137e25fafb136bfe03bd"
-        },
-        {
-          "path": "assets/provenance-BvyBpQlz.json",
-          "bytes": 1842,
-          "sha256": "f009ffa49efafbe7f829c8ac3d83b914b3b1742e722d446b7dab5c3bb3f61b88"
-        },
-        {
-          "path": "assets/provenance-BwAjG6C6.json",
-          "bytes": 1311,
-          "sha256": "1afe4684b98f072854bccb42d2701e5d23b8938931babeb21be73f934a251a18"
-        },
-        {
-          "path": "assets/provenance-BwXI0J5k.json",
-          "bytes": 237579,
-          "sha256": "34fb98c1c717e6c3c445d13e38ce8f20501fa508f4b7bf0e53f344509cbcabaf"
-        },
-        {
-          "path": "assets/provenance-BX9twHFr.json",
-          "bytes": 13415,
-          "sha256": "57c544e12257d2aa64c93a13ee16899ec8227402f85c668e36fd2924091f8fbd"
-        },
-        {
-          "path": "assets/provenance-ByIrtKGz.json",
-          "bytes": 1802,
-          "sha256": "537f9d61544ce241014506c410c38974e012e3299f52a128639963a732739d67"
-        },
-        {
-          "path": "assets/provenance-C-jgtS56.json",
-          "bytes": 1745,
-          "sha256": "5e8658b7276bf6f2c5907da6c2a7affad4a8e8f5aac73086e2cbcbc5c97ec38b"
-        },
-        {
-          "path": "assets/provenance-C-oAcc50.json",
-          "bytes": 1866,
-          "sha256": "e86296885f7a32de470eec22694e0978dd560fa0d8750aea81efc5c9d3b10e07"
-        },
-        {
-          "path": "assets/provenance-C-XYB4DB.json",
-          "bytes": 1991,
-          "sha256": "4d15efef35985349aa577aa6a7e1677958e1660a7c21e0f0e5f4b84a6c5a8565"
-        },
-        {
-          "path": "assets/provenance-C5I-SpEm.json",
-          "bytes": 4719,
-          "sha256": "07abaf1aaa5a7127ee1488e606cbbcabe98504abee5141c4d00db3c8ddb6468f"
-        },
-        {
-          "path": "assets/provenance-C6yEmKwy.json",
-          "bytes": 1804,
-          "sha256": "d32a37719bc98238e3c7df760d961461b8a48c33a2935603b8e38420c2bc04e2"
-        },
-        {
-          "path": "assets/provenance-CBlrHq0x.json",
-          "bytes": 1849,
-          "sha256": "c11cf5904f3ef32d84e40528932f79a93b05ca92edd672d56cf94ff8394a0bdc"
-        },
-        {
-          "path": "assets/provenance-CcVPvwBG.json",
-          "bytes": 2083,
-          "sha256": "3f0b70fd96b13eae5a4282ce6852be839ea9c85bddd0a18843b1b18305b6ead8"
-        },
-        {
-          "path": "assets/provenance-CDHRa1N-.json",
-          "bytes": 1906,
-          "sha256": "60c7268a548f00611b2a48cf284b0808148726627ed08264c634d32d148d8f36"
-        },
-        {
-          "path": "assets/provenance-CdLQ8oEO.json",
-          "bytes": 33608,
-          "sha256": "1a8e9fc8b747cbd3f51dddf466261c89b398055c241b5ff14b81606f57d6a304"
-        },
-        {
-          "path": "assets/provenance-Cgqdl9ek.json",
-          "bytes": 7060,
-          "sha256": "22757d3322665eeed754280bf2f739fa53e672d86e2fe4be7c2bb4cab5f8b173"
-        },
-        {
-          "path": "assets/provenance-Chw8D4ii.json",
-          "bytes": 889,
-          "sha256": "80f4f534e9befad75a745863a31dee11cbc48247f87ecfec363fbd06e3356cc1"
-        },
-        {
-          "path": "assets/provenance-CjmcVI6y.json",
-          "bytes": 32839,
-          "sha256": "f2acf8169c920bc1246511dc3738298868d1ca05af37fee308da9be9f82b17e4"
-        },
-        {
-          "path": "assets/provenance-Cjtb_t1D.json",
-          "bytes": 11408,
-          "sha256": "603dc1e6f26a108c552b0f552317f90b313e7a484d878f2193cd7cd90819dce9"
-        },
-        {
-          "path": "assets/provenance-CkaoP2Q0.json",
-          "bytes": 6713,
-          "sha256": "0852b9300f95e1a472c9552b8ea2d345237ca9fa4784e01cee9731cb9683688b"
-        },
-        {
-          "path": "assets/provenance-CkbBLRyn.json",
-          "bytes": 1793,
-          "sha256": "3d37df448d952661fb2bb7b7072dd23f530f83491dfec273285ab502785a6f4b"
-        },
-        {
-          "path": "assets/provenance-ComXN-bt.json",
-          "bytes": 7239,
-          "sha256": "f8df4dfa753503491b99f1397e84dd0c057ba69436df48c18e3a41a662f94878"
-        },
-        {
-          "path": "assets/provenance-CpidjS29.json",
-          "bytes": 24821,
-          "sha256": "87a8083de16175b2f0934b756cec7d7b5a08c631eecdb5513da5054f41a46d73"
-        },
-        {
-          "path": "assets/provenance-CPYGEj1p.json",
-          "bytes": 1856,
-          "sha256": "70e6e934b7e3ea8b9708045ca542d9bab117405a02dc16a50bcb9b59e3545eb0"
-        },
-        {
-          "path": "assets/provenance-CRUy_qZt.json",
-          "bytes": 394,
-          "sha256": "04603bb307c9a05e302f9ef4d690cec2642d97fb1ffb8eac913a8841bc012582"
-        },
-        {
-          "path": "assets/provenance-CrZM8-ep.json",
-          "bytes": 2032,
-          "sha256": "d4daff0e9ca64d67d2144e70adb65ea23f584ea35613a324ac839328e513bf34"
-        },
-        {
-          "path": "assets/provenance-CUdMV5Ii.json",
-          "bytes": 1900,
-          "sha256": "bb13decb0b047531d33e5a46879223ee1bbba7ffd9418fbd05daccc85a72a49a"
-        },
-        {
-          "path": "assets/provenance-CuJ4R3D6.json",
-          "bytes": 1894,
-          "sha256": "e5bfc971bf8347763b6838e4fb88dbb92d1805ffcc889eaa0c0632804a525747"
-        },
-        {
-          "path": "assets/provenance-Cv3k6DTX.json",
-          "bytes": 1832,
-          "sha256": "2b42c1f77497ba3c967a6eb799f4108cdc566fecc3af57dde4da26097744e71f"
-        },
-        {
-          "path": "assets/provenance-CV6rMlZr.json",
-          "bytes": 31019,
-          "sha256": "07d5c6ef213dc628704d8da74c763a69eb277b1d9d1446cf10daa4675190016c"
-        },
-        {
-          "path": "assets/provenance-Cyrw9giB.json",
-          "bytes": 2236,
-          "sha256": "361d99dd943b905aae8557dc33d81c3e8305a85f00b529bb34014e1450aec7ec"
-        },
-        {
-          "path": "assets/provenance-CyYvacnA.json",
-          "bytes": 1354,
-          "sha256": "694492a9b834e3f6eed7402516ed4fb0470e11737c2405d82708ca64c6387fef"
-        },
-        {
-          "path": "assets/provenance-D0_-DXlu.json",
-          "bytes": 81767,
-          "sha256": "d932c68b464b10387e82ee38c2790374997bd61d1cae6c774d7a165b276a60d7"
-        },
-        {
-          "path": "assets/provenance-D5GcfMzk.json",
-          "bytes": 1930,
-          "sha256": "0f60f070303f31c7af7993eace8fbe74ccdfc152891db53c7509fdb3c6fe7cc2"
-        },
-        {
-          "path": "assets/provenance-D6bej6UW.json",
-          "bytes": 11908,
-          "sha256": "4601daea5182ca197a7b6b2336902410ce24ce7790054226add4a69ed82bd4d2"
-        },
-        {
           "path": "assets/provenance-D8D2w6wK.json",
           "bytes": 31933,
           "sha256": "8d17fa8b2ef3591f50827fbf135ed45f03f42e163daff4597c9090780552629c"
         },
         {
-          "path": "assets/provenance-D99NHHGx.json",
-          "bytes": 1793,
-          "sha256": "ce2a3c7da5d05a8ede2d4943c0fc4071c6014fe651cc7ee38d76c2f5b375dba5"
-        },
-        {
-          "path": "assets/provenance-DDmImPqe.json",
-          "bytes": 1823,
-          "sha256": "042851643f28e5f506e37df74d721d42d9c30c223c4d0e546ab7ac869320afd4"
-        },
-        {
-          "path": "assets/provenance-Dg4vTe-o.json",
-          "bytes": 1929,
-          "sha256": "c3421d7590681831375ebebaa415ddee155a0cc6a204c0df71e142c04482b97f"
-        },
-        {
-          "path": "assets/provenance-DHPnFXbu.json",
-          "bytes": 1766,
-          "sha256": "414ce66dc9b691e50be11eec6b8020027923579f30fe8081f931704a34070101"
-        },
-        {
-          "path": "assets/provenance-DiamTUMG.json",
-          "bytes": 26623,
-          "sha256": "9795b7e28c95c5c64243d23a5793bcd16c8f94d94f09d1a14073aadb5929a710"
-        },
-        {
-          "path": "assets/provenance-DJ6QgPzq.json",
-          "bytes": 16098,
-          "sha256": "1a291bda1af7e1e46637c075b1d2d3c6884c4f91a4f9a7cac71cce094ddc6699"
-        },
-        {
-          "path": "assets/provenance-DKlRvOoV.json",
-          "bytes": 1889,
-          "sha256": "e23ecb722eb62ea21fda8d3032b30c493d65c937224aee1067ebf033365ffcb1"
-        },
-        {
-          "path": "assets/provenance-DLi4ITDj.json",
-          "bytes": 1139,
-          "sha256": "b8bcf931ec4806be82783caff39c593a44efe5ede8980be3a7bc8e694acc50ef"
-        },
-        {
-          "path": "assets/provenance-DMCD2Qam.json",
-          "bytes": 1792,
-          "sha256": "e3d51235ed69b75f6b81aa5d2c9434ffb2478a2020d8921d3c0edd1034d26c32"
-        },
-        {
-          "path": "assets/provenance-DMjFeGNS.json",
-          "bytes": 4749,
-          "sha256": "34fe24f948a4876266ca5868946387feba0e8aa4aa087be8f564024a95a78e1a"
-        },
-        {
-          "path": "assets/provenance-DNiYOOsK.json",
-          "bytes": 16181,
-          "sha256": "04534dc1879cf7dcf7c0b12333058b5b14bc10ada19e71049145719333f445d0"
-        },
-        {
-          "path": "assets/provenance-DpmuX1tG.json",
-          "bytes": 59024,
-          "sha256": "60313eaa26f509d2c2a8e8997d04e491b32ce31ee1c053f1f1712c7adc5d8940"
-        },
-        {
-          "path": "assets/provenance-DpOL7HsM.json",
-          "bytes": 1773,
-          "sha256": "8fcbbad1a5536c2001177cbdf54d066bcad8e8ba18f368acb22d28749f3cb35a"
-        },
-        {
-          "path": "assets/provenance-DRblbltb.json",
-          "bytes": 13480,
-          "sha256": "c8f202e45389ea70e0d5433ab9f3d05efd9ea11503aad3f354b5579648862b48"
-        },
-        {
-          "path": "assets/provenance-DriiFUIt.json",
-          "bytes": 1957,
-          "sha256": "6e05859c37d5756b82b96c4c3bb8ed2f4b163ce21d936426b53b91b9b8d0c295"
-        },
-        {
-          "path": "assets/provenance-DsYmtsml.json",
-          "bytes": 14525,
-          "sha256": "0fd5e4fe77b01f1dc610f3cc14d3b9687ba2d4f8a57136af6bafb40f7522fdeb"
-        },
-        {
-          "path": "assets/provenance-DvbXeU8u.json",
-          "bytes": 1869,
-          "sha256": "dfbd80f9a5b9e8da61d92213dae6d257eec79240cc613e47624be13aea3099cf"
-        },
-        {
-          "path": "assets/provenance-DzdBgB_8.json",
-          "bytes": 1931,
-          "sha256": "f646fac82354881727aba86f33113e6198ce0c82af32ebdc33285152c089945e"
-        },
-        {
-          "path": "assets/provenance-EIEKQLON.json",
-          "bytes": 1074,
-          "sha256": "4e05e51f0c257825539d8661eef5e20b7d342e742d04795f5099f02239947aac"
-        },
-        {
-          "path": "assets/provenance-FdtEUn2p.json",
-          "bytes": 24119,
-          "sha256": "c00a6067f7adb5fe0484ebd9389125ecc478f71b7efd2e5efadd2218a41a48fd"
-        },
-        {
-          "path": "assets/provenance-fMovo-FP.json",
-          "bytes": 6962,
-          "sha256": "95f68f8c458658137bf7e885080be307253a6e8a1bf73e0fa98c52a2449c1695"
-        },
-        {
-          "path": "assets/provenance-FT8tXzHq.json",
-          "bytes": 736,
-          "sha256": "b14e343422a7a44a40fb63128a36e9de795acc114d6d8076274eed59e377519a"
-        },
-        {
-          "path": "assets/provenance-gCm81ueG.json",
-          "bytes": 4620,
-          "sha256": "aea1e1dce24eadde40e159cc412c7698f4d51a57b5fb02b9ab510811bd527797"
-        },
-        {
-          "path": "assets/provenance-ggBhyhSi.json",
-          "bytes": 10981,
-          "sha256": "5b820c9136c5b6426b512b9159a6a6dc58a1115f9d4c712502503654b17e7b31"
-        },
-        {
-          "path": "assets/provenance-hwcvr4sp.json",
-          "bytes": 1826,
-          "sha256": "66bba6fbd35a54f0490f79467324f00bf6c93f79e099bbd5f664b706f2e793fa"
-        },
-        {
-          "path": "assets/provenance-kTc0oohn.json",
-          "bytes": 1779,
-          "sha256": "dd9c72ec803d6eb872878b9e16124c1ca9b9e9900c0cdf2caf8ec20d1881b023"
-        },
-        {
-          "path": "assets/provenance-Kv3JJaaM.json",
-          "bytes": 634,
-          "sha256": "8b347067089682a4f60d855babceec3d1657bb008463ceca4342fa32629ae828"
-        },
-        {
-          "path": "assets/provenance-LO3y2A4P.json",
-          "bytes": 846,
-          "sha256": "62bf20f6474799fc1964ba3fa895e456eb78017f255b8a9d63ef43e8773a6cf2"
-        },
-        {
-          "path": "assets/provenance-mCzzURt2.json",
-          "bytes": 10099,
-          "sha256": "2cfbf21383f7140bbc719fbad8dabbbfba76d81886e888e7ef50b38e0780b77e"
-        },
-        {
-          "path": "assets/provenance-NfBxIncp.json",
-          "bytes": 1815,
-          "sha256": "cbe8259ed8d45ab5258e9175e002defc140a6d740052a2e31fceb249fb87b59f"
-        },
-        {
-          "path": "assets/provenance-nntkFbRf.json",
-          "bytes": 15054,
-          "sha256": "9e3b77d8cd1e617c3a15e35e430dbba77dbdc66d9f472e84cda47bd2267a6fce"
-        },
-        {
-          "path": "assets/provenance-npb9OD7r.json",
-          "bytes": 11090,
-          "sha256": "1e676dcf33c7338b7353e785ed83df774d3760e6508dccd621f0c9bc7097c3b5"
-        },
-        {
-          "path": "assets/provenance-nPS7Icc5.json",
-          "bytes": 1751,
-          "sha256": "4da192ff23e9eb93adb0e267fd44a97cc6d87cb5f636d3de034afec60c502e47"
-        },
-        {
-          "path": "assets/provenance-RWUROqPv.json",
-          "bytes": 29127,
-          "sha256": "1843ea094060652ae2c27c815161503d7e810a52e16a74b591567a2e3b265deb"
-        },
-        {
-          "path": "assets/provenance-TGcFxlii.json",
-          "bytes": 1770,
-          "sha256": "633bef52e74d352f931398cd6dc282c47996a27ce6129a8c601df9cf2380da20"
-        },
-        {
-          "path": "assets/provenance-U5rIqVHD.json",
-          "bytes": 12565,
-          "sha256": "8cad4fb8b049e95694143894267f2ca25497a982bbafa10e786e6dca4f857cec"
-        },
-        {
-          "path": "assets/provenance-Uovinvlu.json",
-          "bytes": 7714,
-          "sha256": "8229a23380cf75f4ad215f9144d2848b844efd050d7978d1e4cb3f3cc1e4facf"
-        },
-        {
-          "path": "assets/QUEST-EXCERPT-BFmMX_C0.ASC",
-          "bytes": 853,
-          "sha256": "a74dea99008ba259dafa435cb610072610810b572b6d32c30162ededd443e7a1"
-        },
-        {
-          "path": "assets/REFLEX-BFuDdg0V.BAS",
-          "bytes": 1535,
-          "sha256": "c5b0253d9962544be47ee8e442a75ddbf16554b6bb36862b434086eafe7e7713"
-        },
-        {
-          "path": "assets/REFLEX-CgEI7kEX.ASC",
-          "bytes": 1902,
-          "sha256": "58ee025805b12c18ef00e005a518a58b7f1b900a1c98649df6483544698870fb"
-        },
-        {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
           "bytes": 521,
           "sha256": "5b3966ba047dafdef68ab5a4699de68f612b133b4f35caecc1aa69e0c446e7cc"
-        },
-        {
-          "path": "assets/RELATIVITY-Byxcss1g.BAS",
-          "bytes": 1251,
-          "sha256": "3c60b448de3b4025cd24137cb5591102ec0bd1a7f9bfb1c9d155e71cc427dd51"
-        },
-        {
-          "path": "assets/RELATIVITY-Cyf6AQxS.ASC",
-          "bytes": 1510,
-          "sha256": "91d5017aa77931d8e4de36942e234db31e12fb94c4ad3fb50ef9b1adf664ab86"
         },
         {
           "path": "assets/relativity-gallery-ByRHkSjk.svg",
@@ -2663,29 +448,9 @@
           "sha256": "3a9f01863e225b2a2e0b61025ce614314ac07637616057ed0b9a0180471c0f63"
         },
         {
-          "path": "assets/SENTENCES-BLovttdT.BAS",
-          "bytes": 1761,
-          "sha256": "46321aced5037401b401dfc8184e867c03138020c7391b2259dde5634ad2fd06"
-        },
-        {
-          "path": "assets/SENTENCES-Dl3rGfHE.ASC",
-          "bytes": 2170,
-          "sha256": "ea848c32a9451d66699c4e48c4eda641d95e2a2582aacf10c8074787d8175051"
-        },
-        {
           "path": "assets/sentences-gallery-Bn2m-Q9e.svg",
           "bytes": 375,
           "sha256": "f8f9ab057757af10a50b586695ccd7616f185fba393144bf46681d2dfe173721"
-        },
-        {
-          "path": "assets/SKINNER-BUwuWPS_.BAS",
-          "bytes": 1509,
-          "sha256": "2bb030fe6d58634d74b8c8639fa312f504ec2387d84e84a091cc56c859b5ed36"
-        },
-        {
-          "path": "assets/SKINNER-CrPjMaQ1.ASC",
-          "bytes": 1763,
-          "sha256": "ae4bafcdbd71549cb367b245b67422cee37108dfd5d60be3bd5a52c3ee390af8"
         },
         {
           "path": "assets/skinner-gallery-DStNp5-W.svg",
@@ -2703,24 +468,9 @@
           "sha256": "cdf999374dcb80673733a9249ec43ec235a1f504b9380085dcb23c2cad6aeb61"
         },
         {
-          "path": "assets/SPEECH-BZ4k9WfF.BAS",
-          "bytes": 6418,
-          "sha256": "0281a95ac124b0e7a93faff2203ed32dc14c69cb66f8cf40b5fd6de421bf8b1e"
-        },
-        {
-          "path": "assets/SPEECH-CZqngBL5.ASC",
-          "bytes": 8003,
-          "sha256": "922a512a9adb6163cb74a39c5404a379f5d9c0c3514bd241421ea65264a6140c"
-        },
-        {
           "path": "assets/speech-screen-Btandovk.svg",
           "bytes": 508,
           "sha256": "0f452d3423b6d28158708b85a7206a8f48bde69d83716610c03bb6441aab0a42"
-        },
-        {
-          "path": "assets/SPI-DIjkT218.BAS",
-          "bytes": 3224,
-          "sha256": "b8a54415d5dab19738b1132b3dd40e4ec9ec694f8a881c1df990e645cd26a403"
         },
         {
           "path": "assets/spi-gallery-Bfa-394o.svg",
@@ -2728,44 +478,14 @@
           "sha256": "e04278e20645be62c425e87a4fea812ff80576249ddf6ab8fa9d75f92fbc90a2"
         },
         {
-          "path": "assets/SPI-jrV1JICH.ASC",
-          "bytes": 3386,
-          "sha256": "f37216f7183a6b0bf28c46630a323705c952fd1376c6ace89c6495bf0b007ccd"
-        },
-        {
-          "path": "assets/STARWARS81-ClFPFtzm.ASC",
-          "bytes": 4413,
-          "sha256": "910ae10edbd803edaa7a788ce9771ecac5e5c341ab2cadb525415214014faa06"
-        },
-        {
-          "path": "assets/STARWARS81-DaBZHjEZ.BAS",
-          "bytes": 3427,
-          "sha256": "5813607850ee80510e20cc57cecd71155d12f22651169af6de639b1c27248d4c"
-        },
-        {
           "path": "assets/starwars81-screen-CZ75cQa9.svg",
           "bytes": 484,
           "sha256": "ad40674aaa383aed3bff20dd316886b2563a927a2d51da9fffcc22ecbff3d8d4"
         },
         {
-          "path": "assets/TANK-B38FXI2n.ASC",
-          "bytes": 7595,
-          "sha256": "b2fe21ff0ba9f5c9071951c6039675d3ca4da310cac4f84499f5fa1da99eb75f"
-        },
-        {
-          "path": "assets/TANK-DXTg2Wz1.BAS",
-          "bytes": 6910,
-          "sha256": "7943588118b46d8d033626505731195df48f7a2eab860ec317135aad59a1cb3e"
-        },
-        {
-          "path": "assets/tank-gallery-CGnLmvyT.svg",
-          "bytes": 580,
-          "sha256": "3fb43f6eb0b01662674b0b80eae891254a023c597839c1b4640390b90c2b8604"
-        },
-        {
-          "path": "assets/TEACHVI-D8UEq4cN.BAS",
-          "bytes": 2973,
-          "sha256": "70fa8d90c0e49c606f2a246f0f7031bf7e457ff76aae34c31ff344520a9a2e26"
+          "path": "assets/tank-gallery-BNLPAWVJ.svg",
+          "bytes": 591,
+          "sha256": "ec794c99787d7fe89609491bbab1a87f111fcb4d1d2d66bc9825bdcc1fdb9fa0"
         },
         {
           "path": "assets/teachvi-gallery-mWSeuKIv.svg",
@@ -2773,19 +493,9 @@
           "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
         },
         {
-          "path": "assets/TEACHVI-y1bRtIA8.ASC",
-          "bytes": 3193,
-          "sha256": "1ea720d7498311fbb3f454213359214975974076cd83c8f228bc7a7a4d0a91b5"
-        },
-        {
-          "path": "assets/TRIGECTIOR-B0g2zmk3.ASC",
-          "bytes": 726,
-          "sha256": "d783890ec3f58182074263c3c331f2a6385b84d059fc347b5fd72af8ef5361fb"
-        },
-        {
-          "path": "assets/TRIGECTIOR-ChvKR03f.BAS",
-          "bytes": 646,
-          "sha256": "4fb432136ebdf5c594886925e5160a74b8918234847da29c34dea189e0fe84fc"
+          "path": "assets/tones-gallery-DPAQ7avY.svg",
+          "bytes": 1017,
+          "sha256": "795a4c694830b961fdcc0d148fedb3e20e194d7b9d9e75d491960602b7fd3e0a"
         },
         {
           "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
@@ -2793,29 +503,14 @@
           "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
         },
         {
-          "path": "assets/TUTAC-CuC7QvI6.BAS",
-          "bytes": 1565,
-          "sha256": "58911866cf5ac5ccf9f1956d2302472bed8351e32fd3e2843541d7ade3d1134f"
-        },
-        {
-          "path": "assets/TUTAC-DuuEj0vT.ASC",
-          "bytes": 1856,
-          "sha256": "b2a53d21ed94a2f39c8ebd0edf0f5579793dc6af67b7617285fe6a02964bbfd1"
-        },
-        {
           "path": "assets/tutac-gallery-DEjQnkj5.svg",
           "bytes": 581,
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
         },
         {
-          "path": "assets/WHODONNT-CRKz6g16.ASC",
-          "bytes": 4053,
-          "sha256": "dd66b61194fa9e46c1cea3c34e50a71de4f9c5e738979241e57d61d46cbd5033"
-        },
-        {
-          "path": "assets/WHODONNT-DswBGbZA.BAS",
-          "bytes": 3314,
-          "sha256": "f72b9179077173f57bb5a76e8837613f850ae230743f1dd4eda1f51e0ce64493"
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
         },
         {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
@@ -2823,49 +518,14 @@
           "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
         },
         {
-          "path": "assets/WORDSEARCH-BYMi4mAk.BAS",
-          "bytes": 2741,
-          "sha256": "10a7c263f658033c90ea1a2e1dc906d7dd5d56eebef275eff4d63c4ba1378609"
-        },
-        {
-          "path": "assets/WORDSEARCH-CCNOdfRO.BAS",
-          "bytes": 2756,
-          "sha256": "a86ab7c19ba6fbb967c197604b03e951634298c0dcb07e491795a1310190e9d2"
-        },
-        {
-          "path": "assets/WORDSEARCH-DF_QQJxA.ASC",
-          "bytes": 3176,
-          "sha256": "d2dd001fe4cd5d84d1558809440969dcb9b56a5e5d03f181bd03ea0cdbaba080"
-        },
-        {
-          "path": "assets/WORDSEARCH-EvTm0sjA.ASC",
-          "bytes": 3201,
-          "sha256": "112807d5efd6b97fdab5d01f098455038ca94ab44025fb4b217fbddee2944bef"
-        },
-        {
           "path": "assets/wordsearch-gallery-DichyXHl.svg",
           "bytes": 491,
           "sha256": "b5f62ba44c50eb14360b18fa031ffaffc678aa3f2745a96bb9b40ebd4171af2b"
         },
         {
-          "path": "assets/WORM-D617MG-d.ASC",
-          "bytes": 2529,
-          "sha256": "9e8a6eb55b1375e02496a558d49d936ca58836acdfa96b51c124420a951da237"
-        },
-        {
           "path": "assets/worm-gallery-CRUdNvma.svg",
           "bytes": 322,
           "sha256": "a355c305e0f7cb2a2b6b2b206db7ddf19d1c25c42b5d37fabd72b78600ecb26d"
-        },
-        {
-          "path": "assets/WORM-RU5KjP03.BAS",
-          "bytes": 2157,
-          "sha256": "b67fc0fa362d6ca56aaa94eb08878698b68b960e9253c1a55a8b41ae00249739"
-        },
-        {
-          "path": "assets/WUMPUS-1M8CKtSn.ASC",
-          "bytes": 5969,
-          "sha256": "30ca5375434696155e9825ed439340517c0df1b4a1f4b30dfcf959c471de98ff"
         },
         {
           "path": "assets/wumpus-listing-page-180-CxQfjWz2.jpg",
@@ -2874,13 +534,13 @@
         },
         {
           "path": "index.html",
-          "bytes": 2351,
-          "sha256": "0a677e23f85a7e9e93c09b724b2b2e85fab9ad6de3ff4b92df92782d915d201f"
+          "bytes": 2265,
+          "sha256": "b85fa0cf52d93dc42e49dade9ecc73965ee64b5d4c717fd57de0f0c1f0f8f5a3"
         },
         {
           "path": "licenses.txt",
-          "bytes": 16573,
-          "sha256": "ed4b26bab11354ec8af69c7d2e1d54d8044505e165d915ae5d6ae0006024f806"
+          "bytes": 19163,
+          "sha256": "a74fe6d95486f70e2356be36bf5fcad38455cfac38234f9a94ee4808a8a6cf4d"
         }
       ]
     }

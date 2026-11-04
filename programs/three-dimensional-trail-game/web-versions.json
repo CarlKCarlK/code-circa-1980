@@ -4,8 +4,8 @@
       "id": "v1",
       "path": "three-dimensional-trail-game/v1/",
       "label": "Web experience v1",
-      "released": "2026-11-03",
-      "sourceCommit": "44a49b58286dc30e3da91e2afa5fa0b85eab2d74",
+      "released": "2026-11-04",
+      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
       "files": [
         {
           "path": "assets/04-THREE-DIMENSIONAL-TRAIL-GAME-KcAeEh_h.ASC",
@@ -63,9 +63,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BZ0pelxE.js",
-          "bytes": 316923,
-          "sha256": "59574f4d188f2d541617bf98ae3c524495763a09e7291de655209b2dcd770fe9"
+          "path": "assets/emulator-BZXoNS6n.js",
+          "bytes": 316994,
+          "sha256": "bef98ef12579483e59e8e285ca1cd2c3d38210d642ffcbb64e1beefa6e80457d"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -78,14 +78,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-Dh4WPTmX.js",
-          "bytes": 31847,
-          "sha256": "08382045e7bc0087d59108e4160dbb0005b5e02a34eab29dbfb8170499ee7620"
+          "path": "assets/index-BPh9FxE6.js",
+          "bytes": 37253,
+          "sha256": "fc8b3104be245b9ed941eaa709e749a366e0a63618214715a16f98db2d0ad0e7"
         },
         {
-          "path": "assets/index-DRHo0Cm0.css",
-          "bytes": 25901,
-          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
+          "path": "assets/index-ClZaHYYP.css",
+          "bytes": 26158,
+          "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -208,6 +208,11 @@
           "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
         },
         {
+          "path": "assets/tones-gallery-DPAQ7avY.svg",
+          "bytes": 1017,
+          "sha256": "795a4c694830b961fdcc0d148fedb3e20e194d7b9d9e75d491960602b7fd3e0a"
+        },
+        {
           "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
           "bytes": 409,
           "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
@@ -239,13 +244,13 @@
         },
         {
           "path": "index.html",
-          "bytes": 2351,
-          "sha256": "08305dc0eed6ee1b86677dce42fe144dd83cdbd96ee480e0f7d3a950d76a82fa"
+          "bytes": 2312,
+          "sha256": "08209f6a126da08a5e42116c2680aca1702bc5604b1cf564f00db84d20de4a2f"
         },
         {
           "path": "licenses.txt",
-          "bytes": 17049,
-          "sha256": "e2d6660e33328a842ede04e5917febf31ea4fb7a714470c95c3f35eda265ad6c"
+          "bytes": 19163,
+          "sha256": "a74fe6d95486f70e2356be36bf5fcad38455cfac38234f9a94ee4808a8a6cf4d"
         }
       ]
     }

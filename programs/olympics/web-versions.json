@@ -4,618 +4,33 @@
       "id": "v1",
       "path": "olympics/v1/",
       "label": "Web experience v1",
-      "released": "2026-11-02",
-      "sourceCommit": "20e3a5c5d844662d3886f8ea55d389fc88179d05",
+      "released": "2026-11-04",
+      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
       "files": [
         {
-          "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Bm5Fk48R.BAS",
-          "bytes": 6783,
-          "sha256": "9f7d79127a2edd9dae12d5b1f38ea27086e4f10574da78d4f44d6f2b850d3faf"
+          "path": "assets/05-MONSTER-GAME-PARTIAL-PREFIX-BOXgx938.ASC",
+          "bytes": 310,
+          "sha256": "dd73d0821fabf231cd5398c9511c708e03d6617e3c3439964d862fd409d9f949"
         },
         {
-          "path": "assets/01-BOMB-RADIO-INTERSECTION-BINARY-SEARCH-Dfep4PH9.ASC",
-          "bytes": 7833,
-          "sha256": "4682176105d6af579272f9cc04afc5ef18eb656ad92baf637d3f816328a97e80"
+          "path": "assets/05-MONSTER-GAME-RAW-CwknnpcA.BAS",
+          "bytes": 7455,
+          "sha256": "ccc89a7b519b7e88a0505faa29f099e7d6a7ee4e8ec48045ac40d4619b721cfc"
         },
         {
-          "path": "assets/01-CHEMISTRY-BALANCER-II-SAVE01-Da_ahb0X.ASC",
-          "bytes": 10004,
-          "sha256": "fe0a4b0a1303b16c7a774cab3a4610db62a09729bde69119c32650a0e5c75f24"
+          "path": "assets/06-NUCLEAR-EQUATION-COMPLETER-PREFIX-WbLyfCZ-.ASC",
+          "bytes": 1578,
+          "sha256": "83e3d57c81d211f29fa957c976bb05c87e75f417f17d8dc74048d211ea4b7c8c"
         },
         {
-          "path": "assets/01-CHEMISTRY-BALANCER-II-SAVE01-ht9xoh_w.BAS",
-          "bytes": 8205,
-          "sha256": "95f52c0892746209621848ef2d5482ef20cbf32c807205cc4c70ffa8d490bebd"
+          "path": "assets/06-NUCLEAR-EQUATION-COMPLETER-RAW-cIG3bjz9.BAS",
+          "bytes": 1969,
+          "sha256": "39b3a82cf17f42699d521b194fc02e3b2bf0180222cd80b8a4994b7f50893021"
         },
         {
-          "path": "assets/01-CISAB-CHESS-V3-C95bDHfu.ASC",
-          "bytes": 4963,
-          "sha256": "5f77fb8da1c4487d92f7e861c0c9cc24b5d202d110c35c63182b4e32f792dfad"
-        },
-        {
-          "path": "assets/01-CISAB-CHESS-V3-Dn1e3AdT.BAS",
-          "bytes": 4150,
-          "sha256": "55a226163aa35d3e2c5c15d81e6db5f094047de64d1580d74a63d085136f1dc5"
-        },
-        {
-          "path": "assets/02-3D-SURFACE-PLOT-V1-D5kWIkFB.ASC",
-          "bytes": 565,
-          "sha256": "f80dbce3a85d1de83a26cae406541b193949b7399e6fee9c459120f05cc4aa40"
-        },
-        {
-          "path": "assets/02-3D-SURFACE-PLOT-V1-DzKnsQ3C.BAS",
-          "bytes": 486,
-          "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91"
-        },
-        {
-          "path": "assets/02-CHEMISTRY-BALANCER-II-INTEGER-BvCMn2W5.BAS",
-          "bytes": 6408,
-          "sha256": "06927532afe779d202773c33cecdc52d0e9ccd6252e9298b439c6083d986415a"
-        },
-        {
-          "path": "assets/02-CHEMISTRY-BALANCER-II-INTEGER-ToE8h75n.ASC",
-          "bytes": 7780,
-          "sha256": "5fecf5cd4df35054c5c5074769e5647662e569b95156fe60de09b6400d106575"
-        },
-        {
-          "path": "assets/02-CHEMISTRY-BALANCER-II-SAVE02-3JaZXaLP.ASC",
-          "bytes": 10706,
-          "sha256": "f396adec968741368df7927c478a85bffe09daf336f03c313830a1d3718c67a0"
-        },
-        {
-          "path": "assets/02-CHEMISTRY-BALANCER-II-SAVE02-CviBupe8.BAS",
-          "bytes": 8748,
-          "sha256": "bd905c9f35dcac7188963abc2a5c1592190523a15ad3f2f4fbecb8a27a0a83dd"
-        },
-        {
-          "path": "assets/02-CISAB-CHESS-V4-BDk1O1Ps.BAS",
-          "bytes": 4182,
-          "sha256": "1148980286284d202359c3d5c4819183c2b84a46d835d966426a8eac09626a75"
-        },
-        {
-          "path": "assets/02-CISAB-CHESS-V4-BDORHyqg.ASC",
-          "bytes": 5024,
-          "sha256": "27da75cafafb6b3a5d88a81373a3982f9a6c118d929cb4248a46c561b3dfd12b"
-        },
-        {
-          "path": "assets/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03-BRoI82gO.ASC",
-          "bytes": 11788,
-          "sha256": "7aa4604922017fea2a11c7249e6ab4629ce83e1ef6e5395e76878c77882f9633"
-        },
-        {
-          "path": "assets/03-CHEMISTRY-BALANCER-II-ACID-BASE-SAVE03-CPv6uGyK.BAS",
-          "bytes": 9601,
-          "sha256": "192a9efb5a104ed1add85a71450011b81ff6736a135b426421a5853275cdf3a1"
-        },
-        {
-          "path": "assets/03-CISAB-CHESS-V5-C0TsHcKX.BAS",
-          "bytes": 4428,
-          "sha256": "84c9d299c27f9120ea6e4bee492dbbda87eaa25e1bbb2424dabdf5b0c579dc61"
-        },
-        {
-          "path": "assets/03-CISAB-CHESS-V5-CpHREd5V.ASC",
-          "bytes": 5318,
-          "sha256": "8a61f0b1db78a5322c3e5aac1b079e5b07a5690b7fc57ab927a3b45273176cba"
-        },
-        {
-          "path": "assets/03-EQUATION-BALANCER-REV1-SAVE01-PLYMcWDk.BAS",
-          "bytes": 2267,
-          "sha256": "c10727e78dc53c9f7c60664082be78109102c57e885737cba24f1dee8b95f81e"
-        },
-        {
-          "path": "assets/03-EQUATION-BALANCER-REV1-SAVE01-YD2NdSQ6.ASC",
-          "bytes": 2870,
-          "sha256": "8c99667dcf63535eb8656c7dbdb2406c3313b54eb856e55b52f33b7ff5a646fa"
-        },
-        {
-          "path": "assets/04-CISAB-CHESS-V6-BXJv2GBw.BAS",
-          "bytes": 4678,
-          "sha256": "1ba01b899412555d6fea93ef3da6c1fef167fe5d89f7198d410712707841871e"
-        },
-        {
-          "path": "assets/04-CISAB-CHESS-V6-oYOSMBBf.ASC",
-          "bytes": 5622,
-          "sha256": "4a4f8b216d9df8f7dc94ee779c5af579340c576083414b6743129522ffe6ffc3"
-        },
-        {
-          "path": "assets/04-SPEECH-COACHING-DRAFT01-B_X-Jg9n.BAS",
-          "bytes": 1881,
-          "sha256": "b7b80045880a901d80543e09524828ebdf9de99487687c0d049c0988214c3dd8"
-        },
-        {
-          "path": "assets/04-SPEECH-COACHING-DRAFT01-Dq27NFRo.ASC",
-          "bytes": 2325,
-          "sha256": "a5bb3eff8f13125301d823169073a53d1a3f7c1b1fd803a23efb44a50ca99e8a"
-        },
-        {
-          "path": "assets/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-PREFIX-DrUgReRA.ASC",
-          "bytes": 1307,
-          "sha256": "a4bfe33cca16ed7df7dda6b69577d4b1bf9ad1d645eaacaaafe21df17fc3cd02"
-        },
-        {
-          "path": "assets/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-RAW-hgBxEFPx.BAS",
-          "bytes": 3139,
-          "sha256": "09ba0405ce09ab0a83a670e4da3845b1008e5ce59ebfd1aed83c06f43a7a77f6"
-        },
-        {
-          "path": "assets/04-STAR-WARS-COCKPIT-EARLY-DAMAGED-UNCERTAIN-DrlDhLSl.ASC",
-          "bytes": 4639,
-          "sha256": "db8aa70562c87c0248171409dbb0a5a37dc417ea8f7bd8f66a2ee97bc2cdf532"
-        },
-        {
-          "path": "assets/05-CISAB-CHESS-V7-An7pJ_Ke.ASC",
-          "bytes": 5608,
-          "sha256": "59be11416498166a92d66dca9fc58efd795788ba2e55d7d3f780ed58b57f87ce"
-        },
-        {
-          "path": "assets/05-CISAB-CHESS-V7-Dnyvr-XM.BAS",
-          "bytes": 4661,
-          "sha256": "8d0b2fb25ea9885cb20085dc901d1b3d574e9692097e81b0200839fe9a9f32bf"
-        },
-        {
-          "path": "assets/05-EQUATION-BALANCER-REV2-SAVE01-dJDdrWGh.BAS",
-          "bytes": 2287,
-          "sha256": "359f9f4bf701ed78faa4b9c7c05b5502df2774ace217a537500a43b237569bba"
-        },
-        {
-          "path": "assets/05-EQUATION-BALANCER-REV2-SAVE01-DOhBpAJU.ASC",
-          "bytes": 2914,
-          "sha256": "3b2a975706d904eb99fe72df0a14ba70db98a02c1b57ad541a5a4c716f9ba34b"
-        },
-        {
-          "path": "assets/05-SPEECH-COACHING-DRAFT02-PREFIX-b_FYzvDw.ASC",
-          "bytes": 1030,
-          "sha256": "f5ecea2cd2b04500235d1494a336accaba2bd687265211f877ed46bfcd385181"
-        },
-        {
-          "path": "assets/05-SPEECH-COACHING-DRAFT02-RAW-CGpXlr3G.BAS",
-          "bytes": 1896,
-          "sha256": "9f2e186a25bc9d836f5f1f913fe4a6241054b8e15a1e2283c9d2428f0438885a"
-        },
-        {
-          "path": "assets/05-SPEECH-COACHING-DRAFT02-UNCERTAIN-B4OG8wgd.ASC",
-          "bytes": 2349,
-          "sha256": "b2dcdb39aa94f01ef918e5945fe99c2fe0b33f5f273b8d8514edc9012aaaa12d"
-        },
-        {
-          "path": "assets/05-STAR-WARS-COCKPIT-CXAF1Qj5.BAS",
-          "bytes": 3392,
-          "sha256": "d4ff7730ec29cc2b9334d85689b5b1c4ebab0003f487dcb7434597df17dcd8ff"
-        },
-        {
-          "path": "assets/05-STAR-WARS-COCKPIT-DVz7_Ofi.ASC",
-          "bytes": 4366,
-          "sha256": "0991144811fde1252a670c92007e157c05ae70c5dee1f5cac2fc2cee006a7475"
-        },
-        {
-          "path": "assets/06-ALIEN-HUNT-EARLY-SAVE01-CQYtL9i8.ASC",
-          "bytes": 6344,
-          "sha256": "c245ecbe957d5035658aaa487767724eb80d2ee1cbf3e3fd93308726f932142a"
-        },
-        {
-          "path": "assets/06-ALIEN-HUNT-EARLY-SAVE01-k3HNDoWK.BAS",
-          "bytes": 5514,
-          "sha256": "b8c95badc88c6d21720d07da0726c873cc815a1fc3f4057f34b9589b19fe5710"
-        },
-        {
-          "path": "assets/06-CHEMISTRY-BALANCER-II-SAVE-1-nZRt1BnC.ASC",
-          "bytes": 13030,
-          "sha256": "494b52931ad63f45c142a400db3f568d1dc5649282e4102e79ef610c1f7b1d87"
-        },
-        {
-          "path": "assets/06-CHEMISTRY-BALANCER-II-SAVE-1-ZdWNTYvy.BAS",
-          "bytes": 10528,
-          "sha256": "b33263f16114534c38b17b1c69e57cb7c1b17e2651ed6533fca4848719a0a462"
-        },
-        {
-          "path": "assets/06-CHEMISTRY-BALANCER-II-TEST-DObRy9jN.ASC",
-          "bytes": 8887,
-          "sha256": "988b599d05d2db4e84eb9c8707b26a821772405a63a1f5b3e6222b76919395c8"
-        },
-        {
-          "path": "assets/06-CHEMISTRY-BALANCER-II-TEST-VYD31VEK.BAS",
-          "bytes": 7303,
-          "sha256": "8fd666bfb28835a38e9e53b4fd6db280d6117401f692b767867852ad22422030"
-        },
-        {
-          "path": "assets/06-CISAB-CHESS-V8-DDgtMrd2.BAS",
-          "bytes": 4717,
-          "sha256": "bde86d5f1e150834de3cf5fb880a052e9d708c957e3c841a14736779ed5de9da"
-        },
-        {
-          "path": "assets/06-CISAB-CHESS-V8-DfiI1DzP.ASC",
-          "bytes": 5664,
-          "sha256": "0126e816867ae8936e138fd45af3147f7c5cfa7a408bb33c8cbc18ffb74d9e58"
-        },
-        {
-          "path": "assets/06-SPEECH-COACHING-DRAFT03-CfG2SV0l.BAS",
-          "bytes": 2143,
-          "sha256": "3503f783909fd322929233f758f3a375b56410888df5439acda6ab5a7bf8bb07"
-        },
-        {
-          "path": "assets/06-SPEECH-COACHING-DRAFT03-DmOF2r-m.ASC",
-          "bytes": 2617,
-          "sha256": "c62543e0102996bf7f4a35eb3fb7b5852b1d61981d047e9b8592b70dd2cc0744"
-        },
-        {
-          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE-2-6Vif54OX.BAS",
-          "bytes": 10528,
-          "sha256": "88061e7022a54e0f114956a4083289f5727d90121390190bd3415f61dd2c0494"
-        },
-        {
-          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE1-5KdK3haR.BAS",
-          "bytes": 10435,
-          "sha256": "cdfb60c7191fab9db6c93a9bcd64ff009d09a14e35879e9dd6041ab43ca47e62"
-        },
-        {
-          "path": "assets/07-CHEMISTRY-BALANCER-II-SAVE1-DZOP8eGy.ASC",
-          "bytes": 12912,
-          "sha256": "5d40e10dbd4340d57bdc4c389727ef96f01f8045f46ec0102d69267f9c0f05c4"
-        },
-        {
-          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-DFHjH5kT.ASC",
-          "bytes": 1744,
-          "sha256": "27eb7ba78bfcfeed7f7622aa0896c37a2f5176416d3ccc32db3397f1c0afa8fd"
-        },
-        {
-          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-DTiLj9i7.BAS",
-          "bytes": 4648,
-          "sha256": "8eeac2dafa3c39dbcc1d331c4bf2c7b4925f55402f62a0aa26b9d7c123032ded"
-        },
-        {
-          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-PREFIX-CNXoKTE1.BAS",
-          "bytes": 1493,
-          "sha256": "cdb4ee1ebbb3083e5bccd98a155448c928b07d2604b916f29828c33c0b630cda"
-        },
-        {
-          "path": "assets/07-CISAB-CHESS-DAMAGED-SAVE-UNCERTAIN-7aB-RTgq.ASC",
-          "bytes": 6842,
-          "sha256": "3a15b0bbde329dc2cf22d4062969cb48ef1b077caec085e0ec60af19e93aef46"
-        },
-        {
-          "path": "assets/07-EQUATION-BALANCER-REV3-SAVE01-C9OkHQGU.ASC",
-          "bytes": 2950,
-          "sha256": "5bfb927c542e93bfad6cc068c4796b16addc93695c1161744af7c886f42203d6"
-        },
-        {
-          "path": "assets/07-EQUATION-BALANCER-REV3-SAVE01-Mr_Ipr-J.BAS",
-          "bytes": 2318,
-          "sha256": "411b46e85ba39939ebd9969cbc681a05b438700ea81ca5d7459dea0fbe78cf65"
-        },
-        {
-          "path": "assets/07-SPEECH-COACHING-DRAFT04-Ct-DPjDd.ASC",
-          "bytes": 3051,
-          "sha256": "f754b90fdefa45a766edb81fd8033cb4a5afea78bbe62fdb1850b7d7456dfc32"
-        },
-        {
-          "path": "assets/07-SPEECH-COACHING-DRAFT04-DTvM5GQd.BAS",
-          "bytes": 2509,
-          "sha256": "04203fa6e534e0e4c821fafbc91e863006198d7fe60ee1f5d1e0988a35c83b9b"
-        },
-        {
-          "path": "assets/08-CHEMISTRY-BALANCER-II-SAVE-3-BB_A_MdK.ASC",
-          "bytes": 13615,
-          "sha256": "b7e05326eb33c71bf949f68a4d900e6a9fc30520a027bf11b54842e352e5bc50"
-        },
-        {
-          "path": "assets/08-CHEMISTRY-BALANCER-II-SAVE-3-DUPeg57P.BAS",
-          "bytes": 11187,
-          "sha256": "ffc80376f5ad73e8bdaa3ccfb0145a1bb530b93de3e1aa0e4588f6bde4ab8b33"
-        },
-        {
-          "path": "assets/08-COMPUTER-CHESS-DaYmqqPM.BAS",
-          "bytes": 2829,
-          "sha256": "c52d3ed07b6809cf7fdcb103a77593c96ad1877b560bf4322af5cdd4298037ff"
-        },
-        {
-          "path": "assets/08-COMPUTER-CHESS-DDg0lF-L.ASC",
-          "bytes": 3279,
-          "sha256": "9bfa53c2912e658cfd30f00f1a44bc65da7efe39195d5cd4d61be09ed8b25b44"
-        },
-        {
-          "path": "assets/08-SPEECH-COACHING-DRAFT05-BMEPUJTJ.ASC",
-          "bytes": 3360,
-          "sha256": "2104611130ec90496df0946ec5c4b65da45ec170fa5a64b5b7e89a62c21af5b6"
-        },
-        {
-          "path": "assets/08-SPEECH-COACHING-DRAFT05-Cr3oXmwt.BAS",
-          "bytes": 2734,
-          "sha256": "29fb71b5632f22e4c9d6bd8e50ec17a6abbd94c8aa5868ef2d80735603b6d418"
-        },
-        {
-          "path": "assets/09-ARTILLERY-DRAFT01-B-8gzmKS.ASC",
-          "bytes": 2089,
-          "sha256": "d1c130ae3efbfe61883ec398518e29dcbadc89e72dfe212c1bd41d6cd3a62077"
-        },
-        {
-          "path": "assets/09-ARTILLERY-DRAFT01-C3HW0eKP.BAS",
-          "bytes": 1634,
-          "sha256": "5f13140e57ba09cf0611d9e8a10dfd8807613ca4292f202e88fca27e37dce334"
-        },
-        {
-          "path": "assets/09-CHEMICAL-EQUATION-BALANCER-CKNeMBHG.BAS",
-          "bytes": 1873,
-          "sha256": "4c259793aa8d3ac1828f2c34c80ff5bb86bb627521efcc372cdf1d9d73e36668"
-        },
-        {
-          "path": "assets/09-CHEMICAL-EQUATION-BALANCER-uZYgykr4.ASC",
-          "bytes": 2357,
-          "sha256": "6778b3b33bc99f866744bcc6a3929c56ae0ec8b89451d1c35831b23a8c7e2b52"
-        },
-        {
-          "path": "assets/09-CHEMISTRY-BALANCER-II-SAVE3-D2qsVNeO.ASC",
-          "bytes": 12925,
-          "sha256": "9fa87b2c74c4f07a68e153da07a4fe9c674d9933add0d4892ec1b902179a0583"
-        },
-        {
-          "path": "assets/09-CHEMISTRY-BALANCER-II-SAVE3-DWuphxdf.BAS",
-          "bytes": 10448,
-          "sha256": "b60284bf1fbc6fbf6a716ae09bb49b5716ea2d71d3de5460103623b13b28750e"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-CROt-_5u.ASC",
-          "bytes": 3682,
-          "sha256": "ba9cbdab13a438a23408c5b0c7606f0f3cd0b73e751a8f02dc8c1e7ecc550836"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-PREFIX-BpTE8Xjn.ASC",
-          "bytes": 2255,
-          "sha256": "a252075a752798682f1621b57d4b44343b646b4ca6b7459a42de887d5c1c2915"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-PREFIX-CjL-LylZ.BAS",
-          "bytes": 1981,
-          "sha256": "22612374d600c0c4bc7317bf49393f7779a57e623da8d12e1f034d49c2b6cead"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-RAW-BZACyHWQ.BAS",
-          "bytes": 2021,
-          "sha256": "4099e2d80da026b4e2d078e2ff17e99a4dc4e34f88931b575e1252c7ca40bf78"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-INCOMPLETE-UNCERTAIN-ByhKYX2J.ASC",
-          "bytes": 2343,
-          "sha256": "3d5229cc1ff1ad03553068f148a64c150b18dd428763013f04ff79c0e58698ca"
-        },
-        {
-          "path": "assets/09-COMPUTER-CHESS-y6sSbyxQ.BAS",
-          "bytes": 3168,
-          "sha256": "4146e10e7b14a0222dd7f7acfa417954d7ab38b6314283b5b4d67492e2d68e9a"
-        },
-        {
-          "path": "assets/09-SPEECH-COACHING-DRAFT06-CWGuiWx5.ASC",
-          "bytes": 3928,
-          "sha256": "c456390debd9f0297b74be33c92670f5bc12b1d93506bef053e57b3842f276b1"
-        },
-        {
-          "path": "assets/09-SPEECH-COACHING-DRAFT06-CyF3E3h_.BAS",
-          "bytes": 3213,
-          "sha256": "89ce323fe59affa76963b41e92d22c5dbd24ec5611d0f2540bcb385cb84adc60"
-        },
-        {
-          "path": "assets/10-3D-SURFACE-PLOT-V2-BidyU50h.BAS",
-          "bytes": 574,
-          "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0"
-        },
-        {
-          "path": "assets/10-3D-SURFACE-PLOT-V2-DRqMAmmJ.ASC",
-          "bytes": 678,
-          "sha256": "d8223cde4d09a67057aa42a6e3451945e61f27ef21e6071293b6241c15faab54"
-        },
-        {
-          "path": "assets/10-ARTILLERY-DRAFT02-6SsIC_zM.BAS",
-          "bytes": 1858,
-          "sha256": "85a54506bfd01d05cc3bd35ea3fd7b01be0955273724e952584e930b3cdda4b0"
-        },
-        {
-          "path": "assets/10-ARTILLERY-DRAFT02-D2W_3xX5.ASC",
-          "bytes": 2393,
-          "sha256": "56a173b7a45f8c0da10fdecb59a62f736a44c3ab9f80e6d9cefcd6d5d995f295"
-        },
-        {
-          "path": "assets/10-CHEMICAL-EQUATION-BALANCER-V2-BSxjgRa2.ASC",
-          "bytes": 3246,
-          "sha256": "8f9bef63f9c3e1ba9d3d5dc108a9a7f7dc7f66a8b275685891f0143a72eb6b87"
-        },
-        {
-          "path": "assets/10-CHEMICAL-EQUATION-BALANCER-V2-ClnMIdLx.BAS",
-          "bytes": 2552,
-          "sha256": "04d8adec6a03a2da4326f2c3d94908415c70788e867a4e059fb435f58f110561"
-        },
-        {
-          "path": "assets/10-CHEMISTRY-BALANCER-II-SAVE-5-CNoiGI0S.BAS",
-          "bytes": 9956,
-          "sha256": "a05fc9094fb67882d6c087b9872328e87bff8946f76c19a3b9e4bb2144b65c87"
-        },
-        {
-          "path": "assets/10-CHEMISTRY-BALANCER-II-SAVE-5-cuTcEibc.ASC",
-          "bytes": 12295,
-          "sha256": "a4f2eb46f92ce025123ebe3f91915c4562eb3defa51a08ffe52067cb00c3e6d0"
-        },
-        {
-          "path": "assets/10-COMPUTER-CHESS-SELF-PLAY-CMshQopW.BAS",
-          "bytes": 2912,
-          "sha256": "8964709a39c036c9be47b06e4301708fad1caecd5b72cd50eb2c0137dae42674"
-        },
-        {
-          "path": "assets/10-COMPUTER-CHESS-SELF-PLAY-CmzLPw2f.ASC",
-          "bytes": 3372,
-          "sha256": "c47407e493b2e0cea106b13ba74dfcf5e7c3b875410b45b78fa7c354f7deefde"
-        },
-        {
-          "path": "assets/10-COMPUTER-CHESS-V2-bwDpi5lb.BAS",
-          "bytes": 3231,
-          "sha256": "05cf845273098ade4072e69365b718fe04df7fd30c12c7efb35536acaca74340"
-        },
-        {
-          "path": "assets/10-COMPUTER-CHESS-V2-CufbBYXV.ASC",
-          "bytes": 3766,
-          "sha256": "236213f2c5c3c0678e16f3a819538913d535fa27218d240d735d98daed238dfc"
-        },
-        {
-          "path": "assets/10-SPEECH-COACHING-DRAFT07-BAoU_3gr.BAS",
-          "bytes": 4242,
-          "sha256": "0c350d92f7780991182b07fc1b493a2578c337cfe19d8d044932b38f3ef33692"
-        },
-        {
-          "path": "assets/10-SPEECH-COACHING-DRAFT07-CiTGUBT3.ASC",
-          "bytes": 5187,
-          "sha256": "0a38eaa2640fef3a87ca68b7fbe86a7d83792919cc47a864249f6a983771a7e2"
-        },
-        {
-          "path": "assets/11-ARTILLERY-DRAFT03-DDawzNZR.BAS",
-          "bytes": 2507,
-          "sha256": "32240c1f82ed7216551dab10d8c6798f305edab0f4c2823a2a386cbfdd08466c"
-        },
-        {
-          "path": "assets/11-ARTILLERY-DRAFT03-DvyEwrAf.ASC",
-          "bytes": 3157,
-          "sha256": "e60c2108734afe5248e55fcd4a6f530d3d4f6fdddc450605189865cf0dc89f2b"
-        },
-        {
-          "path": "assets/11-CHEMICAL-EQUATION-BALANCER-V3-Di4DDcyG.ASC",
-          "bytes": 3266,
-          "sha256": "9cdc9667d3c0a53104529972f3ec700f01b5d6e44b8cd6719952e4614d6096e9"
-        },
-        {
-          "path": "assets/11-CHEMICAL-EQUATION-BALANCER-V3-DuNaXVAF.BAS",
-          "bytes": 2570,
-          "sha256": "6123fab3889045407644cd190539718be2557137514f33178790889578c37d50"
-        },
-        {
-          "path": "assets/11-CHEMISTRY-BALANCER-II-TEST-VERSION-DlmcxdRh.BAS",
-          "bytes": 10669,
-          "sha256": "25808fe5e00c5d97268e5cea3970183aa7d2a84331f4a1aa5cb1febf811bc918"
-        },
-        {
-          "path": "assets/11-CHEMISTRY-BALANCER-II-TEST-VERSION-IqBvLWH-.ASC",
-          "bytes": 13168,
-          "sha256": "42727e08fad0252d79099ac8e530b73de21897fbd9a065707b8ea81fc917a622"
-        },
-        {
-          "path": "assets/11-CISAB-CHESS-EARLY-BJHkXMk9.ASC",
-          "bytes": 4335,
-          "sha256": "1dab2c20d91a3f399cef102197febf4fe3a7e81c08d52d5aac6089a672b58754"
-        },
-        {
-          "path": "assets/11-CISAB-CHESS-EARLY-D2k5rnzF.BAS",
-          "bytes": 3709,
-          "sha256": "0f24912413047270a48e1d217634e6beb2b3ecb2f8df5e53ce091093f9bd6ef8"
-        },
-        {
-          "path": "assets/11-SPEECH-COACHING-DRAFT08-BkB-je2l.ASC",
-          "bytes": 5238,
-          "sha256": "51dd0944cc3e0314483331faaa34a4a408aed7f8ebef7f0b922d6e03329c4883"
-        },
-        {
-          "path": "assets/11-SPEECH-COACHING-DRAFT08-mN-Ie8ML.BAS",
-          "bytes": 4291,
-          "sha256": "98d423c737a32f0b38bb19fdb682322ba4caa1541a7391a1b2a2dd17b1aa5b4d"
-        },
-        {
-          "path": "assets/12-CISAB-CHESS-BkMQjbt6.ASC",
-          "bytes": 4873,
-          "sha256": "ffbb3679e03d67a52cee951a725bc01b56378938ee47354a582e3b5d3c524e51"
-        },
-        {
-          "path": "assets/12-CISAB-CHESS-DGMRqIdx.BAS",
-          "bytes": 4125,
-          "sha256": "e1c7cda70e14658f74523e19d237492be6294fc549a4b54a5f73b27eba33ac46"
-        },
-        {
-          "path": "assets/12-SPEECH-COACHING-DRAFT09-BfuAUz4F.BAS",
-          "bytes": 5823,
-          "sha256": "19b700211ddf7849f8abb2e55e2d257c0e269123daf9c19901e6c12222d2f98f"
-        },
-        {
-          "path": "assets/12-SPEECH-COACHING-DRAFT09-TElqIbmY.ASC",
-          "bytes": 7269,
-          "sha256": "47554b51cdc9ff44cfcd7cb86fefd104f963319ce2dac2f50bc050db727d192d"
-        },
-        {
-          "path": "assets/12-SPEECH-TEAM-COACH-GAME-BHjJjG0C.ASC",
-          "bytes": 7514,
-          "sha256": "533cb9739c2366dc106a529bac41fe3fe0efec0d08400d3ae86cb3457c5a2643"
-        },
-        {
-          "path": "assets/12-SPEECH-TEAM-COACH-GAME-LGMsYg18.BAS",
-          "bytes": 6035,
-          "sha256": "7fe0b9da95a05bf8af3cac081a0358821ef45db5f90a7b10a4a91ddf001f94ab"
-        },
-        {
-          "path": "assets/13-CHEMICAL-EQUATION-BALANCER-V1-DrhnS9UJ.BAS",
-          "bytes": 2473,
-          "sha256": "5cc30236ead0ae90168d5fe5cd843c04280edd060e5b9eb8d1f60ff0150f5d9a"
-        },
-        {
-          "path": "assets/13-CHEMICAL-EQUATION-BALANCER-V1-Nwp2CwQk.ASC",
-          "bytes": 3157,
-          "sha256": "69d64049e4f4e6c44fc76801c3a4d92e987b1b3fb682513084be39a8a621312d"
-        },
-        {
-          "path": "assets/13-CISAB-CHESS-V2-Bc_J4aCz.BAS",
-          "bytes": 3920,
-          "sha256": "b85114baba9819a0c83b9e0d2405f3c8f61b2f9e5f26afe551b231fad08af43f"
-        },
-        {
-          "path": "assets/13-CISAB-CHESS-V2-DPxum06O.ASC",
-          "bytes": 4697,
-          "sha256": "8d1bfcca34d6e04cf8ff058b9fe1c1cd0192e22d1a6853b1035a9e5793cec853"
-        },
-        {
-          "path": "assets/13-SPEECH-COACHING-DRAFT10-PREFIX-Dwa_ENCU.ASC",
-          "bytes": 6017,
-          "sha256": "675395942b14b4021d5a8ebbdaa6a8c14988bda10f03976817bd51ffab9d5227"
-        },
-        {
-          "path": "assets/13-SPEECH-COACHING-DRAFT10-RAW-P5PgnCi3.BAS",
-          "bytes": 4947,
-          "sha256": "79584cc6ab4535ebf46f8e7e82cc3b76e9b283f86017d57a2784d01b57189dd4"
-        },
-        {
-          "path": "assets/13-SPEECH-COACHING-DRAFT10-UNCERTAIN-C0l1JToX.ASC",
-          "bytes": 6117,
-          "sha256": "12ed7c5f2fdbbfa9fa4a2fa1517eae415c3d1e0677af6eb0f93bdb7daae1b06c"
-        },
-        {
-          "path": "assets/14-FALL-GRAPHICS-BASIC-V1-5VEboz5i.BAS",
-          "bytes": 2637,
-          "sha256": "2a76c61d2b89d54530bee90448cdc965ea7abb9c206a80c40350362141df5f4d"
-        },
-        {
-          "path": "assets/14-FALL-GRAPHICS-BASIC-V1-BbzSSlDH.ASC",
-          "bytes": 3301,
-          "sha256": "44b37f9c2623a56e6b1726ba7be1bf70d09b1836464f8b57c618b8ef04547694"
-        },
-        {
-          "path": "assets/17-CHEMICAL-EQUATION-BALANCER-V2-BOAj5gXO.BAS",
-          "bytes": 2543,
-          "sha256": "7fc596e7f296269ea4bb2a090ab78f165b179a7add07e7e8324756e3e7a2de8a"
-        },
-        {
-          "path": "assets/17-CHEMICAL-EQUATION-BALANCER-V2-Dv2v2Ln1.ASC",
-          "bytes": 3197,
-          "sha256": "5a0cf3fa59b6ba5c91e0c0eb814b5b20e537dca106b827348f908bf9aaa4cc93"
-        },
-        {
-          "path": "assets/ALIEN-b0SSbTKd.BAS",
-          "bytes": 7571,
-          "sha256": "eea9e3638c75a0d4322ce7fe0e0b2e5bc2ae4dc7632d9a1c331de6f18fbcda21"
-        },
-        {
-          "path": "assets/ALIEN-Bw5kHFdw.ASC",
-          "bytes": 8772,
-          "sha256": "a5821a67a2aa2c8dc51084f8560cc419d843155727bf4764139ba49038b3af7f"
-        },
-        {
-          "path": "assets/ALIEN-CWvdOez8.ASC",
-          "bytes": 8783,
-          "sha256": "71daaedfdf4702506c8defa88078b5d8f393aa1400fdd1a7cf7c94b2aa72a486"
-        },
-        {
-          "path": "assets/ALIEN-mk4m3E3S.BAS",
-          "bytes": 7560,
-          "sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad"
+          "path": "assets/aim-gallery-CIYaCeGM.svg",
+          "bytes": 327,
+          "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
         },
         {
           "path": "assets/alien-vents-Ba2Ravfz.svg",
@@ -623,44 +38,14 @@
           "sha256": "4d8133cf0c84ba6d06f7d868b39027224b0facda740867b2712cafaf019e1a93"
         },
         {
-          "path": "assets/BALANCER-D-LR-bQq.ASC",
-          "bytes": 12307,
-          "sha256": "933ff5d7913a676a3361fa466d3bf1682c03f4224d3a2d43c1dc96a61a841889"
-        },
-        {
-          "path": "assets/BALANCER-DsZN7RV2.BAS",
-          "bytes": 9965,
-          "sha256": "070b1cba202f13d29f7a24d593bf1c1dddb1277dd1a8cce4a5dcb4d723e03aba"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
           "path": "assets/balancer-equation-BxrkCOHy.svg",
           "bytes": 539,
           "sha256": "0da58c002b3e49797f1875deade5cc76f2ee309699e6ee4db3acebf3b9457db8"
-        },
-        {
-          "path": "assets/BOMB-DcFsqWpX.ASC",
-          "bytes": 6092,
-          "sha256": "aa46286ecd291a992b5bf4d07daeb55ccf1bdc1fe394d9526d7ffe3ab5300c06"
-        },
-        {
-          "path": "assets/BOMB-lmNZk5JD.BAS",
-          "bytes": 5002,
-          "sha256": "db060072e075f604c06ce3aaa50f27487a57b55b1a563db4eccc853c185f984d"
-        },
-        {
-          "path": "assets/bomb-wires-DNPFEKL1.svg",
-          "bytes": 870,
-          "sha256": "047ae6008779bf4da3cd47802a384887d6706d1c226315ef27c0c0c760b9ce7e"
-        },
-        {
-          "path": "assets/CASTLES-BOCWVuoE.BAS",
-          "bytes": 2631,
-          "sha256": "e1c9b6ed02fb7c172cedcf282130d120624243ff87a6467c00b34c4a196941fd"
-        },
-        {
-          "path": "assets/CASTLES-D6fn4NUh.ASC",
-          "bytes": 3299,
-          "sha256": "8a67855ac5ef08c8b49832d854a08474cf127762737c2b906b4d1c2b2250df83"
         },
         {
           "path": "assets/castles-game-CJCfL7KS.svg",
@@ -683,6 +68,11 @@
           "sha256": "3097e42854d8c50538eec288698317c1b78e3ce2c10dcb221afa3651090cc2da"
         },
         {
+          "path": "assets/cave-gallery-CUdWAr_1.svg",
+          "bytes": 680,
+          "sha256": "49eba2ce8c8aee3317b2a9ef9a0da0d385cadd417bd8b2825a756a88ed7a1ce5"
+        },
+        {
           "path": "assets/chemistry_balancer_bg-D14Bd7TS.wasm",
           "bytes": 64556,
           "sha256": "8e75590e58fe4879f40c65c0748117f260fffe2cc1322fd4fa2cf3482dfd0051"
@@ -693,24 +83,9 @@
           "sha256": "32324b881ae454fece1e2cdbb5dfbc08550d89bf344c2ff572f9db7b201b24fa"
         },
         {
-          "path": "assets/CHESS-BunQR6Jf.ASC",
-          "bytes": 6131,
-          "sha256": "fd7b585bc37e002eeab80a75296c9ab89da01422e80491f0ce6d0fd432afae9e"
-        },
-        {
-          "path": "assets/CHESS-C3Qon-Xl.BAS",
-          "bytes": 5098,
-          "sha256": "97399fe3f1ea881f1399f4f0687b0288b99e04ee4148783f6249d07e0bea64b4"
-        },
-        {
-          "path": "assets/CHESS-C9bSG-iT.ASC",
-          "bytes": 6011,
-          "sha256": "cb6c6a8a04316c8a91b2199f46b9f752620800e90de7559343ff35651aa4d7ba"
-        },
-        {
-          "path": "assets/CHESS-DewmwQis.BAS",
-          "bytes": 4997,
-          "sha256": "14fe0fcb4547a31ad56b10840a155f5954134278c0932c8fba598419e85c26a7"
+          "path": "assets/cipher-gallery-6P_rBzDq.svg",
+          "bytes": 407,
+          "sha256": "7cd57d882e809678611fec6639dedb32e67b067ef027fa64428ccf4423f7ac3a"
         },
         {
           "path": "assets/cisab_chess_bg-wPNkYMCt.wasm",
@@ -718,14 +93,34 @@
           "sha256": "c3a00eb7f8022ac1947e23d9da0ff17fe83592a651b122fe0b8297ad8dacca9e"
         },
         {
-          "path": "assets/derived-isEYttG3.bin",
-          "bytes": 214,
-          "sha256": "6fb0a12f8151a4d3ee01d002a17debc6cc8b61f6d1501360b6eafef90ec7c23a"
+          "path": "assets/computamatch-gallery-O8o3rjeX.svg",
+          "bytes": 490,
+          "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
         },
         {
-          "path": "assets/emulator-CfidATbd.js",
-          "bytes": 286170,
-          "sha256": "42ef5602af11dba4b46d98c09b1606cebeaaecf3d8676bf5ede20829c611575f"
+          "path": "assets/defuse-wires-DNPFEKL1.svg",
+          "bytes": 870,
+          "sha256": "047ae6008779bf4da3cd47802a384887d6706d1c226315ef27c0c0c760b9ce7e"
+        },
+        {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
+        },
+        {
+          "path": "assets/dungeon-gallery-iVVwbTI4.svg",
+          "bytes": 557,
+          "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
+        },
+        {
+          "path": "assets/emulator-BFJRCVxc.js",
+          "bytes": 316919,
+          "sha256": "87869d1fd8a8e2edb5e95b923ed8d833f33546c6f2340d266d19b204138b8b44"
+        },
+        {
+          "path": "assets/german-gallery-CWDD-jTQ.svg",
+          "bytes": 546,
+          "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
           "path": "assets/illinois-chess-bulletin-1980-06-masthead-BtV8icL8.png",
@@ -738,19 +133,64 @@
           "sha256": "60e6c890e811aa6f967f597bf5c7f494dc5ceeb47a32505b18ca232493aab770"
         },
         {
-          "path": "assets/index-BoLTHXhq.js",
-          "bytes": 306489,
-          "sha256": "691de23e70832bb8e24921f8b4c88c356dd773b0bb8e6f2745c6f8577384defa"
+          "path": "assets/index-ClZaHYYP.css",
+          "bytes": 26158,
+          "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-D5XaYLQK.css",
-          "bytes": 24401,
-          "sha256": "90945c7e658d030ecf04319700067a08e42abe3ae4359ca0b9f14af80b11f186"
+          "path": "assets/index-CMvBBG2q.js",
+          "bytes": 1044762,
+          "sha256": "e4644720b9fd1e99974faccdf78e923cff5578f42f1361c530230173ddbdb9a2"
+        },
+        {
+          "path": "assets/jab-gallery-C0tK8hbO.svg",
+          "bytes": 673,
+          "sha256": "f0bb26fb766c87997f4a6dc9ac92558097293eee75b5961a89892642b5d56245"
+        },
+        {
+          "path": "assets/jaberwocky-gallery-DFPFyEy6.svg",
+          "bytes": 686,
+          "sha256": "dfb2726417b8ecb835e6d6838ad9abbac845ff4e1c4122f85d4b4b986d3d92b3"
+        },
+        {
+          "path": "assets/johnscircle-gallery-B8gqmWJP.svg",
+          "bytes": 341,
+          "sha256": "98c088a2120392c22b7ee72e9a9c4cab253c1478578dedfaba544ad1c20db07b"
+        },
+        {
+          "path": "assets/learningttt-gallery-eEINQE3h.svg",
+          "bytes": 465,
+          "sha256": "bef009af5a65b7886190c3dea67133b2ea324606bc7baea31e6bcafcb039231a"
+        },
+        {
+          "path": "assets/life-gallery-Ac-6fOCC.svg",
+          "bytes": 8810,
+          "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/ll-gallery-DNJKCGEm.svg",
+          "bytes": 596,
+          "sha256": "f57f40ffcd289892eca959f4933f9e05d7e10bb5dc00fbde26356db1391a39cc"
+        },
+        {
+          "path": "assets/logic-gallery-DKKs_rQt.svg",
+          "bytes": 864,
+          "sha256": "a006dd4167503275189b28caa9cc17033a612cc757f54e2a12a73b36032b7e3e"
+        },
+        {
+          "path": "assets/magazine-gallery-Bh2eMosB.svg",
+          "bytes": 665,
+          "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed"
         },
         {
           "path": "assets/more-basic-computer-games-cover-C1gCIwjZ.jpg",
           "bytes": 145402,
           "sha256": "719f3d1021bf98322f8e2fd70584aba371c791e73ef22ad4945820ab8b77cefc"
+        },
+        {
+          "path": "assets/nuclear-gallery-CvCXKMfj.svg",
+          "bytes": 469,
+          "sha256": "3921df0fcf62d50302b03e125781513e33208615c0870accff80ca73a9e9bd34"
         },
         {
           "path": "assets/OLYMPICS-CzbPN_Fc.ASC",
@@ -778,9 +218,29 @@
           "sha256": "4bd3e03ce25a522066e5c8818b0eb4d66d3c1d7a8cc1120c3846b60466546e6a"
         },
         {
-          "path": "assets/player-Bn7fCFRB.js",
-          "bytes": 5576,
-          "sha256": "4882e69c02521a44bad885ebef4bf4f86d8d75591830c9697ac53ad115d37800"
+          "path": "assets/orbit-gallery-DhVteEzX.svg",
+          "bytes": 703,
+          "sha256": "bb16a767d6ba42aea73a5bc71337848cccaf0d2075179f2c731531908940629e"
+        },
+        {
+          "path": "assets/pendulum-gallery-Dgb2ErKS.svg",
+          "bytes": 396,
+          "sha256": "3a4aadaa695755128ecf7b6978c05e63c0309076426d4d854a330c27e21e36e7"
+        },
+        {
+          "path": "assets/peoria-gallery-BDwAMQGE.svg",
+          "bytes": 456,
+          "sha256": "f86e5e116874bffc51e7bfd1020aac1696da178eb6bf166d8f8ff17ab3fb9deb"
+        },
+        {
+          "path": "assets/pinball-gallery-CU-z_mCd.svg",
+          "bytes": 753,
+          "sha256": "d0f495586fb93b6fa8062540e94631a2ba147468c2220399693342bf5798715a"
+        },
+        {
+          "path": "assets/player-BL1_KaME.js",
+          "bytes": 12370,
+          "sha256": "b76c4f3cbe1badbf393692eabb8515bd0d91c4d6d78cb22f2190f21bd65b9b47"
         },
         {
           "path": "assets/player-Bs8GeNyd.js",
@@ -793,129 +253,49 @@
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
         },
         {
-          "path": "assets/player-kZvOBWfe.js",
-          "bytes": 12370,
-          "sha256": "4c61c7eae02a4ce9f8106737c0f042e5279b544e71c6c5707cdb3b31a53d1c84"
+          "path": "assets/player-Ds5JONYd.js",
+          "bytes": 5576,
+          "sha256": "e2d4062e562e7753fc186c1dcf21766e24a97db968a9daeb9e78d38832b6260b"
         },
         {
-          "path": "assets/PLOT3D-CmRZnxul.ASC",
-          "bytes": 1220,
-          "sha256": "28388f6afe64220d79dbcc694e42bebf2a96047e49cdc5f93b2c29a443f26302"
+          "path": "assets/plot3d-funnel-Dq1ey0cB.svg",
+          "bytes": 9673,
+          "sha256": "cded45de03e03ca9f1a4b3d3027df4b83967299953a5e850b103e057cd910cf5"
         },
         {
-          "path": "assets/plot3d-funnel-D-_UFgPJ.svg",
-          "bytes": 9795,
-          "sha256": "c75d2a9b4685fb0baad92f161fe34b9888dfcd66dd27b444654f4d07f3ef7e3a"
+          "path": "assets/poker-gallery--9Ry1O6q.svg",
+          "bytes": 1868,
+          "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/PLOT3D-GtK-rabh.BAS",
-          "bytes": 1056,
-          "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03"
+          "path": "assets/provenance-Bpx8mhgL.json",
+          "bytes": 7151,
+          "sha256": "b3e064dc5127a1910007bed8715d7ce6d8c6954003d20925355fb78d7f3ef09a"
         },
         {
-          "path": "assets/provenance--o0pMDMG.json",
-          "bytes": 1256,
-          "sha256": "64e9fcbca271e88c296408c1aea7936b2c09629fb17777819a2c4d99715f0410"
+          "path": "assets/reflex-gallery-BUrqLdyE.svg",
+          "bytes": 521,
+          "sha256": "5b3966ba047dafdef68ab5a4699de68f612b133b4f35caecc1aa69e0c446e7cc"
         },
         {
-          "path": "assets/provenance-0s6Wg97I.json",
-          "bytes": 59264,
-          "sha256": "dc47b694c3a7353e081fe52bd7612d1dc5ec82db70253636b7ec66d3d0754529"
+          "path": "assets/relativity-gallery-ByRHkSjk.svg",
+          "bytes": 502,
+          "sha256": "39a3207cae69f3f7b4fefa330daa2c077e3c389debfec2315af5bea0e90f041a"
         },
         {
-          "path": "assets/provenance-B3CU-BNs.json",
-          "bytes": 1187,
-          "sha256": "26737385c33691ddbb55ef5b167446cbb06aa035f2e287d81ee235b9520a995c"
+          "path": "assets/rickyrat-gallery-CBHHI8bU.svg",
+          "bytes": 654,
+          "sha256": "52be9a88c33b2ec64e7f1954b15aed41b3b1c7519b357d21dd1060d208b2eaf6"
         },
         {
-          "path": "assets/provenance-B6BmeoXq.json",
-          "bytes": 1875,
-          "sha256": "e6bc8be09402c3d7e09183e7ebe3f6e3681dcf2edad32a0b992f78794c79b724"
+          "path": "assets/sentences-gallery-Bn2m-Q9e.svg",
+          "bytes": 375,
+          "sha256": "f8f9ab057757af10a50b586695ccd7616f185fba393144bf46681d2dfe173721"
         },
         {
-          "path": "assets/provenance-B9dl32Iw.json",
-          "bytes": 1309,
-          "sha256": "b6f5b1053ed6f0e07aab48ab4dcbd51a9edd6bb07e78112ce660a4c2fc021777"
-        },
-        {
-          "path": "assets/provenance-BqKQSQJG.json",
-          "bytes": 2314,
-          "sha256": "b9d8fd5a5fb3e3b44d0430ebddd2eaff082562d71f46a8bb578dde47db02588f"
-        },
-        {
-          "path": "assets/provenance-BuJkfTk3.json",
-          "bytes": 6879,
-          "sha256": "bb575481d91b13120aa5b03dc18eccf1ff99427c57b6137e25fafb136bfe03bd"
-        },
-        {
-          "path": "assets/provenance-BwAjG6C6.json",
-          "bytes": 1311,
-          "sha256": "1afe4684b98f072854bccb42d2701e5d23b8938931babeb21be73f934a251a18"
-        },
-        {
-          "path": "assets/provenance-BwXI0J5k.json",
-          "bytes": 237579,
-          "sha256": "34fb98c1c717e6c3c445d13e38ce8f20501fa508f4b7bf0e53f344509cbcabaf"
-        },
-        {
-          "path": "assets/provenance-CjmcVI6y.json",
-          "bytes": 32839,
-          "sha256": "f2acf8169c920bc1246511dc3738298868d1ca05af37fee308da9be9f82b17e4"
-        },
-        {
-          "path": "assets/provenance-ComXN-bt.json",
-          "bytes": 7239,
-          "sha256": "f8df4dfa753503491b99f1397e84dd0c057ba69436df48c18e3a41a662f94878"
-        },
-        {
-          "path": "assets/provenance-CrZM8-ep.json",
-          "bytes": 2032,
-          "sha256": "d4daff0e9ca64d67d2144e70adb65ea23f584ea35613a324ac839328e513bf34"
-        },
-        {
-          "path": "assets/provenance-CV6rMlZr.json",
-          "bytes": 31019,
-          "sha256": "07d5c6ef213dc628704d8da74c763a69eb277b1d9d1446cf10daa4675190016c"
-        },
-        {
-          "path": "assets/provenance-CyYvacnA.json",
-          "bytes": 1354,
-          "sha256": "694492a9b834e3f6eed7402516ed4fb0470e11737c2405d82708ca64c6387fef"
-        },
-        {
-          "path": "assets/provenance-D0_-DXlu.json",
-          "bytes": 81767,
-          "sha256": "d932c68b464b10387e82ee38c2790374997bd61d1cae6c774d7a165b276a60d7"
-        },
-        {
-          "path": "assets/provenance-D6bej6UW.json",
-          "bytes": 11908,
-          "sha256": "4601daea5182ca197a7b6b2336902410ce24ce7790054226add4a69ed82bd4d2"
-        },
-        {
-          "path": "assets/provenance-DLi4ITDj.json",
-          "bytes": 1139,
-          "sha256": "b8bcf931ec4806be82783caff39c593a44efe5ede8980be3a7bc8e694acc50ef"
-        },
-        {
-          "path": "assets/provenance-DvbXeU8u.json",
-          "bytes": 1869,
-          "sha256": "dfbd80f9a5b9e8da61d92213dae6d257eec79240cc613e47624be13aea3099cf"
-        },
-        {
-          "path": "assets/provenance-EIEKQLON.json",
-          "bytes": 1074,
-          "sha256": "4e05e51f0c257825539d8661eef5e20b7d342e742d04795f5099f02239947aac"
-        },
-        {
-          "path": "assets/provenance-FdtEUn2p.json",
-          "bytes": 24119,
-          "sha256": "c00a6067f7adb5fe0484ebd9389125ecc478f71b7efd2e5efadd2218a41a48fd"
-        },
-        {
-          "path": "assets/provenance-jxcrb8q9.json",
-          "bytes": 5371,
-          "sha256": "028bbb93c33e6c43f3fe87dcfab466ede927412f18cbd8b396d21a96d52712bb"
+          "path": "assets/skinner-gallery-DStNp5-W.svg",
+          "bytes": 717,
+          "sha256": "cf3000c5efe6b6c042f7a11728a8c4f40c3cb59c79ee7703ece0444e95785b41"
         },
         {
           "path": "assets/sourcebook-volume-iv-cover-LGpL70uP.png",
@@ -923,14 +303,9 @@
           "sha256": "881a13d48406d91b0e3955d7dad6e9f7b598bd7a4f4ea12f8e59865a637df093"
         },
         {
-          "path": "assets/SPEECH-BZ4k9WfF.BAS",
-          "bytes": 6418,
-          "sha256": "0281a95ac124b0e7a93faff2203ed32dc14c69cb66f8cf40b5fd6de421bf8b1e"
-        },
-        {
-          "path": "assets/SPEECH-CZqngBL5.ASC",
-          "bytes": 8003,
-          "sha256": "922a512a9adb6163cb74a39c5404a379f5d9c0c3514bd241421ea65264a6140c"
+          "path": "assets/spacecolony-gallery-Dub2fmuk.svg",
+          "bytes": 474,
+          "sha256": "cdf999374dcb80673733a9249ec43ec235a1f504b9380085dcb23c2cad6aeb61"
         },
         {
           "path": "assets/speech-screen-Btandovk.svg",
@@ -938,14 +313,9 @@
           "sha256": "0f452d3423b6d28158708b85a7206a8f48bde69d83716610c03bb6441aab0a42"
         },
         {
-          "path": "assets/STARWARS81-ClFPFtzm.ASC",
-          "bytes": 4413,
-          "sha256": "910ae10edbd803edaa7a788ce9771ecac5e5c341ab2cadb525415214014faa06"
-        },
-        {
-          "path": "assets/STARWARS81-DaBZHjEZ.BAS",
-          "bytes": 3427,
-          "sha256": "5813607850ee80510e20cc57cecd71155d12f22651169af6de639b1c27248d4c"
+          "path": "assets/spi-gallery-Bfa-394o.svg",
+          "bytes": 467,
+          "sha256": "e04278e20645be62c425e87a4fea812ff80576249ddf6ab8fa9d75f92fbc90a2"
         },
         {
           "path": "assets/starwars81-screen-CZ75cQa9.svg",
@@ -953,9 +323,49 @@
           "sha256": "ad40674aaa383aed3bff20dd316886b2563a927a2d51da9fffcc22ecbff3d8d4"
         },
         {
-          "path": "assets/WUMPUS-1M8CKtSn.ASC",
-          "bytes": 5969,
-          "sha256": "30ca5375434696155e9825ed439340517c0df1b4a1f4b30dfcf959c471de98ff"
+          "path": "assets/tank-gallery-BNLPAWVJ.svg",
+          "bytes": 591,
+          "sha256": "ec794c99787d7fe89609491bbab1a87f111fcb4d1d2d66bc9825bdcc1fdb9fa0"
+        },
+        {
+          "path": "assets/teachvi-gallery-mWSeuKIv.svg",
+          "bytes": 699,
+          "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
+        },
+        {
+          "path": "assets/tones-gallery-DPAQ7avY.svg",
+          "bytes": 1017,
+          "sha256": "795a4c694830b961fdcc0d148fedb3e20e194d7b9d9e75d491960602b7fd3e0a"
+        },
+        {
+          "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
+          "bytes": 409,
+          "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
+        },
+        {
+          "path": "assets/tutac-gallery-DEjQnkj5.svg",
+          "bytes": 581,
+          "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
+        },
+        {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
+        },
+        {
+          "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
+          "bytes": 545,
+          "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
+        },
+        {
+          "path": "assets/wordsearch-gallery-DichyXHl.svg",
+          "bytes": 491,
+          "sha256": "b5f62ba44c50eb14360b18fa031ffaffc678aa3f2745a96bb9b40ebd4171af2b"
+        },
+        {
+          "path": "assets/worm-gallery-CRUdNvma.svg",
+          "bytes": 322,
+          "sha256": "a355c305e0f7cb2a2b6b2b206db7ddf19d1c25c42b5d37fabd72b78600ecb26d"
         },
         {
           "path": "assets/wumpus-listing-page-180-CxQfjWz2.jpg",
@@ -964,13 +374,13 @@
         },
         {
           "path": "index.html",
-          "bytes": 2073,
-          "sha256": "91d523c54a7c051885e05dbb1c0b45d23d3e99782c1863da011ba4ad7a1efb10"
+          "bytes": 2269,
+          "sha256": "55c49cb04296a568c23d115b0195ec78212a26916953fe3ff58cfda3c8998d6a"
         },
         {
           "path": "licenses.txt",
-          "bytes": 16573,
-          "sha256": "ed4b26bab11354ec8af69c7d2e1d54d8044505e165d915ae5d6ae0006024f806"
+          "bytes": 19163,
+          "sha256": "a74fe6d95486f70e2356be36bf5fcad38455cfac38234f9a94ee4808a8a6cf4d"
         }
       ]
     }

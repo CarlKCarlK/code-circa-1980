@@ -1452,6 +1452,400 @@
           "sha256": "ed4b26bab11354ec8af69c7d2e1d54d8044505e165d915ae5d6ae0006024f806"
         }
       ]
+    },
+    {
+      "id": "v3",
+      "path": "plot3d/v3/",
+      "label": "Web experience v3",
+      "released": "2026-11-04",
+      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
+      "files": [
+        {
+          "path": "assets/02-3D-SURFACE-PLOT-V1-D5kWIkFB.ASC",
+          "bytes": 565,
+          "sha256": "f80dbce3a85d1de83a26cae406541b193949b7399e6fee9c459120f05cc4aa40"
+        },
+        {
+          "path": "assets/02-3D-SURFACE-PLOT-V1-DzKnsQ3C.BAS",
+          "bytes": 486,
+          "sha256": "4cd3078b47d9a3819aa584d01931dc12fecf05921676b821066b0c8e58f46d91"
+        },
+        {
+          "path": "assets/05-MONSTER-GAME-PARTIAL-PREFIX-BOXgx938.ASC",
+          "bytes": 310,
+          "sha256": "dd73d0821fabf231cd5398c9511c708e03d6617e3c3439964d862fd409d9f949"
+        },
+        {
+          "path": "assets/05-MONSTER-GAME-RAW-CwknnpcA.BAS",
+          "bytes": 7455,
+          "sha256": "ccc89a7b519b7e88a0505faa29f099e7d6a7ee4e8ec48045ac40d4619b721cfc"
+        },
+        {
+          "path": "assets/06-NUCLEAR-EQUATION-COMPLETER-PREFIX-WbLyfCZ-.ASC",
+          "bytes": 1578,
+          "sha256": "83e3d57c81d211f29fa957c976bb05c87e75f417f17d8dc74048d211ea4b7c8c"
+        },
+        {
+          "path": "assets/06-NUCLEAR-EQUATION-COMPLETER-RAW-cIG3bjz9.BAS",
+          "bytes": 1969,
+          "sha256": "39b3a82cf17f42699d521b194fc02e3b2bf0180222cd80b8a4994b7f50893021"
+        },
+        {
+          "path": "assets/10-3D-SURFACE-PLOT-V2-BidyU50h.BAS",
+          "bytes": 574,
+          "sha256": "864f008b17125186f8960a6a691bd099d03eb4189ea1067f74885b6b2d8437f0"
+        },
+        {
+          "path": "assets/10-3D-SURFACE-PLOT-V2-DRqMAmmJ.ASC",
+          "bytes": 678,
+          "sha256": "d8223cde4d09a67057aa42a6e3451945e61f27ef21e6071293b6241c15faab54"
+        },
+        {
+          "path": "assets/aim-gallery-CIYaCeGM.svg",
+          "bytes": 327,
+          "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
+        },
+        {
+          "path": "assets/alien-vents-Ba2Ravfz.svg",
+          "bytes": 619,
+          "sha256": "4d8133cf0c84ba6d06f7d868b39027224b0facda740867b2712cafaf019e1a93"
+        },
+        {
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
+        },
+        {
+          "path": "assets/balancer-equation-BxrkCOHy.svg",
+          "bytes": 539,
+          "sha256": "0da58c002b3e49797f1875deade5cc76f2ee309699e6ee4db3acebf3b9457db8"
+        },
+        {
+          "path": "assets/castles-game-CJCfL7KS.svg",
+          "bytes": 11566,
+          "sha256": "17ee64af2412d57c817279d7ab52f471866bb8d66e5b5385884228034662ebe8"
+        },
+        {
+          "path": "assets/catalog-3d-plotter-cCezkWCu.png",
+          "bytes": 26024,
+          "sha256": "dd6616405c7c830686c11aacaf8530e325a8fc08517addc75213ab200a567287"
+        },
+        {
+          "path": "assets/catalog-chembalancer-ii-RaJ0sxXm.png",
+          "bytes": 54912,
+          "sha256": "1bf5fd5a8152264917fb5a01baa27818c963771b793d79a1e1445063ecb54a14"
+        },
+        {
+          "path": "assets/catalog-chemistry-equation-balancer-Dgsth5bM.png",
+          "bytes": 54296,
+          "sha256": "3097e42854d8c50538eec288698317c1b78e3ce2c10dcb221afa3651090cc2da"
+        },
+        {
+          "path": "assets/cave-gallery-CUdWAr_1.svg",
+          "bytes": 680,
+          "sha256": "49eba2ce8c8aee3317b2a9ef9a0da0d385cadd417bd8b2825a756a88ed7a1ce5"
+        },
+        {
+          "path": "assets/chemistry_balancer_bg-D14Bd7TS.wasm",
+          "bytes": 64556,
+          "sha256": "8e75590e58fe4879f40c65c0748117f260fffe2cc1322fd4fa2cf3482dfd0051"
+        },
+        {
+          "path": "assets/chess-board-cK9NdvPC.svg",
+          "bytes": 2004,
+          "sha256": "32324b881ae454fece1e2cdbb5dfbc08550d89bf344c2ff572f9db7b201b24fa"
+        },
+        {
+          "path": "assets/cipher-gallery-6P_rBzDq.svg",
+          "bytes": 407,
+          "sha256": "7cd57d882e809678611fec6639dedb32e67b067ef027fa64428ccf4423f7ac3a"
+        },
+        {
+          "path": "assets/cisab_chess_bg-wPNkYMCt.wasm",
+          "bytes": 71012,
+          "sha256": "c3a00eb7f8022ac1947e23d9da0ff17fe83592a651b122fe0b8297ad8dacca9e"
+        },
+        {
+          "path": "assets/computamatch-gallery-O8o3rjeX.svg",
+          "bytes": 490,
+          "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
+        },
+        {
+          "path": "assets/defuse-wires-DNPFEKL1.svg",
+          "bytes": 870,
+          "sha256": "047ae6008779bf4da3cd47802a384887d6706d1c226315ef27c0c0c760b9ce7e"
+        },
+        {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
+        },
+        {
+          "path": "assets/dungeon-gallery-iVVwbTI4.svg",
+          "bytes": 557,
+          "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
+        },
+        {
+          "path": "assets/emulator-gZCqff8M.js",
+          "bytes": 316919,
+          "sha256": "570efcd4c574d911aa4d2f04a5e9e90757fb9cd6924f5f3c95aa9a434d8b1ef3"
+        },
+        {
+          "path": "assets/german-gallery-CWDD-jTQ.svg",
+          "bytes": 546,
+          "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
+        },
+        {
+          "path": "assets/illinois-chess-bulletin-1980-06-masthead-BtV8icL8.png",
+          "bytes": 49978,
+          "sha256": "6cea40a180e6660f7fa823883820e893a5abfbb62133473a5471aa328365ca91"
+        },
+        {
+          "path": "assets/illinois-chess-bulletin-1980-06-peoria-highlighted-DiejZiL0.png",
+          "bytes": 70796,
+          "sha256": "60e6c890e811aa6f967f597bf5c7f494dc5ceeb47a32505b18ca232493aab770"
+        },
+        {
+          "path": "assets/index-ClZaHYYP.css",
+          "bytes": 26158,
+          "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
+        },
+        {
+          "path": "assets/index-sV5FDye7.js",
+          "bytes": 1057640,
+          "sha256": "9e929652104478ded0bba6d04d237bfff2ec46372554f121c5e693d29f022916"
+        },
+        {
+          "path": "assets/jab-gallery-C0tK8hbO.svg",
+          "bytes": 673,
+          "sha256": "f0bb26fb766c87997f4a6dc9ac92558097293eee75b5961a89892642b5d56245"
+        },
+        {
+          "path": "assets/jaberwocky-gallery-DFPFyEy6.svg",
+          "bytes": 686,
+          "sha256": "dfb2726417b8ecb835e6d6838ad9abbac845ff4e1c4122f85d4b4b986d3d92b3"
+        },
+        {
+          "path": "assets/johnscircle-gallery-B8gqmWJP.svg",
+          "bytes": 341,
+          "sha256": "98c088a2120392c22b7ee72e9a9c4cab253c1478578dedfaba544ad1c20db07b"
+        },
+        {
+          "path": "assets/learningttt-gallery-eEINQE3h.svg",
+          "bytes": 465,
+          "sha256": "bef009af5a65b7886190c3dea67133b2ea324606bc7baea31e6bcafcb039231a"
+        },
+        {
+          "path": "assets/life-gallery-Ac-6fOCC.svg",
+          "bytes": 8810,
+          "sha256": "f71c05c9f50d3456621dd49301339d2a0a664d026bc6a316315e7e0ff5dfbe2c"
+        },
+        {
+          "path": "assets/ll-gallery-DNJKCGEm.svg",
+          "bytes": 596,
+          "sha256": "f57f40ffcd289892eca959f4933f9e05d7e10bb5dc00fbde26356db1391a39cc"
+        },
+        {
+          "path": "assets/logic-gallery-DKKs_rQt.svg",
+          "bytes": 864,
+          "sha256": "a006dd4167503275189b28caa9cc17033a612cc757f54e2a12a73b36032b7e3e"
+        },
+        {
+          "path": "assets/magazine-gallery-Bh2eMosB.svg",
+          "bytes": 665,
+          "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed"
+        },
+        {
+          "path": "assets/more-basic-computer-games-cover-C1gCIwjZ.jpg",
+          "bytes": 145402,
+          "sha256": "719f3d1021bf98322f8e2fd70584aba371c791e73ef22ad4945820ab8b77cefc"
+        },
+        {
+          "path": "assets/nuclear-gallery-CvCXKMfj.svg",
+          "bytes": 469,
+          "sha256": "3921df0fcf62d50302b03e125781513e33208615c0870accff80ca73a9e9bd34"
+        },
+        {
+          "path": "assets/olympics-screen-DNbSOH3K.svg",
+          "bytes": 532,
+          "sha256": "4bd3e03ce25a522066e5c8818b0eb4d66d3c1d7a8cc1120c3846b60466546e6a"
+        },
+        {
+          "path": "assets/orbit-gallery-DhVteEzX.svg",
+          "bytes": 703,
+          "sha256": "bb16a767d6ba42aea73a5bc71337848cccaf0d2075179f2c731531908940629e"
+        },
+        {
+          "path": "assets/pendulum-gallery-Dgb2ErKS.svg",
+          "bytes": 396,
+          "sha256": "3a4aadaa695755128ecf7b6978c05e63c0309076426d4d854a330c27e21e36e7"
+        },
+        {
+          "path": "assets/peoria-gallery-BDwAMQGE.svg",
+          "bytes": 456,
+          "sha256": "f86e5e116874bffc51e7bfd1020aac1696da178eb6bf166d8f8ff17ab3fb9deb"
+        },
+        {
+          "path": "assets/pinball-gallery-CU-z_mCd.svg",
+          "bytes": 753,
+          "sha256": "d0f495586fb93b6fa8062540e94631a2ba147468c2220399693342bf5798715a"
+        },
+        {
+          "path": "assets/player-Bs8GeNyd.js",
+          "bytes": 16248,
+          "sha256": "e4dcd4e5a6443ea360e5ecf182eb077e431d8ce47f4760934d6d984a763b6344"
+        },
+        {
+          "path": "assets/player-Bt2bXhbW.js",
+          "bytes": 5576,
+          "sha256": "09db3da831c757e35e1ae8f2eac20712966a44b4957a834163c0359f91b8396c"
+        },
+        {
+          "path": "assets/player-D-fw0ge0.js",
+          "bytes": 12370,
+          "sha256": "8b44ceceb4bbb3dbbf9bade193b33ab16f1b7f9c2ff676a3f930f7b36a157f3a"
+        },
+        {
+          "path": "assets/player-DG3vU3-j.js",
+          "bytes": 32072,
+          "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
+        },
+        {
+          "path": "assets/PLOT3D-CmRZnxul.ASC",
+          "bytes": 1220,
+          "sha256": "28388f6afe64220d79dbcc694e42bebf2a96047e49cdc5f93b2c29a443f26302"
+        },
+        {
+          "path": "assets/plot3d-funnel-Dq1ey0cB.svg",
+          "bytes": 9673,
+          "sha256": "cded45de03e03ca9f1a4b3d3027df4b83967299953a5e850b103e057cd910cf5"
+        },
+        {
+          "path": "assets/PLOT3D-GtK-rabh.BAS",
+          "bytes": 1056,
+          "sha256": "c954d6c3ac8434406a51491c551ced4d5e17cd4760fa18f416fcf52818aa7b03"
+        },
+        {
+          "path": "assets/poker-gallery--9Ry1O6q.svg",
+          "bytes": 1868,
+          "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
+        },
+        {
+          "path": "assets/provenance-CjmcVI6y.json",
+          "bytes": 32839,
+          "sha256": "f2acf8169c920bc1246511dc3738298868d1ca05af37fee308da9be9f82b17e4"
+        },
+        {
+          "path": "assets/reflex-gallery-BUrqLdyE.svg",
+          "bytes": 521,
+          "sha256": "5b3966ba047dafdef68ab5a4699de68f612b133b4f35caecc1aa69e0c446e7cc"
+        },
+        {
+          "path": "assets/relativity-gallery-ByRHkSjk.svg",
+          "bytes": 502,
+          "sha256": "39a3207cae69f3f7b4fefa330daa2c077e3c389debfec2315af5bea0e90f041a"
+        },
+        {
+          "path": "assets/rickyrat-gallery-CBHHI8bU.svg",
+          "bytes": 654,
+          "sha256": "52be9a88c33b2ec64e7f1954b15aed41b3b1c7519b357d21dd1060d208b2eaf6"
+        },
+        {
+          "path": "assets/sentences-gallery-Bn2m-Q9e.svg",
+          "bytes": 375,
+          "sha256": "f8f9ab057757af10a50b586695ccd7616f185fba393144bf46681d2dfe173721"
+        },
+        {
+          "path": "assets/skinner-gallery-DStNp5-W.svg",
+          "bytes": 717,
+          "sha256": "cf3000c5efe6b6c042f7a11728a8c4f40c3cb59c79ee7703ece0444e95785b41"
+        },
+        {
+          "path": "assets/sourcebook-volume-iv-cover-LGpL70uP.png",
+          "bytes": 835711,
+          "sha256": "881a13d48406d91b0e3955d7dad6e9f7b598bd7a4f4ea12f8e59865a637df093"
+        },
+        {
+          "path": "assets/spacecolony-gallery-Dub2fmuk.svg",
+          "bytes": 474,
+          "sha256": "cdf999374dcb80673733a9249ec43ec235a1f504b9380085dcb23c2cad6aeb61"
+        },
+        {
+          "path": "assets/speech-screen-Btandovk.svg",
+          "bytes": 508,
+          "sha256": "0f452d3423b6d28158708b85a7206a8f48bde69d83716610c03bb6441aab0a42"
+        },
+        {
+          "path": "assets/spi-gallery-Bfa-394o.svg",
+          "bytes": 467,
+          "sha256": "e04278e20645be62c425e87a4fea812ff80576249ddf6ab8fa9d75f92fbc90a2"
+        },
+        {
+          "path": "assets/starwars81-screen-CZ75cQa9.svg",
+          "bytes": 484,
+          "sha256": "ad40674aaa383aed3bff20dd316886b2563a927a2d51da9fffcc22ecbff3d8d4"
+        },
+        {
+          "path": "assets/tank-gallery-BNLPAWVJ.svg",
+          "bytes": 591,
+          "sha256": "ec794c99787d7fe89609491bbab1a87f111fcb4d1d2d66bc9825bdcc1fdb9fa0"
+        },
+        {
+          "path": "assets/teachvi-gallery-mWSeuKIv.svg",
+          "bytes": 699,
+          "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
+        },
+        {
+          "path": "assets/tones-gallery-DPAQ7avY.svg",
+          "bytes": 1017,
+          "sha256": "795a4c694830b961fdcc0d148fedb3e20e194d7b9d9e75d491960602b7fd3e0a"
+        },
+        {
+          "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
+          "bytes": 409,
+          "sha256": "168b7bfd68d327a6f994559faf1acfbbae87ec005263aaa6528cbd9e7630b729"
+        },
+        {
+          "path": "assets/tutac-gallery-DEjQnkj5.svg",
+          "bytes": 581,
+          "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
+        },
+        {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
+        },
+        {
+          "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
+          "bytes": 545,
+          "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
+        },
+        {
+          "path": "assets/wordsearch-gallery-DichyXHl.svg",
+          "bytes": 491,
+          "sha256": "b5f62ba44c50eb14360b18fa031ffaffc678aa3f2745a96bb9b40ebd4171af2b"
+        },
+        {
+          "path": "assets/worm-gallery-CRUdNvma.svg",
+          "bytes": 322,
+          "sha256": "a355c305e0f7cb2a2b6b2b206db7ddf19d1c25c42b5d37fabd72b78600ecb26d"
+        },
+        {
+          "path": "assets/wumpus-listing-page-180-CxQfjWz2.jpg",
+          "bytes": 319216,
+          "sha256": "41afda357395ac264eb88af6d746ce78b7b80469b6ebc47b8f7e6fe0f9d43e95"
+        },
+        {
+          "path": "index.html",
+          "bytes": 2288,
+          "sha256": "3e2eda34e07d85a1ceba54338fa2843f9f13e3bec1f786897540decbb874489d"
+        },
+        {
+          "path": "licenses.txt",
+          "bytes": 19163,
+          "sha256": "a74fe6d95486f70e2356be36bf5fcad38455cfac38234f9a94ee4808a8a6cf4d"
+        }
+      ]
     }
   ]
 }

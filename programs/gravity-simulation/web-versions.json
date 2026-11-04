@@ -4,8 +4,8 @@
       "id": "v1",
       "path": "gravity-simulation/v1/",
       "label": "Web experience v1",
-      "released": "2026-11-03",
-      "sourceCommit": "7908a15b91d5caf6bf41c491d4cd1b4c535d609c",
+      "released": "2026-11-04",
+      "sourceCommit": "1674ce5dca6dae313da27419ed19d6d584198eaa",
       "files": [
         {
           "path": "assets/12-GRAVITY-SIMULATION-SAVE01-BJZDbnzF.ASC",
@@ -83,9 +83,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-DpibtdDF.js",
-          "bytes": 316923,
-          "sha256": "e7fed75cefaeeca3c6fb43dd0881040a40253caa9ea0153991abc4e21c8a70a4"
+          "path": "assets/emulator-ClQOuZTG.js",
+          "bytes": 316994,
+          "sha256": "07524672ef1a3f47c167deba45eacd383c277ed32a5089c841af6fccb73e948d"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -103,14 +103,14 @@
           "sha256": "08d1e440fc2b112b33e5ac866891e9746431fffde385469a04f8fc2e59aa3313"
         },
         {
-          "path": "assets/index-Dz8uMYQd.css",
-          "bytes": 26140,
-          "sha256": "9d2366f912ef17a5cf93fc6fad8840dea36ab841117aeee638f31d34e5fad97e"
+          "path": "assets/index-ClZaHYYP.css",
+          "bytes": 26158,
+          "sha256": "bad4e097102c5692cb93a2fd49bef46384d77a3bc34e0fc73b6b58b0b17ce94f"
         },
         {
-          "path": "assets/index-kH7kAsnr.js",
-          "bytes": 38785,
-          "sha256": "1be469a77f2a3c6c72b981f0ba61ae4916c39f28f39a3e0a6583125e1ea41e4d"
+          "path": "assets/index-usyyWvsq.js",
+          "bytes": 39454,
+          "sha256": "05a3d3b3701b95948db155e966328a10857f00e2b40d57e4579d03c462341773"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -151,11 +151,6 @@
           "path": "assets/magazine-gallery-Bh2eMosB.svg",
           "bytes": 665,
           "sha256": "138afa256d547b9ad3d63ef029876c66eaa1a0521d243f0dfe90b5dbb1439fed"
-        },
-        {
-          "path": "assets/model100-CYWvsCgB.js",
-          "bytes": 8058,
-          "sha256": "50cc804541fed57cebb7cbaf88862c9f79c81621642d4610797055e355b0d314"
         },
         {
           "path": "assets/nuclear-gallery-CvCXKMfj.svg",
@@ -238,9 +233,9 @@
           "sha256": "79a4840b4897fa7b9822c31cc394dfc06f41b31a0e055f66670cb9477c80bed6"
         },
         {
-          "path": "assets/tones-gallery-CIkUw8Gq.svg",
-          "bytes": 1046,
-          "sha256": "04c436c36d3a00f4faa08f6c4bea9b48fe36861641854e5b33f2df3af9d27e64"
+          "path": "assets/tones-gallery-DPAQ7avY.svg",
+          "bytes": 1017,
+          "sha256": "795a4c694830b961fdcc0d148fedb3e20e194d7b9d9e75d491960602b7fd3e0a"
         },
         {
           "path": "assets/trigectior-gallery-Bcp3dRoe.svg",
@@ -251,16 +246,6 @@
           "path": "assets/tutac-gallery-DEjQnkj5.svg",
           "bytes": 581,
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
-        },
-        {
-          "path": "assets/virtualt-AiL3Ufaf.wasm",
-          "bytes": 1104816,
-          "sha256": "93fe58680b79d708032dbcda0aa5c622b1ad61c5ec1fbcf98331e290af1434b7"
-        },
-        {
-          "path": "assets/virtualt-CHiBXa60.js",
-          "bytes": 247020,
-          "sha256": "c177ff4cd602f79e5ded24bfb755973d320b51c2294831e69d86de06cb89cef1"
         },
         {
           "path": "assets/WebSoundPlayer-BHQ3vRck.js",
@@ -284,8 +269,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2351,
-          "sha256": "d6d2661b29205f7908b652fdafe4e66dfbe98b80509cd0344659d5acd3767295"
+          "bytes": 2279,
+          "sha256": "305bc6f155840ce444ed0259f900dcfcb04a63d114d0e728c5258efe68b0c818"
         },
         {
           "path": "licenses.txt",
