@@ -5,7 +5,7 @@
       "path": "presidential-crisis-game/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "6845b4a50e46906b637d669656a03379c5af9a07",
+      "sourceCommit": "a87db385c2169a3adfd715e6fef9789e8b9e3165",
       "files": [
         {
           "path": "assets/01-PRESIDENTIAL-CRISIS-GAME-0Dkj2FjU.ASC",
@@ -63,9 +63,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-D98QuKuL.js",
+          "path": "assets/emulator-D6jqJiP6.js",
           "bytes": 316923,
-          "sha256": "08a73edbd1589abda35180dc2bc890df1b8848054743cdf3f13e5168cbd71192"
+          "sha256": "ca1a0db9260e1b4eb367cb97b47683df61fde7d5b83ec5e90cf9a039687770c3"
         },
         {
           "path": "assets/games-diskette-GBfXwjGC.dmk",
@@ -78,14 +78,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
-          "path": "assets/index-jhy8RT_D.js",
-          "bytes": 30915,
-          "sha256": "06ca4ba73ffd286ada1692e59cb97f466989c0b09ad7dfd44c16ff221007e471"
+          "path": "assets/index-IDQcOOOk.js",
+          "bytes": 31121,
+          "sha256": "9b97143e65f75ea29da13c1321cf95d8128e8bb5028c61d66ecda47de1ec92f1"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -240,7 +240,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "3f3fa99657511dc71f5669f2d6c4d9d112710d42c253d6652b9ddd403becb5d3"
+          "sha256": "b3bdcf6edaac2a5c246056c00381f6bb6ca52371e98eb834c40f1246560bd692"
         },
         {
           "path": "licenses.txt",
