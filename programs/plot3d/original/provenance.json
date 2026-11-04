@@ -1,23 +1,23 @@
 {
   "title": "3-D Plot",
-  "version": "v04",
-  "label": "3D PLOT",
+  "version": "v05",
+  "label": "3D PLOT SAVE2",
   "capture": "tape9b",
-  "save": 5,
+  "save": 6,
   "merged_from": {
     "program": "3d-plot",
-    "version": "v01"
+    "version": "v02"
   },
   "order_inferred": false,
   "order_note": "Appended after the published canonical history; this position does not claim development order.",
   "files": [
     {
       "canonical_path": "PLOT3D.ASC",
-      "snapshot_path": "versions/3d-plot-v01/05-3D-PLOT.ASC"
+      "snapshot_path": "versions/3d-plot-v02/06-3D-PLOT-SAVE2.ASC"
     },
     {
       "canonical_path": "PLOT3D.BAS",
-      "snapshot_path": "versions/3d-plot-v01/05-3D-PLOT.BAS"
+      "snapshot_path": "versions/3d-plot-v02/06-3D-PLOT-SAVE2.BAS"
     }
   ]
 }
