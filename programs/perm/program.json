@@ -62,5 +62,6 @@
     "text": "From a recovered disk; the source names no author. Preserved here for small-scale archival use."
   },
   "sourceOnly": true,
-  "actionVerb": "View source"
+  "actionVerb": "View source",
+  "diskThanks": true
 }

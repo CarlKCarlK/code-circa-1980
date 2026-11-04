@@ -335,5 +335,6 @@
     "Two functions are reconstructed: the disk saved PUSH-LEFT and PUSH-RIGHT to one file, and CLIMB-UP and CLIMB-DOWN to another, because file names stopped at the hyphen, so PUSH-RIGHT and CLIMB-UP were lost. The player types mirror images of their partners at startup. The disk and source files are unchanged.",
     "LISP itself starts from the LISP disk, and then the disk holding these functions replaces it, as the two disks were used together."
   ],
-  "quickHelp": "At the -> prompt, type (GPS (QUOTE start) (QUOTE goal))."
+  "quickHelp": "At the -> prompt, type (GPS (QUOTE start) (QUOTE goal)).",
+  "diskThanks": true
 }

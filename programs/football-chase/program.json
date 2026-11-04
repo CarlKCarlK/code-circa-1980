@@ -1,7 +1,7 @@
 {
   "id": "football-chase",
   "title": "Football",
-  "description": "A (very) simple football video game, in the disk menu’s words.",
+  "description": "A (very) simple football video game, in the disk menu\u2019s words.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
@@ -43,5 +43,6 @@
   "listingLabel": "Download recovered listing",
   "attribution": {
     "text": "Original author and any earlier published source have not been established. Preserved here as recovered cassette material."
-  }
+  },
+  "diskThanks": true
 }

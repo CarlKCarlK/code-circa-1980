@@ -1,6 +1,6 @@
 {
   "id": "jab",
-  "title": "JAB — The Best of the Monster Games",
+  "title": "JAB \u2014 The Best of the Monster Games",
   "description": "Explore a maze, evade Jabberwockies, and set timed explosive drops.",
   "kind": "Game",
   "language": "Level II BASIC",
@@ -45,7 +45,7 @@
     },
     {
       "id": "v04",
-      "label": "JAB — The Best of the Monster Games",
+      "label": "JAB \u2014 The Best of the Monster Games",
       "capture": "tape30a",
       "save": 1,
       "raw": "versions/v04/01-JAB-JABBERWOCKIES.BAS",
@@ -79,7 +79,8 @@
     }
   ],
   "attribution": {
-    "text": "Early maze versions adapt Jack Hauber’s Amazing; later JAB versions replace the maze generator.",
+    "text": "Early maze versions adapt Jack Hauber\u2019s Amazing; later JAB versions replace the maze generator.",
     "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
-  }
+  },
+  "diskThanks": true
 }

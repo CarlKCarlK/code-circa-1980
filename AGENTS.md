@@ -475,7 +475,8 @@ byte-identical in each program's `disks/`. On November 3, 2026 the user asserted
 hosting MMSFORTH and LISP 3.72 for this small archive is fair use; keep their
 credits visible. The LISP programs are the user's. RWL is Rich Losey, who gets credit on the
 Decoder; every other Forth program says he "may have contributed" (user, same day). Keep "Today's News," the
-Security rule set, and commercial programs out unless the user asks. GPS's two
+Security rule set, and commercial programs out unless the user asks. Pages with
+disk saves thank Ira Goldklang, who transferred the diskettes (`diskThanks`). GPS's two
 reconstructed functions are typed at startup; never add them to recovered bytes.
 
 ### Bomb scores (November 3, 2026)

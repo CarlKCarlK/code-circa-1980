@@ -101,5 +101,6 @@
   "howTo": [
     "At the OK prompt, type turtle commands and press Enter, for example: 10 F 90 R 10 F. F forward, B backward, R right, L left, D draw, PU pen up, C clear, P page, H home, S speed, ST straight, FF flash, SH show. HELP lists them. TO defines a new command."
   ],
-  "quickHelp": "Try 10 F 90 R 10 F then Enter. HELP lists the commands."
+  "quickHelp": "Try 10 F 90 R 10 F then Enter. HELP lists the commands.",
+  "diskThanks": true
 }

@@ -76,5 +76,6 @@
   "howTo": [
     "Read its help page and press Enter. D draws, E erases, and M moves without drawing. The arrow keys move the cursor, / Z and 1 move diagonally, C clears the screen, W fills it, H shows help, and Q quits."
   ],
-  "quickHelp": "D draw, E erase, M move, arrow keys steer, H help, Q quit."
+  "quickHelp": "D draw, E erase, M move, arrow keys steer, H help, Q quit.",
+  "diskThanks": true
 }

@@ -203,5 +203,6 @@
     "At the > prompt, type an infix expression in parentheses and press Enter, then type the variable and press Enter. For example, (X * X) and then X. Use [ for a power, :+: for plus, :-: for minus, * and /, and functions such as (SIN X).",
     "Files cannot be saved: the disk is write-protected in this player. BREAK returns to the LISP prompt."
   ],
-  "quickHelp": "Type (X * X), Enter, then X, Enter. [ is a power; :+: and :-: add and subtract."
+  "quickHelp": "Type (X * X), Enter, then X, Enter. [ is a power; :+: and :-: add and subtract.",
+  "diskThanks": true
 }

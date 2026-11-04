@@ -19,3 +19,10 @@ test('disk players pause, restart, offer the disk download, and show their credi
  page.once('dialog',d=>d.accept());await page.locator('#restart').click();
  await expect(page.locator('#status')).toContainText(/Running/,{timeout:120000});
 });
+test('disk pages thank Ira Goldklang, on players and source pages',async({page})=>{
+ for(const id of ['go','spell','presidential-crisis-game']){
+  await page.goto(`/${id}/v1/`);
+  const thanks=page.locator('.disk-thanks');await expect(thanks).toContainText('Ira Goldklang');
+  await expect(thanks.locator('a')).toHaveAttribute('href','https://www.trs-80.com/main-welcome.htm');
+ }
+});

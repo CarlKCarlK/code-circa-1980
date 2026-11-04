@@ -198,7 +198,7 @@
   ],
   "listingLabel": "Download recovered listing",
   "attribution": {
-    "text": "Adapted from Jack Hauber’s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
+    "text": "Adapted from Jack Hauber\u2019s Amazing, published in BASIC Computer Games (Creative Computing). The exact intermediate edition is unverified.",
     "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
   },
   "upstreamDownloads": [
@@ -207,5 +207,6 @@
       "label": "Published comparison listing",
       "source": "https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas"
     }
-  ]
+  ],
+  "diskThanks": true
 }

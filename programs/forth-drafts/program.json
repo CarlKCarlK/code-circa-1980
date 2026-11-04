@@ -304,5 +304,6 @@
     "text": "From my 1982 MMSFORTH disks. The Decoder is by Rich Losey, who initialed it RWL. My friend and roommate Rich Losey may have contributed to the others here. Preserved here for small-scale archival use."
   },
   "sourceOnly": true,
-  "actionVerb": "View source"
+  "actionVerb": "View source",
+  "diskThanks": true
 }

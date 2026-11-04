@@ -94,5 +94,6 @@
   "howTo": [
     "It builds and draws a new station while it starts, which took a few minutes on the real machine, so the player runs that part fast. Then it keeps working out doors, and a counter runs at the top of the screen. There is no gameplay. Restart draws another station."
   ],
-  "quickHelp": "It draws a random station map. There is no gameplay."
+  "quickHelp": "It draws a random station map. There is no gameplay.",
+  "diskThanks": true
 }

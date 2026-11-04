@@ -98,5 +98,6 @@
   "howTo": [
     "At WHICH STRATEGY each player picks a number from the choices shown, then press Enter to keep the current value. Higher numbers grow faster but carry their own risks. The pieces then grow by themselves; press the keys the game shows to change strategy."
   ],
-  "quickHelp": "Pick a strategy number when asked; the board then grows by itself."
+  "quickHelp": "Pick a strategy number when asked; the board then grows by itself.",
+  "diskThanks": true
 }

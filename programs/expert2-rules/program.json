@@ -106,5 +106,6 @@
     "text": "From my 1984 MMSFORTH disk, written for Expert-2, Jack Park\u2019s rule-based shell in MMSFORTH (Dr. Dobb\u2019s Journal, April 1984). My friend and roommate Rich Losey may have contributed. Preserved here for small-scale archival use."
   },
   "sourceOnly": true,
-  "actionVerb": "View source"
+  "actionVerb": "View source",
+  "diskThanks": true
 }
