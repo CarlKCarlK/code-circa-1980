@@ -1,7 +1,7 @@
 {
   "id": "football-chase",
-  "title": "Football Chase",
-  "description": "1 captured save. One original BASIC player; historical bugs remain.",
+  "title": "Football",
+  "description": "A (very) simple football video game, in the disk menu’s words.",
   "kind": "BASIC",
   "language": "TRS-80 Model I/III BASIC",
   "gallery": "more",
