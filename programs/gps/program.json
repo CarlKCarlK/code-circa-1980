@@ -1,0 +1,367 @@
+{
+  "id": "gps",
+  "title": "GPS Planner",
+  "description": "A General Problem Solver in LISP: it plans how to push a box, climb, and grasp by working on the largest difference between the current state and the goal.",
+  "kind": "LISP",
+  "language": "LISP 3.72, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "GPS Planner (LISP Dos disk)",
+      "capture": "disk: LISP Dos",
+      "raw": "versions/v01/GPS.LSP",
+      "listing": "versions/v01/GPS.txt",
+      "playable": true,
+      "note": "LISP source file copied unchanged, with the other function files from its disk. Each is exact directory bytes; files carry a .LSP suffix here for download. The readable view removes record padding and marks unrelated leftovers. EDIT prints its own credit to Ronald L. Nicol.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v01/GPS.LSP",
+          "label": "GPS.LSP"
+        },
+        {
+          "path": "versions/v01/GPS.txt",
+          "label": "GPS.txt"
+        },
+        {
+          "path": "versions/v01/ADD.LSP",
+          "label": "ADD.LSP"
+        },
+        {
+          "path": "versions/v01/ADD1.LSP",
+          "label": "ADD1.LSP"
+        },
+        {
+          "path": "versions/v01/ALPHAP.LSP",
+          "label": "ALPHAP.LSP"
+        },
+        {
+          "path": "versions/v01/AND.LSP",
+          "label": "AND.LSP"
+        },
+        {
+          "path": "versions/v01/APPEND.LSP",
+          "label": "APPEND.LSP"
+        },
+        {
+          "path": "versions/v01/ASC.LSP",
+          "label": "ASC.LSP"
+        },
+        {
+          "path": "versions/v01/CAADR.LSP",
+          "label": "CAADR.LSP"
+        },
+        {
+          "path": "versions/v01/CADDR.LSP",
+          "label": "CADDR.LSP"
+        },
+        {
+          "path": "versions/v01/CDADR.LSP",
+          "label": "CDADR.LSP"
+        },
+        {
+          "path": "versions/v01/CLARIFY.LSP",
+          "label": "CLARIFY.LSP"
+        },
+        {
+          "path": "versions/v01/CLIMB.LSP",
+          "label": "CLIMB.LSP"
+        },
+        {
+          "path": "versions/v01/COMBINE.LSP",
+          "label": "COMBINE.LSP"
+        },
+        {
+          "path": "versions/v01/DATADEF.LSP",
+          "label": "DATADEF.LSP"
+        },
+        {
+          "path": "versions/v01/DISPLAY.LSP",
+          "label": "DISPLAY.LSP"
+        },
+        {
+          "path": "versions/v01/DOCLAUSE.LSP",
+          "label": "DOCLAUSE.LSP"
+        },
+        {
+          "path": "versions/v01/EDIT.LSP",
+          "label": "EDIT.LSP"
+        },
+        {
+          "path": "versions/v01/EQFRONTI.LSP",
+          "label": "EQFRONTI.LSP"
+        },
+        {
+          "path": "versions/v01/FRONTIER.LSP",
+          "label": "FRONTIER.LSP"
+        },
+        {
+          "path": "versions/v01/GETA.LSP",
+          "label": "GETA.LSP"
+        },
+        {
+          "path": "versions/v01/GETA2.LSP",
+          "label": "GETA2.LSP"
+        },
+        {
+          "path": "versions/v01/GRASP.LSP",
+          "label": "GRASP.LSP"
+        },
+        {
+          "path": "versions/v01/LESSP.LSP",
+          "label": "LESSP.LSP"
+        },
+        {
+          "path": "versions/v01/LOOKFOR.LSP",
+          "label": "LOOKFOR.LSP"
+        },
+        {
+          "path": "versions/v01/MAJOR.LSP",
+          "label": "MAJOR.LSP"
+        },
+        {
+          "path": "versions/v01/MAKENTH.LSP",
+          "label": "MAKENTH.LSP"
+        },
+        {
+          "path": "versions/v01/MAPCAR.LSP",
+          "label": "MAPCAR.LSP"
+        },
+        {
+          "path": "versions/v01/MAPCAR1.LSP",
+          "label": "MAPCAR1.LSP"
+        },
+        {
+          "path": "versions/v01/MATCH.LSP",
+          "label": "MATCH.LSP"
+        },
+        {
+          "path": "versions/v01/NTH.LSP",
+          "label": "NTH.LSP"
+        },
+        {
+          "path": "versions/v01/ORDER.LSP",
+          "label": "ORDER.LSP"
+        },
+        {
+          "path": "versions/v01/PRECON.LSP",
+          "label": "PRECON.LSP"
+        },
+        {
+          "path": "versions/v01/PUSH.LSP",
+          "label": "PUSH.LSP"
+        },
+        {
+          "path": "versions/v01/PUTA.LSP",
+          "label": "PUTA.LSP"
+        },
+        {
+          "path": "versions/v01/REPEAT.LSP",
+          "label": "REPEAT.LSP"
+        },
+        {
+          "path": "versions/v01/REPLACE.LSP",
+          "label": "REPLACE.LSP"
+        },
+        {
+          "path": "versions/v01/SELECT.LSP",
+          "label": "SELECT.LSP"
+        },
+        {
+          "path": "versions/v01/SET.LSP",
+          "label": "SET.LSP"
+        },
+        {
+          "path": "versions/v01/SETPROP.LSP",
+          "label": "SETPROP.LSP"
+        },
+        {
+          "path": "versions/v01/SUB1.LSP",
+          "label": "SUB1.LSP"
+        },
+        {
+          "path": "versions/v01/UNGRASP.LSP",
+          "label": "UNGRASP.LSP"
+        }
+      ],
+      "startupSource": "(PUTPROP (QUOTE GPS) (QUOTE (LAMBDA (CUR GOAL) (PROG (DIF OP MID) (SETQ DIF (MAJOR-D CUR GOAL)) (RETURN (COND ((NULL DIF) (PRINT (QUOTE ****)) (PRINT (LIST (QUOTE (CURRENT STATE IS GOAL STATE IS)) CUR)) NIL) (T (SETQ OP (SELECT-OP DIF)) (SETQ MID (PRECON OP CUR)) (PRINT (QUOTE ****)) (PRINT (LIST (QUOTE (CURRENT STATE)) CUR)) (PRINT (LIST (QUOTE (GOAL STATE)) GOAL)) (PRINT (LIST (QUOTE (MAJOR DIFFERENCE)) DIF)) (PRINT (LIST (QUOTE (OPERATOR)) OP)) (PRINT (LIST (QUOTE (STATE AFTER OPERATION)) MID)) (APPEND (GPS CUR MID) (CONS OP (GPS (APPLY OP (LIST MID) (ALIST)) GOAL))))))))) EXPR)\n[Unrelated leftover bytes after the form, not part of it:]\nST (QUOTE (STATE AFTER OPERATION)) MID)) (APPED (GPS CUR MID) (CONS OP (GPS (APPLY OP (LIST MID) (ALIST)) GOAL))))))))) EXPR)ST (QUOTE (STATE AFTER OPERATION)) MID)) (APPE",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/lisp.dmk",
+          "disks/lisp-dos.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "DOS READY"
+          },
+          {
+            "delay": 1
+          },
+          {
+            "type": "LISP\n"
+          },
+          {
+            "wait": "^-> _?$"
+          },
+          {
+            "swap": 1
+          },
+          {
+            "type": "(LOAD (QUOTE GPS))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE SELECT))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE PRECON))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE MAJOR))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE MATCH))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE COMBINE))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE CADDR))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE LOOKFOR))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE APPEND))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE SETPROP))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE CLIMB))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE PUSH))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE GRASP))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(LOAD (QUOTE UNGRASP))\n"
+          },
+          {
+            "wait": "^NIL[ ]*\\n-> _?$"
+          },
+          {
+            "delay": 0.2
+          },
+          {
+            "type": "(SETPROP)\n"
+          },
+          {
+            "delay": 1
+          },
+          {
+            "type": "(GPS (QUOTE (OFF UNGRASP DOOR)) (QUOTE (ON GRASP MIDDLE)))\n"
+          }
+        ]
+      },
+      "running": "Running LISP from the original disks",
+      "slug": "basic"
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "I wrote this in LISP. It runs on LISP 3.72, © 1981 Ronald L. Nicol, distributed by SuperSoft. Preserved here for small-scale archival use."
+  },
+  "howTo": [
+    "A state is a height (ON or OFF), a hand (GRASP or UNGRASP), and a place (DOOR, MIDDLE, or WINDOW). The player runs one plan when it starts. Try your own at the -> prompt:",
+    "(GPS (QUOTE (OFF UNGRASP DOOR)) (QUOTE (ON GRASP WINDOW)))",
+    "LISP itself starts from the LISP disk, and then the disk holding these functions replaces it, as the two disks were used together."
+  ],
+  "quickHelp": "At the -> prompt, type (GPS (QUOTE start) (QUOTE goal))."
+}

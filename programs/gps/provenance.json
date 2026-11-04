@@ -1,0 +1,287 @@
+{
+  "official_title": "GPS Planner",
+  "title_authority": "Title from the recovered source or a descriptive display title; recovered text is unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "saves": [
+    {
+      "version": "v01",
+      "disk": "LISP Dos",
+      "disk_image": "LISP Dos [DOS Accessible][TRSDOS v2.1][Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "e15e31b2810e0489e194d9279d1039e1526ce29c2e0aafbedab46d1c589f3ae8",
+      "source": "files/GPS",
+      "imported_files": [
+        {
+          "path": "versions/v01/GPS.LSP",
+          "archive_path": "files/GPS",
+          "bytes": 768,
+          "sha256": "0df117449fe4dca4263e9f6c8b78eaa99686551d2d2cc3880bec45d2b0914c77"
+        },
+        {
+          "path": "versions/v01/GPS.txt",
+          "archive_path": "derived listing",
+          "bytes": 821,
+          "sha256": "943a9f5fc146b2367fecfd2699818e6a98c87e2f6c74dea4c3b6c0e009cb4874"
+        },
+        {
+          "path": "versions/v01/ADD.LSP",
+          "archive_path": "files/ADD",
+          "bytes": 512,
+          "sha256": "60b37b115f08407cfb04d073bc4d7e8635fb8f9e7f52b03685e19c612935c687"
+        },
+        {
+          "path": "versions/v01/ADD1.LSP",
+          "archive_path": "files/ADD1",
+          "bytes": 256,
+          "sha256": "5cb0f11eccb1a495baa4e90c25a8d443632a6ff7655d499874e04d0847ebf8f8"
+        },
+        {
+          "path": "versions/v01/ALPHAP.LSP",
+          "archive_path": "files/ALPHAP",
+          "bytes": 256,
+          "sha256": "3b030b4f3d0ebc2212c01b40e68b15fdd7089596a9fceb1aedd73882452e1350"
+        },
+        {
+          "path": "versions/v01/AND.LSP",
+          "archive_path": "files/AND",
+          "bytes": 384,
+          "sha256": "e88ab8616c3663258afffa9b824d04563787a89213090cb959b04482bb04e743"
+        },
+        {
+          "path": "versions/v01/APPEND.LSP",
+          "archive_path": "files/APPEND",
+          "bytes": 256,
+          "sha256": "027a57a1a04089c51db4c8b026b891d775861dc7dcca0cd66a725d999391e71b"
+        },
+        {
+          "path": "versions/v01/ASC.LSP",
+          "archive_path": "files/ASC",
+          "bytes": 256,
+          "sha256": "74454e4ae144222cd3c141739079fd0bb00ecbd37a1ef0263a15394c24553124"
+        },
+        {
+          "path": "versions/v01/CAADR.LSP",
+          "archive_path": "files/CAADR",
+          "bytes": 256,
+          "sha256": "feae7544e0f6055e862ae1b2d674780150645688eed01dc4228abd865002fb72"
+        },
+        {
+          "path": "versions/v01/CADDR.LSP",
+          "archive_path": "files/CADDR",
+          "bytes": 256,
+          "sha256": "0fea2de0f6713ad68950b626f5cd86d2a181820bd543bd47683ad5d2da54254b"
+        },
+        {
+          "path": "versions/v01/CDADR.LSP",
+          "archive_path": "files/CDADR",
+          "bytes": 256,
+          "sha256": "3538c4b2a37a7b2a59e2462e58024b6d30ef86506096d6f86cefc6b696171052"
+        },
+        {
+          "path": "versions/v01/CLARIFY.LSP",
+          "archive_path": "files/CLARIFY",
+          "bytes": 384,
+          "sha256": "442bcf93c8b1d5b05b9ce9c4ea10f61461f26496279bed96d9c8c9436ff3bf94"
+        },
+        {
+          "path": "versions/v01/CLIMB.LSP",
+          "archive_path": "files/CLIMB",
+          "bytes": 256,
+          "sha256": "251a662c3c62b8a8f4d7eec0438b62f7d8953fb5e5d563922d873cb60223d211"
+        },
+        {
+          "path": "versions/v01/COMBINE.LSP",
+          "archive_path": "files/COMBINE",
+          "bytes": 384,
+          "sha256": "a7265306dc6e3ebfc6c5514dd4b304f67ded7054c50fe951a1a306b2b083ade1"
+        },
+        {
+          "path": "versions/v01/DATADEF.LSP",
+          "archive_path": "files/DATADEF",
+          "bytes": 512,
+          "sha256": "d34eb9d8faedd1312376deae31c6c7601eaf35a05e4ba7f6126708e1fb0cdfb5"
+        },
+        {
+          "path": "versions/v01/DISPLAY.LSP",
+          "archive_path": "files/DISPLAY",
+          "bytes": 256,
+          "sha256": "b4ebc672f8dbce45d6ab9e95fddbf349fc2f2c6afeaf286103f8ac48ee8001bf"
+        },
+        {
+          "path": "versions/v01/DOCLAUSE.LSP",
+          "archive_path": "files/DOCLAUSE",
+          "bytes": 384,
+          "sha256": "16657076e2c37d6970e3706847b5ca81d7aa28e48b75bc32cb6c4fe08b2a398f"
+        },
+        {
+          "path": "versions/v01/EDIT.LSP",
+          "archive_path": "files/EDIT",
+          "bytes": 1792,
+          "sha256": "99b850270177a1e04c703ccbd14aeb82a1a6208ffdf2443e47aca324fe7cd571"
+        },
+        {
+          "path": "versions/v01/EQFRONTI.LSP",
+          "archive_path": "files/EQFRONTI",
+          "bytes": 384,
+          "sha256": "96824af09d5e4a0acc189d11ab475407d3f9d8d16417904d247c4e94b656b8d3"
+        },
+        {
+          "path": "versions/v01/FRONTIER.LSP",
+          "archive_path": "files/FRONTIER",
+          "bytes": 384,
+          "sha256": "878b8dbc67fecad6f8345575d8d72decfaf0bf8ef1723e767caedea7f3723bfd"
+        },
+        {
+          "path": "versions/v01/GETA.LSP",
+          "archive_path": "files/GETA",
+          "bytes": 256,
+          "sha256": "76960ec738473d95aef5f4e09d16a3b385e8871843e09370ea6e6a266349d20e"
+        },
+        {
+          "path": "versions/v01/GETA2.LSP",
+          "archive_path": "files/GETA2",
+          "bytes": 384,
+          "sha256": "154f88e9e1fa9312ad8a48c99b192009b495671e5b2949784bd269131d531aa7"
+        },
+        {
+          "path": "versions/v01/GRASP.LSP",
+          "archive_path": "files/GRASP",
+          "bytes": 256,
+          "sha256": "a561342c9284c8378281f57f3bd15d15d98b5b8398d132f93ab5b77330f7aeb1"
+        },
+        {
+          "path": "versions/v01/LESSP.LSP",
+          "archive_path": "files/LESSP",
+          "bytes": 256,
+          "sha256": "61d3691490dae158d04bbe48cd01f074e748df3de6235901e69e8ca574439c7f"
+        },
+        {
+          "path": "versions/v01/LOOKFOR.LSP",
+          "archive_path": "files/LOOKFOR",
+          "bytes": 384,
+          "sha256": "58bfccf9e659aa621807009347bfcc0386701a31a1fee9e5aa68a64a31158e1e"
+        },
+        {
+          "path": "versions/v01/MAJOR.LSP",
+          "archive_path": "files/MAJOR",
+          "bytes": 512,
+          "sha256": "a7db098307dba041901a6d83fe03446e2ecef91a624288d98dc3b7fd2d415fa6"
+        },
+        {
+          "path": "versions/v01/MAKENTH.LSP",
+          "archive_path": "files/MAKENTH",
+          "bytes": 384,
+          "sha256": "12696f0cd063e49aba8d129fd626818a2ee1a8a2d46758e6b157a5180b71d7af"
+        },
+        {
+          "path": "versions/v01/MAPCAR.LSP",
+          "archive_path": "files/MAPCAR",
+          "bytes": 256,
+          "sha256": "275cef486125a2643537f1bb18f60a31337b59986370355f52dbafb1fa2b6ba0"
+        },
+        {
+          "path": "versions/v01/MAPCAR1.LSP",
+          "archive_path": "files/MAPCAR1",
+          "bytes": 256,
+          "sha256": "127b2772cfa1f2de3bab52685f4d037fa9a7da66e33e90afb8e4eb1ce19f198a"
+        },
+        {
+          "path": "versions/v01/MATCH.LSP",
+          "archive_path": "files/MATCH",
+          "bytes": 256,
+          "sha256": "611fe8394030482388270e31f18d3de89588aaaebdb97b206d1c0ca03a5ab4ec"
+        },
+        {
+          "path": "versions/v01/NTH.LSP",
+          "archive_path": "files/NTH",
+          "bytes": 384,
+          "sha256": "cb420eca4831991598f21edc66bfbcf232ba4f41c14fb33471056ad2742692d2"
+        },
+        {
+          "path": "versions/v01/ORDER.LSP",
+          "archive_path": "files/ORDER",
+          "bytes": 256,
+          "sha256": "0d522cb01bf7d26393c0d3664fdca13cc707ce3d9b0d5714f59d869ca821174a"
+        },
+        {
+          "path": "versions/v01/PRECON.LSP",
+          "archive_path": "files/PRECON",
+          "bytes": 256,
+          "sha256": "07aa7d46d393c4599fc88209e109e2f6b8056271c108f87c0a2bc72db563e4e3"
+        },
+        {
+          "path": "versions/v01/PUSH.LSP",
+          "archive_path": "files/PUSH",
+          "bytes": 384,
+          "sha256": "194b4121bdc575a0a5438f3bae399fc673d2d432b5dd80124824d38d070c34d7"
+        },
+        {
+          "path": "versions/v01/PUTA.LSP",
+          "archive_path": "files/PUTA",
+          "bytes": 384,
+          "sha256": "5b93642edf9e5a4e74ce65ea51cda810332653f9725e18e192ab9208d260cf79"
+        },
+        {
+          "path": "versions/v01/REPEAT.LSP",
+          "archive_path": "files/REPEAT",
+          "bytes": 640,
+          "sha256": "be2984a256d4158b2c1dc182a83847938aaa4620eca1d13729fe3951bad17aea"
+        },
+        {
+          "path": "versions/v01/REPLACE.LSP",
+          "archive_path": "files/REPLACE",
+          "bytes": 384,
+          "sha256": "f07191fac1aaf9b907c2a8540b3e286e375363dde5a466c7fc846935ff309319"
+        },
+        {
+          "path": "versions/v01/SELECT.LSP",
+          "archive_path": "files/SELECT",
+          "bytes": 512,
+          "sha256": "9f554925647380197ac5fb5e78f5cc5654b93bd6232bc0ec8c80a1f970b16bd7"
+        },
+        {
+          "path": "versions/v01/SET.LSP",
+          "archive_path": "files/SET",
+          "bytes": 256,
+          "sha256": "4c93b52aef880701c2911285e5f7a6e2086533c98e4f1f20788bbbbb42151a50"
+        },
+        {
+          "path": "versions/v01/SETPROP.LSP",
+          "archive_path": "files/SETPROP",
+          "bytes": 640,
+          "sha256": "8f58db7b810f94af22b1a94531b6ae21efb1b8a022e853948dfa049879e5e437"
+        },
+        {
+          "path": "versions/v01/SUB1.LSP",
+          "archive_path": "files/SUB1",
+          "bytes": 256,
+          "sha256": "6e6083eb1092fdb494f56f9193ed3562bf4609a0f347dce91efcc39752b7ef37"
+        },
+        {
+          "path": "versions/v01/UNGRASP.LSP",
+          "archive_path": "files/UNGRASP",
+          "bytes": 256,
+          "sha256": "1b52cc130cfc92f08cd35c2f98ca21249eba48a5c2c1d4004b3477125e30c40f"
+        },
+        {
+          "path": "disks/lisp.dmk",
+          "archive_path": "disks/LISP [DOS Accessible][TRSDOS v2.1][Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "b585e6a0cf33e63588d0fdd5b7cff2282ee6897d3fbc5ea2988f51699299f874"
+        },
+        {
+          "path": "disks/lisp-dos.dmk",
+          "archive_path": "disks/LISP Dos [DOS Accessible][TRSDOS v2.1][Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "e15e31b2810e0489e194d9279d1039e1526ce29c2e0aafbedab46d1c589f3ae8"
+        }
+      ],
+      "recovery_item": {
+        "format": "LISP source",
+        "sha256": "0df117449fe4dca4263e9f6c8b78eaa99686551d2d2cc3880bec45d2b0914c77",
+        "bytes": 768,
+        "import_date": "2026-11-03"
+      }
+    }
+  ]
+}
