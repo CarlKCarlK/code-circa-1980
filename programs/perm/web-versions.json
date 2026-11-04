@@ -5,7 +5,7 @@
       "path": "perm/v1/",
       "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "19ed7b4549715fdb8d00e58138d17bcc41b2ecdc",
+      "sourceCommit": "7276daa00ffe758eba7f86b1b19d806e52113304",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -43,9 +43,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-1hxaIjug.js",
+          "path": "assets/emulator-BnsRQf45.js",
           "bytes": 316923,
-          "sha256": "95c7330ce4189750bad0ec2776e3c11d202323182fa97552edecb9d7836191dc"
+          "sha256": "2584ea3c26f9f2ee73bc704960b3b23dc73c1b398c3a2bb89b484973f441cc1c"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -53,14 +53,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-1hBdhq1w.js",
-          "bytes": 29797,
-          "sha256": "2f9571331b5f8f41c5753b782aca952797a7d8ea5156bbfe5245658da9bceffb"
+          "path": "assets/index-DRHo0Cm0.css",
+          "bytes": 25901,
+          "sha256": "876059354801b04a1146a72fbdfbaa01c20d0192841b47b6a4d4cf06a5c6de78"
         },
         {
-          "path": "assets/index-BHExd-TG.css",
-          "bytes": 25791,
-          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
+          "path": "assets/index-DYOJJIOq.js",
+          "bytes": 30003,
+          "sha256": "acd2ab33206193270935f803b0ebfa390629abde1c661511241bec9b189fae70"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -235,7 +235,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "3dcf1fef32cac230dbc4a34a00431edcf553c3f7d3500bee3699808ee3beffc5"
+          "sha256": "b4b868f41bcf69ffeb11c6cb56b853affb186f818d576c901809eb340243884c"
         },
         {
           "path": "licenses.txt",
