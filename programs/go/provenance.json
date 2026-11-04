@@ -1,0 +1,49 @@
+{
+  "official_title": "Go",
+  "title_authority": "Title from the recovered source or a descriptive display title; recovered text is unchanged.",
+  "import_date": "2026-11-03",
+  "order_inferred": true,
+  "saves": [
+    {
+      "version": "v01",
+      "disk": "MMSFORTH New Programs",
+      "disk_image": "Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+      "disk_image_sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23",
+      "source": "blocks 22-28",
+      "imported_files": [
+        {
+          "path": "versions/v01/GO.bin",
+          "archive_path": "blocks 22-28",
+          "bytes": 7168,
+          "sha256": "f5fcb6d034350bafd36039788d0e1c8b4c607b0a12732d496f7baaa7a3c73a8c"
+        },
+        {
+          "path": "versions/v01/GO.txt",
+          "archive_path": "derived listing",
+          "bytes": 3706,
+          "sha256": "2f62bbd83e57dbc184eb9dc9ae22ad9e04ab0ff25942e0f8c56fbb32411e925d"
+        },
+        {
+          "path": "disks/forth-system.dmk",
+          "archive_path": "disks/Miller Microcomputer Services MMSFORTH System Disk - Forth System [Special Format][MMSForth v2.0][Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "86f612b2359c2b04d355e6932ca853ada57fdb4f2e4c59dd02579cce37cb52a3"
+        },
+        {
+          "path": "disks/new-programs.dmk",
+          "archive_path": "disks/Miller Microcomputer Services MMSFORTH Data Disk - New Programs [Special Format][MMSForth][Non Bootable][M1][35 Track][Single Density].dmk",
+          "bytes": 228496,
+          "sha256": "dd257d7b0a0f8fb5b734147fe649d90240ef1da7a75e68894dfcc4858ac39e23"
+        }
+      ],
+      "recovery_item": {
+        "format": "MMSFORTH blocks",
+        "sha256": "f5fcb6d034350bafd36039788d0e1c8b4c607b0a12732d496f7baaa7a3c73a8c",
+        "bytes": 7168,
+        "import_date": "2026-11-03",
+        "first_block": 22,
+        "last_block": 28
+      }
+    }
+  ]
+}

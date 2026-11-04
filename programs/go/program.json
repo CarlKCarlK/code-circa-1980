@@ -1,0 +1,89 @@
+{
+  "id": "go",
+  "title": "Go",
+  "description": "Two-player Go on a 19-by-19 board drawn in TRS-80 graphics.",
+  "kind": "MMSFORTH",
+  "language": "MMSFORTH V2.0, TRS-80 Model I",
+  "gallery": "more",
+  "archiveImport": true,
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "defaultVersion": "v01",
+  "versionOrder": "Disk saves have no recorded order or dates beyond their source comments. Any ordering here is a presentation guess.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "Go (blocks 22-28)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v01/GO.bin",
+      "listing": "versions/v01/GO.txt",
+      "playable": true,
+      "note": "Source blocks copied unchanged from the New Programs disk. The player boots the Forth System disk and loads them with the original commands. Checked to its first screen only.",
+      "unavailableReason": null,
+      "exports": [
+        {
+          "path": "versions/v01/GO.bin",
+          "label": "GO.bin"
+        },
+        {
+          "path": "versions/v01/GO.txt",
+          "label": "GO.txt"
+        }
+      ],
+      "startupSource": "==== Block 22 ====\n 0 ( GO STUFF)  : GO_TASK ;\n 1 19 CONSTANT SIZE\n 2 SIZE SIZE 2ARRAY GO_BAN   ( THE BOARD)\n 3 0 CONSTANT EMPTY\n 4 -1 CONSTANT WHITE\n 5  1 CONSTANT BLACK\n 6 : CLEAR_GO_BAN  0 0 GO_BAN  ( START ADDRESS )\n 7       SIZE 1+ DUP * 2*            ( SHIFT <SIZE+1>[2*2 )\n 8       ERASE ;\n 9  VARIABLE X    VARIABLE Y\n10 : DRAW_WHITE  X @ DUP 5 + SWAP DO",
+      "controlSource": [],
+      "disk": {
+        "images": [
+          "disks/forth-system.dmk",
+          "disks/new-programs.dmk"
+        ],
+        "steps": [
+          {
+            "wait": "HI CARL"
+          },
+          {
+            "type": "49 LOAD\n"
+          },
+          {
+            "wait": "^49 LOAD[ ]+OK"
+          },
+          {
+            "swap": 1
+          },
+          {
+            "type": "EMPTY-BUFFERS\n"
+          },
+          {
+            "wait": "^EMPTY-BUFFERS[ ]+OK"
+          },
+          {
+            "type": "20 LOAD\n"
+          },
+          {
+            "wait": "^20 LOAD[ ]+OK"
+          },
+          {
+            "type": "22 LOAD\n"
+          },
+          {
+            "wait": "DUP-NAME: RIGHT.*OK"
+          },
+          {
+            "type": "GO\n"
+          }
+        ]
+      },
+      "running": "Running MMSFORTH from the original disks",
+      "slug": "basic"
+    }
+  ],
+  "listingLabel": "Download recovered listing",
+  "attribution": {
+    "text": "From a 1982 MMSFORTH disk; the source names no author. Runs on MMSFORTH V2.0, © 1981 Miller Microcomputer Services. Preserved here for small-scale archival use."
+  },
+  "howTo": [
+    "Black and white take turns. Move the cursor with the arrow keys or 1, 2, 3, 4 (up, down, left, right), then press Enter to place a stone. Captured stones are removed after each move.",
+    "The game has no ending; use Restart for a new board."
+  ],
+  "quickHelp": "Arrow keys or 1 2 3 4 move; Enter places a stone."
+}

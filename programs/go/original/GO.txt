@@ -1,0 +1,125 @@
+==== Block 22 ====
+ 0 ( GO STUFF)  : GO_TASK ;
+ 1 19 CONSTANT SIZE
+ 2 SIZE SIZE 2ARRAY GO_BAN   ( THE BOARD)
+ 3 0 CONSTANT EMPTY
+ 4 -1 CONSTANT WHITE
+ 5  1 CONSTANT BLACK
+ 6 : CLEAR_GO_BAN  0 0 GO_BAN  ( START ADDRESS )
+ 7       SIZE 1+ DUP * 2*            ( SHIFT <SIZE+1>[2*2 )
+ 8       ERASE ;
+ 9  VARIABLE X    VARIABLE Y
+10 : DRAW_WHITE  X @ DUP 5 + SWAP DO
+11               Y @ DUP 2 + SWAP DO
+12               I J ESET LOOP LOOP ;
+13 : DRAW_BLACK  X @ DUP 5 + SWAP DO
+14               Y @ DUP 2 + SWAP DO
+15               I J ECLR LOOP LOOP ;                           -->
+
+==== Block 23 ====
+ 0 
+ 1 : MAKE_EMPTY DRAW_BLACK
+ 2              Y @ X @ 2+ ESET
+ 3              X @ 1+ DUP 3 +  SWAP DO Y @ 1+ I ESET LOOP ;
+ 4 
+ 5 : TO_X 1- 5 * X ! ;     : TO_Y 1- 2* Y ! ;
+ 6 : DRAW_PIECE NCASE -1  0  1 -2 2    " DRAW_WHITE
+ 7          MAKE_EMPTY DRAW_BLACK MAKE_EMPTY MAKE_EMPTY CASEND ;
+ 8 : DISPLAY SIZE 1+ 1 DO  I TO_X
+ 9           SIZE 1+ 1 DO  I TO_Y
+10           I J
+11           GO_BAN @  DRAW_PIECE
+12           LOOP LOOP ;
+13 
+14   VARIABLE WHOSE_TURN    -1 WHOSE_TURN !
+15   VARIABLE CUR_POS                                           -->
+
+==== Block 24 ====
+ 0 : SET_CUR_POS  SIZE 5 * 2/ 4 + DUP  CUR_POS ! ;
+ 1 VARIABLE ROW VARIABLE COL    1 ROW !  1 COL !
+ 2 : SET_CUR  3 CUR_POS @ PTC ;
+ 3 : TELL_WHERE SET_CUR COL ? ROW ? ;
+ 4 : FIND_XY ROW @ TO_Y    COL @ TO_X  ;
+ 5 : WRAP ROW @ 18 + SIZE MOD 1+ ROW !
+ 6        COL @ 18 + SIZE MOD 1+ COL ! ;
+ 7 : UP ROW @ 1- ROW ! WRAP ;
+ 8 : DOWN ROW @ 1+ ROW ! WRAP ;
+ 9 : LEFT COL @ 1- COL ! WRAP ;
+10 : RIGHT COL @ 1 + COL ! WRAP ;
+11 : LEGAL? ROW @ COL @ GO_BAN @ EMPTY   = ;
+12 
+13 
+14 
+15                                                            -->
+
+==== Block 25 ====
+ 0 : MANUAL_MOVE  SET_CUR_POS
+ 1    BEGIN
+ 2         BEGIN
+ 3           TELL_WHERE
+ 4           FIND_XY WHOSE_TURN @  DRAW_PIECE
+ 5           KEY
+ 6           DUP 13 = NOT
+ 7         WHILE
+ 8           ROW @ COL @ GO_BAN @ DRAW_PIECE
+ 9           NCASE 49 50 51 52 27 28 29 30 " UP DOWN LEFT RIGHT
+10              UP DOWN LEFT RIGHT CASEND
+11         REPEAT
+12         DROP   LEGAL? UNTIL
+13         WHOSE_TURN @ DUP ROW @ COL @ GO_BAN ! DRAW_PIECE
+14         SET_CUR 5 1 DO BL EMIT LOOP ;
+15                                                             -->
+
+==== Block 26 ====
+ 0 : NEXT_PLAYER WHOSE_TURN DUP @ NEGATE  SWAP ! ;
+ 1 : BIG_WHITE 143 ; ( GRA)   : BIG_CLEAR 46 ( . ) ;
+ 2 : BIG_BLACK 79 ; ( O )
+ 3 : BIG_DISPLAY 20 1 DO 20 1 DO BL EMIT  BL EMIT  J I GO_BAN @
+ 4    NCASE -1 0 1 " BIG_WHITE BIG_CLEAR BIG_BLACK CASEND
+ 5     EMIT LOOP CR LOOP ;
+ 6  VARIABLE ACTION?
+ 7 : SGN DUP IF DUP DUP ABS / THEN ;
+ 8 
+ 9 : SIN NCASE 0 1 2 3 4 " 0 1 0 -1 0 CASEND ;
+10 : COS NCASE 0 1 2 3 4 " 1 0 -1 0 1 CASEND ;
+11 
+12 
+13 
+14 
+15                                                       -->
+
+==== Block 27 ====
+ 0 : NEAR_LIBERTY X ! Y ! 0 5 1 DO I COS X @ + I SIN Y @ +
+ 1    2DUP 0 > SWAP 0 > AND NOT IF 2DROP 0 ELSE
+ 2   2DUP SIZE > SWAP SIZE > AND  IF 2DROP 0 ELSE
+ 3   GO_BAN @ DUP EMPTY = IF DROP 1 ELSE
+ 4   WHOSE_TURN @ * 1 > THEN THEN THEN   OR
+ 5 
+ 6      LOOP DUP IF 1 ACTION? ! 2 WHOSE_TURN @ * X @ Y @ GO_BAN !
+ 7   THEN     ;
+ 8 : SCAN 20 1 DO 20 1 DO
+ 9 J I GO_BAN @ DUP WHOSE_TURN @  =    IF
+10  I  J NEAR_LIBERTY
+11 THEN
+12 LOOP LOOP ;
+13 
+14 
+15                                                      -->
+
+==== Block 28 ====
+ 0 : REMOVE_CAPTURES 3 1 DO NEXT_PLAYER
+ 1   ACTION? 0 ! BEGIN SCAN ( TEMP) DISPLAY ACTION? NOT UNTIL LOOP
+ 2    20 1 DO 20 1 DO J I GO_BAN @ DUP SGN - J I GO_BAN !
+ 3    LOOP LOOP DISPLAY ;
+ 4 : GO CLEAR_GO_BAN DISPLAY BEGIN MANUAL_MOVE REMOVE_CAPTURES
+ 5     NEXT_PLAYER             0 UNTIL ;
+ 6 
+ 7 
+ 8 
+ 9 
+10 
+11 
+12 
+13 
+14 
+15 
