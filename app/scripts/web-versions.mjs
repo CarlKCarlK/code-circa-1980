@@ -6,6 +6,8 @@ import {execFileSync} from 'node:child_process';
 import {releasePath} from '../site/routes.js';
 
 export const projectRoot=fileURLToPath(new URL('../../',import.meta.url));
+// A site-wide release touches tens of thousands of files.
+const DIFF_BUFFER=256*1024*1024;
 export async function snapshotFiles(folder,prefix='') {
   const files=[];
   for(const entry of await fs.readdir(folder,{withFileTypes:true})) {
@@ -59,9 +61,9 @@ export async function verifyWebVersions({root=projectRoot,against,allowUnrelease
     }
   }
   if(against){
-    const removedCatalogs=execFileSync('git',['diff','--name-only','--diff-filter=DR',against,'HEAD','--','programs'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(file=>file.endsWith('/web-versions.json'));
+    const removedCatalogs=execFileSync('git',['diff','--no-renames','--name-only','--diff-filter=D',against,'HEAD','--','programs'],{cwd:root,encoding:'utf8',maxBuffer:DIFF_BUFFER}).trim().split('\n').filter(file=>file.endsWith('/web-versions.json'));
     if(removedCatalogs.length)throw Error(`Published release catalogs cannot be removed: ${removedCatalogs.join(', ')}`);
-    const changes=execFileSync('git',['diff','--name-status','--diff-filter=MDR',against,'HEAD','--','public'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(line=>{const match=line.match(/\tpublic\/(?:experiences\/)?([^/]+)\/(v\d+)\//);return match&&!retired.has(match[1])&&!(unshared.has(match[1])&&match[2]==='v1');}).join('\n');
+    const changes=execFileSync('git',['diff','--no-renames','--name-status','--diff-filter=MD',against,'HEAD','--','public'],{cwd:root,encoding:'utf8',maxBuffer:DIFF_BUFFER}).trim().split('\n').filter(line=>{const match=line.match(/\tpublic\/(?:experiences\/)?([^/]+)\/(v\d+)\//);return match&&!retired.has(match[1])&&!(unshared.has(match[1])&&match[2]==='v1');}).join('\n');
     if(changes)throw Error(`Published snapshot files cannot change or be removed:\n${changes}`);
   }
   return count;
