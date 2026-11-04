@@ -2,9 +2,14 @@ import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
 
 const programs=fileURLToPath(new URL('../../programs/',import.meta.url));
-const page=(id,path)=>`<!doctype html>
+const site='https://carlkcarlk.github.io/code-circa-1980/';
+const escape=text=>String(text).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+// Crawlers do not run JavaScript, so these tags on the stable /<program>/ page are what a shared link previews.
+const previews=JSON.parse(fs.readFileSync(fileURLToPath(new URL('../assets/og/manifest.json',import.meta.url)),'utf8'));
+const socialTags=(id,metadata)=>`<meta property="og:type" content="website"><meta property="og:site_name" content="Code Circa 1980"><meta property="og:title" content="${escape(metadata.title)}"><meta property="og:description" content="${escape(metadata.description)}"><meta property="og:url" content="${site}${id}/"><meta property="og:image" content="${site}og/${previews[id]}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Gallery artwork for ${escape(metadata.title)}"><meta name="twitter:card" content="summary_large_image">`;
+const page=(id,path,metadata)=>`<!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Code Circa 1980</title><link rel="canonical" href="https://carlkcarlk.github.io/code-circa-1980/${path}"><noscript><meta http-equiv="refresh" content="0; url=../${path}"></noscript><meta property="og:type" content="website"><meta property="og:site_name" content="Code Circa 1980"><meta property="og:title" content="Code, circa 1980. Running again."><meta property="og:description" content="Original programs from the early days of personal computing. Recovered from cassette tapes, updated with new controls."><meta property="og:url" content="https://carlkcarlk.github.io/code-circa-1980/${id}/"><meta property="og:image" content="https://carlkcarlk.github.io/code-circa-1980/og-castles.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="An arch and a tower built from blocks, partly knocked down by cannon fire"><meta name="twitter:card" content="summary_large_image">
+<head><meta charset="UTF-8"><title>${escape(metadata.title)} · Code Circa 1980</title><meta name="description" content="${escape(metadata.description)}"><link rel="canonical" href="${site}${id}/">${socialTags(id,metadata)}
 <script>location.replace(location.pathname.replace(/[^/]*[/]?$/,'')+'${path}'+location.search+location.hash)</script></head>
 <body><p><a href="../${path}">Open the latest release</a>.</p></body>
 </html>
@@ -12,18 +17,30 @@ const page=(id,path)=>`<!doctype html>
 
 // The gallery build adds <program>/index.html, redirecting to the newest release in web-versions.json; frozen releases (publicDir false) get none.
 export default function latestReleases(){
-  let enabled=false;
+  let enabled=false,release;
   return {name:'latest-releases',
-    configResolved(config){enabled=Boolean(config.publicDir)&&config.command==='build';},
+    configResolved(config){enabled=Boolean(config.publicDir)&&config.command==='build';release=config.define?.['import.meta.env.VITE_WEB_PROGRAM'];},
+    // A frozen release previews as its program, so a link copied from the address bar works too.
+    transformIndexHtml(html){
+      if(!release)return html;
+      const id=JSON.parse(release);
+      const metadata=JSON.parse(fs.readFileSync(`${programs}${id}/program.json`,'utf8'));
+      return html.replace(/<meta property="og:type".*?<meta name="twitter:card"[^>]*>/s,socialTags(id,metadata));
+    },
     generateBundle(){
       if(!enabled)return;
       for(const id of fs.readdirSync(programs)){
-        const metadata=`${programs}${id}/program.json`;
-        if(fs.existsSync(metadata)&&JSON.parse(fs.readFileSync(metadata,'utf8')).website===false)continue;
+        const metadataPath=`${programs}${id}/program.json`;
+        if(!fs.existsSync(metadataPath))continue;
+        const metadata=JSON.parse(fs.readFileSync(metadataPath,'utf8'));
+        if(metadata.website===false)continue;
         const catalog=`${programs}${id}/web-versions.json`;
         if(!fs.existsSync(catalog))continue;
         const latest=JSON.parse(fs.readFileSync(catalog,'utf8')).versions.at(-1);
-        if(latest?.path)this.emitFile({type:'asset',fileName:`${id}/index.html`,source:page(id,latest.path)});
+        if(!latest?.path)continue;
+        this.emitFile({type:'asset',fileName:`${id}/index.html`,source:page(id,latest.path,metadata)});
+        if(!previews[id])this.error(`No link preview for ${id}: run npm run render:previews`);
       }
+      for(const file of new Set(Object.values(previews)))this.emitFile({type:'asset',fileName:`og/${file}`,source:fs.readFileSync(fileURLToPath(new URL(`../assets/og/${file}`,import.meta.url)))});
     }};
 }

@@ -84,3 +84,20 @@ preservation check locally.
 their exact frozen HTML hashes, and the collection's direct version links.
 Pass a different base URL to check a local preview, for example
 `node scripts/check-release-urls.mjs http://127.0.0.1:5279/`.
+
+## Link previews
+
+Facebook, X, and similar crawlers do not run JavaScript, so a shared link previews
+whatever tags its HTML carries. `app/config/latest-releases.js` writes each
+program's title, description, and gallery thumbnail into the stable `/<id>/` page
+on every build. **Share `/<id>/`.** Frozen releases published before this keep
+their original generic tags, so a link copied from the address bar of an old
+`/<id>/vN/` shows the general preview. Releases cut from now on carry the program's
+tags, pointing at the same image.
+
+Previews are 1200x630 PNG copies of the thumbnails, because these sites do not
+accept SVG. Programs sharing a thumbnail share one file in `app/assets/og/`, and
+`manifest.json` there maps programs to files. AIM uses SPI's, since they share a
+gallery entry. After adding a program or changing a thumbnail, run
+`npm run render:previews` against `npm run preview -- --port 5297`. The build fails
+if a program has no preview.
