@@ -1,15 +1,21 @@
 {
   "source": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
   "source_sha256": "578c336cb89f68eea9c0b1c5b05ffa6bf3848274fb5ccfe03ea8dfe9995e7bad",
-  "sha256": "1e438c34d7a5b6c3bc15bf642290492aa4bcb2432e0ebd0e1b4686a6c3db0e2a",
-  "bytes": 7517,
-  "listing_sha256": "7dcaa3c19c4b16c944650ae231aaed516e3000031095248083edf06b13aaca99",
+  "sha256": "a87efc3d69e3dc0e1dbbb12820f6067980c0bd8c00a3d52cf644bd072ac2b32a",
+  "bytes": 7527,
+  "listing_sha256": "e624838d6cd4bbe7d441f1dccc2b257d2cad7d7d12408c0d1cbf5002086bbac7",
   "changes": [
     {
       "line": 385,
       "from": "385 IFRND(2)=1THENGOSUB3380",
       "to": "385 F=0:IFRND(2)=1THENGOSUB3380:IFF<>0THEN500",
       "reason": "If the opening move landed on you, the game printed the slime message and carried on. It now ends the game. F=0 clears the last game's result."
+    },
+    {
+      "line": 390,
+      "from": "390 GOSUB2000",
+      "to": "390 GOSUB2000:IFF<>0THEN500",
+      "reason": "When all of your exits were closed the game printed YOU ARE TRAPPED, WITH NO WAY OUT. TOO BAD! and then asked for your next action. It now ends the game."
     },
     {
       "line": 1010,

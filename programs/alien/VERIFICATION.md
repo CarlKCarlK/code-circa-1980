@@ -32,7 +32,7 @@ the library default (Model III, Level II BASIC, as on the site), typing at each 
 
 ## Corrected-spelling edition (`tests/alien-corrected.test.mjs`)
 
-On 2026-11-03 this edition's false instructions were rewritten and three logic bugs
+On 2026-11-03 this edition's false instructions were rewritten and four logic bugs
 fixed (`corrected/README.md`). The test checks that every unlisted line keeps its code,
 and it runs each affected routine in the ROM from both the recovered lines and the
 fixed ones, showing the bug in the first and its absence in the second.

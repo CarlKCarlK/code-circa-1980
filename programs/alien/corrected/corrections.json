@@ -1,6 +1,6 @@
 {
   "source": "versions/v02/08-ALIEN-HUNT-EXPANDED-SAVE01.BAS",
-  "rule": "Printed text is corrected in spelling and, where the instructions contradict the code, in meaning. Three logic bugs are fixed by the listed rewrites. Every other line keeps its recovered tokens and spacing. Corrected lines stay within 63 columns (a 64-column line leaves a blank line; 65 wraps). Line pointers are recomputed for the new lengths with the original memory base.",
+  "rule": "Printed text is corrected in spelling and, where the instructions contradict the code, in meaning. Four logic bugs are fixed by the listed rewrites. Every other line keeps its recovered tokens and spacing. Corrected lines stay within 63 columns (a 64-column line leaves a blank line; 65 wraps). Line pointers are recomputed for the new lengths with the original memory base.",
   "replacements": [
     [
       "JUCTIONOS",
@@ -129,6 +129,12 @@
       "from": "385 IFRND(2)=1THENGOSUB3380",
       "to": "385 F=0:IFRND(2)=1THENGOSUB3380:IFF<>0THEN500",
       "reason": "If the opening move landed on you, the game printed the slime message and carried on. It now ends the game. F=0 clears the last game's result."
+    },
+    {
+      "line": 390,
+      "from": "390 GOSUB2000",
+      "to": "390 GOSUB2000:IFF<>0THEN500",
+      "reason": "When all of your exits were closed the game printed YOU ARE TRAPPED, WITH NO WAY OUT. TOO BAD! and then asked for your next action. It now ends the game."
     },
     {
       "line": 3240,

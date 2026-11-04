@@ -13,10 +13,10 @@ Rules, from [corrections.json](corrections.json):
 - At my request on 2026-11-03, instructions that contradict the code are rewritten
   (lines 1120, 1125, 1170, 1180, 1210), and line 1200 (`IF YOU RUN INTO HIM YOU HAVE
   ONE CHANCE TO FLEE, AFTER THAT,`) is deleted.
-- Also at my request, three logic bugs are fixed by rewriting lines 385, 3240, 3380,
-  3390 and 3398 and deleting 3395: a missed spray checked the alien against the
-  wrong room, an opening move onto you did not end the game, and a trapped alien
-  could be missed or announced repeatedly. `changes.json` gives each reason.
+- Also at my request, four logic bugs are fixed by rewriting lines 385, 390, 3240,
+  3380, 3390 and 3398 and deleting 3395: a missed spray checked the alien against
+  the wrong room, an opening move onto you did not end the game, having no way out
+  did not end the game, and a trapped alien could be missed or announced repeatedly. `changes.json` gives each reason.
 - Every other line keeps its recovered tokens, REM comments and spacing.
 - Two line-specific layout fixes keep corrected lines within 63 columns: on the
   TRS-80 a 64-column line leaves a blank line and a 65-column line wraps.
@@ -25,7 +25,7 @@ Rules, from [corrections.json](corrections.json):
 Regenerate with `node scripts/build-alien-corrected.mjs` from `app/`.
 `npm test` rebuilds it and checks it against these files.
 
-Result: 7517 bytes (v02: 7560), SHA-256 `1e438c34d7a5b6c3bc15bf642290492aa4bcb2432e0ebd0e1b4686a6c3db0e2a`.
+Result: 7527 bytes (v02: 7560), SHA-256 `a87efc3d69e3dc0e1dbbb12820f6067980c0bd8c00a3d52cf644bd072ac2b32a`.
 
 | Line | Original | Corrected | Times | Why |
 |---|---|---|---|---|

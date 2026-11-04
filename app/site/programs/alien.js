@@ -35,6 +35,7 @@ const differences = [
     'They said a computer failure “switches the junction’s numbers”, but it moves you to a random junction, like Yob’s super bats. The text now says so.',
     'After a missed spray, the alien’s move was checked against the room where the gas stopped instead of your room (Yob reset this). It could kill you from elsewhere, or move into your junction harmlessly until you walked into it, and a close right after a miss closed the gas’s last room.',
     'If the alien’s starting move landed on you, the game printed the slime message and then carried on. Now it ends the game.',
+    'If all of your exits were closed, the game printed YOU ARE TRAPPED, WITH NO WAY OUT and then asked for your next action anyway. Now it ends the game.',
     '“THE ALIEN IS TRAPPED. YOU HAVE WON!” could print more than once, and 1 turn in 4 the win went unnoticed until the alien’s next turn.',
     'The original spells ALEIN, JUCTION, VACUM, BOOBIE-TRAPPED, YOUR ARE, TO LATE and more.']],
   ['Unchanged', [

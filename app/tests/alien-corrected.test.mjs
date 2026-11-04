@@ -23,7 +23,7 @@ test('Alien corrected edition rebuilds exactly and changes only printed strings'
   const before = parseBasic(original), after = parseBasic(bytes);
   assert.equal(after.base, before.base);
   // Only the listed lines lose or change code; every other line keeps its tokens.
-  const rewritten = new Set([385, 3240, 3380, 3390, 3398]);
+  const rewritten = new Set([385, 390, 3240, 3380, 3390, 3398]);
   const kept = before.records.filter(r => r.line !== 1200 && r.line !== 3395);
   assert.equal(before.records.length - kept.length, 2);
   assert.deepEqual(after.records.map(r => r.line), kept.map(r => r.line));
@@ -77,4 +77,12 @@ test('A trapped alien is noticed at once and announced once', () => {
   assert.ok(result(before, 'WINS') < 8);
   assert.equal(result(after, 'WINS'), 8);
   assert.equal(count(after), 8);
+});
+
+test('Having no way out ends the game', () => {
+  const noExits = '9010 L=1:L(1)=1:L(2)=2:F=0:S(1,1)=-1:S(1,2)=-1:S(1,3)=-1\n9020 GOTO390';
+  const stops = {410: '410 PRINT"CARRIED ON":END', 590: '590 END'};
+  const before = run(recovered, noExits, stops).join(' '), after = run(fixed, noExits, stops).join(' ');
+  assert.ok(before.includes('NO WAY OUT') && before.includes('CARRIED ON'));
+  assert.ok(after.includes('NO WAY OUT') && after.includes('YOU HAVE FAILED') && !after.includes('CARRIED ON'));
 });

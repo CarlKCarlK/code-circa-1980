@@ -152,6 +152,8 @@ The recovered files keep all of these.
   after a miss closed the gas's last room.
 - If the alien's starting move landed on you, the game printed the slime message
   and then carried on. Now it ends the game.
+- If all of your exits were closed, the game printed `YOU ARE TRAPPED, WITH NO WAY
+  OUT` and then asked for your next action anyway. Now it ends the game.
 - "THE ALIEN IS TRAPPED. YOU HAVE WON!" could print more than once, and 1 turn in 4
   the win went unnoticed until the alien's next turn.
 - The original spells ALEIN, JUCTION, VACUM, BOOBIE-TRAPPED, YOUR ARE, TO LATE
