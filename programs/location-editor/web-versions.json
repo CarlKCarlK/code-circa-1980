@@ -3,9 +3,9 @@
     {
       "id": "v1",
       "path": "location-editor/v1/",
-      "label": "Original cassette archive",
+      "label": "Web experience v1",
       "released": "2026-11-03",
-      "sourceCommit": "b28a4b990f2a300f358e70c4955d3f9a87394e30",
+      "sourceCommit": "06c1837ffa75d4e74e24ce5ce7aa8f5438ae0dfd",
       "files": [
         {
           "path": "assets/aim-gallery-CIYaCeGM.svg",
@@ -13,9 +13,9 @@
           "sha256": "5b487d12914e662d490a0c2d394227d1aca025b2a504b217806f00d1f4e87778"
         },
         {
-          "path": "assets/archive-gallery-Cr0q0rfj.svg",
-          "bytes": 547,
-          "sha256": "0c02294b84355a66fb22c7f3a14d9fd2bcaba28513e95a25c19147c8bdb7beeb"
+          "path": "assets/archive-gallery-Dlbj-Lnq.svg",
+          "bytes": 544,
+          "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
           "path": "assets/cave-gallery-CUdWAr_1.svg",
@@ -33,14 +33,19 @@
           "sha256": "b7106bfbd5e1c92096c3e2fc2444c98bc03918e693490e9bb03534317a184c6c"
         },
         {
+          "path": "assets/disk-gallery-OViaiL_g.svg",
+          "bytes": 620,
+          "sha256": "0ad04e0f896a9458ffd9f97dbccb34679da189bd8dbcd8df5c25554f7efd303f"
+        },
+        {
           "path": "assets/dungeon-gallery-iVVwbTI4.svg",
           "bytes": 557,
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-CGCsbXtC.js",
-          "bytes": 286265,
-          "sha256": "70cc4c5a7e09ce7e91252918796c80bf51253d1cb73e5474e18e5390394283d2"
+          "path": "assets/emulator-BsmS7RBY.js",
+          "bytes": 316923,
+          "sha256": "b021075d811507898c1921356aa39beeb1db984ca27cc082943c538e6f577ca5"
         },
         {
           "path": "assets/german-gallery-CWDD-jTQ.svg",
@@ -48,14 +53,14 @@
           "sha256": "646dfdc8fb2a3320ca98cc6d6f01b020a5bb234df4900fdc13a8d6f558343d7c"
         },
         {
-          "path": "assets/index-Bgjm9eMr.js",
-          "bytes": 28387,
-          "sha256": "f9e97f337fe5ce89180c7bfd9d0eafe2d0608a61d2de51f29c8cf13662e812e2"
+          "path": "assets/index-BHExd-TG.css",
+          "bytes": 25791,
+          "sha256": "52229f3be1f756228722d60a835f5546d3c4c634f914686daa3938e08cdad59d"
         },
         {
-          "path": "assets/index-DKrV230I.css",
-          "bytes": 25510,
-          "sha256": "0959ac5e08e976b97e554358a78ecad79b0b19743ac2992d1ee8086720b8efba"
+          "path": "assets/index-DF0ALFVd.js",
+          "bytes": 28956,
+          "sha256": "03d744be6ce2148f69620f7da9d16aedcb3e280357e7d44396fdf8bfe14e7484"
         },
         {
           "path": "assets/jab-gallery-C0tK8hbO.svg",
@@ -138,9 +143,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-Dj_i9DeV.json",
-          "bytes": 3441,
-          "sha256": "dec687b127eeeefee45658868d338971f96bb02a00227640cc75ebe30cbabe25"
+          "path": "assets/provenance-B1kn3ZFo.json",
+          "bytes": 3710,
+          "sha256": "5bb0b61446a58d01f7d7d021970e89f30d643c6bb8300dad50cdb77ec4421349"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -198,6 +203,11 @@
           "sha256": "6c8775e89fc1b4a53aeb4adb203c48e936c22e0f91c9c75fdb2f64c3afd2fe63"
         },
         {
+          "path": "assets/WebSoundPlayer-BHQ3vRck.js",
+          "bytes": 5818,
+          "sha256": "1d954e47abf15d3c15062955deeda4dc7940be1edd22e342cdc209df3d2b411f"
+        },
+        {
           "path": "assets/whodonnt-gallery-IIyY8XIG.svg",
           "bytes": 545,
           "sha256": "9ec3138423ce34b833b5b746aa7261902dd040b2476bd1c85a2be1abbb42b755"
@@ -215,7 +225,7 @@
         {
           "path": "index.html",
           "bytes": 2351,
-          "sha256": "8a963bbcd65ac6cc3dcfa61f2109a52901528f4ff24bacfff3ac857d0dc83d0e"
+          "sha256": "13caa0a68d5981ff87ed516e7aa0a9395dcf92dd37f81562bf608057207f37ea"
         },
         {
           "path": "licenses.txt",
