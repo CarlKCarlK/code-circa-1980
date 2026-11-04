@@ -1,23 +1,23 @@
 {
   "title": "Chemical Equation Balancer",
-  "version": "v21",
-  "label": "CHEMISTRY BALENCER II EARLY",
+  "version": "v22",
+  "label": "CHEMISTRY BALENCER II",
   "capture": "tape7b",
-  "save": 19,
+  "save": 20,
   "merged_from": {
     "program": "chemistry-balancer-ii",
-    "version": "v01"
+    "version": "v02"
   },
   "order_inferred": false,
   "order_note": "Appended after the published canonical history; this position does not claim development order.",
   "files": [
     {
       "canonical_path": "BALANCER.ASC",
-      "snapshot_path": "versions/chemistry-balancer-ii-v01/19-CHEMISTRY-BALENCER-II-EARLY.ASC"
+      "snapshot_path": "versions/chemistry-balancer-ii-v02/20-CHEMISTRY-BALENCER-II.ASC"
     },
     {
       "canonical_path": "BALANCER.BAS",
-      "snapshot_path": "versions/chemistry-balancer-ii-v01/19-CHEMISTRY-BALENCER-II-EARLY.BAS"
+      "snapshot_path": "versions/chemistry-balancer-ii-v02/20-CHEMISTRY-BALENCER-II.BAS"
     }
   ]
 }
