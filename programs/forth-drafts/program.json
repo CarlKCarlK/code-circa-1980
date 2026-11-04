@@ -54,6 +54,28 @@
       ],
       "startupSource": "==== Block 60 ====\n 0   ( BLOCK WORLD   1 OF   )    : TASK ;\n 1 ( OBJECTS AND CODES   AIR  0    VAPOR 1  BLOCK 2  SUPPORT 3   )\n 2 ( DOOR 4   MAN 5  CANNON 6    )\n 3 \n 4 47 127  2CARRAY WORLD\n 5 2 CARRAY X   2 CARRAY Y\n 6 : BSET 2DUP 5 PICK 0>  IF ESET ELSE ECLR THEN WORLD C! ;\n 7 \n 8 : HLINE SWAP 1+ SWAP  DO 2DUP I BSET LOOP ;\n 9 : BPAGE 48 0  DO 0 I 127 0 HLINE LOOP ;\n10 BPAGE      3  47 127 0 HLINE",
       "controlSource": []
+    },
+    {
+      "id": "v03",
+      "label": "String Play (blocks 21-21)",
+      "capture": "disk: MMSFORTH New Programs",
+      "raw": "versions/v03/STRING-PLAY.bin",
+      "listing": "versions/v03/STRING-PLAY.txt",
+      "playable": false,
+      "note": "A short, unfinished string experiment.",
+      "unavailableReason": "Preserved as source. It is not offered as a player.",
+      "exports": [
+        {
+          "path": "versions/v03/STRING-PLAY.bin",
+          "label": "STRING-PLAY.bin"
+        },
+        {
+          "path": "versions/v03/STRING-PLAY.txt",
+          "label": "STRING-PLAY.txt"
+        }
+      ],
+      "startupSource": "==== Block 21 ====\n 0 ( STRING PLAY                      ) z TASK ;\n 1 255 $VARIABLE THOL\n 2    1 CONSTANT MATH'EXPRESSION ;\n 3    2 CONSTANT UNARY'OP ;\n 4 z DUPp DUP IF DUP THEN ;\n 5 z IS? DUP\n 6 ( OLD REQUIRED'LENGTH START FUNCTION -> OLD LENGTH )\n 7 MATH'EXPRESSION = IF  p SWAP UNARY'OP MYSELF\n 8 \n 9 \n10 THEN THEN THEN THEN   <                  ;",
+      "controlSource": []
     }
   ],
   "listingLabel": "Download recovered listing",
