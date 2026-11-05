@@ -164,9 +164,9 @@
     "execution_tested": false
   },
   "artwork": {
-    "path": "app/assets/jab-gallery.svg",
-    "sha256": "f0bb26fb766c87997f4a6dc9ac92558097293eee75b5961a89892642b5d56245",
-    "description": "Modern illustrative SVG, not emulator execution evidence."
+    "path": "app/assets/jab-screen.png",
+    "sha256": "5bb5e1bab96aaec147bc1f3bc7cf34b2d7ab8679a6097bd5b910e987bf249f64",
+    "description": "Actual emulator capture of the corrected player at maze size 39,23 with eight monsters, unretouched, used as the gallery image."
   },
   "website_execution": {
     "date": "2026-11-02",
