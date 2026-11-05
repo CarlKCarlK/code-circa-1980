@@ -162,15 +162,22 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
   // Optional fast mode: extra Z80 steps each animation frame, on top of the
   // machine's own real-time pacing. Speed survives Restart. While a key is held
   // the machine runs at real speed, so a normal press does not auto-repeat.
-  let speed = 1, fastHandle = 0, lastFrame = 0;
+  // A speed rule may vary the multiplier while fast mode is on.
+  let speed = 1, fastHandle = 0, lastFrame = 0, speedRule = null;
   function fastFrame(time) {
     fastHandle = 0;
     if (disposed || speed <= 1) return;
     if (!paused && held.size === 0) {
       const seconds = lastFrame ? Math.min(0.1, (time - lastFrame) / 1000) : 0;
-      const target = machine.tStateCount + machine.clockHz * seconds * (speed - 1);
       const deadline = performance.now() + 12;
-      while (machine.tStateCount < target && performance.now() < deadline) for (let i = 0; i < 1000; i++) machine.step();
+      let remaining = seconds;
+      while (remaining > 0 && performance.now() < deadline) {
+        const extra = (speedRule?.() ?? speed) - 1;
+        if (extra <= 0) break;
+        const start = machine.tStateCount;
+        for (let i = 0; i < 1000; i++) machine.step();
+        remaining -= (machine.tStateCount - start) / (machine.clockHz * extra);
+      }
     }
     lastFrame = time;
     fastHandle = requestAnimationFrame(fastFrame);
@@ -187,6 +194,7 @@ export async function createPlayer(host, url, status, title, dependency, {runnin
   restart();
   return {
     press, release, restart, togglePause, type, keys, setSpeed,
+    setSpeedRule(rule) { speedRule = rule; },
     get speed() {return speed;},
     get typing() {return keyboard.keyQueue.length>0;},
     hasWork(){return Array.from({length:1024},(_,i)=>machine.readMemory(0x3c00+i)).some((code,i)=>code>=128&&code<192&&(code&(i<960?63:15))!==0);},

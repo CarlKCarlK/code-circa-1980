@@ -403,7 +403,15 @@ byte-verified print transcription). Cave Game has no verified upstream baseline.
 Do not turn these comparison baselines into recovered captures or assert direct
 chronology between Cave Game, Jaberwocky, and Alien. JAB’s cross-tape order is
 inferred; its earliest forms borrow Amazing but later forms replace the maze
-generator. Preserve published credits and terms in upstream/ and notices.
+generator. Preserve published credits and terms in upstream/ and notices. At the
+user's request, the JAB player and instructions do not mention Hauber's Amazing,
+since the played v04 does not use its code (November 4, 2026). JAB is also first
+in More, starts at Auto speed (20×, slowing by BASIC line for visible monster
+steps and explosions; the BASIC is unchanged), and keeps its how-to-play text in an expandable
+Instructions link above the field instead of below it. JAB alone is an exception to
+the versions/ and original/ convention, at the user's request: programs/jab/source/
+is the one file the player runs, tags jab-v01 through jab-v05 hold every earlier save
+and its snapshot, and partial/ keeps the damaged save.
 
 Jaberwocky’s historical endings can raise ?UL because line 1000 is absent. Cave
 Game’s dart branch also moves the player. JAB may require a second 0 after ending

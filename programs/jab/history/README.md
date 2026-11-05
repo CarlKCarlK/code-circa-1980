@@ -11,3 +11,5 @@ No direct date appears in JAB. Same-side context includes `20 'COPYRIGHT 1980  C
 Sources: https://www.atariarchives.org/basicgames/showpage.php?page=3 and https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas
 
 Compare `git diff -w jab-amazing jab-v01 -- programs/jab/original/JAB.ASC`, then tags jab-v01 through jab-v04.
+
+Canonical files moved from original/ to source/ on November 4, 2026; tags keep the old path.

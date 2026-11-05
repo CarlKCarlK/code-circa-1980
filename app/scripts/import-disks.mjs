@@ -126,7 +126,6 @@ const sourceReason='Disk form, kept as source. It is not the selected player for
 const sourceOnly=[
  {id:'market',disk:GAMES,file:'MARKET.BAS',note:'Same as the last tape form except that it accepts N and returns to the disk menu.'},
  {id:'amazing-maze',disk:'More Voice',file:'MAZE.BAS',note:'Voice form: PRINT* calls the VS-100 speech synthesizer, which is not emulated.'},
- {id:'jab',disk:GAMES,file:'JAB.BAS',note:'Disk form with number-key input and debugging stubs. Not clearly better than the selected save.'},
  {id:'race',disk:'TRSDOS Basic System',file:'RACE',note:'62 records and no end marker. Preserved as found; the marker is not added.',raw:true},
 ];
 for(const s of sourceOnly){

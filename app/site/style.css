@@ -76,7 +76,7 @@
 .original-answer{display:flex;flex-wrap:wrap;gap:8px;align-items:end}.original-answer label{display:grid;gap:4px;font-size:12px;flex:1;min-width:0}.original-answer input{min-width:0;width:100%;font:16px monospace;padding:8px;border:1px solid #bac1cc;border-radius:3px}
 .program-code{max-width:760px;margin:42px 0}.program-code h2{font-size:25px}.program-code h3{font-size:17px}.program-code p,.program-code li{font-size:15px;color:#575f6c}.code-sample{overflow-x:auto;-webkit-overflow-scrolling:touch;background:#eeeee4;border-left:3px solid #98a4b5;padding:12px 16px;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;color:#282a2d}.player-help .program-code{display:none}
 
-.program-attribution,.how-to-play-note{margin:-4px 0 16px;max-width:900px;font-size:15px;line-height:1.5;color:#475569}.program-attribution a{white-space:nowrap}
+.instructions-above{margin:-4px 0 16px;max-width:900px;font-size:15px;line-height:1.5}.instructions-above>summary{font-weight:600;cursor:pointer}.instructions-above h3{margin:14px 0 4px}.instructions-table{border-collapse:collapse;margin:8px 0}.instructions-table th,.instructions-table td{border:1px solid #cbd5e1;padding:2px 12px;text-align:left}.program-attribution,.how-to-play-note{margin:-4px 0 16px;max-width:900px;font-size:15px;line-height:1.5;color:#475569}.program-attribution a{white-space:nowrap}
 
 .archive-search{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin:2rem 0 1rem}.archive-search input{font:inherit;padding:.7rem;min-width:0;max-width:100%;width:26rem}.program-card[hidden]{display:none}.source-details pre{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%}
 .score-panel{margin-top:1rem;text-align:left}

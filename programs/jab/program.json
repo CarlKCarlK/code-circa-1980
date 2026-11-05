@@ -8,79 +8,20 @@
   "showWebVersions": false,
   "unsharedWebV1": true,
   "defaultVersion": "v04",
-  "versionOrder": "Inferred development sequence: Amazing-based maze/monster forms, then the replacement maze generator on tape16a, then the closely related tape30a save with revised controls and random routine. Tape numbers alone do not establish chronology. The damaged tape16a save 5 is preserved separately and is not filled from any complete save.",
+  "versionOrder": "The website keeps one source file. Earlier saves are in Git history: tags jab-v01 through jab-v03 hold the tape16a forms and jab-v05 holds the disk form. Their inferred order follows local save order; tape numbers alone do not establish chronology. The damaged tape16a save 5 is preserved separately and is not filled from any complete save.",
   "versions": [
-    {
-      "id": "v01",
-      "label": "Amazing Program maze generator",
-      "capture": "tape16a",
-      "save": 1,
-      "raw": "versions/v01/01-AMAZING-PROGRAM-MAZE.BAS",
-      "listing": "versions/v01/01-AMAZING-PROGRAM-MAZE.ASC",
-      "playable": false,
-      "note": "Untouched recovered save. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
-    },
-    {
-      "id": "v02",
-      "label": "Amazing Program and monster game",
-      "capture": "tape16a",
-      "save": 2,
-      "raw": "versions/v02/02-AMAZING-PROGRAM-AND-MONSTER-GAME.BAS",
-      "listing": "versions/v02/02-AMAZING-PROGRAM-AND-MONSTER-GAME.ASC",
-      "playable": false,
-      "note": "Untouched recovered save. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
-    },
-    {
-      "id": "v03",
-      "label": "The Best of the Monster Games",
-      "capture": "tape16a",
-      "save": 3,
-      "raw": "versions/v03/03-BEST-OF-THE-MONSTER-GAMES.BAS",
-      "listing": "versions/v03/03-BEST-OF-THE-MONSTER-GAMES.ASC",
-      "playable": false,
-      "note": "Untouched recovered save. Ordered lines; consistent pointer base 17125; exact full length and end marker; byte-identical left/right recovery",
-      "unavailableReason": "Source only. The site plays one selected best version; this save is preserved for comparison."
-    },
     {
       "id": "v04",
       "label": "JAB \u2014 The Best of the Monster Games",
       "capture": "tape30a",
       "save": 1,
-      "raw": "versions/v04/01-JAB-JABBERWOCKIES.BAS",
-      "listing": "versions/v04/01-JAB-JABBERWOCKIES.ASC",
+      "raw": "source/JAB.BAS",
+      "listing": "source/JAB.ASC",
       "playable": true,
       "slug": "basic",
-      "note": "Untouched recovered save. Exact left/right payload; 183 ordered lines; consistent pointer base 17125; end marker; exact EOF",
+      "note": "Exact left/right payload; 183 ordered lines; consistent pointer base 17125; end marker; exact EOF.",
       "unavailableReason": null
-    },
-    {
-      "id": "v05",
-      "label": "JAB.BAS (BASIC Programs Games)",
-      "capture": "disk: BASIC Programs Games",
-      "raw": "versions/v05/JAB.BAS",
-      "listing": "versions/v05/JAB.ASC",
-      "playable": false,
-      "note": "Disk form with number-key input and debugging stubs. Not clearly better than the selected save.",
-      "unavailableReason": "Disk form, kept as source. It is not the selected player for this program.",
-      "exports": [
-        {
-          "path": "versions/v05/JAB.BAS",
-          "label": "JAB.BAS"
-        },
-        {
-          "path": "versions/v05/JAB.ASC",
-          "label": "JAB.ASC"
-        }
-      ],
-      "startupSource": "3 ON ERROR GOTO 10001\n5 REM THE BEST OF THE MONSTER GAMES ---- JAB\n10 CLEAR 100:DEFINT C,N\n20 CLS:PRINT\"WORKING\"\n30 W=70:L=40:Z2=.3\n40 IF W/2<>INT(W/2) THEN W=W-1\n50 IF L/2<>INT(L/2) THEN L=L-1\n60 DIM C(W,L),NS(30,3)\n70 FOR X=1 TO W-1 STEP 2:FOR Y=1 TO L-1 STEP 2:C(X,Y)=2:NEXTY,X\n71 GOSUB 1000:' ************\n80 X=RND(W-1):Y=RND(L/2-1)*2:IF X/2=INT(X/2) THEN Y=Y-1\n90 C(X,Y)=2:ZZ=ZZ+1:IFZZ/W/L<Z2 THEN 80",
-      "controlSource": []
     }
   ],
-  "attribution": {
-    "text": "Early maze versions adapt Jack Hauber\u2019s Amazing; later JAB versions replace the maze generator.",
-    "url": "https://www.atariarchives.org/basicgames/showpage.php?page=3"
-  },
   "diskThanks": true
 }

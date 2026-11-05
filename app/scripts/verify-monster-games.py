@@ -3,11 +3,18 @@ import argparse,hashlib,json,re,subprocess
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('archive',type=Path);args=p.parse_args();archive=args.archive.resolve();root=Path(__file__).resolve().parents[2]
 sha=lambda b:hashlib.sha256(b).hexdigest()
+def saves_of(slug,e):
+ # JAB keeps one current file; its recovered saves live in Git tags, which also hold each snapshot.
+ return e.get('saves_in_git',e['saves'])
+def snapshot(slug,d,save,item):
+ if 'git_tag' in save:return subprocess.check_output(['git','show',f"{save['git_tag']}:programs/{slug}/{item['path']}"],cwd=root)
+ return (d/item['path']).read_bytes()
 for slug in ['jaberwocky','cave','jab']:
  d=root/'programs'/slug;e=json.loads((d/'provenance.json').read_text())
- for save in e['saves']:
+ for save in saves_of(slug,e):
+  if save.get('disk'):continue
   for item in save['imported_files']:
-   b=(d/item['path']).read_bytes();assert b==(archive/item['archive_path']).read_bytes();assert sha(b)==item['sha256']
+   b=snapshot(slug,d,save,item);assert b==(archive/item['archive_path']).read_bytes();assert sha(b)==item['sha256']
    canonical=f'programs/{slug}/original/{slug.upper()}{Path(item["path"]).suffix}'
    committed=subprocess.check_output(['git','show',f'{slug}-{save["version"]}:{canonical}'],cwd=root);assert committed==b
  for upstream in (d/'upstream').glob('provenance.json'):
@@ -31,7 +38,8 @@ print('JAB partial: 270 untouched bytes; ten ordered records through 71; all cla
 # Recheck every full-payload match claimed by the source recovery inventory.
 for slug in ['jaberwocky','cave','jab']:
  d=root/'programs'/slug;e=json.loads((d/'provenance.json').read_text())
- for save in e['saves']:
+ for save in saves_of(slug,e):
+  if save.get('disk'):continue
   source_root=archive/'tapes/recovered'/save['capture'];inv=json.loads((source_root/'inventory.json').read_text());items=inv if isinstance(inv,list) else inv['items'];item=next(i for i in items if i['order']==save['save']);expected=(archive/save['archive_raw']).read_bytes();seen=set()
   for source in item['matching_sources']:
    value=source if isinstance(source,str) else source.get('file',source.get('binary'))

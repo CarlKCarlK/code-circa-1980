@@ -27,7 +27,7 @@ test('disk pages thank Ira Goldklang, on players and source pages',async({page})
  }
 });
 test('the piano is high in More, credits Rich, and its key buttons set the key',async({page})=>{
- await page.goto('/#/more');await expect(page.locator('.program-card').nth(3).locator('h2')).toHaveText('Sound & Tones');
+ await page.goto('/#/more');await expect(page.locator('.program-card').nth(4).locator('h2')).toHaveText('Sound & Tones');
  await page.goto('/?development=1&test#/program/tones');
  await expect(page.locator('.program-attribution')).toContainText('Rich Losey and I wrote this together');
  await expect(page.locator('#status')).toContainText(/Running/,{timeout:120000});
