@@ -19,7 +19,7 @@
       "listing": "source/JAB.ASC",
       "playable": true,
       "slug": "basic",
-      "note": "Corrected from tape30a save 1: one changed line makes each bomb use its own drops for its blast size.",
+      "note": "Corrected from tape30a save 1: it asks for a maze size, and each bomb uses its own drops for its blast size.",
       "unavailableReason": null,
       "derived": true,
       "running": "Running corrected BASIC"

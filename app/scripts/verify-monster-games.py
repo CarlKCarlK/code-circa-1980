@@ -48,7 +48,8 @@ for slug in ['jaberwocky','cave','jab']:
    assert path.read_bytes()==expected,str(path);seen.add(str(path))
   assert seen
   print(save['capture'],save['save'],len(seen),'claimed full-payload matches verified')
-# JAB's one source file differs from its recovered tag only at the requested fix.
-before=subprocess.check_output(['git','show','jab-v04:programs/jab/original/JAB.ASC'],cwd=root).split(b'\n');after=(root/'programs/jab/source/JAB.ASC').read_bytes().split(b'\n')
-assert len(before)==len(after) and [(a,b) for a,b in zip(before,after) if a!=b]==[(b'3525 IF DP<1 THEN DP=1',b'3525 DP=NS(I,2):IF DP<1 THEN DP=1')]
-print('JAB source differs from tag jab-v04 only at line 3525')
+# JAB's one source file differs from its recovered tag only at the requested changes.
+numbered=lambda data:{int(l.split(b' ',1)[0]):l for l in data.split(b'\n') if l[:1].isdigit()}
+before=numbered(subprocess.check_output(['git','show','jab-v04:programs/jab/original/JAB.ASC'],cwd=root));after=numbered((root/'programs/jab/source/JAB.ASC').read_bytes())
+changed=sorted(n for n in before.keys()|after.keys() if before.get(n)!=after.get(n));assert changed==[12,14,16,30,40,50,3525,4900],changed
+print('JAB source differs from tag jab-v04 only at the maze-size lines, line 3525, and the line 4900 prompt')

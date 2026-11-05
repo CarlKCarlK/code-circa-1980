@@ -2,7 +2,7 @@
 
 Explore a maze, evade Jabberwockies, and set timed explosive drops.
 
-The website plays a corrected v04, tape30a save 1, through the real TRS-80 ROM, from the single file in source/. Line 3525 makes each bomb use its own drops; `git diff jab-v04-bomb-fix~1 jab-v04-bomb-fix -- programs/jab/source/JAB.ASC` shows it. Instructions are in the player Help and in the expandable link above its field. Auto is the default: 20× except while a visible monster steps (1×) or an explosion flashes (4×), chosen by reading the running BASIC line. Original (1×) is optional.
+The website plays a corrected v04, tape30a save 1, through the real TRS-80 ROM, from the single file in source/. It also asks for a maze size (lines 12–50), and line 4900’s prompt now says AGAIN SAME MAZE. Line 3525 makes each bomb use its own drops; `git diff jab-v04-bomb-fix~1 jab-v04-bomb-fix -- programs/jab/source/JAB.ASC` shows it. Instructions are in the player Help and in the expandable link above its field. Auto is the default: 20× except while a visible monster steps (1×) or an explosion flashes (4×), chosen by reading the running BASIC line. Original (1×) is optional.
 
 Inferred development sequence: Amazing-based maze/monster forms, then the replacement maze generator on tape16a, then the closely related tape30a save with revised controls and random routine. Tape numbers alone do not establish chronology. The damaged tape16a save 5 is preserved separately and is not filled from any complete save.
 

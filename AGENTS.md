@@ -412,7 +412,9 @@ Instructions link above the field instead of below it. JAB alone is an exception
 the versions/ and original/ convention, at the user's request: programs/jab/source/
 is the one file the player runs, tags jab-v01 through jab-v05 hold every earlier save
 and its snapshot, and partial/ keeps the damaged save. source/ has one fix on top of
-jab-v04: line 3525 makes each bomb use its own drops (tag jab-v04-bomb-fix).
+jab-v04: line 3525 makes each bomb use its own drops (tag jab-v04-bomb-fix). It also
+asks for a maze size (width 10-69, height 10-39, lines 12-50), and line 4900 now says
+AGAIN SAME MAZE, since YES keeps the maze as it always did.
 
 Jaberwocky’s historical endings can raise ?UL because line 1000 is absent. Cave
 Game’s dart branch also moves the player. JAB may require a second 0 after ending
