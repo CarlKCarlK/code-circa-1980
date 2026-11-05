@@ -6,6 +6,8 @@ Tape16a saves 1 and 2 contain the Amazing generator plus monster-game code, even
 
 Tape16a save 5 is a genuine damaged alternate: its 270-byte prefix through line 71 remains separate and is not a complete version. No complete JAB source or author credit was located externally. JAB is not Jaberwocky, and its abbreviation is not evidence of common code with that game.
 
+I wrote JAB (Carl Kadie, recollection recorded November 4, 2026). No recovered source carries my name, so this rests on my memory, and the early tape16a forms still borrow Hauber’s maze generator. JAB in the title is probably the monster’s name rather than initials, since the code tests `R$="JAB"`.
+
 No direct date appears in JAB. Same-side context includes `20 'COPYRIGHT 1980  CARL KADIE` in Tank Game and `10 REM CHEMISTRY BALANCER II   COPYRIGHT 1981 C. KADIE` in Chemistry Balancer II; those later notices suggest the side contains material from 1980–81, but do not date JAB’s creation or each save. Tape30a supplies no firm date.
 
 Sources: https://www.atariarchives.org/basicgames/showpage.php?page=3 and https://raw.githubusercontent.com/GReaperEx/bcg/master/amazing.bas
