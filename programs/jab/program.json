@@ -19,8 +19,10 @@
       "listing": "source/JAB.ASC",
       "playable": true,
       "slug": "basic",
-      "note": "Exact left/right payload; 183 ordered lines; consistent pointer base 17125; end marker; exact EOF.",
-      "unavailableReason": null
+      "note": "Corrected from tape30a save 1: one changed line makes each bomb use its own drops for its blast size.",
+      "unavailableReason": null,
+      "derived": true,
+      "running": "Running corrected BASIC"
     }
   ],
   "diskThanks": true

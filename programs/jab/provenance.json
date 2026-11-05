@@ -17,14 +17,14 @@
         {
           "path": "source/JAB.BAS",
           "archive_path": "tapes/recovered/tape30a/best/01-JAB-JABBERWOCKIES.BAS",
-          "bytes": 8473,
-          "sha256": "9b40f2c2650f11d90cc38de5dd88702de8be1de0cde993adc5c90e0e452dd756"
+          "bytes": 8484,
+          "sha256": "4d5edf6c94a0c152dacf2088e554f1d9a97b39ed2969203b0e83f50b1a3cd497"
         },
         {
           "path": "source/JAB.ASC",
           "archive_path": "tapes/recovered/tape30a/best/01-JAB-JABBERWOCKIES.ASC",
-          "bytes": 10402,
-          "sha256": "566670f8a8cc0f31ce974764a9d816052bd41289dc6839c85f9112cd6b176199"
+          "bytes": 10413,
+          "sha256": "ce43eb92afb417e725887d097cd3b3b03d4d15aeb9f1ef15635a6c0971e08e45"
         }
       ],
       "recovery_item": {
@@ -57,7 +57,14 @@
         "next_action": "Runtime testing only if requested"
       },
       "recovery_inventory": "tapes/recovered/tape30a/inventory.json",
-      "execution_tested": false
+      "execution_tested": false,
+      "corrected_from_tag": "jab-v04",
+      "correction": {
+        "line": 3525,
+        "before": "3525 IF DP<1 THEN DP=1",
+        "after": "3525 DP=NS(I,2):IF DP<1 THEN DP=1",
+        "reason": "Size each blast from the drops stored in its own bomb, instead of the last amount entered as changed by earlier blasts. Requested by the user on November 4, 2026."
+      }
     }
   ],
   "dating": {

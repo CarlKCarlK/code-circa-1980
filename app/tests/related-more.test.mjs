@@ -26,3 +26,11 @@ test('Actual-ROM current-word field clears longer words without overwriting the 
  const text=Array.from({length:1024},(_,i)=>String.fromCharCode(m.readMemory(0x3c00+i))).join('');
  assert.equal(text.slice(960,1000),'FILM'+' '.repeat(36));assert.equal(text.slice(1000,1003),'123');assert.equal(text.slice(0,4),'GRID');
 });
+test('JAB sizes each blast from its own drops on the actual ROM, where the recovered line did not',()=>{
+ const listing=fs.readFileSync(new URL('../../programs/jab/source/JAB.ASC',import.meta.url),'utf8');
+ const lineOf=n=>listing.split('\n').find(l=>l.startsWith(n+' '));
+ // A 16-drop bomb explodes after a 1-drop entry, with the blast's random variation turned off.
+ const radius=line=>runBasic(['10 DIM NS(30,3):NS(1,2)=16:I=1:DP=1:GOSUB 3525:POKE 28672,DP:POKE 32256,42:END',line,lineOf(3530),'3540 RETURN','6000 REM','6005 SF=0',...[6007,6010,6020,6030,6040].map(lineOf)].join('\n')+'\n',8).readMemory(28672);
+ assert.equal(lineOf(3525),'3525 DP=NS(I,2):IF DP<1 THEN DP=1');
+ assert.equal(radius('3525 IF DP<1 THEN DP=1'),0);assert.equal(radius(lineOf(3525)),3);
+});
