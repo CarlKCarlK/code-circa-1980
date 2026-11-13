@@ -5,7 +5,7 @@
       "path": "armatron/v1/",
       "label": "Web experience v1",
       "released": "2026-11-13",
-      "sourceCommit": "213e5f8545574ab0aa0914e4d117a29f495dfc1c",
+      "sourceCommit": "c7aa9f82f53e1266a1edafafb8e9044a901247cb",
       "files": [
         {
           "path": "assets/05-MONSTER-GAME-PARTIAL-PREFIX-BOXgx938.ASC",
@@ -43,19 +43,19 @@
           "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
-          "path": "assets/ARMATRON-CxCWCzdL.BAS",
-          "bytes": 7755,
-          "sha256": "6f9a824a0fa7c3ff084f72d971525f6c42937916c00ab72e82f945814c1c70eb"
+          "path": "assets/ARMATRON-BWcDfgFW.BAS",
+          "bytes": 8120,
+          "sha256": "b6cb12964f97895cc15f7011d13cad89a9af5cffd6349f4a9ec81be44f5fa364"
+        },
+        {
+          "path": "assets/ARMATRON-D3_BfRh0.ASC",
+          "bytes": 9292,
+          "sha256": "827b8f108f77bcf3e51b0309ab1e4a0e5bf98b5c8bf931dec17f87a5c8514ed3"
         },
         {
           "path": "assets/armatron-gallery-C8cz6w2N.svg",
           "bytes": 1289,
           "sha256": "815398940c7c38329bd37984a9c577fad886499a421c6ef4d84345216b106d2b"
-        },
-        {
-          "path": "assets/ARMATRON-oGENwzHg.ASC",
-          "bytes": 8901,
-          "sha256": "93fc4592f93b2fd85cf8d8263f918968aff10892689f6f52f37efd9ad30fc47c"
         },
         {
           "path": "assets/balancer-equation-BxrkCOHy.svg",
@@ -128,9 +128,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-BW4nrApx.js",
+          "path": "assets/emulator-DQdJ7cgK.js",
           "bytes": 317036,
-          "sha256": "f1a5f5d020e5c382af2aee1e048890b7c81ffb24bb1fd5da7195376131874e9d"
+          "sha256": "22c0746b693b4fcf4482bcd237f1c3822b6f4aafbac47b7d10bd372cab926e4b"
         },
         {
           "path": "assets/forth-gallery-DV3ZafQA.svg",
@@ -153,9 +153,9 @@
           "sha256": "60e6c890e811aa6f967f597bf5c7f494dc5ceeb47a32505b18ca232493aab770"
         },
         {
-          "path": "assets/index-Dd--qhH9.js",
+          "path": "assets/index-BMu0wwq2.js",
           "bytes": 1065607,
-          "sha256": "c400ba0f07e2913e2dca5aa4205e5818edc21bf676af409a737d7c0033d9e01a"
+          "sha256": "a1cd1a87c18d19355e0290e8431b30ca8879436c97358be26c94a7140408b16a"
         },
         {
           "path": "assets/index-MQijyIvI.css",
@@ -248,19 +248,19 @@
           "sha256": "e4dcd4e5a6443ea360e5ecf182eb077e431d8ce47f4760934d6d984a763b6344"
         },
         {
-          "path": "assets/player-BWaO5P0o.js",
+          "path": "assets/player-BUJxxgDJ.js",
+          "bytes": 5576,
+          "sha256": "3e76390dfce899f6a7db33fe49231a99a3d911133c4e6afff198d33d2c332b38"
+        },
+        {
+          "path": "assets/player-CVLpRysQ.js",
           "bytes": 12370,
-          "sha256": "c0f5554363703aa504e8b07e68cc8eed388774ddf6c8928f5771e98ec9993336"
+          "sha256": "254037c26e967e7cd56b70c744703b591e8b3b83bc3f4c8dc380a49f7fae81ef"
         },
         {
           "path": "assets/player-DG3vU3-j.js",
           "bytes": 32072,
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
-        },
-        {
-          "path": "assets/player-xjwJx7q1.js",
-          "bytes": 5576,
-          "sha256": "106c2262d44df70801525d8d7574b8bcc254c01d79e8397b6f8e84f56159edd1"
         },
         {
           "path": "assets/plot3d-funnel-Dq1ey0cB.svg",
@@ -273,9 +273,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-BS4CwA-L.json",
+          "path": "assets/provenance-Bgjushr5.json",
           "bytes": 2861,
-          "sha256": "be33fc14907b9d7b3af1a7ee11a8d4cb694951004dab0a06a759443d49db5cd8"
+          "sha256": "4d01d80552b254aed9c8c2a7b8497e1d1830d56a0a4c35d4f23affc2fda21037"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -380,7 +380,7 @@
         {
           "path": "index.html",
           "bytes": 2292,
-          "sha256": "5d3a0b351683dd73b62ca76326d12f5054810ba5d904dd1b042704735e92132b"
+          "sha256": "f73a43016dcf29aa291610a5ed1d4b78feac9230e4193311f8ebb9fce4ef527e"
         },
         {
           "path": "licenses.txt",
