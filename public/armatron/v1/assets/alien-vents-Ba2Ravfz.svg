@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 532 236" width="532" height="236">
+  <rect width="532" height="236" fill="#1e4b8f"/>
+  <g font-family="'Courier New', monospace" font-weight="700" fill="#f4f1e6">
+    <text x="24" y="52" font-size="15" opacity=".75">WHERE TO? 1</text>
+    <text x="24" y="96" font-size="20">I SMELL AN ALIEN</text>
+    <text x="24" y="136" font-size="15" opacity=".75">YOU ARE IN JUNCTION 1</text>
+    <text x="24" y="162" font-size="15" opacity=".75">VENTS LEAD TO 10  17  18</text>
+    <text x="24" y="200" font-size="15" opacity=".75">SPRAY,CLOSE, OR MOVE? _</text>
+  </g>
+</svg>

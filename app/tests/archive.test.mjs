@@ -60,6 +60,23 @@ for(const name of fs.readdirSync(root)){
       }
       return;
     }
+    if(metadata.newProgram){
+      // A program written new for the site: its .BAS is built from its listing, not recovered.
+      assert.ok(version.derived);
+      const bytes=fs.readFileSync(new URL(version.raw,folder));
+      assert.equal(createHash('sha256').update(bytes).digest('hex'),save.build_item.sha256);
+      assert.deepEqual([...bytes.subarray(0,3)],[0xd3,0xd3,0xd3]);
+      let offset=4,last=-1,lines=0;const bases=new Set();
+      while(bytes.readUInt16LE(offset)!==0){
+        const line=bytes.readUInt16LE(offset+2);assert.ok(line>last);last=line;lines++;
+        const end=bytes.indexOf(0,offset+4);bases.add(bytes.readUInt16LE(offset)-end-1);offset=end+1;
+      }
+      assert.equal(offset+2,bytes.length);assert.equal(bases.size,1);
+      assert.equal(lines,save.build_item.lines);assert.equal(last,save.build_item.last);
+      const listing=fs.readFileSync(new URL(version.listing,folder),'latin1');
+      assert.equal(decodeBasicProgram(bytes).asAscii().replaceAll('\r\n','\n').trimEnd(),listing.trimEnd());
+      return;
+    }
     if(metadata.archiveImport){
       const bytes=fs.readFileSync(new URL(version.raw,folder));
       assert.equal(createHash('sha256').update(bytes).digest('hex'),save.recovery_item.sha256);

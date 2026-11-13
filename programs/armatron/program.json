@@ -1,0 +1,30 @@
+{
+  "id": "armatron",
+  "title": "Armatron-80",
+  "description": "Steer a 3-D robot arm to a target, or press Space and let it reach by itself. New in 2026.",
+  "kind": "Simulation",
+  "language": "Level II BASIC",
+  "gallery": "more",
+  "showWebVersions": false,
+  "unsharedWebV1": true,
+  "newProgram": true,
+  "defaultVersion": "v01",
+  "versionOrder": "One version, written in 2026. Not a recovered tape.",
+  "versions": [
+    {
+      "id": "v01",
+      "label": "ARMATRON-80",
+      "raw": "versions/v01/ARMATRON.BAS",
+      "listing": "versions/v01/ARMATRON.ASC",
+      "playable": true,
+      "slug": "basic",
+      "derived": true,
+      "note": "New Level II BASIC written in 2026, not recovered from tape. ARMATRON.ASC is the source; npm run build:armatron tokenizes it into ARMATRON.BAS.",
+      "unavailableReason": null
+    }
+  ],
+  "attribution": {
+    "text": "A 2026 port of the Armatron demo from Linkage Blaze and the Excel 3-D robot arm, modeling Radio Shack's Armatron toy.",
+    "url": "https://github.com/CarlKCarlK/linkage-blaze"
+  }
+}

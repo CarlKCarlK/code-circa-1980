@@ -1,0 +1,62 @@
+{
+  "official_title": "Armatron-80",
+  "title_authority": "Named at creation, November 13, 2026.",
+  "short_name": "armatron",
+  "origin": "New program written on November 13, 2026 by Carl Kadie with Claude (Anthropic), in TRS-80 Level II BASIC, at the user's request. It is not a recovered cassette or disk and makes no historical claim.",
+  "sources_ported": [
+    {
+      "name": "Linkage Blaze Armatron demo",
+      "url": "https://github.com/CarlKCarlK/linkage-blaze",
+      "files": [
+        "crates/linkage-blaze/src/assets/examples/armatron/armatron1.lb.rs",
+        "crates/linkage-blaze/src/assets/examples/armatron/camera_control.lb.rs",
+        "crates/linkage-blaze/src/assets/examples/armatron/grid_9x9.lb.rs",
+        "crates/linkage-blaze/src/examples/armatron/main.rs",
+        "crates/linkage-blaze/src/examples/armatron/reverse_kinematics.rs"
+      ],
+      "used": "Arm turtle chain, joint ranges, camera rig, target placement from a hidden target pose, fingertip distance, greedy coordinate-search auto-reach, perspective projection."
+    },
+    {
+      "name": "Excel 2D & 3D Robot Arms",
+      "url": "https://github.com/CarlKCarlK/excel-3d-robot-arm",
+      "files": [
+        "excel_3d_robot_arm.xlsx (3D Robot Arm sheet)"
+      ],
+      "used": "Same Armatron chain as rows of yaw/pitch/roll/move; the SIN-based pseudo-random target hash, adapted to Level II single precision."
+    }
+  ],
+  "differences_from_sources": [
+    "One-pixel lines at 128x48; no joint spheres or pen widths.",
+    "The 9x9 floor line grid becomes a 5x5 grid of dots.",
+    "As in Linkage Blaze, a hidden target pose run through the same arm routine places a reachable target. The target is a cross with a dotted line to the floor.",
+    "Target poses come from a SIN hash of the target number, not WyRand.",
+    "Auto-reach searches only the four joints that move the fingertip, takes the first improving move, and applies up to four moves per redraw instead of interpolating.",
+    "Keyboard keys replace sliders and buttons."
+  ],
+  "saves": [
+    {
+      "version": "v01",
+      "imported_files": [
+        {
+          "path": "versions/v01/ARMATRON.BAS",
+          "bytes": 8207,
+          "sha256": "d1a70787c06bd19d89e8b9f0b1c7e1fb407246893e593455dfd85370d1c6b13c"
+        },
+        {
+          "path": "versions/v01/ARMATRON.ASC",
+          "bytes": 9383,
+          "sha256": "befdc5ca08056f2c88f1e48959e143c06ce5e15376e05b5681b4178cde4490a3"
+        }
+      ],
+      "build_item": {
+        "lines": 169,
+        "last": 7020,
+        "normal_end_marker": true,
+        "sha256": "d1a70787c06bd19d89e8b9f0b1c7e1fb407246893e593455dfd85370d1c6b13c",
+        "tool": "trs80-base 2.3.1 parseBasicText + asCassetteBinary"
+      },
+      "execution_tested": true
+    }
+  ],
+  "website_execution": "See VERIFICATION.md and verification/rom-check.json."
+}

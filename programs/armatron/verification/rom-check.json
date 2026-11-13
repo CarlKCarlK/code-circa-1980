@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "name": "status line shows target #0",
+      "ok": true,
+      "detail": "ARMATRON-80  TARGET #  0   DISTANCE  4.14"
+    },
+    {
+      "name": "help line lists the joint keys",
+      "ok": true,
+      "detail": "QA BASE  WS ARM  ED ELBOW  RF WRIST  TG TWIST  YH GRIP"
+    },
+    {
+      "name": "arm, target, and grid drawn",
+      "ok": true,
+      "detail": "64 pixels set"
+    },
+    {
+      "name": "holding Q redraws the arm",
+      "ok": true
+    },
+    {
+      "name": "Space starts auto-reach",
+      "ok": true,
+      "detail": "ARMATRON-80  TARGET #  0   DISTANCE  3.63   AUTO-REACH"
+    },
+    {
+      "name": "auto-reach finishes by itself",
+      "ok": true,
+      "detail": "ARMATRON-80  TARGET #  0   DISTANCE  0.07"
+    },
+    {
+      "name": "auto-reach at least halves the distance",
+      "ok": true,
+      "detail": "3.63 -> 0.07"
+    },
+    {
+      "name": "N advances to target #1",
+      "ok": true,
+      "detail": "ARMATRON-80  TARGET #  1   DISTANCE"
+    },
+    {
+      "name": "0 resets the pose and redraws",
+      "ok": true,
+      "detail": "NaN -> 8.33"
+    }
+  ],
+  "autoReach": {
+    "before": 3.63,
+    "after": 0.07
+  },
+  "emulated_seconds": 563.5502022174874
+}
