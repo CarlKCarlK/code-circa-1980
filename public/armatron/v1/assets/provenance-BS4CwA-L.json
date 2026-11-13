@@ -14,7 +14,7 @@
         "crates/linkage-blaze/src/examples/armatron/main.rs",
         "crates/linkage-blaze/src/examples/armatron/reverse_kinematics.rs"
       ],
-      "used": "Arm turtle chain, joint ranges, camera rig, ghost target pose, fingertip distance, greedy coordinate-search auto-reach, perspective projection."
+      "used": "Arm turtle chain, joint ranges, camera rig, target placement from a hidden target pose, fingertip distance, greedy coordinate-search auto-reach, perspective projection."
     },
     {
       "name": "Excel 2D & 3D Robot Arms",
@@ -28,10 +28,10 @@
   "differences_from_sources": [
     "One-pixel lines at 128x48; no joint spheres or pen widths.",
     "The 9x9 floor line grid becomes a 5x5 grid of dots.",
-    "The ghost target arm is dotted instead of red.",
+    "As in Linkage Blaze, a hidden target pose run through the same arm routine places a reachable target. The target is a cross with a dotted line to the floor.",
     "Target poses come from a SIN hash of the target number, not WyRand.",
     "Auto-reach searches only the four joints that move the fingertip, takes the first improving move, and applies up to four moves per redraw instead of interpolating.",
-    "Keyboard keys replace sliders and buttons. Dance mode and success quips are new."
+    "Keyboard keys replace sliders and buttons."
   ],
   "saves": [
     {
@@ -39,20 +39,20 @@
       "imported_files": [
         {
           "path": "versions/v01/ARMATRON.BAS",
-          "bytes": 7665,
-          "sha256": "5a5d495a2a7c2de7b247cf55347c874841cfb33d52479159f932ddc45b48c0b0"
+          "bytes": 7755,
+          "sha256": "6f9a824a0fa7c3ff084f72d971525f6c42937916c00ab72e82f945814c1c70eb"
         },
         {
           "path": "versions/v01/ARMATRON.ASC",
-          "bytes": 8781,
-          "sha256": "9f2159916028e7ecad979371455db4f32fe2979f5304488ea21f0db89b1c0b22"
+          "bytes": 8901,
+          "sha256": "93fc4592f93b2fd85cf8d8263f918968aff10892689f6f52f37efd9ad30fc47c"
         }
       ],
       "build_item": {
-        "lines": 150,
+        "lines": 168,
         "last": 7020,
         "normal_end_marker": true,
-        "sha256": "5a5d495a2a7c2de7b247cf55347c874841cfb33d52479159f932ddc45b48c0b0",
+        "sha256": "6f9a824a0fa7c3ff084f72d971525f6c42937916c00ab72e82f945814c1c70eb",
         "tool": "trs80-base 2.3.1 parseBasicText + asCassetteBinary"
       },
       "execution_tested": true

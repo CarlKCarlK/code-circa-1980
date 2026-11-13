@@ -5,7 +5,7 @@
       "path": "armatron/v1/",
       "label": "Web experience v1",
       "released": "2026-11-13",
-      "sourceCommit": "31fab1e6273d15b963d060ea290444f15fb86f50",
+      "sourceCommit": "213e5f8545574ab0aa0914e4d117a29f495dfc1c",
       "files": [
         {
           "path": "assets/05-MONSTER-GAME-PARTIAL-PREFIX-BOXgx938.ASC",
@@ -43,19 +43,19 @@
           "sha256": "52b5936092761222560ea16093b011d4cb3c67b4a4992e1c77101c639041fef4"
         },
         {
-          "path": "assets/ARMATRON-D-b4qIqc.BAS",
-          "bytes": 7665,
-          "sha256": "5a5d495a2a7c2de7b247cf55347c874841cfb33d52479159f932ddc45b48c0b0"
+          "path": "assets/ARMATRON-CxCWCzdL.BAS",
+          "bytes": 7755,
+          "sha256": "6f9a824a0fa7c3ff084f72d971525f6c42937916c00ab72e82f945814c1c70eb"
         },
         {
-          "path": "assets/ARMATRON-DDOhrYIk.ASC",
-          "bytes": 8781,
-          "sha256": "9f2159916028e7ecad979371455db4f32fe2979f5304488ea21f0db89b1c0b22"
+          "path": "assets/armatron-gallery-C8cz6w2N.svg",
+          "bytes": 1289,
+          "sha256": "815398940c7c38329bd37984a9c577fad886499a421c6ef4d84345216b106d2b"
         },
         {
-          "path": "assets/armatron-gallery-Cn2TKDnQ.svg",
-          "bytes": 1158,
-          "sha256": "025227306c4280e53c29b1086198b6654e0a5a4d68589f41803e5359fcbd50cf"
+          "path": "assets/ARMATRON-oGENwzHg.ASC",
+          "bytes": 8901,
+          "sha256": "93fc4592f93b2fd85cf8d8263f918968aff10892689f6f52f37efd9ad30fc47c"
         },
         {
           "path": "assets/balancer-equation-BxrkCOHy.svg",
@@ -128,9 +128,9 @@
           "sha256": "82cc112509c6720e7688aa5e411f3fefe4a187ba3643e24b8322d5b2e129a1f1"
         },
         {
-          "path": "assets/emulator-DLjur6Rl.js",
+          "path": "assets/emulator-BW4nrApx.js",
           "bytes": 317036,
-          "sha256": "287dcfd31da8f9938f053bc112d1c2d3b021cbced839e5401fa6b9934880639a"
+          "sha256": "f1a5f5d020e5c382af2aee1e048890b7c81ffb24bb1fd5da7195376131874e9d"
         },
         {
           "path": "assets/forth-gallery-DV3ZafQA.svg",
@@ -153,9 +153,9 @@
           "sha256": "60e6c890e811aa6f967f597bf5c7f494dc5ceeb47a32505b18ca232493aab770"
         },
         {
-          "path": "assets/index-a5yD1F4b.js",
-          "bytes": 1055417,
-          "sha256": "56d1fed971a53123cb4be1a11e2069c63b63aec1b1b60fd51bf84ced3c057f73"
+          "path": "assets/index-Dd--qhH9.js",
+          "bytes": 1065607,
+          "sha256": "c400ba0f07e2913e2dca5aa4205e5818edc21bf676af409a737d7c0033d9e01a"
         },
         {
           "path": "assets/index-MQijyIvI.css",
@@ -243,24 +243,24 @@
           "sha256": "d0f495586fb93b6fa8062540e94631a2ba147468c2220399693342bf5798715a"
         },
         {
-          "path": "assets/player-A8fOS82h.js",
-          "bytes": 5576,
-          "sha256": "03c581183b0da05f6ec55103fb9e309b3e03e5e75a2797d653bb43ca5ff7369a"
-        },
-        {
           "path": "assets/player-Bs8GeNyd.js",
           "bytes": 16248,
           "sha256": "e4dcd4e5a6443ea360e5ecf182eb077e431d8ce47f4760934d6d984a763b6344"
         },
         {
-          "path": "assets/player-C1uDv3Jl.js",
+          "path": "assets/player-BWaO5P0o.js",
           "bytes": 12370,
-          "sha256": "b055787b683f5febf44b827dd16add546aaea0c64fd5244d53ce5fe9e0bbac3d"
+          "sha256": "c0f5554363703aa504e8b07e68cc8eed388774ddf6c8928f5771e98ec9993336"
         },
         {
           "path": "assets/player-DG3vU3-j.js",
           "bytes": 32072,
           "sha256": "b34aa8c0fe399d51a89f60534d8c4608396309d021d00ef2b1c5cff0c19d82e8"
+        },
+        {
+          "path": "assets/player-xjwJx7q1.js",
+          "bytes": 5576,
+          "sha256": "106c2262d44df70801525d8d7574b8bcc254c01d79e8397b6f8e84f56159edd1"
         },
         {
           "path": "assets/plot3d-funnel-Dq1ey0cB.svg",
@@ -273,9 +273,9 @@
           "sha256": "a6c53e8f3b2cd9cf2d9ba7ab95b5893937b08e210232a457bd6252a054aceb6f"
         },
         {
-          "path": "assets/provenance-BeeyjQ-H.json",
-          "bytes": 2764,
-          "sha256": "bfe2b38680f243e86498732d9926e6a2ae2ca29ee37c6f8594fb60bbaf06313a"
+          "path": "assets/provenance-BS4CwA-L.json",
+          "bytes": 2861,
+          "sha256": "be33fc14907b9d7b3af1a7ee11a8d4cb694951004dab0a06a759443d49db5cd8"
         },
         {
           "path": "assets/reflex-gallery-BUrqLdyE.svg",
@@ -379,8 +379,8 @@
         },
         {
           "path": "index.html",
-          "bytes": 2298,
-          "sha256": "18bcf0d618d70d31bc1f7fadbd0cfa6531333210d9dc1fbf2af547e3e56028e6"
+          "bytes": 2292,
+          "sha256": "5d3a0b351683dd73b62ca76326d12f5054810ba5d904dd1b042704735e92132b"
         },
         {
           "path": "licenses.txt",
