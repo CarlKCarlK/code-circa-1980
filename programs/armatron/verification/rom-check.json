@@ -40,14 +40,14 @@
       "detail": "ARMATRON-80  TARGET #  1   DISTANCE  8.33"
     },
     {
-      "name": "0 resets the pose",
+      "name": "0 resets the pose and redraws",
       "ok": true,
-      "detail": "ARMATRON-80  TARGET #  1   DISTANCE  8.33"
+      "detail": "8.33 -> 11"
     }
   ],
   "autoReach": {
     "before": 3.63,
     "after": 0.07
   },
-  "emulated_seconds": 563.5501859414458
+  "emulated_seconds": 575.5502091224747
 }
