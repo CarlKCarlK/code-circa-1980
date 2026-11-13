@@ -37,17 +37,17 @@
     {
       "name": "N advances to target #1",
       "ok": true,
-      "detail": "ARMATRON-80  TARGET #  1   DISTANCE  8.33"
+      "detail": "ARMATRON-80  TARGET #  1   DISTANCE"
     },
     {
       "name": "0 resets the pose and redraws",
       "ok": true,
-      "detail": "8.33 -> 11"
+      "detail": "NaN -> 8.33"
     }
   ],
   "autoReach": {
     "before": 3.63,
     "after": 0.07
   },
-  "emulated_seconds": 575.5502091224747
+  "emulated_seconds": 563.5502022174874
 }
