@@ -159,7 +159,7 @@ Completed Castles web v1 items are archived in [TODO-web-v1.md](TODO-web-v1.md).
       and "What differs" (including BASIC's real 2-D arrays and 0-to-n indexing).
       Put it on the bal page (`app/site/programs/bal.js`) once the draft is final.
 - [ ] Article for This Week in Rust (via Medium): a survey of all six programs,
-      working title "Why BASIC Is Better than TypeScript and Rust". Real thesis: the
+      working title "Why BASIC Is Not Better than Rust or TypeScript". Real thesis: the
       ideas in a program matter more than its syntax; syntax, typing, and tooling help,
       but come second. Draft in `docs/article-draft.md`; builds on the bal draft. Castles and 3-D Plot have TypeScript
       versions, bal and Chess have Rust; Alien and Bomb have no modern port yet.
