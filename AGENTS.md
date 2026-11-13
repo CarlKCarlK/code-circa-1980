@@ -604,3 +604,14 @@ bundled in older frozen releases; both stay in the recovery archive and in Git h
 showed no customization. Orion's tape differs from the listing printed in the 1979 Starfleet
 Orion manual (sound, printer, star field, title art, single-key input; authorship unknown), but
 the user judged those changes uninteresting. Do not restore either unless the user asks.
+
+## Armatron-80, a new program (November 13, 2026)
+
+At the user's request, `armatron` is new Level II BASIC written in 2026, not a recovered
+tape. It ports the Linkage Blaze Armatron demo and the Excel 3-D robot arm (both now in the
+user's VS Code workspace). It is marked `newProgram: true`, and its provenance has a
+`build_item` instead of a `recovery_item`. Never describe it as historical. Edit
+`programs/armatron/versions/v01/ARMATRON.ASC`, then run `npm run build:armatron`, which
+rebuilds the .BAS and its provenance hashes. Run `npm run check:armatron` for the headless
+ROM check. It reads held keys with PEEK, so its player calls `setFastWhileHeld(true)` and
+starts at Max speed. It sits in More right after JAB, at unshared web v1, on branch `armatron`.
