@@ -39,20 +39,20 @@
       "imported_files": [
         {
           "path": "versions/v01/ARMATRON.BAS",
-          "bytes": 8120,
-          "sha256": "b6cb12964f97895cc15f7011d13cad89a9af5cffd6349f4a9ec81be44f5fa364"
+          "bytes": 8207,
+          "sha256": "d1a70787c06bd19d89e8b9f0b1c7e1fb407246893e593455dfd85370d1c6b13c"
         },
         {
           "path": "versions/v01/ARMATRON.ASC",
-          "bytes": 9292,
-          "sha256": "827b8f108f77bcf3e51b0309ab1e4a0e5bf98b5c8bf931dec17f87a5c8514ed3"
+          "bytes": 9383,
+          "sha256": "befdc5ca08056f2c88f1e48959e143c06ce5e15376e05b5681b4178cde4490a3"
         }
       ],
       "build_item": {
-        "lines": 168,
+        "lines": 169,
         "last": 7020,
         "normal_end_marker": true,
-        "sha256": "b6cb12964f97895cc15f7011d13cad89a9af5cffd6349f4a9ec81be44f5fa364",
+        "sha256": "d1a70787c06bd19d89e8b9f0b1c7e1fb407246893e593455dfd85370d1c6b13c",
         "tool": "trs80-base 2.3.1 parseBasicText + asCassetteBinary"
       },
       "execution_tested": true
