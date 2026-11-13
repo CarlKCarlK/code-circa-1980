@@ -1,7 +1,7 @@
 {
   "id": "armatron",
   "title": "Armatron-80",
-  "description": "Steer a 3-D robot arm to a ghost target, or press Space and let it reach by itself. New in 2026.",
+  "description": "Steer a 3-D robot arm to a target, or press Space and let it reach by itself. New in 2026.",
   "kind": "Simulation",
   "language": "Level II BASIC",
   "gallery": "more",

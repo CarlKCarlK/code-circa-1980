@@ -13,8 +13,8 @@ Both model Radio Shack's Armatron toy arm.
 ## Play
 
 Click the player. Hold the joint keys (Q/A base, W/S arm, E/D elbow, R/F wrist, T/G twist,
-Y/H grip) to bring the solid arm's fingertips to the dotted ghost arm's. The arrow keys orbit
-and tilt the camera, and Z/X zoom it. Space runs auto-reach, N/P change the target, 1 dances,
+Y/H grip) to put the arm's fingertips on the target cross, whose dotted line drops to the floor. The arrow keys orbit
+and tilt the camera, and Z/X zoom it. Space runs auto-reach, N/P change the target,
 and 0 resets the pose. The player starts at Max speed, which is about 60× in a typical browser.
 At Original (1×) each frame takes several seconds, as it would have in 1980.
 

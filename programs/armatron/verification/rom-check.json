@@ -11,9 +11,9 @@
       "detail": "QA BASE  WS ARM  ED ELBOW  RF WRIST  TG TWIST  YH GRIP"
     },
     {
-      "name": "arm, ghost, and grid drawn",
+      "name": "arm, target, and grid drawn",
       "ok": true,
-      "detail": "65 pixels set"
+      "detail": "64 pixels set"
     },
     {
       "name": "holding Q redraws the arm",
@@ -40,20 +40,14 @@
       "detail": "ARMATRON-80  TARGET #  1   DISTANCE  8.33"
     },
     {
-      "name": "1 starts the dance",
+      "name": "0 resets the pose",
       "ok": true,
-      "detail": "ARMATRON-80  TARGET #  1   DISTANCE  8.33   DANCE!!"
-    },
-    {
-      "name": "0 resets the pose and stops dancing",
-      "ok": true,
-      "detail": "ARMATRON-80  TARGET #  1   DISTANCE 10.57"
+      "detail": "ARMATRON-80  TARGET #  1   DISTANCE  8.33"
     }
   ],
   "autoReach": {
     "before": 3.63,
-    "after": 0.07,
-    "quip": "GOTCHA!"
+    "after": 0.07
   },
-  "emulated_seconds": 612.0002530184659
+  "emulated_seconds": 563.5501859414458
 }

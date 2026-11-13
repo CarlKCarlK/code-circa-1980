@@ -615,3 +615,8 @@ user's VS Code workspace). It is marked `newProgram: true`, and its provenance h
 rebuilds the .BAS and its provenance hashes. Run `npm run check:armatron` for the headless
 ROM check. It reads held keys with PEEK, so its player calls `setFastWhileHeld(true)` and
 starts at Max speed. It sits in More right after JAB, at unshared web v1, on branch `armatron`.
+
+The user's design choices: the arm and the hidden target pose share one hard-coded GOSUB
+chain (line 2000), with global `DR` choosing whether it draws; the target shows only as a
+cross with a dotted drop line, never as a ghost arm. No interpreted DSL. No gags (dance,
+success quips, jokes); blank `REM` lines separate sections.
